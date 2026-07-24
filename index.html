@@ -82,7 +82,7 @@ header{
   padding:120px 0 70px;overflow:clip;position:relative;
   background:linear-gradient(180deg,#0A0F1F,#0C1226 55%,#0A0F1F);
 }
-.hero-media{position:absolute;inset:0;z-index:0;overflow:hidden}
+.hero-media{position:absolute;inset:0;z-index:0;overflow:hidden;background:#0A0F1F url('media/hero-poster.jpg') center/cover no-repeat}
 .hero-media img,.hero-media video{
   position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
 }
@@ -434,7 +434,7 @@ footer{border-top:1px solid var(--line);padding:3rem 0 2rem;background:var(--bg)
 <!-- ============ HERO ============ -->
 <section class="hero" id="top">
   <div class="hero-media">
-    <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="media/hero-poster.jpg">
+    <video class="hero-video" autoplay muted loop playsinline webkit-playsinline preload="auto">
       <source src="media/hero.mp4" type="video/mp4">
     </video>
   </div>
@@ -1104,12 +1104,27 @@ document.querySelectorAll('.door').forEach(d=>d.addEventListener('click',()=>{bu
 // estrellas
 (function(){const s=$('#stars');if(!s)return;for(let i=0;i<70;i++){const e=document.createElement('span');e.style.left=Math.random()*100+'%';e.style.top=Math.random()*100+'%';e.style.animationDelay=(Math.random()*4)+'s';e.style.opacity=.2+Math.random()*.6;s.appendChild(e)}})();
 
-// vídeo del hero: solo cuando está a la vista, respeta reduce-motion
+// vídeo del hero: autoplay robusto en iOS; si el navegador lo bloquea
+// (p.ej. modo bajo consumo), se oculta y queda la foto de fondo, sin botón de play
 (function(){
   const v=document.querySelector('.hero-video'); if(!v) return;
+  v.muted=true; v.defaultMuted=true; v.setAttribute('muted','');
   const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if(reduce){v.removeAttribute('autoplay');v.pause();return}
-  new IntersectionObserver(e=>{e[0].isIntersecting?v.play().catch(()=>{}):v.pause()},{rootMargin:'20% 0px'}).observe(v);
+  function hide(){ v.style.display='none'; }      // queda el background del .hero-media (póster)
+  function show(){ v.style.display=''; }
+  if(reduce){ hide(); return; }
+  function attempt(){ const p=v.play(); if(p&&p.then) p.then(show).catch(hide); }
+  v.addEventListener('loadeddata', attempt);
+  attempt();
+  // iOS permite reproducir tras un gesto del usuario: reintentamos al primer toque/clic
+  function kick(){ const p=v.play(); if(p&&p.then) p.then(show).catch(()=>{}); }
+  document.addEventListener('touchstart', kick, {once:true, passive:true});
+  document.addEventListener('click', kick, {once:true});
+  // pausar cuando no está a la vista (batería/datos)
+  new IntersectionObserver(e=>{
+    if(v.style.display==='none') return;
+    e[0].isIntersecting ? v.play().catch(()=>{}) : v.pause();
+  },{rootMargin:'20% 0px'}).observe(v);
 })();
 
 // contadores animados
