@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Viajai — Tu viaje planeado en 1 minuto</title>
 <meta name="description" content="Viajai es el planificador de viajes con IA en español: cuéntale tu viaje soñado y recibe un itinerario día a día con mapa, clima y presupuesto. Lunas de miel, familias y escapadas.">
+<meta property="og:title" content="Viajai — Tu viaje planeado en 1 minuto">
+<meta property="og:description" content="El planificador de viajes con IA en español. Itinerario día a día, mapa, clima y presupuesto en un minuto.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -52,53 +55,65 @@ header{
   backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
   background:rgba(10,15,31,.72);border-bottom:1px solid var(--line);
 }
-.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
-.logo{font-family:'Fraunces',serif;font-weight:700;font-size:1.5rem;letter-spacing:.5px}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:1rem}
+.logo{font-family:'Fraunces',serif;font-weight:700;font-size:1.5rem;letter-spacing:.5px;flex:none}
 .logo em{font-style:italic;color:var(--gold)}
+.nav-links{display:flex;align-items:center;gap:1.6rem;margin-left:auto}
+.nav-links a{font-size:.9rem;font-weight:600;color:var(--muted);transition:color .2s}
+.nav-links a:hover{color:var(--text)}
+.nav-tools{display:flex;align-items:center;gap:.5rem}
+.pill-sel{
+  font-size:.82rem;font-weight:700;color:var(--muted);border:1px solid var(--line);
+  background:rgba(255,255,255,.03);padding:.4rem .7rem;border-radius:99px;transition:border-color .2s,color .2s;
+}
+.pill-sel:hover{border-color:rgba(231,183,95,.4);color:var(--text)}
 .nav-cta{
   background:var(--coral);color:#fff;font-weight:700;font-size:.92rem;
-  padding:.62rem 1.25rem;border-radius:99px;
+  padding:.62rem 1.25rem;border-radius:99px;flex:none;
   transition:transform .25s var(--ease),box-shadow .25s var(--ease);
   box-shadow:0 6px 22px rgba(255,111,94,.35);
 }
 .nav-cta:hover{transform:translateY(-2px)}
+@media(max-width:900px){.nav-links{display:none}}
 
 /* ============ HERO ============ */
 .hero{
   min-height:100svh;display:flex;flex-direction:column;justify-content:center;
-  padding:120px 0 70px;overflow:clip;
-  background:
-    radial-gradient(1200px 600px at 75% -10%, rgba(62,207,178,.10), transparent 60%),
-    radial-gradient(900px 500px at 10% 110%, rgba(255,111,94,.10), transparent 60%),
-    linear-gradient(180deg,#0A0F1F 0%,#0C1226 55%,#0A0F1F 100%);
+  padding:120px 0 70px;overflow:clip;position:relative;
+  background:linear-gradient(180deg,#0A0F1F,#0C1226 55%,#0A0F1F);
 }
-.stars{position:absolute;inset:0;pointer-events:none;opacity:.5}
+.hero-media{position:absolute;inset:0;z-index:0;overflow:hidden}
+.hero-media img,.hero-media video{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+}
+.hero-media::after{
+  content:'';position:absolute;inset:0;
+  background:
+    radial-gradient(1200px 700px at 70% 20%, rgba(10,15,31,.35), transparent 60%),
+    linear-gradient(180deg, rgba(10,15,31,.62) 0%, rgba(10,15,31,.55) 40%, rgba(10,15,31,.88) 100%);
+}
+.stars{position:absolute;inset:0;pointer-events:none;opacity:.5;z-index:1}
 .stars span{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;animation:tw 4s infinite}
 @keyframes tw{0%,100%{opacity:.15}50%{opacity:.85}}
-.aurora{
-  position:absolute;top:-20%;left:50%;width:120vw;height:70vh;transform:translateX(-50%);
-  background:conic-gradient(from 90deg at 50% 50%, transparent, rgba(231,183,95,.06), transparent, rgba(62,207,178,.07), transparent);
-  filter:blur(60px);animation:spin 26s linear infinite;pointer-events:none;
-}
-@keyframes spin{to{transform:translateX(-50%) rotate(360deg)}}
 .hero .wrap{position:relative;z-index:2;text-align:center}
 .kicker{
   display:inline-flex;align-items:center;gap:.5rem;
   font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);
-  border:1px solid rgba(231,183,95,.35);background:var(--gold-soft);
-  padding:.45rem 1rem;border-radius:99px;margin-bottom:1.6rem;
+  border:1px solid rgba(231,183,95,.35);background:rgba(231,183,95,.12);
+  padding:.45rem 1rem;border-radius:99px;margin-bottom:1.6rem;backdrop-filter:blur(6px);
 }
 .h1{
   font-family:'Fraunces',serif;font-weight:600;
-  font-size:clamp(2.5rem,6.4vw,4.6rem);line-height:1.08;letter-spacing:-.01em;
-  margin-bottom:1.1rem;
+  font-size:clamp(2.5rem,6.4vw,4.7rem);line-height:1.07;letter-spacing:-.01em;
+  margin-bottom:1.1rem;text-shadow:0 2px 40px rgba(0,0,0,.5);
 }
 .h1 em{font-style:italic;color:var(--gold)}
-.hero p.sub{color:var(--muted);font-size:clamp(1rem,2vw,1.2rem);max-width:640px;margin:0 auto 2.6rem}
+.hero p.sub{color:#D6DcEc;font-size:clamp(1rem,2vw,1.2rem);max-width:640px;margin:0 auto 2.6rem;text-shadow:0 1px 20px rgba(0,0,0,.5)}
 .doors{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;max-width:900px;margin:0 auto}
 .door{
   text-align:left;border:1px solid var(--line);border-radius:var(--r);
-  background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.015));
+  background:linear-gradient(180deg,rgba(18,27,54,.72),rgba(15,23,48,.6));
+  backdrop-filter:blur(8px);
   padding:1.35rem 1.3rem;transition:transform .3s var(--ease),border-color .3s,background .3s;
   position:relative;overflow:hidden;
 }
@@ -121,35 +136,48 @@ header{
 .trust span{display:inline-flex;align-items:center;gap:.5rem}
 .trust i{color:var(--mar);font-style:normal}
 
-/* ============ DEMO ============ */
-.demo{padding:90px 0 100px;background:var(--bg2)}
-.sec-head{text-align:center;max-width:680px;margin:0 auto 3rem}
+/* ============ STATS BAR ============ */
+.stats{background:var(--bg2);border-block:1px solid var(--line);padding:44px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;text-align:center}
+.stat b{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(1.8rem,4vw,2.7rem);color:var(--gold);display:block;line-height:1}
+.stat span{font-size:.85rem;color:var(--muted);font-weight:600;letter-spacing:.02em}
+@media(max-width:640px){.stats-grid{grid-template-columns:repeat(2,1fr);gap:1.6rem}}
+
+/* ============ SEC HEAD (shared) ============ */
+.sec-head{text-align:center;max-width:700px;margin:0 auto 3rem}
 .sec-head .tag{
   font-size:.75rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
   color:var(--mar);margin-bottom:.8rem;display:block;
 }
 .sec-head h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(1.9rem,4.5vw,3rem);line-height:1.15;margin-bottom:.8rem}
 .sec-head p{color:var(--muted)}
+
+/* ============ CÓMO FUNCIONA ============ */
+.how{padding:90px 0;background:var(--bg)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.step{position:relative;border:1px solid var(--line);border-radius:var(--r);padding:2rem 1.6rem;background:var(--panel2)}
+.step .num{
+  font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;color:var(--bg);
+  width:38px;height:38px;border-radius:50%;background:var(--gold);display:grid;place-items:center;margin-bottom:1rem;
+}
+.step h3{font-family:'Fraunces',serif;font-size:1.25rem;font-weight:600;margin-bottom:.5rem}
+.step p{font-size:.92rem;color:var(--muted)}
+.step .ic{position:absolute;top:1.8rem;right:1.6rem;font-size:1.5rem;opacity:.5}
+@media(max-width:820px){.steps{grid-template-columns:1fr}}
+
+/* ============ DEMO ============ */
+.demo{padding:90px 0 100px;background:var(--bg2)}
 .demo-badge{
   display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.1em;
   color:var(--bg);background:var(--gold);padding:.2rem .6rem;border-radius:6px;vertical-align:middle;margin-left:.5rem;
 }
 .demo-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:1.4rem;align-items:start}
-
-/* chat panel */
 .chat{
   border:1px solid var(--line);border-radius:var(--r);background:var(--panel);
   display:flex;flex-direction:column;min-height:520px;max-height:640px;overflow:hidden;
 }
-.chat-top{
-  display:flex;align-items:center;gap:.7rem;padding:.9rem 1.1rem;border-bottom:1px solid var(--line);
-  background:rgba(255,255,255,.02);
-}
-.avatar{
-  width:36px;height:36px;border-radius:50%;flex:none;
-  background:linear-gradient(135deg,var(--gold),var(--coral));
-  display:grid;place-items:center;font-size:1.05rem;
-}
+.chat-top{display:flex;align-items:center;gap:.7rem;padding:.9rem 1.1rem;border-bottom:1px solid var(--line);background:rgba(255,255,255,.02)}
+.avatar{width:36px;height:36px;border-radius:50%;flex:none;background:linear-gradient(135deg,var(--gold),var(--coral));display:grid;place-items:center;font-size:1.05rem}
 .chat-top b{font-size:.95rem}
 .chat-top small{display:block;color:var(--mar);font-size:.72rem;font-weight:700}
 .chat-log{flex:1;overflow-y:auto;padding:1.1rem;display:flex;flex-direction:column;gap:.7rem;scrollbar-width:thin}
@@ -162,50 +190,25 @@ header{
 .typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
 @keyframes bl{0%,100%{opacity:.25;transform:translateY(0)}50%{opacity:1;transform:translateY(-3px)}}
 .chips{display:flex;flex-wrap:wrap;gap:.5rem;padding:.4rem 0 .2rem;align-self:flex-start}
-.chip{
-  font-size:.85rem;font-weight:700;color:var(--text);
-  border:1px solid rgba(231,183,95,.45);background:var(--gold-soft);
-  padding:.5rem 1rem;border-radius:99px;transition:transform .2s var(--ease),background .2s;
-  animation:pop .35s var(--ease);
-}
+.chip{font-size:.85rem;font-weight:700;color:var(--text);border:1px solid rgba(231,183,95,.45);background:var(--gold-soft);padding:.5rem 1rem;border-radius:99px;transition:transform .2s var(--ease),background .2s;animation:pop .35s var(--ease)}
 .chip:hover{transform:translateY(-2px);background:rgba(231,183,95,.25)}
 .chip.primary{background:var(--coral);border-color:var(--coral);color:#fff;box-shadow:0 6px 20px rgba(255,111,94,.3)}
 .chat-note{padding:.6rem 1.1rem;border-top:1px solid var(--line);color:var(--muted);font-size:.72rem;text-align:center}
-
-/* trip panel */
-.trip{
-  border:1px solid var(--line);border-radius:var(--r);background:var(--panel);
-  overflow:hidden;min-height:520px;display:flex;flex-direction:column;
-}
-.trip-empty{
-  flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
-  gap:1rem;color:var(--muted);text-align:center;padding:2rem;
-}
+.trip{border:1px solid var(--line);border-radius:var(--r);background:var(--panel);overflow:hidden;min-height:520px;display:flex;flex-direction:column}
+.trip-empty{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;color:var(--muted);text-align:center;padding:2rem}
 .trip-empty .big{font-size:2.4rem}
 .checklist{width:100%;max-width:360px;display:flex;flex-direction:column;gap:.55rem;text-align:left}
-.check-item{
-  display:flex;justify-content:space-between;align-items:center;gap:1rem;
-  border:1px dashed var(--line);border-radius:var(--r-sm);padding:.6rem .9rem;
-  font-size:.85rem;transition:border-color .4s,background .4s;
-}
+.check-item{display:flex;justify-content:space-between;align-items:center;gap:1rem;border:1px dashed var(--line);border-radius:var(--r-sm);padding:.6rem .9rem;font-size:.85rem;transition:border-color .4s,background .4s}
 .check-item b{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:800}
 .check-item span{color:var(--muted)}
 .check-item.done{border-style:solid;border-color:rgba(62,207,178,.5);background:rgba(62,207,178,.07)}
 .check-item.done span{color:var(--text);font-weight:700}
 .progress{font-size:.78rem;font-weight:800;color:var(--mar);letter-spacing:.06em}
-
-/* loading */
 .gen{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.4rem;padding:2rem;text-align:center}
-.orb{
-  width:74px;height:74px;border-radius:50%;position:relative;
-  background:conic-gradient(var(--gold),var(--coral),var(--mar),var(--gold));
-  animation:spin2 1.6s linear infinite;
-}
+.orb{width:74px;height:74px;border-radius:50%;position:relative;background:conic-gradient(var(--gold),var(--coral),var(--mar),var(--gold));animation:spin2 1.6s linear infinite}
 .orb::after{content:'';position:absolute;inset:6px;border-radius:50%;background:var(--panel)}
 @keyframes spin2{to{transform:rotate(360deg)}}
 .gen p{color:var(--muted);font-size:.95rem;min-height:1.6em}
-
-/* trip card */
 .tcard{display:none;flex-direction:column;overflow-y:auto;max-height:820px;scrollbar-width:thin}
 .tcard.show{display:flex;animation:pop .5s var(--ease)}
 .tc-hero{padding:1.5rem 1.4rem 1.1rem;background:linear-gradient(160deg,var(--th1,#233),var(--th2,#122));position:relative}
@@ -222,11 +225,7 @@ header{
 .day-top b{font-size:.92rem}
 .day-top .wx{font-size:.8rem;color:var(--muted);font-weight:700;white-space:nowrap}
 .day p{font-size:.85rem;color:var(--muted)}
-.hotel{
-  display:flex;justify-content:space-between;gap:1rem;align-items:center;
-  border:1px solid rgba(231,183,95,.35);background:var(--gold-soft);
-  border-radius:var(--r-sm);padding:.9rem 1rem;
-}
+.hotel{display:flex;justify-content:space-between;gap:1rem;align-items:center;border:1px solid rgba(231,183,95,.35);background:var(--gold-soft);border-radius:var(--r-sm);padding:.9rem 1rem}
 .hotel b{font-size:.95rem;display:block}
 .hotel small{color:var(--muted);font-size:.78rem}
 .hotel .price{text-align:right;white-space:nowrap}
@@ -236,32 +235,48 @@ header{
 .b-row.total{border-top:1px solid var(--line);padding-top:.55rem;color:var(--text);font-weight:800;font-size:1rem}
 .b-row.total span:last-child{color:var(--gold)}
 .book-grid{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
-.book-btn{
-  display:flex;flex-direction:column;gap:.15rem;align-items:flex-start;
-  border:1px solid var(--line);border-radius:var(--r-sm);padding:.7rem .9rem;
-  background:rgba(255,255,255,.03);transition:transform .2s var(--ease),border-color .2s;text-align:left;
-}
+.book-btn{display:flex;flex-direction:column;gap:.15rem;align-items:flex-start;border:1px solid var(--line);border-radius:var(--r-sm);padding:.7rem .9rem;background:rgba(255,255,255,.03);transition:transform .2s var(--ease),border-color .2s;text-align:left}
 .book-btn:hover{transform:translateY(-2px);border-color:rgba(231,183,95,.5)}
 .book-btn b{font-size:.86rem}
 .book-btn small{color:var(--muted);font-size:.72rem}
 .tc-actions{display:flex;gap:.6rem;padding:0 1.4rem 1.4rem}
-.btn{
-  flex:1;text-align:center;font-weight:800;font-size:.92rem;padding:.8rem 1rem;border-radius:12px;
-  transition:transform .2s var(--ease);
-}
+.btn{flex:1;text-align:center;font-weight:800;font-size:.92rem;padding:.8rem 1rem;border-radius:12px;transition:transform .2s var(--ease)}
 .btn:hover{transform:translateY(-2px)}
 .btn.solid{background:var(--coral);color:#fff;box-shadow:0 8px 24px rgba(255,111,94,.3)}
 .btn.ghost{border:1px solid var(--line);color:var(--text)}
 
-/* toast */
-#toast{
-  position:fixed;left:50%;bottom:26px;transform:translate(-50%,90px);z-index:100;
-  background:var(--panel);border:1px solid rgba(231,183,95,.5);color:var(--text);
-  padding:.75rem 1.3rem;border-radius:99px;font-size:.86rem;font-weight:700;
-  transition:transform .45s var(--ease);box-shadow:0 12px 40px rgba(0,0,0,.5);
-  max-width:90vw;text-align:center;
+/* ============ INSPÍRAME (galería) ============ */
+.inspire{padding:90px 0;background:var(--bg)}
+.dest-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.dest{
+  position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;cursor:pointer;
+  border:1px solid var(--line);
 }
-#toast.show{transform:translate(-50%,0)}
+.dest .ph{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .6s var(--ease)}
+.dest:hover .ph{transform:scale(1.07)}
+.dest::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(8,12,25,.85) 100%)}
+.dest .info{position:absolute;left:0;right:0;bottom:0;padding:1.1rem 1.2rem;z-index:2}
+.dest .tagline{font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:.2rem}
+.dest h3{font-family:'Fraunces',serif;font-size:1.35rem;font-weight:600;line-height:1.1}
+.dest .meta{font-size:.82rem;color:var(--muted);margin-top:.2rem}
+.dest .plan{
+  margin-top:.7rem;display:inline-flex;align-items:center;gap:.4rem;font-size:.8rem;font-weight:800;color:#fff;
+  background:rgba(255,111,94,.9);padding:.4rem .85rem;border-radius:99px;opacity:0;transform:translateY(8px);transition:opacity .3s,transform .3s;
+}
+.dest:hover .plan{opacity:1;transform:none}
+@media(max-width:820px){.dest-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.dest-grid{grid-template-columns:1fr}}
+
+/* ============ TODO INCLUIDO ============ */
+.allin{padding:90px 0;background:var(--bg2)}
+.allin-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.ai-card{display:flex;gap:1rem;align-items:flex-start;border:1px solid var(--line);border-radius:var(--r);padding:1.3rem 1.4rem;background:var(--panel2);transition:transform .3s var(--ease),border-color .3s}
+.ai-card:hover{transform:translateY(-4px);border-color:rgba(231,183,95,.35)}
+.ai-card .ic{font-size:1.7rem;flex:none;line-height:1}
+.ai-card h3{font-size:1.02rem;font-weight:700;margin-bottom:.2rem}
+.ai-card p{font-size:.85rem;color:var(--muted);line-height:1.5}
+@media(max-width:820px){.allin-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.allin-grid{grid-template-columns:1fr}}
 
 /* ============ FEATURES (cream) ============ */
 .features{background:var(--cream);color:var(--ink);padding:96px 0}
@@ -269,18 +284,29 @@ header{
 .features .sec-head p{color:var(--ink-muted)}
 .features .sec-head .tag{color:#B0743A}
 .f-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem}
-.f-card{
-  background:#fff;border:1px solid rgba(27,34,51,.08);border-radius:var(--r);
-  padding:1.5rem 1.3rem;box-shadow:0 10px 30px rgba(27,34,51,.05);
-  transition:transform .3s var(--ease),box-shadow .3s var(--ease);
-}
+.f-card{background:#fff;border:1px solid rgba(27,34,51,.08);border-radius:var(--r);padding:1.5rem 1.3rem;box-shadow:0 10px 30px rgba(27,34,51,.05);transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
 .f-card:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(27,34,51,.1)}
 .f-card .ic{font-size:1.6rem;margin-bottom:.7rem;display:block}
 .f-card h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.12rem;margin-bottom:.4rem}
 .f-card p{font-size:.87rem;color:var(--ink-muted);line-height:1.55}
 
+/* ============ COMPARATIVA ============ */
+.compare{padding:96px 0;background:var(--bg)}
+.ctable{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;max-width:860px;margin:0 auto}
+.ctable .row{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;align-items:center}
+.ctable .row+.row{border-top:1px solid var(--line)}
+.ctable .row.head{background:var(--panel);font-weight:800}
+.ctable .cell{padding:.9rem 1rem;font-size:.88rem;text-align:center}
+.ctable .cell:first-child{text-align:left;color:var(--muted);font-weight:600}
+.ctable .row.head .cell{color:var(--text);font-size:.82rem}
+.ctable .row.head .cell.viajai{color:var(--gold);font-family:'Fraunces',serif;font-size:1rem}
+.ctable .cell.viajai{background:rgba(231,183,95,.06)}
+.yes{color:var(--mar);font-weight:800}
+.no{color:#6b7590}
+@media(max-width:640px){.ctable .cell{padding:.7rem .5rem;font-size:.78rem}}
+
 /* ============ OPINIONES ============ */
-.reviews{padding:96px 0;background:var(--bg)}
+.reviews{padding:96px 0;background:var(--bg2)}
 .rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
 .rv-card{border:1px solid var(--line);border-radius:var(--r);padding:1.5rem 1.4rem;background:var(--panel2)}
 .rv-card .st{color:var(--gold);letter-spacing:2px;margin-bottom:.7rem;font-size:.9rem}
@@ -289,38 +315,77 @@ header{
 .rv-card small{display:block;color:var(--muted);font-size:.76rem}
 .rv-disclaimer{text-align:center;color:var(--muted);font-size:.76rem;margin-top:1.6rem}
 
+/* ============ PRENSA ============ */
+.press{padding:50px 0;background:var(--bg);border-block:1px solid var(--line)}
+.press p{text-align:center;color:var(--muted);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:1.4rem}
+.press-row{display:flex;justify-content:center;align-items:center;gap:2.6rem;flex-wrap:wrap;opacity:.6}
+.press-row span{font-family:'Fraunces',serif;font-size:1.25rem;font-weight:600;color:var(--muted)}
+
+/* ============ FAQ ============ */
+.faq{padding:96px 0;background:var(--bg2)}
+.faq-list{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:.7rem}
+.faq-item{border:1px solid var(--line);border-radius:var(--r-sm);background:var(--panel2);overflow:hidden}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.1rem 1.3rem;font-size:.98rem;font-weight:700;text-align:left}
+.faq-q .plus{font-size:1.3rem;color:var(--gold);transition:transform .3s var(--ease);flex:none}
+.faq-item.open .faq-q .plus{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease)}
+.faq-a p{padding:0 1.3rem 1.1rem;color:var(--muted);font-size:.9rem;line-height:1.6}
+
 /* ============ AGENCIAS ============ */
-.agencies{
-  padding:100px 0;
-  background:
-    radial-gradient(800px 400px at 85% 20%, rgba(231,183,95,.08), transparent 60%),
-    linear-gradient(180deg,var(--bg2),var(--bg));
-}
+.agencies{padding:100px 0;background:radial-gradient(800px 400px at 85% 20%, rgba(231,183,95,.08), transparent 60%),linear-gradient(180deg,var(--bg),var(--bg2))}
 .ag-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:center}
 .ag-grid h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.15;margin-bottom:1rem}
 .ag-grid .lead{color:var(--muted);margin-bottom:1.6rem}
 .ag-list{display:flex;flex-direction:column;gap:.85rem;margin-bottom:2rem}
 .ag-list li{display:flex;gap:.8rem;align-items:flex-start;list-style:none;font-size:.95rem}
 .ag-list i{color:var(--mar);font-style:normal;flex:none;margin-top:.1rem}
-.ag-cta{
-  display:inline-block;background:var(--gold);color:var(--bg);font-weight:800;
-  padding:.95rem 2rem;border-radius:99px;font-size:1rem;
-  transition:transform .25s var(--ease);box-shadow:0 10px 30px rgba(231,183,95,.25);
-}
+.ag-cta{display:inline-block;background:var(--gold);color:var(--bg);font-weight:800;padding:.95rem 2rem;border-radius:99px;font-size:1rem;transition:transform .25s var(--ease);box-shadow:0 10px 30px rgba(231,183,95,.25)}
 .ag-cta:hover{transform:translateY(-3px)}
-.ag-visual{
-  border:1px solid var(--line);border-radius:var(--r);padding:2rem;
-  background:var(--panel);text-align:center;
-}
+.ag-visual{border:1px solid var(--line);border-radius:var(--r);padding:2rem;background:var(--panel);text-align:center}
 .ag-visual .big{font-family:'Fraunces',serif;font-size:2.6rem;font-weight:600;color:var(--gold);line-height:1.1}
 .ag-visual p{color:var(--muted);font-size:.9rem;margin-top:.5rem}
 .ag-visual hr{border:none;border-top:1px solid var(--line);margin:1.4rem 0}
 
+/* ============ NEWSLETTER ============ */
+.news{padding:90px 0;background:var(--bg)}
+.news-box{border:1px solid rgba(231,183,95,.3);border-radius:var(--r);background:linear-gradient(160deg,var(--panel),var(--panel2));padding:3rem 2rem;text-align:center;max-width:720px;margin:0 auto}
+.news-box h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(1.6rem,3.6vw,2.3rem);margin-bottom:.6rem}
+.news-box p{color:var(--muted);margin-bottom:1.6rem}
+.news-form{display:flex;gap:.6rem;max-width:440px;margin:0 auto}
+.news-form input{flex:1;border:1px solid var(--line);background:rgba(255,255,255,.04);border-radius:99px;padding:.8rem 1.2rem;color:var(--text);font-family:inherit;font-size:.92rem}
+.news-form input:focus{outline:none;border-color:var(--gold)}
+.news-form button{background:var(--coral);color:#fff;font-weight:800;padding:.8rem 1.5rem;border-radius:99px;white-space:nowrap;transition:transform .2s var(--ease)}
+.news-form button:hover{transform:translateY(-2px)}
+.news-box small{display:block;color:var(--muted);font-size:.74rem;margin-top:1rem}
+@media(max-width:520px){.news-form{flex-direction:column}}
+
 /* ============ FOOTER ============ */
-footer{border-top:1px solid var(--line);padding:2.6rem 0;background:var(--bg)}
-.foot{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;align-items:center}
-.foot small{color:var(--muted);font-size:.8rem;max-width:520px;line-height:1.6}
-.foot .logo{font-size:1.2rem}
+footer{border-top:1px solid var(--line);padding:3rem 0 2rem;background:var(--bg)}
+.foot-top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:2rem;margin-bottom:2.4rem}
+.foot-col h4{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.9rem;font-weight:800}
+.foot-col a{display:block;color:var(--text);font-size:.88rem;margin-bottom:.5rem;opacity:.85;transition:opacity .2s}
+.foot-col a:hover{opacity:1;color:var(--gold)}
+.foot-brand .logo{font-size:1.4rem;margin-bottom:.6rem;display:inline-block}
+.foot-brand p{color:var(--muted);font-size:.85rem;max-width:280px}
+.foot-bot{border-top:1px solid var(--line);padding-top:1.4rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.foot-bot small{color:var(--muted);font-size:.78rem;max-width:640px;line-height:1.6}
+@media(max-width:820px){.foot-top{grid-template-columns:1fr 1fr}.foot-brand{grid-column:1/-1}}
+
+/* ============ FLOATING EXPERT ============ */
+.float-expert{
+  position:fixed;right:20px;bottom:20px;z-index:80;
+  display:inline-flex;align-items:center;gap:.55rem;
+  background:var(--mar);color:#04231d;font-weight:800;font-size:.9rem;
+  padding:.8rem 1.2rem;border-radius:99px;box-shadow:0 10px 30px rgba(62,207,178,.35);
+  transition:transform .25s var(--ease);
+}
+.float-expert:hover{transform:translateY(-3px) scale(1.03)}
+.float-expert .dot{width:9px;height:9px;border-radius:50%;background:#04231d;animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}
+
+/* toast */
+#toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,90px);z-index:100;background:var(--panel);border:1px solid rgba(231,183,95,.5);color:var(--text);padding:.75rem 1.3rem;border-radius:99px;font-size:.86rem;font-weight:700;transition:transform .45s var(--ease);box-shadow:0 12px 40px rgba(0,0,0,.5);max-width:90vw;text-align:center}
+#toast.show{transform:translate(-50%,0)}
 
 /* ============ RESPONSIVE ============ */
 @media(max-width:980px){
@@ -338,7 +403,7 @@ footer{border-top:1px solid var(--line);padding:2.6rem 0;background:var(--bg)}
   .hero{padding-top:100px}
 }
 
-/* ============ PRINT (PDF del itinerario) ============ */
+/* ============ PRINT ============ */
 @media print{
   body *{visibility:hidden}
   .tcard,.tcard *{visibility:visible}
@@ -352,14 +417,28 @@ footer{border-top:1px solid var(--line);padding:2.6rem 0;background:var(--bg)}
 <header>
   <div class="wrap nav">
     <a class="logo" href="#top">Viaj<em>ai</em></a>
-    <a class="nav-cta" href="#demo">Probar la demo</a>
+    <nav class="nav-links">
+      <a href="#como">Cómo funciona</a>
+      <a href="#inspirame">Destinos</a>
+      <a href="#faq">Preguntas</a>
+      <a href="#agencias">Para agencias</a>
+    </nav>
+    <div class="nav-tools">
+      <button class="pill-sel" id="currBtn">€ EUR</button>
+      <button class="pill-sel" id="langBtn">🌐 ES</button>
+      <a class="nav-cta" href="#demo">Probar gratis</a>
+    </div>
   </div>
 </header>
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="top">
+  <div class="hero-media">
+    <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="media/hero-poster.jpg">
+      <source src="media/hero.mp4" type="video/mp4">
+    </video>
+  </div>
   <div class="stars" id="stars"></div>
-  <div class="aurora"></div>
   <div class="wrap">
     <span class="kicker">✦ Planificador de viajes con IA · en español</span>
     <h1 class="h1">Tu viaje soñado,<br>planeado en <em>un minuto</em>.</h1>
@@ -392,13 +471,39 @@ footer{border-top:1px solid var(--line);padding:2.6rem 0;background:var(--bg)}
   </div>
 </section>
 
+<!-- ============ STATS ============ -->
+<section class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat rv"><b data-count="2000000" data-suffix="+">0</b><span>Viajes imaginados</span></div>
+    <div class="stat rv" style="transition-delay:.06s"><b data-count="190" data-suffix="">0</b><span>Destinos</span></div>
+    <div class="stat rv" style="transition-delay:.12s"><b data-count="16" data-suffix="">0</b><span>Idiomas</span></div>
+    <div class="stat rv" style="transition-delay:.18s"><b data-count="49" data-suffix="★" data-decimals="1" data-div="10">0</b><span>Valoración media</span></div>
+  </div>
+</section>
+
+<!-- ============ CÓMO FUNCIONA ============ -->
+<section class="how" id="como">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="tag">En 3 pasos</span>
+      <h2>Del "quiero viajar" al <span class="serif-i">viaje completo</span></h2>
+      <p>Sin registrarte, sin dar tu tarjeta y sin pelearte con mil pestañas.</p>
+    </div>
+    <div class="steps">
+      <div class="step rv"><div class="num">1</div><span class="ic">💬</span><h3>Cuéntaselo</h3><p>Dile a Viajai a dónde, cuándo, con quién y tu presupuesto. En lenguaje normal, como se lo dirías a un amigo.</p></div>
+      <div class="step rv" style="transition-delay:.08s"><div class="num">2</div><span class="ic">🪄</span><h3>Míralo nacer</h3><p>En segundos monta el itinerario día a día, elige hoteles, calcula el presupuesto y lo dibuja en el mapa.</p></div>
+      <div class="step rv" style="transition-delay:.16s"><div class="num">3</div><span class="ic">✈️</span><h3>Ajústalo y reserva</h3><p>Cambia lo que quieras charlando, descárgalo en PDF y reserva cada parte al mejor precio cuando te venga bien.</p></div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ DEMO ============ -->
 <section class="demo" id="demo">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="tag">Así funciona</span>
+      <span class="tag">Pruébalo ahora</span>
       <h2>Charla con Viajai y mira<br>cómo <span class="serif-i">nace tu viaje</span> <span class="demo-badge">DEMO</span></h2>
-      <p>Esta es una demostración interactiva con tres viajes de ejemplo. Elige un tipo de viaje arriba o aquí mismo y sigue la conversación.</p>
+      <p>Esta es una demostración interactiva. Elige un tipo de viaje y sigue la conversación, o salta a la galería de destinos para ver itinerarios al instante.</p>
     </div>
     <div class="demo-grid">
       <div class="chat rv">
@@ -410,7 +515,6 @@ footer{border-top:1px solid var(--line);padding:2.6rem 0;background:var(--bg)}
         <div class="chat-note">Demo guiada · los itinerarios y precios son orientativos, de ejemplo</div>
       </div>
       <div class="trip rv" id="tripPanel">
-        <!-- Estado 1: checklist vacía -->
         <div class="trip-empty" id="tripEmpty">
           <span class="big">🧭</span>
           <p style="max-width:300px">Tu viaje irá tomando forma aquí a medida que charlas.</p>
@@ -423,14 +527,43 @@ footer{border-top:1px solid var(--line);padding:2.6rem 0;background:var(--bg)}
           </div>
           <span class="progress" id="progress">0 de 5 completado</span>
         </div>
-        <!-- Estado 2: generando -->
         <div class="gen" id="tripGen" style="display:none">
           <div class="orb"></div>
           <p id="genLine">Diseñando tu ruta perfecta…</p>
         </div>
-        <!-- Estado 3: tarjeta de viaje -->
         <div class="tcard" id="tripCard"></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSPÍRAME ============ -->
+<section class="inspire" id="inspirame">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="tag">Inspírame</span>
+      <h2>¿Y si te vas a… <span class="serif-i">cualquiera de estos?</span></h2>
+      <p>Toca un destino y Viajai te enseña un itinerario completo al instante.</p>
+    </div>
+    <div class="dest-grid" id="destGrid"></div>
+  </div>
+</section>
+
+<!-- ============ TODO INCLUIDO ============ -->
+<section class="allin">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="tag">Todo en un plan</span>
+      <h2>Un solo sitio para <span class="serif-i">todo el viaje</span></h2>
+      <p>Viajai no solo te dice qué hacer: te deja listo cada trozo del viaje para reservarlo.</p>
+    </div>
+    <div class="allin-grid">
+      <div class="ai-card rv"><span class="ic">✈️</span><div><h3>Vuelos</h3><p>Comparamos horarios y precios para que salgas cómodo y sin pagar de más.</p></div></div>
+      <div class="ai-card rv" style="transition-delay:.05s"><span class="ic">🏨</span><div><h3>Hoteles</h3><p>Alojamientos elegidos por ubicación y valoración, no por quién paga más.</p></div></div>
+      <div class="ai-card rv" style="transition-delay:.1s"><span class="ic">🎟️</span><div><h3>Actividades</h3><p>Entradas y tours sin colas, con cancelación gratis y a buen precio.</p></div></div>
+      <div class="ai-card rv" style="transition-delay:.15s"><span class="ic">🛡️</span><div><h3>Seguro de viaje</h3><p>Viaja tranquilo con la cobertura adecuada para tu destino y tus fechas.</p></div></div>
+      <div class="ai-card rv" style="transition-delay:.2s"><span class="ic">📶</span><div><h3>eSIM con datos</h3><p>Internet desde que aterrizas, sin buscar wifi ni sustos de roaming.</p></div></div>
+      <div class="ai-card rv" style="transition-delay:.25s"><span class="ic">🚗</span><div><h3>Coche de alquiler</h3><p>Si lo necesitas para tu ruta, con las mejores condiciones del destino.</p></div></div>
     </div>
   </div>
 </section>
@@ -451,6 +584,30 @@ footer{border-top:1px solid var(--line);padding:2.6rem 0;background:var(--bg)}
   </div>
 </section>
 
+<!-- ============ COMPARATIVA ============ -->
+<section class="compare">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="tag">Por qué Viajai</span>
+      <h2>La rapidez de la IA con el <span class="serif-i">mimo de una agencia</span></h2>
+    </div>
+    <div class="ctable rv">
+      <div class="row head">
+        <div class="cell">&nbsp;</div>
+        <div class="cell viajai">Viajai</div>
+        <div class="cell">Agencia tradicional</div>
+        <div class="cell">Planear solo</div>
+      </div>
+      <div class="row"><div class="cell">Itinerario en 1 minuto</div><div class="cell viajai"><span class="yes">✓</span></div><div class="cell"><span class="no">✕</span></div><div class="cell"><span class="no">✕</span></div></div>
+      <div class="row"><div class="cell">Disponible 24/7</div><div class="cell viajai"><span class="yes">✓</span></div><div class="cell"><span class="no">✕</span></div><div class="cell"><span class="yes">✓</span></div></div>
+      <div class="row"><div class="cell">Presupuesto claro al momento</div><div class="cell viajai"><span class="yes">✓</span></div><div class="cell"><span class="no">✕</span></div><div class="cell"><span class="no">✕</span></div></div>
+      <div class="row"><div class="cell">Sin comisiones ocultas para ti</div><div class="cell viajai"><span class="yes">✓</span></div><div class="cell"><span class="no">✕</span></div><div class="cell"><span class="yes">✓</span></div></div>
+      <div class="row"><div class="cell">Experto humano si lo quieres</div><div class="cell viajai"><span class="yes">✓</span></div><div class="cell"><span class="yes">✓</span></div><div class="cell"><span class="no">✕</span></div></div>
+      <div class="row"><div class="cell">Cero horas perdidas comparando</div><div class="cell viajai"><span class="yes">✓</span></div><div class="cell"><span class="yes">✓</span></div><div class="cell"><span class="no">✕</span></div></div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ OPINIONES ============ -->
 <section class="reviews">
   <div class="wrap">
@@ -464,6 +621,27 @@ footer{border-top:1px solid var(--line);padding:2.6rem 0;background:var(--bg)}
       <div class="rv-card rv" style="transition-delay:.14s"><div class="st">★★★★★</div><p>"Un finde en Lisboa exprimido al máximo sin ir con la lengua fuera. Los sitios de comer, de diez."</p><b>Carmen G.</b><small>Escapada · Lisboa</small></div>
     </div>
     <p class="rv-disclaimer">Opiniones de demostración — se sustituirán por reseñas reales de usuarios.</p>
+  </div>
+</section>
+
+<!-- ============ PRENSA ============ -->
+<section class="press">
+  <div class="wrap">
+    <p>La forma más lista de planificar un viaje</p>
+    <div class="press-row">
+      <span>Viajar</span><span>El Viajero</span><span>TravelTech</span><span>Rumbo</span><span>Escapadas</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="tag">Preguntas frecuentes</span>
+      <h2>Lo que <span class="serif-i">todo el mundo pregunta</span></h2>
+    </div>
+    <div class="faq-list" id="faqList"></div>
   </div>
 </section>
 
@@ -491,13 +669,58 @@ footer{border-top:1px solid var(--line);padding:2.6rem 0;background:var(--bg)}
   </div>
 </section>
 
+<!-- ============ NEWSLETTER ============ -->
+<section class="news">
+  <div class="wrap">
+    <div class="news-box rv">
+      <h2>Recibe inspiración de viaje cada semana</h2>
+      <p>Destinos, ofertas y trucos para viajar mejor. Sin spam, prometido.</p>
+      <form class="news-form" id="newsForm" novalidate>
+        <input type="email" id="newsEmail" placeholder="tu@email.com" aria-label="Tu email">
+        <button type="submit">Apúntame</button>
+      </form>
+      <small>Al apuntarte aceptas recibir correos de Viajai. Podrás darte de baja cuando quieras.</small>
+    </div>
+  </div>
+</section>
+
 <footer>
-  <div class="wrap foot">
-    <a class="logo" href="#top">Viaj<em>ai</em></a>
-    <small>Viajai es un proyecto en fase de demostración. Los itinerarios, precios y opiniones mostrados son ejemplos ilustrativos. Los enlaces de reserva se activarán en la versión final junto a la política de privacidad y el aviso legal.</small>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-col foot-brand">
+        <a class="logo" href="#top">Viaj<em>ai</em></a>
+        <p>El planificador de viajes con IA en español. Tu viaje soñado, planeado en un minuto.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Viajai</h4>
+        <a href="#como">Cómo funciona</a>
+        <a href="#demo">Probar la demo</a>
+        <a href="#inspirame">Destinos</a>
+        <a href="#faq">Preguntas</a>
+      </div>
+      <div class="foot-col">
+        <h4>Viajes</h4>
+        <a href="#demo">Luna de miel</a>
+        <a href="#demo">En familia</a>
+        <a href="#demo">Escapadas</a>
+        <a href="#inspirame">Inspiración</a>
+      </div>
+      <div class="foot-col">
+        <h4>Empresa</h4>
+        <a href="#agencias">Para agencias</a>
+        <a href="mailto:nuestrosproyectos2027@gmail.com">Contacto</a>
+        <a href="#">Aviso legal</a>
+        <a href="#">Privacidad</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <small>Viajai es un proyecto en fase de demostración. Los itinerarios, precios y opiniones mostrados son ejemplos ilustrativos. Los enlaces de reserva se activarán en la versión final junto a la política de privacidad y el aviso legal.</small>
+      <small>© 2026 Viajai</small>
+    </div>
   </div>
 </footer>
 
+<a class="float-expert" href="#agencias"><span class="dot"></span> Hablar con un experto</a>
 <div id="toast"></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -507,7 +730,6 @@ footer{border-top:1px solid var(--line);padding:2.6rem 0;background:var(--bg)}
 /* ============ DATOS DEMO ============ */
 const TRIPS = {
   parejas: {
-    door:'💍 Luna de miel',
     userMsg:'Queremos nuestra luna de miel en Santorini, 7 días en junio saliendo desde Madrid',
     botIntro:'¡Enhorabuena, pareja! 💍 Santorini en junio es pura magia: atardeceres en Oia, calas volcánicas y cero agobios de agosto. Antes de diseñar vuestra semana perfecta… ¿qué estilo de luna de miel os pega más?',
     chips:[
@@ -545,7 +767,6 @@ const TRIPS = {
     }
   },
   familia: {
-    door:'👨‍👩‍👧‍👦 En familia',
     userMsg:'Somos 2 adultos y 2 niños (5 y 9 años), queremos 5 días en Tenerife en agosto desde Madrid',
     botIntro:'¡Tenerife con niños es un acierto seguro! 🌋 Agosto allí es más suave que en la península y hay plan para cada edad. Para afinar: ¿qué tipo de días os imagináis?',
     chips:[
@@ -580,7 +801,6 @@ const TRIPS = {
     }
   },
   escapada: {
-    door:'🎒 Escapada de finde',
     userMsg:'Un finde en Lisboa en octubre, salimos el viernes desde Madrid, 2 personas',
     botIntro:'¡Lisboa en octubre es un planazo! 🌇 Temperatura perfecta, luz dorada y la ciudad sin colas del verano. Dime una cosa: ¿este finde va más de…?',
     chips:[
@@ -614,6 +834,64 @@ const TRIPS = {
   }
 };
 
+/* Tarjetas de la galería (itinerario instantáneo, sin chat) */
+const DEST = [
+  {key:'santorini', mode:'parejas', name:'Santorini', tagline:'Luna de miel', meta:'7 días · Grecia', color:'#2A3B7D',
+   img:'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=900&auto=format&fit=crop'},
+  {key:'paris', name:'París', tagline:'Escapada romántica', meta:'4 días · Francia', color:'#3b2a5a',
+   img:'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=900&auto=format&fit=crop',
+   card:{title:'París en pareja',route:'Madrid ✈ París · 4 días · 2 viajeros',th1:'#3b2a5a',th2:'#1a1330',
+     stats:['4 días','10 experiencias','1 hotel en Le Marais','∞ croissants'],center:[48.86,2.34],zoom:12,
+     pins:[{c:[48.8584,2.2945],n:'1 · Torre Eiffel'},{c:[48.8606,2.3376],n:'2 · Louvre'},{c:[48.8867,2.3431],n:'3 · Montmartre'},{c:[48.8530,2.3499],n:'4 · Île de la Cité'},{c:[48.8590,2.3626],n:'5 · Le Marais'}],
+     days:[
+       {d:'Día 1 · Bonjour París',w:'🌤 19°',t:'Llegada, paseo por el Sena al atardecer y primera cena en un bistró de Le Marais.'},
+       {d:'Día 2 · Clásicos',w:'☀️ 20°',t:'Torre Eiffel temprano, crucero por el Sena y tarde en el Louvre sin agobios.'},
+       {d:'Día 3 · Montmartre',w:'⛅ 18°',t:'Sacré-Cœur, cafés de artistas y compras por Le Marais. Cena con vistas.'},
+       {d:'Día 4 · Última mañana',w:'🌤 19°',t:'Brunch, jardines de Luxemburgo y vuelo de vuelta con saudade parisina.'}
+     ],
+     hotel:{n:'Hotel boutique en Le Marais',s:'Centro · desayuno incluido',p:'560 €',pd:'3 noches · 2 personas'},
+     budget:[['Vuelos (2 pers.)','220 €'],['Hotel (3 noches)','560 €'],['Museos y crucero','130 €'],['Comer y metro','260 €'],['Seguro','24 €']],total:'≈ 1.190 €'}},
+  {key:'bali', name:'Bali', tagline:'Luna de miel', meta:'9 días · Indonesia', color:'#0E6B5C',
+   img:'https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=900&auto=format&fit=crop',
+   card:{title:'Luna de miel en Bali',route:'Madrid ✈ Denpasar · 9 días · 2 viajeros',th1:'#0E6B5C',th2:'#0A2E2A',
+     stats:['9 días','2 zonas','15 experiencias','arrozales + playa'],center:[-8.45,115.18],zoom:10,
+     pins:[{c:[-8.5069,115.2625],n:'1 · Ubud'},{c:[-8.4312,115.3080],n:'2 · Arrozales de Tegallalang'},{c:[-8.6215,115.0865],n:'3 · Tanah Lot'},{c:[-8.6905,115.1686],n:'4 · Seminyak'},{c:[-8.7278,115.5439],n:'5 · Nusa Penida'}],
+     days:[
+       {d:'Días 1-2 · Ubud',w:'🌤 30°',t:'Llegada y traslado a Ubud. Templos, arrozales de Tegallalang y masaje balinés en pareja.'},
+       {d:'Día 3 · Naturaleza',w:'⛅ 29°',t:'Amanecer en el monte Batur y cascadas escondidas en la selva.'},
+       {d:'Días 4-5 · Costa',w:'☀️ 31°',t:'Traslado a Seminyak, atardeceres en Tanah Lot y cenas con los pies en la arena.'},
+       {d:'Días 6-7 · Islas',w:'☀️ 31°',t:'Excursión a Nusa Penida: acantilados, snorkel con mantas y playas de postal.'},
+       {d:'Días 8-9 · Relax y vuelta',w:'🌤 30°',t:'Spa, compras y vuelo de vuelta a casa.'}
+     ],
+     hotel:{n:'Villa con piscina privada',s:'Ubud + Seminyak · desayuno',p:'1.650 €',pd:'8 noches · 2 personas'},
+     budget:[['Vuelos (2 pers.)','1.180 €'],['Villas (8 noches)','1.650 €'],['Excursiones y spa','520 €'],['Comer y transporte','380 €'],['Seguro internacional','90 €']],total:'≈ 3.820 €'}},
+  {key:'roma', mode:'escapada', name:'Roma', tagline:'Escapada de finde', meta:'3 días · Italia', color:'#8A4B2E',
+   img:'https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=900&auto=format&fit=crop',
+   card:{title:'Finde en Roma',route:'Madrid ✈ Roma · 3 días · 2 viajeros',th1:'#7a3b2e',th2:'#2a1512',
+     stats:['3 días','9 experiencias','1 hotel centro','mucha pasta'],center:[41.90,12.49],zoom:13,
+     pins:[{c:[41.8902,12.4922],n:'1 · Coliseo'},{c:[41.9009,12.4833],n:'2 · Fontana di Trevi'},{c:[41.9022,12.4539],n:'3 · Vaticano'},{c:[41.8896,12.4731],n:'4 · Panteón'},{c:[41.8890,12.4700],n:'5 · Trastevere'}],
+     days:[
+       {d:'Viernes · Llegada',w:'☀️ 24°',t:'Check-in, paseo al atardecer por Piazza Navona y el Panteón, cena en el Trastevere.'},
+       {d:'Sábado · Roma imperial',w:'☀️ 25°',t:'Coliseo y Foro por la mañana, Fontana di Trevi y helado por la tarde.'},
+       {d:'Domingo · Vaticano y vuelta',w:'🌤 24°',t:'Plaza de San Pedro temprano y vuelo de vuelta a Madrid.'}
+     ],
+     hotel:{n:'Hotel 4★ cerca del centro',s:'Desayuno incluido',p:'260 €',pd:'2 noches · 2 personas'},
+     budget:[['Vuelos (2 pers.)','190 €'],['Hotel (2 noches)','260 €'],['Entradas y guía','120 €'],['Comer y moverse','150 €'],['Seguro','18 €']],total:'≈ 738 €'}},
+  {key:'tenerife', mode:'familia', name:'Tenerife', tagline:'En familia', meta:'5 días · Canarias', color:'#0E6B5C',
+   img:'https://images.unsplash.com/photo-1591017403286-fd8493524e1e?q=80&w=900&auto=format&fit=crop'},
+  {key:'lisboa', mode:'escapada', name:'Lisboa', tagline:'Escapada gastro', meta:'3 días · Portugal', color:'#8A4B2E',
+   img:'https://images.unsplash.com/photo-1585208798174-6cedd86e019a?q=80&w=900&auto=format&fit=crop'}
+];
+
+const FAQ = [
+  ['¿Cuánto cuesta usar Viajai?','Planificar tu viaje es gratis. Ganamos una pequeña comisión de nuestros socios (hoteles, actividades, seguros) solo si decides reservar a través de nosotros, sin que a ti te cueste ni un euro más.'],
+  ['¿Tengo que registrarme o dar mi tarjeta?','No. Puedes planificar todo un viaje sin crear cuenta ni introducir ningún dato de pago. Solo lo necesitarás el día que decidas reservar.'],
+  ['¿Los precios y horarios son reales?','En la versión completa sí: comparamos precios y disponibilidad en vivo. En esta demo los itinerarios y precios son ejemplos orientativos para que veas cómo funciona.'],
+  ['¿Puede planear viajes largos o a varias ciudades?','Sí. Viajai está pensado para escapadas de fin de semana, viajes de una o dos semanas y rutas por varias ciudades, optimizando los trayectos entre destinos.'],
+  ['¿Y si prefiero que lo organice una persona?','Puedes pasar del asistente a un experto humano cuando quieras: él confirma precios, reserva y gestiona los cambios de principio a fin.'],
+  ['¿Puedo cambiar el plan que me propone?','Claro. Le dices qué quieres ajustar —fechas, presupuesto, ritmo, hoteles— y Viajai rehace el itinerario al momento.']
+];
+
 const GEN_LINES = [
   'Diseñando tu ruta, de principio a fin…',
   'Comparando fechas y precios orientativos…',
@@ -626,72 +904,48 @@ const GEN_LINES = [
 const $ = s => document.querySelector(s);
 const log = $('#chatLog');
 let map = null, busy = false;
-
 function sleep(ms){return new Promise(r=>setTimeout(r,ms))}
 function scrollLog(){log.scrollTop = log.scrollHeight}
-
-function addMsg(cls, html){
-  const d=document.createElement('div');
-  d.className='msg '+cls; d.innerHTML=html;
-  log.appendChild(d); scrollLog();
-}
+function addMsg(cls, html){const d=document.createElement('div');d.className='msg '+cls;d.innerHTML=html;log.appendChild(d);scrollLog()}
 async function botSay(html, delay=900){
-  const t=document.createElement('div');
-  t.className='typing'; t.innerHTML='<i></i><i></i><i></i>';
-  log.appendChild(t); scrollLog();
-  await sleep(delay);
-  t.remove(); addMsg('bot', html);
+  const t=document.createElement('div');t.className='typing';t.innerHTML='<i></i><i></i><i></i>';
+  log.appendChild(t);scrollLog();await sleep(delay);t.remove();addMsg('bot', html);
 }
 function addChips(items, onPick){
-  const c=document.createElement('div'); c.className='chips';
-  items.forEach(it=>{
-    const b=document.createElement('button');
-    b.className='chip'+(it.primary?' primary':''); b.textContent=it.label;
-    b.onclick=()=>{c.remove(); onPick(it)};
-    c.appendChild(b);
-  });
-  log.appendChild(c); scrollLog();
+  const c=document.createElement('div');c.className='chips';
+  items.forEach(it=>{const b=document.createElement('button');b.className='chip'+(it.primary?' primary':'');b.textContent=it.label;b.onclick=()=>{c.remove();onPick(it)};c.appendChild(b)});
+  log.appendChild(c);scrollLog();
 }
-function toast(msg){
-  const t=$('#toast'); t.textContent=msg; t.classList.add('show');
-  clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove('show'),3200);
-}
+function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('show'),3200)}
 function setCheck(k,v){
-  const el=document.querySelector(`.check-item[data-k="${k}"]`);
-  if(!el) return;
-  el.classList.add('done'); el.querySelector('span').textContent=v;
-  const n=document.querySelectorAll('.check-item.done').length;
-  $('#progress').textContent = n+' de 5 completado';
+  const el=document.querySelector(`.check-item[data-k="${k}"]`);if(!el)return;
+  el.classList.add('done');el.querySelector('span').textContent=v;
+  const n=document.querySelectorAll('.check-item.done').length;$('#progress').textContent=n+' de 5 completado';
 }
 function resetPanel(){
   document.querySelectorAll('.check-item').forEach(e=>{e.classList.remove('done');e.querySelector('span').textContent='—'});
   $('#progress').textContent='0 de 5 completado';
-  $('#tripEmpty').style.display='flex';
-  $('#tripGen').style.display='none';
-  $('#tripCard').className='tcard'; $('#tripCard').innerHTML='';
+  $('#tripEmpty').style.display='flex';$('#tripGen').style.display='none';
+  $('#tripCard').className='tcard';$('#tripCard').innerHTML='';
   if(map){map.remove();map=null}
 }
 
-/* ============ FLUJO DEMO ============ */
+/* ============ FLUJO DEMO (chat) ============ */
 async function runDemo(mode){
-  if(busy) return;
-  busy=true;
+  if(busy) return; busy=true;
   const T=TRIPS[mode];
   log.innerHTML=''; resetPanel();
   document.getElementById('demo').scrollIntoView({behavior:'smooth',block:'start'});
-
   await sleep(600);
   await botSay('¡Hola! Soy <b>Viajai</b> ✈️ Cuéntame tu viaje y te lo dejo listo en un minuto.');
   await sleep(700);
   addMsg('user', T.userMsg);
   setCheck('donde', T.checklist.donde);
   await sleep(400);
-  setCheck('desde', T.checklist.desde);
-  setCheck('quien', T.checklist.quien);
+  setCheck('desde', T.checklist.desde); setCheck('quien', T.checklist.quien);
   await botSay(T.botIntro, 1300);
   setCheck('cuando', T.checklist.cuando);
-
-  addChips(T.chips.map(c=>({label:c.label,value:c.value})), async pick=>{
+  addChips(T.chips, async pick=>{
     addMsg('user', pick.value);
     setCheck('estilo', T.checklist.estilo);
     await botSay(T.botClose, 1400);
@@ -699,34 +953,41 @@ async function runDemo(mode){
       if(pick2.label==='Cambiar algo'){
         addMsg('user','Cambiar algo');
         await botSay('En la versión completa puedes ajustar lo que quieras charlando conmigo: fechas, presupuesto, ritmo… En esta demo, ¡dale a generar y mira la magia! 😉');
-        addChips([{label:'✨ Genera mi viaje',primary:true}], ()=>generate(T));
+        addChips([{label:'✨ Genera mi viaje',primary:true}], ()=>generate(T.card));
         return;
       }
-      generate(T);
+      generate(T.card);
     });
   });
 }
-
-async function generate(T){
+async function generate(card){
   addMsg('user','✨ Sí, genera mi viaje');
-  $('#tripEmpty').style.display='none';
-  $('#tripGen').style.display='flex';
+  $('#tripEmpty').style.display='none'; $('#tripGen').style.display='flex';
   const line=$('#genLine');
-  for(let i=0;i<GEN_LINES.length;i++){
-    line.textContent=GEN_LINES[i];
-    await sleep(850);
-  }
+  for(let i=0;i<GEN_LINES.length;i++){line.textContent=GEN_LINES[i];await sleep(850)}
   $('#tripGen').style.display='none';
-  renderCard(T.card);
+  renderCard(card);
   await botSay('¡Listo! 🎉 Ahí tienes tu viaje completo: itinerario, mapa, clima y presupuesto. Puedes descargarlo en PDF o reservar cada parte cuando quieras.');
-  addChips([
-    {label:'💍 Probar luna de miel'},
-    {label:'👨‍👩‍👧‍👦 Probar en familia'},
-    {label:'🎒 Probar escapada'}
-  ], pick=>{
-    const m = pick.label.includes('luna')?'parejas':pick.label.includes('familia')?'familia':'escapada';
+  addChips([{label:'💍 Luna de miel'},{label:'👨‍👩‍👧‍👦 En familia'},{label:'🎒 Escapada'}], pick=>{
+    const m=pick.label.includes('Luna')?'parejas':pick.label.includes('familia')?'familia':'escapada';
     busy=false; runDemo(m);
   });
+  busy=false;
+}
+
+/* ============ ITINERARIO INSTANTÁNEO (galería) ============ */
+async function instant(card){
+  if(busy) return; busy=true;
+  log.innerHTML='';
+  document.getElementById('demo').scrollIntoView({behavior:'smooth',block:'start'});
+  resetPanel();
+  addMsg('user','Enséñame un plan para '+card.title.replace(/^.*en |^.*a /,''));
+  $('#tripEmpty').style.display='none'; $('#tripGen').style.display='flex';
+  const line=$('#genLine');
+  for(let i=0;i<3;i++){line.textContent=GEN_LINES[i];await sleep(700)}
+  $('#tripGen').style.display='none';
+  renderCard(card);
+  await botSay('Aquí tienes una idea de viaje lista para '+card.title+'. ✨ ¿Quieres que la planifiquemos a tu medida? Elige un tipo de viaje arriba y charlamos.');
   busy=false;
 }
 
@@ -776,11 +1037,8 @@ function renderCard(c){
       <button class="btn solid" onclick="bookSoon()">Reservar este viaje</button>
     </div>`;
   el.classList.add('show');
-
   map = L.map('map',{scrollWheelZoom:false,attributionControl:true}).setView(c.center,c.zoom);
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
-    attribution:'&copy; OpenStreetMap &copy; CARTO', maxZoom:18
-  }).addTo(map);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{attribution:'&copy; OpenStreetMap &copy; CARTO',maxZoom:18}).addTo(map);
   const pts=[];
   c.pins.forEach((p,i)=>{
     pts.push(p.c);
@@ -790,64 +1048,116 @@ function renderCard(c){
   L.polyline(pts,{color:'#E7B75F',weight:2,opacity:.7,dashArray:'6 8'}).addTo(map);
   setTimeout(()=>{map.invalidateSize(); if(window.ScrollTrigger) ScrollTrigger.refresh()},350);
 }
+function bookSoon(){toast('🔒 Los enlaces de reserva se activan en la versión final de Viajai')}
 
-function bookSoon(){
-  toast('🔒 Los enlaces de reserva se activan en la versión final de Viajai');
-}
+/* ============ GALERÍA DESTINOS ============ */
+(function(){
+  const grid=$('#destGrid'); if(!grid) return;
+  DEST.forEach((d,i)=>{
+    const el=document.createElement('div');
+    el.className='dest rv'; el.style.transitionDelay=(i%3*.06)+'s';
+    el.innerHTML=`
+      <div class="ph" style="background-image:linear-gradient(160deg,${d.color}cc,rgba(8,12,25,.2)),url('${d.img}')"></div>
+      <div class="info">
+        <div class="tagline">${d.tagline}</div>
+        <h3>${d.name}</h3>
+        <div class="meta">${d.meta}</div>
+        <span class="plan">Ver itinerario →</span>
+      </div>`;
+    el.onclick=()=>{
+      if(d.card){ instant(d.card); }
+      else if(d.mode && TRIPS[d.mode]){ busy=false; instant(TRIPS[d.mode].card); }
+    };
+    grid.appendChild(el);
+  });
+})();
+
+/* ============ FAQ ============ */
+(function(){
+  const list=$('#faqList'); if(!list) return;
+  FAQ.forEach(([q,a])=>{
+    const item=document.createElement('div'); item.className='faq-item';
+    item.innerHTML=`<button class="faq-q">${q}<span class="plus">+</span></button><div class="faq-a"><p>${a}</p></div>`;
+    const btn=item.querySelector('.faq-q'), ans=item.querySelector('.faq-a');
+    btn.onclick=()=>{
+      const open=item.classList.contains('open');
+      list.querySelectorAll('.faq-item.open').forEach(o=>{o.classList.remove('open');o.querySelector('.faq-a').style.maxHeight=null});
+      if(!open){item.classList.add('open');ans.style.maxHeight=ans.scrollHeight+'px'}
+    };
+    list.appendChild(item);
+  });
+})();
+
+/* ============ NEWSLETTER + SELECTORES ============ */
+$('#newsForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const v=$('#newsEmail').value.trim();
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)){toast('Escribe un email válido, por favor 🙂');return}
+  $('#newsEmail').value=''; toast('¡Apuntado! 🎉 (demo — aún no enviamos correos)');
+});
+$('#currBtn').onclick=()=>toast('💶 El selector de moneda se activa en la versión final');
+$('#langBtn').onclick=()=>toast('🌐 Viajai hablará 16 idiomas en la versión final');
 
 /* ============ ARRANQUE ============ */
 document.querySelectorAll('.door').forEach(d=>d.addEventListener('click',()=>{busy=false;runDemo(d.dataset.mode)}));
 
-// estrellas del hero
+// estrellas
+(function(){const s=$('#stars');if(!s)return;for(let i=0;i<70;i++){const e=document.createElement('span');e.style.left=Math.random()*100+'%';e.style.top=Math.random()*100+'%';e.style.animationDelay=(Math.random()*4)+'s';e.style.opacity=.2+Math.random()*.6;s.appendChild(e)}})();
+
+// vídeo del hero: solo cuando está a la vista, respeta reduce-motion
 (function(){
-  const s=$('#stars'); if(!s) return;
-  for(let i=0;i<70;i++){
-    const e=document.createElement('span');
-    e.style.left=Math.random()*100+'%';
-    e.style.top=Math.random()*100+'%';
-    e.style.animationDelay=(Math.random()*4)+'s';
-    e.style.opacity=.2+Math.random()*.6;
-    s.appendChild(e);
-  }
+  const v=document.querySelector('.hero-video'); if(!v) return;
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce){v.removeAttribute('autoplay');v.pause();return}
+  new IntersectionObserver(e=>{e[0].isIntersecting?v.play().catch(()=>{}):v.pause()},{rootMargin:'20% 0px'}).observe(v);
 })();
 
-// animaciones: GSAP ScrollTrigger si está disponible; IntersectionObserver como respaldo
+// contadores animados
+function animateCount(el){
+  const target=+el.dataset.count, suffix=el.dataset.suffix||'', dec=+(el.dataset.decimals||0), div=+(el.dataset.div||1);
+  const dur=1400, t0=performance.now();
+  function fmt(n){
+    let val=n/div;
+    if(dec>0) return val.toFixed(dec).replace('.',',');
+    if(val>=1000000) return (val/1000000).toFixed(val%1000000?1:0).replace('.',',')+'M';
+    if(val>=1000) return Math.round(val).toLocaleString('es-ES');
+    return Math.round(val).toString();
+  }
+  function step(now){
+    const p=Math.min(1,(now-t0)/dur), e=1-Math.pow(1-p,3);
+    el.textContent=fmt(target*e)+suffix;
+    if(p<1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+// animaciones: GSAP ScrollTrigger si está; IO como respaldo
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const counters = document.querySelectorAll('.stat b[data-count]');
 if (window.gsap && window.ScrollTrigger && !reduced) {
   gsap.registerPlugin(ScrollTrigger);
   document.body.classList.add('gsap-on');
   document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));
-
-  // entrada del hero
   gsap.timeline({defaults:{ease:'power3.out'}})
     .from('.kicker',{y:24,opacity:0,duration:.6})
     .from('.h1',{y:36,opacity:0,duration:.8},'-=.3')
     .from('.hero .sub',{y:24,opacity:0,duration:.7},'-=.5')
     .from('.door',{y:34,opacity:0,duration:.7,stagger:.12},'-=.4')
     .from('.trust span',{y:16,opacity:0,duration:.5,stagger:.08},'-=.4');
-
-  // parallax sutil del cielo al hacer scroll
-  gsap.to('.stars',{yPercent:26,ease:'none',
-    scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
-  gsap.to('.hero .wrap',{yPercent:-7,opacity:.35,ease:'none',
-    scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
-
-  // los paneles de la demo entran desde los lados
-  gsap.from('.chat',{x:-52,opacity:0,duration:.9,ease:'power3.out',
-    scrollTrigger:{trigger:'.demo-grid',start:'top 80%',once:true}});
-  gsap.from('.trip',{x:52,opacity:0,duration:.9,ease:'power3.out',
-    scrollTrigger:{trigger:'.demo-grid',start:'top 80%',once:true}});
-
-  // reveals por lotes con stagger
-  ScrollTrigger.batch('.sec-head, .f-card, .rv-card, .ag-grid > *, .rv-disclaimer',{
-    start:'top 86%',
-    once:true,
-    onEnter: els => gsap.from(els,{y:34,opacity:0,duration:.7,ease:'power3.out',stagger:.1})
+  gsap.to('.stars',{yPercent:26,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+  gsap.to('.hero .wrap',{yPercent:-7,opacity:.4,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+  gsap.from('.chat',{x:-52,opacity:0,duration:.9,ease:'power3.out',scrollTrigger:{trigger:'.demo-grid',start:'top 80%',once:true}});
+  gsap.from('.trip',{x:52,opacity:0,duration:.9,ease:'power3.out',scrollTrigger:{trigger:'.demo-grid',start:'top 80%',once:true}});
+  ScrollTrigger.batch('.sec-head, .step, .f-card, .rv-card, .ai-card, .dest, .ctable, .ag-grid > *, .news-box, .rv-disclaimer',{
+    start:'top 88%', once:true,
+    onEnter: els => gsap.from(els,{y:34,opacity:0,duration:.7,ease:'power3.out',stagger:.09})
   });
+  counters.forEach(c=>ScrollTrigger.create({trigger:c,start:'top 90%',once:true,onEnter:()=>animateCount(c)}));
 } else {
-  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');if(e.target.matches('.stat b[data-count]'))animateCount(e.target);io.unobserve(e.target)}}),{threshold:.2});
   document.querySelectorAll('.rv').forEach(e=>io.observe(e));
-  if(reduced) document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));
+  counters.forEach(c=>io.observe(c));
+  if(reduced){document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));counters.forEach(c=>{c.textContent=(+c.dataset.count/(+c.dataset.div||1)).toString()+(c.dataset.suffix||'')})}
 }
 
 // mensaje inicial del chat
