@@ -217,7 +217,8 @@ header{
 .chat-note{padding:.6rem 1.1rem;border-top:1px solid var(--line);color:var(--muted);font-size:.72rem;text-align:center}
 .trip{border:1px solid var(--line);border-radius:var(--r);background:var(--panel);overflow:hidden;min-height:520px;display:flex;flex-direction:column}
 .trip-empty{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;color:var(--muted);text-align:center;padding:2rem}
-.trip-empty .big{font-size:2.4rem}
+.trip-empty .big{display:grid;place-items:center}
+.trip-empty .big svg{width:46px;height:46px;stroke:var(--gold);stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round;opacity:.85}
 .checklist{width:100%;max-width:360px;display:flex;flex-direction:column;gap:.55rem;text-align:left}
 .check-item{display:flex;justify-content:space-between;align-items:center;gap:1rem;border:1px dashed var(--line);border-radius:var(--r-sm);padding:.6rem .9rem;font-size:.85rem;transition:border-color .4s,background .4s}
 .check-item b{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:800}
@@ -540,7 +541,7 @@ footer{border-top:1px solid var(--line);padding:3rem 0 2rem;background:var(--bg)
       </div>
       <div class="trip rv" id="tripPanel">
         <div class="trip-empty" id="tripEmpty">
-          <span class="big">🧭</span>
+          <span class="big"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></span>
           <p style="max-width:300px">Tu viaje irá tomando forma aquí a medida que charlas.</p>
           <div class="checklist" id="checklist">
             <div class="check-item" data-k="donde"><b>¿A dónde?</b><span>—</span></div>
