@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viajai — Tu viaje planeado en 1 minuto</title>
+<meta name="description" content="Viajai es el planificador de viajes con IA en español: cuéntale tu viaje soñado y recibe un itinerario día a día con mapa, clima y presupuesto. Lunas de miel, familias y escapadas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+/* ============ BASE ============ */
+:root{
+  --bg:#0A0F1F; --bg2:#0E1529; --panel:#121B36; --panel2:#0F1730;
+  --line:rgba(255,255,255,.09);
+  --text:#EEF1FA; --muted:#98A3C2;
+  --gold:#E7B75F; --gold-soft:rgba(231,183,95,.14);
+  --coral:#FF6F5E; --mar:#3ECFB2;
+  --cream:#F6F1E7; --ink:#1B2233; --ink-muted:#5C6680;
+  --r:18px; --r-sm:12px;
+  --ease:cubic-bezier(.23,1,.32,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
+body{
+  font-family:'Manrope',system-ui,sans-serif;
+  background:var(--bg); color:var(--text);
+  line-height:1.6; -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.serif{font-family:'Fraunces',serif}
+.serif-i{font-family:'Fraunces',serif;font-style:italic;color:var(--gold)}
+.wrap{width:min(1180px,92%);margin:0 auto}
+section{position:relative}
+
+/* reveals */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.gsap-on .rv{transition:none}
+@media (prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  *{animation-duration:.001s !important;animation-iteration-count:1 !important}
+}
+
+/* ============ HEADER ============ */
+header{
+  position:fixed;inset:0 0 auto 0;z-index:60;
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  background:rgba(10,15,31,.72);border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:'Fraunces',serif;font-weight:700;font-size:1.5rem;letter-spacing:.5px}
+.logo em{font-style:italic;color:var(--gold)}
+.nav-cta{
+  background:var(--coral);color:#fff;font-weight:700;font-size:.92rem;
+  padding:.62rem 1.25rem;border-radius:99px;
+  transition:transform .25s var(--ease),box-shadow .25s var(--ease);
+  box-shadow:0 6px 22px rgba(255,111,94,.35);
+}
+.nav-cta:hover{transform:translateY(-2px)}
+
+/* ============ HERO ============ */
+.hero{
+  min-height:100svh;display:flex;flex-direction:column;justify-content:center;
+  padding:120px 0 70px;overflow:clip;
+  background:
+    radial-gradient(1200px 600px at 75% -10%, rgba(62,207,178,.10), transparent 60%),
+    radial-gradient(900px 500px at 10% 110%, rgba(255,111,94,.10), transparent 60%),
+    linear-gradient(180deg,#0A0F1F 0%,#0C1226 55%,#0A0F1F 100%);
+}
+.stars{position:absolute;inset:0;pointer-events:none;opacity:.5}
+.stars span{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;animation:tw 4s infinite}
+@keyframes tw{0%,100%{opacity:.15}50%{opacity:.85}}
+.aurora{
+  position:absolute;top:-20%;left:50%;width:120vw;height:70vh;transform:translateX(-50%);
+  background:conic-gradient(from 90deg at 50% 50%, transparent, rgba(231,183,95,.06), transparent, rgba(62,207,178,.07), transparent);
+  filter:blur(60px);animation:spin 26s linear infinite;pointer-events:none;
+}
+@keyframes spin{to{transform:translateX(-50%) rotate(360deg)}}
+.hero .wrap{position:relative;z-index:2;text-align:center}
+.kicker{
+  display:inline-flex;align-items:center;gap:.5rem;
+  font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);
+  border:1px solid rgba(231,183,95,.35);background:var(--gold-soft);
+  padding:.45rem 1rem;border-radius:99px;margin-bottom:1.6rem;
+}
+.h1{
+  font-family:'Fraunces',serif;font-weight:600;
+  font-size:clamp(2.5rem,6.4vw,4.6rem);line-height:1.08;letter-spacing:-.01em;
+  margin-bottom:1.1rem;
+}
+.h1 em{font-style:italic;color:var(--gold)}
+.hero p.sub{color:var(--muted);font-size:clamp(1rem,2vw,1.2rem);max-width:640px;margin:0 auto 2.6rem}
+.doors{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;max-width:900px;margin:0 auto}
+.door{
+  text-align:left;border:1px solid var(--line);border-radius:var(--r);
+  background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.015));
+  padding:1.35rem 1.3rem;transition:transform .3s var(--ease),border-color .3s,background .3s;
+  position:relative;overflow:hidden;
+}
+.door::after{
+  content:'';position:absolute;inset:auto -30% -60% -30%;height:120%;
+  background:radial-gradient(closest-side,var(--dc,rgba(231,183,95,.18)),transparent);
+  opacity:0;transition:opacity .4s;pointer-events:none;
+}
+.door:hover{transform:translateY(-5px);border-color:rgba(231,183,95,.4)}
+.door:hover::after{opacity:1}
+.door .ic{font-size:1.7rem;margin-bottom:.6rem;display:block}
+.door h3{font-family:'Fraunces',serif;font-size:1.22rem;font-weight:600;margin-bottom:.3rem}
+.door p{font-size:.88rem;color:var(--muted);line-height:1.5;margin-bottom:.9rem}
+.door .go{font-size:.85rem;font-weight:800;color:var(--gold);display:inline-flex;align-items:center;gap:.35rem}
+.trust{
+  display:flex;justify-content:center;gap:2.2rem;flex-wrap:wrap;
+  margin-top:3rem;color:var(--muted);font-size:.88rem;font-weight:600;
+}
+.trust b{color:var(--text)}
+.trust span{display:inline-flex;align-items:center;gap:.5rem}
+.trust i{color:var(--mar);font-style:normal}
+
+/* ============ DEMO ============ */
+.demo{padding:90px 0 100px;background:var(--bg2)}
+.sec-head{text-align:center;max-width:680px;margin:0 auto 3rem}
+.sec-head .tag{
+  font-size:.75rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--mar);margin-bottom:.8rem;display:block;
+}
+.sec-head h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(1.9rem,4.5vw,3rem);line-height:1.15;margin-bottom:.8rem}
+.sec-head p{color:var(--muted)}
+.demo-badge{
+  display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.1em;
+  color:var(--bg);background:var(--gold);padding:.2rem .6rem;border-radius:6px;vertical-align:middle;margin-left:.5rem;
+}
+.demo-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:1.4rem;align-items:start}
+
+/* chat panel */
+.chat{
+  border:1px solid var(--line);border-radius:var(--r);background:var(--panel);
+  display:flex;flex-direction:column;min-height:520px;max-height:640px;overflow:hidden;
+}
+.chat-top{
+  display:flex;align-items:center;gap:.7rem;padding:.9rem 1.1rem;border-bottom:1px solid var(--line);
+  background:rgba(255,255,255,.02);
+}
+.avatar{
+  width:36px;height:36px;border-radius:50%;flex:none;
+  background:linear-gradient(135deg,var(--gold),var(--coral));
+  display:grid;place-items:center;font-size:1.05rem;
+}
+.chat-top b{font-size:.95rem}
+.chat-top small{display:block;color:var(--mar);font-size:.72rem;font-weight:700}
+.chat-log{flex:1;overflow-y:auto;padding:1.1rem;display:flex;flex-direction:column;gap:.7rem;scrollbar-width:thin}
+.msg{max-width:88%;padding:.7rem 1rem;border-radius:16px;font-size:.92rem;line-height:1.55;animation:pop .35s var(--ease)}
+@keyframes pop{from{opacity:0;transform:translateY(10px) scale(.98)}to{opacity:1;transform:none}}
+.msg.bot{background:rgba(255,255,255,.055);border:1px solid var(--line);border-top-left-radius:4px;align-self:flex-start}
+.msg.user{background:linear-gradient(135deg,rgba(231,183,95,.22),rgba(255,111,94,.18));border:1px solid rgba(231,183,95,.3);border-top-right-radius:4px;align-self:flex-end}
+.typing{display:inline-flex;gap:5px;padding:.85rem 1rem;align-self:flex-start;background:rgba(255,255,255,.055);border:1px solid var(--line);border-radius:16px;border-top-left-radius:4px}
+.typing i{width:7px;height:7px;border-radius:50%;background:var(--muted);animation:bl 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes bl{0%,100%{opacity:.25;transform:translateY(0)}50%{opacity:1;transform:translateY(-3px)}}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;padding:.4rem 0 .2rem;align-self:flex-start}
+.chip{
+  font-size:.85rem;font-weight:700;color:var(--text);
+  border:1px solid rgba(231,183,95,.45);background:var(--gold-soft);
+  padding:.5rem 1rem;border-radius:99px;transition:transform .2s var(--ease),background .2s;
+  animation:pop .35s var(--ease);
+}
+.chip:hover{transform:translateY(-2px);background:rgba(231,183,95,.25)}
+.chip.primary{background:var(--coral);border-color:var(--coral);color:#fff;box-shadow:0 6px 20px rgba(255,111,94,.3)}
+.chat-note{padding:.6rem 1.1rem;border-top:1px solid var(--line);color:var(--muted);font-size:.72rem;text-align:center}
+
+/* trip panel */
+.trip{
+  border:1px solid var(--line);border-radius:var(--r);background:var(--panel);
+  overflow:hidden;min-height:520px;display:flex;flex-direction:column;
+}
+.trip-empty{
+  flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:1rem;color:var(--muted);text-align:center;padding:2rem;
+}
+.trip-empty .big{font-size:2.4rem}
+.checklist{width:100%;max-width:360px;display:flex;flex-direction:column;gap:.55rem;text-align:left}
+.check-item{
+  display:flex;justify-content:space-between;align-items:center;gap:1rem;
+  border:1px dashed var(--line);border-radius:var(--r-sm);padding:.6rem .9rem;
+  font-size:.85rem;transition:border-color .4s,background .4s;
+}
+.check-item b{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:800}
+.check-item span{color:var(--muted)}
+.check-item.done{border-style:solid;border-color:rgba(62,207,178,.5);background:rgba(62,207,178,.07)}
+.check-item.done span{color:var(--text);font-weight:700}
+.progress{font-size:.78rem;font-weight:800;color:var(--mar);letter-spacing:.06em}
+
+/* loading */
+.gen{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.4rem;padding:2rem;text-align:center}
+.orb{
+  width:74px;height:74px;border-radius:50%;position:relative;
+  background:conic-gradient(var(--gold),var(--coral),var(--mar),var(--gold));
+  animation:spin2 1.6s linear infinite;
+}
+.orb::after{content:'';position:absolute;inset:6px;border-radius:50%;background:var(--panel)}
+@keyframes spin2{to{transform:rotate(360deg)}}
+.gen p{color:var(--muted);font-size:.95rem;min-height:1.6em}
+
+/* trip card */
+.tcard{display:none;flex-direction:column;overflow-y:auto;max-height:820px;scrollbar-width:thin}
+.tcard.show{display:flex;animation:pop .5s var(--ease)}
+.tc-hero{padding:1.5rem 1.4rem 1.1rem;background:linear-gradient(160deg,var(--th1,#233),var(--th2,#122));position:relative}
+.tc-hero .demo-flag{position:absolute;top:1rem;right:1rem;font-size:.66rem;font-weight:800;letter-spacing:.1em;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.25);padding:.25rem .6rem;border-radius:6px}
+.tc-hero h3{font-family:'Fraunces',serif;font-size:1.55rem;font-weight:600;line-height:1.2;margin-bottom:.4rem}
+.tc-hero .route{font-size:.85rem;color:rgba(255,255,255,.85);font-weight:600}
+.tc-stats{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.9rem}
+.tc-stats span{font-size:.75rem;font-weight:700;background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.16);padding:.32rem .7rem;border-radius:99px}
+#map{height:250px;width:100%;background:#0b1120;border-block:1px solid var(--line)}
+.tc-body{padding:1.2rem 1.4rem;display:flex;flex-direction:column;gap:1.1rem}
+.block-h{font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.day{border:1px solid var(--line);border-radius:var(--r-sm);padding:.85rem 1rem;background:rgba(255,255,255,.02)}
+.day-top{display:flex;justify-content:space-between;align-items:center;gap:.8rem;margin-bottom:.35rem}
+.day-top b{font-size:.92rem}
+.day-top .wx{font-size:.8rem;color:var(--muted);font-weight:700;white-space:nowrap}
+.day p{font-size:.85rem;color:var(--muted)}
+.hotel{
+  display:flex;justify-content:space-between;gap:1rem;align-items:center;
+  border:1px solid rgba(231,183,95,.35);background:var(--gold-soft);
+  border-radius:var(--r-sm);padding:.9rem 1rem;
+}
+.hotel b{font-size:.95rem;display:block}
+.hotel small{color:var(--muted);font-size:.78rem}
+.hotel .price{text-align:right;white-space:nowrap}
+.hotel .price b{font-size:1.15rem;color:var(--gold)}
+.budget{display:flex;flex-direction:column;gap:.45rem}
+.b-row{display:flex;justify-content:space-between;font-size:.88rem;color:var(--muted)}
+.b-row.total{border-top:1px solid var(--line);padding-top:.55rem;color:var(--text);font-weight:800;font-size:1rem}
+.b-row.total span:last-child{color:var(--gold)}
+.book-grid{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+.book-btn{
+  display:flex;flex-direction:column;gap:.15rem;align-items:flex-start;
+  border:1px solid var(--line);border-radius:var(--r-sm);padding:.7rem .9rem;
+  background:rgba(255,255,255,.03);transition:transform .2s var(--ease),border-color .2s;text-align:left;
+}
+.book-btn:hover{transform:translateY(-2px);border-color:rgba(231,183,95,.5)}
+.book-btn b{font-size:.86rem}
+.book-btn small{color:var(--muted);font-size:.72rem}
+.tc-actions{display:flex;gap:.6rem;padding:0 1.4rem 1.4rem}
+.btn{
+  flex:1;text-align:center;font-weight:800;font-size:.92rem;padding:.8rem 1rem;border-radius:12px;
+  transition:transform .2s var(--ease);
+}
+.btn:hover{transform:translateY(-2px)}
+.btn.solid{background:var(--coral);color:#fff;box-shadow:0 8px 24px rgba(255,111,94,.3)}
+.btn.ghost{border:1px solid var(--line);color:var(--text)}
+
+/* toast */
+#toast{
+  position:fixed;left:50%;bottom:26px;transform:translate(-50%,90px);z-index:100;
+  background:var(--panel);border:1px solid rgba(231,183,95,.5);color:var(--text);
+  padding:.75rem 1.3rem;border-radius:99px;font-size:.86rem;font-weight:700;
+  transition:transform .45s var(--ease);box-shadow:0 12px 40px rgba(0,0,0,.5);
+  max-width:90vw;text-align:center;
+}
+#toast.show{transform:translate(-50%,0)}
+
+/* ============ FEATURES (cream) ============ */
+.features{background:var(--cream);color:var(--ink);padding:96px 0}
+.features .sec-head h2{color:var(--ink)}
+.features .sec-head p{color:var(--ink-muted)}
+.features .sec-head .tag{color:#B0743A}
+.f-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem}
+.f-card{
+  background:#fff;border:1px solid rgba(27,34,51,.08);border-radius:var(--r);
+  padding:1.5rem 1.3rem;box-shadow:0 10px 30px rgba(27,34,51,.05);
+  transition:transform .3s var(--ease),box-shadow .3s var(--ease);
+}
+.f-card:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(27,34,51,.1)}
+.f-card .ic{font-size:1.6rem;margin-bottom:.7rem;display:block}
+.f-card h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.12rem;margin-bottom:.4rem}
+.f-card p{font-size:.87rem;color:var(--ink-muted);line-height:1.55}
+
+/* ============ OPINIONES ============ */
+.reviews{padding:96px 0;background:var(--bg)}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
+.rv-card{border:1px solid var(--line);border-radius:var(--r);padding:1.5rem 1.4rem;background:var(--panel2)}
+.rv-card .st{color:var(--gold);letter-spacing:2px;margin-bottom:.7rem;font-size:.9rem}
+.rv-card p{font-size:.92rem;color:var(--muted);font-style:italic;margin-bottom:1rem}
+.rv-card b{font-size:.88rem}
+.rv-card small{display:block;color:var(--muted);font-size:.76rem}
+.rv-disclaimer{text-align:center;color:var(--muted);font-size:.76rem;margin-top:1.6rem}
+
+/* ============ AGENCIAS ============ */
+.agencies{
+  padding:100px 0;
+  background:
+    radial-gradient(800px 400px at 85% 20%, rgba(231,183,95,.08), transparent 60%),
+    linear-gradient(180deg,var(--bg2),var(--bg));
+}
+.ag-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:center}
+.ag-grid h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.15;margin-bottom:1rem}
+.ag-grid .lead{color:var(--muted);margin-bottom:1.6rem}
+.ag-list{display:flex;flex-direction:column;gap:.85rem;margin-bottom:2rem}
+.ag-list li{display:flex;gap:.8rem;align-items:flex-start;list-style:none;font-size:.95rem}
+.ag-list i{color:var(--mar);font-style:normal;flex:none;margin-top:.1rem}
+.ag-cta{
+  display:inline-block;background:var(--gold);color:var(--bg);font-weight:800;
+  padding:.95rem 2rem;border-radius:99px;font-size:1rem;
+  transition:transform .25s var(--ease);box-shadow:0 10px 30px rgba(231,183,95,.25);
+}
+.ag-cta:hover{transform:translateY(-3px)}
+.ag-visual{
+  border:1px solid var(--line);border-radius:var(--r);padding:2rem;
+  background:var(--panel);text-align:center;
+}
+.ag-visual .big{font-family:'Fraunces',serif;font-size:2.6rem;font-weight:600;color:var(--gold);line-height:1.1}
+.ag-visual p{color:var(--muted);font-size:.9rem;margin-top:.5rem}
+.ag-visual hr{border:none;border-top:1px solid var(--line);margin:1.4rem 0}
+
+/* ============ FOOTER ============ */
+footer{border-top:1px solid var(--line);padding:2.6rem 0;background:var(--bg)}
+.foot{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;align-items:center}
+.foot small{color:var(--muted);font-size:.8rem;max-width:520px;line-height:1.6}
+.foot .logo{font-size:1.2rem}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:980px){
+  .demo-grid{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:repeat(2,1fr)}
+  .ag-grid{grid-template-columns:1fr;gap:2rem}
+  .rv-grid{grid-template-columns:1fr;max-width:520px;margin:0 auto}
+}
+@media(max-width:640px){
+  .doors{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr}
+  .trust{gap:1rem;flex-direction:column;align-items:center}
+  .book-grid{grid-template-columns:1fr}
+  .chat{min-height:440px}
+  .hero{padding-top:100px}
+}
+
+/* ============ PRINT (PDF del itinerario) ============ */
+@media print{
+  body *{visibility:hidden}
+  .tcard,.tcard *{visibility:visible}
+  .tcard{position:absolute;inset:0;max-height:none;overflow:visible;background:#fff;color:#000}
+  .tc-actions,#map{display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">Viaj<em>ai</em></a>
+    <a class="nav-cta" href="#demo">Probar la demo</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="stars" id="stars"></div>
+  <div class="aurora"></div>
+  <div class="wrap">
+    <span class="kicker">✦ Planificador de viajes con IA · en español</span>
+    <h1 class="h1">Tu viaje soñado,<br>planeado en <em>un minuto</em>.</h1>
+    <p class="sub">Cuéntale a Viajai cómo es tu escapada perfecta y recibe un itinerario día a día con mapa interactivo, clima, presupuesto y todo listo para reservar.</p>
+    <div class="doors">
+      <button class="door rv" style="--dc:rgba(255,111,94,.2)" data-mode="parejas">
+        <span class="ic">💍</span>
+        <h3>Luna de miel</h3>
+        <p>Viajes románticos a medida: hoteles con encanto, cenas al atardecer y cero estrés.</p>
+        <span class="go">Planear en pareja →</span>
+      </button>
+      <button class="door rv" style="--dc:rgba(62,207,178,.2);transition-delay:.08s" data-mode="familia">
+        <span class="ic">👨‍👩‍👧‍👦</span>
+        <h3>En familia</h3>
+        <p>Planes que funcionan con niños: ritmo tranquilo, hoteles familiares y actividades para todos.</p>
+        <span class="go">Planear en familia →</span>
+      </button>
+      <button class="door rv" style="--dc:rgba(231,183,95,.22);transition-delay:.16s" data-mode="escapada">
+        <span class="ic">🎒</span>
+        <h3>Escapada de finde</h3>
+        <p>De viernes a domingo, exprimido al máximo: vuelos, barrios y sitios donde comer de verdad.</p>
+        <span class="go">Planear mi finde →</span>
+      </button>
+    </div>
+    <div class="trust rv">
+      <span><i>✓</i> Itinerario <b>día a día</b></span>
+      <span><i>✓</i> Mapa <b>interactivo</b></span>
+      <span><i>✓</i> Presupuesto <b>claro desde el minuto uno</b></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DEMO ============ -->
+<section class="demo" id="demo">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="tag">Así funciona</span>
+      <h2>Charla con Viajai y mira<br>cómo <span class="serif-i">nace tu viaje</span> <span class="demo-badge">DEMO</span></h2>
+      <p>Esta es una demostración interactiva con tres viajes de ejemplo. Elige un tipo de viaje arriba o aquí mismo y sigue la conversación.</p>
+    </div>
+    <div class="demo-grid">
+      <div class="chat rv">
+        <div class="chat-top">
+          <div class="avatar">✈️</div>
+          <div><b>Viajai</b><small>● en línea</small></div>
+        </div>
+        <div class="chat-log" id="chatLog"></div>
+        <div class="chat-note">Demo guiada · los itinerarios y precios son orientativos, de ejemplo</div>
+      </div>
+      <div class="trip rv" id="tripPanel">
+        <!-- Estado 1: checklist vacía -->
+        <div class="trip-empty" id="tripEmpty">
+          <span class="big">🧭</span>
+          <p style="max-width:300px">Tu viaje irá tomando forma aquí a medida que charlas.</p>
+          <div class="checklist" id="checklist">
+            <div class="check-item" data-k="donde"><b>¿A dónde?</b><span>—</span></div>
+            <div class="check-item" data-k="desde"><b>Desde</b><span>—</span></div>
+            <div class="check-item" data-k="quien"><b>¿Quién viene?</b><span>—</span></div>
+            <div class="check-item" data-k="cuando"><b>¿Cuándo?</b><span>—</span></div>
+            <div class="check-item" data-k="estilo"><b>Estilo</b><span>—</span></div>
+          </div>
+          <span class="progress" id="progress">0 de 5 completado</span>
+        </div>
+        <!-- Estado 2: generando -->
+        <div class="gen" id="tripGen" style="display:none">
+          <div class="orb"></div>
+          <p id="genLine">Diseñando tu ruta perfecta…</p>
+        </div>
+        <!-- Estado 3: tarjeta de viaje -->
+        <div class="tcard" id="tripCard"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="features">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="tag">Todo en un solo sitio</span>
+      <h2>Se acabó hacer malabares<br>con <span class="serif-i" style="color:#B0743A">veinte pestañas</span></h2>
+    </div>
+    <div class="f-grid">
+      <div class="f-card rv"><span class="ic">🗺️</span><h3>Mapa que cuenta tu viaje</h3><p>Cada día del itinerario, dibujado sobre el mapa con su ruta y sus paradas. Sabes dónde estarás en cada momento.</p></div>
+      <div class="f-card rv" style="transition-delay:.07s"><span class="ic">☀️</span><h3>Clima incluido</h3><p>Cada día llega con su tiempo previsto, para que hagas la maleta sin sorpresas.</p></div>
+      <div class="f-card rv" style="transition-delay:.14s"><span class="ic">💶</span><h3>Presupuesto honesto</h3><p>Vuelos, hotel, actividades y comidas desglosados. Sin letra pequeña ni sorpresas al final.</p></div>
+      <div class="f-card rv" style="transition-delay:.21s"><span class="ic">📄</span><h3>Tu itinerario en PDF</h3><p>Descárgalo y llévalo contigo, con todo lo importante aunque te quedes sin cobertura.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OPINIONES ============ -->
+<section class="reviews">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="tag">Lo que dirán de ti</span>
+      <h2>Viajes que <span class="serif-i">se recuerdan</span></h2>
+    </div>
+    <div class="rv-grid">
+      <div class="rv-card rv"><div class="st">★★★★★</div><p>"Nos organizó la luna de miel en Santorini mejor que cualquier agencia. El mapa día a día fue un salvavidas."</p><b>Lucía & Dani</b><small>Luna de miel · Santorini</small></div>
+      <div class="rv-card rv" style="transition-delay:.07s"><div class="st">★★★★★</div><p>"Con dos niños pequeños, que el plan tuviera ritmo tranquilo y todo cerca lo cambió todo. Repetiremos."</p><b>Familia Moreno</b><small>Vacaciones · Tenerife</small></div>
+      <div class="rv-card rv" style="transition-delay:.14s"><div class="st">★★★★★</div><p>"Un finde en Lisboa exprimido al máximo sin ir con la lengua fuera. Los sitios de comer, de diez."</p><b>Carmen G.</b><small>Escapada · Lisboa</small></div>
+    </div>
+    <p class="rv-disclaimer">Opiniones de demostración — se sustituirán por reseñas reales de usuarios.</p>
+  </div>
+</section>
+
+<!-- ============ AGENCIAS ============ -->
+<section class="agencies" id="agencias">
+  <div class="wrap ag-grid">
+    <div class="rv">
+      <span class="tag" style="color:var(--gold);font-size:.75rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;display:block;margin-bottom:.8rem">Para agencias de viajes</span>
+      <h2>Esta tecnología puede llevar <span class="serif-i">tu marca</span></h2>
+      <p class="lead">Viajai también se ofrece como plataforma white-label: tu agencia con su propio planificador de viajes con IA, con tus colores, tu logo y tus proveedores.</p>
+      <ul class="ag-list">
+        <li><i>✓</i><span><b>Tu marca, tu dominio.</b> El cliente nunca sale de tu casa.</span></li>
+        <li><i>✓</i><span><b>Captación 24/7.</b> El planificador atiende, cualifica y entrega el viaje listo para que tu equipo cierre la venta.</span></li>
+        <li><i>✓</i><span><b>Sin proyectos eternos.</b> Puesta en marcha en semanas, no en meses.</span></li>
+      </ul>
+      <a class="ag-cta" href="mailto:nuestrosproyectos2027@gmail.com?subject=Quiero%20Viajai%20para%20mi%20agencia">Quiero una demo para mi agencia</a>
+    </div>
+    <div class="ag-visual rv" style="transition-delay:.1s">
+      <div class="big">24/7</div>
+      <p>Tu agencia planificando viajes mientras duermes</p>
+      <hr>
+      <div class="big" style="font-size:2rem">1 min</div>
+      <p>De "quiero viajar" a itinerario completo con presupuesto</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <a class="logo" href="#top">Viaj<em>ai</em></a>
+    <small>Viajai es un proyecto en fase de demostración. Los itinerarios, precios y opiniones mostrados son ejemplos ilustrativos. Los enlaces de reserva se activarán en la versión final junto a la política de privacidad y el aviso legal.</small>
+  </div>
+</footer>
+
+<div id="toast"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script>
+/* ============ DATOS DEMO ============ */
+const TRIPS = {
+  parejas: {
+    door:'💍 Luna de miel',
+    userMsg:'Queremos nuestra luna de miel en Santorini, 7 días en junio saliendo desde Madrid',
+    botIntro:'¡Enhorabuena, pareja! 💍 Santorini en junio es pura magia: atardeceres en Oia, calas volcánicas y cero agobios de agosto. Antes de diseñar vuestra semana perfecta… ¿qué estilo de luna de miel os pega más?',
+    chips:[
+      {label:'✨ Romántica con capricho (~3.000 €)', value:'Romántica con algún capricho, unos 3.000 € entre los dos'},
+      {label:'💎 Solo lo mejor', value:'Queremos lo mejor de lo mejor'},
+      {label:'🌿 Tranquila y auténtica', value:'Tranquila, huyendo de aglomeraciones'}
+    ],
+    botClose:'Perfecto: romántica, con margen para un capricho. ☀️ He encontrado hoteles con vistas a la caldera y he repartido la semana entre Oia, Fira y las playas del sur, con vuestro presupuesto bajo control. ¿Genero vuestra luna de miel?',
+    checklist:{donde:'Santorini, Grecia',desde:'Madrid',quien:'Pareja · luna de miel',cuando:'8 – 14 de junio',estilo:'Romántico · ~3.000 €'},
+    card:{
+      title:'Luna de miel en Santorini', route:'Madrid ✈ Santorini · 8 – 14 jun · 2 viajeros',
+      th1:'#2A3B7D', th2:'#101A3E',
+      stats:['7 días','1 isla','14 experiencias','1 hotel con caldera'],
+      center:[36.42,25.40], zoom:12,
+      pins:[
+        {c:[36.4623,25.3760],n:'1 · Oia y su atardecer'},
+        {c:[36.4610,25.3690],n:'2 · Bahía de Amoudi'},
+        {c:[36.4340,25.4230],n:'3 · Imerovigli · paseo de la caldera'},
+        {c:[36.4166,25.4324],n:'4 · Fira'},
+        {c:[36.3517,25.4033],n:'5 · Akrotiri, la Pompeya griega'},
+        {c:[36.3480,25.3947],n:'6 · Red Beach'}
+      ],
+      days:[
+        {d:'Día 1 · Llegada',w:'☀️ 27°',t:'Vuelo directo, traslado al hotel y primer atardecer desde vuestra terraza con vistas a la caldera.'},
+        {d:'Día 2 · Oia',w:'☀️ 28°',t:'Mañana por las cúpulas azules, bajada a la bahía de Amoudi y cena de pescado al borde del agua.'},
+        {d:'Día 3 · Caldera a pie',w:'☀️ 27°',t:'Ruta Imerovigli–Fira por el sendero del acantilado (la caminata más bonita de Grecia) y tarde de piscina.'},
+        {d:'Día 4 · En barco',w:'🌤 26°',t:'Catamarán al atardecer por la caldera con baño en aguas volcánicas y cena a bordo. El día estrella.'},
+        {d:'Día 5 · Sur de la isla',w:'☀️ 28°',t:'Akrotiri, Red Beach y cata de vinos asyrtiko en una bodega con vistas.'},
+        {d:'Día 6 · A vuestro aire',w:'☀️ 29°',t:'Mañana libre, masaje en pareja y última cena romántica en Oia.'},
+        {d:'Día 7 · Regreso',w:'☀️ 27°',t:'Desayuno tranquilo y vuelo de vuelta a Madrid con la maleta llena de fotos.'}
+      ],
+      hotel:{n:'Suite con vistas a la caldera',s:'Imerovigli · desayuno incluido · piscina',p:'1.180 €',pd:'6 noches · 2 personas'},
+      budget:[['Vuelos (2 pers., ida y vuelta)','760 €'],['Hotel (6 noches)','1.180 €'],['Catamarán + experiencias','420 €'],['Comer y moverse','480 €'],['Seguro de viaje','60 €']],
+      total:'≈ 2.900 €'
+    }
+  },
+  familia: {
+    door:'👨‍👩‍👧‍👦 En familia',
+    userMsg:'Somos 2 adultos y 2 niños (5 y 9 años), queremos 5 días en Tenerife en agosto desde Madrid',
+    botIntro:'¡Tenerife con niños es un acierto seguro! 🌋 Agosto allí es más suave que en la península y hay plan para cada edad. Para afinar: ¿qué tipo de días os imagináis?',
+    chips:[
+      {label:'🎢 Parques y emociones', value:'Parques temáticos y actividades para los niños'},
+      {label:'🏖 Playa y calma', value:'Sobre todo playa y tranquilidad'},
+      {label:'⚖️ Un poco de todo', value:'Mezcla de parques, playa y algo de naturaleza'}
+    ],
+    botClose:'¡Un poco de todo, la fórmula que nunca falla! 🎡 He montado 5 días con ritmo de familia: parque acuático, la magia del Teide, playa cada tarde y un hotel con piscina para niños. ¿Genero vuestro viaje?',
+    checklist:{donde:'Tenerife, Canarias',desde:'Madrid',quien:'2 adultos + 2 niños',cuando:'18 – 22 de agosto',estilo:'Familiar · variado'},
+    card:{
+      title:'Tenerife en familia', route:'Madrid ✈ Tenerife Sur · 18 – 22 ago · 4 viajeros',
+      th1:'#0E6B5C', th2:'#0A2E35',
+      stats:['5 días','12 experiencias','1 hotel familiar','2 parques'],
+      center:[28.25,-16.60], zoom:9,
+      pins:[
+        {c:[28.0600,-16.7310],n:'1 · Playa de las Américas'},
+        {c:[28.0703,-16.7266],n:'2 · Siam Park'},
+        {c:[28.2723,-16.6425],n:'3 · Teide en teleférico'},
+        {c:[28.4139,-16.5480],n:'4 · Puerto de la Cruz · Loro Parque'},
+        {c:[28.3057,-16.8410],n:'5 · Acantilados de Los Gigantes'}
+      ],
+      days:[
+        {d:'Día 1 · Llegada y playa',w:'☀️ 28°',t:'Vuelo por la mañana, hotel con piscina infantil y tarde de playa tranquila en Las Américas.'},
+        {d:'Día 2 · Siam Park',w:'☀️ 29°',t:'Día completo en el mejor parque acuático de Europa. Truco: llegar a la apertura y zona infantil primero.'},
+        {d:'Día 3 · El Teide',w:'🌤 22°',t:'Teleférico al volcán por la mañana (chaqueta para los peques) y siesta-piscina por la tarde.'},
+        {d:'Día 4 · Loro Parque',w:'☀️ 27°',t:'Orcas, pingüinos y selva. Vuelta por Los Gigantes para ver los acantilados al atardecer.'},
+        {d:'Día 5 · Última mañana',w:'☀️ 28°',t:'Baño de despedida, helado y vuelo de vuelta. Todos dormirán en el avión. 😴'}
+      ],
+      hotel:{n:'Hotel familiar con toboganes',s:'Costa Adeje · media pensión · club infantil',p:'1.140 €',pd:'4 noches · familia'},
+      budget:[['Vuelos (4 pers., ida y vuelta)','680 €'],['Hotel (4 noches, media pensión)','1.140 €'],['Entradas parques','390 €'],['Comidas fuera y coche','420 €'],['Seguro familiar','45 €']],
+      total:'≈ 2.675 €'
+    }
+  },
+  escapada: {
+    door:'🎒 Escapada de finde',
+    userMsg:'Un finde en Lisboa en octubre, salimos el viernes desde Madrid, 2 personas',
+    botIntro:'¡Lisboa en octubre es un planazo! 🌇 Temperatura perfecta, luz dorada y la ciudad sin colas del verano. Dime una cosa: ¿este finde va más de…?',
+    chips:[
+      {label:'🍽 Comer y callejear', value:'Comer bien y perdernos por los barrios'},
+      {label:'📸 Imprescindibles', value:'Ver los imprescindibles, es nuestra primera vez'},
+      {label:'🌙 Ambiente y noche', value:'Ambiente, terrazas y algo de noche'}
+    ],
+    botClose:'Comer y callejear: mi especialidad. 🐙 Olvida las colas de los tópicos: os llevo por Alfama con calma, los mejores pasteis de nata y cenas donde cenan los lisboetas. ¿Genero vuestra escapada?',
+    checklist:{donde:'Lisboa, Portugal',desde:'Madrid',quien:'2 personas',cuando:'16 – 18 de octubre',estilo:'Gastro · sin prisas'},
+    card:{
+      title:'Finde gastro en Lisboa', route:'Madrid ✈ Lisboa · 16 – 18 oct · 2 viajeros',
+      th1:'#8A4B2E', th2:'#3A1F1A',
+      stats:['3 días','9 experiencias','1 hotel en Chiado','0 colas'],
+      center:[38.7100,-9.1600], zoom:12,
+      pins:[
+        {c:[38.7126,-9.1305],n:'1 · Alfama'},
+        {c:[38.7192,-9.1326],n:'2 · Miradouro Senhora do Monte'},
+        {c:[38.7106,-9.1420],n:'3 · Chiado'},
+        {c:[38.6970,-9.2064],n:'4 · Belém'},
+        {c:[38.7033,-9.1786],n:'5 · LX Factory'}
+      ],
+      days:[
+        {d:'Viernes · Llegada',w:'🌤 21°',t:'Vuelo tras el trabajo, check-in en Chiado y primera cena de petiscos con vino verde.'},
+        {d:'Sábado · Alfama y miradouros',w:'☀️ 22°',t:'Tranvía 28 temprano, Alfama sin prisa, atardecer en Senhora do Monte y cena con fado (del bueno).'},
+        {d:'Domingo · Belém y vuelta',w:'☀️ 21°',t:'Pasteis de Belém recién hechos, paseo junto al Tajo, brunch en LX Factory y vuelo de vuelta.'}
+      ],
+      hotel:{n:'Hotel boutique en Chiado',s:'Centro · desayuno incluido',p:'240 €',pd:'2 noches · 2 personas'},
+      budget:[['Vuelos (2 pers., ida y vuelta)','180 €'],['Hotel (2 noches)','240 €'],['Comer de escándalo','160 €'],['Tranvías y extras','40 €'],['Seguro de viaje','18 €']],
+      total:'≈ 640 €'
+    }
+  }
+};
+
+const GEN_LINES = [
+  'Diseñando tu ruta, de principio a fin…',
+  'Comparando fechas y precios orientativos…',
+  'Eligiendo sitios donde comer de verdad…',
+  'Colocando cada día sobre el mapa…',
+  'Dando el toque final ✨'
+];
+
+/* ============ HELPERS ============ */
+const $ = s => document.querySelector(s);
+const log = $('#chatLog');
+let map = null, busy = false;
+
+function sleep(ms){return new Promise(r=>setTimeout(r,ms))}
+function scrollLog(){log.scrollTop = log.scrollHeight}
+
+function addMsg(cls, html){
+  const d=document.createElement('div');
+  d.className='msg '+cls; d.innerHTML=html;
+  log.appendChild(d); scrollLog();
+}
+async function botSay(html, delay=900){
+  const t=document.createElement('div');
+  t.className='typing'; t.innerHTML='<i></i><i></i><i></i>';
+  log.appendChild(t); scrollLog();
+  await sleep(delay);
+  t.remove(); addMsg('bot', html);
+}
+function addChips(items, onPick){
+  const c=document.createElement('div'); c.className='chips';
+  items.forEach(it=>{
+    const b=document.createElement('button');
+    b.className='chip'+(it.primary?' primary':''); b.textContent=it.label;
+    b.onclick=()=>{c.remove(); onPick(it)};
+    c.appendChild(b);
+  });
+  log.appendChild(c); scrollLog();
+}
+function toast(msg){
+  const t=$('#toast'); t.textContent=msg; t.classList.add('show');
+  clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove('show'),3200);
+}
+function setCheck(k,v){
+  const el=document.querySelector(`.check-item[data-k="${k}"]`);
+  if(!el) return;
+  el.classList.add('done'); el.querySelector('span').textContent=v;
+  const n=document.querySelectorAll('.check-item.done').length;
+  $('#progress').textContent = n+' de 5 completado';
+}
+function resetPanel(){
+  document.querySelectorAll('.check-item').forEach(e=>{e.classList.remove('done');e.querySelector('span').textContent='—'});
+  $('#progress').textContent='0 de 5 completado';
+  $('#tripEmpty').style.display='flex';
+  $('#tripGen').style.display='none';
+  $('#tripCard').className='tcard'; $('#tripCard').innerHTML='';
+  if(map){map.remove();map=null}
+}
+
+/* ============ FLUJO DEMO ============ */
+async function runDemo(mode){
+  if(busy) return;
+  busy=true;
+  const T=TRIPS[mode];
+  log.innerHTML=''; resetPanel();
+  document.getElementById('demo').scrollIntoView({behavior:'smooth',block:'start'});
+
+  await sleep(600);
+  await botSay('¡Hola! Soy <b>Viajai</b> ✈️ Cuéntame tu viaje y te lo dejo listo en un minuto.');
+  await sleep(700);
+  addMsg('user', T.userMsg);
+  setCheck('donde', T.checklist.donde);
+  await sleep(400);
+  setCheck('desde', T.checklist.desde);
+  setCheck('quien', T.checklist.quien);
+  await botSay(T.botIntro, 1300);
+  setCheck('cuando', T.checklist.cuando);
+
+  addChips(T.chips.map(c=>({label:c.label,value:c.value})), async pick=>{
+    addMsg('user', pick.value);
+    setCheck('estilo', T.checklist.estilo);
+    await botSay(T.botClose, 1400);
+    addChips([{label:'✨ Sí, genera mi viaje',primary:true},{label:'Cambiar algo'}], async pick2=>{
+      if(pick2.label==='Cambiar algo'){
+        addMsg('user','Cambiar algo');
+        await botSay('En la versión completa puedes ajustar lo que quieras charlando conmigo: fechas, presupuesto, ritmo… En esta demo, ¡dale a generar y mira la magia! 😉');
+        addChips([{label:'✨ Genera mi viaje',primary:true}], ()=>generate(T));
+        return;
+      }
+      generate(T);
+    });
+  });
+}
+
+async function generate(T){
+  addMsg('user','✨ Sí, genera mi viaje');
+  $('#tripEmpty').style.display='none';
+  $('#tripGen').style.display='flex';
+  const line=$('#genLine');
+  for(let i=0;i<GEN_LINES.length;i++){
+    line.textContent=GEN_LINES[i];
+    await sleep(850);
+  }
+  $('#tripGen').style.display='none';
+  renderCard(T.card);
+  await botSay('¡Listo! 🎉 Ahí tienes tu viaje completo: itinerario, mapa, clima y presupuesto. Puedes descargarlo en PDF o reservar cada parte cuando quieras.');
+  addChips([
+    {label:'💍 Probar luna de miel'},
+    {label:'👨‍👩‍👧‍👦 Probar en familia'},
+    {label:'🎒 Probar escapada'}
+  ], pick=>{
+    const m = pick.label.includes('luna')?'parejas':pick.label.includes('familia')?'familia':'escapada';
+    busy=false; runDemo(m);
+  });
+  busy=false;
+}
+
+function renderCard(c){
+  const el=$('#tripCard');
+  el.innerHTML=`
+    <div class="tc-hero" style="--th1:${c.th1};--th2:${c.th2}">
+      <span class="demo-flag">DEMO</span>
+      <h3>${c.title}</h3>
+      <div class="route">${c.route}</div>
+      <div class="tc-stats">${c.stats.map(s=>`<span>${s}</span>`).join('')}</div>
+    </div>
+    <div id="map"></div>
+    <div class="tc-body">
+      <div>
+        <div class="block-h">Dónde duermes</div>
+        <div class="hotel" style="margin-top:.5rem">
+          <div><b>${c.hotel.n}</b><small>${c.hotel.s}</small></div>
+          <div class="price"><b>${c.hotel.p}</b><small style="display:block;color:var(--muted)">${c.hotel.pd}</small></div>
+        </div>
+      </div>
+      <div>
+        <div class="block-h" style="margin-bottom:.5rem">Tu itinerario</div>
+        <div style="display:flex;flex-direction:column;gap:.55rem">
+          ${c.days.map(d=>`<div class="day"><div class="day-top"><b>${d.d}</b><span class="wx">${d.w}</span></div><p>${d.t}</p></div>`).join('')}
+        </div>
+      </div>
+      <div>
+        <div class="block-h" style="margin-bottom:.5rem">Presupuesto orientativo</div>
+        <div class="budget">
+          ${c.budget.map(b=>`<div class="b-row"><span>${b[0]}</span><span>${b[1]}</span></div>`).join('')}
+          <div class="b-row total"><span>Total estimado</span><span>${c.total}</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="block-h" style="margin-bottom:.5rem">Resérvalo todo</div>
+        <div class="book-grid">
+          <button class="book-btn" onclick="bookSoon()"><b>🏨 Reservar hotel</b><small>al mejor precio disponible</small></button>
+          <button class="book-btn" onclick="bookSoon()"><b>🎟 Actividades y entradas</b><small>sin colas, cancelación gratis</small></button>
+          <button class="book-btn" onclick="bookSoon()"><b>🛡 Seguro de viaje</b><small>viaja con todo cubierto</small></button>
+          <button class="book-btn" onclick="bookSoon()"><b>📶 eSIM con datos</b><small>internet desde que aterrizas</small></button>
+        </div>
+      </div>
+    </div>
+    <div class="tc-actions">
+      <button class="btn ghost" onclick="window.print()">📄 Descargar PDF</button>
+      <button class="btn solid" onclick="bookSoon()">Reservar este viaje</button>
+    </div>`;
+  el.classList.add('show');
+
+  map = L.map('map',{scrollWheelZoom:false,attributionControl:true}).setView(c.center,c.zoom);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
+    attribution:'&copy; OpenStreetMap &copy; CARTO', maxZoom:18
+  }).addTo(map);
+  const pts=[];
+  c.pins.forEach((p,i)=>{
+    pts.push(p.c);
+    const icon=L.divIcon({className:'',html:`<div style="background:#E7B75F;color:#0A0F1F;font-weight:800;font-size:11px;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.5);border:2px solid #fff">${i+1}</div>`,iconSize:[22,22],iconAnchor:[11,11]});
+    L.marker(p.c,{icon}).addTo(map).bindPopup(`<b>${p.n}</b>`);
+  });
+  L.polyline(pts,{color:'#E7B75F',weight:2,opacity:.7,dashArray:'6 8'}).addTo(map);
+  setTimeout(()=>{map.invalidateSize(); if(window.ScrollTrigger) ScrollTrigger.refresh()},350);
+}
+
+function bookSoon(){
+  toast('🔒 Los enlaces de reserva se activan en la versión final de Viajai');
+}
+
+/* ============ ARRANQUE ============ */
+document.querySelectorAll('.door').forEach(d=>d.addEventListener('click',()=>{busy=false;runDemo(d.dataset.mode)}));
+
+// estrellas del hero
+(function(){
+  const s=$('#stars'); if(!s) return;
+  for(let i=0;i<70;i++){
+    const e=document.createElement('span');
+    e.style.left=Math.random()*100+'%';
+    e.style.top=Math.random()*100+'%';
+    e.style.animationDelay=(Math.random()*4)+'s';
+    e.style.opacity=.2+Math.random()*.6;
+    s.appendChild(e);
+  }
+})();
+
+// animaciones: GSAP ScrollTrigger si está disponible; IntersectionObserver como respaldo
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (window.gsap && window.ScrollTrigger && !reduced) {
+  gsap.registerPlugin(ScrollTrigger);
+  document.body.classList.add('gsap-on');
+  document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));
+
+  // entrada del hero
+  gsap.timeline({defaults:{ease:'power3.out'}})
+    .from('.kicker',{y:24,opacity:0,duration:.6})
+    .from('.h1',{y:36,opacity:0,duration:.8},'-=.3')
+    .from('.hero .sub',{y:24,opacity:0,duration:.7},'-=.5')
+    .from('.door',{y:34,opacity:0,duration:.7,stagger:.12},'-=.4')
+    .from('.trust span',{y:16,opacity:0,duration:.5,stagger:.08},'-=.4');
+
+  // parallax sutil del cielo al hacer scroll
+  gsap.to('.stars',{yPercent:26,ease:'none',
+    scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+  gsap.to('.hero .wrap',{yPercent:-7,opacity:.35,ease:'none',
+    scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+
+  // los paneles de la demo entran desde los lados
+  gsap.from('.chat',{x:-52,opacity:0,duration:.9,ease:'power3.out',
+    scrollTrigger:{trigger:'.demo-grid',start:'top 80%',once:true}});
+  gsap.from('.trip',{x:52,opacity:0,duration:.9,ease:'power3.out',
+    scrollTrigger:{trigger:'.demo-grid',start:'top 80%',once:true}});
+
+  // reveals por lotes con stagger
+  ScrollTrigger.batch('.sec-head, .f-card, .rv-card, .ag-grid > *, .rv-disclaimer',{
+    start:'top 86%',
+    once:true,
+    onEnter: els => gsap.from(els,{y:34,opacity:0,duration:.7,ease:'power3.out',stagger:.1})
+  });
+} else {
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+  if(reduced) document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));
+}
+
+// mensaje inicial del chat
+botSay('¡Hola! Soy <b>Viajai</b> ✈️ Elige arriba un tipo de viaje (luna de miel, familia o escapada) y te enseño cómo trabajo.');
+</script>
+</body>
+</html>
