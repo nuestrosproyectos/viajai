@@ -259,9 +259,11 @@ header{
 .book-grid{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
 .book-btn{display:flex;flex-direction:column;gap:.15rem;align-items:flex-start;border:1px solid var(--line);border-radius:var(--r-sm);padding:.7rem .9rem;background:rgba(255,255,255,.03);transition:transform .2s var(--ease),border-color .2s;text-align:left}
 .book-btn:hover{transform:translateY(-2px);border-color:rgba(231,183,95,.5)}
-.book-btn b{font-size:.86rem}
+.book-btn b{display:flex;align-items:center;gap:.4rem;font-size:.86rem}
+.book-btn b svg{width:17px;height:17px;stroke:var(--gold);stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
 .book-btn small{color:var(--muted);font-size:.72rem}
 .tc-actions{display:flex;gap:.6rem;padding:0 1.4rem 1.4rem}
+.btn svg{width:16px;height:16px;stroke:currentColor;stroke-width:1.9;fill:none;stroke-linecap:round;stroke-linejoin:round;vertical-align:-3px;margin-right:.35rem}
 .btn{flex:1;text-align:center;font-weight:800;font-size:.92rem;padding:.8rem 1rem;border-radius:12px;transition:transform .2s var(--ease)}
 .btn:hover{transform:translateY(-2px)}
 .btn.solid{background:var(--coral);color:#fff;box-shadow:0 8px 24px rgba(255,111,94,.3)}
@@ -1018,6 +1020,7 @@ async function instant(card){
 
 function renderCard(c){
   const el=$('#tripCard');
+  currentBook.dest = (c.route.split('✈')[1]||c.title).split('·')[0].trim();
   el.innerHTML=`
     <div class="tc-hero" style="--th1:${c.th1};--th2:${c.th2}">
       <span class="demo-flag">DEMO</span>
@@ -1029,7 +1032,7 @@ function renderCard(c){
     <div class="tc-body">
       <div>
         <div class="block-h">Dónde duermes</div>
-        <div class="hotel" style="margin-top:.5rem">
+        <div class="hotel" style="margin-top:.5rem;cursor:pointer" onclick="book('hotel')" title="Ver disponibilidad">
           <div><b>${c.hotel.n}</b><small>${c.hotel.s}</small></div>
           <div class="price"><b>${c.hotel.p}</b><small style="display:block;color:var(--muted)">${c.hotel.pd}</small></div>
         </div>
@@ -1050,16 +1053,16 @@ function renderCard(c){
       <div>
         <div class="block-h" style="margin-bottom:.5rem">Resérvalo todo</div>
         <div class="book-grid">
-          <button class="book-btn" onclick="bookSoon()"><b>🏨 Reservar hotel</b><small>al mejor precio disponible</small></button>
-          <button class="book-btn" onclick="bookSoon()"><b>🎟 Actividades y entradas</b><small>sin colas, cancelación gratis</small></button>
-          <button class="book-btn" onclick="bookSoon()"><b>🛡 Seguro de viaje</b><small>viaja con todo cubierto</small></button>
-          <button class="book-btn" onclick="bookSoon()"><b>📶 eSIM con datos</b><small>internet desde que aterrizas</small></button>
+          <button class="book-btn" onclick="book('hotel')"><b><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 20V9a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v11"/><path d="M2 16h20"/><path d="M6 8V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/></svg>Reservar hotel</b><small>al mejor precio disponible</small></button>
+          <button class="book-btn" onclick="book('act')"><b><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/><path d="M13 5v14"/></svg>Actividades y entradas</b><small>sin colas, cancelación gratis</small></button>
+          <button class="book-btn" onclick="book('seguro')"><b><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.7 8.9a1 1 0 0 1-.6 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.2-2.7a1 1 0 0 1 1.6 0C15.6 3.8 18 5 20 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>Seguro de viaje</b><small>viaja con todo cubierto</small></button>
+          <button class="book-btn" onclick="book('esim')"><b><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13a10 10 0 0 1 14 0"/><path d="M8.5 16.5a5 5 0 0 1 7 0"/><path d="M2 8.82a15 15 0 0 1 20 0"/><path d="M12 20h.01"/></svg>eSIM con datos</b><small>internet desde que aterrizas</small></button>
         </div>
       </div>
     </div>
     <div class="tc-actions">
-      <button class="btn ghost" onclick="window.print()">📄 Descargar PDF</button>
-      <button class="btn solid" onclick="bookSoon()">Reservar este viaje</button>
+      <button class="btn ghost" onclick="window.print()"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="m9 15 3 3 3-3"/></svg>Descargar PDF</button>
+      <button class="btn solid" onclick="book('hotel')">Reservar este viaje</button>
     </div>`;
   el.classList.add('show');
   map = L.map('map',{scrollWheelZoom:false,attributionControl:true}).setView(c.center,c.zoom);
@@ -1073,7 +1076,18 @@ function renderCard(c){
   L.polyline(pts,{color:'#0E9FD4',weight:3,opacity:.8,dashArray:'6 8'}).addTo(map);
   setTimeout(()=>{map.invalidateSize(); if(window.ScrollTrigger) ScrollTrigger.refresh()},350);
 }
-function bookSoon(){toast('🔒 Los enlaces de reserva se activan en la versión final de Viajai')}
+/* Afiliación (se rellenará al final del proyecto). Sin IDs los enlaces ya funcionan; con ID dan comisión. */
+const AFFIL={bookingAid:'',gygPartner:'',civitatis:'',seguroUrl:'',esimUrl:''};
+let currentBook={dest:''};
+function book(type){
+  const d=encodeURIComponent(currentBook.dest||'');
+  let url;
+  if(type==='act') url = AFFIL.civitatis ? 'https://www.civitatis.com/es/buscar/?q='+d : 'https://www.getyourguide.com/s/?q='+d+(AFFIL.gygPartner?'&partner_id='+AFFIL.gygPartner:'');
+  else if(type==='seguro') url = AFFIL.seguroUrl || 'https://www.iatiseguros.com/';
+  else if(type==='esim') url = AFFIL.esimUrl || 'https://www.airalo.com/';
+  else url = 'https://www.booking.com/searchresults.html?ss='+d+(AFFIL.bookingAid?'&aid='+AFFIL.bookingAid:'');
+  window.open(url,'_blank','noopener');
+}
 
 /* ============ GALERÍA DESTINOS ============ */
 (function(){
