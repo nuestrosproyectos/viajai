@@ -98,6 +98,15 @@ header{
     radial-gradient(1150px 540px at 50% 40%, rgba(5,18,38,.5), transparent 66%),
     linear-gradient(180deg, rgba(8,30,55,.32) 0%, rgba(8,30,55,.06) 24%, rgba(8,30,55,.16) 58%, rgba(8,30,55,.58) 100%);
 }
+/* entrada del hero en CSS puro: SIEMPRE termina visible aunque la animacion se interrumpa */
+.hero .kicker,.hero .h1,.hero .sub,.hero .door,.hero .trust{animation:heroIn .85s var(--ease) both}
+.hero .h1{animation-delay:.08s}
+.hero .sub{animation-delay:.2s}
+.hero .doors .door{animation-delay:.34s}
+.hero .doors .door:nth-child(2){animation-delay:.44s}
+.hero .doors .door:nth-child(3){animation-delay:.54s}
+.hero .trust{animation-delay:.62s}
+@keyframes heroIn{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
 .hero-wave{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:64px;z-index:3;display:block;pointer-events:none}
 @media(max-width:640px){.hero-wave{height:40px}}
 .stars{position:absolute;inset:0;pointer-events:none;opacity:.5;z-index:1}
@@ -133,7 +142,8 @@ header{
 }
 .door:hover{transform:translateY(-5px);box-shadow:0 18px 44px rgba(16,52,84,.22)}
 .door:hover::after{opacity:1}
-.door .ic{font-size:1.7rem;margin-bottom:.6rem;display:block}
+.door .ic{width:52px;height:52px;border-radius:15px;display:grid;place-items:center;margin-bottom:.95rem;background:var(--ic-bg,rgba(14,159,212,.14))}
+.door .ic svg{width:27px;height:27px;stroke:var(--ic-fg,#0E9FD4);stroke-width:1.85;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .door h3{font-family:'Fraunces',serif;font-size:1.22rem;font-weight:600;margin-bottom:.3rem;color:var(--ink)}
 .door p{font-size:.88rem;color:var(--ink-muted);line-height:1.5;margin-bottom:.9rem}
 .door .go{font-size:.85rem;font-weight:800;color:var(--gold);display:inline-flex;align-items:center;gap:.35rem}
@@ -454,26 +464,26 @@ footer{border-top:1px solid var(--line);padding:3rem 0 2rem;background:var(--bg)
     <h1 class="h1">Tu viaje soñado,<br>planeado en <em>un minuto</em>.</h1>
     <p class="sub">Cuéntale a Viajai cómo es tu escapada perfecta y recibe un itinerario día a día con mapa interactivo, clima, presupuesto y todo listo para reservar.</p>
     <div class="doors">
-      <button class="door rv" style="--dc:rgba(255,111,94,.2)" data-mode="parejas">
-        <span class="ic">💍</span>
+      <button class="door" style="--dc:rgba(255,111,94,.2)" data-mode="parejas">
+        <span class="ic" style="--ic-bg:rgba(255,107,90,.15);--ic-fg:#FF6B5A"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span>
         <h3>Luna de miel</h3>
         <p>Viajes románticos a medida: hoteles con encanto, cenas al atardecer y cero estrés.</p>
         <span class="go">Planear en pareja →</span>
       </button>
-      <button class="door rv" style="--dc:rgba(62,207,178,.2);transition-delay:.08s" data-mode="familia">
-        <span class="ic">👨‍👩‍👧‍👦</span>
+      <button class="door" style="--dc:rgba(62,207,178,.2)" data-mode="familia">
+        <span class="ic" style="--ic-bg:rgba(18,181,140,.15);--ic-fg:#12B58C"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
         <h3>En familia</h3>
         <p>Planes que funcionan con niños: ritmo tranquilo, hoteles familiares y actividades para todos.</p>
         <span class="go">Planear en familia →</span>
       </button>
-      <button class="door rv" style="--dc:rgba(231,183,95,.22);transition-delay:.16s" data-mode="escapada">
-        <span class="ic">🎒</span>
+      <button class="door" style="--dc:rgba(231,183,95,.22)" data-mode="escapada">
+        <span class="ic" style="--ic-bg:rgba(14,159,212,.15);--ic-fg:#0E9FD4"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M4 13h16"/><path d="M9.5 20v2"/><path d="M14.5 20v2"/></svg></span>
         <h3>Escapada de finde</h3>
         <p>De viernes a domingo, exprimido al máximo: vuelos, barrios y sitios donde comer de verdad.</p>
         <span class="go">Planear mi finde →</span>
       </button>
     </div>
-    <div class="trust rv">
+    <div class="trust">
       <span><i>✓</i> Itinerario <b>día a día</b></span>
       <span><i>✓</i> Mapa <b>interactivo</b></span>
       <span><i>✓</i> Presupuesto <b>claro desde el minuto uno</b></span>
@@ -1164,12 +1174,7 @@ if (window.gsap && window.ScrollTrigger && !reduced) {
   gsap.registerPlugin(ScrollTrigger);
   document.body.classList.add('gsap-on');
   document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));
-  gsap.timeline({defaults:{ease:'power3.out'}})
-    .from('.kicker',{y:24,opacity:0,duration:.6})
-    .from('.h1',{y:36,opacity:0,duration:.8},'-=.3')
-    .from('.hero .sub',{y:24,opacity:0,duration:.7},'-=.5')
-    .from('.door',{y:34,opacity:0,duration:.7,stagger:.12},'-=.4')
-    .from('.trust span',{y:16,opacity:0,duration:.5,stagger:.08},'-=.4');
+  // la entrada del hero ahora es CSS puro (heroIn) — a prueba de congelacion de rAF
   gsap.to('.stars',{yPercent:26,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
   gsap.to('.hero .wrap',{yPercent:-7,opacity:.4,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
   gsap.from('.chat',{x:-52,opacity:0,duration:.9,ease:'power3.out',scrollTrigger:{trigger:'.demo-grid',start:'top 80%',once:true}});
