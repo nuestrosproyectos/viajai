@@ -94,9 +94,8 @@ header{
 .hero-media::after{
   content:'';position:absolute;inset:0;
   background:
-    radial-gradient(680px 420px at 87% 11%, rgba(255,214,130,.12), transparent 56%),
-    radial-gradient(1240px 720px at 50% 31%, rgba(4,14,30,.72), transparent 60%),
-    linear-gradient(180deg, rgba(6,22,44,.42) 0%, rgba(6,22,44,.1) 18%, transparent 40%, transparent 72%, rgba(8,30,55,.62) 100%);
+    radial-gradient(1150px 600px at 50% 32%, rgba(246,251,254,.42), transparent 60%),
+    linear-gradient(180deg, rgba(247,252,254,.3) 0%, transparent 24%, transparent 74%, rgba(8,30,55,.28) 100%);
 }
 /* entrada del hero en CSS puro: SIEMPRE termina visible aunque la animacion se interrumpa */
 .hero .kicker,.hero .h1,.hero .sub,.hero .door,.hero .trust{animation:heroIn .85s var(--ease) both}
@@ -115,17 +114,17 @@ header{
 .hero .wrap{position:relative;z-index:2;text-align:center}
 .kicker{
   display:inline-flex;align-items:center;gap:.5rem;
-  font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;
-  border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.16);text-shadow:0 1px 8px rgba(5,20,40,.5);
-  padding:.45rem 1rem;border-radius:99px;margin-bottom:1.6rem;backdrop-filter:blur(6px);
+  font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#0B6E93;
+  border:1px solid rgba(255,255,255,.9);background:rgba(255,255,255,.8);
+  padding:.5rem 1.1rem;border-radius:99px;margin-bottom:1.6rem;backdrop-filter:blur(6px);box-shadow:0 6px 20px rgba(8,30,55,.14);
 }
 .h1{
-  font-family:'Fraunces',serif;font-weight:700;
+  font-family:'Fraunces',serif;font-weight:700;color:#0E2135;
   font-size:clamp(2.5rem,6.4vw,4.7rem);line-height:1.07;letter-spacing:-.01em;
-  margin-bottom:1.1rem;text-shadow:0 0 1px rgba(2,8,20,.7),0 1px 3px rgba(2,8,20,.85),0 3px 16px rgba(2,8,20,.7),0 0 40px rgba(2,8,20,.5);
+  margin-bottom:1.1rem;text-shadow:0 0 3px rgba(255,255,255,.85),0 1px 2px rgba(255,255,255,.95),0 2px 18px rgba(255,255,255,.7);
 }
-.h1 em{font-style:italic;color:#FF8A6E;text-shadow:0 1px 2px rgba(60,10,0,.45),0 2px 20px rgba(255,90,60,.4)}
-.hero p.sub{color:#F1F5FB;font-size:clamp(1rem,2vw,1.2rem);max-width:640px;margin:0 auto 2.6rem;text-shadow:0 1px 2px rgba(4,12,24,.55),0 1px 16px rgba(4,12,24,.75)}
+.h1 em{font-style:italic;color:#E8492F;text-shadow:0 0 3px rgba(255,255,255,.85),0 1px 12px rgba(255,255,255,.7)}
+.hero p.sub{color:#12293E;font-weight:500;font-size:clamp(1rem,2vw,1.2rem);max-width:640px;margin:0 auto 2.6rem;text-shadow:0 0 2px rgba(255,255,255,.9),0 1px 2px rgba(255,255,255,.95),0 1px 12px rgba(255,255,255,.7)}
 .doors{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;max-width:900px;margin:0 auto}
 .door{
   text-align:left;border:1px solid rgba(255,255,255,.6);border-radius:var(--r);
@@ -149,12 +148,12 @@ header{
 .door .go{font-size:.85rem;font-weight:800;color:var(--gold);display:inline-flex;align-items:center;gap:.35rem}
 .trust{
   display:flex;justify-content:center;gap:2.2rem;flex-wrap:wrap;
-  margin-top:3rem;color:rgba(255,255,255,.92);font-size:.88rem;font-weight:600;
-  text-shadow:0 1px 10px rgba(5,20,40,.6);
+  margin-top:3rem;color:#12293E;font-size:.88rem;font-weight:700;
+  text-shadow:0 0 2px rgba(255,255,255,.9),0 1px 8px rgba(255,255,255,.85);
 }
-.trust b{color:#fff}
+.trust b{color:#0E2135}
 .trust span{display:inline-flex;align-items:center;gap:.5rem}
-.trust i{color:#5CF0CB;font-style:normal}
+.trust i{color:#0E9A78;font-style:normal}
 
 /* ============ STATS BAR ============ */
 .stats{background:var(--bg2);border-block:1px solid var(--line);padding:44px 0}
