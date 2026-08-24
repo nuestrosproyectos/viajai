@@ -214,7 +214,20 @@ header{
 .chip{font-size:.85rem;font-weight:700;color:var(--text);border:1px solid rgba(231,183,95,.45);background:var(--gold-soft);padding:.5rem 1rem;border-radius:99px;transition:transform .2s var(--ease),background .2s;animation:pop .35s var(--ease)}
 .chip:hover{transform:translateY(-2px);background:rgba(231,183,95,.25)}
 .chip.primary{background:var(--coral);border-color:var(--coral);color:#fff;box-shadow:0 6px 20px rgba(255,111,94,.3)}
-.chat-note{padding:.6rem 1.1rem;border-top:1px solid var(--line);color:var(--muted);font-size:.72rem;text-align:center}
+.chat-input{display:flex;gap:.5rem;padding:.7rem .8rem;border-top:1px solid var(--line);background:rgba(255,255,255,.02)}
+.chat-input input{flex:1;border:1px solid var(--line);background:#fff;border-radius:99px;padding:.65rem 1rem;color:var(--text);font-family:inherit;font-size:.9rem}
+.chat-input input:focus{outline:none;border-color:var(--gold)}
+.chat-input button{flex:none;width:42px;height:42px;border-radius:50%;background:var(--coral);display:grid;place-items:center;transition:transform .2s var(--ease),opacity .2s;box-shadow:0 6px 18px rgba(255,111,94,.3)}
+.chat-input button:hover{transform:translateY(-2px)}
+.chat-input button:disabled{opacity:.5;transform:none;cursor:default}
+.chat-input .mic{width:42px;height:42px;border-radius:50%;background:#fff;border:1px solid var(--line);box-shadow:none}
+.chat-input .mic:hover{transform:translateY(-2px)}
+.chat-input .mic svg{width:19px;height:19px;stroke:var(--gold);fill:none}
+.chat-input .mic.rec{background:var(--coral);border-color:var(--coral);animation:micpulse 1.1s infinite}
+.chat-input .mic.rec svg{stroke:#fff}
+@keyframes micpulse{0%,100%{box-shadow:0 0 0 0 rgba(255,107,90,.5)}50%{box-shadow:0 0 0 9px rgba(255,107,90,0)}}
+.chat-input button svg{width:19px;height:19px;stroke:#fff;stroke-width:1.9;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.chat-note{padding:.55rem 1.1rem;border-top:1px solid var(--line);color:var(--muted);font-size:.72rem;text-align:center}
 .trip{border:1px solid var(--line);border-radius:var(--r);background:var(--panel);overflow:hidden;min-height:520px;display:flex;flex-direction:column}
 .trip-empty{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;color:var(--muted);text-align:center;padding:2rem}
 .trip-empty .big{display:grid;place-items:center}
@@ -233,13 +246,17 @@ header{
 .gen p{color:var(--muted);font-size:.95rem;min-height:1.6em}
 .tcard{display:none;flex-direction:column;overflow-y:auto;max-height:820px;scrollbar-width:thin}
 .tcard.show{display:flex;animation:pop .5s var(--ease)}
-.tc-hero{padding:1.5rem 1.4rem 1.1rem;background:linear-gradient(160deg,var(--th1,#233),var(--th2,#122));position:relative}
+.tc-hero{padding:1.5rem 1.4rem 1.1rem;background:linear-gradient(160deg,var(--th1,#233),var(--th2,#122));position:relative;overflow:hidden}
+.tc-hero.hasvid{background:#0b1a2e;min-height:190px;display:flex;flex-direction:column;justify-content:flex-end}
+.tc-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.tc-hero.hasvid::after{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(6,18,34,.15) 0%,rgba(6,18,34,.35) 45%,rgba(6,18,34,.82) 100%)}
+.tc-hero.hasvid .demo-flag,.tc-hero.hasvid h3,.tc-hero.hasvid .route,.tc-hero.hasvid .tc-stats{position:relative;z-index:2}
 .tc-hero .demo-flag{position:absolute;top:1rem;right:1rem;font-size:.66rem;font-weight:800;letter-spacing:.1em;color:#fff;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.25);padding:.25rem .6rem;border-radius:6px}
 .tc-hero h3{font-family:'Fraunces',serif;font-size:1.55rem;font-weight:600;line-height:1.2;margin-bottom:.4rem;color:#fff}
 .tc-hero .route{font-size:.85rem;color:rgba(255,255,255,.85);font-weight:600}
 .tc-stats{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.9rem}
 .tc-stats span{font-size:.75rem;font-weight:700;color:#fff;background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.16);padding:.32rem .7rem;border-radius:99px}
-#map{height:250px;width:100%;background:#0b1120;border-block:1px solid var(--line)}
+#map{height:250px;min-height:250px;flex:none;width:100%;background:#E7F4FA;border-block:1px solid var(--line)}
 .tc-body{padding:1.2rem 1.4rem;display:flex;flex-direction:column;gap:1.1rem}
 .block-h{font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
 .day{border:1px solid var(--line);border-radius:var(--r-sm);padding:.85rem 1rem;background:rgba(255,255,255,.02)}
@@ -247,6 +264,18 @@ header{
 .day-top b{font-size:.92rem}
 .day-top .wx{font-size:.8rem;color:var(--muted);font-weight:700;white-space:nowrap}
 .day p{font-size:.85rem;color:var(--muted)}
+.d-items{margin-top:.65rem;display:flex;flex-direction:column}
+.d-item{display:flex;gap:.55rem;align-items:flex-start;padding:.5rem 0;border-top:1px solid var(--line)}
+.d-item:first-child{border-top:none;padding-top:.15rem}
+.d-ic{width:28px;height:28px;border-radius:8px;flex:none;display:grid;place-items:center}
+.d-ic svg{width:15px;height:15px;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.d-body{flex:1;min-width:0}
+.d-body b{font-size:.84rem;font-weight:700;line-height:1.25;display:block}
+.d-body small{font-size:.74rem;color:var(--muted);display:block;margin-top:.1rem}
+.d-book{flex:none;align-self:center;font-size:.72rem;font-weight:800;color:#fff;background:var(--coral);border-radius:99px;padding:.3rem .7rem;white-space:nowrap;transition:transform .2s var(--ease)}
+.d-book:hover{transform:translateY(-1px)}
+.d-map{flex:none;align-self:flex-start;color:var(--muted);font-weight:800;font-size:.95rem;padding:.1rem .3rem}
+.d-map:hover{color:var(--gold)}
 .hotel{display:flex;justify-content:space-between;gap:1rem;align-items:center;border:1px solid rgba(231,183,95,.35);background:var(--gold-soft);border-radius:var(--r-sm);padding:.9rem 1rem}
 .hotel b{font-size:.95rem;display:block}
 .hotel small{color:var(--muted);font-size:.78rem}
@@ -413,6 +442,27 @@ footer{border-top:1px solid var(--line);padding:3rem 0 2rem;background:var(--bg)
 #toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,90px);z-index:100;background:var(--panel);border:1px solid rgba(231,183,95,.5);color:var(--text);padding:.75rem 1.3rem;border-radius:99px;font-size:.86rem;font-weight:700;transition:transform .45s var(--ease);box-shadow:0 12px 40px rgba(0,0,0,.5);max-width:90vw;text-align:center}
 #toast.show{transform:translate(-50%,0)}
 
+/* ===== Panel "Reservar todo" ===== */
+.rall-ov{position:fixed;inset:0;z-index:200;background:rgba(8,20,40,.55);backdrop-filter:blur(3px);display:flex;align-items:center;justify-content:center;padding:1rem;animation:pop .3s var(--ease)}
+.rall{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);max-width:470px;width:100%;max-height:88vh;overflow:auto;box-shadow:0 30px 80px rgba(8,20,40,.4);position:relative;scrollbar-width:thin}
+.rall-x{position:absolute;top:.9rem;right:1rem;width:32px;height:32px;border-radius:50%;background:rgba(0,0,0,.05);display:grid;place-items:center;font-size:1.1rem;color:var(--muted)}
+.rall-x:hover{background:rgba(0,0,0,.1)}
+.rall-h{padding:1.4rem 1.4rem 0}
+.rall-h h3{font-family:'Fraunces',serif;font-size:1.4rem;font-weight:600;padding-right:2rem}
+.rall-h p{color:var(--muted);font-size:.85rem;margin-top:.35rem}
+.rall-list{padding:1.1rem 1.4rem .6rem;display:flex;flex-direction:column;gap:.6rem}
+.rall-row{display:flex;gap:.8rem;align-items:center;border:1px solid var(--line);border-radius:var(--r-sm);padding:.75rem .9rem;transition:border-color .2s,background .2s}
+.rall-row .ic{width:38px;height:38px;border-radius:11px;flex:none;display:grid;place-items:center;background:var(--ic-bg,rgba(14,159,212,.14))}
+.rall-row .ic svg{width:20px;height:20px;stroke:var(--ic-fg,#0E9FD4);stroke-width:1.85;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.rall-row .tx{flex:1;min-width:0}
+.rall-row .tx b{font-size:.92rem;display:block}
+.rall-row .tx small{font-size:.76rem;color:var(--muted)}
+.rall-go{flex:none;font-size:.82rem;font-weight:800;color:#fff;background:var(--coral);border-radius:99px;padding:.45rem 1rem;white-space:nowrap;transition:transform .2s var(--ease)}
+.rall-go:hover{transform:translateY(-2px)}
+.rall-row.done{border-color:rgba(18,181,140,.5);background:rgba(18,181,140,.07)}
+.rall-row.done .rall-go{background:var(--mar);color:#04231d}
+.rall-foot{padding:.4rem 1.4rem 1.4rem;color:var(--muted);font-size:.74rem;text-align:center;line-height:1.5}
+
 /* ============ RESPONSIVE ============ */
 @media(max-width:980px){
   .demo-grid{grid-template-columns:1fr}
@@ -529,8 +579,8 @@ footer{border-top:1px solid var(--line);padding:3rem 0 2rem;background:var(--bg)
   <div class="wrap">
     <div class="sec-head rv">
       <span class="tag">Pruébalo ahora</span>
-      <h2>Charla con Viajai y mira<br>cómo <span class="serif-i">nace tu viaje</span> <span class="demo-badge">DEMO</span></h2>
-      <p>Esta es una demostración interactiva. Elige un tipo de viaje y sigue la conversación, o salta a la galería de destinos para ver itinerarios al instante.</p>
+      <h2>Escríbele tu viaje y mira<br>cómo <span class="serif-i">nace en un minuto</span> <span class="demo-badge">IA · BETA</span></h2>
+      <p>Cuéntale cualquier viaje —a dónde, cuándo, con quién, tu presupuesto— y Viajai te monta el itinerario completo con mapa. O elige una idea de arriba para empezar.</p>
     </div>
     <div class="demo-grid">
       <div class="chat rv">
@@ -539,7 +589,12 @@ footer{border-top:1px solid var(--line);padding:3rem 0 2rem;background:var(--bg)
           <div><b>Viajai</b><small>● en línea</small></div>
         </div>
         <div class="chat-log" id="chatLog"></div>
-        <div class="chat-note">Demo guiada · los itinerarios y precios son orientativos, de ejemplo</div>
+        <form class="chat-input" id="chatForm" autocomplete="off">
+          <input id="chatText" type="text" placeholder="Escribe tu viaje… p. ej. 5 días en Japón en primavera">
+          <button type="button" id="chatMic" class="mic" aria-label="Hablar por voz"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v1a7 7 0 0 1-14 0v-1"/><path d="M12 18v4"/><path d="M8 22h8"/></svg></button>
+          <button type="submit" id="chatSend" aria-label="Planificar viaje"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4z"/></svg></button>
+        </form>
+        <div class="chat-note">IA real · los precios son orientativos</div>
       </div>
       <div class="trip rv" id="tripPanel">
         <div class="trip-empty" id="tripEmpty">
@@ -954,7 +1009,7 @@ function resetPanel(){
   $('#progress').textContent='0 de 5 completado';
   $('#tripEmpty').style.display='flex';$('#tripGen').style.display='none';
   $('#tripCard').className='tcard';$('#tripCard').innerHTML='';
-  if(map){map.remove();map=null}
+  clearPlane(); if(map){map.remove();map=null}
 }
 
 /* ============ FLUJO DEMO (chat) ============ */
@@ -1018,11 +1073,38 @@ async function instant(card){
   busy=false;
 }
 
+// biblioteca de vídeos de destino (generados con Flow/Veo). Clave = destino normalizado.
+const DEST_VIDEOS={
+  roma:'media/dest/roma.mp4',
+  tokio:'media/dest/tokio.mp4'
+};
+function destVideo(dest){
+  if(!dest) return null;
+  const acc={'á':'a','é':'e','í':'i','ó':'o','ú':'u','ü':'u','ñ':'n'};
+  const k=dest.toLowerCase().split(/[\s,]/)[0].split('').map(ch=>acc[ch]!==undefined?acc[ch]:ch).join('');
+  return DEST_VIDEOS[k]||null;
+}
+const ITEM_STYLE={
+  atraccion:{bg:'rgba(14,159,212,.13)',fg:'#0E9FD4',svg:'<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>'},
+  actividad:{bg:'rgba(255,107,90,.14)',fg:'#FF6B5A',svg:'<path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/><path d="M13 5v14"/>'},
+  restaurante:{bg:'rgba(18,181,140,.14)',fg:'#12B58C',svg:'<path d="M3 2v7a3 3 0 0 0 6 0V2"/><path d="M6 2v20"/><path d="M18 2c-2 0-3 2-3 5s1 5 3 5V2Z"/><path d="M18 12v10"/>'}
+};
+function itemHTML(it, dest){
+  const s=ITEM_STYLE[it.type]||ITEM_STYLE.atraccion;
+  const q=encodeURIComponent((it.name||'')+' '+dest);
+  const action = it.type==='actividad'
+    ? `<a class="d-book" href="https://www.getyourguide.com/s/?q=${q}" target="_blank" rel="noopener">Reservar</a>`
+    : `<a class="d-map" href="https://www.google.com/maps/search/?api=1&query=${q}" target="_blank" rel="noopener" title="Ver en el mapa">↗</a>`;
+  return `<div class="d-item"><span class="d-ic" style="background:${s.bg}"><svg viewBox="0 0 24 24" style="stroke:${s.fg}">${s.svg}</svg></span><div class="d-body"><b>${it.name||''}</b>${it.note?`<small>${it.note}</small>`:''}</div>${action}</div>`;
+}
 function renderCard(c){
   const el=$('#tripCard');
   currentBook.dest = (c.route.split('✈')[1]||c.title).split('·')[0].trim();
+  currentBook.origin = (c.route.split('✈')[0]||'').trim();
+  const _vid = destVideo(currentBook.dest);
   el.innerHTML=`
-    <div class="tc-hero" style="--th1:${c.th1};--th2:${c.th2}">
+    <div class="tc-hero${_vid?' hasvid':''}" style="--th1:${c.th1};--th2:${c.th2}">
+      ${_vid?`<video class="tc-video" autoplay muted loop playsinline preload="auto" src="${_vid}"></video>`:''}
       <span class="demo-flag">DEMO</span>
       <h3>${c.title}</h3>
       <div class="route">${c.route}</div>
@@ -1040,7 +1122,7 @@ function renderCard(c){
       <div>
         <div class="block-h" style="margin-bottom:.5rem">Tu itinerario</div>
         <div style="display:flex;flex-direction:column;gap:.55rem">
-          ${c.days.map(d=>`<div class="day"><div class="day-top"><b>${d.d}</b><span class="wx">${d.w}</span></div><p>${d.t}</p></div>`).join('')}
+          ${c.days.map((d,i)=>`<div class="day"><div class="day-top"><b>Día ${i+1} · ${d.d}</b><span class="wx">${d.w}</span></div>${d.t?`<p>${d.t}</p>`:''}${(d.items&&d.items.length)?`<div class="d-items">${d.items.map(it=>itemHTML(it,currentBook.dest||'')).join('')}</div>`:''}</div>`).join('')}
         </div>
       </div>
       <div>
@@ -1062,19 +1144,17 @@ function renderCard(c){
     </div>
     <div class="tc-actions">
       <button class="btn ghost" onclick="window.print()"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="m9 15 3 3 3-3"/></svg>Descargar PDF</button>
-      <button class="btn solid" onclick="book('hotel')">Reservar este viaje</button>
+      <button class="btn solid" onclick="bookAll()">Reservar todo</button>
     </div>`;
   el.classList.add('show');
-  map = L.map('map',{scrollWheelZoom:false,attributionControl:true}).setView(c.center,c.zoom);
+  const startView = c.origin || c.center;
+  map = L.map('map',{scrollWheelZoom:false,attributionControl:true,zoomSnap:0,zoomAnimation:true}).setView(startView, c.origin?5:c.zoom);
   L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{attribution:'&copy; OpenStreetMap &copy; CARTO',maxZoom:18}).addTo(map);
-  const pts=[];
-  c.pins.forEach((p,i)=>{
-    pts.push(p.c);
-    const icon=L.divIcon({className:'',html:`<div style="background:#0E9FD4;color:#fff;font-weight:800;font-size:11px;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(16,52,84,.4);border:2px solid #fff">${i+1}</div>`,iconSize:[22,22],iconAnchor:[11,11]});
-    L.marker(p.c,{icon}).addTo(map).bindPopup(`<b>${p.n}</b>`);
-  });
-  L.polyline(pts,{color:'#0E9FD4',weight:3,opacity:.8,dashArray:'6 8'}).addTo(map);
-  setTimeout(()=>{map.invalidateSize(); if(window.ScrollTrigger) ScrollTrigger.refresh()},350);
+  setTimeout(()=>{
+    map.invalidateSize();
+    cinematicFlight(map, c.origin, c.center, c.zoom||11, c.pins);
+    if(window.ScrollTrigger) ScrollTrigger.refresh();
+  },380);
 }
 /* Afiliación (se rellenará al final del proyecto). Sin IDs los enlaces ya funcionan; con ID dan comisión. */
 const AFFIL={bookingAid:'',gygPartner:'',civitatis:'',seguroUrl:'',esimUrl:''};
@@ -1087,6 +1167,143 @@ function book(type){
   else if(type==='esim') url = AFFIL.esimUrl || 'https://www.airalo.com/';
   else url = 'https://www.booking.com/searchresults.html?ss='+d+(AFFIL.bookingAid?'&aid='+AFFIL.bookingAid:'');
   window.open(url,'_blank','noopener');
+}
+function bookAll(){
+  const dest=currentBook.dest||'', origin=currentBook.origin||'';
+  const q=s=>encodeURIComponent(s||'');
+  const IC={
+    hotel:'<path d="M2 20V9a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v11"/><path d="M2 16h20"/><path d="M6 8V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/>',
+    plane:'<path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4z"/>',
+    ticket:'<path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/><path d="M13 5v14"/>',
+    shield:'<path d="M20 13c0 5-3.5 7.5-7.7 8.9a1 1 0 0 1-.6 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.2-2.7a1 1 0 0 1 1.6 0C15.6 3.8 18 5 20 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/>',
+    wifi:'<path d="M5 13a10 10 0 0 1 14 0"/><path d="M8.5 16.5a5 5 0 0 1 7 0"/><path d="M2 8.82a15 15 0 0 1 20 0"/><path d="M12 20h.01"/>'
+  };
+  const rows=[
+    {ic:IC.hotel,bg:'rgba(14,159,212,.14)',fg:'#0E9FD4',t:'Hotel',d:'Alojamiento en '+dest,url:'https://www.booking.com/searchresults.html?ss='+q(dest)+(AFFIL.bookingAid?'&aid='+AFFIL.bookingAid:'')},
+    {ic:IC.plane,bg:'rgba(255,107,90,.14)',fg:'#FF6B5A',t:'Vuelos',d:(origin?origin+' → ':'')+dest,url:'https://www.google.com/travel/flights?q='+q('vuelos de '+origin+' a '+dest)},
+    {ic:IC.ticket,bg:'rgba(18,181,140,.14)',fg:'#12B58C',t:'Actividades y entradas',d:'Tours y experiencias en '+dest,url:AFFIL.civitatis?'https://www.civitatis.com/es/buscar/?q='+q(dest):'https://www.getyourguide.com/s/?q='+q(dest)+(AFFIL.gygPartner?'&partner_id='+AFFIL.gygPartner:'')},
+    {ic:IC.shield,bg:'rgba(14,159,212,.14)',fg:'#0E9FD4',t:'Seguro de viaje',d:'Viaja con todo cubierto',url:AFFIL.seguroUrl||'https://www.iatiseguros.com/'},
+    {ic:IC.wifi,bg:'rgba(255,107,90,.14)',fg:'#FF6B5A',t:'eSIM con datos',d:'Internet desde que aterrizas',url:AFFIL.esimUrl||'https://www.airalo.com/'}
+  ];
+  const ov=document.createElement('div'); ov.className='rall-ov';
+  ov.innerHTML=`<div class="rall">
+    <button class="rall-x" aria-label="Cerrar">✕</button>
+    <div class="rall-h"><h3>Reserva tu viaje${dest?' a '+dest:''}</h3><p>Cada parte con su mejor precio, en un clic. Reservas por separado con nuestros socios; a ti no te cuesta nada más.</p></div>
+    <div class="rall-list">
+      ${rows.map((r,i)=>`<div class="rall-row" data-i="${i}"><span class="ic" style="background:${r.bg}"><svg viewBox="0 0 24 24" style="stroke:${r.fg}">${r.ic}</svg></span><div class="tx"><b>${r.t}</b><small>${r.d}</small></div><a class="rall-go" href="${r.url}" target="_blank" rel="noopener">Reservar</a></div>`).join('')}
+    </div>
+    <div class="rall-foot">Los precios y la disponibilidad se ven en cada socio. Viajai puede recibir una comisión sin coste para ti.</div>
+  </div>`;
+  document.body.appendChild(ov);
+  const close=()=>ov.remove();
+  ov.querySelector('.rall-x').onclick=close;
+  ov.onclick=e=>{ if(e.target===ov) close(); };
+  ov.querySelectorAll('.rall-go').forEach(a=>a.addEventListener('click',()=>a.closest('.rall-row').classList.add('done')));
+}
+
+/* ============ CEREBRO IA (chat real) ============ */
+// En desarrollo el cerebro corre en tu ordenador; en producción apuntará a la nube.
+const API_BASE = (location.hostname==='localhost'||location.hostname==='127.0.0.1')
+  ? 'http://localhost:8790'
+  : 'https://viajai-cerebro.viajai-cerebro.workers.dev';
+// geolocalización por IP: detecta la ciudad del usuario para usarla como origen del vuelo
+let userCity=null;
+(async()=>{ try{ const r=await fetch('https://ipapi.co/json/',{cache:'no-store'}); if(r.ok){ const j=await r.json(); if(j&&j.city) userCity=j.city; } }catch(e){} })();
+const VIBE_COLORS={
+  romantico:['#7a2f5a','#2a1226'], playa:['#0E6B7D','#0A2E38'], ciudad:['#294a8a','#111f3e'],
+  familia:['#0E6B5C','#0A2E2A'], aventura:['#7a4a1e','#2a1a10'], gastro:['#8A4B2E','#2a1512']
+};
+function adapt(j){
+  const [th1,th2]=VIBE_COLORS[j.vibe]||VIBE_COLORS.ciudad;
+  return {
+    title:j.title,
+    route:`${j.origin} ✈ ${j.destination} · ${j.dateLabel} · ${j.travelers}`,
+    th1,th2, stats:j.stats||[],
+    origin:(typeof j.originLat==='number'&&typeof j.originLng==='number')?[j.originLat,j.originLng]:null,
+    center:[j.center.lat,j.center.lng], zoom:j.center.zoom||11,
+    pins:(j.stops||[]).map((s,i)=>({c:[s.lat,s.lng],n:`${i+1} · ${s.name}`})),
+    days:(j.days||[]).map(d=>({d:d.title,w:d.weather,t:d.text,items:d.items||[]})),
+    hotel:{n:j.hotel.name,s:j.hotel.area+(j.hotel.detail?' · '+j.hotel.detail:''),p:j.hotel.price,pd:''},
+    budget:(j.budget||[]).map(b=>[b.label,b.amount]), total:j.total
+  };
+}
+async function sendToBrain(message){
+  if(busy||!message||!message.trim()) return; busy=true;
+  const inputEl=$('#chatText'), sendEl=$('#chatSend');
+  if(inputEl) inputEl.value=''; if(sendEl) sendEl.disabled=true;
+  document.getElementById('demo').scrollIntoView({behavior:'smooth',block:'start'});
+  addMsg('user',message.trim());
+  clearPlane(); if(map){map.remove();map=null;}
+  $('#tripCard').className='tcard'; $('#tripCard').innerHTML='';
+  $('#tripEmpty').style.display='none'; $('#tripGen').style.display='flex';
+  const line=$('#genLine'); let gi=0; if(line) line.textContent=GEN_LINES[0];
+  const genTimer=setInterval(()=>{gi=(gi+1)%GEN_LINES.length; if(line) line.textContent=GEN_LINES[gi];},900);
+  const typing=document.createElement('div'); typing.className='typing'; typing.innerHTML='<i></i><i></i><i></i>';
+  log.appendChild(typing); scrollLog();
+  try{
+    const r=await fetch(API_BASE+'/plan',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({message:message.trim(),userOrigin:userCity||undefined})});
+    const j=await r.json();
+    clearInterval(genTimer); typing.remove(); $('#tripGen').style.display='none';
+    if(!r.ok||j.error) throw new Error(j.error||('HTTP '+r.status));
+    renderCard(adapt(j));
+    addMsg('bot', j.reply||'¡Aquí tienes tu viaje!');
+  }catch(e){
+    clearInterval(genTimer); typing.remove(); $('#tripGen').style.display='none';
+    if(!$('#tripCard').classList.contains('show')) $('#tripEmpty').style.display='flex';
+    addMsg('bot','Uy, no he podido planificar el viaje ahora mismo. '+(API_BASE.includes('localhost')?'(¿Está encendido el cerebro en tu ordenador?)':'Vuelve a intentarlo en un momento.'));
+    console.error('sendToBrain:',e);
+  }finally{ if(sendEl) sendEl.disabled=false; busy=false; }
+}
+
+/* ============ VUELO CINEMATOGRÁFICO origen → destino ============ */
+let planeTimer=null, flightSeq=0;
+function clearPlane(){ flightSeq++; if(planeTimer){clearInterval(planeTimer);planeTimer=null;} }
+function planeIcon(deg){return L.divIcon({className:'',iconSize:[42,42],iconAnchor:[21,21],
+  html:`<div style="transform:rotate(${deg}deg)"><svg width="42" height="42" viewBox="0 0 24 24" style="filter:drop-shadow(0 3px 5px rgba(0,0,0,.4))"><path d="M22 16.2v-1.9l-8.5-5.1V3.7c0-.9-.6-1.7-1.5-1.7s-1.5.8-1.5 1.7v5.5L2 14.3v1.9l8.5-2.6v5.3L8.1 20.6v1.6L12 21l3.9 1.2v-1.6l-2.4-1.7v-5.3z" fill="#FF6B5A" stroke="#fff" stroke-width=".85" stroke-linejoin="round"/></svg></div>`});}
+function dotMarker(m,c){return L.marker(c,{interactive:false,icon:L.divIcon({className:'',iconSize:[13,13],iconAnchor:[6,6],
+  html:`<div style="width:13px;height:13px;border-radius:50%;background:#0E9FD4;border:2px solid #fff;box-shadow:0 1px 5px rgba(0,0,0,.45)"></div>`})}).addTo(m);}
+function bezierArc(a,b,bend){
+  const dLat=b[0]-a[0], dLng=b[1]-a[1];
+  const ctrl=[(a[0]+b[0])/2 + dLng*bend, (a[1]+b[1])/2 - dLat*bend];
+  const pts=[];
+  for(let t=0;t<=1.0001;t+=0.01){const u=1-t;pts.push([u*u*a[0]+2*u*t*ctrl[0]+t*t*b[0], u*u*a[1]+2*u*t*ctrl[1]+t*t*b[1]]);}
+  return pts;
+}
+function addLocalStops(m,pins){
+  const pts=[];
+  pins.forEach((p,i)=>{ pts.push(p.c);
+    const icon=L.divIcon({className:'',iconSize:[22,22],iconAnchor:[11,11],html:`<div style="background:#0E9FD4;color:#fff;font-weight:800;font-size:11px;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(16,52,84,.4);border:2px solid #fff">${i+1}</div>`});
+    L.marker(p.c,{icon}).addTo(m).bindPopup(`<b>${p.n}</b>`);
+  });
+  if(pts.length>1) L.polyline(pts,{color:'#0E9FD4',weight:3,opacity:.8,dashArray:'6 8'}).addTo(m);
+}
+async function cinematicFlight(m,origin,dest,destZoom,pins){
+  const myId = ++flightSeq;
+  // ¿origen válido y lejos del destino? si no, solo mostramos el destino
+  const far = origin && (Math.abs(origin[0]-dest[0])>0.6 || Math.abs(origin[1]-dest[1])>0.6);
+  if(!far){ m.setView(dest,destZoom); addLocalStops(m,pins); return; }
+  const arc = bezierArc(origin,dest,0.16);
+  dotMarker(m,origin); dotMarker(m,dest);
+  try{ m.fitBounds([origin,dest],{padding:[60,60]}); }catch(e){}
+  const trail = L.polyline([arc[0]],{color:'#FF6B5A',weight:3,opacity:.85,dashArray:'1 9'}).addTo(m);
+  const plane = L.marker(arc[0],{interactive:false,zIndexOffset:1000,icon:planeIcon(0)}).addTo(m);
+  let zoomed=false;
+  await new Promise(res=>{
+    let i=1;
+    planeTimer=setInterval(()=>{
+      if(myId!==flightSeq){clearInterval(planeTimer);return res();}
+      if(i>=arc.length){clearInterval(planeTimer);planeTimer=null;return res();}
+      const a=arc[i-1], b=arc[i];
+      const deg=Math.atan2((b[1]-a[1])*Math.cos(b[0]*Math.PI/180),(b[0]-a[0]))*180/Math.PI;
+      plane.setLatLng(b); plane.setIcon(planeIcon(deg)); trail.addLatLng(b);
+      // al acercarse (70% del trayecto), la cámara hace UN zoom suave hacia el destino
+      if(!zoomed && i/(arc.length-1) > 0.7){ zoomed=true; try{ m.flyTo(dest,destZoom,{duration:2.6}); }catch(e){} }
+      i++;
+    },48);
+  });
+  if(myId!==flightSeq) return;
+  if(!zoomed){ try{ m.flyTo(dest,destZoom,{duration:1.6}); }catch(e){} }
+  setTimeout(()=>{ if(myId===flightSeq) addLocalStops(m,pins); },1700);
 }
 
 /* ============ GALERÍA DESTINOS ============ */
@@ -1103,10 +1320,7 @@ function book(type){
         <div class="meta">${d.meta}</div>
         <span class="plan">Ver itinerario →</span>
       </div>`;
-    el.onclick=()=>{
-      if(d.card){ instant(d.card); }
-      else if(d.mode && TRIPS[d.mode]){ busy=false; instant(TRIPS[d.mode].card); }
-    };
+    el.onclick=()=>{ sendToBrain(`${d.tagline} en ${d.name} (${d.meta})`); };
     grid.appendChild(el);
   });
 })();
@@ -1138,7 +1352,27 @@ $('#currBtn').onclick=()=>toast('💶 El selector de moneda se activa en la vers
 $('#langBtn').onclick=()=>toast('🌐 Viajai hablará 16 idiomas en la versión final');
 
 /* ============ ARRANQUE ============ */
-document.querySelectorAll('.door').forEach(d=>d.addEventListener('click',()=>{busy=false;runDemo(d.dataset.mode)}));
+const DOOR_PROMPTS={
+  parejas:'Una escapada romántica en pareja de 5 días. Sorpréndeme con un destino bonito en Europa, presupuesto medio.',
+  familia:'Un viaje en familia de una semana con 2 niños. Algo con playa y actividades, sin complicaciones.',
+  escapada:'Una escapada de fin de semana barata desde Madrid. Sorpréndeme con el destino.'
+};
+document.querySelectorAll('.door').forEach(d=>d.addEventListener('click',()=>sendToBrain(DOOR_PROMPTS[d.dataset.mode]||'Planifícame un viaje sorpresa')));
+$('#chatForm').addEventListener('submit',e=>{e.preventDefault();sendToBrain($('#chatText').value);});
+// voz → texto en el chat (Web Speech API)
+(function(){
+  const mic=$('#chatMic'), inp=$('#chatText'); if(!mic||!inp) return;
+  const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+  if(!SR){ mic.style.display='none'; return; }
+  const rec=new SR(); rec.lang='es-ES'; rec.interimResults=true; rec.continuous=false; rec.maxAlternatives=1;
+  let listening=false;
+  const ph=inp.getAttribute('placeholder');
+  mic.addEventListener('click',()=>{ if(listening){rec.stop();return;} try{rec.start();}catch(e){} });
+  rec.onstart=()=>{ listening=true; mic.classList.add('rec'); inp.placeholder='Escuchando… habla ahora'; };
+  rec.onend=()=>{ listening=false; mic.classList.remove('rec'); inp.placeholder=ph; inp.focus(); };
+  rec.onerror=()=>{ if(!inp.value) toast('No he podido escuchar. Prueba otra vez o escribe. 🎤'); };
+  rec.onresult=ev=>{ let t=''; for(let i=0;i<ev.results.length;i++) t+=ev.results[i][0].transcript; inp.value=t; };
+})();
 
 // estrellas
 (function(){const s=$('#stars');if(!s)return;for(let i=0;i<70;i++){const e=document.createElement('span');e.style.left=Math.random()*100+'%';e.style.top=Math.random()*100+'%';e.style.animationDelay=(Math.random()*4)+'s';e.style.opacity=.2+Math.random()*.6;s.appendChild(e)}})();
@@ -1210,7 +1444,7 @@ if (window.gsap && window.ScrollTrigger && !reduced) {
 }
 
 // mensaje inicial del chat
-botSay('¡Hola! Soy <b>Viajai</b> ✈️ Elige arriba un tipo de viaje (luna de miel, familia o escapada) y te enseño cómo trabajo.');
+botSay('¡Hola! Soy <b>Viajai</b> ✈️ Escríbeme tu viaje —a dónde, cuándo y con quién— y te lo planifico al instante. O elige una idea de arriba para empezar.');
 </script>
 </body>
 </html>
