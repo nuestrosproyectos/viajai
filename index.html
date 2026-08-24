@@ -985,7 +985,7 @@ const GEN_LINES = [
 /* ============ HELPERS ============ */
 const $ = s => document.querySelector(s);
 const log = $('#chatLog');
-let map = null, busy = false;
+let map = null, busy = false, convo = [];
 function sleep(ms){return new Promise(r=>setTimeout(r,ms))}
 function scrollLog(){log.scrollTop = log.scrollHeight}
 function addMsg(cls, html){const d=document.createElement('div');d.className='msg '+cls;d.innerHTML=html;log.appendChild(d);scrollLog()}
@@ -1076,7 +1076,13 @@ async function instant(card){
 // biblioteca de vídeos de destino (generados con Flow/Veo). Clave = destino normalizado.
 const DEST_VIDEOS={
   roma:'media/dest/roma.mp4',
-  tokio:'media/dest/tokio.mp4'
+  tokio:'media/dest/tokio.mp4',
+  santorini:'media/dest/santorini.mp4',
+  paris:'media/dest/paris.mp4',
+  bali:'media/dest/bali.mp4',
+  lisboa:'media/dest/lisboa.mp4',
+  tenerife:'media/dest/tenerife.mp4',
+  nueva:'media/dest/nuevayork.mp4'
 };
 function destVideo(dest){
   if(!dest) return null;
@@ -1229,24 +1235,44 @@ function adapt(j){
 }
 async function sendToBrain(message){
   if(busy||!message||!message.trim()) return; busy=true;
+  const msg=message.trim();
   const inputEl=$('#chatText'), sendEl=$('#chatSend');
   if(inputEl) inputEl.value=''; if(sendEl) sendEl.disabled=true;
   document.getElementById('demo').scrollIntoView({behavior:'smooth',block:'start'});
-  addMsg('user',message.trim());
-  clearPlane(); if(map){map.remove();map=null;}
-  $('#tripCard').className='tcard'; $('#tripCard').innerHTML='';
-  $('#tripEmpty').style.display='none'; $('#tripGen').style.display='flex';
+  addMsg('user',msg);
+  const hist=convo.slice();                 // historial ANTES de este mensaje
+  const hadCard=$('#tripCard').classList.contains('show');
+  // Spinner de "planificando" solo si aún no hay tarjeta (si es una pregunta lo quitamos)
+  if(!hadCard){ $('#tripEmpty').style.display='none'; $('#tripGen').style.display='flex'; }
   const line=$('#genLine'); let gi=0; if(line) line.textContent=GEN_LINES[0];
   const genTimer=setInterval(()=>{gi=(gi+1)%GEN_LINES.length; if(line) line.textContent=GEN_LINES[gi];},900);
   const typing=document.createElement('div'); typing.className='typing'; typing.innerHTML='<i></i><i></i><i></i>';
   log.appendChild(typing); scrollLog();
   try{
-    const r=await fetch(API_BASE+'/plan',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({message:message.trim(),userOrigin:userCity||undefined})});
+    const r=await fetch(API_BASE+'/plan',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({message:msg,history:hist,userOrigin:userCity||undefined})});
     const j=await r.json();
-    clearInterval(genTimer); typing.remove(); $('#tripGen').style.display='none';
+    clearInterval(genTimer); typing.remove();
     if(!r.ok||j.error) throw new Error(j.error||('HTTP '+r.status));
-    renderCard(adapt(j));
-    addMsg('bot', j.reply||'¡Aquí tienes tu viaje!');
+    // Guardar el turno en el historial de la conversación
+    convo.push({role:'user',content:msg});
+    convo.push({role:'assistant',content:j.reply||''});
+    if(j._kind==='preguntar' && Array.isArray(j.questions) && j.questions.length){
+      // La IA quiere conocer mejor el viaje: mostramos preguntas con botones
+      $('#tripGen').style.display='none';
+      if(!hadCard) $('#tripEmpty').style.display='flex';
+      addMsg('bot', j.reply||'Cuéntame un poco más 🙂');
+      j.questions.forEach(q=>{
+        addMsg('bot','<b>'+q.q+'</b>');
+        addChips((q.options||[]).map(o=>({label:o})), it=>sendToBrain(it.label));
+      });
+    } else {
+      // Itinerario completo: montamos la tarjeta + vuelo
+      clearPlane(); if(map){map.remove();map=null;}
+      $('#tripCard').className='tcard'; $('#tripCard').innerHTML='';
+      $('#tripEmpty').style.display='none'; $('#tripGen').style.display='none';
+      renderCard(adapt(j));
+      addMsg('bot', j.reply||'¡Aquí tienes tu viaje!');
+    }
   }catch(e){
     clearInterval(genTimer); typing.remove(); $('#tripGen').style.display='none';
     if(!$('#tripCard').classList.contains('show')) $('#tripEmpty').style.display='flex';
