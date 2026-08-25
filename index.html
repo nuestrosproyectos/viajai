@@ -251,6 +251,14 @@ header{
 .tc-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
 .tc-hero.hasvid::after{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(6,18,34,.15) 0%,rgba(6,18,34,.35) 45%,rgba(6,18,34,.82) 100%)}
 .tc-hero.hasvid .demo-flag,.tc-hero.hasvid h3,.tc-hero.hasvid .route,.tc-hero.hasvid .tc-stats{position:relative;z-index:2}
+/* ==== Efecto de llegada del vuelo (aterrizaje wow) ==== */
+.arrive-ring{position:absolute;left:0;top:0;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;border:2px solid #FF6B5A;opacity:0;pointer-events:none;animation:arriveRing 1.5s cubic-bezier(.22,1,.36,1) forwards}
+.arrive-ring.r2{border-color:#0E9FD4;animation-delay:.18s}
+.arrive-ring.r3{border-color:#12B58C;animation-delay:.36s}
+@keyframes arriveRing{0%{transform:scale(.2);opacity:.9}70%{opacity:.35}100%{transform:scale(5.4);opacity:0}}
+.pin-pop{display:flex;align-items:center;justify-content:center;width:100%;height:100%;transform-origin:50% 100%;animation:pinDrop .5s cubic-bezier(.34,1.56,.64,1) both}
+@keyframes pinDrop{0%{transform:translateY(-18px) scale(.2);opacity:0}60%{transform:translateY(2px) scale(1.08);opacity:1}100%{transform:translateY(0) scale(1)}}
+@media(prefers-reduced-motion:reduce){.arrive-ring{display:none}.pin-pop{animation:none}}
 .tc-hero .demo-flag{position:absolute;top:1rem;right:1rem;font-size:.66rem;font-weight:800;letter-spacing:.1em;color:#fff;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.25);padding:.25rem .6rem;border-radius:6px}
 .tc-hero h3{font-family:'Fraunces',serif;font-size:1.55rem;font-weight:600;line-height:1.2;margin-bottom:.4rem;color:#fff}
 .tc-hero .route{font-size:.85rem;color:rgba(255,255,255,.85);font-weight:600}
@@ -1291,29 +1299,62 @@ function dotMarker(m,c){return L.marker(c,{interactive:false,icon:L.divIcon({cla
 function bezierArc(a,b,bend){
   const dLat=b[0]-a[0], dLng=b[1]-a[1];
   const ctrl=[(a[0]+b[0])/2 + dLng*bend, (a[1]+b[1])/2 - dLat*bend];
-  const pts=[];
-  for(let t=0;t<=1.0001;t+=0.01){const u=1-t;pts.push([u*u*a[0]+2*u*t*ctrl[0]+t*t*b[0], u*u*a[1]+2*u*t*ctrl[1]+t*t*b[1]]);}
+  const pts=[]; const N=120;
+  // Muestreo con ease-out: los puntos se juntan al final → el avión DESACELERA al aterrizar
+  for(let k=0;k<=N;k++){
+    const s=k/N; const t=1-Math.pow(1-s,3);   // easeOutCubic
+    const u=1-t;
+    pts.push([u*u*a[0]+2*u*t*ctrl[0]+t*t*b[0], u*u*a[1]+2*u*t*ctrl[1]+t*t*b[1]]);
+  }
   return pts;
 }
-function addLocalStops(m,pins){
-  const pts=[];
-  pins.forEach((p,i)=>{ pts.push(p.c);
-    const icon=L.divIcon({className:'',iconSize:[22,22],iconAnchor:[11,11],html:`<div style="background:#0E9FD4;color:#fff;font-weight:800;font-size:11px;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(16,52,84,.4);border:2px solid #fff">${i+1}</div>`});
-    L.marker(p.c,{icon}).addTo(m).bindPopup(`<b>${p.n}</b>`);
+// Destello de llegada: ondas concéntricas que estallan en el destino
+function arriveRipple(m,latlng){
+  const ic=L.divIcon({className:'',iconSize:[0,0],html:'<div class="arrive-ring"></div><div class="arrive-ring r2"></div><div class="arrive-ring r3"></div>'});
+  const mk=L.marker(latlng,{interactive:false,zIndexOffset:2000,icon:ic}).addTo(m);
+  setTimeout(()=>{try{m.removeLayer(mk);}catch(e){}},1800);
+}
+// Encuadra la cámara a TODOS los puntos, grandes y con margen (no un zoom fijo)
+function frameStops(m,pins,dest,animate){
+  try{
+    if(pins&&pins.length>=2){
+      const b=L.latLngBounds(pins.map(p=>p.c));
+      m.flyToBounds(b,{paddingTopLeft:[46,58],paddingBottomRight:[46,44],maxZoom:15,duration:animate?1.7:0,easeLinearity:.25});
+    }else{
+      m.flyTo(pins&&pins[0]?pins[0].c:dest,14,{duration:animate?1.7:0});
+    }
+  }catch(e){ try{m.setView(dest,13);}catch(_){} }
+}
+// Revela los puntos uno a uno (rebote) mientras la ruta se dibuja sola
+function revealStops(m,pins,myId,animate){
+  const line=L.polyline([],{color:'#0E9FD4',weight:3,opacity:.85,dashArray:'6 8'}).addTo(m);
+  pins.forEach((p,i)=>{
+    const drop=()=>{
+      if(myId!==flightSeq) return;
+      const icon=L.divIcon({className:'',iconSize:[26,26],iconAnchor:[13,13],
+        html:`<div class="${animate?'pin-pop':''}" style="${animate?'animation-delay:'+(i*0.02)+'s':''}"><div style="background:#0E9FD4;color:#fff;font-weight:800;font-size:11px;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 3px 10px rgba(16,52,84,.5);border:2px solid #fff">${i+1}</div></div>`});
+      L.marker(p.c,{icon}).addTo(m).bindPopup(`<b>${p.n}</b>`);
+      line.addLatLng(p.c);
+    };
+    if(animate) setTimeout(drop,150*i); else drop();
   });
-  if(pts.length>1) L.polyline(pts,{color:'#0E9FD4',weight:3,opacity:.8,dashArray:'6 8'}).addTo(m);
 }
 async function cinematicFlight(m,origin,dest,destZoom,pins){
   const myId = ++flightSeq;
-  // ¿origen válido y lejos del destino? si no, solo mostramos el destino
   const far = origin && (Math.abs(origin[0]-dest[0])>0.6 || Math.abs(origin[1]-dest[1])>0.6);
-  if(!far){ m.setView(dest,destZoom); addLocalStops(m,pins); return; }
+  // Sin vuelo (origen cerca o desconocido): igualmente encuadre + destello + pines con rebote
+  if(!far){
+    frameStops(m,pins,dest,false);
+    arriveRipple(m, (pins&&pins[0]?pins[0].c:dest));
+    revealStops(m,pins,myId,true);
+    return;
+  }
   const arc = bezierArc(origin,dest,0.16);
   dotMarker(m,origin); dotMarker(m,dest);
   try{ m.fitBounds([origin,dest],{padding:[60,60]}); }catch(e){}
   const trail = L.polyline([arc[0]],{color:'#FF6B5A',weight:3,opacity:.85,dashArray:'1 9'}).addTo(m);
   const plane = L.marker(arc[0],{interactive:false,zIndexOffset:1000,icon:planeIcon(0)}).addTo(m);
-  let zoomed=false;
+  // El avión cruza el arco (ya viene con ease-out: desacelera al final)
   await new Promise(res=>{
     let i=1;
     planeTimer=setInterval(()=>{
@@ -1322,14 +1363,19 @@ async function cinematicFlight(m,origin,dest,destZoom,pins){
       const a=arc[i-1], b=arc[i];
       const deg=Math.atan2((b[1]-a[1])*Math.cos(b[0]*Math.PI/180),(b[0]-a[0]))*180/Math.PI;
       plane.setLatLng(b); plane.setIcon(planeIcon(deg)); trail.addLatLng(b);
-      // al acercarse (70% del trayecto), la cámara hace UN zoom suave hacia el destino
-      if(!zoomed && i/(arc.length-1) > 0.7){ zoomed=true; try{ m.flyTo(dest,destZoom,{duration:2.6}); }catch(e){} }
       i++;
-    },48);
+    },40);
   });
   if(myId!==flightSeq) return;
-  if(!zoomed){ try{ m.flyTo(dest,destZoom,{duration:1.6}); }catch(e){} }
-  setTimeout(()=>{ if(myId===flightSeq) addLocalStops(m,pins); },1700);
+  // ATERRIZAJE WOW: destello de ondas en el destino
+  arriveRipple(m,dest);
+  // La cámara hace UN barrido suave que encuadra los puntos (grandes, con margen)
+  frameStops(m,pins,dest,true);
+  // El avión se difumina para dejar protagonismo a los puntos
+  setTimeout(()=>{ try{ const el=plane.getElement(); if(el){el.style.transition='opacity .6s, transform .6s';el.style.opacity='0';el.style.transform='scale(.6)';} }catch(e){} },500);
+  setTimeout(()=>{ try{m.removeLayer(plane);}catch(e){} },1200);
+  // Los puntos caen uno a uno cuando la cámara ya ha llegado
+  setTimeout(()=>{ if(myId===flightSeq) revealStops(m,pins,myId,true); },1500);
 }
 
 /* ============ GALERÍA DESTINOS ============ */
