@@ -289,6 +289,22 @@ header{
 .hotel small{color:var(--muted);font-size:.78rem}
 .hotel .price{text-align:right;white-space:nowrap}
 .hotel .price b{font-size:1.15rem;color:var(--gold)}
+.hotels{display:flex;flex-direction:column;gap:.55rem}
+.hotel .stars{color:var(--gold);font-size:.72rem;letter-spacing:1px;font-weight:800}
+.hotel .why{color:var(--muted);font-size:.75rem;display:block;margin-top:.15rem}
+.flights{display:flex;flex-direction:column;gap:.5rem}
+.flight-leg{display:flex;align-items:center;gap:.75rem;border:1px solid var(--line);background:rgba(255,255,255,.03);border-radius:var(--r-sm);padding:.7rem .9rem}
+.flight-leg .fl-ic{flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:rgba(255,107,90,.14)}
+.flight-leg .fl-ic svg{width:16px;height:16px;stroke:#FF6B5A;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.flight-leg.ret .fl-ic{background:rgba(14,159,212,.14)}
+.flight-leg.ret .fl-ic svg{stroke:#0E9FD4}
+.flight-leg .fl-main{flex:1;min-width:0}
+.flight-leg .fl-main b{font-size:.9rem;display:block}
+.flight-leg .fl-main small{color:var(--muted);font-size:.77rem}
+.flight-leg .fl-time{text-align:right;white-space:nowrap;font-weight:800;font-size:.9rem}
+.flight-leg .fl-time small{display:block;color:var(--muted);font-weight:600;font-size:.72rem}
+.flight-price{display:flex;justify-content:space-between;align-items:center;padding:.2rem .3rem 0;font-size:.8rem;color:var(--muted)}
+.flight-price b{color:var(--gold);font-size:1rem}
 .budget{display:flex;flex-direction:column;gap:.45rem}
 .b-row{display:flex;justify-content:space-between;font-size:.88rem;color:var(--muted)}
 .b-row.total{border-top:1px solid var(--line);padding-top:.55rem;color:var(--text);font-weight:800;font-size:1rem}
@@ -1111,6 +1127,14 @@ function itemHTML(it, dest){
     : `<a class="d-map" href="https://www.google.com/maps/search/?api=1&query=${q}" target="_blank" rel="noopener" title="Ver en el mapa">↗</a>`;
   return `<div class="d-item"><span class="d-ic" style="background:${s.bg}"><svg viewBox="0 0 24 24" style="stroke:${s.fg}">${s.svg}</svg></span><div class="d-body"><b>${it.name||''}</b>${it.note?`<small>${it.note}</small>`:''}</div>${action}</div>`;
 }
+function flightLeg(f,ret){
+  if(!f) return '';
+  return `<div class="flight-leg${ret?' ret':''}">
+    <span class="fl-ic"><svg viewBox="0 0 24 24"${ret?' style="transform:scaleX(-1)"':''}><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4z"/></svg></span>
+    <div class="fl-main"><b>${f.route||''}</b><small>${[f.date,f.stops,f.duration].filter(Boolean).join(' · ')}</small></div>
+    <div class="fl-time">${f.time||''}${f.airline?`<small>${f.airline}</small>`:''}</div>
+  </div>`;
+}
 function renderCard(c){
   const el=$('#tripCard');
   currentBook.dest = (c.route.split('✈')[1]||c.title).split('·')[0].trim();
@@ -1126,11 +1150,23 @@ function renderCard(c){
     </div>
     <div id="map"></div>
     <div class="tc-body">
+      ${c.flights?`<div>
+        <div class="block-h">Cómo llegáis</div>
+        <div class="flights" style="margin-top:.5rem">
+          ${flightLeg(c.flights.out,false)}
+          ${flightLeg(c.flights.ret,true)}
+          ${c.flights.price?`<div class="flight-price"><span>Ida y vuelta${c.flights.who?' · '+c.flights.who:''}</span><b>${c.flights.price}</b></div>`:''}
+        </div>
+        <button class="book-btn" style="margin-top:.55rem;width:100%" onclick="book('vuelo')"><b><svg viewBox="0 0 24 24"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4z"/></svg>Ver vuelos y precios reales</b><small>${c.flights.route||'Comparar horarios'}</small></button>
+      </div>`:''}
       <div>
-        <div class="block-h">Dónde duermes</div>
-        <div class="hotel" style="margin-top:.5rem;cursor:pointer" onclick="book('hotel')" title="Ver disponibilidad">
-          <div><b>${c.hotel.n}</b><small>${c.hotel.s}</small></div>
-          <div class="price"><b>${c.hotel.p}</b><small style="display:block;color:var(--muted)">${c.hotel.pd}</small></div>
+        <div class="block-h">Dónde dormís</div>
+        <div class="hotels" style="margin-top:.5rem">
+          ${(c.hotels&&c.hotels.length?c.hotels:(c.hotel?[c.hotel]:[])).filter(Boolean).map(h=>`
+            <div class="hotel" style="cursor:pointer" onclick="book('hotel')" title="Ver disponibilidad">
+              <div><b>${h.n}</b>${h.stars?` <span class="stars">${h.stars}</span>`:''}<small>${h.s}</small>${h.why?`<span class="why">${h.why}</span>`:''}</div>
+              <div class="price"><b>${h.p}</b>${h.pd?`<small style="display:block;color:var(--muted)">${h.pd}</small>`:''}</div>
+            </div>`).join('')}
         </div>
       </div>
       <div>
@@ -1163,7 +1199,7 @@ function renderCard(c){
   el.classList.add('show');
   const startView = c.origin || c.center;
   map = L.map('map',{scrollWheelZoom:false,attributionControl:true,zoomSnap:0,zoomAnimation:true}).setView(startView, c.origin?5:c.zoom);
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{attribution:'&copy; OpenStreetMap &copy; CARTO',maxZoom:18}).addTo(map);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; OpenStreetMap',maxZoom:19,subdomains:'abc'}).addTo(map);
   setTimeout(()=>{
     map.invalidateSize();
     cinematicFlight(map, c.origin, c.center, c.zoom||11, c.pins);
@@ -1176,7 +1212,8 @@ let currentBook={dest:''};
 function book(type){
   const d=encodeURIComponent(currentBook.dest||'');
   let url;
-  if(type==='act') url = AFFIL.civitatis ? 'https://www.civitatis.com/es/buscar/?q='+d : 'https://www.getyourguide.com/s/?q='+d+(AFFIL.gygPartner?'&partner_id='+AFFIL.gygPartner:'');
+  if(type==='vuelo') url = 'https://www.google.com/travel/flights?q='+encodeURIComponent('vuelos de '+(currentBook.origin||'')+' a '+(currentBook.dest||''));
+  else if(type==='act') url = AFFIL.civitatis ? 'https://www.civitatis.com/es/buscar/?q='+d : 'https://www.getyourguide.com/s/?q='+d+(AFFIL.gygPartner?'&partner_id='+AFFIL.gygPartner:'');
   else if(type==='seguro') url = AFFIL.seguroUrl || 'https://www.iatiseguros.com/';
   else if(type==='esim') url = AFFIL.esimUrl || 'https://www.airalo.com/';
   else url = 'https://www.booking.com/searchresults.html?ss='+d+(AFFIL.bookingAid?'&aid='+AFFIL.bookingAid:'');
@@ -1237,7 +1274,16 @@ function adapt(j){
     center:[j.center.lat,j.center.lng], zoom:j.center.zoom||11,
     pins:(j.stops||[]).map((s,i)=>({c:[s.lat,s.lng],n:`${i+1} · ${s.name}`})),
     days:(j.days||[]).map(d=>({d:d.title,w:d.weather,t:d.text,items:d.items||[]})),
-    hotel:{n:j.hotel.name,s:j.hotel.area+(j.hotel.detail?' · '+j.hotel.detail:''),p:j.hotel.price,pd:''},
+    hotel:j.hotel?{n:j.hotel.name,s:j.hotel.area+(j.hotel.detail?' · '+j.hotel.detail:''),p:j.hotel.price,pd:''}:null,
+    hotels:((j.hotels&&j.hotels.length)?j.hotels:(j.hotel?[j.hotel]:[])).map(h=>({
+      n:h.name, s:(h.area||'')+(h.detail?' · '+h.detail:''), p:h.price, pd:'',
+      stars:h.stars||'', why:h.why||''
+    })),
+    flights:j.flights?{
+      out:j.flights.outbound?{route:j.flights.outbound.route,time:j.flights.outbound.time,date:j.flights.outbound.date,duration:j.flights.outbound.duration,stops:j.flights.outbound.stops,airline:j.flights.outbound.airline}:null,
+      ret:j.flights.return?{route:j.flights.return.route,time:j.flights.return.time,date:j.flights.return.date,duration:j.flights.return.duration,stops:j.flights.return.stops,airline:j.flights.return.airline}:null,
+      price:j.flights.price||'', who:j.flights.who||'', route:(j.origin&&j.destination)?`${j.origin} → ${j.destination}`:''
+    }:null,
     budget:(j.budget||[]).map(b=>[b.label,b.amount]), total:j.total
   };
 }
