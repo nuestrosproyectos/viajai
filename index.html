@@ -1059,7 +1059,7 @@ async function runDemo(mode){
   if(busy) return; busy=true;
   const T=TRIPS[mode];
   log.innerHTML=''; resetPanel();
-  document.getElementById('demo').scrollIntoView({behavior:'smooth',block:'start'});
+  try{ const _de=document.getElementById('demo'); const _r=_de.getBoundingClientRect(); if(!(_r.top<window.innerHeight*0.55 && _r.bottom>80)) _de.scrollIntoView({behavior:'smooth',block:'start'}); }catch(e){}
   await sleep(600);
   await botSay('¡Hola! Soy <b>Viajai</b> ✈️ Cuéntame tu viaje y te lo dejo listo en un minuto.');
   await sleep(700);
@@ -1103,7 +1103,7 @@ async function generate(card){
 async function instant(card){
   if(busy) return; busy=true;
   log.innerHTML='';
-  document.getElementById('demo').scrollIntoView({behavior:'smooth',block:'start'});
+  try{ const _de=document.getElementById('demo'); const _r=_de.getBoundingClientRect(); if(!(_r.top<window.innerHeight*0.55 && _r.bottom>80)) _de.scrollIntoView({behavior:'smooth',block:'start'}); }catch(e){}
   resetPanel();
   addMsg('user','Enséñame un plan para '+card.title.replace(/^.*en |^.*a /,''));
   $('#tripEmpty').style.display='none'; $('#tripGen').style.display='flex';
@@ -1320,7 +1320,9 @@ async function sendToBrain(message){
   const msg=message.trim();
   const inputEl=$('#chatText'), sendEl=$('#chatSend');
   if(inputEl) inputEl.value=''; if(sendEl) sendEl.disabled=true;
-  document.getElementById('demo').scrollIntoView({behavior:'smooth',block:'start'});
+  // Solo llevar la vista a la demo si NO esta ya visible (p.ej. al pulsar un boton de arriba).
+  // Cuando ya estas escribiendo en el chat, NO movemos la pagina (en movil el teclado + salto marean).
+  try{ const de=document.getElementById('demo'); const r=de.getBoundingClientRect(); const visible=r.top<window.innerHeight*0.55 && r.bottom>80; if(!visible) de.scrollIntoView({behavior:'smooth',block:'start'}); }catch(e){}
   addMsg('user',msg);
   const hist=convo.slice();                 // historial ANTES de este mensaje
   const hadCard=$('#tripCard').classList.contains('show');
