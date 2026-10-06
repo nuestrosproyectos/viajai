@@ -1445,7 +1445,8 @@ async function wikiThumb(query){
       const r=await fetch(url); if(!r.ok) continue;
       const j=await r.json(); const pages=j&&j.query&&j.query.pages; if(!pages) continue;
       const p=Object.values(pages)[0]; const src=p&&p.thumbnail&&p.thumbnail.source;
-      if(src) return src;
+      // Evitar logos/escudos (SVG) y quedarnos solo con fotos reales
+      if(src && !/\.svg(\.|\/)/i.test(src)) return src;
     }catch(e){}
   }
   return null;
