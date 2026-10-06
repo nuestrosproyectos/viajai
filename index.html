@@ -1216,14 +1216,19 @@ function renderCard(c){
       <button class="btn solid" onclick="bookAll()">Reservar todo</button>
     </div>`;
   el.classList.add('show');
+  // Al terminar de chatear y aparecer el plan: en movil (o si el mapa no se ve) llevar la
+  // vista directamente al plan para VER el vuelo. En laptop el mapa ya se ve → no se mueve.
+  let scrolled=false;
+  try{ const mapEl=$('#map'); const r=mapEl.getBoundingClientRect(); const vis=r.top>=0 && r.top<window.innerHeight*0.5; if(!vis){ el.scrollIntoView({behavior:'smooth',block:'start'}); scrolled=true; } }catch(e){}
   const startView = c.origin || c.center;
   map = L.map('map',{scrollWheelZoom:false,attributionControl:true,zoomSnap:0,zoomAnimation:true}).setView(startView, c.origin?5:c.zoom);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; OpenStreetMap',maxZoom:19,subdomains:'abc'}).addTo(map);
+  // Un poco mas de espera si hemos hecho scroll, para que la vista se asiente antes del vuelo
   setTimeout(()=>{
     map.invalidateSize();
     cinematicFlight(map, c.origin, c.center, c.zoom||11, c.pins);
     if(window.ScrollTrigger) ScrollTrigger.refresh();
-  },380);
+  }, scrolled?800:420);
 }
 /* Afiliación (se rellenará al final del proyecto). Sin IDs los enlaces ya funcionan; con ID dan comisión. */
 const AFFIL={bookingAid:'',gygPartner:'',civitatis:'',seguroUrl:'',esimUrl:''};
@@ -1380,7 +1385,7 @@ function dotMarker(m,c){return L.marker(c,{interactive:false,icon:L.divIcon({cla
 function bezierArc(a,b,bend){
   const dLat=b[0]-a[0], dLng=b[1]-a[1];
   const ctrl=[(a[0]+b[0])/2 + dLng*bend, (a[1]+b[1])/2 - dLat*bend];
-  const pts=[]; const N=120;
+  const pts=[]; const N=150;
   // Muestreo con ease-out: los puntos se juntan al final → el avión DESACELERA al aterrizar
   for(let k=0;k<=N;k++){
     const s=k/N; const t=1-Math.pow(1-s,3);   // easeOutCubic
@@ -1400,9 +1405,9 @@ function frameStops(m,pins,dest,animate){
   try{
     if(pins&&pins.length>=2){
       const b=L.latLngBounds(pins.map(p=>p.c));
-      m.flyToBounds(b,{paddingTopLeft:[46,58],paddingBottomRight:[46,44],maxZoom:15,duration:animate?1.7:0,easeLinearity:.25});
+      m.flyToBounds(b,{paddingTopLeft:[46,58],paddingBottomRight:[46,44],maxZoom:15,duration:animate?2.6:0,easeLinearity:.25});
     }else{
-      m.flyTo(pins&&pins[0]?pins[0].c:dest,14,{duration:animate?1.7:0});
+      m.flyTo(pins&&pins[0]?pins[0].c:dest,14,{duration:animate?2.6:0});
     }
   }catch(e){ try{m.setView(dest,13);}catch(_){} }
 }
@@ -1417,7 +1422,7 @@ function revealStops(m,pins,myId,animate){
       L.marker(p.c,{icon}).addTo(m).bindPopup(`<b>${p.n}</b>`);
       line.addLatLng(p.c);
     };
-    if(animate) setTimeout(drop,150*i); else drop();
+    if(animate) setTimeout(drop,480*i); else drop();
   });
 }
 async function cinematicFlight(m,origin,dest,destZoom,pins){
@@ -1453,7 +1458,7 @@ async function cinematicFlight(m,origin,dest,destZoom,pins){
       trail.addLatLng(b); trailGlow.addLatLng(b);
       if(i%5===0) vaporPuff(m,b);
       i++;
-    },38);
+    },44);
   });
   if(myId!==flightSeq) return;
   // ATERRIZAJE WOW: destello de ondas en el destino
@@ -1464,7 +1469,7 @@ async function cinematicFlight(m,origin,dest,destZoom,pins){
   setTimeout(()=>{ try{ const el=plane.getElement(); if(el){el.style.transition='opacity .6s';el.style.opacity='0';const wrap=el.querySelector('.plane-wrap');if(wrap){wrap.style.transition='transform .6s';wrap.style.transform+=' scale(.5)';}} }catch(e){} },500);
   setTimeout(()=>{ try{m.removeLayer(plane);}catch(e){} },1200);
   // Los puntos caen uno a uno cuando la cámara ya ha llegado
-  setTimeout(()=>{ if(myId===flightSeq) revealStops(m,pins,myId,true); },1500);
+  setTimeout(()=>{ if(myId===flightSeq) revealStops(m,pins,myId,true); },2000);
 }
 
 /* ============ GALERÍA DESTINOS ============ */
