@@ -1153,7 +1153,7 @@ function itemHTML(it, dest){
   const q=encodeURIComponent((it.name||'')+' '+dest);
   const action = it.type==='actividad'
     ? `<a class="d-book" href="https://www.getyourguide.com/s/?q=${q}" target="_blank" rel="noopener">Reservar</a>`
-    : `<a class="d-map" href="https://www.google.com/maps/search/?api=1&query=${q}" target="_blank" rel="noopener" title="Ver en el mapa">↗</a>`;
+    : `<a class="d-map" href="https://duckduckgo.com/?q=${q}%20fotos%20opiniones" target="_blank" rel="noopener" title="Ver fotos y opiniones">↗</a>`;
   return `<div class="d-item"><span class="d-ic" style="background:${s.bg}"><svg viewBox="0 0 24 24" style="stroke:${s.fg}">${s.svg}</svg></span><div class="d-body"><b>${it.name||''}</b>${it.note?`<small>${it.note}</small>`:''}</div>${action}</div>`;
 }
 function flightLeg(f,ret){
@@ -1249,7 +1249,7 @@ function openTab(url){ try{ const a=document.createElement('a'); a.href=url; a.t
 function book(type){
   const d=encodeURIComponent(currentBook.dest||'');
   let url;
-  if(type==='vuelo') url = 'https://www.google.com/travel/flights?q='+encodeURIComponent('vuelos de '+(currentBook.origin||'')+' a '+(currentBook.dest||''));
+  if(type==='vuelo') url = 'https://duckduckgo.com/?q='+encodeURIComponent('vuelos '+(currentBook.origin||'')+' a '+(currentBook.dest||'')+' precio');
   else if(type==='act') url = AFFIL.civitatis ? 'https://www.civitatis.com/es/buscar/?q='+d : 'https://www.getyourguide.com/s/?q='+d+(AFFIL.gygPartner?'&partner_id='+AFFIL.gygPartner:'');
   else if(type==='seguro') url = AFFIL.seguroUrl || 'https://www.iatiseguros.com/';
   else if(type==='esim') url = AFFIL.esimUrl || 'https://www.airalo.com/';
@@ -1263,7 +1263,8 @@ function bookHotel(enc){
   const dest=currentBook.dest||'';
   // Google Hotels aterriza en el HOTEL concreto (con precios y enlaces para reservar),
   // en vez de soltarte en una lista genérica de Booking.
-  const url='https://www.google.com/travel/search?q='+encodeURIComponent((name?name+' ':'')+dest);
+  // Booking por NOMBRE: abre ese hotel concreto. Su aviso de cookies es un banner normal (no un muro como Google).
+  const url='https://www.booking.com/searchresults.html?ss='+encodeURIComponent((name?name+' ':'')+dest)+(AFFIL.bookingAid?'&aid='+AFFIL.bookingAid:'');
   openTab(url);
 }
 function bookAll(){
@@ -1277,8 +1278,8 @@ function bookAll(){
     wifi:'<path d="M5 13a10 10 0 0 1 14 0"/><path d="M8.5 16.5a5 5 0 0 1 7 0"/><path d="M2 8.82a15 15 0 0 1 20 0"/><path d="M12 20h.01"/>'
   };
   const rows=[
-    {ic:IC.hotel,bg:'rgba(14,159,212,.14)',fg:'#0E9FD4',t:'Hotel',d:(currentBook.hotel1?currentBook.hotel1:'Alojamiento en '+dest),url:'https://www.google.com/travel/search?q='+q((currentBook.hotel1?currentBook.hotel1+' ':'')+dest)},
-    {ic:IC.plane,bg:'rgba(255,107,90,.14)',fg:'#FF6B5A',t:'Vuelos',d:(origin?origin+' → ':'')+dest,url:'https://www.google.com/travel/flights?q='+q('vuelos de '+origin+' a '+dest)},
+    {ic:IC.hotel,bg:'rgba(14,159,212,.14)',fg:'#0E9FD4',t:'Hotel',d:(currentBook.hotel1?currentBook.hotel1:'Alojamiento en '+dest),url:'https://www.booking.com/searchresults.html?ss='+q((currentBook.hotel1?currentBook.hotel1+' ':'')+dest)+(AFFIL.bookingAid?'&aid='+AFFIL.bookingAid:'')},
+    {ic:IC.plane,bg:'rgba(255,107,90,.14)',fg:'#FF6B5A',t:'Vuelos',d:(origin?origin+' → ':'')+dest,url:'https://duckduckgo.com/?q='+q('vuelos '+origin+' a '+dest+' precio')},
     {ic:IC.ticket,bg:'rgba(18,181,140,.14)',fg:'#12B58C',t:'Actividades y entradas',d:'Tours y experiencias en '+dest,url:AFFIL.civitatis?'https://www.civitatis.com/es/buscar/?q='+q(dest):'https://www.getyourguide.com/s/?q='+q(dest)+(AFFIL.gygPartner?'&partner_id='+AFFIL.gygPartner:'')},
     {ic:IC.shield,bg:'rgba(14,159,212,.14)',fg:'#0E9FD4',t:'Seguro de viaje',d:'Viaja con todo cubierto',url:AFFIL.seguroUrl||'https://www.iatiseguros.com/'},
     {ic:IC.wifi,bg:'rgba(255,107,90,.14)',fg:'#FF6B5A',t:'eSIM con datos',d:'Internet desde que aterrizas',url:AFFIL.esimUrl||'https://www.airalo.com/'}
