@@ -509,6 +509,9 @@ footer{border-top:1px solid var(--line);padding:3rem 0 2rem;background:var(--bg)
   .float-expert{right:12px;bottom:12px;padding:.6rem .9rem;font-size:.8rem;gap:.4rem}
   /* Aire al final de la tarjeta para que el boton flotante no tape los CTA */
   .tc-actions{padding-bottom:5rem}
+  /* iOS: inputs a 16px para evitar el zoom automatico de Safari al escribir
+     (letra <16px hacia que la pagina se agrandara y "se fuera hacia arriba") */
+  .chat-input input,.news-form input,input[type="text"],input[type="email"],input[type="search"],textarea{font-size:16px}
 }
 
 /* ============ PRINT ============ */
