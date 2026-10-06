@@ -266,6 +266,17 @@ header{
 .vapor{width:12px;height:12px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.95),rgba(255,255,255,0) 68%);animation:vaporFade 1.2s ease-out forwards}
 @keyframes vaporFade{0%{opacity:.85;transform:scale(.4)}100%{opacity:0;transform:scale(2)}}
 @media(prefers-reduced-motion:reduce){.arrive-ring{display:none}.pin-pop{animation:none}.plane-glow{animation:none;opacity:.5}.vapor{display:none}}
+/* ==== Ficha de un punto del mapa (foto + enlace) ==== */
+.stop-popup .leaflet-popup-content-wrapper{padding:0;overflow:hidden;border-radius:14px;box-shadow:0 12px 34px rgba(11,28,46,.28)}
+.stop-popup .leaflet-popup-content{margin:0;width:238px!important}
+.stop-pop{width:238px;font-family:'Figtree',system-ui,sans-serif}
+.sp-img{height:132px;background:#e6edf4;display:flex;align-items:center;justify-content:center;text-align:center;color:#8fa2b4;font-size:.72rem;padding:0 .8rem}
+.sp-img img{width:100%;height:132px;object-fit:cover;display:block}
+.sp-body{padding:.65rem .8rem .75rem}
+.sp-body b{display:block;font-size:.95rem;color:#0c1726;line-height:1.25;margin-bottom:.35rem}
+.sp-link{display:inline-block;font-size:.8rem;font-weight:700;color:#0E6EA8;text-decoration:none}
+.sp-link:hover{text-decoration:underline}
+.sp-cat{display:inline-block;font-size:.64rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#FF6B5A;margin-bottom:.2rem}
 .tc-hero .demo-flag{position:absolute;top:1rem;right:1rem;font-size:.66rem;font-weight:800;letter-spacing:.1em;color:#fff;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.25);padding:.25rem .6rem;border-radius:6px}
 .tc-hero h3{font-family:'Fraunces',serif;font-size:1.55rem;font-weight:600;line-height:1.2;margin-bottom:.4rem;color:#fff}
 .tc-hero .route{font-size:.85rem;color:rgba(255,255,255,.85);font-weight:600}
@@ -1414,7 +1425,47 @@ function frameStops(m,pins,dest,animate){
     }
   }catch(e){ try{m.setView(dest,13);}catch(_){} }
 }
-// Revela los puntos uno a uno (rebote) mientras la ruta se dibuja sola
+/* ====== FOTOS DE LOS PUNTOS ======
+   Método GRATIS por defecto: Wikimedia/Wikipedia (fotos reales con licencia para reusar,
+   ideales para monumentos) + enlace "ver fotos reales" a Google Maps para todo lo demás.
+   Google Places queda CABLEADO: pon PLACES.enabled=true (y monta el proxy /photo en el
+   worker) y tendrás la foto real de CUALQUIER hotel/restaurante/sitio. */
+const PLACES = { enabled:false, endpoint:'/photo' }; // ← interruptor de Google Places
+async function placePhoto(query){
+  if(!PLACES.enabled) return null;
+  try{ const r=await fetch(API_BASE+PLACES.endpoint+'?q='+encodeURIComponent(query),{cache:'no-store'});
+       if(!r.ok) return null; const j=await r.json(); return j&&j.photo||null; }catch(e){ return null; }
+}
+async function wikiThumb(query){
+  for(const lang of ['es','en']){
+    try{
+      const url='https://'+lang+'.wikipedia.org/w/api.php?action=query&format=json&origin=*'+
+        '&generator=search&gsrsearch='+encodeURIComponent(query)+'&gsrlimit=1'+
+        '&prop=pageimages&piprop=thumbnail&pithumbsize=480';
+      const r=await fetch(url); if(!r.ok) continue;
+      const j=await r.json(); const pages=j&&j.query&&j.query.pages; if(!pages) continue;
+      const p=Object.values(pages)[0]; const src=p&&p.thumbnail&&p.thumbnail.source;
+      if(src) return src;
+    }catch(e){}
+  }
+  return null;
+}
+function stopMapsLink(name){ return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(name+' '+(currentBook.dest||'')); }
+function stopPopupHTML(name,cat){
+  return `<div class="stop-pop"><div class="sp-img" data-q="${encodeURIComponent(name)}"><span>Cargando foto…</span></div>`+
+    `<div class="sp-body">${cat?`<span class="sp-cat">${cat}</span>`:''}<b>${name}</b>`+
+    `<a class="sp-link" href="${stopMapsLink(name)}" target="_blank" rel="noopener">Ver fotos y reseñas reales →</a></div></div>`;
+}
+async function fillStopImg(popupEl){
+  try{
+    const box=popupEl&&popupEl.querySelector('.sp-img'); if(!box||box.dataset.done) return; box.dataset.done='1';
+    const name=decodeURIComponent(box.dataset.q||''); const q=name+' '+(currentBook.dest||'');
+    let src=await placePhoto(q); if(!src) src=await wikiThumb(q);
+    if(src){ const img=new Image(); img.onload=()=>{box.innerHTML='';box.appendChild(img);}; img.onerror=()=>{box.innerHTML='<span>Mira las fotos reales en el enlace de abajo 👇</span>';}; img.alt=name; img.src=src; }
+    else { box.innerHTML='<span>Mira las fotos reales en el enlace de abajo 👇</span>'; }
+  }catch(e){}
+}
+// Revela los puntos uno a uno (rebote); al tocar uno: zoom + ficha con foto
 function revealStops(m,pins,myId,animate){
   const line=L.polyline([],{color:'#0E9FD4',weight:3,opacity:.85,dashArray:'6 8'}).addTo(m);
   pins.forEach((p,i)=>{
@@ -1422,7 +1473,11 @@ function revealStops(m,pins,myId,animate){
       if(myId!==flightSeq) return;
       const icon=L.divIcon({className:'',iconSize:[26,26],iconAnchor:[13,13],
         html:`<div class="${animate?'pin-pop':''}" style="${animate?'animation-delay:'+(i*0.02)+'s':''}"><div style="background:#0E9FD4;color:#fff;font-weight:800;font-size:11px;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 3px 10px rgba(16,52,84,.5);border:2px solid #fff">${i+1}</div></div>`});
-      L.marker(p.c,{icon}).addTo(m).bindPopup(`<b>${p.n}</b>`);
+      const cleanName=(p.n||'').replace(/^\d+\s*·\s*/,'');
+      const mk=L.marker(p.c,{icon}).addTo(m);
+      mk.bindPopup(stopPopupHTML(cleanName,'Parada '+(i+1)),{maxWidth:250,minWidth:238,className:'stop-popup',closeButton:true});
+      mk.on('click',()=>{ try{ m.flyTo(p.c, Math.max(m.getZoom(),15), {duration:.9}); }catch(e){} });
+      mk.on('popupopen',e=>{ fillStopImg(e.popup.getElement()); });
       line.addLatLng(p.c);
     };
     if(animate) setTimeout(drop,480*i); else drop();
