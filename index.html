@@ -1150,6 +1150,7 @@ function renderCard(c){
   const el=$('#tripCard');
   currentBook.dest = (c.route.split('✈')[1]||c.title).split('·')[0].trim();
   currentBook.origin = (c.route.split('✈')[0]||'').trim();
+  currentBook.hotel1 = (c.hotels&&c.hotels[0]&&c.hotels[0].n) ? c.hotels[0].n : '';
   const _vid = destVideo(currentBook.dest);
   el.innerHTML=`
     <div class="tc-hero${_vid?' hasvid':''}" style="--th1:${c.th1};--th2:${c.th2}">
@@ -1174,7 +1175,7 @@ function renderCard(c){
         <div class="block-h">Dónde dormís</div>
         <div class="hotels" style="margin-top:.5rem">
           ${(c.hotels&&c.hotels.length?c.hotels:(c.hotel?[c.hotel]:[])).filter(Boolean).map(h=>`
-            <div class="hotel" style="cursor:pointer" onclick="book('hotel')" title="Ver disponibilidad">
+            <div class="hotel" style="cursor:pointer" onclick="bookHotel('${encodeURIComponent(h.n||'').replace(/'/g,'%27')}')" title="Ver este hotel en Booking">
               <div><b>${h.n}</b>${h.stars?` <span class="stars">${h.stars}</span>`:''}<small>${h.s}</small>${h.why?`<span class="why">${h.why}</span>`:''}</div>
               <div class="price"><b>${h.p}</b>${h.pd?`<small style="display:block;color:var(--muted)">${h.pd}</small>`:''}</div>
             </div>`).join('')}
@@ -1230,6 +1231,15 @@ function book(type){
   else url = 'https://www.booking.com/searchresults.html?ss='+d+(AFFIL.bookingAid?'&aid='+AFFIL.bookingAid:'');
   window.open(url,'_blank','noopener');
 }
+/* Reserva de un hotel CONCRETO: busca ese hotel por su nombre + ciudad en Booking
+   (antes caia en el buscador generico de la ciudad, ignorando el nombre del plan). */
+function bookHotel(enc){
+  let name=''; try{ name=decodeURIComponent(enc||''); }catch(e){ name=enc||''; }
+  const dest=currentBook.dest||'';
+  const ss=encodeURIComponent((name?name+' ':'')+dest);
+  const url='https://www.booking.com/searchresults.html?ss='+ss+(AFFIL.bookingAid?'&aid='+AFFIL.bookingAid:'');
+  window.open(url,'_blank','noopener');
+}
 function bookAll(){
   const dest=currentBook.dest||'', origin=currentBook.origin||'';
   const q=s=>encodeURIComponent(s||'');
@@ -1241,7 +1251,7 @@ function bookAll(){
     wifi:'<path d="M5 13a10 10 0 0 1 14 0"/><path d="M8.5 16.5a5 5 0 0 1 7 0"/><path d="M2 8.82a15 15 0 0 1 20 0"/><path d="M12 20h.01"/>'
   };
   const rows=[
-    {ic:IC.hotel,bg:'rgba(14,159,212,.14)',fg:'#0E9FD4',t:'Hotel',d:'Alojamiento en '+dest,url:'https://www.booking.com/searchresults.html?ss='+q(dest)+(AFFIL.bookingAid?'&aid='+AFFIL.bookingAid:'')},
+    {ic:IC.hotel,bg:'rgba(14,159,212,.14)',fg:'#0E9FD4',t:'Hotel',d:(currentBook.hotel1?currentBook.hotel1:'Alojamiento en '+dest),url:'https://www.booking.com/searchresults.html?ss='+q((currentBook.hotel1?currentBook.hotel1+' ':'')+dest)+(AFFIL.bookingAid?'&aid='+AFFIL.bookingAid:'')},
     {ic:IC.plane,bg:'rgba(255,107,90,.14)',fg:'#FF6B5A',t:'Vuelos',d:(origin?origin+' → ':'')+dest,url:'https://www.google.com/travel/flights?q='+q('vuelos de '+origin+' a '+dest)},
     {ic:IC.ticket,bg:'rgba(18,181,140,.14)',fg:'#12B58C',t:'Actividades y entradas',d:'Tours y experiencias en '+dest,url:AFFIL.civitatis?'https://www.civitatis.com/es/buscar/?q='+q(dest):'https://www.getyourguide.com/s/?q='+q(dest)+(AFFIL.gygPartner?'&partner_id='+AFFIL.gygPartner:'')},
     {ic:IC.shield,bg:'rgba(14,159,212,.14)',fg:'#0E9FD4',t:'Seguro de viaje',d:'Viaja con todo cubierto',url:AFFIL.seguroUrl||'https://www.iatiseguros.com/'},
