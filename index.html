@@ -1451,7 +1451,9 @@ async function wikiThumb(query){
   }
   return null;
 }
-function stopMapsLink(name){ return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(name+' '+(currentBook.dest||'')); }
+// Fotos + opiniones SIN muro de cookies (Google Maps saltaba el consentimiento "Antes de ir a Google").
+// DuckDuckGo no rastrea → no tiene banner de cookies y muestra fotos y enlaces de opiniones directos.
+function stopMapsLink(name){ return 'https://duckduckgo.com/?q='+encodeURIComponent(name+' '+(currentBook.dest||'')+' fotos opiniones'); }
 // Tarjeta pequena anclada ABAJO del mapa (no se sale del mapa ni tapa el titulo de arriba)
 function showStopCard(m,name,idx){
   try{
@@ -1461,7 +1463,7 @@ function showStopCard(m,name,idx){
     card.innerHTML='<div class="sc-img"><span>…</span></div>'+
       '<div class="sc-body"><span class="sc-cat">Parada '+idx+'</span>'+
       '<span class="sc-name" title="'+name.replace(/"/g,'&quot;')+'">'+name+'</span>'+
-      '<a class="sc-link" href="'+stopMapsLink(name)+'" target="_blank" rel="noopener">Ver fotos y reseñas reales →</a></div>'+
+      '<a class="sc-link" href="'+stopMapsLink(name)+'" target="_blank" rel="noopener">Ver más fotos y opiniones →</a></div>'+
       '<span class="sc-x" role="button" aria-label="Cerrar">✕</span>';
     card.querySelector('.sc-x').onclick=function(e){ e.stopPropagation(); card.remove(); };
     const box=card.querySelector('.sc-img');
