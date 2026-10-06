@@ -266,23 +266,23 @@ header{
 .vapor{width:12px;height:12px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.95),rgba(255,255,255,0) 68%);animation:vaporFade 1.2s ease-out forwards}
 @keyframes vaporFade{0%{opacity:.85;transform:scale(.4)}100%{opacity:0;transform:scale(2)}}
 @media(prefers-reduced-motion:reduce){.arrive-ring{display:none}.pin-pop{animation:none}.plane-glow{animation:none;opacity:.5}.vapor{display:none}}
-/* ==== Ficha de un punto del mapa (foto + enlace) ==== */
-.stop-popup .leaflet-popup-content-wrapper{padding:0;overflow:hidden;border-radius:14px;box-shadow:0 12px 34px rgba(11,28,46,.28)}
-.stop-popup .leaflet-popup-content{margin:0;width:238px!important}
-.stop-pop{width:238px;font-family:'Figtree',system-ui,sans-serif}
-.sp-img{height:132px;background:#e6edf4;display:flex;align-items:center;justify-content:center;text-align:center;color:#8fa2b4;font-size:.72rem;padding:0 .8rem}
-.sp-img img{width:100%;height:132px;object-fit:cover;display:block}
-.sp-body{padding:.65rem .8rem .75rem}
-.sp-body b{display:block;font-size:.95rem;color:#0c1726;line-height:1.25;margin-bottom:.35rem}
-.sp-link{display:inline-block;font-size:.8rem;font-weight:700;color:#0E6EA8;text-decoration:none}
-.sp-link:hover{text-decoration:underline}
-.sp-cat{display:inline-block;font-size:.64rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#FF6B5A;margin-bottom:.2rem}
+/* ==== Ficha de un punto: barrita anclada ABAJO del mapa (no se sale ni tapa el titulo) ==== */
+.stop-card{position:absolute;left:8px;right:8px;bottom:8px;z-index:1200;display:flex;gap:.55rem;background:#fff;border-radius:12px;box-shadow:0 8px 24px rgba(11,28,46,.3);overflow:hidden;align-items:stretch;font-family:'Figtree',system-ui,sans-serif;animation:stopCardIn .25s ease}
+.stop-card .sc-img{width:82px;flex:none;background:#e6edf4;display:flex;align-items:center;justify-content:center;color:#9fb0c0;font-size:.58rem;text-align:center;padding:0 .3rem}
+.stop-card .sc-img img{width:82px;height:100%;object-fit:cover;display:block}
+.stop-card .sc-body{flex:1;min-width:0;padding:.5rem .7rem;display:flex;flex-direction:column;justify-content:center}
+.stop-card .sc-cat{font-size:.6rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#FF6B5A}
+.stop-card .sc-name{font-size:.9rem;font-weight:800;color:#0c1726;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:.05rem 0 .1rem}
+.stop-card .sc-link{font-size:.76rem;font-weight:700;color:#0E6EA8;text-decoration:none}
+.stop-card .sc-link:hover{text-decoration:underline}
+.stop-card .sc-x{position:absolute;top:3px;right:5px;cursor:pointer;color:#6b7a89;font-size:.85rem;line-height:1;background:rgba(255,255,255,.85);border-radius:50%;width:19px;height:19px;display:flex;align-items:center;justify-content:center}
+@keyframes stopCardIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 .tc-hero .demo-flag{position:absolute;top:1rem;right:1rem;font-size:.66rem;font-weight:800;letter-spacing:.1em;color:#fff;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.25);padding:.25rem .6rem;border-radius:6px}
 .tc-hero h3{font-family:'Fraunces',serif;font-size:1.55rem;font-weight:600;line-height:1.2;margin-bottom:.4rem;color:#fff}
 .tc-hero .route{font-size:.85rem;color:rgba(255,255,255,.85);font-weight:600}
 .tc-stats{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.9rem}
 .tc-stats span{font-size:.75rem;font-weight:700;color:#fff;background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.16);padding:.32rem .7rem;border-radius:99px}
-#map{height:250px;min-height:250px;flex:none;width:100%;background:#E7F4FA;border-block:1px solid var(--line)}
+#map{height:250px;min-height:250px;flex:none;width:100%;background:#E7F4FA;border-block:1px solid var(--line);position:relative}
 .tc-body{padding:1.2rem 1.4rem;display:flex;flex-direction:column;gap:1.1rem}
 .block-h{font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
 .day{border:1px solid var(--line);border-radius:var(--r-sm);padding:.85rem 1rem;background:rgba(255,255,255,.02)}
@@ -1452,18 +1452,22 @@ async function wikiThumb(query){
   return null;
 }
 function stopMapsLink(name){ return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(name+' '+(currentBook.dest||'')); }
-function stopPopupHTML(name,cat){
-  return `<div class="stop-pop"><div class="sp-img" data-q="${encodeURIComponent(name)}"><span>Cargando foto…</span></div>`+
-    `<div class="sp-body">${cat?`<span class="sp-cat">${cat}</span>`:''}<b>${name}</b>`+
-    `<a class="sp-link" href="${stopMapsLink(name)}" target="_blank" rel="noopener">Ver fotos y reseñas reales →</a></div></div>`;
-}
-async function fillStopImg(popupEl){
+// Tarjeta pequena anclada ABAJO del mapa (no se sale del mapa ni tapa el titulo de arriba)
+function showStopCard(m,name,idx){
   try{
-    const box=popupEl&&popupEl.querySelector('.sp-img'); if(!box||box.dataset.done) return; box.dataset.done='1';
-    const name=decodeURIComponent(box.dataset.q||''); const q=name+' '+(currentBook.dest||'');
-    let src=await placePhoto(q); if(!src) src=await wikiThumb(q);
-    if(src){ const img=new Image(); img.onload=()=>{box.innerHTML='';box.appendChild(img);}; img.onerror=()=>{box.innerHTML='<span>Mira las fotos reales en el enlace de abajo 👇</span>';}; img.alt=name; img.src=src; }
-    else { box.innerHTML='<span>Mira las fotos reales en el enlace de abajo 👇</span>'; }
+    const cont=m.getContainer(); if(!cont) return;
+    let card=cont.querySelector('.stop-card');
+    if(!card){ card=document.createElement('div'); card.className='stop-card'; cont.appendChild(card); }
+    card.innerHTML='<div class="sc-img"><span>…</span></div>'+
+      '<div class="sc-body"><span class="sc-cat">Parada '+idx+'</span>'+
+      '<span class="sc-name" title="'+name.replace(/"/g,'&quot;')+'">'+name+'</span>'+
+      '<a class="sc-link" href="'+stopMapsLink(name)+'" target="_blank" rel="noopener">Ver fotos y reseñas reales →</a></div>'+
+      '<span class="sc-x" role="button" aria-label="Cerrar">✕</span>';
+    card.querySelector('.sc-x').onclick=function(e){ e.stopPropagation(); card.remove(); };
+    const box=card.querySelector('.sc-img');
+    (async()=>{ try{ const q=name+' '+(currentBook.dest||''); let src=await placePhoto(q); if(!src) src=await wikiThumb(q);
+      if(src){ const img=new Image(); img.onload=()=>{ box.innerHTML=''; box.appendChild(img); }; img.onerror=()=>{ box.innerHTML='<span>Ver fotos ↗</span>'; }; img.alt=name; img.src=src; }
+      else { box.innerHTML='<span>Ver fotos ↗</span>'; } }catch(e){ box.innerHTML=''; } })();
   }catch(e){}
 }
 // Revela los puntos uno a uno (rebote); al tocar uno: zoom + ficha con foto
@@ -1476,9 +1480,7 @@ function revealStops(m,pins,myId,animate){
         html:`<div class="${animate?'pin-pop':''}" style="${animate?'animation-delay:'+(i*0.02)+'s':''}"><div style="background:#0E9FD4;color:#fff;font-weight:800;font-size:11px;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 3px 10px rgba(16,52,84,.5);border:2px solid #fff">${i+1}</div></div>`});
       const cleanName=(p.n||'').replace(/^\d+\s*·\s*/,'');
       const mk=L.marker(p.c,{icon}).addTo(m);
-      mk.bindPopup(stopPopupHTML(cleanName,'Parada '+(i+1)),{maxWidth:250,minWidth:238,className:'stop-popup',closeButton:true});
-      mk.on('click',()=>{ try{ m.flyTo(p.c, Math.max(m.getZoom(),15), {duration:.9}); }catch(e){} });
-      mk.on('popupopen',e=>{ fillStopImg(e.popup.getElement()); });
+      mk.on('click',()=>{ try{ m.flyTo(p.c, Math.min(Math.max(m.getZoom(),14),15), {duration:.8}); }catch(e){} showStopCard(m,cleanName,i+1); });
       line.addLatLng(p.c);
     };
     if(animate) setTimeout(drop,480*i); else drop();
