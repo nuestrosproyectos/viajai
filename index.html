@@ -501,6 +501,14 @@ footer{border-top:1px solid var(--line);padding:3rem 0 2rem;background:var(--bg)
   .book-grid{grid-template-columns:1fr}
   .chat{min-height:440px}
   .hero{padding-top:100px}
+  /* Tarjeta de hotel: apilar en movil para que el precio no pise el texto */
+  .hotel{flex-direction:column;align-items:flex-start;gap:.4rem}
+  .hotel .price{text-align:left}
+  .hotel .price b{font-size:1.25rem}
+  /* Boton flotante mas compacto para que no tape contenido */
+  .float-expert{right:12px;bottom:12px;padding:.6rem .9rem;font-size:.8rem;gap:.4rem}
+  /* Aire al final de la tarjeta para que el boton flotante no tape los CTA */
+  .tc-actions{padding-bottom:5rem}
 }
 
 /* ============ PRINT ============ */
