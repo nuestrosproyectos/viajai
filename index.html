@@ -258,7 +258,14 @@ header{
 @keyframes arriveRing{0%{transform:scale(.2);opacity:.9}70%{opacity:.35}100%{transform:scale(5.4);opacity:0}}
 .pin-pop{display:flex;align-items:center;justify-content:center;width:100%;height:100%;transform-origin:50% 100%;animation:pinDrop .5s cubic-bezier(.34,1.56,.64,1) both}
 @keyframes pinDrop{0%{transform:translateY(-18px) scale(.2);opacity:0}60%{transform:translateY(2px) scale(1.08);opacity:1}100%{transform:translateY(0) scale(1)}}
-@media(prefers-reduced-motion:reduce){.arrive-ring{display:none}.pin-pop{animation:none}}
+/* ==== Avion cinematografico (vuelo mas espectacular) ==== */
+.plane-wrap{position:relative;width:46px;height:46px;display:grid;place-items:center;will-change:transform}
+.plane-svg{position:relative;z-index:2;filter:drop-shadow(0 3px 6px rgba(0,0,0,.45)) drop-shadow(0 0 7px rgba(255,107,90,.7))}
+.plane-glow{position:absolute;z-index:1;width:34px;height:34px;border-radius:50%;background:radial-gradient(circle,rgba(255,138,91,.6),rgba(255,138,91,0) 70%);animation:planeGlow 1.3s ease-in-out infinite}
+@keyframes planeGlow{0%,100%{opacity:.4;transform:scale(.85)}50%{opacity:.95;transform:scale(1.3)}}
+.vapor{width:12px;height:12px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.95),rgba(255,255,255,0) 68%);animation:vaporFade 1.2s ease-out forwards}
+@keyframes vaporFade{0%{opacity:.85;transform:scale(.4)}100%{opacity:0;transform:scale(2)}}
+@media(prefers-reduced-motion:reduce){.arrive-ring{display:none}.pin-pop{animation:none}.plane-glow{animation:none;opacity:.5}.vapor{display:none}}
 .tc-hero .demo-flag{position:absolute;top:1rem;right:1rem;font-size:.66rem;font-weight:800;letter-spacing:.1em;color:#fff;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.25);padding:.25rem .6rem;border-radius:6px}
 .tc-hero h3{font-family:'Fraunces',serif;font-size:1.55rem;font-weight:600;line-height:1.2;margin-bottom:.4rem;color:#fff}
 .tc-hero .route{font-size:.85rem;color:rgba(255,255,255,.85);font-weight:600}
@@ -1359,8 +1366,13 @@ async function sendToBrain(message){
 /* ============ VUELO CINEMATOGRÁFICO origen → destino ============ */
 let planeTimer=null, flightSeq=0;
 function clearPlane(){ flightSeq++; if(planeTimer){clearInterval(planeTimer);planeTimer=null;} }
-function planeIcon(deg){return L.divIcon({className:'',iconSize:[42,42],iconAnchor:[21,21],
-  html:`<div style="transform:rotate(${deg}deg)"><svg width="42" height="42" viewBox="0 0 24 24" style="filter:drop-shadow(0 3px 5px rgba(0,0,0,.4))"><path d="M22 16.2v-1.9l-8.5-5.1V3.7c0-.9-.6-1.7-1.5-1.7s-1.5.8-1.5 1.7v5.5L2 14.3v1.9l8.5-2.6v5.3L8.1 20.6v1.6L12 21l3.9 1.2v-1.6l-2.4-1.7v-5.3z" fill="#FF6B5A" stroke="#fff" stroke-width=".85" stroke-linejoin="round"/></svg></div>`});}
+function planeIcon(deg,uid){const id='pg'+(uid||0);return L.divIcon({className:'',iconSize:[46,46],iconAnchor:[23,23],
+  html:`<div class="plane-wrap" style="transform:rotate(${deg}deg)"><span class="plane-glow"></span><svg class="plane-svg" width="40" height="40" viewBox="0 0 24 24"><defs><linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffdccd"/><stop offset=".5" stop-color="#FF8A5B"/><stop offset="1" stop-color="#FF5636"/></linearGradient></defs><path d="M22 16.2v-1.9l-8.5-5.1V3.7c0-.9-.6-1.7-1.5-1.7s-1.5.8-1.5 1.7v5.5L2 14.3v1.9l8.5-2.6v5.3L8.1 20.6v1.6L12 21l3.9 1.2v-1.6l-2.4-1.7v-5.3z" fill="url(#${id})" stroke="#fff" stroke-width=".9" stroke-linejoin="round"/></svg></div>`});}
+// Estela de vapor: pequena nube que el avion suelta y se desvanece
+function vaporPuff(m,latlng){
+  const mk=L.marker(latlng,{interactive:false,zIndexOffset:900,icon:L.divIcon({className:'',iconSize:[12,12],iconAnchor:[6,6],html:'<div class="vapor"></div>'})}).addTo(m);
+  setTimeout(()=>{try{m.removeLayer(mk);}catch(e){}},1200);
+}
 function dotMarker(m,c){return L.marker(c,{interactive:false,icon:L.divIcon({className:'',iconSize:[13,13],iconAnchor:[6,6],
   html:`<div style="width:13px;height:13px;border-radius:50%;background:#0E9FD4;border:2px solid #fff;box-shadow:0 1px 5px rgba(0,0,0,.45)"></div>`})}).addTo(m);}
 function bezierArc(a,b,bend){
@@ -1416,12 +1428,17 @@ async function cinematicFlight(m,origin,dest,destZoom,pins){
     revealStops(m,pins,myId,true);
     return;
   }
-  const arc = bezierArc(origin,dest,0.16);
+  const arc = bezierArc(origin,dest,0.18);
   dotMarker(m,origin); dotMarker(m,dest);
-  try{ m.fitBounds([origin,dest],{padding:[60,60]}); }catch(e){}
-  const trail = L.polyline([arc[0]],{color:'#FF6B5A',weight:3,opacity:.85,dashArray:'1 9'}).addTo(m);
-  const plane = L.marker(arc[0],{interactive:false,zIndexOffset:1000,icon:planeIcon(0)}).addTo(m);
-  // El avión cruza el arco (ya viene con ease-out: desacelera al final)
+  try{ m.fitBounds([origin,dest],{padding:[64,64]}); }catch(e){}
+  // Estela doble: halo ancho difuso + linea fina brillante (contrail con glow)
+  const trailGlow = L.polyline([arc[0]],{color:'#FF8A5B',weight:11,opacity:.22,lineCap:'round'}).addTo(m);
+  const trail = L.polyline([arc[0]],{color:'#FF6B5A',weight:3,opacity:.9,lineCap:'round'}).addTo(m);
+  arriveRipple(m,origin); // destello de DESPEGUE en el origen
+  const plane = L.marker(arc[0],{interactive:false,zIndexOffset:1000,icon:planeIcon(0,myId)}).addTo(m);
+  // El avion aparece con un fundido suave al despegar
+  try{ const pe=plane.getElement(); if(pe){pe.style.opacity='0';pe.style.transition='opacity .5s ease';requestAnimationFrame(()=>{pe.style.opacity='1';});} }catch(e){}
+  // El avión cruza el arco (ease-out: desacelera al final), soltando vapor
   await new Promise(res=>{
     let i=1;
     planeTimer=setInterval(()=>{
@@ -1429,9 +1446,12 @@ async function cinematicFlight(m,origin,dest,destZoom,pins){
       if(i>=arc.length){clearInterval(planeTimer);planeTimer=null;return res();}
       const a=arc[i-1], b=arc[i];
       const deg=Math.atan2((b[1]-a[1])*Math.cos(b[0]*Math.PI/180),(b[0]-a[0]))*180/Math.PI;
-      plane.setLatLng(b); plane.setIcon(planeIcon(deg)); trail.addLatLng(b);
+      plane.setLatLng(b);
+      try{ const w=plane.getElement(); const wrap=w&&w.querySelector('.plane-wrap'); if(wrap) wrap.style.transform='rotate('+deg+'deg)'; }catch(e){}
+      trail.addLatLng(b); trailGlow.addLatLng(b);
+      if(i%5===0) vaporPuff(m,b);
       i++;
-    },40);
+    },38);
   });
   if(myId!==flightSeq) return;
   // ATERRIZAJE WOW: destello de ondas en el destino
@@ -1439,7 +1459,7 @@ async function cinematicFlight(m,origin,dest,destZoom,pins){
   // La cámara hace UN barrido suave que encuadra los puntos (grandes, con margen)
   frameStops(m,pins,dest,true);
   // El avión se difumina para dejar protagonismo a los puntos
-  setTimeout(()=>{ try{ const el=plane.getElement(); if(el){el.style.transition='opacity .6s, transform .6s';el.style.opacity='0';el.style.transform='scale(.6)';} }catch(e){} },500);
+  setTimeout(()=>{ try{ const el=plane.getElement(); if(el){el.style.transition='opacity .6s';el.style.opacity='0';const wrap=el.querySelector('.plane-wrap');if(wrap){wrap.style.transition='transform .6s';wrap.style.transform+=' scale(.5)';}} }catch(e){} },500);
   setTimeout(()=>{ try{m.removeLayer(plane);}catch(e){} },1200);
   // Los puntos caen uno a uno cuando la cámara ya ha llegado
   setTimeout(()=>{ if(myId===flightSeq) revealStops(m,pins,myId,true); },1500);
