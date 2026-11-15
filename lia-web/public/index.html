@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Lía · Tarot con IA</title>
+<meta name="description" content="Tarot, carta astral, compatibilidad, horóscopo chino y luna de hoy, calculados con datos astronómicos reales y leídos por Lía, una tarotista hecha con inteligencia artificial.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols&text=%E2%99%88%E2%99%89%E2%99%8A%E2%99%8B%E2%99%8C%E2%99%8D%E2%99%8E%E2%99%8F%E2%99%90%E2%99%91%E2%99%92%E2%99%93%E2%98%89%E2%98%BD%E2%98%BF%E2%99%80%E2%99%82%E2%99%83%E2%99%84%E2%99%85%E2%99%86%E2%99%87%E2%98%8A%E2%98%8B%E2%9A%B7%E2%9A%B8&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&text=%E4%B8%89%E5%85%94%E5%85%AD%E5%90%88%E5%92%8C%E5%AE%B3%E5%B9%B3%E6%AF%94%E6%B2%96%E7%81%AB%E7%89%9B%E7%8B%97%E7%8C%B4%E7%BE%8A%E8%99%8E%E8%9B%87%E8%B1%AC%E9%9B%9E%E9%A6%AC%E9%BC%A0%E9%BE%8D&display=swap">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<a class="saltar" href="#tarot">Saltar al tarot</a>
+
+<header class="barra" id="barra"><div class="wrap">
+  <a class="logo" href="#inicio"><b>Lía</b><small>tarot con IA</small></a>
+  <nav aria-label="Secciones"><a href="#tarot">Tarot</a><a href="#astral">Carta astral</a><a href="#pareja">Pareja</a><a href="#chino">Horóscopo chino</a><a href="#luna">Luna</a></nav>
+  <a class="btn btn-pri btn-s" href="#tarot">Preguntar</a>
+</div></header>
+
+<section class="hero" id="inicio">
+  <img src="img/lia-hero.jpg" alt="Lía, tarotista creada con inteligencia artificial, sentada ante una mesa de terciopelo con cuatro cartas boca abajo" fetchpriority="high">
+  <div class="wrap hero-txt">
+    <p class="rotulo">Tarot con inteligencia artificial</p>
+    <h1>Soy Lía. No soy humana, y <em>te lo digo claro</em>.</h1>
+    <p class="sub">Leo el tarot, calculo tu carta astral con la posición real de los planetas y te digo cómo está la luna esta noche. Sin gabinete, sin esperas y sin hacerme pasar por quien no soy.</p>
+    <div class="ctas"><a class="btn btn-pri" href="#tarot">Hacer mi pregunta gratis</a><a class="btn btn-sec" href="#astral">Ver mi carta astral</a></div>
+  </div>
+  <div class="hoy wrap" id="hoy" aria-live="polite">
+    <div class="hoy-luna"><svg viewBox="0 0 100 100" class="luna-svg" id="hoyLuna" aria-hidden="true"></svg><div><small>Luna de hoy</small><b id="hoyFase">…</b><span id="hoyLunaTxt"></span></div></div>
+    <div class="hoy-carta"><img id="hoyCartaImg" alt=""><div><small>Carta del día</small><b id="hoyCarta">…</b><span id="hoyCartaTxt"></span></div></div>
+    <div class="hoy-fecha"><small id="hoyFecha"></small><span>Datos calculados hoy para España</span></div>
+  </div>
+</section>
+
+<!-- I · TAROT SÍ O NO -->
+<section class="seccion" id="tarot"><div class="wrap">
+  <div class="sec-cab"><div><p class="rotulo"><i>I</i>Tarot sí o no</p><h2>Piensa tu pregunta y <em>elige una carta</em>.</h2></div>
+  <p>Las 78 cartas del tarot, barajadas de verdad en cada tirada. Escribe una pregunta que se responda con sí o no y toca la carta que te llame.</p></div>
+  <div class="tarot">
+    <div class="tarot-izq">
+      <label class="campo-lbl" for="pregunta">Tu pregunta</label>
+      <input id="pregunta" class="campo-txt" maxlength="160" value="¿Me conviene aceptar ese trabajo?">
+      <div class="abanico" id="abanico" role="group" aria-label="Baraja de 78 cartas: elige una"></div>
+      <p class="ayuda" id="tarotAyuda">Pasa el dedo por la baraja y toca una carta.</p>
+    </div>
+    <aside class="veredicto" id="veredicto" aria-live="polite">
+      <div class="carta3d" id="cartaElegida"><div class="cara dorso"></div><div class="cara frente"><img alt=""></div></div>
+      <div class="ver-txt">
+        <p class="ver-q" id="verQ">La respuesta de Lía</p>
+        <h3 id="verRes">—</h3>
+        <p class="ver-nom" id="verNom">Aún no has elegido carta</p>
+        <p class="ver-lect" id="verLect">Cuando toques una carta, aquí verás la respuesta y por qué.</p>
+        <div class="kw" id="verKw"></div>
+        <div class="ver-acc" id="verAcc" hidden><a class="btn btn-pri" href="#tirada">Tirada completa · 4,90 €</a><button class="btn btn-sec" id="barajar" type="button">Barajar otra vez</button></div>
+      </div>
+    </aside>
+  </div>
+</div></section>
+
+<!-- II · CARTA ASTRAL -->
+<section class="seccion oscuro" id="astral"><div class="wrap">
+  <div class="sec-cab"><div><p class="rotulo"><i>II</i>Carta astral</p><h2>El cielo exacto del <em>día que naciste</em>.</h2></div>
+  <p>Con tu fecha, hora y ciudad calculo dónde estaban los 14 cuerpos del cielo, tus 12 casas y los ángulos entre planetas. Nada de signos genéricos: tu cielo.</p></div>
+  <form class="form-nac" id="formNatal" autocomplete="off">
+    <div class="ejemplos" id="ejNatal"><span>Ejemplos:</span></div>
+    <div class="campos">
+      <label>Fecha<input type="date" name="date" required min="1900-01-01" max="2026-12-31"></label>
+      <label>Hora<input type="time" name="time" required></label>
+      <label class="ciudad">Ciudad<input name="city" placeholder="Granada" required><ul class="sugerencias" role="listbox"></ul></label>
+      <button class="btn btn-pri" type="submit">Calcular</button>
+    </div>
+    <p class="aviso-demo" hidden></p>
+  </form>
+  <div class="natal" id="natal">
+    <div class="rueda-wrap"><svg viewBox="-320 -320 640 640" class="rueda" id="rueda" role="img" aria-label="Rueda de la carta astral"></svg><div class="rueda-tip" id="ruedaTip" hidden></div></div>
+    <div class="natal-datos">
+      <div class="big3" id="big3"></div>
+      <div class="bloque"><h4>Elementos</h4><div class="barras" id="elementos"></div></div>
+      <div class="bloque"><h4>Aspectos entre planetas</h4><div class="donut-fila"><svg viewBox="0 0 120 120" class="donut" id="donutAsp"></svg><div class="leyenda" id="leyAsp"></div></div></div>
+      <div class="bloque"><h4>Figura destacada</h4><p class="figura" id="figura"></p></div>
+    </div>
+  </div>
+  <div class="planetas" id="planetas"></div>
+  <div class="upsell"><div><b>Tu informe completo de carta astral</b><span>40 páginas en PDF: los 14 planetas, las 12 casas y los 38 aspectos explicados uno por uno.</span></div><a class="btn btn-pri" href="#">Informe en PDF · 19,90 €</a></div>
+</div></section>
+
+<!-- III · COMPATIBILIDAD -->
+<section class="seccion" id="pareja"><div class="wrap">
+  <div class="sec-cab"><div><p class="rotulo"><i>III</i>Compatibilidad</p><h2>Dos cielos, <em>uno frente al otro</em>.</h2></div>
+  <p>Comparo las dos cartas astrales completas, planeta contra planeta, y lo resumo en cinco terrenos: romance, emociones, mente, físico y espiritual.</p></div>
+  <div class="ejemplos" id="ejCompat"><span>Parejas de ejemplo:</span></div>
+  <div class="compat" id="compat">
+    <div class="compat-score"><svg viewBox="0 0 200 200" id="anillo"></svg><div class="compat-num"><b id="compatNum">0</b><span>de 100</span></div><p class="arquetipo" id="arquetipo"></p></div>
+    <div class="compat-radar"><svg viewBox="-200 -150 400 300" id="radar"></svg></div>
+    <div class="compat-txt"><p id="compatDesc"></p><h4>Lo que os une</h4><ul id="compatFuerte"></ul><h4>Lo que os pondrá a prueba</h4><ul id="compatReto"></ul></div>
+  </div>
+  <div class="upsell"><div><b>Informe de pareja</b><span>Los 80 aspectos entre vuestras cartas y qué hacer con cada uno.</span></div><a class="btn btn-pri" href="#">Informe de pareja · 14,90 €</a></div>
+</div></section>
+
+<!-- IV · HORÓSCOPO CHINO -->
+<section class="seccion granate" id="chino"><div class="wrap">
+  <div class="sec-cab"><div><p class="rotulo"><i>IV</i>Horóscopo chino 2027</p><h2>El 6 de febrero empieza el año de la <em>Cabra de Fuego</em>.</h2></div>
+  <p>Pon tu fecha de nacimiento. Si naciste en enero o a principios de febrero, ojo: tu animal puede ser el del año anterior. Yo lo calculo con el calendario lunar.</p></div>
+  <div class="chino">
+    <div class="chino-rueda"><svg viewBox="-260 -260 520 520" id="ruedaChina" role="img" aria-label="Rueda de los doce animales"></svg></div>
+    <div class="chino-panel">
+      <form class="fila-form" id="formChino"><label>Tu fecha de nacimiento<input type="date" name="date" required value="1991-02-20" min="1930-01-01" max="2026-12-31"></label><button class="btn btn-pri" type="submit">Ver mi animal</button></form>
+      <div class="chino-res" id="chinoRes" aria-live="polite"></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- V · LUNA -->
+<section class="seccion" id="luna"><div class="wrap">
+  <div class="sec-cab"><div><p class="rotulo"><i>V</i>La luna este mes</p><h2>Cada noche, <em>una luna distinta</em>.</h2></div>
+  <p id="lunaIntro">Fase, porcentaje iluminado y signo por el que pasa, día a día. Calculado para España.</p></div>
+  <div class="luna-mes" id="lunaMes"></div>
+</div></section>
+
+<!-- VI · TIRADA DE TRES -->
+<section class="seccion oscuro" id="tirada"><div class="wrap">
+  <div class="sec-cab"><div><p class="rotulo"><i>VI</i>Pasado, presente y futuro</p><h2>Tres cartas para <em>verlo entero</em>.</h2></div>
+  <p>La tirada más clásica. Cada carta en su sitio, con lo que dice del amor, del trabajo y del dinero.</p></div>
+  <form class="fila-form" id="formTres"><label>Tu pregunta<input name="q" maxlength="160" value="¿Qué necesito saber del amor?"></label><button class="btn btn-pri" type="submit">Echar las cartas</button></form>
+  <div class="tres" id="tres"></div>
+  <div class="temas" id="temas" hidden role="tablist"><button role="tab" aria-selected="true" data-t="love">Amor</button><button role="tab" data-t="career">Trabajo</button><button role="tab" data-t="finances">Dinero</button></div>
+</div></section>
+
+<!-- VII · NÚMERO Y BIORRITMO -->
+<section class="seccion" id="numeros"><div class="wrap">
+  <div class="sec-cab"><div><p class="rotulo"><i>VII</i>Tu número y tu energía</p><h2>Lo que dice <em>tu fecha</em>.</h2></div>
+  <p>Tu número de vida sale de sumar tu fecha de nacimiento. Tu biorritmo, de los ciclos que empezaron el día que naciste.</p></div>
+  <form class="fila-form" id="formNum"><label>Tu fecha de nacimiento<input type="date" name="date" required value="1985-03-21" min="1900-01-01" max="2026-12-31"></label><button class="btn btn-pri" type="submit">Calcular</button></form>
+  <div class="numbio">
+    <div class="numero" id="numero"></div>
+    <div class="bio"><h4>Tu biorritmo, hoy y los próximos días</h4><svg viewBox="0 0 640 280" id="bioSvg" role="img" aria-label="Gráfico de biorritmo"></svg><div class="bio-hoy" id="bioHoy"></div></div>
+  </div>
+</div></section>
+
+<!-- VIII · TRANSPARENCIA -->
+<section class="seccion" id="claro" style="padding-top:0"><div class="wrap">
+  <div class="sec-cab"><div><p class="rotulo"><i>VIII</i>Sin letra pequeña</p><h2>Todo lo que ves aquí <em>lo hace una IA</em>.</h2></div>
+  <p>Otras webs te dicen que te lee una vidente y te contesta una máquina. Aquí es al revés: sabes desde el principio con quién hablas.</p></div>
+  <div class="claro">
+    <div><i>i.</i><b>Mi cara y mi voz</b><span>Están generadas por ordenador. No existe una persona llamada Lía.</span></div>
+    <div><i>ii.</i><b>Las lecturas</b><span>Las escribe una inteligencia artificial a partir de las cartas que salen.</span></div>
+    <div><i>iii.</i><b>Los cálculos</b><span>Posiciones reales de planetas y luna, con tu fecha, hora y lugar.</span></div>
+    <div><i>iv.</i><b>Quién responde</b><span>Una empresa española, con atención en español y precios en euros con IVA.</span></div>
+  </div>
+</div></section>
+
+<footer class="pie"><div class="wrap">
+  <p>© 2026 <b>Lía</b> · Area Internet Business Group, S.L.U. · Granada</p>
+  <p>Ocio y reflexión personal. No sustituye consejo médico, legal ni financiero. Solo mayores de 18 años.</p>
+</div></footer>
+
+<script src="app.js"></script>
+</body>
+</html>
