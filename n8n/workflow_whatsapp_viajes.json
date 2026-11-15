@@ -1,0 +1,233 @@
+{
+  "name": "Canal WhatsApp Viajes - Chollos y Evergreen",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            { "field": "cronExpression", "expression": "0 10 * * *" },
+            { "field": "cronExpression", "expression": "30 14 * * *" },
+            { "field": "cronExpression", "expression": "30 19 * * *" }
+          ]
+        }
+      },
+      "id": "a1f0c2d4-0001-4a10-9b01-000000000001",
+      "name": "Cron 10:00 / 14:30 / 19:30",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [0, 300]
+    },
+    {
+      "parameters": {
+        "operation": "search",
+        "base": { "__rl": true, "mode": "id", "value": "={{ $env.AIRTABLE_BASE_ID }}" },
+        "table": { "__rl": true, "mode": "id", "value": "Chollos_Flash" },
+        "filterByFormula": "{Estado} = 'Pendiente'",
+        "returnAll": false,
+        "limit": 1,
+        "options": {}
+      },
+      "id": "a1f0c2d4-0002-4a10-9b01-000000000002",
+      "name": "Buscar Chollos",
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2.1,
+      "position": [240, 300],
+      "alwaysOutputData": true,
+      "notes": "Devuelve 1 chollo en estado Pendiente. 'Always Output Data' está activado para que el IF se ejecute aunque no haya ninguno."
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "loose", "version": 2 },
+          "conditions": [
+            {
+              "id": "c0000001-0000-4000-8000-000000000001",
+              "leftValue": "={{ $json.id }}",
+              "rightValue": "",
+              "operator": { "type": "string", "operation": "notEmpty", "singleValue": true }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "a1f0c2d4-0003-4a10-9b01-000000000003",
+      "name": "¿Hay chollo pendiente?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [480, 300]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "d0000001-0000-4000-8000-000000000001",
+              "name": "mensaje",
+              "value": "=🚨 *CHOLLO FLASH* 🚨\n\n✈️ *{{ $json.Origen }} → {{ $json.Destino }}*\n💶 Ida y vuelta desde *{{ $json.Precio }} €*\n📅 {{ $json.Fechas }}\n\n⏳ Estos precios duran horas: si te encaja, no lo dejes para luego.\n\n👉 Reserva aquí: {{ $json.URL_Afiliado }}\n\n📲 Reenvíaselo a quien se vendría contigo.\n\n_Precio visto en el momento de publicar; puede variar. Enlace de afiliado: a ti no te cuesta nada y nos ayuda a seguir buscando chollos._",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "a1f0c2d4-0004-4a10-9b01-000000000004",
+      "name": "Formatear Alerta Chollo",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [720, 180]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://gate.whapi.cloud/messages/text",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "Authorization", "value": "=Bearer {{ $env.WHAPI_TOKEN }}" },
+            { "name": "Accept", "value": "application/json" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ to: $env.WHAPI_CHANNEL_ID, body: $json.mensaje }) }}",
+        "options": {}
+      },
+      "id": "a1f0c2d4-0005-4a10-9b01-000000000005",
+      "name": "Publicar Chollo en Whapi",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [960, 180],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "base": { "__rl": true, "mode": "id", "value": "={{ $env.AIRTABLE_BASE_ID }}" },
+        "table": { "__rl": true, "mode": "id", "value": "Chollos_Flash" },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "id": "={{ $('Buscar Chollos').first().json.id }}",
+            "Estado": "Publicado"
+          },
+          "matchingColumns": ["id"],
+          "schema": [
+            { "id": "id", "displayName": "id", "required": false, "defaultMatch": true, "display": true, "type": "string", "readOnly": true, "removed": false },
+            { "id": "Estado", "displayName": "Estado", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true, "removed": false }
+          ]
+        },
+        "options": { "typecast": true }
+      },
+      "id": "a1f0c2d4-0006-4a10-9b01-000000000006",
+      "name": "Marcar Chollo como Publicado",
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2.1,
+      "position": [1200, 180]
+    },
+    {
+      "parameters": {
+        "operation": "search",
+        "base": { "__rl": true, "mode": "id", "value": "={{ $env.AIRTABLE_BASE_ID }}" },
+        "table": { "__rl": true, "mode": "id", "value": "Contenido_Evergreen" },
+        "returnAll": false,
+        "limit": 1,
+        "options": {},
+        "sort": {
+          "property": [{ "field": "Veces_Publicado", "direction": "asc" }]
+        }
+      },
+      "id": "a1f0c2d4-0007-4a10-9b01-000000000007",
+      "name": "Buscar Evergreen (menos publicado)",
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2.1,
+      "position": [720, 440]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://gate.whapi.cloud/messages/text",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "Authorization", "value": "=Bearer {{ $env.WHAPI_TOKEN }}" },
+            { "name": "Accept", "value": "application/json" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ to: $env.WHAPI_CHANNEL_ID, body: $json.Copy_Mensaje }) }}",
+        "options": {}
+      },
+      "id": "a1f0c2d4-0008-4a10-9b01-000000000008",
+      "name": "Publicar Evergreen en Whapi",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [960, 440],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "base": { "__rl": true, "mode": "id", "value": "={{ $env.AIRTABLE_BASE_ID }}" },
+        "table": { "__rl": true, "mode": "id", "value": "Contenido_Evergreen" },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "id": "={{ $('Buscar Evergreen (menos publicado)').first().json.id }}",
+            "Veces_Publicado": "={{ (Number($('Buscar Evergreen (menos publicado)').first().json.Veces_Publicado) || 0) + 1 }}"
+          },
+          "matchingColumns": ["id"],
+          "schema": [
+            { "id": "id", "displayName": "id", "required": false, "defaultMatch": true, "display": true, "type": "string", "readOnly": true, "removed": false },
+            { "id": "Veces_Publicado", "displayName": "Veces_Publicado", "required": false, "defaultMatch": false, "display": true, "type": "number", "canBeUsedToMatch": true, "removed": false }
+          ]
+        },
+        "options": { "typecast": true }
+      },
+      "id": "a1f0c2d4-0009-4a10-9b01-000000000009",
+      "name": "Sumar +1 a Veces_Publicado",
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2.1,
+      "position": [1200, 440]
+    }
+  ],
+  "connections": {
+    "Cron 10:00 / 14:30 / 19:30": {
+      "main": [[{ "node": "Buscar Chollos", "type": "main", "index": 0 }]]
+    },
+    "Buscar Chollos": {
+      "main": [[{ "node": "¿Hay chollo pendiente?", "type": "main", "index": 0 }]]
+    },
+    "¿Hay chollo pendiente?": {
+      "main": [
+        [{ "node": "Formatear Alerta Chollo", "type": "main", "index": 0 }],
+        [{ "node": "Buscar Evergreen (menos publicado)", "type": "main", "index": 0 }]
+      ]
+    },
+    "Formatear Alerta Chollo": {
+      "main": [[{ "node": "Publicar Chollo en Whapi", "type": "main", "index": 0 }]]
+    },
+    "Publicar Chollo en Whapi": {
+      "main": [[{ "node": "Marcar Chollo como Publicado", "type": "main", "index": 0 }]]
+    },
+    "Buscar Evergreen (menos publicado)": {
+      "main": [[{ "node": "Publicar Evergreen en Whapi", "type": "main", "index": 0 }]]
+    },
+    "Publicar Evergreen en Whapi": {
+      "main": [[{ "node": "Sumar +1 a Veces_Publicado", "type": "main", "index": 0 }]]
+    }
+  },
+  "pinData": {},
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Europe/Madrid",
+    "saveManualExecutions": true
+  },
+  "tags": []
+}

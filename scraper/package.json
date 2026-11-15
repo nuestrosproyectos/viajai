@@ -1,0 +1,17 @@
+{
+  "name": "viajai-ingesta-chollos",
+  "version": "1.0.0",
+  "description": "Busca vuelos baratos ida y vuelta desde España en Travelpayouts y los inserta en Airtable como chollos pendientes.",
+  "main": "ingesta_chollos.js",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node ingesta_chollos.js",
+    "prueba": "DRY_RUN=true node ingesta_chollos.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
