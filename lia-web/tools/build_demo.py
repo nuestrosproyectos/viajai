@@ -35,7 +35,7 @@ head = head.replace('<title>Lía y compañía · Tarot y astrología con IA</tit
 for f in sorted(set(re.findall(r'src="img/([a-z-]+)\.jpg"', body))):
     body = body.replace(f'src="img/{f}.jpg"', 'src="' + b64(P('public', 'img', f + '.jpg')) + '"')
 assert 'src="img/' not in body
-aviso = '<p class="aviso-prev">Vista previa para Juan · datos reales de RoxyAPI de hoy · la carta astral y la pareja, solo con los ejemplos · los botones de pago no cobran</p>'
+aviso = '<p class="aviso-prev">Vista previa · datos reales de RoxyAPI de hoy · la carta astral y la pareja, solo con los ejemplos · los botones de pago no cobran</p>'
 body = body.replace('<script src="app.js"></script>', '<script>window.LIA_DEMO=' + json.dumps(D, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/') + ';</script>\n<script>' + js + '</script>')
 body = body.replace('<a class="btn btn-sec" href="#equipo">Conocer al equipo</a></div>', '<a class="btn btn-sec" href="#equipo">Conocer al equipo</a></div>' + aviso, 1)
 assert aviso in body
