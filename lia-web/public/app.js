@@ -654,6 +654,14 @@ async function numero(fecha) {
 }
 $('#formNum').addEventListener('submit', e => { e.preventDefault(); const f = e.target.date.value; numero(f); biorritmo(f); });
 
+/* ---------- Cifras animadas ---------- */
+$$('.cifra b').forEach(el => alVer(el, () => {
+  const n = parseFloat(el.dataset.n), dec = +(el.dataset.dec || 0), suf = el.dataset.suf || '';
+  const t0 = performance.now(), ms = QUIETO ? 0 : 1600;
+  const paso = t => { const k = ms ? Math.min(1, (t - t0) / ms) : 1, e = 1 - Math.pow(1 - k, 4); el.textContent = (n * e).toLocaleString('es-ES', { minimumFractionDigits: dec, maximumFractionDigits: dec }) + suf; if (k < 1) requestAnimationFrame(paso); };
+  requestAnimationFrame(paso);
+}, .4));
+
 /* ---------- Arranque ---------- */
 (async () => {
   await cargarHoy();
