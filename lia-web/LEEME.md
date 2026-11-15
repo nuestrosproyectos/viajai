@@ -1,4 +1,6 @@
-# Lía · web de tarot y astrología con IA
+# Lía y compañía · tarot y astrología con IA
+
+Cuatro especialistas IA: Lía (tarot), Mateo (astrología y luna), Mei (horóscopo chino) e Inés (numerología y biorritmo).
 
 Web de Area Internet Business Group, S.L.U. conectada a RoxyAPI.
 
