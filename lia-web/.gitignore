@@ -1,5 +1,4 @@
 *.log
 *.png
-lia-vista-previa.html
 node_modules/
 .env
