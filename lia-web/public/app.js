@@ -578,7 +578,11 @@ async function echarCompleta(q) {
     for (const c of cartas) { c.classList.add('puesta'); c.style.opacity = 1; c.style.transform = `translate(${c.dataset.x}px,${c.dataset.y}px) rotate(${c.dataset.r}deg)`; await espera(170); }
     await espera(500);
     const items = $$('#lectura li');
-    for (let i = 0; i < cartas.length; i++) { cartas[i].classList.add('girada'); items[i].classList.add('vista'); await espera(260); }
+    const GRATIS = 3;
+    for (let i = 0; i < cartas.length; i++) {
+      if (i < GRATIS) { cartas[i].classList.add('girada'); items[i].classList.add('vista'); await espera(260); }
+      else { cartas[i].classList.add('bloqueada'); items[i].classList.add('vista', 'borrosa'); items[i].setAttribute('aria-hidden', 'true'); }
+    }
     // Resumen de Lía con lo que dicen las cartas
     const n = tiradaDatos.length, mayores = tiradaDatos.filter(p => p.card.arcana === 'major').length, inv = tiradaDatos.filter(p => p.card.reversed).length;
     const cuenta = {}; tiradaDatos.forEach(p => p.card.suit && (cuenta[p.card.suit] = (cuenta[p.card.suit] || 0) + 1));
@@ -589,8 +593,19 @@ async function echarCompleta(q) {
     if (top && top[1] >= 2 && PALOS[top[0]]) fr.push(`Domina el palo de ${PALOS[top[0]][0]} (${top[1]} cartas): la clave está en ${PALOS[top[0]][1]}.`);
     fr.push(inv === 0 ? 'Ninguna carta ha salido invertida: el camino está bastante despejado.' : inv >= n / 2 ? `${inv} cartas han salido invertidas: hay energía bloqueada, toca soltar antes de avanzar.` : `${inv} ${inv === 1 ? 'carta ha salido invertida' : 'cartas han salido invertidas'}: hay algo que frena, pero no lo para todo.`);
     fr.push(`Y la última carta, ${fin.name}${fin.reversed ? ' invertida' : ''}, habla de ${(fin.keywords || []).slice(0, 2).join(' y ')}. Quédate con eso.`);
-    res.innerHTML = `<img src="${$('#completa .firma img').src}" alt=""><div><small>Lo que veo en tu tirada · Lía</small><p>${fr.map(esc).join(' ')}</p><span class="res-nota">En la web publicada esta tirada cuesta ${esc($('#tipos [aria-selected=true] i').textContent)}. Aquí la ves completa como vista previa.</span></div>`;
-    res.hidden = false;
+    res.innerHTML = `<img src="${$('#completa .firma img').src}" alt=""><div><small>Lo que veo en tu tirada · Lía</small><p>${fr.map(esc).join(' ')}</p><span class="res-nota">Gracias por confiar en mí. Si quieres, mañana echamos otra.</span></div>`;
+    const precio = $('#tipos [aria-selected=true] i').textContent, faltan = cartas.length - GRATIS;
+    const ultima = T.pos[T.pos.length - 1][0];
+    const muro = document.createElement('div'); muro.className = 'muro';
+    muro.innerHTML = `<p class="muro-t">Te faltan ${faltan} cartas, incluida la de <em>«${esc(ultima)}»</em>.</p><p>Las cartas ya están echadas: son estas y no cambian. Desbloquéalas para ver qué dicen y lo que veo en tu tirada completa.</p><button type="button" class="btn btn-pri" id="desbloquear">Ver mi tirada completa · ${esc(precio)}</button><small>Pago seguro con tarjeta o Bizum. En esta vista previa el pago es simulado.</small>`;
+    lec.appendChild(muro);
+    $('#desbloquear').addEventListener('click', async () => {
+      const bt = $('#desbloquear'); bt.disabled = true; bt.textContent = 'Procesando el pago…';
+      await espera(900);
+      muro.remove();
+      for (let i = GRATIS; i < cartas.length; i++) { cartas[i].classList.remove('bloqueada'); cartas[i].classList.add('girada'); items[i].classList.remove('borrosa'); items[i].removeAttribute('aria-hidden'); await espera(260); }
+      res.hidden = false; res.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
   } catch (e) { lec.innerHTML = `<p class="error">${esc(e.message)}</p>`; }
   $('#formCompleta button').disabled = false;
 }
