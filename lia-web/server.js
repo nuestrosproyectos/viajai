@@ -56,6 +56,11 @@ const API = {
   },
   'POST /api/sino': async (_, b) => roxy('/tarot/yes-no?lang=es', { question: String(b.question || '').slice(0, 160) }),
   'POST /api/tres': async (_, b) => roxy('/tarot/spreads/three-card?lang=es', { question: String(b.question || '').slice(0, 160) }),
+  'POST /api/tirada': async (_, b) => {
+    const ruta = { celtic: 'celtic-cross', love: 'love', career: 'career' }[b.tipo];
+    if (!ruta) throw Object.assign(new Error('Tirada no válida'), { status: 400 });
+    return roxy(`/tarot/spreads/${ruta}?lang=es`, { question: String(b.question || '').slice(0, 160) });
+  },
   'POST /api/natal': async (_, b) => roxy('/astrology/natal-chart?lang=es', persona(b), 24 * HORA),
   'POST /api/compat': async (_, b) => roxy('/astrology/compatibility-score?lang=es', { person1: persona(b.p1), person2: persona(b.p2) }, 24 * HORA),
   'POST /api/bio': async (_, b) => {

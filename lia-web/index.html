@@ -293,6 +293,38 @@ input:focus{outline:none;border-color:var(--hueso)}
 .firma img{width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:50% 20%;border:1px solid var(--linea2)}
 .firma b{font:italic 400 22px/1 var(--titulo);color:var(--hueso);margin-right:2px}
 @media(max-width:560px){.perfil img{aspect-ratio:4/3.3}}
+
+/* Tirada completa */
+.tipos{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:28px}
+@media(max-width:820px){.tipos{grid-template-columns:1fr}}
+.tipos button{text-align:left;background:var(--panel);border:1px solid var(--linea2);padding:18px 20px;cursor:pointer;display:grid;gap:4px;border-radius:2px;transition:background-color .25s,border-color .25s,color .25s}
+.tipos button:hover{border-color:var(--hueso)}
+.tipos b{font:400 26px/1.1 var(--titulo)}.tipos span{font-size:14px;color:var(--gris)}.tipos i{font-style:normal;font-weight:600;font-size:14px;color:var(--rosa)}
+.tipos button[aria-selected=true]{background:var(--hueso);color:var(--tinta);border-color:var(--hueso)}
+.tipos button[aria-selected=true] span{color:var(--tinta2)}.tipos button[aria-selected=true] i{color:#8a2333}
+.mesa-completa{display:grid;grid-template-columns:auto 1fr;gap:clamp(28px,4vw,56px);align-items:start}
+@media(max-width:980px){.mesa-completa{grid-template-columns:1fr}}
+.tapete-wrap{width:clamp(320px,44vw,640px);padding:20px;background:radial-gradient(ellipse at 50% 45%,#3d0f18 0%,#260a10 60%,#18060a 100%);border-radius:4px;box-shadow:inset 0 0 60px rgba(0,0,0,.55);position:sticky;top:90px}
+@media(max-width:980px){.tapete-wrap{width:100%;position:static}}
+.tapete{position:relative;margin:0 auto;min-height:200px}
+.naipe-c{position:absolute;left:0;top:0;padding:0;border:0;background:none;cursor:pointer;aspect-ratio:auto;transition:transform .9s var(--ease),opacity .5s}
+.naipe-c .cara{border-radius:5px}
+.naipe-c .num{position:absolute;left:-7px;top:-7px;z-index:3;width:22px;height:22px;border-radius:50%;background:var(--hueso);color:var(--tinta);font:600 12px/22px var(--cuerpo);text-align:center;box-shadow:0 2px 6px rgba(0,0,0,.5)}
+.naipe-c.activa .frente{box-shadow:0 0 0 2px var(--hueso),0 12px 30px rgba(0,0,0,.6)}
+.lectura ol{list-style:none;margin:0;padding:0;display:grid}
+.lectura li{display:grid;grid-template-columns:30px 1fr;gap:14px;padding:16px 12px;border-bottom:1px solid var(--linea);opacity:.22;transition:opacity .6s,background-color .25s}
+.lectura li.vista{opacity:1}.lectura li.activa{background:var(--panel)}
+.lectura .n{width:26px;height:26px;border-radius:50%;border:1px solid var(--linea2);font:600 12px/24px var(--cuerpo);text-align:center;color:var(--gris2)}
+.lectura small{display:block;font-size:13.5px;color:var(--gris2)}.lectura small em{color:var(--gris)}
+.lectura b{display:block;font:400 22px/1.2 var(--titulo);margin:4px 0 6px}.lectura b i{font-size:16px;color:var(--rosa)}
+.lectura p{font-size:15px;color:var(--gris2);line-height:1.55}
+.lectura-vacia{color:var(--gris)}
+.resumen{display:grid;grid-template-columns:76px 1fr;gap:22px;align-items:start;margin-top:44px;padding:28px 30px;background:var(--papel);color:var(--tinta)}
+.resumen img{width:76px;height:76px;border-radius:50%;object-fit:cover}
+.resumen small{display:block;font-size:13.5px;color:#8a2333;font-weight:500}
+.resumen p{font:italic 400 clamp(19px,1.8vw,23px)/1.45 var(--titulo);margin-top:8px}
+.resumen .res-nota{display:block;margin-top:14px;font-size:13.5px;color:var(--tinta2)}
+@media(max-width:600px){.resumen{grid-template-columns:1fr}.resumen img{width:56px;height:56px}}
 </style>
 <style>.aviso-prev{margin-top:22px;max-width:520px;font-size:13px;color:#9d948b;border-left:2px solid #a32637;padding-left:12px}</style>
 <a class="saltar" href="#tarot">Saltar al tarot</a>
@@ -356,7 +388,7 @@ input:focus{outline:none;border-color:var(--hueso)}
         <p class="ver-nom" id="verNom">Aún no has elegido carta</p>
         <p class="ver-lect" id="verLect">Cuando toques una carta, aquí verás la respuesta y por qué.</p>
         <div class="kw" id="verKw"></div>
-        <div class="ver-acc" id="verAcc" hidden><a class="btn btn-pri" href="#tirada">Tirada completa · 4,90 €</a><button class="btn btn-sec" id="barajar" type="button">Barajar otra vez</button></div>
+        <div class="ver-acc" id="verAcc" hidden><a class="btn btn-pri" href="#completa">Tirada completa · desde 3,90 €</a><button class="btn btn-sec" id="barajar" type="button">Barajar otra vez</button></div>
       </div>
     </aside>
   </div>
@@ -369,6 +401,23 @@ input:focus{outline:none;border-color:var(--hueso)}
   <form class="fila-form" id="formTres"><label>Tu pregunta<input name="q" maxlength="160" value="¿Qué necesito saber del amor?"></label><button class="btn btn-pri" type="submit">Echar las cartas</button></form>
   <div class="tres" id="tres"></div>
   <div class="temas" id="temas" hidden role="tablist"><button role="tab" aria-selected="true" data-t="love">Amor</button><button role="tab" data-t="career">Trabajo</button><button role="tab" data-t="finances">Dinero</button></div>
+</div></section>
+
+<!-- LÍA · TIRADA COMPLETA -->
+<section class="seccion" id="completa"><div class="wrap">
+  <div class="sec-cab"><div><p class="firma"><img src="data:image/jpeg;base64,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" alt=""><span><b>Lía</b> · Tirada completa</span></p><h2>Cuando la pregunta es grande, <em>la tirada también</em>.</h2></div>
+  <p>Elige la tirada, escribe tu pregunta y reparto las cartas en su sitio. Te leo cada posición una a una y al final te digo lo que veo en conjunto.</p></div>
+  <div class="tipos" id="tipos" role="tablist" aria-label="Tipo de tirada">
+    <button type="button" role="tab" aria-selected="true" data-tipo="celtic"><b>Cruz Celta</b><span>10 cartas · la más completa</span><i>4,90 €</i></button>
+    <button type="button" role="tab" aria-selected="false" data-tipo="love"><b>Amor</b><span>5 cartas · tú, la otra persona y lo que hay entre vosotros</span><i>3,90 €</i></button>
+    <button type="button" role="tab" aria-selected="false" data-tipo="career"><b>Trabajo</b><span>7 cartas · fuerzas, frenos y oportunidades</span><i>3,90 €</i></button>
+  </div>
+  <form class="fila-form" id="formCompleta"><label>Tu pregunta<input name="q" maxlength="160" value="¿Qué tengo que saber de este momento de mi vida?"></label><button class="btn btn-pri" type="submit">Echar la tirada</button></form>
+  <div class="mesa-completa">
+    <div class="tapete-wrap"><div class="tapete" id="tapete" aria-live="polite"></div></div>
+    <div class="lectura" id="lectura"><p class="lectura-vacia">Aquí aparecerá la lectura de cada carta en cuanto las reparta.</p></div>
+  </div>
+  <div class="resumen" id="resumen" hidden></div>
 </div></section>
 
 <!-- MATEO · CARTA ASTRAL -->
@@ -516,6 +565,10 @@ const demoApi = DEMO && (() => {
     tres: async ({ question }) => {
       const nombres = ['Pasado', 'Presente', 'Futuro'];
       return { question, positions: sacar(3).map((id, i) => { const c = porId[id]; const inv = Math.random() < .3; const L = lado(c, inv); return { name: nombres[i], card: { id, name: c.name, reversed: inv, keywords: L.keywords, meaning: L.description, love: L.love, career: L.career, finances: L.finances } }; }) };
+    },
+    tirada: async ({ tipo, question }) => {
+      const n = { celtic: 10, love: 5, career: 7 }[tipo];
+      return { question, positions: sacar(n).map((id, i) => { const c = porId[id]; const inv = Math.random() < .3; const L = lado(c, inv); return { position: i + 1, card: { id, name: c.name, arcana: c.arcana, suit: c.suit, reversed: inv, keywords: L.keywords, meaning: L.description, love: L.love, career: L.career, finances: L.finances } }; }) };
     },
     natal: async ({ preset }) => { if (!D.natal[preset]) throw new Error('demo'); return D.natal[preset]; },
     compat: async ({ preset }) => { if (!D.compat[preset]) throw new Error('demo'); return D.compat[preset]; },
@@ -964,6 +1017,96 @@ $('#temas').addEventListener('click', e => {
   $$('#tres [data-tema]').forEach((p, i) => { p.style.opacity = 0; setTimeout(() => { p.textContent = frases(tresDatos[i].card[b.dataset.t], 2); p.style.transition = 'opacity .5s'; p.style.opacity = 1; }, 180); });
 });
 alVer($('#tres'), () => echarTres($('#formTres').q.value), .2);
+
+/* ---------- Tirada completa (Lía) ---------- */
+const H_C = 536 / 300, G = .1;
+const TIRADAS = {
+  celtic: { W: 5.5, H: 4 * H_C + 3 * G, campo: 'meaning', pos: [
+    ['Lo que está pasando', 'Cómo estás ahora mismo frente a tu pregunta.'], ['Lo que se cruza', 'El obstáculo o la tensión que lo atraviesa todo.'],
+    ['De dónde viene', 'Lo que te ha traído hasta aquí.'], ['Lo que llega', 'Lo que viene en las próximas semanas.'],
+    ['Lo que buscas', 'Tu meta, aunque no siempre la digas en voz alta.'], ['Lo que hay debajo', 'Lo que pesa por dentro y quizá no ves.'],
+    ['Mi consejo', 'Cómo te conviene moverte.'], ['Lo que te rodea', 'Personas y circunstancias que influyen.'],
+    ['Lo que esperas y temes', 'A veces es lo mismo.'], ['Hacia dónde va', 'El resultado si sigues por este camino.']] },
+  love: { W: 4.1, H: 3 * H_C + 2 * G, campo: 'love', pos: [
+    ['Tú', 'Cómo llegas a esta relación.'], ['La otra persona', 'Cómo está y qué necesita.'], ['Lo que hay entre vosotros', 'La energía que os une ahora.'],
+    ['Lo que hay que cuidar', 'Lo que pide atención o arreglo.'], ['Hacia dónde va', 'El rumbo de esta historia.']] },
+  career: { W: 4.9, H: 2 * H_C + G, campo: 'career', pos: [
+    ['Dónde estás', 'Tu momento profesional.'], ['Tus fuerzas', 'Lo que haces bien y te sostiene.'], ['Lo que te frena', 'Lo que conviene trabajar.'],
+    ['Oportunidades', 'Puertas que se pueden abrir.'], ['Amenazas', 'Lo que conviene vigilar.'], ['Mi consejo', 'Cómo moverte ahora.'], ['Hacia dónde va', 'El rumbo si sigues así.']] },
+};
+function sitios(tipo) {
+  const h = H_C, g = G;
+  if (tipo === 'celtic') {
+    const yc = (4 * h + 3 * g) / 2;
+    const sx = 4.95, st = i => h / 2 + i * (h + g);
+    return [[2.05, yc, 0], [2.05, yc, 90], [.55, yc], [3.55, yc], [2.05, yc - h - g], [2.05, yc + h + g], [sx, st(3)], [sx, st(2)], [sx, st(1)], [sx, st(0)]];
+  }
+  if (tipo === 'love') { const y = h / 2 + h + g; return [[.85, y], [3.25, y], [2.05, y], [2.05, y + h + g], [2.05, h / 2]]; }
+  const y1 = h / 2, y2 = y1 + h + g; return [[.6, y1], [1.83, y1], [3.06, y1], [4.29, y1], [1.21, y2], [2.45, y2], [3.68, y2]];
+}
+function textoCarta(C, campo) {
+  const util = t => (limpia(t).match(/[^.!?]+[.!?]+/g) || []).map(s => s.trim()).filter(s => !/Rider|Waite|en la imagen|numerada|se sitúa en el umbral/i.test(s));
+  const kw = (C.keywords || []).slice(0, 3).join(', ');
+  if (campo !== 'meaning' && C[campo]) return util(C[campo]).slice(0, 2).join(' ');
+  return (kw ? 'Habla de ' + kw + '. ' : '') + util(C.meaning).slice(0, 1).join(' ');
+}
+let tipoTirada = 'celtic', tiradaDatos = null;
+const PALOS = { cups: ['Copas', 'las emociones y las relaciones'], pentacles: ['Oros', 'el dinero, el trabajo y lo material'], swords: ['Espadas', 'la cabeza: decisiones, dudas y conflictos'], wands: ['Bastos', 'la acción: proyectos, ganas y energía'] };
+function colocar() {
+  const T = TIRADAS[tipoTirada], tap = $("#tapete"), ancho = tap.parentElement.clientWidth - 40;
+  const u = Math.min(108, ancho / T.W);
+  tap.style.width = (u * T.W) + 'px'; tap.style.height = (u * T.H) + 'px';
+  $$('.naipe-c', tap).forEach((c, i) => {
+    const [x, y, rot = 0] = sitios(tipoTirada)[i];
+    c.style.width = u + 'px'; c.style.height = (u * H_C) + 'px';
+    c.dataset.x = (x * u - u / 2); c.dataset.y = (y * u - u * H_C / 2); c.dataset.r = rot;
+    if (c.classList.contains('puesta')) c.style.transform = `translate(${c.dataset.x}px,${c.dataset.y}px) rotate(${rot}deg)`;
+  });
+}
+addEventListener('resize', () => tiradaDatos && colocar());
+async function echarCompleta(q) {
+  const tap = $('#tapete'), lec = $('#lectura'), res = $('#resumen'), T = TIRADAS[tipoTirada];
+  tap.innerHTML = ''; res.hidden = true; lec.innerHTML = '<p class="lectura-vacia">Barajando las 78 cartas…</p>';
+  $('#formCompleta button').disabled = true;
+  try {
+    const r = await api('tirada', { tipo: tipoTirada, question: q });
+    tiradaDatos = r.positions.slice(0, T.pos.length);
+    tap.innerHTML = tiradaDatos.map((p, i) => `<button type="button" class="naipe-c carta3d${p.card.reversed ? ' invertida' : ''}" data-i="${i}" aria-label="Posición ${i + 1}: ${esc(T.pos[i][0])}"><div class="cara dorso"></div><div class="cara frente"><img src="${imgCarta(p.card.id)}" alt="${esc(p.card.name)}"></div><span class="num">${i + 1}</span></button>`).join('');
+    colocar();
+    const cartas = $$('.naipe-c', tap);
+    const tw = parseFloat(tap.style.width), th = parseFloat(tap.style.height);
+    cartas.forEach(c => { c.style.transform = `translate(${tw / 2 - parseFloat(c.style.width) / 2}px,${th + 40}px) rotate(-8deg)`; c.style.opacity = 0; });
+    lec.innerHTML = `<ol>${tiradaDatos.map((p, i) => { const C = p.card; const txt = textoCarta(C, T.campo); return `<li data-i="${i}"><span class="n">${i + 1}</span><div><small>${esc(T.pos[i][0])} · <em>${esc(T.pos[i][1])}</em></small><b>${esc(C.name)}${C.reversed ? ' <i>invertida</i>' : ''}</b><p>${esc(txt)}</p></div></li>`; }).join('')}</ol>`;
+    await pinta();
+    for (const c of cartas) { c.classList.add('puesta'); c.style.opacity = 1; c.style.transform = `translate(${c.dataset.x}px,${c.dataset.y}px) rotate(${c.dataset.r}deg)`; await espera(170); }
+    await espera(500);
+    const items = $$('#lectura li');
+    for (let i = 0; i < cartas.length; i++) { cartas[i].classList.add('girada'); items[i].classList.add('vista'); await espera(260); }
+    // Resumen de Lía con lo que dicen las cartas
+    const n = tiradaDatos.length, mayores = tiradaDatos.filter(p => p.card.arcana === 'major').length, inv = tiradaDatos.filter(p => p.card.reversed).length;
+    const cuenta = {}; tiradaDatos.forEach(p => p.card.suit && (cuenta[p.card.suit] = (cuenta[p.card.suit] || 0) + 1));
+    const top = Object.entries(cuenta).sort((a, b) => b[1] - a[1])[0];
+    const fin = tiradaDatos[n - 1].card;
+    const fr = [];
+    fr.push(mayores >= n / 2 ? `Han salido ${mayores} Arcanos Mayores de ${n}: esto no es un asunto pequeño, es un momento que te va a marcar.` : mayores ? `Han salido ${mayores} Arcanos Mayores de ${n}: hay algo de fondo, pero casi todo depende de lo que hagas en el día a día.` : 'No ha salido ningún Arcano Mayor: todo está en tus manos y en las decisiones del día a día.');
+    if (top && top[1] >= 2 && PALOS[top[0]]) fr.push(`Domina el palo de ${PALOS[top[0]][0]} (${top[1]} cartas): la clave está en ${PALOS[top[0]][1]}.`);
+    fr.push(inv === 0 ? 'Ninguna carta ha salido invertida: el camino está bastante despejado.' : inv >= n / 2 ? `${inv} cartas han salido invertidas: hay energía bloqueada, toca soltar antes de avanzar.` : `${inv} ${inv === 1 ? 'carta ha salido invertida' : 'cartas han salido invertidas'}: hay algo que frena, pero no lo para todo.`);
+    fr.push(`Y la última carta, ${fin.name}${fin.reversed ? ' invertida' : ''}, habla de ${(fin.keywords || []).slice(0, 2).join(' y ')}. Quédate con eso.`);
+    res.innerHTML = `<img src="${$('#completa .firma img').src}" alt=""><div><small>Lo que veo en tu tirada · Lía</small><p>${fr.map(esc).join(' ')}</p><span class="res-nota">En la web publicada esta tirada cuesta ${esc($('#tipos [aria-selected=true] i').textContent)}. Aquí la ves completa como vista previa.</span></div>`;
+    res.hidden = false;
+  } catch (e) { lec.innerHTML = `<p class="error">${esc(e.message)}</p>`; }
+  $('#formCompleta button').disabled = false;
+}
+$('#tipos').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  $$('#tipos button').forEach(x => x.setAttribute('aria-selected', x === b)); tipoTirada = b.dataset.tipo;
+  echarCompleta($('#formCompleta').q.value.trim() || '¿Qué necesito saber?');
+});
+$('#formCompleta').addEventListener('submit', e => { e.preventDefault(); echarCompleta(e.target.q.value.trim() || '¿Qué necesito saber?'); });
+const marcar = i => { $$('#lectura li').forEach(li => li.classList.toggle('activa', li.dataset.i === String(i))); $$('#tapete .naipe-c').forEach(c => c.classList.toggle('activa', c.dataset.i === String(i))); };
+$('#tapete').addEventListener('click', e => { const c = e.target.closest('.naipe-c'); if (!c) return; marcar(c.dataset.i); const li = $(`#lectura li[data-i="${c.dataset.i}"]`); if (li) li.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); });
+$('#lectura').addEventListener('mouseover', e => { const li = e.target.closest('li'); if (li) marcar(li.dataset.i); });
+alVer($('#tapete').parentElement, () => echarCompleta($('#formCompleta').q.value), .2);
 
 /* ---------- VII · Número y biorritmo ---------- */
 const CICLOS = [['Físico', 23, '#c23a4c'], ['Emocional', 28, '#86a7b4'], ['Mental', 33, '#ece4d6']];

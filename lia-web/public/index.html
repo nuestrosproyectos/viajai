@@ -73,7 +73,7 @@
         <p class="ver-nom" id="verNom">Aún no has elegido carta</p>
         <p class="ver-lect" id="verLect">Cuando toques una carta, aquí verás la respuesta y por qué.</p>
         <div class="kw" id="verKw"></div>
-        <div class="ver-acc" id="verAcc" hidden><a class="btn btn-pri" href="#tirada">Tirada completa · 4,90 €</a><button class="btn btn-sec" id="barajar" type="button">Barajar otra vez</button></div>
+        <div class="ver-acc" id="verAcc" hidden><a class="btn btn-pri" href="#completa">Tirada completa · desde 3,90 €</a><button class="btn btn-sec" id="barajar" type="button">Barajar otra vez</button></div>
       </div>
     </aside>
   </div>
@@ -86,6 +86,23 @@
   <form class="fila-form" id="formTres"><label>Tu pregunta<input name="q" maxlength="160" value="¿Qué necesito saber del amor?"></label><button class="btn btn-pri" type="submit">Echar las cartas</button></form>
   <div class="tres" id="tres"></div>
   <div class="temas" id="temas" hidden role="tablist"><button role="tab" aria-selected="true" data-t="love">Amor</button><button role="tab" data-t="career">Trabajo</button><button role="tab" data-t="finances">Dinero</button></div>
+</div></section>
+
+<!-- LÍA · TIRADA COMPLETA -->
+<section class="seccion" id="completa"><div class="wrap">
+  <div class="sec-cab"><div><p class="firma"><img src="img/av-lia.jpg" alt=""><span><b>Lía</b> · Tirada completa</span></p><h2>Cuando la pregunta es grande, <em>la tirada también</em>.</h2></div>
+  <p>Elige la tirada, escribe tu pregunta y reparto las cartas en su sitio. Te leo cada posición una a una y al final te digo lo que veo en conjunto.</p></div>
+  <div class="tipos" id="tipos" role="tablist" aria-label="Tipo de tirada">
+    <button type="button" role="tab" aria-selected="true" data-tipo="celtic"><b>Cruz Celta</b><span>10 cartas · la más completa</span><i>4,90 €</i></button>
+    <button type="button" role="tab" aria-selected="false" data-tipo="love"><b>Amor</b><span>5 cartas · tú, la otra persona y lo que hay entre vosotros</span><i>3,90 €</i></button>
+    <button type="button" role="tab" aria-selected="false" data-tipo="career"><b>Trabajo</b><span>7 cartas · fuerzas, frenos y oportunidades</span><i>3,90 €</i></button>
+  </div>
+  <form class="fila-form" id="formCompleta"><label>Tu pregunta<input name="q" maxlength="160" value="¿Qué tengo que saber de este momento de mi vida?"></label><button class="btn btn-pri" type="submit">Echar la tirada</button></form>
+  <div class="mesa-completa">
+    <div class="tapete-wrap"><div class="tapete" id="tapete" aria-live="polite"></div></div>
+    <div class="lectura" id="lectura"><p class="lectura-vacia">Aquí aparecerá la lectura de cada carta en cuanto las reparta.</p></div>
+  </div>
+  <div class="resumen" id="resumen" hidden></div>
 </div></section>
 
 <!-- MATEO · CARTA ASTRAL -->
