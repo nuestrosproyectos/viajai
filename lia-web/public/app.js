@@ -167,6 +167,14 @@ function abrirAbanico() {
   abanico.classList.add('listo');
 }
 alVer(abanico, () => setTimeout(abrirAbanico, 250), .35);
+// Ola que recorre la baraja cada pocos segundos para invitar a tocar
+let tocado = false;
+function ola() {
+  if (tocado || tirando || !abanico.classList.contains('listo') || QUIETO) return;
+  $$('.naipe', abanico).forEach((n, i) => setTimeout(() => { n.classList.add('ola'); setTimeout(() => n.classList.remove('ola'), 260); }, i * 14));
+}
+setInterval(ola, 4200);
+abanico.addEventListener('pointerdown', () => { tocado = true; });
 addEventListener('resize', () => abanico.classList.contains('listo') && abrirAbanico());
 // Arrastrar el dedo por la baraja levanta la carta que pisa
 abanico.addEventListener('pointermove', e => {
@@ -179,7 +187,7 @@ abanico.addEventListener('pointerleave', () => $$('.naipe.alzada', abanico).forE
 let tirando = false;
 abanico.addEventListener('click', async e => {
   const n = e.target.closest('.naipe'); if (!n || tirando) return;
-  tirando = true; n.classList.add('fuera');
+  tirando = true; tocado = true; $('#pista').classList.add('oculta'); n.classList.add('fuera');
   const q = $('#pregunta').value.trim() || '¿Va a salir bien?';
   const C3 = $('#cartaElegida'); C3.classList.remove('girada', 'invertida');
   $('#verRes').textContent = '…'; $('#verRes').className = ''; $('#verNom').textContent = 'Barajando…'; $('#verLect').textContent = ''; $('#verKw').innerHTML = '';
@@ -205,7 +213,7 @@ $('#barajar').addEventListener('click', async () => {
   abanico.classList.remove('listo'); $$('.naipe', abanico).forEach(n => { n.classList.remove('fuera', 'alzada'); n.style.transitionDelay = '0s'; });
   $('#cartaElegida').classList.remove('girada', 'invertida');
   $('#verRes').textContent = '—'; $('#verNom').textContent = 'Baraja mezclada. Elige otra carta.'; $('#verLect').textContent = ''; $('#verKw').innerHTML = ''; $('#verAcc').hidden = true;
-  await espera(650); abrirAbanico(); tirando = false;
+  await espera(650); abrirAbanico(); tirando = false; tocado = false; $('#pista').classList.remove('oculta');
 });
 
 /* ---------- II · Carta astral ---------- */
