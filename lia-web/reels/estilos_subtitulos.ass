@@ -1,0 +1,17 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Bodoni Moda,84,&H00D6E4EC,&H00FFFFFF,&H50100A0A,&H8C0A0A0C,0,0,0,0,100,100,0,0,1,1.5,5,2,90,90,430,1
+Style: Oro,Bodoni Moda,90,&H00D6E4EC,&H00FFFFFF,&H50100A0A,&H8C0A0A0C,0,1,0,0,100,100,0,0,1,1.5,5,2,90,90,430,1
+Style: Marca,Hanken Grotesk,38,&H00D6E4EC,&H00FFFFFF,&H00100810,&H00000000,1,0,0,0,100,100,4,0,1,0,4,8,60,60,150,1
+Style: Etiqueta,Hanken Grotesk,30,&H00D6E4EC,&H00FFFFFF,&H600A0A0C,&H600A0A0C,0,0,0,0,100,100,1,0,3,10,0,9,40,46,140,1
+Style: Big,Bodoni Moda,230,&H00D6E4EC,&H00FFFFFF,&H00100810,&H00000000,0,0,0,0,100,100,0,0,1,0,8,5,60,60,0,1
+Style: BigSub,Hanken Grotesk,44,&H00B5C0C9,&H00FFFFFF,&H00100810,&H00000000,1,0,0,0,100,100,6,0,1,0,6,5,60,60,0,1
+Style: Cierre,Bodoni Moda,170,&H00D6E4EC,&H00FFFFFF,&H00100810,&H00000000,0,1,0,0,100,100,0,0,1,0,8,5,60,60,0,1
+Style: CierreSub,Hanken Grotesk,42,&H00B5C0C9,&H00FFFFFF,&H00100810,&H00000000,1,0,0,0,100,100,6,0,1,0,6,5,60,60,0,1
+
