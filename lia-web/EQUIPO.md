@@ -3,9 +3,9 @@
 | Especialista | Disciplina | Cara fija Higgsfield (soul_2) | Voz |
 |---|---|---|---|
 | Lía | Tarot | e672083f-33cb-4a2e-9dc0-3cc8d42e4e01 | ElevenLabs Carolina (BkOojM1ZhtSAHgsAkMx2) |
-| Mateo, ~58 | Carta astral, compatibilidad, luna | 53b91137-2df0-44b6-a58b-549ad72ce3ed | pendiente |
-| Mei, ~46 | Horóscopo chino | 585719d1-a168-4075-9c10-2206ee6ff517 | pendiente |
-| Inés, ~34 | Numerología y biorritmo | 88b816d6-371b-481b-8f36-390351c2ecd6 | pendiente |
+| Mateo, ~58 | Carta astral, compatibilidad, luna | 53b91137-2df0-44b6-a58b-549ad72ce3ed | ElevenLabs Álvaro Sereno (Fm7BveXW2pOo1gtPxYfM) |
+| Mei, ~46 | Horóscopo chino | 585719d1-a168-4075-9c10-2206ee6ff517 | ElevenLabs Mary Velvet (Ugu6b5thG2v8TpHWKQhs) |
+| Inés, ~34 | Numerología y biorritmo | 88b816d6-371b-481b-8f36-390351c2ecd6 | ElevenLabs Sophie (XirH81OfTmRrNPuPRQCg) |
 
 Estilo de cada uno:
 - Lía: blusa negra semitransparente con lazo, medallón antiguo, mesa de terciopelo granate, velas, cartas siempre boca abajo.
@@ -14,3 +14,5 @@ Estilo de cada uno:
 - Inés: pelo castaño ondulado recogido, pecas, jersey crema, cuaderno con números, cafetería con ventana.
 
 Reglas de vídeo: movimientos mínimos (respirar, parpadear, sonreír), sin girar la cabeza (la IA inventa detalles como piercings), sin barajar cartas.
+
+Voces: modelo eleven_v4, castellano de España. Mei sin imitar acento extranjero.

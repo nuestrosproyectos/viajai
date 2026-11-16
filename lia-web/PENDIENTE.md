@@ -17,7 +17,7 @@
 ## Pendiente de decisión de Juan
 1. Marca y dominio: propuesta «La casa de Lía» con lacasadelia.es + .com (+ tarotconlia.es para redirigir).
 2. Alta en Stripe (tarjeta y Bizum) a nombre de Area Internet Business Group.
-3. Voces de Mateo, Mei e Inés (ElevenLabs).
+3. ~~Voces~~ HECHO: Mateo = Álvaro, Mei = Mary Velvet, Inés = Sophie.
 
 ## Pendiente técnico
 - Publicar con servidor (Vercel o Cloudflare) para carta astral y compatibilidad con cualquier dato.
