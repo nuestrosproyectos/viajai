@@ -16,3 +16,8 @@ Estilo de cada uno:
 Reglas de vídeo: movimientos mínimos (respirar, parpadear, sonreír), sin girar la cabeza (la IA inventa detalles como piercings), sin barajar cartas.
 
 Voces: modelo eleven_v4, castellano de España. Mei sin imitar acento extranjero.
+
+## Coste (comprobado el 16-11-2026)
+- Voz: usar SIEMPRE la API directa de ElevenLabs (POST /v1/text-to-speech/{voz}), no la herramienta de «flows».
+  Mismo texto de 352 caracteres: flows = 346 créditos (≈12,6 céntimos); API directa flash_v2_5 = 38 créditos (≈1,4 céntimos).
+- Vídeo: reutilizar la biblioteca de clips y fotos ya hechas; zoom lento en fotos (gratis). Animar clips nuevos solo cuando haga falta (7,5 créditos de Higgsfield cada uno).
