@@ -4,6 +4,11 @@ if [ -f /root/LongCat-Video/lia_longcat_a1.mp4 ]; then
   curl -s -H "Accept: application/vnd.github.raw" -o /root/rescate.sh "https://api.github.com/repos/nuestrosproyectos/viajai/contents/lia-web/pruebas-avatar/rescate.sh?ref=claude/gifted-lamport-2n79de"
   cd /root/LongCat-Video && exec bash /root/rescate.sh lia_longcat_a1.mp4
 fi
+if [ -f /root/lc.log ]; then
+  echo "=====REGISTRO-LONGCAT====="; tr '\r' '\n' < /root/lc.log | grep -v "it/s\]" | tail -150; echo "=====FIN-REGISTRO====="
+  curl -s -X PUT "https://console.vast.ai/api/v0/instances/${CONTAINER_ID}/" -H "Authorization: Bearer ${CONTAINER_API_KEY}" -H 'Content-Type: application/json' -d '{"label":"registro-volcado"}' >/dev/null
+  exit 0
+fi
 # Prueba LongCat-Video-Avatar (1.6, o 1.5 si no existe) con la presentación de Lía (A1, voz Carolina, 46 s). EXIGE GPU de 80 GB.
 exec > /root/lc.log 2>&1
 set -x
