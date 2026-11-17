@@ -1,4 +1,10 @@
 #!/bin/bash
+if [ -f /root/it.log ]; then
+  P=/root/it_prev_$(date +%s).txt; tr '\r' '\n' < /root/it.log > "$P"; tail -c 300000 "$P" > "$P.tail"
+  U=$(curl -s -F reqtype=fileupload -F time=72h -F "fileToUpload=@$P.tail" https://litterbox.catbox.moe/resources/internals/api.php)
+  curl -s -X PUT "https://console.vast.ai/api/v0/instances/${CONTAINER_ID}/" -H "Authorization: Bearer ${CONTAINER_API_KEY}" -H 'Content-Type: application/json' -d "{\"label\":\"log-anterior:$U\"}" >/dev/null
+  exit 0
+fi
 # Monta InfiniteTalk desde cero en una A100 de Vast.ai y mide 15 s a 480p con dos pasadas y con una pasada por paso.
 # El progreso se publica en la etiqueta (label) de la instancia; los vídeos se suben a litterbox (72 h).
 exec > /root/it.log 2>&1
