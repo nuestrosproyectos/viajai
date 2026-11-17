@@ -13,9 +13,6 @@ set -e
 label "1-instalando"
 apt-get update -qq && apt-get install -y -qq ffmpeg git > /dev/null
 cd /root && (test -d InfiniteTalk || git clone -q https://github.com/MeiGen-AI/InfiniteTalk) && cd InfiniteTalk
-pip install -q xformers==0.0.28 --index-url https://download.pytorch.org/whl/cu121
-pip install -q "misaki[en]" ninja psutil packaging wheel
-pip install -q flash_attn==2.7.4.post1 --no-build-isolation || echo "SIN FLASH-ATTN"
 # Fijar versiones de mediados de 2025: sin esto pip instala piezas de 2026 incompatibles (torch 2.15)
 cat > /root/fijas.txt <<'FIJAS'
 torch==2.4.1
@@ -30,6 +27,9 @@ accelerate==1.6.0
 xfuser==0.4.3
 numpy<2
 FIJAS
+pip install -q xformers==0.0.28 --index-url https://download.pytorch.org/whl/cu121
+pip install -q "misaki[en]" ninja psutil packaging wheel -c /root/fijas.txt
+pip install -q flash_attn==2.7.4.post1 --no-build-isolation || echo "SIN FLASH-ATTN"
 grep -v gradio requirements.txt > /root/req.txt
 pip install -q -r /root/req.txt -c /root/fijas.txt --extra-index-url https://download.pytorch.org/whl/cu121
 pip install -q librosa hf_transfer -c /root/fijas.txt
