@@ -36,3 +36,7 @@ Voces: modelo eleven_v4, castellano de España. Mei sin imitar acento extranjero
 - Numerología: se retira.
 - Inés pasa a ser la especialista de la LUNA: fases, calendario lunar, rituales de luna nueva y llena (texto nuestro con datos reales de RoxyAPI: fase, iluminación, signo, hora, cristales) y producto «tu retorno lunar del mes» (/astrology/lunar-return).
 - La API no tiene endpoint de «rituales»; sí moon-phase (current/upcoming/calendar), lunar-return, crystals (daily, zodiac, chakra, element), dreams, angel-numbers.
+
+## DECISIÓN FINAL voz de Lía (17-11-2026): CAROLINA
+- Se vuelve a Carolina (BkOojM1ZhtSAHgsAkMx2, eleven_flash_v2_5, es). La F1 y la D5 quedan descartadas.
+- Audios del vídeo 01 con Carolina: lia-web/videos/audio-01-carolina/ (A1–A5, R1–R3, M1_1…M3_4).
