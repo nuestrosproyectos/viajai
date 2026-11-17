@@ -16,7 +16,7 @@ for F in "$@"; do
   if [ -n "$U" ]; then RES="$RES|$(basename $F):$U"; continue; fi
   N=$(basename "$F")
   echo "=====INICIO $N====="
-  base64 -w 76 "$F"
+  base64 -w 15000 "$F"
   echo "=====FIN $N====="
   RES="$RES|$(basename $F):EN-REGISTRO:$(stat -c %s "$F")"
 done
