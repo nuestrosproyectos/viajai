@@ -29,3 +29,8 @@
 - Activar cobros (Stripe) antes de publicar vídeos.
 - Cambiar detector de caras de LatentSync (InsightFace, no comercial) por uno libre antes de publicar.
 - Vast.ai: alquilar SOLO A100 de 80 GB (las «baratas» son de 40 GB y no sirven).
+
+## REGLA FIJA (17-11-2026)
+- NUNCA borrar/apagar una máquina o archivo con trabajo del cliente hasta que él lo haya VISTO y dado el OK. Primero entregar (archivo enviado y comprobado), luego borrar.
+- Entregar los vídeos como archivo dentro de la conversación (SendUserFile), no con enlaces de servicios anónimos (tmpfiles/litterbox dan aviso de VPN y caducan).
+- Vídeo 01 «Elige un montón»: el render completo se perdió (instancia 61105086 borrada antes de entregar). Rehacer Lía a cámara (lia_camara_01.mp3, 151 s) y montar con lia-web/videos/montar_video01.py.
