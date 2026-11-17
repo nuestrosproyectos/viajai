@@ -8,5 +8,6 @@ if [ -f /root/it.log ]; then
   tr '\r' '\n' < "$P" > "$P.txt"
   U=$(subir "$P.txt"); label "log-anterior:$U"; sleep 20
 fi
-curl -s -o /root/fase.sh "$BASE/fase.sh?$(date +%s)"
+curl -s -H "Accept: application/vnd.github.raw" -o /root/fase.sh "https://api.github.com/repos/nuestrosproyectos/viajai/contents/lia-web/pruebas-avatar/fase.sh?ref=claude/gifted-lamport-2n79de"
+grep -q "^#!/bin/bash" /root/fase.sh || curl -s -o /root/fase.sh "$BASE/fase.sh?$(date +%s)"
 exec bash /root/fase.sh
