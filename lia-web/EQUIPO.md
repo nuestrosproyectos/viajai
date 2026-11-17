@@ -22,7 +22,7 @@ Voces: modelo eleven_v4, castellano de España. Mei sin imitar acento extranjero
   Mismo texto de 352 caracteres: flows = 346 créditos (≈12,6 céntimos); API directa flash_v2_5 = 38 créditos (≈1,4 céntimos).
 - Vídeo: reutilizar la biblioteca de clips y fotos ya hechas; zoom lento en fotos (gratis). Animar clips nuevos solo cuando haga falta (7,5 créditos de Higgsfield cada uno).
 
-## Voz de Lía EN PRUEBA (17-11-2026, pendiente de aprobar por Juan)
+## Voz de Lía EN PRUEBA (17-11-2026, pendiente de aprobar)
 - Voz diseñada a medida «Lía · prueba D5»: KKm83u9cmAwZogGKB2rU (ElevenLabs, diseño D5: mujer española ~58 años, grave pero limpia, sin ronquera, pausada).
 - Modelo: eleven_multilingual_v2, stability 0.55, similarity 0.8, style 0.1, speed 1.0. Candidata a sustituir a Carolina (sonaba demasiado joven para la cara de Lía).
 - Ojo: el vídeo que sale de InfiniteTalk/LatentSync lleva el audio rebajado a 16 kHz. En el montaje final poner SIEMPRE el mp3 original de ElevenLabs.
