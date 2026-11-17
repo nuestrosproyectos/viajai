@@ -11,7 +11,13 @@ sube() {
 }
 RES=""
 for F in "$@"; do
+  [ -f "$F" ] && [ "$(basename $F)" = lia_cam01.mp4 ] && [ -f lia_cam01_1080.mp4 ] && continue
   [ -f "$F" ] || continue
-  RES="$RES|$(basename $F):$(sube "$F")"
+  if [ $(stat -c %s "$F") -gt 90000000 ]; then
+    mkdir -p /root/trozos && rm -f /root/trozos/*; split -b 85M -d -a 2 "$F" "/root/trozos/$(basename $F).parte"
+    for P in /root/trozos/*; do RES="$RES|$(basename $P):$(sube "$P")"; done
+  else
+    RES="$RES|$(basename $F):$(sube "$F")"
+  fi
 done
 label "rescate$RES"
