@@ -79,7 +79,7 @@ def con_sombra(base, carta, x, y):
     base.paste(marco, (x - 4, y - 4)); base.paste(carta, (x, y))
 
 def carta_img(cid, h):
-    im = Image.open(os.path.join(T, 'cartas', cid + '.jpg')).convert('RGB')
+    im = Image.open(os.path.join(T, 'cartas', cid + '_es.jpg')).convert('RGB')
     return im.resize((int(h * im.width / im.height), h), Image.LANCZOS)
 
 def texto_centrado(d, y, t, fuente, color, cx=W // 2, esp=0):
@@ -108,7 +108,7 @@ def lamina_tres(n, trio):
     return im
 
 def lamina_montones():
-    im = fondo().copy(); h = 560; d = ImageDraw.Draw(im); b = dorso(h); gap = 140
+    im = fondo().copy(); h = 560; d = ImageDraw.Draw(im); b = Image.open(os.path.join(T, 'cartas', 'dorso_rws.jpg')).convert('RGB'); b = b.resize((int(h * b.width / b.height), h), Image.LANCZOS); gap = 140
     x = (W - 3 * b.width - 2 * gap) // 2
     for i in range(3):
         con_sombra(im, b, x, 170); texto_centrado(d, 770, str(i + 1), f(BOD, 120), HUESO, x + b.width // 2); x += b.width + gap
