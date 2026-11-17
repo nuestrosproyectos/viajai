@@ -12,20 +12,41 @@ set -e
 
 label "1-instalando"
 apt-get update -qq && apt-get install -y -qq ffmpeg git > /dev/null
-cd /root && git clone -q https://github.com/MeiGen-AI/InfiniteTalk && cd InfiniteTalk
+cd /root && (test -d InfiniteTalk || git clone -q https://github.com/MeiGen-AI/InfiniteTalk) && cd InfiniteTalk
 pip install -q xformers==0.0.28 --index-url https://download.pytorch.org/whl/cu121
 pip install -q "misaki[en]" ninja psutil packaging wheel
 pip install -q flash_attn==2.7.4.post1 --no-build-isolation || echo "SIN FLASH-ATTN"
-pip install -q -r requirements.txt
-pip install -q librosa "huggingface_hub[cli]" hf_transfer
+# Fijar versiones de mediados de 2025: sin esto pip instala piezas de 2026 incompatibles (torch 2.15)
+cat > /root/fijas.txt <<'FIJAS'
+torch==2.4.1
+torchvision==0.19.1
+torchaudio==2.4.1
+xformers==0.0.28
+huggingface_hub>=0.30,<1.0
+transformers==4.51.3
+tokenizers>=0.21,<0.22
+diffusers==0.33.1
+accelerate==1.6.0
+xfuser==0.4.3
+numpy<2
+FIJAS
+grep -v gradio requirements.txt > /root/req.txt
+pip install -q -r /root/req.txt -c /root/fijas.txt --extra-index-url https://download.pytorch.org/whl/cu121
+pip install -q librosa hf_transfer -c /root/fijas.txt
+python -c "import torch, xformers; print('TORCH', torch.__version__, torch.cuda.is_available())"
 
 label "2-descargando-modelo"
 export HF_HUB_ENABLE_HF_TRANSFER=1
-huggingface-cli download Wan-AI/Wan2.1-I2V-14B-480P --local-dir weights/Wan2.1-I2V-14B-480P
-huggingface-cli download TencentGameMate/chinese-wav2vec2-base --local-dir weights/chinese-wav2vec2-base
-huggingface-cli download TencentGameMate/chinese-wav2vec2-base model.safetensors --revision refs/pr/1 --local-dir weights/chinese-wav2vec2-base
-huggingface-cli download MeiGen-AI/InfiniteTalk --include "single/*" --local-dir weights/InfiniteTalk
-huggingface-cli download Kijai/WanVideo_comfy Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank32.safetensors --local-dir weights
+python - <<'PY'
+from huggingface_hub import snapshot_download, hf_hub_download
+snapshot_download('Wan-AI/Wan2.1-I2V-14B-480P', local_dir='weights/Wan2.1-I2V-14B-480P')
+snapshot_download('TencentGameMate/chinese-wav2vec2-base', local_dir='weights/chinese-wav2vec2-base')
+hf_hub_download('TencentGameMate/chinese-wav2vec2-base', 'model.safetensors', revision='refs/pr/1', local_dir='weights/chinese-wav2vec2-base')
+snapshot_download('MeiGen-AI/InfiniteTalk', allow_patterns=['single/*'], local_dir='weights/InfiniteTalk')
+hf_hub_download('Kijai/WanVideo_comfy', 'Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank32.safetensors', local_dir='weights')
+print('DESCARGAS OK')
+PY
+du -sh weights
 
 mkdir -p entrada
 curl -s -o entrada/lia.jpg "$BASE/lia-foto-frontal.jpg"
