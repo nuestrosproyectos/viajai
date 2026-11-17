@@ -18,8 +18,11 @@ cd /root && (test -d LongCat-Video || git clone -q https://github.com/meituan-lo
 pip install -q torch==2.6.0+cu124 torchvision==0.21.0+cu124 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124
 pip install -q ninja psutil packaging hf_transfer "huggingface_hub[cli]"
 pip install -q "https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.6cxx11abiFALSE-cp311-cp311-linux_x86_64.whl"
-pip install -q -r requirements.txt
-pip install -q -r requirements_avatar.txt
+# Sus listas traen paquetes que no existen en pip (libsndfile1 es del sistema) o que no hacen falta para generar
+grep -vE '^(streamlit|flash-attn|torch)==' requirements.txt > /root/req1.txt
+grep -vE '^(libsndfile1|tritonserverclient)==' requirements_avatar.txt > /root/req2.txt
+pip install -q -r /root/req1.txt
+pip install -q -r /root/req2.txt
 python -c "import torch,flash_attn;print('VERSIONES',torch.__version__,flash_attn.__version__,torch.cuda.is_available())"
 
 label "2-descargando-modelo"
