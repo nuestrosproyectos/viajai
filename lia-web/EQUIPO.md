@@ -26,3 +26,8 @@ Voces: modelo eleven_v4, castellano de España. Mei sin imitar acento extranjero
 - Voz diseñada a medida «Lía · prueba D5»: KKm83u9cmAwZogGKB2rU (ElevenLabs, diseño D5: mujer española ~58 años, grave pero limpia, sin ronquera, pausada).
 - Modelo: eleven_multilingual_v2, stability 0.55, similarity 0.8, style 0.1, speed 1.0. Candidata a sustituir a Carolina (sonaba demasiado joven para la cara de Lía).
 - Ojo: el vídeo que sale de InfiniteTalk/LatentSync lleva el audio rebajado a 16 kHz. En el montaje final poner SIEMPRE el mp3 original de ElevenLabs.
+
+## Voz elegida para Lía: F1 (17-11-2026)
+- «Lía · F1 (elegida)»: DoYDMl2vmaVLlVlhaWSy. Diseñada: tarotista española 55–60 años, castellano, grave, aterciopelada, elegante, muy pausada, toque de misterio, sin ronquera.
+- Modelo eleven_multilingual_v2, stability 0.55, similarity 0.8, style 0.1, speed 1.0. La D5 queda descartada.
+- Regla para cualquier voz nueva de personaje: empezar la descripción por su OFICIO y su EDAD.
