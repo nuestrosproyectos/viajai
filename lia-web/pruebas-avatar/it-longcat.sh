@@ -3,8 +3,8 @@
 exec > /root/lc.log 2>&1
 set -x
 label() { { set +x; } 2>/dev/null; curl -s -X PUT "https://console.vast.ai/api/v0/instances/${CONTAINER_ID}/" -H "Authorization: Bearer ${CONTAINER_API_KEY}" -H 'Content-Type: application/json' -d "{\"label\":\"$1\"}"; }
-subir() { curl -s -F reqtype=fileupload -F time=72h -F "fileToUpload=@$1" https://litterbox.catbox.moe/resources/internals/api.php; }
-fallo() { U=$(subir /root/lc.log); label "error:$U"; exit 1; }
+subir() { for i in 1 2 3; do U=$(curl -s -F reqtype=fileupload -F time=72h -F "fileToUpload=@$1" https://litterbox.catbox.moe/resources/internals/api.php); case "$U" in https*) echo "$U"; return;; esac; cp "$1" /root/subida_$i.txt; set -- /root/subida_$i.txt; sleep 5; done; echo "SUBIDA-FALLIDA"; }
+fallo() { { set +x; } 2>/dev/null; U=$(subir /root/lc.log); C=$(tr '\r' '\n' < /root/lc.log | grep -vE '^\+|^\s*$' | tail -4 | tr -cd '[:alnum:] ._:/=-' | tail -c 350); label "error:$U|$C"; exit 1; }
 trap fallo ERR
 set -e
 RAW=https://raw.githubusercontent.com/nuestrosproyectos/viajai/claude/gifted-lamport-2n79de/lia-web
