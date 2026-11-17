@@ -22,3 +22,10 @@
 ## Coste real del 17-11 en Vast
 - Pagado con tarjeta: 35 $ (recarga automática de 5 $). Consumido ~23,5 $. Saldo 11,47 $ (incluye abono de 2 $ de Vast tras reclamación por GPU averiada, instancia 61103812).
 - Recomendado: desactivar la recarga automática en Vast → Billing.
+
+## CORRECCIÓN con datos reales (Apify, búsquedas YouTube ES, noviembre 2026)
+- TarotimeAI NO sirve de referencia: 356k subs con 8 Shorts → inflado.
+- Lo que funciona en tarot en español: VÍDEOS LARGOS (20–90 min). Ej.: The Destiny Call 84k (34 min, «qué piensa/siente de ti»), Mystic Tarot 30–40k («tarot interactivo amor hoy», 48–71 min), Katiuska Romero 35–39k (horóscopo semanal 1,5 h), Stargirl 12–24k, Aura Tarot 11–22k (un signo por vídeo, 16 min), Tarot Amor Edén ~20k.
+- Shorts de tarot: casi todos 10–900 visitas; solo despuntan drama de amor y horóscopo semanal (7k–36k). Usar como anzuelo.
+- «Tarot con IA» como gancho: rechazo («La IA está destruyendo el tarot», 34k). Etiquetar IA (obligatorio) pero no venderlo en título/miniatura.
+- Temas: amor/persona especial/qué siente de ti > signo por signo > horóscopo semanal > elige una carta genérico.
