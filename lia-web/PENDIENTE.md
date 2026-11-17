@@ -23,3 +23,9 @@
 - Publicar con servidor (Vercel o Cloudflare) para carta astral y compatibilidad con cualquier dato.
 - Con el cobro real, el servidor solo debe enviar las cartas bloqueadas tras confirmar el pago.
 - Pasar el proyecto a un repositorio propio (lia-tarot).
+
+## 17-11-2026
+- Dominio: marca general propuesta cieloycartas.com (libre a 17 $ el 17-11). Compra pendiente del cliente. Una sola web con secciones /tarot (Lía), /carta-astral (Mateo), /horoscopo-chino (Mei), /luna (Inés).
+- Activar cobros (Stripe) antes de publicar vídeos.
+- Cambiar detector de caras de LatentSync (InsightFace, no comercial) por uno libre antes de publicar.
+- Vast.ai: alquilar SOLO A100 de 80 GB (las «baratas» son de 40 GB y no sirven).
