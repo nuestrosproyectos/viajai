@@ -6,6 +6,7 @@ if [ -f /root/InfiniteTalk/lia_cam01_1080.mp4 ] || [ -f /root/InfiniteTalk/lia_c
     curl -s -H "Accept: application/vnd.github.raw" -o /root/montaje-vast.sh "https://api.github.com/repos/nuestrosproyectos/viajai/contents/lia-web/pruebas-avatar/montaje-vast.sh?ref=claude/gifted-lamport-2n79de"
     exec bash /root/montaje-vast.sh
   fi
+  [ -f /root/video01_elige_un_monton.mp4 ] && { cd /root && exec bash /root/rescate.sh /root/video01_elige_un_monton.mp4; }
   cd /root/InfiniteTalk && exec bash /root/rescate.sh lia_cam01_1080.mp4 lia_cam01.mp4
 fi
 # Vídeo 01: genera a Lía hablando (InfiniteTalk 480p, voz Carolina) y la escala a 1080p con RealESRGAN x2. EXIGE GPU de 80 GB.
