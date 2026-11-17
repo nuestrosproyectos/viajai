@@ -1,4 +1,9 @@
 #!/bin/bash
+# Si ya hay resultado de una ejecución anterior, solo lo rescata (no vuelve a generar)
+if [ -f /root/LongCat-Video/lia_longcat_a1.mp4 ]; then
+  curl -s -H "Accept: application/vnd.github.raw" -o /root/rescate.sh "https://api.github.com/repos/nuestrosproyectos/viajai/contents/lia-web/pruebas-avatar/rescate.sh?ref=claude/gifted-lamport-2n79de"
+  cd /root/LongCat-Video && exec bash /root/rescate.sh lia_longcat_a1.mp4
+fi
 # Prueba LongCat-Video-Avatar (1.6, o 1.5 si no existe) con la presentación de Lía (A1, voz Carolina, 46 s). EXIGE GPU de 80 GB.
 exec > /root/lc.log 2>&1
 set -x
