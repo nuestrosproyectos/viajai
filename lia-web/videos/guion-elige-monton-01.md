@@ -1,6 +1,6 @@
 # Vídeo YouTube 01 · «Elige un montón: ¿qué necesitas saber ahora mismo?»
 
-Duración total prevista: 12–14 min. Lía a cámara: ~3,5 min en 5 piezas (cada una < 60 s, se generan por separado).
+Duración total prevista: 12–14 min. Lía a cámara: ~2 min 23 s en 8 piezas (cada una < 60 s, se generan por separado).
 El resto (las cartas de cada montón, con voz en off de Lía) se monta sin ordenador alquilado.
 
 Voz: Carolina (BkOojM1ZhtSAHgsAkMx2), eleven_flash_v2_5, es. Aviso de IA en la presentación y en la descripción (YouTube: «contenido alterado o sintético» = SÍ).
@@ -26,6 +26,18 @@ Montón dos. Si has elegido este, aquí hay algo que llevas tiempo dándole vuel
 ## A4 · Entrada al montón 3 (a cámara, ~20 s)
 
 Montón tres. Si este es el tuyo, ponte cómoda, ponte cómodo, porque esta tirada tiene un giro que no esperabas. Vamos a verla juntas, juntos.
+
+## R1 · Reacción al cerrar el montón 1 (a cámara, ~15 s)
+
+Montón uno, qué bonito lo que ha salido. Si te ha removido algo, no lo apartes; quédate con la carta que más te ha mirado y vuelve a ella esta semana.
+
+## R2 · Reacción al cerrar el montón 2 (a cámara, ~15 s)
+
+Montón dos, lo que te ha dicho esta tirada lo sabías desde hace tiempo, ¿verdad? Pues ya está dicho en voz alta. Ahora te toca a ti dar el primer paso.
+
+## R3 · Reacción al cerrar el montón 3 (a cámara, ~15 s)
+
+Montón tres, te dije que venía con giro. No te asustes por el cambio: lo que se mueve es porque tiene que colocarse en su sitio. Confía un poquito más en ti.
 
 ## A5 · Despedida (a cámara, ~55 s)
 
