@@ -71,12 +71,24 @@ label "3-generando-lia|GPU:${MEM}MB"
 # latido: cada 10 min sube el final del registro, por si se cuelga
 ( while sleep 600; do tr '\r' '\n' < /root/it.log | tail -c 200000 > /root/latido.txt; L=$(subir /root/latido.txt); label "3-generando-lia|GPU:${MEM}MB|latido:$L"; done ) &
 T0=$(date +%s)
-timeout 10800 python generate_infinitetalk.py --ckpt_dir weights/Wan2.1-I2V-14B-480P --wav2vec_dir weights/chinese-wav2vec2-base \
-  --infinitetalk_dir weights/InfiniteTalk/single/infinitetalk.safetensors \
-  --lora_dir weights/Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank32.safetensors --lora_scale 1.0 \
-  --input_json entrada/cam.json --size infinitetalk-480 --sample_text_guide_scale 1.0 --sample_audio_guide_scale 2.0 \
-  --sample_steps 4 --sample_shift 2 --mode streaming --motion_frame 9 --max_frame_num 4000 \
-  --offload_model False --save_file lia_cam01
+# 3 tramos de menos de 1 minuto, cortados en mitad de los silencios (evita la deriva de color de los vídeos largos)
+ffmpeg -y -loglevel error -i entrada/cam.wav -to 46.371 entrada/t1.wav
+ffmpeg -y -loglevel error -i entrada/cam.wav -ss 46.371 -to 90.286 entrada/t2.wav
+ffmpeg -y -loglevel error -i entrada/cam.wav -ss 90.286 entrada/t3.wav
+rm -f lista_t.txt
+for i in 1 2 3; do
+  sed "s#entrada/cam.wav#entrada/t$i.wav#" entrada/cam.json > entrada/t$i.json
+  timeout 5400 python generate_infinitetalk.py --ckpt_dir weights/Wan2.1-I2V-14B-480P --wav2vec_dir weights/chinese-wav2vec2-base \
+    --infinitetalk_dir weights/InfiniteTalk/single/infinitetalk.safetensors \
+    --lora_dir weights/Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank32.safetensors --lora_scale 1.0 \
+    --input_json entrada/t$i.json --size infinitetalk-480 --sample_text_guide_scale 1.0 --sample_audio_guide_scale 2.5 \
+    --sample_steps 4 --sample_shift 2 --mode streaming --motion_frame 9 --max_frame_num 2000 --color_correction_strength 1.0 \
+    --offload_model False --save_file lia_t$i
+  ffmpeg -y -loglevel error -i lia_t$i.mp4 -i entrada/t$i.wav -map 0:v -map 1:a -c:v copy -c:a aac -shortest lia_t${i}b.mp4
+  echo "file 'lia_t${i}b.mp4'" >> lista_t.txt
+  label "3-generando-lia|tramo$i-hecho|GPU:${MEM}MB"
+done
+ffmpeg -y -loglevel error -f concat -safe 0 -i lista_t.txt -c copy lia_cam01.mp4
 T1=$(date +%s)
 U1=$(subir lia_cam01.mp4)
 label "4-escalando|480:$U1"
