@@ -13,6 +13,8 @@ set -e
 label "1-instalando"
 apt-get update -qq && apt-get install -y -qq ffmpeg git > /dev/null
 cd /root && (test -d InfiniteTalk || git clone -q https://github.com/MeiGen-AI/InfiniteTalk) && cd InfiniteTalk
+# Python 3.11 ya no tiene inspect.ArgSpec: se sustituye por FullArgSpec
+grep -rl 'from inspect import ArgSpec' --include=*.py . | xargs -r sed -i 's/from inspect import ArgSpec/from inspect import FullArgSpec as ArgSpec/'
 # Fijar versiones de mediados de 2025: sin esto pip instala piezas de 2026 incompatibles (torch 2.15)
 cat > /root/fijas.txt <<'FIJAS'
 torch==2.4.1
