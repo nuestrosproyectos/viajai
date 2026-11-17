@@ -25,16 +25,18 @@ print('DESCARGAS OK')
 PY
 mkdir -p entrada
 curl -s -o entrada/base.mp4 "$BASE/pruebas-avatar/lia-base-silencio.mp4"
-curl -s -o entrada/a1.mp3 "$BASE/videos/audio-01-f1/A1.mp3"
+curl -s -o entrada/a1.mp3 "$BASE/videos/audio-01-carolina/A1.mp3"
 ffmpeg -y -loglevel error -i entrada/a1.mp3 -ar 16000 -ac 1 entrada/a1.wav
 T1=$(date +%s)
 nvidia-smi --query-gpu=name,memory.total --format=csv
 
 label "2-sincronizando"
-python -m scripts.inference --unet_config_path configs/unet/stage2_512.yaml \
-  --inference_ckpt_path checkpoints/latentsync_unet.pt --inference_steps 20 --guidance_scale 1.5 \
-  --enable_deepcache --video_path entrada/base.mp4 --audio_path entrada/a1.wav --video_out_path ls_a1.mp4
+for G in 2.5 3.5; do
+  python -m scripts.inference --unet_config_path configs/unet/stage2_512.yaml \
+    --inference_ckpt_path checkpoints/latentsync_unet.pt --inference_steps 25 --guidance_scale $G \
+    --enable_deepcache --video_path entrada/base.mp4 --audio_path entrada/a1.wav --video_out_path ls_g$G.mp4
+done
 T2=$(date +%s)
-U1=$(subir ls_a1.mp4)
+U1=$(subir ls_g2.5.mp4); U3=$(subir ls_g3.5.mp4)
 U2=$(subir /root/ls.log)
-label "3-hecho|video:$U1|instalar:$((T1-T0))s|generar:$((T2-T1))s|log:$U2"
+label "3-hecho|g25:$U1|g35:$U3|instalar:$((T1-T0))s|generar:$((T2-T1))s|log:$U2"
