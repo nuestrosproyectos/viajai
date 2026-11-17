@@ -24,8 +24,8 @@ hf_hub_download('ByteDance/LatentSync-1.6', 'latentsync_unet.pt', local_dir='che
 print('DESCARGAS OK')
 PY
 mkdir -p entrada
-curl -s -o entrada/base.mp4 "$BASE/pruebas-avatar/lia-base-40s.mp4"
-curl -s -o entrada/a1.mp3 "$BASE/videos/audio-01-d5/A1.mp3"
+curl -s -o entrada/base.mp4 "$BASE/pruebas-avatar/lia-base-silencio.mp4"
+curl -s -o entrada/a1.mp3 "$BASE/videos/audio-01-f1/A1.mp3"
 ffmpeg -y -loglevel error -i entrada/a1.mp3 -ar 16000 -ac 1 entrada/a1.wav
 T1=$(date +%s)
 nvidia-smi --query-gpu=name,memory.total --format=csv
