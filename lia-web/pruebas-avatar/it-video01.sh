@@ -14,6 +14,7 @@ T_INI=$(date +%s)
 MEM=$(nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits | head -1)
 if [ "${MEM:-0}" -lt 79000 ]; then label "error:GPU-de-${MEM}MB-no-80GB"; exit 1; fi
 label "1-instalando|GPU:${MEM}MB"
+python -c "import torch;x=torch.ones(4096,4096,device='cuda');print('GPU OK',float((x@x).sum()))" || { label "error:GPU-averiada"; exit 1; }
 apt-get update -qq && apt-get install -y -qq ffmpeg git > /dev/null
 cd /root && (test -d InfiniteTalk || git clone -q https://github.com/MeiGen-AI/InfiniteTalk) && cd InfiniteTalk
 # Python 3.11 ya no tiene inspect.ArgSpec: se sustituye por FullArgSpec
