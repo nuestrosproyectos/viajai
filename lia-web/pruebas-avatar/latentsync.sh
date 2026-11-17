@@ -25,7 +25,7 @@ print('DESCARGAS OK')
 PY
 mkdir -p entrada
 curl -s -o entrada/base.mp4 "$BASE/pruebas-avatar/lia-base-40s.mp4"
-curl -s -o entrada/a1.mp3 "$BASE/videos/audio-01/A1.mp3"
+curl -s -o entrada/a1.mp3 "$BASE/videos/audio-01-d5/A1.mp3"
 ffmpeg -y -loglevel error -i entrada/a1.mp3 -ar 16000 -ac 1 entrada/a1.wav
 T1=$(date +%s)
 nvidia-smi --query-gpu=name,memory.total --format=csv
@@ -37,4 +37,4 @@ python -m scripts.inference --unet_config_path configs/unet/stage2_512.yaml \
 T2=$(date +%s)
 U1=$(subir ls_a1.mp4)
 U2=$(subir /root/ls.log)
-label "3-hecho|video:$U1|instalar:$((T1-T0))s|generar46s:$((T2-T1))s|log:$U2"
+label "3-hecho|video:$U1|instalar:$((T1-T0))s|generar:$((T2-T1))s|log:$U2"
