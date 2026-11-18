@@ -41,3 +41,10 @@
 - Guion listo del vídeo 02 «¿Qué siente esa persona por ti?»: lia-web/videos/guion-02-que-siente-por-ti.md (Lía a cámara ~2,3 min + 3 montones de 5 cartas, ~14 min).
 - Voz de Lía: Carolina (BkOojM1ZhtSAHgsAkMx2). Montaje: lia-web/videos/montar_video01.py (adaptar a 5 cartas por montón). Cartas en español: lia-web/videos/cartas_es.py.
 - Vast: se pidió por correo (17-11) la devolución del saldo no gastado (~11,47 $) y desactivar la recarga automática. Pendiente de respuesta.
+
+## Estado 18-11-2026 (tarde)
+- Vídeo 02 horizontal entregado (v2, cartas en español). Montaje: videos/montar_video02.py con ESCENAS=videos/escenas; tapa solo los gestos de HeyGen sobre las cartas (tramos_manos).
+- Cartas: cartas_es.py traduce mayores + 16 figuras de la corte. Web (public/cartas) actualizada con las 38 en español.
+- Cobro real con Stripe hecho y probado en local con un Stripe simulado (server.js: /api/tirada cifra las cartas de pago, /api/pagar crea el Checkout, /api/desbloquear verifica el pago). Variables: STRIPE_SECRET_KEY, SECRETO_TIRADAS, URL_PUBLICA. Precios en el servidor: Cruz Celta 4,90 €, Amor 3,90 €, Trabajo 3,90 €.
+- Falta del cliente: cuenta de Stripe a nombre de la empresa; comprar dominio (cieloycartas.com libre el 18-11); elegir hosting con servidor (recomendado Cloudflare: dominio + alojamiento).
+- Mateo: estudio de YouTube hecho (18-11). Primer vídeo recomendado: «2027 no va a ser igual para tu signo… mira tu ASCENDENTE» (25-30 min, 12 ascendentes, CTA a calcular la carta gratis). Luego Sol/Luna/Ascendente (10-14 min) y La Luna en los 12 signos.
