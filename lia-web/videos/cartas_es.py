@@ -14,18 +14,25 @@ MAYORES = {'fool': 'EL LOCO', 'magician': 'EL MAGO', 'high-priestess': 'LA SUMA 
            'hanged-man': 'EL COLGADO', 'death': 'LA MUERTE', 'temperance': 'LA TEMPLANZA', 'devil': 'EL DIABLO', 'tower': 'LA TORRE',
            'star': 'LA ESTRELLA', 'moon': 'LA LUNA', 'sun': 'EL SOL', 'judgement': 'EL JUICIO', 'world': 'EL MUNDO'}
 
+RANGOS = {'page': 'SOTA', 'knight': 'CABALLERO', 'queen': 'REINA', 'king': 'REY'}
+PALOS = {'wands': 'BASTOS', 'cups': 'COPAS', 'swords': 'ESPADAS', 'pentacles': 'OROS'}
+CORTE = {f'{r}-of-{p}': f'{rr} DE {pp}' for r, rr in RANGOS.items() for p, pp in PALOS.items()}
+TITULOS = {**MAYORES, **CORTE}   # las cartas numeradas (as a diez) no llevan título en esta baraja
+
 def lineas_banda(im):
-    """Busca la banda del título: las dos líneas negras que cruzan casi toda la carta en el 15 % inferior."""
+    """Busca la banda del título: las dos líneas negras que cruzan casi toda la carta en el 15 % inferior.
+    Cada fila cuenta como oscura si hay tinta a ±4 px, para aguantar escaneos algo torcidos."""
     g = im.convert('L'); w, h = g.size
-    xs = range(30, w - 30, 3)
-    llenas = [y for y in range(int(h * 0.80), h - 5) if sum(1 for x in xs if g.getpixel((x, y)) < 120) / len(xs) > 0.85]
+    xs = range(30, w - 30, 3); y0 = int(h * 0.80)
+    osc = {y: [g.getpixel((x, y)) < 120 for x in xs] for y in range(y0 - 4, h - 1)}
+    llenas = [y for y in range(y0, h - 5) if sum(any(osc[y + k][i] for k in range(-4, 5)) for i in range(len(xs))) / len(xs) > 0.9]
     grupos = []
     for y in llenas:
         if grupos and y - grupos[-1][-1] <= 3: grupos[-1].append(y)
         else: grupos.append([y])
-    for a, b in zip(grupos, grupos[1:]):
-        if 40 < b[0] - a[-1] < 110: return (a[-1] + 1, b[0] - 1)
-    return None
+    grupos = [gr for gr in grupos if gr[0] < h - 15]   # fuera el borde exterior de la carta
+    pares = [(a[-1] + 1 - 4, b[0] - 1 + 4) for a, b in zip(grupos, grupos[1:]) if 40 < b[0] - a[-1] < 110]   # se deshace el margen de ±4 px
+    return pares[-1] if pares else None   # la banda del título es la más baja
 
 def papel_de(im, caja):
     """Textura de papel: copia de una zona limpia del margen inferior, estirada al tamaño de la caja."""
@@ -52,9 +59,9 @@ def titulo_es(cid):
             k = 0
             while k < 6 and g.getpixel((x, ymid)) < 110: x -= 1; k += 1
             der = x - 1; break
-    caja = (izq, top + 1, der, bot)
+    caja = (izq, top + 3, der, bot - 2)
     im.paste(papel_de(im, caja), caja[:2])
-    d = ImageDraw.Draw(im); txt = MAYORES[cid] + '.'
+    d = ImageDraw.Draw(im); txt = TITULOS[cid] + '.'
     tam = 44
     while True:
         fnt = ImageFont.truetype(FUENTE, tam); tw = d.textlength(txt, font=fnt) * 1.06
@@ -95,6 +102,6 @@ def dorso():
 for fn in sorted(os.listdir(D)):
     cid = fn[:-4]
     if not fn.endswith('.jpg') or fn.endswith('_es.jpg') or cid.startswith('dorso'): continue
-    (titulo_es(cid) if cid in MAYORES else Image.open(os.path.join(D, fn)).convert('RGB')).save(os.path.join(D, cid + '_es.jpg'), quality=95)
+    (titulo_es(cid) if cid in TITULOS else Image.open(os.path.join(D, fn)).convert('RGB')).save(os.path.join(D, cid + '_es.jpg'), quality=95)
 dorso().save(os.path.join(D, 'dorso_rws.jpg'), quality=95)
 print('ok')
