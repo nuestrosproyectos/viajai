@@ -34,3 +34,10 @@
 - NUNCA borrar/apagar una máquina o archivo con trabajo del cliente hasta que él lo haya VISTO y dado el OK. Primero entregar (archivo enviado y comprobado), luego borrar.
 - Entregar los vídeos como archivo dentro de la conversación (SendUserFile), no con enlaces de servicios anónimos (tmpfiles/litterbox dan aviso de VPN y caducan).
 - Vídeo 01 «Elige un montón»: el render completo se perdió (instancia 61105086 borrada antes de entregar). Rehacer Lía a cámara (lia_camara_01.mp3, 151 s) y montar con lia-web/videos/montar_video01.py.
+
+## Estado 18-11-2026 (para retomar en una sesión nueva)
+- Prueba de avatar de Lía hecha por el cliente en ARTLIST (artlist.io, toolkit de IA con Kling/Veo/Seedance/ElevenLabs): resultado «de puta madre». Falta: saber cuántos créditos gastó la prueba de 46 s y con qué modelo, para elegir plan (AI Starter 19,99 €/16.500 créditos · Núcleo 39,99 €/40.000 · AI Pro 99,99 €/120.000; mensual, no anual).
+- Conector MCP de Artlist: https://mcp.artlist.io/mcp — añadir en claude.ai/customize/connectors y abrir sesión nueva para que cargue.
+- Guion listo del vídeo 02 «¿Qué siente esa persona por ti?»: lia-web/videos/guion-02-que-siente-por-ti.md (Lía a cámara ~2,3 min + 3 montones de 5 cartas, ~14 min).
+- Voz de Lía: Carolina (BkOojM1ZhtSAHgsAkMx2). Montaje: lia-web/videos/montar_video01.py (adaptar a 5 cartas por montón). Cartas en español: lia-web/videos/cartas_es.py.
+- Vast: se pidió por correo (17-11) la devolución del saldo no gastado (~11,47 $) y desactivar la recarga automática. Pendiente de respuesta.
