@@ -139,7 +139,9 @@ def lamina_cierre():
 
 # ---------- segmentos ----------
 def seg_imagen(nombre, im, dur_s, audio=None, zoom=0.035):
-    png = os.path.join(TMP, nombre + '.png'); im.save(png); out = os.path.join(TMP, nombre + '.mp4')
+    png = os.path.join(TMP, nombre + '.png'); out = os.path.join(TMP, nombre + '.mp4')
+    if os.path.exists(out) and os.environ.get('REUSAR') == '1': return out
+    im.save(png)
     n = max(1, round(dur_s * 25))
     vf = (f"scale={W*2}:{H*2},zoompan=z='1+{zoom}*on/{n}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s={W}x{H}:fps=25,"
           f"fade=t=in:st=0:d=0.5,fade=t=out:st={max(0,dur_s-0.4):.2f}:d=0.4,format=yuv420p")
@@ -155,9 +157,11 @@ def seg_lia(nombre, ini, fin, audio):
         vin = ['-ss', f'{ini + OFFSET_LIA:.3f}', '-t', f'{d:.3f}', '-i', src]
     else:
         vin = ['-loop', '1', '-framerate', '25', '-t', f'{d:.3f}', '-i', os.path.join(T, 'lia_fijo.png')]
-    vf = ("[0:v]scale=-2:1080,setsar=1,split[a][b];[b]scale=1920:-2,crop=1920:1080,gblur=sigma=40,eq=brightness=-0.12[f];"
+    fondo().save(os.path.join(TMP, 'fondo.png'))
+    vin += ['-loop', '1', '-framerate', '25', '-t', f'{d:.3f}', '-i', os.path.join(TMP, 'fondo.png')]
+    vf = ("[0:v]scale=-2:1080,setsar=1[a];[1:v]format=rgb24[f];"
           "[f][a]overlay=(W-w)/2:0,fade=t=in:st=0:d=0.3,format=yuv420p[v]")
-    sh('ffmpeg', '-v', 'error', '-y', *vin, '-i', audio, '-filter_complex', vf, '-map', '[v]', '-map', '1:a', '-t', f'{d:.3f}',
+    sh('ffmpeg', '-v', 'error', '-y', *vin, '-i', audio, '-filter_complex', vf, '-map', '[v]', '-map', '2:a', '-t', f'{d:.3f}',
        '-r', '25', '-c:v', 'libx264', '-crf', '17', '-preset', 'medium', '-c:a', 'aac', '-b:a', '192k', '-ac', '2', '-ar', '44100', out)
     return out
 
