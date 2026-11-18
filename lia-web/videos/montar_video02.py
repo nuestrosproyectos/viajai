@@ -46,7 +46,8 @@ MONTONES = [
     ('lovers', 'Los Enamorados', 'elegir · amor · valores alineados'),
 ]
 POSICIONES = ['LO QUE SIENTE AHORA', 'LO QUE PIENSA DE TI', 'LO QUE NO SE ATREVE A DECIRTE', 'LO QUE HAY ENTRE VOSOTROS', 'CONSEJO PARA TI']
-OFFSET_LIA = 0.8   # HeyGen añade 0,8 s al principio (medido por correlación de audio)
+OFFSET_LIA = float(os.environ.get('OFFSET_LIA', '0.8'))
+XS_MONTONES = [690, 984, 1274]; Y_NUMEROS = 330   # HeyGen añade 0,8 s al principio (medido por correlación de audio)
 
 # ---------- fondos y piezas gráficas ----------
 def fondo():
@@ -124,6 +125,36 @@ def lamina_montones():
     texto_centrado(d, 940, 'Piensa en esa persona y quédate con el primero que te llame', f(BODI, 40), GRIS)
     return im
 
+ESC = os.environ.get('ESCENAS', '')
+
+def foto(nombre):
+    im = Image.open(os.path.join(ESC, nombre)).convert('RGB'); r = max(W / im.width, H / im.height)
+    im = im.resize((round(im.width * r), round(im.height * r)), Image.LANCZOS)
+    x = (im.width - W) // 2; y = (im.height - H) // 2; return im.crop((x, y, x + W, y + H))
+
+def lamina_montones_foto():
+    im = foto('3-montones-velas.jpg'); d = ImageDraw.Draw(im)
+    grad = Image.new('L', (W, 260)); gd = ImageDraw.Draw(grad)
+    for y in range(260): gd.line([(0, y), (W, y)], fill=int(170 * (1 - y / 260)))
+    im.paste(Image.new('RGB', (W, 260), (8, 6, 7)), (0, 0), grad)
+    texto_centrado(d, 70, 'ELIGE UN MONTÓN', f(HAN, 44), HUESO, esp=10)
+    for i, x in enumerate(XS_MONTONES):
+        for dx, dy in ((4, 5), (0, 0)):
+            texto_centrado(d, Y_NUMEROS + dy, str(i + 1), f(BOD, 150), (0, 0, 0) if dx else HUESO, x + dx)
+    return im
+
+def seg_partido(nombre, im1, t1, im2, audio, extra=0.6):
+    """Primeros t1 segundos con im1 (plano de recurso) y el resto con im2, con un único audio."""
+    d = dur(audio) + extra
+    a = seg_imagen(nombre + '_a', im1, t1, None)
+    b = os.path.join(TMP, nombre + '_b_audio.m4a')
+    sh('ffmpeg', '-v', 'error', '-y', '-i', audio, '-af', f'apad,atrim=0:{d:.3f}', '-c:a', 'aac', '-b:a', '192k', b)
+    vb = seg_imagen(nombre + '_b', im2, d - t1, None)
+    lista = os.path.join(TMP, nombre + '_l.txt'); open(lista, 'w').write(f"file '{a}'\nfile '{vb}'\n")
+    out = os.path.join(TMP, nombre + '.mp4')
+    sh('ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', lista, '-i', b, '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-ac', '2', '-t', f'{d:.3f}', out)
+    return out
+
 def lamina_titulo(n):
     im = fondo().copy(); d = ImageDraw.Draw(im)
     texto_centrado(d, 380, 'Montón', f(BODI, 90), GRIS); texto_centrado(d, 470, str(n), f(BOD, 220), HUESO)
@@ -157,6 +188,12 @@ def seg_lia(nombre, ini, fin, audio):
         vin = ['-ss', f'{ini + OFFSET_LIA:.3f}', '-t', f'{d:.3f}', '-i', src]
     else:
         vin = ['-loop', '1', '-framerate', '25', '-t', f'{d:.3f}', '-i', os.path.join(T, 'lia_fijo.png')]
+    ancho, alto = map(int, sh('ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=p=0:s=x', src).strip().split('x')) if os.path.exists(src) else (9, 16)
+    if ancho > alto:
+        vf = "[0:v]scale=1920:1080:flags=lanczos,setsar=1,fade=t=in:st=0:d=0.3,format=yuv420p[v]"
+        sh('ffmpeg', '-v', 'error', '-y', *vin, '-i', audio, '-filter_complex', vf, '-map', '[v]', '-map', '1:a', '-t', f'{d:.3f}',
+           '-r', '25', '-c:v', 'libx264', '-crf', '17', '-preset', 'medium', '-c:a', 'aac', '-b:a', '192k', '-ac', '2', '-ar', '44100', out)
+        return out
     fondo().save(os.path.join(TMP, 'fondo.png'))
     vin += ['-loop', '1', '-framerate', '25', '-t', f'{d:.3f}', '-i', os.path.join(TMP, 'fondo.png')]
     vf = ("[0:v]scale=-2:1080,setsar=1[a];[1:v]format=rgb24[f];"
@@ -183,13 +220,14 @@ def bloques(palabras, ini):
 CAR = os.path.join(T, 'car')
 cortes = {l.split()[0]: (float(l.split()[1]), float(l.split()[2])) for l in open(os.path.join(CAR, 'cortes_camara.txt'))}
 plan = [('lia', 'A1')]
-plan.append(('img', 'montones', lamina_montones(), 7.0))
+plan.append(('img', 'montones', lamina_montones_foto() if ESC else lamina_montones(), 7.0))
 for n in (1, 2, 3):
     cinco = MONTONES[(n - 1) * 5:(n - 1) * 5 + 5]
     plan.append(('img', f'titulo{n}', lamina_titulo(n), 2.6))
     plan.append(('lia', f'A{n+1}'))
     for i, (cid, nom, cla) in enumerate(cinco, 1):
-        plan.append(('voz', f'M{n}_{i}', lamina_carta(n, i, cid, nom, cla)))
+        if i == 1 and ESC: plan.append(('partido', f'M{n}_{i}', foto('manos-cartas-abanico.jpg'), lamina_carta(n, i, cid, nom, cla)))
+        else: plan.append(('voz', f'M{n}_{i}', lamina_carta(n, i, cid, nom, cla)))
     plan.append(('voz', f'M{n}_6', lamina_tres(n, cinco)))
     plan.append(('lia', f'R{n}'))
 plan.append(('lia', 'A5'))
@@ -199,6 +237,9 @@ segs, subs, t, capitulos = [], [], 0.0, []
 for p in plan:
     if p[0] == 'lia':
         k = p[1]; a = os.path.join(CAR, k + '.mp3'); s = seg_lia('L_' + k, *cortes[k], a)
+        subs += bloques(json.load(open(os.path.join(CAR, k + '.json')))['words'], t)
+    elif p[0] == 'partido':
+        k = p[1]; a = os.path.join(CAR, k + '.mp3'); s = seg_partido('P_' + k, p[2], 4.0, p[3], a)
         subs += bloques(json.load(open(os.path.join(CAR, k + '.json')))['words'], t)
     elif p[0] == 'voz':
         k = p[1]; a = os.path.join(CAR, k + '.mp3'); s = seg_imagen('V_' + k, p[2], dur(a) + 0.6, a)
