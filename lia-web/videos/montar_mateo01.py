@@ -63,9 +63,9 @@ def partir(d, t, fuente, ancho):
     return lineas + [cur]
 
 # ---------- rueda del zodiaco ----------
-def rueda(im, asc='Aries', casas_on=True, resaltar=(), planetas=PLANETAS, eclipses=ECLIPSES, cx=600, cy=520, R=400):
+def rueda(im, asc='Aries', casas_on=True, resaltar=(), planetas=PLANETAS, eclipses=ECLIPSES, cx=600, cy=520, R=380, nombres=True, leyenda=True):
     """Ascendente a la izquierda (9 en punto); casas en sentido antihorario, como en una carta astral."""
-    capa = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(capa)
+    capa = Image.new('RGBA', im.size, (0, 0, 0, 0)); d = ImageDraw.Draw(capa)
     P = lambda th, r: (cx + r * math.cos(math.radians(th)), cy - r * math.sin(math.radians(th)))
     r1, r2, r3 = R, R * 0.80, R * 0.36
     for k in range(1, 13):
@@ -83,6 +83,11 @@ def rueda(im, asc='Aries', casas_on=True, resaltar=(), planetas=PLANETAS, eclips
         mid = 180 + (k - 1) * 30 + 15; signo = SIGNOS[(SIGNOS.index(asc) + k - 1) % 12]
         on = k in resaltar
         d.text(P(mid, (r1 + r2) / 2), GLIFO[signo], font=g, fill=(ORO_C if on else ORO) + (255,), anchor='mm')
+        if nombres:   # nombre del signo fuera de la rueda, para quien no conoce los símbolos
+            x, y = P(mid, r1 + 22); c = math.cos(math.radians(mid))
+            anc = 'lm' if c > 0.35 else 'rm' if c < -0.35 else 'mm'
+            if anc == 'mm': x, y = P(mid, r1 + 34)
+            d.text((x, y), signo.upper(), font=f(HAN, 21), fill=(HUESO if on else GRIS) + (255 if on else 210,), anchor=anc)
         if casas_on: d.text(P(mid, r3 + 26), str(k), font=num, fill=(HUESO if on else GRIS) + (255,), anchor='mm')
     # planetas en su signo (repartidos dentro del sector)
     porsig = {}
@@ -96,12 +101,28 @@ def rueda(im, asc='Aries', casas_on=True, resaltar=(), planetas=PLANETAS, eclips
     for s, fecha in eclipses:   # eclipse: disco oscuro con corona
         k = casa(asc, s); th = 180 + (k - 1) * 30 + (8 if s == 'Leo' else 22); x, y = P(th, r3 + 62)
         d.ellipse([x - 15, y - 15, x + 15, y + 15], fill=ORO + (220,)); d.ellipse([x - 12, y - 12, x + 12, y + 12], fill=NOCHE + (255,))
-    # marca del ascendente
-    x, y = P(180, r1 + 34); d.text((x, y), 'ASC', font=f(HAN, 26), fill=ORO_C + (255,), anchor='mm')
+    # marca del ascendente (a la izquierda, entre los nombres de dos signos)
+    if casas_on: x, y = P(180, r1 + 22); d.text((x, y), 'ASC', font=f(HAN, 26), fill=ORO_C + (255,), anchor='rm')
     sombra = capa.filter(ImageFilter.GaussianBlur(6))
-    im.paste(Image.new('RGB', (W, H), ORO), (0, 0), sombra.split()[3].point(lambda v: v // 5))
+    im.paste(Image.new('RGB', im.size, ORO), (0, 0), sombra.split()[3].point(lambda v: v // 5))
     im.paste(capa, (0, 0), capa)
+    if leyenda: poner_leyenda(im, casas_on)
     return im
+
+LEYENDA = [('♄', 'Saturno'), ('♆', 'Neptuno'), ('♅', 'Urano'), ('♃', 'Júpiter'), ('♇', 'Plutón')]
+def poner_leyenda(im, casas_on=True, x=1130, y=800):
+    """Qué significa cada símbolo: para quien no sabe astrología."""
+    d = ImageDraw.Draw(im); g = f(SIMB, 34); t = f(HAN, 26); xx = x
+    for gl, nom in LEYENDA:
+        d.text((xx, y), gl, font=g, fill=ORO_C, anchor='lm'); xx += 38
+        d.text((xx, y + 2), nom, font=t, fill=HUESO, anchor='lm'); xx += d.textlength(nom, font=t) + 30
+    y2 = y + 52; xx = x
+    d.ellipse([xx, y2 - 13, xx + 26, y2 + 13], fill=ORO); d.ellipse([xx + 3, y2 - 10, xx + 23, y2 + 10], fill=NOCHE); xx += 38
+    d.text((xx, y2 + 2), 'Eclipse', font=t, fill=HUESO, anchor='lm'); xx += d.textlength('Eclipse', font=t) + 30
+    if casas_on:
+        d.text((xx, y2 + 2), 'ASC', font=t, fill=ORO_C, anchor='lm'); xx += d.textlength('ASC ', font=t)
+        d.text((xx, y2 + 2), '= ascendente', font=t, fill=HUESO, anchor='lm'); xx += d.textlength('= ascendente', font=t) + 30
+        d.text((xx, y2 + 2), '1 a 12 = casas', font=t, fill=HUESO, anchor='lm')
 
 def panel(im, sup, titulo, linea2='', linea3='', x=1130, y=300, ancho=680):
     d = ImageDraw.Draw(im)
