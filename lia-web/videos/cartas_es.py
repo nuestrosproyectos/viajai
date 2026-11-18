@@ -37,7 +37,11 @@ def lineas_banda(im):
 def papel_de(im, caja):
     """Textura de papel: copia de una zona limpia del margen inferior, estirada al tamaño de la caja."""
     w, h = im.size
-    tira = im.crop((40, h - 34, w - 40, h - 14))
+    # la tira de 14 px más limpia (sin restos de líneas) del margen inferior
+    g = im.convert('L')
+    def suciedad(y): return sum(1 for x in range(40, w - 40, 4) for k in range(0, 14, 2) if g.getpixel((x, y + k)) < 150)
+    y0 = min(range(h - 48, h - 16, 2), key=suciedad)
+    tira = im.crop((40, y0, w - 40, y0 + 14))
     return tira.resize((caja[2] - caja[0], caja[3] - caja[1]), Image.BICUBIC).filter(ImageFilter.GaussianBlur(0.6))
 
 def titulo_es(cid):
@@ -59,7 +63,7 @@ def titulo_es(cid):
             k = 0
             while k < 6 and g.getpixel((x, ymid)) < 110: x -= 1; k += 1
             der = x - 1; break
-    caja = (izq, top + 3, der, bot - 2)
+    caja = (izq, top + 7, der, bot - 6)
     im.paste(papel_de(im, caja), caja[:2])
     d = ImageDraw.Draw(im); txt = TITULOS[cid] + '.'
     tam = 44
