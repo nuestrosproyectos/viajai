@@ -48,3 +48,10 @@
 - Cobro real con Stripe hecho y probado en local con un Stripe simulado (server.js: /api/tirada cifra las cartas de pago, /api/pagar crea el Checkout, /api/desbloquear verifica el pago). Variables: STRIPE_SECRET_KEY, SECRETO_TIRADAS, URL_PUBLICA. Precios en el servidor: Cruz Celta 4,90 €, Amor 3,90 €, Trabajo 3,90 €.
 - Falta del cliente: cuenta de Stripe a nombre de la empresa; comprar dominio (cieloycartas.com libre el 18-11); elegir hosting con servidor (recomendado Cloudflare: dominio + alojamiento).
 - Mateo: estudio de YouTube hecho (18-11). Primer vídeo recomendado: «2027 no va a ser igual para tu signo… mira tu ASCENDENTE» (25-30 min, 12 ascendentes, CTA a calcular la carta gratis). Luego Sol/Luna/Ascendente (10-14 min) y La Luna en los 12 signos.
+
+## Precios de cartas astrales en el mercado (estudio 18-11-2026, de extractos de buscador; sin abrir cada web)
+- Astrólogo humano en España: 60–180 € por sesión (lo normal 85–125 €). Revolución solar con astrólogo: 60–225 €.
+- Informes automáticos: Bindi (ES) carta PDF 24,95 € · revolución solar 19,95 € · sinastría 39,95 €; Astrodienst 26,90 € (Liz Greene 61,90 €); Astrosofa anual 29,95 €; Café Astrology 4,95 $; Etsy 10–50 $.
+- Propuesta para nosotros (IA): carta básica GRATIS · informe natal completo 9,90–14,90 € · compatibilidad 14,90–19,90 € · revolución solar/año 14,90–19,90 € · pack año 29–34 € · suscripción 4,99–6,99 €/mes. Pendiente de decisión de Juan.
+- RoxyAPI cubre 18 temas (astrología occidental y védica, previsiones, Diseño Humano, chino/BaZi, feng shui, maya/azteca, vastu, numerología, cábala, tarot, biorritmo, ayurveda, I Ching, cristales, sueños, números de ángel, localidades).
+- Mateo: 13 Shorts a cámara con audio listo (videos/audio-m01-alvaro/shorts); falta que Juan lo genere en HeyGen (~5 min) y montarlos.
