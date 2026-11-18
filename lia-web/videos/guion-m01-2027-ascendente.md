@@ -139,3 +139,46 @@ Y hasta aquí el cielo de dos mil veintisiete. Recuerda una cosa: los astros no 
 Cuéntame en los comentarios cuál es tu ascendente y qué parte te ha tocado más de cerca. Los leo todos.
 Y si quieres ver tu carta completa, con todos tus planetas y lo que te dicen para este año, la tienes en nuestra web. El enlace está en la descripción.
 Suscríbete, porque en el próximo vídeo vamos a juntar tu Sol, tu Luna y tu ascendente. Un abrazo, y mira al cielo de vez en cuando.
+
+---
+
+# Shorts con Mateo a cámara (un solo audio para HeyGen, 1 s de silencio entre piezas)
+
+## S01 · Aries
+Si eres ascendente Aries, dos mil veintisiete te pide reinventarte. Saturno y Neptuno pasan justo por tu casa uno, la de quién eres. La imagen que dabas ya no te vale, y eso es bueno. Y el eclipse del dos de agosto cae en tu casa del amor y la creatividad. Empieza, sí, como siempre. Pero esta vez, termina lo que empieces.
+
+## S02 · Tauro
+Si eres ascendente Tauro, dos mil veintisiete es un año de trabajo interior. Saturno y Neptuno pasan por tu casa doce: toca cerrar etapas con calma. Urano mueve tu casa dos, la de lo que vales. Y el eclipse del dos de agosto cae en tu casa del hogar. Suelta lo que ya no te alimenta, aunque sea cómodo.
+
+## S03 · Géminis
+Si eres ascendente Géminis, en dos mil veintisiete el cielo te mira a ti. Urano está en tu casa uno: te vas a sorprender a ti mismo, a ti misma. Saturno y Neptuno ordenan tus amistades y tus proyectos. Y el eclipse del dos de agosto cae en tu casa de la comunicación. Tantas puertas abiertas cansan: elige dos y crúzalas.
+
+## S04 · Cáncer
+Si eres ascendente Cáncer, dos mil veintisiete es un año de vocación. Saturno y Neptuno pasan por tu casa diez, la de tu carrera. Tu trabajo tiene que tener sentido, no basta con cumplir. Y el eclipse del dos de agosto te invita a revisar tus prioridades. Que tu sensibilidad sea tu fuerza, no tu freno.
+
+## S05 · Leo
+Si eres ascendente Leo, atento: dos mil veintisiete es tuyo. El gran eclipse total del dos de agosto cae en tu casa uno, en tu propio ascendente. Y Júpiter pasa por ahí hasta finales de julio, dándote confianza y presencia. Es un punto de giro personal. Brilla, pero escucha también a quien tienes enfrente.
+
+## S06 · Virgo
+Si eres ascendente Virgo, apúntate esta fecha: veintisiete de julio de dos mil veintisiete. Ese día Júpiter entra en tu ascendente y empieza para ti un ciclo de doce años. Más confianza, más oportunidades. Hasta entonces, toca cerrar etapas con calma. Lo que llega en agosto viene a abrirte, no a desordenarte.
+
+## S07 · Libra
+Si eres ascendente Libra, dos mil veintisiete es el año de las relaciones. Saturno y Neptuno pasan por tu casa siete, la de la pareja y los socios. Lo que es sólido se refuerza, y lo que no, se nota. No idealices: mira a las personas como son. El equilibrio empieza por ser honesto contigo.
+
+## S08 · Escorpio
+Si eres ascendente Escorpio, en dos mil veintisiete tu carrera se mueve. Júpiter pasa por tu casa diez hasta julio, y el eclipse del dos de agosto cae justo ahí: una puerta profesional que se abre, o una que decides cerrar. Mientras, Saturno y Neptuno te piden ordenar tu día a día. Cuida tu rutina: de ella depende todo.
+
+## S09 · Sagitario
+Si eres ascendente Sagitario, dos mil veintisiete viene alegre. Saturno y Neptuno pasan por tu casa cinco, la del amor y la creatividad. Si tienes un proyecto que te apasiona, es el año de tomártelo en serio. Y desde finales de julio, Júpiter empuja tu carrera. Disfruta, pero termina lo que empiezas.
+
+## S10 · Capricornio
+Si eres ascendente Capricornio, en dos mil veintisiete tu éxito se nota en casa. Saturno, tu planeta, y Neptuno pasan por tu casa cuatro: hogar, familia, raíces. Puede ser año de mudanza, de reforma o de reconciliarte con tu historia. Construye una base sólida, de esas que duran.
+
+## S11 · Acuario
+Si eres ascendente Acuario, dos mil veintisiete es un año de transformación profunda. Plutón sigue en tu ascendente, y el eclipse del seis de febrero cae ahí también. Estás dejando atrás una versión de ti. Y el eclipse del dos de agosto toca tus relaciones. Déjate cambiar: lo que sale de aquí es más tú que nunca.
+
+## S12 · Piscis
+Si eres ascendente Piscis, dos mil veintisiete te pide darle forma a lo que vales. Neptuno, tu planeta, y Saturno pasan por tu casa dos. Orden, realismo y autoestima. Y desde el veintisiete de julio, Júpiter llena de buenas relaciones tu segunda mitad del año. Confía en tu intuición, pero apúntalo todo.
+
+## S13 · Eclipse
+El dos de agosto de dos mil veintisiete, a media mañana, se va a hacer de noche en Cádiz y en Málaga. Es un eclipse total de Sol, en Leo, y en astrología es un punto de giro: cierra una puerta y abre otra. ¿En qué parte de tu vida cae? Depende de tu ascendente. Te lo cuento, signo a signo, en el vídeo completo.
