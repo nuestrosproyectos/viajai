@@ -132,16 +132,49 @@ def foto(nombre):
     im = im.resize((round(im.width * r), round(im.height * r)), Image.LANCZOS)
     x = (im.width - W) // 2; y = (im.height - H) // 2; return im.crop((x, y, x + W, y + H))
 
-def lamina_montones_foto():
+def lamina_montones_foto(destacar=0, titulo='ELIGE UN MONTÓN'):
+    """Foto de los 3 montones con su número encima. destacar=n deja el montón n en primer plano y apaga los otros dos."""
     im = foto('3-montones-velas.jpg'); d = ImageDraw.Draw(im)
     grad = Image.new('L', (W, 260)); gd = ImageDraw.Draw(grad)
     for y in range(260): gd.line([(0, y), (W, y)], fill=int(170 * (1 - y / 260)))
     im.paste(Image.new('RGB', (W, 260), (8, 6, 7)), (0, 0), grad)
-    texto_centrado(d, 70, 'ELIGE UN MONTÓN', f(HAN, 44), HUESO, esp=10)
+    if titulo: texto_centrado(d, 70, titulo, f(HAN, 44), HUESO, esp=10)
+    if destacar:   # foco de luz suave sobre el montón elegido; el resto de la mesa queda en penumbra
+        x = XS_MONTONES[destacar - 1]; m = Image.new('L', (W, H), 0)
+        ImageDraw.Draw(m).ellipse((x - 190, Y_NUMEROS - 60, x + 190, Y_NUMEROS + 470), fill=255)
+        m = m.filter(ImageFilter.GaussianBlur(70))
+        im = Image.composite(im, Image.blend(im, Image.new('RGB', (W, H), (8, 6, 7)), 0.62), m); d = ImageDraw.Draw(im)
     for i, x in enumerate(XS_MONTONES):
+        activo = destacar in (0, i + 1)
         for dx, dy in ((4, 5), (0, 0)):
-            texto_centrado(d, Y_NUMEROS + dy, str(i + 1), f(BOD, 150), (0, 0, 0) if dx else HUESO, x + dx)
+            texto_centrado(d, Y_NUMEROS + dy, str(i + 1), f(BOD, 150 if activo else 120), (0, 0, 0) if dx else (HUESO if activo else GRIS), x + dx)
     return im
+
+def tramos_manos(src):
+    """Tramos del vídeo de HeyGen en que las manos de Lía tocan o tapan los montones (zona de las cartas cambia respecto a la mediana)."""
+    import numpy as np
+    cache = os.path.join(TMP, 'tramos_manos.json')
+    if os.path.exists(cache) and os.path.getmtime(cache) > os.path.getmtime(src): return json.load(open(cache))
+    w, h = map(int, sh('ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=p=0:s=x', src).strip().split('x'))
+    cw, ch, cx, cy = int(w * 0.406), int(h * 0.167), int(w * 0.297), int(h * 0.8125)   # franja de los 3 montones
+    raw = subprocess.run(['ffmpeg', '-v', 'error', '-i', src, '-vf', f'crop={cw}:{ch}:{cx}:{cy},scale=130:30,format=gray', '-f', 'rawvideo', '-pix_fmt', 'gray', '-'], capture_output=True, check=True).stdout
+    fr = np.frombuffer(raw, np.uint8).reshape(-1, 30, 130).astype(float)
+    dif = np.abs(fr - np.median(fr[::25], axis=0)).mean(axis=(1, 2)); umbral = np.median(dif) * 2.2
+    iv, ini = [], None
+    for i, m in enumerate(list(dif > umbral) + [False]):
+        if m and ini is None: ini = i
+        if not m and ini is not None:
+            if i - ini >= 3 and dif[ini:i].max() > 4: iv.append([ini / 25 - 0.4, i / 25 + 0.4])
+            ini = None
+    unidos = []
+    for a, b in iv:
+        if unidos and a - unidos[-1][1] < 1.6: unidos[-1][1] = b
+        else: unidos.append([max(0, a), b])
+    for u in unidos:
+        if u[1] - u[0] < 1.8: u[1] = u[0] + 1.8
+    json.dump(unidos, open(cache, 'w')); return unidos
+
+PILA = {'A2': 1, 'R1': 1, 'A3': 2, 'R2': 2, 'A4': 3, 'R3': 3}
 
 def seg_partido(nombre, im1, t1, im2, audio, extra=0.6):
     """Primeros t1 segundos con im1 (plano de recurso) y el resto con im2, con un único audio."""
@@ -190,6 +223,24 @@ def seg_lia(nombre, ini, fin, audio):
         vin = ['-loop', '1', '-framerate', '25', '-t', f'{d:.3f}', '-i', os.path.join(T, 'lia_fijo.png')]
     ancho, alto = map(int, sh('ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=p=0:s=x', src).strip().split('x')) if os.path.exists(src) else (9, 16)
     if ancho > alto:
+        # tapa con la foto de los montones los momentos en que HeyGen pone las manos sobre las cartas (señala el que no es o las deforma)
+        t0 = ini + OFFSET_LIA
+        loc = [(max(0, a - t0), min(d, b - t0)) for a, b in (tramos_manos(src) if ESC else []) if b > t0 and a < t0 + d]
+        loc = [(a, b) for a, b in loc if b - a > 0.3]
+        # sin parpadeos: cada tapa dura al menos 1,5 s (si toca el principio o el final del corte, crece hacia dentro)
+        loc = [(a, max(b, min(d, a + 1.5))) if a <= 0.01 else (min(a, max(0, b - 1.5)), b) if b >= d - 0.01 else (a, max(b, a + 1.5)) for a, b in loc]
+        if loc:
+            k = nombre.split('_')[-1]
+            lamina_montones_foto(PILA.get(k, 0), f'MONTÓN {PILA[k]}' if k in PILA else '').save(os.path.join(TMP, nombre + '_tapa.png'))
+            n = max(1, round(d * 25)); en = '+'.join(f'between(t,{a:.2f},{b:.2f})' for a, b in loc)
+            vf = (f"[0:v]scale=1920:1080:flags=lanczos,setsar=1[l];"
+                  f"[2:v]scale={W*2}:{H*2},zoompan=z='1+0.05*on/{n}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s={W}x{H}:fps=25,setsar=1[f];"
+                  f"[l][f]overlay=0:0:enable='{en}',fade=t=in:st=0:d=0.3,format=yuv420p[v]")
+            print('   tapo', nombre, [(round(a, 1), round(b, 1)) for a, b in loc], flush=True)
+            sh('ffmpeg', '-v', 'error', '-y', *vin, '-i', audio, '-loop', '1', '-framerate', '25', '-t', f'{d:.3f}', '-i', os.path.join(TMP, nombre + '_tapa.png'),
+               '-filter_complex', vf, '-map', '[v]', '-map', '1:a', '-t', f'{d:.3f}',
+               '-r', '25', '-c:v', 'libx264', '-crf', '17', '-preset', 'medium', '-c:a', 'aac', '-b:a', '192k', '-ac', '2', '-ar', '44100', out)
+            return out
         vf = "[0:v]scale=1920:1080:flags=lanczos,setsar=1,fade=t=in:st=0:d=0.3,format=yuv420p[v]"
         sh('ffmpeg', '-v', 'error', '-y', *vin, '-i', audio, '-filter_complex', vf, '-map', '[v]', '-map', '1:a', '-t', f'{d:.3f}',
            '-r', '25', '-c:v', 'libx264', '-crf', '17', '-preset', 'medium', '-c:a', 'aac', '-b:a', '192k', '-ac', '2', '-ar', '44100', out)
@@ -237,7 +288,7 @@ segs, subs, t, capitulos = [], [], 0.0, []
 for p in plan:
     if p[0] == 'lia':
         k = p[1]; a = os.path.join(CAR, k + '.mp3'); s = seg_lia('L_' + k, *cortes[k], a)
-        subs += bloques(json.load(open(os.path.join(CAR, k + '.json')))['words'], t)
+        subs += [(x, y, z, 'Caja') for x, y, z in bloques(json.load(open(os.path.join(CAR, k + '.json')))['words'], t)]
     elif p[0] == 'partido':
         k = p[1]; a = os.path.join(CAR, k + '.mp3'); s = seg_partido('P_' + k, p[2], 4.0, p[3], a)
         subs += bloques(json.load(open(os.path.join(CAR, k + '.json')))['words'], t)
@@ -259,11 +310,12 @@ WrapStyle: 0
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Sub,Hanken Grotesk,50,&H00D6E4EC,&H00FFFFFF,&H64100A0A,&H8C0A0A0C,0,0,0,0,100,100,0,0,1,2.2,3,2,160,160,46,1
+Style: Caja,Hanken Grotesk,52,&H00E6EEF2,&H00FFFFFF,&H38080510,&H00000000,0,0,0,0,100,100,0,0,3,14,0,2,160,160,40,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
-open(ass, 'w').write(cab + ''.join(f'Dialogue: 0,{ass_tiempo(a)},{ass_tiempo(b+0.15)},Sub,,0,0,0,,{x}\n' for a, b, x in subs))
+open(ass, 'w').write(cab + ''.join(f'Dialogue: 0,{ass_tiempo(e[0])},{ass_tiempo(e[1]+0.15)},{e[3] if len(e) > 3 else "Sub"},,0,0,0,,{e[2]}\n' for e in subs))
 final = os.path.join(OUT, 'video02_que_siente_por_ti.mp4')
 sh('ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', lista, '-vf', f"subtitles={ass}:fontsdir={FUENTES}",
    '-c:v', 'libx264', '-crf', '18', '-preset', 'medium', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', final)
