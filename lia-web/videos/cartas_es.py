@@ -41,7 +41,17 @@ def titulo_es(cid):
     # bordes laterales de la banda (línea vertical negra)
     g = im.convert('L'); ymid = (top + bot) // 2
     xs = [x for x in range(0, w) if g.getpixel((x, ymid)) < 110]
-    izq = max([x for x in xs if x < 28] or [8]) + 2; der = min([x for x in xs if x > w - 28] or [w - 8]) - 2
+    izq = 10; der = w - 10
+    for x in range(0, 40):
+        if g.getpixel((x, ymid)) < 110:
+            k = 0
+            while k < 6 and g.getpixel((x, ymid)) < 110: x += 1; k += 1
+            izq = x + 1; break
+    for x in range(w - 1, w - 41, -1):
+        if g.getpixel((x, ymid)) < 110:
+            k = 0
+            while k < 6 and g.getpixel((x, ymid)) < 110: x -= 1; k += 1
+            der = x - 1; break
     caja = (izq, top + 1, der, bot)
     im.paste(papel_de(im, caja), caja[:2])
     d = ImageDraw.Draw(im); txt = MAYORES[cid] + '.'
