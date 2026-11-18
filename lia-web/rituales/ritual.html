@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><title>Tu ritual de luna llena · Inés</title>
+<style>
+@font-face{font-family:Bodoni;src:url(../web/reel/BodoniModa.ttf)}
+@font-face{font-family:BodoniI;src:url(../web/reel/BodoniModa-Italic.ttf)}
+@font-face{font-family:Hanken;src:url(../web/reel/HankenGrotesk.ttf)}
+@page{size:A4;margin:0}
+:root{--noche:#0d1024;--anil:#1b2148;--plata:#d9dbe6;--perla:#f3efe6;--gris:#9aa0b8;--oro:#d8b86a}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Hanken;color:var(--perla);background:var(--noche)}
+.pag{width:210mm;height:297mm;position:relative;overflow:hidden;padding:22mm 20mm;page-break-after:always;
+  background:radial-gradient(120% 80% at 70% 20%,#262d63 0%,var(--anil) 35%,var(--noche) 80%)}
+.pag:last-child{page-break-after:auto}
+.estrellas{position:absolute;inset:0;background-image:
+ radial-gradient(1px 1px at 12% 18%,#fff9 50%,transparent 51%),radial-gradient(1px 1px at 34% 72%,#fff7 50%,transparent 51%),
+ radial-gradient(1.5px 1.5px at 81% 11%,#fffa 50%,transparent 51%),radial-gradient(1px 1px at 63% 44%,#fff6 50%,transparent 51%),
+ radial-gradient(1px 1px at 92% 63%,#fff8 50%,transparent 51%),radial-gradient(1.2px 1.2px at 22% 91%,#fff7 50%,transparent 51%),
+ radial-gradient(1px 1px at 48% 8%,#fff6 50%,transparent 51%),radial-gradient(1px 1px at 7% 52%,#fff7 50%,transparent 51%),
+ radial-gradient(1px 1px at 74% 86%,#fff6 50%,transparent 51%),radial-gradient(1.3px 1.3px at 55% 29%,#fff8 50%,transparent 51%);
+ background-size:90mm 90mm;opacity:.9;pointer-events:none}
+.luna{position:absolute;border-radius:50%;
+ background:radial-gradient(circle at 38% 35%,#fffdf6 0%,#ece7da 38%,#cfcabd 70%,#a9a497 100%);
+ box-shadow:0 0 60px 18px rgba(240,235,220,.25),0 0 160px 60px rgba(150,160,230,.18)}
+.luna::after{content:"";position:absolute;inset:0;border-radius:50%;
+ background:radial-gradient(ellipse 14% 12% at 30% 58%,#7d786d55 0%,#7d786d22 60%,#0000 100%),
+ radial-gradient(ellipse 10% 9% at 62% 32%,#7d786d44 0%,#7d786d1a 60%,#0000 100%),
+ radial-gradient(ellipse 18% 15% at 58% 66%,#7d786d40 0%,#7d786d18 60%,#0000 100%),
+ radial-gradient(ellipse 7% 6% at 76% 50%,#7d786d50 0%,#0000 100%),
+ radial-gradient(ellipse 22% 18% at 40% 30%,#8c877c30 0%,#0000 100%),
+ radial-gradient(ellipse 5% 5% at 46% 78%,#6d685e45 0%,#0000 100%),
+ radial-gradient(circle at 70% 75%,#0000 55%,#00000022 100%)}
+.sup{font-size:9.5pt;letter-spacing:.32em;text-transform:uppercase;color:var(--oro)}
+h1{font-family:Bodoni;font-weight:400;font-size:46pt;line-height:1.02;color:#fff}
+h1 em,h2 em{font-family:BodoniI;font-style:normal;color:var(--plata)}
+h2{font-family:Bodoni;font-weight:400;font-size:26pt;line-height:1.1;margin:3mm 0 6mm;color:#fff}
+p{font-size:11pt;line-height:1.62;color:#e6e3dc}
+.linea{width:28mm;height:1px;background:var(--oro);margin:7mm 0}
+.portada .luna{width:132mm;height:132mm;right:-34mm;top:30mm}
+.portada .txt{position:absolute;left:20mm;bottom:40mm;width:120mm}
+.portada .datos{margin-top:8mm;font-size:12pt;color:var(--plata);line-height:1.8}
+.portada .datos b{color:#fff;font-weight:600}
+.firma{position:absolute;left:20mm;bottom:18mm;display:flex;align-items:center;gap:4mm;font-size:10pt;color:var(--gris)}
+.firma img{width:14mm;height:14mm;border-radius:50%;object-fit:cover;object-position:50% 25%;border:1px solid #ffffff40}
+.firma b{font-family:BodoniI;font-weight:400;font-size:15pt;color:#fff;display:block}
+.fichas{display:grid;grid-template-columns:1fr 1fr;gap:4mm;margin:6mm 0 8mm}
+.ficha{border:1px solid #ffffff22;border-radius:3mm;padding:4.5mm 5mm;background:#ffffff08}
+.ficha small{display:block;font-size:8.5pt;letter-spacing:.22em;text-transform:uppercase;color:var(--oro);margin-bottom:1.5mm}
+.ficha span{font-family:Bodoni;font-size:17pt;color:#fff}
+.ficha i{display:block;font-style:normal;font-size:9.5pt;color:var(--gris);margin-top:1mm}
+.necesitas{display:grid;grid-template-columns:1.15fr .85fr;gap:8mm;align-items:center}
+ul.lista{list-style:none}
+ul.lista li{font-size:11pt;padding:2.2mm 0;border-bottom:1px solid #ffffff18;display:flex;gap:3mm}
+ul.lista li::before{content:"";width:3.2mm;height:3.2mm;margin-top:1.3mm;border:1px solid var(--plata);border-radius:50%;flex:none}
+.piedra{background:var(--perla);border-radius:4mm;padding:5mm;color:#2a2633;text-align:center}
+.piedra img{width:42mm;height:auto;display:block;margin:0 auto 2mm;mix-blend-mode:multiply}
+.piedra b{font-family:Bodoni;font-weight:400;font-size:16pt;display:block}
+.piedra p{color:#4a4553;font-size:9.5pt;line-height:1.45}
+ol.pasos{list-style:none;counter-reset:p}
+ol.pasos li{counter-increment:p;display:grid;grid-template-columns:13mm 1fr;gap:2mm;padding:3.4mm 0;border-bottom:1px solid #ffffff16}
+ol.pasos li::before{content:counter(p);font-family:Bodoni;font-size:22pt;color:var(--oro);line-height:1}
+ol.pasos b{font-family:Bodoni;font-weight:400;font-size:14pt;color:#fff;display:block;margin-bottom:1mm}
+ol.pasos p{font-size:10.3pt;line-height:1.55}
+.afirma{margin:4mm 0 9mm;padding:9mm 10mm;border-radius:4mm;background:linear-gradient(135deg,#ffffff12,#ffffff05);border:1px solid #ffffff22;text-align:center}
+.afirma q{font-family:BodoniI;font-size:22pt;line-height:1.3;color:#fff;quotes:"«" "»"}
+.escribir{margin-top:3mm}
+.escribir div{height:9.5mm;border-bottom:1px solid #ffffff2e}
+.escribir small,.prox small{font-size:8.5pt;letter-spacing:.22em;text-transform:uppercase;color:var(--oro)}
+.prox{display:flex;align-items:center;gap:6mm;margin:9mm 0 0}
+.prox .luna-n{width:16mm;height:16mm;border-radius:50%;border:1px solid var(--plata);background:radial-gradient(circle at 70% 40%,#262d63,#0d1024);flex:none}
+.aviso{position:absolute;left:20mm;right:20mm;bottom:14mm;font-size:8pt;line-height:1.5;color:var(--gris);border-top:1px solid #ffffff1c;padding-top:3mm}
+.pag2 .luna{width:46mm;height:46mm;right:-16mm;top:-16mm;opacity:.85}
+.pag2 h2,.pag2 > p{max-width:150mm}
+.pag3 .luna{width:40mm;height:40mm;right:16mm;top:16mm}
+</style></head><body>
+
+<section class="pag portada"><div class="estrellas"></div><div class="luna"></div>
+ <div class="txt">
+  <div class="sup">Tu ritual de luna llena</div>
+  <div class="linea"></div>
+  <h1>La luna de<br><em>las palabras</em></h1>
+  <div class="datos">Luna llena en <b>Géminis</b><br><b>Martes 24 de noviembre de 2026</b> · 15:53<br>Para <b>Marta</b> · ascendente Leo</div>
+ </div>
+ <div class="firma"><img src="ines.jpg" alt=""><div><b>Inés</b>Tu guía de la luna · inteligencia artificial</div></div>
+</section>
+
+<section class="pag pag2"><div class="estrellas"></div><div class="luna"></div>
+ <div class="sup">Tu luna</div>
+ <h2>Lo que <em>ilumina</em> esta luna llena</h2>
+ <p>La luna llena es el momento en que algo culmina: la noche de agradecer lo que ha florecido y de soltar lo que ya pesa. Esta vez la Luna está en <b>Géminis</b>, el signo de las palabras, las ideas y las conversaciones.</p>
+ <p style="margin-top:3mm">Para ti, con <b>ascendente Leo</b>, Géminis cae en tu <b>casa 11</b>: tus amistades, la gente con la que compartes proyectos y tus planes de futuro. Por eso tu ritual trabaja con lo que dices, lo que te dices y con quién quieres crear.</p>
+ <div class="fichas">
+  <div class="ficha"><small>Luna llena exacta</small><span>15:53</span><i>martes 24 de noviembre</i></div>
+  <div class="ficha"><small>Mejor momento</small><span>21:00 – 00:00</span><i>la Luna sale a las 17:36 en Granada</i></div>
+  <div class="ficha"><small>Signo</small><span>Géminis</span><i>palabras, ideas, conversaciones</i></div>
+  <div class="ficha"><small>Tu casa</small><span>Casa 11</span><i>amistades y proyectos de futuro</i></div>
+ </div>
+ <div class="sup" style="margin-bottom:3mm">Lo que necesitas · unos 20 minutos</div>
+ <div class="necesitas">
+  <ul class="lista">
+   <li>Una vela blanca o amarilla y algo estable donde ponerla</li>
+   <li>Un vaso de agua</li>
+   <li>Una hoja de papel y un bolígrafo</li>
+   <li>Tu citrino, o cualquier piedra u objeto amarillo que te guste</li>
+   <li>Un rincón tranquilo y el móvil en silencio</li>
+  </ul>
+  <div class="piedra"><img src="citrino.jpg" alt="Citrino"><b>Citrino</b><p>La piedra de noviembre. La tradición la asocia a Géminis y a Leo, a la alegría y a la creatividad.</p></div>
+ </div>
+</section>
+
+<section class="pag pag3"><div class="estrellas"></div><div class="luna"></div>
+ <div class="sup">Paso a paso</div>
+ <h2>Tu <em>ritual</em></h2>
+ <ol class="pasos">
+  <li><div><b>Respira</b><p>Siéntate con la espalda recta y los pies en el suelo. Respira hondo por la nariz contando hasta cuatro y suelta despacio por la boca. Tres veces.</p></div></li>
+  <li><div><b>Enciende la vela</b><p>Ponla lejos de cortinas y papeles, y no la dejes sola. Coge el citrino con la mano izquierda y siente su peso un momento.</p></div></li>
+  <li><div><b>Agradece</b><p>En la mitad de arriba del papel, escribe tres cosas de los últimos meses que te alegran. Mejor si tienen que ver con alguien de tu vida: una amiga que estuvo, una conversación que te hizo bien, un proyecto que salió.</p></div></li>
+  <li><div><b>Suelta una frase</b><p>En la mitad de abajo, escribe una frase que te dices y que ya no quieres repetirte («no se me da bien pedir ayuda»). Léela en voz baja una vez y escribe debajo la frase nueva, en presente y en positivo («pido ayuda con naturalidad»).</p></div></li>
+  <li><div><b>Di tu intención</b><p>Mirando la llama, piensa en una persona o un grupo con quien te gustaría crear algo y dilo en voz alta, en una frase. En una luna de Géminis, las palabras dichas cuentan.</p></div></li>
+  <li><div><b>Sella con agua</b><p>Bebe un sorbo despacio, como un compromiso contigo. Mañana, riega una planta con el resto.</p></div></li>
+  <li><div><b>Cierra</b><p>Apaga la vela con una tapa o un apagavelas. Dobla el papel con la frase nueva hacia dentro y guárdalo junto al citrino hasta la luna nueva del 9 de diciembre.</p></div></li>
+ </ol>
+</section>
+
+<section class="pag"><div class="estrellas"></div>
+ <div class="sup">Para llevar contigo</div>
+ <h2>Tu <em>afirmación</em></h2>
+ <div class="afirma"><q>Mis palabras abren caminos. Agradezco lo que tengo y suelto lo que ya no me sirve.</q></div>
+ <div class="escribir"><small>Tu frase nueva</small><div></div><div></div><div></div></div>
+ <div class="escribir" style="margin-top:8mm"><small>Con quién quiero crear</small><div></div><div></div></div>
+ <div class="prox"><div class="luna-n"></div><div><small>Próxima cita</small><p><b>Luna nueva · miércoles 9 de diciembre.</b> Te enviaré el ritual para sembrar la intención de esta noche.</p></div></div>
+ <div class="aviso">Inés es una guía creada con inteligencia artificial. Este ritual es una práctica de intención y bienestar personal, con fines de reflexión y entretenimiento: no promete resultados ni sustituye el consejo de ningún profesional. Usa la vela con cuidado, sobre una superficie estable y sin dejarla nunca encendida sin vigilancia. Datos astronómicos calculados con efemérides (hora peninsular española). · Muestra para una clienta ficticia.</div>
+</section>
+</body></html>
