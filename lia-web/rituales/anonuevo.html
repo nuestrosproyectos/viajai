@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><title>Tu ritual de Año Nuevo 2027 · Inés</title>
+<style>
+@font-face{font-family:Bodoni;src:url(fuentes/BodoniModa.ttf)}
+@font-face{font-family:BodoniI;src:url(fuentes/BodoniModa-Italic.ttf)}
+@font-face{font-family:Hanken;src:url(fuentes/HankenGrotesk.ttf)}
+@page{size:A4;margin:0}
+:root{--noche:#0b0b14;--fondo:#15131f;--oro:#d9bd7e;--oro2:#f1dfb2;--perla:#f4efe4;--gris:#a29d93}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Hanken;color:var(--perla);background:var(--noche)}
+.pag{width:210mm;height:297mm;position:relative;overflow:hidden;padding:22mm 20mm;page-break-after:always;
+ background:radial-gradient(110% 70% at 75% 15%,#2a2436 0%,var(--fondo) 40%,var(--noche) 85%)}
+.pag:last-child{page-break-after:auto}
+.brillos{position:absolute;inset:0;pointer-events:none;background-image:
+ radial-gradient(1.4px 1.4px at 14% 22%,#f1dfb2cc 50%,transparent 51%),radial-gradient(1px 1px at 37% 68%,#f1dfb299 50%,transparent 51%),
+ radial-gradient(1.8px 1.8px at 83% 14%,#f1dfb2dd 50%,transparent 51%),radial-gradient(1px 1px at 61% 47%,#ffffff88 50%,transparent 51%),
+ radial-gradient(1.2px 1.2px at 91% 66%,#f1dfb2aa 50%,transparent 51%),radial-gradient(1px 1px at 24% 88%,#ffffff77 50%,transparent 51%),
+ radial-gradient(1px 1px at 52% 9%,#f1dfb288 50%,transparent 51%),radial-gradient(1px 1px at 6% 54%,#ffffff88 50%,transparent 51%);
+ background-size:85mm 85mm}
+.sup{font-size:9.5pt;letter-spacing:.32em;text-transform:uppercase;color:var(--oro)}
+h1{font-family:Bodoni;font-weight:400;font-size:44pt;line-height:1.04;color:#fff}
+h1 em,h2 em{font-family:BodoniI;font-style:normal;color:var(--oro2)}
+h2{font-family:Bodoni;font-weight:400;font-size:25pt;line-height:1.12;margin:3mm 0 6mm;color:#fff}
+p{font-size:10.8pt;line-height:1.6;color:#e8e3d8}
+b{color:#fff;font-weight:600}
+.linea{width:28mm;height:1px;background:var(--oro);margin:7mm 0}
+.uno{position:absolute;right:6mm;top:6mm;font-family:Bodoni;font-size:330pt;line-height:1;color:transparent;
+ background:linear-gradient(170deg,#fff3cf 0%,#d9bd7e 45%,#8a6d35 100%);-webkit-background-clip:text;background-clip:text;
+ filter:drop-shadow(0 0 30px rgba(241,223,178,.35))}
+.portada .txt{position:absolute;left:20mm;bottom:42mm;width:130mm}
+.portada .datos{margin-top:8mm;font-size:12pt;color:#ddd5c4;line-height:1.8}
+.firma{position:absolute;left:20mm;bottom:18mm;display:flex;align-items:center;gap:4mm;font-size:10pt;color:var(--gris)}
+.firma img{width:14mm;height:14mm;border-radius:50%;object-fit:cover;object-position:50% 25%;border:1px solid #ffffff40}
+.firma b{font-family:BodoniI;font-weight:400;font-size:15pt;display:block}
+.dos{display:grid;grid-template-columns:1fr 1fr;gap:5mm;margin:5mm 0 7mm}
+.caja{border:1px solid #ffffff22;border-radius:3mm;padding:5mm;background:#ffffff07}
+.caja small,.mini small{display:block;font-size:8.5pt;letter-spacing:.22em;text-transform:uppercase;color:var(--oro);margin-bottom:1.5mm}
+.caja .n{font-family:Bodoni;font-size:30pt;color:#fff;line-height:1}
+.caja .n i{font-family:BodoniI;font-style:normal;font-size:14pt;color:var(--oro2);margin-left:2mm}
+.caja p{font-size:9.8pt;line-height:1.5;margin-top:2mm}
+.claves{list-style:none;margin-top:2mm}
+.claves li{display:grid;grid-template-columns:30mm 1fr;gap:4mm;padding:3mm 0;border-bottom:1px solid #ffffff16;font-size:10.3pt;line-height:1.45}
+.claves li span{font-family:Bodoni;font-size:13pt;color:var(--oro2)}
+.necesitas{display:flex;flex-wrap:wrap;gap:2.5mm;margin:3mm 0 6mm}
+.necesitas span{border:1px solid #ffffff30;border-radius:20mm;padding:1.6mm 4mm;font-size:9.8pt}
+ol.pasos{list-style:none;counter-reset:p}
+ol.pasos li{counter-increment:p;display:grid;grid-template-columns:12mm 1fr;gap:2mm;padding:3mm 0;border-bottom:1px solid #ffffff16}
+ol.pasos li::before{content:counter(p);font-family:Bodoni;font-size:21pt;color:var(--oro);line-height:1}
+ol.pasos b{font-family:Bodoni;font-weight:400;font-size:13.5pt;display:block;margin-bottom:.8mm}
+ol.pasos p{font-size:10pt;line-height:1.5}
+.cal{display:grid;grid-template-columns:1fr 1fr;gap:0 8mm;margin-top:2mm}
+.mes{display:grid;grid-template-columns:9mm 1fr;gap:3mm;padding:3.2mm 0;border-bottom:1px solid #ffffff18}
+.mes .u{width:8mm;height:8mm;border-radius:50%;background:radial-gradient(circle at 35% 35%,#e9f0b8,#9fae4f 70%,#6f7d2f);box-shadow:0 0 8px #d9bd7e55;margin-top:.5mm}
+.mes b{font-family:Bodoni;font-weight:400;font-size:13pt;display:block}
+.mes i{font-style:normal;font-size:8.6pt;color:var(--oro2);display:block;line-height:1.35;min-height:7mm}
+.mes .l{height:6mm;border-bottom:1px dotted #ffffff40}
+.mes.destaca b{color:var(--oro2)}
+.afirma{margin:4mm 0 9mm;padding:9mm 10mm;border-radius:4mm;background:linear-gradient(135deg,#ffffff12,#ffffff05);border:1px solid #d9bd7e55;text-align:center}
+.afirma q{font-family:BodoniI;font-size:21pt;line-height:1.3;color:#fff;quotes:"«" "»"}
+.prox{display:grid;grid-template-columns:1fr 1fr;gap:5mm}
+.lineas div{height:10mm;border-bottom:1px solid #ffffff2e}
+.aviso{position:absolute;left:20mm;right:20mm;bottom:14mm;font-size:8pt;line-height:1.5;color:var(--gris);border-top:1px solid #ffffff1c;padding-top:3mm}
+</style></head><body>
+
+<section class="pag portada"><div class="brillos"></div><div class="uno">1</div>
+ <div class="txt">
+  <div class="sup">Tu ritual de Año Nuevo</div><div class="linea"></div>
+  <h1>2027,<br><em>tu año uno</em></h1>
+  <div class="datos">Cierras un ciclo de nueve años<br>y esta medianoche empieza el tuyo.<br>Para <b>Marta</b> · Tauro, ascendente Leo</div>
+ </div>
+ <div class="firma"><img src="ines.jpg" alt=""><div><b>Inés</b>Tu guía de la luna y los números · inteligencia artificial</div></div>
+</section>
+
+<section class="pag"><div class="brillos"></div>
+ <div class="sup">Tu 2027 en una página</div>
+ <h2>Por qué esta noche <em>no es una más</em></h2>
+ <div class="dos">
+  <div class="caja"><small>2026 · lo que cierras</small><div class="n">9<i>Conclusión y liberación</i></div><p>El último año de tu ciclo: tiempo de terminar, perdonar y soltar lo que ya no te sirve.</p></div>
+  <div class="caja"><small>2027 · lo que empieza</small><div class="n">1<i>Iniciación</i></div><p>El primero de un ciclo nuevo de nueve años: empezar proyectos, tomar la iniciativa, elegir tu propio camino.</p></div>
+ </div>
+ <div class="caja" style="margin-bottom:7mm"><small>El cielo a medianoche</small><p style="margin-top:0">A las 00:00 del 1 de enero la <b>Luna estará menguante, en Libra</b>: una luna que ayuda a soltar y a buscar el equilibrio. Buen cielo para cerrar con calma y empezar sin cargas.</p></div>
+ <div class="sup">Tus claves de 2027 · ascendente Leo</div>
+ <ul class="claves">
+  <li><span>Hasta el 27 de julio</span><div>Júpiter pasa por tu <b>casa 1</b>: confianza, presencia y ganas de mostrarte.</div></li>
+  <li><span>6 de febrero</span><div>Eclipse anular en tu <b>casa 7</b>, la de la pareja y los socios.</div></li>
+  <li><span>2 de agosto</span><div><b>Eclipse total de Sol en Leo, en tu ascendente.</b> El punto de giro de tu año.</div></li>
+  <li><span>Todo el año</span><div>Saturno y Neptuno en tu <b>casa 9</b>: estudios, viajes y nuevas creencias.</div></li>
+ </ul>
+ <div class="sup" style="margin-top:8mm">Lo que favorece tu año 1</div>
+ <div class="necesitas"><span>Empezar un proyecto</span><span>Reinventarte</span><span>Tomar la iniciativa</span><span>Avanzar en tu trabajo</span><span>Ganar independencia</span></div>
+ <div class="sup" style="margin-top:4mm">Lo que conviene vigilar</div>
+ <div class="necesitas"><span>La impaciencia</span><span>El miedo a dar el primer paso</span><span>Querer hacerlo todo sola</span></div>
+</section>
+
+<section class="pag"><div class="brillos"></div>
+ <div class="sup">31 de diciembre, por la tarde · unos 20 minutos</div>
+ <h2>Tu <em>ritual</em>, paso a paso</h2>
+ <div class="necesitas"><span>Una vela blanca</span><span>Dos hojas de papel</span><span>Un bolígrafo</span><span>Una bolsa pequeña</span><span>Tus 12 uvas</span></div>
+ <ol class="pasos">
+  <li><div><b>Abre la casa</b><p>Abre una ventana un par de minutos para que entre aire nuevo. Busca nueve cosas que ya no uses, una por cada año del ciclo que cierras, y mételas en la bolsa.</p></div></li>
+  <li><div><b>Enciende la vela y respira</b><p>En un sitio estable, lejos de cortinas y papeles. Tres respiraciones lentas.</p></div></li>
+  <li><div><b>Despide 2026</b><p>En la primera hoja, una carta que empiece por «Gracias por…» y acabe en «Te dejo ir». Léela, rómpela en trocitos y métela en la bolsa. Mañana, la bolsa sale de casa: lo útil, a donar.</p></div></li>
+  <li><div><b>Escribe tus 12 intenciones</b><p>Una por mes, en presente y como si ya fuera verdad. Usa tu calendario de la página siguiente: cada mes tiene una fecha que te toca.</p></div></li>
+  <li><div><b>Elige la principal y dila en voz alta</b><p>La que abre tu año uno.</p></div></li>
+  <li><div><b>Cierra</b><p>Apaga la vela con una tapa. Lleva la hoja contigo esta noche y, con cada campanada, piensa en la intención de ese mes.</p></div></li>
+  <li><div><b>El 1 de enero, un paso real</b><p>Antes de que acabe el día, haz algo pequeño pero concreto por tu intención principal. El año uno empieza con una acción.</p></div></li>
+ </ol>
+</section>
+
+<section class="pag"><div class="brillos"></div>
+ <div class="sup">Una uva, un mes</div>
+ <h2>Tu calendario de <em>doce intenciones</em></h2>
+ <div class="cal">
+  <div class="mes"><div class="u"></div><div><b>Enero</b><i>Empieza tu año 1 · luna nueva el 7</i><div class="l"></div></div></div>
+  <div class="mes"><div class="u"></div><div><b>Julio</b><i>El 27, Júpiter pasa a tu casa 2: lo que vales</i><div class="l"></div></div></div>
+  <div class="mes destaca"><div class="u"></div><div><b>Febrero</b><i>Día 6: eclipse en tu casa 7 y Año Nuevo chino de la Cabra</i><div class="l"></div></div></div>
+  <div class="mes destaca"><div class="u"></div><div><b>Agosto</b><i>Día 2: eclipse total en tu ascendente</i><div class="l"></div></div></div>
+  <div class="mes"><div class="u"></div><div><b>Marzo</b><i>Día 20: equinoccio, llega la primavera</i><div class="l"></div></div></div>
+  <div class="mes"><div class="u"></div><div><b>Septiembre</b><i>Día 23: equinoccio de otoño</i><div class="l"></div></div></div>
+  <div class="mes"><div class="u"></div><div><b>Abril</b><i>Prepara tu propio año nuevo</i><div class="l"></div></div></div>
+  <div class="mes"><div class="u"></div><div><b>Octubre</b><i>Del 8 al 29, Mercurio retrógrado: revisa antes de firmar</i><div class="l"></div></div></div>
+  <div class="mes destaca"><div class="u"></div><div><b>Mayo</b><i>Día 3: tu cumpleaños</i><div class="l"></div></div></div>
+  <div class="mes"><div class="u"></div><div><b>Noviembre</b><i>Recoge lo sembrado en enero</i><div class="l"></div></div></div>
+  <div class="mes"><div class="u"></div><div><b>Junio</b><i>Día 21, solsticio · 23, noche de San Juan</i><div class="l"></div></div></div>
+  <div class="mes"><div class="u"></div><div><b>Diciembre</b><i>Día 22: solsticio · prepara tu año 2</i><div class="l"></div></div></div>
+ </div>
+ <p style="margin-top:6mm;font-size:9.5pt;color:var(--gris)">Se lee por columnas: de enero a junio a la izquierda y de julio a diciembre a la derecha. En dorado, tus tres fechas más importantes.</p>
+</section>
+
+<section class="pag"><div class="brillos"></div>
+ <div class="sup">Para llevar contigo todo el año</div>
+ <h2>Tu <em>afirmación</em></h2>
+ <div class="afirma"><q>Cierro un ciclo con gratitud. Empiezo el mío con valentía. 2027 es mi año uno.</q></div>
+ <div class="prox">
+  <div class="caja"><small>Próxima cita</small><p style="margin-top:0"><b>Luna nueva · jueves 7 de enero.</b> El momento de sembrar tu intención principal. Te enviaré su ritual.</p></div>
+  <div class="caja"><small>Tu fecha clave</small><p style="margin-top:0"><b>2 de agosto de 2027.</b> El eclipse total cae en tu ascendente: te prepararé un ritual especial para ese día.</p></div>
+ </div>
+ <div class="sup" style="margin-top:10mm">Mi intención principal para 2027</div>
+ <div class="lineas"><div></div><div></div><div></div></div>
+ <div class="sup" style="margin-top:8mm">Lo que dejo en 2026</div>
+ <div class="lineas"><div></div><div></div></div>
+ <div class="aviso">Inés es una guía creada con inteligencia artificial. Este ritual es una práctica de intención y bienestar personal, con fines de reflexión y entretenimiento: no promete resultados ni sustituye el consejo de ningún profesional. Usa la vela con cuidado, sobre una superficie estable y sin dejarla encendida sin vigilancia. Numerología pitagórica (año personal = día + mes + año, reducido); posiciones astronómicas calculadas con efemérides, hora peninsular española; casas por signo entero. · Muestra para una clienta ficticia.</div>
+</section>
+</body></html>

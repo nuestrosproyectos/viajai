@@ -55,3 +55,8 @@
 - Propuesta para nosotros (IA): carta básica GRATIS · informe natal completo 9,90–14,90 € · compatibilidad 14,90–19,90 € · revolución solar/año 14,90–19,90 € · pack año 29–34 € · suscripción 4,99–6,99 €/mes. Pendiente de decisión de Juan.
 - RoxyAPI cubre 18 temas (astrología occidental y védica, previsiones, Diseño Humano, chino/BaZi, feng shui, maya/azteca, vastu, numerología, cábala, tarot, biorritmo, ayurveda, I Ching, cristales, sueños, números de ángel, localidades).
 - Mateo: 13 Shorts a cámara con audio listo (videos/audio-m01-alvaro/shorts); falta que Juan lo genere en HeyGen (~5 min) y montarlos.
+
+## Rituales (19-11-2026)
+- Proceso guardado como skill del proyecto: .claude/skills/ritual-personalizado/SKILL.md (datos, reglas, audio, PDF, precios).
+- Muestras: luna llena 24-11 y Año Nuevo 2027 (PDF + audio de Inés). Pendiente: OK de Juan a tono, precios y biblioteca.
+- Año Nuevo es la venta grande: la web tiene que cobrar antes de mediados de diciembre (dominio + Stripe).
