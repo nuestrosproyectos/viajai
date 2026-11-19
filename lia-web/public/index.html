@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols&text=%E2%99%88%E2%99%89%E2%99%8A%E2%99%8B%E2%99%8C%E2%99%8D%E2%99%8E%E2%99%8F%E2%99%90%E2%99%91%E2%99%92%E2%99%93%E2%98%89%E2%98%BD%E2%98%BF%E2%99%80%E2%99%82%E2%99%83%E2%99%84%E2%99%85%E2%99%86%E2%99%87%E2%98%8A%E2%98%8B%E2%9A%B7%E2%9A%B8&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&text=%E4%B8%89%E5%85%94%E5%85%AD%E5%90%88%E5%92%8C%E5%AE%B3%E5%B9%B3%E6%AF%94%E6%B2%96%E7%81%AB%E7%89%9B%E7%8B%97%E7%8C%B4%E7%BE%8A%E8%99%8E%E8%9B%87%E8%B1%AC%E9%9B%9E%E9%A6%AC%E9%BC%A0%E9%BE%8D&display=swap">
 <link rel="stylesheet" href="estilo.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 <a class="saltar" href="#tarot">Saltar al tarot</a>
@@ -24,7 +25,7 @@
   <div class="wrap hero-grid">
     <div class="hero-txt">
       <p class="rotulo">Tarot y astrología con inteligencia artificial</p>
-      <h1>Cuatro especialistas. <em>Ninguno es humano</em>, y te lo decimos claro.</h1>
+      <h1>Cuatro especialistas. Ninguno es humano, y te lo decimos claro.</h1>
       <p class="sub">Lía te lee el tarot, Mateo calcula tu carta astral, Mei tu horóscopo chino e Inés tus números. Tienen cara y nombre, calculan con los datos planetarios de la NASA y te atienden a cualquier hora, sin esperas y a precio cerrado.</p>
       <div class="ctas"><a class="btn btn-pri" href="#tarot">Preguntar a Lía gratis</a><a class="btn btn-sec" href="#equipo">Conocer al equipo</a></div>
     </div>
@@ -37,14 +38,14 @@
   </div>
   <div class="hoy wrap" id="hoy" aria-live="polite">
     <div class="hoy-luna"><svg viewBox="0 0 100 100" class="luna-svg" id="hoyLuna" aria-hidden="true"></svg><div><small>La luna de hoy, según Mateo</small><b id="hoyFase">…</b><span id="hoyLunaTxt"></span></div></div>
-    <div class="hoy-carta"><img id="hoyCartaImg" alt=""><div><small>La carta del día, de Lía</small><b id="hoyCarta">…</b><span id="hoyCartaTxt"></span></div></div>
+    <div class="hoy-carta"><span id="hoyCartaHueco"></span><div><small>La carta del día, de Lía</small><b id="hoyCarta">…</b><span id="hoyCartaTxt"></span></div></div>
     <div class="hoy-fecha"><small id="hoyFecha"></small><span>Calculado hoy para España</span></div>
   </div>
 </section>
 
 <!-- EQUIPO -->
 <section class="seccion papel" id="equipo"><div class="wrap">
-  <div class="sec-cab"><div><p class="rotulo">Quién te atiende</p><h2>Cada pregunta, <em>con quien más sabe</em> de ella.</h2></div>
+  <div class="sec-cab"><div><p class="rotulo">Quién te atiende</p><h2>Cada pregunta, con quien más sabe de ella.</h2></div>
   <p>En una consulta de verdad no te lee las cartas el mismo que te hace la carta astral. Aquí tampoco: cada especialista domina una sola disciplina y trabaja con sus propias herramientas.</p></div>
   <div class="equipo">
     <a class="perfil" href="#tarot"><img src="img/lia.jpg" alt="Retrato de Lía, especialista en tarot creada con IA" loading="lazy"><div><small>Tarot</small><h3>Lía</h3><q>Las cartas no adivinan nada: te enseñan lo que ya sabías y no te atrevías a mirar.</q><span class="herr">Baraja Rider-Waite-Smith · 936 significados</span><span class="ir">Preguntar a Lía</span></div></a>
@@ -64,7 +65,7 @@
 
 <!-- LÍA · TAROT SÍ O NO -->
 <section class="seccion" id="tarot"><div class="wrap">
-  <div class="sec-cab"><div><p class="firma"><img src="img/av-lia.jpg" alt=""><span><b>Lía</b> · Tarot</span></p><h2>Piensa tu pregunta y <em>elige una carta</em>.</h2></div>
+  <div class="sec-cab"><div><p class="firma"><img src="img/av-lia.jpg" alt=""><span><b>Lía</b> · Tarot</span></p><h2>Piensa tu pregunta y elige una carta.</h2></div>
   <p>Escribe algo que se pueda responder con sí o no. Yo mezclo las 78 cartas de verdad en cada tirada; tú tocas la que te llame y te digo lo que veo.</p></div>
   <div class="tarot">
     <div class="tarot-izq">
@@ -75,10 +76,10 @@
       <p class="ayuda" id="tarotAyuda">Puedes pasar el dedo por la baraja: la carta que pisas se levanta.</p>
     </div>
     <aside class="veredicto" id="veredicto" aria-live="polite">
-      <div class="carta3d" id="cartaElegida"><div class="cara dorso"></div><div class="cara frente"><img alt=""></div></div>
+      <div class="carta3d" id="cartaElegida"><div class="cara dorso"></div><div class="cara frente"></div></div>
       <div class="ver-txt">
         <p class="ver-q" id="verQ">La respuesta de Lía</p>
-        <h3 id="verRes">—</h3>
+        <h3 id="verRes">…</h3>
         <p class="ver-nom" id="verNom">Aún no has elegido carta</p>
         <p class="ver-lect" id="verLect">Cuando toques una carta, aquí verás la respuesta y por qué.</p>
         <div class="kw" id="verKw"></div>
@@ -90,7 +91,7 @@
 
 <!-- LÍA · TRES CARTAS -->
 <section class="seccion oscuro" id="tirada"><div class="wrap">
-  <div class="sec-cab"><div><p class="firma"><img src="img/av-lia.jpg" alt=""><span><b>Lía</b> · Pasado, presente y futuro</span></p><h2>Tres cartas para <em>verlo entero</em>.</h2></div>
+  <div class="sec-cab"><div><p class="firma"><img src="img/av-lia.jpg" alt=""><span><b>Lía</b> · Pasado, presente y futuro</span></p><h2>Tres cartas para verlo entero.</h2></div>
   <p>La tirada que más me piden. Cada carta en su sitio, y en cada una te cuento qué dice del amor, del trabajo y del dinero.</p></div>
   <form class="fila-form" id="formTres"><label>Tu pregunta<input name="q" maxlength="160" value="¿Qué necesito saber del amor?"></label><button class="btn btn-pri" type="submit">Echar las cartas</button></form>
   <div class="tres" id="tres"></div>
@@ -99,12 +100,12 @@
 
 <!-- LÍA · TIRADA COMPLETA -->
 <section class="seccion" id="completa"><div class="wrap">
-  <div class="sec-cab"><div><p class="firma"><img src="img/av-lia.jpg" alt=""><span><b>Lía</b> · Tirada completa</span></p><h2>Cuando la pregunta es grande, <em>la tirada también</em>.</h2></div>
+  <div class="sec-cab"><div><p class="firma"><img src="img/av-lia.jpg" alt=""><span><b>Lía</b> · Tirada completa</span></p><h2>Cuando la pregunta es grande, la tirada también.</h2></div>
   <p>Elige la tirada, escribe tu pregunta y reparto las cartas en su sitio. Te leo cada posición una a una y al final te digo lo que veo en conjunto.</p></div>
   <div class="tipos" id="tipos" role="tablist" aria-label="Tipo de tirada">
-    <button type="button" role="tab" aria-selected="true" data-tipo="celtic"><b>Cruz Celta</b><span>10 cartas · la más completa</span><i>4,90 €</i></button>
-    <button type="button" role="tab" aria-selected="false" data-tipo="love"><b>Amor</b><span>5 cartas · tú, la otra persona y lo que hay entre vosotros</span><i>3,90 €</i></button>
-    <button type="button" role="tab" aria-selected="false" data-tipo="career"><b>Trabajo</b><span>7 cartas · fuerzas, frenos y oportunidades</span><i>3,90 €</i></button>
+    <button type="button" role="tab" aria-selected="true" data-tipo="celtic"><b>Cruz Celta</b><span>10 cartas, la más completa</span><i>4,90 €</i></button>
+    <button type="button" role="tab" aria-selected="false" data-tipo="love"><b>Amor</b><span>5 cartas: tú, la otra persona y lo que hay entre vosotros</span><i>3,90 €</i></button>
+    <button type="button" role="tab" aria-selected="false" data-tipo="career"><b>Trabajo</b><span>7 cartas: fuerzas, frenos y oportunidades</span><i>3,90 €</i></button>
   </div>
   <form class="fila-form" id="formCompleta"><label>Tu pregunta<input name="q" maxlength="160" value="¿Qué tengo que saber de este momento de mi vida?"></label><button class="btn btn-pri" type="submit">Echar la tirada</button></form>
   <div class="mesa-completa">
@@ -116,7 +117,7 @@
 
 <!-- MATEO · CARTA ASTRAL -->
 <section class="seccion" id="astral"><div class="wrap">
-  <div class="sec-cab"><div><p class="firma"><img src="img/av-mateo.jpg" alt=""><span><b>Mateo</b> · Carta astral</span></p><h2>Dime cuándo y dónde naciste. <em>Yo te enseño tu cielo</em>.</h2></div>
+  <div class="sec-cab"><div><p class="firma"><img src="img/av-mateo.jpg" alt=""><span><b>Mateo</b> · Carta astral</span></p><h2>Dime cuándo y dónde naciste. Yo te enseño tu cielo.</h2></div>
   <p>Calculo dónde estaban los 14 astros el minuto exacto en que naciste, tus 12 casas y los ángulos entre planetas. Pasa el dedo por la rueda: cada símbolo te cuenta algo de ti.</p></div>
   <form class="form-nac" id="formNatal" autocomplete="off">
     <div class="ejemplos" id="ejNatal"><span>Ejemplos:</span></div>
@@ -133,7 +134,7 @@
     <div class="natal-datos">
       <div class="big3" id="big3"></div>
       <div class="bloque"><h4>Elementos</h4><div class="barras" id="elementos"></div></div>
-      <div class="bloque"><h4>Aspectos entre planetas</h4><div class="donut-fila"><svg viewBox="0 0 120 120" class="donut" id="donutAsp"></svg><div class="leyenda" id="leyAsp"></div></div></div>
+      <div class="bloque"><h4>Aspectos entre planetas</h4><div class="donut-fila"><svg viewBox="0 0 120 120" class="donut" id="donutAsp" role="img" aria-label="Gráfico de los aspectos entre planetas"></svg><div class="leyenda" id="leyAsp"></div></div></div>
       <div class="bloque"><h4>Lo que más destaca de tu carta</h4><p class="figura" id="figura"></p></div>
     </div>
   </div>
@@ -143,12 +144,12 @@
 
 <!-- MATEO · COMPATIBILIDAD -->
 <section class="seccion oscuro" id="pareja"><div class="wrap">
-  <div class="sec-cab"><div><p class="firma"><img src="img/av-mateo.jpg" alt=""><span><b>Mateo</b> · Compatibilidad</span></p><h2>Dos cielos, <em>uno frente al otro</em>.</h2></div>
+  <div class="sec-cab"><div><p class="firma"><img src="img/av-mateo.jpg" alt=""><span><b>Mateo</b> · Compatibilidad</span></p><h2>Dos cielos, uno frente al otro.</h2></div>
   <p>Pongo vuestras dos cartas completas una sobre otra, planeta contra planeta, y lo resumo en cinco terrenos: romance, emociones, mente, físico y espiritual.</p></div>
   <div class="ejemplos" id="ejCompat"><span>Parejas de ejemplo:</span></div>
   <div class="compat" id="compat">
-    <div class="compat-score"><svg viewBox="0 0 200 200" id="anillo"></svg><div class="compat-num"><b id="compatNum">0</b><span>de 100</span></div><p class="arquetipo" id="arquetipo"></p></div>
-    <div class="compat-radar"><svg viewBox="-200 -150 400 300" id="radar"></svg></div>
+    <div class="compat-score"><svg viewBox="0 0 200 200" id="anillo" aria-hidden="true"></svg><div class="compat-num"><b id="compatNum">0</b><span>de 100</span></div><p class="arquetipo" id="arquetipo"></p></div>
+    <div class="compat-radar"><svg viewBox="-200 -150 400 300" id="radar" role="img" aria-label="Compatibilidad por terrenos: romance, emociones, mente, físico y espíritu"></svg></div>
     <div class="compat-txt"><p id="compatDesc"></p><h4>Lo que os une</h4><ul id="compatFuerte"></ul><h4>Lo que os pondrá a prueba</h4><ul id="compatReto"></ul></div>
   </div>
   <div class="upsell"><div><b>Informe de pareja</b><span>Todos los aspectos entre vuestras cartas y qué hacer con cada uno.</span></div><a class="btn btn-pri" href="#">Informe de pareja · 14,90 €</a></div>
@@ -156,14 +157,14 @@
 
 <!-- MATEO · LUNA -->
 <section class="seccion" id="luna"><div class="wrap">
-  <div class="sec-cab"><div><p class="firma"><img src="img/av-mateo.jpg" alt=""><span><b>Mateo</b> · La luna este mes</span></p><h2>Cada noche, <em>una luna distinta</em>.</h2></div>
+  <div class="sec-cab"><div><p class="firma"><img src="img/av-mateo.jpg" alt=""><span><b>Mateo</b> · La luna este mes</span></p><h2>Cada noche, una luna distinta.</h2></div>
   <p id="lunaIntro">Fase, porcentaje iluminado y signo por el que pasa, día a día. Calculado para España.</p></div>
   <div class="luna-mes" id="lunaMes"></div>
 </div></section>
 
 <!-- MEI · HORÓSCOPO CHINO -->
 <section class="seccion granate" id="chino"><div class="wrap">
-  <div class="sec-cab"><div><p class="firma"><img src="img/av-mei.jpg" alt=""><span><b>Mei</b> · Horóscopo chino 2027</span></p><h2>El 6 de febrero empieza el año de la <em>Cabra de Fuego</em>.</h2></div>
+  <div class="sec-cab"><div><p class="firma"><img src="img/av-mei.jpg" alt=""><span><b>Mei</b> · Horóscopo chino 2027</span></p><h2>El 6 de febrero empieza el año de la Cabra de Fuego.</h2></div>
   <p>Pon tu fecha de nacimiento. Si naciste en enero o a principios de febrero, ojo: tu animal puede ser el del año anterior. Yo lo miro con el calendario lunar, que es como se ha hecho siempre.</p></div>
   <div class="chino">
     <div class="chino-rueda"><svg viewBox="-260 -260 520 520" id="ruedaChina" role="img" aria-label="Rueda de los doce animales"></svg></div>
@@ -176,7 +177,7 @@
 
 <!-- INÉS · NÚMERO Y BIORRITMO -->
 <section class="seccion" id="numeros"><div class="wrap">
-  <div class="sec-cab"><div><p class="firma"><img src="img/av-ines.jpg" alt=""><span><b>Inés</b> · Numerología y biorritmo</span></p><h2>Lo que dice <em>tu fecha</em>.</h2></div>
+  <div class="sec-cab"><div><p class="firma"><img src="img/av-ines.jpg" alt=""><span><b>Inés</b> · Numerología y biorritmo</span></p><h2>Lo que dice tu fecha.</h2></div>
   <p>Tu número de vida sale de sumar tu fecha de nacimiento, paso a paso. Tu biorritmo, de tres ciclos que empezaron el día que naciste y que siguen hoy.</p></div>
   <form class="fila-form" id="formNum"><label>Tu fecha de nacimiento<input type="date" name="date" required value="1985-03-21" min="1900-01-01" max="2026-12-31"></label><button class="btn btn-pri" type="submit">Calcular</button></form>
   <div class="numbio">
@@ -187,7 +188,7 @@
 
 <!-- POR QUÉ UNA IA -->
 <section class="seccion oscuro" id="porque"><div class="wrap">
-  <div class="sec-cab"><div><p class="rotulo">Por qué una inteligencia artificial</p><h2>No adivina. <em>Calcula, recuerda y no se cansa.</em></h2></div>
+  <div class="sec-cab"><div><p class="rotulo">Por qué una inteligencia artificial</p><h2>No adivina. Calcula, recuerda y no se cansa.</h2></div>
   <p>Nadie puede garantizarte el futuro, y desconfía de quien lo haga. Lo que sí podemos garantizarte es rigor: un cálculo de precisión astronómica y una lectura que tiene en cuenta todo, siempre igual de cuidada.</p></div>
   <div class="comparativa" role="table" aria-label="Comparación con una consulta tradicional">
     <div class="cmp-cab" role="row"><span role="columnheader"></span><span role="columnheader">Una consulta tradicional</span><span role="columnheader">Lía y compañía</span></div>
@@ -208,7 +209,7 @@
 
 <!-- TRANSPARENCIA -->
 <section class="seccion papel" id="claro"><div class="wrap">
-  <div class="sec-cab"><div><p class="rotulo">Sin letra pequeña</p><h2>Todo lo que ves aquí <em>lo hace una IA</em>.</h2></div>
+  <div class="sec-cab"><div><p class="rotulo">Sin letra pequeña</p><h2>Todo lo que ves aquí lo hace una IA.</h2></div>
   <p>Otras webs te dicen que te lee una vidente y te contesta una máquina. Aquí es al revés: sabes desde el principio con quién hablas.</p></div>
   <div class="claro">
     <div><i>i.</i><b>Sus caras y sus voces</b><span>Están generadas por ordenador. No existen personas llamadas Lía, Mateo, Mei ni Inés.</span></div>
@@ -229,7 +230,7 @@
 </div></section>
 
 <footer class="pie"><div class="wrap">
-  <p>© 2026 <b>Lía y compañía</b> · Area Internet Business Group, S.L.U. · Granada</p>
+  <p>© 2026 <b>Lía y compañía</b>, de Area Internet Business Group, S.L.U. (Granada)</p>
   <p>Ocio y reflexión personal. No sustituye consejo médico, legal ni financiero. Solo mayores de 18 años.</p>
 </div></footer>
 

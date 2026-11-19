@@ -139,8 +139,8 @@ async function cargarHoy() {
     $('#hoyFase').textContent = L.meaning?.name || L.phase;
     $('#hoyLunaTxt').textContent = `${Math.round(L.illumination)} % iluminada · en ${SIGNO_ES[L.sign] || L.sign}`;
     const C = HOY.carta.card;
-    $('#hoyCartaImg').src = imgCarta(C.id);
-    if (C.reversed) $('#hoyCartaImg').style.transform = 'rotate(180deg)';
+    const im = document.createElement('img'); im.alt = ''; im.src = imgCarta(C.id); $('#hoyCartaHueco').replaceChildren(im);
+    if (C.reversed) im.style.transform = 'rotate(180deg)';
     $('#hoyCarta').textContent = C.name + (C.reversed ? ' (invertida)' : '');
     $('#hoyCartaTxt').textContent = (C.keywords || []).slice(0, 3).join(' · ');
     $('#hoyFecha').textContent = FMT_FECHA.format(new Date(HOY.fecha + 'T12:00:00'));
@@ -194,7 +194,8 @@ abanico.addEventListener('click', async e => {
   if (matchMedia('(max-width: 980px)').matches) $('#veredicto').scrollIntoView({ behavior: 'smooth', block: 'center' });
   try {
     const [r] = await Promise.all([api('sino', { question: q }), espera(700)]);
-    const img = $('img', C3); img.src = imgCarta(r.card.id); img.alt = r.card.name;
+    let img = $('img', C3); if (!img) { img = document.createElement('img'); $('.frente', C3).append(img); }
+    img.src = imgCarta(r.card.id); img.alt = r.card.name;
     await new Promise(ok => { if (img.complete) ok(); else { img.onload = ok; img.onerror = ok; } });
     if (r.card.reversed) C3.classList.add('invertida');
     C3.classList.add('girada');
