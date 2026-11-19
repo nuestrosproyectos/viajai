@@ -489,6 +489,8 @@ function pintarMes() {
     const pie = document.createElement('div'); pie.className = 'luna-pie';
     pie.innerHTML = HOY.prox.phases.slice(0, 4).map(p => `<div><b>${esc(p.phase)}</b>${new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'long' }).format(new Date(p.date + 'T12:00:00'))}</div>`).join('');
     cont.after(pie);
+    const llena = HOY.prox.phases.find(p => /llena|full/i.test(p.phase));
+    if (llena) $('#ritualFecha').textContent = `La próxima es el ${new Intl.DateTimeFormat('es-ES', { weekday: 'long', day: 'numeric', month: 'long' }).format(new Date(llena.date + 'T12:00:00'))}. Te digo la hora exacta, el signo por el que pasa y qué ilumina en tu carta.`;
   }
   alVer(cont, () => cont.classList.add('vivo'), .15);
 }
@@ -671,40 +673,6 @@ $('#lectura').addEventListener('mouseover', e => { const li = e.target.closest('
 if (PAGO) { $('#completa').scrollIntoView(); volverDelPago().then(ok => ok || echarCompleta($('#formCompleta').q.value)); }
 else alVer($('#tapete').parentElement, () => echarCompleta($('#formCompleta').q.value), .2);
 
-/* ---------- VII · Número y biorritmo ---------- */
-const CICLOS = [['Físico', 23, '#c23a4c'], ['Emocional', 28, '#86a7b4'], ['Mental', 33, '#ece4d6']];
-function biorritmo(nac) {
-  const s = $('#bioSvg'); s.innerHTML = ''; s.classList.remove('vivo');
-  const hoy = new Date((HOY?.fecha || new Date().toISOString().slice(0, 10)) + 'T12:00:00');
-  const dias = Math.round((hoy - new Date(nac + 'T12:00:00')) / 864e5);
-  const W = 640, H = 240, X0 = 30, desde = -7, hasta = 23;
-  const x = d => X0 + (d - desde) / (hasta - desde) * (W - X0), y = v => H / 2 - v * (H / 2 - 14);
-  [-1, 0, 1].forEach(v => svgEl('line', { x1: X0, x2: W, y1: y(v), y2: y(v), stroke: v ? 'rgba(236,228,214,.08)' : 'rgba(236,228,214,.25)' }, s));
-  for (let d = desde; d <= hasta; d += 7) { const t = svgEl('text', { x: x(d), y: H + 26, 'text-anchor': 'middle' }, s); t.textContent = d === 0 ? 'hoy' : (d > 0 ? '+' : '') + d + ' d'; }
-  svgEl('line', { x1: x(0), x2: x(0), y1: 0, y2: H, stroke: '#ece4d6', 'stroke-dasharray': '3 5' }, s);
-  const valores = CICLOS.map(([n, p, c], k) => {
-    let d = '';
-    for (let t = desde; t <= hasta; t += .25) { const v = Math.sin(2 * Math.PI * (dias + t) / p); d += (t === desde ? 'M' : 'L') + x(t).toFixed(1) + ',' + y(v).toFixed(1); }
-    const path = svgEl('path', { d, class: 'curva', stroke: c }, s); path.style.transitionDelay = (k * .25) + 's';
-    const hoyV = Math.sin(2 * Math.PI * dias / p), man = Math.sin(2 * Math.PI * (dias + 1) / p);
-    svgEl('circle', { cx: x(0), cy: y(hoyV), r: 5, fill: c, stroke: '#0c0a0a', 'stroke-width': 2 }, s);
-    return [n, Math.round(hoyV * 100), man > hoyV, c];
-  });
-  $('#bioHoy').innerHTML = valores.map(([n, v, sube, c]) => `<div style="--c:${c}"><small>${n}</small><b>${v > 0 ? '+' : ''}${v}</b><span>${v > 60 ? 'Muy alto' : v > 15 ? 'Alto' : v > -15 ? 'Día de cambio' : v > -60 ? 'Bajo' : 'Muy bajo'}, ${sube ? 'subiendo' : 'bajando'}</span></div>`).join('');
-  alVer(s, async () => { await pinta(); s.classList.add('vivo'); }, .15);
-}
-async function numero(fecha) {
-  const out = $('#numero');
-  try {
-    const r = await api('numero', { date: fecha });
-    const pasos = r.pasos || String(r.calculation || '').replace(/Month/g, 'Mes').replace(/Day/g, 'Día').replace(/Year/g, 'Año').split(/,\s*/);
-    out.innerHTML = `<h4>Tu número de vida</h4><div class="suma">${pasos.map(p => `<span>${esc(p)}</span>`).join('<span>·</span>')}</div><div class="num-grande">0</div><h3>${esc(r.meaning.title)}${r.type === 'master' ? '<span class="maestro">NÚMERO MAESTRO</span>' : ''}</h3><div class="kw" style="margin-top:14px">${r.meaning.keywords.slice(0, 5).map(k => `<span>${esc(k)}</span>`).join('')}</div><p>${esc(frases(r.meaning.description, 2))}</p>`;
-    const lanzar = async () => { for (const s of $$('.suma span', out)) { s.classList.add('ok'); await espera(160); } contar($('.num-grande', out), r.number, 1200); };
-    alVer(out, lanzar, .15);
-  } catch (e) { out.innerHTML = `<p class="error">${esc(e.message)}</p>`; }
-}
-$('#formNum').addEventListener('submit', e => { e.preventDefault(); const f = e.target.date.value; numero(f); biorritmo(f); });
-
 /* ---------- Cifras animadas ---------- */
 $$('.cifra b').forEach(el => alVer(el, () => {
   const n = parseFloat(el.dataset.n), dec = +(el.dataset.dec || 0), suf = el.dataset.suf || '';
@@ -719,6 +687,5 @@ $$('.cifra b').forEach(el => alVer(el, () => {
   const b1 = $('#ejNatal button'); cargarNatal(DEMO ? { preset: 'ana' } : PERSONAS.ana, b1); formN.date.value = PERSONAS.ana.date; formN.time.value = '09:30'; formN.city.value = 'Granada'; ciudadSel = { latitude: PERSONAS.ana.latitude, longitude: PERSONAS.ana.longitude, timezone: PERSONAS.ana.timezone };
   cargarCompat('ana|marcos', $('#ejCompat button'));
   alVer($('#chino'), () => cargarChino($('#formChino').date.value), .25);
-  numero($('#formNum').date.value); biorritmo($('#formNum').date.value);
 })();
 })();

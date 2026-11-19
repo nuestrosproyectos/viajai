@@ -1,7 +1,7 @@
 # Lía y compañía · estado y pendientes (15-11-2026, noche)
 
 ## Hecho hoy
-- Web con 4 especialistas IA (Lía tarot, Mateo astrología, Mei horóscopo chino, Inés numerología).
+- Web con 4 especialistas IA (Lía tarot, Mateo astrología, Mei horóscopo chino, Inés luna y rituales; numerología y biorritmo retirados de la web el 19-11).
 - Tarot sí/no con baraja visible y aviso «Toca una carta»; tirada de 3 cartas; tirada completa (Cruz Celta 10, Amor 5, Trabajo 7) con 3 cartas gratis y resto bloqueado (pago simulado).
 - Sección «Por qué una IA»: cifras verificables, comparativa objetiva, método y preguntas frecuentes.
 - Caras fijas entrenadas de Mateo, Mei e Inés (ver EQUIPO.md).
