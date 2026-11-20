@@ -146,20 +146,11 @@ const API = {
   },
   'POST /api/natal': async (_, b) => roxy('/astrology/natal-chart?lang=es', persona(b), 24 * HORA),
   'POST /api/compat': async (_, b) => roxy('/astrology/compatibility-score?lang=es', { person1: persona(b.p1), person2: persona(b.p2) }, 24 * HORA),
-  'POST /api/bio': async (_, b) => {
-    if (!fecha(b.birthDate)) throw Object.assign(new Error('Fecha no válida'), { status: 400 });
-    return roxy('/biorhythm/reading?lang=es', { birthDate: b.birthDate, targetDate: hoyMadrid() }, 6 * HORA);
-  },
   'POST /api/chino': async (_, b) => {
     if (!fecha(b.date)) throw Object.assign(new Error('Fecha no válida'), { status: 400 });
     const s = await roxy('/chinese-astrology/zodiac/sign?lang=es', { date: b.date }, 24 * HORA);
     const comp = await roxy(`/chinese-astrology/zodiac/compatibility/${s.animal.id}/goat?lang=es`, null, 24 * HORA);
     return { signo: s, comp };
-  },
-  'POST /api/numero': async (_, b) => {
-    const [y, m, d] = String(b.date || '').split('-').map(Number);
-    if (!y || !m || !d) throw Object.assign(new Error('Fecha no válida'), { status: 400 });
-    return roxy('/numerology/life-path?lang=es', { year: y, month: m, day: d }, 24 * HORA);
   },
 };
 
