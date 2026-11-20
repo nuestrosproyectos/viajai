@@ -35,7 +35,10 @@ head = head.replace('<title>Lía y compañía · Tarot y astrología con IA</tit
 for f in sorted(set(re.findall(r'src="img/([a-z-]+)\.jpg"', body))):
     body = body.replace(f'src="img/{f}.jpg"', 'src="' + b64(P('public', 'img', f + '.jpg')) + '"')
 assert 'src="img/' not in body
-aviso = '<p class="aviso-prev">Vista previa · datos reales de RoxyAPI de hoy · la carta astral y la pareja, solo con los ejemplos · los botones de pago no cobran</p>'
+import datetime as _dt
+_MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
+_f = _dt.date.fromisoformat(D.get('fecha', '2026-11-15'))
+aviso = f'<p class="aviso-prev">Vista previa con datos del {_f.day} de {_MESES[_f.month - 1]} de {_f.year}. La carta astral y la compatibilidad solo funcionan con los ejemplos y los pagos son simulados.</p>'
 body = body.replace('<script src="app.js"></script>', '<script>window.LIA_DEMO=' + json.dumps(D, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/') + ';</script>\n<script>' + js + '</script>')
 body = body.replace('<a class="btn btn-sec" href="#equipo">Conocer al equipo</a></div>', '<a class="btn btn-sec" href="#equipo">Conocer al equipo</a></div>' + aviso, 1)
 assert aviso in body

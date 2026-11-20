@@ -42,7 +42,7 @@ const demoApi = DEMO && (() => {
   const sacar = n => { const ids = D.cards.map(c => c.id); const out = []; while (out.length < n) { const i = ids.splice(azar(ids.length), 1)[0]; out.push(i); } return out; };
   const lado = (c, inv) => inv ? c.reversed : c.upright;
   return {
-    hoy: async () => ({ fecha: '2026-11-15', luna: D.lunaHoy, mes: D.lunaMes, carta: D.cartaDia, prox: D.lunaProx }),
+    hoy: async () => ({ fecha: D.fecha || '2026-11-15', luna: D.lunaHoy, mes: D.lunaMes, carta: D.cartaDia, prox: D.lunaProx }),
     sino: async ({ question }) => {
       const c = porId[sacar(1)[0]]; const inv = Math.random() < .35; const L = lado(c, inv);
       const quiza = QUIZA.includes(c.id); const ans = quiza ? 'Quizá' : inv ? 'No' : 'Sí';
