@@ -123,6 +123,22 @@ function luna(svg, ilum, creciente, r = 44) {
 }
 const esCreciente = f => /crecient|waxing/i.test(f || '');
 
+/* ---------- Enlaces internos que llegan siempre a su sitio ---------- */
+// Las secciones se rellenan al aparecer (tiradas, rueda, calendario) y empujan la página mientras se baja:
+// el destino se recoloca cada vez que cambia la altura, hasta que se asienta o el usuario se desplaza por su cuenta.
+document.addEventListener('click', e => {
+  const a = e.target.closest('a[href^="#"]'); if (!a || e.defaultPrevented) return;
+  const id = decodeURIComponent(a.getAttribute('href').slice(1)), dest = id && document.getElementById(id); if (!dest) return;
+  e.preventDefault(); history.pushState(null, '', '#' + id);
+  const ir = suave => dest.scrollIntoView({ behavior: suave && !QUIETO ? 'smooth' : 'auto', block: 'start' });
+  ir(true);
+  const fin = performance.now() + 4000; let alto = document.body.scrollHeight, manual = false;
+  const parar = () => { manual = true; };
+  addEventListener('wheel', parar, { once: true, passive: true }); addEventListener('touchstart', parar, { once: true, passive: true }); addEventListener('keydown', parar, { once: true });
+  const vigilar = () => { if (manual || performance.now() > fin) return; const h = document.body.scrollHeight; if (h !== alto) { alto = h; ir(false); } requestAnimationFrame(vigilar); };
+  requestAnimationFrame(vigilar);
+});
+
 /* ---------- Barra y portada ---------- */
 const barra = $('#barra');
 addEventListener('scroll', () => barra.classList.toggle('solida', scrollY > 40), { passive: true });

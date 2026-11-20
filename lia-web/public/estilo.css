@@ -407,3 +407,8 @@ input:focus{outline:none;border-color:var(--hueso)}
 
 /* casilla de desistimiento antes de pagar contenido digital (art. 103.m TRLGDCU) */
 .desist{display:flex;gap:12px;align-items:flex-start;margin:16px 0;font-size:14px;color:var(--gris);max-width:60ch}.desist input{margin-top:4px;flex:none}.desist a{color:var(--gris2)}
+
+/* las fotos de la portada llevan a la sección de cada especialista */
+.fig-enlace{position:absolute;inset:0;z-index:3}
+.fig-enlace:focus-visible{outline:2px solid var(--hueso);outline-offset:-4px}
+.mosaico figure:has(.fig-enlace:hover) figcaption{color:var(--hueso)}
