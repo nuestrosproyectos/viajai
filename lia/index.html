@@ -19,6 +19,7 @@
   /* colores que antes iban sueltos por la hoja (pulido Hallmark) */
   --c-090707:#090707;--c-0b0807:#0b0807;--c-100c0b:#100c0b;--c-140d0b:#140d0b;--c-170508:#170508;--c-18060a:#18060a;--c-18120f:#18120f;--c-1c1512:#1c1512;--c-1f1714:#1f1714;--c-260a10:#260a10;--c-2a0910:#2a0910;--c-2a1512:#2a1512;--c-3a0d15:#3a0d15;--c-3d0f18:#3d0f18;--c-4a0f19:#4a0f19;--c-4a1019:#4a1019;--c-561320:#561320;--c-5c1520:#5c1520;--c-5e5149:#5e5149;--c-8a2234:#8a2234;--c-8a2333:#8a2333;--c-e7dccb:#e7dccb;--c-f1e9dc:#f1e9dc;--c-fbf6ee:#fbf6ee;--hueso-a0:rgba(236,228,214,0);--hueso-a04:rgba(236,228,214,.04);--hueso-a07:rgba(236,228,214,.07);--hueso-a1:rgba(236,228,214,.1);--hueso-a15:rgba(236,228,214,.15);--hueso-a35:rgba(236,228,214,.35);--hueso-a6:rgba(236,228,214,.6);--hueso-a7:rgba(236,228,214,.7);--hueso-a85:rgba(236,228,214,.85);--hueso-a92:rgba(236,228,214,.92);--negro-a0:rgba(12,10,10,0);--negro-a45:rgba(12,10,10,.45);--negro-a6:rgba(12,10,10,.6);--negro-a92:rgba(12,10,10,.92);--negro-c-a0:rgba(16,12,11,0);--negro-c-a92:rgba(16,12,11,.92);--negro-solido:rgb(12,10,10);--sombra-a45:rgba(0,0,0,.45);--sombra-a5:rgba(0,0,0,.5);--sombra-a55:rgba(0,0,0,.55);--sombra-a6:rgba(0,0,0,.6);--sombra-c-a16:rgba(60,30,20,.16);--tinta-c-a12:rgba(28,21,18,.12);--tinta-c-a14:rgba(28,21,18,.14);--tinta-c-a2:rgba(28,21,18,.2);--tinta-c-a25:rgba(28,21,18,.25);--tinta-c-a35:rgba(28,21,18,.35)}
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html{scroll-behavior:smooth;scroll-padding-top:72px;overflow-x:clip}
 body{margin:0;background:var(--negro);color:var(--hueso);font:400 17px/1.65 var(--cuerpo);-webkit-font-smoothing:antialiased;overflow-x:clip}
 img{max-width:100%;display:block}
@@ -389,6 +390,27 @@ input:focus{outline:none;border-color:var(--hueso)}
 .ritual-luna h3{font-size:clamp(24px,2.4vw,32px);margin-bottom:8px}
 .ritual-luna p{color:var(--gris2);font-size:15.5px;max-width:56ch}.ritual-luna p+p{margin-top:8px;color:var(--gris)}
 @media(max-width:820px){.ritual-luna{grid-template-columns:minmax(0,1fr);padding:24px 20px}.ritual-luna .btn{width:100%}}
+
+/* Mateo · informes por temas con prueba gratis, y guardar la carta */
+.informes{margin-top:56px}
+.inf-cab{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:12px 32px;margin-bottom:24px}
+.inf-cab h3{font-size:clamp(28px,3vw,40px)}.inf-cab p{color:var(--gris);max-width:52ch}
+.inf-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+@media(max-width:1100px){.inf-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.inf-grid{grid-template-columns:minmax(0,1fr)}}
+.inf{display:flex;flex-direction:column;gap:12px;padding:24px;border:1px solid var(--linea2);border-radius:4px;background:var(--panel)}
+.inf h4{font:400 24px/1.15 var(--titulo);color:var(--hueso);margin:0}
+.inf>p{color:var(--gris);font-size:15px}
+.inf-prueba{border-top:1px solid var(--linea);padding-top:12px;font-size:15px;color:var(--gris2)}
+.inf-sigue{margin-top:8px;color:var(--gris);font-size:14px}
+.inf-acc{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:4px}
+.guardar{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) auto;gap:16px 24px;align-items:end;margin-top:32px;padding:24px;border:1px solid var(--linea2);border-radius:4px}
+.guardar h4{font:400 24px/1.15 var(--titulo);color:var(--hueso);margin:0 0 4px}.guardar p{color:var(--gris);font-size:15px}
+.g-mail{display:flex;flex-direction:column;gap:8px;font-size:14px;color:var(--gris2)}
+.g-mail input{min-height:48px;padding:0 16px;border:1px solid var(--linea2);border-radius:2px;background:var(--negro);color:var(--hueso)}
+.g-ok{grid-column:1/-1;display:flex;gap:12px;align-items:flex-start;font-size:14px;color:var(--gris)}.g-ok input{margin-top:4px;flex:none}
+.g-res{grid-column:1/-1;color:var(--gris2)}
+@media(max-width:820px){.guardar{grid-template-columns:minmax(0,1fr)}.guardar .btn{width:100%}}
 </style>
 <script>document.documentElement.classList.add('js')</script>
 <style>.aviso-prev{margin-top:22px;max-width:520px;font-size:13px;color:#9d948b;border-left:2px solid #a32637;padding-left:12px}</style>
@@ -518,7 +540,22 @@ input:focus{outline:none;border-color:var(--hueso)}
     </div>
   </div>
   <div class="planetas" id="planetas"></div>
-  <div class="upsell"><div><b>Tu informe completo, escrito por Mateo</b><span>En PDF: los 14 astros, las 12 casas y todos los aspectos explicados uno por uno.</span></div><a class="btn btn-pri" href="#">Informe en PDF · 19,90 €</a></div>
+  <div class="informes" id="informes">
+    <div class="inf-cab"><h3>Tu carta, por temas</h3><p>Mateo te lo escribe en PDF. Lee gratis el comienzo de cada informe, hecho con tu carta de arriba.</p></div>
+    <div class="inf-grid">
+      <article class="inf" data-tema="completa"><h4>Tu carta completa</h4><p>Los 14 astros, las 12 casas y todos los aspectos, explicados uno por uno.</p><div class="inf-prueba" hidden></div><div class="inf-acc"><button type="button" class="btn btn-sec btn-s inf-ver">Leer gratis el comienzo</button><a class="btn btn-pri btn-s" href="#">Lo quiero · 12,90 €</a></div></article>
+      <article class="inf" data-tema="2027"><h4>Tu 2027</h4><p>Lo que el cielo de 2027 mueve en tu carta, casa por casa y mes a mes.</p><div class="inf-prueba" hidden></div><div class="inf-acc"><button type="button" class="btn btn-sec btn-s inf-ver">Leer gratis el comienzo</button><a class="btn btn-pri btn-s" href="#">Lo quiero · 16,90 €</a></div></article>
+      <article class="inf" data-tema="amor"><h4>Amor y pareja</h4><p>Cómo quieres, qué buscas y qué te conviene, según tu Venus y tu Marte.</p><div class="inf-prueba" hidden></div><div class="inf-acc"><button type="button" class="btn btn-sec btn-s inf-ver">Leer gratis el comienzo</button><a class="btn btn-pri btn-s" href="#">Lo quiero · 12,90 €</a></div></article>
+      <article class="inf" data-tema="trabajo"><h4>Trabajo y dinero</h4><p>Tu vocación, tus talentos y lo que te pide tu carta para ganarte la vida.</p><div class="inf-prueba" hidden></div><div class="inf-acc"><button type="button" class="btn btn-sec btn-s inf-ver">Leer gratis el comienzo</button><a class="btn btn-pri btn-s" href="#">Lo quiero · 12,90 €</a></div></article>
+    </div>
+    <form class="guardar" id="formGuardar" novalidate>
+      <div><h4>Guarda tu carta</h4><p>Te la enviamos por correo y, cada luna llena, Inés te manda tu ritual. Sin volver a escribir tus datos.</p></div>
+      <label class="g-mail">Tu correo<input type="email" name="email" required autocomplete="email" placeholder="tu@correo.com"></label>
+      <button class="btn btn-pri" type="submit">Guardar mi carta</button>
+      <label class="g-ok"><input type="checkbox" name="consiento" required> Acepto que Lía y compañía (Area Internet Business Group, S.L.U.) me escriba con mi carta, mis rituales y novedades. Puedo darme de baja cuando quiera.</label>
+      <p class="g-res" id="guardarRes" role="status" hidden></p>
+    </form>
+  </div>
 </div></section>
 
 <!-- MATEO · COMPATIBILIDAD -->
@@ -531,7 +568,7 @@ input:focus{outline:none;border-color:var(--hueso)}
     <div class="compat-radar"><svg viewBox="-200 -150 400 300" id="radar" role="img" aria-label="Compatibilidad por terrenos: romance, emociones, mente, físico y espíritu"></svg></div>
     <div class="compat-txt"><p id="compatDesc"></p><h4>Lo que os une</h4><ul id="compatFuerte"></ul><h4>Lo que os pondrá a prueba</h4><ul id="compatReto"></ul></div>
   </div>
-  <div class="upsell"><div><b>Informe de pareja</b><span>Todos los aspectos entre vuestras cartas y qué hacer con cada uno.</span></div><a class="btn btn-pri" href="#">Informe de pareja · 14,90 €</a></div>
+  <div class="upsell"><div><b>Informe de pareja</b><span>Todos los aspectos entre vuestras cartas y qué hacer con cada uno.</span></div><a class="btn btn-pri" href="#">Informe de pareja · 16,90 €</a></div>
 </div></section>
 
 <!-- MATEO · LUNA -->
@@ -566,13 +603,14 @@ input:focus{outline:none;border-color:var(--hueso)}
 <!-- POR QUÉ UNA IA -->
 <section class="seccion oscuro" id="porque"><div class="wrap">
   <div class="sec-cab"><div><p class="rotulo">Por qué una inteligencia artificial</p><h2>No adivina. Calcula, recuerda y no se cansa.</h2></div>
-  <p>Nadie puede garantizarte el futuro, y desconfía de quien lo haga. Lo que sí podemos garantizarte es rigor: un cálculo de precisión astronómica y una lectura que tiene en cuenta todo, siempre igual de cuidada.</p></div>
+  <p>Nadie puede garantizarte el futuro, y desconfía de quien lo haga. Lo que sí te damos: una lectura clara, con tu nombre, hecha con cálculos exactos y en el momento en que la necesitas.</p></div>
   <div class="comparativa" role="table" aria-label="Comparación con una consulta tradicional">
     <div class="cmp-cab" role="row"><span role="columnheader"></span><span role="columnheader">Una consulta tradicional</span><span role="columnheader">Lía y compañía</span></div>
-    <div class="cmp-fila" role="row"><b role="rowheader">Dónde están los planetas</b><span role="cell">Depende de la herramienta de cada profesional y de que tenga en cuenta la hora de verano de tu año.</span><span role="cell">La efeméride DE440 del laboratorio JPL de la NASA, con la hora oficial que regía el día que naciste. Diferencia máxima comprobada con la NASA: 0,32 segundos de arco.</span></div>
-    <div class="cmp-fila" role="row"><b role="rowheader">El lugar de nacimiento</b><span role="cell">A menudo se toma la ciudad grande más cercana.</span><span role="cell">Las coordenadas exactas de tu pueblo, entre más de 5 millones de localidades. Tu ascendente cambia con unos kilómetros.</span></div>
+    <div class="cmp-fila" role="row"><b role="rowheader">Cuándo te atienden</b><span role="cell">Con cita, o esperando a que haya alguien libre en la línea.</span><span role="cell">Al momento, a cualquier hora del día o de la noche.</span></div>
+    <div class="cmp-fila" role="row"><b role="rowheader">Cómo te lo explican</b><span role="cell">Depende de cada profesional, y a veces con palabras técnicas.</span><span role="cell">En palabras sencillas y con tu nombre. No hace falta saber nada de astrología.</span></div>
     <div class="cmp-fila" role="row"><b role="rowheader">Las cartas del tarot</b><span role="cell">Depende de la memoria y la experiencia de cada tarotista.</span><span role="cell">Los 936 significados de la baraja Rider-Waite-Smith, la de referencia del tarot moderno, presentes en cada tirada: amor, trabajo, dinero, salud y espiritualidad, al derecho y del revés.</span></div>
     <div class="cmp-fila" role="row"><b role="rowheader">El horóscopo chino</b><span role="cell">Muchas veces solo se mira el año de nacimiento.</span><span role="cell">El calendario lunar real: tu animal cambia el día exacto del año nuevo chino, que cada año cae en una fecha distinta.</span></div>
+    <div class="cmp-fila" role="row"><b role="rowheader">Lo que te llevas</b><span role="cell">Lo que recuerdes de la conversación.</span><span role="cell">Tus informes en PDF y, en los rituales, un audio guiado para volver a escucharlo.</span></div>
     <div class="cmp-fila" role="row"><b role="rowheader">El precio</b><span role="cell">En las líneas 806 se paga por minuto, así que el precio final depende de lo que dure la llamada.</span><span role="cell">Precio cerrado antes de empezar, con IVA. Lo gratis es gratis de verdad.</span></div>
     <div class="cmp-fila" role="row"><b role="rowheader">La sinceridad</b><span role="cell">Hay consultas que se presentan como videntes con dones especiales.</span><span role="cell">Te decimos desde el primer momento que somos una IA. Sin dones, sin promesas y sin presión.</span></div>
   </div>
@@ -944,6 +982,7 @@ async function cargarNatal(datos, boton) {
   const zona = $('#natal'); zona.classList.add('cargando');
   try {
     const n = await api('natal', datos);
+    pintarTemas(n);
     const animar = datosNatal(n);
     const lanzar = async () => { zona.classList.remove('cargando'); await dibujarRueda(n); await espera(400); animar(); };
     if (natalVisible) lanzar(); else natalPendiente = lanzar;
@@ -984,6 +1023,42 @@ formN.addEventListener('submit', async e => {
   if (!ciudadSel) { try { const r = await api('lugares?q=' + encodeURIComponent(formN.city.value)); const c = r.cities[0]; ciudadSel = { latitude: c.latitude, longitude: c.longitude, timezone: c.timezone }; } catch { return avisoNatal('No encuentro esa ciudad. Prueba a escribirla de otra forma.'); } }
   cargarNatal({ date: formN.date.value, time: formN.time.value, ...ciudadSel });
   $('#natal').scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+
+/* ---------- II bis · Informes por temas: prueba gratis con la carta real ---------- */
+// Cielo de 2027 comprobado con efemérides (ver lia-web/videos/guion-m01-2027-ascendente.md); casas por signo entero.
+const SIGNOS_ES = ['Aries', 'Tauro', 'Géminis', 'Cáncer', 'Leo', 'Virgo', 'Libra', 'Escorpio', 'Sagitario', 'Capricornio', 'Acuario', 'Piscis'];
+const TEMAS_CASA = { 1: 'quién eres y cómo te muestras', 2: 'lo que tienes y lo que vales', 3: 'la comunicación y tu entorno cercano', 4: 'el hogar, la familia y tus raíces', 5: 'el amor, la creatividad y el disfrute', 6: 'tus rutinas y el trabajo diario', 7: 'la pareja y los socios', 8: 'lo compartido y la intimidad', 9: 'los viajes, los estudios y tus creencias', 10: 'tu vocación y tu carrera', 11: 'las amistades y los proyectos', 12: 'tu mundo interior y los cierres de ciclo' };
+const casaDe = (asc, signo) => (SIGNOS_ES.indexOf(signo) - SIGNOS_ES.indexOf(asc) + 12) % 12 + 1;
+// Sin números de casa en la carta natal (la API usa Placidus; «Tu 2027» cuenta por signos enteros, como el vídeo de Mateo).
+const frase1 = t => (limpia(t || '').match(/[^.!?]+[.!?]+/g) || [t || '']).slice(0, 2).join(' ').replace(/ en (Primera|Segunda|Tercera|Cuarta|Quinta|Sexta|Séptima|Octava|Novena|Décima|Undécima|Duodécima) Casa/g, '').trim();
+let natalActual = null;
+function pruebaTema(tema, n) {
+  const P = nom => (n.planets || []).find(p => p.name === nom) || {};
+  const asc = n.ascendant?.signLocalized || '';
+  if (tema === 'completa') { const s = P('Sun'), l = P('Moon'); return `Tu Sol está en ${s.signLocalized}; tu Luna, en ${l.signLocalized}; tu ascendente, en ${asc}. ${frase1(s.interpretation?.summary)}`; }
+  if (tema === '2027') { const sn = casaDe(asc, 'Aries'), u = casaDe(asc, 'Géminis'), j = casaDe(asc, 'Leo'); return `Con ascendente ${asc}, Saturno y Neptuno pasan todo 2027 por tu casa ${sn}: ${TEMAS_CASA[sn]}. Urano mueve tu casa ${u}: ${TEMAS_CASA[u]}. Y el eclipse total del 2 de agosto cae en tu casa ${j}: ${TEMAS_CASA[j]}.`; }
+  if (tema === 'amor') { const v = P('Venus'), m = P('Mars'); return `Tu Venus está en ${v.signLocalized} y tu Marte en ${m.signLocalized}. ${frase1(v.interpretation?.summary)}`; }
+  const mc = n.midheaven?.signLocalized || '', ju = P('Jupiter'), sa = P('Saturn');
+  return `Tu medio cielo, el punto de la vocación, está en ${mc}. Júpiter, el que hace crecer, está en ${ju.signLocalized}; Saturno, el que pide constancia, en ${sa.signLocalized}. ${frase1(ju.interpretation?.summary)}`;
+}
+const pintaPrueba = a => { $('.inf-prueba', a).innerHTML = `<p>${esc(pruebaTema(a.dataset.tema, natalActual))}</p><p class="inf-sigue">El informe sigue en el PDF…</p>`; };
+function pintarTemas(n) {
+  natalActual = n;
+  $$('#informes .inf').forEach(a => { if (!$('.inf-prueba', a).hidden) pintaPrueba(a); });
+}
+$('#informes').addEventListener('click', e => {
+  const b = e.target.closest('.inf-ver'); if (!b || !natalActual) return;
+  const a = b.closest('.inf'); pintaPrueba(a); $('.inf-prueba', a).hidden = false; b.hidden = true;
+});
+$('#formGuardar').addEventListener('submit', async e => {
+  e.preventDefault(); const f = e.target, res = $('#guardarRes'); const email = f.email.value.trim();
+  res.hidden = false;
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { res.textContent = 'Revisa el correo: parece que falta algo.'; return; }
+  if (!f.consiento.checked) { res.textContent = 'Para enviártela necesitamos que marques la casilla.'; return; }
+  if (DEMO) { res.textContent = 'Vista previa: aquí no se guarda nada. Con la web abierta, recibirás tu carta en este correo.'; return; }
+  try { await api('perfil', { email, consiento: true, nacimiento: natalActual?.birthDetails || null }); res.textContent = 'Hecho. Revisa tu correo en unos minutos.'; f.reset(); }
+  catch (er) { res.textContent = er.message; }
 });
 
 /* ---------- III · Compatibilidad ---------- */
