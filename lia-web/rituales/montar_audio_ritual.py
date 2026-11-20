@@ -27,7 +27,7 @@ for k, t in items:
                                    '-F', 'model_id=scribe_v1', '-F', 'language_code=es', '-F', f'file=@{k}.mp3'], capture_output=True).stdout)
     a, b = norm(t), norm(r.get('text', ''))
     dif = [(a[i1:i2], b[j1:j2]) for op, i1, i2, j1, j2 in difflib.SequenceMatcher(None, a, b).get_opcodes() if op != 'equal']
-    raros = [x for x in dif if not set(x[1]) <= ESCRITOS]
+    raros = [x for x in dif if not all(w.isdigit() for w in x[1]) or not x[1]]   # cifras en lugar de números escritos: no es error
     print(k, round(dur(k + '.mp3'), 1), 's', 'OK' if not raros else f'REVISAR {raros}')
 
 # voz con sus pausas

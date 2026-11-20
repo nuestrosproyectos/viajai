@@ -5,7 +5,7 @@ description: Crear un ritual personalizado de pago (luna llena/nueva, Año Nuevo
 
 # Ritual personalizado (Lía y compañía)
 
-Producto: ritual de intención y bienestar, hecho a medida del cliente (nombre, fecha/hora/lugar de nacimiento → signo, ascendente, año personal), en **PDF de 4–5 páginas + audio guiado de 6–8 min** con la voz de Inés. Coste por ritual: céntimos de voz.
+Producto: ritual de intención y bienestar, hecho a medida del cliente (nombre, fecha/hora/lugar de nacimiento → signo, ascendente, luna), en **PDF de 4–5 páginas + audio guiado de 6–8 min** con la voz de Inés. Coste por ritual: céntimos de voz.
 
 ## Reglas que no se rompen
 - **Sin promesas de resultados**, sin «amarres», sin «que vuelva», sin dinero garantizado, **nada de salud** (la API de cristales trae frases de salud falsas: no usarlas nunca).
@@ -17,7 +17,7 @@ Producto: ritual de intención y bienestar, hecho a medida del cliente (nombre, 
 - RoxyAPI (`https://roxyapi.com/api/v2`, la clave la pone el proxy; con curl funciona, desde Node no):
   - Fases: `GET /astrology/moon-phase/upcoming?lang=es&timezone=Europe/Madrid`
   - Cristales por signo: `GET /crystals/zodiac/{sign}?lang=es` y ficha `GET /crystals/{id}?lang=es` (solo usar nombre, palabras clave, mes de nacimiento).
-  - Año personal: `POST /numerology/personal-year` con `{year,month,day}` de nacimiento. **OJO: solo calcula el año en curso.** Para otro año: día + mes + cifras del año, reducir a una cifra (11/22/33 se pueden mantener). Para sacar los textos de un año N, llamar con una fecha que dé N en el año en curso.
+  - **Nada de numerología** (decisión de Juan, 17-11 y 20-11-2026): Inés trabaja solo con la luna y el cielo. Los ganchos personales salen de la luna (fase, signo, primera luna nueva/llena del periodo, si cae en su signo o ascendente) y de las casas por ascendente.
   - Catálogo completo de la API: `https://roxyapi.com/llms.txt` (18 temas).
 - Efemérides con `ephem` (pip): hora exacta de luna llena/nueva, signo de la Luna, salida de la Luna en la ciudad, equinoccios/solsticios, estaciones de Mercurio. Convertir a hora de Europe/Madrid.
 - Casas por **signo entero** según el ascendente: casa = (signo − ascendente) mod 12 + 1. Temas de cada casa y cielo de 2027: `lia-web/videos/guion-m01-2027-ascendente.md`.
@@ -37,4 +37,4 @@ Producto: ritual de intención y bienestar, hecho a medida del cliente (nombre, 
 
 ## Muestras hechas
 - `rituales/luna-llena-2026-11-24-muestra.md` + `ritual.html` (luna llena en Géminis, Marta, ascendente Leo, Granada).
-- `rituales/anonuevo-2027-muestra.md` + `anonuevo.html` (Marta, 3-05-1990: 2026 año 9 → 2027 año 1).
+- `rituales/anonuevo-2027-muestra.md` + `anonuevo.html` (Marta, ascendente Leo: luna menguante en Libra a medianoche, primera luna nueva 7-01 en Capricornio y primera luna llena 22-01 en Leo, su ascendente).

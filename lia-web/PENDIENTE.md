@@ -47,7 +47,7 @@
 - Cartas: cartas_es.py traduce mayores + 16 figuras de la corte. Web (public/cartas) actualizada con las 38 en español.
 - Cobro real con Stripe hecho y probado en local con un Stripe simulado (server.js: /api/tirada cifra las cartas de pago, /api/pagar crea el Checkout, /api/desbloquear verifica el pago). Variables: STRIPE_SECRET_KEY, SECRETO_TIRADAS, URL_PUBLICA. Precios en el servidor: Cruz Celta 4,90 €, Amor 3,90 €, Trabajo 3,90 €.
 - Falta del cliente: cuenta de Stripe a nombre de la empresa; comprar dominio (cieloycartas.com libre el 18-11); elegir hosting con servidor (recomendado Cloudflare: dominio + alojamiento).
-- Mateo: estudio de YouTube hecho (18-11). Primer vídeo recomendado: «2027 no va a ser igual para tu signo… mira tu ASCENDENTE» (25-30 min, 12 ascendentes, CTA a calcular la carta gratis). Luego Sol/Luna/Ascendente (10-14 min) y La Luna en los 12 signos.
+- Mateo: estudio de YouTube hecho (18-11). Primer vídeo recomendado: «2027 no va a ser igual para tu signo… mira tu ASCENDENTE» (25-30 min, 12 ascendentes, CTA a calcular la carta gratis). Luego Sol/Luna/Ascendente (10-14 min, Mateo). «La Luna en los 12 signos» pasa a INÉS (decisión 20-11).
 
 ## Precios de cartas astrales en el mercado (estudio 18-11-2026, de extractos de buscador; sin abrir cada web)
 - Astrólogo humano en España: 60–180 € por sesión (lo normal 85–125 €). Revolución solar con astrólogo: 60–225 €.

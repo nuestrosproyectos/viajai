@@ -32,8 +32,9 @@ Voces: modelo eleven_v4, castellano de España. Mei sin imitar acento extranjero
 - Modelo eleven_multilingual_v2, stability 0.55, similarity 0.8, style 0.1, speed 1.0. La D5 queda descartada.
 - Regla para cualquier voz nueva de personaje: empezar la descripción por su OFICIO y su EDAD.
 
-## Cambios de especialidades (17-11-2026)
-- Numerología: se retira.
+## Cambios de especialidades (17-11-2026, confirmados el 20-11-2026)
+- Numerología: se retira (también de los rituales: nada de «año personal»).
+- Vídeos: «La Luna en los 12 signos» lo presenta Inés (no Mateo). Mateo: carta astral, ascendentes, «Tu Sol, tu Luna y tu Ascendente», compatibilidad y previsiones.
 - Inés pasa a ser la especialista de la LUNA: fases, calendario lunar, rituales de luna nueva y llena (texto nuestro con datos reales de RoxyAPI: fase, iluminación, signo, hora, cristales) y producto «tu retorno lunar del mes» (/astrology/lunar-return).
 - La API no tiene endpoint de «rituales»; sí moon-phase (current/upcoming/calendar), lunar-return, crystals (daily, zodiac, chakra, element), dreams, angel-numbers.
 
