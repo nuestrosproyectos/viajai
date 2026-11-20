@@ -657,9 +657,11 @@ async function pintarTirada(r, q) {
   const btnTipo = $(`#tipos [data-tipo="${tipoTirada}"] i`), precio = btnTipo ? btnTipo.textContent : '', faltan = datos.filter(p => p.bloqueada).length;
   const ultima = T.pos[T.pos.length - 1][0];
   const muro = document.createElement('div'); muro.className = 'muro';
-  muro.innerHTML = `<p class="muro-t">Te faltan ${faltan} cartas, incluida la de <em>«${esc(ultima)}»</em>.</p><p>Las cartas ya están echadas: son estas y no cambian. Desbloquéalas para ver qué dicen y lo que veo en tu tirada completa.</p><button type="button" class="btn btn-pri" id="desbloquear">Ver mi tirada completa · ${esc(precio)}</button><small>${r.token ? 'Pago seguro con Stripe: tarjeta, Apple Pay o Google Pay. No guardamos tus datos de pago.' : 'En esta vista previa el pago es simulado.'}</small><p class="error" id="errPago" hidden></p>`;
+  muro.innerHTML = `<p class="muro-t">Te faltan ${faltan} cartas, incluida la de <em>«${esc(ultima)}»</em>.</p><p>Las cartas ya están echadas: son estas y no cambian. Desbloquéalas para ver qué dicen y lo que veo en tu tirada completa.</p><label class="desist"><input type="checkbox" id="desistOk"> Quiero mi tirada al momento y acepto que, al recibirla, pierdo el derecho de desistimiento de 14 días (<a href="aviso-legal.html" target="_blank" rel="noopener">condiciones</a>).</label><button type="button" class="btn btn-pri" id="desbloquear">Ver mi tirada completa · ${esc(precio)}</button><small>${r.token ? 'Pago seguro con Stripe: tarjeta, Apple Pay o Google Pay. No guardamos tus datos de pago.' : 'En esta vista previa el pago es simulado.'}</small><p class="error" id="errPago" hidden></p>`;
   lec.appendChild(muro);
   $('#desbloquear').addEventListener('click', async () => {
+    if (!$('#desistOk').checked) { const er = $('#errPago'); er.hidden = false; er.textContent = 'Marca la casilla para recibir tu tirada al momento.'; return; }
+    $('#errPago').hidden = true;
     const bt = $('#desbloquear'); bt.disabled = true; bt.textContent = r.token ? 'Abriendo el pago seguro…' : 'Procesando el pago…';
     try {
       if (!r.token) { await espera(900); return destapar(r.positions); }
