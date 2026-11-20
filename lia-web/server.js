@@ -134,6 +134,16 @@ const API = {
       throw Object.assign(new Error('Todavía no me consta el pago de esta tirada. Si te han cobrado, escríbenos y lo arreglamos.'), { status: 402 });
     return { positions: t.pos };
   },
+  'POST /api/perfil': async (_, b) => {
+    // Guarda el correo de quien pide su carta (con su consentimiento) para enviarle la carta y los rituales.
+    // Va a data/perfiles.jsonl, fuera de public/ y excluido de git (son datos personales).
+    const email = String(b.email || '').trim().toLowerCase().slice(0, 160);
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) throw Object.assign(new Error('Revisa el correo: parece que falta algo.'), { status: 400 });
+    if (b.consiento !== true) throw Object.assign(new Error('Para enviártela necesitamos tu consentimiento.'), { status: 400 });
+    const n = b.nacimiento && typeof b.nacimiento === 'object' ? { date: String(b.nacimiento.date || '').slice(0, 10), time: String(b.nacimiento.time || '').slice(0, 8), latitude: +b.nacimiento.latitude || null, longitude: +b.nacimiento.longitude || null } : null;
+    fs.appendFileSync(path.join(__dirname, 'data', 'perfiles.jsonl'), JSON.stringify({ email, consiento: true, nacimiento: n, fecha: new Date().toISOString() }) + '\n');
+    return { ok: true };
+  },
   'POST /api/natal': async (_, b) => roxy('/astrology/natal-chart?lang=es', persona(b), 24 * HORA),
   'POST /api/compat': async (_, b) => roxy('/astrology/compatibility-score?lang=es', { person1: persona(b.p1), person2: persona(b.p2) }, 24 * HORA),
   'POST /api/bio': async (_, b) => {

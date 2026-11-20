@@ -139,7 +139,22 @@
     </div>
   </div>
   <div class="planetas" id="planetas"></div>
-  <div class="upsell"><div><b>Tu informe completo, escrito por Mateo</b><span>En PDF: los 14 astros, las 12 casas y todos los aspectos explicados uno por uno.</span></div><a class="btn btn-pri" href="#">Informe en PDF · 19,90 €</a></div>
+  <div class="informes" id="informes">
+    <div class="inf-cab"><h3>Tu carta, por temas</h3><p>Mateo te lo escribe en PDF. Lee gratis el comienzo de cada informe, hecho con tu carta de arriba.</p></div>
+    <div class="inf-grid">
+      <article class="inf" data-tema="completa"><h4>Tu carta completa</h4><p>Los 14 astros, las 12 casas y todos los aspectos, explicados uno por uno.</p><div class="inf-prueba" hidden></div><div class="inf-acc"><button type="button" class="btn btn-sec btn-s inf-ver">Leer gratis el comienzo</button><a class="btn btn-pri btn-s" href="#">Lo quiero · 12,90 €</a></div></article>
+      <article class="inf" data-tema="2027"><h4>Tu 2027</h4><p>Lo que el cielo de 2027 mueve en tu carta, casa por casa y mes a mes.</p><div class="inf-prueba" hidden></div><div class="inf-acc"><button type="button" class="btn btn-sec btn-s inf-ver">Leer gratis el comienzo</button><a class="btn btn-pri btn-s" href="#">Lo quiero · 16,90 €</a></div></article>
+      <article class="inf" data-tema="amor"><h4>Amor y pareja</h4><p>Cómo quieres, qué buscas y qué te conviene, según tu Venus y tu Marte.</p><div class="inf-prueba" hidden></div><div class="inf-acc"><button type="button" class="btn btn-sec btn-s inf-ver">Leer gratis el comienzo</button><a class="btn btn-pri btn-s" href="#">Lo quiero · 12,90 €</a></div></article>
+      <article class="inf" data-tema="trabajo"><h4>Trabajo y dinero</h4><p>Tu vocación, tus talentos y lo que te pide tu carta para ganarte la vida.</p><div class="inf-prueba" hidden></div><div class="inf-acc"><button type="button" class="btn btn-sec btn-s inf-ver">Leer gratis el comienzo</button><a class="btn btn-pri btn-s" href="#">Lo quiero · 12,90 €</a></div></article>
+    </div>
+    <form class="guardar" id="formGuardar" novalidate>
+      <div><h4>Guarda tu carta</h4><p>Te la enviamos por correo y, cada luna llena, Inés te manda tu ritual. Sin volver a escribir tus datos.</p></div>
+      <label class="g-mail">Tu correo<input type="email" name="email" required autocomplete="email" placeholder="tu@correo.com"></label>
+      <button class="btn btn-pri" type="submit">Guardar mi carta</button>
+      <label class="g-ok"><input type="checkbox" name="consiento" required> Acepto que Lía y compañía (Area Internet Business Group, S.L.U.) me escriba con mi carta, mis rituales y novedades. Puedo darme de baja cuando quiera.</label>
+      <p class="g-res" id="guardarRes" role="status" hidden></p>
+    </form>
+  </div>
 </div></section>
 
 <!-- MATEO · COMPATIBILIDAD -->
@@ -152,7 +167,7 @@
     <div class="compat-radar"><svg viewBox="-200 -150 400 300" id="radar" role="img" aria-label="Compatibilidad por terrenos: romance, emociones, mente, físico y espíritu"></svg></div>
     <div class="compat-txt"><p id="compatDesc"></p><h4>Lo que os une</h4><ul id="compatFuerte"></ul><h4>Lo que os pondrá a prueba</h4><ul id="compatReto"></ul></div>
   </div>
-  <div class="upsell"><div><b>Informe de pareja</b><span>Todos los aspectos entre vuestras cartas y qué hacer con cada uno.</span></div><a class="btn btn-pri" href="#">Informe de pareja · 14,90 €</a></div>
+  <div class="upsell"><div><b>Informe de pareja</b><span>Todos los aspectos entre vuestras cartas y qué hacer con cada uno.</span></div><a class="btn btn-pri" href="#">Informe de pareja · 16,90 €</a></div>
 </div></section>
 
 <!-- MATEO · LUNA -->
@@ -187,13 +202,14 @@
 <!-- POR QUÉ UNA IA -->
 <section class="seccion oscuro" id="porque"><div class="wrap">
   <div class="sec-cab"><div><p class="rotulo">Por qué una inteligencia artificial</p><h2>No adivina. Calcula, recuerda y no se cansa.</h2></div>
-  <p>Nadie puede garantizarte el futuro, y desconfía de quien lo haga. Lo que sí podemos garantizarte es rigor: un cálculo de precisión astronómica y una lectura que tiene en cuenta todo, siempre igual de cuidada.</p></div>
+  <p>Nadie puede garantizarte el futuro, y desconfía de quien lo haga. Lo que sí te damos: una lectura clara, con tu nombre, hecha con cálculos exactos y en el momento en que la necesitas.</p></div>
   <div class="comparativa" role="table" aria-label="Comparación con una consulta tradicional">
     <div class="cmp-cab" role="row"><span role="columnheader"></span><span role="columnheader">Una consulta tradicional</span><span role="columnheader">Lía y compañía</span></div>
-    <div class="cmp-fila" role="row"><b role="rowheader">Dónde están los planetas</b><span role="cell">Depende de la herramienta de cada profesional y de que tenga en cuenta la hora de verano de tu año.</span><span role="cell">La efeméride DE440 del laboratorio JPL de la NASA, con la hora oficial que regía el día que naciste. Diferencia máxima comprobada con la NASA: 0,32 segundos de arco.</span></div>
-    <div class="cmp-fila" role="row"><b role="rowheader">El lugar de nacimiento</b><span role="cell">A menudo se toma la ciudad grande más cercana.</span><span role="cell">Las coordenadas exactas de tu pueblo, entre más de 5 millones de localidades. Tu ascendente cambia con unos kilómetros.</span></div>
+    <div class="cmp-fila" role="row"><b role="rowheader">Cuándo te atienden</b><span role="cell">Con cita, o esperando a que haya alguien libre en la línea.</span><span role="cell">Al momento, a cualquier hora del día o de la noche.</span></div>
+    <div class="cmp-fila" role="row"><b role="rowheader">Cómo te lo explican</b><span role="cell">Depende de cada profesional, y a veces con palabras técnicas.</span><span role="cell">En palabras sencillas y con tu nombre. No hace falta saber nada de astrología.</span></div>
     <div class="cmp-fila" role="row"><b role="rowheader">Las cartas del tarot</b><span role="cell">Depende de la memoria y la experiencia de cada tarotista.</span><span role="cell">Los 936 significados de la baraja Rider-Waite-Smith, la de referencia del tarot moderno, presentes en cada tirada: amor, trabajo, dinero, salud y espiritualidad, al derecho y del revés.</span></div>
     <div class="cmp-fila" role="row"><b role="rowheader">El horóscopo chino</b><span role="cell">Muchas veces solo se mira el año de nacimiento.</span><span role="cell">El calendario lunar real: tu animal cambia el día exacto del año nuevo chino, que cada año cae en una fecha distinta.</span></div>
+    <div class="cmp-fila" role="row"><b role="rowheader">Lo que te llevas</b><span role="cell">Lo que recuerdes de la conversación.</span><span role="cell">Tus informes en PDF y, en los rituales, un audio guiado para volver a escucharlo.</span></div>
     <div class="cmp-fila" role="row"><b role="rowheader">El precio</b><span role="cell">En las líneas 806 se paga por minuto, así que el precio final depende de lo que dure la llamada.</span><span role="cell">Precio cerrado antes de empezar, con IVA. Lo gratis es gratis de verdad.</span></div>
     <div class="cmp-fila" role="row"><b role="rowheader">La sinceridad</b><span role="cell">Hay consultas que se presentan como videntes con dones especiales.</span><span role="cell">Te decimos desde el primer momento que somos una IA. Sin dones, sin promesas y sin presión.</span></div>
   </div>

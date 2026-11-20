@@ -330,6 +330,7 @@ async function cargarNatal(datos, boton) {
   const zona = $('#natal'); zona.classList.add('cargando');
   try {
     const n = await api('natal', datos);
+    pintarTemas(n);
     const animar = datosNatal(n);
     const lanzar = async () => { zona.classList.remove('cargando'); await dibujarRueda(n); await espera(400); animar(); };
     if (natalVisible) lanzar(); else natalPendiente = lanzar;
@@ -370,6 +371,42 @@ formN.addEventListener('submit', async e => {
   if (!ciudadSel) { try { const r = await api('lugares?q=' + encodeURIComponent(formN.city.value)); const c = r.cities[0]; ciudadSel = { latitude: c.latitude, longitude: c.longitude, timezone: c.timezone }; } catch { return avisoNatal('No encuentro esa ciudad. Prueba a escribirla de otra forma.'); } }
   cargarNatal({ date: formN.date.value, time: formN.time.value, ...ciudadSel });
   $('#natal').scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+
+/* ---------- II bis · Informes por temas: prueba gratis con la carta real ---------- */
+// Cielo de 2027 comprobado con efemérides (ver lia-web/videos/guion-m01-2027-ascendente.md); casas por signo entero.
+const SIGNOS_ES = ['Aries', 'Tauro', 'Géminis', 'Cáncer', 'Leo', 'Virgo', 'Libra', 'Escorpio', 'Sagitario', 'Capricornio', 'Acuario', 'Piscis'];
+const TEMAS_CASA = { 1: 'quién eres y cómo te muestras', 2: 'lo que tienes y lo que vales', 3: 'la comunicación y tu entorno cercano', 4: 'el hogar, la familia y tus raíces', 5: 'el amor, la creatividad y el disfrute', 6: 'tus rutinas y el trabajo diario', 7: 'la pareja y los socios', 8: 'lo compartido y la intimidad', 9: 'los viajes, los estudios y tus creencias', 10: 'tu vocación y tu carrera', 11: 'las amistades y los proyectos', 12: 'tu mundo interior y los cierres de ciclo' };
+const casaDe = (asc, signo) => (SIGNOS_ES.indexOf(signo) - SIGNOS_ES.indexOf(asc) + 12) % 12 + 1;
+// Sin números de casa en la carta natal (la API usa Placidus; «Tu 2027» cuenta por signos enteros, como el vídeo de Mateo).
+const frase1 = t => (limpia(t || '').match(/[^.!?]+[.!?]+/g) || [t || '']).slice(0, 2).join(' ').replace(/ en (Primera|Segunda|Tercera|Cuarta|Quinta|Sexta|Séptima|Octava|Novena|Décima|Undécima|Duodécima) Casa/g, '').trim();
+let natalActual = null;
+function pruebaTema(tema, n) {
+  const P = nom => (n.planets || []).find(p => p.name === nom) || {};
+  const asc = n.ascendant?.signLocalized || '';
+  if (tema === 'completa') { const s = P('Sun'), l = P('Moon'); return `Tu Sol está en ${s.signLocalized}; tu Luna, en ${l.signLocalized}; tu ascendente, en ${asc}. ${frase1(s.interpretation?.summary)}`; }
+  if (tema === '2027') { const sn = casaDe(asc, 'Aries'), u = casaDe(asc, 'Géminis'), j = casaDe(asc, 'Leo'); return `Con ascendente ${asc}, Saturno y Neptuno pasan todo 2027 por tu casa ${sn}: ${TEMAS_CASA[sn]}. Urano mueve tu casa ${u}: ${TEMAS_CASA[u]}. Y el eclipse total del 2 de agosto cae en tu casa ${j}: ${TEMAS_CASA[j]}.`; }
+  if (tema === 'amor') { const v = P('Venus'), m = P('Mars'); return `Tu Venus está en ${v.signLocalized} y tu Marte en ${m.signLocalized}. ${frase1(v.interpretation?.summary)}`; }
+  const mc = n.midheaven?.signLocalized || '', ju = P('Jupiter'), sa = P('Saturn');
+  return `Tu medio cielo, el punto de la vocación, está en ${mc}. Júpiter, el que hace crecer, está en ${ju.signLocalized}; Saturno, el que pide constancia, en ${sa.signLocalized}. ${frase1(ju.interpretation?.summary)}`;
+}
+const pintaPrueba = a => { $('.inf-prueba', a).innerHTML = `<p>${esc(pruebaTema(a.dataset.tema, natalActual))}</p><p class="inf-sigue">El informe sigue en el PDF…</p>`; };
+function pintarTemas(n) {
+  natalActual = n;
+  $$('#informes .inf').forEach(a => { if (!$('.inf-prueba', a).hidden) pintaPrueba(a); });
+}
+$('#informes').addEventListener('click', e => {
+  const b = e.target.closest('.inf-ver'); if (!b || !natalActual) return;
+  const a = b.closest('.inf'); pintaPrueba(a); $('.inf-prueba', a).hidden = false; b.hidden = true;
+});
+$('#formGuardar').addEventListener('submit', async e => {
+  e.preventDefault(); const f = e.target, res = $('#guardarRes'); const email = f.email.value.trim();
+  res.hidden = false;
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { res.textContent = 'Revisa el correo: parece que falta algo.'; return; }
+  if (!f.consiento.checked) { res.textContent = 'Para enviártela necesitamos que marques la casilla.'; return; }
+  if (DEMO) { res.textContent = 'Vista previa: aquí no se guarda nada. Con la web abierta, recibirás tu carta en este correo.'; return; }
+  try { await api('perfil', { email, consiento: true, nacimiento: natalActual?.birthDetails || null }); res.textContent = 'Hecho. Revisa tu correo en unos minutos.'; f.reset(); }
+  catch (er) { res.textContent = er.message; }
 });
 
 /* ---------- III · Compatibilidad ---------- */
