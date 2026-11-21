@@ -41,3 +41,8 @@ Voces: modelo eleven_v4, castellano de España. Mei sin imitar acento extranjero
 ## DECISIÓN FINAL voz de Lía (17-11-2026): CAROLINA
 - Se vuelve a Carolina (BkOojM1ZhtSAHgsAkMx2, eleven_flash_v2_5, es). La F1 y la D5 quedan descartadas.
 - Audios del vídeo 01 con Carolina: lia-web/videos/audio-01-carolina/ (A1–A5, R1–R3, M1_1…M3_4).
+
+## Aviso de IA en vídeos (decisión de Juan, 21-11-2026: «la mezcla»)
+- Etiqueta fija «Presentadora creada con IA» abajo a la izquierda durante todo el vídeo (Reglamento (UE) 2024/1689, art. 50) + casilla de contenido sintético en YouTube/TikTok.
+- Gancho primero; hacia el segundo 20–30 la presentadora dice con naturalidad que es una inteligencia artificial, en positivo (cálculo exacto, disponible a cualquier hora). Nunca «acierta más» ni «interpreta mejor que una persona».
+- Inés: vestuario opción A (blusa de terciopelo azul noche, colgante de luna creciente). Misma imagen en web, rituales y vídeos.

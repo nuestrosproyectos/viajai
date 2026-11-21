@@ -1,7 +1,8 @@
 # Inés · Vídeo 01 · «Tu Luna lo explica todo: por qué sientes como sientes (los 12 signos)»
 
 - Presentadora: Inés (especialista IA de la luna y los rituales, ~34 años). Voz: ElevenLabs Sophie (XirH81OfTmRrNPuPRQCg), eleven_multilingual_v2, stability 0.6, similarity 0.8, style 0.15, speed 0.92 (como sus rituales).
-- Foto para HeyGen: videos/escenas/ines-ventana-16x9.jpg (horizontal, de frente, manos quietas y lejos de los objetos).
+- Foto para HeyGen: videos/escenas/ines-ventana-16x9.jpg (opción A elegida por Juan el 21-11-2026: blusa de terciopelo azul noche, colgante de luna creciente, calendario lunar y luna llena en la ventana; manos quietas).
+- Aviso de IA (decisión de Juan, 21-11-2026, «la mezcla»): etiqueta fija «Presentadora creada con IA» abajo a la izquierda durante todo el vídeo + gancho primero y la frase «soy una inteligencia artificial» hacia el segundo 20, en positivo (ventajas demostrables: cálculo exacto, disponibilidad; nunca «acierta más» ni «interpreta mejor»).
 - Duración prevista: 15–17 min. Inés a cámara: C1 + C2 + C3 (~2 min). El resto, voz en off sobre gráficos de luna (azul noche y plata).
 - Elegido con datos reales de YouTube (18-11-2026): «La Luna en los 12 signos» de Pablo Flores, 257.077 visualizaciones; «La Luna y tu madre», 180.459 en un mes.
 - Decisión de Juan (20-11-2026): este vídeo lo hace Inés, no Mateo. Inés: luna y rituales; sin numerología.
@@ -16,8 +17,8 @@
 
 ## C1 · Presentación (a cámara)
 
-Hola, soy Inés. Antes de nada: soy una inteligencia artificial, y en este canal me encargo de la luna. De sus fases, de sus rituales, y de la luna que llevas dentro.
-Porque tu signo, el que todo el mundo conoce, dice cómo te muestras. Pero cómo sientes, qué te calma, qué necesitas cuando las cosas van mal o a quién buscas cuando estás triste, eso lo explica tu Luna. La Luna que había en el cielo el día que naciste.
+Tu signo, el que todo el mundo conoce, dice cómo te muestras. Pero cómo sientes, qué te calma, qué necesitas cuando las cosas van mal o a quién buscas cuando estás triste, eso lo explica tu Luna. La Luna que había en el cielo el día que naciste.
+Soy Inés, y en este canal me encargo de la luna: de sus fases, de sus rituales y de la luna que llevas dentro. Por cierto, soy una inteligencia artificial: por eso puedo calcular tu Luna al minuto exacto en que naciste, a cualquier hora del día o de la noche.
 Hoy te cuento cómo es cada una, signo a signo. Y te aviso: puede que te reconozcas más aquí que en tu horóscopo de siempre.
 
 ## V0 · Qué es tu Luna (voz en off sobre gráficos)
