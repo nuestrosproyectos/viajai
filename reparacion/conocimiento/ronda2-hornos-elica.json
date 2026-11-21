@@ -1,0 +1,25 @@
+{
+  "familia": "Elica",
+  "marcas": [
+    "Elica"
+  ],
+  "notas": "Ronda 2. Familia nueva (solo campanas).",
+  "codigos": [
+    {
+      "aparato": "campana",
+      "codigos": [
+        "F",
+        "G"
+      ],
+      "significado": "NO es avería: aviso de mantenimiento de filtros. F = filtros de olores (carbón/cerámicos); G = filtro de grasa.",
+      "causas": [
+        "Filtro de grasa saturado (G)",
+        "Filtro de carbón o cerámico agotado (F)"
+      ],
+      "que_puede_hacer_el_cliente": "Lavar el filtro de grasa o regenerar/cambiar el de carbón y reiniciar el aviso manteniendo pulsada la tecla indicada en el manual.",
+      "pieza_probable": "Filtro de carbón/cerámico (si toca cambiarlo)",
+      "fuente": "https://www.manualslib.fr/manual/19936/Elica-Ent432Bl.html?page=19",
+      "confianza": "media"
+    }
+  ]
+}

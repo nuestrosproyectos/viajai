@@ -1,0 +1,24 @@
+{
+  "familia": "Beko",
+  "marcas": [
+    "Beko",
+    "Grundig"
+  ],
+  "notas": "Ronda 2. No se encontró tabla oficial de códigos E para hornos Beko; las webs de terceros se contradicen.",
+  "codigos": [
+    {
+      "aparato": "horno",
+      "codigos": [
+        "H"
+      ],
+      "significado": "NO es avería: tras la pirólisis el horno sigue demasiado caliente; la puerta queda bloqueada y aún no se puede cocinar.",
+      "causas": [
+        "Horno todavía muy caliente después de la limpieza pirolítica"
+      ],
+      "que_puede_hacer_el_cliente": "Esperar a que el horno se enfríe; la puerta se desbloquea sola. No forzarla.",
+      "pieza_probable": "",
+      "fuente": "https://documents.beko.com/CA/7757787688/en-GB/2050520434352475403.html",
+      "confianza": "media"
+    }
+  ]
+}

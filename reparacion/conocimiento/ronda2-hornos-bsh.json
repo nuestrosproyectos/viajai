@@ -1,0 +1,121 @@
+{
+  "familia": "BSH",
+  "marcas": [
+    "Bosch",
+    "Balay",
+    "Siemens",
+    "Neff"
+  ],
+  "notas": "Ronda 2. En hornos BSH el significado de los códigos E puede variar según modelo y mercado; según Bosch España, cualquier código no listado es un fallo electrónico que debe ver el servicio técnico.",
+  "codigos": [
+    {
+      "aparato": "horno",
+      "codigos": [
+        "E101"
+      ],
+      "significado": "Fallo del sensor de temperatura del horno (sonda abierta o mal conectada).",
+      "causas": [
+        "Sonda de temperatura del horno averiada",
+        "Conector o cableado de la sonda suelto"
+      ],
+      "que_puede_hacer_el_cliente": "Desconectar el horno del diferencial/automático unos 5 minutos y volver a conectar. Si vuelve a salir, llamar al técnico.",
+      "pieza_probable": "Sonda de temperatura del horno",
+      "fuente": "https://www.bosch-home.com/us/owner-support/error-codes/ovens-microwaves",
+      "confianza": "media"
+    },
+    {
+      "aparato": "horno",
+      "codigos": [
+        "E0511",
+        "E8401"
+      ],
+      "significado": "Error del sensor de temperatura.",
+      "causas": [
+        "Sonda de temperatura averiada",
+        "Fallo de la placa electrónica si se repite tras el reinicio"
+      ],
+      "que_puede_hacer_el_cliente": "Apagar el horno unos 20 minutos para que se reinicie el sensor. Si el código vuelve a aparecer, técnico.",
+      "pieza_probable": "Sonda de temperatura o placa electrónica",
+      "fuente": "https://www.coolblue.nl/en/advice/how-do-you-solve-error-codes-of-siemens-and-bosch-ovens.html",
+      "confianza": "media"
+    },
+    {
+      "aparato": "horno",
+      "codigos": [
+        "E0532",
+        "E05-32"
+      ],
+      "significado": "Tecla pulsada demasiado tiempo o atascada (variante del E011).",
+      "causas": [
+        "Suciedad, grasa o humedad en el panel",
+        "Tecla o sensor táctil atascado"
+      ],
+      "que_puede_hacer_el_cliente": "Limpiar y secar el panel de mandos y pulsar las teclas una a una. Desconectar de la corriente un minuto.",
+      "pieza_probable": "Módulo de mandos (panel táctil)",
+      "fuente": "https://www.coolblue.nl/en/advice/how-do-you-solve-error-codes-of-siemens-and-bosch-ovens.html",
+      "confianza": "media"
+    },
+    {
+      "aparato": "horno",
+      "codigos": [
+        "E305"
+      ],
+      "significado": "Según el modelo: el horno no detecta la puerta cerrada o falla el cierre de la puerta; en algunas cocinas, fallo de comunicación entre placas.",
+      "causas": [
+        "Contacto o microinterruptor de puerta averiado",
+        "Cierre de puerta (pirólisis) que no engancha",
+        "Cables entre placas dañados o mal conectados"
+      ],
+      "que_puede_hacer_el_cliente": "Comprobar que la puerta cierra bien y que nada la obstruye. Desconectar el horno de la corriente un minuto y probar de nuevo.",
+      "pieza_probable": "Contacto de puerta o cierre de puerta (diagnosticar)",
+      "fuente": "https://www.appliancepartspros.com/b/?p=17297",
+      "confianza": "media"
+    },
+    {
+      "aparato": "horno",
+      "codigos": [
+        "E106"
+      ],
+      "significado": "El cierre de la puerta no se bloquea (por ejemplo al iniciar la pirólisis) y el horno deja de intentarlo.",
+      "causas": [
+        "Motor o mecanismo de bloqueo de puerta averiado",
+        "Microinterruptor del cierre",
+        "Suciedad en el alojamiento del cierre"
+      ],
+      "que_puede_hacer_el_cliente": "Cerrar bien la puerta, comprobar que no hay restos en la zona del cierre y desconectar la corriente un minuto antes de reintentar.",
+      "pieza_probable": "Cerradura/motor de bloqueo de puerta",
+      "fuente": "https://mypros.plus/error-codes/bosch/oven/e106",
+      "confianza": "media"
+    },
+    {
+      "aparato": "horno",
+      "codigos": [
+        "E300"
+      ],
+      "significado": "Combinación de módulos electrónicos incorrecta o incompatible.",
+      "causas": [
+        "Módulo electrónico sustituido incompatible o mal configurado",
+        "Fallo de la electrónica"
+      ],
+      "que_puede_hacer_el_cliente": "Desconectar la corriente un minuto. Si persiste, técnico (suele aparecer tras una reparación).",
+      "pieza_probable": "Módulo de potencia o de mandos (configuración)",
+      "fuente": "https://www.spareka.fr/comment-reparer/electromenager/four-cuisiniere/codes-erreur-four-bosch",
+      "confianza": "media"
+    },
+    {
+      "aparato": "campana",
+      "codigos": [
+        "indicador de saturación de filtros (LED parpadea)"
+      ],
+      "significado": "NO es avería: aviso de que toca limpiar el filtro de grasa o cambiar el de carbón.",
+      "causas": [
+        "Filtro metálico de grasa saturado",
+        "Filtro de carbón activo agotado (si la campana es de recirculación)"
+      ],
+      "que_puede_hacer_el_cliente": "Lavar los filtros metálicos (lavavajillas) o cambiar el de carbón, y luego reiniciar el aviso manteniendo pulsada la tecla del temporizador unos 3 segundos hasta que el LED deje de parpadear.",
+      "pieza_probable": "Filtro de carbón activo (si toca cambiarlo)",
+      "fuente": "https://www.bosch-home.co.uk/customer-service/get-support/cooker-hoods/what-does-the-saturation-indicator-signal-mean-on-a-bosch-cooker-hood",
+      "confianza": "alta"
+    }
+  ]
+}

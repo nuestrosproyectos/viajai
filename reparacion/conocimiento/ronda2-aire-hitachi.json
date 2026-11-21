@@ -1,0 +1,40 @@
+{
+ "familia": "Hitachi aire acondicionado",
+ "marcas": [
+  "Hitachi"
+ ],
+ "notas": "En los splits murales domésticos Hitachi (RAK interior / RAC exterior) la avería se indica con la luz del temporizador (TIMER) de la unidad interior parpadeando: hay que contar las veces. En algunos modelos con mando moderno se puede ver el código apuntando el mando a la unidad y pulsando INFO. Hitachi usa tablas distintas según el modelo; sólo se han podido verificar dos patrones. Todo lo relacionado con gas refrigerante (fugas, recarga) lo hace un técnico con certificado de gases fluorados, nunca el cliente.",
+ "codigos": [
+  {
+   "aparato": "aire",
+   "codigos": [
+    "Luz del temporizador parpadea 12 veces"
+   ],
+   "significado": "Error de conexión del cable de interconexión (cable F) entre interior y exterior.",
+   "causas": [
+    "Cable de interconexión mal conectado",
+    "Placa de control interior averiada"
+   ],
+   "que_puede_hacer_el_cliente": "Contar los parpadeos, apagar desde el diferencial y volver a encender. Si sigue, avisar al técnico.",
+   "pieza_probable": "Cable de interconexión o placa interior",
+   "fuente": "https://manualslib.com/manual/1344294/Hitachi-Rac-25wpb.html?page=124",
+   "confianza": "media"
+  },
+  {
+   "aparato": "aire",
+   "codigos": [
+    "Luz del temporizador parpadea 13 veces"
+   ],
+   "significado": "Fallo de comunicación entre la unidad interior y la exterior; el equipo no arranca.",
+   "causas": [
+    "Cable de interconexión cortado o mal insertado",
+    "Avería eléctrica en la unidad exterior",
+    "Interferencias eléctricas"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que la unidad exterior tiene corriente (diferencial o magnetotérmico propio). Apagar, esperar unos minutos y volver a encender. Si sigue, avisar al técnico.",
+   "pieza_probable": "Cable de interconexión o placa exterior",
+   "fuente": "https://manualslib.com/manual/1344294/Hitachi-Rac-25wpb.html?page=124",
+   "confianza": "media"
+  }
+ ]
+}

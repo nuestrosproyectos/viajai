@@ -1,0 +1,40 @@
+{
+ "familia": "Hisense aire acondicionado",
+ "marcas": [
+  "Hisense"
+ ],
+ "notas": "Los splits Hisense muestran el código en el display de la unidad interior. Según la tabla de servicio, para ver el código numérico se pulsa SLEEP 4 veces seguidas con el mando (10 veces en los mandos nuevos). Las tablas cambian según el modelo; sólo se han podido verificar unos pocos códigos y de fuente no oficial. Todo lo relacionado con gas refrigerante (fugas, recarga) lo hace un técnico con certificado de gases fluorados, nunca el cliente.",
+ "codigos": [
+  {
+   "aparato": "aire",
+   "codigos": [
+    "E2"
+   ],
+   "significado": "Protección por temperatura anormal de la batería interior (antihielo, o sobrecalentamiento en modo calor).",
+   "causas": [
+    "Filtros sucios o salida de aire tapada",
+    "Batería interior congelada",
+    "Recalentamiento de la unidad exterior o de la descarga del compresor"
+   ],
+   "que_puede_hacer_el_cliente": "Limpiar los filtros, comprobar que nada tapa la unidad interior ni la exterior, apagar y volver a encender pasados unos minutos. Si sigue, avisar al técnico.",
+   "pieza_probable": "",
+   "fuente": "https://servidos.ar/codigos-de-error/aire-acondicionado/hisense-split-inverter/e2",
+   "confianza": "media"
+  },
+  {
+   "aparato": "aire",
+   "codigos": [
+    "EA"
+   ],
+   "significado": "Fallo de comunicación entre la placa del display y la placa de control de la unidad interior.",
+   "causas": [
+    "Cable o conector entre display y placa suelto",
+    "Placa del display o de control averiada"
+   ],
+   "que_puede_hacer_el_cliente": "Anotar el código, apagar desde el diferencial unos minutos y volver a encender. Si vuelve a salir, avisar al técnico.",
+   "pieza_probable": "Placa del display o placa de control",
+   "fuente": "https://servidos.ar/codigos-de-error/aire-acondicionado/hisense-split-inverter",
+   "confianza": "media"
+  }
+ ]
+}

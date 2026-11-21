@@ -1,0 +1,24 @@
+{
+  "familia": "Cata",
+  "marcas": [
+    "Cata"
+  ],
+  "notas": "Ronda 2. No se encontró tabla de códigos para hornos Cata.",
+  "codigos": [
+    {
+      "aparato": "campana",
+      "codigos": [
+        "icono del temporizador parpadea en rojo con la campana apagada"
+      ],
+      "significado": "NO es avería: aviso de limpieza o cambio de filtros.",
+      "causas": [
+        "Filtros de grasa saturados",
+        "Filtro de carbón agotado"
+      ],
+      "que_puede_hacer_el_cliente": "Limpiar los filtros (o cambiar los de carbón desechables) y tocar de nuevo el símbolo del temporizador para apagar el aviso.",
+      "pieza_probable": "Filtro de carbón (si es desechable)",
+      "fuente": "https://www.cata.com/mediafiles/productos/02111309/60806363.pdf",
+      "confianza": "alta"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "familia": "Whirlpool",
+  "marcas": [
+    "Whirlpool",
+    "Indesit",
+    "Hotpoint",
+    "Ariston"
+  ],
+  "notas": "Ronda 2. No se encontró ninguna tabla oficial europea de códigos F para hornos; las listas de internet se contradicen entre sí y con los modelos de EE. UU. Solo se incluye la indicación genérica de los manuales.",
+  "codigos": [
+    {
+      "aparato": "horno",
+      "codigos": [
+        "F (letra F seguida de un número)"
+      ],
+      "significado": "Avería del horno detectada por la electrónica; el número concreto lo interpreta el técnico.",
+      "causas": [
+        "Sonda de temperatura, cierre de puerta, resistencia o placa (según el número)"
+      ],
+      "que_puede_hacer_el_cliente": "Apagar el horno, desconectarlo de la corriente un minuto y volver a encender. Si vuelve a salir, anotar el número que sigue a la F y llamar al técnico.",
+      "pieza_probable": "Diagnosticar según el número",
+      "fuente": "https://manualslib.es/manual/893119/Whirlpool-W11I-Op1-4S2-H.html?page=20",
+      "confianza": "media"
+    }
+  ]
+}

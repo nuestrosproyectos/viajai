@@ -1,0 +1,25 @@
+{
+  "familia": "Miele",
+  "marcas": [
+    "Miele"
+  ],
+  "notas": "Ronda 2.",
+  "codigos": [
+    {
+      "aparato": "horno",
+      "codigos": [
+        "F14"
+      ],
+      "significado": "Horno de vapor: entra muy poca agua en el generador de vapor.",
+      "causas": [
+        "Depósito de agua vacío o mal colocado",
+        "Toma o filtro de agua obstruido (cal)",
+        "Bomba de agua averiada"
+      ],
+      "que_puede_hacer_el_cliente": "Comprobar que el depósito está lleno y bien encajado hasta el fondo; descalcificar si toca. Si sigue, técnico.",
+      "pieza_probable": "Bomba de agua o generador de vapor (diagnosticar)",
+      "fuente": "https://www.miele.co.uk/support/customer-assistance/steam_oven-1230/all/fault_f14_water_inlet_symbol-143474436235",
+      "confianza": "alta"
+    }
+  ]
+}

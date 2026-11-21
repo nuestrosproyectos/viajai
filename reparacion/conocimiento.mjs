@@ -62,7 +62,7 @@ export default {
    "marcas": [
     "Daikin"
    ],
-   "notas": "En los splits Daikin domésticos (FTXM, FTXF, FTXC, FTXP...) la luz de funcionamiento de la unidad interior parpadea cuando hay una avería. El código se ve en el mando infrarrojo ARC: en muchos modelos se mantiene pulsado el botón CANCELAR del temporizador (o el de temperatura, según modelo) unos 5 segundos y se va pulsando hasta oír un pitido largo; el código que se ve en ese momento en el mando es el de la avería. El procedimiento cambia según el mando: conviene que el cliente diga el código que ve y el modelo de la etiqueta de la unidad interior. En los mandos por cable (conductos, BRC1H Madoka, BRC1E) el código sale directamente en la pantalla. Un mismo código puede significar cosas distintas según la serie (Daikin lo advierte en sus tablas). Antes de reiniciar desde el diferencial conviene anotar el código. Daikin indica que tras encender, el compresor puede tardar 3-4 minutos en arrancar (protección contra arranques frecuentes): no es avería. Todo lo relacionado con gas refrigerante (fugas, recarga, soldaduras) lo hace un técnico con certificado de gases fluorados; nunca el cliente.",
+   "notas": "En los splits Daikin domésticos (FTXM, FTXF, FTXC, FTXP...) la luz de funcionamiento de la unidad interior parpadea cuando hay una avería. El código se ve en el mando infrarrojo ARC: en muchos modelos se mantiene pulsado el botón CANCELAR del temporizador (o el de temperatura, según modelo) unos 5 segundos y se va pulsando hasta oír un pitido largo; el código que se ve en ese momento en el mando es el de la avería. El procedimiento cambia según el mando: conviene que el cliente diga el código que ve y el modelo de la etiqueta de la unidad interior. En los mandos por cable (conductos, BRC1H Madoka, BRC1E) el código sale directamente en la pantalla. Un mismo código puede significar cosas distintas según la serie (Daikin lo advierte en sus tablas). Antes de reiniciar desde el diferencial conviene anotar el código. Daikin indica que tras encender, el compresor puede tardar 3-4 minutos en arrancar (protección contra arranques frecuentes): no es avería. Todo lo relacionado con gas refrigerante (fugas, recarga, soldaduras) lo hace un técnico con certificado de gases fluorados; nunca el cliente. Códigos complementarios a la tabla Daikin ya existente. Se leen en el mando infrarrojo (pulsando CANCELAR del temporizador unos 5 s hasta el pitido largo) o en la pantalla del mando por cable. Daikin advierte que algunos códigos cambian de significado según la gama (Room Air = splits domésticos; Sky Air/VRV = comercial). Todo lo relacionado con gas refrigerante (fugas, recarga) lo hace un técnico con certificado de gases fluorados, nunca el cliente.",
    "codigos": [
     {
      "aparato": "aire",
@@ -221,6 +221,131 @@ export default {
      "pieza_probable": "",
      "fuente": "https://servidos.ar/codigos-de-error/aire-acondicionado/daikin-tabla-general/ua",
      "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "C4"
+     ],
+     "significado": "Fallo de la sonda (termistor) de la tubería de líquido del intercambiador de la unidad interior.",
+     "causas": [
+      "Conector de la sonda flojo o mal contacto",
+      "Sonda averiada"
+     ],
+     "que_puede_hacer_el_cliente": "Anotar el código, apagar desde el diferencial unos minutos y volver a encender. Si vuelve a salir, avisar al técnico.",
+     "pieza_probable": "Sonda del intercambiador interior",
+     "fuente": "https://www.daikin.com.ph/services/error-code-search-tool/",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "C9"
+     ],
+     "significado": "Fallo de la sonda de temperatura del aire de aspiración (temperatura ambiente) de la unidad interior.",
+     "causas": [
+      "Conector de la sonda flojo",
+      "Sonda de ambiente averiada"
+     ],
+     "que_puede_hacer_el_cliente": "Anotar el código, apagar desde el diferencial unos minutos y volver a encender. Si vuelve a salir, avisar al técnico.",
+     "pieza_probable": "Sonda de temperatura ambiente",
+     "fuente": "https://www.daikin.com.ph/services/error-code-search-tool/",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E1"
+     ],
+     "significado": "Fallo de la placa electrónica de la unidad exterior (Daikin lo documenta para gamas Sky Air y VRV; en splits domésticos puede variar).",
+     "causas": [
+      "Interferencias eléctricas (ruido)",
+      "Placa de la unidad exterior averiada"
+     ],
+     "que_puede_hacer_el_cliente": "Anotar el código, apagar desde el diferencial unos minutos y volver a encender. Si vuelve a salir, avisar al técnico.",
+     "pieza_probable": "Placa electrónica de la unidad exterior",
+     "fuente": "https://www.daikin.com.ph/services/error-code-search-tool/",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E5"
+     ],
+     "significado": "En splits domésticos (Room Air): sobrecalentamiento del motor del compresor inverter. En Sky Air/VRV: compresor bloqueado.",
+     "causas": [
+      "Falta de refrigerante",
+      "Compresor averiado",
+      "Válvula de servicio cerrada"
+     ],
+     "que_puede_hacer_el_cliente": "Anotar el código y apagar el equipo. No intentar nada con el gas: avisar al técnico.",
+     "pieza_probable": "Compresor o carga de refrigerante (técnico con certificado de gases fluorados)",
+     "fuente": "https://www.daikin.com.ph/services/error-code-search-tool/",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E6"
+     ],
+     "significado": "Fallo de arranque del compresor (compresor bloqueado o sobrecorriente al arrancar).",
+     "causas": [
+      "Válvula de servicio cerrada",
+      "Compresor averiado",
+      "Falta de refrigerante"
+     ],
+     "que_puede_hacer_el_cliente": "Anotar el código, apagar desde el diferencial y volver a encender pasados unos minutos. Si se repite, avisar al técnico.",
+     "pieza_probable": "Compresor",
+     "fuente": "https://www.daikin.com.sg/resources/ck/files/manual/CTKS25TVMG,%20CTKS35TVMG,%20CTKS50TVMG.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "J3"
+     ],
+     "significado": "Fallo de la sonda de temperatura del tubo de descarga del compresor (unidad exterior).",
+     "causas": [
+      "Conector flojo",
+      "Sonda de descarga averiada",
+      "Placa de la unidad exterior averiada"
+     ],
+     "que_puede_hacer_el_cliente": "Anotar el código, apagar desde el diferencial unos minutos y volver a encender. Si vuelve a salir, avisar al técnico.",
+     "pieza_probable": "Sonda de descarga o placa exterior",
+     "fuente": "https://www.daikin.co.nz/blogs/knowledge-base/what-is-a-j3-fault",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "L5"
+     ],
+     "significado": "Sobrecorriente instantánea en el inverter de la unidad exterior.",
+     "causas": [
+      "Compresor averiado",
+      "Válvula de servicio cerrada",
+      "Placa inverter averiada"
+     ],
+     "que_puede_hacer_el_cliente": "Anotar el código, apagar desde el diferencial unos minutos y volver a encender. Si vuelve a salir, avisar al técnico.",
+     "pieza_probable": "Compresor o placa inverter",
+     "fuente": "https://www.daikin.com.ph/services/error-code-search-tool/",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "U2"
+     ],
+     "significado": "Tensión de alimentación anormal (caída o subida de tensión, o microcorte de luz).",
+     "causas": [
+      "Microcorte o tensión inestable en la red",
+      "Mal contacto en el cableado de alimentación",
+      "Placa de potencia averiada"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar si ha habido cortes de luz o si saltó algo en el cuadro. Apagar desde el diferencial unos minutos y volver a encender. Si se repite, avisar al técnico.",
+     "pieza_probable": "Cableado de alimentación o placa de potencia",
+     "fuente": "https://www.daikin.com.ph/services/error-code-search-tool/",
+     "confianza": "alta"
     }
    ]
   },
@@ -1101,7 +1226,7 @@ export default {
    "marcas": [
     "Mitsubishi Electric"
    ],
-   "notas": "En los splits murales domésticos (MSZ con exterior MUZ/MXZ) no suele salir un código en pantalla: lo que ve el cliente es la luz de funcionamiento (OPERATION INDICATOR) de la unidad interior parpadeando. Hay que contar cuántas veces parpadea antes de una pausa; el número de parpadeos identifica la avería y cambia según la serie, así que conviene pedir al cliente el modelo (etiqueta lateral de la unidad interior) y el número de parpadeos. Contarlos ANTES de quitar la corriente, porque al reiniciar se borra la indicación. En los equipos de conductos, cassette y suelo-techo (gama Mr. Slim PEAD, PLA, PKA, PCA) con mando por cable, el código (P1, E6, U2...) sale en la pantalla del mando; se consulta con el botón CHECK (pulsándolo dos veces) y se sale con ON/OFF. Mitsubishi indica en sus manuales que, si la luz parpadea o el problema no se resuelve tras las comprobaciones básicas, se deje de usar el equipo y se consulte al distribuidor. Todo lo relacionado con gas refrigerante lo hace un técnico con certificado de gases fluorados.",
+   "notas": "En los splits murales domésticos (MSZ con exterior MUZ/MXZ) no suele salir un código en pantalla: lo que ve el cliente es la luz de funcionamiento (OPERATION INDICATOR) de la unidad interior parpadeando. Hay que contar cuántas veces parpadea antes de una pausa; el número de parpadeos identifica la avería y cambia según la serie, así que conviene pedir al cliente el modelo (etiqueta lateral de la unidad interior) y el número de parpadeos. Contarlos ANTES de quitar la corriente, porque al reiniciar se borra la indicación. En los equipos de conductos, cassette y suelo-techo (gama Mr. Slim PEAD, PLA, PKA, PCA) con mando por cable, el código (P1, E6, U2...) sale en la pantalla del mando; se consulta con el botón CHECK (pulsándolo dos veces) y se sale con ON/OFF. Mitsubishi indica en sus manuales que, si la luz parpadea o el problema no se resuelve tras las comprobaciones básicas, se deje de usar el equipo y se consulte al distribuidor. Todo lo relacionado con gas refrigerante lo hace un técnico con certificado de gases fluorados. Complementa la tabla existente. En los murales MSZ (AP, LN, HR...) la avería se indica con la luz de funcionamiento parpadeando. En el MSZ-AP, si la luz superior parpadea a intervalos de 0,5 s hay avería en la interior o en la exterior; hay que contar al menos dos ciclos seguidos de parpadeos. El número de parpadeos asignado a cada avería cambia según la serie: no se ha encontrado la tabla oficial completa del MSZ-AP, MSZ-LN ni MSZ-HR, así que los recuentos de abajo vienen de series MSZ cercanas (A, FD, GA, M-Series) y hay que confirmarlos con el modelo. Contar los parpadeos ANTES de quitar la corriente. Todo lo relacionado con gas refrigerante (fugas, recarga) lo hace un técnico con certificado de gases fluorados, nunca el cliente.",
    "codigos": [
     {
      "aparato": "aire",
@@ -1238,6 +1363,79 @@ export default {
      "que_puede_hacer_el_cliente": "Apagar, comprobar que la exterior no está tapada y avisar al técnico. La fuga y la recarga solo las trata un técnico con certificado de gases fluorados.",
      "pieza_probable": "Reparación de fuga y recarga, o válvula de expansión",
      "fuente": "https://manualslib.com/manual/2154162/Mitsubishi-Electric-M-Series.html?page=51",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "Luz de funcionamiento parpadea 1 vez (cada 0,5 s, repetido)"
+     ],
+     "significado": "Fallo de la sonda de temperatura ambiente de la unidad interior (en series MSZ-A y MSZ-FD).",
+     "causas": [
+      "Sonda en cortocircuito o abierta",
+      "Conector flojo"
+     ],
+     "que_puede_hacer_el_cliente": "Anotar el número de parpadeos y el modelo de la etiqueta, apagar desde el diferencial y volver a encender. Si sigue, avisar al técnico.",
+     "pieza_probable": "Sonda de temperatura ambiente",
+     "fuente": "https://tv.manualsonline.com/manuals/mfg/mitsubishi/mszfd09na.html?p=24",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "Luz de funcionamiento parpadea 2 veces"
+     ],
+     "significado": "Fallo de la sonda del intercambiador (batería) de la unidad interior (en series MSZ-A, MSZ-FD y MSZ-GA).",
+     "causas": [
+      "Sonda en cortocircuito o abierta",
+      "Conector flojo"
+     ],
+     "que_puede_hacer_el_cliente": "Anotar el número de parpadeos y el modelo, apagar desde el diferencial y volver a encender. Si sigue, avisar al técnico.",
+     "pieza_probable": "Sonda del intercambiador interior",
+     "fuente": "https://manuals.online/mitsubishi-electric/air-conditioner/msz-a09yv-e1wh/user-manual/25hlu",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "Luz de funcionamiento parpadea 3 veces"
+     ],
+     "significado": "Depende de la serie: en MSZ-A y M-Series es fallo del motor del ventilador interior (no llega señal de giro); en MSZ-FD es fallo de comunicación con la unidad exterior.",
+     "causas": [
+      "Motor del ventilador interior bloqueado o averiado",
+      "Cable de interconexión o placa (según serie)"
+     ],
+     "que_puede_hacer_el_cliente": "Anotar parpadeos y modelo. Comprobar que nada obstruye la salida de aire. Apagar desde el diferencial y volver a encender; si sigue, avisar al técnico.",
+     "pieza_probable": "Motor del ventilador interior o placa",
+     "fuente": "https://manualslib.com/manual/1951885/Mitsubishi-Electric-M-Series.html?page=155",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "Luz de funcionamiento parpadea 4 veces"
+     ],
+     "significado": "Fallo del control de la unidad interior: no puede leer la memoria (no volátil) de la placa (series MSZ-A y M-Series).",
+     "causas": [
+      "Placa electrónica de la unidad interior averiada"
+     ],
+     "que_puede_hacer_el_cliente": "Anotar parpadeos y modelo, apagar desde el diferencial y volver a encender. Si sigue, avisar al técnico.",
+     "pieza_probable": "Placa electrónica interior",
+     "fuente": "https://manuals.online/mitsubishi-electric/air-conditioner/msz-a09yv-e1wh/user-manual/25hlu",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "MSZ-AP: luz parpadea 6 o 7 veces"
+     ],
+     "significado": "En el MSZ-AP, avería localizada en la unidad exterior; el técnico la identifica con el modo de diagnóstico de la exterior.",
+     "causas": [
+      "Avería de la unidad exterior (comunicación, sondas, compresor...)"
+     ],
+     "que_puede_hacer_el_cliente": "Anotar parpadeos, apagar desde el diferencial y volver a encender. Si sigue, avisar al técnico.",
+     "pieza_probable": "",
+     "fuente": "https://library.mitsubishielectric.co.uk/pdf/download_full/3755",
      "confianza": "media"
     }
    ]
@@ -1984,7 +2182,7 @@ export default {
     "Beko",
     "Grundig"
    ],
-   "notas": "Beko y Grundig pertenecen al grupo turco Arçelik (hoy Beko Europe en Europa) y comparten plataforma de fabricación; es probable que muchos códigos coincidan, pero no se ha encontrado una fuente que lo confirme, así que en Grundig hay que verificar con el manual del modelo. Los códigos de Beko cambian mucho según la serie y el año: el mismo código (p. ej. E02 en lavadora) significa cosas distintas según el modelo, así que conviene pedir siempre el modelo exacto (etiqueta en el marco de la puerta en lavadoras y en el lateral interior de la puerta en lavavajillas). En lavavajillas el código puede salir como 'E:01' o como un icono que parpadea (p. ej. P1). Los códigos H (H1, H5...) de lavadora son de diagnóstico y normalmente solo se ven en el modo de servicio, no los ve el cliente en uso normal. Las secadoras Beko de consumo suelen avisar con iconos (depósito, filtro, condensador) en lugar de códigos numéricos.",
+   "notas": "Beko y Grundig pertenecen al grupo turco Arçelik (hoy Beko Europe en Europa) y comparten plataforma de fabricación; es probable que muchos códigos coincidan, pero no se ha encontrado una fuente que lo confirme, así que en Grundig hay que verificar con el manual del modelo. Los códigos de Beko cambian mucho según la serie y el año: el mismo código (p. ej. E02 en lavadora) significa cosas distintas según el modelo, así que conviene pedir siempre el modelo exacto (etiqueta en el marco de la puerta en lavadoras y en el lateral interior de la puerta en lavavajillas). En lavavajillas el código puede salir como 'E:01' o como un icono que parpadea (p. ej. P1). Los códigos H (H1, H5...) de lavadora son de diagnóstico y normalmente solo se ven en el modo de servicio, no los ve el cliente en uso normal. Las secadoras Beko de consumo suelen avisar con iconos (depósito, filtro, condensador) en lugar de códigos numéricos. Ronda 2. No se encontró tabla oficial de códigos E para hornos Beko; las webs de terceros se contradicen.",
    "codigos": [
     {
      "aparato": "lavavajillas",
@@ -2238,6 +2436,20 @@ export default {
      "pieza_probable": "filtro eco (si el modelo lo lleva)",
      "fuente": "https://www.beko.com/content/dam/spain-es-aem/spain-es-aemProductCatalog/product-documents/7188283340-BM3T49240W/es-ES-7188283340-MDM2-USER-MANUAL-FILE-es-ES.pdf",
      "confianza": "alta"
+    },
+    {
+     "aparato": "horno",
+     "codigos": [
+      "H"
+     ],
+     "significado": "NO es avería: tras la pirólisis el horno sigue demasiado caliente; la puerta queda bloqueada y aún no se puede cocinar.",
+     "causas": [
+      "Horno todavía muy caliente después de la limpieza pirolítica"
+     ],
+     "que_puede_hacer_el_cliente": "Esperar a que el horno se enfríe; la puerta se desbloquea sola. No forzarla.",
+     "pieza_probable": "",
+     "fuente": "https://documents.beko.com/CA/7757787688/en-GB/2050520434352475403.html",
+     "confianza": "media"
     }
    ]
   },
@@ -2249,7 +2461,7 @@ export default {
     "Siemens",
     "Neff"
    ],
-   "notas": "Bosch, Balay, Siemens y Neff son del grupo BSH y comparten electrónica: el mismo código significa lo mismo en las cuatro marcas (OCU lo indica expresamente para las lavadoras Balay, Bosch y Siemens), aunque puede variar según la generación o el modelo. En muchos modelos la letra E y la F son equivalentes (E18 = F18, E24 = F24); a veces aparecen con dos puntos (E:18) o con un subcódigo (E:36-10). En algunas lavadoras Bosch el mismo fallo sale con otro formato (por ejemplo F18 = d02). OJO: el mismo número no significa lo mismo en distintos aparatos (E23 en lavadora = Aquastop activado; E23 en lavavajillas = fallo de la bomba de desagüe; E18 en lavadora = no desagua; E18 en lavavajillas = manguera de entrada retorcida). Pregunta siempre qué aparato es y el número E-Nr de la placa de características (en la lavadora y el lavavajillas, en el marco de la puerta; en el frigorífico, dentro). La lavadora-secadora usa los mismos códigos de lavado que la lavadora. Recomendación oficial para cualquier código no listado: apagar el aparato, esperar al menos 5 segundos (Bosch EE. UU. dice 30 segundos cortando el diferencial) y volver a encender; si vuelve a salir, Bosch España dice que el resto de códigos son fallos electrónicos que debe resolver un técnico. En las placas de inducción algunos modelos muestran solo una 'E' y, al mantener pulsado el sensor de la zona, sale el código largo (p. ej. E0111) que hay que buscar en el manual del modelo. Una placa que enciende los mandos pero no calienta puede estar en modo demostración. Los manuales de usuario de BSH no suelen traer la tabla de códigos de servicio (E63 y similares de secadora); esos solo vienen en la documentación técnica. No se encontraron fuentes fiables con códigos de campana extractora ni de Pitsos. Seguridad: en E15 y E23 (Aquastop o agua en la base) cerrar el grifo y desenchufar ya; al vaciar la bomba el agua puede salir muy caliente. BSH no publica en España una tabla de códigos E de frigoríficos; remite al asistente online con el E-Nr de la placa de características. E01/E02/E03 vienen de servicios técnicos de terceros y coinciden en E01/E02; E03 varía según modelo.",
+   "notas": "Bosch, Balay, Siemens y Neff son del grupo BSH y comparten electrónica: el mismo código significa lo mismo en las cuatro marcas (OCU lo indica expresamente para las lavadoras Balay, Bosch y Siemens), aunque puede variar según la generación o el modelo. En muchos modelos la letra E y la F son equivalentes (E18 = F18, E24 = F24); a veces aparecen con dos puntos (E:18) o con un subcódigo (E:36-10). En algunas lavadoras Bosch el mismo fallo sale con otro formato (por ejemplo F18 = d02). OJO: el mismo número no significa lo mismo en distintos aparatos (E23 en lavadora = Aquastop activado; E23 en lavavajillas = fallo de la bomba de desagüe; E18 en lavadora = no desagua; E18 en lavavajillas = manguera de entrada retorcida). Pregunta siempre qué aparato es y el número E-Nr de la placa de características (en la lavadora y el lavavajillas, en el marco de la puerta; en el frigorífico, dentro). La lavadora-secadora usa los mismos códigos de lavado que la lavadora. Recomendación oficial para cualquier código no listado: apagar el aparato, esperar al menos 5 segundos (Bosch EE. UU. dice 30 segundos cortando el diferencial) y volver a encender; si vuelve a salir, Bosch España dice que el resto de códigos son fallos electrónicos que debe resolver un técnico. En las placas de inducción algunos modelos muestran solo una 'E' y, al mantener pulsado el sensor de la zona, sale el código largo (p. ej. E0111) que hay que buscar en el manual del modelo. Una placa que enciende los mandos pero no calienta puede estar en modo demostración. Los manuales de usuario de BSH no suelen traer la tabla de códigos de servicio (E63 y similares de secadora); esos solo vienen en la documentación técnica. No se encontraron fuentes fiables con códigos de campana extractora ni de Pitsos. Seguridad: en E15 y E23 (Aquastop o agua en la base) cerrar el grifo y desenchufar ya; al vaciar la bomba el agua puede salir muy caliente. BSH no publica en España una tabla de códigos E de frigoríficos; remite al asistente online con el E-Nr de la placa de características. E01/E02/E03 vienen de servicios técnicos de terceros y coinciden en E01/E02; E03 varía según modelo. Ronda 2. En hornos BSH el significado de los códigos E puede variar según modelo y mercado; según Bosch España, cualquier código no listado es un fallo electrónico que debe ver el servicio técnico.",
    "codigos": [
     {
      "aparato": "lavadora",
@@ -2841,6 +3053,115 @@ export default {
      "pieza_probable": "",
      "fuente": "https://media3.bosch-home.com/Documents/8001162009/es-ES/3995849071034205195.html",
      "confianza": "alta"
+    },
+    {
+     "aparato": "horno",
+     "codigos": [
+      "E101"
+     ],
+     "significado": "Fallo del sensor de temperatura del horno (sonda abierta o mal conectada).",
+     "causas": [
+      "Sonda de temperatura del horno averiada",
+      "Conector o cableado de la sonda suelto"
+     ],
+     "que_puede_hacer_el_cliente": "Desconectar el horno del diferencial/automático unos 5 minutos y volver a conectar. Si vuelve a salir, llamar al técnico.",
+     "pieza_probable": "Sonda de temperatura del horno",
+     "fuente": "https://www.bosch-home.com/us/owner-support/error-codes/ovens-microwaves",
+     "confianza": "media"
+    },
+    {
+     "aparato": "horno",
+     "codigos": [
+      "E0511",
+      "E8401"
+     ],
+     "significado": "Error del sensor de temperatura.",
+     "causas": [
+      "Sonda de temperatura averiada",
+      "Fallo de la placa electrónica si se repite tras el reinicio"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar el horno unos 20 minutos para que se reinicie el sensor. Si el código vuelve a aparecer, técnico.",
+     "pieza_probable": "Sonda de temperatura o placa electrónica",
+     "fuente": "https://www.coolblue.nl/en/advice/how-do-you-solve-error-codes-of-siemens-and-bosch-ovens.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "horno",
+     "codigos": [
+      "E0532",
+      "E05-32"
+     ],
+     "significado": "Tecla pulsada demasiado tiempo o atascada (variante del E011).",
+     "causas": [
+      "Suciedad, grasa o humedad en el panel",
+      "Tecla o sensor táctil atascado"
+     ],
+     "que_puede_hacer_el_cliente": "Limpiar y secar el panel de mandos y pulsar las teclas una a una. Desconectar de la corriente un minuto.",
+     "pieza_probable": "Módulo de mandos (panel táctil)",
+     "fuente": "https://www.coolblue.nl/en/advice/how-do-you-solve-error-codes-of-siemens-and-bosch-ovens.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "horno",
+     "codigos": [
+      "E305"
+     ],
+     "significado": "Según el modelo: el horno no detecta la puerta cerrada o falla el cierre de la puerta; en algunas cocinas, fallo de comunicación entre placas.",
+     "causas": [
+      "Contacto o microinterruptor de puerta averiado",
+      "Cierre de puerta (pirólisis) que no engancha",
+      "Cables entre placas dañados o mal conectados"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que la puerta cierra bien y que nada la obstruye. Desconectar el horno de la corriente un minuto y probar de nuevo.",
+     "pieza_probable": "Contacto de puerta o cierre de puerta (diagnosticar)",
+     "fuente": "https://www.appliancepartspros.com/b/?p=17297",
+     "confianza": "media"
+    },
+    {
+     "aparato": "horno",
+     "codigos": [
+      "E106"
+     ],
+     "significado": "El cierre de la puerta no se bloquea (por ejemplo al iniciar la pirólisis) y el horno deja de intentarlo.",
+     "causas": [
+      "Motor o mecanismo de bloqueo de puerta averiado",
+      "Microinterruptor del cierre",
+      "Suciedad en el alojamiento del cierre"
+     ],
+     "que_puede_hacer_el_cliente": "Cerrar bien la puerta, comprobar que no hay restos en la zona del cierre y desconectar la corriente un minuto antes de reintentar.",
+     "pieza_probable": "Cerradura/motor de bloqueo de puerta",
+     "fuente": "https://mypros.plus/error-codes/bosch/oven/e106",
+     "confianza": "media"
+    },
+    {
+     "aparato": "horno",
+     "codigos": [
+      "E300"
+     ],
+     "significado": "Combinación de módulos electrónicos incorrecta o incompatible.",
+     "causas": [
+      "Módulo electrónico sustituido incompatible o mal configurado",
+      "Fallo de la electrónica"
+     ],
+     "que_puede_hacer_el_cliente": "Desconectar la corriente un minuto. Si persiste, técnico (suele aparecer tras una reparación).",
+     "pieza_probable": "Módulo de potencia o de mandos (configuración)",
+     "fuente": "https://www.spareka.fr/comment-reparer/electromenager/four-cuisiniere/codes-erreur-four-bosch",
+     "confianza": "media"
+    },
+    {
+     "aparato": "campana",
+     "codigos": [
+      "indicador de saturación de filtros (LED parpadea)"
+     ],
+     "significado": "NO es avería: aviso de que toca limpiar el filtro de grasa o cambiar el de carbón.",
+     "causas": [
+      "Filtro metálico de grasa saturado",
+      "Filtro de carbón activo agotado (si la campana es de recirculación)"
+     ],
+     "que_puede_hacer_el_cliente": "Lavar los filtros metálicos (lavavajillas) o cambiar el de carbón, y luego reiniciar el aviso manteniendo pulsada la tecla del temporizador unos 3 segundos hasta que el LED deje de parpadear.",
+     "pieza_probable": "Filtro de carbón activo (si toca cambiarlo)",
+     "fuente": "https://www.bosch-home.co.uk/customer-service/get-support/cooker-hoods/what-does-the-saturation-indicator-signal-mean-on-a-bosch-cooker-hood",
+     "confianza": "alta"
     }
    ]
   },
@@ -2849,7 +3170,7 @@ export default {
    "marcas": [
     "Cata"
    ],
-   "notas": "Cata es la marca principal de CNA Group, que en junio de 2026 pasó a llamarse Cata Group. Es el mismo grupo que fabrica hoy Fagor (bajo licencia) y Edesa, así que es probable que comparta electrónica de inducción con ellas, pero no se ha verificado. No se encontró documentación oficial de Cata con tablas de códigos; solo fuentes de terceros.",
+   "notas": "Cata es la marca principal de CNA Group, que en junio de 2026 pasó a llamarse Cata Group. Es el mismo grupo que fabrica hoy Fagor (bajo licencia) y Edesa, así que es probable que comparta electrónica de inducción con ellas, pero no se ha verificado. No se encontró documentación oficial de Cata con tablas de códigos; solo fuentes de terceros. Ronda 2. No se encontró tabla de códigos para hornos Cata.",
    "codigos": [
     {
      "aparato": "placa",
@@ -2866,6 +3187,21 @@ export default {
      "pieza_probable": "",
      "fuente": "https://vitroceramica.online/codigos-de-error/error-vitroceramica-cata/",
      "confianza": "media"
+    },
+    {
+     "aparato": "campana",
+     "codigos": [
+      "icono del temporizador parpadea en rojo con la campana apagada"
+     ],
+     "significado": "NO es avería: aviso de limpieza o cambio de filtros.",
+     "causas": [
+      "Filtros de grasa saturados",
+      "Filtro de carbón agotado"
+     ],
+     "que_puede_hacer_el_cliente": "Limpiar los filtros (o cambiar los de carbón desechables) y tocar de nuevo el símbolo del temporizador para apagar el aviso.",
+     "pieza_probable": "Filtro de carbón (si es desechable)",
+     "fuente": "https://www.cata.com/mediafiles/productos/02111309/60806363.pdf",
+     "confianza": "alta"
     }
    ]
   },
@@ -2876,7 +3212,7 @@ export default {
     "Electrolux",
     "Zanussi"
    ],
-   "notas": "AEG, Electrolux y Zanussi comparten electrónica y códigos (lo indica la OCU), aunque puede haber pequeñas variaciones por modelo; pedir siempre el modelo y el PNC de la placa de características. Los códigos suelen ser familias: E10 cubre E11-E1x, E20 cubre E21-E2x, etc.; en modelos antiguos o de otros mercados el mismo fallo aparece como C1/F1 (agua), C2/F2 (desagüe) o AL5/AL6 en lavavajillas. Lavadoras sin pantalla (sobre todo Zanussi): el piloto de fin de programa parpadea tantas veces como la primera cifra y el de Inicio/Pausa tantas como la segunda; se antepone 'E' (4 y 3 parpadeos = E43). Lavavajillas sin pantalla: el indicador de fin parpadea N veces tras una pausa (1 = i10, 2 = i20, 3 = i30...). Primer paso general: desenchufar o bajar el automático 30 s-1 min, volver a conectar y relanzar el programa; si el código vuelve, avería real. Corberó no se incluye: no se encontró ninguna fuente que confirme que comparte códigos con este grupo. Fuente: soporte oficial de AEG/Electrolux en Reino Unido; los códigos varían según el modelo.",
+   "notas": "AEG, Electrolux y Zanussi comparten electrónica y códigos (lo indica la OCU), aunque puede haber pequeñas variaciones por modelo; pedir siempre el modelo y el PNC de la placa de características. Los códigos suelen ser familias: E10 cubre E11-E1x, E20 cubre E21-E2x, etc.; en modelos antiguos o de otros mercados el mismo fallo aparece como C1/F1 (agua), C2/F2 (desagüe) o AL5/AL6 en lavavajillas. Lavadoras sin pantalla (sobre todo Zanussi): el piloto de fin de programa parpadea tantas veces como la primera cifra y el de Inicio/Pausa tantas como la segunda; se antepone 'E' (4 y 3 parpadeos = E43). Lavavajillas sin pantalla: el indicador de fin parpadea N veces tras una pausa (1 = i10, 2 = i20, 3 = i30...). Primer paso general: desenchufar o bajar el automático 30 s-1 min, volver a conectar y relanzar el programa; si el código vuelve, avería real. Corberó no se incluye: no se encontró ninguna fuente que confirme que comparte códigos con este grupo. Fuente: soporte oficial de AEG/Electrolux en Reino Unido; los códigos varían según el modelo. Ronda 2. Para cualquier código con prefijo F, AEG recomienda primero desconectar el horno de la corriente 30 segundos y volver a conectar.",
    "codigos": [
     {
      "aparato": "lavadora",
@@ -3727,6 +4063,152 @@ export default {
      "pieza_probable": "",
      "fuente": "https://support.aeg.co.uk/support-articles/article/fridge-freezer-shows-an-alarm-red-warning-light-flashing-triangle-or-beeps",
      "confianza": "alta"
+    },
+    {
+     "aparato": "horno",
+     "codigos": [
+      "C1"
+     ],
+     "significado": "No se puede iniciar la pirólisis: las guías telescópicas siguen dentro del horno.",
+     "causas": [
+      "Guías telescópicas sin retirar antes de la limpieza pirolítica"
+     ],
+     "que_puede_hacer_el_cliente": "Sacar las guías telescópicas y volver a iniciar la pirólisis.",
+     "pieza_probable": "",
+     "fuente": "https://support.aeg.co.uk/support-articles/article/oven-displays-error-message-c1-c2-c3-c4",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "horno",
+     "codigos": [
+      "C2"
+     ],
+     "significado": "No se puede iniciar la pirólisis: la sonda de carne está enchufada.",
+     "causas": [
+      "Termómetro/sonda de carne conectado en su toma"
+     ],
+     "que_puede_hacer_el_cliente": "Quitar la sonda de carne y volver a iniciar la pirólisis.",
+     "pieza_probable": "",
+     "fuente": "https://support.aeg.co.uk/support-articles/article/oven-displays-error-message-c1-c2-c3-c4",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "horno",
+     "codigos": [
+      "C3"
+     ],
+     "significado": "La puerta está abierta o mal cerrada al intentar la limpieza pirolítica.",
+     "causas": [
+      "Puerta no cerrada del todo",
+      "Algo impide el cierre"
+     ],
+     "que_puede_hacer_el_cliente": "Cerrar bien la puerta y volver a activar la pirólisis. Si la puerta cierra bien y sigue saliendo, técnico.",
+     "pieza_probable": "Cerradura de puerta (si persiste)",
+     "fuente": "https://support.aeg.co.uk/support-articles/article/oven-displays-error-message-c1-c2-c3-c4",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "horno",
+     "codigos": [
+      "F21"
+     ],
+     "significado": "Temperatura de inicio demasiado alta.",
+     "causas": [
+      "Horno todavía caliente de un uso anterior",
+      "Fallo de sonda o electrónica si se repite"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar y encender el panel de mandos (dejar enfriar). Si sigue, técnico.",
+     "pieza_probable": "Sonda de temperatura o electrónica (diagnosticar)",
+     "fuente": "https://support.aeg.co.uk/support-articles/article/oven-shows-error-code-f21",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "horno",
+     "codigos": [
+      "F81"
+     ],
+     "significado": "Problema de humedad dentro del aparato.",
+     "causas": [
+      "Entrada de humedad en la electrónica o en componentes"
+     ],
+     "que_puede_hacer_el_cliente": "Solo técnico.",
+     "pieza_probable": "Diagnóstico en domicilio",
+     "fuente": "https://support.aeg.co.uk/support-articles/article/oven-shows-error-code-f81",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "horno",
+     "codigos": [
+      "F215"
+     ],
+     "significado": "Problema de software (en hornos conectados).",
+     "causas": [
+      "Fallo de software del horno o de la app"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar el horno unos minutos y volver a encender. Si solo sale en la app, reinstalar la app actualizada y volver a vincular el horno. Si persiste, técnico.",
+     "pieza_probable": "Placa electrónica (actualización de software)",
+     "fuente": "https://support.aeg.co.uk/support-articles/article/connected-oven-shows-fault-f215-in-display",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "horno",
+     "codigos": [
+      "F601",
+      "F602",
+      "F603"
+     ],
+     "significado": "NO es avería del horno: no hay señal wifi o se perdió la conexión.",
+     "causas": [
+      "Router apagado o lejos",
+      "Cambios en la red wifi"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar y encender el horno, reiniciar el router y comprobar la red. El horno sigue cocinando sin wifi.",
+     "pieza_probable": "",
+     "fuente": "https://support.aeg.co.uk/support-articles/article/oven-displays-error-code-f602-or-f603",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "horno",
+     "codigos": [
+      "F604"
+     ],
+     "significado": "Falló la primera conexión del horno a la wifi.",
+     "causas": [
+      "Configuración wifi incorrecta",
+      "Router demasiado lejos"
+     ],
+     "que_puede_hacer_el_cliente": "Restablecer la configuración wifi del horno, acercar el router y repetir la conexión.",
+     "pieza_probable": "",
+     "fuente": "https://support.aeg.co.uk/support-articles/article/connected-oven-displays-error-code-f601-or-f604",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "microondas",
+     "codigos": [
+      "F (cualquier código que empieza por F)"
+     ],
+     "significado": "Fallo interno de la electrónica del microondas combinado.",
+     "causas": [
+      "Fallo de la electrónica o de comunicación con el panel"
+     ],
+     "que_puede_hacer_el_cliente": "Desconectar el aparato de la corriente 1 minuto y volver a conectar. Si el código vuelve, técnico.",
+     "pieza_probable": "Placa electrónica (diagnosticar)",
+     "fuente": "https://support.aeg.co.uk/support-articles/article/microwave-combi-oven-displays-error-code",
+     "confianza": "media"
+    },
+    {
+     "aparato": "campana",
+     "codigos": [
+      "LED F parpadea"
+     ],
+     "significado": "NO es avería: aviso de limpieza del filtro de grasa.",
+     "causas": [
+      "Filtro metálico de grasa saturado tras muchas horas de uso"
+     ],
+     "que_puede_hacer_el_cliente": "Lavar los filtros metálicos y reiniciar el aviso según el manual del modelo.",
+     "pieza_probable": "",
+     "fuente": "https://www.manualslib.com/manual/2238825/Aeg-Dd-9863.html?page=69",
+     "confianza": "media"
     }
    ]
   },
@@ -5427,7 +5909,7 @@ export default {
    "marcas": [
     "Miele"
    ],
-   "notas": "Miele muestra 'Fallo Fxx' (o 'Anomalía Fxx') en pantalla; en modelos recientes a veces aparece texto ('Fallo de entrada de agua', 'Limpiar filtros') sin número. Los significados varían entre lavadora, lavavajillas, secadora y horno: el mismo número (p. ej. F11, F20, F55) significa cosas distintas según el aparato, así que confirmar siempre qué aparato es. Para muchos fallos técnicos Miele indica desconectar del automático (20 s a 2 min según el caso) y volver a conectar; si se repite, servicio técnico. Fuentes oficiales consultadas en las webs de soporte de Miele de Reino Unido, EE. UU., Canadá y Francia (los artículos son los mismos que en miele.es). Lavadora-secadora comparte los códigos de entrada y desagüe con la lavadora.",
+   "notas": "Miele muestra 'Fallo Fxx' (o 'Anomalía Fxx') en pantalla; en modelos recientes a veces aparece texto ('Fallo de entrada de agua', 'Limpiar filtros') sin número. Los significados varían entre lavadora, lavavajillas, secadora y horno: el mismo número (p. ej. F11, F20, F55) significa cosas distintas según el aparato, así que confirmar siempre qué aparato es. Para muchos fallos técnicos Miele indica desconectar del automático (20 s a 2 min según el caso) y volver a conectar; si se repite, servicio técnico. Fuentes oficiales consultadas en las webs de soporte de Miele de Reino Unido, EE. UU., Canadá y Francia (los artículos son los mismos que en miele.es). Lavadora-secadora comparte los códigos de entrada y desagüe con la lavadora. Ronda 2.",
    "codigos": [
     {
      "aparato": "lavadora",
@@ -5937,6 +6419,22 @@ export default {
      "pieza_probable": "",
      "fuente": "https://www.manualslib.com/manual/528233/Miele-F-1354-S.html?page=29",
      "confianza": "media"
+    },
+    {
+     "aparato": "horno",
+     "codigos": [
+      "F14"
+     ],
+     "significado": "Horno de vapor: entra muy poca agua en el generador de vapor.",
+     "causas": [
+      "Depósito de agua vacío o mal colocado",
+      "Toma o filtro de agua obstruido (cal)",
+      "Bomba de agua averiada"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que el depósito está lleno y bien encajado hasta el fondo; descalcificar si toca. Si sigue, técnico.",
+     "pieza_probable": "Bomba de agua o generador de vapor (diagnosticar)",
+     "fuente": "https://www.miele.co.uk/support/customer-assistance/steam_oven-1230/all/fault_f14_water_inlet_symbol-143474436235",
+     "confianza": "alta"
     }
    ]
   },
@@ -5945,7 +6443,7 @@ export default {
    "marcas": [
     "Samsung"
    ],
-   "notas": "Samsung usa la misma cifra con terminación C (modelos nuevos) o E (modelos antiguos): 4C = 4E, 5C = 5E, dC = dE, etc. En lavadoras, tras mostrar un código los botones pueden quedar desactivados unos 3 minutos. Primer paso habitual oficial: apagar, cortar la corriente 30 segundos o más y volver a encender. En frigoríficos, 'OF OF' / 'O FF' es el modo demostración (cooling off), NO una avería. En hornos y microondas casi todos los códigos C-xx se intentan primero con apagado y corte de corriente de 30 segundos. No se encontró fuente fiable para códigos de placas de inducción Samsung: no se incluyen. Algunos códigos (dC, 8C, 1C, PC) cambian de significado según modelo: pedir siempre el modelo.",
+   "notas": "Samsung usa la misma cifra con terminación C (modelos nuevos) o E (modelos antiguos): 4C = 4E, 5C = 5E, dC = dE, etc. En lavadoras, tras mostrar un código los botones pueden quedar desactivados unos 3 minutos. Primer paso habitual oficial: apagar, cortar la corriente 30 segundos o más y volver a encender. En frigoríficos, 'OF OF' / 'O FF' es el modo demostración (cooling off), NO una avería. En hornos y microondas casi todos los códigos C-xx se intentan primero con apagado y corte de corriente de 30 segundos. No se encontró fuente fiable para códigos de placas de inducción Samsung: no se incluyen. Algunos códigos (dC, 8C, 1C, PC) cambian de significado según modelo: pedir siempre el modelo. Ronda 2.",
    "codigos": [
     {
      "aparato": "lavadora",
@@ -6614,6 +7112,20 @@ export default {
      "pieza_probable": "",
      "fuente": "https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-microwave/",
      "confianza": "alta"
+    },
+    {
+     "aparato": "horno",
+     "codigos": [
+      "-dC-"
+     ],
+     "significado": "NO es avería: el separador del horno doble (Dual Cook) se ha puesto o quitado con un modo de cocción incompatible.",
+     "causas": [
+      "Separador Dual Cook colocado o retirado a mitad de cocción"
+     ],
+     "que_puede_hacer_el_cliente": "Colocar o quitar el separador según el modo elegido. Si persiste, desconectar la corriente al menos 30 segundos y volver a conectar.",
+     "pieza_probable": "Sensor del separador (si persiste)",
+     "fuente": "https://www.samsung.com/br/support/home-appliances/o-que-significam-os-codigos-de-erro-dc-e-c-d0-no-forno-samsung/",
+     "confianza": "alta"
     }
    ]
   },
@@ -6622,8 +7134,24 @@ export default {
    "marcas": [
     "Smeg"
    ],
-   "notas": "PENDIENTE: no se ha verificado ningún código de Smeg. El límite de búsquedas web de la sesión se agotó antes de investigar esta marca, y las páginas de soporte no se pudieron abrir directamente porque la red de la sesión no las permite. No se incluye ningún código sin fuente. Mientras tanto, el técnico virtual debe pedir el modelo exacto y el código, y remitir al manual del modelo (smeg.es) o a la visita del técnico. Smeg (Guastalla, Italia) no publica una tabla general de códigos: cada manual trae la suya y el significado cambia según el modelo y la generación. Los manuales están en smeg.com/download-manuals (o smeg.es) introduciendo el código de producto, que en lavavajillas está en una etiqueta en el lateral interior derecho de la puerta. Pedir siempre el modelo exacto. Lavavajillas: el código sale como E1...E9 en la pantalla; en modelos sin pantalla se indica con parpadeos de los pilotos de programa. Según los manuales, E1, E2, E3, E4, E8 y E9 detienen el programa, mientras que E5 y E6 permiten que continúe una vez resuelto el problema; primer paso: apagar y encender y volver a programar. Lavadoras Smeg antiguas (SWM) usan E01-E04; las nuevas (LBW) tienen su propia tabla, así que confirmar modelo. Frigoríficos: avisan con piloto rojo, pitido y letras o símbolos en la pantalla de temperatura. Hornos y placas Smeg: no se han encontrado tablas fiables y no se incluyen (en placas de inducción hay códigos ER03, ER21, E2... pero sin significado confirmado).",
+   "notas": "PENDIENTE: no se ha verificado ningún código de Smeg. El límite de búsquedas web de la sesión se agotó antes de investigar esta marca, y las páginas de soporte no se pudieron abrir directamente porque la red de la sesión no las permite. No se incluye ningún código sin fuente. Mientras tanto, el técnico virtual debe pedir el modelo exacto y el código, y remitir al manual del modelo (smeg.es) o a la visita del técnico. Ronda 2. Smeg (Guastalla, Italia) no publica una tabla general de códigos: cada manual trae la suya y el significado cambia según el modelo y la generación. Los manuales están en smeg.com/download-manuals (o smeg.es) introduciendo el código de producto, que en lavavajillas está en una etiqueta en el lateral interior derecho de la puerta. Pedir siempre el modelo exacto. Lavavajillas: el código sale como E1...E9 en la pantalla; en modelos sin pantalla se indica con parpadeos de los pilotos de programa. Según los manuales, E1, E2, E3, E4, E8 y E9 detienen el programa, mientras que E5 y E6 permiten que continúe una vez resuelto el problema; primer paso: apagar y encender y volver a programar. Lavadoras Smeg antiguas (SWM) usan E01-E04; las nuevas (LBW) tienen su propia tabla, así que confirmar modelo. Frigoríficos: avisan con piloto rojo, pitido y letras o símbolos en la pantalla de temperatura. Hornos y placas Smeg: no se han encontrado tablas fiables y no se incluyen (en placas de inducción hay códigos ER03, ER21, E2... pero sin significado confirmado).",
    "codigos": [
+    {
+     "aparato": "horno",
+     "codigos": [
+      "ERR 4",
+      "Err4"
+     ],
+     "significado": "Hornos pirolíticos: el bloqueo de la puerta no se enganchó bien (a menudo porque se abrió la puerta mientras se bloqueaba).",
+     "causas": [
+      "Puerta abierta durante la activación del bloqueo",
+      "Cierre de puerta averiado si se repite"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar el horno, esperar unos minutos, volver a encender y seleccionar de nuevo la limpieza sin abrir la puerta. Si se repite, técnico.",
+     "pieza_probable": "Cerradura/bloqueo de puerta (si persiste)",
+     "fuente": "https://www.manualslib.com/manual/1336304/Smeg-Cpf9ipan.html?page=55",
+     "confianza": "alta"
+    },
     {
      "aparato": "lavavajillas",
      "codigos": [
@@ -6891,7 +7419,7 @@ export default {
    "marcas": [
     "Teka"
    ],
-   "notas": "Teka publica manuales de servicio en su portal técnico (apiportalsat.teka.com). La numeración cambia según la gama: en lavadoras las gamas TK2/TKM/TKW usan Err1, Err2, Err3; las TKS/TLM/WCZ usan E01 a E05; las LI5/LSI5 usan E:00 a E:05. En lavavajillas sin display el código se muestra con parpadeos de los LEDs (número de parpadeos y pausa de 5 segundos; p. ej. E2 son 2 parpadeos). En inducción, la gama G4 usa E2, E5, Er25, U400 y Er31, y las gamas G0 a G3 usan F02 y F04. En frigoríficos No Frost el significado del código cambia por modelo. Conviene pedir siempre el modelo exacto. En frigoríficos Teka el mismo código cambia de significado según el modelo (ver los ya existentes E0, E1, E3, E4, E8 de otros modelos). Estos son del manual del combi RBF 74650 SS; en otros modelos hay que pedir la referencia y confirmar. Secadoras Teka: el código E01 significa cosas distintas según el modelo (depósito en TKS 890 H, cierre de puerta en TKS 700 C). Preguntar siempre la referencia.",
+   "notas": "Teka publica manuales de servicio en su portal técnico (apiportalsat.teka.com). La numeración cambia según la gama: en lavadoras las gamas TK2/TKM/TKW usan Err1, Err2, Err3; las TKS/TLM/WCZ usan E01 a E05; las LI5/LSI5 usan E:00 a E:05. En lavavajillas sin display el código se muestra con parpadeos de los LEDs (número de parpadeos y pausa de 5 segundos; p. ej. E2 son 2 parpadeos). En inducción, la gama G4 usa E2, E5, Er25, U400 y Er31, y las gamas G0 a G3 usan F02 y F04. En frigoríficos No Frost el significado del código cambia por modelo. Conviene pedir siempre el modelo exacto. En frigoríficos Teka el mismo código cambia de significado según el modelo (ver los ya existentes E0, E1, E3, E4, E8 de otros modelos). Estos son del manual del combi RBF 74650 SS; en otros modelos hay que pedir la referencia y confirmar. Ronda 2. No se encontró ninguna tabla fiable de códigos para hornos Teka. El reinicio del aviso de filtros en campanas varía según modelo. Secadoras Teka: el código E01 significa cosas distintas según el modelo (depósito en TKS 890 H, cierre de puerta en TKS 700 C). Preguntar siempre la referencia.",
    "codigos": [
     {
      "aparato": "lavadora",
@@ -7369,6 +7897,20 @@ export default {
      "confianza": "media"
     },
     {
+     "aparato": "campana",
+     "codigos": [
+      "símbolo/LED de saturación de filtros encendido"
+     ],
+     "significado": "NO es avería: aviso de limpiar los filtros antigrasa (en algunos modelos salta tras unas 100 horas de uso).",
+     "causas": [
+      "Filtros metálicos saturados"
+     ],
+     "que_puede_hacer_el_cliente": "Lavar los filtros y reiniciar el aviso: en modelos tipo CC 40, pulsar a la vez + y - al menos 3 segundos; en otros, según el manual del modelo.",
+     "pieza_probable": "",
+     "fuente": "https://www.manualslib.es/manual/107326/Teka-Cc-40.html?page=15",
+     "confianza": "media"
+    },
+    {
      "aparato": "secadora",
      "codigos": [
       "E01"
@@ -7408,7 +7950,7 @@ export default {
     "Hotpoint",
     "Ariston"
    ],
-   "notas": "Hotpoint, Indesit y Ariston (antes Hotpoint-Ariston) comparten la misma electrónica y casi la misma tabla de códigos F (F01, F02...). Whirlpool de marca usa una tabla distinta en lavadoras (FH, FA, F02, F18...), así que antes de interpretar un código hay que preguntar SIEMPRE la marca y, si es posible, el modelo (pegatina en el marco de la puerta o el manual). Un mismo código puede significar cosas distintas en lavadora, lavadora-secadora, secadora y lavavajillas. Las lavadoras Indesit/Ariston antiguas sin pantalla indican el código con parpadeos: se cuentan los parpadeos de la luz de encendido o de los pilotos entre pausa y pausa (por ejemplo, 8 parpadeos = F08), y en otros modelos con combinaciones de pilotos encendidos (pilotos 1 y 3 = F05, bomba de desagüe). Los lavavajillas Hotpoint integrables muestran el código en binario con los LED del panel. Primer paso casi universal que indica el fabricante: desenchufar al menos 2 minutos, volver a conectar, esperar 30 segundos y reintentar; si el código vuelve, la avería sigue presente. Hotpoint tiene abierta una campaña de seguridad (llamada a revisión) sobre el cierre de puerta de algunas lavadoras Hotpoint e Indesit: ante errores de puerta conviene comprobar el modelo. Las fuentes oficiales consultadas son del Reino Unido (hotpoint.co.uk) porque las webs españolas no publican tablas; los códigos son los mismos del grupo, pero puede haber variaciones por modelo. Sin fuente fiable para hornos y frigoríficos de este grupo: no se incluyen. Tabla de códigos E de frigoríficos combi Hotpoint e Indesit publicada por su servicio oficial en Reino Unido (misma plataforma que los modelos vendidos en España, pero conviene confirmar con el manual del modelo). Los frigoríficos de marca Whirlpool con pantalla usan otra nomenclatura (indicador de alarma con tabla propia en cada manual) y no se ha encontrado una tabla fiable en español.",
+   "notas": "Hotpoint, Indesit y Ariston (antes Hotpoint-Ariston) comparten la misma electrónica y casi la misma tabla de códigos F (F01, F02...). Whirlpool de marca usa una tabla distinta en lavadoras (FH, FA, F02, F18...), así que antes de interpretar un código hay que preguntar SIEMPRE la marca y, si es posible, el modelo (pegatina en el marco de la puerta o el manual). Un mismo código puede significar cosas distintas en lavadora, lavadora-secadora, secadora y lavavajillas. Las lavadoras Indesit/Ariston antiguas sin pantalla indican el código con parpadeos: se cuentan los parpadeos de la luz de encendido o de los pilotos entre pausa y pausa (por ejemplo, 8 parpadeos = F08), y en otros modelos con combinaciones de pilotos encendidos (pilotos 1 y 3 = F05, bomba de desagüe). Los lavavajillas Hotpoint integrables muestran el código en binario con los LED del panel. Primer paso casi universal que indica el fabricante: desenchufar al menos 2 minutos, volver a conectar, esperar 30 segundos y reintentar; si el código vuelve, la avería sigue presente. Hotpoint tiene abierta una campaña de seguridad (llamada a revisión) sobre el cierre de puerta de algunas lavadoras Hotpoint e Indesit: ante errores de puerta conviene comprobar el modelo. Las fuentes oficiales consultadas son del Reino Unido (hotpoint.co.uk) porque las webs españolas no publican tablas; los códigos son los mismos del grupo, pero puede haber variaciones por modelo. Sin fuente fiable para hornos y frigoríficos de este grupo: no se incluyen. Tabla de códigos E de frigoríficos combi Hotpoint e Indesit publicada por su servicio oficial en Reino Unido (misma plataforma que los modelos vendidos en España, pero conviene confirmar con el manual del modelo). Los frigoríficos de marca Whirlpool con pantalla usan otra nomenclatura (indicador de alarma con tabla propia en cada manual) y no se ha encontrado una tabla fiable en español. Ronda 2. No se encontró ninguna tabla oficial europea de códigos F para hornos; las listas de internet se contradicen entre sí y con los modelos de EE. UU. Solo se incluye la indicación genérica de los manuales.",
    "codigos": [
     {
      "aparato": "lavadora",
@@ -8114,6 +8656,100 @@ export default {
      "pieza_probable": "sonda de temperatura ambiente",
      "fuente": "https://www.hotpointservice.co.uk/freezer-repair/error-codes",
      "confianza": "media"
+    },
+    {
+     "aparato": "horno",
+     "codigos": [
+      "F (letra F seguida de un número)"
+     ],
+     "significado": "Avería del horno detectada por la electrónica; el número concreto lo interpreta el técnico.",
+     "causas": [
+      "Sonda de temperatura, cierre de puerta, resistencia o placa (según el número)"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar el horno, desconectarlo de la corriente un minuto y volver a encender. Si vuelve a salir, anotar el número que sigue a la F y llamar al técnico.",
+     "pieza_probable": "Diagnosticar según el número",
+     "fuente": "https://manualslib.es/manual/893119/Whirlpool-W11I-Op1-4S2-H.html?page=20",
+     "confianza": "media"
+    }
+   ]
+  },
+  {
+   "familia": "Hisense aire acondicionado",
+   "marcas": [
+    "Hisense"
+   ],
+   "notas": "Los splits Hisense muestran el código en el display de la unidad interior. Según la tabla de servicio, para ver el código numérico se pulsa SLEEP 4 veces seguidas con el mando (10 veces en los mandos nuevos). Las tablas cambian según el modelo; sólo se han podido verificar unos pocos códigos y de fuente no oficial. Todo lo relacionado con gas refrigerante (fugas, recarga) lo hace un técnico con certificado de gases fluorados, nunca el cliente.",
+   "codigos": [
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E2"
+     ],
+     "significado": "Protección por temperatura anormal de la batería interior (antihielo, o sobrecalentamiento en modo calor).",
+     "causas": [
+      "Filtros sucios o salida de aire tapada",
+      "Batería interior congelada",
+      "Recalentamiento de la unidad exterior o de la descarga del compresor"
+     ],
+     "que_puede_hacer_el_cliente": "Limpiar los filtros, comprobar que nada tapa la unidad interior ni la exterior, apagar y volver a encender pasados unos minutos. Si sigue, avisar al técnico.",
+     "pieza_probable": "",
+     "fuente": "https://servidos.ar/codigos-de-error/aire-acondicionado/hisense-split-inverter/e2",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "EA"
+     ],
+     "significado": "Fallo de comunicación entre la placa del display y la placa de control de la unidad interior.",
+     "causas": [
+      "Cable o conector entre display y placa suelto",
+      "Placa del display o de control averiada"
+     ],
+     "que_puede_hacer_el_cliente": "Anotar el código, apagar desde el diferencial unos minutos y volver a encender. Si vuelve a salir, avisar al técnico.",
+     "pieza_probable": "Placa del display o placa de control",
+     "fuente": "https://servidos.ar/codigos-de-error/aire-acondicionado/hisense-split-inverter",
+     "confianza": "media"
+    }
+   ]
+  },
+  {
+   "familia": "Hitachi aire acondicionado",
+   "marcas": [
+    "Hitachi"
+   ],
+   "notas": "En los splits murales domésticos Hitachi (RAK interior / RAC exterior) la avería se indica con la luz del temporizador (TIMER) de la unidad interior parpadeando: hay que contar las veces. En algunos modelos con mando moderno se puede ver el código apuntando el mando a la unidad y pulsando INFO. Hitachi usa tablas distintas según el modelo; sólo se han podido verificar dos patrones. Todo lo relacionado con gas refrigerante (fugas, recarga) lo hace un técnico con certificado de gases fluorados, nunca el cliente.",
+   "codigos": [
+    {
+     "aparato": "aire",
+     "codigos": [
+      "Luz del temporizador parpadea 12 veces"
+     ],
+     "significado": "Error de conexión del cable de interconexión (cable F) entre interior y exterior.",
+     "causas": [
+      "Cable de interconexión mal conectado",
+      "Placa de control interior averiada"
+     ],
+     "que_puede_hacer_el_cliente": "Contar los parpadeos, apagar desde el diferencial y volver a encender. Si sigue, avisar al técnico.",
+     "pieza_probable": "Cable de interconexión o placa interior",
+     "fuente": "https://manualslib.com/manual/1344294/Hitachi-Rac-25wpb.html?page=124",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "Luz del temporizador parpadea 13 veces"
+     ],
+     "significado": "Fallo de comunicación entre la unidad interior y la exterior; el equipo no arranca.",
+     "causas": [
+      "Cable de interconexión cortado o mal insertado",
+      "Avería eléctrica en la unidad exterior",
+      "Interferencias eléctricas"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que la unidad exterior tiene corriente (diferencial o magnetotérmico propio). Apagar, esperar unos minutos y volver a encender. Si sigue, avisar al técnico.",
+     "pieza_probable": "Cable de interconexión o placa exterior",
+     "fuente": "https://manualslib.com/manual/1344294/Hitachi-Rac-25wpb.html?page=124",
+     "confianza": "media"
     }
    ]
   },
@@ -8186,6 +8822,290 @@ export default {
      "que_puede_hacer_el_cliente": "Desenchufar un par de minutos y volver a enchufar; si el código vuelve, llamar al servicio técnico y vigilar si se forma mucho hielo.",
      "pieza_probable": "sensor de desescarche (NTC)",
      "fuente": "https://removeandreplace.com/2021/07/28/daewoo-refrigerator-error-codes-how-to-fix",
+     "confianza": "media"
+    }
+   ]
+  },
+  {
+   "familia": "Elica",
+   "marcas": [
+    "Elica"
+   ],
+   "notas": "Ronda 2. Familia nueva (solo campanas).",
+   "codigos": [
+    {
+     "aparato": "campana",
+     "codigos": [
+      "F",
+      "G"
+     ],
+     "significado": "NO es avería: aviso de mantenimiento de filtros. F = filtros de olores (carbón/cerámicos); G = filtro de grasa.",
+     "causas": [
+      "Filtro de grasa saturado (G)",
+      "Filtro de carbón o cerámico agotado (F)"
+     ],
+     "que_puede_hacer_el_cliente": "Lavar el filtro de grasa o regenerar/cambiar el de carbón y reiniciar el aviso manteniendo pulsada la tecla indicada en el manual.",
+     "pieza_probable": "Filtro de carbón/cerámico (si toca cambiarlo)",
+     "fuente": "https://www.manualslib.fr/manual/19936/Elica-Ent432Bl.html?page=19",
+     "confianza": "media"
+    }
+   ]
+  },
+  {
+   "familia": "Ariston termos",
+   "marcas": [
+    "Ariston"
+   ],
+   "notas": "En los termos Ariston con pantalla (Velis, Lydos Wi-Fi, Velis Dry...) la avería se muestra con 'Er' parpadeando alternado con el número de error. En modelos sin pantalla numérica se indica con combinaciones de pilotos. El significado de un mismo número puede cambiar entre modelos (p. ej. E04), así que conviene pedir el modelo exacto. El cliente nunca debe abrir la tapa de la resistencia: dentro hay 230 V.",
+   "codigos": [
+    {
+     "aparato": "termo",
+     "codigos": [
+      "E01",
+      "Er 01"
+     ],
+     "significado": "Error interno de la placa electrónica.",
+     "causas": [
+      "Placa electrónica averiada",
+      "Pico de tensión"
+     ],
+     "que_puede_hacer_el_cliente": "Anotar el código, apagar el termo desde su interruptor o el cuadro, esperar unos minutos y volver a encender. Si vuelve a salir, avisar al técnico.",
+     "pieza_probable": "Placa electrónica",
+     "fuente": "https://manualslib.es/manual/898146/Ariston-Velis-Dry-50.html?page=22",
+     "confianza": "media"
+    },
+    {
+     "aparato": "termo",
+     "codigos": [
+      "E04"
+     ],
+     "significado": "En Velis y Abyleos: fallo del ánodo de corriente impresa (la protección contra la corrosión no está garantizada). En Velis Dry aparece como fallo del sistema Protech.",
+     "causas": [
+      "Ánodo electrónico averiado o desconectado",
+      "Agua muy blanda o con poca conductividad"
+     ],
+     "que_puede_hacer_el_cliente": "El termo puede seguir dando agua caliente, pero hay que avisar al técnico para revisar la protección contra la corrosión.",
+     "pieza_probable": "Ánodo de corriente impresa (ánodo activo)",
+     "fuente": "https://manualslib.mx/manual/204923/Ariston-Velis-30.html?page=27",
+     "confianza": "media"
+    },
+    {
+     "aparato": "termo",
+     "codigos": [
+      "E10",
+      "E20"
+     ],
+     "significado": "Sonda de temperatura rota (en circuito abierto o en cortocircuito).",
+     "causas": [
+      "Sonda averiada",
+      "Conector de la sonda flojo"
+     ],
+     "que_puede_hacer_el_cliente": "Anotar el código, apagar el termo desde su interruptor o el cuadro, esperar unos minutos y volver a encender. Si vuelve a salir, avisar al técnico.",
+     "pieza_probable": "Sonda de temperatura",
+     "fuente": "https://manualslib.mx/manual/204923/Ariston-Velis-30.html?page=27",
+     "confianza": "media"
+    },
+    {
+     "aparato": "termo",
+     "codigos": [
+      "E11",
+      "E12",
+      "E21"
+     ],
+     "significado": "Temperatura del agua excesiva (sobrecalentamiento).",
+     "causas": [
+      "Sonda o placa que no corta la resistencia",
+      "Termostato averiado"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar el termo y no usar el agua caliente hasta que lo vea el técnico (riesgo de quemaduras).",
+     "pieza_probable": "Sonda, placa o termostato de seguridad",
+     "fuente": "https://manualslib.mx/manual/204923/Ariston-Velis-30.html?page=27",
+     "confianza": "media"
+    },
+    {
+     "aparato": "termo",
+     "codigos": [
+      "E14"
+     ],
+     "significado": "El agua no se calienta aunque la resistencia recibe corriente.",
+     "causas": [
+      "Resistencia quemada",
+      "Mucha cal en la resistencia",
+      "Sonda mal colocada"
+     ],
+     "que_puede_hacer_el_cliente": "Anotar el código, apagar el termo desde su interruptor o el cuadro, esperar unos minutos y volver a encender. Si vuelve a salir, avisar al técnico.",
+     "pieza_probable": "Resistencia",
+     "fuente": "https://manualslib.mx/manual/204923/Ariston-Velis-30.html?page=27",
+     "confianza": "media"
+    },
+    {
+     "aparato": "termo",
+     "codigos": [
+      "E15",
+      "E25",
+      "Er 25"
+     ],
+     "significado": "Calentamiento en seco: sobrecalentamiento por falta de agua en el depósito.",
+     "causas": [
+      "Termo vacío o con aire (corte de agua, llave de entrada cerrada)",
+      "Sonda averiada"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar el termo. Comprobar que hay agua en casa y que la llave de entrada al termo está abierta; abrir un grifo de agua caliente hasta que salga agua sin aire. Si el error sigue, avisar al técnico.",
+     "pieza_probable": "Resistencia o sonda (si se ha dañado)",
+     "fuente": "https://manualslib.fr/manual/913223/Ariston-Abyleos-Homeplus.html?page=26",
+     "confianza": "media"
+    },
+    {
+     "aparato": "termo",
+     "codigos": [
+      "E60"
+     ],
+     "significado": "Error de la conexión Wi-Fi (no afecta al calentamiento).",
+     "causas": [
+      "Problema con el router o la red Wi-Fi",
+      "Módulo Wi-Fi averiado"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que el router funciona y reiniciar el termo. Si sigue, avisar al técnico o al servicio de Ariston.",
+     "pieza_probable": "Módulo Wi-Fi",
+     "fuente": "https://manualslib.fr/manual/913223/Ariston-Abyleos-Homeplus.html?page=26",
+     "confianza": "media"
+    }
+   ]
+  },
+  {
+   "familia": "Haier termos",
+   "marcas": [
+    "Haier"
+   ],
+   "notas": "Los termos Haier con pantalla digital muestran 'E' y un número. Las tablas cambian según la serie (ES..V-F1, ES..V-P2...); lo de abajo viene del manual de la serie ES25V-P2 y hay que confirmarlo con el modelo. El cliente no debe abrir el termo (230 V).",
+   "codigos": [
+    {
+     "aparato": "termo",
+     "codigos": [
+      "E1"
+     ],
+     "significado": "Fallo en la línea eléctrica o en la resistencia (posible fuga eléctrica).",
+     "causas": [
+      "Resistencia derivada a tierra",
+      "Cableado defectuoso"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar el termo desde el cuadro y no tocarlo; avisar al técnico.",
+     "pieza_probable": "Resistencia",
+     "fuente": "https://www.manualslib.com/manual/522002/Haier-Es25v-P2.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "termo",
+     "codigos": [
+      "E2"
+     ],
+     "significado": "Resistencia averiada: el agua no se calienta.",
+     "causas": [
+      "Resistencia quemada"
+     ],
+     "que_puede_hacer_el_cliente": "Anotar el código, apagar el termo desde su interruptor o el cuadro, esperar unos minutos y volver a encender. Si vuelve a salir, avisar al técnico.",
+     "pieza_probable": "Resistencia",
+     "fuente": "https://www.manualslib.com/manual/522002/Haier-Es25v-P2.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "termo",
+     "codigos": [
+      "E3"
+     ],
+     "significado": "Sonda de temperatura averiada.",
+     "causas": [
+      "Sonda averiada o desconectada"
+     ],
+     "que_puede_hacer_el_cliente": "Anotar el código, apagar el termo desde su interruptor o el cuadro, esperar unos minutos y volver a encender. Si vuelve a salir, avisar al técnico.",
+     "pieza_probable": "Sonda de temperatura",
+     "fuente": "https://www.manualslib.com/manual/522002/Haier-Es25v-P2.html",
+     "confianza": "media"
+    }
+   ]
+  },
+  {
+   "familia": "Thermor termos",
+   "marcas": [
+    "Thermor"
+   ],
+   "notas": "Los termos Thermor con protección ACI (ánodo electrónico) avisan con pilotos de colores o con un número en pantalla. En los Duralis hay además un LED rojo en la placa, junto al conector ACI, bajo la tapa de protección: eso lo mira el técnico, el cliente no debe quitar la tapa (230 V). Verde fijo: alimentado y temperatura alcanzada, con protección ACI funcionando. Naranja fijo: calentando. Verde parpadeando lento: sin corriente (horas fuera de tarifa) pero protegido por la pila. Nada de esto es avería.",
+   "codigos": [
+    {
+     "aparato": "termo",
+     "codigos": [
+      "Err07",
+      "W7",
+      "LED rojo 7 destellos cortos cada 3 s (Duralis)"
+     ],
+     "significado": "Fallo de la protección ACI del depósito: el circuito entre la placa del termostato y el ánodo está cortado; el termo deja de calentar.",
+     "causas": [
+      "Conector ACI mal enchufado o cable dañado",
+      "Agua muy blanda o poco conductora (pozo, sondeo, agua de lluvia, descalcificador)",
+      "Depósito dañado"
+     ],
+     "que_puede_hacer_el_cliente": "Indicar si el agua viene de pozo, de lluvia o pasa por un descalcificador. No abrir la tapa; avisar al técnico.",
+     "pieza_probable": "Cable o conector ACI, ánodo; en casos graves el depósito",
+     "fuente": "https://www.thermor.fr/faq/chauffe-eau/depanner/comment-resoudre-un-probleme-de-chauffe-eau-qui-affiche-une-erreur-7-ou-w7",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "termo",
+     "codigos": [
+      "Error 01",
+      "Err01"
+     ],
+     "significado": "Fallo de la pila de la protección ACI; no está ligado al calentamiento, así que sigue habiendo agua caliente.",
+     "causas": [
+      "Pila de la protección ACI agotada o averiada"
+     ],
+     "que_puede_hacer_el_cliente": "Puede seguir usando el agua caliente; avisar al técnico para cambiar la pila.",
+     "pieza_probable": "Pila de la protección ACI",
+     "fuente": "https://www.thermor.fr/faq/chauffe-eau/depanner/comment-resoudre-un-probleme-de-chauffe-eau-qui-affiche-une-erreur-01",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "termo",
+     "codigos": [
+      "LED rojo parpadea rápido él solo (Visualis)"
+     ],
+     "significado": "Sonda de regulación desconectada o averiada.",
+     "causas": [
+      "Sonda desconectada",
+      "Termostato electrónico averiado"
+     ],
+     "que_puede_hacer_el_cliente": "Avisar al técnico.",
+     "pieza_probable": "Sonda o conjunto termostato",
+     "fuente": "https://www.thermor.fr/faq/chauffe-eau/depanner/a-quoi-correspondent-les-voyants-sur-mon-chauffe-eau-electrique-aci-visualis-thermor",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "termo",
+     "codigos": [
+      "Todos los pilotos apagados"
+     ],
+     "significado": "El termo no tiene corriente o el termostato está averiado.",
+     "causas": [
+      "Sin alimentación (interruptor, magnetotérmico, contactor de tarifa)",
+      "Termostato electrónico averiado"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar en el cuadro que el magnetotérmico del termo está subido y, si tiene horario de tarifa nocturna, esperar a que entre. Si sigue apagado, avisar al técnico.",
+     "pieza_probable": "Termostato",
+     "fuente": "https://www.thermor.fr/faq/chauffe-eau/depanner/a-quoi-correspondent-les-voyants-sur-mon-chauffe-eau-electrique-aci-visualis-thermor",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "termo",
+     "codigos": [
+      "Piloto verde parpadea rápido"
+     ],
+     "significado": "El termo indica una anomalía.",
+     "causas": [
+      "Fallo de sonda, termostato o protección ACI"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar y volver a encender desde el cuadro; si sigue, avisar al técnico.",
+     "pieza_probable": "",
+     "fuente": "https://assistance.thermor.fr/hc/fr/community/posts/360008208579-remplacement-anode-ACI-Fonctionnement-ACI",
      "confianza": "media"
     }
    ]

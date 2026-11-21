@@ -1,0 +1,157 @@
+{
+  "familia": "Electrolux",
+  "marcas": [
+    "AEG",
+    "Electrolux",
+    "Zanussi"
+  ],
+  "notas": "Ronda 2. Para cualquier código con prefijo F, AEG recomienda primero desconectar el horno de la corriente 30 segundos y volver a conectar.",
+  "codigos": [
+    {
+      "aparato": "horno",
+      "codigos": [
+        "C1"
+      ],
+      "significado": "No se puede iniciar la pirólisis: las guías telescópicas siguen dentro del horno.",
+      "causas": [
+        "Guías telescópicas sin retirar antes de la limpieza pirolítica"
+      ],
+      "que_puede_hacer_el_cliente": "Sacar las guías telescópicas y volver a iniciar la pirólisis.",
+      "pieza_probable": "",
+      "fuente": "https://support.aeg.co.uk/support-articles/article/oven-displays-error-message-c1-c2-c3-c4",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "horno",
+      "codigos": [
+        "C2"
+      ],
+      "significado": "No se puede iniciar la pirólisis: la sonda de carne está enchufada.",
+      "causas": [
+        "Termómetro/sonda de carne conectado en su toma"
+      ],
+      "que_puede_hacer_el_cliente": "Quitar la sonda de carne y volver a iniciar la pirólisis.",
+      "pieza_probable": "",
+      "fuente": "https://support.aeg.co.uk/support-articles/article/oven-displays-error-message-c1-c2-c3-c4",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "horno",
+      "codigos": [
+        "C3"
+      ],
+      "significado": "La puerta está abierta o mal cerrada al intentar la limpieza pirolítica.",
+      "causas": [
+        "Puerta no cerrada del todo",
+        "Algo impide el cierre"
+      ],
+      "que_puede_hacer_el_cliente": "Cerrar bien la puerta y volver a activar la pirólisis. Si la puerta cierra bien y sigue saliendo, técnico.",
+      "pieza_probable": "Cerradura de puerta (si persiste)",
+      "fuente": "https://support.aeg.co.uk/support-articles/article/oven-displays-error-message-c1-c2-c3-c4",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "horno",
+      "codigos": [
+        "F21"
+      ],
+      "significado": "Temperatura de inicio demasiado alta.",
+      "causas": [
+        "Horno todavía caliente de un uso anterior",
+        "Fallo de sonda o electrónica si se repite"
+      ],
+      "que_puede_hacer_el_cliente": "Apagar y encender el panel de mandos (dejar enfriar). Si sigue, técnico.",
+      "pieza_probable": "Sonda de temperatura o electrónica (diagnosticar)",
+      "fuente": "https://support.aeg.co.uk/support-articles/article/oven-shows-error-code-f21",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "horno",
+      "codigos": [
+        "F81"
+      ],
+      "significado": "Problema de humedad dentro del aparato.",
+      "causas": [
+        "Entrada de humedad en la electrónica o en componentes"
+      ],
+      "que_puede_hacer_el_cliente": "Solo técnico.",
+      "pieza_probable": "Diagnóstico en domicilio",
+      "fuente": "https://support.aeg.co.uk/support-articles/article/oven-shows-error-code-f81",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "horno",
+      "codigos": [
+        "F215"
+      ],
+      "significado": "Problema de software (en hornos conectados).",
+      "causas": [
+        "Fallo de software del horno o de la app"
+      ],
+      "que_puede_hacer_el_cliente": "Apagar el horno unos minutos y volver a encender. Si solo sale en la app, reinstalar la app actualizada y volver a vincular el horno. Si persiste, técnico.",
+      "pieza_probable": "Placa electrónica (actualización de software)",
+      "fuente": "https://support.aeg.co.uk/support-articles/article/connected-oven-shows-fault-f215-in-display",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "horno",
+      "codigos": [
+        "F601",
+        "F602",
+        "F603"
+      ],
+      "significado": "NO es avería del horno: no hay señal wifi o se perdió la conexión.",
+      "causas": [
+        "Router apagado o lejos",
+        "Cambios en la red wifi"
+      ],
+      "que_puede_hacer_el_cliente": "Apagar y encender el horno, reiniciar el router y comprobar la red. El horno sigue cocinando sin wifi.",
+      "pieza_probable": "",
+      "fuente": "https://support.aeg.co.uk/support-articles/article/oven-displays-error-code-f602-or-f603",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "horno",
+      "codigos": [
+        "F604"
+      ],
+      "significado": "Falló la primera conexión del horno a la wifi.",
+      "causas": [
+        "Configuración wifi incorrecta",
+        "Router demasiado lejos"
+      ],
+      "que_puede_hacer_el_cliente": "Restablecer la configuración wifi del horno, acercar el router y repetir la conexión.",
+      "pieza_probable": "",
+      "fuente": "https://support.aeg.co.uk/support-articles/article/connected-oven-displays-error-code-f601-or-f604",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "microondas",
+      "codigos": [
+        "F (cualquier código que empieza por F)"
+      ],
+      "significado": "Fallo interno de la electrónica del microondas combinado.",
+      "causas": [
+        "Fallo de la electrónica o de comunicación con el panel"
+      ],
+      "que_puede_hacer_el_cliente": "Desconectar el aparato de la corriente 1 minuto y volver a conectar. Si el código vuelve, técnico.",
+      "pieza_probable": "Placa electrónica (diagnosticar)",
+      "fuente": "https://support.aeg.co.uk/support-articles/article/microwave-combi-oven-displays-error-code",
+      "confianza": "media"
+    },
+    {
+      "aparato": "campana",
+      "codigos": [
+        "LED F parpadea"
+      ],
+      "significado": "NO es avería: aviso de limpieza del filtro de grasa.",
+      "causas": [
+        "Filtro metálico de grasa saturado tras muchas horas de uso"
+      ],
+      "que_puede_hacer_el_cliente": "Lavar los filtros metálicos y reiniciar el aviso según el manual del modelo.",
+      "pieza_probable": "",
+      "fuente": "https://www.manualslib.com/manual/2238825/Aeg-Dd-9863.html?page=69",
+      "confianza": "media"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+ "familia": "Thermor termos",
+ "marcas": [
+  "Thermor"
+ ],
+ "notas": "Los termos Thermor con protección ACI (ánodo electrónico) avisan con pilotos de colores o con un número en pantalla. En los Duralis hay además un LED rojo en la placa, junto al conector ACI, bajo la tapa de protección: eso lo mira el técnico, el cliente no debe quitar la tapa (230 V). Verde fijo: alimentado y temperatura alcanzada, con protección ACI funcionando. Naranja fijo: calentando. Verde parpadeando lento: sin corriente (horas fuera de tarifa) pero protegido por la pila. Nada de esto es avería.",
+ "codigos": [
+  {
+   "aparato": "termo",
+   "codigos": [
+    "Err07",
+    "W7",
+    "LED rojo 7 destellos cortos cada 3 s (Duralis)"
+   ],
+   "significado": "Fallo de la protección ACI del depósito: el circuito entre la placa del termostato y el ánodo está cortado; el termo deja de calentar.",
+   "causas": [
+    "Conector ACI mal enchufado o cable dañado",
+    "Agua muy blanda o poco conductora (pozo, sondeo, agua de lluvia, descalcificador)",
+    "Depósito dañado"
+   ],
+   "que_puede_hacer_el_cliente": "Indicar si el agua viene de pozo, de lluvia o pasa por un descalcificador. No abrir la tapa; avisar al técnico.",
+   "pieza_probable": "Cable o conector ACI, ánodo; en casos graves el depósito",
+   "fuente": "https://www.thermor.fr/faq/chauffe-eau/depanner/comment-resoudre-un-probleme-de-chauffe-eau-qui-affiche-une-erreur-7-ou-w7",
+   "confianza": "alta"
+  },
+  {
+   "aparato": "termo",
+   "codigos": [
+    "Error 01",
+    "Err01"
+   ],
+   "significado": "Fallo de la pila de la protección ACI; no está ligado al calentamiento, así que sigue habiendo agua caliente.",
+   "causas": [
+    "Pila de la protección ACI agotada o averiada"
+   ],
+   "que_puede_hacer_el_cliente": "Puede seguir usando el agua caliente; avisar al técnico para cambiar la pila.",
+   "pieza_probable": "Pila de la protección ACI",
+   "fuente": "https://www.thermor.fr/faq/chauffe-eau/depanner/comment-resoudre-un-probleme-de-chauffe-eau-qui-affiche-une-erreur-01",
+   "confianza": "alta"
+  },
+  {
+   "aparato": "termo",
+   "codigos": [
+    "LED rojo parpadea rápido él solo (Visualis)"
+   ],
+   "significado": "Sonda de regulación desconectada o averiada.",
+   "causas": [
+    "Sonda desconectada",
+    "Termostato electrónico averiado"
+   ],
+   "que_puede_hacer_el_cliente": "Avisar al técnico.",
+   "pieza_probable": "Sonda o conjunto termostato",
+   "fuente": "https://www.thermor.fr/faq/chauffe-eau/depanner/a-quoi-correspondent-les-voyants-sur-mon-chauffe-eau-electrique-aci-visualis-thermor",
+   "confianza": "alta"
+  },
+  {
+   "aparato": "termo",
+   "codigos": [
+    "Todos los pilotos apagados"
+   ],
+   "significado": "El termo no tiene corriente o el termostato está averiado.",
+   "causas": [
+    "Sin alimentación (interruptor, magnetotérmico, contactor de tarifa)",
+    "Termostato electrónico averiado"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar en el cuadro que el magnetotérmico del termo está subido y, si tiene horario de tarifa nocturna, esperar a que entre. Si sigue apagado, avisar al técnico.",
+   "pieza_probable": "Termostato",
+   "fuente": "https://www.thermor.fr/faq/chauffe-eau/depanner/a-quoi-correspondent-les-voyants-sur-mon-chauffe-eau-electrique-aci-visualis-thermor",
+   "confianza": "alta"
+  },
+  {
+   "aparato": "termo",
+   "codigos": [
+    "Piloto verde parpadea rápido"
+   ],
+   "significado": "El termo indica una anomalía.",
+   "causas": [
+    "Fallo de sonda, termostato o protección ACI"
+   ],
+   "que_puede_hacer_el_cliente": "Apagar y volver a encender desde el cuadro; si sigue, avisar al técnico.",
+   "pieza_probable": "",
+   "fuente": "https://assistance.thermor.fr/hc/fr/community/posts/360008208579-remplacement-anode-ACI-Fonctionnement-ACI",
+   "confianza": "media"
+  }
+ ]
+}

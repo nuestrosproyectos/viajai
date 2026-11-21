@@ -1,0 +1,134 @@
+{
+ "familia": "Daikin aire acondicionado",
+ "marcas": [
+  "Daikin"
+ ],
+ "notas": "Códigos complementarios a la tabla Daikin ya existente. Se leen en el mando infrarrojo (pulsando CANCELAR del temporizador unos 5 s hasta el pitido largo) o en la pantalla del mando por cable. Daikin advierte que algunos códigos cambian de significado según la gama (Room Air = splits domésticos; Sky Air/VRV = comercial). Todo lo relacionado con gas refrigerante (fugas, recarga) lo hace un técnico con certificado de gases fluorados, nunca el cliente.",
+ "codigos": [
+  {
+   "aparato": "aire",
+   "codigos": [
+    "C4"
+   ],
+   "significado": "Fallo de la sonda (termistor) de la tubería de líquido del intercambiador de la unidad interior.",
+   "causas": [
+    "Conector de la sonda flojo o mal contacto",
+    "Sonda averiada"
+   ],
+   "que_puede_hacer_el_cliente": "Anotar el código, apagar desde el diferencial unos minutos y volver a encender. Si vuelve a salir, avisar al técnico.",
+   "pieza_probable": "Sonda del intercambiador interior",
+   "fuente": "https://www.daikin.com.ph/services/error-code-search-tool/",
+   "confianza": "alta"
+  },
+  {
+   "aparato": "aire",
+   "codigos": [
+    "C9"
+   ],
+   "significado": "Fallo de la sonda de temperatura del aire de aspiración (temperatura ambiente) de la unidad interior.",
+   "causas": [
+    "Conector de la sonda flojo",
+    "Sonda de ambiente averiada"
+   ],
+   "que_puede_hacer_el_cliente": "Anotar el código, apagar desde el diferencial unos minutos y volver a encender. Si vuelve a salir, avisar al técnico.",
+   "pieza_probable": "Sonda de temperatura ambiente",
+   "fuente": "https://www.daikin.com.ph/services/error-code-search-tool/",
+   "confianza": "alta"
+  },
+  {
+   "aparato": "aire",
+   "codigos": [
+    "E1"
+   ],
+   "significado": "Fallo de la placa electrónica de la unidad exterior (Daikin lo documenta para gamas Sky Air y VRV; en splits domésticos puede variar).",
+   "causas": [
+    "Interferencias eléctricas (ruido)",
+    "Placa de la unidad exterior averiada"
+   ],
+   "que_puede_hacer_el_cliente": "Anotar el código, apagar desde el diferencial unos minutos y volver a encender. Si vuelve a salir, avisar al técnico.",
+   "pieza_probable": "Placa electrónica de la unidad exterior",
+   "fuente": "https://www.daikin.com.ph/services/error-code-search-tool/",
+   "confianza": "media"
+  },
+  {
+   "aparato": "aire",
+   "codigos": [
+    "E5"
+   ],
+   "significado": "En splits domésticos (Room Air): sobrecalentamiento del motor del compresor inverter. En Sky Air/VRV: compresor bloqueado.",
+   "causas": [
+    "Falta de refrigerante",
+    "Compresor averiado",
+    "Válvula de servicio cerrada"
+   ],
+   "que_puede_hacer_el_cliente": "Anotar el código y apagar el equipo. No intentar nada con el gas: avisar al técnico.",
+   "pieza_probable": "Compresor o carga de refrigerante (técnico con certificado de gases fluorados)",
+   "fuente": "https://www.daikin.com.ph/services/error-code-search-tool/",
+   "confianza": "alta"
+  },
+  {
+   "aparato": "aire",
+   "codigos": [
+    "E6"
+   ],
+   "significado": "Fallo de arranque del compresor (compresor bloqueado o sobrecorriente al arrancar).",
+   "causas": [
+    "Válvula de servicio cerrada",
+    "Compresor averiado",
+    "Falta de refrigerante"
+   ],
+   "que_puede_hacer_el_cliente": "Anotar el código, apagar desde el diferencial y volver a encender pasados unos minutos. Si se repite, avisar al técnico.",
+   "pieza_probable": "Compresor",
+   "fuente": "https://www.daikin.com.sg/resources/ck/files/manual/CTKS25TVMG,%20CTKS35TVMG,%20CTKS50TVMG.pdf",
+   "confianza": "alta"
+  },
+  {
+   "aparato": "aire",
+   "codigos": [
+    "J3"
+   ],
+   "significado": "Fallo de la sonda de temperatura del tubo de descarga del compresor (unidad exterior).",
+   "causas": [
+    "Conector flojo",
+    "Sonda de descarga averiada",
+    "Placa de la unidad exterior averiada"
+   ],
+   "que_puede_hacer_el_cliente": "Anotar el código, apagar desde el diferencial unos minutos y volver a encender. Si vuelve a salir, avisar al técnico.",
+   "pieza_probable": "Sonda de descarga o placa exterior",
+   "fuente": "https://www.daikin.co.nz/blogs/knowledge-base/what-is-a-j3-fault",
+   "confianza": "alta"
+  },
+  {
+   "aparato": "aire",
+   "codigos": [
+    "L5"
+   ],
+   "significado": "Sobrecorriente instantánea en el inverter de la unidad exterior.",
+   "causas": [
+    "Compresor averiado",
+    "Válvula de servicio cerrada",
+    "Placa inverter averiada"
+   ],
+   "que_puede_hacer_el_cliente": "Anotar el código, apagar desde el diferencial unos minutos y volver a encender. Si vuelve a salir, avisar al técnico.",
+   "pieza_probable": "Compresor o placa inverter",
+   "fuente": "https://www.daikin.com.ph/services/error-code-search-tool/",
+   "confianza": "alta"
+  },
+  {
+   "aparato": "aire",
+   "codigos": [
+    "U2"
+   ],
+   "significado": "Tensión de alimentación anormal (caída o subida de tensión, o microcorte de luz).",
+   "causas": [
+    "Microcorte o tensión inestable en la red",
+    "Mal contacto en el cableado de alimentación",
+    "Placa de potencia averiada"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar si ha habido cortes de luz o si saltó algo en el cuadro. Apagar desde el diferencial unos minutos y volver a encender. Si se repite, avisar al técnico.",
+   "pieza_probable": "Cableado de alimentación o placa de potencia",
+   "fuente": "https://www.daikin.com.ph/services/error-code-search-tool/",
+   "confianza": "alta"
+  }
+ ]
+}

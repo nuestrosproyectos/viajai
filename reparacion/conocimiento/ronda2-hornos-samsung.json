@@ -1,0 +1,23 @@
+{
+  "familia": "Samsung",
+  "marcas": [
+    "Samsung"
+  ],
+  "notas": "Ronda 2.",
+  "codigos": [
+    {
+      "aparato": "horno",
+      "codigos": [
+        "-dC-"
+      ],
+      "significado": "NO es avería: el separador del horno doble (Dual Cook) se ha puesto o quitado con un modo de cocción incompatible.",
+      "causas": [
+        "Separador Dual Cook colocado o retirado a mitad de cocción"
+      ],
+      "que_puede_hacer_el_cliente": "Colocar o quitar el separador según el modo elegido. Si persiste, desconectar la corriente al menos 30 segundos y volver a conectar.",
+      "pieza_probable": "Sensor del separador (si persiste)",
+      "fuente": "https://www.samsung.com/br/support/home-appliances/o-que-significam-os-codigos-de-erro-dc-e-c-d0-no-forno-samsung/",
+      "confianza": "alta"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+ "familia": "Ariston termos",
+ "marcas": [
+  "Ariston"
+ ],
+ "notas": "En los termos Ariston con pantalla (Velis, Lydos Wi-Fi, Velis Dry...) la avería se muestra con 'Er' parpadeando alternado con el número de error. En modelos sin pantalla numérica se indica con combinaciones de pilotos. El significado de un mismo número puede cambiar entre modelos (p. ej. E04), así que conviene pedir el modelo exacto. El cliente nunca debe abrir la tapa de la resistencia: dentro hay 230 V.",
+ "codigos": [
+  {
+   "aparato": "termo",
+   "codigos": [
+    "E01",
+    "Er 01"
+   ],
+   "significado": "Error interno de la placa electrónica.",
+   "causas": [
+    "Placa electrónica averiada",
+    "Pico de tensión"
+   ],
+   "que_puede_hacer_el_cliente": "Anotar el código, apagar el termo desde su interruptor o el cuadro, esperar unos minutos y volver a encender. Si vuelve a salir, avisar al técnico.",
+   "pieza_probable": "Placa electrónica",
+   "fuente": "https://manualslib.es/manual/898146/Ariston-Velis-Dry-50.html?page=22",
+   "confianza": "media"
+  },
+  {
+   "aparato": "termo",
+   "codigos": [
+    "E04"
+   ],
+   "significado": "En Velis y Abyleos: fallo del ánodo de corriente impresa (la protección contra la corrosión no está garantizada). En Velis Dry aparece como fallo del sistema Protech.",
+   "causas": [
+    "Ánodo electrónico averiado o desconectado",
+    "Agua muy blanda o con poca conductividad"
+   ],
+   "que_puede_hacer_el_cliente": "El termo puede seguir dando agua caliente, pero hay que avisar al técnico para revisar la protección contra la corrosión.",
+   "pieza_probable": "Ánodo de corriente impresa (ánodo activo)",
+   "fuente": "https://manualslib.mx/manual/204923/Ariston-Velis-30.html?page=27",
+   "confianza": "media"
+  },
+  {
+   "aparato": "termo",
+   "codigos": [
+    "E10",
+    "E20"
+   ],
+   "significado": "Sonda de temperatura rota (en circuito abierto o en cortocircuito).",
+   "causas": [
+    "Sonda averiada",
+    "Conector de la sonda flojo"
+   ],
+   "que_puede_hacer_el_cliente": "Anotar el código, apagar el termo desde su interruptor o el cuadro, esperar unos minutos y volver a encender. Si vuelve a salir, avisar al técnico.",
+   "pieza_probable": "Sonda de temperatura",
+   "fuente": "https://manualslib.mx/manual/204923/Ariston-Velis-30.html?page=27",
+   "confianza": "media"
+  },
+  {
+   "aparato": "termo",
+   "codigos": [
+    "E11",
+    "E12",
+    "E21"
+   ],
+   "significado": "Temperatura del agua excesiva (sobrecalentamiento).",
+   "causas": [
+    "Sonda o placa que no corta la resistencia",
+    "Termostato averiado"
+   ],
+   "que_puede_hacer_el_cliente": "Apagar el termo y no usar el agua caliente hasta que lo vea el técnico (riesgo de quemaduras).",
+   "pieza_probable": "Sonda, placa o termostato de seguridad",
+   "fuente": "https://manualslib.mx/manual/204923/Ariston-Velis-30.html?page=27",
+   "confianza": "media"
+  },
+  {
+   "aparato": "termo",
+   "codigos": [
+    "E14"
+   ],
+   "significado": "El agua no se calienta aunque la resistencia recibe corriente.",
+   "causas": [
+    "Resistencia quemada",
+    "Mucha cal en la resistencia",
+    "Sonda mal colocada"
+   ],
+   "que_puede_hacer_el_cliente": "Anotar el código, apagar el termo desde su interruptor o el cuadro, esperar unos minutos y volver a encender. Si vuelve a salir, avisar al técnico.",
+   "pieza_probable": "Resistencia",
+   "fuente": "https://manualslib.mx/manual/204923/Ariston-Velis-30.html?page=27",
+   "confianza": "media"
+  },
+  {
+   "aparato": "termo",
+   "codigos": [
+    "E15",
+    "E25",
+    "Er 25"
+   ],
+   "significado": "Calentamiento en seco: sobrecalentamiento por falta de agua en el depósito.",
+   "causas": [
+    "Termo vacío o con aire (corte de agua, llave de entrada cerrada)",
+    "Sonda averiada"
+   ],
+   "que_puede_hacer_el_cliente": "Apagar el termo. Comprobar que hay agua en casa y que la llave de entrada al termo está abierta; abrir un grifo de agua caliente hasta que salga agua sin aire. Si el error sigue, avisar al técnico.",
+   "pieza_probable": "Resistencia o sonda (si se ha dañado)",
+   "fuente": "https://manualslib.fr/manual/913223/Ariston-Abyleos-Homeplus.html?page=26",
+   "confianza": "media"
+  },
+  {
+   "aparato": "termo",
+   "codigos": [
+    "E60"
+   ],
+   "significado": "Error de la conexión Wi-Fi (no afecta al calentamiento).",
+   "causas": [
+    "Problema con el router o la red Wi-Fi",
+    "Módulo Wi-Fi averiado"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que el router funciona y reiniciar el termo. Si sigue, avisar al técnico o al servicio de Ariston.",
+   "pieza_probable": "Módulo Wi-Fi",
+   "fuente": "https://manualslib.fr/manual/913223/Ariston-Abyleos-Homeplus.html?page=26",
+   "confianza": "media"
+  }
+ ]
+}

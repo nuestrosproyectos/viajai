@@ -1,0 +1,23 @@
+{
+  "familia": "Teka",
+  "marcas": [
+    "Teka"
+  ],
+  "notas": "Ronda 2. No se encontró ninguna tabla fiable de códigos para hornos Teka. El reinicio del aviso de filtros en campanas varía según modelo.",
+  "codigos": [
+    {
+      "aparato": "campana",
+      "codigos": [
+        "símbolo/LED de saturación de filtros encendido"
+      ],
+      "significado": "NO es avería: aviso de limpiar los filtros antigrasa (en algunos modelos salta tras unas 100 horas de uso).",
+      "causas": [
+        "Filtros metálicos saturados"
+      ],
+      "que_puede_hacer_el_cliente": "Lavar los filtros y reiniciar el aviso: en modelos tipo CC 40, pulsar a la vez + y - al menos 3 segundos; en otros, según el manual del modelo.",
+      "pieza_probable": "",
+      "fuente": "https://www.manualslib.es/manual/107326/Teka-Cc-40.html?page=15",
+      "confianza": "media"
+    }
+  ]
+}

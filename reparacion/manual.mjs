@@ -37,7 +37,7 @@ export const MARCAS = {
   LG: ["lg", "ele ge", "elege", "ele je"], Samsung: ["samsung", "sansun", "samsun", "sansung"],
   Hisense: ["hisense", "haisens", "hisens"], Gorenje: ["gorenje", "gorenye"], Daewoo: ["daewoo", "daewo", "deu"], Winia: ["winia"],
   Beko: ["beko", "veko"], Grundig: ["grundig"], Teka: ["teka", "teca"], Fagor: ["fagor"], Edesa: ["edesa"], Aspes: ["aspes"],
-  Cata: ["cata"], Liebherr: ["liebherr", "liber", "lieber", "liebher"], Miele: ["miele", "mile", "mielle"], Smeg: ["smeg", "esmeg"],
+  Cata: ["cata"], Elica: ["elica"], Pando: ["pando"], Liebherr: ["liebherr", "liber", "lieber", "liebher"], Miele: ["miele", "mile", "mielle"], Smeg: ["smeg", "esmeg"],
   // Aire acondicionado
   Daikin: ["daikin", "daikín", "daiquin", "daikim"], "Mitsubishi Electric": ["mitsubishi electric", "mitsubishi"], "Mitsubishi Heavy Industries": ["mitsubishi heavy industries", "mitsubishi heavy", "heavy"], Mundoclima: ["mundoclima", "mundo clima"],
   Fujitsu: ["fujitsu", "fujitsu general", "fuyitsu"], Panasonic: ["panasonic"], Toshiba: ["toshiba"], Gree: ["gree", "gri"], Midea: ["midea", "midia"],

@@ -1,0 +1,52 @@
+{
+ "familia": "Haier termos",
+ "marcas": [
+  "Haier"
+ ],
+ "notas": "Los termos Haier con pantalla digital muestran 'E' y un número. Las tablas cambian según la serie (ES..V-F1, ES..V-P2...); lo de abajo viene del manual de la serie ES25V-P2 y hay que confirmarlo con el modelo. El cliente no debe abrir el termo (230 V).",
+ "codigos": [
+  {
+   "aparato": "termo",
+   "codigos": [
+    "E1"
+   ],
+   "significado": "Fallo en la línea eléctrica o en la resistencia (posible fuga eléctrica).",
+   "causas": [
+    "Resistencia derivada a tierra",
+    "Cableado defectuoso"
+   ],
+   "que_puede_hacer_el_cliente": "Apagar el termo desde el cuadro y no tocarlo; avisar al técnico.",
+   "pieza_probable": "Resistencia",
+   "fuente": "https://www.manualslib.com/manual/522002/Haier-Es25v-P2.html",
+   "confianza": "media"
+  },
+  {
+   "aparato": "termo",
+   "codigos": [
+    "E2"
+   ],
+   "significado": "Resistencia averiada: el agua no se calienta.",
+   "causas": [
+    "Resistencia quemada"
+   ],
+   "que_puede_hacer_el_cliente": "Anotar el código, apagar el termo desde su interruptor o el cuadro, esperar unos minutos y volver a encender. Si vuelve a salir, avisar al técnico.",
+   "pieza_probable": "Resistencia",
+   "fuente": "https://www.manualslib.com/manual/522002/Haier-Es25v-P2.html",
+   "confianza": "media"
+  },
+  {
+   "aparato": "termo",
+   "codigos": [
+    "E3"
+   ],
+   "significado": "Sonda de temperatura averiada.",
+   "causas": [
+    "Sonda averiada o desconectada"
+   ],
+   "que_puede_hacer_el_cliente": "Anotar el código, apagar el termo desde su interruptor o el cuadro, esperar unos minutos y volver a encender. Si vuelve a salir, avisar al técnico.",
+   "pieza_probable": "Sonda de temperatura",
+   "fuente": "https://www.manualslib.com/manual/522002/Haier-Es25v-P2.html",
+   "confianza": "media"
+  }
+ ]
+}

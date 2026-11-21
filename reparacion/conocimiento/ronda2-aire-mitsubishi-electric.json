@@ -1,0 +1,82 @@
+{
+ "familia": "Mitsubishi Electric aire acondicionado",
+ "marcas": [
+  "Mitsubishi Electric"
+ ],
+ "notas": "Complementa la tabla existente. En los murales MSZ (AP, LN, HR...) la avería se indica con la luz de funcionamiento parpadeando. En el MSZ-AP, si la luz superior parpadea a intervalos de 0,5 s hay avería en la interior o en la exterior; hay que contar al menos dos ciclos seguidos de parpadeos. El número de parpadeos asignado a cada avería cambia según la serie: no se ha encontrado la tabla oficial completa del MSZ-AP, MSZ-LN ni MSZ-HR, así que los recuentos de abajo vienen de series MSZ cercanas (A, FD, GA, M-Series) y hay que confirmarlos con el modelo. Contar los parpadeos ANTES de quitar la corriente. Todo lo relacionado con gas refrigerante (fugas, recarga) lo hace un técnico con certificado de gases fluorados, nunca el cliente.",
+ "codigos": [
+  {
+   "aparato": "aire",
+   "codigos": [
+    "Luz de funcionamiento parpadea 1 vez (cada 0,5 s, repetido)"
+   ],
+   "significado": "Fallo de la sonda de temperatura ambiente de la unidad interior (en series MSZ-A y MSZ-FD).",
+   "causas": [
+    "Sonda en cortocircuito o abierta",
+    "Conector flojo"
+   ],
+   "que_puede_hacer_el_cliente": "Anotar el número de parpadeos y el modelo de la etiqueta, apagar desde el diferencial y volver a encender. Si sigue, avisar al técnico.",
+   "pieza_probable": "Sonda de temperatura ambiente",
+   "fuente": "https://tv.manualsonline.com/manuals/mfg/mitsubishi/mszfd09na.html?p=24",
+   "confianza": "media"
+  },
+  {
+   "aparato": "aire",
+   "codigos": [
+    "Luz de funcionamiento parpadea 2 veces"
+   ],
+   "significado": "Fallo de la sonda del intercambiador (batería) de la unidad interior (en series MSZ-A, MSZ-FD y MSZ-GA).",
+   "causas": [
+    "Sonda en cortocircuito o abierta",
+    "Conector flojo"
+   ],
+   "que_puede_hacer_el_cliente": "Anotar el número de parpadeos y el modelo, apagar desde el diferencial y volver a encender. Si sigue, avisar al técnico.",
+   "pieza_probable": "Sonda del intercambiador interior",
+   "fuente": "https://manuals.online/mitsubishi-electric/air-conditioner/msz-a09yv-e1wh/user-manual/25hlu",
+   "confianza": "media"
+  },
+  {
+   "aparato": "aire",
+   "codigos": [
+    "Luz de funcionamiento parpadea 3 veces"
+   ],
+   "significado": "Depende de la serie: en MSZ-A y M-Series es fallo del motor del ventilador interior (no llega señal de giro); en MSZ-FD es fallo de comunicación con la unidad exterior.",
+   "causas": [
+    "Motor del ventilador interior bloqueado o averiado",
+    "Cable de interconexión o placa (según serie)"
+   ],
+   "que_puede_hacer_el_cliente": "Anotar parpadeos y modelo. Comprobar que nada obstruye la salida de aire. Apagar desde el diferencial y volver a encender; si sigue, avisar al técnico.",
+   "pieza_probable": "Motor del ventilador interior o placa",
+   "fuente": "https://manualslib.com/manual/1951885/Mitsubishi-Electric-M-Series.html?page=155",
+   "confianza": "media"
+  },
+  {
+   "aparato": "aire",
+   "codigos": [
+    "Luz de funcionamiento parpadea 4 veces"
+   ],
+   "significado": "Fallo del control de la unidad interior: no puede leer la memoria (no volátil) de la placa (series MSZ-A y M-Series).",
+   "causas": [
+    "Placa electrónica de la unidad interior averiada"
+   ],
+   "que_puede_hacer_el_cliente": "Anotar parpadeos y modelo, apagar desde el diferencial y volver a encender. Si sigue, avisar al técnico.",
+   "pieza_probable": "Placa electrónica interior",
+   "fuente": "https://manuals.online/mitsubishi-electric/air-conditioner/msz-a09yv-e1wh/user-manual/25hlu",
+   "confianza": "media"
+  },
+  {
+   "aparato": "aire",
+   "codigos": [
+    "MSZ-AP: luz parpadea 6 o 7 veces"
+   ],
+   "significado": "En el MSZ-AP, avería localizada en la unidad exterior; el técnico la identifica con el modo de diagnóstico de la exterior.",
+   "causas": [
+    "Avería de la unidad exterior (comunicación, sondas, compresor...)"
+   ],
+   "que_puede_hacer_el_cliente": "Anotar parpadeos, apagar desde el diferencial y volver a encender. Si sigue, avisar al técnico.",
+   "pieza_probable": "",
+   "fuente": "https://library.mitsubishielectric.co.uk/pdf/download_full/3755",
+   "confianza": "media"
+  }
+ ]
+}

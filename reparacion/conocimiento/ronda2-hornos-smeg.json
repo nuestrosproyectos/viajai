@@ -1,0 +1,25 @@
+{
+  "familia": "Smeg",
+  "marcas": [
+    "Smeg"
+  ],
+  "notas": "Ronda 2.",
+  "codigos": [
+    {
+      "aparato": "horno",
+      "codigos": [
+        "ERR 4",
+        "Err4"
+      ],
+      "significado": "Hornos pirolíticos: el bloqueo de la puerta no se enganchó bien (a menudo porque se abrió la puerta mientras se bloqueaba).",
+      "causas": [
+        "Puerta abierta durante la activación del bloqueo",
+        "Cierre de puerta averiado si se repite"
+      ],
+      "que_puede_hacer_el_cliente": "Apagar el horno, esperar unos minutos, volver a encender y seleccionar de nuevo la limpieza sin abrir la puerta. Si se repite, técnico.",
+      "pieza_probable": "Cerradura/bloqueo de puerta (si persiste)",
+      "fuente": "https://www.manualslib.com/manual/1336304/Smeg-Cpf9ipan.html?page=55",
+      "confianza": "alta"
+    }
+  ]
+}
