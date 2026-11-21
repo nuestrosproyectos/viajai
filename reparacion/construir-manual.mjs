@@ -5,6 +5,7 @@
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 
 const APARATOS = new Set(["lavadora", "lavadora-secadora", "secadora", "lavavajillas", "horno", "placa", "frigorifico", "congelador", "campana", "microondas", "termo", "aire", "caldera"]);
+const normal = t => String(t).toLowerCase().replace(/[^a-z0-9]+/g, "");
 const dir = new URL("./conocimiento/", import.meta.url);
 const familias = [], sintomas = [], peligro = [], avisos = [];
 let compensa = "";
@@ -15,7 +16,7 @@ for (const nombre of readdirSync(dir).filter(f => f.endsWith(".json")).sort()) {
     const vistos = new Set();
     const codigos = d.codigos.filter(c => {
       const ok = APARATOS.has(c.aparato) && Array.isArray(c.codigos) && c.codigos.length && c.significado && /^https?:\/\//.test(c.fuente || "") && ["alta", "media"].includes(c.confianza);
-      const k = c.aparato + "|" + c.codigos.map(x => x.toLowerCase()).sort().join(",");
+      const k = c.aparato + "|" + c.codigos.map(x => x.toLowerCase()).sort().join(",") + "|" + normal(c.significado);
       if (!ok) { avisos.push(`${nombre}: descartada ${c.aparato} ${c.codigos} (incompleta o sin fuente)`); return false; }
       if (vistos.has(k)) { avisos.push(`${nombre}: repetida ${k}`); return false; }
       vistos.add(k); return true;

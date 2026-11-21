@@ -1,0 +1,387 @@
+{
+  "familia": "LG",
+  "marcas": ["LG"],
+  "notas": "LG España publica índices de errores por aparato (lavado-secado y lavavajillas) en lg.com/es; para frigoríficos y microondas la información oficial está en las bibliotecas de ayuda de LG de otros países (mismos códigos en los modelos europeos, pero pueden variar por modelo). En lavadoras LG la primera recomendación oficial suele ser desenchufar 60 segundos y volver a intentar. CL (bloqueo infantil) y PF (corte de luz) NO son averías. En frigoríficos los códigos aparecen como 'Er' + código (Er FF, Er dH...) y en frigoríficos americanos el modo DEMO desactiva el frío sin que haya avería. LG vende pocos hornos y placas en España: no se han incluido códigos de horno ni placa por falta de fuente fiable. Pedir siempre el modelo exacto (etiqueta en la puerta o lateral) porque algunos códigos (tE, AE) cambian de significado según modelo.",
+  "codigos": [
+    {
+      "aparato": "lavadora",
+      "codigos": ["IE"],
+      "significado": "No entra agua suficiente (error de entrada de agua).",
+      "causas": ["Grifo cerrado o no abierto del todo", "Filtro de entrada de la manguera obstruido", "Poca presión de agua", "Manguera de entrada doblada o congelada"],
+      "que_puede_hacer_el_cliente": "Abrir del todo el grifo, comprobar que la manguera de entrada no esté doblada y que haya presión en otros grifos de la casa; desenchufar 60 segundos y volver a intentar.",
+      "pieza_probable": "Electroválvula de entrada de agua",
+      "fuente": "https://www.lg.com/es/posventa/guias-y-soluciones/lavado-secado/indice-errores",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["OE"],
+      "significado": "La lavadora no desagua (error de salida de agua).",
+      "causas": ["Filtro de la bomba de desagüe atascado (monedas, horquillas, pelusa)", "Manguera de desagüe doblada u obstruida", "Bomba de desagüe averiada", "Agua congelada en invierno"],
+      "que_puede_hacer_el_cliente": "Desenchufar 60 segundos y volver a intentar; comprobar que la manguera de desagüe no esté doblada; limpiar el filtro de la bomba siguiendo el manual (con un recipiente y toallas, porque sale agua).",
+      "pieza_probable": "Bomba de desagüe",
+      "fuente": "https://www.lg.com/es/posventa/guias-y-soluciones/lavado-secado/indice-errores",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["UE"],
+      "significado": "Carga desequilibrada: no puede centrifugar bien.",
+      "causas": ["Ropa amontonada en un lado del tambor (mantas, una sola prenda grande)", "Lavadora mal nivelada", "Carga muy pequeña o muy grande"],
+      "que_puede_hacer_el_cliente": "Repartir la ropa por el tambor, añadir o quitar prendas y comprobar que la lavadora está nivelada y no cojea.",
+      "pieza_probable": "",
+      "fuente": "https://www.lg.com/es/posventa/guias-y-soluciones/lavado-secado/indice-errores",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["dE", "dE1", "dE2"],
+      "significado": "Puerta abierta o que no se ha podido bloquear.",
+      "causas": ["Puerta mal cerrada", "Ropa o un objeto pillado en la puerta", "Cierre de puerta (blocapuertas) defectuoso"],
+      "que_puede_hacer_el_cliente": "Abrir y cerrar la puerta con firmeza comprobando que no haya ropa en la goma; desenchufar 60 segundos y volver a intentar.",
+      "pieza_probable": "Blocapuertas (cierre de puerta)",
+      "fuente": "https://www.lg.com/es/posventa/guias-y-soluciones/lavado-secado/indice-errores",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["LE"],
+      "significado": "Motor bloqueado o sobrecargado.",
+      "causas": ["Exceso de ropa", "Algo que frena el tambor", "Fallo del motor o de su electrónica"],
+      "que_puede_hacer_el_cliente": "Reducir la carga, dejar la lavadora parada 30 minutos y reiniciar el programa.",
+      "pieza_probable": "Estator/motor o placa de control del motor",
+      "fuente": "https://www.lg.com/es/posventa/guias-y-soluciones/lavado-secado/indice-errores",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["PE"],
+      "significado": "Error del sensor de presión (nivel de agua).",
+      "causas": ["Sensor de presión/nivel averiado", "Tubo del presostato obstruido o suelto"],
+      "que_puede_hacer_el_cliente": "Desenchufar unos minutos y volver a intentar; si se repite, requiere técnico.",
+      "pieza_probable": "Presostato (sensor de nivel)",
+      "fuente": "https://www.lg.com/es/posventa/guias-y-soluciones/lavado-secado/indice-errores",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["FE"],
+      "significado": "Llenado excesivo de agua (desbordamiento).",
+      "causas": ["Electroválvula de entrada que no cierra", "Fallo del sensor de nivel"],
+      "que_puede_hacer_el_cliente": "Cerrar el grifo de agua y desenchufar la lavadora.",
+      "pieza_probable": "Electroválvula de entrada de agua",
+      "fuente": "https://www.lg.com/us/support/help-library/lg-front-load-washer-error-code-list--20155069413456",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["tE"],
+      "significado": "Error de calentamiento o del sensor de temperatura del agua.",
+      "causas": ["Termistor (sensor de temperatura) defectuoso", "Fallo de la resistencia o su conexión"],
+      "que_puede_hacer_el_cliente": "Desenchufar 60 segundos y volver a intentar.",
+      "pieza_probable": "Sensor de temperatura (NTC) / resistencia",
+      "fuente": "https://www.lg.com/es/posventa/guias-y-soluciones/lavado-secado/indice-errores",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["AE", "E04"],
+      "significado": "Error de fuga de agua detectada.",
+      "causas": ["Fuga interna (manguitos, junta, bomba)", "Exceso de espuma que se sale"],
+      "que_puede_hacer_el_cliente": "Cerrar el grifo, desenchufar y comprobar si hay agua en el suelo bajo la lavadora.",
+      "pieza_probable": "",
+      "fuente": "https://www.lg.com/es/posventa/guias-y-soluciones/lavado-secado/indice-errores",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["CL"],
+      "significado": "NO es avería: bloqueo infantil activado (los botones no responden).",
+      "causas": ["Se ha activado el bloqueo infantil (Child Lock)"],
+      "que_puede_hacer_el_cliente": "Desactivar el bloqueo infantil manteniendo pulsado unos 3 segundos el botón o la combinación de botones que indica el panel o el manual (suele llevar un icono de candado).",
+      "pieza_probable": "",
+      "fuente": "https://www.lg.com/es/posventa/guias-y-soluciones/lavado-secado/indice-errores",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["PF"],
+      "significado": "NO es avería: ha habido un corte de luz o se desenchufó durante el ciclo.",
+      "causas": ["Corte de corriente", "Enchufe flojo"],
+      "que_puede_hacer_el_cliente": "Volver a poner en marcha el programa; la lavadora retoma desde donde se quedó. Si se repite a menudo, revisar el enchufe.",
+      "pieza_probable": "",
+      "fuente": "https://www.lg.com/us/support/help-library/lg-front-load-washer-error-code-list--20155069413456",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["Sud"],
+      "significado": "NO es avería: exceso de espuma; la lavadora añade un ciclo para eliminarla.",
+      "causas": ["Demasiado detergente", "Detergente no apto para lavadora de carga frontal"],
+      "que_puede_hacer_el_cliente": "Esperar a que termine (puede alargar el ciclo unas 2 horas) y usar menos detergente en adelante.",
+      "pieza_probable": "",
+      "fuente": "https://www.lg.com/us/support/help-library/lg-front-load-washer-error-code-list--20155069413456",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavadora-secadora",
+      "codigos": ["dHE"],
+      "significado": "Error temporal de la función de secado.",
+      "causas": ["Fallo puntual de la electrónica de secado", "Fallo del ventilador o resistencia de secado"],
+      "que_puede_hacer_el_cliente": "Apagar, desenchufar 10 segundos, volver a enchufar y reiniciar el ciclo.",
+      "pieza_probable": "Resistencia o ventilador de secado",
+      "fuente": "https://www.lg.com/es/posventa/guias-y-soluciones/lavado-secado/indice-errores",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "secadora",
+      "codigos": ["tE1", "tE2", "tE3", "tE4"],
+      "significado": "Error de un sensor de temperatura (termistor) del sistema de secado.",
+      "causas": ["Termistor defectuoso", "Pelusa acumulada o evacuación obstruida", "tE2 puede aparecer con la estancia muy fría"],
+      "que_puede_hacer_el_cliente": "Limpiar el filtro de pelusa, desenchufar 60 segundos y volver a intentar.",
+      "pieza_probable": "Termistor (sensor de temperatura)",
+      "fuente": "https://www.lg.com/es/posventa/guias-y-soluciones/lavado-secado/indice-errores",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "secadora",
+      "codigos": ["d80", "d90", "d95"],
+      "significado": "Aviso de conducto de evacuación obstruido (aprox. 80, 90 o 95 %); en secadoras de evacuación.",
+      "causas": ["Tubo de salida aplastado, demasiado largo u obstruido", "Pelusa acumulada en el conducto"],
+      "que_puede_hacer_el_cliente": "Limpiar el filtro de pelusa y comprobar que el tubo de evacuación no esté doblado ni tapado.",
+      "pieza_probable": "",
+      "fuente": "https://www.lg.com/es/posventa/guias-y-soluciones/lavado-secado/indice-errores",
+      "confianza": "media"
+    },
+    {
+      "aparato": "secadora",
+      "codigos": ["CL"],
+      "significado": "NO es avería: bloqueo de controles/infantil activado.",
+      "causas": ["Bloqueo infantil activado"],
+      "que_puede_hacer_el_cliente": "Mantener pulsados 3-5 segundos los botones marcados con el candado (en algunos modelos 'Temp' + 'Time Dry'; ver manual).",
+      "pieza_probable": "",
+      "fuente": "https://www.lg.com/eastafrica/support/product-help/CT20279040-20153792977841",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["IE"],
+      "significado": "No entra la cantidad de agua necesaria.",
+      "causas": ["Grifo cerrado", "Manguera de entrada doblada", "Filtro de entrada obstruido"],
+      "que_puede_hacer_el_cliente": "Abrir del todo el grifo y comprobar que la manguera de entrada no esté doblada.",
+      "pieza_probable": "Electroválvula de entrada",
+      "fuente": "https://www.lg.com/es/soporte/guias-y-soluciones/lavavajillas/codigos-de-error-lavavajillas/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["OE"],
+      "significado": "No desagua correctamente.",
+      "causas": ["Filtro tapado por restos de comida", "Manguera de desagüe aplastada o doblada", "Bomba de desagüe"],
+      "que_puede_hacer_el_cliente": "Limpiar el filtro del fondo de la cuba y comprobar la manguera de desagüe.",
+      "pieza_probable": "Bomba de desagüe",
+      "fuente": "https://www.lg.com/es/soporte/guias-y-soluciones/lavavajillas/codigos-de-error-lavavajillas/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["FE"],
+      "significado": "Exceso de agua: el lavavajillas activa la bomba de desagüe automáticamente.",
+      "causas": ["Presión o suministro de agua excesivo", "Electroválvula que no cierra"],
+      "que_puede_hacer_el_cliente": "Cerrar el grifo y desenchufar el aparato.",
+      "pieza_probable": "Electroválvula de entrada",
+      "fuente": "https://www.lg.com/us/support/help-library/lg-dishwasher-error-code-list--20150933422943",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["HE"],
+      "significado": "Fallo de calentamiento del agua.",
+      "causas": ["Resistencia averiada", "Sobrecalentamiento del agua"],
+      "que_puede_hacer_el_cliente": "Desenchufar 60 segundos y volver a intentar.",
+      "pieza_probable": "Resistencia de calentamiento",
+      "fuente": "https://www.lg.com/us/support/help-library/lg-dishwasher-error-code-list--20150933422943",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["bE"],
+      "significado": "Exceso de espuma (el aparato se protege para evitar fugas).",
+      "causas": ["Uso de lavavajillas a mano en vez de detergente para lavavajillas", "Exceso de detergente o abrillantador"],
+      "que_puede_hacer_el_cliente": "Usar solo detergente específico para lavavajillas y retirar la espuma de la cuba.",
+      "pieza_probable": "",
+      "fuente": "https://www.lg.com/us/support/help-library/lg-dishwasher-error-code-list--20150933422943",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["LE"],
+      "significado": "Sobrecarga o bloqueo del motor.",
+      "causas": ["Algo bloquea la bomba de lavado", "Fallo del motor"],
+      "que_puede_hacer_el_cliente": "Dejar el aparato parado 30 minutos y reiniciar el programa.",
+      "pieza_probable": "Motor/bomba de lavado",
+      "fuente": "https://www.lg.com/es/soporte/guias-y-soluciones/lavavajillas/codigos-de-error-lavavajillas/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["nE"],
+      "significado": "Problema en los brazos aspersores: no distribuyen bien el agua.",
+      "causas": ["Un objeto frena los brazos", "Orificios de los brazos obstruidos"],
+      "que_puede_hacer_el_cliente": "Comprobar que ningún plato o cubierto frene los brazos, limpiar sus orificios, desenchufar 60 segundos y volver a intentar.",
+      "pieza_probable": "",
+      "fuente": "https://www.lg.com/es/soporte/guias-y-soluciones/lavavajillas/codigos-de-error-lavavajillas/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["CL"],
+      "significado": "NO es avería: bloqueo infantil activado.",
+      "causas": ["Bloqueo infantil activado"],
+      "que_puede_hacer_el_cliente": "Mantener pulsado 3 segundos el botón Child Lock (o la combinación de dos botones que indique el manual).",
+      "pieza_probable": "",
+      "fuente": "https://www.lg.com/es/soporte/guias-y-soluciones/lavavajillas/codigos-de-error-lavavajillas/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["AE"],
+      "significado": "Según modelo: fuga de agua detectada; en la guía de LG España aparece descrito como bloqueo del panel. Confirmar con el manual.",
+      "causas": ["Fuga de agua a la base", "Bloqueo de panel activado (según la guía española)"],
+      "que_puede_hacer_el_cliente": "Cerrar el grifo, desenchufar y comprobar si hay agua en el suelo; si no hay fuga, probar a quitar el bloqueo del panel.",
+      "pieza_probable": "",
+      "fuente": "https://www.lg.com/es/soporte/guias-y-soluciones/lavavajillas/codigos-de-error-lavavajillas/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["tE"],
+      "significado": "Error térmico: agua demasiado caliente o fallo del termistor.",
+      "causas": ["Termistor defectuoso", "Agua sobrecalentada"],
+      "que_puede_hacer_el_cliente": "Desenchufar 60 segundos y volver a intentar.",
+      "pieza_probable": "Termistor (sensor de temperatura)",
+      "fuente": "https://www.lg.com/us/support/help-library/lg-dishwasher-error-code-list--20150933422943",
+      "confianza": "media"
+    },
+    {
+      "aparato": "frigorifico",
+      "codigos": ["Er FF", "FF"],
+      "significado": "Fallo del ventilador del congelador.",
+      "causas": ["Hielo/escarcha que bloquea el ventilador", "Motor del ventilador averiado"],
+      "que_puede_hacer_el_cliente": "Comprobar que las puertas cierran bien y que nada tapa las salidas de aire; reiniciar desenchufando. No desmontar.",
+      "pieza_probable": "Motor ventilador del congelador",
+      "fuente": "https://www.lg.com/levant_en/support/product-help/CT20158016-20154835856064",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "frigorifico",
+      "codigos": ["Er rF", "rF"],
+      "significado": "Fallo del ventilador del compartimento frigorífico.",
+      "causas": ["Escarcha acumulada", "Motor del ventilador averiado"],
+      "que_puede_hacer_el_cliente": "Comprobar que la puerta cierra bien y reiniciar desenchufando.",
+      "pieza_probable": "Motor ventilador del frigorífico",
+      "fuente": "https://www.lg.com/levant_en/support/product-help/CT20158016-20154835856064",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "frigorifico",
+      "codigos": ["Er IF", "IF"],
+      "significado": "Fallo del ventilador o sensor de la fábrica de hielo.",
+      "causas": ["Ventilador de la máquina de hielo bloqueado o averiado", "Sensor de la máquina de hielo desconectado"],
+      "que_puede_hacer_el_cliente": "Reiniciar el frigorífico desenchufándolo; si vuelve, avisar al técnico.",
+      "pieza_probable": "Ventilador de la fábrica de hielo",
+      "fuente": "https://www.lg.com/levant_en/support/product-help/CT20158016-20154835856064",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "frigorifico",
+      "codigos": ["Er dH", "dH"],
+      "significado": "Fallo de descongelación (desescarche).",
+      "causas": ["Hielo acumulado en el evaporador", "Resistencia de desescarche averiada", "Fusible térmico fundido", "Placa de control"],
+      "que_puede_hacer_el_cliente": "Reiniciar el frigorífico; si vuelve, avisar al técnico porque bajará el rendimiento de frío.",
+      "pieza_probable": "Resistencia de desescarche / fusible térmico",
+      "fuente": "https://www.lg.com/levant_en/support/product-help/CT20158016-20154835856064",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "frigorifico",
+      "codigos": ["Er CO", "CO"],
+      "significado": "Fallo de comunicación entre la placa de control y la pantalla.",
+      "causas": ["Cable o conector defectuoso", "Placa de control o de pantalla"],
+      "que_puede_hacer_el_cliente": "Reiniciar desenchufando; si vuelve a aparecer, dejar de usarlo y avisar al técnico.",
+      "pieza_probable": "Placa de control / mazo de cables de la puerta",
+      "fuente": "https://www.lg.com/levant_en/support/product-help/CT20158016-20154835856064",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "frigorifico",
+      "codigos": ["Er rS", "rS"],
+      "significado": "Fallo del sensor de temperatura del compartimento frigorífico.",
+      "causas": ["Sensor (termistor) defectuoso o desconectado"],
+      "que_puede_hacer_el_cliente": "Reiniciar desenchufando; requiere técnico.",
+      "pieza_probable": "Sensor de temperatura del frigorífico",
+      "fuente": "https://www.lg.com/levant_en/support/product-help/CT20158016-20154835856064",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "frigorifico",
+      "codigos": ["Er FS", "FS"],
+      "significado": "Fallo del sensor de temperatura del congelador.",
+      "causas": ["Sensor (termistor) del congelador defectuoso"],
+      "que_puede_hacer_el_cliente": "Reiniciar desenchufando; requiere técnico.",
+      "pieza_probable": "Sensor de temperatura del congelador",
+      "fuente": "https://www.lg.com/levant_en/support/product-help/CT20158016-20154835856064",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "frigorifico",
+      "codigos": ["Er 22", "22"],
+      "significado": "Problema en el relé del compresor.",
+      "causas": ["Relé de arranque del compresor", "Compresor (compresores lineales/inverter)"],
+      "que_puede_hacer_el_cliente": "",
+      "pieza_probable": "Relé de compresor / placa de control",
+      "fuente": "https://www.lg.com/ae/support/product-help/CT20076062-20155399841849",
+      "confianza": "media"
+    },
+    {
+      "aparato": "frigorifico",
+      "codigos": ["Er 67", "67"],
+      "significado": "La puerta no cierra bien (hueco o algo que impide el cierre).",
+      "causas": ["Un alimento o cajón impide cerrar la puerta", "Puerta desalineada"],
+      "que_puede_hacer_el_cliente": "Revisar que nada dentro impida cerrar la puerta y cerrarla bien.",
+      "pieza_probable": "",
+      "fuente": "https://www.lg.com/ae/support/product-help/CT20076062-20155399841849",
+      "confianza": "media"
+    },
+    {
+      "aparato": "frigorifico",
+      "codigos": ["DEMO", "modo exposición"],
+      "significado": "NO es avería: modo demostración/exposición; el frigorífico enciende luces y pantalla pero no enfría.",
+      "causas": ["Modo de exposición de tienda activado por error"],
+      "que_puede_hacer_el_cliente": "Desactivar el modo demo con la combinación de botones que indica el manual del modelo (varía según modelo).",
+      "pieza_probable": "",
+      "fuente": "https://www.lg.com/us/support/help-library/lg-refrigerator-error-code-list--20155159406537",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "microondas",
+      "codigos": ["L", "Loc"],
+      "significado": "NO es avería: bloqueo infantil activado (las teclas no responden).",
+      "causas": ["Bloqueo infantil activado"],
+      "que_puede_hacer_el_cliente": "Mantener pulsado unos 4 segundos el botón Stop/Cancelar o Start/Enter (según modelo) hasta que desaparezca la L o el candado.",
+      "pieza_probable": "",
+      "fuente": "https://www.lg.com/us/support/help-library/lg-microwave-troubleshooting-the-keypad-not-responding--1429739856887",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "microondas",
+      "codigos": ["F2", "F3", "F4", "F5", "F11", "F13", "F14", "F15", "F16", "F17", "F19"],
+      "significado": "Códigos de fallo interno (modelos NeoChef): requieren servicio técnico.",
+      "causas": ["Fallo de sensor, teclado o placa según el código"],
+      "que_puede_hacer_el_cliente": "Desenchufar un minuto y volver a enchufar; si sigue, no usarlo y avisar al técnico.",
+      "pieza_probable": "",
+      "fuente": "https://www.lg.com/us/support/help-library/lg-microwave-error-codes--20150592554522",
+      "confianza": "media"
+    }
+  ]
+}

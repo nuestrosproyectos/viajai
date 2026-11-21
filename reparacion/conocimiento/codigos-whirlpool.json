@@ -1,0 +1,377 @@
+{
+  "familia": "Whirlpool",
+  "marcas": ["Whirlpool", "Indesit", "Hotpoint", "Ariston"],
+  "notas": "Hotpoint, Indesit y Ariston (antes Hotpoint-Ariston) comparten la misma electrónica y casi la misma tabla de códigos F (F01, F02...). Whirlpool de marca usa una tabla distinta en lavadoras (FH, FA, F02, F18...), así que antes de interpretar un código hay que preguntar SIEMPRE la marca y, si es posible, el modelo (pegatina en el marco de la puerta o el manual). Un mismo código puede significar cosas distintas en lavadora, lavadora-secadora, secadora y lavavajillas. Las lavadoras Indesit/Ariston antiguas sin pantalla indican el código con parpadeos: se cuentan los parpadeos de la luz de encendido o de los pilotos entre pausa y pausa (por ejemplo, 8 parpadeos = F08), y en otros modelos con combinaciones de pilotos encendidos (pilotos 1 y 3 = F05, bomba de desagüe). Los lavavajillas Hotpoint integrables muestran el código en binario con los LED del panel. Primer paso casi universal que indica el fabricante: desenchufar al menos 2 minutos, volver a conectar, esperar 30 segundos y reintentar; si el código vuelve, la avería sigue presente. Hotpoint tiene abierta una campaña de seguridad (llamada a revisión) sobre el cierre de puerta de algunas lavadoras Hotpoint e Indesit: ante errores de puerta conviene comprobar el modelo. Las fuentes oficiales consultadas son del Reino Unido (hotpoint.co.uk) porque las webs españolas no publican tablas; los códigos son los mismos del grupo, pero puede haber variaciones por modelo. Sin fuente fiable para hornos y frigoríficos de este grupo: no se incluyen.",
+  "codigos": [
+    {
+      "aparato": "lavadora",
+      "codigos": ["F01"],
+      "significado": "Fallo de la placa electrónica (Hotpoint/Indesit/Ariston).",
+      "causas": ["Fallo de la placa de control", "En algunos modelos, fallo del cierre de puerta asociado"],
+      "que_puede_hacer_el_cliente": "Desenchufar la lavadora al menos 2 minutos, volver a enchufar, esperar 30 segundos e intentar arrancar de nuevo.",
+      "pieza_probable": "Placa electrónica de control",
+      "fuente": "https://www.hotpoint.co.uk/service/washing-machine-repair/error-codes",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["F02"],
+      "significado": "Fallo del circuito del motor: el tambor gira a ratos o no gira durante el lavado (Hotpoint/Indesit/Ariston).",
+      "causas": ["Motor o escobillas", "Tacómetro o cableado del motor", "Placa electrónica"],
+      "que_puede_hacer_el_cliente": "Desenchufar 2 minutos y reintentar. Comprobar que no hay una prenda atascada que impida girar el tambor.",
+      "pieza_probable": "Escobillas o motor; placa si el motor está bien",
+      "fuente": "https://www.hotpoint.co.uk/service/washing-machine-repair/error-codes",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["F03"],
+      "significado": "Fallo del sensor de temperatura: no calienta el agua (Hotpoint/Indesit/Ariston).",
+      "causas": ["Sonda de temperatura (NTC) averiada", "Cableado de la sonda"],
+      "que_puede_hacer_el_cliente": "Desenchufar 2 minutos y reintentar.",
+      "pieza_probable": "Sonda de temperatura NTC",
+      "fuente": "https://www.hotpoint.co.uk/service/washing-machine-repair/error-codes",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["F05"],
+      "significado": "En Hotpoint/Indesit/Ariston: no desagua; el desagüe está atascado o falla la bomba y la puerta no abre porque queda agua en el tambor.",
+      "causas": ["Filtro de la bomba obstruido", "Manguera de desagüe doblada o atascada", "Sifón del fregadero atascado", "Bomba de desagüe averiada"],
+      "que_puede_hacer_el_cliente": "Limpiar el filtro de la bomba si el manual de su modelo lo indica (poner un recipiente y toallas, sale agua). Comprobar que la manguera de desagüe no está doblada ni aplastada y que el desagüe de la pared o fregadero no está atascado.",
+      "pieza_probable": "Bomba de desagüe",
+      "fuente": "https://www.hotpoint.co.uk/service/washing-machine-repair/error-codes",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["F06"],
+      "significado": "En Hotpoint/Indesit/Ariston: fallo del cierre de puerta; la puerta no abre o no cierra y el programa no arranca. En Whirlpool de marca F06 puede indicar otra cosa (motor que no gira o exceso de carga).",
+      "causas": ["Cierre electromagnético de puerta averiado", "Algo obstruye el cierre", "En Whirlpool: motor, tacómetro o ropa atrapada o exceso de carga"],
+      "que_puede_hacer_el_cliente": "Comprobar que nada obstruye el cierre ni hay ropa pillada en la goma. Cerrar la puerta con firmeza. Desenchufar 2 minutos y reintentar.",
+      "pieza_probable": "Blocapuertas (cierre de puerta)",
+      "fuente": "https://www.hotpoint.co.uk/service/washing-machine-repair/error-codes",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["F07"],
+      "significado": "Fallo de placa o del circuito de calentamiento: el programa se para a mitad, no calienta y la bomba puede quedarse funcionando sin parar (Hotpoint/Indesit/Ariston).",
+      "causas": ["Resistencia sin agua suficiente (presostato)", "Relé de la resistencia en la placa", "Fuga a tierra en la resistencia"],
+      "que_puede_hacer_el_cliente": "Desenchufar 2 minutos y reintentar. Comprobar que el grifo de agua está abierto.",
+      "pieza_probable": "Resistencia, presostato o placa",
+      "fuente": "https://www.hotpoint.co.uk/service/washing-machine-repair/error-codes",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["F08"],
+      "significado": "En Hotpoint/Indesit/Ariston: fallo de la resistencia calefactora; el programa se para a mitad del lavado. En Whirlpool de marca algunas fuentes lo dan como aviso ocasional que se borra al reiniciar.",
+      "causas": ["Resistencia averiada", "Relé de la resistencia en la placa"],
+      "que_puede_hacer_el_cliente": "Desenchufar 2 minutos y reintentar.",
+      "pieza_probable": "Resistencia calefactora",
+      "fuente": "https://www.hotpoint.co.uk/service/washing-machine-repair/error-codes",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["F09"],
+      "significado": "En Hotpoint/Indesit/Ariston: fallo de software; parpadean varias luces o la pantalla y no deja elegir programa. En Whirlpool de marca suele indicar desbordamiento o agua en la base de la lavadora.",
+      "causas": ["Placa o memoria (software) de la placa", "En Whirlpool: fuga interna con agua en la bandeja de la base"],
+      "que_puede_hacer_el_cliente": "Desenchufar 2 minutos y reintentar. En Whirlpool, mirar si hay agua en el suelo bajo la lavadora y cerrar el grifo si la hay.",
+      "pieza_probable": "Placa electrónica (Hotpoint/Indesit); localizar fuga (Whirlpool)",
+      "fuente": "https://www.hotpoint.co.uk/service/washer-dryer-repair/error-codes",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["F11"],
+      "significado": "En Hotpoint/Indesit/Ariston: fallo del circuito de la bomba; el agua se queda dentro y no la saca. En Whirlpool de marca suele ser un fallo de comunicación entre placas.",
+      "causas": ["Bomba de desagüe averiada o bloqueada", "Cableado de la bomba", "En Whirlpool: comunicación entre placas"],
+      "que_puede_hacer_el_cliente": "Limpiar el filtro de la bomba si el manual lo indica y comprobar la manguera de desagüe. Desenchufar al menos 1-2 minutos y reintentar.",
+      "pieza_probable": "Bomba de desagüe",
+      "fuente": "https://www.hotpoint.co.uk/service/washer-dryer-repair/error-codes",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["F12"],
+      "significado": "Fallo del control electrónico o de comunicación entre placa y pantalla; la máquina no enciende (Hotpoint/Indesit/Ariston).",
+      "causas": ["Fallo de comunicación entre placa principal y pantalla", "Placa de mandos"],
+      "que_puede_hacer_el_cliente": "Desenchufar 2 minutos y reintentar.",
+      "pieza_probable": "Placa de mandos o placa principal",
+      "fuente": "https://www.hotpoint.co.uk/service/washer-dryer-repair/error-codes",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["FH", "H2O"],
+      "significado": "En Whirlpool: no entra agua o tarda demasiado en llenar. En Indesit/Hotpoint aparece como H2O: falta de agua.",
+      "causas": ["Grifo de agua cerrado o poca presión", "Manguera de entrada doblada o aplastada", "Filtro de la toma de agua sucio", "Electroválvula de entrada averiada"],
+      "que_puede_hacer_el_cliente": "Comprobar que el grifo está abierto y que hay agua en casa. Revisar que la manguera de entrada no está doblada ni aplastada detrás de la lavadora. Desenchufar unos minutos y reintentar.",
+      "pieza_probable": "Electroválvula de entrada",
+      "fuente": "https://www.coolblue.nl/en/advice/help-most-common-errors-whirlpool-washing-machines.html",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["FA"],
+      "significado": "Whirlpool: actuó el sistema antifugas AquaStop; hay agua en la base de la lavadora o fallo de la manguera AquaStop.",
+      "causas": ["Fuga interna con agua en la bandeja de la base", "Manguera AquaStop dañada"],
+      "que_puede_hacer_el_cliente": "Cerrar el grifo de agua, desenchufar y comprobar si hay agua en el suelo. No volver a usar hasta que se revise.",
+      "pieza_probable": "Manguera AquaStop; localizar la fuga interna",
+      "fuente": "https://www.whitegoodshelp.co.uk/whirlpool-washing-machine-error-codes/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["F02"],
+      "significado": "En Whirlpool de marca: tiempo de desagüe excedido (tarda más de unos 8 minutos en sacar el agua). Ojo: en Hotpoint/Indesit/Ariston F02 es fallo del motor.",
+      "causas": ["Filtro de la bomba obstruido", "Manguera de desagüe doblada o atascada", "Exceso de espuma", "Bomba de desagüe"],
+      "que_puede_hacer_el_cliente": "Limpiar el filtro de la bomba si el manual lo indica, revisar la manguera de desagüe y no usar demasiado detergente.",
+      "pieza_probable": "Bomba de desagüe",
+      "fuente": "https://www.tuexperto.com/2023/08/14/que-significa-el-codigo-de-error-de-mi-lavadora-whirlpool-y-como-solucionarlo/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["F05"],
+      "significado": "En Whirlpool de marca el significado varía por modelo: problema de desagüe o filtro de bomba sucio, o fallo del sensor de temperatura.",
+      "causas": ["Filtro de la bomba sucio", "Manguera de desagüe mal instalada", "Sonda de temperatura en algunos modelos"],
+      "que_puede_hacer_el_cliente": "Desenchufar, limpiar el filtro de la bomba si el manual lo indica y revisar la manguera de desagüe. Si sigue, desenchufar unos 30 minutos y reintentar.",
+      "pieza_probable": "Bomba de desagüe o sonda de temperatura",
+      "fuente": "https://www.tuexperto.com/2023/08/14/que-significa-el-codigo-de-error-de-mi-lavadora-whirlpool-y-como-solucionarlo/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["F18", "FOAM", "FoD"],
+      "significado": "Whirlpool: exceso de espuma en el tambor (o, en algunos modelos, desagüe impedido por la espuma o por un objeto en la bomba).",
+      "causas": ["Demasiado detergente o detergente no apto para lavadora", "Objeto en la bomba", "Manguera de desagüe mal instalada (efecto sifón)"],
+      "que_puede_hacer_el_cliente": "Esperar a que baje la espuma, sacar la ropa y hacer un aclarado o un ciclo sin detergente. En adelante, usar menos detergente.",
+      "pieza_probable": "",
+      "fuente": "https://www.coolblue.nl/en/advice/help-most-common-errors-whirlpool-washing-machines.html",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavadora-secadora",
+      "codigos": ["F13"],
+      "significado": "Fallo del sensor de temperatura de secado: no seca la ropa (Hotpoint/Indesit/Ariston).",
+      "causas": ["Sonda de temperatura del secado", "Cableado"],
+      "que_puede_hacer_el_cliente": "Desenchufar 2 minutos y reintentar.",
+      "pieza_probable": "Sonda de temperatura de secado",
+      "fuente": "https://www.hotpoint.co.uk/service/washer-dryer-repair/error-codes",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora-secadora",
+      "codigos": ["F15"],
+      "significado": "Fallo del control de la resistencia: no calienta el agua o se pausa durante el lavado (Hotpoint/Indesit/Ariston).",
+      "causas": ["Relé de la resistencia en la placa", "Resistencia"],
+      "que_puede_hacer_el_cliente": "Desenchufar 2 minutos y reintentar.",
+      "pieza_probable": "Placa o resistencia",
+      "fuente": "https://www.hotpoint.co.uk/service/washer-dryer-repair/error-codes",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora-secadora",
+      "codigos": ["F18"],
+      "significado": "En Hotpoint/Indesit/Ariston: error de datos internos; la pantalla o algunas funciones no responden.",
+      "causas": ["Fallo de comunicación o datos de la placa"],
+      "que_puede_hacer_el_cliente": "Desenchufar 2 minutos y reintentar.",
+      "pieza_probable": "Placa electrónica",
+      "fuente": "https://www.hotpoint.co.uk/service/washer-dryer-repair/error-codes",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora-secadora",
+      "codigos": ["F05", "F08", "F11"],
+      "significado": "En lavadoras-secadoras Hotpoint/Indesit/Ariston significan lo mismo que en lavadora: F05 desagüe atascado o bomba; F08 resistencia; F11 circuito de la bomba (no saca el agua).",
+      "causas": ["Filtro o manguera de desagüe atascados", "Bomba de desagüe", "Resistencia"],
+      "que_puede_hacer_el_cliente": "Limpiar el filtro de la bomba si el manual lo indica, revisar la manguera de desagüe y desenchufar 2 minutos antes de reintentar.",
+      "pieza_probable": "Bomba de desagüe o resistencia según el código",
+      "fuente": "https://www.hotpoint.co.uk/service/washer-dryer-repair/error-codes",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "secadora",
+      "codigos": ["F01", "F02", "F03"],
+      "significado": "Secadora Whirlpool: una pieza de la secadora no funciona correctamente.",
+      "causas": ["Fallo de un componente (sensor, motor o placa)"],
+      "que_puede_hacer_el_cliente": "Reiniciar manteniendo pulsado el botón de encendido al menos 3 segundos y volver a lanzar el ciclo. Vaciar el filtro de pelusas.",
+      "pieza_probable": "",
+      "fuente": "https://www.coolblue.nl/en/advice/how-to-resolve-a-whirlpool-dryer-error.html",
+      "confianza": "media"
+    },
+    {
+      "aparato": "secadora",
+      "codigos": ["F04"],
+      "significado": "Secadora Whirlpool: problema del condensador (sucio u obstruido).",
+      "causas": ["Condensador sucio u obstruido de pelusa"],
+      "que_puede_hacer_el_cliente": "Desenchufar, sacar el condensador y aclararlo bajo el grifo (en bomba de calor, aspirarlo con cepillo) según el manual, volver a colocarlo, esperar unos 30 minutos y reiniciar.",
+      "pieza_probable": "",
+      "fuente": "https://www.coolblue.nl/en/advice/how-to-resolve-a-whirlpool-dryer-error.html",
+      "confianza": "media"
+    },
+    {
+      "aparato": "secadora",
+      "codigos": ["F05", "F06", "F07", "F08", "F09"],
+      "significado": "Secadora Whirlpool: fallo de una pieza, a menudo provocado por exceso de calor (sobrecalentamiento).",
+      "causas": ["Filtro de pelusa lleno", "Condensador sucio", "Mala ventilación", "Sensor o componente averiado"],
+      "que_puede_hacer_el_cliente": "Desenchufar, abrir la puerta y dejar enfriar una hora. Limpiar el filtro de pelusa y el condensador. Volver a enchufar y reiniciar el ciclo.",
+      "pieza_probable": "Termostato o sonda de temperatura si se repite",
+      "fuente": "https://www.coolblue.nl/en/advice/how-to-resolve-a-whirlpool-dryer-error.html",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["F01"],
+      "significado": "Lavavajillas Hotpoint: actuó el antidesbordamiento (antiinundación).",
+      "causas": ["Fuga de agua a la bandeja de la base", "Exceso de espuma (detergente de mano)", "Electroválvula que no cierra"],
+      "que_puede_hacer_el_cliente": "Cerrar el grifo, desenchufar al menos 2 minutos y reintentar. No usar lavavajillas de mano en el aparato.",
+      "pieza_probable": "Localizar fuga; electroválvula de entrada",
+      "fuente": "https://www.hotpoint.co.uk/service/dishwasher-repair/error-codes",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["F02"],
+      "significado": "Lavavajillas Indesit/Hotpoint/Ariston: fallo de llenado de agua (electroválvula de entrada). Ojo: en Whirlpool de marca F2 es fuga con AquaStop activado.",
+      "causas": ["Grifo cerrado o poca presión", "Manguera de entrada doblada", "Electroválvula de entrada"],
+      "que_puede_hacer_el_cliente": "Comprobar que el grifo está abierto y la manguera de entrada no está doblada.",
+      "pieza_probable": "Electroválvula de entrada",
+      "fuente": "https://www.fersay.com/blog/codigos-error-lavavajillas-segun-tu-marca/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["F03"],
+      "significado": "Lavavajillas Hotpoint/Indesit: fallo o tiempo excedido de desagüe (en modelos sin pantalla: parpadean LED 1 y LED 2).",
+      "causas": ["Filtro del fondo atascado", "Manguera de desagüe doblada", "Desagüe del fregadero atascado", "Bomba de desagüe"],
+      "que_puede_hacer_el_cliente": "Limpiar el filtro del fondo de la cuba, comprobar que la manguera de desagüe no está doblada y que el sifón del fregadero no está atascado.",
+      "pieza_probable": "Bomba de desagüe",
+      "fuente": "https://www.hotpoint.co.uk/service/slimline-dishwasher-repair/error-codes",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["F05"],
+      "significado": "Lavavajillas Hotpoint/Indesit: filtro de la bomba o manguera de desagüe obstruidos; si no se soluciona, fallo de la bomba.",
+      "causas": ["Filtro obstruido por restos (huesos, cristal)", "Manguera de desagüe estrangulada", "Bomba de desagüe"],
+      "que_puede_hacer_el_cliente": "Limpiar los filtros del fondo y revisar la manguera de desagüe. Desenchufar 2 minutos y reintentar.",
+      "pieza_probable": "Bomba de desagüe",
+      "fuente": "https://www.hotpoint.co.uk/service/dishwasher-repair/error-codes",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["F10"],
+      "significado": "Lavavajillas Hotpoint/Indesit: fallo de la resistencia calefactora (en modelos sin pantalla: LED 4 o LED 2 + LED 4).",
+      "causas": ["Resistencia o calentador de paso averiado", "Sonda de temperatura"],
+      "que_puede_hacer_el_cliente": "Desenchufar 2 minutos y reintentar.",
+      "pieza_probable": "Resistencia (calentador)",
+      "fuente": "https://www.hotpoint.co.uk/service/slimline-dishwasher-repair/error-codes",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["F12"],
+      "significado": "Lavavajillas Hotpoint/Indesit: error de comunicación entre la placa principal y la pantalla.",
+      "causas": ["Placa principal", "Placa de mandos o cableado"],
+      "que_puede_hacer_el_cliente": "Desenchufar 2 minutos y reintentar.",
+      "pieza_probable": "Placa electrónica",
+      "fuente": "https://www.hotpoint.co.uk/service/dishwasher-repair/error-codes",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["F6"],
+      "significado": "Lavavajillas Whirlpool: no entra agua o no la detecta en el tiempo previsto.",
+      "causas": ["Grifo cerrado o corte de agua", "Manguera de entrada doblada", "Filtro de la toma de agua sucio", "Electroválvula o caudalímetro averiado"],
+      "que_puede_hacer_el_cliente": "Comprobar que la llave de paso está abierta, que hay agua en casa y que la manguera de entrada no está doblada.",
+      "pieza_probable": "Electroválvula de entrada o caudalímetro",
+      "fuente": "https://www.justfixed.co.uk/whirlpool-dishwasher-error-codes/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["F2"],
+      "significado": "Lavavajillas Whirlpool (modelos europeos): fuga de agua con AquaStop activado.",
+      "causas": ["Fuga interna a la bandeja de la base", "Exceso de espuma", "Manguera AquaStop"],
+      "que_puede_hacer_el_cliente": "Cerrar el grifo y desenchufar. No usar lavavajillas de mano.",
+      "pieza_probable": "Localizar fuga; manguera AquaStop",
+      "fuente": "https://www.fersay.com/blog/codigos-error-lavavajillas-segun-tu-marca/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["F1"],
+      "significado": "Lavavajillas Whirlpool: fallo del sensor de temperatura.",
+      "causas": ["Sonda de temperatura", "Cableado"],
+      "que_puede_hacer_el_cliente": "Desenchufar 2 minutos y reintentar.",
+      "pieza_probable": "Sonda de temperatura",
+      "fuente": "https://www.fersay.com/blog/codigos-error-lavavajillas-segun-tu-marca/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["H2O"],
+      "significado": "Lavavajillas Indesit/Hotpoint: no ha entrado agua (unos 6 minutos sin agua).",
+      "causas": ["Grifo cerrado", "Manguera de entrada doblada", "Filtro de entrada sucio", "Electroválvula"],
+      "que_puede_hacer_el_cliente": "Abrir el grifo, revisar la manguera de entrada y reiniciar.",
+      "pieza_probable": "Electroválvula de entrada",
+      "fuente": "https://www.fersay.com/blog/codigos-error-lavavajillas-segun-tu-marca/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "placa",
+      "codigos": ["C81", "C82"],
+      "significado": "Placa de inducción Whirlpool: el panel de mandos se apaga por temperatura demasiado alta de la electrónica.",
+      "causas": ["Sobrecalentamiento de la electrónica", "Ventilación de la placa insuficiente (horno o cajón debajo)"],
+      "que_puede_hacer_el_cliente": "Esperar a que la placa se enfríe antes de volver a usarla. Si se repite a menudo, que se revise la ventilación de la instalación.",
+      "pieza_probable": "Ventilador de la placa si se repite",
+      "fuente": "https://www.manualslib.com/manual/784170/Whirlpool-Hobs.html?page=12",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "placa",
+      "codigos": ["C85"],
+      "significado": "Placa de inducción Whirlpool: no puede calentar el recipiente; normalmente el recipiente no es apto para inducción.",
+      "causas": ["Recipiente no apto para inducción", "Recipiente demasiado pequeño o mal centrado"],
+      "que_puede_hacer_el_cliente": "Probar con otro recipiente apto para inducción (que se pegue un imán al fondo) y bien centrado en la zona.",
+      "pieza_probable": "",
+      "fuente": "https://www.manualslib.com/manual/784170/Whirlpool-Hobs.html",
+      "confianza": "media"
+    },
+    {
+      "aparato": "placa",
+      "codigos": ["F42", "F43"],
+      "significado": "Placa de inducción Whirlpool: tensión de conexión incorrecta (demasiado baja o alta para el aparato).",
+      "causas": ["Conexión eléctrica mal hecha", "Tensión de red anómala"],
+      "que_puede_hacer_el_cliente": "Desconectar la placa (diferencial o magnetotérmico) y no usarla hasta que un técnico revise la conexión eléctrica.",
+      "pieza_probable": "",
+      "fuente": "https://www.manualslib.com/manual/784170/Whirlpool-Hobs.html?page=12",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "placa",
+      "codigos": ["F02", "F04"],
+      "significado": "En algunas placas Whirlpool: tensión de conexión incorrecta o problema de alimentación.",
+      "causas": ["Conexión eléctrica incorrecta", "Problema de suministro"],
+      "que_puede_hacer_el_cliente": "Desconectar la placa y revisar con un técnico la conexión eléctrica.",
+      "pieza_probable": "",
+      "fuente": "https://www.manualslib.com/manual/635516/Whirlpool-Electric-Hob.html?page=12",
+      "confianza": "media"
+    },
+    {
+      "aparato": "placa",
+      "codigos": ["F12", "F21", "F25", "F36", "F37", "F40", "F47", "F56", "F58", "F60"],
+      "significado": "Placa de inducción Whirlpool: fallo interno; la placa se apaga y pita cada 4 segundos.",
+      "causas": ["Fallo de la electrónica de potencia o de mandos", "Sensor interno"],
+      "que_puede_hacer_el_cliente": "Desconectar la placa de la corriente unos segundos y volver a conectar. Si el código vuelve, llamar al servicio técnico indicando el código.",
+      "pieza_probable": "Placa electrónica de potencia o de mandos",
+      "fuente": "https://www.manualslib.com/manual/784170/Whirlpool-Hobs.html?page=12",
+      "confianza": "alta"
+    }
+  ]
+}

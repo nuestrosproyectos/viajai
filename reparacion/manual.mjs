@@ -49,6 +49,14 @@ export const MARCAS = {
   Domusa: ["domusa"], Wolf: ["wolf"], Manaut: ["manaut"], Thermor: ["thermor", "termor"], Hermann: ["hermann", "herman"]
 };
 
+// Marcas que solo fabrican un tipo de aparato de los que atendemos: la marca ya dice el aparato
+export const MARCA_APARATO = {
+  Daikin: "aire", "Mitsubishi Electric": "aire", "Mitsubishi Heavy": "aire", Fujitsu: "aire", Panasonic: "aire", Toshiba: "aire",
+  Gree: "aire", Midea: "aire", Hitachi: "aire", Johnson: "aire", Kaysun: "aire",
+  Vaillant: "caldera", "Saunier Duval": "caldera", Junkers: "caldera", Baxi: "caldera", Roca: "caldera", Ferroli: "caldera",
+  Cointra: "caldera", Chaffoteaux: "caldera", Immergas: "caldera", Beretta: "caldera", Viessmann: "caldera", Domusa: "caldera", Wolf: "caldera", Manaut: "caldera"
+};
+
 // Palabras de número que da el dictado ("e quince", "f cero cinco")
 export const NUMEROS = {
   cero: 0, uno: 1, un: 1, dos: 2, tres: 3, cuatro: 4, cinco: 5, seis: 6, siete: 7, ocho: 8, nueve: 9, diez: 10,
@@ -142,6 +150,7 @@ export function buscar(manual, turnos, { maxCodigos = 3, maxSintomas = 2 } = {})
   let aparato = detectarEn(ultimo, APARATOS)[0] || detectarEn(todo, APARATOS)[0] || "";
   if (aparato === "aire" && / secadora (de |con )?bomba de calor /.test(" " + normalizar(todo) + " ") && !/ (split|aire acondicionado|acondicionado) /.test(" " + normalizar(todo) + " ")) aparato = "secadora";
   const marca = detectarEn(ultimo, MARCAS)[0] || detectarEn(todo, MARCAS)[0] || "";
+  if (!aparato && MARCA_APARATO[marca]) aparato = MARCA_APARATO[marca];
   const familias = marca ? (manual.marcaAFamilia[marca] || []) : [];
 
   // Códigos: se buscan en los últimos mensajes del cliente
@@ -151,8 +160,10 @@ export function buscar(manual, turnos, { maxCodigos = 3, maxSintomas = 2 } = {})
     porCodigo = manual.fichas.filter(f => f.claves.some(k => cand.includes(k)) && mismoAparato(f, aparato))
       .map(f => ({ f, p: (familias.includes(f.familia) ? 10 : 0) + (f.aparato === aparato ? 3 : 0) + (f.confianza === "alta" ? 1 : 0) }))
       .sort((a, b) => b.p - a.p);
-    // Con marca conocida, solo su familia (si tiene ese código); sin marca, varias familias para preguntar
-    if (familias.length && porCodigo.some(x => familias.includes(x.f.familia))) porCodigo = porCodigo.filter(x => familias.includes(x.f.familia));
+    // Con marca conocida, SOLO fichas de su familia (el mismo código en otra marca significa otra cosa);
+    // sin marca, varias familias para que el técnico pregunte la marca
+    if (marca) porCodigo = porCodigo.filter(x => familias.includes(x.f.familia));
+    if (porCodigo.some(x => x.f.aparato === aparato)) porCodigo = porCodigo.filter(x => x.f.aparato === aparato);
     porCodigo = porCodigo.slice(0, maxCodigos).map(x => x.f);
   }
 

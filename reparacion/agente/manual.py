@@ -35,6 +35,7 @@ class Manual:
         self.numeros: dict = d["NUMEROS"]
         self.letras: dict = d["LETRAS"]
         self.centenas: dict = d["CENTENAS"]
+        self.marca_aparato: dict = d["MARCA_APARATO"]
         base = datos["conocimiento"]
         self.fichas = []
         for fam in base["familias"]:
@@ -141,6 +142,8 @@ class Manual:
         if aparato == "aire" and re.search(r" secadora (de |con )?bomba de calor ", nt) and not re.search(r" (split|aire acondicionado|acondicionado) ", nt):
             aparato = "secadora"
         marca = (self.detectar_en(ultimo, self.marcas) or self.detectar_en(todo, self.marcas) or [""])[0]
+        if not aparato and marca in self.marca_aparato:
+            aparato = self.marca_aparato[marca]
         familias = self.marca_a_familia.get(marca, []) if marca else []
 
         cand = [c for c in self.candidatos_codigo(recientes) if c in self.codigos_conocidos]
@@ -152,8 +155,10 @@ class Manual:
                     p = (10 if f["familia"] in familias else 0) + (3 if f["aparato"] == aparato else 0) + (1 if f.get("confianza") == "alta" else 0)
                     puntuadas.append((f, p))
             puntuadas.sort(key=lambda x: -x[1])  # orden estable, como en JS
-            if familias and any(f["familia"] in familias for f, _ in puntuadas):
+            if marca:  # con marca conocida, solo fichas de su familia
                 puntuadas = [x for x in puntuadas if x[0]["familia"] in familias]
+            if any(f["aparato"] == aparato for f, _ in puntuadas):
+                puntuadas = [x for x in puntuadas if x[0]["aparato"] == aparato]
             por_codigo = [f for f, _ in puntuadas[:max_codigos]]
 
         n_ult = " " + normalizar(ultimo) + " "

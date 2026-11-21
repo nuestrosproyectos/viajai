@@ -1,0 +1,187 @@
+{
+  "familia": "Haier",
+  "marcas": ["Candy", "Hoover", "Haier"],
+  "notas": "Candy y Hoover comparten electrónica y códigos; Haier usa su propia nomenclatura (ERR1, ERR2..., UNB, y en algunos modelos E4). Candy y Hoover apenas publican tablas de códigos en su web española: los significados proceden de manuales de modelos concretos y de fuentes técnicas, por eso casi todo va con confianza media. Las lavadoras Candy/Hoover sin pantalla muestran el código con parpadeos de pilotos: contar los parpadeos entre pausas (por ejemplo, 3 parpadeos = E03). En lavavajillas Candy/Hoover conviven dos generaciones: la clásica con códigos E (E2, E3...) y la moderna con códigos A (A10, A20...). Primer paso habitual: desenchufar 2-3 minutos y volver a conectar; si el código vuelve, la avería sigue presente. Pedir siempre marca y modelo. Sin fuente fiable para hornos, placas y frigoríficos de este grupo: no se incluyen.",
+  "codigos": [
+    {
+      "aparato": "lavadora",
+      "codigos": ["E01"],
+      "significado": "Candy/Hoover: la puerta no está bien cerrada o falla el cierre de puerta.",
+      "causas": ["Puerta mal cerrada o ropa pillada en la goma", "Blocapuertas averiado", "Placa"],
+      "que_puede_hacer_el_cliente": "Cerrar la puerta con firmeza comprobando que no hay ropa pillada y volver a arrancar.",
+      "pieza_probable": "Blocapuertas (cierre de puerta)",
+      "fuente": "https://guide.washerhouse.com/es/oshibka-e01-v-sm-candy/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["E02"],
+      "significado": "Candy/Hoover: problema de entrada de agua (no llena o tarda demasiado).",
+      "causas": ["Grifo cerrado o poca presión", "Manguera de entrada doblada", "Filtro de la toma de agua sucio", "Electroválvula de entrada"],
+      "que_puede_hacer_el_cliente": "Comprobar que el grifo está abierto, que hay agua en casa y que la manguera de entrada no está doblada.",
+      "pieza_probable": "Electroválvula de entrada",
+      "fuente": "https://www.ocu.org/electrodomesticos/lavadora/consejos/codigos-error-lavadoras",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["E03"],
+      "significado": "Candy/Hoover: no desagua o desagua muy despacio.",
+      "causas": ["Filtro de la bomba atascado", "Manguera de desagüe doblada u obstruida", "Bomba de desagüe", "Presostato (sensor de nivel)"],
+      "que_puede_hacer_el_cliente": "Limpiar el filtro de la bomba si el manual lo indica (sale agua: poner recipiente y toallas) y comprobar la manguera de desagüe.",
+      "pieza_probable": "Bomba de desagüe",
+      "fuente": "https://guide.washerhouse.com/es/kody-oshibok-stiralnyx-mashin-kandi/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["E04"],
+      "significado": "Candy/Hoover: exceso de agua en la cuba (actúa el sistema antidesbordamiento).",
+      "causas": ["Electroválvula que no cierra", "Presostato o su tubo", "Placa"],
+      "que_puede_hacer_el_cliente": "Cerrar el grifo de agua y desenchufar. Si hay agua en el suelo, no volver a usar hasta la revisión.",
+      "pieza_probable": "Electroválvula de entrada o presostato",
+      "fuente": "https://guide.washerhouse.com/es/kody-oshibok-stiralnyx-mashin-kandi/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["E05"],
+      "significado": "Candy/Hoover: el agua no se calienta.",
+      "causas": ["Resistencia averiada", "Sonda de temperatura", "Circuito de calentamiento en la placa"],
+      "que_puede_hacer_el_cliente": "Desenchufar 2-3 minutos y reintentar.",
+      "pieza_probable": "Resistencia o sonda de temperatura",
+      "fuente": "https://guide.washerhouse.com/es/oshibka-e05-candy/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["ERR1"],
+      "significado": "Haier: la puerta no está bien cerrada; la lavadora no arranca.",
+      "causas": ["Puerta mal cerrada u objeto que impide el cierre", "Blocapuertas o su cableado"],
+      "que_puede_hacer_el_cliente": "Empujar la puerta hasta que quede bloqueada, comprobar que nada impide el cierre y desenchufar unos minutos si persiste.",
+      "pieza_probable": "Blocapuertas",
+      "fuente": "https://www.manualslib.com/manual/819173/Haier-Hw-F1481-Me.html?page=18",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["ERR2"],
+      "significado": "Haier: error de desagüe; no vacía el agua en el tiempo previsto (unos 4-6 minutos según modelo).",
+      "causas": ["Filtro de la bomba atascado", "Manguera de desagüe doblada", "Bomba de desagüe"],
+      "que_puede_hacer_el_cliente": "Limpiar el filtro de la bomba si el manual lo indica y revisar la manguera de desagüe. No insistir con lavados si sigue, puede dañar la bomba.",
+      "pieza_probable": "Bomba de desagüe",
+      "fuente": "https://www.tuexperto.com/2023/08/29/que-significa-el-codigo-de-error-de-mi-lavadora-haier-y-como-solucionarlo/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["ERR3"],
+      "significado": "Haier: fallo de temperatura (sensor de temperatura o la resistencia no alcanza la temperatura).",
+      "causas": ["Sonda de temperatura", "Resistencia"],
+      "que_puede_hacer_el_cliente": "Desenchufar unos minutos y reintentar.",
+      "pieza_probable": "Sonda de temperatura o resistencia",
+      "fuente": "https://guide.washerhouse.com/es/kody-oshibok-stiralnyx-mashin-haier/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["ERR5"],
+      "significado": "Haier: error de entrada de agua; no alcanza el nivel en unos 8 minutos.",
+      "causas": ["Grifo cerrado o poca presión", "Manguera de entrada doblada", "Filtro de entrada sucio", "Electroválvula"],
+      "que_puede_hacer_el_cliente": "Comprobar que el grifo está abierto y la manguera de entrada no está doblada.",
+      "pieza_probable": "Electroválvula de entrada",
+      "fuente": "https://www.northlondonappliancerepairs.co.uk/error-codes/haier-error-codes/error-codes-for-haier-washing-machine.html",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["E4"],
+      "significado": "Haier (algunos modelos de carga frontal): no entra agua.",
+      "causas": ["Grifo cerrado", "Poca presión de agua", "Manguera o filtro de entrada obstruidos", "Electroválvula"],
+      "que_puede_hacer_el_cliente": "Abrir el grifo del todo, comprobar que hay agua en casa y que la manguera no está doblada.",
+      "pieza_probable": "Electroválvula de entrada",
+      "fuente": "https://www.haier-europe.com/ru_RU/faq/e4-kod-oshibki-problema-otsutstviya-podachi-vody-v-stiralnoj-mashine-s-frontalnoj-zagruzkoj-video/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["ERR8"],
+      "significado": "Haier: nivel de agua demasiado alto (exceso de agua en el tambor).",
+      "causas": ["Electroválvula que no cierra", "Presostato (sensor de nivel)"],
+      "que_puede_hacer_el_cliente": "Apagar la lavadora y cerrar el grifo de agua de inmediato. No volver a usar hasta la revisión.",
+      "pieza_probable": "Electroválvula de entrada o presostato",
+      "fuente": "https://www.northlondonappliancerepairs.co.uk/error-codes/haier-error-codes/error-codes-for-haier-washing-machine.html",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["UNB", "UNb"],
+      "significado": "Haier: carga desequilibrada; vibra o hace ruido anormal y no centrifuga bien.",
+      "causas": ["Ropa mal repartida o carga muy pequeña o muy grande", "Lavadora mal nivelada", "Si se repite: amortiguadores o rodamientos"],
+      "que_puede_hacer_el_cliente": "Parar, repartir la ropa en el tambor y volver a centrifugar. Comprobar que la lavadora está nivelada y apoya bien las cuatro patas.",
+      "pieza_probable": "Amortiguadores si se repite con carga normal",
+      "fuente": "https://www.haier-europe.com/ru_RU/faq/u-nb-kod-oshibki-nepravilnaya-vibracziya-nenormalnyh-shum-stiralnoj-mashiny-s-frontalnoj-zagruzkoj-video/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["A10"],
+      "significado": "Lavavajillas Candy/Hoover (generación moderna): no carga agua.",
+      "causas": ["Grifo cerrado", "Manguera de entrada doblada", "Filtro de entrada sucio", "Electroválvula"],
+      "que_puede_hacer_el_cliente": "Comprobar que el grifo está abierto y la manguera de entrada no está doblada.",
+      "pieza_probable": "Electroválvula de entrada",
+      "fuente": "https://www.fersay.com/blog/codigos-error-lavavajillas-segun-tu-marca/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["A20"],
+      "significado": "Lavavajillas Candy/Hoover (generación moderna): no desagua.",
+      "causas": ["Filtro del fondo atascado", "Manguera de desagüe doblada", "Sifón del fregadero atascado", "Bomba de desagüe"],
+      "que_puede_hacer_el_cliente": "Limpiar el filtro del fondo de la cuba y revisar la manguera de desagüe y el sifón del fregadero.",
+      "pieza_probable": "Bomba de desagüe",
+      "fuente": "https://www.fersay.com/blog/codigos-error-lavavajillas-segun-tu-marca/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["E2"],
+      "significado": "Lavavajillas Candy/Hoover (generación clásica): falta de agua.",
+      "causas": ["Grifo cerrado", "Manguera de entrada doblada", "Electroválvula"],
+      "que_puede_hacer_el_cliente": "Comprobar el grifo y la manguera de entrada.",
+      "pieza_probable": "Electroválvula de entrada",
+      "fuente": "https://www.fersay.com/blog/codigos-error-lavavajillas-segun-tu-marca/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["E3"],
+      "significado": "Lavavajillas Candy/Hoover (generación clásica): desagüe lento o sin desagüe.",
+      "causas": ["Filtro atascado", "Manguera de desagüe doblada", "Bomba de desagüe"],
+      "que_puede_hacer_el_cliente": "Limpiar el filtro del fondo y revisar la manguera de desagüe.",
+      "pieza_probable": "Bomba de desagüe",
+      "fuente": "https://www.fersay.com/blog/codigos-error-lavavajillas-segun-tu-marca/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["E5", "E6", "E7"],
+      "significado": "Lavavajillas Candy/Hoover (generación clásica): fallo de la sonda de temperatura.",
+      "causas": ["Sonda de temperatura (NTC)", "Cableado"],
+      "que_puede_hacer_el_cliente": "Desenchufar 2-3 minutos y reintentar.",
+      "pieza_probable": "Sonda de temperatura",
+      "fuente": "https://www.fersay.com/blog/codigos-error-lavavajillas-segun-tu-marca/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "secadora",
+      "codigos": ["E3"],
+      "significado": "Secadora Candy/Hoover de condensación: depósito de agua lleno (dato no oficial, comprobar en el manual).",
+      "causas": ["Depósito de condensación lleno", "Bomba de condensado"],
+      "que_puede_hacer_el_cliente": "Vaciar el depósito de agua, colocarlo bien y reiniciar el ciclo.",
+      "pieza_probable": "Bomba de condensado si persiste con el depósito vacío",
+      "fuente": "https://www.fersay.com/blog/codigos-de-error-secadoras-guia-marca-por-marca/",
+      "confianza": "media"
+    }
+  ]
+}

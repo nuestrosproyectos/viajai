@@ -1,0 +1,417 @@
+{
+  "familia": "Samsung",
+  "marcas": ["Samsung"],
+  "notas": "Samsung usa la misma cifra con terminación C (modelos nuevos) o E (modelos antiguos): 4C = 4E, 5C = 5E, dC = dE, etc. En lavadoras, tras mostrar un código los botones pueden quedar desactivados unos 3 minutos. Primer paso habitual oficial: apagar, cortar la corriente 30 segundos o más y volver a encender. En frigoríficos, 'OF OF' / 'O FF' es el modo demostración (cooling off), NO una avería. En hornos y microondas casi todos los códigos C-xx se intentan primero con apagado y corte de corriente de 30 segundos. No se encontró fuente fiable para códigos de placas de inducción Samsung: no se incluyen. Algunos códigos (dC, 8C, 1C, PC) cambian de significado según modelo: pedir siempre el modelo.",
+  "codigos": [
+    {
+      "aparato": "lavadora",
+      "codigos": ["4C", "4E", "E1"],
+      "significado": "No entra agua (fallo de suministro de agua).",
+      "causas": ["Grifo cerrado", "Manguera de entrada doblada o congelada", "Filtro de malla de la entrada obstruido"],
+      "que_puede_hacer_el_cliente": "Abrir del todo el grifo, comprobar que la manguera no esté doblada y limpiar el filtro de malla de la entrada si el manual lo indica.",
+      "pieza_probable": "Electroválvula de entrada de agua",
+      "fuente": "https://www.samsung.com/co/support/home-appliances/check-out-the-information-codes-on-my-washing-machine/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["5C", "5E"],
+      "significado": "No desagua.",
+      "causas": ["Filtro de la bomba obstruido", "Manguera de desagüe doblada u obstruida", "Bomba de desagüe averiada"],
+      "que_puede_hacer_el_cliente": "Comprobar la manguera de desagüe y limpiar el filtro de la bomba según el manual (sale agua: poner recipiente y toallas).",
+      "pieza_probable": "Bomba de desagüe",
+      "fuente": "https://www.samsung.com/co/support/home-appliances/check-out-the-information-codes-on-my-washing-machine/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["dC", "dE", "dE1"],
+      "significado": "Puerta abierta o mal cerrada (en algún modelo dC indica desequilibrio).",
+      "causas": ["Puerta mal cerrada", "Ropa pillada en la puerta", "Blocapuertas defectuoso"],
+      "que_puede_hacer_el_cliente": "Cerrar bien la puerta comprobando que no haya ropa pillada; apagar y encender; comprobar que no esté activo el bloqueo infantil.",
+      "pieza_probable": "Blocapuertas",
+      "fuente": "https://www.samsung.com/co/support/home-appliances/check-out-the-information-codes-on-my-washing-machine/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["Ub", "UE", "UB"],
+      "significado": "Carga desequilibrada: no centrifuga.",
+      "causas": ["Ropa mal repartida o una sola prenda grande", "Lavadora mal nivelada"],
+      "que_puede_hacer_el_cliente": "Repartir la ropa, comprobar que la lavadora está nivelada sobre suelo firme y volver a centrifugar.",
+      "pieza_probable": "",
+      "fuente": "https://www.samsung.com/co/support/home-appliances/check-out-the-information-codes-on-my-washing-machine/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["OC", "OE", "OF"],
+      "significado": "Desbordamiento: demasiada agua en la lavadora.",
+      "causas": ["Exceso de detergente/espuma", "Electroválvula que no cierra", "Sensor de nivel"],
+      "que_puede_hacer_el_cliente": "Apagar y volver a encender para que la bomba vacíe el tambor; usar menos detergente. Si sigue entrando agua, cerrar el grifo.",
+      "pieza_probable": "Electroválvula de entrada / sensor de nivel",
+      "fuente": "https://www.samsung.com/uk/support/home-appliances/what-do-the-codes-on-my-washing-machine-mean/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["UC"],
+      "significado": "Tensión eléctrica inestable (fluctuación de voltaje).",
+      "causas": ["Uso de alargadera o regleta", "Enchufe flojo", "Problema de la instalación eléctrica"],
+      "que_puede_hacer_el_cliente": "Enchufar directamente a la pared, sin alargaderas ni regletas, y comprobar que el enchufe esté firme.",
+      "pieza_probable": "",
+      "fuente": "https://www.samsung.com/uk/support/home-appliances/what-do-the-codes-on-my-washing-machine-mean/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["HC", "HE", "HE1"],
+      "significado": "Problema de temperatura del agua / calentamiento.",
+      "causas": ["Manguera conectada a toma de agua caliente", "Resistencia averiada"],
+      "que_puede_hacer_el_cliente": "Comprobar que la manguera esté conectada a la toma de agua fría.",
+      "pieza_probable": "Resistencia de calentamiento",
+      "fuente": "https://www.samsung.com/uk/support/home-appliances/what-do-the-codes-on-my-washing-machine-mean/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["tC", "tE", "tC1"],
+      "significado": "Fallo del sensor de temperatura (termistor).",
+      "causas": ["Termistor defectuoso o desconectado"],
+      "que_puede_hacer_el_cliente": "Apagar, desenchufar un minuto y volver a intentar.",
+      "pieza_probable": "Sensor de temperatura (NTC)",
+      "fuente": "https://www.samsung.com/latin_en/support/home-appliances/check-out-the-information-codes-on-my-washing-machine/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["3C", "3E"],
+      "significado": "Error del motor.",
+      "causas": ["Exceso de carga", "Algo frena el tambor", "Motor o su electrónica"],
+      "que_puede_hacer_el_cliente": "Apagar de la red, esperar un minuto, aligerar la carga y reiniciar el programa.",
+      "pieza_probable": "Motor / placa inverter",
+      "fuente": "https://www.samsung.com/uk/support/home-appliances/what-do-the-codes-on-my-washing-machine-mean/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["LC", "LE", "LC1"],
+      "significado": "Nivel de agua bajo o fuga detectada (según modelo).",
+      "causas": ["Manguera de desagüe colocada por debajo de la base (efecto sifón)", "Fuga de agua"],
+      "que_puede_hacer_el_cliente": "Comprobar que la manguera de desagüe esté colgada a la altura correcta y no por debajo de la lavadora; buscar agua en el suelo.",
+      "pieza_probable": "",
+      "fuente": "https://www.samsung.com/uk/support/home-appliances/what-do-the-codes-on-my-washing-machine-mean/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["1C", "1E"],
+      "significado": "Fallo del sensor de nivel de agua (en algunos modelos se agrupa con fugas).",
+      "causas": ["Sensor de nivel (presostato) defectuoso"],
+      "que_puede_hacer_el_cliente": "Apagar, desenchufar y volver a intentar.",
+      "pieza_probable": "Sensor de nivel de agua",
+      "fuente": "https://www.samsung.com/latin_en/support/home-appliances/samsung-washing-machine-error-codes-and-information/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["Sud", "SUdS"],
+      "significado": "NO es avería: exceso de espuma; la lavadora se para un rato y continúa sola.",
+      "causas": ["Demasiado detergente", "Detergente no apto (no HE)"],
+      "que_puede_hacer_el_cliente": "Esperar a que continúe sola y usar menos detergente en adelante.",
+      "pieza_probable": "",
+      "fuente": "https://ushl.samsung.com/latin/support/home-appliances/why-does-my-washing-machine-show-sdu-on-the-screen",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavadora",
+      "codigos": ["8C", "8E"],
+      "significado": "Según fuentes: fallo del sensor de vibración (MEMS); otras lo relacionan con exceso de espuma. Confirmar modelo.",
+      "causas": ["Sensor de vibración", "Exceso de espuma"],
+      "que_puede_hacer_el_cliente": "Apagar, desenchufar y volver a intentar con menos detergente.",
+      "pieza_probable": "",
+      "fuente": "https://www.ifixit.com/Troubleshooting/Samsung_Washing_Machine/Error+Codes/536061",
+      "confianza": "media"
+    },
+    {
+      "aparato": "secadora",
+      "codigos": ["tC", "tE"],
+      "significado": "Problema del sensor de temperatura del aire.",
+      "causas": ["Filtro de pelusa o intercambiador de calor obstruido", "Ventilación obstruida", "Sensor defectuoso"],
+      "que_puede_hacer_el_cliente": "Limpiar el filtro de pelusa y el intercambiador (si el manual lo permite) y comprobar que la secadora ventile bien.",
+      "pieza_probable": "Sensor de temperatura (termistor)",
+      "fuente": "https://www.samsung.com/es/support/home-appliances/check-the-information-codes-of-the-dryer/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "secadora",
+      "codigos": ["HC", "HE"],
+      "significado": "Sobrecalentamiento (del compresor en secadoras de bomba de calor).",
+      "causas": ["Filtro de pelusa obstruido", "Fallo del compresor o calefacción"],
+      "que_puede_hacer_el_cliente": "Limpiar el filtro de pelusa y revisar si ha saltado el diferencial; rearmarlo si es necesario.",
+      "pieza_probable": "",
+      "fuente": "https://www.samsung.com/es/support/home-appliances/check-the-information-codes-of-the-dryer/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "secadora",
+      "codigos": ["5C", "5E"],
+      "significado": "Fallo de drenaje del agua condensada o depósito lleno.",
+      "causas": ["Depósito de agua lleno", "Manguera de drenaje doblada o congelada", "Bomba de drenaje"],
+      "que_puede_hacer_el_cliente": "Vaciar el depósito de agua, comprobar la manguera de drenaje (si la tiene) y volver a empezar.",
+      "pieza_probable": "Bomba de drenaje de condensados",
+      "fuente": "https://www.samsung.com/es/support/home-appliances/check-the-information-codes-of-the-dryer/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "secadora",
+      "codigos": ["dC", "dE"],
+      "significado": "Puerta abierta o mal cerrada.",
+      "causas": ["Puerta mal cerrada", "Bloqueo infantil activo", "Interruptor de puerta"],
+      "que_puede_hacer_el_cliente": "Cerrar bien la puerta y comprobar si está activado el bloqueo infantil.",
+      "pieza_probable": "Interruptor de puerta",
+      "fuente": "https://www.samsung.com/es/support/home-appliances/check-the-information-codes-of-the-dryer/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "secadora",
+      "codigos": ["9C1", "9E1"],
+      "significado": "Problema de tensión de alimentación o del control electrónico.",
+      "causas": ["Uso de alargadera", "Enchufe defectuoso", "Placa de control"],
+      "que_puede_hacer_el_cliente": "Enchufar directamente a la pared sin alargadera y comprobar el enchufe.",
+      "pieza_probable": "",
+      "fuente": "https://www.samsung.com/latin/support/home-appliances/check-the-information-codes-of-the-dryer/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "secadora",
+      "codigos": ["NC", "NC1"],
+      "significado": "Problema con el filtro de pelusa (filtro no colocado o mal colocado).",
+      "causas": ["Filtro ausente, mal colocado o muy sucio"],
+      "que_puede_hacer_el_cliente": "Revisar que el filtro de pelusa esté limpio y bien colocado.",
+      "pieza_probable": "",
+      "fuente": "https://www.samsung.com/es/support/home-appliances/check-the-information-codes-of-the-dryer/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["4C", "4E"],
+      "significado": "No recibe agua con la presión o temperatura necesarias.",
+      "causas": ["Llave de paso cerrada", "Manguera o válvula de entrada congelada u obstruida"],
+      "que_puede_hacer_el_cliente": "Abrir del todo la llave de paso y comprobar que la manguera de entrada no esté doblada.",
+      "pieza_probable": "Electroválvula de entrada",
+      "fuente": "https://www.samsung.com/es/support/home-appliances/que-significan-los-codigos-5c-5e-4c-4e-y-lc-le-de-tu-lavavajillas/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["5C", "5E"],
+      "significado": "No desagua.",
+      "causas": ["Filtro obstruido", "Manguera de desagüe doblada", "Desagüe de la casa atascado", "Bomba de desagüe"],
+      "que_puede_hacer_el_cliente": "Limpiar el filtro y comprobar que la manguera de desagüe no esté doblada.",
+      "pieza_probable": "Bomba de desagüe",
+      "fuente": "https://www.samsung.com/es/support/home-appliances/que-significan-los-codigos-5c-5e-4c-4e-y-lc-le-de-tu-lavavajillas/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["LC", "LE"],
+      "significado": "Fuga detectada: el sensor de fugas detecta agua (el aparato no se apaga e intenta desaguar).",
+      "causas": ["Fuga interna de agua a la base", "Reflector de agua bloqueado (modelos WaterWall)"],
+      "que_puede_hacer_el_cliente": "Cerrar la llave de agua y bajar el diferencial/magnetotérmico del lavavajillas.",
+      "pieza_probable": "",
+      "fuente": "https://www.samsung.com/es/support/home-appliances/que-significan-los-codigos-5c-5e-4c-4e-y-lc-le-de-tu-lavavajillas/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["3C", "3E"],
+      "significado": "Fallo de funcionamiento de la bomba/motor (puede estar relacionado con el dispensador de detergente).",
+      "causas": ["Pastilla atascada en el dispensador", "Bomba de lavado"],
+      "que_puede_hacer_el_cliente": "Comprobar que la pastilla de detergente no esté atascada en el cajetín.",
+      "pieza_probable": "Bomba de lavado",
+      "fuente": "https://www.samsung.com/es/support/home-appliances/que-significan-los-codigos-que-muestra-tu-lavavajillas/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["HC", "HE"],
+      "significado": "Problema de calentamiento / temperatura demasiado alta.",
+      "causas": ["Resistencia o sensor de temperatura"],
+      "que_puede_hacer_el_cliente": "Apagar al menos 5 minutos y hacer un ciclo normal con la cuba vacía y detergente.",
+      "pieza_probable": "Resistencia / sensor de temperatura",
+      "fuente": "https://www.samsung.com/latin/support/home-appliances/samsung-dishwasher-error-codes/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["AC", "AE"],
+      "significado": "Fallo de comunicación entre la placa principal y otras partes.",
+      "causas": ["Picos o cortes de tensión", "Conexión entre placas"],
+      "que_puede_hacer_el_cliente": "Cortar la corriente un minuto y volver a encender; si desaparece fue un fallo temporal.",
+      "pieza_probable": "",
+      "fuente": "https://www.samsung.com/latin/support/home-appliances/samsung-dishwasher-error-codes/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "lavavajillas",
+      "codigos": ["PC", "PE"],
+      "significado": "Según fuente: error de la válvula divisora/Zone Wash o del sensor de temperatura. Confirmar modelo.",
+      "causas": ["Válvula divisora", "Sensor de temperatura"],
+      "que_puede_hacer_el_cliente": "",
+      "pieza_probable": "",
+      "fuente": "https://www.samsung.com/latin/support/home-appliances/samsung-dishwasher-error-codes/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "frigorifico",
+      "codigos": ["OF OF", "O FF"],
+      "significado": "NO es avería: modo demostración/exposición (cooling off); luces y pantalla funcionan pero no enfría.",
+      "causas": ["Modo tienda activado por error"],
+      "que_puede_hacer_el_cliente": "Mantener pulsados a la vez los dos botones que indica el manual (p. ej. Frigorífico + Power Cool) unos segundos hasta oír un pitido; si no funciona, desenchufar 2 minutos y volver a enchufar.",
+      "pieza_probable": "",
+      "fuente": "https://www.samsung.com/latin/support/home-appliances/samsung-refigerator-error-codes",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "frigorifico",
+      "codigos": ["21E", "21C"],
+      "significado": "Fallo del ventilador del congelador.",
+      "causas": ["Ventilador bloqueado por hielo", "Motor del ventilador defectuoso", "Puerta dejada abierta"],
+      "que_puede_hacer_el_cliente": "Comprobar que las puertas cierran bien; la descongelación debe hacerla preferiblemente el técnico.",
+      "pieza_probable": "Motor ventilador del congelador",
+      "fuente": "https://www.samsung.com/latin/support/home-appliances/samsung-refigerator-error-codes",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "frigorifico",
+      "codigos": ["22E", "22C"],
+      "significado": "Fallo del ventilador del frigorífico.",
+      "causas": ["Puerta abierta demasiado tiempo", "Hielo en el ventilador", "Motor del ventilador"],
+      "que_puede_hacer_el_cliente": "Comprobar que la puerta cierra bien. Samsung sugiere desenchufarlo unas horas con las puertas abiertas (vaciando antes los alimentos).",
+      "pieza_probable": "Motor ventilador del frigorífico",
+      "fuente": "https://www.samsung.com/latin/support/home-appliances/samsung-refigerator-error-codes",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "frigorifico",
+      "codigos": ["33E", "33C"],
+      "significado": "Fallo de la resistencia del conducto de hielo (frigoríficos con dispensador).",
+      "causas": ["Resistencia del conducto de hielo averiada"],
+      "que_puede_hacer_el_cliente": "",
+      "pieza_probable": "Resistencia del conducto de hielo",
+      "fuente": "https://www.samsung.com/latin/support/home-appliances/samsung-refigerator-error-codes",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "frigorifico",
+      "codigos": ["39E", "39C"],
+      "significado": "Fallo de funcionamiento de la máquina de hielo.",
+      "causas": ["Fábrica de hielo atascada o averiada"],
+      "que_puede_hacer_el_cliente": "Reiniciar desenchufando unos minutos.",
+      "pieza_probable": "Fábrica de hielo (ice maker)",
+      "fuente": "https://www.samsung.com/latin/support/home-appliances/samsung-refigerator-error-codes",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "frigorifico",
+      "codigos": ["40E", "40C"],
+      "significado": "Fallo del ventilador de la cámara de hielo.",
+      "causas": ["Ventilador bloqueado por hielo o averiado"],
+      "que_puede_hacer_el_cliente": "",
+      "pieza_probable": "Ventilador de la cámara de hielo",
+      "fuente": "https://www.samsung.com/latin/support/home-appliances/samsung-refigerator-error-codes",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "frigorifico",
+      "codigos": ["84C", "84E"],
+      "significado": "Compresor bloqueado.",
+      "causas": ["Fallo del compresor o de su placa inverter"],
+      "que_puede_hacer_el_cliente": "",
+      "pieza_probable": "Compresor / placa inverter",
+      "fuente": "https://www.samsung.com/latin/support/home-appliances/samsung-refigerator-error-codes",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "frigorifico",
+      "codigos": ["5E", "5C"],
+      "significado": "Fallo del sensor de descongelación del frigorífico.",
+      "causas": ["Sensor de desescarche defectuoso"],
+      "que_puede_hacer_el_cliente": "",
+      "pieza_probable": "Sensor de desescarche",
+      "fuente": "https://www.samsung.com/latin/support/home-appliances/samsung-refigerator-error-codes",
+      "confianza": "media"
+    },
+    {
+      "aparato": "horno",
+      "codigos": ["C-d0"],
+      "significado": "Botón pulsado más de un minuto o atascado.",
+      "causas": ["Tecla atascada", "Agua o suciedad sobre los botones"],
+      "que_puede_hacer_el_cliente": "Limpiar y secar los botones, apagar y volver a encender el horno.",
+      "pieza_probable": "Panel de mandos/teclado",
+      "fuente": "https://www.samsung.com/es/support/home-appliances/que-significan-los-codigos-que-muestra-tu-horno/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "horno",
+      "codigos": ["C-d1"],
+      "significado": "Fallo del bloqueo de puerta (hornos pirolíticos).",
+      "causas": ["Objeto que impide el cierre del pestillo", "Motor/cerradura de puerta"],
+      "que_puede_hacer_el_cliente": "Comprobar que nada bloquea el pestillo, reiniciar y, si persiste, cortar la corriente al menos 30 segundos.",
+      "pieza_probable": "Cerradura de puerta (motor de bloqueo)",
+      "fuente": "https://www.samsung.com/es/support/home-appliances/que-significan-los-codigos-que-muestra-tu-horno/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "horno",
+      "codigos": ["C-F0", "C-F1", "C-F2"],
+      "significado": "Fallo de comunicación o de memoria (EEPROM) entre placas / panel táctil.",
+      "causas": ["Fallo temporal de la electrónica", "Placa principal o de panel"],
+      "que_puede_hacer_el_cliente": "Apagar y reiniciar; si sigue, cortar la corriente 30 segundos o más y volver a conectar.",
+      "pieza_probable": "Placa electrónica / panel táctil",
+      "fuente": "https://www.samsung.com/es/support/home-appliances/que-significan-los-codigos-que-muestra-tu-horno/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "horno",
+      "codigos": ["C-20", "C-21", "C-22"],
+      "significado": "Error del sensor de temperatura; C-21 suele indicar temperatura superior a la ajustada (sobrecalentamiento).",
+      "causas": ["Sensor de temperatura (sonda) defectuoso o su cableado", "Sobrecalentamiento"],
+      "que_puede_hacer_el_cliente": "Apagar y dejar enfriar; reiniciar y, si sigue, cortar la corriente unos 30 segundos.",
+      "pieza_probable": "Sensor de temperatura del horno",
+      "fuente": "https://www.samsung.com/es/support/home-appliances/que-significan-los-codigos-que-muestra-tu-horno/",
+      "confianza": "media"
+    },
+    {
+      "aparato": "microondas",
+      "codigos": ["C-d0", "SE", "-SE-"],
+      "significado": "Tecla pulsada más de 10 segundos o atascada.",
+      "causas": ["Polvo o agua en el teclado", "Tecla atascada"],
+      "que_puede_hacer_el_cliente": "Desenchufar, limpiar y secar el teclado y volver a enchufar.",
+      "pieza_probable": "Teclado/membrana",
+      "fuente": "https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-microwave/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "microondas",
+      "codigos": ["C-F0", "C-F1", "C-F2"],
+      "significado": "Error de comunicación o de memoria (EEPROM) de la electrónica.",
+      "causas": ["Fallo temporal", "Placa de control"],
+      "que_puede_hacer_el_cliente": "Apagar y reiniciar; si sigue, desenchufar 30 segundos o más.",
+      "pieza_probable": "Placa de control",
+      "fuente": "https://www.samsung.com/latin/support/home-appliances/displayed-information-codes-on-my-microwave/",
+      "confianza": "alta"
+    },
+    {
+      "aparato": "microondas",
+      "codigos": ["C-21"],
+      "significado": "Temperatura interna demasiado alta (sensor de temperatura).",
+      "causas": ["Uso prolongado a alta potencia", "Salidas de ventilación tapadas", "Sensor"],
+      "que_puede_hacer_el_cliente": "Desenchufar, dejar enfriar y volver a intentar; comprobar que las rejillas de ventilación no estén tapadas.",
+      "pieza_probable": "",
+      "fuente": "https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-microwave/",
+      "confianza": "alta"
+    }
+  ]
+}
