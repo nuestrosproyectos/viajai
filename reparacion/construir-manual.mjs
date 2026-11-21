@@ -10,7 +10,7 @@ const dir = new URL("./conocimiento/", import.meta.url);
 const familias = [], sintomas = [], peligro = [], avisos = [];
 let compensa = "";
 
-for (const nombre of readdirSync(dir).filter(f => f.endsWith(".json")).sort()) {
+for (const nombre of readdirSync(dir).filter(f => f.endsWith(".json") && f !== "sinonimos.json").sort()) {
   const d = JSON.parse(readFileSync(new URL(nombre, dir), "utf8"));
   if (d.codigos) {
     const vistos = new Set();
@@ -32,6 +32,14 @@ for (const nombre of readdirSync(dir).filter(f => f.endsWith(".json")).sort()) {
     peligro.push(...(d.peligro || []));
     compensa = d.compensa_reparar || compensa;
   }
+}
+
+// Sinónimos coloquiales añadidos a mano (conocimiento/sinonimos.json)
+const extra = JSON.parse(readFileSync(new URL("sinonimos.json", dir), "utf8")).sinonimos;
+for (const x of extra) {
+  const s = sintomas.find(s => s.aparato === x.aparato && s.sintoma === x.sintoma);
+  if (s) s.palabras = [...new Set([...s.palabras, ...x.palabras])];
+  else avisos.push(`sinonimos.json: no encuentro el síntoma «${x.sintoma}» (${x.aparato})`);
 }
 
 const base = { generado: new Date().toISOString().slice(0, 10), familias, sintomas, peligro, compensa_reparar: compensa };

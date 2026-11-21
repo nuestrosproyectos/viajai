@@ -1,0 +1,99 @@
+{
+ "_explicacion": "Formas extra de decir cada síntoma (como habla un cliente). Se añaden a las palabras de la ficha con el mismo aparato y título. No contienen datos técnicos.",
+ "sinonimos": [
+  {
+   "aparato": "placa",
+   "sintoma": "Salta el diferencial o el automático al encender la placa",
+   "palabras": [
+    "salta los plomos",
+    "salta el automatico",
+    "se va la luz",
+    "salta la luz de la casa"
+   ]
+  },
+  {
+   "aparato": "horno",
+   "sintoma": "Salta el diferencial al encender el horno",
+   "palabras": [
+    "salta los plomos",
+    "salta el automatico",
+    "se va la luz"
+   ]
+  },
+  {
+   "aparato": "placa",
+   "sintoma": "Una zona no calienta (el resto sí)",
+   "palabras": [
+    "no calienta un fuego",
+    "no calienta una zona",
+    "no va un fuego",
+    "un fuego no funciona",
+    "una placa no calienta",
+    "un fuego no enciende"
+   ]
+  },
+  {
+   "aparato": "placa",
+   "sintoma": "Inducción: no detecta el recipiente (parpadea el número o sale 'U')",
+   "palabras": [
+    "no reconoce la sarten",
+    "no reconoce el cazo",
+    "no detecta la olla",
+    "no detecta el cazo",
+    "no reconoce la cazuela",
+    "no pilla la sarten"
+   ]
+  },
+  {
+   "aparato": "horno",
+   "sintoma": "Calienta solo por arriba o solo por abajo",
+   "palabras": [
+    "calienta solo por arriba",
+    "calienta solo por abajo",
+    "solo calienta por arriba",
+    "solo calienta por abajo",
+    "quema por abajo"
+   ]
+  },
+  {
+   "aparato": "frigorifico",
+   "sintoma": "Hielo o escarcha en la pared del fondo (frigorífico cíclico)",
+   "palabras": [
+    "hace hielo",
+    "se forma hielo",
+    "se hace hielo",
+    "tiene hielo dentro",
+    "hielo en el fondo"
+   ]
+  },
+  {
+   "aparato": "lavavajillas",
+   "sintoma": "No arranca o se para a mitad",
+   "palabras": [
+    "pita",
+    "pita y se para",
+    "no deja de pitar",
+    "pita sin parar"
+   ]
+  },
+  {
+   "aparato": "lavadora",
+   "sintoma": "Se enciende pero el programa no empieza",
+   "palabras": [
+    "se para a mitad",
+    "se para en mitad del lavado",
+    "se para sola",
+    "se queda a medias"
+   ]
+  },
+  {
+   "aparato": "horno",
+   "sintoma": "La puerta o el cristal se calientan demasiado, o sale aire caliente",
+   "palabras": [
+    "el cristal quema",
+    "quema el cristal",
+    "no se puede tocar la puerta"
+   ]
+  }
+ ]
+}

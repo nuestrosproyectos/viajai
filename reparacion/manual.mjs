@@ -15,7 +15,7 @@ export const APARATOS = {
   "lavadora-secadora": ["lavadora secadora", "lavasecadora", "lava seca", "lavadora y secadora"],
   lavadora: ["lavadora", "lavarropas"],
   secadora: ["secadora"],
-  lavavajillas: ["lavavajillas", "lavaplatos", "friegaplatos", "lava vajillas"],
+  lavavajillas: ["lavavajillas", "lavaplatos", "friegaplatos", "lava vajillas", "los platos", "la vajilla", "los vasos", "las copas"],
   congelador: ["congelador", "arcon", "arcon congelador"],
   frigorifico: ["frigorifico", "frigo", "nevera", "combi", "americano", "no frost", "refrigerador", "frigorifica"],
   horno: ["horno"],
@@ -128,7 +128,7 @@ export function preparar(base) {
   for (const fam of base.familias) {
     for (const c of fam.codigos) fichas.push({ ...c, tipo: "codigo", familia: fam.familia, marcas: fam.marcas, claves: c.codigos.map(clave) });
   }
-  const sintomas = base.sintomas.map(s => ({ ...s, tipo: "sintoma", raices: [...new Set([s.sintoma, ...(s.palabras || [])].map(normalizar))] }));
+  const sintomas = base.sintomas.map(s => ({ ...s, tipo: "sintoma", raices: [...new Set([s.sintoma.replace(/\(.*?\)/g, ""), ...(s.palabras || [])].map(normalizar))] }));
   const marcaAFamilia = {};
   for (const fam of base.familias) for (const m of fam.marcas) (marcaAFamilia[m] ||= []).push(fam.familia);
   const codigosConocidos = new Set(fichas.flatMap(f => f.claves));
@@ -139,6 +139,37 @@ const mismoAparato = (ficha, aparato) => !aparato || ficha.aparato === aparato |
   (aparato === "lavadora-secadora" && (ficha.aparato === "lavadora" || ficha.aparato === "secadora")) ||
   (aparato === "lavadora" && ficha.aparato === "lavadora-secadora") ||
   (aparato === "congelador" && ficha.aparato === "frigorifico") || (aparato === "frigorifico" && ficha.aparato === "congelador");
+
+// ¿Aparecen las palabras de la frase en orden, con como mucho 2 palabras intercaladas? ("hace mucho ruido" ~ "hace ruido")
+export function fraseFlexible(palabras, frase) {
+  const f = frase.split(" ");
+  for (let i = 0; i < palabras.length; i++) {
+    if (palabras[i] !== f[0]) continue;
+    let j = 1, k = i + 1, saltos = 0;
+    while (j < f.length && k < palabras.length && saltos <= 2) { if (palabras[k] === f[j]) j++; else saltos++; k++; }
+    if (j === f.length && saltos <= 2) return true;
+  }
+  return false;
+}
+
+// Palabras clave: sin palabras vacías y recortadas a 5 letras ("rajado" y "rajada" -> "rajad")
+const VACIAS = new Set("de la el los las un una unos unas y o que en por con se me mi mis su sus lo le les al del a muy mucho mucha muchos muchas poco ya es esta este esto son tiene tengo hay como pero mas cuando todo toda todos sale salen deja dejan hace hacen echa echan esta estan algo".split(" "));
+// Palabras que el cliente usa por otras de la ficha (se comparan ya recortadas)
+export const EQUIVALE = {
+  huele: "olor", huelen: "olor", oler: "olor", apest: "olor", peste: "olor",
+  humed: "mojad", empap: "mojad", chorr: "mojad",
+  rajad: "roto", raja: "roto", rota: "roto", grief: "roto", griet: "roto", parti: "roto", romp: "roto",
+  debaj: "bajo", charc: "agua", suelt: "coge", traga: "coge", pilla: "coge", bombo: "tambo",
+  nevera: "frigo", frigo: "frigo", frigor: "frigo"
+};
+export const claves = t => normalizar(t).split(" ").filter(w => w && !VACIAS.has(w)).map(w => { const c = w.slice(0, 5); return EQUIVALE[c] || c; });
+// ¿Están las palabras clave de la frase del manual en lo que dice el cliente? (todas, o todas menos una si son 4 o más)
+export function cubre(clavesCliente, frase) {
+  const c = claves(frase);
+  if (!c.length) return 0;
+  const hay = c.filter(w => clavesCliente.has(w)).length;
+  return hay === c.length || (c.length >= 4 && hay >= c.length - 1) ? c.length : 0;
+}
 
 // turnos: [{role:"user"|"assistant", content:"..."}]. Devuelve { aparato, marca, fichas[], texto }
 export function buscar(manual, turnos, { maxCodigos = 3, maxSintomas = 2 } = {}) {
@@ -169,13 +200,20 @@ export function buscar(manual, turnos, { maxCodigos = 3, maxSintomas = 2 } = {})
 
   // Síntomas: por coincidencia de palabras con lo que dice el cliente ahora
   const nUlt = " " + normalizar(ultimo) + " ", nRec = " " + normalizar(recientes) + " ";
-  const porSintoma = manual.sintomas.filter(s => mismoAparato(s, aparato))
+  const pUlt = nUlt.trim().split(" "), pRec = nRec.trim().split(" ");
+  const cUlt = new Set(claves(ultimo)), cRec = new Set(claves(recientes));
+  // Sin aparato no se diagnostica por síntoma (el técnico pregunta primero qué aparato es)
+  const porSintoma = manual.sintomas.filter(s => aparato && mismoAparato(s, aparato))
     .map(s => {
       let p = 0;
       for (const r of s.raices) {
         if (r.length < 4) continue;
-        if (nUlt.includes(" " + r + " ")) p += 3 + r.split(" ").length;
-        else if (nRec.includes(" " + r + " ")) p += 1 + r.split(" ").length / 2;
+        const n = r.split(" ").length;
+        if (nUlt.includes(" " + r + " ")) p += 3 + n;
+        else if (n > 1 && fraseFlexible(pUlt, r)) p += 2 + n;
+        else if (nRec.includes(" " + r + " ")) p += 1 + n / 2;
+        else if (n > 1 && fraseFlexible(pRec, r)) p += 0.5 + n / 2;
+        else { const k = cubre(cUlt, r); if (k >= 2) p += 1 + k; else if (k === 1) p += 3; else if (cubre(cRec, r) >= 1) p += 0.5; }
       }
       if (p && aparato && s.aparato === aparato) p += 2;
       return { s, p };

@@ -26,6 +26,43 @@ def clave(c: str) -> str:
     return normalizar(c).replace(" ", "")
 
 
+VACIAS = set("de la el los las un una unos unas y o que en por con se me mi mis su sus lo le les al del a muy mucho mucha muchos muchas poco ya es esta este esto son tiene tengo hay como pero mas cuando todo toda todos sale salen deja dejan hace hacen echa echan esta estan algo".split(" "))
+
+
+EQUIVALE: dict = {}  # se carga desde conocimiento.json (misma tabla que manual.mjs)
+
+
+def claves(t: str) -> list:
+    """Palabras clave: sin palabras vacías, recortadas a 5 letras y con equivalencias."""
+    return [EQUIVALE.get(w[:5], w[:5]) for w in normalizar(t).split(" ") if w and w not in VACIAS]
+
+
+def cubre(claves_cliente: set, frase: str) -> int:
+    c = claves(frase)
+    if not c:
+        return 0
+    hay = sum(1 for w in c if w in claves_cliente)
+    return len(c) if hay == len(c) or (len(c) >= 4 and hay >= len(c) - 1) else 0
+
+
+def frase_flexible(palabras: list, frase: str) -> bool:
+    """¿Aparecen las palabras de la frase en orden, con como mucho 2 intercaladas?"""
+    f = frase.split(" ")
+    for i in range(len(palabras)):
+        if palabras[i] != f[0]:
+            continue
+        j, k, saltos = 1, i + 1, 0
+        while j < len(f) and k < len(palabras) and saltos <= 2:
+            if palabras[k] == f[j]:
+                j += 1
+            else:
+                saltos += 1
+            k += 1
+        if j == len(f) and saltos <= 2:
+            return True
+    return False
+
+
 class Manual:
     def __init__(self, ruta: Path):
         datos = json.loads(Path(ruta).read_text(encoding="utf-8"))
@@ -36,6 +73,8 @@ class Manual:
         self.letras: dict = d["LETRAS"]
         self.centenas: dict = d["CENTENAS"]
         self.marca_aparato: dict = d["MARCA_APARATO"]
+        EQUIVALE.clear()
+        EQUIVALE.update(d["EQUIVALE"])
         base = datos["conocimiento"]
         self.fichas = []
         for fam in base["familias"]:
@@ -44,7 +83,7 @@ class Manual:
                                     "claves": [clave(x) for x in c["codigos"]]})
         self.sintomas = []
         for s in base["sintomas"]:
-            raices = list(dict.fromkeys(normalizar(x) for x in [s["sintoma"], *s.get("palabras", [])]))
+            raices = list(dict.fromkeys(normalizar(x) for x in [re.sub(r"\(.*?\)", "", s["sintoma"]), *s.get("palabras", [])]))
             self.sintomas.append({**s, "tipo": "sintoma", "raices": raices})
         self.marca_a_familia: dict = {}
         for fam in base["familias"]:
@@ -163,18 +202,33 @@ class Manual:
 
         n_ult = " " + normalizar(ultimo) + " "
         n_rec = " " + normalizar(recientes) + " "
+        p_ult, p_rec = n_ult.strip().split(" "), n_rec.strip().split(" ")
+        c_ult, c_rec = set(claves(ultimo)), set(claves(recientes))
         puntuados = []
         for s in self.sintomas:
-            if not self.mismo_aparato(s, aparato):
-                continue
+            if not aparato or not self.mismo_aparato(s, aparato):
+                continue  # sin aparato no se diagnostica por síntoma
             p = 0.0
             for r in s["raices"]:
                 if len(r) < 4:
                     continue
+                n = len(r.split(" "))
                 if " " + r + " " in n_ult:
-                    p += 3 + len(r.split(" "))
+                    p += 3 + n
+                elif n > 1 and frase_flexible(p_ult, r):
+                    p += 2 + n
                 elif " " + r + " " in n_rec:
-                    p += 1 + len(r.split(" ")) / 2
+                    p += 1 + n / 2
+                elif n > 1 and frase_flexible(p_rec, r):
+                    p += 0.5 + n / 2
+                else:
+                    k = cubre(c_ult, r)
+                    if k >= 2:
+                        p += 1 + k
+                    elif k == 1:
+                        p += 3
+                    elif cubre(c_rec, r) >= 1:
+                        p += 0.5
             if p and aparato and s["aparato"] == aparato:
                 p += 2
             if p >= 3:

@@ -5379,7 +5379,2395 @@ export default {
    ]
   }
  ],
- "sintomas": [],
- "peligro": [],
- "compensa_reparar": ""
+ "sintomas": [
+  {
+   "aparato": "lavadora",
+   "sintoma": "No centrifuga o deja la ropa muy mojada",
+   "palabras": [
+    "no centrifuga",
+    "no escurre",
+    "ropa empapada",
+    "ropa mojada",
+    "sale chorreando",
+    "no exprime",
+    "no da vueltas rápido"
+   ],
+   "causas": [
+    "Carga desequilibrada (una sola prenda pesada, mantas, alfombrillas) o tambor sobrecargado: la lavadora cancela el centrifugado por seguridad",
+    "Filtro de la bomba o manguera de desagüe obstruidos: si no vacía el agua, no centrifuga",
+    "Programa o ajuste sin centrifugado (delicados, lana, 'sin centrifugado' o revoluciones al mínimo)",
+    "Correa gastada o rota, escobillas del motor gastadas o motor averiado",
+    "Fallo de sensor (presostato/tacogenerador) o de la placa electrónica"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que no se ha elegido un programa sin centrifugado ni las revoluciones al mínimo. Repartir la ropa, quitar o añadir prendas para equilibrar y lanzar solo 'centrifugado'. Revisar que la manguera de desagüe no esté doblada. Si el manual lo indica, limpiar el filtro de la bomba con la lavadora desenchufada, con un recipiente y toallas (el agua puede salir caliente). Mirar si aparece algún código en la pantalla.",
+   "pieza_probable": "Bomba de desagüe, correa, escobillas o motor, presostato, módulo electrónico",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.xatakahome.com/tutoriales/que-hacer-tu-lavadora-no-centrifuga-causas-soluciones",
+    "https://www.samsung.com/co/support/home-appliances/what-to-do-when-samsung-washing-machine-does-not-spin/",
+    "https://www.haier-europe.com/es_ES/blogs/news/por-que-la-lavadora-se-llena-de-agua-pero-no-centrifuga",
+    "https://www.ocu.org/repara/lavadoras/otros-problemas-lavadora"
+   ]
+  },
+  {
+   "aparato": "lavadora",
+   "sintoma": "No desagua o se queda agua en el tambor",
+   "palabras": [
+    "no desagua",
+    "no tira el agua",
+    "se queda con agua",
+    "agua en el tambor",
+    "no vacía",
+    "se queda llena de agua",
+    "no traga el agua"
+   ],
+   "causas": [
+    "Filtro de la bomba de desagüe atascado (pelusas, monedas, horquillas, calcetines)",
+    "Manguera de desagüe doblada, pisada u obstruida, o desagüe/sifón de la casa atascado (a veces compartido con el fregadero)",
+    "Bomba de desagüe bloqueada por un objeto o quemada",
+    "Fallo de presostato o electrónica"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que la manguera de desagüe no esté doblada ni aplastada detrás del aparato y que el fregadero o desagüe de la casa traga bien. Si el manual lo indica, con la lavadora desenchufada y un recipiente bajo el registro, vaciar el agua por el tubito de emergencia y limpiar el filtro de la bomba. No forzar la puerta con agua dentro.",
+   "pieza_probable": "Bomba de desagüe, manguera de desagüe, presostato",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.bosch-home.es/servicio-oficial/garantias-y-asistencia/lavadora-no-desagua",
+    "https://www.bosch-home.es/servicio-oficial/garantias-y-asistencia/limpiar-el-desague-de-la-lavadora",
+    "https://www.lg.com/es/lg-experience/consejos-utiles/washing-machine-not-draining",
+    "https://www.ocu.org/repara/lavadoras/agua-retenida-tambor",
+    "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavadoras/la-lavadora-no-desagua"
+   ]
+  },
+  {
+   "aparato": "lavadora",
+   "sintoma": "No coge agua o tarda mucho en llenarse",
+   "palabras": [
+    "no coge agua",
+    "no entra agua",
+    "no se llena",
+    "no carga agua",
+    "se queda sin agua",
+    "zumba y no entra agua"
+   ],
+   "causas": [
+    "Grifo de la lavadora cerrado, corte de agua o poca presión en la casa",
+    "Manguera de entrada doblada o pinzada",
+    "Filtro de malla de la entrada de agua obstruido por cal (muy típico con agua dura)",
+    "Sistema antifugas (AquaStop) activado",
+    "Electroválvula de entrada averiada; con menos frecuencia presostato o electrónica"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que el grifo está abierto del todo y que hay agua y presión en otros grifos. Revisar que la manguera de entrada no esté doblada. Si el manual lo indica, cerrar el grifo y limpiar el filtrito de malla de la entrada de agua. Si la lavadora tiene AquaStop y muestra aviso, llamar al técnico.",
+   "pieza_probable": "Electroválvula de entrada, manguera de entrada o AquaStop, presostato",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.ocu.org/repara/lavadoras/tambor-no-coge-agua",
+    "https://www.bosch-home.es/servicio-oficial/garantias-y-asistencia/no-entra-agua",
+    "https://www.siemens-home.bsh-group.com/es/servicio-oficial/limpieza-mantenimiento/lavadoras-y-secadoras/lavadoras/limpieza-y-descalcificacion/filtro-de-suministro-de-agua",
+    "https://ushl.samsung.com/es/support/home-appliances/que-hacer-cuando-mi-lavadora-no-se-llena-de-agua-o-no-la-evacua-apropiadamente"
+   ]
+  },
+  {
+   "aparato": "lavadora",
+   "sintoma": "Pierde agua o deja un charco en el suelo",
+   "palabras": [
+    "pierde agua",
+    "charco",
+    "gotea",
+    "sale agua por debajo",
+    "moja el suelo",
+    "fuga de agua",
+    "sale agua por la puerta"
+   ],
+   "causas": [
+    "Junta (goma) de la puerta sucia, con restos de pelos o rota",
+    "Tapón del filtro de la bomba mal cerrado tras limpiarlo",
+    "Manguera de entrada o desagüe suelta, con la junta gastada o agujereada",
+    "Cajetín del detergente atascado que rebosa, o exceso de detergente/espuma",
+    "Fuga interna (cuba, manguitos, bomba)"
+   ],
+   "que_puede_hacer_el_cliente": "Cerrar el grifo y desenchufar antes de nada. Limpiar la goma de la puerta y comprobar que no haya pelos o restos entre cristal y goma. Comprobar que el tapón del filtro está bien enroscado y que las tuercas de las mangueras están apretadas a mano. Limpiar el cajetín y no pasarse con el detergente. Si el agua llega a enchufes o regletas, cortar la luz en el cuadro antes de acercarse.",
+   "pieza_probable": "Goma de puerta, manguera de entrada o desagüe, manguitos internos, bomba",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://www.ocu.org/repara/lavadoras/fugas-lavadora",
+    "https://www.beko.com/es-es/blog/sale-agua-debajo-lavadora",
+    "https://www.lg.com/es/soporte/guias-y-soluciones/lavado-secado/fugas-agua-debajo-lavadora",
+    "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavadoras/la-lavadora-gotea"
+   ]
+  },
+  {
+   "aparato": "lavadora",
+   "sintoma": "Hace mucho ruido al centrifugar (como un avión)",
+   "palabras": [
+    "ruido",
+    "hace ruido como un avión",
+    "ruge",
+    "ruido al centrifugar",
+    "zumbido fuerte",
+    "suena a hierros",
+    "rodamientos"
+   ],
+   "causas": [
+    "Tornillos de transporte sin quitar (lavadora nueva o recién mudada)",
+    "Lavadora mal nivelada o tocando un mueble o pared",
+    "Objeto metálico entre tambor y cuba (monedas, aros de sujetador, horquillas)",
+    "Rodamientos desgastados (ruido sordo/rugido creciente al centrifugar)",
+    "Amortiguadores o muelles rotos, contrapeso flojo"
+   ],
+   "que_puede_hacer_el_cliente": "Si es nueva o se ha mudado, comprobar que se quitaron los tornillos de transporte de la parte trasera. Comprobar que está nivelada, que no baila y que no roza con nada. Mirar en el filtro de la bomba (si el manual lo indica) por si hay monedas u objetos. Vaciar bolsillos antes de lavar.",
+   "pieza_probable": "Rodamientos y retén (a veces conjunto de cuba), amortiguadores, muelles",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.ocu.org/repara/lavadoras/ruidos-lavadora",
+    "https://www.samsung.com/es/support/home-appliances/understanding-the-noises-your-washing-machine-makes/",
+    "https://guide.washerhouse.com/es/shumit-pri-otzhime/"
+   ]
+  },
+  {
+   "aparato": "lavadora",
+   "sintoma": "Vibra mucho, se mueve o 'camina' al centrifugar",
+   "palabras": [
+    "se mueve",
+    "baila",
+    "vibra",
+    "salta",
+    "camina",
+    "pega golpes",
+    "se desplaza"
+   ],
+   "causas": [
+    "Lavadora mal nivelada o patas flojas, suelo irregular",
+    "Carga desequilibrada o muy pequeña con una prenda pesada",
+    "Tornillos de transporte puestos",
+    "Amortiguadores gastados o muelles rotos"
+   ],
+   "que_puede_hacer_el_cliente": "Nivelar con las patas regulables y apretar las contratuercas. Repartir la carga y evitar lavar una sola prenda pesada. Comprobar que se quitaron los tornillos de transporte.",
+   "pieza_probable": "Amortiguadores, muelles de suspensión",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.ocu.org/repara/lavadoras/ruidos-lavadora",
+    "https://www.samsung.com/es/support/home-appliances/understanding-the-noises-your-washing-machine-makes/",
+    "https://guide.washerhouse.com/es/shumit-pri-otzhime/"
+   ]
+  },
+  {
+   "aparato": "lavadora",
+   "sintoma": "No enciende, no hace nada",
+   "palabras": [
+    "no enciende",
+    "está muerta",
+    "no se enciende",
+    "no da señales",
+    "no hace nada",
+    "no funciona",
+    "no tiene luz"
+   ],
+   "causas": [
+    "Enchufe, regleta o toma sin corriente; diferencial o automático del cuadro bajado",
+    "Cable de alimentación dañado",
+    "Botón de encendido averiado",
+    "Placa de alimentación o módulo electrónico averiado"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar con otro aparato que el enchufe tiene corriente, probar en otra toma (sin regletas) y mirar en el cuadro si ha saltado algo. Si el diferencial salta al enchufarla, no insistir: dejarla desenchufada y avisar al técnico.",
+   "pieza_probable": "Módulo electrónico, interruptor de encendido, cable/filtro antiparasitario",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.samsung.com/es/support/home-appliances/how-to-resolve-a-washing-machine-with-no-power",
+    "https://www.ocu.org/repara/lavadoras/lavadora-no-arranca",
+    "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavadoras/el-programa-no-empieza"
+   ]
+  },
+  {
+   "aparato": "lavadora",
+   "sintoma": "Se enciende pero el programa no empieza",
+   "palabras": [
+    "no arranca",
+    "enciende pero no empieza",
+    "le doy al botón y no hace nada",
+    "se queda parada",
+    "no inicia",
+    "candado encendido",
+    "se para a mitad",
+    "se para en mitad del lavado",
+    "se para sola",
+    "se queda a medias"
+   ],
+   "causas": [
+    "Puerta mal cerrada (ropa pillada en la goma)",
+    "Bloqueo infantil activado (candado o 'CL' en pantalla)",
+    "Inicio diferido programado o pausa pulsada",
+    "Grifo cerrado (espera agua)",
+    "Cierre de puerta (blocapuertas) o electrónica averiados"
+   ],
+   "que_puede_hacer_el_cliente": "Cerrar la puerta con firmeza hasta oír el clic, comprobar que no queda ropa en la goma. Mirar si hay un candado o 'CL' en la pantalla y desactivar el bloqueo infantil según el manual (suele ser mantener dos botones unos segundos). Revisar que no hay inicio diferido. Comprobar que el grifo está abierto.",
+   "pieza_probable": "Blocapuertas (cierre electrónico de puerta), módulo electrónico",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavadoras/el-programa-no-empieza",
+    "https://www.beko.com/es-es/blog/mi-lavadora-enciende-la-luz-pero-no-arranca",
+    "https://www.ocu.org/repara/lavadoras/lavadora-no-arranca",
+    "https://www.samsung.com/es/support/home-appliances/how-to-resolve-a-washing-machine-with-no-power"
+   ]
+  },
+  {
+   "aparato": "lavadora",
+   "sintoma": "La puerta no se abre al terminar",
+   "palabras": [
+    "no abre la puerta",
+    "puerta bloqueada",
+    "no me deja abrir",
+    "se ha quedado cerrada",
+    "ropa atrapada",
+    "puerta trabada"
+   ],
+   "causas": [
+    "Bloqueo de seguridad normal durante 1-3 minutos al terminar o mientras el interior está caliente",
+    "Queda agua en el tambor (no ha desaguado)",
+    "Programa en pausa o detenido a medias",
+    "Blocapuertas o maneta rota"
+   ],
+   "que_puede_hacer_el_cliente": "Esperar unos minutos tras el fin del programa. Si queda agua, lanzar 'desagüe' o 'centrifugado'. Apagar y desenchufar 5-10 minutos y volver a probar. No forzar la maneta. Si hay agua y no desagua, ver la ficha 'No desagua'.",
+   "pieza_probable": "Blocapuertas, maneta o bisagra de puerta",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.ocu.org/repara/lavadoras/puerta-lavadora-no-abre",
+    "https://ushl.samsung.com/es/support/home-appliances/como-abrir-la-puerta-de-tu-lavadora-mientras-esta-en-funcionamiento",
+    "https://www.ocu.org/repara/lavadoras/agua-retenida-tambor"
+   ]
+  },
+  {
+   "aparato": "lavadora",
+   "sintoma": "No calienta el agua (lava en frío)",
+   "palabras": [
+    "no calienta",
+    "lava en frío",
+    "agua fría",
+    "la ropa sale sucia y fría",
+    "salta el diferencial al calentar"
+   ],
+   "causas": [
+    "Resistencia de calentamiento averiada (con frecuencia por la cal); a veces hace saltar el diferencial",
+    "Sonda/termostato de temperatura averiado",
+    "Programa de baja temperatura o modo eco seleccionado",
+    "Fallo de electrónica"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que el programa elegido tiene temperatura (no 'frío' o '20º'). Tocar el cristal a mitad de un programa de 60º: si sigue frío es probable avería. Si salta el diferencial al empezar a calentar, no seguir usándola.",
+   "pieza_probable": "Resistencia, sonda NTC/termostato",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.ocu.org/repara/lavadoras/otros-problemas-lavadora",
+    "https://www.ocu.org/electrodomesticos/lavadora/consejos/cuida-tu-lavadora"
+   ]
+  },
+  {
+   "aparato": "lavadora",
+   "sintoma": "Mal olor en la lavadora o en la ropa",
+   "palabras": [
+    "huele mal",
+    "olor a humedad",
+    "huele a cloaca",
+    "la ropa sale oliendo",
+    "olor a podrido",
+    "moho en la goma"
+   ],
+   "causas": [
+    "Moho y restos de jabón/suavizante en la goma de la puerta, cajetín y tambor (lavados siempre en frío)",
+    "Filtro de la bomba sucio",
+    "Olor a desagüe: manguera de desagüe mal instalada o sin sifón",
+    "Exceso de detergente o suavizante"
+   ],
+   "que_puede_hacer_el_cliente": "Limpiar la goma de la puerta y el cajetín. Hacer un lavado en vacío a la temperatura más alta (90 o 60ºC) con producto de limpieza de lavadoras o vinagre según indique el manual. Dejar puerta y cajetín entreabiertos tras cada lavado. Limpiar el filtro de la bomba si el manual lo indica. Dosificar menos detergente y suavizante.",
+   "pieza_probable": "Ninguna habitualmente; a veces goma de puerta o reinstalación de la manguera de desagüe",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.hisense.es/blog_post/por-que-tu-lavadora-huele-mal-y-como-solucionarlo-definitivamente-sin-cargarte-la-maquina/",
+    "https://www.beko.com/es-es/blog/lavadora-huele-mal",
+    "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavadoras/la-ropa-huele-mal",
+    "https://www.ocu.org/electrodomesticos/lavadora/consejos/cuida-tu-lavadora"
+   ]
+  },
+  {
+   "aparato": "lavadora",
+   "sintoma": "No coge el suavizante o el detergente del cajetín",
+   "palabras": [
+    "no coge el suavizante",
+    "se queda el suavizante",
+    "no coge el detergente",
+    "cajetín lleno de agua",
+    "deja el jabón en el cajetín"
+   ],
+   "causas": [
+    "Cajetín o sifón del suavizante obstruido por restos endurecidos",
+    "Poca presión de agua o filtro de entrada con cal",
+    "Programa que no usa suavizante o detergente en el compartimento equivocado",
+    "Electroválvula de entrada con una vía averiada"
+   ],
+   "que_puede_hacer_el_cliente": "Sacar el cajetín (según manual) y lavarlo con agua caliente, incluido el capuchón del suavizante. Comprobar que se pone cada producto en su compartimento y no se supera la marca MAX. Revisar la presión del agua.",
+   "pieza_probable": "Electroválvula de entrada (si persiste)",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.lg.com/es/posventa/microsites/lavado-secado/lavadora-no-utiliza-suavizante",
+    "https://www.hisense.es/blog_post/por-que-tu-lavadora-huele-mal-y-como-solucionarlo-definitivamente-sin-cargarte-la-maquina/"
+   ]
+  },
+  {
+   "aparato": "lavadora",
+   "sintoma": "El tambor no gira nada",
+   "palabras": [
+    "no gira",
+    "el bombo no da vueltas",
+    "no lava",
+    "el tambor está parado",
+    "suena el motor pero no gira"
+   ],
+   "causas": [
+    "Carga excesiva o prenda atascada entre tambor y cuba",
+    "Correa salida o rota",
+    "Escobillas del motor gastadas o motor averiado",
+    "Módulo electrónico de control del motor"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que no está sobrecargada. Con la lavadora apagada y desenchufada, mover el tambor a mano: si está muy duro o bloqueado, avisar al técnico.",
+   "pieza_probable": "Correa, escobillas, motor, módulo electrónico",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavadoras/el-tambor-no-gira",
+    "https://www.xatakahome.com/tutoriales/que-hacer-tu-lavadora-no-centrifuga-causas-soluciones"
+   ]
+  },
+  {
+   "aparato": "lavadora",
+   "sintoma": "Salta el diferencial o los plomos con la lavadora",
+   "palabras": [
+    "salta el diferencial",
+    "salta la luz",
+    "saltan los plomos",
+    "se va la luz",
+    "dispara el automático"
+   ],
+   "causas": [
+    "Resistencia de calentamiento derivada a masa (lo más típico si salta al calentar)",
+    "Fuga de agua sobre componentes eléctricos",
+    "Motor, bomba o cableado derivados",
+    "Toma o instalación de la casa en mal estado"
+   ],
+   "que_puede_hacer_el_cliente": "No volver a enchufarla repetidamente. Dejarla desenchufada y comprobar si hay agua en el suelo o bajo la máquina. Avisar al técnico. Si el diferencial salta también con la lavadora desenchufada, es cosa de la instalación (electricista).",
+   "pieza_probable": "Resistencia, bomba, motor o cableado (diagnóstico de aislamiento)",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://www.ocu.org/repara/lavadoras/otros-problemas-lavadora",
+    "https://www.lacasadelelectrodomestico.com/blog/olor-quemado-humo-lavadora/"
+   ]
+  },
+  {
+   "aparato": "lavadora-secadora",
+   "sintoma": "Lava bien pero no seca o la ropa sale húmeda",
+   "palabras": [
+    "no seca",
+    "sale húmeda",
+    "la ropa sale mojada después de secar",
+    "no termina de secar",
+    "seca fatal"
+   ],
+   "causas": [
+    "Demasiada carga para secar (la capacidad de secado es menor que la de lavado)",
+    "Filtro de pelusas (en los modelos que lo tienen) o condensador sucio",
+    "En modelos que condensan con agua: grifo de agua fría cerrado o poca presión",
+    "Ventilador de secado, resistencia de secado o sonda averiados"
+   ],
+   "que_puede_hacer_el_cliente": "Secar como máximo la carga indicada para secado (suele ser la mitad o algo más de la de lavado). Limpiar el filtro de pelusas si lo tiene y ejecutar la limpieza del condensador si el manual la trae. Comprobar que el grifo está abierto durante el secado.",
+   "pieza_probable": "Resistencia de secado, ventilador de secado, termostatos/sonda",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://ushl.samsung.com/es/support/home-appliances/que-hacer-cuando-la-ropa-sale-humeda-de-la-secadora-incluso-despues-de-que-el-ciclo-haya-terminado",
+    "https://www.lg.com/es/soporte/guias-y-soluciones/lavado-secado/mantenimiento-secadora",
+    "https://www.ocu.org/electrodomesticos/secadora/consejos/problemas-con-secadora"
+   ]
+  },
+  {
+   "aparato": "lavadora-secadora",
+   "sintoma": "Se calienta y no seca, o se para a mitad del secado",
+   "palabras": [
+    "se para al secar",
+    "se apaga secando",
+    "no termina el secado",
+    "da error al secar",
+    "corta el secado"
+   ],
+   "causas": [
+    "Condensador o conducto de aire obstruido por pelusa, que provoca recalentamiento",
+    "Termostato de seguridad de secado disparado",
+    "Ventilador de secado averiado",
+    "Sonda de temperatura o electrónica"
+   ],
+   "que_puede_hacer_el_cliente": "Limpiar el filtro de pelusas si existe y hacer la función de limpieza del condensador según el manual. No volver a lanzar secados largos seguidos si se para. No abrir ni desmontar piezas: el ventilador y su zona pueden estar calientes o con tensión.",
+   "pieza_probable": "Termostato de seguridad, ventilador de secado, sonda",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.lg.com/es/soporte/guias-y-soluciones/lavado-secado/mantenimiento-secadora",
+    "https://ushl.samsung.com/es/support/home-appliances/que-hacer-cuando-la-ropa-sale-humeda-de-la-secadora-incluso-despues-de-que-el-ciclo-haya-terminado"
+   ]
+  },
+  {
+   "aparato": "lavadora-secadora",
+   "sintoma": "No centrifuga, no desagua, pierde agua o no coge agua",
+   "palabras": [
+    "no centrifuga",
+    "no desagua",
+    "pierde agua",
+    "no coge agua",
+    "no escurre"
+   ],
+   "causas": [
+    "Mismas causas que una lavadora: filtro de bomba, manguera de desagüe, carga desequilibrada, grifo cerrado, junta de puerta",
+    "Bomba, electroválvula, correa o motor"
+   ],
+   "que_puede_hacer_el_cliente": "Seguir las comprobaciones de la ficha equivalente de lavadora (grifo, mangueras, filtro de bomba según manual, reparto de la carga).",
+   "pieza_probable": "Bomba de desagüe, electroválvula, correa, motor",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.bosch-home.es/servicio-oficial/garantias-y-asistencia/lavadora-no-desagua",
+    "https://www.ocu.org/repara/lavadoras/tambor-no-coge-agua",
+    "https://www.ocu.org/repara/lavadoras/fugas-lavadora"
+   ]
+  },
+  {
+   "aparato": "lavadora-secadora",
+   "sintoma": "Huele a quemado o mucho calor al secar",
+   "palabras": [
+    "huele a quemado",
+    "olor a quemado al secar",
+    "sale humo",
+    "muy caliente",
+    "olor a chamuscado"
+   ],
+   "causas": [
+    "Pelusa acumulada cerca de la resistencia de secado o en conductos",
+    "Prendas no aptas para secadora (gomaespuma, látex) o con restos de aceite/disolventes",
+    "Resistencia o cableado recalentados, termostato de seguridad defectuoso"
+   ],
+   "que_puede_hacer_el_cliente": "Parar el programa, desenchufar y dejar enfriar con la puerta cerrada si hay humo. No secar prendas con aceite, gomaespuma o productos inflamables. Llamar al técnico antes de volver a usar el secado.",
+   "pieza_probable": "Resistencia de secado, termostatos de seguridad, limpieza de conductos",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://www.lacasadelelectrodomestico.com/blog/olor-quemado-humo-lavadora/",
+    "https://www.lg.com/es/soporte/guias-y-soluciones/lavado-secado/mantenimiento-secadora"
+   ]
+  },
+  {
+   "aparato": "lavadora-secadora",
+   "sintoma": "La puerta no se abre tras el secado",
+   "palabras": [
+    "no abre",
+    "puerta bloqueada después de secar",
+    "pone HOT",
+    "no me deja sacar la ropa"
+   ],
+   "causas": [
+    "Bloqueo normal mientras el interior está caliente tras secar (puede indicar 'HOT')",
+    "Agua sin desaguar",
+    "Blocapuertas averiado"
+   ],
+   "que_puede_hacer_el_cliente": "Esperar a que enfríe (hasta 30 min). Si sigue, apagar y desenchufar 5 minutos. No forzar la puerta.",
+   "pieza_probable": "Blocapuertas",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://ushl.samsung.com/es/support/home-appliances/como-abrir-la-puerta-de-tu-lavadora-mientras-esta-en-funcionamiento",
+    "https://www.ocu.org/repara/lavadoras/puerta-lavadora-no-abre"
+   ]
+  },
+  {
+   "aparato": "secadora",
+   "sintoma": "No seca bien o tarda muchísimo",
+   "palabras": [
+    "no seca",
+    "tarda mucho",
+    "la ropa sale húmeda",
+    "tengo que poner dos ciclos",
+    "sale mojada",
+    "seca fatal"
+   ],
+   "causas": [
+    "Filtro de pelusas de la puerta sucio (debe limpiarse en cada uso)",
+    "Filtro del condensador / cajón del filtro o intercambiador de la bomba de calor sucios",
+    "Sobrecarga (se recomienda no pasar de 3/4) o ropa mal centrifugada",
+    "Habitación pequeña, caliente o sin ventilación (afecta mucho a bomba de calor)",
+    "Sensor de humedad con cal",
+    "Avería de resistencia (condensación), compresor (bomba de calor), ventilador o sonda"
+   ],
+   "que_puede_hacer_el_cliente": "Limpiar el filtro de pelusas de la puerta y el filtro/cajón del condensador según el manual. En bomba de calor, limpiar el intercambiador con la frecuencia que indique el manual (algunos fabricantes desaconsejan agua). Vaciar el depósito. No sobrecargar y centrifugar bien antes. Ventilar el cuarto (puerta o ventana entreabierta). Limpiar los sensores de humedad del tambor con un paño si el manual lo indica.",
+   "pieza_probable": "Resistencia, ventilador, sonda/termostato, compresor (bomba de calor)",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.beko.com/es-es/soporte/secadora--solucion-de-problemas--articulo/como-se-repara-una-secadora-que-no-seca",
+    "https://www.samsung.com/es/support/home-appliances/que-hacer-cuando-la-ropa-no-sale-suficientemente-seca-de-tu-secadora",
+    "https://www.ocu.org/electrodomesticos/secadora/consejos/problemas-con-secadora",
+    "https://www.hisense.es/blog_post/secadora-tarda-mucho-causas-soluciones/",
+    "https://www.ocu.org/electrodomesticos/secadora/noticias/limpiar-secadoras"
+   ]
+  },
+  {
+   "aparato": "secadora",
+   "sintoma": "Se pone en marcha pero no calienta",
+   "palabras": [
+    "no calienta",
+    "sale aire frío",
+    "la ropa sale fría",
+    "gira pero no calienta"
+   ],
+   "causas": [
+    "Filtros/condensador obstruidos que hacen saltar la protección térmica",
+    "Resistencia o termostato de seguridad abiertos (secadoras de condensación)",
+    "Compresor o circuito de bomba de calor averiado",
+    "Programa de solo aire/frío seleccionado"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar el programa (no 'aire frío'). Limpiar filtros y condensador. Dejar enfriar y volver a probar. Si sigue, avisar: en bomba de calor el circuito de gas solo lo toca el técnico.",
+   "pieza_probable": "Resistencia, termostatos, compresor/circuito bomba de calor",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.beko.com/es-es/soporte/secadora--solucion-de-problemas--articulo/como-se-repara-una-secadora-que-no-seca",
+    "https://www.ocu.org/electrodomesticos/secadora/consejos/problemas-con-secadora",
+    "https://www.bosch-home.es/servicio-oficial/garantias-y-asistencia/reparacion-secadoras"
+   ]
+  },
+  {
+   "aparato": "secadora",
+   "sintoma": "No arranca",
+   "palabras": [
+    "no arranca",
+    "no se pone en marcha",
+    "no enciende",
+    "le doy a inicio y nada",
+    "no hace nada"
+   ],
+   "causas": [
+    "Puerta mal cerrada (ropa pillada, filtro mal colocado, sobrecarga)",
+    "Bloqueo infantil, pausa o inicio diferido activados",
+    "Depósito de agua lleno o mal colocado",
+    "Enchufe/cuadro sin corriente",
+    "Interruptor de puerta o electrónica averiados"
+   ],
+   "que_puede_hacer_el_cliente": "Cerrar bien la puerta hasta oír el clic y comprobar que el filtro de pelusas está bien encajado. Vaciar y colocar bien el depósito. Revisar bloqueo infantil e inicio diferido. Comprobar el enchufe y el cuadro.",
+   "pieza_probable": "Interruptor/cierre de puerta, módulo electrónico",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.beko.com/es-es/soporte/secadora--solucion-de-problemas--articulo/como-se-repara-una-secadora-que-no-se-inicia",
+    "https://www.ocu.org/electrodomesticos/secadora/consejos/problemas-con-secadora"
+   ]
+  },
+  {
+   "aparato": "secadora",
+   "sintoma": "El tambor no gira (se oye el motor o se para)",
+   "palabras": [
+    "no gira",
+    "el tambor no da vueltas",
+    "zumba y no gira",
+    "se para el bombo"
+   ],
+   "causas": [
+    "Correa rota o salida (a menudo por sobrecarga)",
+    "Polea tensora o rodillos del tambor agarrotados",
+    "Objeto atascado entre tambor y carcasa",
+    "Motor o condensador de arranque"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que no está sobrecargada y que no hay prendas atascadas en la puerta. Con la secadora desenchufada, mover el tambor a mano: si gira demasiado suelto suele ser la correa; si está muy duro, rodillos. Avisar al técnico.",
+   "pieza_probable": "Correa, polea tensora, rodillos, motor",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://guide.washerhouse.com/es/sushilnaya-mashina-ne-krutit-baraban/",
+    "https://www.siemens-home.bsh-group.com/es/inspiracion/blog/ruido-secadora",
+    "https://www.ocu.org/electrodomesticos/secadora/consejos/problemas-con-secadora"
+   ]
+  },
+  {
+   "aparato": "secadora",
+   "sintoma": "Ruido fuerte, chirridos o golpes",
+   "palabras": [
+    "hace ruido",
+    "chirría",
+    "golpea",
+    "ruido metálico",
+    "rasca",
+    "hace mucho ruido"
+   ],
+   "causas": [
+    "Objetos (monedas, botones, cremalleras) en el tambor o filtro",
+    "Sobrecarga o máquina mal nivelada (vibración)",
+    "Rodillos, polea o correa gastados",
+    "En bomba de calor, un zumbido/ruido metálico del compresor es normal"
+   ],
+   "que_puede_hacer_el_cliente": "Revisar bolsillos y buscar objetos en tambor y filtro. Nivelar y no sobrecargar. Si es un zumbido suave constante en una secadora de bomba de calor, suele ser el compresor y es normal.",
+   "pieza_probable": "Rodillos, polea tensora, correa, rodamiento",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.siemens-home.bsh-group.com/es/inspiracion/blog/ruido-secadora",
+    "https://www.samsung.com/co/support/home-appliances/why-is-my-dryer-vibrating-and-making-noise",
+    "https://www.beko.com/es-es/soporte/secadora--solucion-de-problemas--preguntas-frecuentes/la-secadora-emite-un-ruido-metalico-es-normal"
+   ]
+  },
+  {
+   "aparato": "secadora",
+   "sintoma": "Pierde agua o deja charco",
+   "palabras": [
+    "pierde agua",
+    "charco",
+    "gotea",
+    "sale agua por debajo",
+    "moja el suelo"
+   ],
+   "causas": [
+    "Depósito de condensación lleno, mal colocado o agrietado",
+    "Pelusa en la junta de la puerta o del condensador que impide sellar",
+    "Manguera de desagüe directo (si está conectada) suelta",
+    "Bomba de condensación o depósito interno averiados"
+   ],
+   "que_puede_hacer_el_cliente": "Vaciar el depósito en cada uso y encajarlo bien. Limpiar la pelusa de juntas y del cajón del condensador. Si tiene desagüe directo, comprobar que la manguera está bien sujeta.",
+   "pieza_probable": "Bomba de condensación, depósito, juntas",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.samsung.com/es/support/home-appliances/que-hacer-cuando-la-ropa-no-sale-suficientemente-seca-de-tu-secadora",
+    "https://guide.washerhouse.com/es/voda-pod-sushilnoy-mashinoy/",
+    "https://www.beko.com/es-es/blog/secadora-no-condensa-agua"
+   ]
+  },
+  {
+   "aparato": "secadora",
+   "sintoma": "Avisa de depósito lleno aunque esté vacío, o no recoge agua en el depósito",
+   "palabras": [
+    "dice depósito lleno",
+    "no echa agua al depósito",
+    "el depósito está vacío",
+    "piloto de agua encendido",
+    "no condensa"
+   ],
+   "causas": [
+    "Depósito mal colocado o flotador sucio",
+    "Filtro/condensador obstruido: la humedad no se condensa",
+    "Bomba de condensación bloqueada o averiada"
+   ],
+   "que_puede_hacer_el_cliente": "Sacar, vaciar y encajar bien el depósito. Limpiar filtros y condensador. Si sigue el aviso, llamar al técnico.",
+   "pieza_probable": "Bomba de condensación, sensor de nivel",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.beko.com/es-es/blog/secadora-no-condensa-agua",
+    "https://www.ocu.org/electrodomesticos/secadora/consejos/problemas-con-secadora"
+   ]
+  },
+  {
+   "aparato": "secadora",
+   "sintoma": "Mucha condensación o humedad en el cuarto (secadora de condensación/bomba de calor)",
+   "palabras": [
+    "mucha humedad",
+    "cristales empañados",
+    "sale vapor",
+    "moja el cuarto",
+    "condensación en el cuarto"
+   ],
+   "causas": [
+    "Filtros o condensador sucios",
+    "Habitación pequeña sin ventilación",
+    "Juntas de puerta o del condensador con pelusa o dañadas"
+   ],
+   "que_puede_hacer_el_cliente": "Limpiar filtros y condensador, revisar juntas y ventilar el cuarto mientras seca.",
+   "pieza_probable": "Juntas",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.ocu.org/electrodomesticos/secadora/consejos/evitar-condensacion-secadora",
+    "https://www.ocu.org/electrodomesticos/secadora/consejos/problemas-con-secadora"
+   ]
+  },
+  {
+   "aparato": "secadora",
+   "sintoma": "Huele a quemado",
+   "palabras": [
+    "huele a quemado",
+    "olor a quemado",
+    "sale humo",
+    "olor a chamuscado"
+   ],
+   "causas": [
+    "Pelusa acumulada cerca de la resistencia o en conductos",
+    "Prendas no aptas (gomaespuma, goma) o con restos de aceite o disolvente",
+    "Motor o cableado recalentados"
+   ],
+   "que_puede_hacer_el_cliente": "Parar, desenchufar y no abrir la puerta si hay humo dentro. No volver a usarla hasta que la revise un técnico. Limpiar el filtro de pelusas en cada uso.",
+   "pieza_probable": "Resistencia, termostatos de seguridad, motor",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://www.ocu.org/electrodomesticos/secadora/noticias/limpiar-secadoras",
+    "https://www.lacasadelelectrodomestico.com/blog/olor-quemado-humo-lavadora/"
+   ]
+  },
+  {
+   "aparato": "lavavajillas",
+   "sintoma": "No desagua o queda agua sucia en el fondo",
+   "palabras": [
+    "no desagua",
+    "se queda agua",
+    "agua en el fondo",
+    "no tira el agua",
+    "agua estancada",
+    "no vacía"
+   ],
+   "causas": [
+    "Filtro del fondo obstruido por restos de comida",
+    "Manguera de desagüe doblada o sifón/desagüe del fregadero atascado",
+    "Bomba de desagüe bloqueada (huesos, cristales, etiquetas) o averiada",
+    "Sensor de nivel o electrónica"
+   ],
+   "que_puede_hacer_el_cliente": "Sacar y limpiar el filtro del fondo bajo el grifo (según manual) y volver a encajarlo con las marcas alineadas. Comprobar que la manguera no está doblada y que el fregadero traga. No usar desatascadores químicos. Un poco de agua limpia en la zona de la bomba es normal.",
+   "pieza_probable": "Bomba de desagüe, manguera, sensor de nivel",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.bosch-home.es/servicio-oficial/garantias-y-asistencia/lavavajillas-no-desagua",
+    "https://www.bosch-home.es/servicio-oficial/garantias-y-asistencia/lavavajillas-no-desagua-bien",
+    "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavavajillas/no-desagua",
+    "https://www.beko.com/es-es/blog/lavavajillas-no-desagua",
+    "https://www.neff-home.com/es/servicio-oficial/asistencia-y-consejos/lavavajillas/no-desagua"
+   ]
+  },
+  {
+   "aparato": "lavavajillas",
+   "sintoma": "No lava bien, deja restos o arenilla",
+   "palabras": [
+    "no lava bien",
+    "deja restos",
+    "platos sucios",
+    "sale sucio",
+    "deja arenilla",
+    "no limpia"
+   ],
+   "causas": [
+    "Filtro sucio",
+    "Brazos aspersores con orificios tapados o que no giran (bloqueados por un plato alto)",
+    "Carga mal colocada o demasiado apilada",
+    "Restos muy secos o programa demasiado corto/eco para suciedad fuerte",
+    "Falta de sal en zona de agua dura o detergente inadecuado",
+    "Bomba de lavado o resistencia (si no calienta) averiadas"
+   ],
+   "que_puede_hacer_el_cliente": "Limpiar filtro y orificios de los brazos (con un palillo) según el manual, y comprobar que giran libres. Retirar restos grandes y no apilar. Usar un programa más intenso. Revisar sal y abrillantador y la dosis de detergente.",
+   "pieza_probable": "Bomba de lavado, resistencia/calentador",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.bosch-home.es/servicio-oficial/garantias-y-asistencia/lavavajillas-no-limpia",
+    "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavavajillas/no-limpia",
+    "https://ushl.samsung.com/es/support/home-appliances/que-hacer-si-tu-lavavajillas-no-limpia-adecuadamente",
+    "https://beko.com/es-es/soporte/lavavajillas--solucion-de-problemas--articulo/como-se-repara-un-lavavajillas-que-no-limpia",
+    "https://www.ocu.org/electrodomesticos/lavavajillas/consejos/averias-lavavajillas"
+   ]
+  },
+  {
+   "aparato": "lavavajillas",
+   "sintoma": "No seca, la vajilla sale mojada",
+   "palabras": [
+    "no seca",
+    "sale mojado",
+    "platos mojados",
+    "vasos con gotas",
+    "sale todo empapado"
+   ],
+   "causas": [
+    "Falta de abrillantador o nivel bajo (causa más común)",
+    "Pastillas todo en uno que no secan bien",
+    "Plástico y antiadherentes secan peor (normal)",
+    "Carga apilada o programa sin secado / eco",
+    "Fallo de dosificación del abrillantador o de la resistencia/ventilador de secado"
+   ],
+   "que_puede_hacer_el_cliente": "Rellenar el abrillantador y subir su nivel si queda agua. Probar abrillantador aparte aunque se usen pastillas. No apilar, vaciar primero la cesta de abajo y dejar la puerta entreabierta al terminar si el modelo no lo hace solo.",
+   "pieza_probable": "Dosificador, resistencia o ventilador de secado",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavavajillas/no-seca",
+    "https://www.neff-home.com/es/servicio-oficial/asistencia-y-consejos/lavavajillas/no-seca",
+    "https://beko.com/es-es/soporte/lavavajillas--solucion-de-problemas--articulo/como-se-repara-un-lavavajillas-que-no-seca-correctamente",
+    "https://www.xatakahome.com/hogar/platos-vasos-cubiertos-salen-muy-mojados-lavavajillas-estos-motivos-habituales"
+   ]
+  },
+  {
+   "aparato": "lavavajillas",
+   "sintoma": "No coge agua",
+   "palabras": [
+    "no coge agua",
+    "no entra agua",
+    "no se llena",
+    "no carga agua",
+    "pita y no entra agua"
+   ],
+   "causas": [
+    "Grifo cerrado o sin presión",
+    "Manguera de entrada doblada o filtro de entrada con cal",
+    "Sistema antifugas (AquaStop) activado",
+    "Electroválvula, sensor de nivel o electrónica"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que el grifo está abierto y que la manguera no está doblada. Si el manual lo indica, cerrar el grifo y limpiar el filtro de la entrada. Si muestra un código de error, anotarlo para el técnico.",
+   "pieza_probable": "Electroválvula, AquaStop, sensor de nivel",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.bosch-home.es/servicio-oficial/garantias-y-asistencia/no-entra-agua-en-el-lavavajillas",
+    "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavavajillas/no-entra-agua",
+    "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavavajillas/llave-del-agua",
+    "https://www.haier-europe.com/es_ES/blogs/news/lavavajillas-no-carga-agua"
+   ]
+  },
+  {
+   "aparato": "lavavajillas",
+   "sintoma": "Pierde agua o sale agua por la puerta",
+   "palabras": [
+    "pierde agua",
+    "charco",
+    "sale agua por la puerta",
+    "gotea",
+    "moja el suelo"
+   ],
+   "causas": [
+    "Junta de la puerta sucia o dañada",
+    "Exceso de espuma (detergente de fregar a mano o dosis excesiva)",
+    "Lavavajillas desnivelado o puerta que roza con el mueble",
+    "Brazo aspersor roto que lanza agua contra la puerta",
+    "Fuga interna (manguitos, bomba); si pierde estando apagado, es más grave"
+   ],
+   "que_puede_hacer_el_cliente": "Cerrar el grifo y desenchufar si el agua sigue. Limpiar la junta, no usar nunca jabón de fregar a mano, comprobar nivelación y que la puerta cierra sin rozar. Si pierde agua estando apagado, cerrar la llave de paso y llamar.",
+   "pieza_probable": "Junta de puerta, manguitos, bomba, electroválvula",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://www.beko.com/co-es/soporte/lavavajillas--solucion-de-problemas--articulo/como-se-repara-un-lavavajillas-que-tiene-fugas",
+    "https://www.ocu.org/electrodomesticos/lavavajillas/consejos/averias-lavavajillas",
+    "https://www.xatakahome.com/hogar/llegue-a-casa-me-encontre-lavavajillas-soltando-espuma-nadie-me-dijo-que-tenia-que-mirar-este-compartimento"
+   ]
+  },
+  {
+   "aparato": "lavavajillas",
+   "sintoma": "Sale mucha espuma",
+   "palabras": [
+    "espuma",
+    "sale espuma",
+    "lleno de espuma",
+    "espuma por la puerta"
+   ],
+   "causas": [
+    "Uso de lavavajillas a mano (gel de fregar) o exceso de detergente",
+    "Abrillantador derramado al rellenar",
+    "Restos de huevo, lácteos o masa que reaccionan",
+    "Filtro o desagüe obstruidos"
+   ],
+   "que_puede_hacer_el_cliente": "No usar jabón de fregar a mano. Limpiar el abrillantador derramado. Hacer un aclarado sin detergente. Limpiar el filtro.",
+   "pieza_probable": "",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.xatakahome.com/hogar/llegue-a-casa-me-encontre-lavavajillas-soltando-espuma-nadie-me-dijo-que-tenia-que-mirar-este-compartimento",
+    "https://www.ocu.org/electrodomesticos/lavavajillas/consejos/averias-lavavajillas"
+   ]
+  },
+  {
+   "aparato": "lavavajillas",
+   "sintoma": "Huele mal",
+   "palabras": [
+    "huele mal",
+    "olor a podrido",
+    "olor a huevo",
+    "apesta",
+    "olor a cloaca"
+   ],
+   "causas": [
+    "Filtro con restos de comida",
+    "Suciedad en la junta de la puerta",
+    "Desagüe parcialmente obstruido o manguera sin sifón/curva",
+    "Usarlo siempre en programas eco a baja temperatura"
+   ],
+   "que_puede_hacer_el_cliente": "Limpiar filtro y junta, hacer un programa a alta temperatura en vacío con limpiador de lavavajillas, dejar la puerta entreabierta tras usarlo.",
+   "pieza_probable": "",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavavajillas/malos-olores",
+    "https://www.xatakahome.com/hogar/seis-motivos-frecuentes-que-tus-platos-vasos-cubiertos-salen-mal-olor-lavavajillas",
+    "https://www.ocu.org/electrodomesticos/lavavajillas/consejos/limpiar-lavavajillas"
+   ]
+  },
+  {
+   "aparato": "lavavajillas",
+   "sintoma": "Vasos blancos, con manchas o cal",
+   "palabras": [
+    "vasos blancos",
+    "manchas de cal",
+    "vasos opacos",
+    "deja cal",
+    "copas manchadas"
+   ],
+   "causas": [
+    "Falta de sal o descalcificador mal regulado en zona de agua dura",
+    "Nivel de abrillantador incorrecto (mucho o poco)",
+    "Corrosión del cristal (irreversible) por agua muy blanda o temperatura alta"
+   ],
+   "que_puede_hacer_el_cliente": "Rellenar la sal y ajustar la dureza del agua según el manual; ajustar el abrillantador. Probar a frotar el vaso con vinagre: si se quita es cal; si no, es corrosión del cristal.",
+   "pieza_probable": "",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.ocu.org/electrodomesticos/lavavajillas/consejos/evitar-vasos-blancos-lavavajillas",
+    "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavavajillas/no-seca"
+   ]
+  },
+  {
+   "aparato": "lavavajillas",
+   "sintoma": "No calienta el agua (la vajilla sale fría y grasienta)",
+   "palabras": [
+    "no calienta",
+    "sale frío",
+    "agua fría",
+    "deja grasa"
+   ],
+   "causas": [
+    "Resistencia o calentador de flujo averiado",
+    "Sonda de temperatura",
+    "Programa en frío/rápido seleccionado"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que el programa es con temperatura. Si nunca calienta, llamar al técnico.",
+   "pieza_probable": "Resistencia/bomba de calor integrada, sonda NTC",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.ocu.org/electrodomesticos/lavavajillas/consejos/averias-lavavajillas",
+    "https://www.bosch-home.es/servicio-oficial/garantias-y-asistencia/lavavajillas-no-limpia"
+   ]
+  },
+  {
+   "aparato": "lavavajillas",
+   "sintoma": "No arranca o se para a mitad",
+   "palabras": [
+    "no arranca",
+    "no se enciende",
+    "se para",
+    "se queda parado",
+    "pita y no empieza",
+    "pita",
+    "pita y se para",
+    "no deja de pitar",
+    "pita sin parar"
+   ],
+   "causas": [
+    "Puerta mal cerrada (cesta o plato que impide cerrar)",
+    "Bloqueo infantil o inicio diferido",
+    "Grifo cerrado o aviso de agua",
+    "Enchufe o cuadro sin corriente",
+    "Cierre de puerta o electrónica"
+   ],
+   "que_puede_hacer_el_cliente": "Cerrar la puerta hasta el clic, comprobar que nada sobresale. Revisar bloqueo infantil, inicio diferido y grifo. Apagar y desenchufar unos minutos.",
+   "pieza_probable": "Cierre de puerta, módulo electrónico",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavavajillas/no-entra-agua",
+    "https://www.ocu.org/electrodomesticos/lavavajillas/consejos/averias-lavavajillas"
+   ]
+  },
+  {
+   "aparato": "lavavajillas",
+   "sintoma": "Hace ruido fuerte",
+   "palabras": [
+    "hace ruido",
+    "ruido raro",
+    "golpea",
+    "zumbido",
+    "rasca"
+   ],
+   "causas": [
+    "Brazo aspersor que golpea contra vajilla alta",
+    "Objetos (huesos, cristales) en el filtro o en la bomba",
+    "Bomba de desagüe o de lavado desgastada"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que los brazos giran libres y limpiar el filtro buscando objetos.",
+   "pieza_probable": "Bomba de lavado o desagüe",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavavajillas/no-limpia",
+    "https://www.bosch-home.es/servicio-oficial/garantias-y-asistencia/lavavajillas-no-desagua"
+   ]
+  },
+  {
+   "aparato": "frigorifico",
+   "sintoma": "El congelador enfría pero el frigorífico (abajo/arriba) no enfría (No Frost)",
+   "palabras": [
+    "no enfría abajo",
+    "no enfría la nevera pero el congelador sí",
+    "el congelador congela y la nevera no",
+    "la parte de abajo está caliente",
+    "no enfría el frigorífico"
+   ],
+   "causas": [
+    "Hielo bloqueando el conducto de aire entre congelador y frigorífico por fallo del desescarche (resistencia, sonda, temporizador)",
+    "Ventilador del evaporador averiado o bloqueado por hielo",
+    "Compuerta de aire (damper) averiada",
+    "Rejillas de aire tapadas por alimentos",
+    "Puerta o junta que no cierra bien"
+   ],
+   "que_puede_hacer_el_cliente": "Despejar las rejillas de salida de aire interiores. Comprobar que la puerta cierra y la junta está limpia. Como prueba temporal, desconectarlo 24 horas con las puertas abiertas (sacando los alimentos y con toallas para el agua) para descongelar: si vuelve a enfriar unos días y luego falla, es el desescarche. No picar el hielo con objetos.",
+   "pieza_probable": "Resistencia de desescarche, sonda, ventilador, damper, placa",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://www.beko.com/es-es/blog/la-nevera-no-enfria-si-congela",
+    "https://www.haier-europe.com/es_ES/blogs/news/nevera-no-enfria-pero-congela",
+    "https://www.ocu.org/repara/frigorificos/escarcha-frigo-no-frost",
+    "https://www.elcorteingles.es/contenidos/tecnologia/frigorifico-no-enfria/"
+   ]
+  },
+  {
+   "aparato": "frigorifico",
+   "sintoma": "No enfría nada (ni frigorífico ni congelador) y tiene luz",
+   "palabras": [
+    "no enfría nada",
+    "no enfría",
+    "está caliente",
+    "se calienta todo",
+    "tiene luz pero no enfría",
+    "el motor no arranca"
+   ],
+   "causas": [
+    "Compresor que no arranca: relé/clixon de arranque (clic cada pocos minutos)",
+    "Termostato o placa electrónica averiados",
+    "Fuga de gas refrigerante (el motor funciona sin parar y no enfría)",
+    "Compresor averiado"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar el termostato o la temperatura seleccionada y que no está en modo demo o vacaciones. Ver si se oye el compresor (zumbido en la parte trasera baja) o solo un clic. Mantener la puerta cerrada para conservar los alimentos. No manipular el circuito ni la parte trasera.",
+   "pieza_probable": "Relé de arranque/clixon, termostato o placa, compresor, reparación de fuga y carga de gas",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://www.ocu.org/repara/frigorificos/compresor-frigo",
+    "https://www.ocu.org/repara/frigorificos/frigo-enfria-poco",
+    "https://www.elcorteingles.es/contenidos/tecnologia/frigorifico-no-enfria/"
+   ]
+  },
+  {
+   "aparato": "frigorifico",
+   "sintoma": "Enfría poco (la comida no está suficientemente fría)",
+   "palabras": [
+    "enfría poco",
+    "no enfría bien",
+    "está templado",
+    "no está frío",
+    "la leche se pone mala"
+   ],
+   "causas": [
+    "Termostato/temperatura mal ajustados",
+    "Puerta abierta a menudo, mal cerrada o junta deteriorada",
+    "Mala ventilación trasera o condensador con polvo; aparato junto a horno o al sol",
+    "Exceso de escarcha (cíclicos) o rejillas tapadas (No Frost)",
+    "Fallo de ventilador, desescarche o falta de gas"
+   ],
+   "que_puede_hacer_el_cliente": "Ajustar la temperatura (unos 4-5ºC frigorífico, -18ºC congelador). Comprobar con una hoja de papel que la junta ajusta. Dejar espacio detrás y a los lados, aspirar el polvo de la rejilla trasera con el aparato desenchufado, alejarlo de fuentes de calor. No sobrecargar ni meter comida caliente.",
+   "pieza_probable": "Junta, ventilador, sonda, termostato; gas si hay fuga",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.ocu.org/repara/frigorificos/frigo-enfria-poco",
+    "https://www.samsung.com/co/support/home-appliances/what-should-i-do-if-the-product-does-not-cool",
+    "https://www.siemens-home.bsh-group.com/es/inspiracion/blog/nevera-no-enfria",
+    "https://www.lg.com/es/lg-experience/consejos-utiles/correct-fridge-freezer-temperature"
+   ]
+  },
+  {
+   "aparato": "frigorifico",
+   "sintoma": "Congela los alimentos en la parte del frigorífico",
+   "palabras": [
+    "congela la comida",
+    "se hiela la fruta",
+    "congela abajo",
+    "la lechuga se congela",
+    "se congelan las cosas"
+   ],
+   "causas": [
+    "Termostato puesto demasiado frío",
+    "Alimentos pegados a la pared del fondo o a la salida de aire",
+    "Termostato o sonda averiados",
+    "Compuerta de aire (damper) atascada abierta en No Frost"
+   ],
+   "que_puede_hacer_el_cliente": "Subir la temperatura del frigorífico a 4-5ºC. Separar los alimentos de la pared del fondo y de las salidas de aire. Si no cambia en 24 horas, avisar.",
+   "pieza_probable": "Termostato, sonda, damper",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://ocu.org/electrodomesticos/frigorificos/consejos/arreglar-averias-frigorifico",
+    "https://www.samsung.com/pt/support/home-appliances/os-alimentos-congelam-dentro-do-frigorifico",
+    "https://www.beko.com/es-es/blog/la-nevera-no-enfria-si-congela"
+   ]
+  },
+  {
+   "aparato": "frigorifico",
+   "sintoma": "Agua dentro del frigorífico, en el fondo o bajo los cajones",
+   "palabras": [
+    "agua dentro",
+    "agua en el fondo",
+    "charco bajo los cajones",
+    "gotea por dentro",
+    "se llena de agua el cajón"
+   ],
+   "causas": [
+    "Orificio de desagüe de la pared del fondo obstruido (restos o hielo)",
+    "Alimentos pegados a la pared del fondo que desvían el agua",
+    "Frigorífico desnivelado",
+    "Puerta mal cerrada o junta dañada (condensación)"
+   ],
+   "que_puede_hacer_el_cliente": "Limpiar el orificio de desagüe de la pared trasera con un bastoncillo o una jeringuilla con agua templada (desenchufado). Separar los alimentos de la pared. Comprobar nivelación (un poco inclinado hacia atrás) y cierre de la puerta.",
+   "pieza_probable": "Desatasco del conducto de desagüe; resistencia de desagüe en algunos No Frost",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.xatakahome.com/hogar/tu-frigorifico-esconde-zona-muy-pequena-desconocida-puede-provocar-susto-no-se-vigila",
+    "https://www.siemens-home.bsh-group.com/es/inspiracion/blog/agua-nevera",
+    "https://www.beko.com/es-es/soporte/frigorifico-y-congelador--solucion-de-problemas--articulo/por-que-la-parte-inferior-del-interior-del-frigorifico-esta-humeda",
+    "https://ushl.samsung.com/es/support/home-appliances/como-evitar-escapes-de-agua-o-escarcha-en-mi-frigorifico"
+   ]
+  },
+  {
+   "aparato": "frigorifico",
+   "sintoma": "Charco de agua en el suelo debajo del frigorífico",
+   "palabras": [
+    "charco en el suelo",
+    "pierde agua por debajo",
+    "sale agua por debajo",
+    "moja el suelo"
+   ],
+   "causas": [
+    "Desagüe de descongelación atascado que rebosa",
+    "Bandeja de evaporación trasera desplazada, rota o desbordada (humedad ambiente alta)",
+    "Desnivelado",
+    "Conexión de agua del dispensador/hielo (americanos) con fuga"
+   ],
+   "que_puede_hacer_el_cliente": "Secar y comprobar el orificio de desagüe interior. Comprobar nivelación. Si tiene toma de agua para dispensador, cerrar la llave y ver si para. Si el agua llega a enchufes, cortar la corriente en el cuadro.",
+   "pieza_probable": "Bandeja de evaporación, tubo de desagüe, toma de agua/electroválvula del dispensador",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.beko.com/es-es/blog/nevera-pierde-agua-debajo",
+    "https://ushl.samsung.com/es/support/home-appliances/que-hacer-cuando-aparece-una-fuga-de-agua-en-la-bandeja-de-desague-de-tu-frigorifico",
+    "https://www.siemens-home.bsh-group.com/es/inspiracion/blog/agua-nevera"
+   ]
+  },
+  {
+   "aparato": "frigorifico",
+   "sintoma": "Hielo o escarcha en la pared del fondo (frigorífico cíclico)",
+   "palabras": [
+    "hielo en la pared",
+    "escarcha en el fondo",
+    "se hace hielo atrás",
+    "placa de hielo",
+    "pared congelada",
+    "hace hielo",
+    "se forma hielo",
+    "se hace hielo",
+    "tiene hielo dentro",
+    "hielo en el fondo"
+   ],
+   "causas": [
+    "En cíclicos es normal que se forme y se deshaga escarcha en la pared del fondo; se vuelve problema si es una capa gruesa permanente",
+    "Termostato demasiado frío o puerta abierta a menudo",
+    "Junta que no cierra",
+    "Termostato averiado (el compresor no para)"
+   ],
+   "que_puede_hacer_el_cliente": "Subir un poco el termostato, no dejar la puerta abierta ni meter comida caliente. Revisar la junta. Descongelar si hay capa gruesa.",
+   "pieza_probable": "Termostato, junta",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.beko.com/es-es/blog/la-nevera-hace-hielo",
+    "https://ushl.samsung.com/es/support/home-appliances/como-evitar-escapes-de-agua-o-escarcha-en-mi-frigorifico",
+    "https://www.xatakahome.com/hogar/tu-frigorifico-esconde-zona-muy-pequena-desconocida-puede-provocar-susto-no-se-vigila"
+   ]
+  },
+  {
+   "aparato": "frigorifico",
+   "sintoma": "Hace mucho ruido (zumbido, roce, golpeteo, vibración)",
+   "palabras": [
+    "hace ruido",
+    "zumba",
+    "ruido fuerte",
+    "vibra",
+    "hace ruido como un motor",
+    "traquetea",
+    "roza"
+   ],
+   "causas": [
+    "Mal nivelado o tocando la pared/muebles; botellas y baldas que vibran",
+    "Ventilador rozando con hielo, suciedad o algo que interfiere (No Frost)",
+    "Motor del ventilador desgastado (chirrido agudo)",
+    "Compresor trabajando más por calor, muchas aperturas o sobrecarga",
+    "Compresor ruidoso o con fallo (si además enfría mal)"
+   ],
+   "que_puede_hacer_el_cliente": "Nivelarlo, separarlo de la pared, colocar bien botellas y baldas. Recordar que clics, gorgoteos y crujidos suelen ser normales. Si el roce viene del ventilador y hay hielo, ver ficha de desescarche.",
+   "pieza_probable": "Ventilador, desescarche, compresor (raro)",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://ushl.samsung.com/es/support/home-appliances/como-actuar-si-tu-frigorifico-hace-ruido",
+    "https://www.ocu.org/electrodomesticos/frigorificos/consejos/reducir-ruido-frigo",
+    "https://www.haier-europe.com/es_ES/blogs/news/nevera-hace-ruido",
+    "https://www.xatakahome.com/territorio-samsung/ese-ruido-que-hace-tu-frigorifico-justo-despues-cerrarlo-no-nada-malo-esto-que-ocurre-realmente"
+   ]
+  },
+  {
+   "aparato": "frigorifico",
+   "sintoma": "El motor no para nunca (funciona continuamente)",
+   "palabras": [
+    "no para",
+    "siempre está en marcha",
+    "el motor no se apaga",
+    "gasta mucha luz",
+    "funciona sin parar"
+   ],
+   "causas": [
+    "Temperatura ajustada muy fría o modo superfrío activado",
+    "Calor ambiente, mala ventilación o condensador sucio",
+    "Junta que no cierra",
+    "Exceso de escarcha",
+    "Falta de gas o termostato averiado"
+   ],
+   "que_puede_hacer_el_cliente": "Revisar la temperatura y desactivar superfrío/supercongelación. Dejar espacio para ventilar y limpiar el polvo de la rejilla trasera (desenchufado). Comprobar la junta.",
+   "pieza_probable": "Termostato/sonda; reparación de fuga de gas",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.ocu.org/repara/frigorificos/compresor-frigo",
+    "https://www.ocu.org/repara/frigorificos/frigo-enfria-poco"
+   ]
+  },
+  {
+   "aparato": "frigorifico",
+   "sintoma": "No enciende, ni luz ni ruido",
+   "palabras": [
+    "no enciende",
+    "no tiene luz",
+    "está muerto",
+    "no funciona nada",
+    "se ha apagado"
+   ],
+   "causas": [
+    "Sin corriente en el enchufe o cuadro (diferencial)",
+    "Cable o enchufe dañado",
+    "Placa electrónica o fuente averiada"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar el enchufe con otro aparato y el cuadro eléctrico. Mantener las puertas cerradas para conservar el frío. Si salta el diferencial al enchufarlo, dejarlo desenchufado.",
+   "pieza_probable": "Placa electrónica, cableado",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://ocu.org/electrodomesticos/frigorificos/consejos/arreglar-averias-frigorifico",
+    "https://www.elcorteingles.es/contenidos/tecnologia/frigorifico-no-enfria/"
+   ]
+  },
+  {
+   "aparato": "frigorifico",
+   "sintoma": "La puerta no cierra bien o la junta está rota",
+   "palabras": [
+    "no cierra",
+    "la puerta se queda abierta",
+    "junta rota",
+    "goma rota",
+    "se escapa el frío"
+   ],
+   "causas": [
+    "Junta sucia, deformada o rota",
+    "Frigorífico desnivelado (la puerta no cae sola)",
+    "Baldas o alimentos que impiden cerrar",
+    "Bisagra desajustada"
+   ],
+   "que_puede_hacer_el_cliente": "Limpiar la junta con agua templada y jabón suave, recolocar baldas, nivelar con las patas delanteras algo más altas. Prueba del papel: cerrar la puerta sobre una hoja; si sale sin resistencia, no sella.",
+   "pieza_probable": "Junta de puerta, bisagra",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.beko.com/es-es/soporte/congelador--solucion-de-problemas--articulo/como-puedo-evitar-la-escarcha-y-los-cristales-de-hielo-en-la-comida-congelada",
+    "https://www.ocu.org/repara/frigorificos/frigo-enfria-poco"
+   ]
+  },
+  {
+   "aparato": "frigorifico",
+   "sintoma": "Mal olor dentro del frigorífico",
+   "palabras": [
+    "huele mal",
+    "olor",
+    "apesta",
+    "olor a podrido"
+   ],
+   "causas": [
+    "Alimentos en mal estado o derrames",
+    "Orificio de desagüe o bandeja con agua estancada",
+    "Junta con moho"
+   ],
+   "que_puede_hacer_el_cliente": "Limpiar el interior y la junta con agua y bicarbonato, revisar y limpiar el orificio de desagüe y retirar alimentos estropeados.",
+   "pieza_probable": "",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.xatakahome.com/hogar/tu-frigorifico-esconde-zona-muy-pequena-desconocida-puede-provocar-susto-no-se-vigila",
+    "https://www.siemens-home.bsh-group.com/es/inspiracion/blog/agua-nevera"
+   ]
+  },
+  {
+   "aparato": "congelador",
+   "sintoma": "No congela o los alimentos se ablandan",
+   "palabras": [
+    "no congela",
+    "no enfría el congelador",
+    "se descongela",
+    "helados blandos",
+    "los hielos no cuajan"
+   ],
+   "causas": [
+    "Temperatura mal ajustada (debe ser unos -18ºC)",
+    "Puerta mal cerrada o junta deteriorada; cajones mal colocados",
+    "Mala ventilación o aparato en garaje muy frío o muy caliente",
+    "Exceso de hielo, fallo de ventilador o desescarche (No Frost)",
+    "Falta de gas o compresor"
+   ],
+   "que_puede_hacer_el_cliente": "Ajustar a -18ºC, comprobar que la puerta y cajones cierran y que la junta ajusta, dejar espacio de ventilación. Si está en garaje, comprobar la clase climática del aparato. No abrir la puerta para conservar los alimentos mientras llega el técnico.",
+   "pieza_probable": "Junta, ventilador, sonda, desescarche, compresor/gas",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://www.samsung.com/co/support/home-appliances/what-should-i-do-if-the-product-does-not-cool",
+    "https://www.beko.com/es-es/soporte/congelador--solucion-de-problemas--articulo/como-se-repara-un-congelador-que-no-enfria-lo-suficiente",
+    "https://www.elcorteingles.es/contenidos/tecnologia/frigorifico-no-enfria/"
+   ]
+  },
+  {
+   "aparato": "congelador",
+   "sintoma": "Hace mucha escarcha o bloques de hielo",
+   "palabras": [
+    "mucho hielo",
+    "escarcha",
+    "se llena de hielo",
+    "bloque de hielo",
+    "no cierran los cajones por el hielo"
+   ],
+   "causas": [
+    "Junta de la puerta dañada, sucia o deformada (entrada de aire húmedo)",
+    "Aperturas frecuentes o introducir comida caliente",
+    "En No Frost: fallo de desescarche (resistencia, sonda, temporizador) o desagüe congelado",
+    "Puerta que queda entreabierta por un cajón mal colocado"
+   ],
+   "que_puede_hacer_el_cliente": "Limpiar la junta y hacer la prueba del papel. No meter comida caliente y abrir lo justo. En cíclicos, descongelar cuando la capa supere unos milímetros (sin rascar con objetos metálicos). En No Frost con hielo, es avería: avisar.",
+   "pieza_probable": "Junta, resistencia de desescarche, sonda",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.beko.com/es-es/soporte/congelador--solucion-de-problemas--articulo/como-puedo-evitar-la-escarcha-y-los-cristales-de-hielo-en-la-comida-congelada",
+    "https://www.haier-europe.com/es_ES/blogs/news/porque-congelador-hace-hielo",
+    "https://ushl.samsung.com/es/support/home-appliances/como-evitar-escapes-de-agua-o-escarcha-en-mi-frigorifico",
+    "https://www.ocu.org/repara/frigorificos/escarcha-frigo-no-frost"
+   ]
+  },
+  {
+   "aparato": "congelador",
+   "sintoma": "Hielo en un congelador No Frost (no debería tener)",
+   "palabras": [
+    "hielo en el no frost",
+    "escarcha en el no frost",
+    "se hace hielo y es no frost"
+   ],
+   "causas": [
+    "Junta deteriorada",
+    "Fallo del sistema de desescarche automático",
+    "Ventilador averiado",
+    "Desagüe del evaporador obstruido"
+   ],
+   "que_puede_hacer_el_cliente": "Revisar junta y cierre. Descongelar por completo 24 h como prueba temporal. Si vuelve, llamar.",
+   "pieza_probable": "Resistencia de desescarche, sonda, ventilador",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.beko.com/es-es/blog/porque-hace-hielo-un-congelador-no-frost",
+    "https://www.ocu.org/repara/frigorificos/escarcha-frigo-no-frost"
+   ]
+  },
+  {
+   "aparato": "congelador",
+   "sintoma": "Suena la alarma o parpadea la temperatura",
+   "palabras": [
+    "pita",
+    "suena la alarma",
+    "parpadea",
+    "alarma de temperatura"
+   ],
+   "causas": [
+    "Puerta abierta o mal cerrada",
+    "Introducción de mucha comida a temperatura ambiente",
+    "Corte de luz reciente",
+    "Pérdida de frío por avería"
+   ],
+   "que_puede_hacer_el_cliente": "Cerrar bien la puerta y apagar la alarma; esperar unas horas tras cargar mucha comida. Si la temperatura no baja en 24 h, avisar.",
+   "pieza_probable": "Sonda, según diagnóstico",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.beko.com/es-es/soporte/congelador--solucion-de-problemas--articulo/como-se-repara-un-congelador-que-no-enfria-lo-suficiente",
+    "https://www.samsung.com/co/support/home-appliances/what-should-i-do-if-the-product-does-not-cool"
+   ]
+  },
+  {
+   "aparato": "congelador",
+   "sintoma": "No enciende o está completamente parado",
+   "palabras": [
+    "no enciende",
+    "está muerto",
+    "no funciona",
+    "se ha apagado"
+   ],
+   "causas": [
+    "Sin corriente (enchufe, diferencial)",
+    "Cable o enchufe dañado",
+    "Termostato, relé de arranque o placa"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar el enchufe y el cuadro. Mantener la puerta cerrada: un congelador lleno conserva el frío varias horas.",
+   "pieza_probable": "Termostato, relé de arranque, placa",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://www.ocu.org/repara/frigorificos/compresor-frigo",
+    "https://www.elcorteingles.es/contenidos/tecnologia/frigorifico-no-enfria/"
+   ]
+  },
+  {
+   "aparato": "horno",
+   "sintoma": "No calienta nada (luz y ventilador sí funcionan)",
+   "palabras": [
+    "no calienta",
+    "enciende pero no calienta",
+    "está frío",
+    "no coge temperatura",
+    "tiene luz pero no calienta"
+   ],
+   "causas": [
+    "Termostato de seguridad (limitador) disparado o abierto",
+    "Resistencias averiadas",
+    "Selector de funciones, termostato o relé/placa de control",
+    "Reloj sin hora programada (muchos hornos con programador no calientan si el reloj parpadea)"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que el reloj tiene la hora puesta y no hay un programa o bloqueo activado; elegir función y temperatura. Probar varias funciones (grill, convencional) y contarle al técnico cuáles calientan.",
+   "pieza_probable": "Termostato de seguridad, resistencias, termostato, selector, placa",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.beko.com/es-es/blog/porque-horno-enciende-pero-no-calienta",
+    "https://www.beko.com/es-es/blog/mi-horno-no-calienta",
+    "https://qubbos.es/blogs/news/por-que-el-horno-no-calienta",
+    "https://techfaultfix.com/es/ovens/zanussi/oven-does-not-heat-at-all-in-any-mode-but-the-display-and-light-work"
+   ]
+  },
+  {
+   "aparato": "horno",
+   "sintoma": "Calienta solo por arriba o solo por abajo",
+   "palabras": [
+    "solo calienta arriba",
+    "solo calienta abajo",
+    "quema por abajo y crudo por arriba",
+    "no dora",
+    "no funciona el grill",
+    "calienta solo por arriba",
+    "calienta solo por abajo",
+    "solo calienta por arriba",
+    "solo calienta por abajo",
+    "quema por abajo"
+   ],
+   "causas": [
+    "Resistencia superior (grill) o inferior averiada",
+    "Selector de funciones averiado",
+    "Uso de una función que solo usa una resistencia"
+   ],
+   "que_puede_hacer_el_cliente": "Probar por separado grill y calor inferior y ver cuál no se pone roja/caliente. Revisar en el manual qué resistencias usa cada función.",
+   "pieza_probable": "Resistencia superior o inferior, selector",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.beko.com/es-es/blog/mi-horno-no-calienta",
+    "https://qubbos.es/blogs/news/por-que-el-horno-no-calienta"
+   ]
+  },
+  {
+   "aparato": "horno",
+   "sintoma": "Tarda muchísimo en calentar o no llega a la temperatura",
+   "palabras": [
+    "tarda mucho en calentar",
+    "no llega a la temperatura",
+    "cocina lento",
+    "calienta poco",
+    "se queda corto"
+   ],
+   "causas": [
+    "Una de las resistencias abierta o débil (p. ej. la circular del ventilador)",
+    "Sonda de temperatura defectuosa",
+    "Junta de la puerta que deja escapar calor",
+    "Precalentamiento normal es 10-15 min; se abre mucho la puerta"
+   ],
+   "que_puede_hacer_el_cliente": "Revisar que la junta está entera y bien encajada; no abrir la puerta durante el precalentamiento. Comprobar con un termómetro de horno si la temperatura real coincide.",
+   "pieza_probable": "Resistencia, sonda, junta de puerta",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.beko.com/es-es/blog/por-que-precalentar-horno",
+    "https://techfaultfix.com/es/ovens/electrolux/oven-heats-but-does-not-reach-set-temperature-or-takes-excessively-long-to-preheat",
+    "https://qubbos.es/blogs/news/por-que-el-horno-no-calienta"
+   ]
+  },
+  {
+   "aparato": "horno",
+   "sintoma": "Sale humo u olor a quemado al usarlo",
+   "palabras": [
+    "huele a quemado",
+    "sale humo",
+    "humo",
+    "olor a quemado",
+    "apesta a quemado"
+   ],
+   "causas": [
+    "Grasa o restos de comida acumulados (lo más habitual)",
+    "Primeros usos de un horno nuevo (residuos de fabricación)",
+    "Recipientes o papeles no aptos",
+    "Fallo eléctrico: cable o conexión recalentada (olor a plástico/eléctrico)"
+   ],
+   "que_puede_hacer_el_cliente": "Limpiar el interior y la bandeja cuando esté frío. En horno nuevo, hacer un primer uso vacío a alta temperatura con la cocina ventilada. Si huele a plástico o a cable quemado, apagar, desconectar en el cuadro y no usarlo.",
+   "pieza_probable": "Cableado, regletas de conexión, resistencias (si es eléctrico)",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://www.samsung.com/es/support/home-appliances/que-debo-hacer-si-el-horno-desprende-un-olor-desagradable-o-de-quemado-al-utilizarlo",
+    "https://www.beko.com/es-es/soporte/horno--solucion-de-problemas--articulo/el-horno-produce-humo-cuando-esta-en-funcionamiento-deberia-preocuparme",
+    "https://techfaultfix.com/es/ovens/balay/oven-emits-burning-smell-or-smoke-during-normal-cooking-not-first-use-or-after-spill"
+   ]
+  },
+  {
+   "aparato": "horno",
+   "sintoma": "Ventilador ruidoso o no gira",
+   "palabras": [
+    "ventilador hace ruido",
+    "chirría",
+    "ruido del ventilador",
+    "el ventilador no gira",
+    "zumbido del horno"
+   ],
+   "causas": [
+    "Ruido de ventilador de enfriamiento tras apagar: normal durante un rato",
+    "Grasa o suciedad en las aspas",
+    "Motor del ventilador con cojinetes desgastados"
+   ],
+   "que_puede_hacer_el_cliente": "Tener en cuenta que el ventilador de enfriamiento sigue tras apagar y es normal. Si chirría o roza, avisar.",
+   "pieza_probable": "Motor ventilador de convección o de enfriamiento",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.beko.com/co-es/soporte/horno--solucion-de-problemas--preguntas-frecuentes/el-horno-produce-un-zumbido-o-se-oye-un-ruido-del-ventilador-es-normal",
+    "https://techfaultfix.com/es/ovens/aeg/cooling-fan-at-the-top-of-the-oven-is-very-loud-or-runs-for-an-unusually-long-time-after-cooking"
+   ]
+  },
+  {
+   "aparato": "horno",
+   "sintoma": "La puerta o el cristal se calientan demasiado, o sale aire caliente",
+   "palabras": [
+    "la puerta quema",
+    "cristal muy caliente",
+    "sale aire caliente",
+    "se calientan los muebles",
+    "el cristal quema",
+    "quema el cristal",
+    "no se puede tocar la puerta"
+   ],
+   "causas": [
+    "Sale algo de aire caliente por arriba de la puerta: normal en muchos modelos",
+    "Ventilador de enfriamiento averiado",
+    "Cristal interior roto o falta un cristal tras limpiarlo",
+    "Junta deteriorada"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que, si se desmontaron cristales para limpiar, se montaron todos en su sitio según el manual. Revisar la junta. Si el ventilador de enfriamiento no se oye, avisar (puede dañar el mueble).",
+   "pieza_probable": "Ventilador de enfriamiento, cristales, junta",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://ushl.samsung.com/latin/support/home-appliances/is-it-normal-to-get-hot-air-coming-out-the-front-door-of-oven-while-cooking",
+    "https://techfaultfix.com/es/ovens/panasonic/oven-door-glass-is-excessively-hot-to-touch-during-normal-baking-cycles"
+   ]
+  },
+  {
+   "aparato": "horno",
+   "sintoma": "No enciende, panel apagado o no responde",
+   "palabras": [
+    "no enciende",
+    "no responde",
+    "panel muerto",
+    "las teclas no funcionan",
+    "candado en la pantalla",
+    "bloqueado"
+   ],
+   "causas": [
+    "Bloqueo infantil activado (candado/llave)",
+    "Panel táctil mojado o sucio",
+    "Sin corriente o automático del horno bajado",
+    "Placa de control averiada"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar el automático del horno en el cuadro. Secar y limpiar el panel. Desactivar el bloqueo (suele ser mantener la tecla de llave o candado 3 segundos; ver manual).",
+   "pieza_probable": "Placa de control/teclado",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.samsung.com/cl/support/home-appliances/what-should-i-do-when-the-oven-panel-does-not-react-when-pressed",
+    "https://www.siemens-home.bsh-group.com/es/inspiracion/blog/desbloquear-placa"
+   ]
+  },
+  {
+   "aparato": "horno",
+   "sintoma": "La luz del horno no funciona",
+   "palabras": [
+    "no hay luz",
+    "se ha fundido la bombilla",
+    "luz del horno apagada"
+   ],
+   "causas": [
+    "Bombilla fundida (bombilla especial para altas temperaturas)",
+    "Portalámparas o circuito de la lámpara"
+   ],
+   "que_puede_hacer_el_cliente": "Cambiar la bombilla solo si el manual lo describe, con el horno frío y desconectado, usando bombilla para horno.",
+   "pieza_probable": "Bombilla de horno, portalámparas",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.beko.com/es-es/blog/mi-horno-no-calienta",
+    "https://www.beko.com/co-es/soporte/horno--solucion-de-problemas--preguntas-frecuentes/el-horno-produce-un-zumbido-o-se-oye-un-ruido-del-ventilador-es-normal"
+   ]
+  },
+  {
+   "aparato": "horno",
+   "sintoma": "Salta el diferencial al encender el horno",
+   "palabras": [
+    "salta el diferencial",
+    "salta la luz",
+    "saltan los plomos",
+    "se va la luz al encender el horno",
+    "salta los plomos",
+    "salta el automatico",
+    "se va la luz"
+   ],
+   "causas": [
+    "Resistencia derivada a masa (a menudo tras derrames o limpieza con mucha agua)",
+    "Humedad en conexiones",
+    "Cableado o terminal quemado"
+   ],
+   "que_puede_hacer_el_cliente": "No seguir rearmando. Dejar el horno desconectado desde su automático y avisar.",
+   "pieza_probable": "Resistencia, cableado",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://qubbos.es/blogs/news/por-que-el-horno-no-calienta",
+    "https://www.beko.com/es-es/blog/mi-horno-no-calienta"
+   ]
+  },
+  {
+   "aparato": "placa",
+   "sintoma": "Inducción: no detecta el recipiente (parpadea el número o sale 'U')",
+   "palabras": [
+    "no detecta la sartén",
+    "parpadea",
+    "no reconoce la olla",
+    "sale una u",
+    "no calienta la sartén",
+    "no coge la sartén",
+    "no reconoce la sarten",
+    "no reconoce el cazo",
+    "no detecta la olla",
+    "no detecta el cazo",
+    "no reconoce la cazuela",
+    "no pilla la sarten"
+   ],
+   "causas": [
+    "Recipiente no apto para inducción (un imán no se pega bien al fondo)",
+    "Fondo demasiado pequeño para esa zona",
+    "Recipiente descentrado o fondo curvado/no plano",
+    "Electrónica de la zona averiada (si falla con recipientes que funcionan en otras zonas)"
+   ],
+   "que_puede_hacer_el_cliente": "Probar con un imán en el fondo del recipiente. Usar la zona del tamaño adecuado y centrar. Probar el mismo recipiente en otra zona. No usar difusores entre placa y recipiente; para cazos pequeños hay discos adaptadores.",
+   "pieza_probable": "Módulo de potencia/inductor de la zona",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/placas-induccion",
+    "https://www.hisense.es/blog_post/induccion-errores-tipicos-de-uso-y-como-evitarlos/",
+    "https://www.xatakahome.com/territorio-samsung/que-tu-placa-induccion-samsung-no-detecte-recipientes-pequenos-flexzone-no-normal-tiene-explicacion-cuestion-uso",
+    "https://qubbos.es/blogs/news/por-que-la-placa-de-induccion-no-detecta-la-sarten"
+   ]
+  },
+  {
+   "aparato": "placa",
+   "sintoma": "Una zona no calienta (el resto sí)",
+   "palabras": [
+    "un fuego no calienta",
+    "una zona no funciona",
+    "un fuego no va",
+    "solo funcionan tres fuegos",
+    "no calienta un fuego",
+    "no calienta una zona",
+    "no va un fuego",
+    "un fuego no funciona",
+    "una placa no calienta",
+    "un fuego no enciende"
+   ],
+   "causas": [
+    "En inducción: recipiente no apto para esa zona o módulo de potencia de esa zona",
+    "En vitrocerámica: resistencia (radiante) de esa zona quemada o su limitador",
+    "Relé/triac de control de la zona o conexión suelta"
+   ],
+   "que_puede_hacer_el_cliente": "En inducción, probar un recipiente que funcione en otra zona. Limpiar y secar la superficie. Si no calienta con recipientes válidos, avisar indicando qué zona falla.",
+   "pieza_probable": "Inductor o módulo de potencia (inducción); radiante (vitro); placa de control",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://techfaultfix.com/es/ranges-cooktops/balay/induction-or-ceramic-cooktop-powers-on-but-one-specific-zone-does-not-heat",
+    "https://www.neff-home.com/es/servicio-oficial/asistencia-y-consejos/placas-vitroceramicas/placa-vitroceramica-defectuosa",
+    "https://www.bosch-home.es/servicio-oficial/garantias-y-asistencia/ayuda-placas-induccion"
+   ]
+  },
+  {
+   "aparato": "placa",
+   "sintoma": "No enciende o no responde al tocar (candado, llave)",
+   "palabras": [
+    "no enciende",
+    "no responde",
+    "no hace caso",
+    "está bloqueada",
+    "sale una llave",
+    "sale un candado",
+    "no funcionan los botones"
+   ],
+   "causas": [
+    "Bloqueo infantil activado",
+    "Panel táctil mojado, sucio o con un objeto encima",
+    "Sin corriente: automático de la placa bajado",
+    "Placa de control/teclado averiada"
+   ],
+   "que_puede_hacer_el_cliente": "Secar y limpiar el panel y retirar objetos de los mandos. Desactivar el bloqueo según el manual (suele mantenerse la tecla de llave 3-4 segundos). Comprobar el automático de la placa en el cuadro. Desconectar unos minutos desde el cuadro y volver a conectar.",
+   "pieza_probable": "Módulo de control/teclado, placa de potencia",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.siemens-home.bsh-group.com/es/inspiracion/blog/desbloquear-placa",
+    "https://blog.balay.es/?p=3296",
+    "https://www.lacasadelelectrodomestico.com/blog/vitroceramica-no-enciende/",
+    "https://www.samsung.com/cl/support/home-appliances/what-should-i-do-when-the-oven-panel-does-not-react-when-pressed"
+   ]
+  },
+  {
+   "aparato": "placa",
+   "sintoma": "Se apaga sola mientras cocinas",
+   "palabras": [
+    "se apaga sola",
+    "se corta",
+    "se desconecta",
+    "se para a mitad",
+    "se apaga a media cocción"
+   ],
+   "causas": [
+    "Protección por sobrecalentamiento (cocción larga a máxima potencia, mala ventilación del mueble/horno debajo)",
+    "Agua, derrame u objeto sobre el panel táctil",
+    "Recipiente retirado más de unos segundos o no apto",
+    "Desconexión automática de seguridad por tiempo",
+    "Ventilador interno o electrónica"
+   ],
+   "que_puede_hacer_el_cliente": "Limpiar derrames del panel, no poner trapos ni utensilios sobre los mandos. Comprobar que el mueble tiene la ventilación que pide el manual. Reducir potencia en cocciones largas.",
+   "pieza_probable": "Ventilador interno, sonda, módulo de potencia",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.xatakahome.com/territorio-samsung/mi-placa-induccion-lleva-meses-apagandose-a-media-coccion-casi-llamo-al-tecnico-este-era-motivo",
+    "https://www.lg.com/cac/soporte/ayuda-producto/CT32021962-20155064036647",
+    "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/placas-induccion",
+    "https://www.bosch-home.es/servicio-oficial/garantias-y-asistencia/ayuda-placas-induccion"
+   ]
+  },
+  {
+   "aparato": "placa",
+   "sintoma": "Inducción: zumbido, pitido o chasquidos al cocinar",
+   "palabras": [
+    "zumba",
+    "pita",
+    "hace ruido",
+    "chasquidos",
+    "ruido del ventilador",
+    "vibra la olla"
+   ],
+   "causas": [
+    "Normal: zumbido a potencias altas, recipientes de varias capas y ventilador de refrigeración",
+    "Recipiente ligero o de fondo irregular",
+    "Ventilador interno sucio o desgastado (si el ruido es nuevo y fuerte)"
+   ],
+   "que_puede_hacer_el_cliente": "Probar con otro recipiente y bajar potencia: si el ruido cambia, es normal. Si es un ruido fuerte nuevo con la placa sin recipientes, avisar.",
+   "pieza_probable": "Ventilador interno",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.xatakahome.com/territorio-samsung/cuando-tu-placa-induccion-hace-ruidos-al-cocinar-no-siempre-fallo-muchos-casos-algo-normal",
+    "https://www.lg.com/cac/soporte/ayuda-producto/CT32021962-20155064036647",
+    "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/placas-induccion"
+   ]
+  },
+  {
+   "aparato": "placa",
+   "sintoma": "Salta el diferencial o el automático al encender la placa",
+   "palabras": [
+    "salta el diferencial",
+    "salta la luz",
+    "saltan los plomos",
+    "se va la luz al encender la placa",
+    "salta los plomos",
+    "salta el automatico",
+    "se va la luz",
+    "salta la luz de la casa"
+   ],
+   "causas": [
+    "Derivación en la placa (humedad, líquido infiltrado, componente dañado)",
+    "Instalación inadecuada: línea o automático insuficientes, conexión mal hecha",
+    "Diferencial sensible a la electrónica de la inducción (casos documentados de cambio a diferencial superinmunizado)"
+   ],
+   "que_puede_hacer_el_cliente": "No seguir rearmando. Dejar la placa desconectada desde su automático. Que revisen la placa y la instalación (técnico y, si procede, electricista).",
+   "pieza_probable": "Módulo de potencia, filtro; o adecuación de la instalación",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://www.ocu.org/reclamar/lista-reclamaciones-publicas/placa-de-inducci-C3-B3n-hace-saltar/CPTES01174668-95",
+    "https://www.bosch-home.es/servicio-oficial/garantias-y-asistencia/ayuda-placas-induccion"
+   ]
+  },
+  {
+   "aparato": "placa",
+   "sintoma": "Cristal roto, rajado o con golpe",
+   "palabras": [
+    "cristal roto",
+    "rajada",
+    "grieta",
+    "se ha partido",
+    "golpe en el cristal"
+   ],
+   "causas": [
+    "Caída de un objeto o recipiente",
+    "Choque térmico"
+   ],
+   "que_puede_hacer_el_cliente": "Dejar de usarla inmediatamente y desconectarla desde el cuadro: por la grieta pueden entrar líquidos a partes con tensión. Avisar al técnico.",
+   "pieza_probable": "Cristal vitrocerámico (a veces cambio de encimera completa)",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://www.bosch-home.es/servicio-oficial/garantias-y-asistencia/ayuda-placa-vitroceramica",
+    "https://www.neff-home.com/es/servicio-oficial/asistencia-y-consejos/placas-vitroceramicas/placa-vitroceramica-defectuosa"
+   ]
+  },
+  {
+   "aparato": "placa",
+   "sintoma": "Vitrocerámica: calienta poco, se apaga y enciende la zona o tarda mucho",
+   "palabras": [
+    "calienta poco",
+    "se enciende y apaga",
+    "se apaga el rojo",
+    "tarda mucho"
+   ],
+   "causas": [
+    "Normal: los radiantes se encienden y apagan para regular la potencia",
+    "Recipiente de fondo no plano o más pequeño que la zona",
+    "Radiante o limitador de temperatura defectuoso"
+   ],
+   "que_puede_hacer_el_cliente": "Usar recipientes de fondo plano y del tamaño de la zona. Tener en cuenta que el ciclo de encendido/apagado del rojo es normal.",
+   "pieza_probable": "Radiante, limitador",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.ocu.org/electrodomesticos/placas-vitroceramicas/consejos-de-uso",
+    "https://www.neff-home.com/es/servicio-oficial/asistencia-y-consejos/placas-vitroceramicas/placa-vitroceramica-defectuosa"
+   ]
+  },
+  {
+   "aparato": "placa",
+   "sintoma": "Manchas o marcas en el cristal que no se quitan",
+   "palabras": [
+    "manchas",
+    "marcas",
+    "cerco",
+    "quemado en el cristal",
+    "rayas"
+   ],
+   "causas": [
+    "Azúcar o plástico fundido, cal, restos quemados",
+    "Arañazos por arrastrar recipientes"
+   ],
+   "que_puede_hacer_el_cliente": "Limpiar con rasqueta específica y limpiador de vitrocerámica en frío (el azúcar/plástico fundido hay que retirarlo cuanto antes). Las rayas no se reparan.",
+   "pieza_probable": "",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://blog.balay.es/?p=8640",
+    "https://www.ocu.org/electrodomesticos/placas-vitroceramicas/consejos-de-uso"
+   ]
+  },
+  {
+   "aparato": "campana",
+   "sintoma": "Aspira poco o no saca el humo",
+   "palabras": [
+    "no aspira",
+    "no tira",
+    "no chupa",
+    "no saca el humo",
+    "se llena la cocina de humo",
+    "aspira poco"
+   ],
+   "causas": [
+    "Filtros metálicos llenos de grasa",
+    "Filtros de carbón saturados (en campanas de recirculación: se cambian, no se lavan; cada 3-6 meses aprox.)",
+    "Falta de entrada de aire en la cocina (ventanas cerradas)",
+    "Conducto de salida obstruido, demasiado largo/estrecho o válvula antirretorno atascada",
+    "Altura de instalación inadecuada o velocidad baja",
+    "Motor desgastado o turbina con grasa"
+   ],
+   "que_puede_hacer_el_cliente": "Lavar los filtros metálicos (lavavajillas o agua caliente con desengrasante según manual). Cambiar el filtro de carbón si es de recirculación. Abrir un poco una ventana al cocinar y usar una velocidad mayor. Encenderla unos minutos antes de cocinar.",
+   "pieza_probable": "Motor/turbina, válvula antirretorno, filtros de carbón",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.beko.com/es-es/soporte/campana--solucion-de-problemas--articulo/como-se-repara-un-campana-extractora-que-ha-perdido-potencia-de-succion",
+    "https://www.beko.com/es-es/soporte/campana--solucion-de-problemas--articulo/como-se-repara-una-campana-extractora-que-no-succiona-bien",
+    "https://www.siemens-home.bsh-group.com/es/inspiracion/blog/cambiar-filtros-campana-extractora",
+    "https://qubbos.es/blogs/news/por-que-la-campana-de-cocina-no-aspira",
+    "https://www.xatakahome.com/hogar/este-error-campana-extractora-puede-ser-peligroso-hara-que-no-funcione-bien-se-llene-cocina-humo"
+   ]
+  },
+  {
+   "aparato": "campana",
+   "sintoma": "Hace mucho ruido o vibra",
+   "palabras": [
+    "hace ruido",
+    "vibra",
+    "ruido como un avión",
+    "traquetea",
+    "silba"
+   ],
+   "causas": [
+    "Filtros saturados o mal encajados",
+    "Turbina desequilibrada por grasa",
+    "Tubo de salida mal conectado, suelto o con codos",
+    "Rodamientos del motor desgastados"
+   ],
+   "que_puede_hacer_el_cliente": "Limpiar y encajar bien los filtros. Comprobar si el ruido cambia al quitar y poner filtros. Si sigue un ruido de motor, avisar.",
+   "pieza_probable": "Motor, turbina, fijación del tubo",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.siemens-home.bsh-group.com/es/inspiracion/blog/sonido-campana-extractora",
+    "https://www.merca2.es/2023/12/18/como-reparar-campana-extractora-1517536/",
+    "https://qubbos.es/blogs/news/averias-de-campanas-extractoras-mas-frecuentes"
+   ]
+  },
+  {
+   "aparato": "campana",
+   "sintoma": "No enciende el motor",
+   "palabras": [
+    "no enciende",
+    "no funciona",
+    "no arranca",
+    "los botones no hacen nada"
+   ],
+   "causas": [
+    "Falta de corriente (enchufe oculto en el mueble, automático)",
+    "Pulsador/teclado averiado",
+    "Motor o condensador del motor averiado",
+    "Placa de control"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar el enchufe (a veces dentro del mueble alto) y el cuadro. Probar si al menos enciende la luz.",
+   "pieza_probable": "Motor, condensador, teclado, placa",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.merca2.es/2023/12/18/como-reparar-campana-extractora-1517536/",
+    "https://qubbos.es/blogs/news/averias-de-campanas-extractoras-mas-frecuentes"
+   ]
+  },
+  {
+   "aparato": "campana",
+   "sintoma": "La luz no funciona",
+   "palabras": [
+    "no hay luz",
+    "la luz de la campana no va",
+    "bombilla fundida"
+   ],
+   "causas": [
+    "Bombilla o LED fundidos",
+    "Interruptor o transformador de la luz"
+   ],
+   "que_puede_hacer_el_cliente": "Cambiar la bombilla si el manual lo describe, con la campana desconectada. Los LED integrados los cambia el técnico.",
+   "pieza_probable": "Bombilla/LED, transformador",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.merca2.es/2023/12/18/como-reparar-campana-extractora-1517536/",
+    "https://qubbos.es/blogs/news/averias-de-campanas-extractoras-mas-frecuentes"
+   ]
+  },
+  {
+   "aparato": "campana",
+   "sintoma": "Gotea grasa o agua",
+   "palabras": [
+    "gotea grasa",
+    "cae aceite",
+    "gotea agua",
+    "chorrea"
+   ],
+   "causas": [
+    "Filtros y conducto saturados de grasa",
+    "Condensación en el conducto (tubos fríos o salida larga)",
+    "Válvula antirretorno o tubo mal sellados"
+   ],
+   "que_puede_hacer_el_cliente": "Limpiar filtros con más frecuencia. Encender la campana unos minutos antes de cocinar para calentar el conducto.",
+   "pieza_probable": "Limpieza de conducto, válvula",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://qubbos.es/blogs/news/averias-de-campanas-extractoras-mas-frecuentes",
+    "https://www.beko.com/es-es/soporte/campana--limpieza--articulo/como-se-limpian-la-campana-extractora-y-sus-filtros"
+   ]
+  },
+  {
+   "aparato": "campana",
+   "sintoma": "No quita los olores",
+   "palabras": [
+    "no quita el olor",
+    "sigue oliendo",
+    "huele la casa a comida"
+   ],
+   "causas": [
+    "Filtro de carbón agotado (recirculación)",
+    "Falta de entrada de aire",
+    "Uso a velocidad baja o apagarla demasiado pronto"
+   ],
+   "que_puede_hacer_el_cliente": "Cambiar el filtro de carbón, dejarla funcionando 10-15 min tras cocinar y ventilar.",
+   "pieza_probable": "Filtro de carbón",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.deia.eus/hogar-decoracion/2026/02/22/campana-no-elimina-olores-averias-10732471.html",
+    "https://www.siemens-home.bsh-group.com/es/inspiracion/blog/filtro-campana-extractora"
+   ]
+  },
+  {
+   "aparato": "microondas",
+   "sintoma": "Funciona (luz y plato) pero no calienta",
+   "palabras": [
+    "no calienta",
+    "funciona pero no calienta",
+    "la comida sale fría",
+    "da vueltas pero no calienta"
+   ],
+   "causas": [
+    "Magnetrón averiado (lo más común)",
+    "Fusible, condensador o diodo de alta tensión",
+    "Microinterruptores de puerta desajustados",
+    "Potencia o modo mal seleccionados (descongelar, grill solo)"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar la potencia y el modo elegidos. Probar con un vaso de agua 1 minuto. NO abrir la carcasa: el condensador de alta tensión guarda carga peligrosa aunque esté desenchufado.",
+   "pieza_probable": "Magnetrón, diodo, condensador, fusible de alta tensión, microinterruptores",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.beko.com/es-es/blog/microondas-no-calienta",
+    "https://www.haier-europe.com/es_ES/blogs/news/que-hacer-cuando-el-microondas-no-calienta-la-comida",
+    "https://www.bosch-home.es/servicio-oficial/garantias-y-asistencia/microondas-defectuoso",
+    "https://qubbos.es/blogs/news/que-hacer-cuando-el-microondas-no-calienta"
+   ]
+  },
+  {
+   "aparato": "microondas",
+   "sintoma": "Echa chispas dentro",
+   "palabras": [
+    "echa chispas",
+    "chispas",
+    "rayos",
+    "chisporrotea",
+    "hace explosiones"
+   ],
+   "causas": [
+    "Objetos metálicos, papel de aluminio o platos con filo dorado",
+    "Placa de mica (cartón de la pared) sucia de grasa o quemada",
+    "Restos de comida quemados pegados a las paredes",
+    "Pintura interior saltada",
+    "Magnetrón dañado"
+   ],
+   "que_puede_hacer_el_cliente": "Parar inmediatamente. Retirar metales y vajilla con dorados. Limpiar bien el interior (con el aparato desenchufado). Si la placa de mica está quemada, la cambia el técnico. No usar el microondas mientras siga chispeando.",
+   "pieza_probable": "Placa de mica, magnetrón",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://www.xatakahome.com/hogar/tu-microondas-empieza-a-echar-chispas-no-tires-suele-ser-culpa-placa-carton-que-cuesta-2-euros",
+    "https://www.beko.com/es-es/blog/microondas-no-calienta",
+    "https://www.lacasadelelectrodomestico.com/blog/microondas-con-taras/"
+   ]
+  },
+  {
+   "aparato": "microondas",
+   "sintoma": "El plato no gira",
+   "palabras": [
+    "no gira el plato",
+    "el plato no da vueltas",
+    "plato parado"
+   ],
+   "causas": [
+    "Plato o aro de rodillos mal colocados o sucios",
+    "Recipiente demasiado grande que roza",
+    "Motor del plato o acoplamiento desgastado"
+   ],
+   "que_puede_hacer_el_cliente": "Recolocar el aro y el plato, limpiar la base y las ruedas, usar un recipiente que no toque las paredes.",
+   "pieza_probable": "Motor del plato, acoplador",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.samsung.com/es/support/home-appliances/que-hacer-si-el-plato-giratorio-de-tu-microondas-no-funciona",
+    "https://www.beko.com/es-es/blog/microondas-no-gira"
+   ]
+  },
+  {
+   "aparato": "microondas",
+   "sintoma": "No enciende nada",
+   "palabras": [
+    "no enciende",
+    "está muerto",
+    "no hace nada",
+    "pantalla apagada"
+   ],
+   "causas": [
+    "Enchufe o cuadro sin corriente",
+    "Fusible interno fundido (a menudo por microinterruptor de puerta)",
+    "Placa electrónica"
+   ],
+   "que_puede_hacer_el_cliente": "Probar otro enchufe y mirar el cuadro. No abrirlo.",
+   "pieza_probable": "Fusible, microinterruptores, placa",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.beko.com/es-es/blog/microondas-no-calienta",
+    "https://www.bosch-home.es/servicio-oficial/garantias-y-asistencia/microondas-defectuoso"
+   ]
+  },
+  {
+   "aparato": "microondas",
+   "sintoma": "Huele a quemado o sale humo",
+   "palabras": [
+    "huele a quemado",
+    "sale humo",
+    "olor a quemado"
+   ],
+   "causas": [
+    "Comida quemada o restos de grasa",
+    "Placa de mica quemada",
+    "Componente eléctrico recalentado"
+   ],
+   "que_puede_hacer_el_cliente": "Detener, desenchufar y no abrir la puerta si hay fuego dentro (se ahoga solo). Ventilar. Si el olor es eléctrico, no volver a usarlo.",
+   "pieza_probable": "Placa de mica, componentes de alta tensión",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://www.neff-home.com/cl/servicio-cliente/asistencia-consejos/microondas/reparacion-microondas/microondas-huele-a-quemado",
+    "https://www.xatakahome.com/hogar/tu-microondas-empieza-a-echar-chispas-no-tires-suele-ser-culpa-placa-carton-que-cuesta-2-euros"
+   ]
+  },
+  {
+   "aparato": "microondas",
+   "sintoma": "Las teclas no responden o sale un candado",
+   "palabras": [
+    "no responden los botones",
+    "candado",
+    "bloqueado",
+    "no hace caso"
+   ],
+   "causas": [
+    "Bloqueo infantil activado",
+    "Teclado húmedo o sucio",
+    "Membrana del teclado o placa averiada"
+   ],
+   "que_puede_hacer_el_cliente": "Desactivar el bloqueo (suele mantenerse 'stop/cancelar' unos segundos; ver manual). Secar el panel. Desenchufar 5 min y volver a probar.",
+   "pieza_probable": "Teclado de membrana, placa",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.samsung.com/co/support/home-appliances/what-should-i-do-when-the-oven-panel-does-not-react-when-pressed/",
+    "https://www.samsung.com/cl/support/home-appliances/what-should-i-do-when-the-oven-panel-does-not-react-when-pressed"
+   ]
+  },
+  {
+   "aparato": "microondas",
+   "sintoma": "Zumbido muy fuerte o ruido raro al calentar",
+   "palabras": [
+    "zumba mucho",
+    "ruido fuerte",
+    "hace un ruido raro",
+    "pita fuerte"
+   ],
+   "causas": [
+    "Magnetrón o transformador de alta tensión defectuoso",
+    "Ventilador o motor del plato"
+   ],
+   "que_puede_hacer_el_cliente": "Dejar de usarlo y llamar al técnico. No abrirlo.",
+   "pieza_probable": "Magnetrón, transformador, ventilador",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://qubbos.es/blogs/news/que-hacer-cuando-el-microondas-no-calienta",
+    "https://www.beko.com/es-es/blog/microondas-no-calienta"
+   ]
+  },
+  {
+   "aparato": "termo",
+   "sintoma": "No calienta el agua (sale fría)",
+   "palabras": [
+    "no calienta",
+    "sale fría",
+    "no hay agua caliente",
+    "agua helada",
+    "el termo no va"
+   ],
+   "causas": [
+    "Sin corriente: enchufe, automático o diferencial; o termo apagado/termostato al mínimo",
+    "Termostato de seguridad disparado",
+    "Resistencia quemada (a menudo por cal)",
+    "Termostato de regulación averiado"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que el termo está enchufado y encendido, el piloto encendido y el cuadro sin saltar. Revisar la rueda de temperatura. No abrir la tapa inferior: dentro hay corriente.",
+   "pieza_probable": "Resistencia, termostato, termostato de seguridad",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.habitissimo.es/presupuestos/reparar-termo-electrico",
+    "https://www.cronoshare.com/servicios/reparar-termo-electrico",
+    "https://www.xatakahome.com/hogar/tu-termo-hace-alguna-estas-cosas-mejor-tener-cuidado-puede-indicar-averia-inminente"
+   ]
+  },
+  {
+   "aparato": "termo",
+   "sintoma": "Salta el diferencial con el termo",
+   "palabras": [
+    "salta el diferencial",
+    "salta la luz",
+    "saltan los plomos",
+    "se va la luz con el termo"
+   ],
+   "causas": [
+    "Resistencia derivada a masa (perforada por cal o corrosión)",
+    "Humedad o fuga de agua en la zona eléctrica",
+    "Termostato o cableado deteriorado"
+   ],
+   "que_puede_hacer_el_cliente": "No seguir rearmando con el termo conectado. Desenchufarlo o bajar su automático y avisar. Si hay agua en la zona del enchufe, cortar la corriente en el cuadro antes de tocar nada.",
+   "pieza_probable": "Resistencia, junta de la brida, termostato",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://www.habitissimo.es/presupuestos/reparar-termo-electrico",
+    "https://www.todoexpertos.com/preguntas/5vevat6xogpxrkiw/salta-interruptor-diferencial-al-enchufar-termo-electrico"
+   ]
+  },
+  {
+   "aparato": "termo",
+   "sintoma": "Gotea por la válvula de seguridad",
+   "palabras": [
+    "gotea la válvula",
+    "gotea el grifito",
+    "pierde agua por el tubito",
+    "gotea al calentar"
+   ],
+   "causas": [
+    "Normal: unas gotas mientras calienta (dilatación del agua)",
+    "Presión de red demasiado alta (falta reductor de presión)",
+    "Válvula de seguridad sucia de cal o defectuosa (goteo continuo)"
+   ],
+   "que_puede_hacer_el_cliente": "Unas gotas al calentar son normales y deben conducirse a un desagüe. Si gotea sin parar, avisar al técnico; no tapar ni bloquear nunca la válvula.",
+   "pieza_probable": "Válvula de seguridad, reductor de presión",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.xatakahome.com/hogar/tu-termo-hace-alguna-estas-cosas-mejor-tener-cuidado-puede-indicar-averia-inminente",
+    "https://qubbos.es/blogs/termos-electricos/mantenimiento-termo-electrico"
+   ]
+  },
+  {
+   "aparato": "termo",
+   "sintoma": "Pierde agua por el cuerpo o por debajo del termo",
+   "palabras": [
+    "pierde agua",
+    "gotea por abajo",
+    "charco bajo el termo",
+    "está oxidado",
+    "sale agua por la tapa"
+   ],
+   "causas": [
+    "Junta de la brida (resistencia) deteriorada",
+    "Depósito perforado por corrosión (ánodo agotado)",
+    "Conexiones de las tuberías flojas"
+   ],
+   "que_puede_hacer_el_cliente": "Cortar la corriente del termo y cerrar la llave de entrada de agua fría. Si el agua sale por la tapa inferior o el depósito, es grave: avisar. Si es el depósito perforado normalmente no compensa reparar.",
+   "pieza_probable": "Junta de brida, ánodo, conexiones; depósito perforado = cambio de termo",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://www.xatakahome.com/hogar/tu-termo-hace-alguna-estas-cosas-mejor-tener-cuidado-puede-indicar-averia-inminente",
+    "https://www.eldiario.es/consumoclaro/calentador-agua-vida-util_1_10312976.html",
+    "https://qubbos.es/blogs/termos-electricos/mantenimiento-termo-electrico"
+   ]
+  },
+  {
+   "aparato": "termo",
+   "sintoma": "El agua sale poco caliente o se acaba enseguida",
+   "palabras": [
+    "poca agua caliente",
+    "se acaba enseguida",
+    "sale templada",
+    "no da para una ducha",
+    "dura poco el agua caliente"
+   ],
+   "causas": [
+    "Termostato puesto bajo",
+    "Cal acumulada sobre la resistencia y en el fondo (reduce capacidad y rendimiento)",
+    "Resistencia o termostato con fallo",
+    "Consumo mayor que la capacidad del termo"
+   ],
+   "que_puede_hacer_el_cliente": "Subir la temperatura del termostato (60ºC aprox.). Revisar el consumo y tiempo entre duchas. El vaciado y descalcificación lo hace el técnico.",
+   "pieza_probable": "Resistencia, termostato, ánodo (con limpieza de cal)",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.xatakahome.com/hogar/tu-termo-hace-alguna-estas-cosas-mejor-tener-cuidado-puede-indicar-averia-inminente",
+    "https://tarifaluzhora.es/noticias/termo-electrico-2026-cal-gasta-mas-vaciar",
+    "https://www.habitissimo.es/presupuestos/reparar-termo-electrico"
+   ]
+  },
+  {
+   "aparato": "termo",
+   "sintoma": "Hace ruido como si hirviera o crujidos",
+   "palabras": [
+    "hace ruido",
+    "burbujea",
+    "hierve",
+    "crujidos",
+    "golpes en el termo"
+   ],
+   "causas": [
+    "Cal y sedimentos en el fondo y la resistencia",
+    "Termostato muy alto",
+    "Golpes al cerrar grifos: golpe de ariete de la tubería, no del termo"
+   ],
+   "que_puede_hacer_el_cliente": "Bajar un poco la temperatura y avisar para mantenimiento (descalcificación y revisión del ánodo).",
+   "pieza_probable": "Limpieza de cal, ánodo, termostato",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.xatakahome.com/hogar/tu-termo-hace-alguna-estas-cosas-mejor-tener-cuidado-puede-indicar-averia-inminente",
+    "https://tarifaluzhora.es/noticias/termo-electrico-2026-cal-gasta-mas-vaciar"
+   ]
+  },
+  {
+   "aparato": "termo",
+   "sintoma": "El agua caliente sale marrón, turbia o con mal olor",
+   "palabras": [
+    "agua marrón",
+    "agua turbia",
+    "agua con óxido",
+    "huele a huevo podrido",
+    "agua sucia"
+   ],
+   "causas": [
+    "Corrosión interna (ánodo de magnesio agotado)",
+    "Sedimentos y cal",
+    "Óxido de las tuberías de la casa"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar si el agua fría también sale marrón (sería la red o las tuberías). Si es solo la caliente, avisar para revisar el ánodo.",
+   "pieza_probable": "Ánodo de magnesio; depósito si está corroído",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.xatakahome.com/hogar/tu-termo-hace-alguna-estas-cosas-mejor-tener-cuidado-puede-indicar-averia-inminente",
+    "https://qubbos.es/blogs/termos-electricos/mantenimiento-termo-electrico"
+   ]
+  }
+ ],
+ "peligro": [
+  {
+   "senal": "Olor a quemado, a plástico o a cable, o humo saliendo del aparato",
+   "que_hacer": "Apagar y desenchufar si se puede hacer sin riesgo; si hay humo o chispas, bajar el interruptor general o el del aparato en el cuadro. No volver a encenderlo. Si hay llama y no se apaga sola en un microondas/horno, mantener la puerta cerrada. Si hay fuego que no se controla, salir y llamar al 112. Pedir técnico urgente."
+  },
+  {
+   "senal": "Chispas o chasquidos eléctricos (fuera del caso de metal dentro del microondas)",
+   "que_hacer": "Cortar la corriente en el cuadro, no tocar el aparato y no usarlo hasta la revisión."
+  },
+  {
+   "senal": "Agua en el suelo junto a enchufes, regletas o el propio aparato (lavadora, lavavajillas, frigorífico, termo)",
+   "que_hacer": "No pisar el agua ni tocar el enchufe con las manos o pies mojados. Cortar la corriente en el cuadro general antes de acercarse, luego cerrar la llave de paso del agua y secar. No volver a enchufar hasta que esté todo seco y revisado."
+  },
+  {
+   "senal": "El diferencial salta repetidamente al usar un aparato",
+   "que_hacer": "No rearmar una y otra vez con el aparato conectado. Desenchufarlo (o bajar su automático) y avisar al técnico; si salta también sin el aparato, es la instalación y debe verla un electricista."
+  },
+  {
+   "senal": "Enchufe o clavija calientes, ennegrecidos o derretidos",
+   "que_hacer": "Cortar la corriente en el cuadro antes de desenchufar. No usar esa toma ni regletas hasta que la revise un electricista."
+  },
+  {
+   "senal": "Cristal de placa vitrocerámica o de inducción roto o rajado",
+   "que_hacer": "Dejar de usarla y desconectarla desde su automático; el líquido podría llegar a partes con tensión."
+  },
+  {
+   "senal": "Microondas que funciona con la puerta abierta, puerta deformada o cierre roto",
+   "que_hacer": "No usarlo. Desenchufarlo y avisar; nunca abrir la carcasa (alta tensión acumulada)."
+  },
+  {
+   "senal": "Termo que pierde agua por la tapa de la resistencia, válvula de seguridad bloqueada o agua hirviendo/vapor por los grifos",
+   "que_hacer": "Cortar la corriente del termo y cerrar la entrada de agua fría. No bloquear la válvula de seguridad. Avisar como urgente."
+  },
+  {
+   "senal": "Olor a gas en la cocina (si hay horno, placa o encimera de gas)",
+   "que_hacer": "No encender ni apagar luces ni aparatos, no usar el móvil dentro, abrir ventanas, cerrar la llave del gas, salir de casa y llamar a la compañía de gas o al 112. Es una emergencia, no una avería para el técnico de electrodomésticos."
+  },
+  {
+   "senal": "Frigorífico o congelador parado con alimentos dentro",
+   "que_hacer": "No abrir las puertas para conservar el frío (un congelador lleno aguanta horas). Tratarlo como prioridad. No picar el hielo con objetos punzantes: puede perforar el circuito de gas."
+  }
+ ],
+ "compensa_reparar": "Regla orientativa (OCU, para lavadoras, extrapolable a gama blanca): suele compensar reparar si el aparato tiene menos de 10 años y la reparación cuesta menos del 50% de lo que cuesta uno nuevo equivalente. Averías caras como motor o tambor/rodamientos de lavadora, compresor o fuga de gas de frigorífico, o depósito perforado de termo, a menudo no compensan si el aparato ya tiene años. Como referencia, OCU sitúa la vida media en unos 10-12 años (frigorífico ~12,3; lavavajillas ~11,6; lavadora ~11,5). Si el aparato está en garantía legal (3 años en compras desde 2022), debe repararlo el vendedor/fabricante. Fuentes: https://ocu.org/electrodomesticos/lavadora/consejos/lavadora-arreglarla-sustituirla ; https://www.ocu.org/organizacion/prensa/notas-de-prensa/2021/encfiabilidadelectrodomesticos130121 ; https://www.ocu.org/consumo-familia/derechos-consumidor/consejos/servicios-asistencia-tecnica"
 };
