@@ -1,0 +1,44 @@
+// Junta las fichas de conocimiento/*.json en conocimiento.mjs (el manual que usan la web,
+// el servidor y, vía agente/exportar-instrucciones.mjs, el agente de voz).
+// Valida cada ficha y descarta las que no tienen fuente o están incompletas.
+// Uso: node construir-manual.mjs
+import { readdirSync, readFileSync, writeFileSync } from "node:fs";
+
+const APARATOS = new Set(["lavadora", "lavadora-secadora", "secadora", "lavavajillas", "horno", "placa", "frigorifico", "congelador", "campana", "microondas", "termo"]);
+const dir = new URL("./conocimiento/", import.meta.url);
+const familias = [], sintomas = [], peligro = [], avisos = [];
+let compensa = "";
+
+for (const nombre of readdirSync(dir).filter(f => f.endsWith(".json")).sort()) {
+  const d = JSON.parse(readFileSync(new URL(nombre, dir), "utf8"));
+  if (d.codigos) {
+    const vistos = new Set();
+    const codigos = d.codigos.filter(c => {
+      const ok = APARATOS.has(c.aparato) && Array.isArray(c.codigos) && c.codigos.length && c.significado && /^https?:\/\//.test(c.fuente || "") && ["alta", "media"].includes(c.confianza);
+      const k = c.aparato + "|" + c.codigos.map(x => x.toLowerCase()).sort().join(",");
+      if (!ok) { avisos.push(`${nombre}: descartada ${c.aparato} ${c.codigos} (incompleta o sin fuente)`); return false; }
+      if (vistos.has(k)) { avisos.push(`${nombre}: repetida ${k}`); return false; }
+      vistos.add(k); return true;
+    }).map(({ aparato, codigos, significado, causas = [], que_puede_hacer_el_cliente = "", pieza_probable = "", fuente, confianza }) =>
+      ({ aparato, codigos, significado, causas, que_puede_hacer_el_cliente, pieza_probable, fuente, confianza }));
+    familias.push({ familia: d.familia, marcas: d.marcas, notas: d.notas || "", codigos });
+  }
+  if (d.sintomas) {
+    for (const s of d.sintomas) {
+      if (!APARATOS.has(s.aparato) || !s.sintoma || !s.causas?.length || !s.fuentes?.length) { avisos.push(`${nombre}: síntoma descartado ${s.aparato} ${s.sintoma}`); continue; }
+      sintomas.push({ aparato: s.aparato, sintoma: s.sintoma, palabras: s.palabras || [], causas: s.causas, que_puede_hacer_el_cliente: s.que_puede_hacer_el_cliente || "", pieza_probable: s.pieza_probable || "", urgencia: s.urgencia || "normal", fuentes: s.fuentes });
+    }
+    peligro.push(...(d.peligro || []));
+    compensa = d.compensa_reparar || compensa;
+  }
+}
+
+const base = { generado: new Date().toISOString().slice(0, 10), familias, sintomas, peligro, compensa_reparar: compensa };
+writeFileSync(new URL("./conocimiento.mjs", import.meta.url),
+  "// GENERADO por construir-manual.mjs a partir de conocimiento/*.json. No editar a mano.\n" +
+  "export default " + JSON.stringify(base, null, 1) + ";\n");
+
+const n = familias.reduce((a, f) => a + f.codigos.length, 0);
+console.log(`Manual: ${familias.length} familias, ${n} fichas de código (${familias.reduce((a, f) => a + f.codigos.filter(c => c.confianza === "alta").length, 0)} de confianza alta), ${sintomas.length} síntomas.`);
+for (const f of familias) console.log(`  ${f.familia} (${f.marcas.join(", ")}): ${f.codigos.length}`);
+if (avisos.length) console.log("Avisos:\n  " + avisos.join("\n  "));

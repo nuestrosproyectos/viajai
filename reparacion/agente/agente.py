@@ -31,7 +31,10 @@ from livekit.agents import (
     get_job_context,
     inference,
 )
+from livekit.agents import llm
 from livekit.plugins import anthropic, cartesia, deepgram, elevenlabs, google, silero
+
+from manual import Manual
 
 load_dotenv()
 log = logging.getLogger("reparo")
@@ -39,6 +42,7 @@ log = logging.getLogger("reparo")
 AQUI = Path(__file__).parent
 INSTRUCCIONES = (AQUI / "instrucciones.txt").read_text(encoding="utf-8")
 SALUDO = (AQUI / "saludo.txt").read_text(encoding="utf-8").strip()
+MANUAL = Manual(AQUI / "conocimiento.json")  # manual técnico: códigos de error y averías por síntoma
 
 CAMPOS = {"aparato", "marca", "modelo", "averia", "codigo", "nombre", "telefono", "direccion", "municipio", "franja"}
 SILENCIO_SEG = float(os.getenv("SILENCIO_SEGUNDOS", "20"))
@@ -67,6 +71,19 @@ class Tecnico(Agent):
         super().__init__(instructions=INSTRUCCIONES)
         self.cliente: str | None = None  # identidad del visitante en la sala
         self.enviado = False
+
+    async def on_user_turn_completed(self, turn_ctx: llm.ChatContext, new_message: llm.ChatMessage) -> None:
+        """Antes de contestar, consulta el manual con lo que acaba de decir el cliente
+        y añade a su mensaje solo las fichas que tocan (códigos y síntomas)."""
+        turnos = [
+            {"role": m.role, "content": m.text_content or ""}
+            for m in turn_ctx.items
+            if getattr(m, "type", None) == "message" and m.role in ("user", "assistant")
+        ]
+        turnos.append({"role": "user", "content": new_message.text_content or ""})
+        consulta = MANUAL.buscar(turnos)["texto"]
+        if consulta:
+            new_message.content.append("\n\n" + consulta)
 
     async def _rpc(self, metodo: str, datos: dict) -> str:
         if not self.cliente:

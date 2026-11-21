@@ -8,6 +8,10 @@
 // =====================================================================
 import Anthropic from "@anthropic-ai/sdk";
 import { NEGOCIO, saludo, instrucciones } from "../cerebro.mjs";
+import { preparar, buscar } from "../manual.mjs";
+import CONOCIMIENTO from "../conocimiento.mjs";
+
+const MANUAL = preparar(CONOCIMIENTO); // manual técnico (se prepara una vez por arranque)
 
 const MODELO = "claude-haiku-5-5";       // rápido y barato: ideal para voz. Alternativa: "claude-sonnet-5-5"
 const MAX_TURNOS = 30;
@@ -35,6 +39,10 @@ async function tecnico(req, env) {
     .filter(t => (t.role === "user" || t.role === "assistant") && typeof t.content === "string" && t.content.trim())
     .map(t => ({ role: t.role, content: t.content.slice(0, MAX_TEXTO) }));
   if (!turnos.length || turnos.at(-1).role !== "user") return new Response("Conversación no válida", { status: 400 });
+
+  // Fichas del manual técnico que tocan según lo que ha dicho el cliente
+  const consulta = buscar(MANUAL, turnos).texto;
+  if (consulta) turnos.at(-1).content += "\n\n" + consulta;
 
   // Foto opcional en el último mensaje del cliente
   const foto = typeof datos.imagen === "string" && datos.imagen.match(/^data:(image\/(?:jpeg|png|webp));base64,([A-Za-z0-9+/=]+)$/);
