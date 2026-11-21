@@ -2166,6 +2166,358 @@ export default {
    ]
   },
   {
+   "familia": "Hisense",
+   "marcas": [
+    "Hisense",
+    "Gorenje"
+   ],
+   "notas": "Grupo Hisense (incluye Gorenje). Los códigos de Hisense CAMBIAN MUCHO según la serie y el modelo: en lavadoras hay series con códigos F (F01, F03, F13...) y series con códigos E (E10...); en placas de inducción E1/E2 significan tensión anómala en unos modelos y fallo de sensor en otros. Pedir SIEMPRE el modelo exacto (etiqueta) y, si es posible, consultar su manual en hisense.es. En lavadoras con códigos F, pulsar Inicio/Pausa borra el código y reinicia el programa. En lavavajillas Hisense de libre instalación: E1 puerta, E2 entrada de agua, E3 desagüe, E4 sensor de temperatura, E5 desbordamiento/fuga (si hay agua en la base, hay que retirarla antes de volver a usarlo). En frigoríficos Hisense, los códigos aparecen en la zona de temperatura del compartimento afectado. Gorenje: solo se han encontrado tablas de terceros (contradictorias), por eso sus entradas van con confianza media. Daewoo/Winia: no se han encontrado fuentes fiables de códigos y no se incluyen. Hornos y microondas Hisense: no verificados, no se incluyen.",
+   "codigos": [
+    {
+     "aparato": "lavadora",
+     "codigos": [
+      "F13"
+     ],
+     "significado": "Error del bloqueo de la puerta: la puerta se cierra pero no se bloquea.",
+     "causas": [
+      "Ropa u objeto pillado entre puerta y carcasa",
+      "Puerta no cerrada del todo",
+      "Blocapuertas averiado",
+      "Módulo de control"
+     ],
+     "que_puede_hacer_el_cliente": "Abrir la puerta, comprobar que no haya ropa en la goma y cerrarla con firmeza; pulsar Inicio/Pausa de nuevo.",
+     "pieza_probable": "Blocapuertas",
+     "fuente": "https://www.hisense.es/wp-content/uploads/2024/02/WF3S1045BW3-20013525-6901101830050-User-Manual-ES.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "lavadora",
+     "codigos": [
+      "F01"
+     ],
+     "significado": "Fallo de entrada de agua: no entra agua suficiente.",
+     "causas": [
+      "Grifo cerrado",
+      "Poca presión de agua",
+      "Manguera doblada",
+      "Filtro de la manguera de entrada sucio"
+     ],
+     "que_puede_hacer_el_cliente": "Abrir el grifo del todo, comprobar la manguera de entrada y la presión de agua; limpiar el filtro de la entrada si el manual lo indica.",
+     "pieza_probable": "Electroválvula de entrada",
+     "fuente": "https://www.whitegoodshelp.co.uk/hisense-washing-machine-error-codes/",
+     "confianza": "media"
+    },
+    {
+     "aparato": "lavadora",
+     "codigos": [
+      "F03"
+     ],
+     "significado": "Fallo de desagüe: no vacía el agua a tiempo.",
+     "causas": [
+      "Filtro de la bomba atascado",
+      "Manguera de desagüe doblada u obstruida",
+      "Bomba de desagüe"
+     ],
+     "que_puede_hacer_el_cliente": "Limpiar el filtro de la bomba según el manual (sale agua) y comprobar la manguera de desagüe.",
+     "pieza_probable": "Bomba de desagüe",
+     "fuente": "https://www.whitegoodshelp.co.uk/hisense-washing-machine-error-codes/",
+     "confianza": "media"
+    },
+    {
+     "aparato": "lavadora",
+     "codigos": [
+      "F04"
+     ],
+     "significado": "Error de calentamiento: no calienta el agua a la temperatura programada.",
+     "causas": [
+      "Resistencia averiada",
+      "Sensor de temperatura"
+     ],
+     "que_puede_hacer_el_cliente": "",
+     "pieza_probable": "Resistencia / sensor de temperatura",
+     "fuente": "https://www.whitegoodshelp.co.uk/hisense-washing-machine-error-codes/",
+     "confianza": "media"
+    },
+    {
+     "aparato": "lavadora",
+     "codigos": [
+      "F06"
+     ],
+     "significado": "Error del motor (sin señal de velocidad del motor).",
+     "causas": [
+      "Motor o tacogenerador",
+      "Cableado",
+      "Módulo de control"
+     ],
+     "que_puede_hacer_el_cliente": "Pulsar Inicio/Pausa para borrar el código y reintentar; si vuelve, llamar al técnico.",
+     "pieza_probable": "Motor / módulo de control",
+     "fuente": "https://www.whitegoodshelp.co.uk/hisense-washing-machine-error-codes/",
+     "confianza": "media"
+    },
+    {
+     "aparato": "lavadora",
+     "codigos": [
+      "Unb",
+      "UNB"
+     ],
+     "significado": "Carga desequilibrada.",
+     "causas": [
+      "Ropa mal repartida o una sola prenda voluminosa",
+      "Lavadora no nivelada"
+     ],
+     "que_puede_hacer_el_cliente": "Repartir la ropa, evitar lavar una sola prenda voluminosa y comprobar que la lavadora esté nivelada.",
+     "pieza_probable": "",
+     "fuente": "https://www.whitegoodshelp.co.uk/hisense-washing-machine-error-codes/",
+     "confianza": "media"
+    },
+    {
+     "aparato": "lavadora",
+     "codigos": [
+      "E10"
+     ],
+     "significado": "En la serie con códigos E (p. ej. WFGS1016VM): error del sensor de nivel de agua. Otras fuentes genéricas lo dan como 'no entra agua'.",
+     "causas": [
+      "Sensor de nivel (presostato)",
+      "Problema de entrada de agua"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que el grifo está abierto y la manguera no está doblada; apagar y volver a encender.",
+     "pieza_probable": "Presostato (sensor de nivel)",
+     "fuente": "https://www.hisense.es/wp-content/uploads/2019/11/USER-MANUAL-WFGS1016VM-ES.pdf",
+     "confianza": "media"
+    },
+    {
+     "aparato": "lavavajillas",
+     "codigos": [
+      "E1"
+     ],
+     "significado": "Puerta abierta (mal cerrada).",
+     "causas": [
+      "Puerta no cerrada del todo",
+      "Cesto u objeto que impide el cierre",
+      "Interruptor de puerta"
+     ],
+     "que_puede_hacer_el_cliente": "Cerrar bien la puerta comprobando que nada sobresalga de los cestos.",
+     "pieza_probable": "Cierre/interruptor de puerta",
+     "fuente": "https://hisense.es/wp-content/uploads/2021/09/HS60240X-User-Manual-ES.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "lavavajillas",
+     "codigos": [
+      "E2"
+     ],
+     "significado": "Fallo de entrada de agua.",
+     "causas": [
+      "Grifo cerrado",
+      "Manguera de entrada doblada",
+      "Filtro de entrada obstruido",
+      "Poca presión"
+     ],
+     "que_puede_hacer_el_cliente": "Abrir el grifo del todo y comprobar que la manguera de entrada no esté doblada.",
+     "pieza_probable": "Electroválvula de entrada",
+     "fuente": "https://hisense.es/wp-content/uploads/2021/09/HS60240X-User-Manual-ES.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "lavavajillas",
+     "codigos": [
+      "E3"
+     ],
+     "significado": "Fallo de desagüe.",
+     "causas": [
+      "Filtro obstruido",
+      "Manguera de desagüe doblada",
+      "Bomba de desagüe"
+     ],
+     "que_puede_hacer_el_cliente": "Limpiar los filtros del fondo de la cuba y comprobar la manguera de desagüe.",
+     "pieza_probable": "Bomba de desagüe",
+     "fuente": "https://www.hisense.es/wp-content/uploads/2021/02/HV603D40-User-Manual-ES.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "lavavajillas",
+     "codigos": [
+      "E4"
+     ],
+     "significado": "Fallo del sensor de temperatura.",
+     "causas": [
+      "Sensor de temperatura (NTC) defectuoso o desconectado"
+     ],
+     "que_puede_hacer_el_cliente": "",
+     "pieza_probable": "Sensor de temperatura (NTC)",
+     "fuente": "https://hisense.es/wp-content/uploads/2021/09/HS60240X-User-Manual-ES.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "lavavajillas",
+     "codigos": [
+      "E5"
+     ],
+     "significado": "Desbordamiento o fuga (agua en la base).",
+     "causas": [
+      "Exceso de agua o espuma",
+      "Pequeña fuga interna"
+     ],
+     "que_puede_hacer_el_cliente": "Cerrar el grifo y desenchufar; el agua de la base debe retirarse antes de volver a usarlo.",
+     "pieza_probable": "",
+     "fuente": "https://hisense.es/wp-content/uploads/2021/09/HS60240X-User-Manual-ES.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "lavavajillas",
+     "codigos": [
+      "E6"
+     ],
+     "significado": "Fuga de agua (en el modelo HV603D40).",
+     "causas": [
+      "Fuga interna detectada"
+     ],
+     "que_puede_hacer_el_cliente": "Cerrar el grifo y desenchufar el aparato.",
+     "pieza_probable": "",
+     "fuente": "https://www.hisense.es/wp-content/uploads/2021/02/HV603D40-User-Manual-ES.pdf",
+     "confianza": "media"
+    },
+    {
+     "aparato": "placa",
+     "codigos": [
+      "E3"
+     ],
+     "significado": "Temperatura alta en el sensor de la placa (sobrecalentamiento).",
+     "causas": [
+      "Uso prolongado a máxima potencia",
+      "Mala ventilación bajo la encimera",
+      "Sensor"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar y esperar a que la placa se enfríe antes de volver a usarla.",
+     "pieza_probable": "",
+     "fuente": "https://www.hisense.es/wp-content/uploads/2024/02/HI6321BSCE-743291-3838782757631-User-Manual-ES.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "placa",
+     "codigos": [
+      "E1",
+      "E2"
+     ],
+     "significado": "Depende del modelo: en HI6321BSCE tensión de red por encima (E1) o por debajo (E2) de la nominal; en HI6311BSHYCE fallo del sensor de temperatura (circuito abierto o cortocircuito).",
+     "causas": [
+      "Tensión de la red anómala",
+      "Sensor de temperatura defectuoso"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar la placa desde el magnetotérmico unos minutos y volver a conectar.",
+     "pieza_probable": "Sensor de temperatura / placa de potencia",
+     "fuente": "https://www.hisense.es/wp-content/uploads/2026/04/Manual-de-usuario-HI6311BSHYCE.pdf",
+     "confianza": "media"
+    },
+    {
+     "aparato": "placa",
+     "codigos": [
+      "Eb"
+     ],
+     "significado": "Fallo del sensor (modelo HI6311BSHYCE).",
+     "causas": [
+      "Sensor defectuoso"
+     ],
+     "que_puede_hacer_el_cliente": "",
+     "pieza_probable": "",
+     "fuente": "https://www.hisense.es/wp-content/uploads/2026/04/Manual-de-usuario-HI6311BSHYCE.pdf",
+     "confianza": "media"
+    },
+    {
+     "aparato": "placa",
+     "codigos": [
+      "u"
+     ],
+     "significado": "Símbolo 'u' parpadeando: la placa se ha sobrecalentado (protección).",
+     "causas": [
+      "Sobrecalentamiento por uso prolongado",
+      "Mala ventilación"
+     ],
+     "que_puede_hacer_el_cliente": "Esperar a que baje la temperatura y pulsar encendido/apagado para reiniciar.",
+     "pieza_probable": "",
+     "fuente": "https://www.hisense.es/wp-content/uploads/2024/02/HI6311BSCE-743290-3838782757471-User-Manual-ES.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "E1",
+      "E2"
+     ],
+     "significado": "Error o fallo de un sensor de temperatura.",
+     "causas": [
+      "Sensor (termistor) defectuoso o desconectado",
+      "Cableado"
+     ],
+     "que_puede_hacer_el_cliente": "",
+     "pieza_probable": "Sensor de temperatura",
+     "fuente": "https://www.hisense.es/wp-content/uploads/2021/12/RB470N4CIC-User-Guide-ES.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "F1"
+     ],
+     "significado": "Fallo del ventilador del congelador (según manual de servicio de modelo americano HRF266N6CSE); otras fuentes le dan otros significados.",
+     "causas": [
+      "Ventilador del congelador bloqueado o averiado"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que las puertas cierran bien.",
+     "pieza_probable": "Motor ventilador del congelador",
+     "fuente": "https://www.manualslib.com/manual/2984873/Hisense-Hrf266n6cse.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "lavavajillas",
+     "codigos": [
+      "E1"
+     ],
+     "significado": "Gorenje: no entra agua en el tiempo previsto (algunas fuentes lo dan como sensor de fuga). Confirmar modelo.",
+     "causas": [
+      "Grifo cerrado o no abierto del todo",
+      "Manguera de entrada doblada",
+      "Aquastop bloqueado"
+     ],
+     "que_puede_hacer_el_cliente": "Abrir del todo el grifo y comprobar que la manguera de entrada no esté doblada.",
+     "pieza_probable": "Electroválvula de entrada / Aquastop",
+     "fuente": "https://grupomarcservice.com/gorenje-lavavajillas-fallos-codigos-de-error/",
+     "confianza": "media"
+    },
+    {
+     "aparato": "lavavajillas",
+     "codigos": [
+      "E2"
+     ],
+     "significado": "Gorenje: no desagua en el tiempo previsto y el programa se aborta.",
+     "causas": [
+      "Manguera de desagüe doblada",
+      "Filtro atascado",
+      "Bomba de desagüe"
+     ],
+     "que_puede_hacer_el_cliente": "Limpiar el filtro y comprobar la manguera de desagüe.",
+     "pieza_probable": "Bomba de desagüe",
+     "fuente": "https://grupomarcservice.com/gorenje-lavavajillas-fallos-codigos-de-error/",
+     "confianza": "media"
+    },
+    {
+     "aparato": "lavavajillas",
+     "codigos": [
+      "E3"
+     ],
+     "significado": "Gorenje: fallo de calentamiento (el agua no llega a la temperatura).",
+     "causas": [
+      "Resistencia averiada",
+      "Sensor de temperatura (NTC)"
+     ],
+     "que_puede_hacer_el_cliente": "",
+     "pieza_probable": "Resistencia de calentamiento / NTC",
+     "fuente": "https://grupomarcservice.com/gorenje-lavavajillas-fallos-codigos-de-error/",
+     "confianza": "media"
+    }
+   ]
+  },
+  {
    "familia": "LG",
    "marcas": [
     "LG"
