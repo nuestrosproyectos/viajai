@@ -2249,7 +2249,7 @@ export default {
     "Siemens",
     "Neff"
    ],
-   "notas": "Bosch, Balay, Siemens y Neff son del grupo BSH y comparten electrónica: el mismo código significa lo mismo en las cuatro marcas (OCU lo indica expresamente para las lavadoras Balay, Bosch y Siemens), aunque puede variar según la generación o el modelo. En muchos modelos la letra E y la F son equivalentes (E18 = F18, E24 = F24); a veces aparecen con dos puntos (E:18) o con un subcódigo (E:36-10). En algunas lavadoras Bosch el mismo fallo sale con otro formato (por ejemplo F18 = d02). OJO: el mismo número no significa lo mismo en distintos aparatos (E23 en lavadora = Aquastop activado; E23 en lavavajillas = fallo de la bomba de desagüe; E18 en lavadora = no desagua; E18 en lavavajillas = manguera de entrada retorcida). Pregunta siempre qué aparato es y el número E-Nr de la placa de características (en la lavadora y el lavavajillas, en el marco de la puerta; en el frigorífico, dentro). La lavadora-secadora usa los mismos códigos de lavado que la lavadora. Recomendación oficial para cualquier código no listado: apagar el aparato, esperar al menos 5 segundos (Bosch EE. UU. dice 30 segundos cortando el diferencial) y volver a encender; si vuelve a salir, Bosch España dice que el resto de códigos son fallos electrónicos que debe resolver un técnico. En las placas de inducción algunos modelos muestran solo una 'E' y, al mantener pulsado el sensor de la zona, sale el código largo (p. ej. E0111) que hay que buscar en el manual del modelo. Una placa que enciende los mandos pero no calienta puede estar en modo demostración. Los manuales de usuario de BSH no suelen traer la tabla de códigos de servicio (E63 y similares de secadora); esos solo vienen en la documentación técnica. No se encontraron fuentes fiables con códigos de campana extractora ni de Pitsos. Seguridad: en E15 y E23 (Aquastop o agua en la base) cerrar el grifo y desenchufar ya; al vaciar la bomba el agua puede salir muy caliente.",
+   "notas": "Bosch, Balay, Siemens y Neff son del grupo BSH y comparten electrónica: el mismo código significa lo mismo en las cuatro marcas (OCU lo indica expresamente para las lavadoras Balay, Bosch y Siemens), aunque puede variar según la generación o el modelo. En muchos modelos la letra E y la F son equivalentes (E18 = F18, E24 = F24); a veces aparecen con dos puntos (E:18) o con un subcódigo (E:36-10). En algunas lavadoras Bosch el mismo fallo sale con otro formato (por ejemplo F18 = d02). OJO: el mismo número no significa lo mismo en distintos aparatos (E23 en lavadora = Aquastop activado; E23 en lavavajillas = fallo de la bomba de desagüe; E18 en lavadora = no desagua; E18 en lavavajillas = manguera de entrada retorcida). Pregunta siempre qué aparato es y el número E-Nr de la placa de características (en la lavadora y el lavavajillas, en el marco de la puerta; en el frigorífico, dentro). La lavadora-secadora usa los mismos códigos de lavado que la lavadora. Recomendación oficial para cualquier código no listado: apagar el aparato, esperar al menos 5 segundos (Bosch EE. UU. dice 30 segundos cortando el diferencial) y volver a encender; si vuelve a salir, Bosch España dice que el resto de códigos son fallos electrónicos que debe resolver un técnico. En las placas de inducción algunos modelos muestran solo una 'E' y, al mantener pulsado el sensor de la zona, sale el código largo (p. ej. E0111) que hay que buscar en el manual del modelo. Una placa que enciende los mandos pero no calienta puede estar en modo demostración. Los manuales de usuario de BSH no suelen traer la tabla de códigos de servicio (E63 y similares de secadora); esos solo vienen en la documentación técnica. No se encontraron fuentes fiables con códigos de campana extractora ni de Pitsos. Seguridad: en E15 y E23 (Aquastop o agua en la base) cerrar el grifo y desenchufar ya; al vaciar la bomba el agua puede salir muy caliente. BSH no publica en España una tabla de códigos E de frigoríficos; remite al asistente online con el E-Nr de la placa de características. E01/E02/E03 vienen de servicios técnicos de terceros y coinciden en E01/E02; E03 varía según modelo.",
    "codigos": [
     {
      "aparato": "lavadora",
@@ -2781,6 +2781,66 @@ export default {
      "pieza_probable": "Diagnosticar; posible sonda de temperatura o módulo electrónico",
      "fuente": "https://www.bosch-home.fr/nos-services/aide-en-ligne/assistance-refrigerateur-congelateur/panne-frigo/code-erreur-frigo/e-ou-d",
      "confianza": "media"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "E01"
+     ],
+     "significado": "Fallo de la sonda de temperatura del compartimento frigorífico.",
+     "causas": [
+      "sonda del frigorífico averiada",
+      "conector o cableado de la sonda"
+     ],
+     "que_puede_hacer_el_cliente": "Desenchufar unos minutos y volver a enchufar; si vuelve, técnico.",
+     "pieza_probable": "sonda de temperatura del frigorífico",
+     "fuente": "https://www.northlondonappliancerepairs.co.uk/error-codes/bosch-error-codes/error-codes-for-bosch-fridge-freezers.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "E02"
+     ],
+     "significado": "Fallo de la sonda de temperatura del congelador.",
+     "causas": [
+      "sonda del congelador averiada",
+      "conector o cableado de la sonda"
+     ],
+     "que_puede_hacer_el_cliente": "Desenchufar unos minutos y volver a enchufar; si vuelve, técnico. Vigilar los congelados.",
+     "pieza_probable": "sonda de temperatura del congelador",
+     "fuente": "https://www.northlondonappliancerepairs.co.uk/error-codes/bosch-error-codes/error-codes-for-bosch-fridge-freezers.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "E03"
+     ],
+     "significado": "Fallo de una sonda de temperatura; según modelo, la del cajón de temperatura regulable (zona 0 °C/VitaFresh) u otra zona.",
+     "causas": [
+      "sonda de la zona correspondiente averiada",
+      "conexión defectuosa"
+     ],
+     "que_puede_hacer_el_cliente": "Desenchufar y volver a enchufar; si persiste, técnico con el E-Nr del aparato.",
+     "pieza_probable": "sonda de temperatura",
+     "fuente": "https://www.northlondonappliancerepairs.co.uk/error-codes/bosch-error-codes/error-codes-for-bosch-fridge-freezers.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "modo vacaciones",
+      "indicador de temperatura del frigorífico sin número"
+     ],
+     "significado": "NO es avería: modo vacaciones activado; el frigorífico se mantiene a unos 14 °C y no muestra temperatura; el congelador sigue igual.",
+     "causas": [
+      "botón de vacaciones pulsado sin querer"
+     ],
+     "que_puede_hacer_el_cliente": "Pulsar de nuevo el botón de vacaciones para desactivarlo; vuelve la temperatura anterior. No guardar comida en el frigorífico mientras está activo.",
+     "pieza_probable": "",
+     "fuente": "https://media3.bosch-home.com/Documents/8001162009/es-ES/3995849071034205195.html",
+     "confianza": "alta"
     }
    ]
   },
@@ -2816,7 +2876,7 @@ export default {
     "Electrolux",
     "Zanussi"
    ],
-   "notas": "AEG, Electrolux y Zanussi comparten electrónica y códigos (lo indica la OCU), aunque puede haber pequeñas variaciones por modelo; pedir siempre el modelo y el PNC de la placa de características. Los códigos suelen ser familias: E10 cubre E11-E1x, E20 cubre E21-E2x, etc.; en modelos antiguos o de otros mercados el mismo fallo aparece como C1/F1 (agua), C2/F2 (desagüe) o AL5/AL6 en lavavajillas. Lavadoras sin pantalla (sobre todo Zanussi): el piloto de fin de programa parpadea tantas veces como la primera cifra y el de Inicio/Pausa tantas como la segunda; se antepone 'E' (4 y 3 parpadeos = E43). Lavavajillas sin pantalla: el indicador de fin parpadea N veces tras una pausa (1 = i10, 2 = i20, 3 = i30...). Primer paso general: desenchufar o bajar el automático 30 s-1 min, volver a conectar y relanzar el programa; si el código vuelve, avería real. Corberó no se incluye: no se encontró ninguna fuente que confirme que comparte códigos con este grupo.",
+   "notas": "AEG, Electrolux y Zanussi comparten electrónica y códigos (lo indica la OCU), aunque puede haber pequeñas variaciones por modelo; pedir siempre el modelo y el PNC de la placa de características. Los códigos suelen ser familias: E10 cubre E11-E1x, E20 cubre E21-E2x, etc.; en modelos antiguos o de otros mercados el mismo fallo aparece como C1/F1 (agua), C2/F2 (desagüe) o AL5/AL6 en lavavajillas. Lavadoras sin pantalla (sobre todo Zanussi): el piloto de fin de programa parpadea tantas veces como la primera cifra y el de Inicio/Pausa tantas como la segunda; se antepone 'E' (4 y 3 parpadeos = E43). Lavavajillas sin pantalla: el indicador de fin parpadea N veces tras una pausa (1 = i10, 2 = i20, 3 = i30...). Primer paso general: desenchufar o bajar el automático 30 s-1 min, volver a conectar y relanzar el programa; si el código vuelve, avería real. Corberó no se incluye: no se encontró ninguna fuente que confirme que comparte códigos con este grupo. Fuente: soporte oficial de AEG/Electrolux en Reino Unido; los códigos varían según el modelo.",
    "codigos": [
     {
      "aparato": "lavadora",
@@ -3601,6 +3661,72 @@ export default {
      "pieza_probable": "",
      "fuente": "https://www.manualslib.com/manual/854764/Aeg-Skz81800f0.html?page=30",
      "confianza": "alta"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "F1",
+      "F2"
+     ],
+     "significado": "Problema con el termostato o el control de temperatura.",
+     "causas": [
+      "fallo del termostato o de su control electrónico"
+     ],
+     "que_puede_hacer_el_cliente": "Desenchufar unos minutos y volver a enchufar; si el código vuelve, técnico.",
+     "pieza_probable": "termostato o placa de control",
+     "fuente": "https://support.aeg.co.uk/support-articles/article/aeg-fridge-or-freezer-displays-an-error-code-what-does-it-mean",
+     "confianza": "media"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "F8"
+     ],
+     "significado": "Problema en el sistema de desescarche (descongelación automática).",
+     "causas": [
+      "resistencia de desescarche averiada",
+      "sonda o térmico de desescarche averiado",
+      "evaporador bloqueado por hielo"
+     ],
+     "que_puede_hacer_el_cliente": "Desenchufar y volver a enchufar; si persiste o se ve hielo acumulado, técnico.",
+     "pieza_probable": "resistencia o sonda de desescarche",
+     "fuente": "https://support.aeg.co.uk/support-articles/article/refrigerator-shows-f8-on-the-display?locale=en-GB",
+     "confianza": "media"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "HI"
+     ],
+     "significado": "Combis de puerta francesa: alarma de temperatura alta en el compartimento (pita cada 10 segundos).",
+     "causas": [
+      "puerta abierta o mal cerrada",
+      "corte de luz prolongado",
+      "comida caliente metida hace poco"
+     ],
+     "que_puede_hacer_el_cliente": "Cerrar bien las puertas y no abrir; si en 60 minutos no mejora, pedir técnico.",
+     "pieza_probable": "",
+     "fuente": "https://support.aeg.co.uk/support-articles/article/french-door-fridge-freezer-displays-hi-refrigerator-compartment",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "alarma",
+      "luz roja",
+      "triángulo parpadeando",
+      "pitidos"
+     ],
+     "significado": "Aviso de alarma: normalmente temperatura interior demasiado alta o puerta abierta, no siempre una avería.",
+     "causas": [
+      "temperatura mal ajustada",
+      "puerta abierta o junta que no cierra",
+      "tras un corte de luz o al meter mucha comida"
+     ],
+     "que_puede_hacer_el_cliente": "Pulsar el botón para silenciar la alarma, cerrar la puerta y comprobar el ajuste (unos 4-5 °C frigorífico, -18 °C congelador). Si sigue tras varias horas, técnico.",
+     "pieza_probable": "",
+     "fuente": "https://support.aeg.co.uk/support-articles/article/fridge-freezer-shows-an-alarm-red-warning-light-flashing-triangle-or-beeps",
+     "confianza": "alta"
     }
    ]
   },
@@ -3611,7 +3737,7 @@ export default {
     "Edesa",
     "Aspes"
    ],
-   "notas": "Fagor Electrodomésticos (cooperativa de Mondragón) quebró en 2013. En 2014 CNA Group (grupo de Cata, que en junio de 2026 pasó a llamarse Cata Group) compró sus activos y fábricas del País Vasco y opera mediante Edesa Industrial. Las marcas Fagor y Aspes siguen siendo propiedad de Fagor S.C. (Mondragón), que se las alquila a CNA, y Edesa es del propio grupo CNA. Por tanto, los aparatos Fagor y Edesa actuales los fabrica CNA/Cata Group, y es razonable que compartan códigos, aunque no hay una fuente que lo confirme modelo a modelo. Las Fagor antiguas (anteriores a 2014, de Fagor Electrodomésticos) usan otras tablas, y la documentación encontrada sobre ellas es escasa. Los manuales de los modelos actuales están en file.fagorelectrodomestico.com. En lavadora, el mismo fallo aparece como E01, Er 01 o E30 según el modelo. Sobre Aspes no se encontró ninguna tabla de códigos.",
+   "notas": "Fagor Electrodomésticos (cooperativa de Mondragón) quebró en 2013. En 2014 CNA Group (grupo de Cata, que en junio de 2026 pasó a llamarse Cata Group) compró sus activos y fábricas del País Vasco y opera mediante Edesa Industrial. Las marcas Fagor y Aspes siguen siendo propiedad de Fagor S.C. (Mondragón), que se las alquila a CNA, y Edesa es del propio grupo CNA. Por tanto, los aparatos Fagor y Edesa actuales los fabrica CNA/Cata Group, y es razonable que compartan códigos, aunque no hay una fuente que lo confirme modelo a modelo. Las Fagor antiguas (anteriores a 2014, de Fagor Electrodomésticos) usan otras tablas, y la documentación encontrada sobre ellas es escasa. Los manuales de los modelos actuales están en file.fagorelectrodomestico.com. En lavadora, el mismo fallo aparece como E01, Er 01 o E30 según el modelo. Sobre Aspes no se encontró ninguna tabla de códigos. Códigos F de lavadoras Fagor de la etapa de Fagor Electrodomésticos (antes de 2014), sacados de manuales de modelos concretos (F-3609, FAS 3612, 3FS-3611). El significado puede cambiar entre modelos: en la FAS 3612 F04 es puerta, pero en documentación de servicio de otras placas F04 es fallo del presostato. Las Fagor/Edesa actuales usan E01, E02, E03... (ya en codigos-fagor.json). No se encontró tabla fiable de parpadeos de luces en modelos sin pantalla.",
    "codigos": [
     {
      "aparato": "lavadora",
@@ -3835,6 +3961,98 @@ export default {
      "pieza_probable": "",
      "fuente": "https://manualslib.es/manual/159945/Edesa-Eir-6331-B.html?page=23",
      "confianza": "alta"
+    },
+    {
+     "aparato": "lavadora",
+     "codigos": [
+      "F01"
+     ],
+     "significado": "Fagor antigua (p. ej. F-3609): no entra agua.",
+     "causas": [
+      "grifo de paso cerrado o corte de agua",
+      "filtro de la manguera de entrada obstruido",
+      "manguera doblada"
+     ],
+     "que_puede_hacer_el_cliente": "Abrir el grifo, comprobar que hay agua en casa, enderezar la manguera y limpiar el filtrito de la entrada con el grifo cerrado.",
+     "pieza_probable": "electroválvula de entrada",
+     "fuente": "https://manualslib.mx/manual/853838/Fagor-F-3609.html?page=53",
+     "confianza": "media"
+    },
+    {
+     "aparato": "lavadora",
+     "codigos": [
+      "F02"
+     ],
+     "significado": "Fagor antigua: no desagua.",
+     "causas": [
+      "filtro de la bomba atascado",
+      "desagüe de la casa o manguera obstruidos",
+      "bomba de desagüe averiada o mal conectada"
+     ],
+     "que_puede_hacer_el_cliente": "Limpiar el filtro de la bomba (poner un recipiente y trapos, sale agua) y comprobar que la manguera de desagüe no está doblada ni el sifón atascado.",
+     "pieza_probable": "bomba de desagüe",
+     "fuente": "https://manualslib.mx/manual/218376/Fagor-Fas-3612.html?page=23",
+     "confianza": "media"
+    },
+    {
+     "aparato": "lavadora",
+     "codigos": [
+      "F03"
+     ],
+     "significado": "Fagor antigua (p. ej. F-3609): carga desequilibrada; la ropa está mal repartida y no centrifuga.",
+     "causas": [
+      "poca ropa o una pieza grande (toalla, nórdico) que se apelotona"
+     ],
+     "que_puede_hacer_el_cliente": "Repartir la ropa en el tambor y volver a poner el centrifugado.",
+     "pieza_probable": "",
+     "fuente": "https://manualslib.mx/manual/853838/Fagor-F-3609.html?page=53",
+     "confianza": "media"
+    },
+    {
+     "aparato": "lavadora",
+     "codigos": [
+      "F04"
+     ],
+     "significado": "Fagor FAS 3612: la puerta no está bien cerrada (en otros modelos F04 puede ser fallo del presostato).",
+     "causas": [
+      "puerta mal cerrada o ropa pillada",
+      "cierre de puerta averiado"
+     ],
+     "que_puede_hacer_el_cliente": "Cerrar la puerta con firmeza y comprobar que no hay ropa en la goma o el cierre.",
+     "pieza_probable": "blocapuertas",
+     "fuente": "https://manualslib.mx/manual/218376/Fagor-Fas-3612.html?page=22",
+     "confianza": "media"
+    },
+    {
+     "aparato": "lavavajillas",
+     "codigos": [
+      "E5"
+     ],
+     "significado": "Fagor serie Evo: sobrecalentamiento del calentador.",
+     "causas": [
+      "fallo del termostato o sonda",
+      "resistencia o calentador averiado"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar y desenchufar unos minutos; si se repite, técnico.",
+     "pieza_probable": "calentador o sonda de temperatura",
+     "fuente": "https://manualslib.mx/manual/138849/Fagor-Evo-Serie.html?page=47",
+     "confianza": "media"
+    },
+    {
+     "aparato": "lavavajillas",
+     "codigos": [
+      "E6",
+      "E7"
+     ],
+     "significado": "Fagor serie Evo: fallo de calentamiento del agua (no calienta).",
+     "causas": [
+      "resistencia o calentador averiado",
+      "sonda de temperatura averiada"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar y desenchufar unos minutos; si se repite, técnico.",
+     "pieza_probable": "resistencia/calentador",
+     "fuente": "https://manualslib.mx/manual/138849/Fagor-Evo-Serie.html?page=47",
+     "confianza": "media"
     }
    ]
   },
@@ -3845,7 +4063,7 @@ export default {
     "Hoover",
     "Haier"
    ],
-   "notas": "Candy y Hoover comparten electrónica y códigos; Haier usa su propia nomenclatura (ERR1, ERR2..., UNB, y en algunos modelos E4). Candy y Hoover apenas publican tablas de códigos en su web española: los significados proceden de manuales de modelos concretos y de fuentes técnicas, por eso casi todo va con confianza media. Las lavadoras Candy/Hoover sin pantalla muestran el código con parpadeos de pilotos: contar los parpadeos entre pausas (por ejemplo, 3 parpadeos = E03). En lavavajillas Candy/Hoover conviven dos generaciones: la clásica con códigos E (E2, E3...) y la moderna con códigos A (A10, A20...). Primer paso habitual: desenchufar 2-3 minutos y volver a conectar; si el código vuelve, la avería sigue presente. Pedir siempre marca y modelo. Sin fuente fiable para hornos, placas y frigoríficos de este grupo: no se incluyen.",
+   "notas": "Candy y Hoover comparten electrónica y códigos; Haier usa su propia nomenclatura (ERR1, ERR2..., UNB, y en algunos modelos E4). Candy y Hoover apenas publican tablas de códigos en su web española: los significados proceden de manuales de modelos concretos y de fuentes técnicas, por eso casi todo va con confianza media. Las lavadoras Candy/Hoover sin pantalla muestran el código con parpadeos de pilotos: contar los parpadeos entre pausas (por ejemplo, 3 parpadeos = E03). En lavavajillas Candy/Hoover conviven dos generaciones: la clásica con códigos E (E2, E3...) y la moderna con códigos A (A10, A20...). Primer paso habitual: desenchufar 2-3 minutos y volver a conectar; si el código vuelve, la avería sigue presente. Pedir siempre marca y modelo. Sin fuente fiable para hornos, placas y frigoríficos de este grupo: no se incluyen. Haier indica que los códigos cambian según la serie y que el cliente no puede resolverlos: si se apaga y enciende el código puede desaparecer pero vuelve a las horas. Para Candy/Hoover frigoríficos no se ha encontrado fuente fiable.",
    "codigos": [
     {
      "aparato": "lavadora",
@@ -4137,6 +4355,81 @@ export default {
      "que_puede_hacer_el_cliente": "Vaciar el depósito de agua, colocarlo bien y reiniciar el ciclo.",
      "pieza_probable": "Bomba de condensado si persiste con el depósito vacío",
      "fuente": "https://www.fersay.com/blog/codigos-de-error-secadoras-guia-marca-por-marca/",
+     "confianza": "media"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "dF",
+      "DF"
+     ],
+     "significado": "Haier: NO es avería; el aparato está haciendo el desescarche y desaparece al terminar.",
+     "causas": [
+      "ciclo normal de desescarche"
+     ],
+     "que_puede_hacer_el_cliente": "Esperar; no hace falta hacer nada.",
+     "pieza_probable": "",
+     "fuente": "https://www.haier.com/sa/service-support/self-service/20191216_112155.shtml",
+     "confianza": "media"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "F2"
+     ],
+     "significado": "Haier (p. ej. HQM458): fallo del sensor de temperatura del frigorífico.",
+     "causas": [
+      "sonda del frigorífico averiada",
+      "conexión defectuosa"
+     ],
+     "que_puede_hacer_el_cliente": "Desenchufar y volver a enchufar; si vuelve, técnico.",
+     "pieza_probable": "sonda del frigorífico",
+     "fuente": "https://manualslib.es/manual/377959/Haier-Hqm458Bknss0.html?page=24",
+     "confianza": "media"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "F4"
+     ],
+     "significado": "Haier (p. ej. HQM458): fallo del sensor de temperatura del congelador.",
+     "causas": [
+      "sonda del congelador averiada",
+      "conexión defectuosa"
+     ],
+     "que_puede_hacer_el_cliente": "Desenchufar y volver a enchufar; si vuelve, técnico.",
+     "pieza_probable": "sonda del congelador",
+     "fuente": "https://manualslib.es/manual/377959/Haier-Hqm458Bknss0.html?page=24",
+     "confianza": "media"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "E1"
+     ],
+     "significado": "Haier (p. ej. HQM458): el control no recibe señal de un ventilador (fallo de ventilador).",
+     "causas": [
+      "ventilador bloqueado por hielo",
+      "motor del ventilador averiado"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que no hay alimentos tapando las rejillas interiores; si persiste, técnico.",
+     "pieza_probable": "ventilador",
+     "fuente": "https://manualslib.es/manual/377959/Haier-Hqm458Bknss0.html?page=24",
+     "confianza": "media"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "E0"
+     ],
+     "significado": "Haier: error de comunicación entre placas.",
+     "causas": [
+      "cableado entre placa y pantalla",
+      "placa electrónica averiada"
+     ],
+     "que_puede_hacer_el_cliente": "Desenchufar 10 minutos y volver a enchufar; si vuelve, técnico.",
+     "pieza_probable": "placa electrónica o pantalla",
+     "fuente": "https://www.haier.com/sa/service-support/self-service/20191216_112155.shtml",
      "confianza": "media"
     }
    ]
@@ -6329,15 +6622,276 @@ export default {
    "marcas": [
     "Smeg"
    ],
-   "notas": "PENDIENTE: no se ha verificado ningún código de Smeg. El límite de búsquedas web de la sesión se agotó antes de investigar esta marca, y las páginas de soporte no se pudieron abrir directamente porque la red de la sesión no las permite. No se incluye ningún código sin fuente. Mientras tanto, el técnico virtual debe pedir el modelo exacto y el código, y remitir al manual del modelo (smeg.es) o a la visita del técnico.",
-   "codigos": []
+   "notas": "PENDIENTE: no se ha verificado ningún código de Smeg. El límite de búsquedas web de la sesión se agotó antes de investigar esta marca, y las páginas de soporte no se pudieron abrir directamente porque la red de la sesión no las permite. No se incluye ningún código sin fuente. Mientras tanto, el técnico virtual debe pedir el modelo exacto y el código, y remitir al manual del modelo (smeg.es) o a la visita del técnico. Smeg (Guastalla, Italia) no publica una tabla general de códigos: cada manual trae la suya y el significado cambia según el modelo y la generación. Los manuales están en smeg.com/download-manuals (o smeg.es) introduciendo el código de producto, que en lavavajillas está en una etiqueta en el lateral interior derecho de la puerta. Pedir siempre el modelo exacto. Lavavajillas: el código sale como E1...E9 en la pantalla; en modelos sin pantalla se indica con parpadeos de los pilotos de programa. Según los manuales, E1, E2, E3, E4, E8 y E9 detienen el programa, mientras que E5 y E6 permiten que continúe una vez resuelto el problema; primer paso: apagar y encender y volver a programar. Lavadoras Smeg antiguas (SWM) usan E01-E04; las nuevas (LBW) tienen su propia tabla, así que confirmar modelo. Frigoríficos: avisan con piloto rojo, pitido y letras o símbolos en la pantalla de temperatura. Hornos y placas Smeg: no se han encontrado tablas fiables y no se incluyen (en placas de inducción hay códigos ER03, ER21, E2... pero sin significado confirmado).",
+   "codigos": [
+    {
+     "aparato": "lavavajillas",
+     "codigos": [
+      "E1"
+     ],
+     "significado": "Se ha activado el sistema antiinundación (Aquastop): ha detectado agua donde no debe.",
+     "causas": [
+      "fuga de agua dentro del aparato que llega a la base",
+      "fallo del propio sistema Aquastop"
+     ],
+     "que_puede_hacer_el_cliente": "Cerrar el grifo del agua, desenchufar y llamar al servicio técnico. No volver a usarlo hasta que se revise.",
+     "pieza_probable": "sistema Aquastop / tubo de entrada de seguridad",
+     "fuente": "https://www.manualslib.com/manual/832919/Smeg-Di6012-1.html?page=37",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "lavavajillas",
+     "codigos": [
+      "E2"
+     ],
+     "significado": "Ha saltado el sistema de seguridad que limita el nivel de agua dentro del lavavajillas.",
+     "causas": [
+      "exceso de agua en la cuba",
+      "fallo del presostato o dispositivo de seguridad de nivel"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar y encender el aparato y volver a programar; si el código vuelve, llamar al servicio técnico.",
+     "pieza_probable": "presostato / dispositivo de seguridad de nivel",
+     "fuente": "https://www.manualslib.com/manual/832919/Smeg-Di6012-1.html?page=37",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "lavavajillas",
+     "codigos": [
+      "E3"
+     ],
+     "significado": "El lavavajillas no consigue calentar el agua.",
+     "causas": [
+      "resistencia de calentamiento averiada",
+      "fallo de la electrónica de control"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar y encender y volver a lanzar el programa; si se repite, llamar al servicio técnico.",
+     "pieza_probable": "resistencia",
+     "fuente": "https://www.manualslib.com/manual/832919/Smeg-Di6012-1.html?page=37",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "lavavajillas",
+     "codigos": [
+      "E4"
+     ],
+     "significado": "La sonda de temperatura está desconectada.",
+     "causas": [
+      "sonda de temperatura averiada",
+      "cableado o conector de la sonda suelto"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar y encender; si se repite, llamar al servicio técnico.",
+     "pieza_probable": "sonda de temperatura (NTC)",
+     "fuente": "https://www.manualslib.com/manual/832919/Smeg-Di6012-1.html?page=37",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "lavavajillas",
+     "codigos": [
+      "E5"
+     ],
+     "significado": "El aparato no puede coger agua.",
+     "causas": [
+      "grifo del agua cerrado o poca presión",
+      "tubo de entrada doblado o filtro de entrada obstruido",
+      "electroválvula de entrada averiada"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que el grifo está abierto y hay agua en casa, que el tubo de entrada no está doblado y que su filtro no está obstruido. Resuelto esto, el programa continúa.",
+     "pieza_probable": "electroválvula de entrada",
+     "fuente": "https://www.manualslib.com/manual/832919/Smeg-Di6012-1.html?page=37",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "lavavajillas",
+     "codigos": [
+      "E6"
+     ],
+     "significado": "El aparato no puede desaguar el agua de la cuba.",
+     "causas": [
+      "tubo de desagüe doblado u obstruido",
+      "desagüe de la casa (sifón) atascado",
+      "filtro del lavavajillas sucio",
+      "bomba de desagüe averiada"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que el tubo de desagüe no está doblado, que el desagüe de la casa no está atascado y limpiar el filtro del fondo. Apagar y encender; el programa puede continuar.",
+     "pieza_probable": "bomba de desagüe",
+     "fuente": "https://www.manualsdir.com/manuals/140870/smeg-st144.html?page=24",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "lavavajillas",
+     "codigos": [
+      "E7"
+     ],
+     "significado": "El lavavajillas no puede medir con precisión la cantidad de agua que ha cargado (en modelos con caudalímetro).",
+     "causas": [
+      "caudalímetro (turbina) averiado",
+      "fallo de la electrónica"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar y encender y volver a programar; si se repite, llamar al servicio técnico.",
+     "pieza_probable": "caudalímetro",
+     "fuente": "https://www.manualsdir.com/manuals/140870/smeg-st144.html?page=24",
+     "confianza": "media"
+    },
+    {
+     "aparato": "lavavajillas",
+     "codigos": [
+      "E8"
+     ],
+     "significado": "Fallo en el sistema que reparte el agua a los cestos (en los modelos que lo tienen).",
+     "causas": [
+      "válvula o motor repartidor de agua averiado"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar y encender y volver a programar; si se repite, llamar al servicio técnico.",
+     "pieza_probable": "repartidor / válvula desviadora de agua",
+     "fuente": "https://www.manualsdir.com/manuals/140870/smeg-st144.html?page=24",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "lavavajillas",
+     "codigos": [
+      "E9"
+     ],
+     "significado": "Depende del modelo: fallo del sistema de entrada de agua o se ha superado el nivel máximo de carga de agua (modelos con caudalímetro).",
+     "causas": [
+      "fallo en la entrada de agua",
+      "caudalímetro o electroválvula averiados"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar y encender; si persiste, llamar al servicio técnico.",
+     "pieza_probable": "",
+     "fuente": "https://www.manualsdir.com/manuals/140870/smeg-st144.html?page=24",
+     "confianza": "media"
+    },
+    {
+     "aparato": "lavadora",
+     "codigos": [
+      "E01"
+     ],
+     "significado": "La puerta está abierta o mal cerrada.",
+     "causas": [
+      "puerta no cerrada del todo",
+      "ropa pillada en la goma",
+      "cierre de puerta averiado"
+     ],
+     "que_puede_hacer_el_cliente": "Abrir y cerrar bien la puerta, comprobando que no hay ropa pillada, y volver a arrancar.",
+     "pieza_probable": "blocapuertas",
+     "fuente": "https://www.manualslib.com/manual/155839/Smeg-Swm65.html?page=30",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "lavadora",
+     "codigos": [
+      "E02"
+     ],
+     "significado": "No llega el agua necesaria: la lavadora no alcanza el nivel de agua esperado.",
+     "causas": [
+      "grifo cerrado o corte de agua",
+      "poca presión de agua",
+      "tubo o filtro de entrada obstruido"
+     ],
+     "que_puede_hacer_el_cliente": "Abrir el grifo del todo y comprobar que hay agua en casa y que el tubo de entrada no está doblado.",
+     "pieza_probable": "electroválvula de entrada",
+     "fuente": "https://www.manualslib.com/manual/155839/Smeg-Swm65.html?page=30",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "lavadora",
+     "codigos": [
+      "E03"
+     ],
+     "significado": "No desagua: problema con la bomba de desagüe o su filtro.",
+     "causas": [
+      "filtro de la bomba atascado",
+      "bomba de desagüe averiada",
+      "conexión eléctrica de la bomba defectuosa"
+     ],
+     "que_puede_hacer_el_cliente": "Limpiar el filtro de la bomba (con un recipiente y trapos, porque saldrá agua) y comprobar que el tubo de desagüe no está doblado.",
+     "pieza_probable": "bomba de desagüe",
+     "fuente": "https://www.manualslib.com/manual/155839/Smeg-Swm65.html?page=30",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "lavadora",
+     "codigos": [
+      "E04"
+     ],
+     "significado": "Hay demasiada agua dentro de la lavadora.",
+     "causas": [
+      "electroválvula de entrada que no cierra",
+      "presostato averiado"
+     ],
+     "que_puede_hacer_el_cliente": "Cerrar el grifo del agua, desenchufar y llamar al servicio técnico.",
+     "pieza_probable": "electroválvula de entrada o presostato",
+     "fuente": "https://www.manualslib.com/manual/155839/Smeg-Swm65.html?page=30",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "A",
+      "símbolo en lugar de números en la pantalla de temperatura"
+     ],
+     "significado": "Problema en un sensor de temperatura.",
+     "causas": [
+      "sensor de temperatura averiado",
+      "cableado del sensor"
+     ],
+     "que_puede_hacer_el_cliente": "Vigilar que los alimentos siguen fríos y llamar al servicio técnico.",
+     "pieza_probable": "sensor de temperatura (NTC)",
+     "fuente": "https://manualshive.com/en/manual/smeg/c7194n2p/1304158?page=14",
+     "confianza": "media"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "C en la pantalla del congelador con piloto rojo parpadeando y alarma"
+     ],
+     "significado": "Está averiado el sensor de temperatura del congelador, pero el aparato sigue funcionando.",
+     "causas": [
+      "sensor de temperatura del congelador averiado"
+     ],
+     "que_puede_hacer_el_cliente": "El aparato sigue enfriando; vigilar los alimentos y llamar al servicio técnico.",
+     "pieza_probable": "sensor de temperatura del congelador",
+     "fuente": "https://kitchen.manualsonline.com/manuals/mfg/smeg/cr325anf.html?p=13",
+     "confianza": "media"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "piloto rojo, pitido y pantalla del congelador parpadeando"
+     ],
+     "significado": "Alarma de corte de corriente: ha habido un apagón y la temperatura del congelador ha podido subir.",
+     "causas": [
+      "corte de luz",
+      "enchufe o automático desconectado un tiempo"
+     ],
+     "que_puede_hacer_el_cliente": "Pulsar el botón de alarma para silenciarla, comprobar el estado de los alimentos congelados y esperar a que recupere la temperatura.",
+     "pieza_probable": "",
+     "fuente": "https://manualsonline.com/manuals/mfg/smeg/cr328azd7.html?p=12",
+     "confianza": "media"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "alarma sonora de puerta"
+     ],
+     "significado": "La puerta se ha quedado abierta.",
+     "causas": [
+      "puerta mal cerrada",
+      "algo impide cerrar la puerta"
+     ],
+     "que_puede_hacer_el_cliente": "Cerrar bien la puerta y comprobar que ningún alimento ni bandeja lo impide.",
+     "pieza_probable": "",
+     "fuente": "https://manualshive.com/en/manual/smeg/c7194n2p/1304158?page=14",
+     "confianza": "media"
+    }
+   ]
   },
   {
    "familia": "Teka",
    "marcas": [
     "Teka"
    ],
-   "notas": "Teka publica manuales de servicio en su portal técnico (apiportalsat.teka.com). La numeración cambia según la gama: en lavadoras las gamas TK2/TKM/TKW usan Err1, Err2, Err3; las TKS/TLM/WCZ usan E01 a E05; las LI5/LSI5 usan E:00 a E:05. En lavavajillas sin display el código se muestra con parpadeos de los LEDs (número de parpadeos y pausa de 5 segundos; p. ej. E2 son 2 parpadeos). En inducción, la gama G4 usa E2, E5, Er25, U400 y Er31, y las gamas G0 a G3 usan F02 y F04. En frigoríficos No Frost el significado del código cambia por modelo. Conviene pedir siempre el modelo exacto.",
+   "notas": "Teka publica manuales de servicio en su portal técnico (apiportalsat.teka.com). La numeración cambia según la gama: en lavadoras las gamas TK2/TKM/TKW usan Err1, Err2, Err3; las TKS/TLM/WCZ usan E01 a E05; las LI5/LSI5 usan E:00 a E:05. En lavavajillas sin display el código se muestra con parpadeos de los LEDs (número de parpadeos y pausa de 5 segundos; p. ej. E2 son 2 parpadeos). En inducción, la gama G4 usa E2, E5, Er25, U400 y Er31, y las gamas G0 a G3 usan F02 y F04. En frigoríficos No Frost el significado del código cambia por modelo. Conviene pedir siempre el modelo exacto. En frigoríficos Teka el mismo código cambia de significado según el modelo (ver los ya existentes E0, E1, E3, E4, E8 de otros modelos). Estos son del manual del combi RBF 74650 SS; en otros modelos hay que pedir la referencia y confirmar. Secadoras Teka: el código E01 significa cosas distintas según el modelo (depósito en TKS 890 H, cierre de puerta en TKS 700 C). Preguntar siempre la referencia.",
    "codigos": [
     {
      "aparato": "lavadora",
@@ -6739,6 +7293,110 @@ export default {
      "pieza_probable": "sonda del congelador",
      "fuente": "https://apiportalsat.teka.com/api/documentos/descargar/36",
      "confianza": "media"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "E2"
+     ],
+     "significado": "Teka RBF 74650 SS: fallo del sensor de temperatura del congelador.",
+     "causas": [
+      "sonda del congelador averiada",
+      "conexión de la sonda suelta"
+     ],
+     "que_puede_hacer_el_cliente": "Desenchufar unos minutos y volver a enchufar; si vuelve, técnico.",
+     "pieza_probable": "sonda del congelador",
+     "fuente": "https://manualslib.mx/manual/825454/Teka-Rbf-74650-Ss.html?page=16",
+     "confianza": "media"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "E3"
+     ],
+     "significado": "Teka RBF 74650 SS: fallo del sensor de la zona de carne y pescado o del sensor de desescarche del congelador (en otros modelos Teka E3 es otra sonda).",
+     "causas": [
+      "sonda averiada",
+      "conexión defectuosa"
+     ],
+     "que_puede_hacer_el_cliente": "Desenchufar y volver a enchufar; si persiste, técnico.",
+     "pieza_probable": "sonda de temperatura",
+     "fuente": "https://manualslib.mx/manual/825454/Teka-Rbf-74650-Ss.html?page=16",
+     "confianza": "media"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "E5"
+     ],
+     "significado": "Teka RBF 74650 SS: error en el circuito de desescarche del congelador.",
+     "causas": [
+      "resistencia de desescarche averiada",
+      "sonda o térmico de desescarche averiado"
+     ],
+     "que_puede_hacer_el_cliente": "Si se ve mucho hielo en el fondo del congelador, avisar al técnico; no picar el hielo.",
+     "pieza_probable": "resistencia de desescarche",
+     "fuente": "https://manualslib.mx/manual/825454/Teka-Rbf-74650-Ss.html?page=16",
+     "confianza": "media"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "E6"
+     ],
+     "significado": "Teka RBF 74650 SS: error de comunicación entre placas (control y pantalla).",
+     "causas": [
+      "cableado entre placa y pantalla",
+      "placa electrónica averiada"
+     ],
+     "que_puede_hacer_el_cliente": "Desenchufar 10 minutos y volver a enchufar; si sigue, técnico.",
+     "pieza_probable": "placa electrónica o pantalla",
+     "fuente": "https://manualslib.mx/manual/825454/Teka-Rbf-74650-Ss.html?page=16",
+     "confianza": "media"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "E7"
+     ],
+     "significado": "Teka RBF 74650 SS: fallo del sensor de temperatura ambiente.",
+     "causas": [
+      "sonda ambiente averiada"
+     ],
+     "que_puede_hacer_el_cliente": "Desenchufar y volver a enchufar; si persiste, técnico.",
+     "pieza_probable": "sonda ambiente",
+     "fuente": "https://manualslib.mx/manual/825454/Teka-Rbf-74650-Ss.html?page=16",
+     "confianza": "media"
+    },
+    {
+     "aparato": "secadora",
+     "codigos": [
+      "E01"
+     ],
+     "significado": "Según modelo: en TKS 890 H, depósito de agua lleno o mal colocado; en TKS 700 C, fallo del cierre de la puerta.",
+     "causas": [
+      "depósito de agua condensada lleno o mal encajado",
+      "puerta mal cerrada o cierre obstruido"
+     ],
+     "que_puede_hacer_el_cliente": "Vaciar el depósito y encajarlo bien; cerrar la puerta con firmeza y comprobar que no hay ropa pillada en el cierre.",
+     "pieza_probable": "",
+     "fuente": "https://www.notice-facile.com/en/manual/1005606/teka+tks-890-h",
+     "confianza": "media"
+    },
+    {
+     "aparato": "secadora",
+     "codigos": [
+      "E02"
+     ],
+     "significado": "Teka TKS 890 H: poca circulación de aire porque el filtro o el condensador están obstruidos.",
+     "causas": [
+      "filtro de pelusa sucio",
+      "condensador sucio u obstruido"
+     ],
+     "que_puede_hacer_el_cliente": "Limpiar el filtro de pelusa (lavarlo con agua) y el condensador según el manual.",
+     "pieza_probable": "",
+     "fuente": "https://www.notice-facile.com/en/manual/1005606/teka+tks-890-h",
+     "confianza": "media"
     }
    ]
   },
@@ -6750,7 +7408,7 @@ export default {
     "Hotpoint",
     "Ariston"
    ],
-   "notas": "Hotpoint, Indesit y Ariston (antes Hotpoint-Ariston) comparten la misma electrónica y casi la misma tabla de códigos F (F01, F02...). Whirlpool de marca usa una tabla distinta en lavadoras (FH, FA, F02, F18...), así que antes de interpretar un código hay que preguntar SIEMPRE la marca y, si es posible, el modelo (pegatina en el marco de la puerta o el manual). Un mismo código puede significar cosas distintas en lavadora, lavadora-secadora, secadora y lavavajillas. Las lavadoras Indesit/Ariston antiguas sin pantalla indican el código con parpadeos: se cuentan los parpadeos de la luz de encendido o de los pilotos entre pausa y pausa (por ejemplo, 8 parpadeos = F08), y en otros modelos con combinaciones de pilotos encendidos (pilotos 1 y 3 = F05, bomba de desagüe). Los lavavajillas Hotpoint integrables muestran el código en binario con los LED del panel. Primer paso casi universal que indica el fabricante: desenchufar al menos 2 minutos, volver a conectar, esperar 30 segundos y reintentar; si el código vuelve, la avería sigue presente. Hotpoint tiene abierta una campaña de seguridad (llamada a revisión) sobre el cierre de puerta de algunas lavadoras Hotpoint e Indesit: ante errores de puerta conviene comprobar el modelo. Las fuentes oficiales consultadas son del Reino Unido (hotpoint.co.uk) porque las webs españolas no publican tablas; los códigos son los mismos del grupo, pero puede haber variaciones por modelo. Sin fuente fiable para hornos y frigoríficos de este grupo: no se incluyen.",
+   "notas": "Hotpoint, Indesit y Ariston (antes Hotpoint-Ariston) comparten la misma electrónica y casi la misma tabla de códigos F (F01, F02...). Whirlpool de marca usa una tabla distinta en lavadoras (FH, FA, F02, F18...), así que antes de interpretar un código hay que preguntar SIEMPRE la marca y, si es posible, el modelo (pegatina en el marco de la puerta o el manual). Un mismo código puede significar cosas distintas en lavadora, lavadora-secadora, secadora y lavavajillas. Las lavadoras Indesit/Ariston antiguas sin pantalla indican el código con parpadeos: se cuentan los parpadeos de la luz de encendido o de los pilotos entre pausa y pausa (por ejemplo, 8 parpadeos = F08), y en otros modelos con combinaciones de pilotos encendidos (pilotos 1 y 3 = F05, bomba de desagüe). Los lavavajillas Hotpoint integrables muestran el código en binario con los LED del panel. Primer paso casi universal que indica el fabricante: desenchufar al menos 2 minutos, volver a conectar, esperar 30 segundos y reintentar; si el código vuelve, la avería sigue presente. Hotpoint tiene abierta una campaña de seguridad (llamada a revisión) sobre el cierre de puerta de algunas lavadoras Hotpoint e Indesit: ante errores de puerta conviene comprobar el modelo. Las fuentes oficiales consultadas son del Reino Unido (hotpoint.co.uk) porque las webs españolas no publican tablas; los códigos son los mismos del grupo, pero puede haber variaciones por modelo. Sin fuente fiable para hornos y frigoríficos de este grupo: no se incluyen. Tabla de códigos E de frigoríficos combi Hotpoint e Indesit publicada por su servicio oficial en Reino Unido (misma plataforma que los modelos vendidos en España, pero conviene confirmar con el manual del modelo). Los frigoríficos de marca Whirlpool con pantalla usan otra nomenclatura (indicador de alarma con tabla propia en cada manual) y no se ha encontrado una tabla fiable en español.",
    "codigos": [
     {
      "aparato": "lavadora",
@@ -7351,6 +8009,184 @@ export default {
      "pieza_probable": "Placa electrónica de potencia o de mandos",
      "fuente": "https://www.manualslib.com/manual/784170/Whirlpool-Hobs.html?page=12",
      "confianza": "alta"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "E1"
+     ],
+     "significado": "Hotpoint/Indesit: fallo del sensor de temperatura del compartimento frigorífico.",
+     "causas": [
+      "sonda del frigorífico averiada",
+      "conector o cableado de la sonda suelto"
+     ],
+     "que_puede_hacer_el_cliente": "Desenchufar 5-10 minutos y volver a enchufar; si el código vuelve, pedir técnico. Mientras, abrir lo menos posible.",
+     "pieza_probable": "sonda de temperatura (NTC) del frigorífico",
+     "fuente": "https://indesitservice.co.uk/fridge-freezer-repair/error-codes",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "E2"
+     ],
+     "significado": "Hotpoint/Indesit: fallo del sensor de temperatura del congelador; el congelador puede ir a temperatura incorrecta.",
+     "causas": [
+      "sonda del congelador averiada",
+      "conexión de la sonda defectuosa"
+     ],
+     "que_puede_hacer_el_cliente": "Desenchufar unos minutos y volver a enchufar; si persiste, técnico. Vigilar que los congelados no se descongelen.",
+     "pieza_probable": "sonda de temperatura (NTC) del congelador",
+     "fuente": "https://www.hotpoint.co.uk/service/fridge-freezer-repair/error-codes",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "E3",
+      "E4"
+     ],
+     "significado": "Hotpoint/Indesit: fallo del sensor de desescarche del frigorífico; la temperatura del frigorífico no es la correcta.",
+     "causas": [
+      "sonda de desescarche averiada",
+      "fallo del sistema de desescarche con hielo acumulado"
+     ],
+     "que_puede_hacer_el_cliente": "Desenchufar y volver a enchufar; si vuelve a salir, técnico.",
+     "pieza_probable": "sonda de desescarche",
+     "fuente": "https://www.hotpoint.co.uk/service/fridge-freezer-repair/error-codes",
+     "confianza": "media"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "E5"
+     ],
+     "significado": "Hotpoint/Indesit: fallo del sensor de desescarche del congelador; la temperatura del congelador no es la correcta.",
+     "causas": [
+      "sonda de desescarche del congelador averiada",
+      "evaporador del congelador lleno de hielo"
+     ],
+     "que_puede_hacer_el_cliente": "Desenchufar y volver a enchufar; si persiste, técnico.",
+     "pieza_probable": "sonda de desescarche del congelador",
+     "fuente": "https://www.hotpoint.co.uk/service/fridge-freezer-repair/error-codes",
+     "confianza": "media"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "E6"
+     ],
+     "significado": "Hotpoint/Indesit: fallo de la placa de control o de la placa de la pantalla; la pantalla o los mandos no funcionan bien.",
+     "causas": [
+      "placa electrónica principal averiada",
+      "fallo de la placa de la pantalla o de su conexión"
+     ],
+     "que_puede_hacer_el_cliente": "Desenchufar 10 minutos y volver a enchufar; si sigue, técnico.",
+     "pieza_probable": "placa electrónica o placa de pantalla",
+     "fuente": "https://www.hotpoint.co.uk/service/fridge-freezer-repair/error-codes",
+     "confianza": "media"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "E0"
+     ],
+     "significado": "Hotpoint/Indesit con fábrica de hielo: la fábrica de hielo no funciona correctamente.",
+     "causas": [
+      "fallo de la fábrica de hielo",
+      "falta de agua en la fábrica de hielo"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que la toma de agua del frigorífico está abierta; si persiste, técnico.",
+     "pieza_probable": "módulo de fábrica de hielo",
+     "fuente": "https://www.hotpoint.co.uk/service/fridge-freezer-repair/error-codes",
+     "confianza": "media"
+    },
+    {
+     "aparato": "congelador",
+     "codigos": [
+      "E7"
+     ],
+     "significado": "Hotpoint/Indesit: fallo del sensor de temperatura ambiente.",
+     "causas": [
+      "sonda ambiente averiada o desconectada"
+     ],
+     "que_puede_hacer_el_cliente": "Desenchufar y volver a enchufar; si persiste, técnico.",
+     "pieza_probable": "sonda de temperatura ambiente",
+     "fuente": "https://www.hotpointservice.co.uk/freezer-repair/error-codes",
+     "confianza": "media"
+    }
+   ]
+  },
+  {
+   "familia": "Daewoo",
+   "marcas": [
+    "Daewoo",
+    "Winia"
+   ],
+   "notas": "Los electrodomésticos de línea blanca Daewoo los fabrica Winia (antes Daewoo Electronics, hoy Winia Electronics, Corea). No se ha encontrado documentación oficial con tablas de códigos; los significados vienen de guías de terceros, por eso van con confianza media. Las lavadoras Daewoo clásicas muestran códigos de dos letras (IE, OE, UE...); algunos modelos nuevos usan Er 01, Er 02, Er 03, Er 04, cuyo significado no se ha podido verificar. En frigoríficos, los códigos de sensor (E1, E2, d1...) suelen verse solo en modo diagnóstico y su asignación varía entre fuentes. Pedir siempre el modelo exacto.",
+   "codigos": [
+    {
+     "aparato": "lavadora",
+     "codigos": [
+      "IE"
+     ],
+     "significado": "No entra agua: no alcanza el nivel previsto en el tiempo de llenado.",
+     "causas": [
+      "grifo cerrado o poca presión",
+      "tubo de entrada doblado o filtro de entrada sucio",
+      "electroválvula de entrada averiada"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que el grifo está abierto, que hay agua en casa y que el tubo de entrada no está doblado; volver a arrancar.",
+     "pieza_probable": "electroválvula de entrada",
+     "fuente": "https://guide.washerhouse.com/es/kody-oshibok-stiralnyx-mashin-daewoo/",
+     "confianza": "media"
+    },
+    {
+     "aparato": "lavadora",
+     "codigos": [
+      "OE"
+     ],
+     "significado": "No desagua: no consigue vaciar el agua del tambor.",
+     "causas": [
+      "filtro de la bomba atascado",
+      "tubo de desagüe doblado u obstruido",
+      "bomba de desagüe averiada"
+     ],
+     "que_puede_hacer_el_cliente": "Limpiar el filtro de la bomba (con recipiente y trapos) y comprobar que el tubo de desagüe no está doblado.",
+     "pieza_probable": "bomba de desagüe",
+     "fuente": "https://guide.washerhouse.com/es/kody-oshibok-stiralnyx-mashin-daewoo/",
+     "confianza": "media"
+    },
+    {
+     "aparato": "lavadora",
+     "codigos": [
+      "UE"
+     ],
+     "significado": "Carga desequilibrada en el tambor.",
+     "causas": [
+      "ropa amontonada o una sola prenda grande",
+      "poca carga",
+      "si se repite con carga bien repartida: amortiguadores o problema mecánico"
+     ],
+     "que_puede_hacer_el_cliente": "Repartir la ropa en el tambor y volver a centrifugar; comprobar que la lavadora está nivelada.",
+     "pieza_probable": "amortiguadores (si se repite)",
+     "fuente": "https://guide.washerhouse.com/es/kody-oshibok-stiralnyx-mashin-daewoo/",
+     "confianza": "media"
+    },
+    {
+     "aparato": "frigorifico",
+     "codigos": [
+      "E1"
+     ],
+     "significado": "Fallo del sensor de desescarche (sensor D) en circuito abierto.",
+     "causas": [
+      "sensor de desescarche averiado",
+      "cableado o conector del sensor"
+     ],
+     "que_puede_hacer_el_cliente": "Desenchufar un par de minutos y volver a enchufar; si el código vuelve, llamar al servicio técnico y vigilar si se forma mucho hielo.",
+     "pieza_probable": "sensor de desescarche (NTC)",
+     "fuente": "https://removeandreplace.com/2021/07/28/daewoo-refrigerator-error-codes-how-to-fix",
+     "confianza": "media"
     }
    ]
   }

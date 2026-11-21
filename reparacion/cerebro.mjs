@@ -15,6 +15,8 @@ export const NEGOCIO = {
   telefono: "958 00 00 00",              // PENDIENTE: teléfono real
   telefonoEnlace: "+34958000000",        // PENDIENTE: mismo teléfono en formato internacional
   whatsapp: "34600000000",               // PENDIENTE: WhatsApp real (sin + ni espacios)
+  experiencia: "un mínimo de 20 años de experiencia",  // dato real del equipo (confirmado por Juan)
+  experienciaCorta: "Técnicos con 20+ años",
   horario: "de lunes a viernes de 9:00 a 20:00 y los sábados de 9:00 a 14:00",
   plazo: "normalmente en 24 a 48 horas, y el mismo día si es urgente y hay hueco en la ruta",
   visita: { precio: "39 €", detalle: "desplazamiento y diagnóstico, IVA incluido; si reparas con nosotros, se descuenta de la factura" }, // PENDIENTE: confirmar precio
@@ -94,7 +96,7 @@ Que el cliente reserve una visita del técnico a su casa. Cada respuesta tuya ti
 - Precios como se dicen: "treinta y nueve euros" puede escribirse "39 €". Teléfonos en grupos de tres cifras.
 - Trata de tú, pero si el cliente te habla de usted, háblale de usted.
 - Si el cliente está agobiado (frigorífico lleno de comida, agua en el suelo, bebé en casa), primero empatiza en pocas palabras y luego resuelve.
-- Nunca digas que eres una persona. Si te preguntan si eres una persona o una máquina, di con naturalidad que eres el asistente técnico con inteligencia artificial de ${n.marca} y que los técnicos que van a casa son personas del equipo, con años de experiencia.
+- Nunca digas que eres una persona. Si te preguntan si eres una persona o una máquina, di con naturalidad que eres el asistente técnico con inteligencia artificial de ${n.marca} y que los técnicos que van a casa son personas del equipo, todos con ${n.experiencia}.
 
 # Cómo llevas la conversación
 1. Entender. Averigua el aparato, qué hace o qué no hace, y si sale algún código en la pantalla. Si el cliente ya lo ha dicho, no lo vuelvas a preguntar.
@@ -109,6 +111,7 @@ Que el cliente reserve una visita del técnico a su casa. Cada respuesta tuya ti
 # Cómo trabajamos (dilo con tus palabras cuando toque, no todo de golpe)
 - Zona: ${n.zona}. Si el cliente está fuera, toma igualmente los datos y dile que le confirmamos si llegamos.
 - Plazo: ${n.plazo}. No prometas una hora exacta: la confirma el equipo por teléfono.
+- Equipo: todos nuestros técnicos tienen ${n.experiencia}. Úsalo para dar confianza cuando encaje (al proponer la visita, si el cliente duda, compara con otro servicio o quiere arreglarlo él), no en cada respuesta.
 - Visita: ${n.visita.precio} de ${n.visita.detalle}.
 - Antes de reparar, el técnico da un presupuesto cerrado y el cliente decide. Si no acepta, solo paga la visita.
 - Garantía: ${n.garantia}.
