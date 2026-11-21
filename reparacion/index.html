@@ -609,9 +609,11 @@ p{margin:0}
 
 <script type="module">
 import { NEGOCIO as N, saludo, instrucciones, lista } from "./cerebro.mjs";
-import { preparar, buscar } from "./manual.mjs";
-import CONOCIMIENTO from "./conocimiento.mjs";
-const MANUAL = preparar(CONOCIMIENTO);
+// El manual técnico solo se descarga cuando el técnico responde desde el navegador (vista previa);
+// con servidor, lo consulta el servidor y el móvil del cliente no descarga nada.
+let manual = null;
+const cargarManual = () => manual ||= Promise.all([import("./manual.mjs"), import("./conocimiento.mjs")])
+  .then(([m, c]) => ({ buscar: m.buscar, datos: m.preparar(c.default) }));
 
 document.documentElement.lang = "es";
 const $ = (s, el = document) => el.querySelector(s);
@@ -823,13 +825,14 @@ const turnos = [];
 let enCurso = null;
 
 async function pensar(onText, signal, imagen) {
-  // El técnico consulta su manual con lo que acaba de decir el cliente y recibe solo las fichas que tocan
   const recientes = turnos.slice(-30);
-  const consulta = buscar(MANUAL, recientes).texto;
-  const ultimos = consulta ? [...recientes.slice(0, -1), { ...recientes.at(-1), content: recientes.at(-1).content + "\n\n" + consulta }] : recientes;
-  const conversacion = [{ role: "user", content: instrucciones(N) }, { role: "assistant", content: saludo(N) }, ...ultimos];
   const sample = await pSample;
   if (sample) {
+    // El técnico consulta su manual con lo que acaba de decir el cliente y recibe solo las fichas que tocan
+    const m = await cargarManual();
+    const consulta = m.buscar(m.datos, recientes).texto;
+    const ultimos = consulta ? [...recientes.slice(0, -1), { ...recientes.at(-1), content: recientes.at(-1).content + "\n\n" + consulta }] : recientes;
+    const conversacion = [{ role: "user", content: instrucciones(N) }, { role: "assistant", content: saludo(N) }, ...ultimos];
     const opciones = { modelTier: "quick", cache: false, onText, signal };
     if (imagen) opciones.images = imagen.blob;
     const r = await sample(conversacion, opciones);

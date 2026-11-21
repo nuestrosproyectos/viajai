@@ -83,9 +83,13 @@ for (const x of extra) {
 }
 
 const base = { generado: new Date().toISOString().slice(0, 10), familias, sintomas, peligro, compensa_reparar: compensa, oficio };
+// Para el uso en directo solo hace falta lo que consulta el buscador: se quitan fuentes, notas,
+// componentes y mantenimiento (siguen en conocimiento/*.json para revisarlos).
+const QUITAR = new Set(["fuente", "fuentes", "notas", "componentes", "mantenimiento", "funcionamiento", "peligro"]);
+const ligero = JSON.stringify(base, (k, v) => (QUITAR.has(k) ? undefined : v));
 writeFileSync(new URL("./conocimiento.mjs", import.meta.url),
-  "// GENERADO por construir-manual.mjs a partir de conocimiento/*.json. No editar a mano.\n" +
-  "export default " + JSON.stringify(base, null, 1) + ";\n");
+  "// GENERADO por construir-manual.mjs a partir de conocimiento/*.json (con fuentes). No editar a mano.\n" +
+  "export default " + ligero + ";\n");
 
 const n = familias.reduce((a, f) => a + f.codigos.length, 0);
 console.log(`Manual: ${familias.length} familias, ${n} fichas de código (${familias.reduce((a, f) => a + f.codigos.filter(c => c.confianza === "alta").length, 0)} de confianza alta), ${sintomas.length} síntomas.`);
