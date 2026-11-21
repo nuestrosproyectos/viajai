@@ -1,0 +1,29 @@
+# Configuración para publicar la web + el técnico en Cloudflare Workers.
+# Pasos completos en ../LEEME.md
+name = "reparo-tecnico"
+main = "worker.mjs"
+compatibility_date = "2026-11-01"
+
+# La web estática (index.html, cerebro.mjs, páginas legales) se sirve desde la carpeta de arriba
+[assets]
+directory = ".."
+binding = "ASSETS"
+
+# Límite de consultas por IP para que nadie abuse del técnico (30 mensajes por minuto)
+[[ratelimits]]
+name = "LIMITE"
+namespace_id = "1001"
+simple = { limit = 30, period = 60 }
+
+# Base de datos de avisos (opcional). Crear con: npx wrangler d1 create reparo-avisos
+# y luego: npx wrangler d1 execute reparo-avisos --remote --command "CREATE TABLE avisos (id INTEGER PRIMARY KEY, creado TEXT, datos TEXT)"
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "reparo-avisos"
+# database_id = "PEGAR_AQUI_EL_ID"
+
+# Secretos (NO se escriben aquí; se guardan con wrangler):
+#   npx wrangler secret put ANTHROPIC_API_KEY
+#   npx wrangler secret put TELEGRAM_TOKEN      (opcional)
+#   npx wrangler secret put TELEGRAM_CHAT       (opcional)
+#   npx wrangler secret put AVISOS_WEBHOOK      (opcional)
