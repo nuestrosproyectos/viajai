@@ -123,9 +123,9 @@ p{margin:0}
 .c-quien small{font-size:12.5px;color:var(--noche-txt-2)}
 .c-estado{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--noche-txt-2);margin-top:4px}
 .c-estado i{width:7px;height:7px;border-radius:50%;background:#3CC79E}
-.consola[data-estado="escuchando"] .c-estado i{background:var(--senal);animation:latido 1.2s infinite}
-.consola[data-estado="pensando"] .c-estado i{background:#E8B44A}
-.consola[data-estado="hablando"] .c-estado i{background:#7FB3FF}
+:is(.consola,.mini)[data-estado="escuchando"] .c-estado i{background:var(--senal);animation:latido 1.2s infinite}
+:is(.consola,.mini)[data-estado="pensando"] .c-estado i{background:#E8B44A}
+:is(.consola,.mini)[data-estado="hablando"] .c-estado i{background:#7FB3FF}
 .c-icono{width:40px;height:40px;border-radius:12px;border:0;background:var(--noche-2);color:var(--noche-txt-2);display:grid;place-items:center;flex:none;transition:background-color .2s,color .2s}
 .c-icono:hover{background:var(--noche-3);color:var(--noche-txt)}
 .c-icono svg{width:20px;height:20px}
@@ -137,16 +137,16 @@ p{margin:0}
 .orbe::before,.orbe::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:1.5px solid color-mix(in srgb,var(--senal) 55%,transparent);opacity:0;transform:scale(.85)}
 .orbe .barras{display:flex;gap:3px;align-items:center;height:18px}
 .orbe .barras b{width:3px;height:6px;border-radius:2px;background:#fff;opacity:.92;transition:height .2s}
-.consola[data-estado="reposo"] .orbe{animation:respira 4.5s ease-in-out infinite}
+:is(.consola,.mini)[data-estado="reposo"] .orbe{animation:respira 4.5s ease-in-out infinite}
 @keyframes respira{50%{transform:scale(1.04)}}
-.consola[data-estado="escuchando"] .orbe::before{animation:onda 1.6s var(--curva) infinite}
-.consola[data-estado="escuchando"] .orbe::after{animation:onda 1.6s var(--curva) .8s infinite}
+:is(.consola,.mini)[data-estado="escuchando"] .orbe::before{animation:onda 1.6s var(--curva) infinite}
+:is(.consola,.mini)[data-estado="escuchando"] .orbe::after{animation:onda 1.6s var(--curva) .8s infinite}
 @keyframes onda{0%{opacity:.9;transform:scale(.9)}100%{opacity:0;transform:scale(1.55)}}
-.consola[data-estado="escuchando"] .orbe .barras b{animation:eco .9s ease-in-out infinite}
-.consola[data-estado="hablando"] .orbe .barras b{animation:eco .55s ease-in-out infinite}
+:is(.consola,.mini)[data-estado="escuchando"] .orbe .barras b{animation:eco .9s ease-in-out infinite}
+:is(.consola,.mini)[data-estado="hablando"] .orbe .barras b{animation:eco .55s ease-in-out infinite}
 .orbe .barras b:nth-child(2){animation-delay:.12s!important}.orbe .barras b:nth-child(3){animation-delay:.24s!important}.orbe .barras b:nth-child(4){animation-delay:.36s!important}
 @keyframes eco{0%,100%{height:5px}50%{height:17px}}
-.consola[data-estado="pensando"] .orbe::before{opacity:1;transform:none;border-style:dashed;border-color:rgba(255,255,255,.45);animation:gira 2.4s linear infinite}
+:is(.consola,.mini)[data-estado="pensando"] .orbe::before{opacity:1;transform:none;border-style:dashed;border-color:rgba(255,255,255,.45);animation:gira 2.4s linear infinite}
 @keyframes gira{to{transform:rotate(360deg)}}
 
 .c-chat{flex:1;overflow-y:auto;padding:18px 16px 8px;display:flex;flex-direction:column;gap:10px;scroll-behavior:smooth;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--noche-3) transparent}
@@ -183,10 +183,10 @@ p{margin:0}
 .c-mic:active{transform:scale(.94)}
 .c-mic svg{width:24px;height:24px}
 .c-mic .parar{display:none}
-.consola[data-estado="escuchando"] .c-mic{background:#fff;color:var(--senal)}
-.consola[data-estado="escuchando"] .c-mic .mic{display:none}
-.consola[data-estado="escuchando"] .c-mic .parar{display:block}
-.consola[data-estado="escuchando"] .c-mic::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:2px solid var(--senal);animation:onda 1.4s var(--curva) infinite}
+:is(.consola,.mini)[data-estado="escuchando"] .c-mic{background:#fff;color:var(--senal)}
+:is(.consola,.mini)[data-estado="escuchando"] .c-mic .mic{display:none}
+:is(.consola,.mini)[data-estado="escuchando"] .c-mic .parar{display:block}
+:is(.consola,.mini)[data-estado="escuchando"] .c-mic::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:2px solid var(--senal);animation:onda 1.4s var(--curva) infinite}
 .c-mic[hidden]{display:none}
 .c-nota{font-size:11.5px;line-height:1.4;color:var(--noche-txt-2);text-align:center;padding:0 18px 12px;flex:none}
 .adjunto{display:flex;align-items:center;gap:10px;margin:0 16px 8px;padding:6px;background:var(--noche-2);border-radius:12px;font-size:13.5px;color:var(--noche-txt-2)}
@@ -328,6 +328,23 @@ p{margin:0}
 .pie b{color:var(--tinta);display:block;margin-bottom:6px;font-family:var(--display)}
 .pie a{color:var(--tinta-2)}
 .pie p+p{margin-top:8px}
+
+/* el técnico señala algo de la página */
+.senalado{position:relative;z-index:2;animation:senala 3.6s var(--curva) both;border-radius:var(--radio)}
+@keyframes senala{0%{box-shadow:0 0 0 0 transparent}12%{box-shadow:0 0 0 4px var(--senal),0 0 0 14px color-mix(in srgb,var(--senal) 22%,transparent)}80%{box-shadow:0 0 0 4px var(--senal),0 0 0 14px color-mix(in srgb,var(--senal) 12%,transparent)}100%{box-shadow:0 0 0 0 transparent}}
+.senal-etiqueta{position:absolute;z-index:3;top:-14px;left:16px;background:var(--senal);color:#fff;font-size:12.5px;font-weight:600;padding:4px 10px;border-radius:999px;white-space:nowrap;pointer-events:none;animation:entra .35s var(--curva) both}
+
+/* mini consola flotante: la conversación sigue a la vista mientras se mueve por la página */
+.mini{position:fixed;z-index:45;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));width:min(380px,calc(100vw - 32px));display:flex;align-items:center;gap:12px;padding:10px 10px 10px 12px;background:var(--noche);color:var(--noche-txt);border-radius:22px;box-shadow:0 24px 60px -18px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.06) inset;transform:translateY(calc(100% + 40px));opacity:0;pointer-events:none;transition:transform .45s var(--curva),opacity .3s}
+.mini.visible{transform:none;opacity:1;pointer-events:auto}
+.mini .orbe{width:40px;height:40px}
+.mini-txt{flex:1;min-width:0;margin:0;font-size:14px;line-height:1.35;color:var(--noche-txt);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.mini-txt.parcial{font-style:italic;color:var(--noche-txt-2)}
+.mini .c-mic{width:48px;height:48px}
+.mini .c-mic svg{width:21px;height:21px}
+.mini-volver{width:36px;height:36px;border:0;border-radius:12px;background:var(--noche-2);color:var(--noche-txt-2);display:grid;place-items:center;flex:none}
+.mini-volver svg{width:18px;height:18px}
+@media (max-width:759px){.mini{left:max(12px,env(safe-area-inset-left,0px));right:max(12px,env(safe-area-inset-right,0px));width:auto;bottom:calc(12px + env(safe-area-inset-bottom,0px))}}
 
 /* barra fija móvil */
 .barra-movil{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:40;display:flex;gap:8px;padding:8px;background:color-mix(in srgb,var(--tinta) 94%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:999px;box-shadow:0 14px 40px -12px rgba(0,0,0,.5);transform:translateY(140%);transition:transform .45s var(--curva)}
@@ -550,6 +567,16 @@ p{margin:0}
   </div>
 </footer>
 
+<div class="mini" id="mini" data-estado="reposo" role="region" aria-label="Conversación con el técnico" aria-hidden="true">
+  <div class="orbe" aria-hidden="true"><span class="barras"><b></b><b></b><b></b><b></b></span></div>
+  <p class="mini-txt" id="miniTxt"></p>
+  <button class="c-mic" type="button" id="miniMic" aria-label="Hablar con el técnico" tabindex="-1">
+    <svg class="mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4"/></svg>
+    <svg class="parar" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2.5"/></svg>
+  </button>
+  <button class="mini-volver" type="button" id="miniVolver" aria-label="Volver a la conversación completa" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg></button>
+</div>
+
 <div class="barra-movil" id="barraMovil" aria-hidden="true">
   <button class="boton boton-senal" type="button" data-hablar data-voz tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4"/></svg><span>Hablar con <span data-n="tecnico">Andrés</span></span></button>
   <a class="boton llamar" data-tel href="tel:+34958000000" aria-label="Llamar" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></a>
@@ -624,7 +651,9 @@ $("#pantallas").innerHTML = CODIGOS.map(([c, m, a, p]) => `
 ------------------------------------------------------------------ */
 const consola = $("#consola"), chat = $("#chat"), txt = $("#txt"), btnMic = $("#btnMic"), btnVoz = $("#btnVoz"), estadoTxt = $("#estadoTxt");
 const ESTADOS = { reposo: "En línea", escuchando: "Te escucho…", pensando: "Pensando…", hablando: "Hablando…" };
-function estado(e) { consola.dataset.estado = e; estadoTxt.textContent = ESTADOS[e]; }
+const mini = $("#mini"), miniTxt = $("#miniTxt"), barra = $("#barraMovil");
+function estado(e) { consola.dataset.estado = e; mini.dataset.estado = e; estadoTxt.textContent = ESTADOS[e]; }
+function textoMini(t, parcial = false) { miniTxt.textContent = t; miniTxt.classList.toggle("parcial", parcial); }
 
 function burbuja(quien, texto = "", extra) {
   const b = document.createElement("div");
@@ -670,7 +699,7 @@ function mostrarParcial(t) {
   const visible = (bufferVoz + " " + (t || "")).trim();
   if (!visible) { parcial?.remove(); parcial = null; return; }
   if (!parcial) parcial = burbuja("parcial");
-  parcial.textContent = visible; bajar();
+  parcial.textContent = visible; bajar(); textoMini(visible, true);
 }
 function reprogramar() {
   clearTimeout(temporizador);
@@ -790,10 +819,10 @@ async function pensar(onText, signal, imagen) {
 }
 
 // separa lo que se dice en voz alta de las etiquetas internas
-function visible(t) { const i = t.search(/<(ficha|aviso)/); return (i >= 0 ? t.slice(0, i) : t).replace(/<\/?[a-z]*$/i, "").trim(); }
-function etiqueta(t, nombre) {
+function visible(t) { const i = t.search(/<(ficha|aviso|mostrar)/); return (i >= 0 ? t.slice(0, i) : t).replace(/<\/?[a-z]*$/i, "").trim(); }
+function etiqueta(t, nombre, crudo = false) {
   const m = t.match(new RegExp(`<${nombre}>\\s*([\\s\\S]*?)\\s*</${nombre}>`));
-  if (!m) return null; try { return JSON.parse(m[1]); } catch { return null; }
+  if (!m) return null; if (crudo) return m[1].trim(); try { return JSON.parse(m[1]); } catch { return null; }
 }
 
 async function enviar(texto, { porVoz = false } = {}) {
@@ -809,7 +838,8 @@ async function enviar(texto, { porVoz = false } = {}) {
 
   const b = burbuja("tec"); puntos(b); estado("pensando");
   const ctl = new AbortController(); enCurso = ctl;
-  let dichoHasta = 0, mostrado = "";
+  let dichoHasta = 0, mostrado = "", yaSenalado = false;
+  conversacionIniciada = true; actualizarMini();
   const trocear = (final) => {
     const v = mostrado;
     let corte = -1;
@@ -822,12 +852,14 @@ async function enviar(texto, { porVoz = false } = {}) {
     const respuesta = await pensar(({ text }) => {
       if (ctl.signal.aborted) return;
       const v = visible(text);
-      if (v && v !== mostrado) { mostrado = v; b.textContent = v; bajar(); if (porVoz || vozActiva) trocear(false); }
+      if (v && v !== mostrado) { mostrado = v; b.textContent = v; bajar(); textoMini(v); if (porVoz || vozActiva) trocear(false); }
+      if (!yaSenalado) { const d = etiqueta(text, "mostrar", true); if (d) { yaSenalado = true; senalar(d); } }
     }, ctl.signal, imagen);
     if (ctl.signal.aborted) return;
     if (!respuesta || !respuesta.trim()) throw { code: "upstream_error" };
     mostrado = visible(respuesta) || mostrado;
-    b.textContent = mostrado || "Perdona, ¿me lo repites?";
+    b.textContent = mostrado || "Perdona, ¿me lo repites?"; textoMini(b.textContent);
+    if (!yaSenalado) { const d = etiqueta(respuesta, "mostrar", true); if (d) senalar(d); }
     trocear(true);
     turnos.push({ role: "assistant", content: respuesta.replace(/<aviso>[\s\S]*?<\/aviso>/, "<aviso>(registrado)</aviso>") });
     const f = etiqueta(respuesta, "ficha"); if (f) pintarFicha(f);
@@ -844,6 +876,46 @@ async function enviar(texto, { porVoz = false } = {}) {
       : "Se me ha cortado la conexión. ¿Me lo repites?";
   } finally { if (enCurso === ctl) enCurso = null; }
 }
+
+/* El técnico señala en la página lo que está explicando */
+let conversacionIniciada = false;
+const sinTildes = t => String(t || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+function destino(d) {
+  const [tipo, valor = ""] = sinTildes(d).trim().split(":").map(x => x.trim());
+  if (tipo === "precios") return $(".tarifa");
+  if (tipo === "garantia") return $(".lista-ok");
+  if (tipo === "como") return $(".pasos");
+  if (tipo === "marcas") return $("#marcasLista");
+  if (tipo === "contacto" || tipo === "llamada") return $("#formLlamadaCaja");
+  if (tipo === "zona" || tipo === "plazo") { const det = $(tipo === "zona" ? "#faqZona" : "#faqPlazo")?.closest("details"); if (det) det.open = true; return det; }
+  if (tipo === "codigos" || tipo === "codigo") {
+    const v = valor.toUpperCase();
+    return (v && $$(".pantalla").find(x => x.querySelector(".lcd").textContent.trim().toUpperCase() === v)) || $("#pantallas");
+  }
+  if (tipo === "aparato" || tipo === "aparatos") {
+    return (valor && $$(".aparato").find(x => sinTildes(x.querySelector("h3").textContent).includes(valor.slice(0, 5)))) || $("#listaAparatos");
+  }
+  return null;
+}
+function senalar(d) {
+  const el = destino(d); if (!el) return;
+  el.scrollIntoView({ behavior: reducir ? "auto" : "smooth", block: "center" });
+  el.classList.remove("senalado"); void el.offsetWidth; el.classList.add("senalado");
+  el.querySelector(":scope > .senal-etiqueta")?.remove();
+  const et = document.createElement("span"); et.className = "senal-etiqueta"; et.textContent = N.tecnico + " te lo señala";
+  el.append(et);
+  setTimeout(() => { et.remove(); el.classList.remove("senalado"); }, 3800);
+}
+let consolaVisible = true;
+function actualizarMini() {
+  const ver = conversacionIniciada && !consolaVisible;
+  mini.classList.toggle("visible", ver); mini.setAttribute("aria-hidden", String(!ver));
+  $$("#mini button").forEach(x => x.tabIndex = ver ? 0 : -1);
+  if (ver) { barra.classList.remove("visible"); barra.setAttribute("aria-hidden", "true"); }
+  return ver;
+}
+$("#miniMic").addEventListener("click", () => { escuchando ? pararEscucha() : empezarEscucha(); });
+$("#miniVolver").addEventListener("click", () => consola.scrollIntoView({ behavior: reducir ? "auto" : "smooth", block: "start" }));
 
 /* ------------------------------------------------------------------
    4. Parte de trabajo y avisos
@@ -968,9 +1040,9 @@ function avisoSistema(t) { burbuja("sistema", t); }
 
 const cab = $("#cab");
 addEventListener("scroll", () => cab.classList.toggle("con-borde", scrollY > 8), { passive: true });
-const barra = $("#barraMovil");
 new IntersectionObserver(([e]) => {
-  const ver = !e.isIntersecting && e.boundingClientRect.top < 0;
+  consolaVisible = e.isIntersecting;
+  const ver = !e.isIntersecting && e.boundingClientRect.top < 0 && !actualizarMini();
   barra.classList.toggle("visible", ver); barra.setAttribute("aria-hidden", !ver);
   $$("#barraMovil [tabindex]").forEach(x => x.tabIndex = ver ? 0 : -1);
 }).observe($("#consola"));
