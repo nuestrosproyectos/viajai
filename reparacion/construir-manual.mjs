@@ -10,8 +10,18 @@ const dir = new URL("./conocimiento/", import.meta.url);
 const familias = [], sintomas = [], peligro = [], avisos = [];
 let compensa = "";
 
+// Nombres que llegan de la investigación y se unifican con los del buscador
+const APARATO_ALIAS = { calentador: "caldera", "calentador de gas": "caldera", congelador: "congelador" };
+const MARCA_ALIAS = { "Baxi Roca": ["Baxi", "Roca"], "Corberó": ["Corbero"] };
+const unificar = d => {
+  if (d.marcas) d.marcas = [...new Set(d.marcas.flatMap(m => MARCA_ALIAS[m] || [m]))];
+  for (const c of d.codigos || []) c.aparato = APARATO_ALIAS[c.aparato] || c.aparato;
+  for (const x of d.sintomas || []) x.aparato = APARATO_ALIAS[x.aparato] || x.aparato;
+  return d;
+};
+
 for (const nombre of readdirSync(dir).filter(f => f.endsWith(".json") && f !== "sinonimos.json").sort()) {
-  const d = JSON.parse(readFileSync(new URL(nombre, dir), "utf8"));
+  const d = unificar(JSON.parse(readFileSync(new URL(nombre, dir), "utf8")));
   if (d.codigos) {
     const vistos = new Set();
     const codigos = d.codigos.filter(c => {

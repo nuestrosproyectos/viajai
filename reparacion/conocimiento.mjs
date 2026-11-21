@@ -2177,6 +2177,2094 @@ export default {
    ]
   },
   {
+   "familia": "Ariston calderas",
+   "marcas": [
+    "Ariston"
+   ],
+   "notas": "Las Ariston (Clas, Genus, Alteas, Cares) muestran códigos de tres caracteres: grupo + número (101, 108, 501...) a veces separados ('1 08', '5 01') o con letra P ('1P1', '6P1'). En las de pantalla de texto aparece 'Error 108 - Llenar la instalación'. Hay dos tipos: parada de seguridad 'volátil' (se quita sola al eliminar la causa, p. ej. 108) y parada por bloqueo 'no volátil' (hay que pulsar RESET, p. ej. 501). Presión: rellenar con el grifo de llenado de debajo de la caldera hasta 1 a 1,5 bar. Chaffoteaux es del mismo grupo y usa códigos parecidos (ver su archivo).",
+   "codigos": [
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "108",
+      "1 08",
+      "Error 108"
+     ],
+     "significado": "Presión insuficiente en el circuito de calefacción: 'Llenar la instalación'. Parada de seguridad que se quita sola al recuperar la presión.",
+     "causas": [
+      "Pérdida de agua en radiadores, uniones o válvula de seguridad",
+      "Vaso de expansión descargado",
+      "Purgado de radiadores"
+     ],
+     "que_puede_hacer_el_cliente": "Abrir el grifo de llenado situado debajo de la caldera, vigilar el manómetro y cerrarlo al llegar a 1 a 1,5 bar. Si hay que rellenar con frecuencia, apagar, cerrar la llave del gas y llamar al técnico para buscar la fuga.",
+     "pieza_probable": "vaso de expansión, válvula de seguridad",
+     "fuente": "https://manualslib.es/manual/374128/Ariston-Genus-Premium-Evo-Hp-45.html?page=43",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "501",
+      "5 01",
+      "Error 501"
+     ],
+     "significado": "Ausencia de llama: la caldera intentó encender y no detectó llama. Bloqueo que requiere pulsar RESET.",
+     "causas": [
+      "Falta de gas, llave cerrada o corte de suministro",
+      "Electrodo de encendido o detección sucio o averiado",
+      "Válvula de gas"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que la llave del gas está abierta y hay gas. Pulsar RESET una vez (la pantalla muestra 'Fase de reinicio' y 'Error resuelto'). Si vuelve a salir tras uno o dos intentos, llamar al técnico.",
+     "pieza_probable": "electrodo de encendido/detección, válvula de gas",
+     "fuente": "https://manualslib.es/manual/374128/Ariston-Genus-Premium-Evo-Hp-45.html?page=43",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "110",
+      "1 10",
+      "Error 110"
+     ],
+     "significado": "Sonda de calefacción defectuosa (parada de seguridad).",
+     "causas": [
+      "Sonda NTC de calefacción averiada o desconectada"
+     ],
+     "que_puede_hacer_el_cliente": "Si no se quita sola, apagar la caldera, cerrar la llave del gas y llamar al técnico.",
+     "pieza_probable": "sonda NTC de calefacción",
+     "fuente": "https://manualslib.es/manual/374128/Ariston-Genus-Premium-Evo-Hp-45.html?page=43",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "101",
+      "1 01"
+     ],
+     "significado": "Sobretemperatura en el circuito primario.",
+     "causas": [
+      "El agua no circula bien (bomba, aire, llaves cerradas)",
+      "Presión baja"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la presión. Pulsar RESET una vez; si se repite, técnico.",
+     "pieza_probable": "bomba de circulación",
+     "fuente": "https://servidos.ar/codigos-de-error/caldera/ariston-clas-x/101",
+     "confianza": "media"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "103",
+      "104",
+      "105",
+      "1 04",
+      "1P1",
+      "1P2",
+      "1P3"
+     ],
+     "significado": "Circulación insuficiente en el circuito primario. Según el modelo aparece como 103-105 o como 1P1-1P3.",
+     "causas": [
+      "Aire en el circuito",
+      "Bomba bloqueada",
+      "Presión baja",
+      "Filtro o intercambiador obstruidos"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la presión y rellenar a 1 a 1,5 bar si está baja. Si persiste, técnico.",
+     "pieza_probable": "bomba de circulación",
+     "fuente": "https://servidos.ar/codigos-de-error/caldera/ariston-clas-x/104",
+     "confianza": "media"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "502",
+      "5 02"
+     ],
+     "significado": "Detección de llama con la válvula de gas cerrada.",
+     "causas": [
+      "Electrodo o placa",
+      "Válvula de gas que no cierra"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar y llamar al técnico.",
+     "pieza_probable": "válvula de gas, placa electrónica",
+     "fuente": "https://manualslib.com/manual/1360892/Ariston-Clas-Net-One.html?page=9",
+     "confianza": "media"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "6P1",
+      "6 P1"
+     ],
+     "significado": "Fallo relacionado con el presostato de humos (retardo en su activación). Depende del modelo.",
+     "causas": [
+      "Salida de humos obstruida",
+      "Presostato o ventilador"
+     ],
+     "que_puede_hacer_el_cliente": "Código de humos: no rearmar repetidamente; si huele a humo, ventilar y apagar. Técnico.",
+     "pieza_probable": "presostato de humos, ventilador",
+     "fuente": "https://manualslib.com/manual/1360892/Ariston-Clas-Net-One.html?page=9",
+     "confianza": "media"
+    }
+   ]
+  },
+  {
+   "familia": "Baxi y Roca calderas",
+   "marcas": [
+    "Baxi",
+    "Roca"
+   ],
+   "notas": "Roca Calefacción pasó a ser Baxi (BDR Thermea); muchas calderas en España llevan 'Baxi Roca' o 'Roca'. Hay DOS sistemas de códigos según la generación y no se deben mezclar: (1) Calderas actuales (Platinum iPlus, Platinum MAX iPlus, Neodens Lite, Neodens Plus...) usan letra + grupo + código: A = aviso (sigue funcionando), H = bloqueo temporal (se quita solo al desaparecer la causa), E = bloqueo permanente (hay que rearmar manteniendo pulsado el botón o la tecla RESET). Ejemplos: H.02.07, E.04.10. En pantalla alternan 'H.02' y '07'. (2) Calderas de la familia Luna / Duo-Tec / Platinum de generación anterior usan números de tres cifras precedidos de E (E110, E118, E125, E133...); a veces la pantalla alterna 'E1' y '33'. El manual permite 5 intentos de rearme y luego esperar 15 minutos. Algunas Roca antiguas (Victoria 20/20F) no tienen pantalla y avisan con combinaciones de pilotos. Presión recomendada: Neodens Lite 1,0 a 1,5 bar en frío; Platinum iPlus 1,5 a 2,0 bar; rellenar si baja de 0,8 bar. Si hay un termostato o centralita conectada, puede mostrar '254' y hay que mirar el código en la pantalla de la caldera.",
+   "codigos": [
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "H.02.07",
+      "H02.07",
+      "H 02 07"
+     ],
+     "significado": "Presión baja en el circuito de calefacción: hay que rellenar agua (bloqueo temporal).",
+     "causas": [
+      "Pérdida de agua en la instalación",
+      "Vaso de expansión sin presión",
+      "Fuga en caldera o radiadores"
+     ],
+     "que_puede_hacer_el_cliente": "Rellenar con el grifo de llenado hasta la presión que indica el manual (Neodens Lite 1,0 a 1,5 bar; Platinum iPlus 1,5 a 2,0 bar, siempre en frío) y cerrarlo. Se quita solo. Si se repite, técnico.",
+     "pieza_probable": "vaso de expansión, válvula de seguridad",
+     "fuente": "https://dhb3yazwboecu.cloudfront.net/1325/PDF/BAXI-neodens-lite-MANUAL-calemur.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "A.02.06",
+      "A02.06"
+     ],
+     "significado": "Aviso de baja presión del circuito de calefacción; la caldera aún funciona.",
+     "causas": [
+      "Pérdida de agua lenta"
+     ],
+     "que_puede_hacer_el_cliente": "Rellenar hasta la presión recomendada en frío y cerrar el grifo de llenado.",
+     "pieza_probable": "",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/baxi/Documentation/Professional-products/Calderas-domesticas/Calderas-murales-de-condensacion-a-gas/Platinum-iPlus/A00B02C13I70PROUSRMAN104.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "E.04.10",
+      "E04.10"
+     ],
+     "significado": "El quemador no ha encendido tras cinco intentos (bloqueo permanente por falta de encendido).",
+     "causas": [
+      "Sin gas o presión de gas insuficiente",
+      "Electrodo de encendido/ionización",
+      "Entrada de aire o salida de humos",
+      "Tipo de gas mal configurado"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que la llave del gas está abierta y hay gas. Rearmar una vez manteniendo pulsado el botón. Si se repite, técnico.",
+     "pieza_probable": "electrodo, válvula de gas",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/baxi/Documentation/Professional-products/Calderas-domesticas/Calderas-murales-de-condensacion-a-gas/Platinum-iPlus/A00B02C13I70PROUSRMAN104.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "H.03.02",
+      "H03.02"
+     ],
+     "significado": "Pérdida temporal de llama.",
+     "causas": [
+      "Electrodos o su cableado",
+      "Presión de gas baja",
+      "Entrada de aire o terminal de humos",
+      "Tensión de alimentación"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que hay gas y luz. Si se repite, técnico.",
+     "pieza_probable": "electrodo",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/baxi/Documentation/Professional-products/Calderas-domesticas/Calderas-murales-de-condensacion-a-gas/Platinum-iPlus/A00B02C13I70PROUSRMAN104.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "E.01.04",
+      "E01.04"
+     ],
+     "significado": "Pérdida de llama detectada cinco veces en 24 horas (bloqueo permanente).",
+     "causas": [
+      "Suministro de gas inestable",
+      "Electrodo de ionización",
+      "Salida de humos o condensados"
+     ],
+     "que_puede_hacer_el_cliente": "Rearmar una vez. Avisar al técnico porque es un fallo repetido.",
+     "pieza_probable": "electrodo de ionización",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/baxi/Documentation/Professional-products/Calderas-domesticas/Calderas-murales-de-condensacion-a-gas/Platinum-iPlus/A00B02C13I70PROUSRMAN104.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "H.01.18",
+      "E.01.17"
+     ],
+     "significado": "No hay circulación de agua (H.01.18 temporal; E.01.17 permanente).",
+     "causas": [
+      "Presión de la instalación baja",
+      "Aire en el circuito",
+      "Bomba averiada",
+      "Llaves cerradas"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la presión y rellenar si está baja; comprobar que las llaves de los radiadores no están todas cerradas. Si sigue, técnico.",
+     "pieza_probable": "bomba de circulación",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/baxi/Documentation/Professional-products/Calderas-domesticas/Calderas-murales-de-condensacion-a-gas/Platinum-iPlus/A00B02C13I70PROUSRMAN104.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "H.01.05",
+      "H.01.08",
+      "H.01.14",
+      "H.01.21"
+     ],
+     "significado": "Circulación insuficiente: temperatura de ida que sube demasiado rápido o diferencia ida/retorno excesiva.",
+     "causas": [
+      "Presión baja o aire en el circuito",
+      "Bomba",
+      "Intercambiador sucio",
+      "Sondas de temperatura"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la presión y rellenar si está baja. Si se repite, técnico.",
+     "pieza_probable": "bomba, intercambiador",
+     "fuente": "https://dhb3yazwboecu.cloudfront.net/1325/PDF/BAXI-neodens-lite-MANUAL-calemur.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "E.04.03",
+      "E.04.08"
+     ],
+     "significado": "Se ha superado la temperatura máxima de ida o el límite de temperatura máxima (sobrecalentamiento).",
+     "causas": [
+      "Falta de circulación",
+      "Bomba",
+      "Sondas"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la presión. Rearmar una vez; si se repite, técnico.",
+     "pieza_probable": "bomba, sonda de temperatura",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/baxi/Documentation/Professional-products/Calderas-domesticas/Calderas-murales-de-condensacion-a-gas/Platinum-iPlus/A00B02C13I70PROUSRMAN104.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "H.03.31",
+      "E.04.15",
+      "E.04.06"
+     ],
+     "significado": "Problema de evacuación de humos: chimenea bloqueada (H.03.31, E.04.15) o gases de combustión a temperatura excesiva (E.04.06).",
+     "causas": [
+      "Terminal de humos o entrada de aire obstruidos",
+      "Sonda de humos"
+     ],
+     "que_puede_hacer_el_cliente": "Código de humos: no rearmar repetidamente. Si huele a humo o gas, ventilar, apagar y llamar al técnico. Si tiene detector de CO y suena, salir de la vivienda.",
+     "pieza_probable": "conducto de humos, sonda de humos",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/baxi/Documentation/Professional-products/Calderas-domesticas/Calderas-murales-de-condensacion-a-gas/Platinum-iPlus/A00B02C13I70PROUSRMAN104.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "E.04.13"
+     ],
+     "significado": "Aspa del ventilador bloqueada.",
+     "causas": [
+      "Ventilador averiado o bloqueado"
+     ],
+     "que_puede_hacer_el_cliente": "Avisar al técnico.",
+     "pieza_probable": "ventilador",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/baxi/Documentation/Professional-products/Calderas-domesticas/Calderas-murales-de-condensacion-a-gas/Platinum-iPlus/A00B02C13I70PROUSRMAN104.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "H.03.09"
+     ],
+     "significado": "Tensión de alimentación eléctrica demasiado baja.",
+     "causas": [
+      "Instalación eléctrica",
+      "Placa electrónica"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que hay luz y que no ha saltado ningún automático. Si persiste, técnico.",
+     "pieza_probable": "",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/baxi/Documentation/Professional-products/Calderas-domesticas/Calderas-murales-de-condensacion-a-gas/Platinum-iPlus/A00B02C13I70PROUSRMAN104.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "E118",
+      "118"
+     ],
+     "significado": "Presión del circuito hidráulico demasiado baja (familia Luna / Duo-Tec y Platinum de generación anterior).",
+     "causas": [
+      "Pérdida de agua",
+      "Vaso de expansión",
+      "Sensor de presión"
+     ],
+     "que_puede_hacer_el_cliente": "Rellenar con el grifo de llenado hasta la presión que marque el manual (normalmente 1 a 1,5 bar en frío). Si se repite, técnico.",
+     "pieza_probable": "sensor/presostato de agua, vaso de expansión",
+     "fuente": "https://manualslib.es/manual/802525/Baxi-Luna-Duo-Tec-Mpplus-1-115.html?page=29",
+     "confianza": "media"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "E117",
+      "117"
+     ],
+     "significado": "Presión del circuito hidráulico demasiado alta.",
+     "causas": [
+      "Llave de llenado que se ha quedado abierta o pasa agua",
+      "Vaso de expansión sin carga"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que el grifo de llenado está bien cerrado. Avisar al técnico.",
+     "pieza_probable": "grifo de llenado, vaso de expansión",
+     "fuente": "https://manualslib.es/manual/802525/Baxi-Luna-Duo-Tec-Mpplus-1-115.html?page=29",
+     "confianza": "media"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "E110",
+      "110"
+     ],
+     "significado": "Termostato de seguridad o termofusible activado por sobretemperatura (familia Luna / Duo-Tec).",
+     "causas": [
+      "Bomba bloqueada",
+      "Aire en el circuito de calefacción"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la presión. Rearmar una vez. Si se repite, técnico.",
+     "pieza_probable": "bomba de circulación, termostato de seguridad",
+     "fuente": "https://manualslib.es/manual/802525/Baxi-Luna-Duo-Tec-Mpplus-1-115.html?page=29",
+     "confianza": "media"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "E125",
+      "125"
+     ],
+     "significado": "Bloqueo de seguridad por falta de circulación de agua (familia Luna / Duo-Tec).",
+     "causas": [
+      "Presión baja",
+      "Aire en el circuito",
+      "Bomba"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la presión y rellenar si está baja. Si se repite, técnico.",
+     "pieza_probable": "bomba de circulación",
+     "fuente": "https://manualslib.es/manual/802525/Baxi-Luna-Duo-Tec-Mpplus-1-115.html?page=29",
+     "confianza": "media"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "E133",
+      "133"
+     ],
+     "significado": "Fallo de encendido tras varios intentos (familia Luna / Duo-Tec / Platinum anteriores). El cliente lo suele llamar 'error 133'.",
+     "causas": [
+      "Gas cortado o llave cerrada",
+      "Electrodo de encendido",
+      "Válvula de gas"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que la llave del gas está abierta y que hay gas. Rearmar una vez. Si se repite, técnico. El manual admite hasta 5 rearmes; después hay que esperar 15 minutos, pero lo prudente es avisar.",
+     "pieza_probable": "electrodo de encendido, válvula de gas",
+     "fuente": "https://manualslib.es/manual/802525/Baxi-Luna-Duo-Tec-Mpplus-1-115.html?page=29",
+     "confianza": "media"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "E128",
+      "128"
+     ],
+     "significado": "Sin llama (pérdida de llama) en la familia Luna / Duo-Tec.",
+     "causas": [
+      "Gas",
+      "Electrodo de ionización"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar el gas y rearmar una vez. Si sigue, técnico.",
+     "pieza_probable": "electrodo de ionización",
+     "fuente": "https://manualslib.es/manual/802525/Baxi-Luna-Duo-Tec-Mpplus-1-115.html?page=29",
+     "confianza": "media"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "E160",
+      "160"
+     ],
+     "significado": "Fallo del ventilador (familia Luna / Duo-Tec).",
+     "causas": [
+      "Ventilador averiado"
+     ],
+     "que_puede_hacer_el_cliente": "Avisar al técnico.",
+     "pieza_probable": "ventilador",
+     "fuente": "https://manualslib.es/manual/802525/Baxi-Luna-Duo-Tec-Mpplus-1-115.html?page=29",
+     "confianza": "media"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "E162",
+      "162"
+     ],
+     "significado": "Actuación del presostato de humos (familia Luna / Duo-Tec). El usuario no puede rearmarla.",
+     "causas": [
+      "Salida de humos obstruida",
+      "Presostato"
+     ],
+     "que_puede_hacer_el_cliente": "Código de humos: ventilar, apagar la caldera y llamar al técnico.",
+     "pieza_probable": "presostato de humos",
+     "fuente": "https://manualslib.es/manual/802525/Baxi-Luna-Duo-Tec-Mpplus-1-115.html?page=29",
+     "confianza": "media"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "E10 (Roca)"
+     ],
+     "significado": "En calderas Roca con pantalla: falta de presión en la instalación (el presostato hidráulico no detecta presión suficiente).",
+     "causas": [
+      "Presión baja por pérdida de agua",
+      "Presostato hidráulico"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar el manómetro y rellenar hasta 1 a 1,5 bar en frío. Si se repite, técnico.",
+     "pieza_probable": "presostato de agua",
+     "fuente": "https://blog.suner.eu/en/how-to-solve-error-e10-in-the-roca-boiler/",
+     "confianza": "media"
+    }
+   ]
+  },
+  {
+   "familia": "Beretta calderas",
+   "marcas": [
+    "Beretta"
+   ],
+   "notas": "Las Beretta (Mynute, Mynute Green, Ciao) muestran A seguido de dos cifras (A01, A04...). Algunos son bloqueo definitivo (hay que rearmar) y otros paradas temporales. Tabla del manual de la Mynute Green E; la asignación puede variar entre Ciao, Mynute Green y Mynute Evo, por eso la confianza es media.",
+   "codigos": [
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "A01"
+     ],
+     "significado": "Bloqueo del módulo de control de llama (ACF): normalmente la caldera no ha conseguido encender. También puede indicar fallo de la electrónica ACF.",
+     "causas": [
+      "Falta de gas o llave cerrada",
+      "Electrodo de encendido/detección",
+      "Módulo de control de llama"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la llave del gas. Rearmar una vez. Si se repite, técnico.",
+     "pieza_probable": "electrodo, módulo de encendido",
+     "fuente": "https://manualslib.es/manual/623500/Beretta-Mynute-Green-E-30-R-S-I.html?page=10",
+     "confianza": "media"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "A02"
+     ],
+     "significado": "Alarma del termostato límite (sobretemperatura). Bloqueo definitivo.",
+     "causas": [
+      "Circulación insuficiente",
+      "Bomba",
+      "Aire en el circuito"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la presión. Rearmar una vez; si se repite, técnico.",
+     "pieza_probable": "termostato límite, bomba",
+     "fuente": "https://manualslib.es/manual/623500/Beretta-Mynute-Green-E-30-R-S-I.html?page=10",
+     "confianza": "media"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "A03"
+     ],
+     "significado": "Alarma del tacómetro del ventilador.",
+     "causas": [
+      "Ventilador averiado o bloqueado"
+     ],
+     "que_puede_hacer_el_cliente": "Avisar al técnico.",
+     "pieza_probable": "ventilador",
+     "fuente": "https://manualslib.es/manual/623500/Beretta-Mynute-Green-E-30-R-S-I.html?page=10",
+     "confianza": "media"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "A04"
+     ],
+     "significado": "Alarma del presostato de agua: presión de agua insuficiente.",
+     "causas": [
+      "Presión baja en la instalación",
+      "Presostato de agua"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar el manómetro y rellenar con el grifo de llenado hasta la presión del manual (normalmente 1 a 1,5 bar en frío). Si se repite, técnico.",
+     "pieza_probable": "presostato de agua, vaso de expansión",
+     "fuente": "https://manualslib.es/manual/623500/Beretta-Mynute-Green-E-30-R-S-I.html?page=10",
+     "confianza": "media"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "A11"
+     ],
+     "significado": "Llama parásita.",
+     "causas": [
+      "Electrodo",
+      "Válvula de gas",
+      "Placa"
+     ],
+     "que_puede_hacer_el_cliente": "Avisar al técnico.",
+     "pieza_probable": "válvula de gas, placa",
+     "fuente": "https://manualslib.es/manual/623500/Beretta-Mynute-Green-E-30-R-S-I.html?page=10",
+     "confianza": "media"
+    }
+   ]
+  },
+  {
+   "familia": "Chaffoteaux calderas",
+   "marcas": [
+    "Chaffoteaux"
+   ],
+   "notas": "Chaffoteaux es del grupo Ariston y sus calderas recientes (Mira Advance, Urbia, Niagara, Talia) usan códigos de tres cifras parecidos a Ariston (501, 108...). En la pantalla el 501 puede aparecer parpadeando y alternando con 'RESET'. No se encontró el manual oficial español completo; los significados vienen de fuentes de apoyo y conviene confirmar con el modelo.",
+   "codigos": [
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "501",
+      "5 01"
+     ],
+     "significado": "No se ha encendido la llama del quemador. Bloqueo 'no volátil' que requiere rearme manual.",
+     "causas": [
+      "Corte de gas o llave cerrada",
+      "Corte de luz previo",
+      "Sistema de encendido o electrodo sucio o averiado"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que la llave del gas está abierta y hay gas. Pulsar RESET una vez. Si vuelve, técnico.",
+     "pieza_probable": "electrodo de encendido, válvula de gas",
+     "fuente": "https://blog.suner.es/error-501-en-la-caldera-chaffoteaux",
+     "confianza": "media"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "108",
+      "1 08"
+     ],
+     "significado": "Presión de agua del circuito de calefacción demasiado baja; la caldera se pone en seguridad.",
+     "causas": [
+      "Fuga o pérdida de agua",
+      "Error en el llenado"
+     ],
+     "que_puede_hacer_el_cliente": "Rellenar con el grifo de llenado hasta 1 a 1,5 bar en frío. Si baja a menudo, técnico.",
+     "pieza_probable": "vaso de expansión, válvula de seguridad",
+     "fuente": "https://www.mesdepanneurs.fr/blog/codes-erreurs-chaudiere-chaffoteaux",
+     "confianza": "media"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "101",
+      "1 01"
+     ],
+     "significado": "Sobrecalentamiento del circuito primario.",
+     "causas": [
+      "Circulación deficiente (bomba, aire)",
+      "Placa electrónica"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la presión. Rearmar una vez; si se repite, técnico.",
+     "pieza_probable": "bomba de circulación",
+     "fuente": "https://www.mesdepanneurs.fr/blog/codes-erreurs-chaudiere-chaffoteaux",
+     "confianza": "media"
+    }
+   ]
+  },
+  {
+   "familia": "Cointra calentadores",
+   "marcas": [
+    "Cointra"
+   ],
+   "notas": "Tabla de los calentadores de gas estancos Cointra CETI (bajo NOx). Al producirse un error la pantalla parpadea con el símbolo de error, se ve el código (E0 a E8, En, EC) y suena un zumbador; se cierran las válvulas de gas. Para restablecer basta con cerrar el grifo de agua caliente o pulsar Standby; con E2 hay que desenchufar y volver a enchufar el calentador. Si el error persiste, técnico. No se encontró tabla oficial de las calderas Cointra (Superlative, Optima), así que no se incluyen.",
+   "codigos": [
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "E1"
+     ],
+     "significado": "Fallo de encendido o ausencia de llama: no detecta llama tras dos intentos o se apaga en funcionamiento.",
+     "causas": [
+      "Sin gas, llave cerrada o bombona de butano/propano vacía",
+      "Electrodo de encendido o detección",
+      "Válvula de gas"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la llave del gas y que la bombona tiene gas. Cerrar el grifo de agua caliente y volver a abrirlo para que reintente. Si se repite, técnico.",
+     "pieza_probable": "electrodo, válvula de gas",
+     "fuente": "https://www.cointra.es/wp-content/uploads/2022/10/manual-instalacion-celantador-ceti.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "E2"
+     ],
+     "significado": "Presencia de llama anómala (detecta llama antes de arrancar o después de parar).",
+     "causas": [
+      "Válvula de gas que no cierra",
+      "Electrodo o placa"
+     ],
+     "que_puede_hacer_el_cliente": "Desenchufar y volver a enchufar el calentador una vez. Si se repite, cerrar la llave del gas y llamar al técnico.",
+     "pieza_probable": "válvula de gas, placa",
+     "fuente": "https://www.cointra.es/wp-content/uploads/2022/10/manual-instalacion-celantador-ceti.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "E3"
+     ],
+     "significado": "Ha actuado el termostato límite de seguridad por sobrecalentamiento.",
+     "causas": [
+      "Sobrecalentamiento del intercambiador (cal, poco caudal)",
+      "Termostato límite averiado"
+     ],
+     "que_puede_hacer_el_cliente": "Cerrar el grifo y volver a abrirlo con más caudal. Si se repite, técnico.",
+     "pieza_probable": "termostato límite, intercambiador",
+     "fuente": "https://www.cointra.es/wp-content/uploads/2022/10/manual-instalacion-celantador-ceti.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "E0",
+      "E4"
+     ],
+     "significado": "Fallo de la sonda de temperatura del agua de salida (E0) o de entrada (E4).",
+     "causas": [
+      "Sonda NTC abierta o en cortocircuito"
+     ],
+     "que_puede_hacer_el_cliente": "Avisar al técnico.",
+     "pieza_probable": "sonda NTC",
+     "fuente": "https://www.cointra.es/wp-content/uploads/2022/10/manual-instalacion-celantador-ceti.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "E5"
+     ],
+     "significado": "Fallo del ventilador (velocidad demasiado baja o sin señal).",
+     "causas": [
+      "Ventilador averiado"
+     ],
+     "que_puede_hacer_el_cliente": "Avisar al técnico.",
+     "pieza_probable": "ventilador",
+     "fuente": "https://www.cointra.es/wp-content/uploads/2022/10/manual-instalacion-celantador-ceti.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "E6"
+     ],
+     "significado": "Sobrecalentamiento del agua caliente (más de 85 °C en la salida).",
+     "causas": [
+      "Poco caudal de agua",
+      "Temperatura de consigna alta",
+      "Sonda"
+     ],
+     "que_puede_hacer_el_cliente": "Cerrar el grifo, esperar y volver a abrir con más caudal; bajar la temperatura de consigna. Si se repite, técnico.",
+     "pieza_probable": "sonda de salida",
+     "fuente": "https://www.cointra.es/wp-content/uploads/2022/10/manual-instalacion-celantador-ceti.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "E7"
+     ],
+     "significado": "Fallo de válvula (válvulas de gas en cortocircuito o circuito abierto).",
+     "causas": [
+      "Válvula de gas",
+      "Placa electrónica"
+     ],
+     "que_puede_hacer_el_cliente": "Avisar al técnico.",
+     "pieza_probable": "válvula de gas",
+     "fuente": "https://www.cointra.es/wp-content/uploads/2022/10/manual-instalacion-celantador-ceti.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "E8"
+     ],
+     "significado": "Tubería de humos bloqueada (el ventilador trabaja por encima de lo normal por viento o obstrucción).",
+     "causas": [
+      "Salida de humos obstruida",
+      "Viento fuerte en el terminal"
+     ],
+     "que_puede_hacer_el_cliente": "Código de humos: no forzar el uso. Si huele a humo o gas, ventilar, cerrar el gas y llamar al técnico.",
+     "pieza_probable": "conducto de humos",
+     "fuente": "https://www.cointra.es/wp-content/uploads/2022/10/manual-instalacion-celantador-ceti.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "En"
+     ],
+     "significado": "Fin del tiempo máximo de calentamiento continuo (por defecto 60 minutos). No es una avería.",
+     "causas": [
+      "Grifo de agua caliente abierto mucho tiempo seguido"
+     ],
+     "que_puede_hacer_el_cliente": "Cerrar el grifo de agua caliente y volver a abrirlo.",
+     "pieza_probable": "",
+     "fuente": "https://www.cointra.es/wp-content/uploads/2022/10/manual-instalacion-celantador-ceti.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "EC",
+      "Ec"
+     ],
+     "significado": "Fallo de comunicación entre la placa principal y el panel de pantalla.",
+     "causas": [
+      "Cableado del panel"
+     ],
+     "que_puede_hacer_el_cliente": "Avisar al técnico.",
+     "pieza_probable": "panel de pantalla, cableado",
+     "fuente": "https://www.cointra.es/wp-content/uploads/2022/10/manual-instalacion-celantador-ceti.pdf",
+     "confianza": "alta"
+    }
+   ]
+  },
+  {
+   "familia": "Domusa calderas",
+   "marcas": [
+    "Domusa"
+   ],
+   "notas": "Domusa fabrica sobre todo calderas de gasóleo y biomasa (y algunas de gas). En las calderas de gasóleo en general el quemador suele tener su propio pulsador de rearme; si se bloquea a menudo no hay que insistir con el rearme. No se encontró la tabla oficial completa de alarmas; solo se ha verificado la alarma de presión.",
+   "codigos": [
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "AP"
+     ],
+     "significado": "Alarma de presión: la presión de la instalación ha bajado de 0,5 bar.",
+     "causas": [
+      "Pérdida de agua en la instalación",
+      "Vaso de expansión",
+      "Purgado de radiadores"
+     ],
+     "que_puede_hacer_el_cliente": "Rellenar con el grifo de llenado hasta 1 a 1,5 bar en frío y cerrarlo. Si se repite, técnico.",
+     "pieza_probable": "vaso de expansión, válvula de seguridad",
+     "fuente": "https://blog.suner.es/error-ap-caldera-domusa",
+     "confianza": "media"
+    }
+   ]
+  },
+  {
+   "familia": "Ferroli calderas",
+   "marcas": [
+    "Ferroli"
+   ],
+   "notas": "Las Ferroli de condensación (Bluehelix, Bluehelix Tech, Divacondens) muestran códigos con letra A o F y dos cifras. Los que empiezan por A son bloqueos permanentes: se rearman pulsando el botón reset 1 segundo. Los que empiezan por F son paradas temporales que se quitan solas cuando el valor vuelve a la normalidad. Tabla tomada del manual de la Bluehelix Tech; en otras series algún código puede variar. Presión de agua de referencia del fabricante: alrededor de 1 bar en frío.",
+   "codigos": [
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "A01"
+     ],
+     "significado": "El quemador no enciende (bloqueo).",
+     "causas": [
+      "Falta de gas o presión de gas insuficiente",
+      "Electrodo de encendido/detección averiado o mal colocado",
+      "Válvula de gas",
+      "Sifón de condensados obstruido"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que la llave del gas está abierta y hay gas. Comprobar que la salida de condensados no está atascada o congelada. Pulsar reset 1 segundo, una vez. Si se repite, técnico.",
+     "pieza_probable": "electrodo, válvula de gas",
+     "fuente": "https://manualslib.mx/manual/123868/Ferroli-Bluehelix-Tech-S-45H.html?page=39",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "A02"
+     ],
+     "significado": "Señal de llama con el quemador apagado.",
+     "causas": [
+      "Electrodo o cableado",
+      "Placa electrónica"
+     ],
+     "que_puede_hacer_el_cliente": "Avisar al técnico.",
+     "pieza_probable": "placa electrónica, electrodo",
+     "fuente": "https://manualslib.mx/manual/123868/Ferroli-Bluehelix-Tech-S-45H.html?page=39",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "A03"
+     ],
+     "significado": "Protección por sobretemperatura.",
+     "causas": [
+      "No circula el agua en la instalación",
+      "Aire en la instalación",
+      "Sonda de calefacción dañada"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la presión del agua. Rearmar una vez; si se repite, técnico.",
+     "pieza_probable": "bomba de circulación, sonda de calefacción",
+     "fuente": "https://manualslib.mx/manual/123868/Ferroli-Bluehelix-Tech-S-45H.html?page=39",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "A04",
+      "F07"
+     ],
+     "significado": "Temperatura de humos demasiado alta (F07); si ocurre 3 veces en 24 horas pasa a bloqueo A04 por seguridad del conducto de humos.",
+     "causas": [
+      "Intercambiador sucio",
+      "Sonda de humos"
+     ],
+     "que_puede_hacer_el_cliente": "Código de humos: no insistir con el rearme. Si huele a humo, ventilar y apagar. Técnico.",
+     "pieza_probable": "sonda de humos, intercambiador",
+     "fuente": "https://manualslib.mx/manual/123868/Ferroli-Bluehelix-Tech-S-45H.html?page=39",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "A05",
+      "F15"
+     ],
+     "significado": "Fallo del ventilador (F15); si dura una hora seguida pasa a bloqueo A05.",
+     "causas": [
+      "Ventilador averiado",
+      "Sin alimentación al ventilador o señal tacométrica interrumpida"
+     ],
+     "que_puede_hacer_el_cliente": "Avisar al técnico.",
+     "pieza_probable": "ventilador",
+     "fuente": "https://manualslib.mx/manual/123868/Ferroli-Bluehelix-Tech-S-45H.html?page=39",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "A06"
+     ],
+     "significado": "No hay llama tras la fase de encendido (6 veces en 4 minutos) o llama inestable.",
+     "causas": [
+      "Electrodo de ionización",
+      "Conductos de aire/humos obstruidos",
+      "Sifón de condensados obstruido",
+      "Ajuste de la válvula de gas"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la salida de condensados. Rearmar una vez; si se repite, técnico.",
+     "pieza_probable": "electrodo de ionización",
+     "fuente": "https://manualslib.mx/manual/123868/Ferroli-Bluehelix-Tech-S-45H.html?page=39",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F37"
+     ],
+     "significado": "Presión del agua de la instalación incorrecta (normalmente demasiado baja).",
+     "causas": [
+      "Presión baja por pérdida de agua",
+      "Presostato de agua dañado o desconectado"
+     ],
+     "que_puede_hacer_el_cliente": "Rellenar la instalación con el grifo de llenado hasta alrededor de 1 bar en frío (lo que indique el manual). Se quita sola. Si se repite, técnico.",
+     "pieza_probable": "presostato/sensor de presión de agua",
+     "fuente": "https://manualslib.mx/manual/123868/Ferroli-Bluehelix-Tech-S-45H.html?page=39",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F10",
+      "F11",
+      "F12",
+      "F14"
+     ],
+     "significado": "Fallo de sonda: impulsión (F10), retorno (F11), agua caliente sanitaria (F12) o impulsión 2 (F14).",
+     "causas": [
+      "Sonda dañada",
+      "Cableado en cortocircuito o desconectado"
+     ],
+     "que_puede_hacer_el_cliente": "Avisar al técnico.",
+     "pieza_probable": "sonda NTC",
+     "fuente": "https://manualslib.mx/manual/123868/Ferroli-Bluehelix-Tech-S-45H.html?page=39",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F34",
+      "F35"
+     ],
+     "significado": "Tensión de alimentación inferior a 170 V (F34) o frecuencia de red incorrecta (F35).",
+     "causas": [
+      "Problemas de la red eléctrica"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que hay luz y que no hay cortes. Si persiste, electricista o técnico.",
+     "pieza_probable": "",
+     "fuente": "https://manualslib.mx/manual/123868/Ferroli-Bluehelix-Tech-S-45H.html?page=39",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F39"
+     ],
+     "significado": "Fallo de la sonda exterior.",
+     "causas": [
+      "Sonda exterior dañada o desconectada"
+     ],
+     "que_puede_hacer_el_cliente": "Avisar al técnico.",
+     "pieza_probable": "sonda exterior",
+     "fuente": "https://manualslib.mx/manual/123868/Ferroli-Bluehelix-Tech-S-45H.html?page=39",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "A41"
+     ],
+     "significado": "Posición de la sonda de calefacción incorrecta (despegada del tubo).",
+     "causas": [
+      "Sonda de calefacción despegada"
+     ],
+     "que_puede_hacer_el_cliente": "Avisar al técnico.",
+     "pieza_probable": "sonda de calefacción",
+     "fuente": "https://manualslib.mx/manual/123868/Ferroli-Bluehelix-Tech-S-45H.html?page=39",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F43"
+     ],
+     "significado": "Intervención de la protección del intercambiador: no hay circulación o hay aire.",
+     "causas": [
+      "Sin circulación de agua",
+      "Aire en la instalación"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la presión del agua. Si persiste, técnico.",
+     "pieza_probable": "bomba de circulación",
+     "fuente": "https://manualslib.mx/manual/123868/Ferroli-Bluehelix-Tech-S-45H.html?page=39",
+     "confianza": "alta"
+    }
+   ]
+  },
+  {
+   "familia": "Immergas calderas",
+   "marcas": [
+    "Immergas"
+   ],
+   "notas": "Las Immergas (Victrix, Eolo, Mythos) indican la anomalía con un símbolo parpadeando y un número de dos cifras en la pantalla (01, 02, 10...). En el mando remoto aparece con una E delante (01 = E01). El rearme se hace girando un momento el selector principal a la posición Reset (en otros modelos, botón Reset). Presión recomendada por Immergas: entre 1 y 1,2 bar en frío; rellenar si baja de 1 bar. Tabla del manual Victrix 24 kW; puede variar algo entre modelos (en algunos Victrix Zeus el 10 tiene matices).",
+   "codigos": [
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "01",
+      "E01"
+     ],
+     "significado": "Bloqueo de encendido: la caldera no consigue encender en 10 segundos.",
+     "causas": [
+      "Falta de gas o llave cerrada",
+      "Aire en el tubo de gas tras mucho tiempo parada",
+      "Electrodo, válvula de gas o placa"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que la llave del gas está abierta. Girar un momento el selector a Reset. Si ocurre a menudo, técnico.",
+     "pieza_probable": "electrodo, válvula de gas",
+     "fuente": "https://www.manualslib.mx/manual/310015/Immergas-Victrix-24-Kw.html?page=198",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "02",
+      "E02"
+     ],
+     "significado": "Bloqueo por sobretemperatura (termostato de seguridad, termostato de humos o anomalía del control de llama).",
+     "causas": [
+      "Sobrecalentamiento interno o en la salida de humos",
+      "Fallo del control de llama"
+     ],
+     "que_puede_hacer_el_cliente": "Girar el selector a Reset una vez. Si se repite, técnico. Si huele a humo, ventilar y apagar.",
+     "pieza_probable": "termostato de seguridad, bomba",
+     "fuente": "https://www.manualslib.mx/manual/310015/Immergas-Victrix-24-Kw.html?page=198",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "05",
+      "E05"
+     ],
+     "significado": "Anomalía de la sonda de impulsión: la caldera no arranca.",
+     "causas": [
+      "Sonda NTC de impulsión averiada"
+     ],
+     "que_puede_hacer_el_cliente": "Avisar al técnico.",
+     "pieza_probable": "sonda NTC de impulsión",
+     "fuente": "https://www.manualslib.mx/manual/310015/Immergas-Victrix-24-Kw.html?page=198",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "06",
+      "E06"
+     ],
+     "significado": "Anomalía de la sonda de agua caliente sanitaria: sigue dando agua caliente pero peor y sin antihielo.",
+     "causas": [
+      "Sonda NTC de sanitaria averiada"
+     ],
+     "que_puede_hacer_el_cliente": "Avisar al técnico.",
+     "pieza_probable": "sonda NTC de sanitaria",
+     "fuente": "https://www.manualslib.mx/manual/310015/Immergas-Victrix-24-Kw.html?page=198",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "08",
+      "E08"
+     ],
+     "significado": "Selector de reset averiado (se queda más de 30 segundos en Reset).",
+     "causas": [
+      "Selector averiado"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar y encender la caldera. Si sigue, técnico.",
+     "pieza_probable": "selector/panel de mandos",
+     "fuente": "https://www.manualslib.mx/manual/310015/Immergas-Victrix-24-Kw.html?page=198",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "10",
+      "E10"
+     ],
+     "significado": "Presión de la instalación insuficiente.",
+     "causas": [
+      "Pérdida de agua",
+      "Vaso de expansión"
+     ],
+     "que_puede_hacer_el_cliente": "Rellenar con la llave de la parte inferior de la caldera hasta 1 a 1,2 bar en frío y cerrarla. Arranca sola. Si baja a menudo, técnico.",
+     "pieza_probable": "vaso de expansión, válvula de seguridad",
+     "fuente": "https://www.manualslib.mx/manual/310015/Immergas-Victrix-24-Kw.html?page=198",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "16",
+      "E16"
+     ],
+     "significado": "Anomalía del ventilador.",
+     "causas": [
+      "Fallo mecánico o electrónico del ventilador"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar y encender una vez. Si sigue, técnico.",
+     "pieza_probable": "ventilador",
+     "fuente": "https://www.manualslib.mx/manual/310015/Immergas-Victrix-24-Kw.html?page=198",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "20",
+      "E20"
+     ],
+     "significado": "Bloqueo por llama parásita.",
+     "causas": [
+      "Fuga en el circuito de detección",
+      "Control de llama"
+     ],
+     "que_puede_hacer_el_cliente": "Rearmar una vez. Si no arranca, técnico.",
+     "pieza_probable": "electrodo, placa",
+     "fuente": "https://www.manualslib.mx/manual/310015/Immergas-Victrix-24-Kw.html?page=198",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "27",
+      "E27"
+     ],
+     "significado": "Circulación de agua insuficiente en el circuito primario (sobrecalentamiento).",
+     "causas": [
+      "Llaves de corte de calefacción cerradas",
+      "Aire en la instalación",
+      "Bomba bloqueada"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que las llaves de la calefacción están abiertas y la presión correcta. Si se repite, técnico.",
+     "pieza_probable": "bomba de circulación",
+     "fuente": "https://www.manualslib.mx/manual/310015/Immergas-Victrix-24-Kw.html?page=198",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "37",
+      "E37"
+     ],
+     "significado": "Tensión de alimentación baja.",
+     "causas": [
+      "Red eléctrica"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la luz. Arranca sola al normalizarse. Si se repite, técnico.",
+     "pieza_probable": "",
+     "fuente": "https://www.manualslib.mx/manual/310015/Immergas-Victrix-24-Kw.html?page=198",
+     "confianza": "alta"
+    }
+   ]
+  },
+  {
+   "familia": "Junkers / Bosch calderas",
+   "marcas": [
+    "Junkers",
+    "Bosch"
+   ],
+   "notas": "Junkers pasó a llamarse Bosch (Junkers Bosch). Las murales con pantalla (Cerapur, Cerapur Excellence, Euroline digitales, Bosch Condens 2300i/4300i/7000i) muestran un código de dos caracteres (EA, E9, C6...) y debajo o alternando un número de tres o cuatro cifras (p. ej. EA y 227). El fabricante pide dar ambos al llamar. Las Bosch Condens recientes muestran directamente el número (227, 224, 1017...). Las Euroline sin pantalla avisan con el botón de rearme parpadeando y LEDs del termómetro. Presión recomendada: entre 1 y 1,5 bar en frío (Cerapur Excellence) o 1 a 2 bar (Condens 2300i, Euroline); por debajo de 1 bar hay que rellenar. El código H13 u otros H no son averías: son avisos de mantenimiento.",
+   "codigos": [
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "EA",
+      "227",
+      "EA 227"
+     ],
+     "significado": "No se detecta llama: la caldera ha intentado encender y no ha conseguido llama. Bloqueo.",
+     "causas": [
+      "Falta de gas o baja presión de suministro de gas",
+      "Salida de condensados bloqueada (hielo u objetos)",
+      "Conducto de humos bloqueado",
+      "Electrodos o cables de encendido/ionización, válvula de gas"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que la llave del gas está abierta y que hay gas en casa (en propano, que queda gas en el depósito o bombona). Comprobar si el tubo de condensados que sale al exterior está congelado; se puede descongelar con un paño o botella de agua caliente (nunca hirviendo) si está a nivel de calle. Pulsar reset una vez. Si vuelve a salir EA, llamar al técnico.",
+     "pieza_probable": "electrodo de encendido/ionización, válvula de gas",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/junkers/download/pdf/file/6720817051",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "224",
+      "E9",
+      "E9 224"
+     ],
+     "significado": "Ha saltado el limitador de temperatura del bloque térmico o el de gases (sobrecalentamiento). Bloqueo.",
+     "causas": [
+      "Agua que no circula: llaves de la calefacción cerradas, bomba bloqueada o aire",
+      "Presión de agua baja",
+      "Limitador o su cable averiado"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la presión del agua y rellenar si está baja. Comprobar que las llaves de paso de calefacción bajo la caldera están abiertas. Pulsar reset una vez. Si se repite, técnico.",
+     "pieza_probable": "bomba de circulación, limitador de temperatura",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/junkers/download/pdf/file/6720892004",
+     "confianza": "media"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "229"
+     ],
+     "significado": "Se ha apagado la llama durante el funcionamiento del quemador.",
+     "causas": [
+      "Llave general de gas o de la caldera cerrada o presión de gas baja",
+      "Electrodo de ionización o cable",
+      "Salida de humos o entrada de aire",
+      "Depósitos en el bloque térmico"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que la llave del gas está abierta y hay gas. Pulsar reset una vez. Si se repite, técnico.",
+     "pieza_probable": "electrodo de ionización",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/junkers/download/pdf/file/6720892004",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "207",
+      "1017"
+     ],
+     "significado": "Presión de funcionamiento demasiado baja (207 bloquea; 1017 es aviso).",
+     "causas": [
+      "Pérdida de agua en la instalación",
+      "Purgado de radiadores reciente",
+      "Sensor de presión averiado"
+     ],
+     "que_puede_hacer_el_cliente": "Rellenar con la llave de llenado hasta que el manómetro marque entre 1 y 2 bar en frío y cerrarla. Si hay que rellenar a menudo, técnico.",
+     "pieza_probable": "sensor de presión; vaso de expansión o válvula de seguridad si pierde",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/junkers/download/pdf/file/6720892004",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "228",
+      "306"
+     ],
+     "significado": "Señal de llama con el quemador apagado o tras cerrar el gas.",
+     "causas": [
+      "Cable o electrodos",
+      "Válvula de gas que no cierra",
+      "Placa electrónica"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar la caldera y avisar al técnico.",
+     "pieza_probable": "válvula de gas, electrodos, placa electrónica",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/junkers/download/pdf/file/6720892004",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "214",
+      "215"
+     ],
+     "significado": "Fallo del ventilador (se para durante el tiempo de seguridad o gira demasiado rápido).",
+     "causas": [
+      "Ventilador averiado",
+      "Tensión de red incorrecta"
+     ],
+     "que_puede_hacer_el_cliente": "Avisar al técnico.",
+     "pieza_probable": "ventilador",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/junkers/download/pdf/file/6720892004",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "264"
+     ],
+     "significado": "Se interrumpe el paso de aire durante el funcionamiento (ventilador, presostato o salida de humos).",
+     "causas": [
+      "Taponamiento del sistema de gases de escape",
+      "Ventilador averiado",
+      "Presostato de aire o su manguera"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar desde fuera que la salida de humos no está tapada (nido, plástico, hielo) sin subir a alturas. Si huele a humo, ventilar y apagar. Avisar al técnico.",
+     "pieza_probable": "ventilador, presostato de aire",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/junkers/download/pdf/file/6720892004",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "C6"
+     ],
+     "significado": "En Junkers/Bosch con pantalla suele indicar fallo del ventilador o del presostato de aire/humos. Depende del modelo.",
+     "causas": [
+      "Ventilador que no arranca o gira a velocidad incorrecta",
+      "Presostato de aire",
+      "Salida de humos obstruida"
+     ],
+     "que_puede_hacer_el_cliente": "No insistir con el rearme. Si huele a humo, ventilar y apagar. Avisar al técnico.",
+     "pieza_probable": "ventilador, presostato",
+     "fuente": "https://www.termix.ro/en/info/coduri-eroare-centrale-termice-bosch-junkers",
+     "confianza": "media"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "341",
+      "342"
+     ],
+     "significado": "La temperatura sube demasiado rápido en calefacción (341) o en agua caliente (342).",
+     "causas": [
+      "Llaves de mantenimiento cerradas",
+      "Bomba desconectada o averiada",
+      "Presión de agua insuficiente o aire"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que las llaves bajo la caldera están abiertas y la presión correcta (1 a 2 bar). Si sigue, técnico.",
+     "pieza_probable": "bomba de circulación, válvula de tres vías",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/junkers/download/pdf/file/6720892004",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "281"
+     ],
+     "significado": "Bomba bloqueada o funcionando en seco.",
+     "causas": [
+      "Bomba agarrotada",
+      "Aire en la instalación"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la presión. Avisar al técnico.",
+     "pieza_probable": "bomba de circulación",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/junkers/download/pdf/file/6720892004",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "350",
+      "351",
+      "1073",
+      "1074"
+     ],
+     "significado": "Sonda de temperatura de impulsión en cortocircuito o interrumpida.",
+     "causas": [
+      "Sonda averiada",
+      "Cable o conector"
+     ],
+     "que_puede_hacer_el_cliente": "Avisar al técnico.",
+     "pieza_probable": "sonda de temperatura de impulsión",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/junkers/download/pdf/file/6720892004",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "232"
+     ],
+     "significado": "Caldera bloqueada por un contacto externo (p. ej. bomba de condensados o termostato de seguridad externo).",
+     "causas": [
+      "Bomba elevadora de condensados que ha saltado",
+      "Termostato externo o su cable"
+     ],
+     "que_puede_hacer_el_cliente": "Si tiene bomba de condensados, comprobar que no está llena ni con alarma. Avisar al técnico.",
+     "pieza_probable": "bomba de condensados",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/junkers/download/pdf/file/6720892004",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "356",
+      "328"
+     ],
+     "significado": "Tensión de red insuficiente (356) o corte breve de corriente (328).",
+     "causas": [
+      "Instalación eléctrica de la casa",
+      "Cortes de suministro"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que hay luz y que no ha saltado el diferencial. Si se repite, electricista o técnico.",
+     "pieza_probable": "",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/junkers/download/pdf/file/6720892004",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "H13",
+      "1018",
+      "1023"
+     ],
+     "significado": "Aviso de mantenimiento: se ha alcanzado el intervalo de revisión. No es una avería.",
+     "causas": [
+      "Tiempo de servicio cumplido"
+     ],
+     "que_puede_hacer_el_cliente": "La caldera sigue funcionando. Concertar la revisión con el técnico.",
+     "pieza_probable": "",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/junkers/download/pdf/file/6720817051",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "Euroline: reset y LED 2 (45°) parpadean"
+     ],
+     "significado": "Euroline sin pantalla: la sonda limitadora ha detectado sobrecalentamiento y la caldera se apaga poco después de encender.",
+     "causas": [
+      "Llaves de ida y retorno cerradas",
+      "Aire en la instalación",
+      "Bomba bloqueada"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que las llaves bajo la caldera están abiertas y la presión entre 1 y 2 bar. Pulsar el botón de rearme una vez. Si se repite, técnico.",
+     "pieza_probable": "bomba, sonda limitadora",
+     "fuente": "https://blog.suner.es/hubfs/Manuales/Manual%20de%20las%20calderas%20Junkers%20Euroline%20ZS%2023-1%20AE23%2031%20-%20ZW%2023-1%20AE%2023%2031.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "Euroline: reset y LED 3 (60°) parpadean"
+     ],
+     "significado": "Euroline sin pantalla: no hay señal de llama (no enciende).",
+     "causas": [
+      "Falta de gas",
+      "Sistema de encendido (electrodo, electroválvulas)"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que la llave del gas está abierta y hay gas (bombona de butano no vacía ni congelada). Rearmar una vez. Si sigue, técnico.",
+     "pieza_probable": "electrodo de ionización, válvula de gas",
+     "fuente": "https://blog.suner.es/hubfs/Manuales/Manual%20de%20las%20calderas%20Junkers%20Euroline%20ZS%2023-1%20AE23%2031%20-%20ZW%2023-1%20AE%2023%2031.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "Euroline: reset y LED 2 y 5 parpadean"
+     ],
+     "significado": "Euroline sin pantalla: ha actuado el presostato de humos; puede notarse olor a gases quemados.",
+     "causas": [
+      "Salida de humos obstruida o sucia",
+      "Presostato o sus conexiones"
+     ],
+     "que_puede_hacer_el_cliente": "Es un aviso de humos: ventilar, apagar la caldera y no rearmar repetidamente. Llamar al técnico.",
+     "pieza_probable": "presostato de humos",
+     "fuente": "https://blog.suner.es/hubfs/Manuales/Manual%20de%20las%20calderas%20Junkers%20Euroline%20ZS%2023-1%20AE23%2031%20-%20ZW%2023-1%20AE%2023%2031.pdf",
+     "confianza": "alta"
+    }
+   ]
+  },
+  {
+   "familia": "Saunier Duval calderas",
+   "marcas": [
+    "Saunier Duval"
+   ],
+   "notas": "Saunier Duval pertenece al mismo grupo que Vaillant y sus calderas actuales (Thema Condens, Thelia Condens, Semia Condens, Isofast Condens) usan los mismos códigos F.xx con el mismo significado. El cliente lo dice como 'F28', 'F22'. El manual de usuario indica que ante cualquier F.xx se llame a un instalador, salvo F.22 (rellenar agua) y F.28 (pulsar reset; si tras 3 intentos no arranca, técnico). Presión de llenado recomendada: 1,0 a 1,5 bar; aviso por debajo de 0,5 bar; mínimo de servicio 0,3 bar. En modelos antiguos sin pantalla (Isofast antiguas, Themafast) los avisos pueden ser distintos.",
+   "codigos": [
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.22",
+      "F22"
+     ],
+     "significado": "Falta de agua en la instalación de calefacción (presión insuficiente).",
+     "causas": [
+      "Pérdida de agua en el circuito",
+      "Sensor de presión de agua averiado",
+      "Cable de la bomba o del sensor de presión desconectado o averiado"
+     ],
+     "que_puede_hacer_el_cliente": "Rellenar con el grifo de llenado, abriéndolo despacio, hasta 1,0 a 1,5 bar y cerrarlo. Si la presión baja con frecuencia, llamar al instalador.",
+     "pieza_probable": "sensor de presión de agua; vaso de expansión o válvula de seguridad si pierde a menudo",
+     "fuente": "https://www.saunierduval.es/downloads/semia-condens-1/semia-condens-30/semia-condes-30-manual-de-usuario-1301266.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.28",
+      "F28"
+     ],
+     "significado": "Fallo de encendido: tras tres intentos fallidos la caldera pasa a avería.",
+     "causas": [
+      "Llave del gas cerrada, contador averiado o presión de gas insuficiente",
+      "Conducto de condensados obstruido",
+      "Electrodo de encendido, transformador o cableado averiado",
+      "Entrada de aire o salida de humos obstruidas",
+      "Válvula de gas o electrónica"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que las llaves del gas están abiertas. Pulsar la tecla de reset: la caldera hace un nuevo intento. Si tras 3 intentos no se resuelve, llamar al técnico. Si huele a gas, ventilar, salir y llamar a urgencias del gas.",
+     "pieza_probable": "electrodo de encendido/ionización, válvula de gas",
+     "fuente": "https://www.saunierduval.es/downloads/semia-condens-1/semia-condens-30/semia-condes-30-manual-de-usuario-1301266.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.29",
+      "F29"
+     ],
+     "significado": "La llama se apaga durante el funcionamiento y fallan los intentos de volver a encender.",
+     "causas": [
+      "Suministro de gas interrumpido temporalmente",
+      "Recirculación de humos o salida de humos obstruida",
+      "Conducto de condensados obstruido",
+      "Toma de tierra incorrecta"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que hay gas y que la salida de condensados no está atascada o congelada. Pulsar reset una vez. Si se repite, técnico.",
+     "pieza_probable": "electrodo de ionización",
+     "fuente": "https://www.saunierduval.es/downloads/thema-condens/thema-condens-as-30/thema-condens-as-30-manual-de-instalacion-1297822.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.20",
+      "F20"
+     ],
+     "significado": "Desconexión de seguridad por sobretemperatura (limitador de temperatura).",
+     "causas": [
+      "Bomba bloqueada o aire en el circuito",
+      "Sonda NTC de ida o retorno averiada",
+      "Válvula de prioridad bloqueada o desconectada"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la presión y que las llaves de radiadores no están todas cerradas. Reset una vez; si se repite, técnico.",
+     "pieza_probable": "bomba de circulación, sonda NTC, válvula de tres vías",
+     "fuente": "https://www.saunierduval.es/downloads/thema-condens/thema-condens-as-30/thema-condens-as-30-manual-de-instalacion-1297822.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.23",
+      "F.24",
+      "F23",
+      "F24"
+     ],
+     "significado": "Desconexión de seguridad: diferencia de temperatura excesiva o subida de temperatura demasiado rápida (el agua no circula bien).",
+     "causas": [
+      "Bomba bloqueada o con poca potencia",
+      "Aire en la caldera",
+      "Presión de la instalación insuficiente"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la presión y rellenar hasta 1,0 a 1,5 bar si está baja. Si persiste, técnico.",
+     "pieza_probable": "bomba de circulación",
+     "fuente": "https://www.saunierduval.es/downloads/thema-condens/thema-condens-as-30/thema-condens-as-30-manual-de-instalacion-1297822.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.27",
+      "F27"
+     ],
+     "significado": "Detección de llama incorrecta (detecta llama sin que deba haberla).",
+     "causas": [
+      "Humedad en la electrónica",
+      "Control de llama averiado",
+      "Electroválvula de gas no estanca"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar y avisar al técnico si se repite.",
+     "pieza_probable": "placa electrónica, válvula de gas",
+     "fuente": "https://www.saunierduval.es/downloads/thema-condens/thema-condens-as-30/thema-condens-as-30-manual-de-instalacion-1297822.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.32",
+      "F32"
+     ],
+     "significado": "Fallo del ventilador.",
+     "causas": [
+      "Conector del ventilador mal insertado o cableado interrumpido",
+      "Ventilador bloqueado",
+      "Suministro de aire o extracción de humos obstruidos",
+      "Fallo de electrónica"
+     ],
+     "que_puede_hacer_el_cliente": "No rearmar repetidamente. Si huele a humo, ventilar y apagar. Avisar al técnico.",
+     "pieza_probable": "ventilador",
+     "fuente": "https://www.saunierduval.es/downloads/thema-condens/thema-condens-as-30/thema-condens-as-30-manual-de-instalacion-1297822.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.54",
+      "F54"
+     ],
+     "significado": "Fallo en la presión de gas (suele ir con F.28 o F.29).",
+     "causas": [
+      "Llave de gas cerrada",
+      "Presión de gas inexistente o demasiado baja"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la llave del gas y si hay gas en otros aparatos. Si falta en toda la casa, avisar a la distribuidora.",
+     "pieza_probable": "",
+     "fuente": "https://www.saunierduval.es/downloads/thema-condens/thema-condens-as-30/thema-condens-as-30-manual-de-instalacion-1297822.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.61",
+      "F.62",
+      "F.63",
+      "F61",
+      "F62",
+      "F63"
+     ],
+     "significado": "Fallo de control de la válvula de gas (F.61), retardo de cierre de la válvula de gas (F.62) o fallo de memoria EEPROM (F.63).",
+     "causas": [
+      "Cableado de la válvula de gas",
+      "Válvula de gas averiada o no estanca",
+      "Placa electrónica"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar y llamar al técnico.",
+     "pieza_probable": "válvula de gas, placa electrónica",
+     "fuente": "https://www.saunierduval.es/downloads/thema-condens/thema-condens-as-30/thema-condens-as-30-manual-de-instalacion-1297822.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.73",
+      "F.74",
+      "F73",
+      "F74"
+     ],
+     "significado": "Señal del sensor de presión de agua fuera de rango.",
+     "causas": [
+      "Sensor de presión de agua averiado",
+      "Cable del sensor en cortocircuito o interrumpido"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que la presión real está entre 1,0 y 1,5 bar. Si es correcta y sigue el código, técnico.",
+     "pieza_probable": "sensor de presión de agua",
+     "fuente": "https://www.saunierduval.es/downloads/thema-condens/thema-condens-as-30/thema-condens-as-30-manual-de-instalacion-1297822.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.00",
+      "F.01",
+      "F.10",
+      "F.11"
+     ],
+     "significado": "Sonda de temperatura de ida o de retorno interrumpida (F.00, F.01) o en cortocircuito (F.10, F.11).",
+     "causas": [
+      "Sonda NTC averiada",
+      "Conector o cableado"
+     ],
+     "que_puede_hacer_el_cliente": "Avisar al técnico.",
+     "pieza_probable": "sonda NTC",
+     "fuente": "https://www.saunierduval.es/downloads/thema-condens/thema-condens-as-30/thema-condens-as-30-manual-de-instalacion-1297822.pdf",
+     "confianza": "alta"
+    }
+   ]
+  },
+  {
+   "familia": "Vaillant calderas",
+   "marcas": [
+    "Vaillant"
+   ],
+   "notas": "En las murales Vaillant (ecoTEC, ecoTEC plus, ecoTEC pro, turboTEC) el código aparece en la pantalla como F. seguido de dos cifras (F.22, F.28...). El cliente suele decirlo sin el punto: 'F28', 'efe veintiocho'. Los S.xx (S.0, S.4, S.31...) NO son averías, son estados de funcionamiento. La tecla de rearme (reset o 'eliminación de averías') se pulsa unos segundos; el manual dice que si tras 3 intentos no arranca, hay que llamar a una empresa autorizada. Presión de llenado recomendada por Vaillant: entre 1,0 y 2,0 bar en frío (ecoCRAFT); a partir de 0,6 bar la pantalla avisa parpadeando y por debajo de 0,3 bar se bloquea con F.22. Ojo: el significado de F.32 cambia según el modelo (en ecoTEC plus es ventilador; en la ecoCRAFT de pie es 'peligro de salida de gases').",
+   "codigos": [
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.22",
+      "F22"
+     ],
+     "significado": "Falta de agua: presión del circuito de calefacción demasiado baja (por debajo de unos 0,3 bar). La caldera se bloquea.",
+     "causas": [
+      "Presión baja por pérdida de agua en el circuito (fuga, purgado de radiadores, válvula de seguridad que gotea)",
+      "Sensor de presión de agua averiado",
+      "Cable de la bomba o del sensor de presión suelto o averiado"
+     ],
+     "que_puede_hacer_el_cliente": "Mirar el manómetro o la pantalla. Si está baja, subir la presión con el grifo de llenado hasta 1 a 2 bar en frío y cerrarlo. La caldera vuelve a arrancar sola al superar 0,6 bar. Si tiene que rellenar a menudo, hay una fuga y debe verla un técnico.",
+     "pieza_probable": "sensor de presión de agua, válvula de seguridad o vaso de expansión si pierde presión a menudo",
+     "fuente": "https://www.vaillant.es/product-images/0020149571-04.pdf.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.28",
+      "F28"
+     ],
+     "significado": "Fallo de encendido al arrancar: el quemador no se ha encendido tras varios intentos y la caldera se bloquea.",
+     "causas": [
+      "Sin gas o llave del gas cerrada, contador de gas cortado o presión de gas insuficiente",
+      "Conducto de condensados obstruido",
+      "Electrodo de encendido o ionización, transformador de encendido o cableado averiado",
+      "Válvula de gas averiada o placa electrónica"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que la llave del gas de la caldera y la general están abiertas y que otros aparatos de gas funcionan (en propano, que el depósito o la bombona tiene gas). Si la llave estaba cerrada sin saber por qué, no abrirla sin consultar al instalador. Pulsar reset una vez. Si vuelve a salir, llamar al técnico. Si huele a gas, no tocar nada eléctrico, ventilar, salir y llamar a urgencias del gas.",
+     "pieza_probable": "electrodo de encendido o ionización, válvula de gas",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/vaillant/wp-content/uploads/2020/03/manual-de-instalacion-Vaillant-Ecotec-Plus-VMW-VM.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.29",
+      "F29"
+     ],
+     "significado": "La llama se apaga durante el funcionamiento y no consigue volver a encender.",
+     "causas": [
+      "Suministro de gas interrumpido temporalmente",
+      "Recirculación de humos o conducto de condensados obstruido",
+      "Toma de tierra incorrecta",
+      "Fallo del transformador de encendido"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que la llave del gas está abierta y que hay gas en casa. Comprobar que la salida de condensados no está congelada ni atascada. Pulsar reset una vez. Si se repite, avisar al técnico.",
+     "pieza_probable": "electrodo de ionización, transformador de encendido",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/vaillant/wp-content/uploads/2020/03/manual-de-instalacion-Vaillant-Ecotec-Plus-VMW-VM.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.32",
+      "F32"
+     ],
+     "significado": "En ecoTEC plus: fallo del ventilador. En la ecoCRAFT exclusiv (de pie): problema en el conducto de aire, de humos o en la descarga de condensados, con peligro de salida de gases. Depende del modelo.",
+     "causas": [
+      "Ventilador bloqueado o averiado, conector suelto",
+      "Salida de humos o entrada de aire obstruida",
+      "Descarga de condensados obstruida"
+     ],
+     "que_puede_hacer_el_cliente": "No rearmar repetidamente. Si huele a humo o gases: abrir ventanas, apagar la caldera y llamar al técnico. Si no hay olor, pulsar reset una vez y avisar si se repite.",
+     "pieza_probable": "ventilador",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/vaillant/wp-content/uploads/2020/03/manual-de-instalacion-Vaillant-Ecotec-Plus-VMW-VM.pdf",
+     "confianza": "media"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.20",
+      "F20"
+     ],
+     "significado": "Desconexión de seguridad por sobretemperatura (limitador de temperatura).",
+     "causas": [
+      "Bomba bloqueada o aire en el circuito",
+      "Sonda NTC de ida o retorno con contacto flojo o averiada",
+      "Descarga eléctrica por cable o electrodo de encendido"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la presión del agua y que las llaves de los radiadores no están todas cerradas. Pulsar reset una vez. Si se repite, avisar al técnico.",
+     "pieza_probable": "bomba de circulación, sonda NTC",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/vaillant/wp-content/uploads/2020/03/manual-de-instalacion-Vaillant-Ecotec-Plus-VMW-VM.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.23",
+      "F.24",
+      "F23",
+      "F24"
+     ],
+     "significado": "Desconexión de seguridad: la temperatura sube demasiado rápido o hay demasiada diferencia entre ida y retorno. Normalmente el agua no circula bien.",
+     "causas": [
+      "Bomba bloqueada o con poca potencia",
+      "Aire en la caldera o en el circuito",
+      "Presión de la instalación insuficiente",
+      "Sondas de ida y retorno intercambiadas"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la presión (1 a 2 bar en frío) y rellenar si está baja. Comprobar que las llaves de corte de la caldera y de los radiadores están abiertas. Si persiste, técnico.",
+     "pieza_probable": "bomba de circulación, purgador automático",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/vaillant/wp-content/uploads/2020/03/manual-de-instalacion-Vaillant-Ecotec-Plus-VMW-VM.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.25",
+      "F25"
+     ],
+     "significado": "Desconexión de seguridad: temperatura de humos muy alta.",
+     "causas": [
+      "Actuación del limitador de temperatura de humos",
+      "Cableado interrumpido del limitador"
+     ],
+     "que_puede_hacer_el_cliente": "Es un código de humos: no rearmar repetidamente. Si huele a humo, ventilar, apagar la caldera y llamar al técnico.",
+     "pieza_probable": "limitador de temperatura de humos",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/vaillant/wp-content/uploads/2020/03/manual-de-instalacion-Vaillant-Ecotec-Plus-VMW-VM.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.27",
+      "F27"
+     ],
+     "significado": "Simulación de llama: la caldera detecta llama cuando no debería haberla.",
+     "causas": [
+      "Humedad en la electrónica",
+      "Control de llama de la placa averiado",
+      "Electroválvula de gas que no cierra bien"
+     ],
+     "que_puede_hacer_el_cliente": "Pulsar reset una vez. Si se repite, apagar y avisar al técnico.",
+     "pieza_probable": "placa electrónica, válvula de gas",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/vaillant/wp-content/uploads/2020/03/manual-de-instalacion-Vaillant-Ecotec-Plus-VMW-VM.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.54",
+      "F54"
+     ],
+     "significado": "Presión de entrada de gas inexistente o demasiado baja (suele salir junto a F.28 o F.29).",
+     "causas": [
+      "Llave del gas cerrada",
+      "Corte de suministro o presión de gas insuficiente",
+      "En propano, depósito o bombona vacíos o regulador mal"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que la llave del gas está abierta y si hay gas en otros aparatos (cocina). Si no hay gas en toda la casa, llamar a la compañía o al distribuidor de gas. Si huele a gas, ventilar, salir y llamar a urgencias del gas.",
+     "pieza_probable": "",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/vaillant/wp-content/uploads/2020/03/manual-de-instalacion-Vaillant-Ecotec-Plus-VMW-VM.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.61",
+      "F.62",
+      "F61",
+      "F62"
+     ],
+     "significado": "Fallo en la válvula de gas: no se puede activar (F.61) o cierra con retraso tras apagarse la llama (F.62).",
+     "causas": [
+      "Cortocircuito o conexión a masa en el cableado de la válvula de gas",
+      "Válvula de gas averiada o que no cierra bien",
+      "Fallo de la electrónica"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar la caldera y llamar al técnico. No manipular nada del gas.",
+     "pieza_probable": "válvula de gas, placa electrónica",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/vaillant/wp-content/uploads/2020/03/manual-de-instalacion-Vaillant-Ecotec-Plus-VMW-VM.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.63",
+      "F.64",
+      "F.65",
+      "F63",
+      "F64",
+      "F65"
+     ],
+     "significado": "Fallo de la electrónica (memoria EEPROM, NTC en cortocircuito o placa demasiado caliente).",
+     "causas": [
+      "Placa electrónica averiada",
+      "Cortocircuito en la sonda de ida o retorno",
+      "Electrónica recalentada por causa externa"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar y encender la caldera desde el interruptor una vez. Si sigue, técnico.",
+     "pieza_probable": "placa electrónica",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/vaillant/wp-content/uploads/2020/03/manual-de-instalacion-Vaillant-Ecotec-Plus-VMW-VM.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.00",
+      "F.01",
+      "F.10",
+      "F.11",
+      "F00",
+      "F01",
+      "F10",
+      "F11"
+     ],
+     "significado": "Avería de la sonda de temperatura de ida (F.00 interrumpida, F.10 en cortocircuito) o de retorno (F.01 interrumpida, F.11 en cortocircuito).",
+     "causas": [
+      "Conector de la sonda NTC suelto",
+      "Cableado interrumpido o en cortocircuito",
+      "Sonda NTC averiada"
+     ],
+     "que_puede_hacer_el_cliente": "No hay comprobación de usuario. Avisar al técnico.",
+     "pieza_probable": "sonda NTC de ida o de retorno",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/vaillant/wp-content/uploads/2020/03/manual-de-instalacion-Vaillant-Ecotec-Plus-VMW-VM.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.68",
+      "F68"
+     ],
+     "significado": "Señal de llama inestable.",
+     "causas": [
+      "Aire en el gas o presión de gas insuficiente",
+      "Conducto de condensados obstruido",
+      "Recirculación de humos",
+      "Electrodo o cable de ionización"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que la salida de condensados no está congelada ni atascada. Si se repite, avisar al técnico.",
+     "pieza_probable": "electrodo de ionización",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/vaillant/wp-content/uploads/2020/03/manual-de-instalacion-Vaillant-Ecotec-Plus-VMW-VM.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.73",
+      "F.74",
+      "F73",
+      "F74"
+     ],
+     "significado": "Señal del sensor de presión de agua fuera de rango (F.73 demasiado baja, F.74 demasiado alta).",
+     "causas": [
+      "Sensor de presión de agua averiado",
+      "Cable del sensor interrumpido o en cortocircuito"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar en el manómetro que la presión está entre 1 y 2 bar en frío. Si la presión es correcta y sigue el código, técnico.",
+     "pieza_probable": "sensor de presión de agua",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/vaillant/wp-content/uploads/2020/03/manual-de-instalacion-Vaillant-Ecotec-Plus-VMW-VM.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.75",
+      "F75"
+     ],
+     "significado": "No se detecta el cambio de presión al arrancar la bomba.",
+     "causas": [
+      "Aire en la instalación de calefacción",
+      "Poca agua en el aparato",
+      "Sensor de presión de agua o bomba averiados",
+      "Vaso de expansión mal conectado"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la presión y rellenar hasta 1 a 2 bar en frío si está baja. Si persiste, técnico.",
+     "pieza_probable": "sensor de presión de agua, bomba de circulación",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/vaillant/wp-content/uploads/2020/03/manual-de-instalacion-Vaillant-Ecotec-Plus-VMW-VM.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F.83",
+      "F83"
+     ],
+     "significado": "Al arrancar el quemador las sondas de ida o retorno no registran cambio de temperatura (suele indicar poca agua).",
+     "causas": [
+      "Poca agua en la caldera",
+      "Sonda mal colocada en el tubo"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la presión y rellenar si está baja. Si persiste, técnico.",
+     "pieza_probable": "sonda NTC",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/vaillant/wp-content/uploads/2020/03/manual-de-instalacion-Vaillant-Ecotec-Plus-VMW-VM.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "S.xx (S.0, S.4, S.31...)"
+     ],
+     "significado": "No es una avería: son códigos de estado (S.0 sin demanda de calor, S.4 quemador encendido, S.31 modo verano, S.34 antihielo...).",
+     "causas": [
+      "Funcionamiento normal"
+     ],
+     "que_puede_hacer_el_cliente": "Nada. Si no calienta con S.31, comprobar que no está en modo verano o con la calefacción desactivada en el termostato.",
+     "pieza_probable": "",
+     "fuente": "https://www.vaillant.es/product-images/0020149571-04.pdf.pdf",
+     "confianza": "alta"
+    }
+   ]
+  },
+  {
+   "familia": "Viessmann calderas",
+   "marcas": [
+    "Viessmann"
+   ],
+   "notas": "Las Viessmann (Vitodens, Vitopend) muestran códigos de dos caracteres (F4, F9, 10, 18...). El propio fabricante avisa de que el diagnóstico puede variar según la caldera. No se encontró tabla oficial en español; las fuentes son la web de Viessmann Reino Unido y guías de apoyo.",
+   "codigos": [
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F4"
+     ],
+     "significado": "La caldera ha intentado encender y no ha detectado llama (el más frecuente en Vitodens 100-W).",
+     "causas": [
+      "Falta de gas o llave cerrada",
+      "Electrodo de ionización",
+      "Salida de humos obstruida"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la llave del gas. Rearmar una vez. Si se repite, técnico.",
+     "pieza_probable": "electrodo de ionización",
+     "fuente": "https://iheat.co.uk/boiler-help/common-viessmann-boiler-error-codes",
+     "confianza": "media"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "F6",
+      "58",
+      "F9",
+      "F-E1",
+      "F-E2",
+      "F-F6"
+     ],
+     "significado": "Quemador en avería o en funcionamiento de emergencia: ventilador que no se para o conexión del ventilador.",
+     "causas": [
+      "Ventilador o su conector"
+     ],
+     "que_puede_hacer_el_cliente": "Avisar al técnico.",
+     "pieza_probable": "ventilador",
+     "fuente": "https://viessmann.co.uk/support/fault-codes",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "10",
+      "18"
+     ],
+     "significado": "Sonda de temperatura exterior en cortocircuito (10) o cable roto (18). La caldera funciona como si fuera 0 °C fuera.",
+     "causas": [
+      "Sonda exterior o su cable"
+     ],
+     "que_puede_hacer_el_cliente": "La caldera sigue funcionando. Avisar al técnico.",
+     "pieza_probable": "sonda exterior",
+     "fuente": "https://viessmann.co.uk/support/fault-codes",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "0C",
+      "OC"
+     ],
+     "significado": "En Vitodens 100-W: quemador bloqueado por alimentación eléctrica insuficiente.",
+     "causas": [
+      "Tensión de red baja"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la luz y el diferencial. Si persiste, técnico.",
+     "pieza_probable": "",
+     "fuente": "https://viessmann.co.uk/support/fault-codes",
+     "confianza": "alta"
+    }
+   ]
+  },
+  {
+   "familia": "Wolf calderas",
+   "marcas": [
+    "Wolf"
+   ],
+   "notas": "Las Wolf de condensación (CGB-2, CGU-2) muestran un número de código de avería. Solo se han podido verificar los códigos de encendido en manuales en inglés de modelos de la misma familia; confirmar con el manual del modelo.",
+   "codigos": [
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "4"
+     ],
+     "significado": "No se establece llama al arrancar el quemador.",
+     "causas": [
+      "Falta de gas o llave cerrada",
+      "Electrodo de ionización o su cable"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar la llave del gas y la presión del agua. Pulsar reset una vez. Si se repite, técnico.",
+     "pieza_probable": "electrodo de ionización",
+     "fuente": "https://www.manualslib.com/manual/1333613/Wolf-Cgu-2-18.html?page=62",
+     "confianza": "media"
+    },
+    {
+     "aparato": "caldera",
+     "codigos": [
+      "5"
+     ],
+     "significado": "Pérdida de llama durante el funcionamiento.",
+     "causas": [
+      "Suministro de gas",
+      "Electrodo de ionización",
+      "Salida de humos"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que hay gas. Pulsar reset una vez. Si se repite, técnico.",
+     "pieza_probable": "electrodo de ionización",
+     "fuente": "https://www.manualslib.com/manual/1333613/Wolf-Cgu-2-18.html?page=62",
+     "confianza": "media"
+    }
+   ]
+  },
+  {
    "familia": "Beko",
    "marcas": [
     "Beko",
@@ -9581,6 +11669,514 @@ export default {
    "fuentes": [
     "https://fujitsu-general.com/th/en/support/faq/split/0084.html",
     "https://www.samsung.com/ar/support/home-appliances/error-codes-on-your-samsung-indoor-air-conditioner/"
+   ]
+  },
+  {
+   "aparato": "caldera",
+   "sintoma": "Olor a gas cerca de la caldera o en casa",
+   "palabras": [
+    "huele a gas",
+    "me huele a gas en la cocina",
+    "creo que hay una fuga de gas",
+    "huele raro en el cuarto de la caldera"
+   ],
+   "causas": [
+    "Fuga en la instalación de gas o en la caldera"
+   ],
+   "que_puede_hacer_el_cliente": "SEGURIDAD: no encender ni apagar luces ni enchufes, no usar el timbre ni el móvil dentro, no fumar ni hacer llama. Abrir puertas y ventanas, cerrar la llave del gas del contador o la general, salir de la vivienda avisando a los vecinos sin tocar timbres, y llamar desde fuera al teléfono de urgencias de la distribuidora de gas o al 112. Solo una empresa habilitada de gas puede reparar.",
+   "pieza_probable": "",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://www.vaillant.es/product-images/0020149571-04.pdf.pdf",
+    "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/junkers/download/pdf/file/6720817051"
+   ]
+  },
+  {
+   "aparato": "caldera",
+   "sintoma": "Olor a humo o a gases quemados, o salta el detector de monóxido",
+   "palabras": [
+    "huele a quemado en la caldera",
+    "huele a humo",
+    "me ha pitado el detector de monóxido",
+    "sale humo de la caldera",
+    "me duele la cabeza cuando está la caldera"
+   ],
+   "causas": [
+    "Salida de humos obstruida o con fugas",
+    "Sifón de condensados vacío (en condensación)",
+    "Mala combustión"
+   ],
+   "que_puede_hacer_el_cliente": "SEGURIDAD: abrir puertas y ventanas, apagar la caldera y no volver a encenderla. Si hay detector de CO sonando o alguien se encuentra mal (dolor de cabeza, mareo), salir de la vivienda y llamar al 112. Avisar al técnico antes de volver a usarla.",
+   "pieza_probable": "conducto de humos",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://www.vaillant.es/product-images/0020149571-04.pdf.pdf",
+    "https://www.saunierduval.es/downloads/semia-condens-1/semia-condens-30/semia-condes-30-manual-de-usuario-1301266.pdf"
+   ]
+  },
+  {
+   "aparato": "caldera",
+   "sintoma": "Ni agua caliente ni calefacción, la caldera no hace nada",
+   "palabras": [
+    "no tengo ni agua caliente ni calefacción",
+    "la caldera no enciende",
+    "la caldera está muerta",
+    "no se enciende nada en la caldera",
+    "la pantalla está apagada"
+   ],
+   "causas": [
+    "Llave del gas cerrada o sin suministro",
+    "Sin corriente: ha saltado el diferencial o el enchufe",
+    "Interruptor de la caldera apagado o en standby",
+    "Presión de agua baja",
+    "Temperaturas o termostato muy bajos",
+    "Fallo de encendido (bloqueo)"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que hay luz en casa y que no ha saltado el diferencial; que la caldera está encendida; que la llave del gas está abierta y hay gas en la cocina o en la bombona; mirar el manómetro (rellenar si está por debajo de 1 bar en frío); mirar si la pantalla muestra un código y pulsar reset una vez. Si sigue, técnico.",
+   "pieza_probable": "electrodo de encendido, placa electrónica",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.vaillant.es/product-images/0020149571-04.pdf.pdf",
+    "https://www.saunierduval.es/downloads/semia-condens-1/semia-condens-30/semia-condes-30-manual-de-usuario-1301266.pdf"
+   ]
+  },
+  {
+   "aparato": "caldera",
+   "sintoma": "La caldera está bloqueada con un código o una luz roja",
+   "palabras": [
+    "la caldera se bloquea",
+    "me sale un error en la caldera",
+    "parpadea una luz roja",
+    "se ha quedado bloqueada",
+    "pone error y no arranca"
+   ],
+   "causas": [
+    "Fallo de encendido por gas",
+    "Presión de agua baja",
+    "Sobrecalentamiento",
+    "Problema de humos o ventilador"
+   ],
+   "que_puede_hacer_el_cliente": "Pedir la marca y el código exacto que aparece. Comprobar gas, luz y presión. Pulsar reset UNA vez. Si vuelve a bloquearse, no insistir y pedir técnico. Si el código es de humos, no rearmar.",
+   "pieza_probable": "depende del código",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/junkers/download/pdf/file/6720817051",
+    "https://www.bosch-homecomfort.com/es/es/conocimiento/calefaccion/averias-comunes-en-las-calderas/"
+   ]
+  },
+  {
+   "aparato": "caldera",
+   "sintoma": "Hay calefacción pero no sale agua caliente",
+   "palabras": [
+    "no tengo agua caliente",
+    "la calefacción va pero el agua sale fría",
+    "no me sale agua caliente en la ducha",
+    "el agua caliente no funciona"
+   ],
+   "causas": [
+    "Temperatura de agua caliente muy baja o agua caliente desactivada en la caldera o el termostato",
+    "Válvula de tres vías averiada",
+    "Sensor de caudal (flujostato) o filtro de entrada de agua fría sucio",
+    "Intercambiador de placas obstruido por cal",
+    "Sonda de agua caliente"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que el agua caliente está activada en la caldera y la temperatura no está al mínimo. Probar en otro grifo abriéndolo bastante. Si sigue, técnico.",
+   "pieza_probable": "válvula de tres vías, flujostato, intercambiador de placas",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.vaillant.es/product-images/0020149571-04.pdf.pdf",
+    "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/junkers/download/pdf/file/6720892004"
+   ]
+  },
+  {
+   "aparato": "caldera",
+   "sintoma": "Hay agua caliente pero la calefacción no funciona",
+   "palabras": [
+    "los radiadores no calientan",
+    "la calefacción no va",
+    "el agua caliente sí pero los radiadores fríos",
+    "no se enciende la calefacción"
+   ],
+   "causas": [
+    "Termostato o programador sin demanda, mal programado o sin pilas",
+    "Caldera en modo verano o temperatura de calefacción muy baja",
+    "Aire en la instalación",
+    "Bomba o válvula de tres vías"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que la caldera no está en modo verano o solo agua caliente; subir el termostato por encima de la temperatura de la casa y revisar sus pilas y el horario; comprobar la presión. Si sigue, técnico.",
+   "pieza_probable": "termostato, válvula de tres vías, bomba",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.vaillant.es/product-images/0020149571-04.pdf.pdf",
+    "https://www.saunierduval.es/downloads/semia-condens-1/semia-condens-30/semia-condes-30-manual-de-usuario-1301266.pdf"
+   ]
+  },
+  {
+   "aparato": "caldera",
+   "sintoma": "La caldera pierde presión o hay que rellenar a menudo",
+   "palabras": [
+    "se queda sin presión",
+    "la aguja baja a cero",
+    "tengo que meterle agua cada dos por tres",
+    "pierde presión",
+    "el manómetro marca menos de uno"
+   ],
+   "causas": [
+    "Fuga en radiadores, tuberías o en la caldera",
+    "Válvula de seguridad que descarga",
+    "Vaso de expansión sin carga o pinchado",
+    "Purgado reciente de radiadores"
+   ],
+   "que_puede_hacer_el_cliente": "Rellenar en frío con el grifo de llenado hasta el rango de su caldera (normalmente 1 a 1,5 bar) y cerrarlo bien. Buscar manchas o goteo bajo la caldera y en radiadores. Si vuelve a bajar en pocos días, técnico: rellenar no lo arregla.",
+   "pieza_probable": "vaso de expansión, válvula de seguridad",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.repsol.es/particulares/asesoramiento-consumo/averias-calderas/",
+    "https://www.bosch-homecomfort.com/es/es/conocimiento/calefaccion/averias-comunes-en-las-calderas/"
+   ]
+  },
+  {
+   "aparato": "caldera",
+   "sintoma": "La presión sube demasiado (más de 2,5 a 3 bar) o gotea la válvula de seguridad",
+   "palabras": [
+    "la presión está muy alta",
+    "marca casi tres bares",
+    "sale agua por un tubito de la caldera",
+    "gotea por debajo cuando calienta"
+   ],
+   "causas": [
+    "Grifo de llenado mal cerrado o que pasa agua",
+    "Vaso de expansión sin carga",
+    "Sobrellenado"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que el grifo de llenado está bien cerrado. Si la presión está alta en frío, se puede bajar purgando un poco un radiador (con la calefacción apagada y fría). Si sigue subiendo, técnico.",
+   "pieza_probable": "grifo de llenado, vaso de expansión, válvula de seguridad",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.saunierduval.es/downloads/semia-condens-1/semia-condens-30/semia-condes-30-manual-de-usuario-1301266.pdf",
+    "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/junkers/download/pdf/file/6720817051"
+   ]
+  },
+  {
+   "aparato": "caldera",
+   "sintoma": "Gotea agua por debajo de la caldera",
+   "palabras": [
+    "la caldera gotea",
+    "hay un charco debajo de la caldera",
+    "sale agua de la caldera",
+    "pierde agua por abajo"
+   ],
+   "causas": [
+    "Desagüe de condensados atascado (calderas de condensación)",
+    "Fuga en la caldera o en las conexiones",
+    "Válvula de seguridad descargando por exceso de presión"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que el tubo de desagüe de condensados no está atascado. Si es una fuga de la instalación o la caldera, cerrar la llave de agua fría de la caldera y avisar al técnico. Proteger el suelo.",
+   "pieza_probable": "sifón de condensados, juntas, válvula de seguridad",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.vaillant.es/product-images/0020149571-04.pdf.pdf"
+   ]
+  },
+  {
+   "aparato": "caldera",
+   "sintoma": "Los radiadores están fríos por arriba y calientes por abajo",
+   "palabras": [
+    "el radiador está frío por arriba",
+    "solo calienta la parte de abajo",
+    "hace gluglú el radiador",
+    "se oye agua correr en los radiadores"
+   ],
+   "causas": [
+    "Aire en los radiadores"
+   ],
+   "que_puede_hacer_el_cliente": "Purgar los radiadores con la calefacción apagada y fría, empezando por los más cercanos a la caldera, con un recipiente y un trapo. Después comprobar la presión y rellenar hasta 1 a 1,5 bar en frío si ha bajado.",
+   "pieza_probable": "",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.bosch-homecomfort.com/es/es/conocimiento/calefaccion/averias-comunes-en-las-calderas/",
+    "https://www.xatakahome.com/hogar/ocu-expertos-dejan-claro-asi-debes-purgar-radiadores-no-quieres-averias-riesgos-al-encender-calefaccion"
+   ]
+  },
+  {
+   "aparato": "caldera",
+   "sintoma": "Algunos radiadores no calientan o calientan poco",
+   "palabras": [
+    "hay radiadores que no calientan",
+    "el radiador del fondo está frío",
+    "la casa no llega a la temperatura",
+    "calienta poco"
+   ],
+   "causas": [
+    "Válvulas termostáticas cerradas o agarrotadas",
+    "Aire en la instalación",
+    "Temperatura de calefacción de la caldera baja",
+    "Termostato ambiente bajo",
+    "Presión baja"
+   ],
+   "que_puede_hacer_el_cliente": "Abrir las válvulas o cabezales de esos radiadores; purgar; subir la temperatura de calefacción en la caldera y el termostato; comprobar la presión. Si sigue, técnico.",
+   "pieza_probable": "válvula termostática, bomba",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/junkers/download/pdf/file/6720817051",
+    "https://www.bosch-homecomfort.com/es/es/conocimiento/calefaccion/averias-comunes-en-las-calderas/"
+   ]
+  },
+  {
+   "aparato": "caldera",
+   "sintoma": "El agua caliente sale templada o cambia de temperatura",
+   "palabras": [
+    "el agua sale templada",
+    "el agua caliente no calienta del todo",
+    "sale caliente y luego fría",
+    "no llega a salir caliente"
+   ],
+   "causas": [
+    "Temperatura de agua caliente baja en la caldera",
+    "Caudal del grifo demasiado alto",
+    "Aire en la instalación o presión baja",
+    "Intercambiador de agua caliente con cal",
+    "En butano, bombona que se congela o regulador"
+   ],
+   "que_puede_hacer_el_cliente": "Subir la temperatura de agua caliente en la caldera; abrir menos el grifo; comprobar la presión. En butano, comprobar la bombona. Si sigue, técnico.",
+   "pieza_probable": "intercambiador de placas",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/junkers/download/pdf/file/6720817051",
+    "https://blog.suner.es/hubfs/Manuales/Manual%20de%20las%20calderas%20Junkers%20Euroline%20ZS%2023-1%20AE23%2031%20-%20ZW%2023-1%20AE%2023%2031.pdf"
+   ]
+  },
+  {
+   "aparato": "caldera",
+   "sintoma": "Sale poca agua caliente por el grifo (poco caudal)",
+   "palabras": [
+    "sale poca agua caliente",
+    "el agua caliente sale con poca fuerza",
+    "el chorro de agua caliente es flojo"
+   ],
+   "causas": [
+    "Presión de agua de red insuficiente",
+    "Grifos o aireadores sucios",
+    "Filtro del limitador de caudal obstruido",
+    "Intercambiador obstruido por cal"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar si el agua fría también sale floja (problema de red). Limpiar el aireador del grifo. Si solo pasa con agua caliente, técnico.",
+   "pieza_probable": "filtro de entrada, intercambiador",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://blog.suner.es/hubfs/Manuales/Manual%20de%20las%20calderas%20Junkers%20Euroline%20ZS%2023-1%20AE23%2031%20-%20ZW%2023-1%20AE%2023%2031.pdf"
+   ]
+  },
+  {
+   "aparato": "caldera",
+   "sintoma": "La caldera hace ruido: silbidos, zumbidos o golpes",
+   "palabras": [
+    "la caldera hace ruido",
+    "silba la caldera",
+    "pega golpes",
+    "hace un ruido como de olla",
+    "zumba mucho"
+   ],
+   "causas": [
+    "Cal acumulada en el intercambiador",
+    "Quemador sucio",
+    "Presión de agua baja o aire en el circuito",
+    "Bomba"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar la presión y purgar los radiadores. Anotar cuándo suena (al arrancar, en marcha, al apagar). Si hay golpes fuertes o explosiones al encender, apagar y llamar al técnico.",
+   "pieza_probable": "intercambiador, bomba, quemador",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.bosch-homecomfort.com/es/es/conocimiento/calefaccion/averias-comunes-en-las-calderas/"
+   ]
+  },
+  {
+   "aparato": "caldera",
+   "sintoma": "La caldera se apaga sola",
+   "palabras": [
+    "la caldera se apaga sola",
+    "se para de repente",
+    "se apaga a ratos",
+    "se corta la caldera"
+   ],
+   "causas": [
+    "Presión de agua baja",
+    "Termostato o programador",
+    "Sensor de llama o suciedad en el quemador",
+    "Sobrecalentamiento por mala circulación"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar presión, termostato y programación, y si aparece algún código. Si persiste, técnico.",
+   "pieza_probable": "electrodo de ionización, bomba",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.bosch-homecomfort.com/es/es/conocimiento/calefaccion/averias-comunes-en-las-calderas/"
+   ]
+  },
+  {
+   "aparato": "caldera",
+   "sintoma": "Arranca y se para continuamente (enciende y apaga cada poco)",
+   "palabras": [
+    "arranca y se para",
+    "está todo el rato encendiendo y apagando",
+    "se enciende y se apaga cada minuto",
+    "hace muchos arranques"
+   ],
+   "causas": [
+    "Temperatura de calefacción demasiado alta para la instalación o radiadores cerrados",
+    "Circulación deficiente (aire, bomba)",
+    "Pérdida de llama repetida"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar presión y que los radiadores están abiertos. Purgar si hay aire. Si sale algún código, anotarlo. Si sigue, técnico.",
+   "pieza_probable": "bomba, electrodo de ionización",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/junkers/download/pdf/file/6720892004",
+    "https://www.bosch-homecomfort.com/es/es/conocimiento/calefaccion/averias-comunes-en-las-calderas/"
+   ]
+  },
+  {
+   "aparato": "caldera",
+   "sintoma": "Con helada la caldera de condensación se bloquea (tubo de condensados congelado)",
+   "palabras": [
+    "con el frío se bloquea la caldera",
+    "esta mañana con la helada no arranca",
+    "se ha congelado el tubo de la caldera",
+    "hace gorgoteo y se bloquea"
+   ],
+   "causas": [
+    "Tubo de desagüe de condensados congelado en el exterior"
+   ],
+   "que_puede_hacer_el_cliente": "Localizar el tramo exterior del tubo de condensados (solo si está a nivel de calle y es accesible, nunca en alturas). Descongelarlo con una botella o paño con agua caliente, no hirviendo. Luego rearmar la caldera y esperar unos minutos. Si no arranca, técnico.",
+   "pieza_probable": "",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/junkers/download/pdf/file/6720817051"
+   ]
+  },
+  {
+   "aparato": "caldera",
+   "sintoma": "Sale vapor o una nube blanca por la salida de humos de fuera",
+   "palabras": [
+    "sale humo blanco de la caldera por fuera",
+    "echa vapor por la chimenea",
+    "sale una nube por el tubo de fuera"
+   ],
+   "causas": [
+    "Normal en calderas de condensación: es vapor de agua"
+   ],
+   "que_puede_hacer_el_cliente": "Si es vapor blanco sin olor y la caldera funciona bien, es normal. Si huele a humo dentro de casa, tratarlo como aviso de humos.",
+   "pieza_probable": "",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/junkers/download/pdf/file/6720817051"
+   ]
+  },
+  {
+   "aparato": "caldera",
+   "sintoma": "Los radiadores calientan demasiado o la casa está demasiado caliente",
+   "palabras": [
+    "la calefacción calienta demasiado",
+    "no se apaga la calefacción",
+    "hace mucho calor en casa",
+    "la calefacción se queda puesta"
+   ],
+   "causas": [
+    "Termostato ambiente o válvulas termostáticas muy altas",
+    "Temperatura de calefacción de la caldera alta",
+    "Programador o reloj mal ajustado"
+   ],
+   "que_puede_hacer_el_cliente": "Bajar el termostato o las válvulas, bajar la temperatura de calefacción en la caldera y revisar la programación del reloj.",
+   "pieza_probable": "termostato",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/junkers/download/pdf/file/6720817051"
+   ]
+  },
+  {
+   "aparato": "caldera",
+   "sintoma": "La caldera no enciende tras un corte de luz o de gas",
+   "palabras": [
+    "después del apagón no va la caldera",
+    "han cortado el gas y ahora no enciende",
+    "tras la obra no arranca"
+   ],
+   "causas": [
+    "Bloqueo por falta de encendido",
+    "Aire en la tubería de gas tras el corte"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que vuelve a haber luz y gas (que la llave está abierta). Pulsar reset una vez; puede necesitar un par de intentos tras un corte de gas. Si sigue bloqueada, técnico.",
+   "pieza_probable": "",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://blog.suner.es/error-501-en-la-caldera-chaffoteaux",
+    "https://blog.suner.es/hubfs/Manuales/Manual%20de%20las%20calderas%20Junkers%20Euroline%20ZS%2023-1%20AE23%2031%20-%20ZW%2023-1%20AE%2023%2031.pdf"
+   ]
+  },
+  {
+   "aparato": "caldera",
+   "sintoma": "Los mandos, el termostato o el programador no responden",
+   "palabras": [
+    "el termostato no funciona",
+    "no puedo cambiar la temperatura",
+    "el programador no hace caso",
+    "el termostato se ha quedado en blanco"
+   ],
+   "causas": [
+    "Pilas agotadas del termostato inalámbrico",
+    "Termostato o programador averiado",
+    "Comunicación con la caldera"
+   ],
+   "que_puede_hacer_el_cliente": "Cambiar las pilas del termostato y comprobar que la caldera tiene luz. Si sigue, técnico.",
+   "pieza_probable": "termostato",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.bosch-homecomfort.com/es/es/conocimiento/calefaccion/averias-comunes-en-las-calderas/"
+   ]
+  },
+  {
+   "aparato": "caldera",
+   "sintoma": "Caldera de gasóleo: el quemador se bloquea y se enciende la luz de rearme",
+   "palabras": [
+    "la caldera de gasoil no arranca",
+    "se enciende la luz roja del quemador",
+    "el quemador está bloqueado",
+    "se ha quedado sin gasoil"
+   ],
+   "causas": [
+    "Fallo de encendido: el quemador no ha encendido en unos 10 segundos",
+    "Falta de gasóleo en el depósito o fallo de suministro",
+    "Bomba o electroválvula del quemador"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar el nivel del depósito de gasóleo. Pulsar el botón de rearme del quemador una vez. Si se vuelve a bloquear, no insistir y llamar al técnico.",
+   "pieza_probable": "bomba del quemador, electroválvula",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://blog.suner.es/quemador-caldera-gasoil-no-arranca",
+    "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/ferroli/wp-content/uploads/2020/08/ferroli-gnk-100-m-unit-03-manual.pdf"
+   ]
+  },
+  {
+   "aparato": "caldera",
+   "sintoma": "El calentador de gas no enciende o se apaga al abrir el grifo",
+   "palabras": [
+    "el calentador no enciende",
+    "el calentador se apaga",
+    "abro el agua caliente y no salta la llama",
+    "el calentador hace click y no enciende"
+   ],
+   "causas": [
+    "Bombona de butano o propano vacía, o llave del gas cerrada",
+    "Pilas agotadas (calentadores atmosféricos con pilas)",
+    "Poco caudal de agua",
+    "Electrodo de encendido",
+    "Salida de humos obstruida"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar la bombona o la llave del gas, cambiar las pilas si las lleva, abrir más el grifo. Si sale un código, anotarlo. Si sigue o huele a gas o a humo, cerrar el gas, ventilar y llamar al técnico.",
+   "pieza_probable": "electrodo, membrana o válvula de agua, válvula de gas",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.cointra.es/wp-content/uploads/2022/10/manual-instalacion-celantador-ceti.pdf",
+    "https://www.justanswer.es/informatica-es/pdf6s-mi-calentador-de-agua-no-funciona-sale-en-el-display-un.html"
    ]
   },
   {
