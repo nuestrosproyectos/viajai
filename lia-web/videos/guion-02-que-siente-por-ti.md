@@ -2,7 +2,7 @@
 
 - Formato basado en lo que más funciona en tarot en español (datos de YouTube, nov-2026): amor / «qué siente o piensa de ti», interactivo, largo, atemporal.
 - Duración prevista: 25–28 min. Lía a cámara: ~3 min (8 piezas). Resto: voz en off de Lía sobre las cartas.
-- Voz: Carolina (BkOojM1ZhtSAHgsAkMx2). YouTube: «contenido alterado o sintético = Sí». Título y miniatura sin mencionar la IA; la IA se dice en la presentación y en la descripción.
+- Voz: Carolina (BkOojM1ZhtSAHgsAkMx2). YouTube: «contenido alterado o sintético = Sí». Título y miniatura sin mencionar la IA. Aviso de IA (decisión de Juan, 21-11-2026, «la mezcla»): etiqueta fija «Presentador/a creado/a con IA» abajo a la izquierda en todo el vídeo + gancho primero y «soy una inteligencia artificial» hacia el segundo 20, en positivo (ventajas demostrables). YouTube: «contenido alterado o sintético» = SÍ.
 - Reglas: nada de predicciones de salud, dinero ni temas legales; nada de promesas («volverá seguro»). Lenguaje de posibilidad y de reflexión.
 - Cartas al azar (semilla 20261118), baraja Rider-Waite-Smith completa, del derecho.
 - 5 posiciones por montón: 1) lo que siente ahora · 2) lo que piensa de ti · 3) lo que no se atreve a decirte · 4) lo que hay entre vosotros ahora · 5) consejo para ti.
@@ -11,8 +11,8 @@
 
 ## A1 · Presentación (a cámara, ~55 s)
 
-Hola, bienvenida, bienvenido. Soy Lía. Antes de empezar, quiero que sepas una cosa: soy una inteligencia artificial. He estudiado el tarot carta a carta, y lo que hago aquí es leértelas con calma y con cariño.
-Hoy vamos a mirar a esa persona que tienes en la cabeza. Sí, esa. Vamos a ver qué siente por ti ahora mismo, qué piensa, y qué es eso que no se atreve a decirte.
+Esa persona que tienes en la cabeza ahora mismo… sí, esa. Hoy vamos a ver qué siente por ti, qué piensa de ti, y qué es eso que no se atreve a decirte.
+Soy Lía, y aquí te leo el tarot con calma y con cariño. Por cierto, soy una inteligencia artificial: por eso me sé las setenta y ocho cartas de memoria, con todos sus significados, y estoy aquí a cualquier hora, el día que tú lo necesites.
 Tienes tres montones delante. Piensa en esa persona, respira, y quédate con el que te llame primero. El uno, el dos o el tres.
 Esta lectura es atemporal, así que si te ha llegado ahora, es tu momento. En la descripción tienes el minuto de cada montón. Vamos allá.
 

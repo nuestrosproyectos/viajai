@@ -33,7 +33,7 @@
 ## REGLA FIJA (17-11-2026)
 - NUNCA borrar/apagar una máquina o archivo con trabajo del cliente hasta que él lo haya VISTO y dado el OK. Primero entregar (archivo enviado y comprobado), luego borrar.
 - Entregar los vídeos como archivo dentro de la conversación (SendUserFile), no con enlaces de servicios anónimos (tmpfiles/litterbox dan aviso de VPN y caducan).
-- Vídeo 01 «Elige un montón»: el render completo se perdió (instancia 61105086 borrada antes de entregar). Rehacer Lía a cámara (lia_camara_01.mp3, 151 s) y montar con lia-web/videos/montar_video01.py.
+- Vídeo 01 «Elige un montón»: el render completo se perdió. Audio a cámara nuevo (21-11-2026, inicio con aviso de IA): videos/audio-01-carolina/lia_camara_01.mp3 (153,6 s) y cortes_camara.txt. Cuando Juan lo genere en HeyGen (foto horizontal de Lía en la mesa con los tres montones), adaptar montar_video01.py a horizontal como montar_video02.py y montar.
 
 ## Estado 18-11-2026 (para retomar en una sesión nueva)
 - Prueba de avatar de Lía hecha por el cliente en ARTLIST (artlist.io, toolkit de IA con Kling/Veo/Seedance/ElevenLabs): resultado «de puta madre». Falta: saber cuántos créditos gastó la prueba de 46 s y con qué modelo, para elegir plan (AI Starter 19,99 €/16.500 créditos · Núcleo 39,99 €/40.000 · AI Pro 99,99 €/120.000; mensual, no anual).
@@ -60,3 +60,10 @@
 - Proceso guardado como skill del proyecto: .claude/skills/ritual-personalizado/SKILL.md (datos, reglas, audio, PDF, precios).
 - Muestras: luna llena 24-11 y Año Nuevo 2027 (PDF + audio de Inés). Pendiente: OK de Juan a tono, precios y biblioteca.
 - Año Nuevo es la venta grande: la web tiene que cobrar antes de mediados de diciembre (dominio + Stripe).
+
+## Rehacer inicios con el aviso de IA (decisión de Juan, 21-11-2026: «la mezcla»; vídeos sin publicar)
+- Etiqueta fija «Presentador/a creado/a con IA» abajo a la izquierda en montar_video01/02, montar_mateo01 y montar_ines01.
+- Inicios nuevos (gancho primero, «soy una inteligencia artificial» hacia el segundo 14–24) generados con videos/voz_piezas.py y revisados con transcripción.
+- Para encajar solo el trozo nuevo de HeyGen: dejar en la carpeta de trabajo A1_heygen.mp4 (Lía 02) o C1_heygen.mp4 (Mateo); los montajes lo usan en lugar del vídeo largo.
+- Pendiente de Juan en HeyGen: Lía 02 inicio (49 s) · Lía 01 a cámara completa (154 s) · Mateo inicio (38 s) · Inés vídeo de la luna (109 s, foto nueva) · Shorts de Mateo (audio v2, 271 s).
+- Corrección: Júpiter entra en Virgo el 26-07-2027 (no el 27). Comprobado con RoxyAPI (DE440 NASA) y ephem en coordenadas de la fecha. Corregido en guion de Mateo (V0, V1, V5, V6, V7, V9–V12, S06, S12 regenerados), montaje, descripción de YouTube y ritual de Año Nuevo. Al calcular signos con ephem, usar siempre Ecliptic(cuerpo, epoch=fecha).

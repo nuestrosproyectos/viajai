@@ -3,8 +3,8 @@
 Datos (comprobados el 20-11-2026; SIN numerología: Inés solo trabaja con la luna, decisión del 17-11 confirmada el 20-11):
 - Cielo a medianoche (1-01-2027, 00:00 peninsular): Luna menguante (38 % iluminada) en Libra. Último cuarto: 30-12-2026.
 - Primera luna nueva de 2027: jueves 7-01, 21:24, en Capricornio. Primera luna llena: viernes 22-01, 13:17, en Leo (el ascendente de Marta).
-- 2027 para ascendente Leo (casas por signo entero, ver guion de Mateo): Júpiter en casa 1 hasta el 27-07 y luego en casa 2 · eclipse total del 2-08 en casa 1 · eclipse anular del 6-02 en casa 7 · Saturno y Neptuno en casa 9 · Urano en casa 11.
-- Fechas 2027: eclipse anular y Año Nuevo chino (Cabra) 6-02 · Mercurio retrógrado 10-02→4-03, 11-06→5-07, 8-10→29-10 · equinoccio 20-03 · cumpleaños 3-05 · solsticio 21-06 · San Juan 23-06 · Júpiter a Virgo 27-07 · eclipse total 2-08 · equinoccio 23-09 · solsticio 22-12.
+- 2027 para ascendente Leo (casas por signo entero, ver guion de Mateo): Júpiter en casa 1 hasta el 26-07 y luego en casa 2 · eclipse total del 2-08 en casa 1 · eclipse anular del 6-02 en casa 7 · Saturno y Neptuno en casa 9 · Urano en casa 11.
+- Fechas 2027: eclipse anular y Año Nuevo chino (Cabra) 6-02 · Mercurio retrógrado 10-02→4-03, 11-06→5-07, 8-10→29-10 · equinoccio 20-03 · cumpleaños 3-05 · solsticio 21-06 · San Juan 23-06 · Júpiter a Virgo 26-07 · eclipse total 2-08 · equinoccio 23-09 · solsticio 22-12.
 - Voz: Inés (Sophie). Reglas: intención y bienestar; sin promesas; seguridad con la vela; nada de fuego obligatorio (la carta se rompe, no se quema).
 
 ## Audio guiado (para la tarde del 31 de diciembre, antes de la cena)

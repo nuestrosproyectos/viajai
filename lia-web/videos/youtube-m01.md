@@ -52,6 +52,6 @@ astrología 2027, predicciones 2027, horóscopo 2027, ascendente, qué es el asc
 ## Shorts (1 al día después del vídeo largo; en cada uno enlazar el vídeo completo como «Vídeo relacionado» y contenido sintético = SÍ)
 1. short1_2027_mira_tu_ascendente.mp4 — «2027 no será igual para tu signo… 🌌 ¿Sabes tu ascendente? #astrologia #2027 #shorts»
 2. short2_ascendente_leo.mp4 — «Ascendente Leo: 2027 es tuyo ♌ El eclipse del 2 de agosto cae en tu casa 1 #leo #astrologia #shorts»
-3. short3_ascendente_virgo.mp4 — «Ascendente Virgo: el 27 de julio empieza tu ciclo ♍ #virgo #astrologia #shorts»
+3. short3_ascendente_virgo.mp4 — «Ascendente Virgo: el 26 de julio empieza tu ciclo ♍ #virgo #astrologia #shorts»
 4. short4_eclipse_2_agosto.mp4 — «2 de agosto de 2027: eclipse total de Sol en el sur de España 🌒 #eclipse #astrologia #shorts»
 Se pueden sacar los otros 10 ascendentes con extras_mateo01.py (función short_rueda), sin coste.

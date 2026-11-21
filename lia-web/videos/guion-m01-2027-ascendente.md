@@ -4,13 +4,14 @@
 - Foto para HeyGen: videos/escenas/mateo-despacho-16x9.jpg (horizontal, de frente, manos quietas y lejos de los objetos).
 - Duración prevista: 25–30 min. Mateo a cámara: C1 + C2 + C3 (~2,5 min). El resto, voz en off de Mateo sobre gráficos del cielo y de cada ascendente.
 - Elegido con datos reales de YouTube (18-11-2026): predicciones 2027 (113.000–630.000 visualizaciones en días/semanas) + ascendente (150.000–410.000, atemporal). Ver PENDIENTE.md.
-- YouTube: «contenido alterado o sintético = Sí». La IA se dice en la presentación y en la descripción.
+- Aviso de IA (decisión de Juan, 21-11-2026, «la mezcla»): etiqueta fija «Presentador/a creado/a con IA» abajo a la izquierda en todo el vídeo + gancho primero y «soy una inteligencia artificial» hacia el segundo 20, en positivo (ventajas demostrables). YouTube: «contenido alterado o sintético» = SÍ.
+- Corrección 21-11-2026: Júpiter entra en Virgo el 26-07-2027 (no el 27), comprobado con RoxyAPI (DE440 de la NASA) y con ephem en coordenadas de la fecha.
 - Reglas: lenguaje de posibilidad; nada de predicciones de salud, de dinero concreto ni temas legales; nada de promesas.
 
 ## Datos del cielo de 2027 (comprobados con efemérides el 18-11-2026, zodiaco tropical)
 - Saturno en Aries todo 2027. Neptuno en Aries todo 2027.
 - Urano en Géminis todo 2027. Plutón en Acuario todo 2027.
-- Júpiter en Leo hasta el 27-07-2027; después, en Virgo.
+- Júpiter en Leo hasta el 26-07-2027; después, en Virgo.
 - Eclipse anular de Sol: 6-02-2027, Sol a 17° de Acuario.
 - Eclipse total de Sol: 2-08-2027, Sol a 10° de Leo. Total en Cádiz y Málaga (máximo hacia las 10:45, hora peninsular); en Granada, casi total (~99 %).
 
@@ -18,16 +19,17 @@
 
 ## C1 · Presentación (a cámara)
 
-Hola, soy Mateo. Antes de nada, quiero que sepas una cosa: soy una inteligencia artificial. He estudiado la astrología libro a libro, y las posiciones de los planetas que vas a ver aquí están calculadas con las efemérides de la NASA, no me las invento.
-Hoy vamos a hablar de dos mil veintisiete. Va a ser un año con Saturno y Neptuno juntos en Aries, con Urano en Géminis, y con un eclipse total de Sol el dos de agosto que se verá desde el sur de España, en Cádiz y en Málaga.
-Pero déjame decirte algo que casi nadie cuenta. Si solo lees tu signo del zodiaco, te estás perdiendo la mitad. Lo que de verdad marca cómo te va a tocar este cielo es tu ascendente.
+Si solo lees tu signo del zodiaco, en dos mil veintisiete te vas a perder la mitad. Lo que de verdad marca cómo te va a tocar el año es tu ascendente.
+Y va a ser un año intenso: Saturno y Neptuno juntos en Aries, Urano en Géminis, y un eclipse total de Sol el dos de agosto que se verá desde el sur de España, en Cádiz y en Málaga.
+Soy Mateo. Por cierto, soy una inteligencia artificial: por eso cada posición de los planetas que vas a ver está calculada al grado y comprobada con los datos planetarios de la NASA. No me la invento.
+Hoy te cuento cómo te toca el año según tu ascendente. Los doce, uno a uno.
 
 ## V0 · El cielo de 2027 (voz en off sobre gráficos)
 
 Vamos primero con el mapa del año. Cinco cosas, y te las explico sin tecnicismos.
 La primera, y la más importante: Saturno y Neptuno, juntos en Aries, todo el año. Saturno es el planeta de la realidad, del compromiso, de lo que se construye despacio. Neptuno es el de los sueños, la inspiración, lo que todavía no tiene forma. Que vayan juntos es como si el cielo te dijera: ese sueño que llevas años acariciando, ahora toca bajarlo a tierra, con paciencia, o soltarlo. Y en Aries, el primer signo, todo esto tiene sabor a empezar de nuevo.
 La segunda: Urano en Géminis. Urano es el planeta de los cambios repentinos, de lo que llega sin avisar. En Géminis mueve las ideas, la forma de comunicarnos, lo que aprendemos. En la parte de tu carta donde caiga, espera novedades.
-La tercera: Júpiter, el planeta que hace crecer lo que toca, pasa el primer tramo del año en Leo, y el veintisiete de julio entra en Virgo. Por eso, para cada ascendente, el año tiene dos mitades.
+La tercera: Júpiter, el planeta que hace crecer lo que toca, pasa el primer tramo del año en Leo, y el veintiséis de julio entra en Virgo. Por eso, para cada ascendente, el año tiene dos mitades.
 La cuarta: Plutón sigue en Acuario. Es el más lento de todos y transforma desde el fondo, poco a poco, durante años.
 Y la quinta: los dos eclipses de Sol. Uno anular, el seis de febrero, en Acuario. Y el gran eclipse total del dos de agosto, en Leo, que veremos desde el sur de España. Los eclipses son como puntos de giro: cierran una puerta y abren otra.
 Ahora viene lo interesante. Todo esto cae en un sitio distinto de tu carta según tu ascendente. Vamos con los doce.
@@ -41,7 +43,7 @@ Si no sabes cuál es tu ascendente, no pasa nada. En la descripción tienes nues
 
 Ascendente Aries. Para ti, dos mil veintisiete es un año muy personal, porque Saturno y Neptuno pasan justo por tu casa uno, la de quién eres y cómo te presentas al mundo. Es un año para redefinirte. Quizá notes que la imagen que dabas ya no te representa, y que quieres algo más auténtico, más serio, más tuyo. No tengas prisa: Saturno pide constancia, y Neptuno pide que escuches lo que de verdad sueñas.
 Urano en tu casa tres te trae cambios en lo cercano: tu forma de comunicarte, tu entorno, quizá un curso o un aprendizaje que te abre la cabeza.
-Júpiter en tu casa cinco, hasta finales de julio, favorece todo lo que te da alegría: crear, enamorarte, disfrutar. Y justo ahí cae el eclipse del dos de agosto, así que atento a lo que se mueva en el amor y en tus proyectos creativos. Desde el veintisiete de julio, Júpiter pasa a tu casa seis: buen momento para ordenar tus rutinas y tu día a día.
+Júpiter en tu casa cinco, hasta finales de julio, favorece todo lo que te da alegría: crear, enamorarte, disfrutar. Y justo ahí cae el eclipse del dos de agosto, así que atento a lo que se mueva en el amor y en tus proyectos creativos. Desde el veintiséis de julio, Júpiter pasa a tu casa seis: buen momento para ordenar tus rutinas y tu día a día.
 El eclipse de febrero cae en tu casa once, la de las amistades y los grupos: algunas relaciones cambian de lugar.
 Mi consejo para ti: empieza, sí, como siempre, pero esta vez termina lo que empieces.
 
@@ -71,7 +73,7 @@ Mi consejo: que tu sensibilidad sea tu fuerza en el trabajo, no tu freno.
 
 ## V5 · Ascendente Leo
 
-Ascendente Leo. Atento, porque el gran eclipse del dos de agosto cae en tu casa uno. Es un eclipse en tu propio signo ascendente, y eso no pasa todos los años. Es un punto de giro personal: cómo te ves, cómo te muestras, qué quieres para ti. Y encima Júpiter pasa por esa misma casa hasta el veintisiete de julio, dándote confianza, presencia y ganas. La primera mitad del año es tuya.
+Ascendente Leo. Atento, porque el gran eclipse del dos de agosto cae en tu casa uno. Es un eclipse en tu propio signo ascendente, y eso no pasa todos los años. Es un punto de giro personal: cómo te ves, cómo te muestras, qué quieres para ti. Y encima Júpiter pasa por esa misma casa hasta el veintiséis de julio, dándote confianza, presencia y ganas. La primera mitad del año es tuya.
 Saturno y Neptuno pasan por tu casa nueve, la de los viajes largos, los estudios y las creencias. Un año para formarte en serio, para replantearte en qué crees, quizá para un viaje que te cambia la mirada.
 Urano en tu casa once renueva tus amistades y tus grupos: gente nueva y sorprendente.
 El eclipse de febrero, con Plutón, cae en tu casa siete, la de la pareja y los socios: las relaciones de tú a tú se transforman. Y desde finales de julio Júpiter entra en tu casa dos, para darle solidez a todo lo que has movido.
@@ -79,7 +81,7 @@ Mi consejo: brilla, que es tu año, pero escucha también a quien tienes enfrent
 
 ## V6 · Ascendente Virgo
 
-Ascendente Virgo. Tu año tiene dos partes muy claras. Hasta finales de julio, Júpiter pasa por tu casa doce, la más íntima: tiempo de descanso, de cerrar ciclos, de preparar algo por dentro. Y el eclipse del dos de agosto cae también ahí, como el final de una etapa. Pero el veintisiete de julio Júpiter entra en tu signo ascendente, en tu casa uno, y empieza para ti un ciclo de doce años. Más confianza, más oportunidades, más ganas de mostrarte.
+Ascendente Virgo. Tu año tiene dos partes muy claras. Hasta finales de julio, Júpiter pasa por tu casa doce, la más íntima: tiempo de descanso, de cerrar ciclos, de preparar algo por dentro. Y el eclipse del dos de agosto cae también ahí, como el final de una etapa. Pero el veintiséis de julio Júpiter entra en tu signo ascendente, en tu casa uno, y empieza para ti un ciclo de doce años. Más confianza, más oportunidades, más ganas de mostrarte.
 Saturno y Neptuno pasan por tu casa ocho, la de lo que compartes con otros y la intimidad. Un año para poner orden en vínculos profundos y en lo que es tuyo y de los demás.
 Urano en tu casa diez puede traer cambios inesperados en tu profesión: una oportunidad que no buscabas o un giro de rumbo.
 El eclipse de febrero y Plutón están en tu casa seis, la de las rutinas y el trabajo diario: tu manera de organizarte se transforma.
@@ -89,7 +91,7 @@ Mi consejo: no lo controles todo. Lo que llega en agosto viene a abrirte, no a d
 
 Ascendente Libra. Para ti, dos mil veintisiete es el año de las relaciones. Saturno y Neptuno pasan por tu casa siete, la de la pareja, los socios y los compromisos de tú a tú. Saturno pone a prueba lo que tienes: lo que es sólido se refuerza y lo que no, se nota. Neptuno, a la vez, te pide que no idealices. Mira a las personas tal como son, no como te gustaría que fueran.
 Urano en tu casa nueve trae ganas de libertad: viajes, estudios, cambiar de mirada.
-Júpiter en tu casa once, hasta julio, favorece las amistades y los proyectos con otras personas. El eclipse del dos de agosto cae ahí: algún grupo o algún plan de futuro cambia de forma. Desde el veintisiete de julio, Júpiter pasa a tu casa doce: la segunda mitad del año pide más calma y más tiempo para ti.
+Júpiter en tu casa once, hasta julio, favorece las amistades y los proyectos con otras personas. El eclipse del dos de agosto cae ahí: algún grupo o algún plan de futuro cambia de forma. Desde el veintiséis de julio, Júpiter pasa a tu casa doce: la segunda mitad del año pide más calma y más tiempo para ti.
 El eclipse de febrero y Plutón tocan tu casa cinco, la del amor, la creatividad y el disfrute: tu manera de querer y de crear se transforma.
 Mi consejo: el equilibrio que tanto buscas empieza por ser honesto, honesta, con lo que tú quieres.
 
@@ -105,7 +107,7 @@ Mi consejo: cuida tu rutina, que de ella depende todo lo demás este año.
 
 Ascendente Sagitario. Este es un año alegre para ti. Saturno y Neptuno pasan por tu casa cinco, la de la creatividad, el amor y el disfrute. Neptuno trae inspiración y romanticismo; Saturno, que te comprometas con lo que te apasiona. Si tienes un proyecto creativo, es el año de tomártelo en serio. Y en el amor, de elegir con el corazón, pero sin vendarte los ojos.
 Urano en tu casa siete sacude las relaciones de pareja y los socios: necesitas aire y libertad dentro de tus vínculos.
-Júpiter, tu planeta regente, está en tu casa nueve hasta julio: viajes, estudios, horizontes que se abren. El eclipse del dos de agosto cae ahí: un viaje o un aprendizaje puede cambiar tu rumbo. Y desde el veintisiete de julio Júpiter entra en tu casa diez: la segunda mitad del año empuja tu carrera.
+Júpiter, tu planeta regente, está en tu casa nueve hasta julio: viajes, estudios, horizontes que se abren. El eclipse del dos de agosto cae ahí: un viaje o un aprendizaje puede cambiar tu rumbo. Y desde el veintiséis de julio Júpiter entra en tu casa diez: la segunda mitad del año empuja tu carrera.
 El eclipse de febrero y Plutón están en tu casa tres, la de la comunicación: cambia tu forma de hablar y de pensar.
 Mi consejo: disfruta, pero termina lo que empiezas.
 
@@ -113,7 +115,7 @@ Mi consejo: disfruta, pero termina lo que empiezas.
 
 Ascendente Capricornio. Tu año mira hacia dentro, hacia casa. Saturno y Neptuno pasan por tu casa cuatro, la del hogar, la familia y las raíces. Puede ser un año de mudanza, de reformar, de cuidar a los tuyos, o de reconciliarte con tu historia familiar. Saturno es tu planeta regente: aquí te pide que construyas una base sólida, de esas que duran.
 Urano en tu casa seis cambia tus rutinas y tu forma de trabajar: más flexibilidad, nuevas herramientas, horarios distintos.
-Júpiter en tu casa ocho, hasta julio, favorece lo compartido: acuerdos, apoyos, vínculos más profundos. El eclipse del dos de agosto cae ahí: algo que compartías se transforma. Desde el veintisiete de julio, Júpiter pasa a tu casa nueve y llegan ganas de viajar, de aprender, de ampliar horizontes.
+Júpiter en tu casa ocho, hasta julio, favorece lo compartido: acuerdos, apoyos, vínculos más profundos. El eclipse del dos de agosto cae ahí: algo que compartías se transforma. Desde el veintiséis de julio, Júpiter pasa a tu casa nueve y llegan ganas de viajar, de aprender, de ampliar horizontes.
 El eclipse de febrero y Plutón están en tu casa dos, la de lo que tienes y lo que vales: tu relación con lo material sigue transformándose.
 Mi consejo: el éxito de este año no se ve desde fuera. Se nota en casa.
 
@@ -122,14 +124,14 @@ Mi consejo: el éxito de este año no se ve desde fuera. Se nota en casa.
 Ascendente Acuario. Plutón sigue en tu signo ascendente, en tu casa uno, y el eclipse del seis de febrero cae ahí también. Es un año de transformación personal profunda: estás dejando atrás una versión de ti. No es un cambio de un día; es una muda lenta y poderosa.
 Saturno y Neptuno pasan por tu casa tres, la de la comunicación, el entorno cercano y los estudios. Un año para aprender algo en serio, para escribir, para cuidar tus palabras.
 Urano, tu planeta regente, está en tu casa cinco: sorpresas en el amor, en la creatividad, en lo que te divierte.
-Júpiter en tu casa siete, hasta julio, favorece la pareja y las alianzas. Y el eclipse del dos de agosto cae ahí, en tus relaciones: un compromiso que se define o un vínculo que cambia de forma. Desde el veintisiete de julio, Júpiter entra en tu casa ocho: vínculos más profundos en la segunda mitad del año.
+Júpiter en tu casa siete, hasta julio, favorece la pareja y las alianzas. Y el eclipse del dos de agosto cae ahí, en tus relaciones: un compromiso que se define o un vínculo que cambia de forma. Desde el veintiséis de julio, Júpiter entra en tu casa ocho: vínculos más profundos en la segunda mitad del año.
 Mi consejo: déjate cambiar. Lo que sale de esta etapa es más tú que nunca.
 
 ## V12 · Ascendente Piscis
 
 Ascendente Piscis. Neptuno, tu planeta regente, y Saturno pasan por tu casa dos, la de lo que tienes y lo que vales. Es un año para darle forma real a tus recursos y, sobre todo, a tu autoestima. Saturno te pide orden y realismo; Neptuno, que no confundas tu valor con lo que tienes.
 Urano en tu casa cuatro puede mover el hogar y la familia: cambios inesperados en casa, ganas de un espacio distinto.
-Júpiter en tu casa seis, hasta julio, favorece el trabajo diario y los buenos hábitos. El eclipse del dos de agosto cae ahí: tu forma de organizarte y de cuidarte cambia de rumbo. Y el veintisiete de julio, Júpiter entra en tu casa siete, la de la pareja y los socios: la segunda mitad del año trae relaciones que suman.
+Júpiter en tu casa seis, hasta julio, favorece el trabajo diario y los buenos hábitos. El eclipse del dos de agosto cae ahí: tu forma de organizarte y de cuidarte cambia de rumbo. Y el veintiséis de julio, Júpiter entra en tu casa siete, la de la pareja y los socios: la segunda mitad del año trae relaciones que suman.
 El eclipse de febrero y Plutón están en tu casa doce, la del mundo interior: un año para soltar miedos antiguos.
 Mi consejo: confía en tu intuición, pero apúntalo todo. Este año, los sueños quieren fecha.
 
@@ -160,7 +162,7 @@ Si eres ascendente Cáncer, dos mil veintisiete es un año de vocación. Saturno
 Si eres ascendente Leo, atento: dos mil veintisiete es tuyo. El gran eclipse total del dos de agosto cae en tu casa uno, en tu propio ascendente. Y Júpiter pasa por ahí hasta finales de julio, dándote confianza y presencia. Es un punto de giro personal. Brilla, pero escucha también a quien tienes enfrente.
 
 ## S06 · Virgo
-Si eres ascendente Virgo, apúntate esta fecha: veintisiete de julio de dos mil veintisiete. Ese día Júpiter entra en tu ascendente y empieza para ti un ciclo de doce años. Más confianza, más oportunidades. Hasta entonces, toca cerrar etapas con calma. Lo que llega en agosto viene a abrirte, no a desordenarte.
+Si eres ascendente Virgo, apúntate esta fecha: veintiséis de julio de dos mil veintisiete. Ese día Júpiter entra en tu ascendente y empieza para ti un ciclo de doce años. Más confianza, más oportunidades. Hasta entonces, toca cerrar etapas con calma. Lo que llega en agosto viene a abrirte, no a desordenarte.
 
 ## S07 · Libra
 Si eres ascendente Libra, dos mil veintisiete es el año de las relaciones. Saturno y Neptuno pasan por tu casa siete, la de la pareja y los socios. Lo que es sólido se refuerza, y lo que no, se nota. No idealices: mira a las personas como son. El equilibrio empieza por ser honesto contigo.
@@ -178,7 +180,7 @@ Si eres ascendente Capricornio, en dos mil veintisiete tu éxito se nota en casa
 Si eres ascendente Acuario, dos mil veintisiete es un año de transformación profunda. Plutón sigue en tu ascendente, y el eclipse del seis de febrero cae ahí también. Estás dejando atrás una versión de ti. Y el eclipse del dos de agosto toca tus relaciones. Déjate cambiar: lo que sale de aquí es más tú que nunca.
 
 ## S12 · Piscis
-Si eres ascendente Piscis, dos mil veintisiete te pide darle forma a lo que vales. Neptuno, tu planeta, y Saturno pasan por tu casa dos. Orden, realismo y autoestima. Y desde el veintisiete de julio, Júpiter llena de buenas relaciones tu segunda mitad del año. Confía en tu intuición, pero apúntalo todo.
+Si eres ascendente Piscis, dos mil veintisiete te pide darle forma a lo que vales. Neptuno, tu planeta, y Saturno pasan por tu casa dos. Orden, realismo y autoestima. Y desde el veintiséis de julio, Júpiter llena de buenas relaciones tu segunda mitad del año. Confía en tu intuición, pero apúntalo todo.
 
 ## S13 · Eclipse
 El dos de agosto de dos mil veintisiete, a media mañana, se va a hacer de noche en Cádiz y en Málaga. Es un eclipse total de Sol, en Leo, y en astrología es un punto de giro: cierra una puerta y abre otra. ¿En qué parte de tu vida cae? Depende de tu ascendente. Te lo cuento, signo a signo, en el vídeo completo.

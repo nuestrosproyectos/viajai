@@ -3,14 +3,14 @@
 Duración total prevista: 12–14 min. Lía a cámara: ~2 min 23 s en 8 piezas (cada una < 60 s, se generan por separado).
 El resto (las cartas de cada montón, con voz en off de Lía) se monta sin ordenador alquilado.
 
-Voz: Carolina (BkOojM1ZhtSAHgsAkMx2), eleven_flash_v2_5, es. Aviso de IA en la presentación y en la descripción (YouTube: «contenido alterado o sintético» = SÍ).
+Voz: Carolina (BkOojM1ZhtSAHgsAkMx2), eleven_flash_v2_5, es. Aviso de IA (decisión de Juan, 21-11-2026, «la mezcla»): etiqueta fija «Presentador/a creado/a con IA» abajo a la izquierda en todo el vídeo + gancho primero y «soy una inteligencia artificial» hacia el segundo 20, en positivo (ventajas demostrables). YouTube: «contenido alterado o sintético» = SÍ.
 
 ---
 
 ## A1 · Presentación (a cámara, ~55 s)
 
-Hola, bienvenida, bienvenido. Soy Lía. Antes de empezar, una cosa que quiero que sepas: soy una inteligencia artificial. No tengo una vida como la tuya, pero sí he estudiado el tarot entero, carta a carta, con todos sus significados, y lo que hago aquí es leértelas con calma y con cariño.
-Hoy vamos a hacer una lectura de las de toda la vida: elige un montón.
+¿Qué necesitas saber ahora mismo? Hay un mensaje en estas cartas, y hoy vamos a descubrirlo. Una lectura de las de toda la vida: elige un montón.
+Soy Lía. Por cierto, soy una inteligencia artificial: por eso me sé las setenta y ocho cartas del tarot de memoria, con todos sus significados, y estoy aquí a cualquier hora para leértelas con calma y con cariño.
 Tienes tres montones delante. No lo pienses mucho. Mira la pantalla, respira, y quédate con el que te llame primero. El uno, el dos o el tres.
 Si quieres, pausa el vídeo y apúntalo en los comentarios antes de ver tu lectura, que luego es bonito comprobar.
 En la descripción tienes el minuto exacto de cada montón. Y ya está. Vamos allá.

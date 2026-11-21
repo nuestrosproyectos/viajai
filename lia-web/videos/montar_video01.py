@@ -206,11 +206,14 @@ WrapStyle: 0
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Sub,Hanken Grotesk,50,&H00D6E4EC,&H00FFFFFF,&H64100A0A,&H8C0A0A0C,0,0,0,0,100,100,0,0,1,2.2,3,2,160,160,46,1
+Style: IA,Hanken Grotesk,26,&H30E6EFF3,&H00FFFFFF,&H70200D0B,&H00000000,0,0,0,0,100,100,1,0,3,8,0,1,40,40,34,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
-open(ass, 'w').write(cab + ''.join(f'Dialogue: 0,{ass_tiempo(a)},{ass_tiempo(b+0.15)},Sub,,0,0,0,,{x}\n' for a, b, x in subs))
+# Aviso de IA (Reglamento (UE) 2024/1689, art. 50): fijo abajo a la izquierda durante todo el vídeo
+_ia = f'Dialogue: 1,{ass_tiempo(0)},{ass_tiempo(sum(dur(x) for x in segs))},IA,,0,0,0,,Presentadora creada con IA\n'
+open(ass, 'w').write(cab + _ia + ''.join(f'Dialogue: 0,{ass_tiempo(a)},{ass_tiempo(b+0.15)},Sub,,0,0,0,,{x}\n' for a, b, x in subs))
 final = os.path.join(OUT, 'video01_elige_un_monton.mp4')
 sh('ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', lista, '-vf', f"subtitles={ass}:fontsdir={FUENTES}",
    '-c:v', 'libx264', '-crf', '18', '-preset', 'medium', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', final)

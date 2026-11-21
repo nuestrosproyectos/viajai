@@ -152,7 +152,7 @@ def lamina_tema(asc, tema, consejo=''):
         return panel(im, f'Ascendente {asc}', 'Urano en Géminis', f'Casa {k} · {TEMAS[k]}', 'Cambios y novedades')
     if tema == 'J':
         a, b = casa(asc, 'Leo'), casa(asc, 'Virgo'); rueda(im, asc, resaltar={a, b})
-        return panel(im, f'Ascendente {asc}', 'Júpiter y el eclipse total', f'Casa {a}; desde el 27 de julio, casa {b}', f'Eclipse total del 2 de agosto en tu casa {a}: {TEMAS[a].lower()}')
+        return panel(im, f'Ascendente {asc}', 'Júpiter y el eclipse total', f'Casa {a}; desde el 26 de julio, casa {b}', f'Eclipse total del 2 de agosto en tu casa {a}: {TEMAS[a].lower()}')
     if tema == 'P':
         k = casa(asc, 'Acuario'); rueda(im, asc, resaltar={k})
         return panel(im, f'Ascendente {asc}', 'Plutón y el eclipse de febrero', f'Casa {k} · {TEMAS[k]}', 'Eclipse anular del 6 de febrero')
@@ -164,13 +164,13 @@ def lamina_cielo(paso):
     im = fondo()
     nat = dict(planetas=PLANETAS, eclipses=ECLIPSES)
     if paso == 'intro':
-        rueda(im, 'Aries', casas_on=False, **nat); return panel(im, 'El cielo de 2027', 'El mapa del año', 'Cinco claves, sin tecnicismos', 'Posiciones calculadas con efemérides de la NASA (JPL)')
+        rueda(im, 'Aries', casas_on=False, **nat); return panel(im, 'El cielo de 2027', 'El mapa del año', 'Cinco claves, sin tecnicismos', 'Posiciones comprobadas con la efeméride DE440 de la NASA (JPL)')
     if paso == 'SN':
         rueda(im, 'Aries', casas_on=False, resaltar={1}, **nat); return panel(im, 'Clave 1', 'Saturno y Neptuno en Aries', 'Bajar un sueño a tierra', 'Juntos todo el año. Saturno construye; Neptuno inspira.')
     if paso == 'U':
         rueda(im, 'Aries', casas_on=False, resaltar={3}, **nat); return panel(im, 'Clave 2', 'Urano en Géminis', 'Cambios que llegan sin avisar', 'Ideas, comunicación y aprendizaje')
     if paso == 'J':
-        rueda(im, 'Aries', casas_on=False, resaltar={5, 6}, **nat); return panel(im, 'Clave 3', 'Júpiter: de Leo a Virgo', 'Cambia de signo el 27 de julio', 'Un año con dos mitades')
+        rueda(im, 'Aries', casas_on=False, resaltar={5, 6}, **nat); return panel(im, 'Clave 3', 'Júpiter: de Leo a Virgo', 'Cambia de signo el 26 de julio', 'Un año con dos mitades')
     if paso == 'P':
         rueda(im, 'Aries', casas_on=False, resaltar={11}, **nat); return panel(im, 'Clave 4', 'Plutón en Acuario', 'Transformación lenta y de fondo', 'Seguirá ahí muchos años')
     if paso == 'E':
@@ -204,7 +204,9 @@ def con_audio(nombre, videos, audio, total):
 def seg_mateo(nombre, ini, fin, audio):
     out = os.path.join(TMP, nombre + '.mp4'); d = dur(audio)
     vf = "[0:v]scale=1920:1080:flags=lanczos,setsar=1,fade=t=in:st=0:d=0.3,format=yuv420p[v]"
-    sh('ffmpeg', '-v', 'error', '-y', '-ss', f'{ini + OFFSET:.3f}', '-t', f'{d:.3f}', '-i', os.path.join(T, 'mateo_heygen.mp4'), '-i', audio,
+    src = os.path.join(T, 'mateo_heygen.mp4'); pieza = os.path.join(T, nombre.split('_')[-1] + '_heygen.mp4')   # trozo regenerado aparte (p. ej. C1_heygen.mp4)
+    if os.path.exists(pieza): src, ini = pieza, 0.0
+    sh('ffmpeg', '-v', 'error', '-y', '-ss', f'{ini + OFFSET:.3f}', '-t', f'{d:.3f}', '-i', src, '-i', audio,
        '-filter_complex', vf, '-map', '[v]', '-map', '1:a', '-t', f'{d:.3f}', '-r', '25', '-c:v', 'libx264', '-crf', '17', '-preset', 'medium',
        '-c:a', 'aac', '-b:a', '192k', '-ac', '2', '-ar', '44100', out)
     return out
@@ -285,11 +287,14 @@ WrapStyle: 0
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Caja,Hanken Grotesk,46,&H00E6EEF2,&H00FFFFFF,&H38160B08,&H00000000,0,0,0,0,100,100,0,0,3,14,0,2,160,160,36,1
+Style: IA,Hanken Grotesk,26,&H30E6EFF3,&H00FFFFFF,&H70200D0B,&H00000000,0,0,0,0,100,100,1,0,3,8,0,1,40,40,34,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
-open(ass, 'w').write(cab + ''.join(f'Dialogue: 0,{ass_tiempo(a)},{ass_tiempo(b + 0.15)},Caja,,0,0,0,,{x}\n' for a, b, x in subs))
+# Aviso de IA (Reglamento (UE) 2024/1689, art. 50): fijo abajo a la izquierda durante todo el vídeo
+_ia = f'Dialogue: 1,{ass_tiempo(0)},{ass_tiempo(sum(dur(x) for x in segs))},IA,,0,0,0,,Presentador creado con IA\n'
+open(ass, 'w').write(cab + _ia + ''.join(f'Dialogue: 0,{ass_tiempo(a)},{ass_tiempo(b + 0.15)},Caja,,0,0,0,,{x}\n' for a, b, x in subs))
 final = os.path.join(OUT, 'mateo01_2027_ascendente.mp4')
 sh('ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', lista, '-vf', f"subtitles={ass}:fontsdir={FUENTES}",
    '-c:v', 'libx264', '-crf', '20', '-preset', 'medium', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', final)
