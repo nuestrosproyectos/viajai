@@ -178,6 +178,10 @@ export function cubre(clavesCliente, frase) {
   return hay === c.length || (c.length >= 4 && hay >= c.length - 1) ? c.length : 0;
 }
 
+// Palabras que no cuentan para relacionar una avería de marca con lo que dice el cliente (aparatos y marcas)
+let IGNORAR = null;
+const ignorar = () => IGNORAR ||= new Set([...Object.values(APARATOS), ...Object.values(MARCAS)].flat().flatMap(f => claves(f)).concat(claves("lavadoras frigorificos lavavajillas secadoras hornos placas calderas modelos aparato aparatos")));
+
 // turnos: [{role:"user"|"assistant", content:"..."}]. Devuelve { aparato, marca, fichas[], texto }
 export function buscar(manual, turnos, { maxCodigos = 3, maxSintomas = 2 } = {}) {
   const delCliente = turnos.filter(t => t.role === "user").map(t => typeof t.content === "string" ? t.content : "");
@@ -186,7 +190,13 @@ export function buscar(manual, turnos, { maxCodigos = 3, maxSintomas = 2 } = {})
   const todo = delCliente.join(" \n ");
 
   let aparato = detectarEn(ultimo, APARATOS)[0] || detectarEn(todo, APARATOS)[0] || "";
-  if (aparato === "aire" && / secadora (de |con )?bomba de calor /.test(" " + normalizar(todo) + " ") && !/ (split|aire acondicionado|acondicionado) /.test(" " + normalizar(todo) + " ")) aparato = "secadora";
+  const nTodo = " " + normalizar(todo) + " ";
+  // "secadora ... bomba de calor" es una secadora, no un aire acondicionado
+  if (aparato === "aire" && / secadora /.test(nTodo) && !/ (split|aire acondicionado|acondicionado) /.test(nTodo)) aparato = "secadora";
+  // En un combi, "el congelador sí enfría" habla del frigorífico
+  if (aparato === "congelador" && / (frigorifico|frigo|nevera|combi) /.test(nTodo)) aparato = "frigorifico";
+  // "el aire LG no enfría", "mi aire hace ruido": aire acondicionado si no se ha nombrado otro aparato
+  if (!aparato && / (el|mi|del|un) aire /.test(nTodo)) aparato = "aire";
   const marca = detectarEn(ultimo, MARCAS)[0] || detectarEn(todo, MARCAS)[0] || "";
   if (!aparato && MARCA_APARATO[marca]) aparato = MARCA_APARATO[marca];
   const familias = marca ? (manual.marcaAFamilia[marca] || []) : [];
@@ -223,20 +233,27 @@ export function buscar(manual, turnos, { maxCodigos = 3, maxSintomas = 2 } = {})
     if (p && aparato && s.aparato === aparato) p += 2;
     return p;
   };
-  const elegir = (lista, max) => lista.filter(s => aparato && mismoAparato(s, aparato)) // sin aparato no se diagnostica por síntoma
-    .map(s => ({ s, p: puntuar(s) }))
-    .filter(x => x.p >= (porCodigo.length ? 6 : 3)).sort((a, b) => b.p - a.p).slice(0, max).map(x => x.s);
-  const porSintoma = elegir(manual.sintomas, porCodigo.length ? 1 : maxSintomas);
+  const elegir = (lista, max) => {
+    let c = lista.filter(s => aparato && mismoAparato(s, aparato)) // sin aparato no se diagnostica por síntoma
+      .map(s => ({ s, p: puntuar(s) })).filter(x => x.p >= (porCodigo.length ? 6 : 3));
+    if (c.some(x => x.s.aparato === aparato)) c = c.filter(x => x.s.aparato === aparato); // primero, el aparato exacto
+    return c.sort((a, b) => b.p - a.p).slice(0, max).map(x => x.s);
+  };
   // Oficio: la pregunta y el razonamiento de un técnico veterano para ese síntoma
   const porOficio = elegir(manual.oficioDiag || [], 1);
+  const porSintoma = elegir(manual.sintomas, porCodigo.length || porOficio.length ? 1 : maxSintomas);
+  // Vida útil y si compensa, cuando el cliente habla de la edad del aparato o de cambiarlo
+  const hablaDeEdad = / (\d+ anos|anos tiene|tiene ya|vieja|viejo|antigua|antiguo|compensa|merece la pena|vale la pena|nueva|nuevo|cambiarla|cambiarlo|comprar) /.test(nRec);
   // Avería típica documentada de esa marca, solo si encaja con lo que cuenta el cliente
   const marcaN = normalizar(marca);
   const porMarca = marca && aparato ? (manual.oficioMarca || [])
     .filter(a => a.aparato === aparato && a.marcasN.includes(marcaN))
-    .map(a => ({ a, p: a.clavesTexto.filter(w => w.length >= 4 && cRec.has(w)).length }))
-    .filter(x => x.p >= 1).sort((x, y) => y.p - x.p).slice(0, 1).map(x => x.a) : [];
-  // Vida útil y si compensa, cuando el cliente habla de la edad del aparato o de cambiarlo
-  const hablaDeEdad = / (\d+ anos|anos tiene|tiene ya|vieja|viejo|antigua|antiguo|compensa|merece la pena|vale la pena|nueva|nuevo|cambiarla|cambiarlo|comprar) /.test(nRec);
+    .map(a => {
+      const p = a.clavesTexto.filter(w => w.length >= 4 && cRec.has(w) && !ignorar().has(w)).length;
+      const seguridad = /(retirad|revision|riesgo de incendio|incendio)/.test(normalizar(a.averia)); // retiradas: si encaja o si habla de la edad
+      return { a, p: p >= 2 || (seguridad && (p >= 1 || hablaDeEdad)) ? p + (seguridad ? 5 : 0) : 0 };
+    })
+    .filter(x => x.p >= 2).sort((x, y) => y.p - x.p).slice(0, 1).map(x => x.a) : [];
   const porVida = hablaDeEdad && aparato && manual.oficioVida?.[aparato] ? [manual.oficioVida[aparato]] : [];
 
   const fichas = [...porCodigo, ...porSintoma, ...porOficio, ...porMarca, ...porVida];
@@ -261,7 +278,7 @@ function redactar(fichas, marca, aparato) {
         (f.pieza_a_llevar ? ` Pieza a llevar: ${f.pieza_a_llevar}.` : "");
     }
     if (f.tipo === "marca") return `- Avería típica documentada en ${f.marcas.join(", ")}${f.epoca ? ` (${f.epoca})` : ""}: ${f.averia}${f.confianza !== "alta" ? " (confianza media: dilo con prudencia)" : ""}`;
-    if (f.tipo === "vida") return `- Vida útil media de ${f.aparato}: ${f.anos || "sin dato"} años. Cuándo compensa reparar: ${f.compensa}`;
+    if (f.tipo === "vida") return `- ${/\d/.test(f.anos) ? `Vida útil media de ${f.aparato}: ${f.anos} años. ` : ""}Cuándo compensa reparar: ${f.compensa}`;
     return `- Síntoma «${f.sintoma}» en ${f.aparato}. Causas de más a menos frecuente: ${f.causas.join("; ")}.` +
       (f.que_puede_hacer_el_cliente ? ` El cliente puede comprobar: ${f.que_puede_hacer_el_cliente}` : "") +
       (f.pieza_probable ? ` Piezas que suele llevar el técnico: ${f.pieza_probable}.` : "") +

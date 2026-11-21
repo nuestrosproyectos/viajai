@@ -1,0 +1,135 @@
+{
+ "aparato": "congelador",
+ "funcionamiento": "Funciona igual que un frigorífico (compresor con relé PTC y klixon, condensador, capilar y evaporador) pero regulado entre -15 y -23 grados. En los congeladores cíclicos, sobre todo los horizontales (arcón) y muchos verticales de cajones, el evaporador va en las paredes o en las bandejas y forma escarcha que hay que descongelar a mano; el condensador suele ir oculto en los laterales de la carcasa, por eso estos se notan calientes. Los verticales No Frost llevan evaporador oculto, ventilador y resistencia de desescarche como un combi No Frost.",
+ "componentes": [
+  {
+   "pieza": "condensador en laterales (skin condenser)",
+   "que_hace": "Tubos pegados por dentro de la carcasa que disipan el calor; por eso los costados se calientan, lo cual es normal.",
+   "sintomas_si_falla": [
+    "el cliente cree que es una avería porque los laterales queman",
+    "enfría poco si el aparato está encajonado sin aire"
+   ],
+   "prueba_tecnico": "Comprobar que los laterales están templados o calientes con el motor en marcha (normal) y que hay separación con paredes y muebles.",
+   "fuente": "https://www.samsung.com/co/support/home-appliances/why-are-the-side-walls-of-a-samsung-refrigerator-heating-up/",
+   "confianza": "media"
+  },
+  {
+   "pieza": "junta de la tapa o puerta",
+   "que_hace": "Sella el congelador; en los verticales, la nivelación ayuda a que la puerta cierre por gravedad.",
+   "sintomas_si_falla": [
+    "escarcha excesiva",
+    "el motor no para",
+    "alimentos con cristales de hielo"
+   ],
+   "prueba_tecnico": "Prueba del papel y comprobar que el aparato no se inclina hacia delante; ajustar patas delanteras.",
+   "fuente": "https://www.beko.com/es-es/blog/porque-hace-hielo-un-congelador-no-frost%20",
+   "confianza": "alta"
+  },
+  {
+   "pieza": "termostato (de bulbo en los mecánicos) o sonda NTC",
+   "que_hace": "Arranca y para el compresor según la temperatura.",
+   "sintomas_si_falla": [
+    "no congela con el motor parado",
+    "el motor no para y congela de más"
+   ],
+   "prueba_tecnico": "Medir temperatura real con termómetro frente al ajuste; comprobar continuidad del termostato o la NTC contra tabla.",
+   "fuente": "https://www.beko.com/es-es/soporte/congelador--solucion-de-problemas--articulo/como-se-repara-un-congelador-que-no-congela",
+   "confianza": "media"
+  },
+  {
+   "pieza": "compresor, relé PTC y klixon",
+   "que_hace": "Igual que en el frigorífico: el relé arranca el compresor y el klixon lo protege.",
+   "sintomas_si_falla": [
+    "no congela y el motor solo hace clic",
+    "motor callado"
+   ],
+   "prueba_tecnico": "Escuchar clic de arranque; revisar relé y klixon por quemaduras y continuidad. Circuito de gas solo por técnico con certificado de gases fluorados.",
+   "fuente": "https://www.ocu.org/repara/frigorificos/compresor-frigo",
+   "confianza": "alta"
+  }
+ ],
+ "diagnostico": [
+  {
+   "sintoma": "Mucha escarcha o bloques de hielo",
+   "palabras": [
+    "mucho hielo",
+    "escarcha",
+    "no cierran los cajones por el hielo"
+   ],
+   "preguntas_clave": [
+    "¿Cuándo lo descongeló por última vez?",
+    "¿La tapa o puerta cierra bien o se queda algo enganchado?",
+    "¿Mete comida caliente?",
+    "¿Es No Frost o hay que descongelarlo?"
+   ],
+   "como_descartan": "En cíclicos es normal acumular escarcha: con más de 3-5 mm hay que descongelar (3 mm suben el consumo un 30 %). Si se forma muy rápido, entra aire: junta, nivelación o puerta que no cierra. Si es No Frost y hace hielo, junta o fallo de desescarche.",
+   "pruebas_tecnico": [
+    "Prueba del papel en junta",
+    "Nivelar",
+    "En No Frost revisar desescarche"
+   ],
+   "pieza_a_llevar": "junta de puerta o tapa",
+   "fuentes": [
+    "https://www.ocu.org/electrodomesticos/frigorificos/consejos/como-descongelar",
+    "https://www.beko.com/es-es/blog/porque-hace-hielo-un-congelador-no-frost%20"
+   ]
+  },
+  {
+   "sintoma": "No congela o se ablanda la comida",
+   "palabras": [
+    "no congela",
+    "se descongela",
+    "los helados están blandos"
+   ],
+   "preguntas_clave": [
+    "¿El motor suena, hace clic o está callado?",
+    "¿Los laterales están calientes?",
+    "¿Tiene mucha escarcha en las paredes?",
+    "¿Lo llenó de golpe con mucha comida o caliente?"
+   ],
+   "como_descartan": "Motor callado o con clic: arranque o control (ver frigorífico). Motor en marcha y laterales fríos con poco frío: sospecha de circuito, técnico de gases fluorados. Mucha escarcha: aislante de hielo, descongelar. Carga grande o caliente: esperar 24 h.",
+   "pruebas_tecnico": [
+    "Revisar relé/klixon",
+    "Comprobar temperatura de laterales",
+    "Medir termostato"
+   ],
+   "pieza_a_llevar": "relé PTC, klixon, termostato",
+   "fuentes": [
+    "https://www.beko.com/es-es/soporte/congelador--solucion-de-problemas--articulo/como-se-repara-un-congelador-que-no-congela",
+    "https://www.ocu.org/repara/frigorificos/compresor-frigo"
+   ]
+  },
+  {
+   "sintoma": "Los laterales están muy calientes",
+   "palabras": [
+    "quema por los lados",
+    "los costados calientes",
+    "está caliente por fuera"
+   ],
+   "preguntas_clave": [
+    "¿Congela bien?",
+    "¿Está metido entre muebles o pegado a la pared?"
+   ],
+   "como_descartan": "Si congela bien, es el condensador en los laterales y es normal. Si además no congela y está encajonado, falta ventilación.",
+   "pruebas_tecnico": [
+    "Comprobar separación y ventilación"
+   ],
+   "pieza_a_llevar": "ninguna",
+   "fuentes": [
+    "https://www.samsung.com/co/support/home-appliances/why-are-the-side-walls-of-a-samsung-refrigerator-heating-up/"
+   ]
+  }
+ ],
+ "averias_por_marca": [],
+ "vida_util": {
+  "anos": "sin cifra específica encontrada; se toma la del frigorífico, unos 12 de media",
+  "fuente": "https://www.ocu.org/electrodomesticos/frigorificos/noticias/electrodomesticos-marcas-mas-duraderas"
+ },
+ "compensa_reparar": "Misma regla que el frigorífico: menos de unos 10 años y reparación por debajo del 50 % de uno nuevo, reparar (OCU, https://ocu.org/electrodomesticos/lavadora/consejos/lavadora-arreglarla-sustituirla). El hielo acumulado aumenta el consumo y acorta la vida útil (OCU, https://www.ocu.org/electrodomesticos/frigorificos/noticias/frigos-con-hielo-enfrian-peor530644).",
+ "mantenimiento": [
+  "Descongelar los cíclicos cuando la escarcha llegue a unos 3-5 mm o cada 6 meses aproximadamente (fuente: https://www.ocu.org/electrodomesticos/frigorificos/consejos/como-descongelar; https://www.liebherr.com/es-es/refrigeradores-congeladores/freshmag/ideas-de-refrigeración/descongelación-adecuada-7810380)",
+  "No meter alimentos calientes y no sobrecargarlo, para que circule el aire (fuente: https://www.beko.com/es-es/soporte/congelador--solucion-de-problemas--articulo/como-se-repara-un-congelador-que-no-congela)",
+  "Nivelar el aparato y comprobar la junta para que la puerta cierre bien (fuente: https://www.beko.com/es-es/blog/porque-hace-hielo-un-congelador-no-frost%20)",
+  "Limpiar el polvo del condensador sin paños húmedos y dejar espacio de ventilación (fuente: https://www.samsung.com/co/support/home-appliances/what-should-i-do-if-the-product-does-not-cool)"
+ ]
+}

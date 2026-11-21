@@ -14569,5 +14569,4418 @@ export default {
   }
  ],
  "compensa_reparar": "Regla orientativa (OCU, para lavadoras, extrapolable a gama blanca): suele compensar reparar si el aparato tiene menos de 10 años y la reparación cuesta menos del 50% de lo que cuesta uno nuevo equivalente. Averías caras como motor o tambor/rodamientos de lavadora, compresor o fuga de gas de frigorífico, o depósito perforado de termo, a menudo no compensan si el aparato ya tiene años. Como referencia, OCU sitúa la vida media en unos 10-12 años (frigorífico ~12,3; lavavajillas ~11,6; lavadora ~11,5). Si el aparato está en garantía legal (3 años en compras desde 2022), debe repararlo el vendedor/fabricante. Fuentes: https://ocu.org/electrodomesticos/lavadora/consejos/lavadora-arreglarla-sustituirla ; https://www.ocu.org/organizacion/prensa/notas-de-prensa/2021/encfiabilidadelectrodomesticos130121 ; https://www.ocu.org/consumo-familia/derechos-consumidor/consejos/servicios-asistencia-tecnica",
- "oficio": []
+ "oficio": [
+  {
+   "aparato": "aire",
+   "funcionamiento": "Un split es un circuito frigorífico cerrado: el compresor de la máquina de fuera bombea el refrigerante, que absorbe calor de la casa en el evaporador (unidad interior) y lo suelta fuera en el condensador, ayudado por el ventilador exterior. En los inverter la placa electrónica varía la velocidad del compresor, así que el equipo regula de forma progresiva y conviene dejarle unos minutos antes de sacar conclusiones. En bomba de calor el ciclo se invierte para calentar y, cuando se forma hielo en la máquina de fuera, el equipo hace desescarches automáticos (para el ventilador interior y puede salir vapor fuera: es normal). Al enfriar, el evaporador condensa agua que se recoge en una bandeja y sale por el tubo de desagüe. En los equipos de conductos la máquina interior va en el falso techo y reparte el aire por conductos, rejillas y, a veces, compuertas por estancia. Todo lo que toque el gas refrigerante (fugas, recargas, cambio de compresor o válvulas) es exclusivo de técnico con certificado de gases fluorados (RD 115/2017).",
+   "componentes": [
+    {
+     "pieza": "condensador (capacitor) de arranque/marcha del compresor y del ventilador exterior",
+     "que_hace": "Da el impulso de arranque al compresor o al motor del ventilador y mantiene estable la tensión durante el funcionamiento; hay de arranque, de marcha y dobles.",
+     "sintomas_si_falla": [
+      "la máquina de fuera no arranca o el ventilador exterior no gira",
+      "el compresor intenta arrancar, se calienta y salta la protección o el diferencial",
+      "la unidad interior funciona pero la exterior no hace ruido de motor"
+     ],
+     "prueba_tecnico": "Con la corriente cortada y el condensador descargado, medir capacidad con polímetro en escala de µF: la lectura debe estar dentro de ±10 % del valor nominal impreso; fuera de ese margen se cambia.",
+     "fuente": "https://www.tcl.com/es/es/blog/tips/how-to-diagnose-replace-ac-capacitor",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "motor ventilador de la unidad exterior",
+     "que_hace": "Mueve aire a través del condensador (batería exterior) para que el refrigerante suelte el calor.",
+     "sintomas_si_falla": [
+      "enfría poco o nada",
+      "el equipo para por alta presión o protección térmica",
+      "ruido de golpeteo si las aspas tocan algo"
+     ],
+     "prueba_tecnico": "Comprobar si gira y si gira libre a mano; revisar motor, aspa y su condensador; un ventilador parado o una batería sucia disparan la presión de alta.",
+     "fuente": "https://www.danfoss.com/es-es/industries/food-and-beverage/dcs/cold-rooms/system-design-component-selection/application-vertical-market-sizing/troubleshooting-fault-diagnosis/",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "compresor",
+     "que_hace": "Bombea y comprime el refrigerante; es el corazón (y la pieza más cara) del equipo.",
+     "sintomas_si_falla": [
+      "no enfría ni calienta aunque el ventilador exterior gire",
+      "salta el diferencial o la protección al arrancar",
+      "chirrido agudo o golpes metálicos fuertes en la máquina de fuera"
+     ],
+     "prueba_tecnico": "Medir resistencia entre bornes común, marcha y arranque (C, R, S): 0 ohmios entre bornes indica cortocircuito. En inverter, revisar antes placa/módulo IPM. Cambio de compresor solo por técnico con certificado de gases fluorados.",
+     "fuente": "https://www.fluke.com/es-sv/informacion/blog/motores-sistemas-de-impulsion-bombas-compresores/interruptores-centrifugos-termicos-y-de-capacitor-provocan-la-mayoria-de-las-fallas-en-los-motores-monofasicos",
+     "confianza": "media"
+    },
+    {
+     "pieza": "placa inverter / módulo IPM de la unidad exterior",
+     "que_hace": "Controla la velocidad del compresor en los equipos inverter.",
+     "sintomas_si_falla": [
+      "el equipo da error de placa o de compresor y no arranca la exterior",
+      "fallos que aparecen tras un corte de luz, subida o bajada de tensión o tormenta"
+     ],
+     "prueba_tecnico": "Leer el código, comprobar tensión de alimentación y descartar compresor trabado; si el fallo es del módulo IPM, el fabricante suele indicar sustituir la placa exterior completa.",
+     "fuente": "https://www.midea.es/wp-content/uploads/2020/04/PC04_DOM.pdf",
+     "confianza": "media"
+    },
+    {
+     "pieza": "sondas de temperatura (termistores NTC) de ambiente, batería y descarga",
+     "que_hace": "Informan a la placa de las temperaturas para regular compresor, ventiladores y desescarche.",
+     "sintomas_si_falla": [
+      "código de error de sonda",
+      "el equipo para antes de tiempo o no regula bien la temperatura",
+      "desescarches raros en invierno"
+     ],
+     "prueba_tecnico": "Desconectar la sonda y medir su resistencia, comparándola con la tabla del fabricante a la temperatura real (valores típicos 10, 15 o 20 kΩ a 25 °C según marca; no hay valor universal).",
+     "fuente": "https://cdn.shopify.com/s/files/1/0245/5633/9234/files/Guia_de_resolucion_de_problemas_AUFIT_parte_2.pdf",
+     "confianza": "media"
+    },
+    {
+     "pieza": "válvula de expansión electrónica (EEV)",
+     "que_hace": "Dosifica el paso de refrigerante hacia el evaporador según lo que pide la placa.",
+     "sintomas_si_falla": [
+      "enfría poco con el compresor funcionando",
+      "escarcha o mal reparto de frío",
+      "error de conexión de la válvula"
+     ],
+     "prueba_tecnico": "Comprobar conexión y resistencia de la bobina en la placa contra el manual; distinguir bobina, cableado, mando de la placa y cuerpo de la válvula. Una EEV muy abierta puede estar solo compensando falta de gas, así que cambiarla no arregla la causa. Intervención en el circuito solo con certificado de gases fluorados.",
+     "fuente": "https://www.midea.es/wp-content/uploads/2019/11/F6-V6.pdf",
+     "confianza": "media"
+    },
+    {
+     "pieza": "filtros de aire y batería evaporadora (unidad interior)",
+     "que_hace": "Los filtros retienen polvo; el evaporador enfría el aire y condensa la humedad.",
+     "sintomas_si_falla": [
+      "sale poco aire o enfría poco",
+      "el evaporador se congela y luego gotea",
+      "mal olor por moho y humedad"
+     ],
+     "prueba_tecnico": "Mirar filtros y aletas; si hay hielo, apagar y dejar descongelar; limpieza profunda del evaporador con producto específico (los sprays caseros solo tapan el olor unas semanas).",
+     "fuente": "https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002102-20155198989469/",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "bandeja y tubo de desagüe de condensados",
+     "que_hace": "Recogen el agua que condensa el evaporador y la sacan fuera o a un desagüe.",
+     "sintomas_si_falla": [
+      "gotea agua por la unidad interior",
+      "mal olor",
+      "gotea solo por un lado (unidad desnivelada)"
+     ],
+     "prueba_tecnico": "Echar agua en la bandeja y ver si sale por el extremo; desatascar con jeringa o soplando desde fuera; revisar que el tubo no esté doblado ni por encima de la máquina y que la unidad esté nivelada; revisar grietas en la bandeja.",
+     "fuente": "https://www.midea.com/centroamerica/blog/ver-todas/tips/se-puede-usar-el-aire-acondicionado-si-gotea-por-dentro",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "silentblocks y soportes de la unidad exterior",
+     "que_hace": "Amortiguan la vibración del compresor y del ventilador.",
+     "sintomas_si_falla": [
+      "vibraciones y ruido que se transmiten a la pared",
+      "traqueteo de tubos que tocan el compresor o la carcasa"
+     ],
+     "prueba_tecnico": "Revisar gomas, nivelación y fijación del soporte; separar tubos que rocen.",
+     "fuente": "https://www.xatakahome.com/hogar/tu-aire-acondicionado-vibra-hace-ruido-quiza-problema-este-pieza-que-casi-nadie-revisa",
+     "confianza": "media"
+    }
+   ],
+   "diagnostico": [
+    {
+     "sintoma": "No enfría",
+     "palabras": [
+      "no enfría",
+      "no echa frío",
+      "echa aire caliente",
+      "echa aire del tiempo",
+      "no refresca"
+     ],
+     "preguntas_clave": [
+      "¿En el mando pone el copo de nieve (modo frío) y no el ventilador o el sol?",
+      "¿La máquina de fuera arranca y gira su ventilador?",
+      "¿Cuándo limpió los filtros de la máquina de dentro por última vez?",
+      "¿Ve hielo o escarcha en los tubos o en la máquina de dentro?",
+      "¿La máquina de fuera está al sol o tapada, con hojas o suciedad en la rejilla?",
+      "¿Hace cuánto que lo enciende? ¿Ha esperado unos minutos?"
+     ],
+     "como_descartan": "Modo equivocado (ventilador o calor) es un error frecuente y se arregla en el mando. Si la exterior no hace ruido de motor, apunta a condensador de arranque, placa o compresor. Si el ventilador exterior no gira o la batería está sucia, el condensador no disipa y el equipo pierde capacidad o para por alta presión. Filtros muy sucios cortan el aire y pueden helar el evaporador. Hielo en los tubos con filtros limpios sugiere falta de refrigerante (fuga): solo técnico de gases fluorados. En inverter hay que dar unos minutos para estabilizar.",
+     "pruebas_tecnico": [
+      "Medir condensadores en µF (±10 %)",
+      "Comprobar giro del ventilador exterior y limpieza de la batería",
+      "Leer presiones, recalentamiento y subenfriamiento (técnico con certificado de gases fluorados)",
+      "Buscar fuga antes de recargar"
+     ],
+     "pieza_a_llevar": "Condensadores de arranque/marcha de varios valores y motor ventilador exterior compatible si se confirma; equipo de manómetros y detector de fugas (técnico certificado).",
+     "fuentes": [
+      "https://www.eldiario.es/consumoclaro/aire-acondicionado-no-enfria-factores-debes-identificar-solucionarlo_1_13417110.html",
+      "https://www.danfoss.com/es-es/industries/food-and-beverage/dcs/cold-rooms/system-design-component-selection/application-vertical-market-sizing/troubleshooting-fault-diagnosis/",
+      "https://www.pccomponentes.com/mi-aire-acondicionado-no-enfria-por-que-causas-soluciones"
+     ]
+    },
+    {
+     "sintoma": "La máquina de fuera no arranca (la de dentro sí)",
+     "palabras": [
+      "la de fuera no arranca",
+      "el motor de fuera no suena",
+      "solo sopla aire",
+      "no se enciende la exterior"
+     ],
+     "preguntas_clave": [
+      "¿Oye algún zumbido o clic en la máquina de fuera al encender?",
+      "¿Ha saltado algún automático o el diferencial?",
+      "¿Ha habido tormenta, apagón o corte de luz hace poco?",
+      "¿Sale algún código o parpadea alguna luz en la máquina de dentro?"
+     ],
+     "como_descartan": "Zumbido sin arranque apunta a condensador de arranque o compresor trabado. Sin ningún ruido y con código, apunta a placa (en inverter, módulo IPM) o comunicación. Si el problema empezó tras un corte o pico de tensión, sospechar de la placa; a veces se borra al desconectar y reconectar. Diferencial que salta al arrancar: compresor o condensador.",
+     "pruebas_tecnico": [
+      "Medir tensión de llegada a la exterior",
+      "Medir condensador de arranque",
+      "Medir bobinados del compresor (C-R-S)",
+      "Leer código y revisar placa/IPM según manual"
+     ],
+     "pieza_a_llevar": "Condensador de arranque; placa exterior solo tras identificar modelo exacto.",
+     "fuentes": [
+      "https://www.pccomponentes.com/mi-aire-acondicionado-no-enfria-por-que-causas-soluciones",
+      "https://servidos.ar/codigos-de-error/aire-acondicionado/daikin-split-inverter/l5",
+      "https://www.tcl.com/es/es/blog/tips/how-to-diagnose-replace-ac-capacitor"
+     ]
+    },
+    {
+     "sintoma": "Gotea agua por la unidad interior",
+     "palabras": [
+      "gotea",
+      "cae agua",
+      "chorrea",
+      "sale agua por el split",
+      "pierde agua"
+     ],
+     "preguntas_clave": [
+      "¿Gotea de forma continua o de golpe cuando lleva un rato apagado?",
+      "¿Por el tubo de desagüe de fuera sale agua cuando funciona en frío?",
+      "¿Cae por un lado solo o por el centro?",
+      "¿Cuándo limpió los filtros?",
+      "¿Ve hielo en la máquina de dentro?"
+     ],
+     "como_descartan": "Si por el tubo de fuera no sale agua, el desagüe está atascado (lo más común: suciedad, polvo u hongos). Si cae solo por un lado, la unidad está desnivelada. Si cae de golpe tras apagar, el evaporador se había helado (filtros sucios o falta de gas) y al deshelarse desborda la bandeja. Si sale agua por el tubo pero sigue goteando, bandeja agrietada o tubo doblado o por encima de la máquina. Con goteo fuerte, apagar el equipo.",
+     "pruebas_tecnico": [
+      "Verter agua en la bandeja y comprobar salida",
+      "Desatascar el desagüe con jeringa o aire",
+      "Revisar nivelación",
+      "Revisar bandeja y comprobar si hay hielo en el evaporador"
+     ],
+     "pieza_a_llevar": "Tubo de desagüe, jeringa o bomba de desatasco, nivel; bomba de condensados si la instalación la tiene.",
+     "fuentes": [
+      "https://www.midea.com/centroamerica/blog/ver-todas/tips/se-puede-usar-el-aire-acondicionado-si-gotea-por-dentro",
+      "https://www.tcl.com/es/es/blog/tips/ac-leaking-water-causes-and-fix",
+      "https://ushl.samsung.com/es/support/home-appliances/que-hacer-cuando-caen-gotas-de-agua-de-tu-aire-acondicionado"
+     ]
+    },
+    {
+     "sintoma": "Se hiela (hielo en la unidad interior o en los tubos) en modo frío",
+     "palabras": [
+      "se congela",
+      "tiene hielo",
+      "escarcha",
+      "los tubos están blancos"
+     ],
+     "preguntas_clave": [
+      "¿Los filtros están limpios?",
+      "¿Sale poco aire por la máquina de dentro?",
+      "¿Enfría menos que antes y cada año va a peor?"
+     ],
+     "como_descartan": "Filtros sucios o poco caudal de aire hielan el evaporador; si se limpian y sigue, lo probable es falta de refrigerante por fuga. Que enfríe cada año menos encaja con una fuga lenta: el gas no se gasta, si falta es porque hay fuga.",
+     "pruebas_tecnico": [
+      "Limpieza de filtros y comprobación de caudal",
+      "Medición de presiones y búsqueda de fugas (técnico con certificado de gases fluorados)"
+     ],
+     "pieza_a_llevar": "Detector de fugas, manómetros, refrigerante del tipo del equipo (técnico certificado).",
+     "fuentes": [
+      "https://www.tcl.com/es/es/blog/tips/ac-leaking-water-causes-and-fix",
+      "https://www.ocu.org/vivienda-y-energia/aire-acondicionado/consejos/recargar-gas-aire-acondicionado"
+     ]
+    },
+    {
+     "sintoma": "Bomba de calor que no calienta o se para en invierno",
+     "palabras": [
+      "no calienta",
+      "echa frío en invierno",
+      "se para y sale humo fuera",
+      "la máquina de fuera echa vapor",
+      "tiene hielo fuera"
+     ],
+     "preguntas_clave": [
+      "¿Está en modo calor (sol) en el mando?",
+      "¿Se para un rato y luego vuelve a calentar solo?",
+      "¿Sale vapor o agua de la máquina de fuera cuando se para?",
+      "¿Hace mucho frío fuera, cerca o por debajo de cero?",
+      "¿Tiene la máquina de fuera tapada con una funda?",
+      "¿Sale un código como 'dF' o similar?"
+     ],
+     "como_descartan": "Si se para unos minutos, sale vapor fuera y vuelve a calentar, es el desescarche: normal, no es avería (el ventilador interior para y puede notarse algo de frío). Una funda sobre la exterior impide el desescarche y aumenta el consumo. Si se queda helada permanentemente o no vuelve a calentar, hay que revisar sondas, válvula inversora o carga de gas (técnico).",
+     "pruebas_tecnico": [
+      "Observar un ciclo de desescarche completo",
+      "Medir sondas de batería exterior",
+      "Comprobar que el equipo invierte el ciclo al cambiar de frío a calor",
+      "Presiones y carga (técnico certificado)"
+     ],
+     "pieza_a_llevar": "Sondas NTC del modelo; el resto según diagnóstico.",
+     "fuentes": [
+      "https://tarifaluzhora.es/noticias/aire-acondicionado-2026-humo-invierno-desescarche",
+      "https://www.lg.com/cac/soporte/ayuda-producto/CT30014140-20155115907082",
+      "https://www.xatakahome.com/a-fondo/tengo-vecinos-que-tapan-maquina-exterior-aire-acondicionado-invierno-bueno-hacerlo-esto-que-dicen-marcas"
+     ]
+    },
+    {
+     "sintoma": "Huele mal",
+     "palabras": [
+      "huele mal",
+      "olor a humedad",
+      "olor a moho",
+      "huele a cerrado",
+      "huele a calcetín"
+     ],
+     "preguntas_clave": [
+      "¿Huele solo al encenderlo o todo el rato?",
+      "¿Cuándo limpió los filtros?",
+      "¿Gotea o le cuesta sacar el agua?",
+      "¿Cuándo se le hizo la última limpieza a fondo?"
+     ],
+     "como_descartan": "Olor al arrancar apunta al evaporador con humedad y moho; olor continuo, filtros sucios. Si además hay problemas de desagüe, el agua estancada favorece el moho. Si tras lavar filtros sigue, hace falta limpieza profunda del evaporador y turbina (técnico).",
+     "pruebas_tecnico": [
+      "Revisar filtros, evaporador y turbina",
+      "Comprobar desagüe",
+      "Limpieza higienizante del evaporador"
+     ],
+     "pieza_a_llevar": "Producto limpiador de baterías, kit de limpieza (bolsa de lavado), filtros de repuesto.",
+     "fuentes": [
+      "https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002102-20155198989469/",
+      "https://www.bosch-homecomfort.com/es/es/conocimiento/aire-acondicionado/limpieza-del-aire-acondicionado/"
+     ]
+    },
+    {
+     "sintoma": "Hace ruido",
+     "palabras": [
+      "hace ruido",
+      "vibra",
+      "chirría",
+      "traqueteo",
+      "crujidos",
+      "silba",
+      "golpes"
+     ],
+     "preguntas_clave": [
+      "¿El ruido viene de la máquina de dentro o de la de fuera?",
+      "¿Es un crujido al encender o apagar, o un ruido continuo?",
+      "¿Es un chirrido o silbido agudo?",
+      "¿Vibra la pared o el soporte?"
+     ],
+     "como_descartan": "Crujidos al arrancar o apagar son dilatación del plástico: normal. Clics de relé y golpes suaves del compresor al arrancar también son normales. Chirrido o silbido agudo puede ser fuga de refrigerante, presión alta o motor/compresor dañado: apagar y llamar al técnico. Traqueteo: tubo que toca el compresor o la carcasa. Vibración: silentblocks gastados, soporte mal nivelado o algo golpeando el ventilador.",
+     "pruebas_tecnico": [
+      "Localizar el origen con el equipo en marcha",
+      "Revisar silentblocks, soporte y nivelación",
+      "Revisar aspas del ventilador y rodamientos del motor"
+     ],
+     "pieza_a_llevar": "Silentblocks, tacos de goma, nivel; motor ventilador si hay rodamiento dañado.",
+     "fuentes": [
+      "https://www.lg.com/ar/soporte/ayuda-producto/CT32005513-20154896387662",
+      "https://www.samsung.com/mx/support/home-appliances/what-should-i-do-when-the-air-conditioner-is-noisy/",
+      "https://www.xatakahome.com/hogar/fabricantes-avisan-ruidos-que-no-normales-aire-acondicionado-antesala-averia"
+     ]
+    },
+    {
+     "sintoma": "Conductos: no llega aire a una habitación o llega poco",
+     "palabras": [
+      "no sale aire por una rejilla",
+      "una habitación no se enfría",
+      "llega poco aire",
+      "conductos"
+     ],
+     "preguntas_clave": [
+      "¿Falla en una sola habitación o en toda la casa?",
+      "¿Tiene termostato o mando por zonas (cada habitación el suyo)?",
+      "¿Cuándo se limpió el filtro de la rejilla de retorno?",
+      "¿La rejilla de esa habitación está abierta y sin muebles delante?",
+      "¿Ha habido obras o alguien ha tocado el falso techo?"
+     ],
+     "como_descartan": "Si es toda la casa, filtro de retorno sucio o problema de la máquina. Si es una sola estancia con zonas, la compuerta de esa zona no actúa. Si no hay zonas, un tramo de conducto soltado del principal tira el aire al falso techo, o la rejilla está bloqueada. Cerrar muchas rejillas para ahorrar puede dañar el sistema.",
+     "pruebas_tecnico": [
+      "Medir caudal en cada rejilla",
+      "Revisar motor de compuerta y su señal",
+      "Inspeccionar conducto por el registro del falso techo"
+     ],
+     "pieza_a_llevar": "Motor de compuerta compatible, cinta y abrazaderas para conducto, filtro de retorno.",
+     "fuentes": [
+      "https://www.todoexpertos.com/preguntas/dj7t6656q49oqrs4/flujo-de-aire-acondicionado-por-conductos",
+      "https://www.xatakahome.com/hogar/expertos-advierten-cerrar-rejillas-aire-acondicionado-habitaciones-no-usadas-puede-danar-sistema",
+      "https://www.ocu.org/vivienda-y-energia/aire-acondicionado/consejos/aire-acondicionado-por-conductos"
+     ]
+    },
+    {
+     "sintoma": "Equipo antiguo que pide gas",
+     "palabras": [
+      "le falta gas",
+      "hay que cargarle gas",
+      "recargar",
+      "es muy antiguo",
+      "R22"
+     ],
+     "preguntas_clave": [
+      "¿Qué año tiene más o menos el aparato?",
+      "¿Le han cargado gas antes? ¿Cuántas veces?",
+      "¿En la placa de características de la máquina de fuera pone R22, R410A o R32?"
+     ],
+     "como_descartan": "El gas no se gasta: si falta, hay fuga, y recargar sin reparar es tirar el dinero. Si el equipo es de R22, desde 2010 no se puede recargar con R22 nuevo y la reparación no suele compensar frente a un equipo nuevo de R32. Recargas cada temporada confirman fuga.",
+     "pruebas_tecnico": [
+      "Identificar refrigerante en la placa",
+      "Búsqueda de fuga y prueba de estanqueidad (técnico con certificado de gases fluorados)"
+     ],
+     "pieza_a_llevar": "Detector de fugas; presupuesto de sustitución si es R22.",
+     "fuentes": [
+      "https://www.ocu.org/vivienda-y-energia/aire-acondicionado/consejos/recargar-gas-aire-acondicionado",
+      "https://www.construmatica.com/archivos/28485/fluidos_frigorificos/gases_refrigerantes_hcfcs/r22/ficha_tecnica.pdf",
+      "https://www.endesa.com/es/blog/blog-de-endesa/climatizacion/gases-aire-acondicionado"
+     ]
+    }
+   ],
+   "averias_por_marca": [
+    {
+     "marcas": [
+      "Cualquier marca con R22"
+     ],
+     "epoca": "equipos fabricados aproximadamente antes de 2004-2010 (refrigerante R22)",
+     "averia": "Una fuga en un equipo de R22 no se puede resolver recargando con R22 nuevo (prohibido desde el 1-1-2010 por el Reglamento CE 2037/2000); la reparación no suele compensar frente a un equipo nuevo de R32.",
+     "fuente": "https://www.construmatica.com/archivos/28485/fluidos_frigorificos/gases_refrigerantes_hcfcs/r22/ficha_tecnica.pdf",
+     "confianza": "alta"
+    },
+    {
+     "marcas": [
+      "Daikin"
+     ],
+     "epoca": "equipos de conductos antiguos (caso de usuario en comunidad OCU)",
+     "averia": "Avería en máquina de conductos para la que ya no hay repuesto, obligando a sustituir el equipo; caso documentado por un usuario, no un fallo de serie.",
+     "fuente": "https://www.ocu.org/comunidad/energias-renovables/calefaccion-y-aire-acondicionado/conversacion/4445/averia-en-maquina-de-conductos-daikin-sin-repuesto-ya--",
+     "confianza": "media"
+    },
+    {
+     "marcas": [
+      "Midea"
+     ],
+     "epoca": "split inverter domésticos (manual de servicio)",
+     "averia": "Ante fallo del módulo IPM (control del compresor) el manual de servicio indica sustituir la placa electrónica exterior completa, no repararla.",
+     "fuente": "https://www.midea.es/wp-content/uploads/2020/04/PC04_DOM.pdf",
+     "confianza": "media"
+    }
+   ],
+   "vida_util": {
+    "anos": "Orientativo 15-20 años con mantenimiento regular según un fabricante (TCL); no se ha encontrado una cifra de la OCU o del IDAE. Ambientes salinos o corrosivos la acortan.",
+    "fuente": "https://www.tcl.com/es/es/blog/playbooks/ac-unit-life-expectancy"
+   },
+   "compensa_reparar": "No existe una regla oficial tipo '50 % del precio'. Orientación: si el equipo usa R22 y tiene fuga, casi nunca compensa reparar (https://www.endesa.com/es/blog/blog-de-endesa/climatizacion/gases-aire-acondicionado); si falta gas, recargar sin reparar la fuga no sirve, porque el gas solo se pierde por avería (https://www.ocu.org/vivienda-y-energia/aire-acondicionado/consejos/recargar-gas-aire-acondicionado); averías de condensador, ventilador, sondas o desagüe suelen compensar; compresor o placa en equipo antiguo y sin repuesto, valorar cambio (https://www.ocu.org/comunidad/energias-renovables/calefaccion-y-aire-acondicionado/conversacion/4445/averia-en-maquina-de-conductos-daikin-sin-repuesto-ya--).",
+   "mantenimiento": [
+    "Limpie los filtros de la unidad interior, como mínimo una vez al año y con más frecuencia en temporada de uso, con el equipo apagado y desenchufado (fuente: https://www.ocu.org/vivienda-y-energia/aire-acondicionado/consejos/mantenimiento-aire-acondicionado)",
+    "Lave los filtros con agua tibia y jabón neutro y déjelos secar antes de colocarlos (fuente: https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002102-20155198989469/)",
+    "Revisión profesional anual con limpieza de evaporador y condensador; la OCU calcula unos 100 euros al año en un split y 170-230 euros en conductos (fuente: https://www.ocu.org/vivienda-y-energia/aire-acondicionado/consejos/mantenimiento-aire-acondicionado)",
+    "Mantenga despejada la máquina de fuera: sin hojas, bolsas ni objetos que tapen la rejilla (fuente: https://www.eldiario.es/consumoclaro/aire-acondicionado-no-enfria-factores-debes-identificar-solucionarlo_1_13417110.html)",
+    "No tape la máquina de fuera en invierno si tiene bomba de calor: impide el desescarche y sube el consumo (fuente: https://www.xatakahome.com/a-fondo/tengo-vecinos-que-tapan-maquina-exterior-aire-acondicionado-invierno-bueno-hacerlo-esto-que-dicen-marcas)",
+    "No hace falta recargar gas cada año: solo se recarga si hay fuga, y lo hace un técnico con certificado de gases fluorados (fuente: https://www.ocu.org/vivienda-y-energia/aire-acondicionado/consejos/recargar-gas-aire-acondicionado)",
+    "En conductos, no cierre muchas rejillas para ahorrar y limpie o cambie el filtro de la rejilla de retorno (fuente: https://www.xatakahome.com/hogar/expertos-advierten-cerrar-rejillas-aire-acondicionado-habitaciones-no-usadas-puede-danar-sistema)",
+    "Si gotea, compruebe que sale agua por el tubo de desagüe exterior; si no sale, apague el equipo y avise (fuente: https://www.midea.com/centroamerica/blog/ver-todas/tips/se-puede-usar-el-aire-acondicionado-si-gotea-por-dentro)"
+   ]
+  },
+  {
+   "aparato": "caldera",
+   "funcionamiento": "La caldera mural mixta calienta en un circuito cerrado el agua de los radiadores (primario) y, cuando se abre un grifo, un flujostato detecta el paso de agua y la válvula de tres vías desvía el agua caliente del primario al intercambiador de placas, que calienta el agua sanitaria sin mezclar los circuitos. El circuito de calefacción trabaja con una presión en frío de en torno a 1-1,5 bar; el vaso de expansión absorbe la dilatación del agua y la válvula de seguridad descarga si se pasa de unos 3 bar. Las calderas estancas llevan ventilador y presostato que comprueban el tiro antes de encender; el encendido es por chispa y un electrodo de ionización vigila la llama. Las de condensación (las únicas que se fabrican desde 2015) aprovechan además el calor del vapor de los humos, por lo que generan agua ácida de condensados que sale por un sifón. Las atmosféricas antiguas tiran por tiro natural y, en muchos modelos, mantienen un piloto vigilado por termopar. Todo lo que afecte al gas, al quemador y a la evacuación de humos es exclusivo de empresa habilitada; el cliente solo rearma una vez y repone presión con el grifo de llenado hasta el valor del fabricante.",
+   "componentes": [
+    {
+     "pieza": "vaso de expansión",
+     "que_hace": "Absorbe la dilatación del agua al calentarse; tiene una membrana y una cámara de gas (nitrógeno o aire) con precarga.",
+     "sintomas_si_falla": [
+      "la presión sube mucho al calentar y baja al enfriar",
+      "la válvula de seguridad tira agua cuando la calefacción está en marcha",
+      "hay que rellenar agua a menudo"
+     ],
+     "prueba_tecnico": "Con la caldera vacía de presión (circuito a 0 bar), comprobar por la válvula del vaso que no sale agua (membrana rota) y que la precarga es la del fabricante (suele rondar 0,75-1 bar en vivienda); recargar o sustituir.",
+     "fuente": "https://centros.edu.xunta.gal/cifpuniversidadelaboral/aulavirtual/pluginfile.php/211635/mod_resource/content/1/7-Vaso%20de%20expansi%C3%B3n.pdf",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "válvula de seguridad (3 bar)",
+     "que_hace": "Descarga agua si la presión del circuito de calefacción supera unos 3 bar.",
+     "sintomas_si_falla": [
+      "gotea por el tubo de descarga aunque la presión sea normal",
+      "la presión baja y hay que rellenar"
+     ],
+     "prueba_tecnico": "Ver si gotea con presión normal (válvula con suciedad o dañada: cambiar); si solo descarga con presión alta, la válvula funciona y el problema es otro (vaso, grifo de llenado o intercambiador).",
+     "fuente": "https://www.todoexpertos.com/preguntas/daro6c755p5r9kvw/caldera-expulsa-agua-por-valvula-de-seguridad",
+     "confianza": "media"
+    },
+    {
+     "pieza": "grifo (llave) de llenado",
+     "que_hace": "Permite reponer agua de la red al circuito de calefacción.",
+     "sintomas_si_falla": [
+      "la presión sube sola incluso con la calefacción apagada",
+      "la válvula de seguridad tira agua"
+     ],
+     "prueba_tecnico": "Comprobar que está bien cerrada y que no deja pasar agua poco a poco (cerrar la llave de paso de agua fría de la caldera y ver si deja de subir la presión).",
+     "fuente": "https://autosolar.es/eficiencia-energetica/por-que-sube-la-presion-de-la-caldera",
+     "confianza": "media"
+    },
+    {
+     "pieza": "válvula de tres vías (con su motor o microinterruptor)",
+     "que_hace": "Dirige el agua caliente del primario a radiadores o al intercambiador de agua sanitaria.",
+     "sintomas_si_falla": [
+      "calienta radiadores pero el agua del grifo sale fría o templada",
+      "los radiadores se calientan al pedir agua caliente",
+      "conmuta sin parar"
+     ],
+     "prueba_tecnico": "Pedir agua caliente y tocar la ida de calefacción: si se calienta mucho, la tres vías no conmuta; revisar que el vástago se mueva suave y que accione el microinterruptor; probar el microinterruptor por separado.",
+     "fuente": "https://www.todoexpertos.com/preguntas/8aywtn5vciqde9yr/problema-acs-agua-templada-intercambiador-de-placas",
+     "confianza": "media"
+    },
+    {
+     "pieza": "flujostato (detector de caudal de agua sanitaria) y su filtro",
+     "que_hace": "Detecta que se ha abierto un grifo de agua caliente y da la orden de producir agua sanitaria.",
+     "sintomas_si_falla": [
+      "la calefacción funciona pero no arranca al abrir el agua caliente",
+      "solo arranca con el grifo muy abierto"
+     ],
+     "prueba_tecnico": "Limpiar el filtro de entrada de agua fría y comprobar que el flujostato conmuta con caudal.",
+     "fuente": "https://servidos.ar/codigos-de-error/caldera/sintomas/no-da-agua-caliente",
+     "confianza": "media"
+    },
+    {
+     "pieza": "intercambiador de placas (agua sanitaria)",
+     "que_hace": "Pasa el calor del agua de calefacción al agua de los grifos sin mezclarlas.",
+     "sintomas_si_falla": [
+      "agua caliente templada o que tarda",
+      "fluctuaciones de temperatura",
+      "si se perfora, la presión del circuito de calefacción sube sola"
+     ],
+     "prueba_tecnico": "Si la ida de calefacción se queda fría al pedir agua caliente, sospechar del intercambiador; desincrustar o sustituir (frecuente con agua dura); comprobar si sube la presión con el circuito aislado.",
+     "fuente": "https://www.repsol.es/particulares/asesoramiento-consumo/averias-calderas/",
+     "confianza": "media"
+    },
+    {
+     "pieza": "sifón y desagüe de condensados (solo condensación)",
+     "que_hace": "Recoge y evacúa el agua ácida que se forma al condensar los humos.",
+     "sintomas_si_falla": [
+      "bloqueo con código de condensados o de sifón",
+      "agua por debajo de la caldera",
+      "gorgoteo"
+     ],
+     "prueba_tecnico": "Desmontar y limpiar el sifón y comprobar que el desagüe no está obstruido ni congelado; es tarea del mantenimiento periódico según el fabricante.",
+     "fuente": "https://www.saunierduval.es/downloads/thema-condens/thema-condens-as-30/thema-condens-as-30-manual-de-instalacion-1297822.pdf",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "electrodos de encendido e ionización",
+     "que_hace": "El de encendido da la chispa; el de ionización detecta que hay llama para mantener abierta la válvula de gas.",
+     "sintomas_si_falla": [
+      "no hace chispa",
+      "enciende y se apaga a los pocos segundos y bloquea",
+      "bloqueo de llama tras rearmar"
+     ],
+     "prueba_tecnico": "Inspeccionar, limpiar y comprobar la separación y posición de los electrodos sobre el quemador, cables pelados o que deriven a masa; revisar presión de gas de entrada (empresa habilitada).",
+     "fuente": "https://techfaultfix.com/es/boilers/bosch/error-ea-boiler-attempts-to-ignite-but",
+     "confianza": "media"
+    },
+    {
+     "pieza": "ventilador extractor y presostato de aire/humos (calderas estancas)",
+     "que_hace": "El ventilador saca los humos y mete aire; el presostato comprueba que hay tiro antes de permitir el encendido.",
+     "sintomas_si_falla": [
+      "el ventilador funciona pero no enciende la llama",
+      "bloqueo por humos o presostato",
+      "enciende y se apaga"
+     ],
+     "prueba_tecnico": "Revisar conducto de humos y salida al exterior, limpiar a fondo el ventilador y las tomas de presión del presostato antes de cambiar el presostato; comprobar la conmutación del presostato. Solo empresa habilitada.",
+     "fuente": "https://www.todoexpertos.com/preguntas/7vqw7jqtcec48xpf/solucionar-problema-caldera-se-apaga-a-los-5-segundos",
+     "confianza": "media"
+    },
+    {
+     "pieza": "termopar y piloto (calderas atmosféricas antiguas)",
+     "que_hace": "La llama del piloto calienta el termopar, que genera la tensión que mantiene abierta la válvula de gas.",
+     "sintomas_si_falla": [
+      "el piloto se enciende pero se apaga al soltar el pulsador",
+      "la caldera se apaga sola"
+     ],
+     "prueba_tecnico": "Comprobar que la llama del piloto envuelve bien la punta del termopar (llama débil o amarilla: limpiar inyector del piloto), revisar el apriete de la conexión en la válvula y limpiar o sustituir el termopar. Solo empresa habilitada.",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/saunier-duval/wp-content/uploads/2020/03/Manual-Caldera-Saunier-Duval-Themis-23-.pdf",
+     "confianza": "alta"
+    }
+   ],
+   "diagnostico": [
+    {
+     "sintoma": "Huele a gas",
+     "palabras": [
+      "huele a gas",
+      "olor a gas",
+      "huele a butano",
+      "olor raro en la cocina"
+     ],
+     "preguntas_clave": [
+      "¿Huele a gas ahora mismo?",
+      "¿Puede cerrar la llave del gas sin tocar enchufes ni interruptores?"
+     ],
+     "como_descartan": "No es un diagnóstico: es seguridad primero. Cerrar la llave del gas, no tocar interruptores ni enchufes ni encender nada, abrir ventanas, salir de la vivienda y llamar al teléfono de urgencias de la distribuidora o al 112. La reparación es exclusiva de empresa habilitada.",
+     "pruebas_tecnico": [
+      "Prueba de estanqueidad de la instalación por empresa habilitada"
+     ],
+     "pieza_a_llevar": "No aplica hasta que la distribuidora o la empresa habilitada actúe.",
+     "fuentes": [
+      "https://www.ocu.org/vivienda-y-energia/calderas/consejos/riesgos-calderas-gas",
+      "https://www.repsol.es/particulares/asesoramiento-consumo/averias-calderas/"
+     ]
+    },
+    {
+     "sintoma": "Pierde presión (hay que rellenar a menudo)",
+     "palabras": [
+      "baja la presión",
+      "pierde presión",
+      "se queda en cero",
+      "tengo que rellenar",
+      "el reloj marca poco"
+     ],
+     "preguntas_clave": [
+      "¿Qué presión marca el manómetro de la caldera con la calefacción fría?",
+      "¿Cada cuánto tiene que rellenar: días o semanas?",
+      "¿Ve agua debajo de la caldera, en algún radiador o en el tubo de desagüe?",
+      "¿Ha purgado radiadores hace poco?",
+      "¿La presión sube mucho cuando la calefacción está caliente?"
+     ],
+     "como_descartan": "Tras purgar es normal que baje: se rellena con el grifo de llenado hasta lo que indica el fabricante (habitualmente 1-1,5 bar en frío) y ya está. Si hay que rellenar a menudo, hay una fuga (radiador, tubería o caldera) o descarga por la válvula de seguridad. Si además sube mucho en caliente, el vaso de expansión ha perdido carga y la válvula de seguridad tira el agua sobrante.",
+     "pruebas_tecnico": [
+      "Buscar fugas visibles en caldera, radiadores y válvulas",
+      "Ver si gotea el tubo de la válvula de seguridad",
+      "Comprobar precarga del vaso de expansión en frío y sin presión"
+     ],
+     "pieza_a_llevar": "Válvula de seguridad, inflador/manómetro para el vaso, vaso de expansión del modelo si está perforado.",
+     "fuentes": [
+      "https://www.repsol.es/particulares/asesoramiento-consumo/averias-calderas/",
+      "https://www.bosch-homecomfort.com/es/es/conocimiento/calefaccion/averias-comunes-en-las-calderas/",
+      "https://tarifaluzhora.es/noticias/purgar-radiadores-2026-frio-arriba-aire"
+     ]
+    },
+    {
+     "sintoma": "Sube la presión sola / la válvula de seguridad tira agua",
+     "palabras": [
+      "sube la presión",
+      "marca 3",
+      "se pasa de presión",
+      "tira agua por un tubo",
+      "gotea por debajo"
+     ],
+     "preguntas_clave": [
+      "¿Qué presión marca con la calefacción fría y cuánto con ella caliente?",
+      "¿Sube también con la calefacción apagada, por ejemplo por la noche o en verano?",
+      "¿Está bien cerrado el grifo de llenado?",
+      "¿Sube sobre todo después de usar el agua caliente?"
+     ],
+     "como_descartan": "Si solo sube con la calefacción encendida y baja al enfriar, apunta al vaso de expansión. Si sube sin calefacción, apunta a grifo de llenado que pasa agua o a intercambiador de placas perforado (el agua de la red entra al circuito). Por encima de 3 bar descarga la válvula de seguridad: no manipular vaso ni válvula; avisar al técnico.",
+     "pruebas_tecnico": [
+      "Cerrar la llave de agua fría de la caldera y ver si deja de subir (grifo de llenado o intercambiador)",
+      "Comprobar precarga del vaso en frío",
+      "Aislar el intercambiador de placas para comprobar si comunica circuitos"
+     ],
+     "pieza_a_llevar": "Grifo de llenado, vaso de expansión, intercambiador de placas del modelo, válvula de seguridad.",
+     "fuentes": [
+      "https://autosolar.es/eficiencia-energetica/por-que-sube-la-presion-de-la-caldera",
+      "https://www.todoexpertos.com/preguntas/8mbgevrmltuy3gj6/precion-caldera-sobrepasa-constantement-3bar-y-se-bloquea",
+      "https://selectra.es/energia/noticias/caldera-2026-presion-manometro-bar-rellenar"
+     ]
+    },
+    {
+     "sintoma": "Calefacción sí, agua caliente no (o templada)",
+     "palabras": [
+      "no sale agua caliente",
+      "el agua sale templada",
+      "la calefacción va pero el agua no",
+      "tarda en salir caliente"
+     ],
+     "preguntas_clave": [
+      "¿Al abrir el grifo de agua caliente se enciende la caldera (se oye o se ve la llama o el símbolo)?",
+      "¿Se calientan los radiadores cuando usa el agua caliente?",
+      "¿Pasa en todos los grifos o solo en uno?",
+      "¿El agua de su zona deja mucha cal?",
+      "¿Qué temperatura de agua caliente tiene puesta en la caldera?"
+     ],
+     "como_descartan": "Si la caldera no arranca al abrir el grifo, flujostato o su filtro sucio (o poco caudal). Si arranca y los radiadores se calientan, la válvula de tres vías no conmuta. Si arranca, los radiadores no se calientan y el agua sale templada, intercambiador de placas con cal. Si es un solo grifo, el problema es del grifo o mezclador, no de la caldera. Temperatura muy baja en el mando: solo subirla.",
+     "pruebas_tecnico": [
+      "Limpiar filtro del flujostato",
+      "Tocar la ida de calefacción con demanda de agua caliente",
+      "Revisar vástago y microinterruptor de la tres vías",
+      "Desincrustar o cambiar intercambiador de placas"
+     ],
+     "pieza_a_llevar": "Kit de válvula de tres vías (cartucho y motor o microinterruptor), flujostato, intercambiador de placas del modelo.",
+     "fuentes": [
+      "https://www.todoexpertos.com/preguntas/8aywtn5vciqde9yr/problema-acs-agua-templada-intercambiador-de-placas",
+      "https://servidos.ar/codigos-de-error/caldera/sintomas/no-da-agua-caliente",
+      "https://www.repsol.es/particulares/asesoramiento-consumo/averias-calderas/"
+     ]
+    },
+    {
+     "sintoma": "Agua caliente sí, calefacción no",
+     "palabras": [
+      "los radiadores no calientan",
+      "no va la calefacción",
+      "el agua caliente sí funciona"
+     ],
+     "preguntas_clave": [
+      "¿El termostato o cronotermostato está encendido, en hora y pidiendo calor (con pilas)?",
+      "¿La caldera está en modo invierno y no en verano?",
+      "¿Qué presión marca el manómetro?",
+      "¿Se calientan algo los tubos que salen de la caldera hacia los radiadores?"
+     ],
+     "como_descartan": "Termostato sin pilas o sin pedir, o caldera en modo verano, son lo primero. Presión baja impide arrancar. Si la caldera enciende pero no circula el agua, bomba circuladora bloqueada o válvula de tres vías atascada en posición de agua caliente. Si los tubos se calientan pero los radiadores no, problema de la instalación (aire, lodos, llaves).",
+     "pruebas_tecnico": [
+      "Puentear el termostato para descartarlo",
+      "Comprobar giro de la bomba circuladora",
+      "Comprobar posición de la tres vías",
+      "Revisar sonda de calefacción y placa"
+     ],
+     "pieza_a_llevar": "Bomba circuladora y kit de tres vías del modelo; pilas para el termostato.",
+     "fuentes": [
+      "https://www.todoexpertos.com/preguntas/byfs4r9gonapf7bu/roca-go-50-gti-tengo-acs-pero-no-calefaccion",
+      "https://www.bosch-homecomfort.com/es/es/conocimiento/calefaccion/averias-comunes-en-las-calderas/"
+     ]
+    },
+    {
+     "sintoma": "Radiadores fríos o que calientan a medias",
+     "palabras": [
+      "el radiador está frío arriba",
+      "unos radiadores calientan y otros no",
+      "frío abajo",
+      "gorgotea"
+     ],
+     "preguntas_clave": [
+      "¿El radiador está frío arriba y caliente abajo, o al revés?",
+      "¿Le pasa a uno o a varios? ¿Están en la planta de arriba?",
+      "¿Se oye agua correr o gorgoteo?",
+      "¿Qué presión marca la caldera?"
+     ],
+     "como_descartan": "Frío arriba y caliente abajo: aire; se purga con la calefacción apagada y fría y luego se repone presión. Caliente arriba y frío abajo: lodos o mala circulación; purgar no lo arregla, hace falta técnico (limpieza del circuito). Si no se calienta ninguno y la caldera funciona, revisar bomba circuladora.",
+     "pruebas_tecnico": [
+      "Purgado completo",
+      "Comprobar bomba circuladora",
+      "Limpieza química del circuito si hay lodos",
+      "Revisar detentores y llaves de radiador"
+     ],
+     "pieza_a_llevar": "Llave de purgador, purgadores, producto de limpieza de circuitos, bomba circuladora si procede.",
+     "fuentes": [
+      "https://www.ocu.org/vivienda-y-energia/calefaccion/consejos/purgar-el-radiador",
+      "https://tarifaluzhora.es/noticias/purgar-radiadores-2026-frio-arriba-aire",
+      "https://www.repsol.es/particulares/asesoramiento-consumo/purgado-radiadores"
+     ]
+    },
+    {
+     "sintoma": "No enciende / bloqueo de llama (se apaga a los pocos segundos)",
+     "palabras": [
+      "no enciende",
+      "no prende",
+      "se bloquea",
+      "se apaga a los segundos",
+      "no hace chispa",
+      "tengo que rearmar"
+     ],
+     "preguntas_clave": [
+      "¿Funcionan la cocina u otros aparatos de gas? ¿Está abierta la llave del gas de la caldera?",
+      "¿Si es butano, la bombona tiene gas?",
+      "¿Oye chispazos (clic-clic) al intentar encender?",
+      "¿Llega a verse la llama y luego se apaga?",
+      "¿Cuántas veces ha rearmado hoy?"
+     ],
+     "como_descartan": "Sin gas en la casa o llave cerrada: no es la caldera. Sin chispa: electrodo de encendido, cable o placa. Chispa y llama que se apaga a los segundos: electrodo de ionización sucio o mal posicionado, presión de gas o placa. Rearmar una sola vez; si vuelve a bloquear, no insistir y avisar a empresa habilitada: el bloqueo de llama repetido es un aviso de seguridad.",
+     "pruebas_tecnico": [
+      "Medir presión de gas de entrada (empresa habilitada)",
+      "Limpiar y ajustar electrodos de encendido e ionización",
+      "Revisar cables a masa",
+      "Medir corriente de ionización según manual"
+     ],
+     "pieza_a_llevar": "Electrodos de encendido e ionización del modelo, cable de alta, transformador de encendido.",
+     "fuentes": [
+      "https://techfaultfix.com/es/boilers/bosch/error-ea-boiler-attempts-to-ignite-but",
+      "https://www.todoexpertos.com/preguntas/ah63nynp4tx5won6/caldera-chaffoteaux-mx2-24ff-no-da-chispa",
+      "https://www.bosch-homecomfort.com/es/es/conocimiento/calefaccion/averias-comunes-en-las-calderas/"
+     ]
+    },
+    {
+     "sintoma": "Gira el ventilador pero no enciende (código de humos o presostato)",
+     "palabras": [
+      "suena el ventilador pero no enciende",
+      "error de humos",
+      "error de tiro",
+      "fallo de presostato"
+     ],
+     "preguntas_clave": [
+      "¿Se oye el ventilador de la caldera funcionando sin que encienda?",
+      "¿Hace viento fuerte o ha cambiado algo en la salida de humos (obras, nido, toldo)?",
+      "¿El tubo de salida de humos está bien encajado?"
+     ],
+     "como_descartan": "Si el ventilador gira y no enciende, la caldera no detecta tiro: conducto de humos obstruido, ventilador sucio o presostato y sus tubos. Un código de humos es de seguridad: no rearmar repetidamente; ventilar y avisar a empresa habilitada.",
+     "pruebas_tecnico": [
+      "Revisar conducto y terminal de humos",
+      "Limpiar ventilador y tomas de presión del presostato",
+      "Comprobar conmutación del presostato",
+      "Análisis de combustión"
+     ],
+     "pieza_a_llevar": "Presostato y tubos de silicona del modelo; ventilador extractor si está dañado.",
+     "fuentes": [
+      "https://www.todoexpertos.com/preguntas/7vqw7jqtcec48xpf/solucionar-problema-caldera-se-apaga-a-los-5-segundos",
+      "https://blog.suner.es/comprobar-presostato-caldera",
+      "https://www.todoexpertos.com/preguntas/5n799goq7idfjoex/problema-caldera-ferroli-f30-domina"
+     ]
+    },
+    {
+     "sintoma": "Caldera de condensación bloqueada por condensados o con agua debajo",
+     "palabras": [
+      "gotea por debajo",
+      "sale agua por un tubito",
+      "error de sifón",
+      "error de condensados",
+      "gorgotea"
+     ],
+     "preguntas_clave": [
+      "¿Es una caldera de condensación (suele tener un tubo de plástico de desagüe debajo)?",
+      "¿Sale agua por ese tubo de plástico?",
+      "¿El desagüe va a la calle y ha helado?"
+     ],
+     "como_descartan": "En condensación es normal que el sifón expulse bastante agua cuando trabaja a baja temperatura; no afecta a la presión. Si bloquea con código de condensados o se acumula agua, sifón o desagüe obstruido o congelado. Si el agua sale por la válvula de seguridad (tubo metálico) es otro problema: presión.",
+     "pruebas_tecnico": [
+      "Limpiar sifón",
+      "Comprobar desagüe y pendiente",
+      "Revisar intercambiador si hay suciedad arrastrada"
+     ],
+     "pieza_a_llevar": "Sifón y juntas del modelo.",
+     "fuentes": [
+      "https://www.saunierduval.es/downloads/thema-condens/thema-condens-as-30/thema-condens-as-30-manual-de-instalacion-1297822.pdf",
+      "https://autosolar.es/eficiencia-energetica/por-que-sube-la-presion-de-la-caldera"
+     ]
+    },
+    {
+     "sintoma": "Ruidos de ebullición o golpes",
+     "palabras": [
+      "hace ruido",
+      "hierve",
+      "pita",
+      "golpes",
+      "como una olla"
+     ],
+     "preguntas_clave": [
+      "¿Es un ruido como de agua hirviendo o pitido?",
+      "¿Qué presión marca?",
+      "¿Hace años que no se hace mantenimiento? ¿El agua de su zona tiene mucha cal?"
+     ],
+     "como_descartan": "Ruido de ebullición suele ser cal o lodos en el intercambiador primario, o poca circulación (presión baja, aire). Ruidos metálicos o muy fuertes: técnico.",
+     "pruebas_tecnico": [
+      "Comprobar presión y purgado",
+      "Comprobar circulación y bomba",
+      "Limpieza o desincrustado del intercambiador"
+     ],
+     "pieza_a_llevar": "Producto desincrustante, bomba circuladora si procede.",
+     "fuentes": [
+      "https://www.repsol.es/particulares/asesoramiento-consumo/averias-calderas/",
+      "https://www.bosch-homecomfort.com/es/es/conocimiento/calefaccion/averias-comunes-en-las-calderas/"
+     ]
+    },
+    {
+     "sintoma": "Caldera atmosférica antigua: el piloto se apaga",
+     "palabras": [
+      "se apaga el piloto",
+      "no se queda encendida",
+      "al soltar el botón se apaga"
+     ],
+     "preguntas_clave": [
+      "¿Tiene piloto (llamita pequeña) que se enciende con un botón?",
+      "¿Se apaga en cuanto suelta el botón?",
+      "¿La llamita es azul o amarilla y pequeña?",
+      "¿Hay corriente de aire en el sitio de la caldera?"
+     ],
+     "como_descartan": "Si se apaga al soltar el pulsador, termopar débil, sucio o mal conectado, o piloto sucio con llama pequeña. Llama amarilla: inyector del piloto sucio y combustión defectuosa, riesgo de monóxido: no usar y avisar. Reparación por empresa habilitada.",
+     "pruebas_tecnico": [
+      "Revisar llama del piloto sobre el termopar",
+      "Limpiar inyector del piloto",
+      "Revisar conexión y sustituir termopar",
+      "Revisar válvula electromagnética",
+      "Comprobar tiro y rejillas de ventilación"
+     ],
+     "pieza_a_llevar": "Termopar compatible, inyector de piloto.",
+     "fuentes": [
+      "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/saunier-duval/wp-content/uploads/2020/03/Manual-Caldera-Saunier-Duval-Themis-23-.pdf",
+      "https://techfaultfix.com/es/water-heaters/reliance/error-none-pilot-light-will-not-stay"
+     ]
+    },
+    {
+     "sintoma": "Calentador de gas instantáneo no enciende al abrir el grifo",
+     "palabras": [
+      "el calentador no enciende",
+      "no sale caliente del calentador",
+      "hace clic pero no enciende",
+      "el calentador no salta"
+     ],
+     "preguntas_clave": [
+      "¿Su calentador lleva pilas? ¿Cuándo se cambiaron?",
+      "¿Enciende si abre el grifo de agua caliente a tope?",
+      "¿Tiene gas (bombona llena o cocina funcionando)?",
+      "¿Tiene poca presión de agua en toda la casa?"
+     ],
+     "como_descartan": "En modelos con encendido por pilas, pilas gastadas: no hay chispa (los de hidrogenerador no llevan pilas). Si solo enciende con el grifo a tope, poco caudal o membrana del grupo hidráulico endurecida. Sin gas: no es el calentador. Si no, módulo de encendido o grupo hidráulico: técnico.",
+     "pruebas_tecnico": [
+      "Cambiar pilas",
+      "Comprobar caudal mínimo según fabricante",
+      "Revisar o sustituir membrana del grupo hidráulico",
+      "Revisar módulo de encendido"
+     ],
+     "pieza_a_llevar": "Pilas, membrana y kit del grupo hidráulico del modelo, electrodos.",
+     "fuentes": [
+      "https://www.bosch-homecomfort.com/es/es/conocimiento/agua-caliente/tu-calentador-estanco-no-se-enciende/",
+      "https://blog.suner.es/calentador-junkers-w-135-no-enciende",
+      "https://www.repsol.es/particulares/asesoramiento-consumo/averias-calentador-gas-soluciones/"
+     ]
+    }
+   ],
+   "averias_por_marca": [
+    {
+     "marcas": [
+      "Saunier Duval"
+     ],
+     "epoca": "Themis (atmosférica con piloto, modelos antiguos)",
+     "averia": "El piloto no se mantiene por termopar roto o sucio; el propio manual lo recoge en su tabla de averías junto a válvula electromagnética o aire en la instalación.",
+     "fuente": "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/saunier-duval/wp-content/uploads/2020/03/Manual-Caldera-Saunier-Duval-Themis-23-.pdf",
+     "confianza": "alta"
+    },
+    {
+     "marcas": [
+      "Roca"
+     ],
+     "epoca": "NGM 15/20 (mixta antigua)",
+     "averia": "El vástago de la válvula de tres vías se atasca y no llega a accionar el microinterruptor, de modo que no arranca el agua caliente; se resuelve lubricando el vástago o cambiando el microinterruptor (caso de foro técnico).",
+     "fuente": "https://www.todoexpertos.com/preguntas/ap6k4frn3g5h5ul6/caldera-roca-ngm-15-20-no-prende-agua-caliente",
+     "confianza": "media"
+    },
+    {
+     "marcas": [
+      "Junkers (Bosch)"
+     ],
+     "epoca": "calentadores atmosféricos con grupo hidráulico de membrana (p. ej. W 135)",
+     "averia": "No encienden por pilas agotadas (sin chispa) o por membrana del grupo hidráulico endurecida que no abre el gas.",
+     "fuente": "https://blog.suner.es/calentador-junkers-w-135-no-enciende",
+     "confianza": "media"
+    },
+    {
+     "marcas": [
+      "Junkers (Bosch)"
+     ],
+     "epoca": "calentadores Hydro 4200 (pilas) frente a Hydro 4300 (hidrogenerador)",
+     "averia": "En la gama Hydro 4200 el encendido es por pilas, por lo que pilas agotadas impiden el encendido; en la Hydro 4300 el encendido es por hidrogenerador y las pilas no influyen.",
+     "fuente": "https://www.bosch-homecomfort.com/es/es/ocs/hydro-4200-1153700-p/",
+     "confianza": "alta"
+    },
+    {
+     "marcas": [
+      "Todas (calderas no de condensación)"
+     ],
+     "epoca": "fabricadas antes de septiembre de 2015 (ErP)",
+     "averia": "Desde 2015 solo se fabrican calderas de condensación; en sustitución de atmosféricas o estancas antiguas hay que contar con cambio de evacuación de humos y desagüe de condensados.",
+     "fuente": "https://www.ocu.org/vivienda-y-energia/calderas/como-elegir",
+     "confianza": "media"
+    }
+   ],
+   "vida_util": {
+    "anos": "Caldera: la OCU aconseja plantearse el cambio a partir de unos 15 años (no hay vida útil legal). Calentador de gas: 8-12 años según fabricantes (OCU, https://www.ocu.org/vivienda-y-energia/calefaccion/informe/calentadores).",
+    "fuente": "https://www.ocu.org/vivienda-y-energia/calderas/como-elegir"
+   },
+   "compensa_reparar": "No hay regla oficial tipo '50 % del precio'. Si la caldera funciona bien y la avería es puntual y moderada, reparar es razonable (https://www.consumoteca.com/electrodomesticoss/reparar-o-sustituir-una-caldera-como-tomar-la-decision-correcta/); con más de 15 años y una avería cara (intercambiador principal, placa, quemador), valorar cambio a condensación, que la OCU calcula que ahorra en torno a un 25 % de gas (https://www.ocu.org/vivienda-y-energia/calderas/como-elegir).",
+   "mantenimiento": [
+    "Revisión obligatoria de la caldera cada 2 años por empresa habilitada (RITE); guarde los justificantes. La inspección de la instalación de gas es otra distinta, cada 5 años (fuente: https://www.ocu.org/vivienda-y-energia/calderas/noticias/revisiones-calderas-de-gas)",
+    "Vigile el manómetro: con la calefacción fría debe estar en el valor del fabricante (habitualmente 1-1,5 bar); si baja, rellene con el grifo de llenado hasta ese valor y ciérrelo bien (fuente: https://tarifaluzhora.es/noticias/purgar-radiadores-2026-frio-arriba-aire)",
+    "Purgue los radiadores al inicio de la temporada con la calefacción apagada y fría, y después reponga la presión (fuente: https://www.ocu.org/vivienda-y-energia/calefaccion/consejos/purgar-el-radiador)",
+    "Si la caldera se bloquea, rearme una sola vez; si vuelve a bloquearse, no insista y llame al técnico (fuente: https://www.bosch-homecomfort.com/es/es/conocimiento/calefaccion/averias-comunes-en-las-calderas/)",
+    "Si la presión pasa de 3 bar o la válvula de seguridad tira agua, no toque el vaso ni la válvula: llame al técnico (fuente: https://www.repsol.es/particulares/asesoramiento-consumo/averias-calderas/)",
+    "No tape rejillas de ventilación ni la salida de humos; con olor a gas, cierre la llave, no toque interruptores, ventile y salga (fuente: https://www.ocu.org/vivienda-y-energia/calderas/consejos/riesgos-calderas-gas)",
+    "En calentadores con pilas, cámbielas en cuanto el encendido falle (fuente: https://www.bosch-homecomfort.com/es/es/conocimiento/agua-caliente/tu-calentador-estanco-no-se-enciende/)"
+   ]
+  },
+  {
+   "aparato": "campana",
+   "funcionamiento": "La campana aspira el aire de la cocina con un motor y una turbina; el aire pasa primero por filtros metálicos que retienen la grasa. En modo extracción lo expulsa al exterior por un conducto, normalmente con una válvula antirretorno; en modo recirculación lo pasa por filtros de carbón activo que retienen olores y lo devuelve a la cocina. Los filtros sucios, un conducto aplastado o una válvula trabada reducen el caudal aunque el motor funcione bien, así que la mayoría de 'no aspira' no son del motor.",
+   "componentes": [
+    {
+     "pieza": "filtros metálicos antigrasa",
+     "que_hace": "Retienen la grasa antes de que llegue al motor y al conducto.",
+     "sintomas_si_falla": [
+      "aspira poco",
+      "más ruido",
+      "gotea grasa"
+     ],
+     "prueba_tecnico": "Inspección visual de la saturación; lavarlos con agua caliente y desengrasante y comprobar si recupera tiro.",
+     "fuente": "https://www.beko.com/es-es/soporte/campana--solucion-de-problemas--articulo/como-se-repara-un-campana-extractora-que-ha-perdido-potencia-de-succion",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "filtro de carbón activo (recirculación)",
+     "que_hace": "Retiene olores en campanas sin salida al exterior; no se lava, se cambia.",
+     "sintomas_si_falla": [
+      "la cocina sigue oliendo",
+      "aspira menos"
+     ],
+     "prueba_tecnico": "Preguntar o comprobar la fecha del último cambio; si está saturado, sustituir.",
+     "fuente": "https://www.deia.eus/hogar-decoracion/2026/02/22/campana-no-elimina-olores-averias-10732471.html",
+     "confianza": "media"
+    },
+    {
+     "pieza": "motor y turbina",
+     "que_hace": "Mueven el aire.",
+     "sintomas_si_falla": [
+      "no gira aunque hay luz",
+      "gira con dificultad o lento",
+      "ruido"
+     ],
+     "prueba_tecnico": "Con la campana desconectada, girar la turbina a mano: si está dura, grasa u óxido en el motor; si gira libre y no arranca, medir bobinados y condensador.",
+     "fuente": "https://qubbos.es/blogs/news/por-que-la-campana-de-cocina-no-aspira",
+     "confianza": "media"
+    },
+    {
+     "pieza": "condensador de arranque del motor",
+     "que_hace": "Da el desfase para que arranque el motor monofásico.",
+     "sintomas_si_falla": [
+      "tiene luz pero el motor no arranca o zumba",
+      "arranca solo si se le ayuda"
+     ],
+     "prueba_tecnico": "Medir capacidad del condensador y comparar con la serigrafía; si la turbina gira libre y el condensador está bien, mirar bobinados.",
+     "fuente": "https://www.todoexpertos.com/preguntas/93ndoyex6jhrqoay/campana-extractora-tiene-luz-pero-no-gira",
+     "confianza": "media"
+    },
+    {
+     "pieza": "conducto de salida y válvula antirretorno",
+     "que_hace": "Llevan el aire al exterior e impiden que vuelva.",
+     "sintomas_si_falla": [
+      "el motor suena fuerte pero apenas aspira",
+      "ruido de aire",
+      "olores de vuelta"
+     ],
+     "prueba_tecnico": "Revisar que el tubo flexible no esté aplastado ni con codos de más, que la válvula se abra y que no haya obstrucciones en la conexión ni en el conducto.",
+     "fuente": "https://servidos.ar/blog/campana-no-chupa-olor-causas-caba",
+     "confianza": "media"
+    }
+   ],
+   "diagnostico": [
+    {
+     "sintoma": "Aspira poco o ha perdido tiro",
+     "palabras": [
+      "no aspira",
+      "no tira",
+      "aspira poco",
+      "no chupa el humo"
+     ],
+     "preguntas_clave": [
+      "¿Cuándo limpió los filtros metálicos por última vez?",
+      "¿La campana saca el aire a la calle o lo devuelve a la cocina?",
+      "¿El motor suena como siempre o más fuerte?",
+      "¿Ha cambiado algo en el tubo o se ha hecho alguna obra?"
+     ],
+     "como_descartan": "Filtros sin limpiar: es la causa más común, limpiarlos primero. Si recircula y no ha cambiado el carbón, cambiarlo. Si el motor suena fuerte pero no mueve aire: conducto aplastado, codos de más o válvula antirretorno trabada. Si el motor suena más flojo o lento, motor o condensador.",
+     "pruebas_tecnico": [
+      "limpiar filtros y comprobar caudal",
+      "revisar conducto y válvula antirretorno",
+      "girar turbina a mano"
+     ],
+     "pieza_a_llevar": "válvula antirretorno y filtros del modelo",
+     "fuentes": [
+      "https://www.beko.com/es-es/soporte/campana--solucion-de-problemas--articulo/como-se-repara-un-campana-extractora-que-ha-perdido-potencia-de-succion",
+      "https://qubbos.es/blogs/news/por-que-la-campana-de-cocina-no-aspira",
+      "https://servidos.ar/blog/campana-no-chupa-olor-causas-caba"
+     ]
+    },
+    {
+     "sintoma": "Hay luz pero el motor no gira",
+     "palabras": [
+      "tiene luz pero no funciona el motor",
+      "no gira",
+      "no se enciende el extractor"
+     ],
+     "preguntas_clave": [
+      "¿Se oye un zumbido al darle al motor o silencio total?",
+      "¿Funciona alguna de las velocidades?",
+      "¿Hace mucho que no se limpia?"
+     ],
+     "como_descartan": "Zumbido sin girar: condensador de arranque o turbina agarrotada por grasa u óxido. Silencio total: mando o interruptor de velocidades, o motor abierto. Si funciona alguna velocidad, mando o bobinado de esa velocidad.",
+     "pruebas_tecnico": [
+      "girar turbina a mano",
+      "medir condensador",
+      "medir bobinados"
+     ],
+     "pieza_a_llevar": "condensador de arranque del valor del motor",
+     "fuentes": [
+      "https://www.todoexpertos.com/preguntas/93ndoyex6jhrqoay/campana-extractora-tiene-luz-pero-no-gira",
+      "https://qubbos.es/blogs/news/por-que-la-campana-de-cocina-no-aspira"
+     ]
+    },
+    {
+     "sintoma": "Hace mucho ruido",
+     "palabras": [
+      "hace mucho ruido",
+      "ruido",
+      "vibra",
+      "silba"
+     ],
+     "preguntas_clave": [
+      "¿Siempre ha sonado así o ha empezado ahora?",
+      "¿Los filtros están limpios?",
+      "¿Es ruido de aire o de algo que roza?"
+     ],
+     "como_descartan": "Filtros saturados aumentan el ruido. Tubos de extracción mal conectados o una campana sobredimensionada también. Roce o traqueteo nuevo apunta a la turbina o al motor.",
+     "pruebas_tecnico": [
+      "limpiar filtros",
+      "revisar uniones del conducto",
+      "comprobar holgura y equilibrio de la turbina"
+     ],
+     "pieza_a_llevar": "motor-turbina del modelo si roza",
+     "fuentes": [
+      "https://www.siemens-home.bsh-group.com/es/inspiracion/blog/sonido-campana-extractora",
+      "https://www.deia.eus/hogar-decoracion/2026/02/22/campana-no-elimina-olores-averias-10732471.html"
+     ]
+    },
+    {
+     "sintoma": "La cocina sigue oliendo aunque la campana funciona",
+     "palabras": [
+      "no quita los olores",
+      "huele la cocina",
+      "no elimina el olor"
+     ],
+     "preguntas_clave": [
+      "¿Su campana saca el aire a la calle o lo devuelve a la cocina?",
+      "¿Cuándo se cambió el filtro de carbón?",
+      "¿La enciende antes de empezar a cocinar y la deja un rato al acabar?"
+     ],
+     "como_descartan": "En recirculación, el carbón saturado deja pasar los olores: cambiarlo. En extracción, revisar conducto y válvula. Si todo está bien, es cuestión de uso: encenderla antes y dejarla funcionando después.",
+     "pruebas_tecnico": [
+      "revisar filtro de carbón",
+      "revisar conducto y válvula antirretorno"
+     ],
+     "pieza_a_llevar": "filtros de carbón del modelo",
+     "fuentes": [
+      "https://www.deia.eus/hogar-decoracion/2026/02/22/campana-no-elimina-olores-averias-10732471.html",
+      "https://www.xatakahome.com/territorio-samsung/pensaba-que-campana-era-suficiente-que-entendi-que-mi-cocina-seguia-oliendo-despues-cocinar"
+     ]
+    },
+    {
+     "sintoma": "Gira lento o le cuesta arrancar",
+     "palabras": [
+      "va muy lenta",
+      "le cuesta arrancar",
+      "arranca a veces"
+     ],
+     "preguntas_clave": [
+      "¿Arranca si le da a la velocidad más alta primero?",
+      "¿Tiene mucha grasa visible?"
+     ],
+     "como_descartan": "Motor frenado por grasa y humedad acumuladas, o condensador débil. Si la turbina está dura a mano, limpieza o motor; si gira libre, condensador.",
+     "pruebas_tecnico": [
+      "girar turbina a mano",
+      "medir condensador"
+     ],
+     "pieza_a_llevar": "condensador de arranque",
+     "fuentes": [
+      "https://qubbos.es/blogs/news/por-que-la-campana-de-cocina-no-aspira",
+      "https://www.todoexpertos.com/preguntas/93ndoyex6jhrqoay/campana-extractora-tiene-luz-pero-no-gira"
+     ]
+    }
+   ],
+   "averias_por_marca": [],
+   "vida_util": {
+    "anos": "sin dato con fuente fiable (no se encontró cifra de OCU ni de fabricante para campanas)",
+    "fuente": ""
+   },
+   "compensa_reparar": "Orientativo, con la regla que OCU da para la lavadora: reparar si la avería es sencilla (condensador, filtros, válvula) y cuesta menos del 50 % de una campana nueva; con motor caro y muchos años, valorar cambiarla (https://ocu.org/electrodomesticos/lavadora/consejos/lavadora-arreglarla-sustituirla).",
+   "mantenimiento": [
+    "Limpiar los filtros metálicos una vez al mes o cada dos meses, más a menudo si se fríe a diario (fuente: https://www.siemens-home.bsh-group.com/es/inspiracion/blog/cambiar-filtros-campana-extractora)",
+    "Lavar los filtros metálicos en agua caliente con lavavajillas o desengrasante (fuente: https://www.beko.com/es-es/soporte/campana--solucion-de-problemas--articulo/como-se-repara-un-campana-extractora-que-ha-perdido-potencia-de-succion)",
+    "Cambiar el filtro de carbón cada 3-6 meses según uso y fabricante; no se lava (fuente: https://www.siemens-home.bsh-group.com/es/inspiracion/blog/filtro-campana-extractora)",
+    "No usar limpiadores abrasivos ni con cloro en el acero ni en los mandos (fuente: https://www.siemens-home.bsh-group.com/es/inspiracion/blog/limpiar-campana)",
+    "La grasa acumulada en la campana es riesgo de incendio: limpiarla con regularidad y siempre desenchufada (fuente: https://www.biobiochile.cl/noticias/vida-actual/consejos/2025/03/27/la-campana-extractora-de-tu-cocina-podria-generar-un-incendio-trucos-para-limpiarla-y-evitar-riesgos.shtml)"
+   ]
+  },
+  {
+   "aparato": "congelador",
+   "funcionamiento": "Funciona igual que un frigorífico (compresor con relé PTC y klixon, condensador, capilar y evaporador) pero regulado entre -15 y -23 grados. En los congeladores cíclicos, sobre todo los horizontales (arcón) y muchos verticales de cajones, el evaporador va en las paredes o en las bandejas y forma escarcha que hay que descongelar a mano; el condensador suele ir oculto en los laterales de la carcasa, por eso estos se notan calientes. Los verticales No Frost llevan evaporador oculto, ventilador y resistencia de desescarche como un combi No Frost.",
+   "componentes": [
+    {
+     "pieza": "condensador en laterales (skin condenser)",
+     "que_hace": "Tubos pegados por dentro de la carcasa que disipan el calor; por eso los costados se calientan, lo cual es normal.",
+     "sintomas_si_falla": [
+      "el cliente cree que es una avería porque los laterales queman",
+      "enfría poco si el aparato está encajonado sin aire"
+     ],
+     "prueba_tecnico": "Comprobar que los laterales están templados o calientes con el motor en marcha (normal) y que hay separación con paredes y muebles.",
+     "fuente": "https://www.samsung.com/co/support/home-appliances/why-are-the-side-walls-of-a-samsung-refrigerator-heating-up/",
+     "confianza": "media"
+    },
+    {
+     "pieza": "junta de la tapa o puerta",
+     "que_hace": "Sella el congelador; en los verticales, la nivelación ayuda a que la puerta cierre por gravedad.",
+     "sintomas_si_falla": [
+      "escarcha excesiva",
+      "el motor no para",
+      "alimentos con cristales de hielo"
+     ],
+     "prueba_tecnico": "Prueba del papel y comprobar que el aparato no se inclina hacia delante; ajustar patas delanteras.",
+     "fuente": "https://www.beko.com/es-es/blog/porque-hace-hielo-un-congelador-no-frost%20",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "termostato (de bulbo en los mecánicos) o sonda NTC",
+     "que_hace": "Arranca y para el compresor según la temperatura.",
+     "sintomas_si_falla": [
+      "no congela con el motor parado",
+      "el motor no para y congela de más"
+     ],
+     "prueba_tecnico": "Medir temperatura real con termómetro frente al ajuste; comprobar continuidad del termostato o la NTC contra tabla.",
+     "fuente": "https://www.beko.com/es-es/soporte/congelador--solucion-de-problemas--articulo/como-se-repara-un-congelador-que-no-congela",
+     "confianza": "media"
+    },
+    {
+     "pieza": "compresor, relé PTC y klixon",
+     "que_hace": "Igual que en el frigorífico: el relé arranca el compresor y el klixon lo protege.",
+     "sintomas_si_falla": [
+      "no congela y el motor solo hace clic",
+      "motor callado"
+     ],
+     "prueba_tecnico": "Escuchar clic de arranque; revisar relé y klixon por quemaduras y continuidad. Circuito de gas solo por técnico con certificado de gases fluorados.",
+     "fuente": "https://www.ocu.org/repara/frigorificos/compresor-frigo",
+     "confianza": "alta"
+    }
+   ],
+   "diagnostico": [
+    {
+     "sintoma": "Mucha escarcha o bloques de hielo",
+     "palabras": [
+      "mucho hielo",
+      "escarcha",
+      "no cierran los cajones por el hielo"
+     ],
+     "preguntas_clave": [
+      "¿Cuándo lo descongeló por última vez?",
+      "¿La tapa o puerta cierra bien o se queda algo enganchado?",
+      "¿Mete comida caliente?",
+      "¿Es No Frost o hay que descongelarlo?"
+     ],
+     "como_descartan": "En cíclicos es normal acumular escarcha: con más de 3-5 mm hay que descongelar (3 mm suben el consumo un 30 %). Si se forma muy rápido, entra aire: junta, nivelación o puerta que no cierra. Si es No Frost y hace hielo, junta o fallo de desescarche.",
+     "pruebas_tecnico": [
+      "Prueba del papel en junta",
+      "Nivelar",
+      "En No Frost revisar desescarche"
+     ],
+     "pieza_a_llevar": "junta de puerta o tapa",
+     "fuentes": [
+      "https://www.ocu.org/electrodomesticos/frigorificos/consejos/como-descongelar",
+      "https://www.beko.com/es-es/blog/porque-hace-hielo-un-congelador-no-frost%20"
+     ]
+    },
+    {
+     "sintoma": "No congela o se ablanda la comida",
+     "palabras": [
+      "no congela",
+      "se descongela",
+      "los helados están blandos"
+     ],
+     "preguntas_clave": [
+      "¿El motor suena, hace clic o está callado?",
+      "¿Los laterales están calientes?",
+      "¿Tiene mucha escarcha en las paredes?",
+      "¿Lo llenó de golpe con mucha comida o caliente?"
+     ],
+     "como_descartan": "Motor callado o con clic: arranque o control (ver frigorífico). Motor en marcha y laterales fríos con poco frío: sospecha de circuito, técnico de gases fluorados. Mucha escarcha: aislante de hielo, descongelar. Carga grande o caliente: esperar 24 h.",
+     "pruebas_tecnico": [
+      "Revisar relé/klixon",
+      "Comprobar temperatura de laterales",
+      "Medir termostato"
+     ],
+     "pieza_a_llevar": "relé PTC, klixon, termostato",
+     "fuentes": [
+      "https://www.beko.com/es-es/soporte/congelador--solucion-de-problemas--articulo/como-se-repara-un-congelador-que-no-congela",
+      "https://www.ocu.org/repara/frigorificos/compresor-frigo"
+     ]
+    },
+    {
+     "sintoma": "Los laterales están muy calientes",
+     "palabras": [
+      "quema por los lados",
+      "los costados calientes",
+      "está caliente por fuera"
+     ],
+     "preguntas_clave": [
+      "¿Congela bien?",
+      "¿Está metido entre muebles o pegado a la pared?"
+     ],
+     "como_descartan": "Si congela bien, es el condensador en los laterales y es normal. Si además no congela y está encajonado, falta ventilación.",
+     "pruebas_tecnico": [
+      "Comprobar separación y ventilación"
+     ],
+     "pieza_a_llevar": "ninguna",
+     "fuentes": [
+      "https://www.samsung.com/co/support/home-appliances/why-are-the-side-walls-of-a-samsung-refrigerator-heating-up/"
+     ]
+    }
+   ],
+   "averias_por_marca": [],
+   "vida_util": {
+    "anos": "sin cifra específica encontrada; se toma la del frigorífico, unos 12 de media",
+    "fuente": "https://www.ocu.org/electrodomesticos/frigorificos/noticias/electrodomesticos-marcas-mas-duraderas"
+   },
+   "compensa_reparar": "Misma regla que el frigorífico: menos de unos 10 años y reparación por debajo del 50 % de uno nuevo, reparar (OCU, https://ocu.org/electrodomesticos/lavadora/consejos/lavadora-arreglarla-sustituirla). El hielo acumulado aumenta el consumo y acorta la vida útil (OCU, https://www.ocu.org/electrodomesticos/frigorificos/noticias/frigos-con-hielo-enfrian-peor530644).",
+   "mantenimiento": [
+    "Descongelar los cíclicos cuando la escarcha llegue a unos 3-5 mm o cada 6 meses aproximadamente (fuente: https://www.ocu.org/electrodomesticos/frigorificos/consejos/como-descongelar; https://www.liebherr.com/es-es/refrigeradores-congeladores/freshmag/ideas-de-refrigeración/descongelación-adecuada-7810380)",
+    "No meter alimentos calientes y no sobrecargarlo, para que circule el aire (fuente: https://www.beko.com/es-es/soporte/congelador--solucion-de-problemas--articulo/como-se-repara-un-congelador-que-no-congela)",
+    "Nivelar el aparato y comprobar la junta para que la puerta cierre bien (fuente: https://www.beko.com/es-es/blog/porque-hace-hielo-un-congelador-no-frost%20)",
+    "Limpiar el polvo del condensador sin paños húmedos y dejar espacio de ventilación (fuente: https://www.samsung.com/co/support/home-appliances/what-should-i-do-if-the-product-does-not-cool)"
+   ]
+  },
+  {
+   "aparato": "frigorifico",
+   "funcionamiento": "El compresor (el motor de atrás, abajo) arranca ayudado por el relé PTC y protegido por el klixon, comprime el gas refrigerante y lo manda al condensador (la parrilla trasera o los laterales calientes), donde suelta el calor; el gas pasa por el capilar y se evapora en el evaporador, que roba el calor del interior. En un cíclico el evaporador está en la pared del fondo: forma escarcha que se funde en cada parada y el agua baja por el orificio de desagüe a la bandeja de encima del compresor, donde se evapora. En un No Frost el evaporador está oculto tras el panel del congelador y un ventilador reparte el aire frío por conductos (y compuerta) hacia el frigorífico; periódicamente la placa o el temporizador para el compresor y enciende la resistencia de desescarche, vigilada por el bimetal/sonda y el fusible térmico. El termostato o las sondas NTC con la placa deciden cuándo arranca y para el compresor; en los americanos, además, una electroválvula y un filtro alimentan el dispensador de agua y la máquina de hielo.",
+   "componentes": [
+    {
+     "pieza": "compresor",
+     "que_hace": "Motor que comprime el refrigerante y lo hace circular; es el corazón del circuito sellado.",
+     "sintomas_si_falla": [
+      "no enfría nada y el motor está callado o solo hace clic",
+      "zumba fuerte y se para",
+      "funciona sin parar y no enfría"
+     ],
+     "prueba_tecnico": "Escuchar: zumbido suave = funciona; clic cada pocos minutos sin arrancar = problema de arranque (relé/klixon) o compresor bloqueado. Medir bobinados y comprobar relé y klixon antes de condenar el compresor. Su sustitución y cualquier trabajo en el gas solo por técnico con certificado de gases fluorados.",
+     "fuente": "https://www.ocu.org/repara/frigorificos/compresor-frigo",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "relé PTC de arranque",
+     "que_hace": "Da el empujón al bobinado de arranque del compresor durante el primer segundo y luego lo desconecta.",
+     "sintomas_si_falla": [
+      "clic cada pocos minutos y el motor no arranca",
+      "motor callado"
+     ],
+     "prueba_tecnico": "Desenchufado, quitar la tapa de bornes y mirar si hay marcas de quemado, plástico derretido o traqueteo al agitarlo; medir en frío con polímetro y comparar con el valor de su referencia (por ejemplo Embraco 8EA 1B1X, 2,8-5,2 ohmios).",
+     "fuente": "https://www.embraco.com/blog/en-us/?p=5727",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "protector térmico (klixon)",
+     "que_hace": "Corta la corriente del compresor si se recalienta o consume de más.",
+     "sintomas_si_falla": [
+      "clic repetido sin arranque",
+      "compresor que arranca y se para enseguida"
+     ],
+     "prueba_tecnico": "Comprobar continuidad en frío; revisar quemaduras. Si el compresor está muy caliente, esperar a que enfríe antes de medir.",
+     "fuente": "https://it.ifixit.com/Wiki/Refrigerator_Compressor_Not_Running",
+     "confianza": "media"
+    },
+    {
+     "pieza": "condensador",
+     "que_hace": "Parrilla trasera (o tubos en los laterales) donde el gas suelta el calor sacado del interior.",
+     "sintomas_si_falla": [
+      "el motor no para",
+      "enfría poco en verano",
+      "laterales o trasera muy calientes"
+     ],
+     "prueba_tecnico": "Ver si está cubierto de polvo o pegado a la pared sin ventilación; limpiar con aspirador y cepillo.",
+     "fuente": "https://www.siemens-home.bsh-group.com/es/inspiracion/blog/condensador-frigorifico",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "evaporador",
+     "que_hace": "Donde se evapora el gas y se produce el frío: visible en la pared del fondo en los cíclicos, oculto tras el panel del congelador en los No Frost.",
+     "sintomas_si_falla": [
+      "bloque de hielo que tapa el paso de aire (No Frost)",
+      "escarcha irregular o parcial (posible falta de gas)"
+     ],
+     "prueba_tecnico": "Retirar el panel del congelador y ver si el evaporador está tapado de hielo (fallo de desescarche) o con escarcha solo en un tramo (sospecha de circuito: técnico de gases fluorados).",
+     "fuente": "https://www.beko.com/es-es/blog/la-nevera-no-enfria-si-congela",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "ventilador del evaporador (No Frost)",
+     "que_hace": "Mueve el aire frío del evaporador al congelador y, por conductos, al frigorífico.",
+     "sintomas_si_falla": [
+      "el congelador enfría pero el frigorífico no",
+      "ruido o golpeteo al abrir el congelador",
+      "no se oye aire al pulsar el interruptor de la puerta"
+     ],
+     "prueba_tecnico": "Con la puerta del congelador abierta y el interruptor de puerta pulsado, escuchar si gira; comprobar que no roza con hielo; medir tensión al motor.",
+     "fuente": "https://www.haier-europe.com/es_ES/blogs/news/nevera-no-enfria-pero-congela",
+     "confianza": "media"
+    },
+    {
+     "pieza": "resistencia de desescarche",
+     "que_hace": "Funde periódicamente el hielo del evaporador en los No Frost.",
+     "sintomas_si_falla": [
+      "el evaporador se tapa de hielo",
+      "el frigorífico deja de enfriar y el congelador sigue frío",
+      "mejora unos días tras desenchufarlo y vuelve a fallar"
+     ],
+     "prueba_tecnico": "Medir continuidad y resistencia; circuito abierto = cortada (el valor depende del modelo, por ejemplo un caso Samsung medía unos 230 ohmios).",
+     "fuente": "https://www.beko.com/es-es/blog/la-nevera-no-enfria-si-congela",
+     "confianza": "media"
+    },
+    {
+     "pieza": "bimetal / sonda de desescarche y fusible térmico",
+     "que_hace": "Indican cuándo el evaporador está frío para empezar el desescarche y cortan la resistencia al terminar o si se recalienta.",
+     "sintomas_si_falla": [
+      "no hace desescarche aunque la resistencia esté bien",
+      "hielo acumulado en el evaporador"
+     ],
+     "prueba_tecnico": "Comprobar continuidad del bimetal en frío y del fusible térmico; medir la sonda contra la tabla del fabricante.",
+     "fuente": "https://www.beko.com/es-es/blog/la-nevera-no-enfria-si-congela",
+     "confianza": "media"
+    },
+    {
+     "pieza": "termostato o sondas NTC y placa de control",
+     "que_hace": "Leen la temperatura y dan la orden de arrancar y parar el compresor, ventiladores y desescarche.",
+     "sintomas_si_falla": [
+      "no enfría nada con la luz encendida y el motor parado",
+      "enfría demasiado o congela en el frigorífico",
+      "el motor no para"
+     ],
+     "prueba_tecnico": "Medir la NTC a temperatura conocida y compararla con la tabla del fabricante; si es correcta y no sale tensión al compresor, placa. En algunos manuales (Teka), un fallo de la sonda del conservador para el compresor.",
+     "fuente": "https://www.siemens-home.bsh-group.com/es/inspiracion/blog/nevera-no-enfria",
+     "confianza": "media"
+    },
+    {
+     "pieza": "junta de puerta",
+     "que_hace": "Sella la puerta para que no entre aire caliente y húmedo.",
+     "sintomas_si_falla": [
+      "escarcha o hielo excesivo",
+      "motor que no para",
+      "condensación en la goma"
+     ],
+     "prueba_tecnico": "Prueba del papel: cerrar la puerta con una hoja; si sale sin resistencia, la junta no sella. Revisar también la nivelación.",
+     "fuente": "https://ocu.org/electrodomesticos/frigorificos/consejos/arreglar-averias-frigorifico",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "orificio de desagüe y bandeja de evaporación",
+     "que_hace": "Recogen el agua del desescarche y la llevan a la bandeja de encima del compresor, donde se evapora.",
+     "sintomas_si_falla": [
+      "agua en el fondo del frigorífico",
+      "hielo en la parte baja de la pared del fondo (cíclico)",
+      "agua en el suelo"
+     ],
+     "prueba_tecnico": "Comprobar que el orificio del fondo no está taponado; revisar la bandeja trasera: llena = no evapora; vacía con agua en el suelo = bandeja rota o mal colocada.",
+     "fuente": "https://ushl.samsung.com/es/support/home-appliances/como-evitar-escapes-de-agua-o-escarcha-en-mi-frigorifico",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "filtro de agua, electroválvula y máquina de hielo (americanos)",
+     "que_hace": "El filtro limpia el agua de la red; la electroválvula da paso al dispensador y a la máquina de hielo.",
+     "sintomas_si_falla": [
+      "no sale agua o sale poca",
+      "no hace hielo",
+      "el depósito de hielo se congela en bloque"
+     ],
+     "prueba_tecnico": "Quitar el filtro y probar: si sale agua, filtro obstruido. Comprobar llave de paso abierta y presión mínima (LG pide al menos 1,5 kgf/cm2).",
+     "fuente": "https://ushl.samsung.com/es/support/home-appliances/que-hacer-si-el-agua-no-sale-del-dispensador-correctamente",
+     "confianza": "alta"
+    }
+   ],
+   "diagnostico": [
+    {
+     "sintoma": "No enfría nada, la luz funciona y el motor está callado",
+     "palabras": [
+      "no enfría nada",
+      "está caliente",
+      "la luz se enciende pero no enfría",
+      "el motor no suena"
+     ],
+     "preguntas_clave": [
+      "Pegando el oído atrás abajo, ¿el motor zumba, hace clic o está totalmente callado?",
+      "¿Cada pocos minutos se oye un clac?",
+      "¿Hubo un apagón o una tormenta antes de fallar?",
+      "¿Tiene pantalla? ¿Marca algún aviso?"
+     ],
+     "como_descartan": "Clic cada pocos minutos sin arrancar: relé PTC, klixon o compresor bloqueado. Totalmente callado: no llega orden al compresor (termostato, sonda, placa) o compresor cortado. Tras un apagón o tormenta, sospechar de la placa o del relé. Zumbido que se para enseguida: compresor bloqueado.",
+     "pruebas_tecnico": [
+      "Revisar relé y klixon (quemaduras, continuidad)",
+      "Medir tensión de salida al compresor",
+      "Medir NTC y termostato",
+      "Medir bobinados del compresor"
+     ],
+     "pieza_a_llevar": "relé PTC y klixon universales o del compresor; termostato/sonda",
+     "fuentes": [
+      "https://www.ocu.org/repara/frigorificos/compresor-frigo",
+      "https://www.embraco.com/blog/en-us/?p=5727",
+      "https://www.siemens-home.bsh-group.com/es/inspiracion/blog/nevera-no-enfria"
+     ]
+    },
+    {
+     "sintoma": "El motor no para y no enfría",
+     "palabras": [
+      "el motor no para",
+      "está siempre funcionando",
+      "funciona pero no enfría"
+     ],
+     "preguntas_clave": [
+      "¿El motor de atrás está caliente o tibio?",
+      "¿No enfría ni arriba ni abajo, o solo una parte?",
+      "¿Es No Frost (sin hielo nunca) o hay que descongelarlo?",
+      "¿La parrilla de atrás está caliente?"
+     ],
+     "como_descartan": "Motor en marcha continua sin frío en ninguna parte y parrilla de atrás fría: falta de gas o compresor que no comprime; es circuito sellado y lo ve un técnico con certificado de gases fluorados, y recargar sin reparar la fuga no sirve. Si solo falla una parte en un No Frost, ir a desescarche/ventilador.",
+     "pruebas_tecnico": [
+      "Comprobar temperatura de condensador y evaporador",
+      "Buscar escarcha parcial en el evaporador",
+      "Derivar a técnico de gases fluorados"
+     ],
+     "pieza_a_llevar": "ninguna en primera visita; valorar presupuesto de circuito",
+     "fuentes": [
+      "https://www.elcorteingles.es/contenidos/tecnologia/frigorifico-no-enfria/",
+      "https://www.ocu.org/repara/frigorificos/frigo-enfria-poco"
+     ]
+    },
+    {
+     "sintoma": "No enfría abajo pero el congelador sí (No Frost)",
+     "palabras": [
+      "no enfría abajo",
+      "el congelador sí enfría",
+      "el frigorífico está caliente pero congela"
+     ],
+     "preguntas_clave": [
+      "¿Hay hielo en la pared del fondo del congelador o en las rejillas?",
+      "Al abrir el congelador, ¿se oye el ventilador?",
+      "¿Si lo desenchufa un día vuelve a enfriar unos días?",
+      "¿Tapan las rejillas de aire con comida?"
+     ],
+     "como_descartan": "Hielo en el fondo del congelador o mejora tras desenchufarlo: fallo de desescarche (resistencia, bimetal/sonda, fusible térmico o placa). Sin hielo y sin ruido de ventilador: ventilador. Ventilador que rasca: hielo rozando. Rejillas tapadas: problema de uso.",
+     "pruebas_tecnico": [
+      "Quitar panel del congelador y mirar el evaporador",
+      "Medir resistencia de desescarche, bimetal y fusible",
+      "Comprobar giro y tensión del ventilador"
+     ],
+     "pieza_a_llevar": "resistencia de desescarche, bimetal/sonda y ventilador del modelo",
+     "fuentes": [
+      "https://www.beko.com/es-es/blog/la-nevera-no-enfria-si-congela",
+      "https://www.haier-europe.com/es_ES/blogs/news/nevera-no-enfria-pero-congela",
+      "https://www.todoexpertos.com/categorias/casa-y-jardin/electrodomesticos/respuestas/2555330/mi-frigorifico-no-enfria-pero-el-congelador-si"
+     ]
+    },
+    {
+     "sintoma": "Cíclico: agua en el fondo o hielo en la parte baja de la pared del fondo",
+     "palabras": [
+      "agua dentro",
+      "agua debajo de los cajones",
+      "hielo en la pared del fondo",
+      "se encharca"
+     ],
+     "preguntas_clave": [
+      "¿El agua está debajo de los cajones de verdura?",
+      "¿Ve un agujerito en la parte baja del fondo? ¿Está tapado?",
+      "¿Hay hielo justo encima de ese agujero?"
+     ],
+     "como_descartan": "Orificio de desagüe taponado por restos o hielo: el agua del desescarche no sale y se encharca o se congela. Se limpia con agua tibia (no caliente) y bastoncillo. Si el agujero está libre y sigue, revisar el tubo y la bandeja trasera.",
+     "pruebas_tecnico": [
+      "Desatascar el orificio de desagüe",
+      "Revisar bandeja de evaporación"
+     ],
+     "pieza_a_llevar": "ninguna; limpiadesagües",
+     "fuentes": [
+      "https://www.siemens-home.bsh-group.com/es/inspiracion/blog/agua-nevera",
+      "https://ushl.samsung.com/es/support/home-appliances/como-evitar-escapes-de-agua-o-escarcha-en-mi-frigorifico"
+     ]
+    },
+    {
+     "sintoma": "Agua en el suelo bajo el frigorífico",
+     "palabras": [
+      "agua en el suelo",
+      "charco",
+      "pierde agua"
+     ],
+     "preguntas_clave": [
+      "¿Es un americano con dispensador de agua o hielo?",
+      "¿El agua sale por detrás o por delante?",
+      "¿Hay agua también dentro?"
+     ],
+     "como_descartan": "Americano: toma de agua, filtro o conexiones. Por detrás en uno normal: bandeja de evaporación rota, mal colocada o llena. Con agua también dentro: desagüe taponado que desborda.",
+     "pruebas_tecnico": [
+      "Revisar bandeja trasera",
+      "Revisar conexiones de agua",
+      "Comprobar desagüe interior"
+     ],
+     "pieza_a_llevar": "bandeja de evaporación",
+     "fuentes": [
+      "https://ushl.samsung.com/es/support/home-appliances/que-hacer-cuando-aparece-una-fuga-de-agua-en-la-bandeja-de-desague-de-tu-frigorifico",
+      "https://ushl.samsung.com/es/support/home-appliances/como-evitar-escapes-de-agua-o-escarcha-en-mi-frigorifico"
+     ]
+    },
+    {
+     "sintoma": "Escarcha o hielo dentro de un No Frost",
+     "palabras": [
+      "hace hielo",
+      "escarcha en el congelador",
+      "se escarcha siendo no frost"
+     ],
+     "preguntas_clave": [
+      "¿Cierra bien la puerta? ¿Algún cajón la empuja?",
+      "¿Mete comida caliente?",
+      "¿El hielo está en el fondo, detrás del panel, o por todo?",
+      "¿Hay agua por los cajones del congelador?"
+     ],
+     "como_descartan": "Escarcha general: entra aire húmedo (junta, puerta mal cerrada, comida caliente). Hielo concentrado en el fondo o desbordando agua por los cajones: desescarche o desagüe del evaporador obstruido. Ventilador intermitente también genera hielo.",
+     "pruebas_tecnico": [
+      "Prueba del papel en la junta",
+      "Revisar desescarche y desagüe del evaporador"
+     ],
+     "pieza_a_llevar": "junta de puerta; resistencia/bimetal de desescarche",
+     "fuentes": [
+      "https://www.ocu.org/repara/frigorificos/escarcha-frigo-no-frost",
+      "https://www.todoexpertos.com/preguntas/7v5tjpxj6du86g3k/frigorifico-el-congelador-hace-hielo"
+     ]
+    },
+    {
+     "sintoma": "El motor no para pero enfría (consume mucho)",
+     "palabras": [
+      "no para nunca",
+      "el motor siempre en marcha",
+      "gasta mucha luz"
+     ],
+     "preguntas_clave": [
+      "¿Está pegado a la pared o metido en un hueco sin aire?",
+      "¿La parrilla de atrás tiene mucho polvo?",
+      "¿Está al lado del horno o al sol?",
+      "¿Pasa sobre todo en verano?"
+     ],
+     "como_descartan": "Sin ventilación, condensador sucio o calor ambiente alto hacen trabajar más al motor: se corrige sin pieza. Si además se escarcha, junta. Si la temperatura real es mucho más baja que la marcada, termostato o sonda.",
+     "pruebas_tecnico": [
+      "Limpiar condensador",
+      "Prueba del papel en junta",
+      "Comprobar temperatura con termómetro frente al ajuste"
+     ],
+     "pieza_a_llevar": "junta; termostato/sonda",
+     "fuentes": [
+      "https://ocu.org/electrodomesticos/frigorificos/consejos/arreglar-averias-frigorifico",
+      "https://www.siemens-home.bsh-group.com/es/inspiracion/blog/condensador-frigorifico"
+     ]
+    },
+    {
+     "sintoma": "Congela la comida en el frigorífico",
+     "palabras": [
+      "congela abajo",
+      "se hielan las verduras",
+      "enfría demasiado"
+     ],
+     "preguntas_clave": [
+      "¿En qué número o temperatura lo tiene?",
+      "¿Se congela todo o lo de atrás, junto a la salida de aire?",
+      "¿El motor para alguna vez?"
+     ],
+     "como_descartan": "Ajuste demasiado frío o comida pegada a la salida de aire: uso. Motor que no para nunca y congela todo: termostato o sonda que no corta, o placa.",
+     "pruebas_tecnico": [
+      "Medir temperatura real",
+      "Medir sonda/termostato"
+     ],
+     "pieza_a_llevar": "termostato o sonda NTC",
+     "fuentes": [
+      "https://www.samsung.com/ar/support/home-appliances/the-refrigerator-is-too-cold/",
+      "https://www.todoexpertos.com/preguntas/9omc8h7the8wu4xw/combi-whirpool-no-enfria-la-nevera-y-congela-sin-parar-motor"
+     ]
+    },
+    {
+     "sintoma": "Hace ruido",
+     "palabras": [
+      "hace ruido",
+      "zumba",
+      "golpes",
+      "gorgoteo",
+      "chasquidos"
+     ],
+     "preguntas_clave": [
+      "¿Qué ruido es: zumbido, gorgoteo, chasquido o golpe?",
+      "¿Suena dentro del congelador o atrás abajo?",
+      "¿Está nivelado y separado de la pared?"
+     ],
+     "como_descartan": "Zumbido suave del motor, gorgoteo del gas y chasquidos por dilatación son normales. Golpeteo o rozamiento dentro del congelador: ventilador que roza con hielo o con algo. Vibración atrás: nivelación, tubo que toca o ventilador del condensador sucio. Gorgoteo continuo y ahogado con poco frío: sospechar del circuito.",
+     "pruebas_tecnico": [
+      "Nivelar",
+      "Revisar ventiladores y tornillos",
+      "Comprobar si hay hielo en el ventilador"
+     ],
+     "pieza_a_llevar": "ventilador",
+     "fuentes": [
+      "https://www.siemens-home.bsh-group.com/es/inspiracion/blog/frigorifico-silencioso",
+      "https://www.ocu.org/electrodomesticos/frigorificos/consejos/reducir-ruido-frigo",
+      "https://www.directoalpaladar.com/tecnologias-de-conservacion/hace-ruido-tu-nevera-escuchas-alguno-estos-sonidos-que-algo-falla"
+     ]
+    },
+    {
+     "sintoma": "Americano: no sale agua del dispensador",
+     "palabras": [
+      "no sale agua",
+      "el dispensador no va",
+      "sale muy poca agua"
+     ],
+     "preguntas_clave": [
+      "¿Cuándo cambió el filtro de agua por última vez?",
+      "¿Está abierta la llave de paso de debajo del fregadero?",
+      "¿Tiene activado el bloqueo infantil?",
+      "¿La puerta está bien cerrada?"
+     ],
+     "como_descartan": "Filtro viejo o mal encajado es la causa más habitual: si sin filtro sale agua, filtro obstruido. Llave cerrada o presión baja. Bloqueo infantil activo o puerta abierta impiden dispensar. Si todo está bien, tubería congelada en la puerta o electroválvula.",
+     "pruebas_tecnico": [
+      "Probar sin filtro",
+      "Comprobar presión",
+      "Revisar electroválvula y tubo de la puerta"
+     ],
+     "pieza_a_llevar": "filtro de agua; electroválvula",
+     "fuentes": [
+      "https://ushl.samsung.com/es/support/home-appliances/que-hacer-si-el-agua-no-sale-del-dispensador-correctamente",
+      "https://www.lg.com/es/soporte/guias-y-soluciones/frigorifico/como-cambiar-el-filtro-de-agua"
+     ]
+    },
+    {
+     "sintoma": "Americano: no hace hielo o el hielo se queda en bloque",
+     "palabras": [
+      "no hace hielo",
+      "el hielo se pega",
+      "el cubo de hielo está congelado"
+     ],
+     "preguntas_clave": [
+      "¿Está activada la función de hielo?",
+      "¿El cajón de hielo está lleno?",
+      "¿Sale agua del dispensador?"
+     ],
+     "como_descartan": "Función de hielo apagada o depósito lleno: el aparato para de fabricar. Si tampoco sale agua, problema de suministro (filtro, llave, electroválvula). Depósito congelado: temperatura demasiado baja o defecto conocido en algunos modelos (ver averías por marca).",
+     "pruebas_tecnico": [
+      "Comprobar ajustes",
+      "Revisar suministro de agua",
+      "Revisar máquina de hielo"
+     ],
+     "pieza_a_llevar": "máquina de hielo / electroválvula",
+     "fuentes": [
+      "https://ushl.samsung.com/es/support/home-appliances/que-hacer-si-el-dispensador-de-hielo-de-mi-frigorifico-no-funciona",
+      "https://www.lg.com/ar/soporte/ayuda-producto/CT20084048-20155265312866"
+     ]
+    },
+    {
+     "sintoma": "Condensación o agua en la goma de la puerta",
+     "palabras": [
+      "suda la puerta",
+      "agua en la goma",
+      "gotas en la junta"
+     ],
+     "preguntas_clave": [
+      "¿Hace mucho calor o humedad en la cocina?",
+      "¿La puerta se queda bien cerrada?",
+      "¿Lo abren mucho?"
+     ],
+     "como_descartan": "Humedad ambiental alta y aperturas frecuentes: normal. Si la junta no sella (prueba del papel), cambiar junta o nivelar.",
+     "pruebas_tecnico": [
+      "Prueba del papel",
+      "Nivelar"
+     ],
+     "pieza_a_llevar": "junta de puerta",
+     "fuentes": [
+      "https://www.lg.com/es/posventa/microsites/frigorifico/condensacion-agua-puertas-goma-burlete"
+     ]
+    }
+   ],
+   "averias_por_marca": [
+    {
+     "marcas": [
+      "LG"
+     ],
+     "epoca": "2014-2017 (compresor lineal, mercado de EE.UU.)",
+     "averia": "Fallo del compresor lineal con pérdida de frío; acuerdo de demanda colectiva en EE.UU. (2020) para unos 1,5-1,6 millones de frigoríficos de 31 modelos, con ampliación de garantía. LG niega el defecto. Útil como referencia para americanos LG de esa época.",
+     "fuente": "https://topclassactions.com/lawsuit-settlements/lawsuit-news/appliances/lg-to-provide-cash-warranties-to-1-5m-consumers-over-fridge-defects/",
+     "confianza": "alta"
+    },
+    {
+     "marcas": [
+      "Samsung"
+     ],
+     "epoca": "modelos French door con dispensador en puerta, boletín técnico de julio de 2015 (EE.UU.)",
+     "averia": "Máquina de hielo de la puerta: fugas, hielo que se congela en bloque, agua bajo los cajones y ruido de ventilador; demanda colectiva (Bianchi v. Samsung, 2017), luego desestimada con acuerdos individuales.",
+     "fuente": "https://www.classaction.org/media/bianchi-v-samsung_2.pdf",
+     "confianza": "media"
+    }
+   ],
+   "vida_util": {
+    "anos": "unos 12 de media (12,3 según OCU; por marca entre 9 y 17 años)",
+    "fuente": "https://www.ocu.org/electrodomesticos/frigorificos/noticias/electrodomesticos-marcas-mas-duraderas"
+   },
+   "compensa_reparar": "Con menos de unos 10 años y reparación por debajo del 50 % de uno nuevo, reparar (OCU, regla del 50 %: https://ocu.org/electrodomesticos/lavadora/consejos/lavadora-arreglarla-sustituirla). En frigorífico antiguo y de mala clase energética suele ser preferible sustituirlo: es el electrodoméstico en el que cambiar a veces es mejor también para el medio ambiente, y uno de 13 años puede gastar hasta un 50 % más (OCU, https://www.ocu.org/repara/frigorificos/frigo-enfria-poco; Xataka citando OCU). Una fuga de gas difícil de localizar puede no compensar (El Corte Inglés).",
+   "mantenimiento": [
+    "Limpiar el polvo de la parrilla trasera (condensador) con aspirador y cepillo y dejar espacio de ventilación (fuente: https://www.siemens-home.bsh-group.com/es/inspiracion/blog/condensador-frigorifico)",
+    "Comprobar la junta con la prueba del papel y limpiarla (fuente: https://ocu.org/electrodomesticos/frigorificos/consejos/arreglar-averias-frigorifico)",
+    "En cíclicos, mantener limpio el orificio de desagüe del fondo con agua tibia con bicarbonato o vinagre (fuente: https://www.siemens-home.bsh-group.com/es/inspiracion/blog/agua-nevera)",
+    "No meter comida caliente y no tapar las rejillas de aire del No Frost (fuente: https://ushl.samsung.com/es/support/home-appliances/como-evitar-escapes-de-agua-o-escarcha-en-mi-frigorifico)",
+    "Nivelar el aparato para evitar ruidos y que la puerta cierre bien (fuente: https://www.siemens-home.bsh-group.com/es/inspiracion/blog/frigorifico-silencioso)",
+    "En americanos, cambiar el filtro de agua según el fabricante (fuente: https://www.lg.com/es/soporte/guias-y-soluciones/frigorifico/como-cambiar-el-filtro-de-agua)",
+    "No picar el hielo con objetos metálicos: se puede perforar el circuito de gas (fuente: https://www.beko.com/es-es/blog/la-nevera-no-enfria-si-congela)"
+   ]
+  },
+  {
+   "aparato": "horno",
+   "funcionamiento": "Un horno eléctrico calienta con varias resistencias (superior y grill en el techo, inferior bajo la solera y circular detrás del ventilador de convección) que el selector o la placa electrónica combinan según la función elegida. El termostato de regulación (o una sonda en los electrónicos) corta y da tensión para mantener la temperatura, y un termostato de seguridad o fusible térmico abre el circuito si hay sobrecalentamiento. Un ventilador tangencial de refrigeración enfría mandos y electrónica y puede seguir girando un rato después de apagar. En los pirolíticos, una cerradura motorizada bloquea la puerta durante la limpieza a alta temperatura y no la suelta hasta que el horno se enfría.",
+   "componentes": [
+    {
+     "pieza": "resistencias (superior/grill, inferior y circular de convección)",
+     "que_hace": "Generan el calor; cada función usa una combinación distinta.",
+     "sintomas_si_falla": [
+      "no calienta en una o varias funciones",
+      "el ventilador sopla aire frío (resistencia circular abierta)",
+      "salta el diferencial (resistencia derivada a masa)"
+     ],
+     "prueba_tecnico": "Con el horno desenchufado, medir ohmios de cada resistencia (valores típicos de unas decenas de ohmios; abierta = rota) y aislamiento entre sus bornes y masa; comprobar además que le llegan 230 V con la función puesta.",
+     "fuente": "https://techfaultfix.com/es/ovens/aeg/oven-does-not-heat-at-all-fan-and-light-may-work-but-no-warmth-in-any-mode",
+     "confianza": "media"
+    },
+    {
+     "pieza": "fusible térmico / termostato de seguridad",
+     "que_hace": "Corta la alimentación de las resistencias si el horno se sobrecalienta.",
+     "sintomas_si_falla": [
+      "luz y ventilador funcionan pero no calienta en ninguna función",
+      "dejó de calentar tras un uso largo a alta temperatura"
+     ],
+     "prueba_tecnico": "Medir continuidad (suele estar en la parte superior); si está abierto, cambiarlo y buscar la causa del sobrecalentamiento: ventilador de refrigeración parado o rejillas del mueble tapadas.",
+     "fuente": "https://www.beko.com/es-es/blog/porque-horno-enciende-pero-no-calienta",
+     "confianza": "media"
+    },
+    {
+     "pieza": "termostato de regulación / sonda de temperatura",
+     "que_hace": "Mantiene la temperatura elegida dando y quitando corriente a las resistencias.",
+     "sintomas_si_falla": [
+      "no calienta aunque todo parece encendido",
+      "no alcanza la temperatura o se pasa"
+     ],
+     "prueba_tecnico": "Revisar contactos (sucios o sulfatados impiden que llegue corriente a la resistencia) y continuidad; en electrónicos, medir la sonda en frío según la tabla del fabricante.",
+     "fuente": "https://qubbos.es/blogs/news/por-que-el-horno-no-calienta",
+     "confianza": "media"
+    },
+    {
+     "pieza": "selector de funciones",
+     "que_hace": "Conecta las resistencias y el ventilador correspondientes a cada función.",
+     "sintomas_si_falla": [
+      "unas funciones calientan y otras no",
+      "salta el diferencial (derivación en el selector, menos habitual que en la resistencia)"
+     ],
+     "prueba_tecnico": "Con los elementos calefactores comprobados, medir continuidad de cada posición del selector y su aislamiento a masa.",
+     "fuente": "https://www.todoexpertos.com/preguntas/7e86v4jxt4ajfksa/horno-teka-hace-saltar-diferencial-cuando-lo-enciendo",
+     "confianza": "media"
+    },
+    {
+     "pieza": "placa de control / relés",
+     "que_hace": "En hornos electrónicos, activa por relé cada resistencia y el ventilador.",
+     "sintomas_si_falla": [
+      "no calienta con resistencias y seguridades en buen estado",
+      "el ventilador de refrigeración no para nunca (relé pegado)"
+     ],
+     "prueba_tecnico": "Si resistencias, fusible térmico y termostato están bien, comprobar si la placa da tensión a la salida de cada relé con la función activada.",
+     "fuente": "https://www.beko.com/es-es/blog/mi-horno-no-calienta",
+     "confianza": "media"
+    },
+    {
+     "pieza": "motor del ventilador de convección",
+     "que_hace": "Reparte el aire caliente por la cavidad en las funciones con aire.",
+     "sintomas_si_falla": [
+      "no gira en funciones con aire",
+      "ruido de roce o traqueteo con el ventilador en marcha"
+     ],
+     "prueba_tecnico": "Medir la resistencia del bobinado desde la trasera (abierto = motor roto); comprobar que la hélice está firme y no roza ni tiene restos.",
+     "fuente": "https://techfaultfix.com/es/ovens/obh-nordica/oven-makes-loud-rattling-or-grinding-noises-during-operation-especially-when-the-fan-is-running",
+     "confianza": "media"
+    },
+    {
+     "pieza": "ventilador tangencial de refrigeración",
+     "que_hace": "Enfría mandos y electrónica y saca el aire caliente por el frontal; puede seguir funcionando tras apagar.",
+     "sintomas_si_falla": [
+      "ruido fuerte o traqueteo en la parte superior",
+      "no para nunca, ni con el horno frío",
+      "salta el fusible térmico por sobrecalentamiento"
+     ],
+     "prueba_tecnico": "Comprobar si sigue girando con el horno frío (relé o termostato del ventilador), limpiar aspas y medir el motor.",
+     "fuente": "https://techfaultfix.com/es/ovens/aeg/cooling-fan-at-the-top-of-the-oven-is-very-loud-or-runs-for-an-unusually-long-time-after-cooking",
+     "confianza": "media"
+    },
+    {
+     "pieza": "cerradura motorizada de puerta (pirolíticos)",
+     "que_hace": "Bloquea la puerta durante la pirólisis y la libera cuando el horno se enfría.",
+     "sintomas_si_falla": [
+      "la puerta sigue bloqueada con el horno frío",
+      "no arranca la pirólisis"
+     ],
+     "prueba_tecnico": "Desenchufar, quitar el panel superior, medir la bobina del motor de bloqueo y los microinterruptores; si no cambian de estado, cambiar el conjunto. No forzar la puerta.",
+     "fuente": "https://techfaultfix.com/es/ovens/obh-nordica/oven-door-will-not-open-after-a-high-temperature-or-self-clean-cycle-even-when-cool",
+     "confianza": "media"
+    },
+    {
+     "pieza": "junta de la puerta",
+     "que_hace": "Sella la cavidad y evita que el calor se escape.",
+     "sintomas_si_falla": [
+      "tarda mucho en calentar",
+      "cocción desigual",
+      "cristal o frontal demasiado calientes"
+     ],
+     "prueba_tecnico": "Revisar a la vista si hay huecos, cortes o zonas aplastadas y si sigue bien sujeta.",
+     "fuente": "https://techfaultfix.com/es/ovens/obh-nordica/oven-glass-door-becomes-excessively-hot-to-the-touch-during-normal-baking",
+     "confianza": "media"
+    }
+   ],
+   "diagnostico": [
+    {
+     "sintoma": "No calienta en ninguna función pero hay luz y gira el ventilador",
+     "palabras": [
+      "no calienta",
+      "tiene luz pero no calienta",
+      "el ventilador gira pero no calienta",
+      "se queda frío"
+     ],
+     "preguntas_clave": [
+      "¿Calienta algo con alguna función, aunque sea el grill?",
+      "¿Dejó de calentar de repente después de un horneado largo a mucha temperatura?",
+      "¿Ha saltado algo en el cuadro eléctrico o hay otros aparatos sin luz?",
+      "¿Es de mandos con ruedas o con pantalla digital?"
+     ],
+     "como_descartan": "Si ninguna función calienta, el fallo es común a todas: fusible térmico o termostato de seguridad, termostato de regulación o placa/relés. Si falló tras un uso largo a alta temperatura, apunta al fusible térmico y hay que revisar también el ventilador de refrigeración. Si algo calienta, ver el diagnóstico de 'solo falla una función'. Un magnetotérmico medio caído puede dejar luz y ventilador sin dar potencia a las resistencias.",
+     "pruebas_tecnico": [
+      "medir resistencias una a una",
+      "continuidad del fusible térmico/termostato de seguridad",
+      "comprobar tensión de salida de selector o relés de placa"
+     ],
+     "pieza_a_llevar": "fusible térmico/termostato de seguridad universal y resistencias del modelo si se conoce",
+     "fuentes": [
+      "https://www.beko.com/es-es/blog/porque-horno-enciende-pero-no-calienta",
+      "https://techfaultfix.com/es/ovens/aeg/oven-does-not-heat-at-all-fan-and-light-may-work-but-no-warmth-in-any-mode",
+      "https://qubbos.es/blogs/news/por-que-el-horno-no-calienta"
+     ]
+    },
+    {
+     "sintoma": "Solo calienta con algunas funciones (p. ej. el aire sale frío)",
+     "palabras": [
+      "el aire sale frío",
+      "no funciona el grill",
+      "solo calienta por abajo",
+      "no calienta por arriba"
+     ],
+     "preguntas_clave": [
+      "¿Qué funciones calientan y cuáles no?",
+      "Con la función de aire, ¿nota el aire frío aunque el ventilador gire?",
+      "¿Se ve roja la resistencia del techo al poner el grill?"
+     ],
+     "como_descartan": "Cada función usa una resistencia: si falla solo el aire caliente con ventilador girando, resistencia circular; si falla el grill, resistencia superior; si falla solo la de abajo, resistencia inferior. Si las resistencias están bien, selector o relé de esa salida.",
+     "pruebas_tecnico": [
+      "medir la resistencia de la función que falla",
+      "comprobar que le llegan 230 V con esa función"
+     ],
+     "pieza_a_llevar": "resistencia circular (la que más se pide) o la de la función afectada",
+     "fuentes": [
+      "https://techfaultfix.com/es/ovens/aeg/oven-does-not-heat-at-all-fan-and-light-may-work-but-no-warmth-in-any-mode",
+      "https://www.beko.com/es-es/blog/mi-horno-no-calienta"
+     ]
+    },
+    {
+     "sintoma": "Calienta poco o tarda mucho en llegar a temperatura",
+     "palabras": [
+      "tarda mucho",
+      "calienta poco",
+      "no se hace la comida",
+      "no llega a la temperatura"
+     ],
+     "preguntas_clave": [
+      "¿Le pasa con todas las funciones o con una?",
+      "¿Se escapa calor por la puerta o el cristal quema mucho?",
+      "¿La goma de la puerta está rota o aplastada?"
+     ],
+     "como_descartan": "Si pasa con una función, una de sus resistencias está floja o abierta. Si con todas y el frontal se calienta mucho, sospechar de la junta de puerta. Si nada de eso, termostato o sonda descalibrados.",
+     "pruebas_tecnico": [
+      "medir resistencias",
+      "revisar junta de puerta",
+      "comprobar temperatura real con termómetro frente a la programada"
+     ],
+     "pieza_a_llevar": "junta de puerta y resistencia del modelo",
+     "fuentes": [
+      "https://techfaultfix.com/es/ovens/zanussi/oven-heats-but-takes-a-very-long-time-to-reach-temperature-food-undercooked",
+      "https://techfaultfix.com/es/ovens/obh-nordica/oven-glass-door-becomes-excessively-hot-to-the-touch-during-normal-baking"
+     ]
+    },
+    {
+     "sintoma": "Salta el diferencial al encender el horno o al rato",
+     "palabras": [
+      "salta el diferencial",
+      "saltan los plomos",
+      "se va la luz al encender el horno",
+      "salta la luz"
+     ],
+     "preguntas_clave": [
+      "¿Salta nada más encenderlo o después de unos minutos calentando?",
+      "¿Salta con todas las funciones o solo con una?",
+      "¿Hacía tiempo que no lo usaba?",
+      "¿Salta también al abrir la puerta?"
+     ],
+     "como_descartan": "Lo más habitual es una resistencia derivada a masa. Si salta al rato, la derivación aumenta con el calor. Si solo con una función, es esa resistencia. Si llevaba tiempo sin usarse, la resistencia puede haber cogido humedad. Si salta al abrir la puerta, la resistencia puede tocar masa. Si las resistencias aíslan bien, mirar el selector.",
+     "pruebas_tecnico": [
+      "medir aislamiento fase-tierra con el horno desenchufado",
+      "encender o conectar las resistencias de una en una para ver cuál dispara"
+     ],
+     "pieza_a_llevar": "resistencia del modelo (la que dispare)",
+     "fuentes": [
+      "https://www.beko.com/es-es/blog/horno-salta-diferencial",
+      "https://www.todoexpertos.com/preguntas/eo5qvfcp5whki9og/horno-salta-diferencial-al-calentarse",
+      "https://www.todoexpertos.com/preguntas/7e86v4jxt4ajfksa/horno-teka-hace-saltar-diferencial-cuando-lo-enciendo"
+     ]
+    },
+    {
+     "sintoma": "El ventilador sigue sonando después de apagar el horno",
+     "palabras": [
+      "sigue sonando apagado",
+      "el ventilador no para",
+      "hace ruido apagado",
+      "sale aire por arriba de la puerta"
+     ],
+     "preguntas_clave": [
+      "¿Para solo al cabo de un rato o no para nunca, ni con el horno frío?",
+      "¿Cuánto tiempo sigue después de cocinar?",
+      "¿Hace ruido de roce o traqueteo?"
+     ],
+     "como_descartan": "Que siga unos minutos tras usarlo a alta temperatura es normal (hasta 30-40 minutos según fabricante). Si no para con el horno frío: relé pegado en la placa, termostato del ventilador o sensor. Si hace traqueteo: aspas sucias o motor tangencial desgastado.",
+     "pruebas_tecnico": [
+      "comprobar si gira con el horno frío",
+      "revisar relé o termostato que gobierna el ventilador",
+      "limpiar aspas y medir el motor tangencial"
+     ],
+     "pieza_a_llevar": "motor tangencial de refrigeración del modelo",
+     "fuentes": [
+      "https://www.beko.com/es-es/blog/horno-hace-ruido-apagado",
+      "https://techfaultfix.com/es/ovens/indesit/indesit-oven-fan-continues-to-run-for-an-excessively-long-time-after-the-oven-is-turned-off",
+      "https://techfaultfix.com/es/ovens/aeg/cooling-fan-at-the-top-of-the-oven-is-very-loud-or-runs-for-an-unusually-long-time-after-cooking"
+     ]
+    },
+    {
+     "sintoma": "Ruido fuerte de roce o traqueteo con el ventilador interior",
+     "palabras": [
+      "hace ruido",
+      "ruido de roce",
+      "traqueteo",
+      "chirría el ventilador"
+     ],
+     "preguntas_clave": [
+      "¿Suena solo con las funciones de aire?",
+      "¿El ruido viene del fondo del horno o de la parte de arriba del frontal?"
+     ],
+     "como_descartan": "Si suena solo con aire y viene del fondo: ventilador de convección (hélice suelta o rodamientos). Si viene de arriba del frontal y sigue tras apagar: ventilador de refrigeración.",
+     "pruebas_tecnico": [
+      "quitar la tapa trasera interior y comprobar holgura de la hélice",
+      "medir el motor"
+     ],
+     "pieza_a_llevar": "motor de ventilador de convección",
+     "fuentes": [
+      "https://techfaultfix.com/es/ovens/obh-nordica/oven-makes-loud-rattling-or-grinding-noises-during-operation-especially-when-the-fan-is-running",
+      "https://www.beko.com/es-es/blog/horno-hace-ruido-apagado"
+     ]
+    },
+    {
+     "sintoma": "Pirolítico: la puerta no se desbloquea",
+     "palabras": [
+      "no se abre la puerta",
+      "puerta bloqueada",
+      "se quedó cerrado después de la limpieza",
+      "pirolisis"
+     ],
+     "preguntas_clave": [
+      "¿Cuánto hace que terminó la limpieza? ¿El horno ya está frío?",
+      "¿Sale algún aviso o código en la pantalla?",
+      "¿Oye un motorcito intentando moverse?"
+     ],
+     "como_descartan": "Si aún está caliente, es normal: no se libera hasta bajar de temperatura. Si está frío y sigue cerrada: motor de bloqueo, microinterruptor o la placa que no da la orden.",
+     "pruebas_tecnico": [
+      "acceso por el panel superior y liberar la cerradura según el manual de servicio",
+      "medir bobina del motor y microinterruptores"
+     ],
+     "pieza_a_llevar": "conjunto de cerradura del modelo",
+     "fuentes": [
+      "https://techfaultfix.com/es/ovens/obh-nordica/oven-door-will-not-open-after-a-high-temperature-or-self-clean-cycle-even-when-cool",
+      "https://techfaultfix.com/es/ovens/de-dietrich/error-f09-oven-door-remains-locked-after"
+     ]
+    },
+    {
+     "sintoma": "Olor a quemado o humo en uso normal",
+     "palabras": [
+      "huele a quemado",
+      "sale humo",
+      "olor a cable",
+      "olor a plástico"
+     ],
+     "preguntas_clave": [
+      "¿Huele a comida quemada o a plástico o cable?",
+      "¿El olor sale de dentro del horno o de los mandos o la parte de arriba?",
+      "¿Ha dejado de funcionar algo a la vez?"
+     ],
+     "como_descartan": "Olor a comida: restos o grasa quemándose en cavidad o resistencias, se resuelve limpiando. Olor a plástico o cable desde arriba: sobrecalentamiento de cableado o conexiones, a menudo por mala refrigeración; dejar de usarlo hasta que lo revise el técnico.",
+     "pruebas_tecnico": [
+      "revisar conexiones de resistencias y cableado",
+      "comprobar el ventilador de refrigeración"
+     ],
+     "pieza_a_llevar": "terminales y cable de alta temperatura",
+     "fuentes": [
+      "https://techfaultfix.com/es/ovens/balay/oven-emits-burning-smell-or-smoke-during-normal-cooking-not-first-use-or-after-spill"
+     ]
+    }
+   ],
+   "averias_por_marca": [
+    {
+     "marcas": [
+      "Teka"
+     ],
+     "epoca": "HPE-735 / HPE-733",
+     "averia": "Fuga a tierra por las resistencias que hace saltar el diferencial; un usuario lo detectó midiendo y otro con un HPE-733 tuvo síntomas parecidos (caso de foro, no estadística).",
+     "fuente": "https://bandaancha.eu/foros/arreglando-horno-teka-hpe-735-1748079",
+     "confianza": "media"
+    },
+    {
+     "marcas": [
+      "Balay"
+     ],
+     "epoca": "3HB2010X0 / 3HB2010B0",
+     "averia": "Reseñas de usuarios: el ventilador de refrigeración empieza a activarse solo al acabar la garantía (cambio de pieza) y quejas repetidas de que el temporizador no corta el horno.",
+     "fuente": "https://www.pccomponentes.com/opiniones/horno-multifuncion-balay-3hb2010x0-66l-60cm-limpieza-manual-a-grill-puerta-fria-inoxidable",
+     "confianza": "media"
+    }
+   ],
+   "vida_util": {
+    "anos": "13-15 años (dato orientativo de fuente secundaria, no de OCU)",
+    "fuente": "https://www.elpais.com.co/como-hacer/por-cuanto-tiempo-dura-un-electrodomestico-sin-que-este-se-dane-2419.html"
+   },
+   "compensa_reparar": "Orientativo, aplicando la regla que OCU da para la lavadora: con menos de 8-10 años y reparación por debajo del 50 % de un horno nuevo, reparar; con más de 10 años o varias averías previas, plantear cambiarlo. Resistencias, fusible térmico y junta son reparaciones baratas; placa electrónica, cara (https://ocu.org/electrodomesticos/lavadora/consejos/lavadora-arreglarla-sustituirla).",
+   "mantenimiento": [
+    "No tapar las rejillas de ventilación del mueble: la mala ventilación hace saltar el fusible térmico (fuente: https://www.beko.com/es-es/blog/porque-horno-enciende-pero-no-calienta)",
+    "Limpiar los restos de comida que llegan al ventilador; producen ruidos (fuente: https://www.beko.com/es-es/blog/horno-hace-ruido-apagado)",
+    "Revisar de vez en cuando la goma de la puerta y cambiarla si tiene cortes o está aplastada (fuente: https://techfaultfix.com/es/ovens/obh-nordica/oven-glass-door-becomes-excessively-hot-to-the-touch-during-normal-baking)",
+    "En pirolíticos, esperar a que el horno se enfríe tras la limpieza y no forzar nunca la puerta (fuente: https://techfaultfix.com/es/ovens/obh-nordica/oven-door-will-not-open-after-a-high-temperature-or-self-clean-cycle-even-when-cool)",
+    "Si lleva mucho tiempo sin usarse y salta el diferencial, no quitar la toma de tierra para 'secarlo': llamar al técnico (fuente: https://www.todoexpertos.com/preguntas/eo5qvfcp5whki9og/horno-salta-diferencial-al-calentarse)"
+   ]
+  },
+  {
+   "aparato": "lavadora-secadora",
+   "funcionamiento": "La parte de lavado funciona igual que una lavadora (blocapuertas, electroválvula, presostato, resistencia de lavado, motor, bomba de desagüe); para esas averías se usa el conocimiento de lavadora. En la fase de secado actúa un circuito propio: un ventilador impulsa aire que calienta una resistencia de secado, controlada por termostatos o sensor de temperatura, hacia el tambor. El aire húmedo pasa por un condensador refrigerado donde el vapor se condensa y el agua resultante se evacua. Algunos modelos tienen filtro de pelusa o un ciclo de cuidado o limpieza del condensador que usa agua.",
+   "componentes": [
+    {
+     "pieza": "resistencia de secado",
+     "que_hace": "Calienta el aire del circuito de secado (es distinta de la resistencia de lavado).",
+     "sintomas_si_falla": [
+      "lava bien pero no seca",
+      "ropa sale húmeda y fría"
+     ],
+     "prueba_tecnico": "Medir con el polímetro: una resistencia en buen estado marca valores bajos (como referencia OCU 15-30 ohmios para resistencias de lavadora); abierta = quemada. Revisar siempre a la vez el termostato asociado.",
+     "fuente": "https://guide.washerhouse.com/es/ne-rabotaet-sushka-v-sm/",
+     "confianza": "media"
+    },
+    {
+     "pieza": "ventilador de secado",
+     "que_hace": "Mueve el aire por la resistencia, el tambor y el condensador.",
+     "sintomas_si_falla": [
+      "no seca aunque la resistencia esté bien",
+      "ruido en fase de secado",
+      "sobrecalentamiento y corte por termostato"
+     ],
+     "prueba_tecnico": "Comprobar que gira libre y que funciona en fase de secado; revisar pelusa acumulada en el rodete y el conducto.",
+     "fuente": "https://guide.washerhouse.com/es/ne-rabotaet-sushka-v-sm/",
+     "confianza": "media"
+    },
+    {
+     "pieza": "termostatos / sensor de temperatura de secado",
+     "que_hace": "Regulan la temperatura del aire y cortan la resistencia si se sobrecalienta.",
+     "sintomas_si_falla": [
+      "no calienta en secado",
+      "ropa sale húmeda con olor a humedad",
+      "se para el secado antes de tiempo"
+     ],
+     "prueba_tecnico": "Medir continuidad en frío (cerrado); un termostato de seguridad abierto indica sobrecalentamiento previo, buscar pelusa en conducto y condensador.",
+     "fuente": "https://guide.washerhouse.com/es/sushilnaya-mashina-ne-sushit/",
+     "confianza": "media"
+    },
+    {
+     "pieza": "condensador y conducto de aire",
+     "que_hace": "Enfría el aire húmedo para condensar el agua.",
+     "sintomas_si_falla": [
+      "tarda mucho o no seca",
+      "pelusa en la ropa",
+      "sale vapor por la puerta o el cajetín"
+     ],
+     "prueba_tecnico": "Revisar el conducto de aire y el condensador por pelusa compactada; en modelos con ciclo de cuidado del condensador, comprobar que se ha hecho según el manual.",
+     "fuente": "https://guide.washerhouse.com/es/kak-rabotaet-sushka-v-sm-lg/",
+     "confianza": "media"
+    }
+   ],
+   "diagnostico": [
+    {
+     "sintoma": "Lava bien pero no seca",
+     "palabras": [
+      "no seca",
+      "lava pero no seca",
+      "sale mojada del secado",
+      "el secado no funciona"
+     ],
+     "preguntas_clave": [
+      "¿Lava y centrifuga bien?",
+      "Al terminar el secado, ¿la ropa sale caliente o fría?",
+      "¿Limpia el filtro de pelusa o hace el ciclo de limpieza del condensador si su modelo lo tiene?"
+     ],
+     "como_descartan": "Si no centrifuga bien, la ropa entra empapada: arreglar primero el centrifugado. Ropa fría: resistencia de secado, termostato o ventilador. Ropa caliente pero húmeda: condensador o conducto obstruidos .",
+     "pruebas_tecnico": [
+      "medir resistencia de secado",
+      "medir termostatos",
+      "revisar ventilador",
+      "revisar condensador y conducto"
+     ],
+     "pieza_a_llevar": "resistencia de secado y termostatos del modelo",
+     "fuentes": [
+      "https://guide.washerhouse.com/es/ne-rabotaet-sushka-v-sm/",
+      "https://www.ocu.org/electrodomesticos/secadora/consejos/problemas-con-secadora"
+     ]
+    },
+    {
+     "sintoma": "Seca cada vez peor o tarda mucho",
+     "palabras": [
+      "tarda mucho en secar",
+      "seca peor",
+      "necesita repetir el secado"
+     ],
+     "preguntas_clave": [
+      "¿Ha ido empeorando poco a poco?",
+      "¿Le aparece pelusa en la ropa?",
+      "¿Hace alguna limpieza del filtro o del condensador?"
+     ],
+     "como_descartan": "Empeoramiento progresivo con pelusa: conducto o condensador taponados, limpieza. Corte brusco: componente eléctrico (resistencia, termostato, ventilador).",
+     "pruebas_tecnico": [
+      "limpiar filtro, conducto y condensador"
+     ],
+     "pieza_a_llevar": "ninguna en principio; termostato si ha saltado por sobrecalentamiento",
+     "fuentes": [
+      "https://www.ocu.org/electrodomesticos/secadora/noticias/limpiar-secadoras",
+      "https://www.beko.com/es-es/blog/secadora-no-seca"
+     ]
+    },
+    {
+     "sintoma": "Gasta agua durante el secado",
+     "palabras": [
+      "coge agua al secar",
+      "gasta agua secando",
+      "entra agua en el secado"
+     ],
+     "preguntas_clave": [
+      "¿Es un ciclo de limpieza o cuidado del condensador indicado en su manual?",
+      "¿Entra agua también con la máquina apagada?"
+     ],
+     "como_descartan": "Algunos modelos usan agua para la limpieza del condensador, consultar el manual. Si entra agua con la máquina apagada: electroválvula que no cierra (ver lavadora).",
+     "pruebas_tecnico": [
+      "revisar manual del modelo",
+      "comprobar cierre de la electroválvula"
+     ],
+     "pieza_a_llevar": "electroválvula del modelo si no cierra",
+     "fuentes": [
+      "https://www.lg.com/es/soporte/guias-y-soluciones/lavado-secado/mantenimiento-secadora",
+      "https://guide.washerhouse.com/es/vpusknoj-elektromagnitnyj-klapan-dlya-stiralnoj-mashiny-proverka-i-zamena/"
+     ]
+    }
+   ],
+   "averias_por_marca": [],
+   "vida_util": {
+    "anos": "sin dato específico encontrado; orientativo el de lavadora, 10-12 años",
+    "fuente": "https://ocu.org/electrodomesticos/lavadora/consejos/lavadora-arreglarla-sustituirla"
+   },
+   "compensa_reparar": "Misma regla del 50 % que la lavadora: si la reparación supera la mitad del precio de un aparato nuevo similar no suele compensar; con más de 10 años y más de 200 euros, sustituir (fuente: https://ocu.org/electrodomesticos/lavadora/consejos/lavadora-arreglarla-sustituirla)",
+   "mantenimiento": [
+    "Si su modelo tiene filtro de pelusa, límpielo tras cada secado; con filtro sucio tarda más (fuente: https://www.ocu.org/electrodomesticos/secadora/noticias/limpiar-secadoras)",
+    "Haga el ciclo de cuidado o limpieza del condensador cuando lo indique el manual (fuente: https://www.lg.com/es/soporte/guias-y-soluciones/lavado-secado/mantenimiento-secadora)",
+    "El resto del mantenimiento es el de una lavadora: filtro de la bomba, cajetín, goma y lavado en vacío (fuente: https://ocu.org/electrodomesticos/lavadora/consejos/consejos-para-lavadoras)"
+   ]
+  },
+  {
+   "aparato": "lavadora",
+   "funcionamiento": "Al pulsar inicio, el blocapuertas cierra y bloquea la puerta; sin esa señal de puerta cerrada la placa no arranca ningún programa. En el llenado abre la electroválvula de entrada y el presostato detecta por presión de aire en su tubo cuándo se ha alcanzado el nivel de agua. En el lavado la resistencia calienta el agua controlada por la sonda de temperatura (NTC) mientras el motor (de colector con escobillas en muchos modelos, o inverter) mueve el tambor a vaivén. En el desagüe la bomba saca el agua a través del filtro, y solo cuando el presostato indica cuba vacía la placa permite el centrifugado, en el que el motor acelera el tambor y los amortiguadores, muelles y contrapeso absorben la vibración. Al terminar, el blocapuertas libera la puerta, normalmente tras un tiempo de seguridad y solo si no queda agua.",
+   "componentes": [
+    {
+     "pieza": "filtro de la bomba de desagüe",
+     "que_hace": "Retiene pelusa, monedas, horquillas y objetos antes de que lleguen a la bomba.",
+     "sintomas_si_falla": [
+      "queda agua en el tambor al terminar",
+      "no centrifuga",
+      "ropa sale empapada",
+      "mal olor"
+     ],
+     "prueba_tecnico": "Vaciar por el tubito de emergencia o con un recipiente bajo el filtro, desenroscarlo, limpiarlo y, con el filtro fuera, girar a mano el impulsor de la bomba para ver si está libre o atascado.",
+     "fuente": "https://www.ocu.org/repara/lavadoras/agua-retenida-tambor",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "bomba de desagüe",
+     "que_hace": "Motor síncrono con impulsor que expulsa el agua de la cuba por la manguera de desagüe.",
+     "sintomas_si_falla": [
+      "no desagua",
+      "zumba fuerte pero no sale el agua",
+      "no centrifuga porque no vacía",
+      "puede hacer saltar el diferencial si deriva por humedad"
+     ],
+     "prueba_tecnico": "Tras limpiar filtro y comprobar la manguera, girar el impulsor a mano (libre, sin rozar ni bloquear) y medir la bobina con el polímetro en ohmios: orientativo unos 150-260 ohmios; 0 indica cortocircuito y lectura infinita bobina abierta. Comparar con el valor del modelo.",
+     "fuente": "https://guide.washerhouse.com/es/proverit-nasos-sm-multimetrom/",
+     "confianza": "media"
+    },
+    {
+     "pieza": "presostato (sensor de nivel)",
+     "que_hace": "Interruptor de presión conectado a la cuba por un tubo de aire; indica a la placa los niveles de agua (vacío, lleno, protección contra desbordamiento).",
+     "sintomas_si_falla": [
+      "lava pero no desagua o no centrifuga",
+      "no coge agua o coge de más",
+      "no calienta (la placa no activa la resistencia sin nivel)"
+     ],
+     "prueba_tecnico": "Revisar que el tubo de aire no esté obstruido ni pinchado; soplar suavemente por un tubo del mismo diámetro y oír el clic de conmutación; con el polímetro en ohmios comprobar que los contactos cambian de estado al aplicar presión.",
+     "fuente": "https://guide.washerhouse.com/es/remont-pressostata-sm/",
+     "confianza": "media"
+    },
+    {
+     "pieza": "electroválvula de entrada",
+     "que_hace": "Válvula de una, dos o tres vías con bobina que abre el paso de agua de red hacia el cajetín; lleva un filtro de malla a la entrada.",
+     "sintomas_si_falla": [
+      "no coge agua",
+      "coge agua muy despacio",
+      "zumbido al intentar llenar",
+      "entra agua con la lavadora apagada (válvula que no cierra)"
+     ],
+     "prueba_tecnico": "Comprobar grifo abierto y presión, limpiar el filtro de malla de la toma, y medir cada bobina por separado en ohmios (orientativo unos 2-4 kilohmios; abierta o muy desviada = bobina defectuosa).",
+     "fuente": "https://guide.washerhouse.com/es/vpusknoj-elektromagnitnyj-klapan-dlya-stiralnoj-mashiny-proverka-i-zamena/",
+     "confianza": "media"
+    },
+    {
+     "pieza": "resistencia de calentamiento",
+     "que_hace": "Calienta el agua de lavado dentro de la cuba.",
+     "sintomas_si_falla": [
+      "no calienta el agua",
+      "ropa sale fría o con manchas en programas calientes",
+      "salta el diferencial (derivación a masa)"
+     ],
+     "prueba_tecnico": "Medir entre bornes con el polímetro: entre 15 y 30 ohmios es normal; valores bajos o cero indican resistencia defectuosa, infinito indica abierta. Medir también aislamiento entre bornes y carcasa para detectar derivación.",
+     "fuente": "https://www.ocu.org/repara/lavadoras/otros-problemas-lavadora",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "sonda de temperatura (NTC)",
+     "que_hace": "Termistor que informa a la placa de la temperatura del agua para regular la resistencia.",
+     "sintomas_si_falla": [
+      "no calienta o calienta de más",
+      "programas que no avanzan o se alargan"
+     ],
+     "prueba_tecnico": "Medir en ohmios y comparar con la tabla del modelo: su resistencia baja al subir la temperatura (como ejemplo de una guía, unos 6000 ohmios a 20 grados y unos 1350 a 50 grados); los valores varían mucho entre marcas.",
+     "fuente": "https://guide.washerhouse.com/es/soprotivlenie-termodatchika-sm/",
+     "confianza": "media"
+    },
+    {
+     "pieza": "escobillas del motor de colector",
+     "que_hace": "Carbones que transmiten la corriente al colector del motor universal; se desgastan con el uso.",
+     "sintomas_si_falla": [
+      "no centrifuga o no alcanza revoluciones",
+      "tambor se para a mitad de ciclo",
+      "chispas, olor a quemado",
+      "ropa sale empapada"
+     ],
+     "prueba_tecnico": "Desmontar las escobillas del motor y comparar su longitud con unas nuevas; se cambian siempre por pares. Revisar el colector por marcas de chispazo.",
+     "fuente": "https://guide.washerhouse.com/es/kak-pomenyat-shhetki-dvigatelya-stiralnoj-mashiny/",
+     "confianza": "media"
+    },
+    {
+     "pieza": "motor",
+     "que_hace": "Mueve el tambor en lavado y centrifugado, por correa o en transmisión directa según modelo.",
+     "sintomas_si_falla": [
+      "tambor no gira",
+      "se para y huele a plástico quemado",
+      "derivación a masa que hace saltar el diferencial"
+     ],
+     "prueba_tecnico": "Comprobar correa, escobillas y conector; medir aislamiento de los devanados respecto a chasis; desconectar componentes uno a uno para localizar una derivación.",
+     "fuente": "https://guide.washerhouse.com/es/remont-i-proverka-dvigatelya-stiralnoj-mashiny-kollektornogo/",
+     "confianza": "media"
+    },
+    {
+     "pieza": "blocapuertas (cierre de puerta)",
+     "que_hace": "Bloquea eléctricamente la puerta durante el ciclo y da a la placa la señal de puerta cerrada.",
+     "sintomas_si_falla": [
+      "no arranca aunque la puerta esté cerrada",
+      "la puerta no se abre al terminar",
+      "piloto de puerta parpadeando"
+     ],
+     "prueba_tecnico": "Descartar seguro de niños y agua en el tambor; comprobar que el pestillo de la puerta encaja; medir el blocapuertas con el polímetro según el esquema del modelo.",
+     "fuente": "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavadoras/la-puerta-no-se-abre",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "rodamientos y retén del tambor",
+     "que_hace": "Soportan el eje del tambor dentro de la cuba; el retén impide que el agua llegue a ellos.",
+     "sintomas_si_falla": [
+      "ruido de avión o rugido que sube con las revoluciones",
+      "chirrido o ruido metálico",
+      "holgura del tambor",
+      "restos de óxido y grasa en la cuba o goteo por detrás"
+     ],
+     "prueba_tecnico": "Girar el tambor a mano buscando aspereza o ruido; quitar la correa y ver si el ruido sigue al girar en vacío; mover el tambor arriba y abajo para notar holgura. En muchas marcas la cuba es sellada y obliga a cambiar el conjunto.",
+     "fuente": "https://www.ocu.org/repara/lavadoras/ruidos-lavadora",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "amortiguadores, muelles y contrapeso",
+     "que_hace": "Sostienen y frenan el grupo cuba-tambor para absorber la vibración del centrifugado.",
+     "sintomas_si_falla": [
+      "golpes y saltos al centrifugar",
+      "la cuba oscila mucho tiempo tras empujarla",
+      "ruido de golpeteo arriba (contrapeso suelto)"
+     ],
+     "prueba_tecnico": "Empujar la cuba hacia abajo y soltar: si oscila demasiado, los amortiguadores han perdido eficacia; revisar con la tapa quitada que el contrapeso y sus tornillos estén firmes. En máquina nueva, comprobar que se han quitado los tornillos de transporte.",
+     "fuente": "https://guide.washerhouse.com/es/shumit-pri-otzhime/",
+     "confianza": "media"
+    },
+    {
+     "pieza": "junta de puerta (goma)",
+     "que_hace": "Sella la puerta contra la cuba.",
+     "sintomas_si_falla": [
+      "gotea por delante bajo la puerta",
+      "moho y mal olor"
+     ],
+     "prueba_tecnico": "Revisar cortes, roturas y restos (pelos, prendas pequeñas) entre junta y cristal; si está rota se sustituye.",
+     "fuente": "https://www.ocu.org/repara/lavadoras/fugas-lavadora",
+     "confianza": "alta"
+    }
+   ],
+   "diagnostico": [
+    {
+     "sintoma": "No centrifuga",
+     "palabras": [
+      "no centrifuga",
+      "no escurre",
+      "ropa empapada",
+      "no exprime"
+     ],
+     "preguntas_clave": [
+      "Al terminar, ¿queda agua dentro del tambor?",
+      "¿Ha probado a poner solo un centrifugado con poca ropa o con una carga mezclada?",
+      "Cuando debería centrifugar, ¿oye el motor o el tambor ni se mueve?",
+      "¿Lava bien, es decir, el tambor gira a un lado y a otro durante el lavado?",
+      "¿Ha notado olor a quemado o que se para a mitad?"
+     ],
+     "como_descartan": "Si queda agua: problema de desagüe (filtro, manguera doblada, bomba) o de presostato, porque sin cuba vacía no centrifuga. Si no queda agua y con carga normal sí centrifuga: era desequilibrio por carga (una sola prenda grande). Si lava pero no coge revoluciones o se para con olor a quemado: escobillas o motor. Si no gira nunca: motor, correa o electrónica.",
+     "pruebas_tecnico": [
+      "limpiar filtro y girar impulsor de la bomba",
+      "comprobar tubo y conmutación del presostato",
+      "medir escobillas",
+      "comprobar correa"
+     ],
+     "pieza_a_llevar": "bomba de desagüe y escobillas del modelo; presostato si es habitual en la marca",
+     "fuentes": [
+      "https://guide.washerhouse.com/es/stiralnaya-ne-otzhimaet-i-ne-slivaet-vodu/",
+      "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavadoras/la-lavadora-no-gira"
+     ]
+    },
+    {
+     "sintoma": "No desagua / queda agua en el tambor",
+     "palabras": [
+      "no desagua",
+      "no tira el agua",
+      "se queda con agua",
+      "no vacía",
+      "agua retenida"
+     ],
+     "preguntas_clave": [
+      "¿Ha limpiado alguna vez el filtro de abajo delante?",
+      "¿Oye un zumbido cuando debería vaciar?",
+      "¿La manguera de desagüe está doblada o metida muy al fondo del desagüe?",
+      "¿Ha lavado algo con muchos pelos, sujetadores con aros o calcetines pequeños?"
+     ],
+     "como_descartan": "Filtro nunca limpiado u objetos pequeños: casi seguro atasco en filtro o impulsor, lo puede resolver el cliente. Zumbido sin salir agua: impulsor bloqueado o bomba sin fuerza. Silencio total: bomba quemada o sin señal de la placa. Manguera mal colocada: problema de instalación, no de la máquina.",
+     "pruebas_tecnico": [
+      "vaciar por el filtro y limpiarlo",
+      "girar el impulsor a mano",
+      "medir bobina de la bomba",
+      "revisar manguera y desagüe de pared"
+     ],
+     "pieza_a_llevar": "bomba de desagüe del modelo",
+     "fuentes": [
+      "https://www.ocu.org/repara/lavadoras/agua-retenida-tambor",
+      "https://guide.washerhouse.com/es/proverit-nasos-sm-multimetrom/"
+     ]
+    },
+    {
+     "sintoma": "No coge agua",
+     "palabras": [
+      "no coge agua",
+      "no entra agua",
+      "no se llena",
+      "no carga agua"
+     ],
+     "preguntas_clave": [
+      "¿El grifo de la lavadora está abierto y hay agua en el resto de la casa?",
+      "¿Oye un zumbido o un clic cuando debería entrar el agua?",
+      "¿Su lavadora tiene sistema Aquastop en la manguera de entrada?",
+      "¿Entra un hilillo de agua o nada en absoluto?"
+     ],
+     "como_descartan": "Sin agua en casa o grifo cerrado: no es avería. Con Aquastop: puede haber cortado el suministro por seguridad (posible fuga), revisar. Zumbido con poco caudal: filtro de malla de la toma obstruido por cal. Nada de agua y sin ruido: bobina de la electroválvula, presostato o placa.",
+     "pruebas_tecnico": [
+      "limpiar filtro de malla de la toma",
+      "medir bobinas de la electroválvula",
+      "comprobar presostato"
+     ],
+     "pieza_a_llevar": "electroválvula de entrada del modelo",
+     "fuentes": [
+      "https://www.ocu.org/repara/lavadoras/tambor-no-coge-agua",
+      "https://guide.washerhouse.com/es/vpusknoj-elektromagnitnyj-klapan-dlya-stiralnoj-mashiny-proverka-i-zamena/"
+     ]
+    },
+    {
+     "sintoma": "No calienta el agua",
+     "palabras": [
+      "no calienta",
+      "lava en frío",
+      "agua fría",
+      "ropa sale fría",
+      "no quita manchas"
+     ],
+     "preguntas_clave": [
+      "¿En un programa de 60 grados el cristal de la puerta se nota templado a mitad del lavado?",
+      "¿Le ha saltado el diferencial de la casa alguna vez con la lavadora?",
+      "¿Los programas tardan muchísimo más de lo normal o se quedan parados?",
+      "¿En su zona el agua tiene mucha cal?"
+     ],
+     "como_descartan": "Cristal frío en programa caliente: no calienta. Si además ha saltado el diferencial: resistencia derivada a masa. Programa que se eterniza: la placa espera temperatura que no llega (resistencia o sonda). Agua con mucha cal: la resistencia se recubre y se quema antes.",
+     "pruebas_tecnico": [
+      "medir resistencia (15-30 ohmios)",
+      "medir aislamiento a masa",
+      "medir sonda NTC"
+     ],
+     "pieza_a_llevar": "resistencia y sonda NTC del modelo",
+     "fuentes": [
+      "https://www.ocu.org/repara/lavadoras/otros-problemas-lavadora",
+      "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavadoras/la-lavadora-no-calienta-el-agua"
+     ]
+    },
+    {
+     "sintoma": "Ruido fuerte al centrifugar",
+     "palabras": [
+      "hace ruido",
+      "ruido de avión",
+      "ruge",
+      "chirría",
+      "ruido metálico",
+      "ruido al centrifugar"
+     ],
+     "preguntas_clave": [
+      "¿El ruido es un rugido que sube con las vueltas o son golpes?",
+      "¿Con el tambor parado, al girarlo a mano suena áspero o tiene holgura?",
+      "¿Ha visto agua o manchas de óxido bajo la lavadora?",
+      "¿Cuántos años tiene la lavadora?",
+      "¿Puede haber una moneda o un aro de sujetador dentro?"
+     ],
+     "como_descartan": "Rugido creciente y tambor áspero o con holgura: rodamientos (y si hay goteo, retén ya roto). Golpes secos: amortiguadores, contrapeso o carga desequilibrada. Ruido metálico de objeto suelto: moneda o aro entre tambor y cuba o en la bomba. Con más de 8-10 años y cuba sellada, avisar de que puede no compensar.",
+     "pruebas_tecnico": [
+      "girar tambor a mano y comprobar holgura",
+      "quitar correa y girar en vacío",
+      "revisar amortiguadores y contrapeso",
+      "revisar filtro por objetos"
+     ],
+     "pieza_a_llevar": "kit de rodamientos y retén si la cuba es desmontable; si no, presupuesto de conjunto cuba",
+     "fuentes": [
+      "https://www.ocu.org/repara/lavadoras/ruidos-lavadora",
+      "https://guide.washerhouse.com/es/shumit-pri-otzhime/"
+     ]
+    },
+    {
+     "sintoma": "Vibra mucho o se desplaza",
+     "palabras": [
+      "vibra",
+      "salta",
+      "se mueve",
+      "camina",
+      "golpea"
+     ],
+     "preguntas_clave": [
+      "¿Es nueva o la han movido hace poco?",
+      "¿Está bien nivelada y apoyada en las cuatro patas?",
+      "¿Pasa con cualquier carga o solo con una prenda grande sola?",
+      "¿Al empujar el tambor hacia abajo rebota varias veces?"
+     ],
+     "como_descartan": "Recién instalada: posibles tornillos de transporte sin quitar. Desnivelada: ajustar patas. Solo con una prenda grande: desequilibrio de carga, no avería. Rebota mucho: amortiguadores gastados.",
+     "pruebas_tecnico": [
+      "comprobar tornillos de transporte",
+      "nivelar",
+      "probar amortiguadores"
+     ],
+     "pieza_a_llevar": "juego de amortiguadores del modelo",
+     "fuentes": [
+      "https://guide.washerhouse.com/es/ubrat-vibratsiyu-sm-pri-otzhime/",
+      "https://www.ocu.org/repara/lavadoras/ruidos-lavadora"
+     ]
+    },
+    {
+     "sintoma": "Pierde agua / fuga",
+     "palabras": [
+      "pierde agua",
+      "gotea",
+      "charco",
+      "fuga",
+      "sale agua por abajo"
+     ],
+     "preguntas_clave": [
+      "¿El agua sale por delante, bajo la puerta, o por detrás?",
+      "¿Gotea también con la lavadora parada?",
+      "¿Sale espuma por el cajetín o hay mucha espuma?",
+      "¿Ve la goma de la puerta rota o con algo enganchado?"
+     ],
+     "como_descartan": "Por delante bajo la puerta: junta rota o restos atrapados. Con la máquina parada: grifo, manguera de entrada o electroválvula que no cierra. Mucha espuma: exceso de detergente. Por detrás durante el centrifugado: manguera de desagüe o, si es de dentro de la cuba, retén y rodamientos.",
+     "pruebas_tecnico": [
+      "revisar junta de puerta",
+      "revisar mangueras y abrazaderas",
+      "revisar filtro bien cerrado",
+      "buscar goteo de cuba"
+     ],
+     "pieza_a_llevar": "junta de puerta y mangueras del modelo",
+     "fuentes": [
+      "https://www.ocu.org/repara/lavadoras/fugas-lavadora",
+      "https://www.lg.com/es/soporte/guias-y-soluciones/lavado-secado/fugas-agua-debajo-lavadora"
+     ]
+    },
+    {
+     "sintoma": "La puerta no se abre",
+     "palabras": [
+      "no abre la puerta",
+      "puerta bloqueada",
+      "no puedo sacar la ropa"
+     ],
+     "preguntas_clave": [
+      "¿Queda agua dentro del tambor?",
+      "¿Tiene puesto el bloqueo de niños (candado en la pantalla)?",
+      "¿Ha esperado unos minutos tras acabar o ha probado a desenchufarla un rato?",
+      "¿Se rompió la maneta al tirar?"
+     ],
+     "como_descartan": "Con agua dentro: no es la puerta, es desagüe (ir a 'no desagua'). Candado activo: desactivarlo. Se abre tras esperar o desenchufar: comportamiento normal. Sigue bloqueada sin agua: blocapuertas. Maneta suelta sin resistencia: maneta o bisagra rota.",
+     "pruebas_tecnico": [
+      "vaciar por el filtro",
+      "comprobar blocapuertas",
+      "revisar maneta y pestillo"
+     ],
+     "pieza_a_llevar": "blocapuertas y maneta del modelo",
+     "fuentes": [
+      "https://www.ocu.org/repara/lavadoras/puerta-lavadora-no-abre",
+      "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavadoras/la-puerta-no-se-abre"
+     ]
+    },
+    {
+     "sintoma": "No arranca / no hace nada",
+     "palabras": [
+      "no arranca",
+      "no enciende",
+      "no hace nada",
+      "está muerta",
+      "no funciona"
+     ],
+     "preguntas_clave": [
+      "¿Se enciende alguna luz del panel?",
+      "¿El enchufe funciona con otro aparato?",
+      "¿Al pulsar inicio se oye el clic de la puerta?",
+      "¿Parpadea algún piloto o sale un código?"
+     ],
+     "como_descartan": "Sin luces y enchufe sin corriente: instalación de la casa. Sin luces y enchufe bien: cable, filtro antiparasitario o fuente de la placa. Luces pero no cierra la puerta: blocapuertas o pestillo. Código o piloto parpadeando: consultar el manual de códigos.",
+     "pruebas_tecnico": [
+      "comprobar tensión en enchufe",
+      "revisar cable y filtro antiparasitario",
+      "comprobar blocapuertas"
+     ],
+     "pieza_a_llevar": "blocapuertas del modelo; valorar placa tras diagnóstico",
+     "fuentes": [
+      "https://www.ocu.org/repara/lavadoras/lavadora-no-arranca",
+      "https://guide.washerhouse.com/es/datchik-zakrytiya-dveri-sm/"
+     ]
+    },
+    {
+     "sintoma": "Salta el diferencial",
+     "palabras": [
+      "salta el diferencial",
+      "salta la luz",
+      "se va la luz",
+      "salta el automático"
+     ],
+     "preguntas_clave": [
+      "¿Salta nada más enchufarla, al encenderla, al empezar a calentar o al centrifugar?",
+      "¿Ha habido alguna fuga de agua dentro o debajo?",
+      "¿Salta también con otros aparatos en el mismo enchufe?"
+     ],
+     "como_descartan": "Al enchufar o con la máquina apagada: cable, filtro antiparasitario o humedad. Al empezar a calentar: resistencia derivada (lo más frecuente). Al centrifugar: motor. Tras una fuga: componente mojado (bomba, blocapuertas). Si salta con otros aparatos: instalación. No rearmar una y otra vez.",
+     "pruebas_tecnico": [
+      "medir aislamiento a masa de resistencia, motor y bomba",
+      "desconectar componentes uno a uno"
+     ],
+     "pieza_a_llevar": "resistencia del modelo",
+     "fuentes": [
+      "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavadoras/salta-el-diferencial",
+      "https://www.bosch-home.es/servicio-oficial/garantias-y-asistencia/lavadora-hace-saltar-el-diferencial"
+     ]
+    },
+    {
+     "sintoma": "Se para a mitad del ciclo u huele a quemado",
+     "palabras": [
+      "se para",
+      "se queda parada",
+      "huele a quemado",
+      "olor a quemado"
+     ],
+     "preguntas_clave": [
+      "¿Huele a quemado o a plástico caliente?",
+      "¿Se para siempre en el mismo momento (al calentar, al centrifugar)?",
+      "¿Cuántos años tiene y la usa a diario?"
+     ],
+     "como_descartan": "Olor a quemado al girar o centrifugar en motor de colector: escobillas gastadas o motor. Se para esperando calentar: resistencia o sonda. Se para al vaciar: desagüe. Mucha antigüedad y uso diario refuerzan escobillas.",
+     "pruebas_tecnico": [
+      "medir escobillas",
+      "revisar colector",
+      "comprobar resistencia y desagüe"
+     ],
+     "pieza_a_llevar": "escobillas del modelo",
+     "fuentes": [
+      "https://guide.washerhouse.com/es/kak-pomenyat-shhetki-dvigatelya-stiralnoj-mashiny/",
+      "https://guide.washerhouse.com/es/stiralnaya-ne-otzhimaet-i-ne-slivaet-vodu/"
+     ]
+    },
+    {
+     "sintoma": "Mal olor o ropa sale sucia",
+     "palabras": [
+      "huele mal",
+      "mal olor",
+      "huele a humedad",
+      "ropa sale sucia",
+      "restos de detergente"
+     ],
+     "preguntas_clave": [
+      "¿Lava casi siempre en frío o a 30-40 grados?",
+      "¿Cuándo limpió por última vez el filtro y la goma?",
+      "¿Deja la puerta cerrada al terminar?",
+      "¿Queda agua en el tambor al acabar?"
+     ],
+     "como_descartan": "Lavados siempre en frío, puerta cerrada y goma sin limpiar: mantenimiento, no avería. Si además queda agua al terminar: filtro o desagüe. Si la ropa sale sucia en caliente: comprobar que calienta.",
+     "pruebas_tecnico": [
+      "limpiar filtro y junta",
+      "lavado en vacío a 90 grados",
+      "comprobar desagüe y calentamiento"
+     ],
+     "pieza_a_llevar": "ninguna en principio; junta de puerta si tiene moho incrustado o rotura",
+     "fuentes": [
+      "https://www.ocu.org/electrodomesticos/lavadora/consejos/mal-olor-lavadora",
+      "https://ocu.org/electrodomesticos/lavadora/consejos/consejos-para-lavadoras"
+     ]
+    }
+   ],
+   "averias_por_marca": [
+    {
+     "marcas": [
+      "Hotpoint",
+      "Indesit"
+     ],
+     "epoca": "fabricadas octubre 2014 - febrero 2018 (campaña del Reino Unido, diciembre 2019)",
+     "averia": "Retirada de hasta unas 519.000 lavadoras por fallo del blocapuertas que podía sobrecalentarse y provocar incendio; Whirlpool reparaba o sustituía gratis. Campaña británica: no se encontró aviso equivalente para España, comprobar el modelo en la web de Whirlpool.",
+     "fuente": "https://www.gov.uk/government/news/whirlpool-to-issue-washing-machine-recall-following-intervention-by-regulator",
+     "confianza": "alta"
+    },
+    {
+     "marcas": [
+      "Indesit",
+      "Ariston",
+      "Candy",
+      "Zanussi",
+      "Ardo",
+      "Beko",
+      "Whirlpool"
+     ],
+     "epoca": "",
+     "averia": "Cuba sellada (no desmontable): un fallo de rodamientos o retén obliga a cambiar el conjunto cuba-tambor, cuyo coste puede rondar o superar la mitad del precio de una lavadora nueva.",
+     "fuente": "https://guide.washerhouse.com/es/kakie-sm-chashche-lomayutsya/",
+     "confianza": "media"
+    },
+    {
+     "marcas": [
+      "Bosch",
+      "Balay"
+     ],
+     "epoca": "",
+     "averia": "Reclamación pública en OCU: avería estructural a los 5 años en la que el servicio oficial presupuestó 376,69 euros por sustituir el conjunto tambor-cuba porque el diseño no permitía cambiar solo rodamientos o eje.",
+     "fuente": "https://www.ocu.org/reclamar/lista-reclamaciones-publicas/aver-C3-ADa-estructural-a-los-5-a-C3-B1o/5270c5a1fa272631ba",
+     "confianza": "media"
+    }
+   ],
+   "vida_util": {
+    "anos": "10-12 (media OCU unos 11,5 años; Miele cerca de 16)",
+    "fuente": "https://ocu.org/electrodomesticos/lavadora/consejos/lavadora-arreglarla-sustituirla"
+   },
+   "compensa_reparar": "Regla del 50 %: si la reparación supera la mitad del precio de una lavadora nueva similar, no suele compensar. Menos de 8 años y reparación por debajo del 50 %: reparar. Entre 8 y 10 años: reparar solo si cuesta menos del 50 %. Más de 10 años con reparación de más de 200 euros o varias averías previas: sustituir. Ojo con rodamientos en cuba sellada, que casi siempre lo supera (fuente: https://ocu.org/electrodomesticos/lavadora/consejos/lavadora-arreglarla-sustituirla)",
+   "mantenimiento": [
+    "Limpie el filtro de la bomba cada pocos meses y siempre que quede agua en el tambor al terminar (fuente: https://ocu.org/electrodomesticos/lavadora/consejos/consejos-para-lavadoras)",
+    "Saque y enjuague el cajetín del detergente con frecuencia (fuente: https://ocu.org/electrodomesticos/lavadora/consejos/consejos-para-lavadoras)",
+    "Deje la puerta y el cajetín entreabiertos al terminar para que se ventile y no coja olor (fuente: https://www.ocu.org/electrodomesticos/lavadora/consejos/mal-olor-lavadora)",
+    "Haga de vez en cuando un lavado en vacío a 90 grados o el programa de limpieza de tambor; si ya huele, limpie filtro y goma y haga el vacío a 90 con bicarbonato (fuente: https://www.ocu.org/electrodomesticos/lavadora/consejos/mal-olor-lavadora)",
+    "Si el agua de su zona es dura, use antical; el vinagre en vacío solo de forma ocasional, cada 6 meses como mucho (fuente: https://ocu.org/electrodomesticos/lavadora/consejos/consejos-para-lavadoras)",
+    "Limpie el filtro de malla de la toma de agua; en zonas de agua dura, cada 6 meses (fuente: https://www.siemens-home.bsh-group.com/es/servicio-oficial/limpieza-mantenimiento/lavadoras-y-secadoras/lavadoras/limpieza-y-descalcificacion/filtro-de-suministro-de-agua)",
+    "No se pase de detergente: el exceso de espuma provoca fugas (fuente: https://www.lg.com/es/soporte/guias-y-soluciones/lavado-secado/fugas-agua-debajo-lavadora)",
+    "Revise los bolsillos y meta los sujetadores con aro en bolsa: monedas y aros atascan la bomba y se meten entre tambor y cuba (fuente: https://www.ocu.org/repara/lavadoras/ruidos-lavadora)"
+   ]
+  },
+  {
+   "aparato": "lavavajillas",
+   "funcionamiento": "Al arrancar, la electroválvula de entrada abre y el caudalímetro (o el presostato/sensor de nivel) cuenta el agua hasta llenar el fondo de la cuba; el agua pasa antes por el descalcificador, que se regenera con la sal. La bomba de circulación impulsa el agua a presión hacia los brazos aspersores, que giran por la propia presión del chorro; la resistencia calienta el agua (en Bosch/Siemens/Balay va integrada en la bomba, la llamada bomba calefactora) y la sonda NTC informa a la placa de la temperatura. El dosificador abre la tapa del detergente en el lavado y suelta abrillantador en el aclarado final. Entre fases y al final, la bomba de desagüe vacía la cuba a través de los filtros; el secado aprovecha el calor del último aclarado (condensación) y, según modelo, ventilador o apertura de puerta. Si cae agua a la bandeja inferior, el flotador del Aquastop corta la entrada y manda desaguar.",
+   "componentes": [
+    {
+     "pieza": "bomba de desagüe",
+     "que_hace": "Vacía la cuba entre fases y al final del programa, sacando el agua por la manguera hacia el sifón.",
+     "sintomas_si_falla": [
+      "queda agua en el fondo al terminar",
+      "el programa se para o da error de desagüe",
+      "zumba pero no saca agua (rodete bloqueado)"
+     ],
+     "prueba_tecnico": "Retira filtros y mira el hueco de la bomba por si hay cristal, huesos o tapones que bloqueen el rodete; gira el rodete a mano; comprueba con polímetro si llega tensión a la bomba en la fase de desagüe: si llega y no gira o solo zumba, bomba; si no llega, cableado o placa.",
+     "fuente": "https://qubbos.es/blogs/news/por-que-el-lavavajillas-no-desagua",
+     "confianza": "media"
+    },
+    {
+     "pieza": "bomba de circulación (en BSH, bomba calefactora con resistencia integrada)",
+     "que_hace": "Impulsa el agua a presión hacia los brazos aspersores; en Bosch, Siemens, Balay y Neff lleva la resistencia integrada, por lo que una avería de calentamiento obliga a cambiar el conjunto.",
+     "sintomas_si_falla": [
+      "los brazos no giran o giran flojos",
+      "la vajilla sale sucia",
+      "no calienta (si es la bomba calefactora)"
+     ],
+     "prueba_tecnico": "Comprobar que los brazos giran libres a mano y no están obstruidos; si siguen sin girar con filtros y brazos limpios, sospechar de la bomba. En BSH medir la parte calefactora de la bomba (ver resistencia).",
+     "fuente": "https://guide.washerhouse.com/es/v-pm-ne-vrashchayutsya-razbryzgivateli/",
+     "confianza": "media"
+    },
+    {
+     "pieza": "resistencia calefactora",
+     "que_hace": "Calienta el agua de lavado y aclarado hasta la temperatura del programa.",
+     "sintomas_si_falla": [
+      "lava con agua fría",
+      "la vajilla sale con grasa",
+      "no seca",
+      "el programa se alarga o da error de calentamiento"
+     ],
+     "prueba_tecnico": "Con el aparato desenchufado, desconectar terminales y medir en ohmios: en bombas calefactoras BSH ronda los 25 ohmios y no debe bajar de unos 18; circuito abierto (infinito) = cortada; cerca de 0 = cortocircuito. Comprobar también aislamiento a masa. El valor exacto depende del modelo.",
+     "fuente": "https://guide.washerhouse.com/es/proverit-ten-pm/",
+     "confianza": "media"
+    },
+    {
+     "pieza": "sonda de temperatura NTC / termostato",
+     "que_hace": "Informa a la placa de la temperatura del agua para que conecte o corte la resistencia.",
+     "sintomas_si_falla": [
+      "no calienta aunque la resistencia esté bien",
+      "calienta de más o el programa no avanza",
+      "error de sonda o de calentamiento"
+     ],
+     "prueba_tecnico": "Medir la NTC desconectada: valores orientativos de unos 6000 ohmios a 20 grados y unos 1350 ohmios a 50 grados (entre 4700 y 6000 en frío según guía); si no sigue la curva al calentarla, cambiarla.",
+     "fuente": "https://guide.washerhouse.com/es/posudomojka-bosh-ne-greet-vodu-chto-delat/",
+     "confianza": "media"
+    },
+    {
+     "pieza": "electroválvula de entrada",
+     "que_hace": "Abre el paso de agua de la red cuando la placa le da tensión; suele llevar un pequeño filtro en la toma de la manguera.",
+     "sintomas_si_falla": [
+      "no entra agua",
+      "entra agua con el aparato apagado (válvula que no cierra)",
+      "tarda mucho en llenar"
+     ],
+     "prueba_tecnico": "Primero grifo abierto, manguera sin dobleces y caudal de al menos unos 10 litros por minuto; limpiar el filtrito de la entrada. Después medir la bobina (guías citan 500-1500 ohmios en lavavajillas, contrastar con el modelo) y comprobar que llega tensión al arrancar el programa.",
+     "fuente": "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavavajillas/no-entra-agua",
+     "confianza": "media"
+    },
+    {
+     "pieza": "caudalímetro",
+     "que_hace": "Cuenta el volumen de agua que entra y avisa a la placa de cuándo cortar la carga.",
+     "sintomas_si_falla": [
+      "no corta el agua o carga de más",
+      "error de llenado aunque entra agua",
+      "se queda esperando agua"
+     ],
+     "prueba_tecnico": "Comprobar continuidad del sensor en reposo y que la lectura oscila al girar el rotor con paso de agua (comprobación descrita en foro técnico, no especificación oficial).",
+     "fuente": "https://www.todoexpertos.com/preguntas/ak4oegro8w77yy3i/como-puedo-probar-el-caudalimetro-de-mi-lavavajillas-continuidad",
+     "confianza": "media"
+    },
+    {
+     "pieza": "presostato / sensor de nivel",
+     "que_hace": "Detecta si hay agua suficiente en la cuba; sin esa señal la placa no conecta la resistencia.",
+     "sintomas_si_falla": [
+      "no calienta aunque resistencia y sonda midan bien",
+      "carga agua sin parar o no llega a lavar"
+     ],
+     "prueba_tecnico": "Verificar que conmuta al llenar y revisar la toma de aire/manguito por obstrucciones; si no detecta agua, la resistencia no calienta.",
+     "fuente": "https://guide.washerhouse.com/es/posudomojka-bosh-ne-greet-vodu-chto-delat/",
+     "confianza": "media"
+    },
+    {
+     "pieza": "sistema antifugas Aquastop (bandeja con flotador y válvula de seguridad)",
+     "que_hace": "Si cae agua a la bandeja inferior, el flotador sube, activa el interruptor, se corta la entrada de agua y la bomba de desagüe vacía la cuba.",
+     "sintomas_si_falla": [
+      "error de fuga y la bomba de desagüe no para",
+      "no coge agua tras una fuga",
+      "error con la bandeja seca (flotador atascado o contactos)"
+     ],
+     "prueba_tecnico": "Ver si hay agua en la bandeja; vaciarla (algunas guías inclinan el aparato unos 45 grados para liberar el flotador) y buscar el origen de la fuga antes de rearmar. Con la bandeja seca, revisar flotador, su microinterruptor y la nivelación.",
+     "fuente": "https://guide.washerhouse.com/es/v-pm-bosch-srabotal-akvastop/",
+     "confianza": "media"
+    },
+    {
+     "pieza": "filtros (microfiltro y filtro grueso)",
+     "que_hace": "Retienen restos de comida antes de que el agua vuelva a la bomba de circulación o salga por el desagüe.",
+     "sintomas_si_falla": [
+      "agua estancada en el fondo",
+      "lava mal y deja arenilla",
+      "olores"
+     ],
+     "prueba_tecnico": "Sacar, inspeccionar y limpiar bajo el grifo; es la causa más común de que no desagüe.",
+     "fuente": "https://www.ocu.org/electrodomesticos/lavavajillas/consejos/averias-lavavajillas",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "brazos aspersores",
+     "que_hace": "Reparten el agua a presión sobre la vajilla; giran por la reacción del chorro.",
+     "sintomas_si_falla": [
+      "la vajilla de una cesta sale sucia",
+      "la pastilla no se disuelve del todo"
+     ],
+     "prueba_tecnico": "Girarlos a mano con la vajilla cargada para ver si rozan; desmontarlos y limpiar orificios.",
+     "fuente": "https://beko.com/es-es/soporte/lavavajillas--solucion-de-problemas--articulo/como-se-repara-un-lavavajillas-que-no-limpia",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "descalcificador (depósito de sal)",
+     "que_hace": "Ablanda el agua para que no deje cal; se regenera con sal específica y se ajusta según la dureza del agua.",
+     "sintomas_si_falla": [
+      "vajilla con velo blanco o manchas de cal",
+      "lava peor con agua dura"
+     ],
+     "prueba_tecnico": "Comprobar que hay sal y que el nivel de dureza programado corresponde al agua de la zona.",
+     "fuente": "https://www.samsung.com/co/support/home-appliances/what-should-i-do-if-the-dishwasher-does-not-clean-well/",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "dosificador de detergente y abrillantador",
+     "que_hace": "Abre la tapa del detergente durante el lavado y dosifica abrillantador en el aclarado final para que el agua escurra y la vajilla seque.",
+     "sintomas_si_falla": [
+      "pastilla sin disolver",
+      "vajilla mojada o con gotas",
+      "marcas en vasos"
+     ],
+     "prueba_tecnico": "Comprobar que la tapa abre libre y que ninguna pieza de vajilla la bloquea; revisar el tapón del abrillantador y la dosis.",
+     "fuente": "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavavajillas/pastilla-no-disuelve",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "cerradura de puerta",
+     "que_hace": "Detecta que la puerta está cerrada; si no cierra bien, el aparato no arranca.",
+     "sintomas_si_falla": [
+      "no arranca",
+      "se enciende pero no empieza el programa"
+     ],
+     "prueba_tecnico": "Cerrar con firmeza y comprobar que el pestillo engancha; revisar si la cerradura está deformada o atascada y si el aparato está nivelado.",
+     "fuente": "https://guide.washerhouse.com/es/remont-zamka-posudomojki/",
+     "confianza": "media"
+    }
+   ],
+   "diagnostico": [
+    {
+     "sintoma": "No desagua: queda agua en el fondo",
+     "palabras": [
+      "no desagua",
+      "se queda agua abajo",
+      "agua estancada",
+      "no tira el agua"
+     ],
+     "preguntas_clave": [
+      "¿Ha limpiado el filtro del fondo hace poco?",
+      "Cuando termina, ¿se oye un zumbido de motor o nada?",
+      "¿El fregadero traga bien el agua?",
+      "¿Se ha roto algún vaso dentro últimamente?"
+     ],
+     "como_descartan": "Filtro sucio es la causa más común: si nunca lo limpia, empezar por ahí. Si se oye zumbido pero no sale agua, rodete de la bomba bloqueado por un objeto (cristal, hueso) o bomba agarrotada. Si está totalmente callado, falta de tensión a la bomba (cableado/placa) o bomba cortada. Si el fregadero va lento, el problema es el sifón o la manguera doblada, no el aparato.",
+     "pruebas_tecnico": [
+      "Vaciar a mano, sacar filtros y revisar el hueco de la bomba",
+      "Girar el rodete con la mano",
+      "Comprobar manguera sin dobleces y sifón",
+      "Medir tensión en bornes de la bomba durante el desagüe"
+     ],
+     "pieza_a_llevar": "bomba de desagüe del modelo (en BSH existe kit de reparación de bomba, ref. 12005744)",
+     "fuentes": [
+      "https://www.ocu.org/electrodomesticos/lavavajillas/consejos/averias-lavavajillas",
+      "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavavajillas/no-desagua",
+      "https://qubbos.es/blogs/news/por-que-el-lavavajillas-no-desagua",
+      "https://electrotodo.es/ca/products/kit-reparacion-bomba-sumidero-lavavajillas-bosch-12005744"
+     ]
+    },
+    {
+     "sintoma": "No coge agua",
+     "palabras": [
+      "no entra agua",
+      "no coge agua",
+      "no se llena",
+      "se queda parado al principio"
+     ],
+     "preguntas_clave": [
+      "¿Está abierto del todo el grifo del lavavajillas?",
+      "¿Han cortado el agua o han hecho obra en casa?",
+      "¿Se oye un ruidito de agua al empezar o nada?",
+      "¿La manguera de detrás puede estar doblada?"
+     ],
+     "como_descartan": "Grifo cerrado o manguera doblada lo arreglan sin visita. Tras un corte de agua o una obra suele taponarse el filtrito de la entrada. Si no se oye nada de agua con grifo abierto, electroválvula o falta de orden de la placa. Si entra agua pero da error de llenado, caudalímetro o sensor de nivel. Si saltó el Aquastop por una fuga previa, también deja sin agua.",
+     "pruebas_tecnico": [
+      "Comprobar caudal (al menos unos 10 l/min)",
+      "Limpiar el filtro de la toma de la electroválvula",
+      "Medir bobina de la electroválvula y tensión al arrancar",
+      "Comprobar caudalímetro"
+     ],
+     "pieza_a_llevar": "electroválvula de entrada (y manguera Aquastop si la válvula va en la manguera)",
+     "fuentes": [
+      "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavavajillas/no-entra-agua",
+      "https://guide.washerhouse.com/es/posudomoyka-siemens-ne-nabiraet/"
+     ]
+    },
+    {
+     "sintoma": "No calienta: lava con agua fría",
+     "palabras": [
+      "no calienta",
+      "lava en frío",
+      "la vajilla sale fría",
+      "sale con grasa"
+     ],
+     "preguntas_clave": [
+      "Al abrir a mitad de programa, ¿sale vaho caliente o está frío?",
+      "¿Además seca peor que antes?",
+      "¿Salta el diferencial de la casa al ponerlo?",
+      "¿Qué marca es? (en Bosch, Siemens, Balay la resistencia va en la bomba)"
+     ],
+     "como_descartan": "Sin vaho y vajilla fría confirma falta de calentamiento. Si salta el diferencial, resistencia derivada a masa. Si no salta, resistencia cortada, sonda NTC, presostato que no detecta agua o placa. En BSH la resistencia va integrada en la bomba de circulación, así que hay que llevar ese conjunto. Un filtro muy sucio también puede impedir calentar.",
+     "pruebas_tecnico": [
+      "Medir la resistencia (orientativo unos 25 ohmios en bomba calefactora BSH; no menos de 18)",
+      "Comprobar aislamiento a masa",
+      "Medir la NTC en frío y en caliente",
+      "Revisar presostato y cableado"
+     ],
+     "pieza_a_llevar": "resistencia o bomba calefactora del modelo y sonda NTC",
+     "fuentes": [
+      "https://guide.washerhouse.com/es/proverit-ten-pm/",
+      "https://www.beko.com/es-es/blog/lavavajillas-no-calienta-agua",
+      "https://guide.washerhouse.com/es/remont-tena-posudomoyki-bosch/"
+     ]
+    },
+    {
+     "sintoma": "No seca la vajilla",
+     "palabras": [
+      "no seca",
+      "sale mojado",
+      "los platos salen con agua",
+      "los táperes mojados"
+     ],
+     "preguntas_clave": [
+      "¿Le pone abrillantador líquido o solo pastillas todo en uno?",
+      "¿Lo mojado es sobre todo el plástico?",
+      "¿Lava con agua caliente o fría?",
+      "¿Qué programa usa, el eco o uno corto?"
+     ],
+     "como_descartan": "Sin abrillantador seca peor aunque use pastillas todo en uno. El plástico retiene menos calor y siempre sale más mojado: normal. Si además lava frío, el fallo es de calentamiento (resistencia/sonda), no de secado. Programas cortos o sin secado explican el agua. Si todo eso está bien, revisar ventilador de secado y tapón del abrillantador.",
+     "pruebas_tecnico": [
+      "Revisar depósito y dosis de abrillantador",
+      "Comprobar que calienta",
+      "Revisar ventilador de secado y resistencia",
+      "Comprobar tapón del dosificador de abrillantador"
+     ],
+     "pieza_a_llevar": "tapón o dosificador de abrillantador; resistencia si no calienta",
+     "fuentes": [
+      "https://www.bosch-home.es/servicio-oficial/garantias-y-asistencia/lavavajillas-no-seca",
+      "https://beko.com/es-es/soporte/lavavajillas--solucion-de-problemas--articulo/como-se-repara-un-lavavajillas-que-no-seca-correctamente",
+      "https://qubbos.es/blogs/news/por-que-el-lavavajillas-no-seca"
+     ]
+    },
+    {
+     "sintoma": "No lava bien: restos de comida",
+     "palabras": [
+      "no lava bien",
+      "sale sucio",
+      "restos de comida",
+      "arenilla en los vasos"
+     ],
+     "preguntas_clave": [
+      "¿Lo sucio es la cesta de arriba, la de abajo o todo?",
+      "Al acabar, ¿los brazos giran con la mano?",
+      "¿Cuándo limpió el filtro?",
+      "¿Sale caliente la vajilla?"
+     ],
+     "como_descartan": "Sucio solo en una cesta: brazo de esa cesta atascado o que roza con la vajilla. Arenilla en todo: filtro saturado. Sucio en todo, filtros y brazos limpios: poca presión, bomba de circulación. Si además no calienta, ir al diagnóstico de calentamiento.",
+     "pruebas_tecnico": [
+      "Desmontar y limpiar brazos",
+      "Limpiar filtros",
+      "Comprobar giro de brazos y presión",
+      "Comprobar bomba de circulación"
+     ],
+     "pieza_a_llevar": "brazo aspersor; bomba de circulación si no hay presión",
+     "fuentes": [
+      "https://beko.com/es-es/soporte/lavavajillas--solucion-de-problemas--articulo/como-se-repara-un-lavavajillas-que-no-limpia",
+      "https://guide.washerhouse.com/es/v-pm-ne-vrashchayutsya-razbryzgivateli/"
+     ]
+    },
+    {
+     "sintoma": "Velo blanco o manchas de cal en la vajilla",
+     "palabras": [
+      "sale blanco",
+      "manchas blancas",
+      "cal en los vasos",
+      "vasos opacos"
+     ],
+     "preguntas_clave": [
+      "¿Le echa sal al depósito?",
+      "¿Ha ajustado la dureza del agua alguna vez?",
+      "¿Usa abrillantador?"
+     ],
+     "como_descartan": "Sin sal o con la dureza mal programada, la cal se queda en la vajilla: se resuelve ajustando. Si tiene sal y dureza bien y sigue igual, revisar el descalcificador y la dosis de abrillantador.",
+     "pruebas_tecnico": [
+      "Comprobar sal y ajuste de dureza",
+      "Revisar dosis de abrillantador",
+      "Ciclo de mantenimiento con descalcificador a 65 grados o más"
+     ],
+     "pieza_a_llevar": "ninguna en principio",
+     "fuentes": [
+      "https://www.samsung.com/co/support/home-appliances/what-should-i-do-if-the-dishwasher-does-not-clean-well/",
+      "https://www.siemens-home.bsh-group.com/es/servicio-oficial/limpieza-mantenimiento/limpieza-cuidado-lavavajillas/consejos-lavavajillas"
+     ]
+    },
+    {
+     "sintoma": "La pastilla no se disuelve",
+     "palabras": [
+      "la pastilla no se deshace",
+      "queda la pastilla",
+      "el cajetín no se abre"
+     ],
+     "preguntas_clave": [
+      "¿Pone platos grandes o tablas delante del cajetín?",
+      "¿La tapa del cajetín está abierta al terminar?",
+      "¿Las pastillas están en un sitio húmedo?",
+      "¿El agua sale caliente?"
+     ],
+     "como_descartan": "Plato o tabla delante del cajetín es la causa más común. Tapa cerrada al final sin nada que la bloquee: fallo del dosificador. Pastilla mojada o envoltorio endurecido: problema del producto. Si lava frío, ir a calentamiento.",
+     "pruebas_tecnico": [
+      "Comprobar apertura del dosificador",
+      "Revisar brazos y temperatura"
+     ],
+     "pieza_a_llevar": "dosificador de detergente si no abre",
+     "fuentes": [
+      "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavavajillas/pastilla-no-disuelve",
+      "https://www.beko.com/es-es/blog/lavavajillas-no-deshace-pastilla"
+     ]
+    },
+    {
+     "sintoma": "Error de fuga o Aquastop: no para de desaguar",
+     "palabras": [
+      "error de fuga",
+      "aquastop",
+      "la bomba no para",
+      "se ha bloqueado"
+     ],
+     "preguntas_clave": [
+      "¿Ha visto agua en el suelo?",
+      "¿Se le salió espuma (detergente de mano)?",
+      "¿El aparato está nivelado o se ha movido?",
+      "¿Pasa desde que limpió algo o desde siempre?"
+     ],
+     "como_descartan": "Espuma por usar jabón de fregar provoca desborde a la bandeja: secar y esperar. Agua en el suelo: fuga real (manguera, junta, bomba). Sin agua visible ni en la bandeja, flotador atascado o contactos. Filtros obstruidos también producen desborde.",
+     "pruebas_tecnico": [
+      "Vaciar la bandeja y localizar el origen",
+      "Revisar mangueras internas, juntas y bomba",
+      "Comprobar flotador y nivelación"
+     ],
+     "pieza_a_llevar": "junta o manguito según fuga; flotador/interruptor de bandeja",
+     "fuentes": [
+      "https://guide.washerhouse.com/es/v-pm-bosch-srabotal-akvastop/",
+      "https://guide.washerhouse.com/es/protekaet-posudomoechnaya/"
+     ]
+    },
+    {
+     "sintoma": "Sale agua por la puerta o charco en el suelo",
+     "palabras": [
+      "gotea",
+      "charco",
+      "pierde agua",
+      "sale agua por la puerta"
+     ],
+     "preguntas_clave": [
+      "¿El agua sale por la puerta o por debajo?",
+      "¿El aparato está recto o se inclina hacia delante?",
+      "¿Usa detergente de lavavajillas o jabón de mano?"
+     ],
+     "como_descartan": "Por la puerta: junta de puerta o nivelación. Por debajo: manguera, conexión o componente interno. Espuma: detergente equivocado.",
+     "pruebas_tecnico": [
+      "Nivelar",
+      "Revisar junta de puerta",
+      "Revisar conexiones de entrada y desagüe"
+     ],
+     "pieza_a_llevar": "junta de puerta",
+     "fuentes": [
+      "https://guide.washerhouse.com/es/protekaet-posudomoechnaya/"
+     ]
+    },
+    {
+     "sintoma": "No enciende o no arranca",
+     "palabras": [
+      "no enciende",
+      "no hace nada",
+      "no arranca",
+      "se enciende pero no empieza"
+     ],
+     "preguntas_clave": [
+      "¿Se encienden las luces del panel?",
+      "¿Ha probado a cerrar la puerta con más fuerza?",
+      "¿Hay luz en el enchufe y otros aparatos van?",
+      "¿Tiene puesto el bloqueo infantil o el inicio diferido?"
+     ],
+     "como_descartan": "Sin luces: corriente, enchufe o fuente de la placa. Con luces pero no empieza: puerta mal cerrada o cerradura, bloqueo infantil o inicio diferido. Si la puerta no engancha, cerradura deformada.",
+     "pruebas_tecnico": [
+      "Comprobar alimentación",
+      "Revisar cerradura",
+      "Revisar placa"
+     ],
+     "pieza_a_llevar": "cerradura de puerta",
+     "fuentes": [
+      "https://www.bosch-home.es/servicio-oficial/garantias-y-asistencia/lavavajillas-no-se-enciende",
+      "https://guide.washerhouse.com/es/remont-zamka-posudomojki/"
+     ]
+    },
+    {
+     "sintoma": "Zumba o hace ruido raro",
+     "palabras": [
+      "hace ruido",
+      "zumba",
+      "suena raro",
+      "traqueteo"
+     ],
+     "preguntas_clave": [
+      "¿El ruido es cuando desagua o mientras lava?",
+      "¿Es un zumbido o un golpeteo?",
+      "¿Se ha roto algún vaso?"
+     ],
+     "como_descartan": "Zumbido al desaguar sin que salga agua: rodete de la bomba de desagüe bloqueado. Golpeteo al lavar: brazo que golpea la vajilla. Ruido con el rodete libre: bomba gastada.",
+     "pruebas_tecnico": [
+      "Revisar hueco de bomba",
+      "Girar brazos a mano"
+     ],
+     "pieza_a_llevar": "bomba de desagüe",
+     "fuentes": [
+      "https://qubbos.es/blogs/news/por-que-el-lavavajillas-no-desagua",
+      "https://www.samsung.com/co/support/home-appliances/what-to-do-when-my-dishwasher-does-not-work-or-it-makes-a-strange-noise/"
+     ]
+    }
+   ],
+   "averias_por_marca": [
+    {
+     "marcas": [
+      "Balay",
+      "Bosch",
+      "Siemens",
+      "Neff",
+      "Lynx"
+     ],
+     "epoca": "fabricados entre 1999 y 2005 (modelos concretos)",
+     "averia": "Riesgo de sobrecalentamiento e incendio por un componente electrónico; hubo campaña del fabricante. Si el cliente tiene uno de esos años, comprobar si su modelo está afectado.",
+     "fuente": "https://www.ocu.org/electrodomesticos/lavavajillas/noticias/riesgo-explosion-lavavajillas",
+     "confianza": "alta"
+    },
+    {
+     "marcas": [
+      "Bosch",
+      "Siemens",
+      "Balay",
+      "Neff"
+     ],
+     "epoca": "",
+     "averia": "La resistencia va integrada en la bomba de circulación (bomba calefactora): cuando no calienta se cambia el conjunto, más caro que una resistencia suelta.",
+     "fuente": "https://guide.washerhouse.com/es/remont-tena-posudomoyki-bosch/",
+     "confianza": "media"
+    },
+    {
+     "marcas": [
+      "Fagor",
+      "Smeg",
+      "LG"
+     ],
+     "epoca": "encuesta OCU 2022",
+     "averia": "Mayor índice de averías declarado por usuarios en lavavajillas (dato de fiabilidad, no avería concreta). En general las averías más comunes en lavavajillas son de circulación y desagüe.",
+     "fuente": "https://www.ocu.org/organizacion/prensa/notas-de-prensa/2022/encfiabilidadelectrodomesticos101122",
+     "confianza": "media"
+    }
+   ],
+   "vida_util": {
+    "anos": "hasta unos 15 (Miele ~15; Beko en torno a 7 según encuesta OCU)",
+    "fuente": "https://www.ocu.org/organizacion/prensa/notas-de-prensa/2022/encfiabilidadelectrodomesticos101122"
+   },
+   "compensa_reparar": "Regla del 50 %: si el aparato tiene menos de unos 10 años y la reparación cuesta menos de la mitad de uno nuevo equivalente, compensa reparar; si supera ese 50 % o es muy antiguo, mejor cambiar (OCU, https://ocu.org/electrodomesticos/lavadora/consejos/lavadora-arreglarla-sustituirla, criterio dado para lavadoras y aplicable por analogía). En lavavajillas el motivo principal de cambio es lo cara que sale la reparación (OCU).",
+   "mantenimiento": [
+    "Limpiar el filtro del fondo con frecuencia: es la causa más común de que no desagüe (fuente: https://www.ocu.org/electrodomesticos/lavavajillas/consejos/averias-lavavajillas)",
+    "Desmontar y aclarar los brazos aspersores bajo el grifo de vez en cuando (fuente: https://www.siemens-home.bsh-group.com/es/servicio-oficial/limpieza-mantenimiento/limpieza-cuidado-lavavajillas/consejos-lavavajillas)",
+    "Pasar un descalcificador específico una vez al año en un programa de al menos 65 grados (fuente: https://www.siemens-home.bsh-group.com/es/servicio-oficial/limpieza-mantenimiento/limpieza-cuidado-lavavajillas/consejos-lavavajillas)",
+    "Mantener sal y ajustar la dureza del agua según la zona; usar abrillantador líquido aunque se usen pastillas todo en uno (fuente: https://beko.com/es-es/soporte/lavavajillas--solucion-de-problemas--articulo/como-se-repara-un-lavavajillas-que-no-seca-correctamente)",
+    "No usar desatascadores químicos si queda agua en el fondo; revisar que nada aplaste la manguera de desagüe por detrás (fuente: https://www.xatakahome.com/hogar/nunca-uses-desatascadores-quimicos-expertos-balay-explican-que-hacer-ves-agua-estancada-fondo-tu-lavavajillas/amp)",
+    "No colocar platos grandes ni tablas delante del cajetín del detergente (fuente: https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/lavavajillas/pastilla-no-disuelve)",
+    "Al acabar, esperar unos 30 minutos y entreabrir la puerta para que salga el vapor y seque mejor (fuente: https://www.xatakahome.com/hogar/platos-vasos-cubiertos-salen-muy-mojados-lavavajillas-estos-motivos-habituales)"
+   ]
+  },
+  {
+   "aparato": "microondas",
+   "funcionamiento": "Al cerrar la puerta, varios microinterruptores (normalmente tres, uno de ellos de vigilancia) permiten que la electrónica alimente el transformador de alta tensión, que junto con el condensador y el diodo de alta tensión forma un doblador que alimenta el magnetrón. El magnetrón genera las microondas, que entran a la cavidad por una guía de ondas tapada con una placa de mica. El motor del plato, la luz y el ventilador funcionan aparte, así que pueden ir bien aunque no caliente. SEGURIDAD: la parte de alta tensión (transformador, condensador, diodo, magnetrón) puede dar descargas mortales incluso desenchufado; solo la toca el técnico tras descargar el condensador. Al cliente nunca se le indica abrir la carcasa.",
+   "componentes": [
+    {
+     "pieza": "microinterruptores de puerta",
+     "que_hace": "Solo dejan emitir con la puerta bien cerrada; si fallan el de vigilancia o el de detección, se corta la alimentación del transformador.",
+     "sintomas_si_falla": [
+      "no calienta aunque plato y luz funcionan",
+      "no arranca al cerrar la puerta",
+      "funde el fusible"
+     ],
+     "prueba_tecnico": "Con el aparato desenchufado y el condensador descargado, medir la conmutación de cada microinterruptor abriendo y cerrando la puerta; revisar pestillos de la puerta.",
+     "fuente": "https://servidos.ar/blog/microondas-prende-pero-no-calienta-7-causas",
+     "confianza": "media"
+    },
+    {
+     "pieza": "fusible (de red y de alta tensión) y fusible térmico",
+     "que_hace": "Protegen el circuito ante sobrecorriente o sobretemperatura.",
+     "sintomas_si_falla": [
+      "no enciende nada",
+      "enciende pero no calienta"
+     ],
+     "prueba_tecnico": "Medir continuidad con multímetro; si está fundido, buscar la causa (microinterruptor, diodo o condensador en corto) antes de cambiarlo.",
+     "fuente": "https://www.beko.com/es-es/blog/microondas-no-calienta",
+     "confianza": "media"
+    },
+    {
+     "pieza": "magnetrón, diodo, condensador y transformador de alta tensión (SOLO TÉCNICO)",
+     "que_hace": "Generan las microondas.",
+     "sintomas_si_falla": [
+      "funciona, gira el plato pero no calienta",
+      "zumbido fuerte",
+      "olor a quemado"
+     ],
+     "prueba_tecnico": "Solo el técnico: desenchufar, descargar el condensador de alta tensión, inspeccionar quemaduras y medir magnetrón, diodo y condensador. Nunca dar instrucciones al cliente.",
+     "fuente": "https://techfaultfix.com/es/microwaves/frigidaire/microwave-runs-but-does-not-heat-food-turntable-light-and-fan-operate-normally",
+     "confianza": "media"
+    },
+    {
+     "pieza": "placa de mica (cubierta de la guía de ondas)",
+     "que_hace": "Deja pasar las microondas a la cavidad y protege la salida de la guía de ondas.",
+     "sintomas_si_falla": [
+      "chispas dentro",
+      "marcas quemadas en una pared"
+     ],
+     "prueba_tecnico": "Ver si está sucia, quemada o perforada; cambiarla (va a presión o con tornillos). Si el arco sigue tras cambiarla, revisar magnetrón y guía de ondas. Nunca funcionar sin ella.",
+     "fuente": "https://www.xatakahome.com/hogar/tu-microondas-empieza-a-echar-chispas-no-tires-suele-ser-culpa-placa-carton-que-cuesta-2-euros",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "motor del plato, acoplamiento y aro de rodillos",
+     "que_hace": "Hacen girar el plato.",
+     "sintomas_si_falla": [
+      "el plato no gira",
+      "gira a tirones o hace ruido"
+     ],
+     "prueba_tecnico": "Comprobar colocación del acoplamiento y del aro; sin plato, ver si el eje gira; si no gira, medir continuidad del motor desenchufado.",
+     "fuente": "https://www.samsung.com/es/support/home-appliances/que-hacer-si-el-plato-giratorio-de-tu-microondas-no-funciona",
+     "confianza": "alta"
+    }
+   ],
+   "diagnostico": [
+    {
+     "sintoma": "Funciona (luz, plato, ventilador) pero no calienta",
+     "palabras": [
+      "no calienta",
+      "funciona pero no calienta",
+      "gira pero la comida sale fría"
+     ],
+     "preguntas_clave": [
+      "Si pone un vaso de agua un minuto a máxima potencia, ¿sale igual de fría?",
+      "¿Hace un zumbido más fuerte de lo normal mientras funciona?",
+      "¿La puerta cierra bien o hay que empujarla?",
+      "¿El grill, si tiene, sí calienta?"
+     ],
+     "como_descartan": "Agua fría confirma la avería de alta tensión o de puerta. Si la puerta cierra mal, microinterruptores o pestillos primero. Zumbido fuerte apunta a diodo, condensador o magnetrón. Si el grill calienta, la alimentación general está bien y el fallo está en la sección de microondas. Por frecuencia en foros: fusible de alta tensión, diodo o condensador y, por último, magnetrón.",
+     "pruebas_tecnico": [
+      "descargar condensador antes de nada",
+      "microinterruptores",
+      "fusible de alta tensión",
+      "diodo, condensador y magnetrón"
+     ],
+     "pieza_a_llevar": "juego de microinterruptores, fusible de alta tensión y diodo de alta tensión; magnetrón según modelo",
+     "fuentes": [
+      "https://www.beko.com/es-es/blog/microondas-no-calienta",
+      "https://bandaancha.eu/foros/microondas-funciona-pero-no-calienta-1746480",
+      "https://www.haier-europe.com/es_ES/blogs/news/que-hacer-cuando-el-microondas-no-calienta-la-comida"
+     ]
+    },
+    {
+     "sintoma": "Echa chispas dentro",
+     "palabras": [
+      "echa chispas",
+      "chisporrotea",
+      "rayos dentro",
+      "chispazos"
+     ],
+     "preguntas_clave": [
+      "¿Había algo metálico dentro (papel de aluminio, cucharilla, adornos dorados)?",
+      "¿Las chispas salen siempre del mismo sitio de una pared?",
+      "¿Ve una placa de cartón o mica sucia o quemada en esa pared?"
+     ],
+     "como_descartan": "Con metal dentro, es la causa. Si salen de la misma pared, placa de mica sucia o quemada: limpiarla o cambiarla, avería barata. Si continúa con la mica nueva, revisar magnetrón y guía de ondas.",
+     "pruebas_tecnico": [
+      "inspeccionar y cambiar mica",
+      "revisar guía de ondas y pintura de la cavidad"
+     ],
+     "pieza_a_llevar": "placa de mica (recortable o del modelo)",
+     "fuentes": [
+      "https://www.xatakahome.com/hogar/tu-microondas-empieza-a-echar-chispas-no-tires-suele-ser-culpa-placa-carton-que-cuesta-2-euros",
+      "https://www.bosch-home.es/servicio-oficial/garantias-y-asistencia/microondas-cubierta-quemada",
+      "https://techfaultfix.com/es/microwaves/fagor/microwave-sparks-or-arcs-inside-the-cavity-during-cooking-especially-near-the-walls-or-rack"
+     ]
+    },
+    {
+     "sintoma": "El plato no gira",
+     "palabras": [
+      "no gira el plato",
+      "el plato no da vueltas",
+      "plato parado"
+     ],
+     "preguntas_clave": [
+      "¿Calienta la comida aunque el plato no gire?",
+      "¿El plato está bien encajado en el eje del centro y el aro de ruedas en su sitio?",
+      "¿Hace ruido o gira a tirones?"
+     ],
+     "como_descartan": "Si calienta, el problema es solo mecánico. Plato o aro mal colocados o sucios: recolocar y limpiar. Si todo está bien puesto y no gira, motor del plato o engranajes.",
+     "pruebas_tecnico": [
+      "ver si gira el eje sin plato",
+      "medir el motor del plato"
+     ],
+     "pieza_a_llevar": "motor de plato del modelo y acoplamiento",
+     "fuentes": [
+      "https://www.samsung.com/es/support/home-appliances/que-hacer-si-el-plato-giratorio-de-tu-microondas-no-funciona",
+      "https://www.beko.com/es-es/blog/microondas-no-gira",
+      "https://www.neff-home.com/cl/servicio-cliente/asistencia-consejos/microondas/reparacion-microondas/plato-microondas-no-gira"
+     ]
+    },
+    {
+     "sintoma": "No enciende nada (sin pantalla ni luz)",
+     "palabras": [
+      "no enciende",
+      "está muerto",
+      "no hace nada",
+      "no tiene pantalla"
+     ],
+     "preguntas_clave": [
+      "¿Funcionan otros aparatos en ese enchufe?",
+      "¿Se apagó de golpe al abrir o cerrar la puerta?",
+      "¿Hizo un ruido o un chasquido antes de apagarse?"
+     ],
+     "como_descartan": "Si el enchufe no da corriente, no es el aparato. Si murió al cerrar la puerta, fusible fundido por un microinterruptor. Si hubo chasquido, fusible fundido por un componente en corto: hay que buscar la causa antes de cambiar el fusible.",
+     "pruebas_tecnico": [
+      "medir fusible",
+      "medir microinterruptores",
+      "revisar componentes de alta tensión en corto (tras descargar condensador)"
+     ],
+     "pieza_a_llevar": "fusibles y microinterruptores",
+     "fuentes": [
+      "https://www.mercadolibre.com.ar/blog/reparar-microondas-whirlpool-guia-detallada",
+      "https://www.beko.com/es-es/blog/microondas-no-calienta"
+     ]
+    },
+    {
+     "sintoma": "Hace ruido fuerte",
+     "palabras": [
+      "hace mucho ruido",
+      "zumba",
+      "rasca",
+      "ruido raro"
+     ],
+     "preguntas_clave": [
+      "¿El ruido es de roce del plato o un zumbido eléctrico?",
+      "¿Calienta normal?"
+     ],
+     "como_descartan": "Roce o traqueteo: plato o aro de rodillos sucios o mal colocados, la causa más común. Zumbido eléctrico fuerte y sin calentar: alta tensión, ver diagnóstico 'no calienta'.",
+     "pruebas_tecnico": [
+      "revisar plato, aro y pista",
+      "si zumba sin calentar, revisar diodo y magnetrón"
+     ],
+     "pieza_a_llevar": "aro de rodillos",
+     "fuentes": [
+      "https://www.samsung.com/es/support/home-appliances/que-hacer-si-el-plato-giratorio-de-tu-microondas-no-funciona",
+      "https://www.beko.com/es-es/blog/microondas-no-gira"
+     ]
+    },
+    {
+     "sintoma": "Olor a quemado o humo",
+     "palabras": [
+      "huele a quemado",
+      "sale humo",
+      "olor raro"
+     ],
+     "preguntas_clave": [
+      "¿Ve chispas dentro?",
+      "¿Hay marcas quemadas en una pared o en la placa de cartón?",
+      "¿Sale el olor de dentro o de las rejillas?"
+     ],
+     "como_descartan": "Con chispas o marcas en la pared: mica o guía de ondas. Desde las rejillas sin chispas: componente de alta tensión o cableado sobrecalentado. Dejar de usarlo hasta que lo revise el técnico.",
+     "pruebas_tecnico": [
+      "inspeccionar mica y cavidad",
+      "revisar alta tensión y cableado tras descargar condensador"
+     ],
+     "pieza_a_llevar": "placa de mica",
+     "fuentes": [
+      "https://techfaultfix.com/es/microwaves/privileg/microwave-emits-a-burning-smell-smoke-or-visible-sparks-arcing-inside-the-cavity-during-use",
+      "https://www.xatakahome.com/hogar/tu-microondas-empieza-a-echar-chispas-no-tires-suele-ser-culpa-placa-carton-que-cuesta-2-euros"
+     ]
+    }
+   ],
+   "averias_por_marca": [],
+   "vida_util": {
+    "anos": "9 años de media (OCU; con diferencias entre marcas)",
+    "fuente": "https://www.ocu.org/organizacion/prensa/notas-de-prensa/2019/duracionelectrodomesticos170119"
+   },
+   "compensa_reparar": "Orientativo, con la regla que OCU da para la lavadora: reparar si cuesta menos del 50 % de uno nuevo y el aparato no es viejo. Mica, aro, motor de plato o microinterruptores suelen compensar; un magnetrón en un microondas de libre instalación barato muchas veces no. Integrables, más caros, compensan más (https://ocu.org/electrodomesticos/lavadora/consejos/lavadora-arreglarla-sustituirla).",
+   "mantenimiento": [
+    "Limpiar la placa de mica con suavidad; las salpicaduras carbonizadas provocan chispas (fuente: https://www.xatakahome.com/hogar/tu-microondas-empieza-a-echar-chispas-no-tires-suele-ser-culpa-placa-carton-que-cuesta-2-euros)",
+    "No meter papel de aluminio, cubiertos ni recipientes metálicos (fuente: https://www.xatakahome.com/hogar/tu-microondas-empieza-a-echar-chispas-no-tires-suele-ser-culpa-placa-carton-que-cuesta-2-euros)",
+    "Limpiar el aro de rodillos y la pista donde gira el plato, y comprobar que el plato encaja en el eje (fuente: https://www.samsung.com/es/support/home-appliances/que-hacer-si-el-plato-giratorio-de-tu-microondas-no-funciona)",
+    "No hacerlo funcionar sin la cubierta de la guía de ondas (fuente: https://www.bosch-home.es/servicio-oficial/garantias-y-asistencia/microondas-cubierta-quemada)",
+    "No abrir nunca la carcasa: la parte de alta tensión puede dar descargas mortales incluso desenchufado (fuente: https://techfaultfix.com/es/microwaves/frigidaire/microwave-runs-but-does-not-heat-food-turntable-light-and-fan-operate-normally)"
+   ]
+  },
+  {
+   "aparato": "placa",
+   "funcionamiento": "En la vitrocerámica radiante cada fuego es una resistencia (Hi-Light) o una lámpara halógena bajo el cristal, regulada por la electrónica o por reguladores de energía, con un limitador de temperatura que la desconecta si se pasa de temperatura. En la inducción, bajo cada zona hay una bobina (inductor) alimentada por un módulo de potencia con transistores IGBT que genera un campo magnético; el calor se produce en el propio fondo del recipiente, que debe ser ferromagnético. Un ventilador enfría la electrónica y puede seguir girando tras apagar. El teclado táctil y la placa de control gobiernan todo y ante ciertos fallos desconectan la placa por seguridad. Las placas de inducción grandes pueden ir conectadas a trifásica y la reparación es de especialista.",
+   "componentes": [
+    {
+     "pieza": "bobina de inducción (inductor)",
+     "que_hace": "Crea el campo magnético que calienta el recipiente.",
+     "sintomas_si_falla": [
+      "una zona no calienta",
+      "código de error de esa zona"
+     ],
+     "prueba_tecnico": "Desmontar la placa de la encimera desconectada, medir continuidad de la bobina (abierta = defectuosa) y revisar conector y cableado al módulo.",
+     "fuente": "https://techfaultfix.com/es/ranges-cooktops/v-zug/error-f3-induction-hob-zone-does-not",
+     "confianza": "media"
+    },
+    {
+     "pieza": "módulo de potencia (IGBT)",
+     "que_hace": "Convierte la corriente de red en alta frecuencia para cada bobina; a veces un módulo alimenta un par de zonas.",
+     "sintomas_si_falla": [
+      "una o dos zonas no calientan",
+      "salta el diferencial",
+      "olor a quemado"
+     ],
+     "prueba_tecnico": "Comprobar IGBT en cortocircuito; si dos módulos son idénticos, intercambiarlos para ver si la avería sigue al módulo. Ojo: quedan tensiones altas en el módulo tras apagar.",
+     "fuente": "https://techfaultfix.com/es/ranges-cooktops/balay/induction-or-ceramic-cooktop-powers-on-but-one-specific-zone-does-not-heat",
+     "confianza": "media"
+    },
+    {
+     "pieza": "condensadores de filtrado del módulo",
+     "que_hace": "Filtran la alimentación de la etapa de potencia.",
+     "sintomas_si_falla": [
+      "la zona no llega a calentar",
+      "no detecta bien o se corta"
+     ],
+     "prueba_tecnico": "Revisar a la vista si están hinchados y medir capacidad; revisar también alimentación y conexión entre control y módulo de potencia.",
+     "fuente": "https://www.todoexpertos.com/preguntas/8om6ufbhtoi533s9/como-repararerror-9-invertido-induccion-balay",
+     "confianza": "media"
+    },
+    {
+     "pieza": "ventilador de refrigeración",
+     "que_hace": "Enfría la electrónica de inducción; se activa por temperatura y puede seguir tras apagar.",
+     "sintomas_si_falla": [
+      "la placa se apaga sola por sobrecalentamiento",
+      "huele a caliente"
+     ],
+     "prueba_tecnico": "Comprobar que gira al cocinar a potencia alta y que la ventilación del mueble no está tapada.",
+     "fuente": "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/placas-induccion",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "teclado táctil y placa de control",
+     "que_hace": "Recoge las órdenes del usuario y gobierna módulos o reguladores.",
+     "sintomas_si_falla": [
+      "un botón no responde o hay que apretar fuerte",
+      "la placa se desconecta y no deja usarla"
+     ],
+     "prueba_tecnico": "Desconectar unos minutos de la corriente y limpiar el panel; si persiste, revisar placa de teclado. Si la placa se desconecta sola y no se puede usar, el manual de Bosch pide cortar el fusible y avisar al servicio técnico.",
+     "fuente": "https://media3.bosch-home.com/Documents/9001725762_A.pdf",
+     "confianza": "media"
+    },
+    {
+     "pieza": "resistencia radiante (Hi-Light) o halógena",
+     "que_hace": "Calienta el cristal en las vitrocerámicas radiantes.",
+     "sintomas_si_falla": [
+      "un fuego no se pone rojo",
+      "un fuego doble solo calienta el círculo interior o ninguno"
+     ],
+     "prueba_tecnico": "Medir continuidad de la resistencia con la placa desconectada; comprobar que le llega tensión con el fuego encendido.",
+     "fuente": "https://www.ocu.org/electrodomesticos/placas-vitroceramicas/consejos/vitroceramica-guia-de-compra-de-placas",
+     "confianza": "media"
+    },
+    {
+     "pieza": "limitador de temperatura del fuego radiante",
+     "que_hace": "Desconecta el calefactor radiante al llegar a la temperatura límite; en algunos diseños une los dos circuitos de un fuego doble.",
+     "sintomas_si_falla": [
+      "el fuego no calienta",
+      "se apaga y enciende demasiado",
+      "fallan a la vez los dos circuitos de un fuego doble"
+     ],
+     "prueba_tecnico": "Medir continuidad del limitador en frío; si está abierto con la resistencia sana, cambiar el conjunto calefactor.",
+     "fuente": "https://patents.google.com/patent/ES1069250U/es",
+     "confianza": "media"
+    }
+   ],
+   "diagnostico": [
+    {
+     "sintoma": "Inducción: no detecta el recipiente (parpadea el fuego)",
+     "palabras": [
+      "no detecta la olla",
+      "parpadea",
+      "no reconoce el cazo",
+      "sale una u"
+     ],
+     "preguntas_clave": [
+      "¿Le pasa con todas las ollas o con una?",
+      "¿Se le pega un imán al fondo de esa olla, también cerca del borde?",
+      "¿Es una olla pequeña en un fuego grande?",
+      "¿Pasa en todos los fuegos o solo en uno?"
+     ],
+     "como_descartan": "Si solo pasa con una olla, el recipiente no es ferromagnético o es más pequeño que el mínimo de la zona: probar en la zona más pequeña. Si el imán se pega y falla con todas las ollas en un fuego, avería de esa zona (bobina o módulo).",
+     "pruebas_tecnico": [
+      "probar con recipiente de referencia",
+      "medir bobina y módulo de la zona"
+     ],
+     "pieza_a_llevar": "ninguna en principio; módulo de potencia si es la zona",
+     "fuentes": [
+      "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/placas-induccion",
+      "https://selectra.es/energia/noticias/induccion-2026-iman-ollas-compatibles"
+     ]
+    },
+    {
+     "sintoma": "Inducción: una zona no calienta (las demás sí)",
+     "palabras": [
+      "un fuego no funciona",
+      "una zona no calienta",
+      "no calienta un fuego"
+     ],
+     "preguntas_clave": [
+      "¿El fuego se enciende en el panel y detecta la olla pero no calienta?",
+      "¿Sale algún código o letra en ese fuego?",
+      "¿Falla también el fuego de al lado?"
+     ],
+     "como_descartan": "Si fallan dos zonas emparejadas, suele ser el módulo de potencia que las alimenta. Si falla una sola, bobina abierta, cableado suelto o el canal del módulo. Con código, consultar el manual de códigos.",
+     "pruebas_tecnico": [
+      "medir continuidad de la bobina",
+      "comprobar IGBT",
+      "intercambiar módulos idénticos"
+     ],
+     "pieza_a_llevar": "módulo de potencia del modelo (pedir con E-Nr/FD en BSH)",
+     "fuentes": [
+      "https://techfaultfix.com/es/ranges-cooktops/balay/induction-or-ceramic-cooktop-powers-on-but-one-specific-zone-does-not-heat",
+      "https://techfaultfix.com/es/ranges-cooktops/beko/error-e09-induction-cooktop-zone-shows-e09"
+     ]
+    },
+    {
+     "sintoma": "Inducción: zumbidos, pitidos o clics al cocinar",
+     "palabras": [
+      "hace ruido",
+      "zumba",
+      "pita",
+      "hace clic",
+      "silba"
+     ],
+     "preguntas_clave": [
+      "¿El ruido baja o desaparece al bajar la potencia?",
+      "¿Pasa con todas las ollas o con una concreta?",
+      "¿Es un ruido nuevo o siempre lo ha hecho?",
+      "¿Hay olor a quemado o falla al calentar?"
+     ],
+     "como_descartan": "Zumbido a potencia alta que baja al reducir potencia, clics al encender una zona y ventilador son normales y dependen del fondo del recipiente. Preocupa si es nuevo, muy fuerte, pasa con todos los recipientes o viene con errores, olor o fallos al calentar.",
+     "pruebas_tecnico": [
+      "probar con recipiente de fondo grueso y plano",
+      "revisar ventilador y módulo si hay otros síntomas"
+     ],
+     "pieza_a_llevar": "ninguna salvo otros síntomas",
+     "fuentes": [
+      "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/placas-induccion",
+      "https://www.xatakahome.com/territorio-samsung/cuando-tu-placa-induccion-hace-ruidos-al-cocinar-no-siempre-fallo-muchos-casos-algo-normal",
+      "https://www.lg.com/cac/soporte/ayuda-producto/CT32021962-20155064036647"
+     ]
+    },
+    {
+     "sintoma": "La placa se apaga sola mientras cocina",
+     "palabras": [
+      "se apaga sola",
+      "se corta",
+      "se desconecta",
+      "se apaga a mitad"
+     ],
+     "preguntas_clave": [
+      "¿Le pasa con el fuego grande a máxima potencia y después de un rato?",
+      "¿Se apaga al pasar algo por encima del panel (agua, un trapo, una olla)?",
+      "¿Sigue sonando el ventilador después?",
+      "¿Vuelve a funcionar al rato o ya no deja usarla?"
+     ],
+     "como_descartan": "A máxima potencia y tras un rato: protección por sobrecalentamiento, normal; revisar ventilación del mueble. Con agua u objetos sobre el panel: el teclado lo detecta y apaga. Si se desconecta y no deja volver a usarla o se enciende sola, es avería: cortar el fusible y llamar al técnico.",
+     "pruebas_tecnico": [
+      "comprobar ventilador y ventilación",
+      "revisar teclado y placa de control"
+     ],
+     "pieza_a_llevar": "ventilador o placa de teclado según el caso",
+     "fuentes": [
+      "https://www.lg.com/cac/soporte/ayuda-producto/CT32021962-20153411395489ELR",
+      "https://media3.bosch-home.com/Documents/9001725762_A.pdf",
+      "https://www.xatakahome.com/territorio-samsung/mi-placa-induccion-lleva-meses-apagandose-a-media-coccion-casi-llamo-al-tecnico-este-era-motivo"
+     ]
+    },
+    {
+     "sintoma": "Salta el diferencial con la placa",
+     "palabras": [
+      "salta el diferencial",
+      "se va la luz",
+      "saltan los plomos con la vitro"
+     ],
+     "preguntas_clave": [
+      "¿Salta al encender la placa, al usar un fuego concreto o incluso con ella apagada?",
+      "¿Se ha derramado líquido o se ha limpiado con vapor hace poco?",
+      "¿Huele a quemado?"
+     ],
+     "como_descartan": "Si salta con un fuego concreto, módulo o elemento de ese fuego. Si salta incluso apagada, fallo de aislamiento o cableado pellizcado contra el chasis. Si hubo agua o vapor, humedad interna. No rearmar una y otra vez.",
+     "pruebas_tecnico": [
+      "medir aislamiento con megóhmetro entre partes activas y tierra",
+      "aislar módulo o elemento con bajo aislamiento"
+     ],
+     "pieza_a_llevar": "módulo de potencia o resistencia del fuego afectado",
+     "fuentes": [
+      "https://techfaultfix.com/es/ranges-cooktops/balay/cooktop-trips-the-household-circuit-breaker-or-rcd-when-turned-on-or-when-a-specific-zone-is-used",
+      "https://media3.bosch-home.com/Documents/9001725762_A.pdf"
+     ]
+    },
+    {
+     "sintoma": "Olor a quemado o humo por la placa",
+     "palabras": [
+      "huele a quemado",
+      "olor a cable",
+      "sale humo por debajo"
+     ],
+     "preguntas_clave": [
+      "¿El olor sale de encima (comida) o de debajo del cristal o del mueble?",
+      "¿Ha dejado de funcionar algún fuego?",
+      "¿El ventilador funciona?"
+     ],
+     "como_descartan": "Desde arriba: comida o grasa sobre el cristal caliente. Desde abajo, con fallo de fuego o ventilación tapada: módulo de potencia o cableado. Dejar de usarla hasta localizar el origen.",
+     "pruebas_tecnico": [
+      "inspección visual de módulos y cableado",
+      "comprobar ventilador"
+     ],
+     "pieza_a_llevar": "módulo de potencia del modelo",
+     "fuentes": [
+      "https://techfaultfix.com/es/ranges-cooktops/balay/cooktop-emits-a-burning-smell-or-visible-smoke-from-vents-during-operation"
+     ]
+    },
+    {
+     "sintoma": "Un botón del panel táctil no responde",
+     "palabras": [
+      "no responde el táctil",
+      "no funcionan los botones",
+      "hay que apretar fuerte",
+      "no se enciende con el dedo"
+     ],
+     "preguntas_clave": [
+      "¿Falla un solo botón o todo el panel?",
+      "¿El panel está mojado o con grasa?",
+      "¿Responde si aprieta más fuerte?",
+      "¿Está activado el bloqueo para niños (candado)?"
+     ],
+     "como_descartan": "Panel sucio o mojado: limpiar y secar. Si se arregla desconectando unos minutos de la corriente, fallo puntual de electrónica. Si un botón concreto sigue sin responder, placa de teclado.",
+     "pruebas_tecnico": [
+      "desconectar unos minutos",
+      "limpiar panel",
+      "revisar placa de teclado"
+     ],
+     "pieza_a_llevar": "placa de teclado/control del modelo",
+     "fuentes": [
+      "https://www.justanswer.es/informatica-es/kan7r-hola-buenas-tardes-tengo-un-placa-de-inducci-n-siemens.html"
+     ]
+    },
+    {
+     "sintoma": "Vitrocerámica radiante: un fuego no calienta",
+     "palabras": [
+      "un fuego no se pone rojo",
+      "no calienta un fuego de la vitro",
+      "el doble no funciona"
+     ],
+     "preguntas_clave": [
+      "¿El fuego se pone rojo o no se enciende nada?",
+      "¿Es un fuego doble y falla solo una parte o las dos?",
+      "¿Se enciende y apaga demasiado a menudo?"
+     ],
+     "como_descartan": "Si no se pone rojo nada: resistencia abierta o limitador abierto. Si en un fuego doble fallan las dos partes, sospechar del limitador que las une. Si enciende y apaga mucho, limitador. Si la resistencia y el limitador están bien, mando o relé.",
+     "pruebas_tecnico": [
+      "medir resistencia del fuego",
+      "medir continuidad del limitador",
+      "comprobar tensión de salida del mando o relé"
+     ],
+     "pieza_a_llevar": "calefactor radiante completo (resistencia con limitador) del diámetro del fuego",
+     "fuentes": [
+      "https://patents.google.com/patent/ES1069250U/es",
+      "https://patents.google.com/patent/ES2297282T3/es",
+      "https://www.ocu.org/electrodomesticos/placas-vitroceramicas/consejos/vitroceramica-guia-de-compra-de-placas"
+     ]
+    },
+    {
+     "sintoma": "Cristal roto o rajado",
+     "palabras": [
+      "cristal roto",
+      "se ha rajado",
+      "grieta en la vitro"
+     ],
+     "preguntas_clave": [
+      "¿La grieta llega a las zonas de cocción o al panel?",
+      "¿Ha caído líquido por la grieta?"
+     ],
+     "como_descartan": "Es el problema más habitual de la vitrocerámica, normalmente por un golpe. Con grieta no se debe usar por riesgo de humedad y descarga; se cambia el cristal o la placa.",
+     "pruebas_tecnico": [
+      "valorar coste del cristal frente a placa nueva"
+     ],
+     "pieza_a_llevar": "presupuesto de cristal",
+     "fuentes": [
+      "https://www.consumer.es/?p=16839",
+      "https://media3.bosch-home.com/Documents/9001725762_A.pdf"
+     ]
+    }
+   ],
+   "averias_por_marca": [
+    {
+     "marcas": [
+      "Balay"
+     ],
+     "epoca": "inducción",
+     "averia": "Error del '9 invertido' (una 'e' minúscula) asociado a fallo de comunicación o al módulo de potencia de los fuegos afectados; en foro se recomienda revisar condensadores de filtrado, IGBT y la conexión control-potencia.",
+     "fuente": "https://www.todoexpertos.com/preguntas/8om6ufbhtoi533s9/como-repararerror-9-invertido-induccion-balay",
+     "confianza": "media"
+    },
+    {
+     "marcas": [
+      "Balay"
+     ],
+     "epoca": "inducción",
+     "averia": "Algunas placas usan un módulo de potencia por cada par de zonas: si fallan dos zonas a la vez, sospechar del módulo; se puede confirmar intercambiando módulos idénticos.",
+     "fuente": "https://techfaultfix.com/es/ranges-cooktops/balay/induction-or-ceramic-cooktop-powers-on-but-one-specific-zone-does-not-heat",
+     "confianza": "media"
+    }
+   ],
+   "vida_util": {
+    "anos": "sin dato con fuente fiable (no se encontró cifra de OCU ni de fabricante para placas)",
+    "fuente": ""
+   },
+   "compensa_reparar": "Orientativo, con la regla que OCU da para la lavadora: con menos de 8-10 años y reparación por debajo del 50 % de una placa nueva, reparar; si no, valorar cambiarla. Un módulo de potencia o placa electrónica puede rondar los 275 € según una reclamación de OCU (https://ocu.org/electrodomesticos/lavadora/consejos/lavadora-arreglarla-sustituirla).",
+   "mantenimiento": [
+    "Usar recipientes de fondo plano y ferromagnético (comprobar con un imán); los fondos con relieve reciben menos potencia (fuente: https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/placas-induccion)",
+    "No limpiar la placa con chorro de vapor ni a presión: la humedad dentro puede causar descarga (fuente: https://media3.bosch-home.com/Documents/9001725762_A.pdf)",
+    "Mantener el panel táctil limpio y seco; restos o agua provocan que no responda o se apague (fuente: https://www.justanswer.es/informatica-es/kan7r-hola-buenas-tardes-tengo-un-placa-de-inducci-n-siemens.html)",
+    "Si cambia el ruido de la placa, probar primero a bajar un punto la potencia y con otro recipiente de fondo grueso (fuente: https://www.xatakahome.com/territorio-samsung/cuando-tu-placa-induccion-hace-ruidos-al-cocinar-no-siempre-fallo-muchos-casos-algo-normal)",
+    "Si la placa se desconecta sola y no deja usarla o se enciende sola, cortar su fusible en el cuadro y avisar al técnico (fuente: https://media3.bosch-home.com/Documents/9001725762_A.pdf)"
+   ]
+  },
+  {
+   "aparato": "secadora",
+   "funcionamiento": "Al cerrar la puerta (microinterruptor) y pulsar inicio, el motor hace girar el tambor mediante una correa tensada por una polea tensora y mueve también el ventilador que hace circular el aire. En las de condensación con resistencia, el aire se calienta en la resistencia (protegida por termostatos y un fusible térmico), atraviesa la ropa, sale cargado de humedad por el filtro de pelusa y pasa por el condensador (intercambiador), donde se enfría y suelta el agua. En las de bomba de calor, un circuito frigorífico con compresor, evaporador y condensador enfría el aire húmedo para condensar el agua y lo vuelve a calentar, reaprovechando el calor sin salida al exterior; por eso consumen menos de la mitad pero tardan más. El agua condensada cae a una cubeta y una pequeña bomba la sube al depósito (o a un desagüe), y los sensores de humedad en la entrada del tambor indican a la placa cuándo la ropa está seca para terminar el ciclo.",
+   "componentes": [
+    {
+     "pieza": "filtro de pelusa",
+     "que_hace": "Retiene la pelusa del aire que sale del tambor antes de que llegue al condensador y al ventilador.",
+     "sintomas_si_falla": [
+      "tarda mucho en secar",
+      "ropa sale húmeda",
+      "se calienta en exceso",
+      "riesgo de incendio si la pelusa llega a la resistencia"
+     ],
+     "prueba_tecnico": "Sacar y revisar el filtro de la puerta (y el segundo filtro del cajón en bomba de calor); comprobar que la malla no está rota ni colmatada por restos de suavizante.",
+     "fuente": "https://www.beko.com/es-es/soporte/secadora--limpieza--preguntas-frecuentes/con-que-frecuencia-debo-limpiar-los-filtros-de-la-secadora",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "condensador / intercambiador de calor",
+     "que_hace": "Enfría el aire húmedo para que el agua se condense; en bomba de calor es el evaporador del circuito frigorífico.",
+     "sintomas_si_falla": [
+      "no seca o tarda el doble",
+      "no recoge agua en el depósito",
+      "sale vapor o humedad en la habitación"
+     ],
+     "prueba_tecnico": "Sacar el condensador (en modelos de resistencia suele estar abajo a la izquierda tras una tapa) y ver si las láminas están taponadas por barrillo de pelusa; en bomba de calor revisar el intercambiador sin doblar aletas y siguiendo el manual (algunas marcas tienen autolimpieza).",
+     "fuente": "https://www.ocu.org/electrodomesticos/secadora/noticias/limpiar-secadoras",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "sensor de humedad",
+     "que_hace": "Barras o placas metálicas en la entrada del tambor que miden la humedad de la ropa para cortar el ciclo.",
+     "sintomas_si_falla": [
+      "el programa termina antes de tiempo con ropa húmeda",
+      "el programa no termina nunca"
+     ],
+     "prueba_tecnico": "Limpiar las barras sensoras (restos de suavizante o toallitas) con un paño húmedo y repetir; si sigue, comprobar el cableado al sensor.",
+     "fuente": "https://www.samsung.com/mx/support/home-appliances/why-is-my-dryer-not-drying-well",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "bomba de condensado y depósito",
+     "que_hace": "La bomba sube el agua condensada desde la cubeta inferior hasta el depósito o la manguera de desagüe; la máquina se para y avisa cuando el depósito está lleno.",
+     "sintomas_si_falla": [
+      "aviso de depósito lleno con el depósito vacío",
+      "el depósito no recoge agua",
+      "agua en el suelo"
+     ],
+     "prueba_tecnico": "Vaciar el depósito y limpiar su filtro; si tiene desagüe directo, comprobar que la manguera no hace bucle y está en la salida correcta; comprobar que la bomba funciona y no está obstruida.",
+     "fuente": "https://www.beko.com/es-es/blog/secadora-no-condensa-agua",
+     "confianza": "alta"
+    },
+    {
+     "pieza": "correa y polea tensora",
+     "que_hace": "La correa abraza el tambor y lo une a la polea del motor; la polea tensora la mantiene tensa.",
+     "sintomas_si_falla": [
+      "el motor suena pero el tambor no gira",
+      "chirrido",
+      "tambor que gira a tirones"
+     ],
+     "prueba_tecnico": "Con la secadora desenchufada y la puerta abierta, girar el tambor a mano: si gira sin apenas resistencia, la correa está rota o salida. Revisar que la polea tensora y los rodillos giren suaves.",
+     "fuente": "https://guide.washerhouse.com/es/sushilnaya-mashina-ne-krutit-baraban/",
+     "confianza": "media"
+    },
+    {
+     "pieza": "resistencia de secado (modelos de condensación por resistencia)",
+     "que_hace": "Calienta el aire de secado.",
+     "sintomas_si_falla": [
+      "no calienta",
+      "ropa sale húmeda y fría"
+     ],
+     "prueba_tecnico": "Medir continuidad con el polímetro; abierta = quemada. Comprobar a la vez termostatos, porque un termostato que no corta la hace trabajar al límite.",
+     "fuente": "https://guide.washerhouse.com/es/sushilnaya-mashina-ne-greet/",
+     "confianza": "media"
+    },
+    {
+     "pieza": "termostatos, sensor de temperatura y fusible térmico",
+     "que_hace": "Regulan la temperatura del aire y cortan el calor por sobrecalentamiento; el fusible térmico es de un solo uso.",
+     "sintomas_si_falla": [
+      "no calienta",
+      "no arranca o se para al poco",
+      "ropa húmeda con olor a humedad"
+     ],
+     "prueba_tecnico": "Medir continuidad con el polímetro (cerrado debe dar casi 0 ohmios). Si el fusible térmico está abierto se sustituye, nunca se puentea, y hay que buscar la causa del sobrecalentamiento (filtro o conductos obstruidos).",
+     "fuente": "https://www.beko.com/es-es/blog/secadora-no-seca",
+     "confianza": "media"
+    },
+    {
+     "pieza": "microinterruptor de puerta",
+     "que_hace": "Informa a la placa de que la puerta está cerrada; sin él no arranca.",
+     "sintomas_si_falla": [
+      "no arranca con la puerta cerrada",
+      "se para al tocar la puerta"
+     ],
+     "prueba_tecnico": "Pulsar el émbolo y oír el clic; medir continuidad con la puerta cerrada; revisar que el cierre engancha.",
+     "fuente": "https://techfaultfix.com/es/dryers/kitchenaid/dryer-will-not-start-at-all-display-may-light-but-drum-does-not-turn",
+     "confianza": "media"
+    }
+   ],
+   "diagnostico": [
+    {
+     "sintoma": "No seca o tarda muchísimo",
+     "palabras": [
+      "no seca",
+      "tarda mucho",
+      "ropa húmeda",
+      "seca mal",
+      "necesita dos ciclos"
+     ],
+     "preguntas_clave": [
+      "¿Limpia el filtro de pelusa en cada secado?",
+      "¿Cuándo limpió el condensador o el filtro de abajo por última vez?",
+      "¿El depósito de agua se llena como siempre?",
+      "¿Al terminar, la ropa sale caliente o fría?",
+      "¿Está en un cuarto pequeño y cerrado?"
+     ],
+     "como_descartan": "Filtros o condensador sin limpiar: casi seguro obstrucción, lo resuelve el cliente. Ropa caliente pero húmeda y depósito casi vacío: condensador taponado o ventilación del cuarto. Ropa fría: no calienta (resistencia, termostato, o en bomba de calor el compresor). Cuarto cerrado y caluroso: la condensación pierde rendimiento.",
+     "pruebas_tecnico": [
+      "revisar filtros y condensador",
+      "comprobar temperatura de salida",
+      "medir resistencia y termostatos"
+     ],
+     "pieza_a_llevar": "juego de filtros y resistencia o termostato del modelo",
+     "fuentes": [
+      "https://www.ocu.org/electrodomesticos/secadora/consejos/problemas-con-secadora",
+      "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/secadora/mejorar-los-resultados"
+     ]
+    },
+    {
+     "sintoma": "Termina antes de tiempo con la ropa húmeda",
+     "palabras": [
+      "se para antes",
+      "termina enseguida",
+      "acaba y la ropa está mojada"
+     ],
+     "preguntas_clave": [
+      "¿Usa toallitas o mucho suavizante?",
+      "¿El programa dura mucho menos que antes?",
+      "¿Pasa con programas por tiempo o solo con los automáticos?"
+     ],
+     "como_descartan": "Con toallitas o suavizante y solo en programas automáticos: sensor de humedad sucio, limpiar las barras. Si en programa por tiempo tampoco calienta: ir a 'no calienta'.",
+     "pruebas_tecnico": [
+      "limpiar barras del sensor de humedad",
+      "comprobar cableado del sensor"
+     ],
+     "pieza_a_llevar": "ninguna en principio",
+     "fuentes": [
+      "https://www.samsung.com/mx/support/home-appliances/why-is-my-dryer-not-drying-well",
+      "https://www.bosch-home.es/servicio-oficial/garantias-y-asistencia/limpiar-secadora"
+     ]
+    },
+    {
+     "sintoma": "No calienta",
+     "palabras": [
+      "no calienta",
+      "sale fría",
+      "aire frío"
+     ],
+     "preguntas_clave": [
+      "¿Es de bomba de calor o de resistencia (lo pone la etiqueta o el manual)?",
+      "¿El tambor gira con normalidad?",
+      "¿Antes de dejar de calentar secaba cada vez peor?",
+      "¿Se para sola al poco de empezar?"
+     ],
+     "como_descartan": "Secado cada vez peor y luego nada: sobrecalentamiento por pelusa que ha abierto el fusible térmico o termostato. Se para sola: protección térmica. En bomba de calor que no calienta, sospechar del circuito frigorífico o compresor. En resistencia: resistencia o termostato.",
+     "pruebas_tecnico": [
+      "medir resistencia",
+      "medir termostatos y fusible térmico",
+      "limpiar conductos y filtros"
+     ],
+     "pieza_a_llevar": "resistencia, termostatos y fusible térmico del modelo",
+     "fuentes": [
+      "https://guide.washerhouse.com/es/sushilnaya-mashina-ne-greet/",
+      "https://www.beko.com/es-es/blog/secadora-no-seca"
+     ]
+    },
+    {
+     "sintoma": "El motor suena pero el tambor no gira",
+     "palabras": [
+      "no gira el tambor",
+      "no da vueltas",
+      "se oye el motor"
+     ],
+     "preguntas_clave": [
+      "¿Con la puerta abierta, el tambor gira a mano muy suelto, sin nada de resistencia?",
+      "¿Antes de pararse hacía un chirrido?",
+      "¿Oye un zumbido sin que se mueva nada?"
+     ],
+     "como_descartan": "Tambor muy suelto a mano: correa rota o salida. Chirrido previo: polea tensora o rodillos. Zumbido sin giro y tambor duro: rodillos agarrotados, objeto atrapado o motor/condensador de arranque.",
+     "pruebas_tecnico": [
+      "revisar correa",
+      "revisar polea tensora y rodillos",
+      "comprobar motor"
+     ],
+     "pieza_a_llevar": "correa y polea tensora del modelo",
+     "fuentes": [
+      "https://guide.washerhouse.com/es/sushilnaya-mashina-ne-krutit-baraban/",
+      "https://techfaultfix.com/es/dryers/zanussi/zanussi-dryer-drum-does-not-turn-but-the-machine-powers-on-and-may-heat"
+     ]
+    },
+    {
+     "sintoma": "Ruidos (chirrido, golpeteo)",
+     "palabras": [
+      "hace ruido",
+      "chirría",
+      "golpea",
+      "traquetea"
+     ],
+     "preguntas_clave": [
+      "¿Es un chirrido continuo o golpes?",
+      "¿Ha podido quedarse algo dentro (monedas, cremalleras, horquillas)?",
+      "¿Está bien nivelada?"
+     ],
+     "como_descartan": "Chirrido continuo: polea tensora o rodillos del tambor. Golpes: objeto suelto o ropa pesada (zapatillas). Vibración: nivelación.",
+     "pruebas_tecnico": [
+      "girar tambor a mano",
+      "revisar polea tensora y rodillos"
+     ],
+     "pieza_a_llevar": "polea tensora y rodillos del modelo",
+     "fuentes": [
+      "https://www.ocu.org/electrodomesticos/secadora/consejos/ruidos-secadora",
+      "https://www.siemens-home.bsh-group.com/es/inspiracion/blog/ruido-secadora"
+     ]
+    },
+    {
+     "sintoma": "Aviso de depósito lleno o no recoge agua",
+     "palabras": [
+      "depósito lleno",
+      "no recoge agua",
+      "no saca agua",
+      "no bombea"
+     ],
+     "preguntas_clave": [
+      "¿Avisa de depósito lleno aunque lo haya vaciado?",
+      "¿Tiene la manguera conectada a un desagüe en lugar de usar el depósito?",
+      "¿Ha limpiado el filtro del depósito?",
+      "¿Hay agua en el suelo?"
+     ],
+     "como_descartan": "Avisa con depósito vacío: bomba de condensado atascada o averiada. Con manguera a desagüe: revisar que no haga bucle y que esté en la salida correcta. Depósito vacío tras secar y ropa seca: el agua se va por la manguera o la cubeta no bombea. Agua en el suelo: bomba o tubos.",
+     "pruebas_tecnico": [
+      "limpiar filtro del depósito",
+      "revisar manguera",
+      "comprobar bomba de condensado"
+     ],
+     "pieza_a_llevar": "bomba de condensado del modelo",
+     "fuentes": [
+      "https://www.beko.com/es-es/blog/secadora-no-condensa-agua",
+      "https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/secadora/como-vaciar-el-deposito-de-condensacion"
+     ]
+    },
+    {
+     "sintoma": "Agua en el suelo",
+     "palabras": [
+      "pierde agua",
+      "charco",
+      "gotea",
+      "agua debajo"
+     ],
+     "preguntas_clave": [
+      "¿El depósito estaba bien metido y vacío?",
+      "¿El agua aparece durante el secado o con ella parada?",
+      "¿Tiene manguera de desagüe conectada?"
+     ],
+     "como_descartan": "Depósito mal colocado o lleno: uso. Con manguera: manguera suelta o mal conectada. Si no hay nada de eso: cubeta, bomba de condensado o tubos internos.",
+     "pruebas_tecnico": [
+      "revisar depósito y manguera",
+      "revisar cubeta y bomba de condensado"
+     ],
+     "pieza_a_llevar": "bomba de condensado y tubos del modelo",
+     "fuentes": [
+      "https://guide.washerhouse.com/es/voda-pod-sushilnoy-mashinoy/",
+      "https://techfaultfix.com/es/dryers/smeg/dryer-leaks-water-onto-the-floor-during-or-after-a-cycle-condenserheat-pump-models"
+     ]
+    },
+    {
+     "sintoma": "No arranca",
+     "palabras": [
+      "no arranca",
+      "no enciende",
+      "no hace nada"
+     ],
+     "preguntas_clave": [
+      "¿Se enciende el panel?",
+      "¿Al cerrar la puerta nota el clic?",
+      "¿Se paró de golpe en el último uso o venía secando mal?",
+      "¿Tiene el depósito lleno o algún aviso encendido?"
+     ],
+     "como_descartan": "Panel apagado: enchufe o cable. Panel encendido pero no arranca: microinterruptor de puerta, aviso de depósito o fusible térmico abierto (sobre todo si venía secando mal, por sobrecalentamiento). Si todo está bien: placa o motor.",
+     "pruebas_tecnico": [
+      "comprobar microinterruptor de puerta",
+      "medir fusible térmico",
+      "revisar placa y motor"
+     ],
+     "pieza_a_llevar": "microinterruptor de puerta y fusible térmico del modelo",
+     "fuentes": [
+      "https://www.beko.com/es-es/soporte/secadora--solucion-de-problemas--articulo/como-se-repara-una-secadora-que-no-se-inicia",
+      "https://techfaultfix.com/es/dryers/kitchenaid/dryer-will-not-start-at-all-display-may-light-but-drum-does-not-turn"
+     ]
+    },
+    {
+     "sintoma": "Huele a quemado, humo o chispas",
+     "palabras": [
+      "huele a quemado",
+      "humo",
+      "chispas",
+      "olor a quemado"
+     ],
+     "preguntas_clave": [
+      "¿Ve humo o chispas ahora mismo? (si es así, apáguela y desenchúfela ya)",
+      "¿Qué marca es y de qué año aproximadamente?",
+      "¿Cuándo limpió el filtro de pelusa?"
+     ],
+     "como_descartan": "Humo o chispas: desenchufar y no volver a usar hasta revisión. Indesit, Hotpoint (y Creda, Swan, Proline) de 2004-2015 o Hisense de bomba de calor de finales de 2024 a marzo 2025: comprobar si está en una campaña de revisión gratuita. Filtro sin limpiar: pelusa sobre la resistencia.",
+     "pruebas_tecnico": [
+      "revisar acumulación de pelusa junto a la resistencia",
+      "revisar cableado",
+      "comprobar número de modelo y serie contra campañas"
+     ],
+     "pieza_a_llevar": "según inspección",
+     "fuentes": [
+      "https://www.ocu.org/electrodomesticos/secadora/noticias/alerta-modelo-secadoras",
+      "https://www.ocu.org/electrodomesticos/secadora/noticias/retirada-secadora-hisense-por-riesgos-de-seguridad"
+     ]
+    }
+   ],
+   "averias_por_marca": [
+    {
+     "marcas": [
+      "Indesit",
+      "Hotpoint",
+      "Creda",
+      "Swan",
+      "Proline"
+     ],
+     "epoca": "fabricadas abril 2004 - septiembre/octubre 2015",
+     "averia": "Riesgo de incendio por pelusa que puede tocar la resistencia; campaña de revisión preventiva gratuita con modificación a domicilio. Si echa humo o chispas cerca de los botones, apagar de inmediato. Comprobar modelo y serie en la web de seguridad del fabricante.",
+     "fuente": "https://www.ocu.org/electrodomesticos/secadora/noticias/alerta-modelo-secadoras",
+     "confianza": "alta"
+    },
+    {
+     "marcas": [
+      "Hisense"
+     ],
+     "epoca": "bomba de calor fabricadas noviembre 2024 - marzo 2025 (p. ej. DH5S102BB, DH5S102BW, DH5S902BW)",
+     "averia": "El cableado del compresor puede dañarse por contacto con la rueda del tambor, con riesgo de incendio; Hisense revisa y repara gratis a domicilio. Las unidades con punto verde ya fueron inspeccionadas.",
+     "fuente": "https://www.hisense.es/wp-content/uploads/2025/09/Notificacion-de-retirada-de-producto-Hisense-Espana.pdf",
+     "confianza": "alta"
+    },
+    {
+     "marcas": [
+      "Candy",
+      "Indesit"
+     ],
+     "epoca": "",
+     "averia": "En la encuesta de fiabilidad de OCU sus secadoras apenas superan los 8 años de vida media, frente a 11-12 de media del mercado.",
+     "fuente": "https://www.xatakahome.com/hogar/quiero-que-mi-proximo-electrodomestico-dure-monton-anos-estas-marcas-fiables-ultimo-estudio-ocu",
+     "confianza": "media"
+    }
+   ],
+   "vida_util": {
+    "anos": "11-12 (Miele bastante más; Candy e Indesit poco más de 8)",
+    "fuente": "https://www.ocu.org/electrodomesticos/frigorificos/noticias/electrodomesticos-marcas-mas-duraderas"
+   },
+   "compensa_reparar": "Aplicar la regla del 50 % de OCU: si la reparación supera la mitad del precio de una secadora nueva similar, o el aparato pasa de 10 años y la reparación de 200 euros, mejor sustituir (fuente: https://ocu.org/electrodomesticos/lavadora/consejos/lavadora-arreglarla-sustituirla, regla publicada para lavadoras y aplicada aquí por analogía)",
+   "mantenimiento": [
+    "Limpie el filtro de pelusa después de cada secado (fuente: https://www.beko.com/es-es/soporte/secadora--limpieza--preguntas-frecuentes/con-que-frecuencia-debo-limpiar-los-filtros-de-la-secadora)",
+    "Vacíe el depósito de agua tras cada uso y limpie su filtro de vez en cuando (fuente: https://www.siemens-home.bsh-group.com/es/servicio-oficial/asistencia-y-consejos/resolucion-de-problemas/secadora/como-limpiar-el-filtro-del-deposito-de-condensacion)",
+    "En secadoras de condensación con resistencia, saque y lave el condensador con agua fría cada 10-12 secados (fuente: https://www.ocu.org/electrodomesticos/secadora/noticias/limpiar-secadoras)",
+    "En bomba de calor, limpie el intercambiador cuando lo pida el aviso o cada mes, sin doblar las aletas y siguiendo el manual; algunos modelos se autolimpian (fuente: https://www.samsung.com/pe/support/home-appliances/what-should-i-do-when-my-dryer-does-not-work-properly/)",
+    "Limpie de vez en cuando las barras del sensor de humedad, sobre todo si usa toallitas de suavizante (fuente: https://www.bosch-home.es/servicio-oficial/garantias-y-asistencia/limpiar-secadora)",
+    "Que el cuarto esté ventilado: en un sitio pequeño y cerrado seca peor (fuente: https://www.ocu.org/electrodomesticos/secadora/consejos/evitar-condensacion-secadora)"
+   ]
+  },
+  {
+   "aparato": "termo",
+   "funcionamiento": "El termo eléctrico es un depósito (cuba) aislado donde una resistencia sumergida calienta el agua; un termostato de regulación la conecta y desconecta según la temperatura elegida, y un termostato de seguridad rearmable corta si el agua se sobrecalienta. Un ánodo de magnesio se va gastando para proteger la cuba de la corrosión. La válvula de seguridad de la entrada de agua fría alivia el aumento de presión al calentar, por eso puede gotear algo mientras calienta. La cal del agua se deposita sobre la resistencia y en el fondo, reduce el rendimiento y acorta su vida.",
+   "componentes": [
+    {
+     "pieza": "resistencia",
+     "que_hace": "Calienta el agua.",
+     "sintomas_si_falla": [
+      "no calienta",
+      "salta el diferencial (resistencia derivada a masa)",
+      "tarda mucho si está cubierta de cal"
+     ],
+     "prueba_tecnico": "Medir ohmios y aislamiento a masa; desconectar sus dos cables y ver si el diferencial deja de saltar. Al desmontarla (vaciando el termo) ver la cal acumulada.",
+     "fuente": "https://www.todoexpertos.com/preguntas/5vevat6xogpxrkiw/salta-interruptor-diferencial-al-enchufar-termo-electrico",
+     "confianza": "media"
+    },
+    {
+     "pieza": "termostato de regulación",
+     "que_hace": "Mantiene la temperatura elegida.",
+     "sintomas_si_falla": [
+      "no calienta o calienta poco",
+      "salta una y otra vez el termostato de seguridad"
+     ],
+     "prueba_tecnico": "Medir continuidad y conmutación; si el de seguridad salta repetidamente tras rearmar, cambiar el de regulación.",
+     "fuente": "https://www.habitissimo.es/presupuestos/reparar-termo-electrico",
+     "confianza": "media"
+    },
+    {
+     "pieza": "termostato de seguridad rearmable",
+     "que_hace": "Corta la resistencia si el agua se sobrecalienta; se rearma con un botón.",
+     "sintomas_si_falla": [
+      "dejó de calentar de golpe con corriente presente"
+     ],
+     "prueba_tecnico": "Revisar la instalación y rearmarlo; si vuelve a saltar, sospechar del termostato de regulación.",
+     "fuente": "https://dam.elcorteingles.es/producto/www-001004730114255-d0.pdf",
+     "confianza": "media"
+    },
+    {
+     "pieza": "ánodo de magnesio",
+     "que_hace": "Se consume para proteger la cuba de la corrosión.",
+     "sintomas_si_falla": [
+      "agua con manchas de óxido o mal olor",
+      "cuba que acaba picándose"
+     ],
+     "prueba_tecnico": "Revisión periódica: vaciar, desmontar y ver cuánto queda; si está gastado, cambiarlo.",
+     "fuente": "https://www.losandes.com.ar/por-las-redes/por-que-se-acumula-sarro-del-agua-la-resistencia-del-termotanque-y-cada-cuanto-tiempo-se-reemplaza-n5994894",
+     "confianza": "media"
+    },
+    {
+     "pieza": "válvula de seguridad",
+     "que_hace": "Alivia la presión que crece al calentar el agua.",
+     "sintomas_si_falla": [
+      "gotea sin parar",
+      "no suelta agua al accionar la palanca"
+     ],
+     "prueba_tecnico": "Accionar la palanquita: si no sale agua, cambiarla. Medir la presión de red: si es alta, poner reductor de presión.",
+     "fuente": "https://qubbos.es/blogs/news/guia-para-reparar-un-termo-electrico-que-gotea",
+     "confianza": "media"
+    },
+    {
+     "pieza": "cuba (depósito)",
+     "que_hace": "Contiene el agua.",
+     "sintomas_si_falla": [
+      "pierde agua por debajo o por la carcasa, no por los racores ni la válvula"
+     ],
+     "prueba_tecnico": "Localizar el origen de la fuga: si sale del cuerpo del depósito y no de conexiones o válvula, la cuba está perforada y no tiene arreglo.",
+     "fuente": "https://www.chubb.com/ar-es/personas-y-familias/recursos/mantenimiento-termotanque.html",
+     "confianza": "media"
+    }
+   ],
+   "diagnostico": [
+    {
+     "sintoma": "No calienta nada",
+     "palabras": [
+      "no calienta",
+      "sale fría",
+      "no hay agua caliente",
+      "el termo no funciona"
+     ],
+     "preguntas_clave": [
+      "¿Tiene luz el piloto del termo?",
+      "¿Ha saltado algo en el cuadro eléctrico?",
+      "¿Dejó de calentar de golpe de un día para otro?",
+      "¿Cuántos años tiene el termo?"
+     ],
+     "como_descartan": "Sin piloto: falta corriente (enchufe, magnetotérmico) o el termo no recibe tensión. Con piloto y sin calentar de golpe: suele haber saltado el termostato de seguridad, o resistencia o termostato averiados. Si el de seguridad vuelve a saltar tras rearmar, termostato de regulación.",
+     "pruebas_tecnico": [
+      "comprobar tensión en bornes",
+      "rearmar termostato de seguridad tras revisar la instalación",
+      "medir resistencia y termostatos"
+     ],
+     "pieza_a_llevar": "resistencia y kit de termostatos (regulación + seguridad) del modelo",
+     "fuentes": [
+      "https://www.2x3.cl/pregunta/por-que-mi-termo-no-calienta",
+      "https://dam.elcorteingles.es/producto/www-001004730114255-d0.pdf",
+      "https://www.habitissimo.es/presupuestos/reparar-termo-electrico"
+     ]
+    },
+    {
+     "sintoma": "Calienta poco o tarda mucho; se acaba pronto el agua caliente",
+     "palabras": [
+      "calienta poco",
+      "tarda mucho en calentar",
+      "sale tibia",
+      "se acaba enseguida el agua caliente"
+     ],
+     "preguntas_clave": [
+      "¿Hace ruidos como de hervir o crepitar al calentar?",
+      "¿El agua de su zona tiene mucha cal?",
+      "¿Cuándo se le hizo la última revisión o limpieza de cal?"
+     ],
+     "como_descartan": "Ruidos y mucha cal: resistencia recubierta de cal que calienta a través de esa capa; limpiar o cambiar la resistencia. Si no hay cal, termostato que corta antes de tiempo.",
+     "pruebas_tecnico": [
+      "vaciar y desmontar resistencia para ver la cal",
+      "medir termostato"
+     ],
+     "pieza_a_llevar": "resistencia y junta de brida del modelo",
+     "fuentes": [
+      "https://tarifaluzhora.es/noticias/termo-electrico-2026-cal-gasta-mas-vaciar",
+      "https://www.qsl.net/eb1dgc/web%20frio/termoselectr.htm"
+     ]
+    },
+    {
+     "sintoma": "Salta el diferencial con el termo",
+     "palabras": [
+      "salta el diferencial",
+      "salta la luz al encender el termo",
+      "se va la luz con el termo"
+     ],
+     "preguntas_clave": [
+      "¿Salta en cuanto empieza a calentar o al enchufarlo?",
+      "¿Hay humedad o gotas cerca de la tapa de conexiones?",
+      "¿Ha perdido agua el termo últimamente?"
+     ],
+     "como_descartan": "Lo más probable es la resistencia derivada a masa. También humedad o filtración en una conexión, o un cable con el aislante dañado. Si con la resistencia desconectada no salta, es ella.",
+     "pruebas_tecnico": [
+      "desconectar los dos cables de la resistencia y probar",
+      "medir aislamiento resistencia-masa",
+      "revisar cableado"
+     ],
+     "pieza_a_llevar": "resistencia del modelo",
+     "fuentes": [
+      "https://www.todoexpertos.com/preguntas/5vevat6xogpxrkiw/salta-interruptor-diferencial-al-enchufar-termo-electrico",
+      "https://www.todoexpertos.com/preguntas/8etcqjnqej3enl6k/termo-electrico-marca-simex-salta-diferencial"
+     ]
+    },
+    {
+     "sintoma": "Gotea por la válvula de seguridad",
+     "palabras": [
+      "gotea la válvula",
+      "gotea el tubito",
+      "sale agua por la válvula"
+     ],
+     "preguntas_clave": [
+      "¿Gotea solo mientras calienta o todo el rato?",
+      "¿Nota mucha presión en los grifos de casa?",
+      "Si levanta la palanquita de la válvula, ¿sale agua?"
+     ],
+     "como_descartan": "Goteo ocasional al calentar es normal. Si gotea siempre o mucho: presión de red alta (poner reductor) o válvula averiada (no se arregla, se cambia). Si al accionar la palanca no sale agua, válvula atascada: cambiarla.",
+     "pruebas_tecnico": [
+      "medir presión de red",
+      "accionar válvula"
+     ],
+     "pieza_a_llevar": "válvula de seguridad y reductor de presión",
+     "fuentes": [
+      "https://qubbos.es/blogs/news/guia-para-reparar-un-termo-electrico-que-gotea",
+      "https://www.qsl.net/eb1dgc/web%20frio/termoselectr.htm"
+     ]
+    },
+    {
+     "sintoma": "Pierde agua por debajo o por la carcasa",
+     "palabras": [
+      "pierde agua",
+      "gotea por abajo",
+      "hay un charco debajo del termo",
+      "sale agua por la carcasa"
+     ],
+     "preguntas_clave": [
+      "¿El agua sale de los tubos o de la válvula, o del cuerpo del termo?",
+      "¿Cuántos años tiene?",
+      "¿Salía el agua con color de óxido?"
+     ],
+     "como_descartan": "Si sale de un racor o de la válvula, la reparación es sencilla. Si sale del cuerpo del depósito, la cuba está picada por corrosión y no tiene arreglo: hay que cambiar el termo, más si tiene años.",
+     "pruebas_tecnico": [
+      "secar y localizar el punto exacto de la fuga",
+      "revisar junta de la brida de la resistencia"
+     ],
+     "pieza_a_llevar": "junta de brida y racores; si es la cuba, presupuesto de termo nuevo",
+     "fuentes": [
+      "https://www.chubb.com/ar-es/personas-y-familias/recursos/mantenimiento-termotanque.html",
+      "https://www.habitissimo.es/presupuestos/reparar-termo-electrico"
+     ]
+    },
+    {
+     "sintoma": "Agua con color de óxido, mal olor o ruidos",
+     "palabras": [
+      "sale el agua marrón",
+      "agua con óxido",
+      "huele mal el agua caliente",
+      "el termo hace ruido"
+     ],
+     "preguntas_clave": [
+      "¿Le pasa solo con el agua caliente?",
+      "¿Se ha cambiado alguna vez el ánodo o se ha hecho revisión?",
+      "¿Hace ruidos al calentar?"
+     ],
+     "como_descartan": "Solo con agua caliente: es el termo. Sarro acumulado y ánodo gastado dan ruidos, mal olor y manchas de óxido. Cambiar ánodo y vaciar para arrastrar sedimentos; si ya hay óxido de la cuba, vigilar fugas.",
+     "pruebas_tecnico": [
+      "revisar ánodo",
+      "vaciar y limpiar sedimentos"
+     ],
+     "pieza_a_llevar": "ánodo de magnesio del modelo",
+     "fuentes": [
+      "https://www.losandes.com.ar/por-las-redes/por-que-se-acumula-sarro-del-agua-la-resistencia-del-termotanque-y-cada-cuanto-tiempo-se-reemplaza-n5994894",
+      "https://dam.elcorteingles.es/producto/www-001004730114255-d0.pdf"
+     ]
+    }
+   ],
+   "averias_por_marca": [],
+   "vida_util": {
+    "anos": "7,5 años de media; hasta unos 10 con buen mantenimiento y buena marca",
+    "fuente": "https://www.eldiario.es/consumoclaro/calentador-agua-vida-util_1_10312976.html"
+   },
+   "compensa_reparar": "Resistencia, termostatos, válvula o ánodo suelen compensar (reparar resistencia unos 90-250 € frente a unos 600 € de sustituir el termo, según presupuestadores). Con la cuba perforada no tiene arreglo y se cambia, sobre todo si el termo ronda o pasa su vida media de 7,5 años (https://www.habitissimo.es/presupuestos/reparar-termo-electrico; https://www.eldiario.es/consumoclaro/calentador-agua-vida-util_1_10312976.html).",
+   "mantenimiento": [
+    "Accionar la palanquita de la válvula de seguridad un par de veces al año; si no sale agua, cambiarla (fuente: https://qubbos.es/blogs/news/guia-para-reparar-un-termo-electrico-que-gotea)",
+    "Si la válvula gotea mucho, poner un reductor de presión a la entrada de agua de la vivienda (fuente: https://qubbos.es/blogs/news/guia-para-reparar-un-termo-electrico-que-gotea)",
+    "Revisión anual por el técnico para quitar la cal de la resistencia y comprobar el ánodo de magnesio (fuente: https://dam.elcorteingles.es/producto/www-001004730114255-d0.pdf)",
+    "En zonas con agua dura, la cal aumenta el consumo: hacer vaciados y limpiezas periódicas (fuente: https://tarifaluzhora.es/noticias/termo-electrico-2026-cal-gasta-mas-vaciar)",
+    "No rearmar el termostato de seguridad repetidamente: si vuelve a saltar, llamar al técnico (fuente: https://dam.elcorteingles.es/producto/www-001004730114255-d0.pdf)"
+   ]
+  }
+ ]
 };
