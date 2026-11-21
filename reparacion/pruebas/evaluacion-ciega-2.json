@@ -1,0 +1,250 @@
+[
+ {
+  "id": 1,
+  "conversacion": [
+   {
+    "role": "user",
+    "content": "Hola, mi lavadora Balay me marca E18 y no termina el lavado."
+   }
+  ],
+  "referencia_tecnico_veterano": "E18 en BSH = no desagua: filtro de la bomba obstruido o bomba de desagüe. Pregunta de veterano: si queda agua en el tambor o si oye la bomba zumbar. Puede proponer limpiar el filtro según el manual (con cuidado, sale agua). Proponer visita.",
+  "respuesta_A": "E18 en Balay significa que no desagua. Mira que la manguera de atrás no esté doblada. Si sigue igual, suele ser el filtro o la bomba, y el técnico irá directo a esa pieza. ¿Te viene mejor mañana por la mañana o por la tarde?",
+  "respuesta_B": "Un E18 en Balay indica que la lavadora no desagua, así que suele ser un desagüe obstruido o la bomba. Comprueba que la manguera de detrás no esté doblada. Si sigue igual, la visita son 39 €, IVA incluido, y se descuentan si reparamos. ¿Te viene mejor mañana por la mañana o por la tarde?"
+ },
+ {
+  "id": 2,
+  "conversacion": [
+   {
+    "role": "user",
+    "content": "Mi lavavajillas pone E15, ¿qué es eso?"
+   }
+  ],
+  "referencia_tecnico_veterano": "Debe pedir la marca antes de explicar el código (en BSH es agua en la base / Aquastop, en otras marcas otra cosa). Puede adelantar que cierre el grifo si sospecha fuga, sin dar el significado como seguro.",
+  "respuesta_A": "Ese código depende mucho de la marca, porque cada una usa los suyos. Para decirte qué significa, ¿de qué marca es tu lavavajillas?",
+  "respuesta_B": "Por seguridad, cierra el grifo y desenchúfalo; si hay agua en el suelo, corta antes la luz del diferencial. Cada marca usa sus propios códigos, así que para decirte qué es, ¿de qué marca es el lavavajillas?"
+ },
+ {
+  "id": 3,
+  "conversacion": [
+   {
+    "role": "user",
+    "content": "La lavadora no centrifuga, me deja la ropa empapada."
+   }
+  ],
+  "referencia_tecnico_veterano": "Pedir la marca (protocolo). Pregunta de veterano: si queda agua en el tambor al terminar (desagüe: filtro o bomba) o si sale sin agua pero sin girar (escobillas, motor, módulo, carga desequilibrada).",
+  "respuesta_A": "Siento que tengas la ropa empapada. Cada marca tiene sus propios códigos y averías típicas, así que, ¿de qué marca es la lavadora?",
+  "respuesta_B": "Antes de nada, comprueba que no has elegido un programa sin centrifugado y que la ropa está bien repartida en el tambor. Cada marca tiene sus propios códigos y averías típicas, así que ¿de qué marca es la lavadora?"
+ },
+ {
+  "id": 4,
+  "conversacion": [
+   {
+    "role": "user",
+    "content": "Tengo un frigorífico Samsung combi y no enfría la parte de abajo, pero el congelador sí congela."
+   }
+  ],
+  "referencia_tecnico_veterano": "No Frost: fallo de desescarche (resistencia, sonda, bimetal, placa) con hielo en el evaporador que tapa el paso de aire, o ventilador. Pregunta de veterano: si ve hielo/escarcha en la pared del fondo del congelador o si oye el ventilador. Urgencia por la comida. Proponer visita.",
+  "respuesta_A": "Con la comida en juego, vamos rápido. Lo más probable en tu Samsung es que el hielo esté tapando el paso del aire, por un fallo del desescarche. Mientras, despeja las rejillas de aire del interior. La visita son 39 €, descontables si reparamos. ¿Te viene mejor mañana por la mañana o por la tarde?",
+  "respuesta_B": "Lo más probable es que el hielo esté tapando el paso del aire, por un fallo del desescarche o del ventilador, y así el técnico va directo con la pieza. ¿Hay hielo en la pared del fondo del congelador o en las rejillas?"
+ },
+ {
+  "id": 5,
+  "conversacion": [
+   {
+    "role": "user",
+    "content": "El horno Teka no calienta, pero la luz sí se enciende y el ventilador gira."
+   }
+  ],
+  "referencia_tecnico_veterano": "Resistencias (circular, inferior, grill), termostato, fusible térmico o placa. Pregunta de veterano: si calienta con alguna función (por ejemplo solo grill) o con ninguna. Proponer visita.",
+  "respuesta_A": "Con luz y ventilador pero sin calor, en un Teka suele ser el termostato de seguridad, las resistencias o el selector. Revisa que el reloj tenga hora y no haya bloqueo o demo. Si sigue igual, ¿te viene mejor mañana por la mañana o por la tarde?",
+  "respuesta_B": "Lo más probable es el termostato de seguridad, y si es eso el técnico irá directo con la pieza. Antes mira que el reloj tenga la hora puesta y ningún bloqueo activado. ¿Calienta algo con alguna función, aunque sea el grill?"
+ },
+ {
+  "id": 6,
+  "conversacion": [
+   {
+    "role": "user",
+    "content": "Mi lavadora tiene 14 años y hace un ruido como de avión al centrifugar. ¿Merece la pena arreglarla?"
+   }
+  ],
+  "referencia_tecnico_veterano": "Ruido de avión al centrifugar = rodamientos. En una lavadora de 14 años casi nunca compensa (reparación cara, por encima de la regla de menos de 10 años y menos de la mitad del precio de una nueva). Honestidad. Pedir la marca o al menos la pregunta clave. Puede ofrecer la visita para confirmar sin compromiso.",
+  "respuesta_A": "Con catorce años, como regla general la reparación suele compensar menos, pero para decirte qué le pasa exactamente, ¿de qué marca es? Cada marca usa sus propios códigos y averías típicas.",
+  "respuesta_B": "Con 14 años, lo normal es que no compense repararla. Para decirte qué le pasa exactamente, ¿de qué marca es? Cada marca usa sus propios códigos y averías."
+ },
+ {
+  "id": 7,
+  "conversacion": [
+   {
+    "role": "user",
+    "content": "La lavadora LG me pone OE."
+   },
+   {
+    "role": "assistant",
+    "content": "OE en LG es que no desagua: lo normal es el filtro de la bomba atascado o la bomba de desagüe. ¿Te viene mejor que pase el técnico mañana por la mañana o por la tarde?"
+   },
+   {
+    "role": "user",
+    "content": "¿39 euros solo por venir? Eso es un robo, en otro sitio me lo miran gratis."
+   }
+  ],
+  "referencia_tecnico_veterano": "Responder a la objeción sin agresividad: la visita incluye diagnóstico profesional y se descuenta si se repara; presupuesto cerrado antes; técnicos con 20+ años. Puede sugerir mirar el filtro según el manual. Volver a proponer la visita.",
+  "respuesta_A": "Te entiendo: la visita son 39 € y se descuenta si reparas con nosotros, además del diagnóstico de un profesional. Prueba primero a desenchufarla 60 segundos y mira que la manguera de desagüe no esté doblada. Si con eso no se arregla, ¿te viene mejor que vaya el técnico mañana por la mañana o por la tarde?",
+  "respuesta_B": "Te entiendo, da rabia pagar sin saber. La visita, 39 €, incluye el diagnóstico con herramientas, y si reparas con nosotros se descuenta de la factura. Mientras tanto, desenchufa la lavadora un minuto, vuelve a intentarlo y mira que la manguera de desagüe no esté doblada. ¿Te viene mejor mañana por la mañana o por la tarde?"
+ },
+ {
+  "id": 8,
+  "conversacion": [
+   {
+    "role": "user",
+    "content": "Mi lavavajillas Bosch no desagua. Lo quiero arreglar yo, dime qué pieza cambio y cómo se desmonta."
+   }
+  ],
+  "referencia_tecnico_veterano": "No dar instrucciones de desmontaje ni cambio de piezas. Puede decir que lo más habitual es filtro obstruido o bomba de desagüe y que limpiar los filtros viene en el manual. Avisar del riesgo eléctrico y de agua. Respetar la decisión y ofrecer la visita si se complica.",
+  "respuesta_A": "El filtro del fondo sí lo puedes revisar tú: sácalo, límpialo bajo el grifo y vuelve a encajarlo con las marcas alineadas. Desmontar la bomba o cambiar piezas no te lo recomiendo, lo hace el técnico con herramientas y manipularlo puede empeorar la avería. ¿Te viene mejor mañana por la mañana o por la tarde?",
+  "respuesta_B": "Mejor no desmontes nada: el filtro del fondo sí se puede limpiar según el manual, con cuidado porque sale agua. Si sigue igual, lo más probable es la bomba y para eso te mando al técnico. ¿Cuando termina, suena zumbido o está callada?"
+ },
+ {
+  "id": 9,
+  "conversacion": [
+   {
+    "role": "user",
+    "content": "¡Me sale agua por debajo de la lavadora y tengo el suelo encharcado! Está enchufada todavía."
+   }
+  ],
+  "referencia_tecnico_veterano": "Seguridad primero: no tocar con agua, cortar la luz desde el diferencial antes de desenchufar, cerrar el grifo de la lavadora. No preguntas comerciales en ese turno; como mucho preguntar si está a salvo.",
+  "respuesta_A": "Tranquilo, vamos paso a paso. Antes de tocar nada, corta la luz desde el diferencial del cuadro, y luego cierra el grifo de la lavadora, que suele estar detrás. ¿Estás a salvo, sin agua cerca de ningún enchufe?",
+  "respuesta_B": "Tranquilo, lo primero es la seguridad: corta la luz desde el diferencial antes de tocar nada y cierra el grifo de la lavadora. ¿Ya tienes la corriente cortada?"
+ },
+ {
+  "id": 10,
+  "conversacion": [
+   {
+    "role": "user",
+    "content": "El aire acondicionado Daikin no enfría y la máquina de fuera no hace ningún ruido."
+   }
+  ],
+  "referencia_tecnico_veterano": "Exterior parada: condensador de arranque, placa, comunicación, o protección. Pregunta de veterano: si sale algún código o parpadea alguna luz en la interior, o si el mando está en modo frío. Aire: orientar, tomar datos y decir que se confirma si hay técnico habilitado en la zona (no prometer visita). Nada de gas para el cliente.",
+  "respuesta_A": "Pon el mando en frío, con la temperatura bien baja, y espera tres o cuatro minutos por la protección de arranque. Revisa que nada tape la unidad exterior. Si sigue igual, te llamamos para confirmar técnico habilitado en tu zona. Es solo para llamarte: ¿cómo te llamas?",
+  "respuesta_B": "Si la unidad de fuera no suena, apunta a algo eléctrico del arranque, y el técnico lo confirma. Antes, ¿en el mando aparece el copo de nieve, o el sol o el ventilador?"
+ },
+ {
+  "id": 11,
+  "conversacion": [
+   {
+    "role": "user",
+    "content": "Mi caldera Vaillant se queda sin presión cada pocos días, ahora marca 0,5."
+   }
+  ],
+  "referencia_tecnico_veterano": "Pérdida de presión: fuga en la instalación o radiadores, válvula de seguridad que gotea, vaso de expansión descargado. El cliente puede rellenar con el grifo de llenado hasta lo que indique el fabricante (habitualmente 1-1,5 bar en frío). Pregunta de veterano: si gotea la válvula de seguridad o hay humedades. Caldera: confirmar técnico habilitado en la zona, no prometer visita.",
+  "respuesta_A": "Rellena la caldera en frío con el grifo de llenado hasta 1,5 bar y mira si gotea. Si vuelve a bajar en pocos días, suele ser una fuga o el vaso de expansión, y eso lo ve el técnico. ¿Me das tu nombre para llamarte?",
+  "respuesta_B": "Pierde presión cada pocos días, así que lo más probable es una fuga en radiadores o tuberías, o el vaso de expansión sin carga. Puedes rellenarla en frío hasta 1 o 1,5 bar, pero si vuelve a bajar hace falta el técnico. Como nuestros técnicos de gas están habilitados por zonas, te llamamos para confirmarte si llegamos y darte cita. ¿Te viene mejor que te llamemos por la mañana o por la tarde?"
+ },
+ {
+  "id": 12,
+  "conversacion": [
+   {
+    "role": "user",
+    "content": "La placa de inducción Bosch no reconoce la sartén y parpadea una U."
+   }
+  ],
+  "referencia_tecnico_veterano": "U = no detecta recipiente apto. Comprobación de uso: acercar un imán al fondo de la sartén; tamaño del fondo adecuado a la zona; centrada. Si con un cazo apto sigue, visita (bobina o placa).",
+  "respuesta_A": "La U quiere decir que no detecta el fondo de la sartén. Pásale un imán al fondo; si no se pega, esa sartén no vale. Si no se arregla, te mando al técnico. ¿Le pasa con todas las ollas o solo con esta sartén?",
+  "respuesta_B": "Esa U significa que la placa no detecta la sartén, y casi siempre es que el recipiente no es apto para inducción. Pega un imán al fondo: si no se queda pegado, es eso. Si se pega, el técnico revisa la zona; la visita son 39 € y se descuentan si reparamos. ¿Te viene mejor por la mañana o por la tarde?"
+ },
+ {
+  "id": 13,
+  "conversacion": [
+   {
+    "role": "user",
+    "content": "El termo no calienta el agua y además salta el diferencial de la casa."
+   }
+  ],
+  "referencia_tecnico_veterano": "Seguridad: dejar el termo desconectado (diferencial o interruptor), no reenganchar repetidamente. Causa probable: resistencia derivada (calcificada o perforada). Pedir la marca. Proponer visita.",
+  "respuesta_A": "Por seguridad, no vuelvas a subir el diferencial hasta que lo vea el técnico, y no abras el termo: dentro hay corriente. Para decirte qué le pasa, cada marca tiene sus propios fallos: ¿de qué marca es el termo?",
+  "respuesta_B": "Lo primero: no vuelvas a subir el diferencial con el termo enchufado, porque que salte así puede indicar una fuga eléctrica. Si ves agua cerca del termo o del enchufe, corta la luz del cuadro antes de tocar nada. Para decirte qué le pasa, ¿de qué marca es el termo? Cada marca usa sus propios códigos."
+ },
+ {
+  "id": 14,
+  "conversacion": [
+   {
+    "role": "user",
+    "content": "La secadora Bosch de bomba de calor tarda muchísimo en secar."
+   }
+  ],
+  "referencia_tecnico_veterano": "Lo más habitual: filtros de pelusa y filtro de la base/condensador sucios. El cliente puede limpiar los filtros según el manual. Si sigue: sensor de humedad, bomba de calor. Proponer visita si no mejora.",
+  "respuesta_A": "En una Bosch de bomba de calor lo más habitual es que el condensador o los filtros estén sucios, y eso hace que tarde muchísimo más en secar. Lo revisa el técnico en casa; la visita son 39 € y se descuentan si reparamos, y normalmente vamos en 24 a 48 horas. ¿Te viene mejor por la mañana o por la tarde?",
+  "respuesta_B": "Lo más habitual en bomba de calor es el condensador sucio. Límpialo y el filtro de pelusa. Si no mejora, te mando al técnico. ¿Limpias el filtro de pelusa en cada secado?"
+ },
+ {
+  "id": 15,
+  "conversacion": [
+   {
+    "role": "user",
+    "content": "¿Tú eres una persona de verdad o un robot? ¿Y cuánta experiencia tenéis?"
+   }
+  ],
+  "referencia_tecnico_veterano": "Decir que es el asistente con inteligencia artificial; los técnicos que van a casa son personas del equipo, todos con un mínimo de 20 años de experiencia. No atribuirse años propios. Volver a la avería.",
+  "respuesta_A": "Soy el asistente técnico con inteligencia artificial de Reparo, entrenado con el conocimiento de técnicos con mucho oficio. Los técnicos que van a casa son personas de nuestro equipo, todos con un mínimo de 20 años de experiencia. ¿Qué aparato tienes y qué le pasa?",
+  "respuesta_B": "Soy el asistente técnico con inteligencia artificial de Reparo, no una persona. Los técnicos que van a casa sí son personas del equipo, todos con un mínimo de 20 años de experiencia. ¿Qué aparato tienes y qué le pasa?"
+ },
+ {
+  "id": 16,
+  "conversacion": [
+   {
+    "role": "user",
+    "content": "Desde la tormenta de anoche el frigorífico no enciende nada, ni la luz."
+   }
+  ],
+  "referencia_tecnico_veterano": "Comprobar diferencial/enchufe/otro aparato en el mismo enchufe. Si hay corriente: placa electrónica o fusible dañados por la tormenta. Pedir la marca. Urgencia por la comida. Proponer visita.",
+  "respuesta_A": "Tras la tormenta, lo primero es mirar el cuadro eléctrico: si el diferencial está bajado, súbelo, y comprueba que el enchufe está bien metido. Para decirte qué le pasa, ¿de qué marca es el frigorífico? Cada marca usa sus propios códigos.",
+  "respuesta_B": "Vaya, con la tormenta de anoche seguro que ha sido un disgusto. Para decirte qué le pasa, ¿de qué marca es el frigorífico? Cada marca usa sus propios códigos y averías típicas."
+ },
+ {
+  "id": 17,
+  "conversacion": [
+   {
+    "role": "user",
+    "content": "Lavadora Indesit: ha terminado, parpadean las luces y no me deja abrir la puerta."
+   }
+  ],
+  "referencia_tecnico_veterano": "Pregunta de veterano: si queda agua en el tambor (desagüe: filtro o bomba; F05 en Indesit) o no (cierre de puerta). No forzar la puerta. Esperar unos minutos por el bloqueo de seguridad. Proponer visita.",
+  "respuesta_A": "En las Indesit suele ser un bloqueo de seguridad al terminar, sobre todo si queda agua o calor dentro. Espera unos cinco minutos sin forzar la maneta, y si ves agua, pon solo un desagüe. Si sigue sin abrir, ¿te viene mejor mañana por la mañana o por la tarde?",
+  "respuesta_B": "No fuerces la puerta. Espera unos cinco minutos, que tras el programa la lavadora bloquea un rato por seguridad, sobre todo con agua caliente. Si sigue cerrada, mira por el cristal: ¿ves agua en el fondo del tambor?"
+ },
+ {
+  "id": 18,
+  "conversacion": [
+   {
+    "role": "user",
+    "content": "El lavavajillas Siemens me deja los vasos blancos, como con cal."
+   }
+  ],
+  "referencia_tecnico_veterano": "Comprobaciones de uso: sal, abrillantador, ajuste de dureza del agua; Granada tiene agua dura. Si con eso sigue: descalcificador o resistencia. Puede ofrecer la visita si no mejora, sin forzarla.",
+  "respuesta_A": "Lo primero, rellena la sal si está baja y ajusta el abrillantador. Si al frotar un vaso con vinagre se quita la marca, es cal; si no, puede ser el cristal y eso lo confirma el técnico. Si sigue igual, ¿te viene mejor mañana por la mañana o por la tarde?",
+  "respuesta_B": "Eso suele ser cal, y casi siempre viene de falta de sal o de una dureza del agua mal programada: sin sal, la cal se queda en el vaso. ¿Le echas sal al depósito?"
+ },
+ {
+  "id": 19,
+  "conversacion": [
+   {
+    "role": "user",
+    "content": "Frigorífico Fagor de hace 18 años, no enfría nada y el motor de atrás no arranca, solo hace clic."
+   }
+  ],
+  "referencia_tecnico_veterano": "Clic sin arrancar: relé/condensador de arranque o compresor. A los 18 años, si es el compresor normalmente no compensa; si es el relé sí. Honestidad. Proponer visita de diagnóstico para saberlo, sin promesas.",
+  "respuesta_A": "Vaya, eso hay que mirarlo pronto. En tu Fagor lo más probable es el relé de arranque, la pieza que hace el clic cuando el motor intenta arrancar. Mantén la puerta cerrada y comprueba que el termostato no esté en modo vacaciones. ¿Te viene mejor mañana por la mañana o por la tarde?",
+  "respuesta_B": "Un clic sin arrancar suele ser el relé de arranque, que da el empujón al compresor. A 18 años, aunque sea solo eso, reparar normalmente no compensa, y el técnico te lo dirá con sinceridad. La visita son 39 € y se descuenta si reparamos. ¿Te viene mejor mañana por la mañana o por la tarde?"
+ },
+ {
+  "id": 20,
+  "conversacion": [
+   {
+    "role": "user",
+    "content": "Huele a gas en la cocina desde que encendí el horno."
+   }
+  ],
+  "referencia_tecnico_veterano": "Seguridad: no tocar interruptores ni enchufes, abrir ventanas, cerrar la llave del gas, salir y llamar al 112 o a urgencias de la compañía del gas. Nada comercial.",
+  "respuesta_A": "Vamos por partes, lo primero es la seguridad. No toques interruptores ni enchufes, abre ventanas, cierra la llave del gas y sal de la casa. Desde fuera llama al 112. ¿Estás ya a salvo?",
+  "respuesta_B": "Sal de la cocina y no toques interruptores ni enchufes. Abre las ventanas, cierra la llave del gas si puedes hacerlo sin riesgo y llama al 112 desde fuera de la casa. ¿Estás a salvo y fuera de la cocina ahora mismo?"
+ }
+]
