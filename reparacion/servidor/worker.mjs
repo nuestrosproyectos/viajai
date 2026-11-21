@@ -18,6 +18,7 @@ export default {
     const url = new URL(req.url);
     if (url.pathname === "/api/tecnico" && req.method === "POST") return tecnico(req, env);
     if (url.pathname === "/api/aviso" && req.method === "POST") return aviso(req, env);
+    if (url.pathname === "/api/livekit-token" && req.method === "POST") return paseLiveKit(req, env);
     return env.ASSETS.fetch(req); // el resto: la web estática
   }
 };
@@ -100,6 +101,36 @@ async function aviso(req, env) {
     await fetch(env.AVISOS_WEBHOOK, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(limpio) }).catch(() => {});
   }
   return Response.json({ ok: true });
+}
+
+// Pase de 10 minutos para que el navegador del cliente entre en una sala nueva de
+// LiveKit, donde LiveKit Cloud envía al agente "andres" (dispatch explícito).
+async function paseLiveKit(req, env) {
+  if (!mismoOrigen(req)) return new Response("No permitido", { status: 403 });
+  if (!env.LIVEKIT_URL || !env.LIVEKIT_API_KEY || !env.LIVEKIT_API_SECRET) return new Response("LiveKit no configurado", { status: 503 });
+  const ip = req.headers.get("cf-connecting-ip") || "x";
+  if (env.LIMITE && !(await env.LIMITE.limit({ key: "lk:" + ip })).success) return new Response("Demasiadas llamadas", { status: 429 });
+
+  const ahora = Math.floor(Date.now() / 1000);
+  const id = crypto.randomUUID().replaceAll("-", "");
+  const carga = {
+    iss: env.LIVEKIT_API_KEY,
+    sub: "cliente-" + id.slice(0, 10),
+    name: "Cliente web",
+    nbf: ahora - 10,
+    exp: ahora + 600,
+    video: { room: "reparo-" + id.slice(10, 24), roomJoin: true, canPublish: true, canSubscribe: true, canPublishData: true },
+    roomConfig: { agents: [{ agentName: env.LIVEKIT_AGENTE || "andres" }] }
+  };
+  return Response.json({ url: env.LIVEKIT_URL, token: await firmarJWT(carga, env.LIVEKIT_API_SECRET) }, { headers: { "cache-control": "no-store" } });
+}
+
+async function firmarJWT(carga, secreto) {
+  const enc = new TextEncoder();
+  const b64u = bytes => btoa(String.fromCharCode(...new Uint8Array(bytes))).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+  const datos = b64u(enc.encode(JSON.stringify({ alg: "HS256", typ: "JWT" }))) + "." + b64u(enc.encode(JSON.stringify(carga)));
+  const clave = await crypto.subtle.importKey("raw", enc.encode(secreto), { name: "HMAC", hash: "SHA-256" }, false, ["sign"]);
+  return datos + "." + b64u(await crypto.subtle.sign("HMAC", clave, enc.encode(datos)));
 }
 
 function mismoOrigen(req) {

@@ -8,6 +8,8 @@
 <meta name="theme-color" content="#ECEFF1">
 <!-- Dirección del servidor del técnico en la web publicada (vacío en la vista previa). Ej.: /api -->
 <meta name="servidor-tecnico" content="">
+<!-- Llamada de voz en directo con LiveKit: dirección que entrega el pase (vacío = desactivado). Ej.: /api/livekit-token -->
+<meta name="livekit-token" content="">
 <meta property="og:title" content="Reparo · Reparación de electrodomésticos en Granada">
 <meta property="og:description" content="Habla con nuestro técnico virtual: diagnóstico al momento y visita a domicilio. Todas las marcas.">
 <meta property="og:type" content="website">
@@ -188,6 +190,9 @@ p{margin:0}
 :is(.consola,.mini)[data-estado="escuchando"] .c-mic .parar{display:block}
 :is(.consola,.mini)[data-estado="escuchando"] .c-mic::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:2px solid var(--senal);animation:onda 1.4s var(--curva) infinite}
 .c-mic[hidden]{display:none}
+:is(.consola,.mini)[data-llamada="activa"] .c-mic{background:#D93B30;color:#fff}
+:is(.consola,.mini)[data-llamada="activa"] .c-mic .mic{display:none}
+:is(.consola,.mini)[data-llamada="activa"] .c-mic .parar{display:block}
 .c-nota{font-size:11.5px;line-height:1.4;color:var(--noche-txt-2);text-align:center;padding:0 18px 12px;flex:none}
 .adjunto{display:flex;align-items:center;gap:10px;margin:0 16px 8px;padding:6px;background:var(--noche-2);border-radius:12px;font-size:13.5px;color:var(--noche-txt-2)}
 .adjunto img{width:40px;height:40px;object-fit:cover;border-radius:8px}
@@ -299,6 +304,16 @@ p{margin:0}
 .form-llamada h3{font-size:19px;margin-bottom:4px}
 .form-llamada p{margin:0 0 14px;font-size:14px}
 .form-llamada label{display:block;font-size:13px;color:var(--noche-txt-2);margin-bottom:6px}
+.campos{display:grid;grid-template-columns:1fr;gap:10px;margin:14px 0 16px}
+@media (min-width:480px){.campos{grid-template-columns:1fr 1fr}.campo.ancho{grid-column:1/-1}}
+.campo{display:flex;flex-direction:column;gap:5px;min-width:0}
+.campo span{font-size:12.5px;color:var(--noche-txt-2)}
+.campo span i{font-style:normal;color:var(--senal)}
+.campo input{width:100%;height:46px;border-radius:12px;border:1px solid var(--noche-linea);background:var(--noche);color:var(--noche-txt);padding:0 14px;font-size:16px;outline:0;transition:border-color .2s,box-shadow .3s}
+.campo input:focus{border-color:var(--senal)}
+.campo.relleno input{animation:rellena 1.6s var(--curva)}
+@keyframes rellena{0%{box-shadow:0 0 0 0 transparent;border-color:var(--senal)}25%{box-shadow:0 0 0 4px color-mix(in srgb,var(--senal) 35%,transparent);border-color:var(--senal)}100%{box-shadow:0 0 0 0 transparent}}
+.nota-form{color:var(--noche-txt-2)}
 .form-llamada input[type=tel]{width:100%;height:54px;border-radius:14px;border:1px solid var(--noche-linea);background:var(--noche);color:var(--noche-txt);padding:0 16px;font-size:18px;font-variant-numeric:tabular-nums;outline:0}
 .form-llamada input[type=tel]:focus{border-color:var(--senal)}
 .form-llamada .chips-form{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 16px}
@@ -532,22 +547,32 @@ p{margin:0}
   <div class="envol">
     <div class="cierre revela">
       <div style="position:relative;z-index:1">
-        <h2>¿Prefieres que <span class="acento">te llamemos</span>?</h2>
-        <p>Déjanos tu teléfono y te llamamos en horario de atención (<span id="horarioTxt"></span>). O llámanos tú:</p>
+        <h2>Pide tu técnico <span class="acento">en un minuto</span>.</h2>
+        <p>Rellena lo que sepas, o díselo a <span data-n="tecnico">Andrés</span> y lo va escribiendo él mientras habláis. Te llamamos en horario de atención (<span id="horarioTxt"></span>). O llámanos tú:</p>
         <a class="tel-grande" data-tel href="tel:+34958000000"><span data-n="telefono">958 00 00 00</span></a>
       </div>
       <div class="form-llamada" id="formLlamadaCaja">
-        <form id="formLlamada" novalidate>
-          <h3>Te llamamos</h3>
-          <p style="color:var(--noche-txt-2)">Solo necesitamos tu teléfono.</p>
-          <label for="telCliente">Tu teléfono</label>
-          <input id="telCliente" type="tel" inputmode="tel" autocomplete="tel" placeholder="600 000 000" required>
+        <form id="formSolicitud" novalidate>
+          <h3>Solicitud de técnico</h3>
+          <p class="nota-form">Solo el teléfono es obligatorio.</p>
+          <div class="campos">
+            <label class="campo ancho"><span>Teléfono <i>*</i></span><input id="f-telefono" type="tel" inputmode="tel" autocomplete="tel" placeholder="600 000 000" required></label>
+            <label class="campo"><span>Nombre</span><input id="f-nombre" autocomplete="given-name"></label>
+            <label class="campo"><span>Aparato</span><input id="f-aparato" list="lista-aparatos" placeholder="Lavadora, frigorífico…"></label>
+            <label class="campo"><span>Marca</span><input id="f-marca" list="lista-marcas"></label>
+            <label class="campo"><span>Código de error</span><input id="f-codigo" placeholder="Si sale alguno"></label>
+            <label class="campo ancho"><span>¿Qué le pasa?</span><input id="f-averia" placeholder="No centrifuga, no enfría…"></label>
+            <label class="campo ancho"><span>Dirección</span><input id="f-direccion" autocomplete="street-address"></label>
+            <label class="campo"><span>Municipio</span><input id="f-municipio" autocomplete="address-level2"></label>
+            <label class="campo"><span>Cuándo te viene bien</span><input id="f-franja" placeholder="Mañana por la tarde"></label>
+            <input type="hidden" id="f-modelo">
+          </div>
+          <datalist id="lista-aparatos"></datalist><datalist id="lista-marcas"></datalist>
           <input class="trampa" type="text" id="web" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <div class="chips-form" id="chipsForm" role="group" aria-label="¿Qué aparato? (opcional)"></div>
-          <button class="boton boton-senal" type="submit">Que me llamen</button>
-          <p class="legal">Usaremos tu teléfono solo para llamarte por esta avería. Más información en la <a href="privacidad.html">política de privacidad</a>.</p>
+          <button class="boton boton-senal" type="submit">Pedir técnico</button>
+          <p class="legal">Usaremos tus datos solo para atender esta avería. Más información en la <a href="privacidad.html">política de privacidad</a>.</p>
         </form>
-        <div class="form-ok"><h3>¡Hecho!</h3><p style="color:var(--noche-txt-2)">Te llamamos en cuanto podamos, dentro del horario de atención.</p></div>
+        <div class="form-ok"><h3>¡Solicitud recibida!</h3><p style="color:var(--noche-txt-2)">Te llamamos para confirmar la hora, dentro del horario de atención.</p></div>
       </div>
     </div>
     <div class="panel-dueno" id="panelDueno" hidden>
@@ -589,6 +614,7 @@ document.documentElement.lang = "es";
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 const SERVIDOR = ($('meta[name="servidor-tecnico"]')?.content || "").replace(/\/$/, "");
+const LK_TOKEN = $('meta[name="livekit-token"]')?.content || "";
 const reducir = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 /* ------------------------------------------------------------------
@@ -742,7 +768,7 @@ function cerrarEscucha() {
   if (consola.dataset.estado === "escuchando") estado("reposo");
   if (dicho) enviar(dicho, { porVoz: true });
 }
-btnMic.addEventListener("click", () => { escuchando ? pararEscucha() : empezarEscucha(); });
+btnMic.addEventListener("click", () => { if (LK_TOKEN) return llamada ? colgar() : llamar(); escuchando ? pararEscucha() : empezarEscucha(); });
 
 // ---- boca ----
 let vozActiva = true, hablandoNavegador = 0;
@@ -786,6 +812,7 @@ btnVoz.addEventListener("click", () => {
   btnVoz.setAttribute("aria-pressed", vozActiva);
   btnVoz.setAttribute("aria-label", vozActiva ? "Voz del técnico activada" : "Voz del técnico silenciada");
   if (!vozActiva) callar();
+  audioAgente.forEach(a => a.muted = !vozActiva);
 });
 
 // ---- cerebro ----
@@ -830,6 +857,7 @@ async function enviar(texto, { porVoz = false } = {}) {
   const imagen = fotoPendiente; quitarFoto();
   if (!texto && !imagen) return;
   if (!texto) texto = "Te envío una foto.";
+  if (llamada) { burbuja("cli", texto); llamada.localParticipant.sendText(texto, { topic: "lk.chat" }).catch(() => {}); return; }
   if (enCurso) enCurso.abort();
   callar();
   $("#chips").hidden = true;
@@ -886,7 +914,7 @@ function destino(d) {
   if (tipo === "garantia") return $(".lista-ok");
   if (tipo === "como") return $(".pasos");
   if (tipo === "marcas") return $("#marcasLista");
-  if (tipo === "contacto" || tipo === "llamada") return $("#formLlamadaCaja");
+  if (tipo === "contacto" || tipo === "llamada" || tipo === "formulario") return $("#formLlamadaCaja");
   if (tipo === "zona" || tipo === "plazo") { const det = $(tipo === "zona" ? "#faqZona" : "#faqPlazo")?.closest("details"); if (det) det.open = true; return det; }
   if (tipo === "codigos" || tipo === "codigo") {
     const v = valor.toUpperCase();
@@ -914,7 +942,7 @@ function actualizarMini() {
   if (ver) { barra.classList.remove("visible"); barra.setAttribute("aria-hidden", "true"); }
   return ver;
 }
-$("#miniMic").addEventListener("click", () => { escuchando ? pararEscucha() : empezarEscucha(); });
+$("#miniMic").addEventListener("click", () => { if (LK_TOKEN) return llamada ? colgar() : llamar(); escuchando ? pararEscucha() : empezarEscucha(); });
 $("#miniVolver").addEventListener("click", () => consola.scrollIntoView({ behavior: reducir ? "auto" : "smooth", block: "start" }));
 
 /* ------------------------------------------------------------------
@@ -924,9 +952,10 @@ const parte = $("#parte");
 const FASES = ["entendiendo", "orientando", "proponiendo", "datos", "registrado"];
 let fichaActual = {}, avisoHecho = false;
 parte.querySelector("#parteNum").textContent = "Nº " + String(Date.now()).slice(-5);
-function pintarFicha(f) {
+function pintarFicha(f, alFormulario = true) {
   fichaActual = { ...fichaActual, ...Object.fromEntries(Object.entries(f).filter(([, v]) => v)) };
   const F = fichaActual;
+  if (alFormulario) { ponerCampo("aparato", F.aparato); ponerCampo("marca", F.marca); ponerCampo("modelo", F.modelo); ponerCampo("averia", F.sintoma); ponerCampo("codigo", F.codigo); ponerCampo("nombre", F.nombre); ponerCampo("telefono", F.telefono); ponerCampo("franja", F.franja); }
   const valores = {
     aparato: [F.aparato, F.marca, F.modelo].filter(Boolean).join(" · "),
     sintoma: F.sintoma || "", codigo: F.codigo || "", diagnostico: F.diagnostico || "",
@@ -974,7 +1003,8 @@ function irConsola() {
 }
 $$("[data-hablar]").forEach(b => b.addEventListener("click", () => {
   irConsola();
-  if (b.hasAttribute("data-voz") && (dictado || RecWeb) && !btnMic.hidden && !escuchando && !sinCerebro) empezarEscucha();
+  if (b.hasAttribute("data-voz") && LK_TOKEN) { if (!llamada) llamar(); }
+  else if (b.hasAttribute("data-voz") && (dictado || RecWeb) && !btnMic.hidden && !escuchando && !sinCerebro) empezarEscucha();
   else txt.focus({ preventScroll: true });
 }));
 document.addEventListener("click", e => {
@@ -1004,20 +1034,41 @@ async function reducirFoto(file) {
   } catch { return { blob: file, dataUrl: null }; }
 }
 
-// formulario "te llamamos"
-let aparatoForm = "";
-$("#chipsForm").innerHTML = ["Lavadora", "Frigorífico", "Lavavajillas", "Horno", "Vitro / inducción", "Otro"].map(a => `<button type="button" class="chip" aria-pressed="false">${a}</button>`).join("");
-$$("#chipsForm .chip").forEach(c => c.addEventListener("click", () => {
-  $$("#chipsForm .chip").forEach(o => o.setAttribute("aria-pressed", o === c && c.getAttribute("aria-pressed") !== "true"));
-  aparatoForm = c.getAttribute("aria-pressed") === "true" ? c.textContent : "";
-}));
-$("#formLlamada").addEventListener("submit", async e => {
+// formulario de solicitud (lo rellena el cliente o el técnico mientras hablan)
+const CAMPOS_FORM = ["aparato", "marca", "modelo", "averia", "codigo", "nombre", "telefono", "direccion", "municipio", "franja"];
+$("#lista-aparatos").innerHTML = ["Lavadora", "Lavadora-secadora", "Secadora", "Lavavajillas", "Frigorífico", "Congelador", "Horno", "Vitrocerámica", "Placa de inducción", "Campana", "Microondas", "Termo eléctrico"].map(a => `<option value="${a}">`).join("");
+$("#lista-marcas").innerHTML = N.marcas.map(m => `<option value="${m}">`).join("");
+function datosFormulario() { return Object.fromEntries(CAMPOS_FORM.map(c => [c, ($("#f-" + c)?.value || "").trim()])); }
+function telefonoValido(t) { return /^(\+?34)?[6789]\d{8}$/.test(String(t).replace(/[^\d+]/g, "")); }
+function ponerCampo(campo, valor, resaltar) {
+  const el = $("#f-" + campo); if (!el || !valor || el.value === valor) return;
+  el.value = valor;
+  if (resaltar) { const c = el.closest(".campo"); c?.classList.remove("relleno"); void c?.offsetWidth; c?.classList.add("relleno"); }
+}
+function rellenarCampo(campo, valor) {
+  if (!CAMPOS_FORM.includes(campo)) return "error: campo desconocido";
+  valor = String(valor || "").trim().slice(0, 200);
+  ponerCampo(campo, valor, true);
+  const d = datosFormulario();
+  pintarFicha({ aparato: d.aparato, marca: d.marca, modelo: d.modelo, sintoma: d.averia, codigo: d.codigo, nombre: d.nombre, telefono: d.telefono, direccion: [d.direccion, d.municipio].filter(Boolean).join(", "), franja: d.franja, fase: "datos" }, false);
+  return "ok: escrito en pantalla";
+}
+async function enviarSolicitud({ tipo = "visita", urgente = false, notas = "", origen = "técnico virtual" } = {}) {
+  const d = datosFormulario();
+  const faltan = [["telefono", "teléfono"], ["nombre", "nombre"], ["municipio", "municipio"], ["averia", "avería"]].filter(([c]) => origen === "técnico virtual" ? !d[c] : c === "telefono" && !d[c]).map(([, t]) => t);
+  if (faltan.length) return "error: falta " + faltan.join(", ");
+  if (!telefonoValido(d.telefono)) return "error: el teléfono no parece un teléfono español de 9 cifras";
+  const guardado = await registrarAviso({ ...d, tipo, urgente, notas, origen });
+  $("#formLlamadaCaja").classList.add("enviado");
+  return guardado ? "ok: solicitud registrada" : "ok: preparada, pero sin conexión con el servidor; que la mande también por WhatsApp";
+}
+$("#formSolicitud").addEventListener("submit", async e => {
   e.preventDefault();
   if ($("#web").value) return;
-  const inp = $("#telCliente"); const tel = inp.value.replace(/[^\d+]/g, "");
-  if (!/^(\+?34)?[6789]\d{8}$/.test(tel)) { inp.setCustomValidity("Escribe un teléfono español de 9 cifras"); inp.reportValidity(); inp.setCustomValidity(""); return; }
-  await registrarAviso({ tipo: "llamada", telefono: tel, aparato: aparatoForm, origen: "formulario" });
-  $("#formLlamadaCaja").classList.add("enviado");
+  const inp = $("#f-telefono");
+  if (!telefonoValido(inp.value)) { inp.setCustomValidity("Escribe un teléfono español de 9 cifras"); inp.reportValidity(); inp.setCustomValidity(""); return; }
+  const d = datosFormulario();
+  await enviarSolicitud({ tipo: d.averia || d.aparato ? "visita" : "llamada", origen: "formulario" });
 });
 
 // panel del dueño (solo vista previa, solo el propietario)
@@ -1031,6 +1082,73 @@ pUser.then(async u => {
     $("#tablaAvisos").innerHTML = filas.length ? filas.map(a => `<tr><td>${esc(new Date(a.creado).toLocaleString("es-ES", { dateStyle: "short", timeStyle: "short" }))}</td><td>${esc(a.tipo)}</td><td>${esc(a.nombre)}</td><td>${esc(a.telefono)}</td><td>${esc([a.aparato, a.marca, a.averia, a.codigo].filter(Boolean).join(" · "))}<br><small>${esc(a.notas)}</small></td><td>${esc([a.direccion, a.municipio, a.franja].filter(Boolean).join(" · "))}</td></tr>`).join("") : '<tr><td colspan="6">Todavía no hay avisos.</td></tr>';
   }, () => {});
 });
+
+/* ------------------------------------------------------------------
+   7. Llamada de voz en directo (LiveKit): conversación continua, el
+      técnico puede interrumpirse, señala la página y rellena el formulario.
+------------------------------------------------------------------ */
+let llamada = null, audioAgente = [];
+const ESTADO_AGENTE = { initializing: "pensando", listening: "escuchando", thinking: "pensando", speaking: "hablando", idle: "reposo" };
+function cargarLiveKit() {
+  if (window.LivekitClient) return Promise.resolve(window.LivekitClient);
+  return new Promise((ok, ko) => {
+    const sc = document.createElement("script");
+    sc.src = "https://cdn.jsdelivr.net/npm/livekit-client@2.23.0/dist/livekit-client.umd.js";
+    sc.onload = () => ok(window.LivekitClient); sc.onerror = ko; document.head.append(sc);
+  });
+}
+async function llamar() {
+  if (llamada) return;
+  callar(); conversacionIniciada = true; actualizarMini(); $("#chips").hidden = true;
+  if (!turnos.length) chat.querySelector(".burbuja.tec")?.remove();
+  estado("pensando"); consola.dataset.llamada = mini.dataset.llamada = "conectando";
+  const nota = burbuja("sistema", "Conectando con " + N.tecnico + "…");
+  try {
+    const LK = await cargarLiveKit();
+    const res = await fetch(LK_TOKEN, { method: "POST" });
+    if (!res.ok) throw new Error("pase");
+    const { url, token } = await res.json();
+    const sala = new LK.Room({ adaptiveStream: true, dynacast: true });
+    llamada = sala;
+    const segmentos = new Map();
+    sala.registerTextStreamHandler("lk.transcription", async (lector, quien) => {
+      const at = lector.info.attributes || {};
+      const id = at["lk.segment_id"] || lector.info.id;
+      const esCliente = quien.identity === sala.localParticipant.identity;
+      let b = segmentos.get(id);
+      if (!b) { b = burbuja(esCliente ? "cli" : "tec"); segmentos.set(id, b); }
+      let texto = "";
+      for await (const trozo of lector) { texto += trozo; b.textContent = texto; textoMini(texto, esCliente); bajar(); }
+    });
+    sala.registerRpcMethod("senalar", async d => { senalar(JSON.parse(d.payload).destino); return "ok"; });
+    sala.registerRpcMethod("rellenar", async d => { const { campo, valor } = JSON.parse(d.payload); return rellenarCampo(campo, valor); });
+    sala.registerRpcMethod("enviar", async d => enviarSolicitud(JSON.parse(d.payload)));
+    sala.on(LK.RoomEvent.TrackSubscribed, pista => {
+      if (pista.kind !== "audio") return;
+      const el = pista.attach(); el.muted = !vozActiva; audioAgente.push(el); document.body.append(el);
+    });
+    sala.on(LK.RoomEvent.ParticipantAttributesChanged, (cambios) => {
+      const st = cambios["lk.agent.state"]; if (st) estado(ESTADO_AGENTE[st] || "reposo");
+    });
+    sala.on(LK.RoomEvent.Disconnected, finLlamada);
+    await sala.connect(url, token);
+    await sala.localParticipant.setMicrophoneEnabled(true);
+    consola.dataset.llamada = mini.dataset.llamada = "activa";
+    nota.textContent = "Llamada en curso: habla con normalidad, puedes interrumpirle. Pulsa el botón para colgar.";
+    btnMic.setAttribute("aria-label", "Colgar");
+  } catch (e) {
+    const sinMicro = /permission|notallowed/i.test(String(e?.name || e?.message || ""));
+    llamada?.disconnect(); llamada = null; consola.dataset.llamada = mini.dataset.llamada = ""; estado("reposo");
+    nota.textContent = sinMicro ? "Necesito permiso para usar el micrófono. Puedes escribirme abajo." : "No he podido conectar la llamada. Escríbeme aquí o llámanos al " + N.telefono + ".";
+  }
+}
+function colgar() { llamada?.disconnect(); }
+function finLlamada() {
+  if (!llamada) return;
+  audioAgente.forEach(a => a.remove()); audioAgente = []; llamada = null;
+  consola.dataset.llamada = mini.dataset.llamada = ""; estado("reposo"); btnMic.setAttribute("aria-label", "Hablar con el técnico");
+  burbuja("sistema", "Llamada terminada.");
+}
 
 /* ------------------------------------------------------------------
    6. Detalles: saludo, cabecera, barra móvil, apariciones

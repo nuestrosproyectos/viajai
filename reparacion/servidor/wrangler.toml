@@ -27,3 +27,8 @@ simple = { limit = 30, period = 60 }
 #   npx wrangler secret put TELEGRAM_TOKEN      (opcional)
 #   npx wrangler secret put TELEGRAM_CHAT       (opcional)
 #   npx wrangler secret put AVISOS_WEBHOOK      (opcional)
+#   Llamada de voz con LiveKit (opcional):
+#   npx wrangler secret put LIVEKIT_URL         (wss://TU-PROYECTO.livekit.cloud)
+#   npx wrangler secret put LIVEKIT_API_KEY
+#   npx wrangler secret put LIVEKIT_API_SECRET
+#   LIVEKIT_AGENTE (nombre del agente, por defecto "andres")
