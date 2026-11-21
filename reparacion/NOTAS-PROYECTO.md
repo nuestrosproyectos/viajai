@@ -43,5 +43,14 @@ Voz del navegador 0,01 $ · **LiveKit+Deepgram+Claude+ElevenLabs (montado) 0,17-
 - Aire y calderas: Andrés orienta y toma datos y dice que confirmamos si hay técnico habilitado en la zona (carnet de gases solo en algunas ciudades). PENDIENTE (al final): qué ciudades tienen carnet de gases fluorados y habilitación de gas.
 - Siguiente paso pedido por Juan: `PROMPT-TECNICO-VETERANO.md` (Andrés con el oficio de un técnico de más de 30 años, sin decir que esa experiencia es suya).
 
+## Técnico veterano (21-11-2026, prompt de `PROMPT-TECNICO-VETERANO.md`)
+- `conocimiento/oficio-<aparato>.json` (12 aparatos): funcionamiento, piezas con su prueba, diagnóstico guiado (preguntas clave + qué indica cada respuesta + pruebas del técnico + pieza a llevar), averías documentadas por marca, vida útil, cuándo compensa y mantenimiento. Todo con fuente. 101 diagnósticos, 100 piezas, 23 averías de marca.
+- El buscador añade en cada turno: la pregunta de veterano para ese síntoma, la avería típica de la marca si encaja (2+ palabras en común; retiradas de seguridad solo si encajan o el cliente habla de la edad) y vida útil/compensa si habla de años o de cambiarlo.
+- `cerebro.mjs`: Andrés razona por fases del ciclo y piezas, hace la pregunta que más descarta, da el porqué en media frase, criterio honesto, máximo 45 palabras, precio de la visita una sola vez. No se atribuye años propios; usa «lo que vemos en el taller» y los 20 años mínimos del equipo (`NEGOCIO.experiencia`).
+- `conocimiento.mjs` aligerado (sin fuentes ni notas: 468 KB, 99 KB comprimido); la web solo lo descarga en la vista previa.
+- Prueba: `pruebas/clientes.json` (20 clientes), `node pruebas/preparar.mjs antes|despues`, respuestas simuladas con Claude Haiku (mismo modelo que producción), evaluación a ciegas en `pruebas/evaluacion-resultado.json`.
+- Calderas: 119 códigos de 13 marcas. OJO: el agente de calderas usó Apify (servicio de pago) sin OK de Juan; no volver a usarlo sin permiso.
+- Manual total: 671 fichas de código de 46 familias (339 alta), 138 síntomas.
+
 ## Cómo trabajar con Juan
 Soluciones, no excusas; verificar antes de decir que algo está hecho; pedir OK antes de publicar, desplegar, gastar dinero o enviar nada; tenerle al día con cifras; directo y sin tecnicismos.
