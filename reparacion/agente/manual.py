@@ -90,6 +90,16 @@ class Manual:
             for m in fam["marcas"]:
                 self.marca_a_familia.setdefault(m, []).append(fam["familia"])
         self.codigos_conocidos = {k for f in self.fichas for k in f["claves"]}
+        # Oficio de técnico veterano: diagnóstico guiado, averías típicas por marca, vida útil
+        self.oficio_diag, self.oficio_marca, self.oficio_vida = [], [], {}
+        for o in base.get("oficio", []):
+            for d in o.get("diagnostico", []):
+                raices = list(dict.fromkeys(normalizar(x) for x in [re.sub(r"\(.*?\)", "", d["sintoma"]), *d.get("palabras", [])]))
+                self.oficio_diag.append({**d, "aparato": o["aparato"], "tipo": "oficio", "raices": raices})
+            for a in o.get("averias_por_marca", []):
+                self.oficio_marca.append({**a, "aparato": o["aparato"], "tipo": "marca", "marcasN": [normalizar(m) for m in a["marcas"]], "clavesTexto": None})
+            if (o.get("vida_util") or {}).get("anos") or o.get("compensa_reparar"):
+                self.oficio_vida[o["aparato"]] = {"tipo": "vida", "aparato": o["aparato"], "anos": (o.get("vida_util") or {}).get("anos", ""), "compensa": o.get("compensa_reparar", "")}
 
     # ---- detección ----
     def candidatos_codigo(self, original: str) -> set:
@@ -204,10 +214,7 @@ class Manual:
         n_rec = " " + normalizar(recientes) + " "
         p_ult, p_rec = n_ult.strip().split(" "), n_rec.strip().split(" ")
         c_ult, c_rec = set(claves(ultimo)), set(claves(recientes))
-        puntuados = []
-        for s in self.sintomas:
-            if not aparato or not self.mismo_aparato(s, aparato):
-                continue  # sin aparato no se diagnostica por síntoma
+        def puntuar(s: dict) -> float:
             p = 0.0
             for r in s["raices"]:
                 if len(r) < 4:
@@ -231,12 +238,36 @@ class Manual:
                         p += 0.5
             if p and aparato and s["aparato"] == aparato:
                 p += 2
-            if p >= (6 if por_codigo else 3):
-                puntuados.append((s, p))
-        puntuados.sort(key=lambda x: -x[1])
-        por_sintoma = [s for s, _ in puntuados[: (1 if por_codigo else max_sintomas)]]
+            return p
 
-        fichas = por_codigo + por_sintoma
+        def elegir(lista: list, maximo: int) -> list:
+            puntuados = []
+            for s in lista:
+                if not aparato or not self.mismo_aparato(s, aparato):
+                    continue  # sin aparato no se diagnostica por síntoma
+                p = puntuar(s)
+                if p >= (6 if por_codigo else 3):
+                    puntuados.append((s, p))
+            puntuados.sort(key=lambda x: -x[1])
+            return [s for s, _ in puntuados[:maximo]]
+
+        por_sintoma = elegir(self.sintomas, 1 if por_codigo else max_sintomas)
+        por_oficio = elegir(self.oficio_diag, 1)
+        por_marca = []
+        if marca and aparato:
+            marca_n = normalizar(marca)
+            cand = []
+            for a in self.oficio_marca:
+                if a["aparato"] == aparato and marca_n in a["marcasN"]:
+                    p = sum(1 for w in claves(a["averia"]) if len(w) >= 4 and w in c_rec)
+                    if p >= 1:
+                        cand.append((a, p))
+            cand.sort(key=lambda x: -x[1])
+            por_marca = [a for a, _ in cand[:1]]
+        habla_de_edad = re.search(r" (\d+ anos|anos tiene|tiene ya|vieja|viejo|antigua|antiguo|compensa|merece la pena|vale la pena|nueva|nuevo|cambiarla|cambiarlo|comprar) ", n_rec)
+        por_vida = [self.oficio_vida[aparato]] if habla_de_edad and aparato and aparato in self.oficio_vida else []
+
+        fichas = por_codigo + por_sintoma + por_oficio + por_marca + por_vida
         return {"aparato": aparato, "marca": marca, "fichas": fichas, "texto": self.redactar(fichas, marca, aparato)}
 
     @staticmethod
@@ -255,6 +286,22 @@ class Manual:
                     t += f" Pieza que conviene llevar: {f['pieza_probable']}."
                 if f.get("confianza") != "alta":
                     t += " (Dato de confianza media: dilo con prudencia, puede variar según el modelo.)"
+            elif f["tipo"] == "oficio":
+                pregs = (f.get("preguntas_clave") or [])[:2]
+                t = f"- Cómo lo afinaría un técnico veterano («{f['sintoma']}»): "
+                if pregs:
+                    t += f"pregunta primero «{pregs[0]}»" + (f" y, si hace falta, «{pregs[1]}»" if len(pregs) > 1 else "") + ". "
+                t += f.get("como_descartan") or ""
+                if f.get("pruebas_tecnico"):
+                    t += f" En casa el técnico: {'; '.join(f['pruebas_tecnico'][:3])}."
+                if f.get("pieza_a_llevar"):
+                    t += f" Pieza a llevar: {f['pieza_a_llevar']}."
+            elif f["tipo"] == "marca":
+                t = f"- Avería típica documentada en {', '.join(f['marcas'])}" + (f" ({f['epoca']})" if f.get("epoca") else "") + f": {f['averia']}"
+                if f.get("confianza") != "alta":
+                    t += " (confianza media: dilo con prudencia)"
+            elif f["tipo"] == "vida":
+                t = f"- Vida útil media de {f['aparato']}: {f['anos'] or 'sin dato'} años. Cuándo compensa reparar: {f['compensa']}"
             else:
                 t = f"- Síntoma «{f['sintoma']}» en {f['aparato']}. Causas de más a menos frecuente: {'; '.join(f['causas'])}."
                 if f.get("que_puede_hacer_el_cliente"):

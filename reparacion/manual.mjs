@@ -132,7 +132,14 @@ export function preparar(base) {
   const marcaAFamilia = {};
   for (const fam of base.familias) for (const m of fam.marcas) (marcaAFamilia[m] ||= []).push(fam.familia);
   const codigosConocidos = new Set(fichas.flatMap(f => f.claves));
-  return { fichas, sintomas, marcaAFamilia, codigosConocidos, familias: base.familias, peligro: base.peligro || [] };
+  // Oficio de técnico veterano: diagnóstico guiado, averías típicas por marca, vida útil
+  const oficioDiag = [], oficioMarca = [], oficioVida = {};
+  for (const o of base.oficio || []) {
+    for (const d of o.diagnostico || []) oficioDiag.push({ ...d, aparato: o.aparato, tipo: "oficio", raices: [...new Set([d.sintoma.replace(/\(.*?\)/g, ""), ...(d.palabras || [])].map(normalizar))] });
+    for (const a of o.averias_por_marca || []) oficioMarca.push({ ...a, aparato: o.aparato, tipo: "marca", marcasN: a.marcas.map(normalizar), clavesTexto: claves(a.averia) });
+    if (o.vida_util?.anos || o.compensa_reparar) oficioVida[o.aparato] = { tipo: "vida", aparato: o.aparato, anos: o.vida_util?.anos || "", compensa: o.compensa_reparar || "" };
+  }
+  return { fichas, sintomas, marcaAFamilia, codigosConocidos, familias: base.familias, peligro: base.peligro || [], oficioDiag, oficioMarca, oficioVida };
 }
 
 const mismoAparato = (ficha, aparato) => !aparato || ficha.aparato === aparato ||
@@ -202,25 +209,37 @@ export function buscar(manual, turnos, { maxCodigos = 3, maxSintomas = 2 } = {})
   const nUlt = " " + normalizar(ultimo) + " ", nRec = " " + normalizar(recientes) + " ";
   const pUlt = nUlt.trim().split(" "), pRec = nRec.trim().split(" ");
   const cUlt = new Set(claves(ultimo)), cRec = new Set(claves(recientes));
-  // Sin aparato no se diagnostica por síntoma (el técnico pregunta primero qué aparato es)
-  const porSintoma = manual.sintomas.filter(s => aparato && mismoAparato(s, aparato))
-    .map(s => {
-      let p = 0;
-      for (const r of s.raices) {
-        if (r.length < 4) continue;
-        const n = r.split(" ").length;
-        if (nUlt.includes(" " + r + " ")) p += 3 + n;
-        else if (n > 1 && fraseFlexible(pUlt, r)) p += 2 + n;
-        else if (nRec.includes(" " + r + " ")) p += 1 + n / 2;
-        else if (n > 1 && fraseFlexible(pRec, r)) p += 0.5 + n / 2;
-        else { const k = cubre(cUlt, r); if (k >= 2) p += 1 + k; else if (k === 1 && (n === 1 || claves(r)[0].length >= 5)) p += 3; else if (cubre(cRec, r) >= 1) p += 0.5; }
-      }
-      if (p && aparato && s.aparato === aparato) p += 2;
-      return { s, p };
-    })
-    .filter(x => x.p >= (porCodigo.length ? 6 : 3)).sort((a, b) => b.p - a.p).slice(0, porCodigo.length ? 1 : maxSintomas).map(x => x.s);
+  const puntuar = s => {
+    let p = 0;
+    for (const r of s.raices) {
+      if (r.length < 4) continue;
+      const n = r.split(" ").length;
+      if (nUlt.includes(" " + r + " ")) p += 3 + n;
+      else if (n > 1 && fraseFlexible(pUlt, r)) p += 2 + n;
+      else if (nRec.includes(" " + r + " ")) p += 1 + n / 2;
+      else if (n > 1 && fraseFlexible(pRec, r)) p += 0.5 + n / 2;
+      else { const k = cubre(cUlt, r); if (k >= 2) p += 1 + k; else if (k === 1 && (n === 1 || claves(r)[0].length >= 5)) p += 3; else if (cubre(cRec, r) >= 1) p += 0.5; }
+    }
+    if (p && aparato && s.aparato === aparato) p += 2;
+    return p;
+  };
+  const elegir = (lista, max) => lista.filter(s => aparato && mismoAparato(s, aparato)) // sin aparato no se diagnostica por síntoma
+    .map(s => ({ s, p: puntuar(s) }))
+    .filter(x => x.p >= (porCodigo.length ? 6 : 3)).sort((a, b) => b.p - a.p).slice(0, max).map(x => x.s);
+  const porSintoma = elegir(manual.sintomas, porCodigo.length ? 1 : maxSintomas);
+  // Oficio: la pregunta y el razonamiento de un técnico veterano para ese síntoma
+  const porOficio = elegir(manual.oficioDiag || [], 1);
+  // Avería típica documentada de esa marca, solo si encaja con lo que cuenta el cliente
+  const marcaN = normalizar(marca);
+  const porMarca = marca && aparato ? (manual.oficioMarca || [])
+    .filter(a => a.aparato === aparato && a.marcasN.includes(marcaN))
+    .map(a => ({ a, p: a.clavesTexto.filter(w => w.length >= 4 && cRec.has(w)).length }))
+    .filter(x => x.p >= 1).sort((x, y) => y.p - x.p).slice(0, 1).map(x => x.a) : [];
+  // Vida útil y si compensa, cuando el cliente habla de la edad del aparato o de cambiarlo
+  const hablaDeEdad = / (\d+ anos|anos tiene|tiene ya|vieja|viejo|antigua|antiguo|compensa|merece la pena|vale la pena|nueva|nuevo|cambiarla|cambiarlo|comprar) /.test(nRec);
+  const porVida = hablaDeEdad && aparato && manual.oficioVida?.[aparato] ? [manual.oficioVida[aparato]] : [];
 
-  const fichas = [...porCodigo, ...porSintoma];
+  const fichas = [...porCodigo, ...porSintoma, ...porOficio, ...porMarca, ...porVida];
   return { aparato, marca, fichas, texto: redactar(fichas, marca, aparato) };
 }
 
@@ -235,6 +254,14 @@ function redactar(fichas, marca, aparato) {
         (f.pieza_probable ? ` Pieza que conviene llevar: ${f.pieza_probable}.` : "") +
         (f.confianza !== "alta" ? " (Dato de confianza media: dilo con prudencia, puede variar según el modelo.)" : "");
     }
+    if (f.tipo === "oficio") {
+      const pregs = (f.preguntas_clave || []).slice(0, 2);
+      return `- Cómo lo afinaría un técnico veterano («${f.sintoma}»): ${pregs.length ? `pregunta primero «${pregs[0]}»${pregs[1] ? ` y, si hace falta, «${pregs[1]}»` : ""}. ` : ""}${f.como_descartan || ""}` +
+        (f.pruebas_tecnico?.length ? ` En casa el técnico: ${f.pruebas_tecnico.slice(0, 3).join("; ")}.` : "") +
+        (f.pieza_a_llevar ? ` Pieza a llevar: ${f.pieza_a_llevar}.` : "");
+    }
+    if (f.tipo === "marca") return `- Avería típica documentada en ${f.marcas.join(", ")}${f.epoca ? ` (${f.epoca})` : ""}: ${f.averia}${f.confianza !== "alta" ? " (confianza media: dilo con prudencia)" : ""}`;
+    if (f.tipo === "vida") return `- Vida útil media de ${f.aparato}: ${f.anos || "sin dato"} años. Cuándo compensa reparar: ${f.compensa}`;
     return `- Síntoma «${f.sintoma}» en ${f.aparato}. Causas de más a menos frecuente: ${f.causas.join("; ")}.` +
       (f.que_puede_hacer_el_cliente ? ` El cliente puede comprobar: ${f.que_puede_hacer_el_cliente}` : "") +
       (f.pieza_probable ? ` Piezas que suele llevar el técnico: ${f.pieza_probable}.` : "") +

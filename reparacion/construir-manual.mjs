@@ -7,7 +7,7 @@ import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 const APARATOS = new Set(["lavadora", "lavadora-secadora", "secadora", "lavavajillas", "horno", "placa", "frigorifico", "congelador", "campana", "microondas", "termo", "aire", "caldera"]);
 const normal = t => String(t).toLowerCase().replace(/[^a-z0-9]+/g, "");
 const dir = new URL("./conocimiento/", import.meta.url);
-const familias = [], sintomas = [], peligro = [], avisos = [];
+const familias = [], sintomas = [], peligro = [], avisos = [], oficio = [];
 let compensa = "";
 
 // Nombres que llegan de la investigación y se unifican con los del buscador
@@ -46,6 +46,24 @@ for (const nombre of readdirSync(dir).filter(f => f.endsWith(".json") && f !== "
       if (d.notas) previa.notas = [previa.notas, d.notas].filter(Boolean).join(" ");
     } else familias.push({ familia: d.familia, marcas: d.marcas, notas: d.notas || "", codigos });
   }
+  if (nombre.startsWith("oficio-")) {
+    const conFuente = x => (x.fuente && /^https?:\/\//.test(x.fuente)) || (x.fuentes || []).some(u => /^https?:\/\//.test(u));
+    const o = {
+      aparato: APARATO_ALIAS[d.aparato] || d.aparato,
+      funcionamiento: d.funcionamiento || "",
+      componentes: (d.componentes || []).filter(conFuente),
+      diagnostico: (d.diagnostico || []).filter(x => x.sintoma && conFuente(x)),
+      averias_por_marca: (d.averias_por_marca || []).filter(x => x.marcas?.length && x.averia && conFuente(x)).map(x => ({ ...x, marcas: x.marcas.flatMap(m => MARCA_ALIAS[m] || [m]) })),
+      vida_util: d.vida_util || null,
+      compensa_reparar: d.compensa_reparar || "",
+      mantenimiento: d.mantenimiento || []
+    };
+    if (!APARATOS.has(o.aparato)) { avisos.push(`${nombre}: aparato desconocido ${o.aparato}`); continue; }
+    const quitados = (d.diagnostico || []).length - o.diagnostico.length + (d.averias_por_marca || []).length - o.averias_por_marca.length + (d.componentes || []).length - o.componentes.length;
+    if (quitados) avisos.push(`${nombre}: ${quitados} entradas sin fuente descartadas`);
+    oficio.push(o);
+    continue;
+  }
   if (d.sintomas) {
     for (const s of d.sintomas) {
       if (!APARATOS.has(s.aparato) || !s.sintoma || !s.causas?.length || !s.fuentes?.length) { avisos.push(`${nombre}: síntoma descartado ${s.aparato} ${s.sintoma}`); continue; }
@@ -64,12 +82,13 @@ for (const x of extra) {
   else avisos.push(`sinonimos.json: no encuentro el síntoma «${x.sintoma}» (${x.aparato})`);
 }
 
-const base = { generado: new Date().toISOString().slice(0, 10), familias, sintomas, peligro, compensa_reparar: compensa };
+const base = { generado: new Date().toISOString().slice(0, 10), familias, sintomas, peligro, compensa_reparar: compensa, oficio };
 writeFileSync(new URL("./conocimiento.mjs", import.meta.url),
   "// GENERADO por construir-manual.mjs a partir de conocimiento/*.json. No editar a mano.\n" +
   "export default " + JSON.stringify(base, null, 1) + ";\n");
 
 const n = familias.reduce((a, f) => a + f.codigos.length, 0);
 console.log(`Manual: ${familias.length} familias, ${n} fichas de código (${familias.reduce((a, f) => a + f.codigos.filter(c => c.confianza === "alta").length, 0)} de confianza alta), ${sintomas.length} síntomas.`);
+if (oficio.length) console.log(`Oficio: ${oficio.map(o => `${o.aparato} (${o.diagnostico.length} diagnósticos, ${o.componentes.length} piezas, ${o.averias_por_marca.length} averías de marca)`).join("; ")}`);
 for (const f of familias) console.log(`  ${f.familia} (${f.marcas.join(", ")}): ${f.codigos.length}`);
 if (avisos.length) console.log("Avisos:\n  " + avisos.join("\n  "));
