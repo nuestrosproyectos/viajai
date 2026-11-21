@@ -14,7 +14,7 @@
 export const APARATOS = {
   "lavadora-secadora": ["lavadora secadora", "lavasecadora", "lava seca", "lavadora y secadora"],
   lavadora: ["lavadora", "lavarropas"],
-  secadora: ["secadora", "bomba de calor"],
+  secadora: ["secadora"],
   lavavajillas: ["lavavajillas", "lavaplatos", "friegaplatos", "lava vajillas"],
   congelador: ["congelador", "arcon", "arcon congelador"],
   frigorifico: ["frigorifico", "frigo", "nevera", "combi", "americano", "no frost", "refrigerador", "frigorifica"],
@@ -22,7 +22,9 @@ export const APARATOS = {
   placa: ["placa", "vitro", "vitroceramica", "induccion", "fuego", "fuegos", "fogon", "fogones"],
   campana: ["campana", "extractor"],
   microondas: ["microondas", "micro ondas"],
-  termo: ["termo", "calentador electrico", "acumulador", "termo electrico"]
+  termo: ["termo", "calentador electrico", "acumulador", "termo electrico"],
+  aire: ["aire acondicionado", "acondicionado", "split", "climatizador", "bomba de calor", "maquina de aire", "aparato de aire", "consola de aire", "aire por conductos", "conductos", "mi aire", "el aire no", "el aire se", "el aire hace", "el aire pierde", "el aire gotea", "el aire pita", "el aire echa", "el aire tira"],
+  caldera: ["caldera", "calderas", "calentador", "calentador de gas", "caldera de gas", "caldera de condensacion", "calefaccion", "radiadores", "radiador", "suelo radiante"]
 };
 
 // Marcas y cómo se las nombra (incluidos errores típicos del dictado por voz)
@@ -35,7 +37,16 @@ export const MARCAS = {
   LG: ["lg", "ele ge", "elege", "ele je"], Samsung: ["samsung", "sansun", "samsun", "sansung"],
   Hisense: ["hisense", "haisens", "hisens"], Gorenje: ["gorenje", "gorenye"], Daewoo: ["daewoo", "daewo", "deu"], Winia: ["winia"],
   Beko: ["beko", "veko"], Grundig: ["grundig"], Teka: ["teka", "teca"], Fagor: ["fagor"], Edesa: ["edesa"], Aspes: ["aspes"],
-  Cata: ["cata"], Liebherr: ["liebherr", "liber", "lieber", "liebher"], Miele: ["miele", "mile", "mielle"], Smeg: ["smeg", "esmeg"]
+  Cata: ["cata"], Liebherr: ["liebherr", "liber", "lieber", "liebher"], Miele: ["miele", "mile", "mielle"], Smeg: ["smeg", "esmeg"],
+  // Aire acondicionado
+  Daikin: ["daikin", "daikín", "daiquin", "daikim"], "Mitsubishi Electric": ["mitsubishi electric", "mitsubishi"], "Mitsubishi Heavy": ["mitsubishi heavy", "heavy"],
+  Fujitsu: ["fujitsu", "fujitsu general", "fuyitsu"], Panasonic: ["panasonic"], Toshiba: ["toshiba"], Gree: ["gree", "gri"], Midea: ["midea", "midia"],
+  Hitachi: ["hitachi", "jitachi"], Johnson: ["johnson", "yonson"], Kaysun: ["kaysun", "keisun"],
+  // Calderas
+  Vaillant: ["vaillant", "vailant", "vaillan", "bailan", "vaylant"], "Saunier Duval": ["saunier duval", "saunier", "sonier duval", "sonier", "duval"],
+  Junkers: ["junkers", "yunkers", "junker"], Baxi: ["baxi", "baxiroca", "baxi roca"], Roca: ["roca"], Ferroli: ["ferroli", "ferrolli"], Cointra: ["cointra"],
+  Chaffoteaux: ["chaffoteaux", "chafoteaux", "chafoto"], Immergas: ["immergas", "inmergas"], Beretta: ["beretta", "bereta"], Viessmann: ["viessmann", "viesman", "vissman"],
+  Domusa: ["domusa"], Wolf: ["wolf"], Manaut: ["manaut"], Thermor: ["thermor", "termor"], Hermann: ["hermann", "herman"]
 };
 
 // Palabras de número que da el dictado ("e quince", "f cero cinco")
@@ -46,6 +57,7 @@ export const NUMEROS = {
   veintisiete: 27, veintiocho: 28, veintinueve: 29, treinta: 30, cuarenta: 40, cincuenta: 50, sesenta: 60, setenta: 70,
   ochenta: 80, noventa: 90
 };
+export const CENTENAS = { cien: 100, ciento: 100, doscientos: 200, trescientos: 300, cuatrocientos: 400, quinientos: 500, seiscientos: 600, setecientos: 700, ochocientos: 800, novecientos: 900 };
 export const LETRAS = { efe: "f", hache: "h", ele: "l", eme: "m", ene: "n", erre: "r", ese: "s", te: "t", uve: "v", be: "b", ce: "c", de: "d", pe: "p", jota: "j", ka: "k", equis: "x" };
 
 export const normalizar = t => String(t || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
@@ -61,12 +73,15 @@ function candidatosCodigo(original) {
   const conv = [];
   for (let i = 0; i < palabras.length; i++) {
     const p = palabras[i];
-    if (p in NUMEROS) {
-      let v = NUMEROS[p];
-      if (v >= 30 && v % 10 === 0 && palabras[i + 1] === "y" && palabras[i + 2] in NUMEROS && NUMEROS[palabras[i + 2]] < 10) { v += NUMEROS[palabras[i + 2]]; i += 2; }
+    if (p in NUMEROS || p in CENTENAS) {
       // "cero cinco" -> 05
-      if (v === 0 && palabras[i + 1] in NUMEROS && NUMEROS[palabras[i + 1]] < 10) { conv.push("0" + NUMEROS[palabras[i + 1]]); i++; continue; }
-      conv.push(String(v));
+      if (p === "cero" && palabras[i + 1] in NUMEROS && NUMEROS[palabras[i + 1]] < 10) { conv.push("0" + NUMEROS[palabras[i + 1]]); i++; continue; }
+      // "ciento treinta y tres" -> 133, "quinientos uno" -> 501, "cuarenta y dos" -> 42
+      let v = 0;
+      if (p in CENTENAS) { v = CENTENAS[p]; if (!(palabras[i + 1] in NUMEROS)) { conv.push(String(v)); continue; } i++; }
+      let n = NUMEROS[palabras[i]];
+      if (n >= 30 && n % 10 === 0 && palabras[i + 1] === "y" && palabras[i + 2] in NUMEROS && NUMEROS[palabras[i + 2]] < 10) { n += NUMEROS[palabras[i + 2]]; i += 2; }
+      conv.push(String(v + n));
     } else conv.push(LETRAS[p] && i > 0 && /^(un|una|la|el|pone|sale|marca|error|codigo|aparece|y)$/.test(palabras[i - 1]) ? LETRAS[p] : p);
   }
   const t = " " + conv.join(" ") + " ";
@@ -124,7 +139,8 @@ export function buscar(manual, turnos, { maxCodigos = 3, maxSintomas = 2 } = {})
   const recientes = delCliente.slice(-3).join(" \n ");
   const todo = delCliente.join(" \n ");
 
-  const aparato = detectarEn(ultimo, APARATOS)[0] || detectarEn(todo, APARATOS)[0] || "";
+  let aparato = detectarEn(ultimo, APARATOS)[0] || detectarEn(todo, APARATOS)[0] || "";
+  if (aparato === "aire" && / secadora (de |con )?bomba de calor /.test(" " + normalizar(todo) + " ") && !/ (split|aire acondicionado|acondicionado) /.test(" " + normalizar(todo) + " ")) aparato = "secadora";
   const marca = detectarEn(ultimo, MARCAS)[0] || detectarEn(todo, MARCAS)[0] || "";
   const familias = marca ? (manual.marcaAFamilia[marca] || []) : [];
 

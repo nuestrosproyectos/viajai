@@ -34,6 +34,7 @@ class Manual:
         self.marcas: dict = d["MARCAS"]
         self.numeros: dict = d["NUMEROS"]
         self.letras: dict = d["LETRAS"]
+        self.centenas: dict = d["CENTENAS"]
         base = datos["conocimiento"]
         self.fichas = []
         for fam in base["familias"]:
@@ -59,16 +60,26 @@ class Manual:
         i = 0
         while i < len(palabras):
             p = palabras[i]
-            if p in N:
-                v = N[p]
-                if v >= 30 and v % 10 == 0 and i + 2 < len(palabras) and palabras[i + 1] == "y" and palabras[i + 2] in N and N[palabras[i + 2]] < 10:
-                    v += N[palabras[i + 2]]
-                    i += 2
-                if v == 0 and i + 1 < len(palabras) and palabras[i + 1] in N and N[palabras[i + 1]] < 10:
-                    conv.append("0" + str(N[palabras[i + 1]]))
+            C = self.centenas
+            sig = lambda k: palabras[k] if k < len(palabras) else ""
+            if p in N or p in C:
+                if p == "cero" and sig(i + 1) in N and N[sig(i + 1)] < 10:
+                    conv.append("0" + str(N[sig(i + 1)]))
                     i += 2
                     continue
-                conv.append(str(v))
+                v = 0
+                if p in C:
+                    v = C[p]
+                    if sig(i + 1) not in N:
+                        conv.append(str(v))
+                        i += 1
+                        continue
+                    i += 1
+                n = N[palabras[i]]
+                if n >= 30 and n % 10 == 0 and sig(i + 1) == "y" and sig(i + 2) in N and N[sig(i + 2)] < 10:
+                    n += N[sig(i + 2)]
+                    i += 2
+                conv.append(str(v + n))
             else:
                 previa = palabras[i - 1] if i > 0 else ""
                 if p in L and i > 0 and re.fullmatch(r"un|una|la|el|pone|sale|marca|error|codigo|aparece|y", previa):
@@ -126,6 +137,9 @@ class Manual:
         todo = " \n ".join(del_cliente)
 
         aparato = (self.detectar_en(ultimo, self.aparatos) or self.detectar_en(todo, self.aparatos) or [""])[0]
+        nt = " " + normalizar(todo) + " "
+        if aparato == "aire" and re.search(r" secadora (de |con )?bomba de calor ", nt) and not re.search(r" (split|aire acondicionado|acondicionado) ", nt):
+            aparato = "secadora"
         marca = (self.detectar_en(ultimo, self.marcas) or self.detectar_en(todo, self.marcas) or [""])[0]
         familias = self.marca_a_familia.get(marca, []) if marca else []
 

@@ -4,7 +4,7 @@
 // Uso: node construir-manual.mjs
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 
-const APARATOS = new Set(["lavadora", "lavadora-secadora", "secadora", "lavavajillas", "horno", "placa", "frigorifico", "congelador", "campana", "microondas", "termo"]);
+const APARATOS = new Set(["lavadora", "lavadora-secadora", "secadora", "lavavajillas", "horno", "placa", "frigorifico", "congelador", "campana", "microondas", "termo", "aire", "caldera"]);
 const dir = new URL("./conocimiento/", import.meta.url);
 const familias = [], sintomas = [], peligro = [], avisos = [];
 let compensa = "";
