@@ -2,3 +2,4 @@
 # Datos personales de clientes: nunca al repositorio
 lia-web/data/perfiles.jsonl
 lia-web/lia-vista-previa.html
+__pycache__/
