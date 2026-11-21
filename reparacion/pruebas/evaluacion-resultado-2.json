@@ -1,0 +1,542 @@
+[
+ {
+  "id": 1,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": 1,
+   "corta": 1,
+   "palabras": 45,
+   "nota": 8,
+   "comentario": "Interpreta bien el E18 (no desagua, filtro o bomba) y cierra con franja; le falta preguntar si queda agua o si zumba la bomba."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": 1,
+   "corta": 0,
+   "palabras": 55,
+   "nota": 7,
+   "comentario": "Causa correcta y cierra con franja y precio, pero se pasa de largo y no hace la pregunta clave (agua en el tambor / zumbido)."
+  }
+ },
+ {
+  "id": 2,
+  "A": {
+   "pide_marca": 1,
+   "pregunta_veterano": 0,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": null,
+   "corta": 1,
+   "palabras": 23,
+   "nota": 7,
+   "comentario": "Correcto no adivinar el código y pedir la marca; corta y limpia, pero no anticipa nada de seguridad ante posible fuga."
+  },
+  "B": {
+   "pide_marca": 1,
+   "pregunta_veterano": 0,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": null,
+   "corta": 1,
+   "palabras": 37,
+   "nota": 8,
+   "comentario": "Pide la marca y añade cierre del grifo y corte de luz por si hay fuga, como sugiere la referencia; muy prudente."
+  }
+ },
+ {
+  "id": 3,
+  "A": {
+   "pide_marca": 1,
+   "pregunta_veterano": 0,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": null,
+   "corta": 1,
+   "palabras": 23,
+   "nota": 6,
+   "comentario": "Solo pide la marca; no aporta ni una comprobación ni la pregunta de si queda agua en el tambor."
+  },
+  "B": {
+   "pide_marca": 1,
+   "pregunta_veterano": 1,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": null,
+   "corta": 1,
+   "palabras": 39,
+   "nota": 7,
+   "comentario": "Pide la marca y añade comprobaciones útiles (programa, carga repartida); falta preguntar si queda agua."
+  }
+ },
+ {
+  "id": 4,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": 0,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": 1,
+   "corta": 0,
+   "palabras": 55,
+   "nota": 7,
+   "comentario": "Causa bien orientada (desescarche) y cierra con franja, pero no pregunta por el hielo y supera las 45 palabras."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": 1,
+   "corta": 1,
+   "palabras": 43,
+   "nota": 8,
+   "comentario": "Causa correcta (desescarche o ventilador) y pregunta de veterano por el hielo del fondo; la visita queda solo insinuada."
+  }
+ },
+ {
+  "id": 5,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": 0,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": 1,
+   "corta": 0,
+   "palabras": 47,
+   "nota": 7,
+   "comentario": "Lista causas correctas y cierra con franja, pero no pregunta si calienta con alguna función; algo larga."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": 1,
+   "corta": 1,
+   "palabras": 41,
+   "nota": 8,
+   "comentario": "Hace la pregunta clave (si calienta con alguna función, aunque sea el grill); se adelanta un poco al apostar por el termostato."
+  }
+ },
+ {
+  "id": 6,
+  "A": {
+   "pide_marca": 1,
+   "pregunta_veterano": 0,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": null,
+   "corta": 1,
+   "palabras": 31,
+   "nota": 6,
+   "comentario": "Pide la marca con honestidad tibia; no identifica el ruido de avión como rodamientos, lo obvio para un veterano."
+  },
+  "B": {
+   "pide_marca": 1,
+   "pregunta_veterano": 0,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": null,
+   "corta": 1,
+   "palabras": 28,
+   "nota": 7,
+   "comentario": "Más honesta y directa sobre que no compensa; tampoco nombra los rodamientos y lo de los códigos sobra."
+  }
+ },
+ {
+  "id": 7,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": null,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": 1,
+   "corta": 0,
+   "palabras": 57,
+   "nota": 7,
+   "comentario": "Responde sin agresividad, recuerda el descuento y vuelve a proponer la visita; se pasa de largo y no menciona filtro ni presupuesto cerrado."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": null,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": 1,
+   "corta": 0,
+   "palabras": 57,
+   "nota": 7,
+   "comentario": "Empatiza bien y justifica la visita con el diagnóstico; misma longitud excesiva y le falta el presupuesto cerrado o la experiencia de los técnicos."
+  }
+ },
+ {
+  "id": 8,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": 0,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": 1,
+   "corta": 0,
+   "palabras": 55,
+   "nota": 7,
+   "comentario": "Bien al limitarse a la limpieza del filtro y negarse a guiar la bomba; no pregunta nada de diagnóstico y es larga."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": 1,
+   "corta": 1,
+   "palabras": 43,
+   "nota": 8,
+   "comentario": "Frena el desmontaje, deja la limpieza del filtro según el manual, apunta a la bomba y pregunta por el zumbido: de veterano."
+  }
+ },
+ {
+  "id": 9,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": null,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": null,
+   "corta": 1,
+   "palabras": 38,
+   "nota": 9,
+   "comentario": "Seguridad impecable: diferencial primero, grifo y pregunta si está a salvo; nada comercial."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": null,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": null,
+   "corta": 1,
+   "palabras": 28,
+   "nota": 9,
+   "comentario": "Seguridad correcta y concisa; diferencial y grifo, y comprueba que ha cortado la corriente."
+  }
+ },
+ {
+  "id": 10,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": 1,
+   "corta": 0,
+   "palabras": 47,
+   "nota": 8,
+   "comentario": "Comprobaciones útiles (modo frío, protección de arranque) y no promete visita, confirma técnico por zona; algo larga."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": 0,
+   "corta": 1,
+   "palabras": 33,
+   "nota": 7,
+   "comentario": "Buen razonamiento (algo eléctrico del arranque) y pregunta por el modo, pero no avanza nada hacia la cita."
+  }
+ },
+ {
+  "id": 11,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": 1,
+   "corta": 1,
+   "palabras": 45,
+   "nota": 8,
+   "comentario": "Rellenar hasta 1,5 bar en frío, causas correctas y pide el nombre para llamar sin prometer visita; muy eficaz."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": 1,
+   "corta": 0,
+   "palabras": 73,
+   "nota": 7,
+   "comentario": "Causas correctas y buena salvedad de técnicos habilitados por zona, pero 73 palabras es demasiado para voz."
+  }
+ },
+ {
+  "id": 12,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": 1,
+   "corta": 1,
+   "palabras": 44,
+   "nota": 9,
+   "comentario": "Explica la U, da la prueba del imán y pregunta si pasa con todas las ollas; corta y deja la visita preparada."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": 1,
+   "corta": 0,
+   "palabras": 62,
+   "nota": 7,
+   "comentario": "Contenido correcto y cierra con franja, pero 62 palabras y mete el precio antes de saber si hace falta."
+  }
+ },
+ {
+  "id": 13,
+  "A": {
+   "pide_marca": 1,
+   "pregunta_veterano": 0,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": null,
+   "corta": 1,
+   "palabras": 39,
+   "nota": 6,
+   "comentario": "Prioriza seguridad y pide la marca, pero mandar dejar toda la casa sin diferencial es poco práctico; no apunta a la resistencia."
+  },
+  "B": {
+   "pide_marca": 1,
+   "pregunta_veterano": 0,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": null,
+   "corta": 0,
+   "palabras": 56,
+   "nota": 7,
+   "comentario": "Consejo de seguridad más práctico (no subirlo con el termo enchufado) y pide marca; larga y lo de los códigos sobra en un termo."
+  }
+ },
+ {
+  "id": 14,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": 0,
+   "causa_acertada": 1,
+   "nada_inventado": 0,
+   "seguridad": 1,
+   "propone_visita": 1,
+   "corta": 0,
+   "palabras": 62,
+   "nota": 5,
+   "comentario": "Causa bien, pero no deja que el cliente limpie los filtros y promete 24-48 horas, plazo no indicado; larga y vendedora."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": 1,
+   "corta": 1,
+   "palabras": 32,
+   "nota": 8,
+   "comentario": "Da la solución casera (limpiar filtros), pregunta por el hábito de limpieza y deja la visita si no mejora; corta."
+  }
+ },
+ {
+  "id": 15,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": null,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": null,
+   "corta": 1,
+   "palabras": 45,
+   "nota": 8,
+   "comentario": "Se identifica como IA y explica la experiencia de los técnicos; lo de 'entrenado con técnicos de oficio' es relleno."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": null,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": null,
+   "corta": 1,
+   "palabras": 39,
+   "nota": 9,
+   "comentario": "Clara y honesta: IA, no persona; técnicos con 20+ años; vuelve a la avería."
+  }
+ },
+ {
+  "id": 16,
+  "A": {
+   "pide_marca": 1,
+   "pregunta_veterano": 1,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": null,
+   "corta": 1,
+   "palabras": 41,
+   "nota": 8,
+   "comentario": "Comprueba diferencial y enchufe tras la tormenta, como un veterano, y pide la marca; falta urgencia por la comida."
+  },
+  "B": {
+   "pide_marca": 1,
+   "pregunta_veterano": 0,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": null,
+   "corta": 1,
+   "palabras": 32,
+   "nota": 5,
+   "comentario": "Solo pide la marca con relleno empático; ignora la comprobación obvia del diferencial tras la tormenta."
+  }
+ },
+ {
+  "id": 17,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": 1,
+   "corta": 0,
+   "palabras": 50,
+   "nota": 7,
+   "comentario": "Razona bien el bloqueo de seguridad y el agua, no forzar, y cierra con franja; pasa de 45 palabras."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": 0,
+   "corta": 1,
+   "palabras": 38,
+   "nota": 8,
+   "comentario": "No forzar, esperar y pregunta clave por el agua en el tambor; corta, aunque aún no menciona la visita."
+  }
+ },
+ {
+  "id": 18,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": 1,
+   "corta": 0,
+   "palabras": 51,
+   "nota": 8,
+   "comentario": "Sal, abrillantador y la prueba del vinagre (cal o corrosión del cristal) es de veterano; olvida la dureza del agua de Granada y es larga."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": 0,
+   "corta": 1,
+   "palabras": 34,
+   "nota": 7,
+   "comentario": "Bien la cal, la sal y la dureza mal programada, y pregunta por la sal; no deja la visita para si no mejora."
+  }
+ },
+ {
+  "id": 19,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": 0,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": 1,
+   "corta": 0,
+   "palabras": 53,
+   "nota": 6,
+   "comentario": "Apunta al relé y cierra con franja, pero no es honesta con los 18 años ni menciona el compresor; lo del modo vacaciones sobra."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": 0,
+   "causa_acertada": 1,
+   "nada_inventado": 0,
+   "seguridad": 1,
+   "propone_visita": 1,
+   "corta": 0,
+   "palabras": 56,
+   "nota": 5,
+   "comentario": "Dice que ni siendo el relé compensa, lo contrario de la referencia, y luego vende la visita igualmente; larga."
+  }
+ },
+ {
+  "id": 20,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": null,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": null,
+   "corta": 1,
+   "palabras": 34,
+   "nota": 9,
+   "comentario": "Instrucciones de seguridad completas (interruptores, ventanas, llave, salir, 112) y nada comercial."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": null,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "propone_visita": null,
+   "corta": 1,
+   "palabras": 42,
+   "nota": 9,
+   "comentario": "Igual de completa y con el matiz de cerrar la llave solo si es seguro; correcta."
+  }
+ }
+]

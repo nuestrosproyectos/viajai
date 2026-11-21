@@ -50,6 +50,7 @@ Voz del navegador 0,01 $ · **LiveKit+Deepgram+Claude+ElevenLabs (montado) 0,17-
 - `conocimiento.mjs` aligerado (sin fuentes ni notas: 468 KB, 99 KB comprimido); la web solo lo descarga en la vista previa.
 - Prueba: `pruebas/clientes.json` (20 clientes), `node pruebas/preparar.mjs antes|despues`, respuestas simuladas con Claude Haiku (mismo modelo que producción), evaluación a ciegas en `pruebas/evaluacion-resultado.json`.
 - Calderas: 119 códigos de 13 marcas. OJO: el agente de calderas usó Apify (servicio de pago) sin OK de Juan; no volver a usarlo sin permiso.
+- Resultado (evaluación a ciegas, Claude Haiku, 20 clientes): pregunta de veterano 6/16 → 12/16; 45 palabras o menos 7/20 → 18/20 (media 47,5 → 40,1); nota del dueño 7,05 → 7,65; causa, seguridad, marca y nada inventado se mantienen; visita 12/12 → 9/12 en la 2.ª versión. Corregido después (criterio de pieza barata/cara para si compensa, diferencial sin dejar la casa sin luz, visita mencionada junto a la pregunta): los 6 casos que fallaban salen bien en la 3.ª prueba. Pendiente: repetir la medición completa de 20 cuando haya cambios grandes.
 - Manual total: 671 fichas de código de 46 familias (339 alta), 138 síntomas.
 
 ## Cómo trabajar con Juan
