@@ -608,7 +608,7 @@ p{margin:0}
 </div>
 
 <script type="module">
-import { NEGOCIO as N, saludo, instrucciones } from "./cerebro.mjs";
+import { NEGOCIO as N, saludo, instrucciones, lista } from "./cerebro.mjs";
 import { preparar, buscar } from "./manual.mjs";
 import CONOCIMIENTO from "./conocimiento.mjs";
 const MANUAL = preparar(CONOCIMIENTO);
@@ -631,7 +631,7 @@ $("#garantiaTxt").textContent = (N.garantia.match(/^\d+\s+\w+/) || ["3 meses"])[
 $("#horarioTxt").textContent = N.horario;
 $("#pieHorario").textContent = "Atención: " + N.horario + ". El técnico virtual, 24 h.";
 $("#faqZona").textContent = N.zona + ". Si estás fuera, pregúntale a " + N.tecnico + ": te confirmamos si llegamos.";
-$("#noReparamos").textContent = "No reparamos " + N.noReparamos.join(", ") + ".";
+$("#noReparamos").textContent = "También reparamos " + lista(N.climaYCalefaccion.aparatos) + " en las zonas con técnico habilitado (te lo confirmamos al llamarte). No reparamos " + lista(N.noReparamos) + ".";
 $("#marcasLista").innerHTML = N.marcas.map(m => `<span>${m}</span>`).join("");
 
 const ICONOS = {

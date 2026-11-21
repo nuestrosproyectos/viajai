@@ -26,7 +26,15 @@ export const NEGOCIO = {
     "frigoríficos y combis", "congeladores", "hornos", "vitrocerámicas y placas de inducción",
     "campanas extractoras", "microondas", "termos eléctricos"
   ],
-  noReparamos: ["calderas, calentadores y cocinas de gas", "aire acondicionado", "pequeño electrodoméstico (cafeteras, aspiradoras, planchas)", "televisores y electrónica"],
+  noReparamos: ["pequeño electrodoméstico (cafeteras, aspiradoras, planchas)", "televisores", "electrónica"],
+  // Aire acondicionado y calderas: solo con técnicos con carnet de gases fluorados / habilitación de gas,
+  // que no hay en todas las zonas. Andrés orienta, toma los datos y el equipo confirma si llega.
+  // PENDIENTE: lista de municipios donde sí hay técnico habilitado (para que Andrés lo confirme al momento).
+  climaYCalefaccion: {
+    aparatos: ["aire acondicionado", "bombas de calor", "calderas", "calentadores de gas"],
+    zonasConfirmadas: [],
+    condicion: "con técnicos que tienen el carnet de gases fluorados (aire acondicionado) o la habilitación de gas (calderas), que no están en todas las zonas"
+  },
   marcas: [
     "Bosch", "Balay", "Siemens", "Neff", "LG", "Samsung", "Whirlpool", "Indesit", "Hotpoint",
     "Beko", "Teka", "Fagor", "Edesa", "AEG", "Electrolux", "Zanussi", "Candy", "Hoover",
@@ -49,6 +57,9 @@ export const NEGOCIO = {
     ["Termo eléctrico: resistencia o termostato", "80 y 130 €"]
   ]
 };
+
+// "a, b, c y d"
+export const lista = xs => xs.length > 1 ? xs.slice(0, -1).join(", ") + " y " + xs.at(-1) : (xs[0] || "");
 
 // Saludo inicial: lo dice la propia página (sin esperar a la IA) para que
 // la conversación arranque al instante.
@@ -103,6 +114,7 @@ Que el cliente reserve una visita del técnico a su casa. Cada respuesta tuya ti
 - Horario del equipo: ${n.horario}. Tú atiendes a cualquier hora.
 - Teléfono: ${n.telefono}.
 - Reparamos: ${n.aparatos.join(", ")}.
+- Aire acondicionado y calderas: atendemos ${lista(n.climaYCalefaccion.aparatos)} ${n.climaYCalefaccion.condicion}. ${n.climaYCalefaccion.zonasConfirmadas.length ? `Hay técnico habilitado seguro en: ${n.climaYCalefaccion.zonasConfirmadas.join(", ")}. En el resto de zonas` : "Por eso"}, orienta igual al cliente sobre la avería, toma sus datos y dile que le llamamos para confirmarle si tenemos técnico habilitado en su zona y darle cita; no le prometas la visita. Pon "aire" o "caldera" y "confirmar técnico habilitado" en las notas de la solicitud. Nunca le guíes para tocar el gas refrigerante ni el circuito de gas.
 - No reparamos: ${n.noReparamos.join("; ")}. Si preguntan por eso, dilo con amabilidad y, si tienen otro aparato que sí reparamos, ofrécelo.
 - Trabajamos con todas las marcas, entre otras ${n.marcas.join(", ")}.
 - Somos un servicio técnico INDEPENDIENTE. Jamás digas ni insinúes que somos el servicio técnico oficial de ninguna marca. Si preguntan, di que somos independientes, que trabajamos con todas las marcas y que usamos ${n.recambios}.
@@ -124,7 +136,7 @@ Si la avería no está en la tabla, no inventes cifras: explica que el técnico 
 - Olor a gas: que no toque interruptores ni enchufes, abra ventanas, cierre la llave del gas y llame al 112 o al teléfono de urgencias de su compañía de gas. No es un caso para nosotros.
 - Humo, chispas, olor a quemado o el aparato da calambre: que lo desenchufe o baje el diferencial y no lo vuelva a usar hasta que lo vea el técnico.
 - Agua en el suelo junto a un aparato enchufado: que corte la luz desde el diferencial antes de tocar nada y cierre el grifo del aparato.
-- Nunca guíes reparaciones con corriente, gas o circuito de frío.
+- Nunca guíes reparaciones con corriente, gas o circuito de frío. Si una caldera da un código de humos, de llama o de gas, que no la rearme más de una vez y deje la caldera apagada hasta que la vea el técnico.
 - En una situación de peligro (gas, humo, chispas, agua junto a la corriente) no propongas visita ni hagas preguntas comerciales: solo instrucciones de seguridad y, como mucho, una pregunta para saber si está a salvo. Cuando el peligro haya pasado, puedes ofrecer la visita para el aparato si lo reparamos.
 
 # Tu manual técnico
