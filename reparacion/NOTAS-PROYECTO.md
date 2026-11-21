@@ -32,5 +32,16 @@ Voz del navegador 0,01 $ · **LiveKit+Deepgram+Claude+ElevenLabs (montado) 0,17-
 - ¿El técnico puede mencionar la limpieza del filtro de desagüe si el cliente pregunta? (ahora sí, sin proponerla).
 - Más adelante: número de teléfono español para que el mismo agente atienda llamadas (trunk SIP; coste sin mirar).
 
+## Manual técnico de Andrés (21-11-2026)
+- `conocimiento/*.json`: fichas investigadas con fuente y confianza (alta = oficial). `node construir-manual.mjs` las junta en `conocimiento.mjs` (junta rondas de una misma familia sin repetir). `conocimiento/sinonimos.json`: expresiones coloquiales añadidas a mano.
+- `manual.mjs` (web y servidor) y `agente/manual.py` (voz): en cada turno detectan aparato, marca, código (también dictado: «e quince», «efe cero cinco», «ciento treinta y tres») y síntoma, y añaden al mensaje del cliente solo las fichas que tocan. Con marca conocida, solo fichas de esa marca. Sin aparato, no diagnostica por síntoma.
+- `node agente/exportar-instrucciones.mjs` genera también `agente/conocimiento.json`. `node pruebas-manual.mjs` comprueba que web y agente dan lo mismo (26 frases, todas iguales).
+- Protocolo de la marca (pedido por Juan): Andrés pide la marca antes de explicar un código o una avería; si no la sabe, dónde mirarla; pregunta una sola vez.
+- Cifras (1.ª ronda): 441 fichas de código de 26 familias (208 de confianza alta), 115 síntomas. Frases nuevas de cliente entendidas: 23 de 25. Sin fichas falsas al tomar datos.
+- Límites: cupo de 200 búsquedas por turno compartido entre agentes; la red de la sesión no deja abrir webs de fabricantes (todo sale de los extractos del buscador). Algunas fuentes son de webs de otros países.
+- En marcha: 2.ª ronda (hornos y campanas, Smeg/Liebherr/Cata/Grundig/Corberó/Daewoo/Gorenje, frigoríficos y Fagor antigua, aires que faltan y termos) y calderas.
+- Aire y calderas: Andrés orienta y toma datos y dice que confirmamos si hay técnico habilitado en la zona (carnet de gases solo en algunas ciudades). PENDIENTE (al final): qué ciudades tienen carnet de gases fluorados y habilitación de gas.
+- Siguiente paso pedido por Juan: `PROMPT-TECNICO-VETERANO.md` (Andrés con el oficio de un técnico de más de 30 años, sin decir que esa experiencia es suya).
+
 ## Cómo trabajar con Juan
 Soluciones, no excusas; verificar antes de decir que algo está hecho; pedir OK antes de publicar, desplegar, gastar dinero o enviar nada; tenerle al día con cifras; directo y sin tecnicismos.
