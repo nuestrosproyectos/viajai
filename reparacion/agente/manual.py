@@ -26,7 +26,7 @@ def clave(c: str) -> str:
     return normalizar(c).replace(" ", "")
 
 
-VACIAS = set("de la el los las un una unos unas y o que en por con se me mi mis su sus lo le les al del a muy mucho mucha muchos muchas poco ya es esta este esto son tiene tengo hay como pero mas cuando todo toda todos sale salen deja dejan hace hacen echa echan esta estan algo".split(" "))
+VACIAS = set("de la el los las un una unos unas y o que en por con se me mi mis su sus lo le les al del a muy mucho mucha muchos muchas ya es esta este esto son tiene tengo hay como pero mas cuando todo toda todos sale salen deja dejan hace hacen echa echan esta estan algo".split(" "))
 
 
 EQUIVALE: dict = {}  # se carga desde conocimiento.json (misma tabla que manual.mjs)
@@ -225,13 +225,13 @@ class Manual:
                     k = cubre(c_ult, r)
                     if k >= 2:
                         p += 1 + k
-                    elif k == 1:
+                    elif k == 1 and (n == 1 or len(claves(r)[0]) >= 5):
                         p += 3
                     elif cubre(c_rec, r) >= 1:
                         p += 0.5
             if p and aparato and s["aparato"] == aparato:
                 p += 2
-            if p >= 3:
+            if p >= (6 if por_codigo else 3):
                 puntuados.append((s, p))
         puntuados.sort(key=lambda x: -x[1])
         por_sintoma = [s for s, _ in puntuados[: (1 if por_codigo else max_sintomas)]]
@@ -264,12 +264,14 @@ class Manual:
                 if f.get("urgencia") == "alta":
                     t += " Es urgente."
             lineas.append(t)
-        varias = len({f["familia"] for f in fichas if f["tipo"] == "codigo"}) > 1
+        hay_codigo = any(f["tipo"] == "codigo" for f in fichas)
         cab = "[Manual técnico interno (no lo menciones ni lo leas tal cual; úsalo como tu propio conocimiento)"
-        if marca:
-            cab += f". Marca detectada: {marca}"
         if aparato:
             cab += f". Aparato: {aparato}"
-        if varias and not marca:
-            cab += ". El código significa cosas distintas según la marca: pregunta la marca antes de concluir"
+        if marca:
+            cab += f". Marca: {marca}"
+        else:
+            cab += ". Falta la marca: si el cliente aún no la ha dicho, pregúntala antes de explicar nada"
+            if hay_codigo:
+                cab += " (el mismo código significa cosas distintas según la marca)"
         return cab + "]\n" + "\n".join(lineas)

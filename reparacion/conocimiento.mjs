@@ -3,6 +3,1982 @@ export default {
  "generado": "2026-11-21",
  "familias": [
   {
+   "familia": "Bosch Climate aire acondicionado",
+   "marcas": [
+    "Bosch",
+    "Junkers"
+   ],
+   "notas": "Los splits Bosch Climate (antes vendidos también como Junkers en España) muestran el código en la pantalla de la unidad interior. Solo se han podido contrastar algunos códigos de la serie Climate 5000; en la Climate 3000i no se ha encontrado la tabla completa. Los significados cambian entre series, así que la confianza es media. Todo lo relacionado con gas refrigerante lo hace un técnico con certificado de gases fluorados.",
+   "codigos": [
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E1"
+     ],
+     "significado": "Error de comunicación entre la unidad interior y la exterior (Climate 5000; en otras series puede ser fallo de placa).",
+     "causas": [
+      "Cable de interconexión",
+      "Placa interior o exterior"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial esperando unos minutos. Si vuelve, avisar al técnico.",
+     "pieza_probable": "Cable de interconexión o placa",
+     "fuente": "https://www.manualslib.com/answers/4490535/bosch-climate-5000-error-codes-guide.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E5"
+     ],
+     "significado": "Fallo de la sonda de temperatura de la batería (serpentín) de la unidad interior.",
+     "causas": [
+      "Sonda abierta o en cortocircuito"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar. Si vuelve, avisar al técnico.",
+     "pieza_probable": "Sonda del intercambiador interior",
+     "fuente": "https://manualslib.com/manual/1969681/Bosch-Climate-5000-Series.html?page=48",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "P0"
+     ],
+     "significado": "Error o protección del módulo inverter (IPM).",
+     "causas": [
+      "Placa inverter exterior",
+      "Compresor",
+      "Tensión inestable"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar. Si se repite, avisar al técnico.",
+     "pieza_probable": "Placa inverter exterior",
+     "fuente": "https://manualslib.com/manual/1969681/Bosch-Climate-5000-Series.html?page=48",
+     "confianza": "media"
+    }
+   ]
+  },
+  {
+   "familia": "Daikin aire acondicionado",
+   "marcas": [
+    "Daikin"
+   ],
+   "notas": "En los splits Daikin domésticos (FTXM, FTXF, FTXC, FTXP...) la luz de funcionamiento de la unidad interior parpadea cuando hay una avería. El código se ve en el mando infrarrojo ARC: en muchos modelos se mantiene pulsado el botón CANCELAR del temporizador (o el de temperatura, según modelo) unos 5 segundos y se va pulsando hasta oír un pitido largo; el código que se ve en ese momento en el mando es el de la avería. El procedimiento cambia según el mando: conviene que el cliente diga el código que ve y el modelo de la etiqueta de la unidad interior. En los mandos por cable (conductos, BRC1H Madoka, BRC1E) el código sale directamente en la pantalla. Un mismo código puede significar cosas distintas según la serie (Daikin lo advierte en sus tablas). Antes de reiniciar desde el diferencial conviene anotar el código. Daikin indica que tras encender, el compresor puede tardar 3-4 minutos en arrancar (protección contra arranques frecuentes): no es avería. Todo lo relacionado con gas refrigerante (fugas, recarga, soldaduras) lo hace un técnico con certificado de gases fluorados; nunca el cliente.",
+   "codigos": [
+    {
+     "aparato": "aire",
+     "codigos": [
+      "U4"
+     ],
+     "significado": "Fallo de comunicación entre la unidad interior y la exterior.",
+     "causas": [
+      "Cable de interconexión entre unidades suelto, dañado o mal conectado",
+      "Placa electrónica de la unidad interior o exterior averiada",
+      "Corte o bajada de tensión puntual"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar el aparato, bajar el diferencial o automático del aire, esperar unos 5 minutos y volver a subirlo. Si el código vuelve, avisar al técnico. No abrir ninguna unidad.",
+     "pieza_probable": "Cable de interconexión o placa electrónica (interior o exterior)",
+     "fuente": "https://www.manualslib.com/manual/781448/Daikin-R-410a.html?page=210",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "U0"
+     ],
+     "significado": "Falta de refrigerante (gas) en el circuito.",
+     "causas": [
+      "Fuga de gas en las uniones (abocardados), tuberías o batería",
+      "Instalación con carga insuficiente"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar el equipo y no seguir usándolo hasta la revisión. La búsqueda de la fuga, la reparación y la recarga solo puede hacerlas un técnico con certificado de gases fluorados.",
+     "pieza_probable": "Reparación de fuga y recarga de refrigerante (técnico certificado)",
+     "fuente": "https://manualshive.com/en/manual/daikin/ftxj-m/4699040?page=20",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "F3"
+     ],
+     "significado": "Temperatura anormal en el tubo de descarga del compresor (unidad exterior).",
+     "causas": [
+      "Falta de refrigerante",
+      "Unidad exterior mal ventilada o con la batería sucia",
+      "Sonda de descarga o válvula de expansión averiada"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que nada tapa la unidad exterior (cajas, toldos, plantas) y reiniciar desde el diferencial. Si se repite, llamar al técnico. Nada de manipular el gas.",
+     "pieza_probable": "Sonda de descarga, válvula de expansión o revisión de carga de gas (técnico certificado)",
+     "fuente": "https://manualshive.com/en/manual/daikin/ftxj-m/4699040?page=20",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "A1"
+     ],
+     "significado": "Fallo de la placa electrónica de la unidad interior.",
+     "causas": [
+      "Placa de la unidad interior averiada",
+      "Subida de tensión o tormenta"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial esperando unos minutos. Si vuelve a salir, avisar al técnico.",
+     "pieza_probable": "Placa electrónica de la unidad interior",
+     "fuente": "https://shopboldr.com/blogs/news/daikin-mini-split-error-codes",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "A3"
+     ],
+     "significado": "Fallo del desagüe: el nivel de agua de condensados es demasiado alto (sobre todo en conductos y cassettes con bomba).",
+     "causas": [
+      "Tubo de desagüe atascado",
+      "Bomba de condensados averiada",
+      "Boya o interruptor de nivel atascado"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar el equipo y comprobar si sale agua por el tubo de desagüe al exterior o si hay goteo. No abrir el falso techo ni la máquina; llamar al técnico.",
+     "pieza_probable": "Bomba de condensados o desatasco del desagüe",
+     "fuente": "https://shopboldr.com/blogs/news/daikin-mini-split-error-codes",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "A5"
+     ],
+     "significado": "Protección antihielo en frío o control de alta presión en calor de la unidad interior (depende del modelo).",
+     "causas": [
+      "Filtros muy sucios que reducen el caudal de aire",
+      "Sonda del intercambiador interior averiada",
+      "Falta de refrigerante"
+     ],
+     "que_puede_hacer_el_cliente": "Limpiar los filtros como indica el manual, comprobar que nada tapa la entrada o salida de aire y reiniciar. Si persiste, avisar al técnico.",
+     "pieza_probable": "Sonda (termistor) del intercambiador interior o revisión de gas por técnico certificado",
+     "fuente": "https://www.manualslib.com/manual/1120898/Daikin-Ftxg-J.html?page=78",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "A6"
+     ],
+     "significado": "Fallo o bloqueo del motor del ventilador de la unidad interior.",
+     "causas": [
+      "Motor del ventilador interior averiado",
+      "Turbina bloqueada por suciedad u objeto",
+      "Placa interior"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar y reiniciar desde el diferencial. Si se repite, avisar al técnico. No meter las manos ni objetos por la rejilla.",
+     "pieza_probable": "Motor del ventilador interior",
+     "fuente": "https://www.scribd.com/document/660144583/Daikin-Error-Codes-Malfunction-Codes",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E7"
+     ],
+     "significado": "Fallo o bloqueo del motor del ventilador de la unidad exterior (motor DC).",
+     "causas": [
+      "Motor del ventilador exterior averiado",
+      "Hélice bloqueada por hojas, nidos o hielo",
+      "Placa exterior"
+     ],
+     "que_puede_hacer_el_cliente": "Mirar si algo bloquea la hélice de la unidad exterior sin abrirla ni meter la mano. Reiniciar desde el diferencial. Si persiste, avisar al técnico.",
+     "pieza_probable": "Motor del ventilador exterior",
+     "fuente": "https://www.scribd.com/document/660144583/Daikin-Error-Codes-Malfunction-Codes",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "H6"
+     ],
+     "significado": "Fallo del sensor de posición del compresor (el compresor no arranca bien).",
+     "causas": [
+      "Cable o conexión del compresor defectuosa",
+      "Placa inverter exterior",
+      "Compresor averiado"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si vuelve a salir, avisar al técnico.",
+     "pieza_probable": "Placa inverter exterior o compresor",
+     "fuente": "https://www.scribd.com/document/660144583/Daikin-Error-Codes-Malfunction-Codes",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "UA"
+     ],
+     "significado": "Combinación incorrecta de unidad interior y exterior (no son compatibles o están mal configuradas).",
+     "causas": [
+      "Unidades no compatibles o mal configuradas en la instalación",
+      "Placa sustituida por una incorrecta",
+      "Ajustes de un multisplit mal hechos"
+     ],
+     "que_puede_hacer_el_cliente": "Suele aparecer tras una instalación o cambio de piezas: avisar al instalador o al técnico.",
+     "pieza_probable": "",
+     "fuente": "https://servidos.ar/codigos-de-error/aire-acondicionado/daikin-tabla-general/ua",
+     "confianza": "media"
+    }
+   ]
+  },
+  {
+   "familia": "Fujitsu aire acondicionado",
+   "marcas": [
+    "Fujitsu"
+   ],
+   "notas": "En los splits Fujitsu (ASY, ASB, ARY de conductos...) la unidad interior indica las averías con el parpadeo de las luces OPERATION (funcionamiento, verde), TIMER (temporizador, naranja) y en algunos modelos ECONOMY. Hay que contar cuántas veces parpadea cada luz: la combinación forma un código de dos cifras (p. ej. 11). Fujitsu indica en su web que se cuenten los parpadeos de las luces de funcionamiento y temporizador y se contacte con el servicio técnico. Si OPERATION y TIMER parpadean ALTERNÁNDOSE, normalmente es que hubo un corte de luz durante el funcionamiento y basta con volver a encender. Con mando por cable el código sale en la pantalla. Las luces solo indican el error mientras el equipo está en marcha. Todo lo relacionado con gas refrigerante lo hace un técnico con certificado de gases fluorados.",
+   "codigos": [
+    {
+     "aparato": "aire",
+     "codigos": [
+      "OPERATION y TIMER parpadean alternándose"
+     ],
+     "significado": "Ha habido un corte de corriente mientras el aparato funcionaba; no es una avería en sí.",
+     "causas": [
+      "Apagón o corte de luz",
+      "Se bajó el diferencial con el equipo en marcha"
+     ],
+     "que_puede_hacer_el_cliente": "Volver a encender el aparato con el mando. Si no se recupera o el parpadeo cambia, avisar al técnico.",
+     "pieza_probable": "",
+     "fuente": "https://fujitsu-general.com/th/en/support/faq/split/0084.html",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "11",
+      "OPERATION parpadea 1 vez y TIMER parpadea 1 vez (ECONOMY encendida fija)"
+     ],
+     "significado": "Error de comunicación serie entre la unidad interior y la exterior.",
+     "causas": [
+      "Cable de interconexión suelto o dañado",
+      "Placa interior o exterior averiada",
+      "Unidad exterior sin corriente"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar desde el diferencial, esperar unos minutos y encender. Si vuelve, avisar al técnico.",
+     "pieza_probable": "Cable de interconexión o placa electrónica",
+     "fuente": "https://webstore.uk.fujitsu-general.com/content/files/downloads/fujitsu%20error%20codes.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "12",
+      "OPERATION parpadea 1 vez y TIMER parpadea 2 veces"
+     ],
+     "significado": "Error de comunicación con el mando por cable (en algunos modelos este código indica otra avería).",
+     "causas": [
+      "Cable del mando suelto o dañado",
+      "Mando por cable o placa interior averiada"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si persiste, avisar al técnico.",
+     "pieza_probable": "Mando por cable o su cableado",
+     "fuente": "https://jswmi.happyfox.com/kb/article/863-fault-codes-table-for-fujitsu-minisplit",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "51"
+     ],
+     "significado": "Fallo del motor del ventilador de la unidad interior.",
+     "causas": [
+      "Motor del ventilador interior averiado",
+      "Turbina bloqueada"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si se repite, avisar al técnico.",
+     "pieza_probable": "Motor del ventilador interior",
+     "fuente": "https://luce.sg/blog/fujitsu-air-conditioner-error-codes",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "53"
+     ],
+     "significado": "Anomalía en el desagüe de la unidad interior (nivel de agua alto, típico en conductos y cassettes con bomba).",
+     "causas": [
+      "Desagüe atascado",
+      "Bomba de condensados averiada",
+      "Boya de nivel atascada"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar el equipo y comprobar si hay goteo. No abrir el falso techo; avisar al técnico.",
+     "pieza_probable": "Bomba de condensados o desatasco del desagüe",
+     "fuente": "https://luce.sg/blog/fujitsu-air-conditioner-error-codes",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "97"
+     ],
+     "significado": "Fallo del motor del ventilador de la unidad exterior.",
+     "causas": [
+      "Motor del ventilador exterior averiado",
+      "Hélice bloqueada por objetos u hojas"
+     ],
+     "que_puede_hacer_el_cliente": "Mirar, sin abrir, si algo bloquea la hélice exterior. Reiniciar. Si persiste, avisar al técnico.",
+     "pieza_probable": "Motor del ventilador exterior",
+     "fuente": "https://luce.sg/blog/fujitsu-air-conditioner-error-codes",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "99"
+     ],
+     "significado": "Fallo de la válvula de 4 vías de la unidad exterior (no cambia bien entre frío y calor).",
+     "causas": [
+      "Válvula de 4 vías bloqueada o bobina averiada",
+      "Placa exterior"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si se repite, avisar al técnico.",
+     "pieza_probable": "Válvula de 4 vías o su bobina",
+     "fuente": "https://luce.sg/blog/fujitsu-air-conditioner-error-codes",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "A1"
+     ],
+     "significado": "Temperatura de descarga del compresor demasiado alta (unidad exterior).",
+     "causas": [
+      "Falta de refrigerante",
+      "Unidad exterior mal ventilada",
+      "Válvula de expansión o sonda"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que la exterior no está tapada y reiniciar. Si se repite, avisar al técnico; el gas solo lo toca un técnico con certificado de gases fluorados.",
+     "pieza_probable": "Revisión de carga de gas, válvula de expansión o sonda de descarga",
+     "fuente": "https://luce.sg/blog/fujitsu-air-conditioner-error-codes",
+     "confianza": "media"
+    }
+   ]
+  },
+  {
+   "familia": "Gree aire acondicionado",
+   "marcas": [
+    "Gree"
+   ],
+   "notas": "En los splits Gree el código sale en la pantalla de temperatura de la unidad interior (dos caracteres: E1, H6, F2...). 'H1' indica que está descongelando la unidad exterior y es normal. En modelos sin pantalla el aviso se da con parpadeos de luces. Los significados varían según el modelo y las tablas de terceros no siempre coinciden, así que conviene pedir el modelo exacto. Todo lo relacionado con gas refrigerante lo hace un técnico con certificado de gases fluorados.",
+   "codigos": [
+    {
+     "aparato": "aire",
+     "codigos": [
+      "H1"
+     ],
+     "significado": "Desescarche (descongelación) de la unidad exterior en modo calor; es normal, no es avería.",
+     "causas": [
+      "Funcionamiento normal en calor con frío y humedad exterior"
+     ],
+     "que_puede_hacer_el_cliente": "Esperar unos minutos: durante el desescarche no sale calor y la exterior puede echar vapor o agua. Si no termina nunca, avisar al técnico.",
+     "pieza_probable": "",
+     "fuente": "https://www.okmarts.com/news/gree-air-conditioner-error-codes.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E1"
+     ],
+     "significado": "Protección por alta presión del circuito de refrigeración.",
+     "causas": [
+      "Unidad exterior mal ventilada o batería sucia",
+      "Ventilador exterior parado",
+      "Filtros interiores muy sucios (en calor)"
+     ],
+     "que_puede_hacer_el_cliente": "Despejar la exterior, limpiar filtros como indica el manual y reiniciar. Si vuelve, avisar al técnico.",
+     "pieza_probable": "Ventilador exterior o presostato",
+     "fuente": "https://www.okmarts.com/news/gree-air-conditioner-error-codes.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E2"
+     ],
+     "significado": "Protección antihielo de la unidad interior.",
+     "causas": [
+      "Filtros muy sucios",
+      "Ventilador interior a baja velocidad o averiado",
+      "Falta de refrigerante"
+     ],
+     "que_puede_hacer_el_cliente": "Limpiar filtros, dejar el equipo apagado hasta que se descongele y reiniciar. Si se repite, avisar al técnico.",
+     "pieza_probable": "Revisión de gas (técnico certificado) o sonda",
+     "fuente": "https://www.okmarts.com/news/gree-air-conditioner-error-codes.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E3"
+     ],
+     "significado": "Protección por baja presión o falta de refrigerante.",
+     "causas": [
+      "Fuga de gas",
+      "Válvulas de servicio cerradas"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar y llamar al técnico. Fuga y recarga solo las hace un técnico con certificado de gases fluorados.",
+     "pieza_probable": "Reparación de fuga y recarga",
+     "fuente": "https://arlingtonairconditioningheating.com/gree-air-conditioner-error-codes/",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E4"
+     ],
+     "significado": "Protección por alta temperatura de descarga del compresor.",
+     "causas": [
+      "Falta de refrigerante",
+      "Exterior mal ventilada",
+      "Válvula de expansión"
+     ],
+     "que_puede_hacer_el_cliente": "Despejar la exterior y reiniciar. Si vuelve, avisar al técnico.",
+     "pieza_probable": "Revisión de gas o válvula de expansión",
+     "fuente": "https://www.okmarts.com/news/gree-air-conditioner-error-codes.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E5"
+     ],
+     "significado": "Protección por sobrecorriente.",
+     "causas": [
+      "Tensión de red baja o inestable",
+      "Compresor forzado",
+      "Placa exterior"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si se repite, avisar al técnico.",
+     "pieza_probable": "Placa exterior o compresor",
+     "fuente": "https://www.greecomfort.com/assets/documents/resource-materials/tech-tips/e5-error-code-troubleshooting-guide.pdf",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E6"
+     ],
+     "significado": "Fallo de comunicación entre la unidad interior y la exterior.",
+     "causas": [
+      "Cable de interconexión",
+      "Placa interior o exterior"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial esperando unos minutos. Si vuelve, avisar al técnico.",
+     "pieza_probable": "Cable de interconexión o placa",
+     "fuente": "https://www.okmarts.com/news/gree-air-conditioner-error-codes.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "F1",
+      "F2"
+     ],
+     "significado": "Fallo de sonda de la unidad interior: F1 sonda de temperatura ambiente, F2 sonda de tubería (evaporador).",
+     "causas": [
+      "Sonda abierta o en cortocircuito",
+      "Conector suelto"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar. Si vuelve, avisar al técnico.",
+     "pieza_probable": "Sonda de temperatura interior",
+     "fuente": "https://www.okmarts.com/news/gree-air-conditioner-error-codes.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "F3"
+     ],
+     "significado": "Fallo de la sonda de temperatura ambiente exterior.",
+     "causas": [
+      "Sonda exterior averiada o desconectada"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar. Si vuelve, avisar al técnico.",
+     "pieza_probable": "Sonda exterior",
+     "fuente": "https://www.pickhvac.com/mini-split/error-codes/gree/",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "H5"
+     ],
+     "significado": "Protección del módulo de potencia IPM del inverter.",
+     "causas": [
+      "Placa inverter exterior",
+      "Compresor",
+      "Tensión inestable"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si se repite, avisar al técnico.",
+     "pieza_probable": "Placa inverter exterior",
+     "fuente": "https://www.greecomfort.com/assets/documents/resource-materials/tech-tips/e5-error-code-troubleshooting-guide.pdf",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "H6"
+     ],
+     "significado": "El motor del ventilador de la unidad interior no funciona.",
+     "causas": [
+      "Motor del ventilador interior",
+      "Turbina bloqueada",
+      "Placa interior"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar. Si persiste, avisar al técnico.",
+     "pieza_probable": "Motor del ventilador interior",
+     "fuente": "https://www.okmarts.com/news/gree-air-conditioner-error-codes.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "L3"
+     ],
+     "significado": "Fallo del motor del ventilador de la unidad exterior.",
+     "causas": [
+      "Motor del ventilador exterior",
+      "Hélice bloqueada"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar sin abrir que nada bloquea la hélice exterior. Reiniciar. Si persiste, avisar al técnico.",
+     "pieza_probable": "Motor del ventilador exterior",
+     "fuente": "https://www.pickhvac.com/mini-split/error-codes/gree/",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "U7"
+     ],
+     "significado": "Fallo de la válvula de 4 vías (inversión frío/calor).",
+     "causas": [
+      "Válvula de 4 vías o su bobina"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar. Si se repite, avisar al técnico.",
+     "pieza_probable": "Válvula de 4 vías",
+     "fuente": "https://www.pickhvac.com/mini-split/error-codes/gree/",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "C5"
+     ],
+     "significado": "Fallo del puente (jumper) de capacidad de la placa interior.",
+     "causas": [
+      "Jumper ausente o mal colocado tras cambiar la placa"
+     ],
+     "que_puede_hacer_el_cliente": "Avisar al técnico.",
+     "pieza_probable": "Jumper de la placa interior",
+     "fuente": "https://www.okmarts.com/news/gree-air-conditioner-error-codes.html",
+     "confianza": "media"
+    }
+   ]
+  },
+  {
+   "familia": "Haier aire acondicionado",
+   "marcas": [
+    "Haier"
+   ],
+   "notas": "En los splits Haier el código sale en la pantalla de la unidad interior (E1, E7, F12...). Los códigos E suelen ser de la unidad interior y comunicación, y los F de la unidad exterior. Haier indica que algunos códigos solo puede resolverlos su servicio técnico. Los significados varían según modelo y país; confirmar con el modelo de la etiqueta. Todo lo relacionado con gas refrigerante lo hace un técnico con certificado de gases fluorados.",
+   "codigos": [
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E1"
+     ],
+     "significado": "Fallo de la sonda de temperatura ambiente de la unidad interior.",
+     "causas": [
+      "Sonda averiada o desconectada"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si vuelve, avisar al técnico.",
+     "pieza_probable": "Sonda de temperatura ambiente",
+     "fuente": "https://www.arlingtonairconditioningheating.com/haier-air-conditioner-error-codes/",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E2"
+     ],
+     "significado": "Fallo de la sonda de la batería (intercambiador); según la fuente, interior o exterior.",
+     "causas": [
+      "Sonda averiada o desconectada"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar. Si vuelve, avisar al técnico.",
+     "pieza_probable": "Sonda del intercambiador",
+     "fuente": "https://www.arlingtonairconditioningheating.com/haier-air-conditioner-error-codes/",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E4"
+     ],
+     "significado": "Error de la memoria EEPROM de la unidad interior.",
+     "causas": [
+      "Placa interior"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si vuelve, avisar al técnico.",
+     "pieza_probable": "Placa electrónica interior",
+     "fuente": "https://www.appliancepartspros.com/b/?p=12779",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E7"
+     ],
+     "significado": "Fallo de comunicación entre la unidad interior y la exterior.",
+     "causas": [
+      "Cable de interconexión",
+      "Placa interior o exterior",
+      "Unidad exterior sin corriente"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial esperando unos minutos. Si vuelve, avisar al técnico.",
+     "pieza_probable": "Cable de interconexión o placa",
+     "fuente": "https://www.haier.com/tz/service-support/self-service/20230814_213063.shtml",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E14"
+     ],
+     "significado": "Fallo del motor del ventilador de la unidad interior.",
+     "causas": [
+      "Motor del ventilador interior",
+      "Turbina bloqueada"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar. Si persiste, avisar al técnico.",
+     "pieza_probable": "Motor del ventilador interior",
+     "fuente": "https://www.appliancepartspros.com/b/?p=12779",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "F1"
+     ],
+     "significado": "Protección del módulo de potencia IPM (unidad exterior).",
+     "causas": [
+      "Placa inverter exterior",
+      "Compresor",
+      "Tensión inestable"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si se repite, avisar al técnico.",
+     "pieza_probable": "Placa inverter exterior",
+     "fuente": "https://www.haier.com/pk/service-support/self-service/20160120_103780.shtml",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "F2"
+     ],
+     "significado": "Protección por sobrecorriente instantánea del compresor.",
+     "causas": [
+      "Compresor forzado o averiado",
+      "Placa inverter",
+      "Tensión baja"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar. Si se repite, avisar al técnico.",
+     "pieza_probable": "Compresor o placa inverter",
+     "fuente": "https://www.haier.com/pk/service-support/self-service/20160120_103780.shtml",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "F3"
+     ],
+     "significado": "Error de comunicación entre el módulo de potencia y la placa principal de la unidad exterior.",
+     "causas": [
+      "Placa exterior o cableado interno"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar. Si se repite, avisar al técnico.",
+     "pieza_probable": "Placa exterior / módulo de potencia",
+     "fuente": "https://www.haier.com/my/service-support/self-service/20190523_81505.shtml",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "F12"
+     ],
+     "significado": "Fallo de la memoria EEPROM (unidad exterior).",
+     "causas": [
+      "Placa exterior"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar. Si vuelve, avisar al técnico.",
+     "pieza_probable": "Placa electrónica exterior",
+     "fuente": "https://www.haier.com/ph/service-support/self-service/20250311_257059.shtml",
+     "confianza": "alta"
+    }
+   ]
+  },
+  {
+   "familia": "LG aire acondicionado",
+   "marcas": [
+    "LG"
+   ],
+   "notas": "En los splits LG el código aparece en la pantalla de la unidad interior o del mando por cable con el formato CH y dos cifras (CH05, CH38...); en modelos más nuevos o de otros mercados puede salir una letra y una cifra (E0, F4, E6, EF...). LG recomienda, ante la mayoría de códigos, desenchufar o bajar el diferencial del aire, esperar unos 5 minutos y volver a dar corriente; si el código se repite, llamar al servicio técnico y no abrir la unidad. Si el error aparece justo después de instalar o trasladar el equipo, LG indica que se revise la instalación con el instalador. Todo lo relacionado con gas refrigerante lo hace un técnico con certificado de gases fluorados.",
+   "codigos": [
+    {
+     "aparato": "aire",
+     "codigos": [
+      "CH05",
+      "CH53",
+      "E0"
+     ],
+     "significado": "Error de comunicación entre la unidad interior y la exterior.",
+     "causas": [
+      "Cable de interconexión mal conectado (sobre todo tras instalación o traslado)",
+      "Alimentación eléctrica inestable",
+      "Placa interior o exterior"
+     ],
+     "que_puede_hacer_el_cliente": "Bajar el diferencial del aire, esperar unos 5 minutos y volver a subirlo. Si se repite, llamar al técnico.",
+     "pieza_probable": "Cable de interconexión o placa electrónica",
+     "fuente": "https://www.lg.com/ar/soporte/ayuda-producto/CT20084080-20155047720009",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "CH38",
+      "CH32",
+      "CH33",
+      "CH36",
+      "F4"
+     ],
+     "significado": "Poco refrigerante o problema del compresor / circuito de protección de la unidad exterior.",
+     "causas": [
+      "Fuga de gas refrigerante",
+      "Compresor o su electrónica",
+      "Problema puntual de alimentación"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial una vez. Si vuelve, dejar de usarlo y llamar al técnico. La fuga y la recarga solo las hace un técnico con certificado de gases fluorados.",
+     "pieza_probable": "Reparación de fuga y recarga, o componente del compresor",
+     "fuente": "https://www.lg.com/ae/support/product-help/CT32003028-20155402844004",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "CH61"
+     ],
+     "significado": "Sobrecalentamiento: en frío, la unidad exterior se calienta demasiado; en calor, suele ser por filtro interior muy sucio.",
+     "causas": [
+      "Unidad exterior mal ventilada o con la batería sucia",
+      "Filtro de la unidad interior lleno de polvo (en calor)",
+      "Sobrecarga de refrigerante o ventilador exterior"
+     ],
+     "que_puede_hacer_el_cliente": "Limpiar el filtro de la unidad interior, despejar la unidad exterior y reiniciar desde el diferencial (este código no se borra solo). Si vuelve, llamar al técnico.",
+     "pieza_probable": "",
+     "fuente": "https://www.lg.com/ar/soporte/ayuda-producto/CT20084080-20155047720009",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "CH10",
+      "E6"
+     ],
+     "significado": "Problema del ventilador de la unidad interior.",
+     "causas": [
+      "Motor del ventilador interior",
+      "Turbina bloqueada",
+      "Placa interior"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si persiste, llamar al técnico.",
+     "pieza_probable": "Motor del ventilador interior",
+     "fuente": "https://www.lg.com/sg/support/product-support/troubleshoot/help-library/cs-CT52001364-20155399553192/",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "CH67",
+      "EF"
+     ],
+     "significado": "Problema del ventilador de la unidad exterior.",
+     "causas": [
+      "Motor del ventilador exterior",
+      "Hélice bloqueada por objetos, hojas o hielo"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar sin abrir que nada bloquea la hélice exterior. Reiniciar. Si persiste, llamar al técnico.",
+     "pieza_probable": "Motor del ventilador exterior",
+     "fuente": "https://www.lg.com/sg/support/product-support/troubleshoot/help-library/cs-CT52001364-20155399553192/",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "CH01",
+      "CH02",
+      "CH06",
+      "CH12",
+      "CH41",
+      "CH44",
+      "CH45",
+      "CH46",
+      "CH47",
+      "CH48",
+      "E1",
+      "E2",
+      "E3"
+     ],
+     "significado": "Fallo de una sonda de temperatura (ambiente, tubería o de la unidad exterior).",
+     "causas": [
+      "Sonda averiada",
+      "Sonda suelta o desconectada",
+      "Placa principal",
+      "Fallo eléctrico puntual"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial esperando unos 5 minutos. Si se repite, llamar al técnico.",
+     "pieza_probable": "Sonda de temperatura (termistor) indicada por el código",
+     "fuente": "https://www.lg.com/sg/support/product-support/troubleshoot/help-library/cs-CT52001364-20155399553192/",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "CH21",
+      "CH23",
+      "CH26",
+      "CH29",
+      "E9"
+     ],
+     "significado": "Problema en el compresor o en la placa de la unidad exterior.",
+     "causas": [
+      "Placa inverter exterior",
+      "Compresor",
+      "Tensión de red inestable"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si se repite, llamar al técnico.",
+     "pieza_probable": "Placa inverter exterior o compresor",
+     "fuente": "https://www.lg.com/sg/support/product-support/troubleshoot/help-library/cs-CT52001364-20155399553192/",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "CH04"
+     ],
+     "significado": "Problema de desagüe: fallo en el drenaje de la unidad interior o depósito de condensados demasiado lleno (equipos con bomba).",
+     "causas": [
+      "Desagüe atascado",
+      "Bomba de condensados sin corriente o averiada (la bomba es un accesorio del instalador)",
+      "Sensor de nivel atascado"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar, comprobar si hay goteo y reiniciar tras 5 minutos. Si sigue, llamar al técnico o al instalador de la bomba.",
+     "pieza_probable": "Bomba de condensados o desatasco del desagüe",
+     "fuente": "https://www.lg.com/ar/soporte/ayuda-producto/CT20084080-20154981126850",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "CH00",
+      "LED parpadea"
+     ],
+     "significado": "El equipo indica que necesita revisión técnica.",
+     "causas": [
+      "Avería no especificada"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial una vez; si sigue, llamar al técnico.",
+     "pieza_probable": "",
+     "fuente": "https://www.lg.com/ar/soporte/ayuda-producto/CT20084080-20155047720009",
+     "confianza": "media"
+    }
+   ]
+  },
+  {
+   "familia": "Midea y marcas fabricadas por Midea (aire acondicionado)",
+   "marcas": [
+    "Midea",
+    "Kaysun",
+    "Mundoclima"
+   ],
+   "notas": "Midea fabrica equipos que se venden con otras marcas (en España, entre otras, Kaysun y Mundoclima usan tablas de códigos de estilo Midea en sus manuales). Hay dos generaciones de códigos: la antigua, de dos caracteres (E0, E1, P0...), y la nueva, de dos letras y dos caracteres (EL 01, EH 00, PC 00...) que la pantalla de la unidad interior puede mostrar alternando. Algunos modelos muestran el código pulsando varias veces un botón del mando (p. ej. LED/DISPLAY). Los códigos antiguos cambian bastante de una serie a otra (E1 puede ser comunicación, alta presión o sonda), por eso aquí van con confianza media; pedir siempre el modelo exacto. Johnson no se ha podido verificar que comparta estas tablas. Todo lo relacionado con gas refrigerante lo hace un técnico con certificado de gases fluorados.",
+   "codigos": [
+    {
+     "aparato": "aire",
+     "codigos": [
+      "EL 01"
+     ],
+     "significado": "Error de comunicación entre la unidad interior y la exterior.",
+     "causas": [
+      "Cable de interconexión",
+      "Placa interior o exterior",
+      "Unidad exterior sin corriente"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial esperando unos minutos. Si vuelve, avisar al técnico.",
+     "pieza_probable": "Cable de interconexión o placa",
+     "fuente": "https://support.mrcool.com/hc/en-us/articles/39803744782868-Mini-Split-Systems-Error-Codes",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "EH 00",
+      "EH 0A",
+      "E0"
+     ],
+     "significado": "Error de parámetros de la memoria EEPROM de la unidad interior.",
+     "causas": [
+      "Placa interior"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si vuelve, avisar al técnico.",
+     "pieza_probable": "Placa electrónica interior",
+     "fuente": "https://manualslib.fr/manual/383648/Mundoclima-2022.html?page=57",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "EH 03",
+      "E3"
+     ],
+     "significado": "La velocidad del ventilador interior está fuera de lo normal (fallo del ventilador interior).",
+     "causas": [
+      "Motor del ventilador interior",
+      "Turbina bloqueada o sucia",
+      "Placa interior"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar. Si persiste, avisar al técnico.",
+     "pieza_probable": "Motor del ventilador interior",
+     "fuente": "https://support.mrcool.com/hc/en-us/articles/39803744782868-Mini-Split-Systems-Error-Codes",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "EH 60"
+     ],
+     "significado": "Fallo de la sonda de temperatura ambiente de la unidad interior (T1), abierta o en cortocircuito.",
+     "causas": [
+      "Sonda averiada o desconectada"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar. Si vuelve, avisar al técnico.",
+     "pieza_probable": "Sonda de temperatura ambiente",
+     "fuente": "https://hvacdirect.com/info/midea-eh60-error-code-indoor-room-temperature-sensor.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "EH 61"
+     ],
+     "significado": "Fallo de la sonda del evaporador de la unidad interior (T2).",
+     "causas": [
+      "Sonda averiada o desconectada"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar. Si vuelve, avisar al técnico.",
+     "pieza_probable": "Sonda del evaporador",
+     "fuente": "https://hvacdirect.com/info/midea-mini-split-error-codes--how-to-fix-them-with-diy-tips.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "EL 0C"
+     ],
+     "significado": "Detección de fuga de refrigerante.",
+     "causas": [
+      "Fuga de gas",
+      "Sonda del evaporador mal colocada"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar y llamar al técnico. Fuga y recarga solo las hace un técnico con certificado de gases fluorados.",
+     "pieza_probable": "Reparación de fuga y recarga",
+     "fuente": "https://manualslib.fr/manual/383648/Mundoclima-2022.html?page=57",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "EC 07"
+     ],
+     "significado": "La velocidad del ventilador exterior está fuera de lo normal.",
+     "causas": [
+      "Motor del ventilador exterior",
+      "Hélice bloqueada",
+      "Placa exterior"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar sin abrir que nada bloquea la hélice exterior. Reiniciar. Si persiste, avisar al técnico.",
+     "pieza_probable": "Motor del ventilador exterior",
+     "fuente": "https://support.mrcool.com/hc/en-us/articles/39803744782868-Mini-Split-Systems-Error-Codes",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "EC 51"
+     ],
+     "significado": "Error de parámetros de la memoria EEPROM de la unidad exterior.",
+     "causas": [
+      "Placa exterior"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar. Si vuelve, avisar al técnico.",
+     "pieza_probable": "Placa electrónica exterior",
+     "fuente": "https://support.mrcool.com/hc/en-us/articles/39803744782868-Mini-Split-Systems-Error-Codes",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "PC 00",
+      "P0"
+     ],
+     "significado": "Fallo del módulo IPM o protección por sobrecorriente del inverter.",
+     "causas": [
+      "Placa inverter exterior",
+      "Compresor",
+      "Tensión inestable"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si se repite, no seguir reiniciando y avisar al técnico.",
+     "pieza_probable": "Placa inverter exterior o compresor",
+     "fuente": "https://support.mrcool.com/hc/en-us/articles/39803744782868-Mini-Split-Systems-Error-Codes",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "PC 01",
+      "P1"
+     ],
+     "significado": "Protección por tensión demasiado alta o demasiado baja.",
+     "causas": [
+      "Tensión de la red de la casa baja o inestable",
+      "Conexión eléctrica floja",
+      "Placa exterior"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar si hay bajadas de luz en la casa. Reiniciar. Si persiste, avisar al técnico.",
+     "pieza_probable": "",
+     "fuente": "https://support.mrcool.com/hc/en-us/articles/39803744782868-Mini-Split-Systems-Error-Codes",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "P2"
+     ],
+     "significado": "Protección por alta temperatura en la parte superior del compresor (código antiguo).",
+     "causas": [
+      "Falta de refrigerante",
+      "Exterior mal ventilada"
+     ],
+     "que_puede_hacer_el_cliente": "Despejar la exterior y reiniciar. Si vuelve, avisar al técnico.",
+     "pieza_probable": "Revisión de gas (técnico certificado)",
+     "fuente": "https://servidos.ar/codigos-de-error/aire-acondicionado/midea-surrey-carrier",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "P4"
+     ],
+     "significado": "Error de accionamiento del compresor inverter (código antiguo).",
+     "causas": [
+      "Placa inverter",
+      "Compresor",
+      "Cableado del compresor"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar. Si se repite, avisar al técnico.",
+     "pieza_probable": "Placa inverter o compresor",
+     "fuente": "https://servidos.ar/codigos-de-error/aire-acondicionado/midea-surrey-carrier/p4",
+     "confianza": "media"
+    }
+   ]
+  },
+  {
+   "familia": "Mitsubishi Electric aire acondicionado",
+   "marcas": [
+    "Mitsubishi Electric"
+   ],
+   "notas": "En los splits murales domésticos (MSZ con exterior MUZ/MXZ) no suele salir un código en pantalla: lo que ve el cliente es la luz de funcionamiento (OPERATION INDICATOR) de la unidad interior parpadeando. Hay que contar cuántas veces parpadea antes de una pausa; el número de parpadeos identifica la avería y cambia según la serie, así que conviene pedir al cliente el modelo (etiqueta lateral de la unidad interior) y el número de parpadeos. Contarlos ANTES de quitar la corriente, porque al reiniciar se borra la indicación. En los equipos de conductos, cassette y suelo-techo (gama Mr. Slim PEAD, PLA, PKA, PCA) con mando por cable, el código (P1, E6, U2...) sale en la pantalla del mando; se consulta con el botón CHECK (pulsándolo dos veces) y se sale con ON/OFF. Mitsubishi indica en sus manuales que, si la luz parpadea o el problema no se resuelve tras las comprobaciones básicas, se deje de usar el equipo y se consulte al distribuidor. Todo lo relacionado con gas refrigerante lo hace un técnico con certificado de gases fluorados.",
+   "codigos": [
+    {
+     "aparato": "aire",
+     "codigos": [
+      "Luz de funcionamiento parpadea 6 veces (pausa de 2,5 s)"
+     ],
+     "significado": "Fallo de comunicación (señal serie) entre la unidad interior y la exterior, en splits murales MSZ con exterior MUZ (p. ej. serie GE).",
+     "causas": [
+      "Cable de interconexión suelto o dañado",
+      "Placa de la unidad exterior o interior averiada",
+      "Corte de tensión en la unidad exterior"
+     ],
+     "que_puede_hacer_el_cliente": "Anotar el número de parpadeos, apagar desde el diferencial, esperar unos minutos y volver a encender. Si se repite, avisar al técnico.",
+     "pieza_probable": "Cable de interconexión o placa electrónica",
+     "fuente": "https://cellphone.manualsonline.com/manuals/mfg/mitsubishi/muzge25va.html?p=68",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "Luz izquierda de funcionamiento parpadea a intervalos de 0,5 s"
+     ],
+     "significado": "La avería está en la unidad exterior (en MSZ de varias series).",
+     "causas": [
+      "Protección o fallo en la unidad exterior (compresor, ventilador, sondas, placa)"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que la unidad exterior no está tapada, reiniciar desde el diferencial y, si sigue parpadeando, avisar al técnico.",
+     "pieza_probable": "Componente de la unidad exterior (a diagnosticar)",
+     "fuente": "https://www.manualslib.com/manual/1395178/Mitsubishi-Electric-Msz-Ap25vg.html?page=19",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "Luz de funcionamiento parpadea (cualquier patrón)"
+     ],
+     "significado": "El equipo ha detectado una anomalía; el número de parpadeos indica cuál según la tabla del modelo.",
+     "causas": [
+      "Sondas, ventiladores, comunicación o protecciones de la unidad exterior"
+     ],
+     "que_puede_hacer_el_cliente": "Contar los parpadeos y anotar el modelo. Reiniciar una vez desde el diferencial. Si sigue, dejar de usarlo y llamar al técnico.",
+     "pieza_probable": "",
+     "fuente": "https://planetaklimata.com.ua/instr/Mitsubishi_Electric/Mitsubishi_Electric_MSZ-AP25-71_Service_Manual_Eng.pdf",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E6"
+     ],
+     "significado": "Error de comunicación entre la unidad interior y la exterior (mando por cable, gama Mr. Slim).",
+     "causas": [
+      "Cable de comunicación entre unidades suelto o dañado",
+      "Placa interior o exterior averiada",
+      "Unidad exterior sin corriente"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial esperando unos minutos. Si vuelve, avisar al técnico.",
+     "pieza_probable": "Cable de interconexión o placa electrónica",
+     "fuente": "https://manualslib.com/manual/2186108/Mitsubishi-Electric-M-Series.html?page=108",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E9"
+     ],
+     "significado": "Error de comunicación (transmisión) detectado en la unidad exterior.",
+     "causas": [
+      "Cableado entre unidades",
+      "Placa exterior"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si persiste, avisar al técnico.",
+     "pieza_probable": "Placa exterior o cableado",
+     "fuente": "https://manualslib.com/manual/2154162/Mitsubishi-Electric-M-Series.html?page=51",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "P1"
+     ],
+     "significado": "Fallo de la sonda de temperatura de aspiración (temperatura ambiente) de la unidad interior.",
+     "causas": [
+      "Sonda ambiente averiada o desconectada",
+      "Placa interior"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si vuelve, avisar al técnico.",
+     "pieza_probable": "Sonda de temperatura ambiente (termistor)",
+     "fuente": "https://manualslib.com/manual/2186108/Mitsubishi-Electric-M-Series.html?page=108",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "P2",
+      "P9"
+     ],
+     "significado": "Fallo de una sonda de temperatura de la tubería / intercambiador de la unidad interior.",
+     "causas": [
+      "Sonda de tubería averiada o desconectada"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si vuelve, avisar al técnico.",
+     "pieza_probable": "Sonda de tubería (termistor) de la unidad interior",
+     "fuente": "https://manualslib.com/manual/2186108/Mitsubishi-Electric-M-Series.html?page=108",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "P8"
+     ],
+     "significado": "Temperatura anormal en la tubería de la unidad interior (el intercambiador no enfría o no calienta lo esperado).",
+     "causas": [
+      "Falta de refrigerante",
+      "Filtros muy sucios o caudal de aire bajo",
+      "Sonda de tubería mal colocada"
+     ],
+     "que_puede_hacer_el_cliente": "Limpiar filtros como indica el manual y comprobar que la exterior no está tapada. Reiniciar. Si persiste, técnico; si hay que tocar el gas, solo técnico con certificado de gases fluorados.",
+     "pieza_probable": "Revisión de carga de gas o sonda de tubería",
+     "fuente": "https://manualslib.com/manual/2186108/Mitsubishi-Electric-M-Series.html?page=108",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "U2"
+     ],
+     "significado": "Temperatura de descarga del compresor demasiado alta o falta de refrigerante (unidad exterior; el significado varía según la serie).",
+     "causas": [
+      "Falta de refrigerante por fuga",
+      "Unidad exterior mal ventilada",
+      "Válvula de expansión o sonda de descarga"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar, comprobar que la exterior no está tapada y avisar al técnico. La fuga y la recarga solo las trata un técnico con certificado de gases fluorados.",
+     "pieza_probable": "Reparación de fuga y recarga, o válvula de expansión",
+     "fuente": "https://manualslib.com/manual/2154162/Mitsubishi-Electric-M-Series.html?page=51",
+     "confianza": "media"
+    }
+   ]
+  },
+  {
+   "familia": "Mitsubishi Heavy Industries aire acondicionado",
+   "marcas": [
+    "Mitsubishi Heavy Industries"
+   ],
+   "notas": "No confundir con Mitsubishi Electric: son fabricantes distintos con códigos distintos. En los splits murales SRK la unidad interior avisa con el parpadeo de las luces RUN (funcionamiento) y TIMER; hay que contar los parpadeos de cada una (la tabla varía por modelo). En conductos y cassettes (FDUM, FDT...) con mando por cable el código sale como E y un número (E5, E9...). MHI ofrece la app MHI e-service para consultar códigos. Los significados de abajo proceden de fuentes secundarias y pueden cambiar por serie. Todo lo relacionado con gas refrigerante lo hace un técnico con certificado de gases fluorados.",
+   "codigos": [
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E1"
+     ],
+     "significado": "Error de comunicación con el mando por cable.",
+     "causas": [
+      "Cable del mando suelto o dañado",
+      "Mando o placa interior"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si persiste, avisar al técnico.",
+     "pieza_probable": "Mando por cable o su cableado",
+     "fuente": "https://www.okmarts.com/news/mitsubishi-heavy-industries-haier-ac-error-codes.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E5"
+     ],
+     "significado": "Error de comunicación entre la unidad interior y la exterior.",
+     "causas": [
+      "Cable de interconexión",
+      "Placa interior o exterior"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial esperando unos minutos. Si vuelve, avisar al técnico.",
+     "pieza_probable": "Cable de interconexión o placa",
+     "fuente": "https://www.okmarts.com/news/mitsubishi-heavy-industries-haier-ac-error-codes.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E6"
+     ],
+     "significado": "Sonda del intercambiador de la unidad interior desconectada o averiada.",
+     "causas": [
+      "Sonda averiada o suelta"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar. Si vuelve, avisar al técnico.",
+     "pieza_probable": "Sonda del intercambiador interior",
+     "fuente": "https://www.okmarts.com/news/mitsubishi-heavy-industries-haier-ac-error-codes.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E7"
+     ],
+     "significado": "Sonda de temperatura ambiente (aire de retorno) de la unidad interior desconectada o averiada.",
+     "causas": [
+      "Sonda averiada o suelta"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar. Si vuelve, avisar al técnico.",
+     "pieza_probable": "Sonda de temperatura ambiente",
+     "fuente": "https://www.okmarts.com/news/mitsubishi-heavy-industries-haier-ac-error-codes.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E8"
+     ],
+     "significado": "Protección por sobrecarga en modo calor.",
+     "causas": [
+      "Filtros interiores muy sucios",
+      "Ventilador interior lento",
+      "Exceso de carga"
+     ],
+     "que_puede_hacer_el_cliente": "Limpiar filtros como indica el manual y reiniciar. Si se repite, avisar al técnico.",
+     "pieza_probable": "",
+     "fuente": "https://www.okmarts.com/news/mitsubishi-heavy-industries-haier-ac-error-codes.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E9"
+     ],
+     "significado": "Anomalía en el desagüe (salta la boya de nivel), típica de conductos y cassettes con bomba.",
+     "causas": [
+      "Desagüe atascado",
+      "Bomba de condensados averiada",
+      "Boya atascada"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar, comprobar si hay goteo y avisar al técnico. No abrir el falso techo.",
+     "pieza_probable": "Bomba de condensados o desatasco del desagüe",
+     "fuente": "https://acerrorcode.com/?p=535",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E36"
+     ],
+     "significado": "Temperatura de descarga del compresor anormal.",
+     "causas": [
+      "Falta de refrigerante",
+      "Exterior mal ventilada"
+     ],
+     "que_puede_hacer_el_cliente": "Despejar la exterior y reiniciar. Si vuelve, avisar al técnico; el gas solo lo toca un técnico con certificado de gases fluorados.",
+     "pieza_probable": "Revisión de gas o sonda de descarga",
+     "fuente": "https://www.okmarts.com/news/mitsubishi-heavy-industries-haier-ac-error-codes.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E59"
+     ],
+     "significado": "Error de arranque del compresor.",
+     "causas": [
+      "Compresor",
+      "Placa inverter",
+      "Tensión baja"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar. Si se repite, avisar al técnico.",
+     "pieza_probable": "Compresor o placa inverter",
+     "fuente": "https://www.okmarts.com/news/mitsubishi-heavy-industries-haier-ac-error-codes.html",
+     "confianza": "media"
+    }
+   ]
+  },
+  {
+   "familia": "Panasonic aire acondicionado",
+   "marcas": [
+    "Panasonic"
+   ],
+   "notas": "En los splits Panasonic, cuando hay avería parpadea la luz de la unidad interior. El código se consulta con el mando infrarrojo (función de autodiagnóstico): mantener pulsado 5 segundos el botón CHECK con un objeto fino (un clip o un palillo); en el mando aparece '- -'. Después se pulsa repetidamente la flecha arriba o abajo del TIMER: cada pulsación prueba un código y, cuando la unidad pita (o la luz se queda fija), el código que se ve en el mando es el de la avería. Se sale manteniendo CHECK otros 5 segundos o esperando 30 s. H00 significa sin avería. El procedimiento puede variar según el modelo. Los códigos H son de sondas/comunicación y los F de protecciones. Todo lo relacionado con gas refrigerante lo hace un técnico con certificado de gases fluorados.",
+   "codigos": [
+    {
+     "aparato": "aire",
+     "codigos": [
+      "H00"
+     ],
+     "significado": "Sin avería registrada.",
+     "causas": [],
+     "que_puede_hacer_el_cliente": "Si el equipo no funciona bien sin código, revisar modo, temperatura, filtros y pilas del mando.",
+     "pieza_probable": "",
+     "fuente": "https://www.panasonic.com/ph/air-solutions/learn-more/panasonic-air-conditioner-error-codes-using-the-self-diagnosis-function.html",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "H11"
+     ],
+     "significado": "Comunicación anormal entre la unidad interior y la exterior.",
+     "causas": [
+      "Cable de señal entre unidades",
+      "Placa interior o exterior",
+      "Unidad exterior sin corriente"
+     ],
+     "que_puede_hacer_el_cliente": "Bajar el diferencial, esperar unos minutos y volver a subirlo. Si se repite, llamar al técnico.",
+     "pieza_probable": "Cable de interconexión o placa electrónica",
+     "fuente": "https://www.panasonic.com/kh/hvac/learn-more/panasonic-air-conditioner-error-codes-using-the-self-diagnosis-function.html",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "H12"
+     ],
+     "significado": "La capacidad de la unidad interior no coincide con la exterior (combinación incorrecta).",
+     "causas": [
+      "Unidades no compatibles o mal configuradas (tras instalación o cambio de placa)"
+     ],
+     "que_puede_hacer_el_cliente": "Avisar al instalador o al técnico.",
+     "pieza_probable": "",
+     "fuente": "https://www.panasonic.com/kh/hvac/learn-more/panasonic-air-conditioner-error-codes-using-the-self-diagnosis-function.html",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "H14"
+     ],
+     "significado": "Anomalía en la sonda de temperatura del aire de entrada de la unidad interior.",
+     "causas": [
+      "Sonda ambiente averiada o desconectada"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si vuelve, llamar al técnico.",
+     "pieza_probable": "Sonda de temperatura ambiente interior",
+     "fuente": "https://www.panasonic.com/kh/hvac/learn-more/panasonic-air-conditioner-error-codes-using-the-self-diagnosis-function.html",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "H15"
+     ],
+     "significado": "Anomalía en la sonda de temperatura del compresor.",
+     "causas": [
+      "Sonda del compresor averiada o desconectada"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si vuelve, llamar al técnico.",
+     "pieza_probable": "Sonda de temperatura del compresor",
+     "fuente": "https://www.panasonic.com/kh/hvac/learn-more/panasonic-air-conditioner-error-codes-using-the-self-diagnosis-function.html",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "H16"
+     ],
+     "significado": "Anomalía en el transformador de corriente de la unidad exterior (corriente del compresor demasiado baja).",
+     "causas": [
+      "Transformador de corriente o placa exterior",
+      "Falta de refrigerante (el compresor apenas consume)"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si vuelve, llamar al técnico.",
+     "pieza_probable": "Placa exterior; revisión de gas por técnico certificado",
+     "fuente": "https://www.panasonic.com/kh/hvac/learn-more/panasonic-air-conditioner-error-codes-using-the-self-diagnosis-function.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "H19"
+     ],
+     "significado": "Bloqueo del motor del ventilador de la unidad interior (según la tabla; alguna página oficial lo describe distinto según modelo).",
+     "causas": [
+      "Motor del ventilador interior averiado",
+      "Turbina bloqueada"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si se repite, llamar al técnico.",
+     "pieza_probable": "Motor del ventilador interior",
+     "fuente": "https://luce.sg/blog/panasonic-air-conditioner-error-codes",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "H23"
+     ],
+     "significado": "Anomalía en la sonda del intercambiador de la unidad interior.",
+     "causas": [
+      "Sonda del intercambiador averiada o desconectada"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si vuelve, llamar al técnico.",
+     "pieza_probable": "Sonda del intercambiador interior",
+     "fuente": "https://www.panasonic.com/ph/air-solutions/learn-more/panasonic-air-conditioner-error-codes-using-the-self-diagnosis-function.html",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "H27",
+      "H28"
+     ],
+     "significado": "Anomalía en una sonda de la unidad exterior: H27 temperatura del aire exterior, H28 intercambiador exterior.",
+     "causas": [
+      "Sonda exterior averiada o desconectada"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si vuelve, llamar al técnico.",
+     "pieza_probable": "Sonda de temperatura exterior",
+     "fuente": "https://servlib.com/panasonic/air-conditioner/cs-e21jb4ea-cu-e21hbea.html?start=44",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "F11"
+     ],
+     "significado": "Anomalía en el cambio entre frío y calor (normalmente la válvula de 4 vías).",
+     "causas": [
+      "Válvula de 4 vías o su bobina",
+      "Placa exterior"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que el mando está en el modo correcto y reiniciar. Si se repite, llamar al técnico.",
+     "pieza_probable": "Válvula de 4 vías",
+     "fuente": "https://servlib.com/panasonic/air-conditioner/cs-e21jb4ea-cu-e21hbea.html?start=44",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "F91"
+     ],
+     "significado": "Anomalía en el ciclo de refrigeración (suele indicar falta de gas o circuito obstruido).",
+     "causas": [
+      "Falta de refrigerante por fuga",
+      "Válvulas de servicio cerradas tras instalación",
+      "Obstrucción en el circuito"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar y llamar al técnico. Fuga y recarga solo las hace un técnico con certificado de gases fluorados.",
+     "pieza_probable": "Reparación de fuga y recarga",
+     "fuente": "https://www.panasonic.com/ph/air-solutions/learn-more/panasonic-air-conditioner-error-codes-using-the-self-diagnosis-function.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "F96"
+     ],
+     "significado": "Protección por sobrecalentamiento del módulo de potencia (transistor IPM) de la unidad exterior.",
+     "causas": [
+      "Unidad exterior mal ventilada o al sol con mucho calor",
+      "Placa inverter",
+      "Exceso de carga"
+     ],
+     "que_puede_hacer_el_cliente": "Despejar la unidad exterior y reiniciar. Si se repite, llamar al técnico.",
+     "pieza_probable": "Placa inverter exterior",
+     "fuente": "https://www.panasonic.com/ph/air-solutions/learn-more/panasonic-air-conditioner-error-codes-using-the-self-diagnosis-function.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "F97"
+     ],
+     "significado": "Protección por sobrecalentamiento del compresor.",
+     "causas": [
+      "Falta de refrigerante",
+      "Unidad exterior mal ventilada",
+      "Válvula de expansión"
+     ],
+     "que_puede_hacer_el_cliente": "Despejar la exterior y reiniciar. Si vuelve, llamar al técnico.",
+     "pieza_probable": "Revisión de gas (técnico certificado) o válvula de expansión",
+     "fuente": "https://www.panasonic.com/ph/air-solutions/learn-more/panasonic-air-conditioner-error-codes-using-the-self-diagnosis-function.html",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "F99"
+     ],
+     "significado": "Protección por pico de corriente continua (DC) en el inverter: la unidad se para para proteger el módulo.",
+     "causas": [
+      "Placa inverter / módulo IPM",
+      "Compresor",
+      "Tensión de red inestable"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si se repite, llamar al técnico.",
+     "pieza_probable": "Placa inverter exterior o compresor",
+     "fuente": "https://www.arlingtonairconditioningheating.com/panasonic-aircon-error-code/",
+     "confianza": "media"
+    }
+   ]
+  },
+  {
+   "familia": "Samsung aire acondicionado",
+   "marcas": [
+    "Samsung"
+   ],
+   "notas": "En los splits Samsung el código sale en la pantalla de la unidad interior, normalmente con una letra y tres cifras (E101, E554...) o, en algunos modelos, alternando dos indicaciones (por ejemplo E1 y luego 21). Samsung advierte que la primera letra puede variar según el modelo y que no todos los códigos indican una avería. 'CF' es solo el aviso de limpiar el filtro. Algunos modelos permiten hacer un autodiagnóstico con el mando (guía en samsung.com/es). Para los códigos de avería Samsung recomienda anotar el código y llamar al servicio técnico. Todo lo relacionado con gas refrigerante lo hace un técnico con certificado de gases fluorados.",
+   "codigos": [
+    {
+     "aparato": "aire",
+     "codigos": [
+      "CF"
+     ],
+     "significado": "Aviso de limpieza del filtro de aire; no es una avería.",
+     "causas": [
+      "Filtro de la unidad interior con polvo acumulado"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar el equipo, sacar y limpiar los filtros como indica el manual (aspirar o lavar con agua tibia y secar a la sombra) y reiniciar el aviso de filtro.",
+     "pieza_probable": "",
+     "fuente": "https://ushl.samsung.com/co/support/home-appliances/check-the-error-codes-that-appear-on-the-screen-of-your-air-conditioner",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E101"
+     ],
+     "significado": "Fallo de comunicación entre la unidad interior y la exterior.",
+     "causas": [
+      "Cable de señal entre unidades",
+      "Placa interior o exterior",
+      "Unidad exterior sin corriente"
+     ],
+     "que_puede_hacer_el_cliente": "Bajar el diferencial del aire, esperar unos minutos y volver a subirlo. Si se repite, llamar al técnico.",
+     "pieza_probable": "Cable de interconexión o placa electrónica",
+     "fuente": "https://www.samsung.com/tr/support/home-appliances/what-are-samsung-air-conditioner-error-codes-and-solutions",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E201",
+      "E202"
+     ],
+     "significado": "Error de comunicación en la unidad exterior o entre unidades (el significado exacto varía según el modelo).",
+     "causas": [
+      "Cableado de comunicación",
+      "Placa exterior"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si se repite, llamar al técnico.",
+     "pieza_probable": "Placa exterior o cableado",
+     "fuente": "https://www.boxt.co.uk/air-conditioning/guides/samsung-air-conditioning-fault-codes",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E121",
+      "E1 y 21"
+     ],
+     "significado": "Fallo de la sonda de temperatura ambiente de la unidad interior.",
+     "causas": [
+      "Sonda ambiente averiada o desconectada",
+      "Placa interior"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si vuelve, llamar al técnico.",
+     "pieza_probable": "Sonda de temperatura ambiente",
+     "fuente": "https://ushl.samsung.com/co/support/home-appliances/check-the-error-codes-that-appear-on-the-screen-of-your-air-conditioner",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E122",
+      "E1 y 22",
+      "E5"
+     ],
+     "significado": "Fallo de la sonda del intercambiador (evaporador) de la unidad interior: abierta, en cortocircuito o suelta.",
+     "causas": [
+      "Sonda del intercambiador averiada o desconectada"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si vuelve, llamar al técnico.",
+     "pieza_probable": "Sonda del intercambiador interior",
+     "fuente": "https://ushl.samsung.com/co/support/home-appliances/check-the-error-codes-that-appear-on-the-screen-of-your-air-conditioner",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E154",
+      "E1 y 54"
+     ],
+     "significado": "Fallo del motor del ventilador interior: no alcanza la velocidad o entra en protección (en algunos países Samsung asocia E1-54 también al gas).",
+     "causas": [
+      "Motor del ventilador interior averiado",
+      "Turbina bloqueada o muy sucia",
+      "Condensador del motor"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si se repite, llamar al técnico.",
+     "pieza_probable": "Motor del ventilador interior",
+     "fuente": "https://www.samsung.com/tr/support/home-appliances/what-are-samsung-air-conditioner-error-codes-and-solutions",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E1 y 63"
+     ],
+     "significado": "Posible fallo de la memoria EEPROM de la placa.",
+     "causas": [
+      "Placa electrónica averiada"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si vuelve, llamar al técnico.",
+     "pieza_probable": "Placa electrónica",
+     "fuente": "https://ushl.samsung.com/co/support/home-appliances/check-the-error-codes-that-appear-on-the-screen-of-your-air-conditioner",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E221",
+      "E237"
+     ],
+     "significado": "Fallo de una sonda de temperatura de la unidad exterior.",
+     "causas": [
+      "Sonda exterior averiada o conector suelto"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si se repite, llamar al técnico.",
+     "pieza_probable": "Sonda de temperatura exterior",
+     "fuente": "https://www.samsung.com/tr/support/home-appliances/what-are-samsung-air-conditioner-error-codes-and-solutions",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E416"
+     ],
+     "significado": "Temperatura de descarga del compresor demasiado alta.",
+     "causas": [
+      "Falta de refrigerante",
+      "Unidad exterior mal ventilada",
+      "Válvula de expansión"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar que la exterior no está tapada y reiniciar. Si vuelve, llamar al técnico; el gas solo lo toca un técnico con certificado de gases fluorados.",
+     "pieza_probable": "Revisión de carga de gas o válvula de expansión",
+     "fuente": "https://www.samsung.com/tr/support/home-appliances/what-are-samsung-air-conditioner-error-codes-and-solutions",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E458"
+     ],
+     "significado": "Fallo del ventilador de la unidad exterior.",
+     "causas": [
+      "Motor del ventilador exterior",
+      "Hélice bloqueada"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar sin abrir que nada bloquea la hélice. Reiniciar. Si persiste, llamar al técnico.",
+     "pieza_probable": "Motor del ventilador exterior",
+     "fuente": "https://www.samsung.com/tr/support/home-appliances/what-are-samsung-air-conditioner-error-codes-and-solutions",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E461"
+     ],
+     "significado": "Fallo de arranque del compresor.",
+     "causas": [
+      "Compresor bloqueado o averiado",
+      "Placa inverter exterior",
+      "Tensión de red baja"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si se repite, llamar al técnico.",
+     "pieza_probable": "Compresor o placa inverter",
+     "fuente": "https://www.samsung.com/tr/support/home-appliances/what-are-samsung-air-conditioner-error-codes-and-solutions",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E464"
+     ],
+     "significado": "Sobrecorriente en el módulo de potencia (IPM) del inverter.",
+     "causas": [
+      "Placa inverter exterior",
+      "Compresor",
+      "Tensión inestable"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si se repite, llamar al técnico.",
+     "pieza_probable": "Placa inverter exterior o compresor",
+     "fuente": "https://www.samsung.com/tr/support/home-appliances/what-are-samsung-air-conditioner-error-codes-and-solutions",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E554"
+     ],
+     "significado": "Fuga de gas / refrigerante insuficiente en el sistema.",
+     "causas": [
+      "Fuga de refrigerante en uniones o tuberías",
+      "Carga de gas insuficiente"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar y no seguir usándolo. Llamar al técnico: localizar la fuga y recargar solo lo puede hacer un técnico con certificado de gases fluorados.",
+     "pieza_probable": "Reparación de fuga y recarga de refrigerante",
+     "fuente": "https://www.samsung.com/tr/support/home-appliances/what-are-samsung-air-conditioner-error-codes-and-solutions",
+     "confianza": "alta"
+    }
+   ]
+  },
+  {
+   "familia": "Toshiba aire acondicionado",
+   "marcas": [
+    "Toshiba"
+   ],
+   "notas": "Los códigos con letra y dos cifras (E04, P15, F01...) corresponden sobre todo a equipos Toshiba con mando por cable (conductos, cassettes y semiindustrial RAV); salen en la pantalla del mando, y el código solo se muestra con el equipo en marcha. En los splits murales domésticos (RAS) lo que ve el cliente es el parpadeo de las luces de la unidad interior; el código se lee con el botón CHECK del mando infrarrojo (se pulsa con la punta de un lápiz y se recorren los códigos con los botones de temperatura), procedimiento que varía por modelo. Toshiba advierte que quitar la corriente antes de leer el código puede borrar la memoria de averías: conviene anotar lo que se ve antes de reiniciar. Todo lo relacionado con gas refrigerante lo hace un técnico con certificado de gases fluorados.",
+   "codigos": [
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E01"
+     ],
+     "significado": "Error de comunicación del mando por cable con la unidad interior.",
+     "causas": [
+      "Cable del mando suelto o dañado",
+      "Mando o placa interior averiados"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si persiste, llamar al técnico.",
+     "pieza_probable": "Mando por cable o su cableado",
+     "fuente": "https://manualslib.mx/manual/662800/Toshiba-Rav-Sm2242Dt-E.html?page=40",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E03"
+     ],
+     "significado": "Error de comunicación regular entre la unidad interior y el mando (en algunos sistemas, entre unidades interiores).",
+     "causas": [
+      "Cableado del mando",
+      "Placa interior"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si persiste, llamar al técnico.",
+     "pieza_probable": "Mando por cable o placa interior",
+     "fuente": "https://manualslib.mx/manual/662800/Toshiba-Rav-Sm2242Dt-E.html?page=40",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "E04"
+     ],
+     "significado": "Error de comunicación serie entre la unidad interior y la exterior.",
+     "causas": [
+      "Cable de interconexión mal conectado o dañado",
+      "Placa exterior o interior",
+      "Unidad exterior sin corriente"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial esperando unos minutos. Si vuelve, llamar al técnico.",
+     "pieza_probable": "Cable de interconexión o placa electrónica",
+     "fuente": "https://manualslib.mx/manual/662800/Toshiba-Rav-Sm2242Dt-E.html?page=40",
+     "confianza": "alta"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "F01",
+      "F02"
+     ],
+     "significado": "Fallo de una sonda del intercambiador de la unidad interior (F01 sonda TCJ, F02 sonda TC2).",
+     "causas": [
+      "Sonda averiada o desconectada"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si vuelve, llamar al técnico.",
+     "pieza_probable": "Sonda del intercambiador interior",
+     "fuente": "https://manualslib.mx/manual/662800/Toshiba-Rav-Sm2242Dt-E.html?page=40",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "H01"
+     ],
+     "significado": "Avería o sobrecorriente del compresor de la unidad exterior.",
+     "causas": [
+      "Compresor",
+      "Placa inverter",
+      "Tensión de red baja o inestable"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar desde el diferencial. Si se repite, llamar al técnico.",
+     "pieza_probable": "Compresor o placa inverter exterior",
+     "fuente": "https://manualslib.mx/manual/662800/Toshiba-Rav-Sm2242Dt-E.html?page=40",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "L09"
+     ],
+     "significado": "La potencia de la unidad interior no está configurada (fallo de configuración).",
+     "causas": [
+      "Configuración incompleta tras instalación o cambio de placa"
+     ],
+     "que_puede_hacer_el_cliente": "Avisar al instalador o al técnico.",
+     "pieza_probable": "",
+     "fuente": "https://manualslib.mx/manual/662800/Toshiba-Rav-Sm2242Dt-E.html?page=40",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "P04"
+     ],
+     "significado": "Ha saltado el presostato de alta presión de la unidad exterior.",
+     "causas": [
+      "Unidad exterior mal ventilada o batería sucia",
+      "Ventilador exterior",
+      "Exceso de gas o circuito obstruido"
+     ],
+     "que_puede_hacer_el_cliente": "Despejar la unidad exterior y reiniciar. Si vuelve, llamar al técnico.",
+     "pieza_probable": "Ventilador exterior o revisión del circuito (técnico certificado)",
+     "fuente": "https://manualslib.mx/manual/662800/Toshiba-Rav-Sm2242Dt-E.html?page=40",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "P05"
+     ],
+     "significado": "Problema en la alimentación eléctrica (fase abierta, secuencia de fases o tensión anormal), según modelo.",
+     "causas": [
+      "Tensión de red baja o inestable",
+      "Falta de una fase en equipos trifásicos",
+      "Conexión eléctrica floja"
+     ],
+     "que_puede_hacer_el_cliente": "Comprobar si hay más aparatos de la casa con problemas de luz. Reiniciar. Si persiste, llamar al técnico.",
+     "pieza_probable": "",
+     "fuente": "https://manualslib.mx/manual/662800/Toshiba-Rav-Sm2242Dt-E.html?page=40",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "P15"
+     ],
+     "significado": "Detección de fuga de gas refrigerante.",
+     "causas": [
+      "Fuga de refrigerante",
+      "Válvula de servicio cerrada"
+     ],
+     "que_puede_hacer_el_cliente": "Apagar y llamar al técnico. Fuga y recarga solo las hace un técnico con certificado de gases fluorados.",
+     "pieza_probable": "Reparación de fuga y recarga",
+     "fuente": "https://manualslib.mx/manual/662800/Toshiba-Rav-Sm2242Dt-E.html?page=40",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "P19"
+     ],
+     "significado": "Error de la válvula de 4 vías (no cambia bien entre frío y calor).",
+     "causas": [
+      "Válvula de 4 vías o su bobina",
+      "Placa exterior"
+     ],
+     "que_puede_hacer_el_cliente": "Reiniciar. Si se repite, llamar al técnico.",
+     "pieza_probable": "Válvula de 4 vías",
+     "fuente": "https://manualslib.mx/manual/662800/Toshiba-Rav-Sm2242Dt-E.html?page=40",
+     "confianza": "media"
+    },
+    {
+     "aparato": "aire",
+     "codigos": [
+      "P22"
+     ],
+     "significado": "Fallo del motor del ventilador de la unidad exterior.",
+     "causas": [
+      "Motor del ventilador exterior",
+      "Hélice bloqueada",
+      "Placa exterior"
+     ],
+     "que_puede_hacer_el_cliente": "Mirar sin abrir que nada bloquea la hélice. Reiniciar. Si persiste, llamar al técnico.",
+     "pieza_probable": "Motor del ventilador exterior",
+     "fuente": "https://manualslib.mx/manual/662800/Toshiba-Rav-Sm2242Dt-E.html?page=40",
+     "confianza": "media"
+    }
+   ]
+  },
+  {
    "familia": "Beko",
    "marcas": [
     "Beko",
@@ -5380,6 +7356,477 @@ export default {
   }
  ],
  "sintomas": [
+  {
+   "aparato": "aire",
+   "sintoma": "No enfría o enfría poco",
+   "palabras": [
+    "no echa frío",
+    "echa aire pero no enfría",
+    "no enfría nada",
+    "enfría muy poco",
+    "echa aire del tiempo",
+    "la casa no baja de temperatura"
+   ],
+   "causas": [
+    "Filtros de la unidad interior sucios",
+    "Modo o temperatura mal puestos en el mando (ventilador, seco o temperatura alta)",
+    "Unidad exterior tapada o con la batería sucia",
+    "Falta de gas por una fuga",
+    "Avería de compresor o ventilador exterior"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que el mando está en modo frío (copo de nieve) y con una temperatura más baja que la de la habitación. Limpiar los filtros como indica el manual. Comprobar que nada tapa la unidad exterior. Tras encender, esperar unos minutos (el compresor puede tardar 3-4 minutos en arrancar). Si sigue igual, llamar al técnico. El gas no se gasta: si falta es que hay una fuga, y solo un técnico con certificado de gases fluorados puede buscarla, repararla y recargar.",
+   "pieza_probable": "Reparación de fuga y recarga (técnico certificado), compresor o ventilador exterior",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.eldiario.es/consumoclaro/aire-acondicionado-no-enfria-factores-debes-identificar-solucionarlo_1_13417110.html",
+    "https://www.ocu.org/vivienda-y-energia/aire-acondicionado/consejos/mantenimiento-aire-acondicionado",
+    "https://www.samsung.com/mx/support/home-appliances/my-air-conditioner-does-not-work"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Echa aire caliente en modo frío",
+   "palabras": [
+    "echa aire caliente",
+    "sale aire caliente cuando lo pongo en frío",
+    "en vez de frío echa calor"
+   ],
+   "causas": [
+    "Modo calor o automático seleccionado por error",
+    "Unidad exterior parada (compresor o ventilador)",
+    "Válvula de 4 vías atascada",
+    "Falta de gas"
+   ],
+   "que_puede_hacer_el_cliente": "Revisar en el mando que está en modo frío y no en calor o automático. Mirar si la unidad exterior está funcionando (ruido, ventilador girando). Reiniciar desde el diferencial. Si sigue, llamar al técnico.",
+   "pieza_probable": "Válvula de 4 vías, compresor o placa exterior",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.samsung.com/mx/support/home-appliances/my-air-conditioner-does-not-work",
+    "https://www.ocu.org/vivienda-y-energia/aire-acondicionado/consejos/funciones-mando-aire-acondicionado"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "No calienta (bomba de calor)",
+   "palabras": [
+    "no calienta",
+    "no echa calor",
+    "echa aire frío en calefacción",
+    "la bomba de calor no calienta"
+   ],
+   "causas": [
+    "Está haciendo un desescarche (normal en invierno, unos minutos)",
+    "Arranque en calor: al principio no sopla hasta que la batería se calienta",
+    "Filtros sucios",
+    "Modo o temperatura mal puestos",
+    "Falta de gas o avería de la unidad exterior"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que está en modo calor (sol) y con temperatura por encima de la de la habitación. En días fríos, esperar unos 10 minutos: durante el desescarche no sale calor. Limpiar filtros. Si tras eso sigue sin calentar o sale un código, llamar al técnico.",
+   "pieza_probable": "Revisión de gas (técnico certificado), válvula de 4 vías, sondas o compresor",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://manuals.online/mitsubishi-electric/air-conditioner/msz-gs30na/user-manual/yr2d",
+    "https://tarifaluzhora.es/noticias/aire-acondicionado-2026-humo-invierno-desescarche"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "La unidad exterior echa humo o vapor en invierno y se para la calefacción un rato",
+   "palabras": [
+    "la máquina de fuera echa humo",
+    "sale vapor de la máquina de fuera",
+    "se para y echa agua por fuera",
+    "la de fuera echa humo blanco"
+   ],
+   "causas": [
+    "Desescarche: el equipo derrite el hielo de la unidad exterior; es normal"
+   ],
+   "que_puede_hacer_el_cliente": "Es normal: esperar unos 10 minutos a que termine. Es vapor de agua, no humo. Si huele a quemado, sale humo oscuro o no termina nunca, apagar desde el diferencial y llamar al técnico.",
+   "pieza_probable": "",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://manuals.online/mitsubishi-electric/air-conditioner/msz-gs30na/user-manual/yr2d",
+    "https://tarifaluzhora.es/noticias/aire-acondicionado-2026-humo-invierno-desescarche",
+    "https://www.lg.com/ro/suport/ajutor-produs/CT20202048-1433992660655"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Gotea agua por la unidad interior",
+   "palabras": [
+    "gotea agua",
+    "chorrea agua",
+    "pierde agua por la máquina de dentro",
+    "cae agua del aparato",
+    "está mojando la pared",
+    "gotea el split"
+   ],
+   "causas": [
+    "Tubo de desagüe atascado, doblado o con el extremo sumergido",
+    "Bandeja de condensados llena u obstruida por suciedad",
+    "Unidad interior desnivelada",
+    "Filtros sucios que hacen que se forme hielo y luego gotee",
+    "Bomba de condensados averiada (en conductos y cassettes)"
+   ],
+   "que_puede_hacer_el_cliente": "Apagar el equipo y poner un recipiente o toalla debajo. Limpiar los filtros. Comprobar, si se ve, que el tubo de desagüe exterior no está doblado ni metido en agua y que gotea por fuera cuando funciona. No abrir la máquina. Si el goteo es fuerte o sigue, llamar al técnico.",
+   "pieza_probable": "Desatasco del desagüe o bandeja, bomba de condensados",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://ushl.samsung.com/es/support/home-appliances/que-hacer-cuando-caen-gotas-de-agua-de-tu-aire-acondicionado",
+    "https://www.ocu.org/vivienda-y-energia/aire-acondicionado/consejos/mantenimiento-aire-acondicionado",
+    "https://www.lg.com/ec/soporte/ayuda-producto/CT20281006-20155363606167"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "No sale agua por el tubo de desagüe exterior cuando enfría",
+   "palabras": [
+    "no echa agua por fuera",
+    "el tubito de fuera no gotea",
+    "antes goteaba por fuera y ya no"
+   ],
+   "causas": [
+    "Desagüe taponado (el agua puede acabar saliendo por dentro)",
+    "Problema de instalación"
+   ],
+   "que_puede_hacer_el_cliente": "Vigilar si empieza a gotear por la unidad interior. Llamar al técnico para revisar el desagüe.",
+   "pieza_probable": "Desatasco del desagüe",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.ocu.org/vivienda-y-energia/aire-acondicionado/consejos/mantenimiento-aire-acondicionado"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Se hace hielo o escarcha en la unidad interior o en las tuberías",
+   "palabras": [
+    "hace hielo",
+    "se congela",
+    "tiene escarcha en los tubos",
+    "el tubo de cobre está blanco de hielo",
+    "se forma hielo dentro"
+   ],
+   "causas": [
+    "Filtros muy sucios o rejillas tapadas (poco caudal de aire)",
+    "Falta de gas por fuga",
+    "Ventilador interior averiado o a muy baja velocidad"
+   ],
+   "que_puede_hacer_el_cliente": "Apagar el equipo enseguida y dejar que se descongele (poner toallas por si gotea). Limpiar los filtros y comprobar que nada tapa la entrada ni la salida de aire. Si vuelve a congelarse, llamar al técnico. Si falta gas hay que localizar y reparar la fuga antes de recargar, siempre por un técnico con certificado de gases fluorados.",
+   "pieza_probable": "Reparación de fuga y recarga (técnico certificado) o motor del ventilador interior",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.eldiario.es/consumoclaro/aire-acondicionado-no-enfria-factores-debes-identificar-solucionarlo_1_13417110.html",
+    "https://www.midea.com/mx/blog/ver-todas/tips/que-hacer-cuando-el-aire-acondicionado-se-congela"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Huele mal (humedad, moho)",
+   "palabras": [
+    "huele mal",
+    "echa mal olor",
+    "huele a humedad",
+    "huele a cerrado",
+    "huele a moho",
+    "huele a tigre"
+   ],
+   "causas": [
+    "Filtros sucios",
+    "Humedad y moho en la batería o la turbina de la unidad interior",
+    "Desagüe obstruido con agua estancada",
+    "Olores de la casa (tabaco, cocina) aspirados por el aparato"
+   ],
+   "que_puede_hacer_el_cliente": "Limpiar los filtros (Samsung recomienda cada 15 días con uso continuo en verano). Ventilar la habitación. Si sigue oliendo, pedir una limpieza a fondo de la unidad interior por el técnico.",
+   "pieza_probable": "Limpieza interior de batería y turbina",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.samsung.com/mx/support/home-appliances/what-should-i-do-when-the-air-conditioner-emits-a-bad-smell/",
+    "https://www.ocu.org/vivienda-y-energia/aire-acondicionado/consejos/mantenimiento-aire-acondicionado"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Huele a quemado o sale humo de la unidad",
+   "palabras": [
+    "huele a quemado",
+    "huele a plástico quemado",
+    "sale humo del aparato",
+    "huele a cable quemado"
+   ],
+   "causas": [
+    "Fallo eléctrico en placa, motor o conexiones"
+   ],
+   "que_puede_hacer_el_cliente": "Parar el aparato y bajar el diferencial o automático del aire enseguida. No volver a encenderlo. Llamar al técnico.",
+   "pieza_probable": "Placa electrónica, motor o cableado (a diagnosticar)",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/mitsubishi-electric/wp-content/uploads/2012/12/MANUAL-DE-USUARIO-PEAD-RP-JAQ.pdf",
+    "https://www.ocu.org/vivienda-y-energia/aire-acondicionado/consejos/mantenimiento-aire-acondicionado"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Salta el diferencial o el automático al encender el aire",
+   "palabras": [
+    "salta el diferencial",
+    "se me va la luz cuando enciendo el aire",
+    "salta el automático",
+    "salta los plomos",
+    "se va la luz de la casa al poner el aire"
+   ],
+   "causas": [
+    "Derivación a tierra en el compresor, en un motor o en el cableado (a menudo por humedad)",
+    "Placa o componente eléctrico averiado",
+    "Automático o línea eléctrica insuficiente para el aparato"
+   ],
+   "que_puede_hacer_el_cliente": "No insistir subiendo el diferencial una y otra vez. Dejar el aire desconectado (automático del aire bajado) y llamar al técnico para medir el aislamiento del equipo. No abrir ninguna unidad.",
+   "pieza_probable": "Compresor, motor de ventilador, placa o cableado (a diagnosticar)",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://manuals.online/mitsubishi-electric/air-conditioner/mr-slim-msz-a09na/user-manual/2a41v",
+    "https://www.midea.com/co/blog/fallo-aire-acondicionado"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "La unidad exterior no arranca (la interior sopla pero fuera no se oye nada)",
+   "palabras": [
+    "la de fuera no arranca",
+    "la máquina de fuera no hace nada",
+    "no se enciende el motor de fuera",
+    "el ventilador de fuera no gira"
+   ],
+   "causas": [
+    "Retardo normal de protección de 3-4 minutos tras encender",
+    "Fallo de comunicación entre unidades",
+    "Condensador de arranque, placa exterior o compresor",
+    "Unidad exterior sin corriente"
+   ],
+   "que_puede_hacer_el_cliente": "Esperar 3-4 minutos tras encender. Comprobar modo y temperatura en el mando. Mirar si la unidad interior muestra un código o parpadea y anotarlo. Reiniciar desde el diferencial. Si sigue sin arrancar, llamar al técnico.",
+   "pieza_probable": "Placa exterior, condensador o compresor",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.daikin.eu/content/dam/document-library/operation-manuals/ac/split/ftxc-c/FTXC-C_3P621306-1_Operation%20manual_Spanish.pdf"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "No se enciende nada",
+   "palabras": [
+    "no enciende",
+    "está muerto",
+    "no hace nada",
+    "no se ilumina",
+    "no responde a nada"
+   ],
+   "causas": [
+    "Diferencial o automático del aire bajado",
+    "Corte de luz",
+    "Pilas del mando gastadas",
+    "Temporizador programado",
+    "Placa electrónica averiada"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que el automático del aire está subido y que hay luz en la casa. Cambiar las pilas del mando. Probar a encender con el botón de la propia unidad interior si lo tiene. Si sigue sin encender, llamar al técnico.",
+   "pieza_probable": "Placa electrónica",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.samsung.com/mx/support/home-appliances/my-air-conditioner-does-not-work",
+    "https://www.daikin.eu/content/dam/document-library/operation-manuals/ac/split/ftxc-c/FTXC-C_3P621306-1_Operation%20manual_Spanish.pdf"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "El mando no responde",
+   "palabras": [
+    "el mando no va",
+    "el mando no funciona",
+    "no le hace caso al mando",
+    "no pita al darle al mando",
+    "la pantalla del mando no se ve"
+   ],
+   "causas": [
+    "Pilas gastadas",
+    "Algo entre el mando y el receptor de la unidad o luz fuerte (sol, fluorescentes) sobre el receptor",
+    "Mando bloqueado o en un modo raro",
+    "Receptor o placa de la unidad interior"
+   ],
+   "que_puede_hacer_el_cliente": "Cambiar las pilas. Apuntar directamente a la unidad interior desde cerca. Quitar la corriente unos minutos y volver a darla. Si con pilas nuevas la pantalla del mando no se enciende, el fallo es del mando; si el mando se ve bien pero la unidad no pita, avisar al técnico.",
+   "pieza_probable": "Mando a distancia o receptor de la unidad interior",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.samsung.com/es/support/category/home-appliances/air-conditioning/",
+    "https://www.ocu.org/vivienda-y-energia/aire-acondicionado/consejos/funciones-mando-aire-acondicionado"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Hace ruido fuerte o vibra",
+   "palabras": [
+    "hace mucho ruido",
+    "vibra",
+    "hace un ruido raro",
+    "traquetea",
+    "suena como si rozara algo"
+   ],
+   "causas": [
+    "Filtro obstruido",
+    "Piezas o tapas sueltas, soportes de la exterior flojos",
+    "Turbina o hélice sucia, desequilibrada o rozando",
+    "Rodamientos de un motor de ventilador"
+   ],
+   "que_puede_hacer_el_cliente": "Limpiar los filtros. Comprobar que nada toca la unidad exterior ni está apoyado en ella. Si el ruido sigue o es metálico, apagar y llamar al técnico.",
+   "pieza_probable": "Motor del ventilador, soportes antivibratorios o turbina",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.samsung.com/mx/support/home-appliances/what-should-i-do-when-the-air-conditioner-is-noisy/"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Silbido agudo o siseo continuo",
+   "palabras": [
+    "silba",
+    "pita como un silbido",
+    "hace un siseo",
+    "suena como si se escapara aire"
+   ],
+   "causas": [
+    "Fuga de refrigerante",
+    "Presión alta en el compresor"
+   ],
+   "que_puede_hacer_el_cliente": "Samsung indica apagarlo y llamar al servicio técnico. No tocar tuberías ni uniones: cualquier fuga la revisa un técnico con certificado de gases fluorados. (Un ruido suave de agua o un chasquido de plásticos al dilatarse suele ser normal.)",
+   "pieza_probable": "Reparación de fuga y recarga (técnico certificado)",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://www.samsung.com/mx/support/home-appliances/what-should-i-do-when-the-air-conditioner-is-noisy/"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Pierde gas o el técnico anterior dijo que le falta gas",
+   "palabras": [
+    "le falta gas",
+    "hay que cargarle gas",
+    "pierde gas",
+    "cada verano hay que echarle gas"
+   ],
+   "causas": [
+    "Fuga en abocardados (uniones), tuberías, válvulas o baterías"
+   ],
+   "que_puede_hacer_el_cliente": "Nada por su cuenta. El gas no se gasta: si falta, hay una fuga que hay que localizar y reparar antes de recargar. La manipulación de gases fluorados (fugas, recarga, soldaduras, recuperación) la hacen solo empresas habilitadas y personal con certificado según el Real Decreto 115/2017.",
+   "pieza_probable": "Reparación de fuga, prueba de estanqueidad y recarga",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.boe.es/eli/es/rd/2017/02/17/115/con",
+    "https://www.eldiario.es/consumoclaro/aire-acondicionado-no-enfria-factores-debes-identificar-solucionarlo_1_13417110.html"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Se enciende y se apaga solo, o arranca y se para a menudo",
+   "palabras": [
+    "se apaga solo",
+    "se enciende y se apaga",
+    "arranca y se para",
+    "va a ratos"
+   ],
+   "causas": [
+    "Ha llegado a la temperatura programada (normal, el inverter baja o para)",
+    "Temporizador o modo noche programado",
+    "Protecciones por filtro sucio, exterior mal ventilada o falta de gas",
+    "Sonda de temperatura averiada"
+   ],
+   "que_puede_hacer_el_cliente": "Revisar temporizadores y modo noche en el mando. Limpiar filtros y despejar la unidad exterior. Si se para con un código o parpadeo, anotarlo y llamar al técnico.",
+   "pieza_probable": "Sonda de temperatura o revisión de gas (técnico certificado)",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.samsung.com/mx/support/home-appliances/my-air-conditioner-does-not-work",
+    "https://www.ocu.org/vivienda-y-energia/aire-acondicionado/noticias/aire-acondicionado-consejos-uso"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Tarda unos minutos en arrancar al encenderlo",
+   "palabras": [
+    "tarda en arrancar",
+    "le doy y no hace nada hasta un rato",
+    "tarda en echar frío al encenderlo"
+   ],
+   "causas": [
+    "Protección contra arranques frecuentes del compresor (3-4 minutos); es normal",
+    "En calor, espera a calentar la batería antes de soplar"
+   ],
+   "que_puede_hacer_el_cliente": "Esperar 3-4 minutos. Si pasado ese tiempo no arranca, ver síntoma 'la unidad exterior no arranca'.",
+   "pieza_probable": "",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.daikin.eu/content/dam/document-library/operation-manuals/ac/split/ftxc-c/FTXC-C_3P621306-1_Operation%20manual_Spanish.pdf"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Echa poco aire por la unidad interior",
+   "palabras": [
+    "echa muy poco aire",
+    "sale poco aire",
+    "sopla flojo",
+    "casi no sale aire"
+   ],
+   "causas": [
+    "Filtros obstruidos",
+    "Velocidad del ventilador baja o modo silencio/noche",
+    "Batería sucia o con hielo",
+    "Motor del ventilador interior"
+   ],
+   "que_puede_hacer_el_cliente": "Limpiar filtros. Poner el ventilador en velocidad alta y quitar el modo noche o silencio. Si sigue flojo, llamar al técnico para limpieza interior o revisión del motor.",
+   "pieza_probable": "Limpieza de batería y turbina o motor del ventilador interior",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.ocu.org/vivienda-y-energia/aire-acondicionado/consejos/mantenimiento-aire-acondicionado",
+    "https://www.samsung.com/mx/support/home-appliances/what-should-i-do-when-the-air-conditioner-is-noisy/"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Gotea agua por la unidad exterior",
+   "palabras": [
+    "la de fuera echa agua",
+    "gotea la máquina de fuera",
+    "hay un charco debajo de la máquina de fuera"
+   ],
+   "causas": [
+    "En calor y durante el desescarche la unidad exterior suelta agua; es normal",
+    "En frío lo normal es que el agua salga por el tubo de desagüe de la interior"
+   ],
+   "que_puede_hacer_el_cliente": "Si es en invierno con la calefacción, es normal. Si el agua molesta a vecinos o cae a la calle, el técnico puede instalar una bandeja o conducir el desagüe.",
+   "pieza_probable": "Bandeja de condensados exterior (opcional)",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.lg.com/ro/suport/ajutor-produs/CT20202048-1433992660655",
+    "https://tarifaluzhora.es/noticias/aire-acondicionado-2026-humo-invierno-desescarche"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "La luz de la unidad interior parpadea o sale un código en la pantalla",
+   "palabras": [
+    "parpadea una luz",
+    "le sale un código",
+    "pone E y un número",
+    "sale una letra rara en la pantalla",
+    "la lucecita verde parpadea"
+   ],
+   "causas": [
+    "El aparato ha detectado una avería y la está indicando"
+   ],
+   "que_puede_hacer_el_cliente": "Anotar el código o contar cuántas veces parpadea cada luz ANTES de quitar la corriente, y mirar la marca y el modelo en la etiqueta de la unidad interior. Luego reiniciar una vez desde el diferencial esperando unos minutos. Si vuelve, llamar al técnico con esos datos.",
+   "pieza_probable": "",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://fujitsu-general.com/th/en/support/faq/split/0084.html",
+    "https://www.samsung.com/ar/support/home-appliances/error-codes-on-your-samsung-indoor-air-conditioner/"
+   ]
+  },
   {
    "aparato": "lavadora",
    "sintoma": "No centrifuga o deja la ropa muy mojada",

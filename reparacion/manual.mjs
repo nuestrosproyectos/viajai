@@ -39,7 +39,7 @@ export const MARCAS = {
   Beko: ["beko", "veko"], Grundig: ["grundig"], Teka: ["teka", "teca"], Fagor: ["fagor"], Edesa: ["edesa"], Aspes: ["aspes"],
   Cata: ["cata"], Liebherr: ["liebherr", "liber", "lieber", "liebher"], Miele: ["miele", "mile", "mielle"], Smeg: ["smeg", "esmeg"],
   // Aire acondicionado
-  Daikin: ["daikin", "daikín", "daiquin", "daikim"], "Mitsubishi Electric": ["mitsubishi electric", "mitsubishi"], "Mitsubishi Heavy": ["mitsubishi heavy", "heavy"],
+  Daikin: ["daikin", "daikín", "daiquin", "daikim"], "Mitsubishi Electric": ["mitsubishi electric", "mitsubishi"], "Mitsubishi Heavy Industries": ["mitsubishi heavy industries", "mitsubishi heavy", "heavy"], Mundoclima: ["mundoclima", "mundo clima"],
   Fujitsu: ["fujitsu", "fujitsu general", "fuyitsu"], Panasonic: ["panasonic"], Toshiba: ["toshiba"], Gree: ["gree", "gri"], Midea: ["midea", "midia"],
   Hitachi: ["hitachi", "jitachi"], Johnson: ["johnson", "yonson"], Kaysun: ["kaysun", "keisun"],
   // Calderas
@@ -51,7 +51,7 @@ export const MARCAS = {
 
 // Marcas que solo fabrican un tipo de aparato de los que atendemos: la marca ya dice el aparato
 export const MARCA_APARATO = {
-  Daikin: "aire", "Mitsubishi Electric": "aire", "Mitsubishi Heavy": "aire", Fujitsu: "aire", Panasonic: "aire", Toshiba: "aire",
+  Daikin: "aire", "Mitsubishi Electric": "aire", "Mitsubishi Heavy Industries": "aire", Mundoclima: "aire", Fujitsu: "aire", Panasonic: "aire", Toshiba: "aire",
   Gree: "aire", Midea: "aire", Hitachi: "aire", Johnson: "aire", Kaysun: "aire",
   Vaillant: "caldera", "Saunier Duval": "caldera", Junkers: "caldera", Baxi: "caldera", Roca: "caldera", Ferroli: "caldera",
   Cointra: "caldera", Chaffoteaux: "caldera", Immergas: "caldera", Beretta: "caldera", Viessmann: "caldera", Domusa: "caldera", Wolf: "caldera", Manaut: "caldera"
@@ -153,7 +153,7 @@ export function fraseFlexible(palabras, frase) {
 }
 
 // Palabras clave: sin palabras vacías y recortadas a 5 letras ("rajado" y "rajada" -> "rajad")
-const VACIAS = new Set("de la el los las un una unos unas y o que en por con se me mi mis su sus lo le les al del a muy mucho mucha muchos muchas poco ya es esta este esto son tiene tengo hay como pero mas cuando todo toda todos sale salen deja dejan hace hacen echa echan esta estan algo".split(" "));
+const VACIAS = new Set("de la el los las un una unos unas y o que en por con se me mi mis su sus lo le les al del a muy mucho mucha muchos muchas ya es esta este esto son tiene tengo hay como pero mas cuando todo toda todos sale salen deja dejan hace hacen echa echan esta estan algo".split(" "));
 // Palabras que el cliente usa por otras de la ficha (se comparan ya recortadas)
 export const EQUIVALE = {
   huele: "olor", huelen: "olor", oler: "olor", apest: "olor", peste: "olor",
@@ -213,12 +213,12 @@ export function buscar(manual, turnos, { maxCodigos = 3, maxSintomas = 2 } = {})
         else if (n > 1 && fraseFlexible(pUlt, r)) p += 2 + n;
         else if (nRec.includes(" " + r + " ")) p += 1 + n / 2;
         else if (n > 1 && fraseFlexible(pRec, r)) p += 0.5 + n / 2;
-        else { const k = cubre(cUlt, r); if (k >= 2) p += 1 + k; else if (k === 1) p += 3; else if (cubre(cRec, r) >= 1) p += 0.5; }
+        else { const k = cubre(cUlt, r); if (k >= 2) p += 1 + k; else if (k === 1 && (n === 1 || claves(r)[0].length >= 5)) p += 3; else if (cubre(cRec, r) >= 1) p += 0.5; }
       }
       if (p && aparato && s.aparato === aparato) p += 2;
       return { s, p };
     })
-    .filter(x => x.p >= 3).sort((a, b) => b.p - a.p).slice(0, porCodigo.length ? 1 : maxSintomas).map(x => x.s);
+    .filter(x => x.p >= (porCodigo.length ? 6 : 3)).sort((a, b) => b.p - a.p).slice(0, porCodigo.length ? 1 : maxSintomas).map(x => x.s);
 
   const fichas = [...porCodigo, ...porSintoma];
   return { aparato, marca, fichas, texto: redactar(fichas, marca, aparato) };
@@ -240,6 +240,6 @@ function redactar(fichas, marca, aparato) {
       (f.pieza_probable ? ` Piezas que suele llevar el técnico: ${f.pieza_probable}.` : "") +
       (f.urgencia === "alta" ? " Es urgente." : "");
   });
-  const varias = new Set(fichas.filter(f => f.tipo === "codigo").map(f => f.familia)).size > 1;
-  return `[Manual técnico interno (no lo menciones ni lo leas tal cual; úsalo como tu propio conocimiento)${marca ? `. Marca detectada: ${marca}` : ""}${aparato ? `. Aparato: ${aparato}` : ""}${varias && !marca ? ". El código significa cosas distintas según la marca: pregunta la marca antes de concluir" : ""}]\n${lineas.join("\n")}`;
+  const hayCodigo = fichas.some(f => f.tipo === "codigo");
+  return `[Manual técnico interno (no lo menciones ni lo leas tal cual; úsalo como tu propio conocimiento)${aparato ? `. Aparato: ${aparato}` : ""}${marca ? `. Marca: ${marca}` : `. Falta la marca: si el cliente aún no la ha dicho, pregúntala antes de explicar nada${hayCodigo ? " (el mismo código significa cosas distintas según la marca)" : ""}`}]\n${lineas.join("\n")}`;
 }

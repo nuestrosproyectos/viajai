@@ -1,0 +1,475 @@
+{
+ "sintomas": [
+  {
+   "aparato": "aire",
+   "sintoma": "No enfría o enfría poco",
+   "palabras": [
+    "no echa frío",
+    "echa aire pero no enfría",
+    "no enfría nada",
+    "enfría muy poco",
+    "echa aire del tiempo",
+    "la casa no baja de temperatura"
+   ],
+   "causas": [
+    "Filtros de la unidad interior sucios",
+    "Modo o temperatura mal puestos en el mando (ventilador, seco o temperatura alta)",
+    "Unidad exterior tapada o con la batería sucia",
+    "Falta de gas por una fuga",
+    "Avería de compresor o ventilador exterior"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que el mando está en modo frío (copo de nieve) y con una temperatura más baja que la de la habitación. Limpiar los filtros como indica el manual. Comprobar que nada tapa la unidad exterior. Tras encender, esperar unos minutos (el compresor puede tardar 3-4 minutos en arrancar). Si sigue igual, llamar al técnico. El gas no se gasta: si falta es que hay una fuga, y solo un técnico con certificado de gases fluorados puede buscarla, repararla y recargar.",
+   "pieza_probable": "Reparación de fuga y recarga (técnico certificado), compresor o ventilador exterior",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.eldiario.es/consumoclaro/aire-acondicionado-no-enfria-factores-debes-identificar-solucionarlo_1_13417110.html",
+    "https://www.ocu.org/vivienda-y-energia/aire-acondicionado/consejos/mantenimiento-aire-acondicionado",
+    "https://www.samsung.com/mx/support/home-appliances/my-air-conditioner-does-not-work"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Echa aire caliente en modo frío",
+   "palabras": [
+    "echa aire caliente",
+    "sale aire caliente cuando lo pongo en frío",
+    "en vez de frío echa calor"
+   ],
+   "causas": [
+    "Modo calor o automático seleccionado por error",
+    "Unidad exterior parada (compresor o ventilador)",
+    "Válvula de 4 vías atascada",
+    "Falta de gas"
+   ],
+   "que_puede_hacer_el_cliente": "Revisar en el mando que está en modo frío y no en calor o automático. Mirar si la unidad exterior está funcionando (ruido, ventilador girando). Reiniciar desde el diferencial. Si sigue, llamar al técnico.",
+   "pieza_probable": "Válvula de 4 vías, compresor o placa exterior",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.samsung.com/mx/support/home-appliances/my-air-conditioner-does-not-work",
+    "https://www.ocu.org/vivienda-y-energia/aire-acondicionado/consejos/funciones-mando-aire-acondicionado"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "No calienta (bomba de calor)",
+   "palabras": [
+    "no calienta",
+    "no echa calor",
+    "echa aire frío en calefacción",
+    "la bomba de calor no calienta"
+   ],
+   "causas": [
+    "Está haciendo un desescarche (normal en invierno, unos minutos)",
+    "Arranque en calor: al principio no sopla hasta que la batería se calienta",
+    "Filtros sucios",
+    "Modo o temperatura mal puestos",
+    "Falta de gas o avería de la unidad exterior"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que está en modo calor (sol) y con temperatura por encima de la de la habitación. En días fríos, esperar unos 10 minutos: durante el desescarche no sale calor. Limpiar filtros. Si tras eso sigue sin calentar o sale un código, llamar al técnico.",
+   "pieza_probable": "Revisión de gas (técnico certificado), válvula de 4 vías, sondas o compresor",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://manuals.online/mitsubishi-electric/air-conditioner/msz-gs30na/user-manual/yr2d",
+    "https://tarifaluzhora.es/noticias/aire-acondicionado-2026-humo-invierno-desescarche"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "La unidad exterior echa humo o vapor en invierno y se para la calefacción un rato",
+   "palabras": [
+    "la máquina de fuera echa humo",
+    "sale vapor de la máquina de fuera",
+    "se para y echa agua por fuera",
+    "la de fuera echa humo blanco"
+   ],
+   "causas": [
+    "Desescarche: el equipo derrite el hielo de la unidad exterior; es normal"
+   ],
+   "que_puede_hacer_el_cliente": "Es normal: esperar unos 10 minutos a que termine. Es vapor de agua, no humo. Si huele a quemado, sale humo oscuro o no termina nunca, apagar desde el diferencial y llamar al técnico.",
+   "pieza_probable": "",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://manuals.online/mitsubishi-electric/air-conditioner/msz-gs30na/user-manual/yr2d",
+    "https://tarifaluzhora.es/noticias/aire-acondicionado-2026-humo-invierno-desescarche",
+    "https://www.lg.com/ro/suport/ajutor-produs/CT20202048-1433992660655"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Gotea agua por la unidad interior",
+   "palabras": [
+    "gotea agua",
+    "chorrea agua",
+    "pierde agua por la máquina de dentro",
+    "cae agua del aparato",
+    "está mojando la pared",
+    "gotea el split"
+   ],
+   "causas": [
+    "Tubo de desagüe atascado, doblado o con el extremo sumergido",
+    "Bandeja de condensados llena u obstruida por suciedad",
+    "Unidad interior desnivelada",
+    "Filtros sucios que hacen que se forme hielo y luego gotee",
+    "Bomba de condensados averiada (en conductos y cassettes)"
+   ],
+   "que_puede_hacer_el_cliente": "Apagar el equipo y poner un recipiente o toalla debajo. Limpiar los filtros. Comprobar, si se ve, que el tubo de desagüe exterior no está doblado ni metido en agua y que gotea por fuera cuando funciona. No abrir la máquina. Si el goteo es fuerte o sigue, llamar al técnico.",
+   "pieza_probable": "Desatasco del desagüe o bandeja, bomba de condensados",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://ushl.samsung.com/es/support/home-appliances/que-hacer-cuando-caen-gotas-de-agua-de-tu-aire-acondicionado",
+    "https://www.ocu.org/vivienda-y-energia/aire-acondicionado/consejos/mantenimiento-aire-acondicionado",
+    "https://www.lg.com/ec/soporte/ayuda-producto/CT20281006-20155363606167"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "No sale agua por el tubo de desagüe exterior cuando enfría",
+   "palabras": [
+    "no echa agua por fuera",
+    "el tubito de fuera no gotea",
+    "antes goteaba por fuera y ya no"
+   ],
+   "causas": [
+    "Desagüe taponado (el agua puede acabar saliendo por dentro)",
+    "Problema de instalación"
+   ],
+   "que_puede_hacer_el_cliente": "Vigilar si empieza a gotear por la unidad interior. Llamar al técnico para revisar el desagüe.",
+   "pieza_probable": "Desatasco del desagüe",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.ocu.org/vivienda-y-energia/aire-acondicionado/consejos/mantenimiento-aire-acondicionado"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Se hace hielo o escarcha en la unidad interior o en las tuberías",
+   "palabras": [
+    "hace hielo",
+    "se congela",
+    "tiene escarcha en los tubos",
+    "el tubo de cobre está blanco de hielo",
+    "se forma hielo dentro"
+   ],
+   "causas": [
+    "Filtros muy sucios o rejillas tapadas (poco caudal de aire)",
+    "Falta de gas por fuga",
+    "Ventilador interior averiado o a muy baja velocidad"
+   ],
+   "que_puede_hacer_el_cliente": "Apagar el equipo enseguida y dejar que se descongele (poner toallas por si gotea). Limpiar los filtros y comprobar que nada tapa la entrada ni la salida de aire. Si vuelve a congelarse, llamar al técnico. Si falta gas hay que localizar y reparar la fuga antes de recargar, siempre por un técnico con certificado de gases fluorados.",
+   "pieza_probable": "Reparación de fuga y recarga (técnico certificado) o motor del ventilador interior",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.eldiario.es/consumoclaro/aire-acondicionado-no-enfria-factores-debes-identificar-solucionarlo_1_13417110.html",
+    "https://www.midea.com/mx/blog/ver-todas/tips/que-hacer-cuando-el-aire-acondicionado-se-congela"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Huele mal (humedad, moho)",
+   "palabras": [
+    "huele mal",
+    "echa mal olor",
+    "huele a humedad",
+    "huele a cerrado",
+    "huele a moho",
+    "huele a tigre"
+   ],
+   "causas": [
+    "Filtros sucios",
+    "Humedad y moho en la batería o la turbina de la unidad interior",
+    "Desagüe obstruido con agua estancada",
+    "Olores de la casa (tabaco, cocina) aspirados por el aparato"
+   ],
+   "que_puede_hacer_el_cliente": "Limpiar los filtros (Samsung recomienda cada 15 días con uso continuo en verano). Ventilar la habitación. Si sigue oliendo, pedir una limpieza a fondo de la unidad interior por el técnico.",
+   "pieza_probable": "Limpieza interior de batería y turbina",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.samsung.com/mx/support/home-appliances/what-should-i-do-when-the-air-conditioner-emits-a-bad-smell/",
+    "https://www.ocu.org/vivienda-y-energia/aire-acondicionado/consejos/mantenimiento-aire-acondicionado"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Huele a quemado o sale humo de la unidad",
+   "palabras": [
+    "huele a quemado",
+    "huele a plástico quemado",
+    "sale humo del aparato",
+    "huele a cable quemado"
+   ],
+   "causas": [
+    "Fallo eléctrico en placa, motor o conexiones"
+   ],
+   "que_puede_hacer_el_cliente": "Parar el aparato y bajar el diferencial o automático del aire enseguida. No volver a encenderlo. Llamar al técnico.",
+   "pieza_probable": "Placa electrónica, motor o cableado (a diagnosticar)",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://pub-e1be275d7c4249f99e41f520dcc1ae99.r2.dev/mitsubishi-electric/wp-content/uploads/2012/12/MANUAL-DE-USUARIO-PEAD-RP-JAQ.pdf",
+    "https://www.ocu.org/vivienda-y-energia/aire-acondicionado/consejos/mantenimiento-aire-acondicionado"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Salta el diferencial o el automático al encender el aire",
+   "palabras": [
+    "salta el diferencial",
+    "se me va la luz cuando enciendo el aire",
+    "salta el automático",
+    "salta los plomos",
+    "se va la luz de la casa al poner el aire"
+   ],
+   "causas": [
+    "Derivación a tierra en el compresor, en un motor o en el cableado (a menudo por humedad)",
+    "Placa o componente eléctrico averiado",
+    "Automático o línea eléctrica insuficiente para el aparato"
+   ],
+   "que_puede_hacer_el_cliente": "No insistir subiendo el diferencial una y otra vez. Dejar el aire desconectado (automático del aire bajado) y llamar al técnico para medir el aislamiento del equipo. No abrir ninguna unidad.",
+   "pieza_probable": "Compresor, motor de ventilador, placa o cableado (a diagnosticar)",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://manuals.online/mitsubishi-electric/air-conditioner/mr-slim-msz-a09na/user-manual/2a41v",
+    "https://www.midea.com/co/blog/fallo-aire-acondicionado"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "La unidad exterior no arranca (la interior sopla pero fuera no se oye nada)",
+   "palabras": [
+    "la de fuera no arranca",
+    "la máquina de fuera no hace nada",
+    "no se enciende el motor de fuera",
+    "el ventilador de fuera no gira"
+   ],
+   "causas": [
+    "Retardo normal de protección de 3-4 minutos tras encender",
+    "Fallo de comunicación entre unidades",
+    "Condensador de arranque, placa exterior o compresor",
+    "Unidad exterior sin corriente"
+   ],
+   "que_puede_hacer_el_cliente": "Esperar 3-4 minutos tras encender. Comprobar modo y temperatura en el mando. Mirar si la unidad interior muestra un código o parpadea y anotarlo. Reiniciar desde el diferencial. Si sigue sin arrancar, llamar al técnico.",
+   "pieza_probable": "Placa exterior, condensador o compresor",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.daikin.eu/content/dam/document-library/operation-manuals/ac/split/ftxc-c/FTXC-C_3P621306-1_Operation%20manual_Spanish.pdf"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "No se enciende nada",
+   "palabras": [
+    "no enciende",
+    "está muerto",
+    "no hace nada",
+    "no se ilumina",
+    "no responde a nada"
+   ],
+   "causas": [
+    "Diferencial o automático del aire bajado",
+    "Corte de luz",
+    "Pilas del mando gastadas",
+    "Temporizador programado",
+    "Placa electrónica averiada"
+   ],
+   "que_puede_hacer_el_cliente": "Comprobar que el automático del aire está subido y que hay luz en la casa. Cambiar las pilas del mando. Probar a encender con el botón de la propia unidad interior si lo tiene. Si sigue sin encender, llamar al técnico.",
+   "pieza_probable": "Placa electrónica",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.samsung.com/mx/support/home-appliances/my-air-conditioner-does-not-work",
+    "https://www.daikin.eu/content/dam/document-library/operation-manuals/ac/split/ftxc-c/FTXC-C_3P621306-1_Operation%20manual_Spanish.pdf"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "El mando no responde",
+   "palabras": [
+    "el mando no va",
+    "el mando no funciona",
+    "no le hace caso al mando",
+    "no pita al darle al mando",
+    "la pantalla del mando no se ve"
+   ],
+   "causas": [
+    "Pilas gastadas",
+    "Algo entre el mando y el receptor de la unidad o luz fuerte (sol, fluorescentes) sobre el receptor",
+    "Mando bloqueado o en un modo raro",
+    "Receptor o placa de la unidad interior"
+   ],
+   "que_puede_hacer_el_cliente": "Cambiar las pilas. Apuntar directamente a la unidad interior desde cerca. Quitar la corriente unos minutos y volver a darla. Si con pilas nuevas la pantalla del mando no se enciende, el fallo es del mando; si el mando se ve bien pero la unidad no pita, avisar al técnico.",
+   "pieza_probable": "Mando a distancia o receptor de la unidad interior",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.samsung.com/es/support/category/home-appliances/air-conditioning/",
+    "https://www.ocu.org/vivienda-y-energia/aire-acondicionado/consejos/funciones-mando-aire-acondicionado"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Hace ruido fuerte o vibra",
+   "palabras": [
+    "hace mucho ruido",
+    "vibra",
+    "hace un ruido raro",
+    "traquetea",
+    "suena como si rozara algo"
+   ],
+   "causas": [
+    "Filtro obstruido",
+    "Piezas o tapas sueltas, soportes de la exterior flojos",
+    "Turbina o hélice sucia, desequilibrada o rozando",
+    "Rodamientos de un motor de ventilador"
+   ],
+   "que_puede_hacer_el_cliente": "Limpiar los filtros. Comprobar que nada toca la unidad exterior ni está apoyado en ella. Si el ruido sigue o es metálico, apagar y llamar al técnico.",
+   "pieza_probable": "Motor del ventilador, soportes antivibratorios o turbina",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.samsung.com/mx/support/home-appliances/what-should-i-do-when-the-air-conditioner-is-noisy/"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Silbido agudo o siseo continuo",
+   "palabras": [
+    "silba",
+    "pita como un silbido",
+    "hace un siseo",
+    "suena como si se escapara aire"
+   ],
+   "causas": [
+    "Fuga de refrigerante",
+    "Presión alta en el compresor"
+   ],
+   "que_puede_hacer_el_cliente": "Samsung indica apagarlo y llamar al servicio técnico. No tocar tuberías ni uniones: cualquier fuga la revisa un técnico con certificado de gases fluorados. (Un ruido suave de agua o un chasquido de plásticos al dilatarse suele ser normal.)",
+   "pieza_probable": "Reparación de fuga y recarga (técnico certificado)",
+   "urgencia": "alta",
+   "fuentes": [
+    "https://www.samsung.com/mx/support/home-appliances/what-should-i-do-when-the-air-conditioner-is-noisy/"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Pierde gas o el técnico anterior dijo que le falta gas",
+   "palabras": [
+    "le falta gas",
+    "hay que cargarle gas",
+    "pierde gas",
+    "cada verano hay que echarle gas"
+   ],
+   "causas": [
+    "Fuga en abocardados (uniones), tuberías, válvulas o baterías"
+   ],
+   "que_puede_hacer_el_cliente": "Nada por su cuenta. El gas no se gasta: si falta, hay una fuga que hay que localizar y reparar antes de recargar. La manipulación de gases fluorados (fugas, recarga, soldaduras, recuperación) la hacen solo empresas habilitadas y personal con certificado según el Real Decreto 115/2017.",
+   "pieza_probable": "Reparación de fuga, prueba de estanqueidad y recarga",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.boe.es/eli/es/rd/2017/02/17/115/con",
+    "https://www.eldiario.es/consumoclaro/aire-acondicionado-no-enfria-factores-debes-identificar-solucionarlo_1_13417110.html"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Se enciende y se apaga solo, o arranca y se para a menudo",
+   "palabras": [
+    "se apaga solo",
+    "se enciende y se apaga",
+    "arranca y se para",
+    "va a ratos"
+   ],
+   "causas": [
+    "Ha llegado a la temperatura programada (normal, el inverter baja o para)",
+    "Temporizador o modo noche programado",
+    "Protecciones por filtro sucio, exterior mal ventilada o falta de gas",
+    "Sonda de temperatura averiada"
+   ],
+   "que_puede_hacer_el_cliente": "Revisar temporizadores y modo noche en el mando. Limpiar filtros y despejar la unidad exterior. Si se para con un código o parpadeo, anotarlo y llamar al técnico.",
+   "pieza_probable": "Sonda de temperatura o revisión de gas (técnico certificado)",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.samsung.com/mx/support/home-appliances/my-air-conditioner-does-not-work",
+    "https://www.ocu.org/vivienda-y-energia/aire-acondicionado/noticias/aire-acondicionado-consejos-uso"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Tarda unos minutos en arrancar al encenderlo",
+   "palabras": [
+    "tarda en arrancar",
+    "le doy y no hace nada hasta un rato",
+    "tarda en echar frío al encenderlo"
+   ],
+   "causas": [
+    "Protección contra arranques frecuentes del compresor (3-4 minutos); es normal",
+    "En calor, espera a calentar la batería antes de soplar"
+   ],
+   "que_puede_hacer_el_cliente": "Esperar 3-4 minutos. Si pasado ese tiempo no arranca, ver síntoma 'la unidad exterior no arranca'.",
+   "pieza_probable": "",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.daikin.eu/content/dam/document-library/operation-manuals/ac/split/ftxc-c/FTXC-C_3P621306-1_Operation%20manual_Spanish.pdf"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Echa poco aire por la unidad interior",
+   "palabras": [
+    "echa muy poco aire",
+    "sale poco aire",
+    "sopla flojo",
+    "casi no sale aire"
+   ],
+   "causas": [
+    "Filtros obstruidos",
+    "Velocidad del ventilador baja o modo silencio/noche",
+    "Batería sucia o con hielo",
+    "Motor del ventilador interior"
+   ],
+   "que_puede_hacer_el_cliente": "Limpiar filtros. Poner el ventilador en velocidad alta y quitar el modo noche o silencio. Si sigue flojo, llamar al técnico para limpieza interior o revisión del motor.",
+   "pieza_probable": "Limpieza de batería y turbina o motor del ventilador interior",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.ocu.org/vivienda-y-energia/aire-acondicionado/consejos/mantenimiento-aire-acondicionado",
+    "https://www.samsung.com/mx/support/home-appliances/what-should-i-do-when-the-air-conditioner-is-noisy/"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "Gotea agua por la unidad exterior",
+   "palabras": [
+    "la de fuera echa agua",
+    "gotea la máquina de fuera",
+    "hay un charco debajo de la máquina de fuera"
+   ],
+   "causas": [
+    "En calor y durante el desescarche la unidad exterior suelta agua; es normal",
+    "En frío lo normal es que el agua salga por el tubo de desagüe de la interior"
+   ],
+   "que_puede_hacer_el_cliente": "Si es en invierno con la calefacción, es normal. Si el agua molesta a vecinos o cae a la calle, el técnico puede instalar una bandeja o conducir el desagüe.",
+   "pieza_probable": "Bandeja de condensados exterior (opcional)",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://www.lg.com/ro/suport/ajutor-produs/CT20202048-1433992660655",
+    "https://tarifaluzhora.es/noticias/aire-acondicionado-2026-humo-invierno-desescarche"
+   ]
+  },
+  {
+   "aparato": "aire",
+   "sintoma": "La luz de la unidad interior parpadea o sale un código en la pantalla",
+   "palabras": [
+    "parpadea una luz",
+    "le sale un código",
+    "pone E y un número",
+    "sale una letra rara en la pantalla",
+    "la lucecita verde parpadea"
+   ],
+   "causas": [
+    "El aparato ha detectado una avería y la está indicando"
+   ],
+   "que_puede_hacer_el_cliente": "Anotar el código o contar cuántas veces parpadea cada luz ANTES de quitar la corriente, y mirar la marca y el modelo en la etiqueta de la unidad interior. Luego reiniciar una vez desde el diferencial esperando unos minutos. Si vuelve, llamar al técnico con esos datos.",
+   "pieza_probable": "",
+   "urgencia": "normal",
+   "fuentes": [
+    "https://fujitsu-general.com/th/en/support/faq/split/0084.html",
+    "https://www.samsung.com/ar/support/home-appliances/error-codes-on-your-samsung-indoor-air-conditioner/"
+   ]
+  }
+ ]
+}
