@@ -22,7 +22,19 @@ for (const nombre of readdirSync(dir).filter(f => f.endsWith(".json") && f !== "
       vistos.add(k); return true;
     }).map(({ aparato, codigos, significado, causas = [], que_puede_hacer_el_cliente = "", pieza_probable = "", fuente, confianza }) =>
       ({ aparato, codigos, significado, causas, que_puede_hacer_el_cliente, pieza_probable, fuente, confianza }));
-    familias.push({ familia: d.familia, marcas: d.marcas, notas: d.notas || "", codigos });
+    // Si la familia ya existe (otra ronda de investigación), se juntan sin repetir
+    const previa = familias.find(f => f.familia === d.familia);
+    if (previa) {
+      const ya = new Set(previa.codigos.map(c => c.aparato + "|" + c.codigos.map(x => x.toLowerCase()).sort().join(",") + "|" + normal(c.significado)));
+      const ya2 = new Set(previa.codigos.map(c => c.aparato + "|" + c.codigos.map(x => x.toLowerCase()).sort().join(",")));
+      for (const c of codigos) {
+        const k2 = c.aparato + "|" + c.codigos.map(x => x.toLowerCase()).sort().join(",");
+        if (ya.has(k2 + "|" + normal(c.significado)) || ya2.has(k2)) { avisos.push(`${nombre}: ya estaba ${k2}`); continue; }
+        previa.codigos.push(c);
+      }
+      previa.marcas = [...new Set([...previa.marcas, ...d.marcas])];
+      if (d.notas) previa.notas = [previa.notas, d.notas].filter(Boolean).join(" ");
+    } else familias.push({ familia: d.familia, marcas: d.marcas, notas: d.notas || "", codigos });
   }
   if (d.sintomas) {
     for (const s of d.sintomas) {
