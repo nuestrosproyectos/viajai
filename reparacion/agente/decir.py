@@ -135,7 +135,20 @@ def juntar_cifras(texto: str) -> str:
         d = re.sub(r"\D", "", m.group(0))
         cola = m.group(0)[len(m.group(0).rstrip(" .,;-")):]
         return (f"{d[:3]} {d[3:6]} {d[6:]}" if len(d) == 9 else d) + cola
-    return CIFRAS_SUELTAS.sub(unir, texto)
+    return quitar_deletreo(CIFRAS_SUELTAS.sub(unir, texto))
+
+
+# «B de Barcelona», «V de Valencia», «M de Madrid»: el cliente está deletreando una letra, no nombrando
+# una ciudad. El 22-11-2026 un cliente de Granada dijo «quinto B, de Barcelona» y Andrés le contestó
+# que su dirección era de Barcelona. Solo se quita si la palabra empieza por esa misma letra.
+DELETREO = re.compile(r"(?<![\wáéíóúñÁÉÍÓÚÑ])([A-ZÑ]),?\s+de\s+([A-ZÁÉÍÓÚÑ][\wáéíóúñ]+)")
+_SIN_TILDE = str.maketrans("ÁÉÍÓÚ", "AEIOU")
+
+
+def quitar_deletreo(texto: str) -> str:
+    def letra(m: re.Match) -> str:
+        return m.group(1) if m.group(2)[0].translate(_SIN_TILDE) == m.group(1) else m.group(0)
+    return DELETREO.sub(letra, texto)
 
 
 # Punto de corte seguro: un signo de puntuación seguido de espacio (fin de frase o de inciso).
@@ -185,6 +198,12 @@ if __name__ == "__main__":
         ("6 0 0. 1 1 2 2 3 3.", "600 112 233."),
         ("Es el 600 11 22 33, apunta.", "Es el 600 11 22 33, apunta."),
         ("Tengo 2 lavadoras y 1 horno.", "Tengo 2 lavadoras y 1 horno."),
+        ("Vivo en Avenida de la Constitución número 8, 5º B de Barcelona, 18001.", "Vivo en Avenida de la Constitución número 8, 5º B, 18001."),
+        ("Es el tercero V de Valencia.", "Es el tercero V."),
+        ("Portal A, de Alicante, segundo.", "Portal A, segundo."),
+        ("Soy de Barcelona pero vivo en Granada.", "Soy de Barcelona pero vivo en Granada."),
+        ("Vengo de Madrid.", "Vengo de Madrid."),
+        ("Es una Bosch de Barcelona.", "Es una Bosch de Barcelona."),
         ("El código postal es 1 8 0 0 1, en Granada.", "El código postal es 18001, en Granada."),
     ]:
         if juntar_cifras(entrada) != esperado:
