@@ -1143,7 +1143,9 @@ async function llamar() {
     });
     sala.on(LK.RoomEvent.Disconnected, finLlamada);
     await sala.connect(url, token);
-    await sala.localParticipant.setMicrophoneEnabled(true);
+    // Micrófono con todos los filtros del propio móvil: eco, ruido, volumen automático y,
+    // donde el navegador lo admite, aislamiento de voz (deja solo la voz de quien habla)
+    await sala.localParticipant.setMicrophoneEnabled(true, { echoCancellation: true, noiseSuppression: true, autoGainControl: true, voiceIsolation: true, channelCount: 1 });
     consola.dataset.llamada = mini.dataset.llamada = "activa";
     nota.textContent = "Llamada en curso: habla con normalidad, puedes interrumpirle. Pulsa el botón para colgar.";
     btnMic.setAttribute("aria-label", "Colgar");

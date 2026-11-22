@@ -37,7 +37,8 @@ from livekit.agents import (
 )
 from livekit.agents import NOT_GIVEN, NotGivenOr, llm
 from livekit.agents.utils import is_given
-from livekit.plugins import anthropic, cartesia, deepgram, elevenlabs, google, inworld, silero
+from livekit.agents.voice import room_io
+from livekit.plugins import anthropic, cartesia, deepgram, elevenlabs, google, inworld, noise_cancellation, silero
 
 from manual import Manual
 
@@ -88,6 +89,16 @@ def crear_tts():
         voice=os.getenv("INWORLD_VOZ", "Ignacio"),
         language="es-ES",
     )
+
+
+def crear_filtro_ruido():
+    """Filtro de ruido de LiveKit Cloud (incluido en el plan, sin coste extra).
+    BVC quita el ruido Y las voces de fondo (calle, bar, tele): Andrés solo oye a quien le habla.
+    NC quita solo el ruido. "no" lo desactiva (si algún día degradara la voz en pruebas)."""
+    modo = os.getenv("FILTRO_RUIDO", "bvc").lower()
+    if modo == "no":
+        return None
+    return noise_cancellation.NC() if modo == "nc" else noise_cancellation.BVC()
 
 
 def crear_stt():
@@ -199,7 +210,17 @@ async def sesion(ctx: JobContext) -> None:
         turn_handling={
             # Detección de fin de turno: "v1-mini" corre en el propio servidor (gratis); "v1" se cobra en la nube de LiveKit
             "turn_detection": inference.TurnDetector(version=os.getenv("DETECTOR_TURNOS", "v1-mini")),
-            "interruption": {"enabled": True},          # el cliente puede interrumpir y el técnico se calla
+            # El cliente puede interrumpir, pero un ruido no: hacen falta 2 palabras reconocidas y
+            # medio segundo largo de voz; si fue una falsa alarma, Andrés retoma lo que decía.
+            # (El modo "adaptive" de LiveKit lo hace con un modelo en la nube, que se cobra aparte.)
+            "interruption": {
+                "enabled": True,
+                "mode": os.getenv("INTERRUPCIONES", "vad"),
+                "min_duration": 0.6,
+                "min_words": 2,
+                "resume_false_interruption": True,
+                "false_interruption_timeout": 1.5,
+            },
         },
         user_away_timeout=SILENCIO_SEG / 2,
     )
@@ -244,7 +265,9 @@ async def sesion(ctx: JobContext) -> None:
             await asyncio.sleep(AVISO_ANTES_SEG)
         await _colgar("duración máxima", "Tengo que ir cerrando la llamada. Si te falta algo, déjalo en el formulario de la web y te llamamos. ¡Un saludo!")
 
-    await voz.start(agent=tecnico, room=ctx.room)
+    filtro = crear_filtro_ruido()
+    extra = {"room_options": room_io.RoomOptions(audio_input=room_io.AudioInputOptions(noise_cancellation=filtro))} if filtro else {}
+    await voz.start(agent=tecnico, room=ctx.room, **extra)
     asyncio.create_task(_limite_duracion())
     await voz.say(SALUDO, allow_interruptions=True)
 

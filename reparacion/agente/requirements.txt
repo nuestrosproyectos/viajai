@@ -1,2 +1,3 @@
 livekit-agents[deepgram,google,elevenlabs,cartesia,anthropic,silero,inworld]==1.8.13
 python-dotenv
+livekit-plugins-noise-cancellation~=0.3
