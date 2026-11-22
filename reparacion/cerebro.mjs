@@ -22,9 +22,10 @@ export const NEGOCIO = {
   visita: { precio: "39 €", detalle: "desplazamiento y diagnóstico, IVA incluido; si reparas con nosotros, se descuenta de la factura" }, // PENDIENTE: confirmar precio
   garantia: "3 meses por escrito en la reparación (pieza y mano de obra)", // PENDIENTE: ¿3 o 6 meses?
   // Qué ofrecer si el cliente prefiere comprar un aparato nuevo. PENDIENTE: completar con lo que diga Juan.
-  // Si el cliente prefiere un aparato nuevo, también se lo vendemos (confirmado por Juan).
-  // PENDIENTE: ¿incluye entrega, instalación y retirada del viejo? Mientras tanto Andrés no lo promete.
-  aparatoNuevo: "Si prefiere comprar uno nuevo, no discutas: ofrécele que se lo vendamos nosotros. En esa misma respuesta pídele un teléfono para que le llame el equipo, y después qué tipo de aparato busca y, si lo sabe, medidas o hueco y presupuesto aproximado; toma también nombre y municipio, y envía la solicitud como venta para que el equipo le llame con opciones y precio. No des precios ni modelos concretos ni prometas entrega, instalación o retirada del viejo: eso se lo cuenta el equipo al llamarle.",
+  // Si el cliente prefiere un aparato nuevo, también se lo vendemos, con entrega, instalación
+  // y retirada del viejo incluidas (confirmado por Juan).
+  ventaNuevo: "lo entregamos, lo instalamos y nos llevamos el viejo",
+  aparatoNuevo: "Si prefiere comprar uno nuevo, no discutas: ofrécele que se lo vendamos nosotros, y dile que lo entregamos, lo instalamos y nos llevamos el viejo (eso le quita todo el lío). En esa misma respuesta pídele un teléfono para que le llame el equipo, y después qué tipo de aparato busca y, si lo sabe, medidas o hueco y presupuesto aproximado; toma también nombre y municipio, y envía la solicitud como venta para que el equipo le llame con opciones y precio. No des precios ni modelos concretos ni fechas de entrega: eso se lo cuenta el equipo al llamarle.",
   pago: "tarjeta, Bizum o efectivo al terminar",
   recambios: "recambios originales o de calidad equivalente según el caso", // PENDIENTE: confirmar con el taller
   aparatos: [
@@ -158,7 +159,7 @@ Si la avería no está en la tabla, no inventes cifras: explica que el técnico 
 
 # Objeciones habituales
 - "Es caro pagar la visita": se descuenta si repara con nosotros, incluye el diagnóstico de un técnico con ${n.experiencia} y el presupuesto cerrado antes de tocar nada; y muchas veces evita comprar un aparato nuevo sin necesidad.
-- "¿Merece la pena arreglarlo o compro otro?": en una frase y sin debate: depende de la pieza; la mayoría de averías salen bastante más baratas que un aparato nuevo, y el técnico le da un presupuesto cerrado para que decida con el precio delante; y si al final prefiere uno nuevo, también se lo podemos vender nosotros.
+- "¿Merece la pena arreglarlo o compro otro?": en una frase y sin debate: depende de la pieza; la mayoría de averías salen bastante más baratas que un aparato nuevo, y el técnico le da un presupuesto cerrado para que decida con el precio delante; y si al final prefiere uno nuevo, también se lo podemos vender nosotros: ${n.ventaNuevo}.
 - "Prefiero comprarme uno nuevo" (o el técnico ve que no compensa): ${n.aparatoNuevo}
 - "Lo intento arreglar yo": no discutas ni des instrucciones. Respeta su decisión en una frase, recuerda que con nosotros tiene garantía por escrito y que manipularlo puede empeorar la avería o ser peligroso, y deja la puerta abierta: "Si se complica, aquí estamos; ¿te dejo apuntado por si acaso?".
 - "Voy a llamar al servicio oficial": somos independientes, solemos ir antes y salir más económicos, con garantía por escrito.
