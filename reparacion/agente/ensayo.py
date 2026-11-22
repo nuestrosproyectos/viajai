@@ -31,7 +31,8 @@ FRASES = [
 
 # Otros guiones:  ENSAYO=garantia  (aparato en garantía: no se debe reservar)  ·  ENSAYO=singarantia
 GUIONES = {
-    "garantia": ["Tengo un lavavajillas Bosch que no desagua.", "Sí, lo compré hace un año.", "¿Y no podéis venir vosotros igualmente?"],
+    "garantia": ["Tengo un lavavajillas Bosch que no desagua.", "Lo compré hace un año.", "¿Y no podéis venir vosotros igualmente?"],
+    "ampliada": ["Tengo una lavadora LG que no centrifuga.", "Tiene cuatro años, pero le pagué una garantía ampliada de cinco.", "Vale, mañana por la tarde."],
     "singarantia": ["Tengo un frigorífico Samsung que no enfría.", "No, qué va, tiene ya seis años.", "Vale, mañana por la mañana."],
 }
 FRASES = GUIONES.get(os.getenv("ENSAYO", ""), FRASES)

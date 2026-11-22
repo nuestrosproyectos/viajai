@@ -33,7 +33,7 @@ export const NEGOCIO = {
     "frigoríficos y combis", "congeladores", "hornos", "vitrocerámicas y placas de inducción",
     "campanas extractoras", "microondas", "termos eléctricos"
   ],
-  noReparamos: ["aparatos que todavía están en garantía (te los arregla gratis la tienda o la marca)", "pequeño electrodoméstico (cafeteras, aspiradoras, planchas)", "televisores", "electrónica"],  // lo de la garantía, dicho por Juan el 22-11-2026
+  noReparamos: ["aparatos con menos de tres años, que están en garantía (te los arregla gratis la tienda o la marca)", "pequeño electrodoméstico (cafeteras, aspiradoras, planchas)", "televisores", "electrónica"],  // lo de la garantía, dicho por Juan el 22-11-2026
   // Aire acondicionado y calderas: solo con técnicos con carnet de gases fluorados / habilitación de gas,
   // que no hay en todas las zonas. Andrés orienta, toma los datos y el equipo confirma si llega.
   // PENDIENTE: lista de municipios donde sí hay técnico habilitado (para que Andrés lo confirme al momento).

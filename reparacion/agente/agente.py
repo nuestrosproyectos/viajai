@@ -180,13 +180,18 @@ class Tecnico(Agent):
             return ""
         partes = []
         if self.garantia == "si":
-            return ("[Nota interna (no la leas ni la menciones): el aparato ESTÁ EN GARANTÍA y nosotros no reparamos aparatos en garantía. "
+            return ("[Nota interna (no la leas ni la menciones): el aparato tiene MENOS DE TRES AÑOS (garantía legal) y nosotros no reparamos aparatos en garantía. "
                     "No propongas visita ni pidas datos: dile con amabilidad que en garantía se lo arregla gratis la tienda o el servicio "
                     "oficial de la marca, y ofrécete para otro aparato que no esté en garantía.]")
         if self.garantia == "" and "aparato" in self.datos and not self.enviado:
             partes.append("Todavía no sabes si el aparato está en garantía y no reparamos aparatos en garantía: pregúntalo "
-                          "UNA vez («¿está todavía en garantía, o tiene ya más de tres años?») antes de proponer la visita o pedir datos, "
-                          "salvo que el cliente ya haya dicho los años que tiene.")
+                          "UNA vez («¿tiene ya más de tres años, o lo compraste hace menos?») antes de proponer la visita o pedir datos, "
+                          "salvo que el cliente ya haya dicho los años que tiene. REGLA: menos de 3 años = en garantía, no lo "
+                          "reparamos. 3 años o más (3, 4, 5, 10...) = SÍ lo reparamos y sigues con la visita, aunque tenga "
+                          "una garantía ampliada de pago o un seguro.")
+        if self.garantia == "no":
+            partes.append("El aparato tiene tres años o más: NO está en garantía legal y SÍ lo reparamos, aunque el cliente "
+                          "tenga una garantía ampliada o un seguro. No vuelvas a hablar de la garantía: sigue con la visita.")
         if self.datos:
             partes.append("En la solicitud que el cliente ve en pantalla ya están apuntados: "
                           + "; ".join(f"{c}: {v}" for c, v in self.datos.items()) + ".")
