@@ -22,9 +22,9 @@ FRASES = [
     "Claro, soy Juan.",
     "Sí, el 6 0 0 1 1 2 2 3 3.",
     "A ver, el teléfono me lo has apuntado bien en la solicitud, léemelo otra vez.",
-    "Sí, es correcto.",
-    "En Granada capital, calle Recogidas 10, quinto A.",
-    "Vale, muchas gracias, hasta luego.",
+    "En Granada capital, calle Recogidas 10, quinto A de Alicante.",
+    "Sí, está todo bien.",
+    "No, nada más. Muchas gracias, hasta luego.",
 ]
 
 
@@ -43,6 +43,10 @@ async def ensayo() -> None:
         for c in agente.CAMPOS_ORDEN:
             if c in r:
                 t.datos[c] = r[c]
+        # igual que en la llamada real: si el cliente ya ha dado sus datos por buenos, la solicitud se envía sola
+        if r.get("confirmado") and not t.enviado and all(c in t.datos for c in ("nombre", "telefono", "municipio", "averia")):
+            t.enviado, t.aviso = True, "solicitud registrada"
+            print("   >>> SOLICITUD ENVIADA")
         # lo mismo que hace llm_node: las notas van solo en esta respuesta
         notas = []
         consulta = agente.MANUAL.buscar(turnos)["texto"]

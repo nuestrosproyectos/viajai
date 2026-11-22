@@ -183,6 +183,13 @@ class Tecnico(Agent):
             faltan = [c for c in ("nombre", "telefono", "direccion", "municipio", "franja") if c not in self.datos]
             if faltan:
                 partes.append("Para la visita faltan: " + ", ".join(faltan) + ". Pídelos de uno en uno.")
+            elif not self.enviado:
+                # Pedido por Juan (22-11-2026): Andrés preguntaba «¿son correctos?» y después «¿envío ya la
+                # solicitud?». Con los datos a la vista y confirmados no hay que pedir permiso para enviar.
+                partes.append("Ya están todos los datos y el cliente los ve en pantalla. Si todavía no le has leído "
+                              "el teléfono y la dirección, léeselos UNA sola vez y pregunta si están bien. En cuanto diga "
+                              "que sí, la solicitud se envía sola: dile que queda enviada y que le llamaremos para "
+                              "confirmar la hora. NUNCA preguntes «¿envío la solicitud?» ni pidas una segunda confirmación.")
         if self.enviado:
             partes.append("La solicitud YA SE HA ENVIADO" + (f" ({self.aviso})" if self.aviso else "")
                           + ": si aún no se lo has dicho, confírmaselo en una frase y pregúntale si necesita algo más. "
@@ -330,7 +337,7 @@ class Tecnico(Agent):
 
     @function_tool()
     async def enviar_solicitud(self, context: RunContext, tipo: str, urgente: bool, notas: str) -> str:
-        """Envía el formulario. Solo cuando el cliente haya confirmado de viva voz que los datos de la pantalla son correctos.
+        """Envía el formulario cuando el cliente ya ha dado sus datos por buenos. No le preguntes antes si quieres enviarla.
 
         Args:
             tipo: "visita", "llamada" o "venta" (quiere comprar un aparato nuevo)

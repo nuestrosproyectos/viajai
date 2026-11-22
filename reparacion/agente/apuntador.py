@@ -36,7 +36,7 @@ Campos de datos (omite los que no se sepan; no inventes ni deduzcas nada que el 
 Campos de estado (siempre):
 - tipo: "visita", "llamada" (quiere que le llamen) o "venta" (quiere comprar un aparato nuevo)
 - urgente: true si hay agua saliendo, olor a gas o a quemado, o una necesidad básica sin cubrir
-- confirmado: true SOLO si el cliente ya ha dicho que su teléfono es correcto y ha aceptado la visita, la llamada o la compra
+- confirmado: true si el cliente ha aceptado la visita, la llamada o la compra Y ha dicho que sus datos están bien (por ejemplo, contesta «sí» o «correcto» cuando ANDRÉS le lee el teléfono o la dirección, o dice que lo ve bien en pantalla). No hace falta que diga «envíala»: con que dé los datos por buenos, vale
 - se_despide: true SOLO si en su ÚLTIMA frase el cliente se despide o dice que no necesita nada más (adiós, hasta luego, gracias y nada más, eso es todo...)
 
 La voz se transcribe con errores: une las cifras del teléfono aunque vengan sueltas o con puntos; si el cliente corrige un dato, vale el último que haya dicho EL CLIENTE.
