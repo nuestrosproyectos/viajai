@@ -59,5 +59,15 @@ Voz del navegador 0,01 $ · **LiveKit+Deepgram+Claude+ElevenLabs (montado) 0,17-
 - Causas siempre como "lo más probable"; no descartar piezas ni inventar causas sin ficha.
 - Medición a ciegas (Haiku, 20 clientes): sin debates ni tareas 10/18 → 18/18; 45 palabras o menos 7/20 → 17/20; pregunta de veterano 5/16 → 9/16; nota 6,9 → 7,35; avanza a cita 13/13 → 12/13. Casos nuevos de venta (21) y "que venga ya" (22): 8 y 9. Los fallos de causa (aire, frigorífico) y de teléfono en la venta, corregidos y comprobados después.
 
+## Agente de voz al mínimo coste (22-11-2026, petición de Juan: 500-600 llamadas/día)
+- Cerebro: Claude Haiku 5.5 (0,10/0,50 $ por millón; Haiku 4.5 costaba 1/5 $) sin "pensamiento" interno (clase ClaudeRapido), sin temperatura (Haiku 5.5 la rechaza), máx. 300 tokens, instrucciones en caché. Comprobado capturando la petición.
+- Voz: Inworld TTS-2 Flash (~15 $/millón de caracteres; ElevenLabs Flash ~50 $), idioma es-ES, voz por defecto "Ignacio" (castellana, masculina). PENDIENTE: Juan pidió voz femenina, pero el técnico se llama Andrés; decidir nombre + voz escuchándola en el Playground de Inworld. Cartesia y ElevenLabs siguen como opción (TTS_PROVEEDOR).
+- Oído: Deepgram Nova-3 sin palabras clave (se cobraban aparte, ~0,0013 $/min); el manual ya entiende marcas mal transcritas. DEEPGRAM_PALABRAS_CLAVE=1 para activarlas.
+- Detector de fin de turno fijado en local "v1-mini" (gratis); el "v1" de la nube se cobra.
+- Silencio: "¿Sigues ahí?" a los 7,5 s y cuelga a los 15 s. ARREGLADO un fallo: antes nunca colgaba por silencio (LiveKit solo avisa una vez de "ausente") y la llamada seguía hasta el tope de 10 min.
+- Duración: 3 min con aviso amable 30 s antes; si el cliente ya está dando sus datos (teléfono rellenado), prórroga de 1,5 min sin avisos para no perder la venta. Probado con llamadas simuladas aceleradas.
+- Voz: regla estricta de 2 frases y menos de 25 palabras por turno (solo en la llamada; la web escrita sigue en 45). Prueba con Haiku: media 22 palabras, máx. 24, sigue cerrando cita y venta.
+- Coste estimado por llamada de 3 min (ver LEEME): antes ~0,20 $; ahora ~0,04 $ con el agente en servidor propio (~0,07 $ si se aloja en LiveKit Cloud, que cobra 0,01 $/min de agente).
+
 ## Cómo trabajar con Juan
 Soluciones, no excusas; verificar antes de decir que algo está hecho; pedir OK antes de publicar, desplegar, gastar dinero o enviar nada; tenerle al día con cifras; directo y sin tecnicismos.

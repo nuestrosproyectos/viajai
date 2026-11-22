@@ -102,3 +102,18 @@ Si cambias `cerebro.mjs`, vuelve a ejecutar `node exportar-instrucciones.mjs` y 
 - Voz a texto: Chrome, Edge y Safari (iPhone incluido). En Firefox el cliente escribe.
 - Lectura en voz alta: todos los navegadores modernos. Para una voz más natural se puede conectar ElevenLabs en el servidor.
 - Requisito legal (Reglamento europeo de IA, en vigor desde agosto de 2026): el cliente tiene que saber que habla con una IA. La web y el propio técnico lo dicen.
+
+
+## Coste por llamada del agente de voz (precios consultados el 22-11-2026, sin IVA)
+
+Supuestos: llamada de 3 minutos, Andrés habla unos 10 turnos de ~22 palabras (~1.300 caracteres).
+
+| Pieza | Antes | Ahora |
+|---|---|---|
+| Voz | ElevenLabs Flash, ~2.500 caracteres: 0,125 $ | Inworld TTS-2 Flash, ~1.300 caracteres: 0,020 $ |
+| Oído | Deepgram + palabras clave: 0,018 $ | Deepgram sin palabras clave: 0,014 $ (0,023 $ si acaba la promoción) |
+| Cerebro | Claude Haiku 4.5: ~0,030 $ | Claude Haiku 5.5: ~0,007 $ |
+| Alojamiento del agente | LiveKit Cloud: 0,030 $ | Servidor propio: ~0 $ (más ~30-50 €/mes de servidor) |
+| **Total por llamada** | **~0,20 $** | **~0,04 $** (~0,07 $ si se aloja en LiveKit Cloud) |
+
+Con 600 llamadas al día (18.000 al mes): antes ~3.600 $/mes; ahora ~750 $/mes con servidor propio. Son estimaciones con precios de lista: las llamadas más cortas cuestan menos, y con volumen Inworld baja a ~7 $/millón de caracteres.

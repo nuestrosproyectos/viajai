@@ -1,2 +1,2 @@
-livekit-agents[deepgram,google,elevenlabs,cartesia,anthropic,silero]==1.8.13
+livekit-agents[deepgram,google,elevenlabs,cartesia,anthropic,silero,inworld]==1.8.13
 python-dotenv
