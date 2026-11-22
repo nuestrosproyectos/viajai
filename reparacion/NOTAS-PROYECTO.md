@@ -97,3 +97,16 @@ Soluciones, no excusas; verificar antes de decir que algo está hecho; pedir OK 
 - Instrucciones de Andrés separadas en instrucciones.mjs: el móvil solo descarga cerebro.mjs (datos del negocio y saludo: 11,9 KB → 2,6 KB comprimido). En la web publicada, .assetsignore deja fuera instrucciones, manual, base de conocimiento, notas y pruebas: no se pueden copiar escribiendo la dirección. El servidor los lleva incorporados (comprobado con wrangler deploy --dry-run).
 - Si se cambian textos con letras raras (fuera del latín), volver a recortar las fuentes con el script recortar_fuentes.py (fonttools) o servir las fuentes completas.
 - Pendiente del informe de rendimiento: navegadores de Instagram/Facebook, pausa si entra una llamada. Probar en móviles reales antes de publicar.
+
+## Primera llamada real y web nueva (22-11-2026)
+- Este ordenador es Windows ARM64: el filtro de ruido de LiveKit no tiene versión, así que el agente se instala y arranca en el Ubuntu de WSL (`~/venv-reparo/bin/python agente.py start`). La web local: `npx wrangler dev --port 8787` en `servidor/`.
+- Voz: «Javi - Relaxed and Natural (ES)» con estabilidad 0,35, parecido 0,8 y velocidad 0,95 (con los ajustes de fábrica sonaba robótica).
+- `agente/decir.py`: antes de la voz, cifras, euros y teléfonos se pasan a palabras; el teléfono dictado cifra a cifra se junta antes de que lo lea el cerebro.
+- El manual ya no se guarda en la conversación (se intercala en `llm_node`): antes se leía a sí mismo y cambiaba de aparato a media llamada.
+- `agente/apuntador.py`: Haiku sin pensamiento NO da órdenes a la web (0 en 6 turnos, medido). Una consulta aparte por turno rellena la solicitud, enseña la página, envía cuando el cliente confirma y cuelga cuando el cliente se despide. El teléfono solo se acepta si lo ha dicho el cliente.
+- Andrés no se despide ni cuelga hasta que se despide el cliente; al colgar se cierra la sala y la web cuelga también.
+- Diario de cada llamada en la salida del agente (TIEMPO, APUNTADO, SEÑALA). Medido: fin de turno 0,58 s + cerebro 1,1-1,6 s + voz 0,15 s. `agente/ensayo.py` ensaya una llamada por escrito.
+- Web: piel nueva en `cine.css` (gris acero, un solo acento naranja, titulares en Archivo; la primera versión, dorada y con serifa, «se notaba hecha con IA»). Vídeo de portada en `media/portada.mp4`. Titular que gira: «¿Se te ha averiado» + aparato. La web anterior está en `version-anterior.html`.
+- En ordenador, al apuntarse el primer dato se abre el «escenario»: conversación a la izquierda y solicitud grande con mapa de Google a la derecha (sin clave; con `<meta name="google-maps-clave">` usa la versión oficial).
+- Datos confirmados: visita 60,50 € (50 € más IVA; cubre desplazamiento y presupuesto; se descuentan si repara) y técnicos con más de 35 años de experiencia. Andrés se presenta como asistente con IA formado con ese oficio, sin atribuirse años propios.
+- Pendiente: probar la voz sobre el diseño nuevo, tono menos «compadre», teléfono y WhatsApp reales, garantía 3 o 6 meses, cuenta de Cloudflare y publicar (con OK).

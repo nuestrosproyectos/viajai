@@ -1,0 +1,182 @@
+/* =====================================================================
+   PIEL «CINE» (22-11-2026) · pedida por Juan: oscura y cinematográfica,
+   y que NO parezca hecha con IA (repasada con su skill design-taste-frontend).
+
+   Lectura del encargo: web de servicio local para vecinos con prisa (casi todos
+   en el móvil), lenguaje oscuro y sobrio de marca de herramienta, no de «startup».
+
+   Decisiones (y lo que se ha evitado a propósito):
+   - Gris acero neutro y frío, casi negro y casi blanco. Nada de negro cálido + dorado/ámbar,
+     ni crema + terracota: son las paletas que delatan a una IA.
+   - UN solo color de acento en toda la página: naranja de herramienta (#F2601E).
+     Todo lo que se pulsa para avanzar lleva ese color. El verde solo marca «hecho».
+   - Titulares en Archivo ancha y gruesa (la letra de la casa). Sin letra con serifa
+     ni cursivas de adorno: la palabra importante se destaca con el color de acento.
+   - Sin resplandores de color, sin degradados en el texto, sin rótulos en mayúsculas
+     encima de cada sección (solo queda el de la portada).
+   - Esquinas: botones en píldora, tarjetas a 16 px, campos a 10 px. Siempre igual.
+
+   Va encima del diseño anterior: cambia la piel, NO la colocación ni la lógica.
+   Se carga desde index.html con <link rel="stylesheet" href="cine.css">.
+   ===================================================================== */
+:root,:root[data-theme="dark"]{
+  --fondo:#0C0D0F; --fondo-2:#121416; --fondo-3:#1B1E21; --tarjeta:#141618;
+  --tinta:#F1F2F2; --tinta-2:#B4B8BC; --tinta-3:#8A8F94;
+  --linea:#24282C; --linea-fuerte:#565C62;
+  --acento:#F2601E; --acento-pulsado:#D9500F;
+  --almagra:var(--acento); --almagra-pulsado:var(--acento-pulsado); --almagra-suave:#22150E; --sobre-almagra:#0C0D0F;
+  --cobalto:var(--acento); --cobalto-suave:#1A1D20; --laton:var(--acento);
+  --ok:#57C08F; --ok-suave:#11231B; --rojo:#F04A3A; --sobre-rojo:#0C0D0F;
+  --consola:#101214; --consola-2:#181B1E; --consola-txt:#F1F2F2; --consola-txt-2:#A9AEB3; --consola-linea:rgba(241,242,242,.13);
+  --sombra:0 24px 50px -28px rgba(0,0,0,.85);
+  --r-tarjeta:16px; --r-campo:10px;
+  color-scheme:dark;
+}
+html,body{overflow-x:clip}
+body{background:var(--fondo)}
+::selection{background:var(--acento);color:#0C0D0F}
+
+/* grano de película (capa fija que no recibe toques) */
+.grano{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;opacity:.06;z-index:70;mix-blend-mode:overlay}
+
+/* ---------- letras ---------- */
+h1,h2{font-family:var(--titular);font-stretch:112%;font-weight:800;letter-spacing:-.035em;line-height:.98;text-wrap:balance}
+h1{font-size:clamp(2.3rem,9.6vw,5.4rem)}
+h2{font-size:clamp(1.8rem,6.2vw,3.4rem)}
+h1 em,h2 em,.subrayado{font-style:normal;color:var(--acento);background:none}
+.bajada,.portada .entrada{text-wrap:pretty}
+/* un solo rótulo pequeño en toda la página (el de la portada): los de las secciones se quitan */
+.cabecera-sec .antetitulo{display:none}
+
+/* ---------- botones: píldora, sin resplandor ---------- */
+.boton{border-radius:999px}
+.boton-principal,.boton-andres{background:var(--acento);color:#0C0D0F;box-shadow:none}
+.boton-principal:active,.boton-andres:active{background:var(--acento-pulsado);transform:translateY(1px);box-shadow:none}
+.boton-borde{border-color:rgba(241,242,242,.26);background:rgba(241,242,242,.04);color:var(--tinta)}
+
+/* ---------- cabecera: flota sobre la portada ---------- */
+.cab{background:linear-gradient(rgba(12,13,15,.8),rgba(12,13,15,0));backdrop-filter:none;-webkit-backdrop-filter:none;transition:background .3s,border-color .3s}
+.cab.con-borde{background:rgba(12,13,15,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom-color:var(--linea)}
+.logo-marca{border-radius:10px}
+.logo-marca svg circle[stroke],.logo-marca svg rect{stroke:#0C0D0F}
+.logo-marca svg [fill="#FFFDF8"]{fill:#0C0D0F}
+.logo-marca svg circle[stroke]{fill:none}
+.previa{background:#08090A;border-bottom:1px solid var(--linea)}
+.previa b{color:var(--acento)}
+
+/* ---------- PORTADA: una escena, no una página ---------- */
+.portada{position:relative;isolation:isolate;margin-top:-64px;padding:86px 0 30px;display:flex;align-items:flex-start;overflow:clip}
+.portada>.envol{width:100%}
+.cine-fondo{position:absolute;inset:0;z-index:-1;background:#0C0D0F;overflow:hidden}
+/* reserva si el vídeo no carga: luz de taller fría, sin colores de adorno */
+.cine-luz{position:absolute;inset:-20%;background:
+  radial-gradient(44% 40% at 78% 28%,rgba(241,242,242,.13),transparent 70%),
+  radial-gradient(40% 44% at 14% 82%,rgba(241,242,242,.06),transparent 70%)}
+.cine-fondo video,.cine-fondo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:30% 40%;opacity:0;transition:opacity 1.4s ease}
+.cine-fondo .visible{opacity:1}
+.cine-velo{position:absolute;inset:0;background:
+  linear-gradient(270deg,rgba(12,13,15,.9) 0,rgba(12,13,15,.6) 34%,rgba(12,13,15,0) 62%),
+  linear-gradient(180deg,rgba(12,13,15,.5) 0,rgba(12,13,15,0) 20%,rgba(12,13,15,0) 46%,rgba(12,13,15,.82) 70%,#0C0D0F 100%)}
+
+.sobretitulo{order:0;display:block;margin:0 0 14px;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--tinta-2)}
+.urgencia{order:6!important;background:rgba(241,242,242,.05);border:1px solid var(--linea);border-radius:var(--r-tarjeta);margin:18px 0 0}
+.urgencia svg{color:var(--rojo)}
+.portada h1{order:1;margin-bottom:16px}
+.portada .entrada{font-size:1.2rem;color:var(--tinta-2);max-width:34ch}
+.precio-linea{border:1px solid var(--linea-fuerte);border-radius:999px;background:rgba(12,13,15,.5);padding:8px 16px}
+.precio-linea b{font-family:var(--titular);font-stretch:112%;font-weight:800;font-size:1.3rem;color:var(--tinta)}
+.tarjeta-andres{order:4;background:rgba(16,18,20,.74);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(241,242,242,.14);border-radius:var(--r-tarjeta);box-shadow:var(--sombra),inset 0 1px 0 rgba(255,255,255,.07)}
+@media (prefers-reduced-transparency:reduce){.tarjeta-andres{background:#101214;backdrop-filter:none;-webkit-backdrop-filter:none}}
+.tarjeta-andres .boton-hablar{border-radius:999px}
+.llamame-enlace{color:var(--tinta-2)}
+.confianza{order:7;gap:0;margin-top:22px;border-top:1px solid var(--linea)}
+.confianza li{padding:12px 0;border-bottom:1px solid var(--linea)}
+.confianza svg{color:var(--tinta-2)}
+
+/* orbe de Andrés: metal y acento, sin azul */
+.orbe::before{background:radial-gradient(circle at 34% 30%,rgba(255,255,255,.5) 0 10%,transparent 26%),radial-gradient(circle,#FF7A3C 0 40%,#F2601E 72%,#A53C0C 100%)}
+
+/* ---------- secciones ---------- */
+.seccion{padding:64px 0}
+.seccion+.seccion{border-top:1px solid var(--linea)}
+.cabecera-sec{margin-bottom:28px}
+.aparato,.paso,.tarifa,.lista-ok li,.zona-caja,.faq details{background:var(--tarjeta);border:1px solid var(--linea);border-radius:var(--r-tarjeta);box-shadow:none;transition:transform .45s var(--curva),border-color .25s}
+.aparato svg{color:var(--tinta);transition:transform .45s var(--curva)}
+@media (hover:hover){
+  .aparato:hover,.paso:hover{transform:translateY(-3px);border-color:var(--linea-fuerte)}
+  .aparato:hover svg{color:var(--acento)}
+}
+.paso::before{background:var(--tinta);color:#0C0D0F}
+.tarifa{border-color:var(--linea-fuerte);background:var(--tarjeta)}
+.tarifa .cifra{font-family:var(--titular);font-stretch:112%;font-weight:800;font-size:clamp(3.8rem,17vw,6.4rem);letter-spacing:-.05em;color:var(--tinta)}
+.tarifa .cifra small{font-size:.38em;color:var(--tinta-2)}
+.descuento{border-radius:999px;padding:8px 14px}
+.lista-ok svg{color:var(--ok)}
+.faq summary{font-size:1.1rem}
+.faq summary::after{color:var(--tinta-2)}
+.campo input{border-radius:var(--r-campo)}
+.cierre{background:var(--consola);border:1px solid var(--linea);border-radius:var(--r-tarjeta)}
+.pie{background:#08090A}
+
+/* ---------- movimiento: solo si el visitante no ha pedido reducirlo.
+   Cada uno tiene un porqué: el titular entra primero (jerarquía), luego lo que
+   se puede pulsar; las tarjetas aparecen al llegar a ellas (orden de lectura). ---------- */
+.palabra{display:inline-block;overflow:clip;vertical-align:bottom;padding:0 .03em .08em;margin:0 -.03em -.08em}
+.palabra>span{display:inline-block}
+@media (prefers-reduced-motion:no-preference){
+  .cine .palabra>span{transform:translateY(110%);transition:transform .9s var(--curva);transition-delay:calc(var(--i)*60ms + 80ms)}
+  .cine.listo .palabra>span{transform:none}
+  .cine .entra{opacity:0;transform:translateY(16px);transition:opacity .7s var(--curva),transform .7s var(--curva);transition-delay:calc(var(--i,0)*80ms + 220ms)}
+  .cine.listo .entra{opacity:1;transform:none}
+  .rev{opacity:0;transform:translateY(22px);transition:opacity .7s var(--curva),transform .7s var(--curva);transition-delay:calc(var(--i,0)*60ms)}
+  .rev.ver{opacity:1;transform:none}
+}
+
+/* ---------- escenario de la solicitud y mapa, a juego ---------- */
+.sol-mapa{border-radius:var(--r-tarjeta)}
+.sol-mapa iframe{filter:invert(.92) hue-rotate(180deg) saturate(.35) brightness(.95) contrast(.95)}
+.sol-mapa figcaption b{color:var(--acento)}
+.mapa-espera svg{color:var(--tinta-2)}
+.solicitud>summary svg{color:var(--tinta-2)}
+
+/* ======================= ORDENADOR ======================= */
+@media (min-width:900px){
+  .portada{margin-top:-76px;padding:104px 0 40px;align-items:center;min-height:100dvh}
+  .portada .envol{grid-template-columns:1.2fr .8fr;gap:56px;align-items:end}
+  .portada h1{font-size:clamp(2.8rem,4.5vw,4.6rem)}
+  .portada .entrada{font-size:1.3rem;max-width:32ch}
+  .urgencia{border-radius:999px;margin:26px 0 0;max-width:max-content;padding-left:18px}
+  .seccion{padding:96px 0}
+  .cabecera-sec{margin-bottom:40px}
+  .cabecera-sec h2{max-width:18ch}
+  .cabecera-sec .bajada{max-width:44ch}
+  .escenario{background:#08090A}
+  .esc-panel{border:1px solid var(--linea);border-radius:var(--r-tarjeta)}
+  body.escenario-on .conv{border-radius:var(--r-tarjeta)}
+  .esc-cab small{color:var(--tinta-3)}
+  .esc-cab h2{font-size:clamp(1.6rem,2.2vw,2.1rem)}
+  .esc-estado{background:var(--fondo-3);color:var(--tinta)}
+  .esc-estado i{background:var(--acento)}
+  .escenario[data-estado="enviada"] .esc-estado i{background:var(--ok)}
+  .escenario .sol-diag{background:var(--fondo-3)}
+  .escenario .sol-campos .campo input{font-family:var(--titular);font-stretch:112%;font-weight:700;font-size:1.35rem;letter-spacing:-.02em}
+  .escenario .sol-campos .campo:focus-within{border-bottom-color:var(--tinta)}
+  .escenario .mapa-espera svg{color:var(--tinta-2)}
+}
+
+/* la interrogación final no se queda sola en una línea */
+.junto{white-space:nowrap}
+
+/* ---------- titular que gira: «¿Se te ha roto» fijo y debajo va rodando el aparato
+   (una lavadora, un frigorífico...). Dice de un vistazo todo lo que se repara. ---------- */
+.gira{display:block;overflow:hidden;white-space:nowrap;padding:.06em 0 .12em;margin:-.06em 0 -.12em;perspective:600px}
+.gira-pieza{display:inline-block;transform-origin:50% 100%;transition:transform .55s var(--curva),opacity .4s ease}
+.gira-pieza.sale{transform:translateY(-105%) rotateX(55deg);opacity:0}
+.gira-pieza.espera{transform:translateY(105%) rotateX(-55deg);opacity:0;transition:none}
+@media (prefers-reduced-motion:no-preference){
+  .cine .gira{opacity:0;transform:translateY(16px);transition:opacity .7s var(--curva),transform .7s var(--curva);transition-delay:.3s}
+  .cine.listo .gira{opacity:1;transform:none}
+}
+.hero-a{min-width:0}
+.portada .envol>*{min-width:0}
+.gira{max-width:100%}

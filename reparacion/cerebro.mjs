@@ -15,11 +15,11 @@ export const NEGOCIO = {
   telefono: "958 00 00 00",              // PENDIENTE: teléfono real
   telefonoEnlace: "+34958000000",        // PENDIENTE: mismo teléfono en formato internacional
   whatsapp: "34600000000",               // PENDIENTE: WhatsApp real (sin + ni espacios)
-  experiencia: "un mínimo de 20 años de experiencia",  // dato real del equipo (confirmado por Juan)
-  experienciaCorta: "Técnicos con 20+ años",
+  experiencia: "más de 35 años de experiencia",  // dicho por Juan el 22-11-2026 (antes: mínimo 20)
+  experienciaCorta: "Técnicos con 35+ años",
   horario: "de lunes a viernes de 9:00 a 20:00 y los sábados de 9:00 a 14:00",
   plazo: "normalmente en 24 a 48 horas, y el mismo día si es urgente y hay hueco en la ruta",
-  visita: { precio: "39 €", detalle: "desplazamiento y diagnóstico, IVA incluido; si reparas con nosotros, se descuenta de la factura" }, // PENDIENTE: confirmar precio
+  visita: { precio: "60,50 €", detalle: "desplazamiento del técnico y elaboración del presupuesto (son 50 € más IVA, 60,50 € en total); si decides reparar con nosotros, esos 60,50 € se descuentan de la factura" }, // confirmado por Juan el 22-11-2026: 50 € más IVA
   garantia: "3 meses por escrito en la reparación (pieza y mano de obra)", // PENDIENTE: ¿3 o 6 meses?
   // Qué ofrecer si el cliente prefiere comprar un aparato nuevo. PENDIENTE: completar con lo que diga Juan.
   // Si el cliente prefiere un aparato nuevo, también se lo vendemos, con entrega, instalación

@@ -4,7 +4,7 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
-COPY agente.py instrucciones.txt saludo.txt ./
+COPY agente.py manual.py decir.py apuntador.py instrucciones.txt saludo.txt conocimiento.json ./
 # Descarga previa de los modelos locales (detector de voz y de fin de turno)
 RUN python -m livekit.agents download-files
 CMD ["python", "agente.py", "start"]
