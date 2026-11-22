@@ -1,1 +1,1 @@
-Hola, soy Andrés, el técnico virtual de Reparo. Cuéntame: ¿qué aparato te está dando guerra y qué le pasa?
+Hola, soy Andrés, el asistente de Reparo. ¿Qué aparato se te ha averiado?

@@ -58,8 +58,12 @@ MANUAL = Manual(AQUI / "conocimiento.json")  # manual técnico: códigos de erro
 CAMPOS = {"aparato", "marca", "modelo", "averia", "codigo", "nombre", "telefono", "direccion", "municipio", "franja"}
 CAMPOS_ORDEN = ("aparato", "marca", "modelo", "averia", "codigo", "nombre", "telefono", "direccion", "municipio", "franja")
 # Se añade a cada turno (no se guarda en la conversación): sin él, Andrés se alargaba a 40-65 palabras.
-RECORDATORIO = ("[Recuerda (no lo leas): contesta en una o dos frases cortas, MENOS DE 25 PALABRAS en total, "
-                "con una sola pregunta al final. No propongas limpiezas ni arreglos caseros: ofrece la visita.]")
+# La voz es el 83 % del coste de una llamada (medido el 22-11-2026): hablar menos es lo que abarata.
+RECORDATORIO = ("[Recuerda (no lo leas): contesta en UNA o dos frases cortas, COMO MUCHO 18 PALABRAS en total "
+                "(solo puedes pasarte al leer un teléfono o una dirección), con una sola pregunta al final. "
+                "La causa de la avería, en una sola frase corta. No repitas el nombre del cliente en cada respuesta "
+                "ni datos que ya has dicho, y no empieces siempre con «Perfecto» o «Gracias». "
+                "No propongas limpiezas ni arreglos caseros: ofrece la visita.]")
 
 
 async def cerrar_sala(motivo: str) -> None:

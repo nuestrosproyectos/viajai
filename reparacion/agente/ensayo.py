@@ -34,7 +34,7 @@ async def ensayo() -> None:
     ctx = llm.ChatContext()
     ctx.add_message(role="system", content=agente.INSTRUCCIONES)
     ctx.add_message(role="assistant", content=agente.SALUDO)
-    palabras, esperas = [], []
+    palabras, esperas, letras = [], [], len(agente.SALUDO)
     for frase in FRASES:
         frase = agente.juntar_cifras(frase)
         ctx.add_message(role="user", content=frase)
@@ -69,6 +69,7 @@ async def ensayo() -> None:
                     primera = primera or time.time() - t0
                     texto += ch.delta.content
         palabras.append(len(texto.split()))
+        letras += len(decir(texto))
         esperas.append(primera or 0)
         ficha = consulta.split("]")[0].split("Aparato:")[-1].strip() if consulta else "ninguna"
         print(f"CLIENTE: {frase}")
@@ -78,6 +79,7 @@ async def ensayo() -> None:
             print(f"   SE DICE: {decir(texto)}")
         ctx.add_message(role="assistant", content=texto)
     print("\npalabras por turno:", palabras, "| media:", round(sum(palabras) / len(palabras), 1), "| máximo:", max(palabras))
+    print("letras dichas en total (con el saludo):", letras, "| coste de voz aproximado:", round(letras * 50 / 1_000_000, 3), "$")
     print("espera media del cerebro:", round(sum(esperas) / len(esperas), 2), "s")
     print("datos apuntados:", t.datos)
 

@@ -71,5 +71,5 @@ export const lista = xs => xs.length > 1 ? xs.slice(0, -1).join(", ") + " y " + 
 // Saludo inicial: lo dice la propia página (sin esperar a la IA) para que
 // la conversación arranque al instante.
 export function saludo(n = NEGOCIO) {
-  return `Hola, soy ${n.tecnico}, el técnico virtual de ${n.marca}. Cuéntame: ¿qué aparato te está dando guerra y qué le pasa?`;
+  return `Hola, soy ${n.tecnico}, el asistente de ${n.marca}. ¿Qué aparato se te ha averiado?`;   // corto y sin «dando guerra» (22-11-2026): cada letra dicha cuesta
 }
