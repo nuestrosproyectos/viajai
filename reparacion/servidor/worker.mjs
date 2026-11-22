@@ -7,7 +7,8 @@
 //  llega al navegador del cliente.
 // =====================================================================
 import Anthropic from "@anthropic-ai/sdk";
-import { NEGOCIO, saludo, instrucciones } from "../cerebro.mjs";
+import { NEGOCIO, saludo } from "../cerebro.mjs";
+import { instrucciones } from "../instrucciones.mjs";
 import { preparar, buscar } from "../manual.mjs";
 import CONOCIMIENTO from "../conocimiento.mjs";
 

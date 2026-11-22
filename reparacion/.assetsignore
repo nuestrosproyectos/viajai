@@ -2,3 +2,14 @@ servidor
 LEEME.md
 .assetsignore
 agente
+# Lo interno no se publica: el servidor lo lleva incorporado al desplegar
+instrucciones.mjs
+conocimiento.mjs
+manual.mjs
+conocimiento
+construir-manual.mjs
+pruebas
+pruebas-manual.mjs
+NOTAS-PROYECTO.md
+PROMPT-TECNICO-VETERANO.md
+.git

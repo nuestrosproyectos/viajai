@@ -2,7 +2,8 @@
 // Andrés en la web (instrucciones + saludo + conversación con las fichas del manual).
 // Uso: node pruebas/preparar.mjs <fase>   (fase = antes | despues)
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
-import { NEGOCIO, instrucciones, saludo } from "../cerebro.mjs";
+import { NEGOCIO, saludo } from "../cerebro.mjs";
+import { instrucciones } from "../instrucciones.mjs";
 import { preparar, buscar } from "../manual.mjs";
 import CONOCIMIENTO from "../conocimiento.mjs";
 

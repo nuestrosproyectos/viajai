@@ -1,8 +1,9 @@
 // Genera instrucciones.txt, saludo.txt y conocimiento.json para el agente de voz a partir de
-// ../cerebro.mjs, ../conocimiento.mjs y ../manual.mjs (así la web y el agente usan siempre lo mismo).
+// ../cerebro.mjs, ../instrucciones.mjs, ../conocimiento.mjs y ../manual.mjs (así la web y el agente usan siempre lo mismo).
 // Uso: node exportar-instrucciones.mjs
 import { writeFileSync } from "node:fs";
-import { NEGOCIO, instrucciones, saludo } from "../cerebro.mjs";
+import { NEGOCIO, saludo } from "../cerebro.mjs";
+import { instrucciones } from "../instrucciones.mjs";
 import { APARATOS, MARCAS, NUMEROS, LETRAS, CENTENAS, MARCA_APARATO, EQUIVALE } from "../manual.mjs";
 import CONOCIMIENTO from "../conocimiento.mjs";
 
