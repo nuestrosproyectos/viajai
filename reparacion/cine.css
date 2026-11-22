@@ -180,3 +180,9 @@ h1 em,h2 em,.subrayado{font-style:normal;color:var(--acento);background:none}
 .hero-a{min-width:0}
 .portada .envol>*{min-width:0}
 .gira{max-width:100%}
+
+/* en el escenario el mapa ocupa todo el alto disponible, no solo el del formulario */
+@media (min-width:900px){
+  .escenario .sol-cuerpo{grid-template-rows:auto minmax(0,1fr)}
+  .escenario .sol-mapa{min-height:min(560px,62vh);align-self:stretch}
+}

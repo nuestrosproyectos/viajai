@@ -823,7 +823,7 @@ function abrirConversacion({ modo = "voz" } = {}) {
   document.body.classList.add("en-conversacion"); document.body.classList.remove("con-mini");
   if (esMovil() && history.state?.conv !== 1) history.pushState({ conv: 1 }, "");
   if (modo === "texto") mostrarTeclado(true);
-  if (Object.values(datosFormulario()).some(Boolean)) abrirEscenario();  // si ya hay datos, vuelve con la solicitud a la vista
+  abrirEscenario();  // pedido por Juan: la solicitud y el mapa están a la vista desde el primer momento, antes de empezar a hablar
 }
 /* Escenario (solo ordenador): la solicitud se muda a un panel grande al lado de la conversación */
 const escenario = $("#escenario");
@@ -833,6 +833,7 @@ function abrirEscenario() {
   $("#escHueco").append($("#solicitud")); $("#solicitud").open = true;
   escenario.hidden = false; document.body.classList.add("escenario-on");
   $("#escAviso").textContent = "Nº de aviso " + numAviso;
+  pintarMapa(datosFormulario());
 }
 function cerrarEscenario() {
   if (!enEscenario()) return;
@@ -1190,20 +1191,23 @@ function resumirSolicitud() {
 const CLAVE_MAPA = $('meta[name="google-maps-clave"]')?.content || "";
 let mapaActual = "", mapaEspera = 0;
 function pintarMapa(d) {
-  if (!d.direccion && !d.municipio) return;
-  const lugar = [d.direccion, d.municipio, /granada/i.test(d.municipio || "") ? "" : "Granada", "España"].filter(Boolean).join(", ");
+  // Sin dirección todavía: en el escenario (ordenador) se enseña ya la zona de servicio, para que el mapa
+  // esté a la vista desde que se abre la conversación; en el móvil se espera a tener la dirección.
+  const sinDatos = !d.direccion && !d.municipio;
+  if (sinDatos && !enEscenario()) return;
+  const lugar = sinDatos ? N.ciudad + ", España" : [d.direccion, d.municipio, /granada/i.test(d.municipio || "") ? "" : "Granada", "España"].filter(Boolean).join(", ");
   if (lugar === mapaActual) return;
   mapaActual = lugar;
   clearTimeout(mapaEspera);
   mapaEspera = setTimeout(() => {   // espera a que el dato deje de cambiar para no recargar el mapa a cada letra
-    const q = encodeURIComponent(lugar), zoom = d.direccion ? 17 : 13;
+    const q = encodeURIComponent(lugar), zoom = d.direccion ? 17 : sinDatos ? 12 : 13;
     $("#mapaMarco").src = CLAVE_MAPA
       ? `https://www.google.com/maps/embed/v1/place?key=${encodeURIComponent(CLAVE_MAPA)}&q=${q}&zoom=${zoom}&language=es`
       : `https://www.google.com/maps?q=${q}&z=${zoom}&hl=es&output=embed`;
     $("#mapaMarco").hidden = false; $("#mapaEspera").hidden = true;
-    const pie = $("#mapaPie"); pie.hidden = false; pie.innerHTML = "<b>El técnico irá aquí</b>";
-    pie.append([d.direccion, d.municipio].filter(Boolean).join(", "));
-  }, 900);
+    const pie = $("#mapaPie"); pie.hidden = false; pie.innerHTML = sinDatos ? "<b>Dónde vamos</b>" : "<b>El técnico irá aquí</b>";
+    pie.append(sinDatos ? N.ciudad + " y alrededores. Cuando digas tu dirección, el mapa te lleva a tu calle." : [d.direccion, d.municipio].filter(Boolean).join(", "));
+  }, sinDatos ? 150 : 900);
 }
 
 async function registrarAviso(aviso) {
