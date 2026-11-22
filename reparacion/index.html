@@ -720,8 +720,9 @@ body.con-mini .mini{display:flex}
   <div class="velo" id="velo" hidden></div>
   <div class="hoja" id="hojaMicro" role="dialog" aria-modal="true" aria-labelledby="hmTit" hidden>
     <h3 id="hmTit">Para hablar con <span data-n="tecnico">Andrés</span></h3>
-    <p>Tu móvil te va a preguntar si dejas usar el micrófono. Pulsa <b>«Permitir»</b>. Solo te escuchamos mientras dura la conversación.</p>
-    <button class="boton boton-andres" type="button" id="hmEmpezar">Empezar a hablar</button>
+    <p>Tu navegador te pregunta ahora si dejas usar el micrófono. Pulsa <b>«Permitir»</b> en el aviso y empezamos. Solo te escuchamos mientras dura la conversación.</p>
+    <p class="hm-pista" id="hmPista" aria-live="polite"><span class="hm-punto"></span>Esperando a que pulses «Permitir»…</p>
+    <button class="boton boton-andres" type="button" id="hmEmpezar" hidden>No me sale el aviso: probar otra vez</button>
     <div class="pareja"><button class="boton boton-borde" type="button" id="hmEscribir">Prefiero escribir</button><a class="boton boton-borde" data-tel href="tel:+34958000000">Prefiero llamar</a></div>
   </div>
   <div class="hoja" id="hojaSinMicro" role="dialog" aria-modal="true" aria-labelledby="hsTit" hidden>
@@ -946,16 +947,41 @@ function hoja(id) {
 async function estadoPermiso() {
   try { return (await navigator.permissions.query({ name: "microphone" })).state; } catch { return "prompt"; }
 }
+/* El navegador SIEMPRE pide permiso para el micrófono la primera vez: no se puede evitar.
+   Lo que sí se puede es que lo explique el propio Andrés de viva voz (para hablar él no hace falta
+   permiso): al pulsar «Hablar», Andrés dice «tu navegador te va a pedir el micrófono, pulsa Permitir»
+   y el aviso sale justo mientras lo dice. Pedido por Juan el 22-11-2026: sin botón intermedio. */
+const avisoMicro = new Audio(); avisoMicro.preload = "none"; avisoMicro.src = "media/andres-micro.mp3";
+let avisoCebado = Promise.resolve();
+// Safari solo deja sonar un audio que se haya «tocado» dentro de la pulsación: se ceba en silencio en ese instante
+function cebarAviso() {
+  avisoMicro.muted = true;
+  avisoCebado = avisoMicro.play().then(() => { avisoMicro.pause(); avisoMicro.currentTime = 0; }).catch(() => {}).finally(() => { avisoMicro.muted = false; });
+}
 async function pedirMicro() {
   const st = await estadoPermiso();
-  if (st === "granted" || leer("microExplicado") === "1") return st === "denied" ? (sinMicro(), false) : true;
+  if (st === "granted") return true;
   if (st === "denied") { sinMicro(); return false; }
   return new Promise(ok => {
+    let resuelto = false, espera = 0;
+    const terminar = (vale) => { if (resuelto) return; resuelto = true; clearTimeout(espera); avisoMicro.pause(); if (vale) hoja(null); ok(vale); };
+    const pedir = async () => {
+      $("#hmEmpezar").hidden = true; $("#hmPista").hidden = false;
+      setTimeout(() => { if (!resuelto) $("#hmEmpezar").hidden = false; }, 9000);   // por si el aviso no llega a salir
+      try {
+        const flujo = await navigator.mediaDevices.getUserMedia({ audio: true });
+        flujo.getTracks().forEach(p => p.stop());   // solo era para conseguir el permiso: el micro de verdad lo abre la llamada
+        terminar(true);
+      } catch { if (!resuelto) { resuelto = true; avisoMicro.pause(); sinMicro(); ok(false); } }
+    };
     hoja("#hojaMicro");
-    $("#hmEmpezar").onclick = () => { hoja(null); guardar("microExplicado", "1"); ok(true); };
-    $("#hmEscribir").onclick = () => { hoja(null); mostrarTeclado(true); ok(false); };
+    avisoCebado.then(() => { if (!resuelto && !reducirVoz()) avisoMicro.play().catch(() => {}); });
+    espera = setTimeout(pedir, 1900);   // el aviso del navegador sale cuando Andrés está diciendo «te va a pedir el micrófono»
+    $("#hmEmpezar").onclick = pedir;
+    $("#hmEscribir").onclick = () => { terminar(false); hoja(null); mostrarTeclado(true); };
   });
 }
+function reducirVoz() { return $("#btnVoz")?.getAttribute("aria-pressed") === "false"; }   // si ha quitado la voz de Andrés, no suena
 function sinMicro() { estado("reposo"); hoja("#hojaSinMicro"); }
 $("#hsEscribir").addEventListener("click", () => { hoja(null); mostrarTeclado(true); });
 $("#hsReintentar").addEventListener("click", () => { hoja(null); empezarVoz(); });
@@ -1452,6 +1478,7 @@ function desbloquearAudio() {
   try { const C = window.AudioContext || window.webkitAudioContext; const ac = new C(); ac.resume(); const o = ac.createOscillator(), g = ac.createGain(); g.gain.value = 0; o.connect(g).connect(ac.destination); o.start(); o.stop(ac.currentTime + 0.05); } catch {}
 }
 $$("[data-voz], #btnMic, #hmEmpezar").forEach(b => b.addEventListener("click", desbloquearAudio));
+$$("[data-voz], #btnMic").forEach(b => b.addEventListener("click", cebarAviso));
 $("#haActivar").addEventListener("click", async () => { await llamada?.startAudio().catch(() => {}); hoja(null); });
 function colgar() { llamada?.disconnect(); }
 function finLlamada() {
