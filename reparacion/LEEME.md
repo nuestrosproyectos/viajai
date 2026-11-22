@@ -116,4 +116,6 @@ Supuestos: llamada de 3 minutos, Andrés habla unos 10 turnos de ~22 palabras (~
 | Alojamiento del agente | LiveKit Cloud: 0,030 $ | Servidor propio: ~0 $ (más ~30-50 €/mes de servidor) |
 | **Total por llamada** | **~0,20 $** | **~0,04 $** (~0,07 $ si se aloja en LiveKit Cloud) |
 
-Con 600 llamadas al día (18.000 al mes): antes ~3.600 $/mes; ahora ~750 $/mes con servidor propio. Son estimaciones con precios de lista: las llamadas más cortas cuestan menos, y con volumen Inworld baja a ~7 $/millón de caracteres.
+Con la voz de ElevenLabs (elegida por Juan, la de mejor calidad): ~0,065 $ de voz, **~0,09 $ por conversación** (~0,12 $ alojando el agente en LiveKit Cloud).
+
+Con 600 conversaciones al día (18.000 al mes): antes ~3.600 $/mes; con ElevenLabs ~1.650 $/mes; con Inworld ~800 $/mes (servidor propio en los dos casos). Son estimaciones con precios de lista: las llamadas más cortas cuestan menos, y con volumen Inworld baja a ~7 $/millón de caracteres.

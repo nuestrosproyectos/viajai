@@ -3,7 +3,7 @@ Agente de voz de Reparo para LiveKit (conversación continua, como una llamada).
 
 Oído:    Deepgram Nova-3 en español
 Cerebro: Claude Haiku 5.5 sin "pensamiento" interno (rápido y barato), o Gemini Flash
-Voz:     Inworld TTS-2 Flash en español de España (la más barata); Cartesia o ElevenLabs opcionales
+Voz:     ElevenLabs Flash v2.5 con voz de España (la mejor); Inworld TTS-2 Flash como opción barata
 
 Pensado para gastar lo mínimo sin perder clientes: cuelga a los 30 s de silencio (pregunta
 "¿Sigues ahí?" a los 15 s, que le da tiempo a buscar la marca) y corta a los 8 minutos solo
@@ -76,7 +76,7 @@ def crear_llm():
 
 
 def crear_tts():
-    proveedor = os.getenv("TTS_PROVEEDOR", "inworld").lower()
+    proveedor = os.getenv("TTS_PROVEEDOR", "elevenlabs").lower()  # decisión de Juan: la mejor voz (Inworld, opción barata)
     if proveedor == "elevenlabs":
         return elevenlabs.TTS(model="eleven_flash_v2_5", voice_id=os.environ["ELEVENLABS_VOZ_ID"], language="es")
     if proveedor == "cartesia":

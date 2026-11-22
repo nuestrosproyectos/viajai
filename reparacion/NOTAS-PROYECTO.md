@@ -75,5 +75,9 @@ Voz del navegador 0,01 $ · **LiveKit+Deepgram+Claude+ElevenLabs (montado) 0,17-
 - Se mantiene (ahorra sin riesgo): Haiku 5.5 sin pensamiento, servidor propio, 25 palabras por turno (en voz es mejor corto).
 - Pendiente de prueba real antes de decidir: voz Inworld frente a ElevenLabs (escucha a ciegas con frases reales) y detector de turnos local frente al de la nube (que no interrumpa al cliente).
 
+## Decisión de voz (22-11-2026)
+- Juan elige ElevenLabs ("el rey absoluto"): voz por defecto ElevenLabs Flash v2.5 (TTS_PROVEEDOR=elevenlabs). ~0,09 $ por conversación de 3 min, ~1.650 $/mes a 600 al día. Inworld queda como opción barata.
+- Concepto de Juan: no es una llamada telefónica, es el asistente de voz dentro de la web (se habla con él desde la página, se ve escrito lo que se dice y se ve cómo se rellena la solicitud). Es lo que ya hace la web (modo llamada con LiveKit + transcripción + formulario + señalar secciones). Sin coste de telefonía.
+
 ## Cómo trabajar con Juan
 Soluciones, no excusas; verificar antes de decir que algo está hecho; pedir OK antes de publicar, desplegar, gastar dinero o enviar nada; tenerle al día con cifras; directo y sin tecnicismos.
