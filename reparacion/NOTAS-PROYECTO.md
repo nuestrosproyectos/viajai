@@ -69,5 +69,11 @@ Voz del navegador 0,01 $ · **LiveKit+Deepgram+Claude+ElevenLabs (montado) 0,17-
 - Voz: regla estricta de 2 frases y menos de 25 palabras por turno (solo en la llamada; la web escrita sigue en 45). Prueba con Haiku: media 22 palabras, máx. 24, sigue cerrando cita y venta.
 - Coste estimado por llamada de 3 min (ver LEEME): antes ~0,20 $; ahora ~0,04 $ con el agente en servidor propio (~0,07 $ si se aloja en LiveKit Cloud, que cobra 0,01 $/min de agente).
 
+## Revisión sincera (22-11-2026): ahorrar sin perder clientes
+- Criterio de Juan: si se pierden 2 clientes al día no compensa. Perder ~1 cliente/día ya se come los ~2.800 $/mes de ahorro.
+- Deshecho de la propuesta de Gemini: cuelgue a 15 s (el cliente puede estar buscando la marca o la pegatina) -> 30 s con "¿Sigues ahí?" a los 15; tope de 3 min (corta ventas a medias) -> 8 min solo como seguridad; palabras clave de Deepgram reactivadas (~0,004 $/llamada).
+- Se mantiene (ahorra sin riesgo): Haiku 5.5 sin pensamiento, servidor propio, 25 palabras por turno (en voz es mejor corto).
+- Pendiente de prueba real antes de decidir: voz Inworld frente a ElevenLabs (escucha a ciegas con frases reales) y detector de turnos local frente al de la nube (que no interrumpa al cliente).
+
 ## Cómo trabajar con Juan
 Soluciones, no excusas; verificar antes de decir que algo está hecho; pedir OK antes de publicar, desplegar, gastar dinero o enviar nada; tenerle al día con cifras; directo y sin tecnicismos.

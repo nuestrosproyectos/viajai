@@ -5,9 +5,9 @@ Oído:    Deepgram Nova-3 en español
 Cerebro: Claude Haiku 5.5 sin "pensamiento" interno (rápido y barato), o Gemini Flash
 Voz:     Inworld TTS-2 Flash en español de España (la más barata); Cartesia o ElevenLabs opcionales
 
-Pensado para gastar lo mínimo por minuto: cuelga a los 15 s de silencio (avisa a los 7,5 s)
-y las llamadas duran 3 minutos como máximo, con un aviso amable antes y una prórroga
-corta solo si el cliente ya está dando sus datos (para no perder la venta).
+Pensado para gastar lo mínimo sin perder clientes: cuelga a los 30 s de silencio (pregunta
+"¿Sigues ahí?" a los 15 s, que le da tiempo a buscar la marca) y corta a los 8 minutos solo
+como seguridad contra llamadas olvidadas, con aviso amable antes y prórroga si está dando datos.
 
 Mientras habla, controla la web por RPC: señala secciones, rellena el formulario
 y lo envía cuando el cliente confirma.
@@ -50,8 +50,8 @@ SALUDO = (AQUI / "saludo.txt").read_text(encoding="utf-8").strip()
 MANUAL = Manual(AQUI / "conocimiento.json")  # manual técnico: códigos de error y averías por síntoma
 
 CAMPOS = {"aparato", "marca", "modelo", "averia", "codigo", "nombre", "telefono", "direccion", "municipio", "franja"}
-SILENCIO_SEG = float(os.getenv("SILENCIO_SEGUNDOS", "15"))          # cuelga tras este silencio (avisa a la mitad)
-DURACION_MAX_MIN = float(os.getenv("DURACION_MAX_MINUTOS", "3"))     # duración máxima de la llamada
+SILENCIO_SEG = float(os.getenv("SILENCIO_SEGUNDOS", "30"))          # cuelga tras este silencio (avisa a la mitad): da tiempo a buscar la marca o la pegatina
+DURACION_MAX_MIN = float(os.getenv("DURACION_MAX_MINUTOS", "8"))     # tope de seguridad contra llamadas olvidadas, no para cortar ventas
 AVISO_ANTES_SEG = float(os.getenv("AVISO_ANTES_SEGUNDOS", "30"))     # aviso amable antes de cerrar
 PRORROGA_DATOS_MIN = float(os.getenv("PRORROGA_DATOS_MINUTOS", "1.5"))  # solo si ya está dando sus datos
 
@@ -91,10 +91,10 @@ def crear_tts():
 
 
 def crear_stt():
-    # Las "palabras clave" de Deepgram se cobran aparte (unos 0,0013 $ por minuto). El manual
-    # ya entiende las marcas mal transcritas ("valay", "bosh"...), así que van desactivadas.
+    # Las "palabras clave" de Deepgram se cobran aparte (unos 0,0013 $ por minuto), pero oír bien
+    # "Balay" o "Teka" decide el diagnóstico y la venta: compensa de sobra.
     extra = {}
-    if os.getenv("DEEPGRAM_PALABRAS_CLAVE", "0") == "1":
+    if os.getenv("DEEPGRAM_PALABRAS_CLAVE", "1") == "1":  # activadas: ~0,004 $ por llamada para entender bien las marcas
         extra["keyterm"] = ["Bosch", "Balay", "Siemens", "LG", "Samsung", "Whirlpool", "Indesit", "Beko", "Teka", "Fagor", "AEG", "Candy", "Haier", "Miele"]
     return deepgram.STT(model="nova-3", language="es", smart_format=True, **extra)
 
