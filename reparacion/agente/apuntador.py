@@ -36,6 +36,7 @@ Campos de datos (omite los que no se sepan; no inventes ni deduzcas nada que el 
 Campos de estado (siempre):
 - tipo: "visita", "llamada" (quiere que le llamen) o "venta" (quiere comprar un aparato nuevo)
 - urgente: true si hay agua saliendo, olor a gas o a quemado, o una necesidad básica sin cubrir
+- garantia: "si" si el cliente ha dicho que el aparato está en garantía o que lo compró hace menos de tres años; "no" si ha dicho que no lo está, que tiene más de tres años o que es viejo; "" si todavía no se sabe
 - confirmado: true si el cliente ha aceptado la visita, la llamada o la compra Y ha dicho que sus datos están bien (por ejemplo, contesta «sí» o «correcto» cuando ANDRÉS le lee el teléfono o la dirección, o dice que lo ve bien en pantalla). No hace falta que diga «envíala»: con que dé los datos por buenos, vale
 - se_despide: true SOLO si en su ÚLTIMA frase el cliente se despide o dice que no necesita nada más (adiós, hasta luego, gracias y nada más, eso es todo...)
 
@@ -91,6 +92,7 @@ async def apuntar(turnos: list[dict], ya: dict | None = None) -> dict:
         else:
             del limpio["telefono"]  # a medias, o no lo ha dicho el cliente: no se escribe
     limpio["tipo"] = datos.get("tipo") if datos.get("tipo") in ("visita", "llamada", "venta") else "visita"
+    limpio["garantia"] = datos.get("garantia") if datos.get("garantia") in ("si", "no") else ""
     for c in ("urgente", "confirmado", "se_despide"):
         limpio[c] = datos.get(c) is True
     return limpio

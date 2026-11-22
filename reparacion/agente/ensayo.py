@@ -7,6 +7,7 @@ Uso (en el Ubuntu):  ~/venv-reparo/bin/python ensayo.py
 """
 
 import asyncio
+import os
 import time
 
 from livekit.agents import llm
@@ -28,6 +29,14 @@ FRASES = [
 ]
 
 
+# Otros guiones:  ENSAYO=garantia  (aparato en garantía: no se debe reservar)  ·  ENSAYO=singarantia
+GUIONES = {
+    "garantia": ["Tengo un lavavajillas Bosch que no desagua.", "Sí, lo compré hace un año.", "¿Y no podéis venir vosotros igualmente?"],
+    "singarantia": ["Tengo un frigorífico Samsung que no enfría.", "No, qué va, tiene ya seis años.", "Vale, mañana por la mañana."],
+}
+FRASES = GUIONES.get(os.getenv("ENSAYO", ""), FRASES)
+
+
 async def ensayo() -> None:
     t = agente.Tecnico()
     cerebro = agente.crear_llm()
@@ -43,8 +52,10 @@ async def ensayo() -> None:
         for c in agente.CAMPOS_ORDEN:
             if c in r:
                 t.datos[c] = r[c]
+        if r.get("garantia"):
+            t.garantia = r["garantia"]
         # igual que en la llamada real: si el cliente ya ha dado sus datos por buenos, la solicitud se envía sola
-        if r.get("confirmado") and not t.enviado and all(c in t.datos for c in ("nombre", "telefono", "municipio", "averia")):
+        if r.get("confirmado") and t.garantia != "si" and not t.enviado and all(c in t.datos for c in ("nombre", "telefono", "municipio", "averia")):
             t.enviado, t.aviso = True, "solicitud registrada"
             print("   >>> SOLICITUD ENVIADA")
         # lo mismo que hace llm_node: las notas van solo en esta respuesta
@@ -73,7 +84,7 @@ async def ensayo() -> None:
         esperas.append(primera or 0)
         ficha = consulta.split("]")[0].split("Aparato:")[-1].strip() if consulta else "ninguna"
         print(f"CLIENTE: {frase}")
-        print(f"   ficha del manual: {ficha} | se despide: {r.get('se_despide')} | confirmado: {r.get('confirmado')} | cerebro: {primera or 0:.2f} s")
+        print(f"   ficha del manual: {ficha} | garantía: {t.garantia or '?'} | se despide: {r.get('se_despide')} | confirmado: {r.get('confirmado')} | cerebro: {primera or 0:.2f} s")
         print(f"   ANDRÉS ({len(texto.split())} palabras): {texto}")
         if decir(texto) != texto:
             print(f"   SE DICE: {decir(texto)}")

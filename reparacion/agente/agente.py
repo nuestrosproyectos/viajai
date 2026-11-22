@@ -163,6 +163,7 @@ class Tecnico(Agent):
         self.senalados: set[str] = set()     # partes de la web ya enseñadas (no repetir)
         self.al_despedirse = None            # lo pone la sesión: cuelga cuando Andrés acabe de despedirse
         self.cliente_se_despide = False      # sin esto, Andrés no puede colgar
+        self.garantia = ""                   # "si", "no" o "" (aún no se sabe): no se reparan aparatos en garantía
         self._tareas: set[asyncio.Task] = set()
 
     @staticmethod
@@ -178,6 +179,14 @@ class Tecnico(Agent):
         if not self.datos and not self.enviado:
             return ""
         partes = []
+        if self.garantia == "si":
+            return ("[Nota interna (no la leas ni la menciones): el aparato ESTÁ EN GARANTÍA y nosotros no reparamos aparatos en garantía. "
+                    "No propongas visita ni pidas datos: dile con amabilidad que en garantía se lo arregla gratis la tienda o el servicio "
+                    "oficial de la marca, y ofrécete para otro aparato que no esté en garantía.]")
+        if self.garantia == "" and "aparato" in self.datos and not self.enviado:
+            partes.append("Todavía no sabes si el aparato está en garantía y no reparamos aparatos en garantía: pregúntalo "
+                          "UNA vez («¿está todavía en garantía, o tiene ya más de tres años?») antes de proponer la visita o pedir datos, "
+                          "salvo que el cliente ya haya dicho los años que tiene.")
         if self.datos:
             partes.append("En la solicitud que el cliente ve en pantalla ya están apuntados: "
                           + "; ".join(f"{c}: {v}" for c, v in self.datos.items()) + ".")
@@ -247,6 +256,8 @@ class Tecnico(Agent):
     async def _apuntar(self, turnos: list[dict]) -> None:
         try:
             r = await apuntar(turnos, dict(self.datos))
+            if r.get("garantia"):
+                self.garantia = r["garantia"]
             nuevos ={c: r[c] for c in CAMPOS_ORDEN if c in r and not (c in self.datos and self._mismo(self.datos[c], r[c]))}
             for campo, valor in nuevos.items():
                 if campo in ("nombre", "telefono", "direccion", "municipio", "franja") and not self.formulario_visto:
@@ -264,7 +275,7 @@ class Tecnico(Agent):
                     log.warning("no se pudo apuntar %s: %s", campo, e)
                 if campo == "telefono":
                     self.dando_datos = True
-            if r.get("confirmado") and not self.enviado and all(c in self.datos for c in ("nombre", "telefono", "municipio", "averia")):
+            if r.get("confirmado") and self.garantia != "si" and not self.enviado and all(c in self.datos for c in ("nombre", "telefono", "municipio", "averia")):
                 notas = "; ".join(f"{c}: {self.datos[c]}" for c in ("aparato", "marca", "modelo", "averia", "codigo") if c in self.datos)
                 try:
                     res = await self._rpc("enviar", {"tipo": r.get("tipo", "visita"), "urgente": bool(r.get("urgente")), "notas": notas})
