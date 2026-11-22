@@ -98,7 +98,7 @@ async function aviso(req, env) {
   }
   // 2) Avisar al móvil por Telegram, si está configurado (TELEGRAM_TOKEN y TELEGRAM_CHAT)
   if (env.TELEGRAM_TOKEN && env.TELEGRAM_CHAT) {
-    const texto = `🔧 Nuevo aviso (${limpio.tipo || "visita"})\n${limpio.nombre || "—"} · ${limpio.telefono}\n${[limpio.aparato, limpio.marca, limpio.modelo].filter(Boolean).join(" ")}: ${limpio.averia || ""} ${limpio.codigo ? "(" + limpio.codigo + ")" : ""}\n${[limpio.direccion, limpio.municipio].filter(Boolean).join(", ")}\nFranja: ${limpio.franja || "—"}\nNotas: ${limpio.notas || "—"}`;
+    const texto = `${limpio.tipo === "venta" ? "🛒" : "🔧"} Nuevo aviso (${limpio.tipo || "visita"})\n${limpio.nombre || "—"} · ${limpio.telefono}\n${[limpio.aparato, limpio.marca, limpio.modelo].filter(Boolean).join(" ")}: ${limpio.averia || ""} ${limpio.codigo ? "(" + limpio.codigo + ")" : ""}\n${[limpio.direccion, limpio.municipio].filter(Boolean).join(", ")}\nFranja: ${limpio.franja || "—"}\nNotas: ${limpio.notas || "—"}`;
     await fetch(`https://api.telegram.org/bot${env.TELEGRAM_TOKEN}/sendMessage`, {
       method: "POST", headers: { "content-type": "application/json" },
       body: JSON.stringify({ chat_id: env.TELEGRAM_CHAT, text: texto })

@@ -990,11 +990,11 @@ async function registrarAviso(aviso) {
   if (aviso.origen === "técnico virtual") {
     parte.classList.add("registrado"); pintarFicha({ fase: "registrado" });
     const resumen = [aviso.aparato, aviso.marca, aviso.averia].filter(Boolean).join(" · ");
-    const wa = `Hola, soy ${aviso.nombre || ""}. Acabo de pedir una visita con ${N.tecnico} en la web: ${resumen}. ${aviso.direccion || aviso.municipio || ""} ${aviso.franja ? "· " + aviso.franja : ""}`.replace(/\s+/g, " ").trim();
+    const wa = `Hola, soy ${aviso.nombre || ""}. Acabo de pedir ${aviso.tipo === "venta" ? "información para comprar un aparato nuevo" : "una visita"} con ${N.tecnico} en la web: ${resumen}. ${aviso.direccion || aviso.municipio || ""} ${aviso.franja ? "· " + aviso.franja : ""}`.replace(/\s+/g, " ").trim();
     const t = document.createElement("div");
     t.className = "tarjeta-aviso";
     t.innerHTML = `<h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>${guardado ? "Aviso registrado" : "Aviso preparado"}</h4>
-      <p>${aviso.tipo === "llamada" ? "Te llamamos en horario de atención." : "Te llamaremos para confirmar la hora exacta de la visita."}${guardado ? "" : " Para asegurarte, mándanoslo también por WhatsApp."}</p>
+      <p>${aviso.tipo === "llamada" ? "Te llamamos en horario de atención." : aviso.tipo === "venta" ? "Te llamamos con opciones y precio del aparato nuevo." : "Te llamaremos para confirmar la hora exacta de la visita."}${guardado ? "" : " Para asegurarte, mándanoslo también por WhatsApp."}</p>
       <a class="boton" target="_blank" rel="noopener" href="https://wa.me/${N.whatsapp}?text=${encodeURIComponent(wa)}">Enviar también por WhatsApp</a>`;
     chat.append(t); bajar();
   }
@@ -1065,7 +1065,7 @@ function rellenarCampo(campo, valor) {
 }
 async function enviarSolicitud({ tipo = "visita", urgente = false, notas = "", origen = "técnico virtual" } = {}) {
   const d = datosFormulario();
-  const faltan = [["telefono", "teléfono"], ["nombre", "nombre"], ["municipio", "municipio"], ["averia", "avería"]].filter(([c]) => origen === "técnico virtual" ? !d[c] : c === "telefono" && !d[c]).map(([, t]) => t);
+  const faltan = [["telefono", "teléfono"], ["nombre", "nombre"], ["municipio", "municipio"], [tipo === "venta" ? "aparato" : "averia", tipo === "venta" ? "aparato que busca" : "avería"]].filter(([c]) => origen === "técnico virtual" ? !d[c] : c === "telefono" && !d[c]).map(([, t]) => t);
   if (faltan.length) return "error: falta " + faltan.join(", ");
   if (!telefonoValido(d.telefono)) return "error: el teléfono no parece un teléfono español de 9 cifras";
   const guardado = await registrarAviso({ ...d, tipo, urgente, notas, origen });

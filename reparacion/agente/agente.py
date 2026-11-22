@@ -125,7 +125,7 @@ class Tecnico(Agent):
         """Envía el formulario. Solo cuando el cliente haya confirmado de viva voz que los datos de la pantalla son correctos.
 
         Args:
-            tipo: "visita" o "llamada"
+            tipo: "visita", "llamada" o "venta" (quiere comprar un aparato nuevo)
             urgente: true si hay riesgo para la casa o las personas o una necesidad básica sin cubrir
             notas: lo que le sirva al técnico (diagnóstico probable, pieza a llevar, garantía...)
         """
