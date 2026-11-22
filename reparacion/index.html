@@ -4,581 +4,524 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Reparación de electrodomésticos en Granada · Reparo</title>
-<meta name="description" content="Cuéntale la avería a Andrés, nuestro técnico virtual: te dice qué le pasa a tu lavadora, frigorífico, horno o lavavajillas y te reserva la visita en Granada. Todas las marcas.">
-<meta name="theme-color" content="#ECEFF1">
+<meta name="description" content="¿Se te ha roto la lavadora, el frigorífico o el horno? Cuéntaselo a Andrés y te reserva la visita del técnico en Granada en 24-48 h. Todas las marcas. Visita y diagnóstico 39 €, que se descuentan si reparamos.">
+<meta name="theme-color" content="#F5F1E8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14120F" media="(prefers-color-scheme: dark)">
 <!-- Dirección del servidor del técnico en la web publicada (vacío en la vista previa). Ej.: /api -->
 <meta name="servidor-tecnico" content="">
 <!-- Llamada de voz en directo con LiveKit: dirección que entrega el pase (vacío = desactivado). Ej.: /api/livekit-token -->
 <meta name="livekit-token" content="">
 <meta property="og:title" content="Reparo · Reparación de electrodomésticos en Granada">
-<meta property="og:description" content="Habla con nuestro técnico virtual: diagnóstico al momento y visita a domicilio. Todas las marcas.">
+<meta property="og:description" content="Habla con Andrés, nuestro asistente: te dice qué le pasa a tu aparato y te reserva la visita. Todas las marcas.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2314202A'/%3E%3Crect x='8' y='12' width='3' height='8' rx='1.5' fill='%23F2541B'/%3E%3Crect x='14.5' y='7' width='3' height='18' rx='1.5' fill='%23F2541B'/%3E%3Crect x='21' y='10' width='3' height='12' rx='1.5' fill='%23F2541B'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23B8432B'/%3E%3Ccircle cx='16' cy='17' r='8' fill='none' stroke='%23FFFDF8' stroke-width='2.5'/%3E%3Ccircle cx='16' cy='17' r='4' fill='%23FFFDF8'/%3E%3Crect x='8' y='5' width='6' height='2.4' rx='1.2' fill='%23FFFDF8'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112,700;112,800&family=Atkinson+Hyperlegible+Next:wght@400;700&display=swap" rel="stylesheet">
 <style>
+/* =====================================================================
+   Diseño "taller con cal y almagra": cálido, legible y sin marear.
+   Pensado primero para el móvil (la mayoría entra desde el móvil).
+   Cobalto = todo lo que es Andrés. Almagra = acciones de la persona.
+===================================================================== */
 :root{
-  --papel:#ECEFF1; --papel-2:#E2E7EA; --papel-3:#D3DBE0; --blanco:#FAFBFC;
-  --tinta:#13202B; --tinta-2:#3A4954; --tinta-3:#65737E;
-  --linea:rgba(19,32,43,.12); --linea-2:rgba(20,32,42,.22);
-  --senal:#F2541B; --senal-osc:#C8400C; --senal-suave:#FBDCCD;
-  --ok:#0E7A5E; --ok-suave:#D5EEE5;
-  --noche:#101A22; --noche-2:#18252F; --noche-3:#22323E; --noche-txt:#E9E5DC; --noche-txt-2:#A3ADB4; --noche-linea:rgba(233,229,220,.12);
-  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
-  --cuerpo:"Instrument Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
-  --serif:"Instrument Serif",Georgia,serif;
+  --fondo:#F5F1E8; --fondo-2:#ECE6D8; --fondo-3:#DED6C4; --tarjeta:#FFFDF8;
+  --tinta:#1D1B18; --tinta-2:#4A453D; --tinta-3:#615A4E;
+  --linea:#CFC6B3; --linea-fuerte:#8F8676;
+  --almagra:#B8432B; --almagra-pulsado:#963321; --almagra-suave:#F3DDD4; --sobre-almagra:#FFFFFF;
+  --cobalto:#1F4F8F; --cobalto-suave:#DCE6F3; --laton:#B48A2C;
+  --ok:#2E6B4E; --ok-suave:#DCEDE3; --rojo:#C0392B; --sobre-rojo:#FFFFFF;
+  --consola:#17202B; --consola-2:#212C39; --consola-txt:#F2ECE1; --consola-txt-2:#B9C2CC; --consola-linea:rgba(242,236,225,.16);
+  --titular:"Archivo",ui-sans-serif,system-ui,sans-serif;
+  --texto:"Atkinson Hyperlegible Next","Atkinson Hyperlegible",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
-  --radio:18px; --sombra:0 1px 0 rgba(20,32,42,.04),0 18px 50px -22px rgba(20,32,42,.35);
+  --sombra:0 1px 0 rgba(29,27,24,.08),0 12px 32px -18px rgba(29,27,24,.45);
   --curva:cubic-bezier(.23,1,.32,1);
+  --barra-alto:68px;
   color-scheme:light;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --papel:#0E1419; --papel-2:#141C22; --papel-3:#1B252D; --blanco:#151E25;
-  --tinta:#ECE8DF; --tinta-2:#BAC2C8; --tinta-3:#8C979F;
-  --linea:rgba(236,232,223,.12); --linea-2:rgba(236,232,223,.22);
-  --senal:#FF6A33; --senal-osc:#FF8A5C; --senal-suave:#3A2118; --ok:#3CC79E; --ok-suave:#12302A;
-  --noche:#0A1015; --noche-2:#111A21; --noche-3:#1A262F; color-scheme:dark}}
+  --fondo:#14120F; --fondo-2:#1C1915; --fondo-3:#2A251F; --tarjeta:#211D18;
+  --tinta:#F2ECE1; --tinta-2:#C9C0B2; --tinta-3:#A79E8F;
+  --linea:#433C33; --linea-fuerte:#7D7466;
+  --almagra:#E0654A; --almagra-pulsado:#EB8169; --almagra-suave:#3A2119; --sobre-almagra:#1D1B18;
+  --cobalto:#8DB2EA; --cobalto-suave:#1C2A3F; --laton:#D2AA52;
+  --ok:#5FC097; --ok-suave:#15291F; --rojo:#E5604F; --sobre-rojo:#1D1B18;
+  --consola:#0E1318; --consola-2:#18212A;
+  --sombra:0 1px 0 rgba(0,0,0,.4),0 14px 34px -18px rgba(0,0,0,.8);
+  color-scheme:dark;
+}}
 :root[data-theme="dark"]{
-  --papel:#0E1419; --papel-2:#141C22; --papel-3:#1B252D; --blanco:#151E25;
-  --tinta:#ECE8DF; --tinta-2:#BAC2C8; --tinta-3:#8C979F;
-  --linea:rgba(236,232,223,.12); --linea-2:rgba(236,232,223,.22);
-  --senal:#FF6A33; --senal-osc:#FF8A5C; --senal-suave:#3A2118; --ok:#3CC79E; --ok-suave:#12302A;
-  --noche:#0A1015; --noche-2:#111A21; --noche-3:#1A262F; color-scheme:dark}
-
+  --fondo:#14120F; --fondo-2:#1C1915; --fondo-3:#2A251F; --tarjeta:#211D18;
+  --tinta:#F2ECE1; --tinta-2:#C9C0B2; --tinta-3:#A79E8F; --linea:#433C33; --linea-fuerte:#7D7466;
+  --almagra:#E0654A; --almagra-pulsado:#EB8169; --almagra-suave:#3A2119; --sobre-almagra:#1D1B18;
+  --cobalto:#8DB2EA; --cobalto-suave:#1C2A3F; --laton:#D2AA52; --ok:#5FC097; --ok-suave:#15291F; --rojo:#E5604F; --sobre-rojo:#1D1B18;
+  --consola:#0E1318; --consola-2:#18212A; color-scheme:dark;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .tarjeta-andres,:root:not([data-theme="light"]) .cierre{background:#1B2230;border:1px solid rgba(255,255,255,.12)}}
+:root[data-theme="dark"] .tarjeta-andres{background:#1B2230;border:1px solid rgba(255,255,255,.12)}
 *{box-sizing:border-box}
-[hidden]{display:none!important}
-html,body{overflow-x:hidden;overflow-x:clip}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--papel);color:var(--tinta);font:400 17px/1.6 var(--cuerpo);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:84px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+body{margin:0;background:var(--fondo);color:var(--tinta);font:400 1.125rem/1.55 var(--texto);padding-bottom:calc(var(--barra-alto) + 16px + env(safe-area-inset-bottom))}
+@supports (font:-apple-system-body){body{font-size:max(1.125rem,1rem)}}
+body.en-conversacion{overflow:hidden}
 img,svg{display:block;max-width:100%}
 a{color:inherit}
-button,input{font:inherit;color:inherit}
+button,input,textarea{font:inherit;color:inherit}
 button{cursor:pointer}
-:focus-visible{outline:2px solid var(--senal);outline-offset:3px;border-radius:6px}
-.envol{width:min(1180px,100%);margin:0 auto;padding:0 20px}
-@media (min-width:760px){.envol{padding:0 32px}}
-h1,h2,h3{font-family:var(--display);letter-spacing:-.02em;margin:0;text-wrap:balance}
-p{margin:0}
-.acento{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:0}
+:focus-visible{outline:3px solid var(--cobalto);outline-offset:3px;border-radius:6px}
 .oculto{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.envol{width:100%;max-width:1160px;margin:0 auto;padding:0 16px}
+h1,h2,h3{font-family:var(--titular);font-stretch:112%;line-height:1.08;margin:0;letter-spacing:-.01em}
+h1{font-weight:800;font-size:clamp(2rem,8.2vw,3.6rem);overflow-wrap:break-word}
+h2{font-weight:800;font-size:clamp(1.65rem,6.6vw,3rem);overflow-wrap:break-word}
+h3{font-weight:700;font-size:1.3rem}
+p{margin:0}
+.subrayado{background:linear-gradient(transparent 68%,color-mix(in srgb,var(--almagra) 32%,transparent) 68% 92%,transparent 92%)}
 
-/* ---------- aviso de vista previa ---------- */
-.previa{background:var(--tinta);color:var(--papel);font-size:13px;text-align:center;padding:7px 16px;line-height:1.4}
-.previa b{color:var(--senal)}
+/* --- botones --- */
+.boton{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:12px 22px;border-radius:12px;border:2px solid transparent;font-weight:700;font-size:1.125rem;text-decoration:none;line-height:1.2;text-align:center;white-space:normal;transition:transform .12s,background-color .15s,box-shadow .15s}
+.boton svg{width:24px;height:24px;flex:none}
+.boton-principal{background:var(--almagra);color:var(--sobre-almagra);box-shadow:0 3px 0 var(--almagra-pulsado)}
+.boton-principal:active{transform:translateY(2px);box-shadow:0 1px 0 var(--almagra-pulsado)}
+.boton-andres{background:var(--cobalto);color:#fff;box-shadow:0 3px 0 color-mix(in srgb,var(--cobalto) 70%,#000)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .boton-andres{color:#0E1318}}
+:root[data-theme="dark"] .boton-andres{color:#0E1318}
+.boton-andres:active{transform:translateY(2px)}
+.boton-borde{background:var(--tarjeta);color:var(--tinta);border-color:var(--linea-fuerte)}
+.boton-borde:active{background:var(--fondo-2)}
+.ancho{width:100%}
 
-/* ---------- cabecera ---------- */
-.cab{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--papel) 86%,transparent);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid transparent;transition:border-color .3s}
+/* --- franja de vista previa (solo en la vista previa) --- */
+.previa{background:var(--consola);color:var(--consola-txt);font-size:.9rem;text-align:center;padding:6px 16px}
+.previa b{color:#F0A28F}
+
+/* --- cabecera --- */
+.cab{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--fondo) 92%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .2s}
 .cab.con-borde{border-bottom-color:var(--linea)}
-.cab .envol{display:flex;align-items:center;gap:16px;height:64px}
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none;margin-right:auto}
-.logo-marca{width:34px;height:34px;flex:none}
-.logo-txt{display:flex;flex-direction:column;line-height:1}
-.logo-txt b{font:800 21px/1 var(--display);letter-spacing:-.03em}
-.logo-txt small{font-size:11.5px;color:var(--tinta-3);margin-top:3px;letter-spacing:.01em}
-.cab-tel{display:none;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-variant-numeric:tabular-nums;padding:8px 6px}
-.cab-tel svg{width:18px;height:18px;color:var(--senal)}
-@media (min-width:880px){.cab-tel{display:flex}}
+.cab .envol{display:flex;align-items:center;justify-content:space-between;gap:12px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-marca{width:40px;height:40px;border-radius:10px;background:var(--almagra);display:grid;place-items:center;flex:none}
+.logo-marca svg{width:26px;height:26px}
+.logo-txt b{display:block;font-family:var(--titular);font-stretch:112%;font-weight:800;font-size:1.3rem;line-height:1}
+.logo-txt small{display:block;color:var(--tinta-3);font-size:.9rem;line-height:1.3}
+.cab-acciones{display:flex;gap:8px;align-items:center}
+.cab-llamar{min-height:48px;padding:8px 16px;font-size:1rem}
+.cab-hablar{display:none}
 
-.boton{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:999px;padding:12px 20px;font-weight:600;font-size:16px;text-decoration:none;transition:transform .2s var(--curva),background-color .2s,box-shadow .2s;white-space:nowrap;-webkit-tap-highlight-color:transparent}
-.boton:active{transform:scale(.97)}
-.boton svg{width:20px;height:20px;flex:none}
-.boton-senal{background:var(--senal);color:#fff;box-shadow:0 10px 24px -12px var(--senal)}
-.boton-senal:hover{background:var(--senal-osc)}
-.boton-tinta{background:var(--tinta);color:var(--papel)}
-.boton-borde{background:transparent;box-shadow:inset 0 0 0 1.5px var(--linea-2)}
-.boton-borde:hover{box-shadow:inset 0 0 0 1.5px var(--tinta)}
-.cab .boton{padding:10px 16px;font-size:15px}
-@media (max-width:420px){.cab .boton span{display:none}.cab .boton{padding:10px 12px}}
+/* --- portada --- */
+.portada{padding:16px 0 28px}
+.portada .envol{display:flex;flex-direction:column}
+.hero-a,.hero-b{display:contents}
+.urgencia{order:0}.portada h1{order:1}.portada .entrada{order:2}.precio-linea{order:3;margin-bottom:16px!important}.tarjeta-andres{order:4}.llamame-enlace{order:5}.confianza{order:6}
+.tarjeta-andres .ta-otras,.tarjeta-andres .ta-nota,.tarjeta-andres .ta-saludo{display:none}
+.precio-linea{padding:6px 12px;font-size:1rem}.precio-linea b{font-size:1.2rem}
+.portada h1{font-size:clamp(1.9rem,7.9vw,3.6rem)}
+.portada .entrada{font-size:1.1rem}
+.tarjeta-andres .ta-cab .orbe{--t:56px}
+.llamame-enlace{display:flex;align-items:center;min-height:48px;font-weight:700;color:var(--almagra);margin-top:6px}
+.solo-ordenador{display:none}
+.urgencia{display:flex;gap:10px;align-items:center;background:var(--almagra-suave);border-radius:12px;padding:8px 8px 8px 14px;font-size:1rem;margin:0 0 16px}
+.urgencia>span{flex:1}
+.urgencia .boton{min-height:48px;padding:6px 14px;font-size:1rem;flex:none}
+.urgencia svg{width:22px;height:22px;flex:none;margin-top:2px;color:var(--almagra)}
+.urgencia a{font-weight:700}
+.portada h1{margin-bottom:14px}
+.portada .entrada{font-size:1.2rem;color:var(--tinta-2);max-width:36ch}
+.precio-linea{display:flex;flex-wrap:wrap;gap:2px 10px;align-items:baseline;margin:16px 0 0;padding:8px 14px;border:2px dashed var(--laton);border-radius:12px;background:var(--tarjeta);font-size:1.05rem}
+.precio-linea b{font-family:var(--titular);font-stretch:112%;font-size:1.35rem}
 
-/* ---------- hero ---------- */
-.hero{padding:36px 0 56px;position:relative}
-.hero::before{content:"";position:absolute;inset:0;background:
-  radial-gradient(60% 50% at 85% 10%,color-mix(in srgb,var(--senal) 9%,transparent),transparent 70%),
-  repeating-linear-gradient(0deg,transparent 0 31px,var(--linea) 31px 32px);
-  -webkit-mask-image:linear-gradient(#000,transparent 85%);mask-image:linear-gradient(#000,transparent 85%);opacity:.55;pointer-events:none}
-.hero .envol{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:36px}
-.hero-txt,.zona-consola{min-width:0}
-@media (min-width:1000px){.hero{padding:56px 0 80px}.hero .envol{grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:56px;align-items:start}}
-.etiqueta{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;font-weight:600;color:var(--tinta-2);background:var(--blanco);border:1px solid var(--linea);padding:6px 12px 6px 8px;border-radius:999px}
-.punto-vivo{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 color-mix(in srgb,var(--ok) 60%,transparent);animation:latido 2.2s infinite}
-@keyframes latido{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--ok) 55%,transparent)}70%{box-shadow:0 0 0 9px transparent}100%{box-shadow:0 0 0 0 transparent}}
-.hero h1{font-size:clamp(2.45rem,6.4vw,4.6rem);line-height:.98;font-weight:800;margin:20px 0 20px}
-.hero h1 .acento{font-size:1.06em;color:var(--senal)}
-.hero .entrada{font-size:clamp(1.05rem,1.6vw,1.2rem);color:var(--tinta-2);max-width:36ch}
-.hero-cta{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin-top:28px}
-.hero-cta .boton-senal{padding:16px 24px;font-size:17px}
-.hero-cta .o-llama{font-size:15px;color:var(--tinta-2)}
-.hero-cta .o-llama a{font-weight:600;font-variant-numeric:tabular-nums;text-decoration-color:var(--linea-2);text-underline-offset:3px}
-.micro{font-size:13.5px;color:var(--tinta-3);margin-top:12px}
-.confianza{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 22px;margin-top:36px;padding-top:24px;border-top:1px solid var(--linea)}
-.confianza div{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;line-height:1.35;color:var(--tinta-2)}
-.confianza svg{width:20px;height:20px;flex:none;color:var(--senal);margin-top:1px}
-.confianza b{display:block;color:var(--tinta);font-weight:600}
+.tarjeta-andres{background:var(--consola);color:var(--consola-txt);border-radius:20px;padding:18px;box-shadow:var(--sombra)}
+.ta-cab{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.ta-cab .orbe{--t:64px}
+.ta-quien b{display:block;font-size:1.15rem}
+.ta-quien>span{color:var(--consola-txt-2);font-size:1rem}
+.ta-saludo{font-size:1.15rem;line-height:1.5;margin-bottom:16px}
+.tarjeta-andres .boton-hablar{width:100%;min-height:64px;font-size:1.25rem;border-radius:14px}
+.ta-otras{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.ta-otras .boton{min-height:52px;padding:8px;font-size:1rem;flex-direction:column;gap:2px;background:var(--consola-2);color:var(--consola-txt);border-color:var(--consola-linea)}
+.ta-otras .boton svg{width:22px;height:22px}
+.ta-nota{color:var(--consola-txt-2);font-size:.95rem;margin-top:12px}
+.confianza{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:10px}
+.confianza li{display:flex;gap:12px;align-items:center;font-size:1.05rem}
+.confianza svg{width:28px;height:28px;flex:none;color:var(--ok)}
+.confianza b{font-weight:700}
 
-/* ---------- consola del técnico ---------- */
-.zona-consola{position:relative}
-.consola{background:var(--noche);color:var(--noche-txt);border-radius:24px;box-shadow:0 30px 80px -30px rgba(10,16,21,.65),0 0 0 1px rgba(255,255,255,.04) inset;display:flex;flex-direction:column;height:min(640px,82svh);min-height:520px;overflow:hidden;position:relative;scroll-margin-top:84px}
-.c-cab{display:flex;align-items:center;gap:14px;padding:16px 16px 14px 18px;border-bottom:1px solid var(--noche-linea)}
-.c-quien{display:flex;flex-direction:column;line-height:1.2;min-width:0;margin-right:auto}
-.c-quien strong{font:700 17px/1.1 var(--display);letter-spacing:-.01em}
-.c-quien small{font-size:12.5px;color:var(--noche-txt-2)}
-.c-estado{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--noche-txt-2);margin-top:4px}
-.c-estado i{width:7px;height:7px;border-radius:50%;background:#3CC79E}
-:is(.consola,.mini)[data-estado="escuchando"] .c-estado i{background:var(--senal);animation:latido 1.2s infinite}
-:is(.consola,.mini)[data-estado="pensando"] .c-estado i{background:#E8B44A}
-:is(.consola,.mini)[data-estado="hablando"] .c-estado i{background:#7FB3FF}
-.c-icono{width:40px;height:40px;border-radius:12px;border:0;background:var(--noche-2);color:var(--noche-txt-2);display:grid;place-items:center;flex:none;transition:background-color .2s,color .2s}
-.c-icono:hover{background:var(--noche-3);color:var(--noche-txt)}
-.c-icono svg{width:20px;height:20px}
-.c-icono[aria-pressed="false"] .on,.c-icono[aria-pressed="true"] .off{display:none}
+/* --- orbe de Andrés: la puerta de una lavadora --- */
+.orbe{--t:96px;width:var(--t);height:var(--t);border-radius:50%;flex:none;position:relative;background:conic-gradient(from 0deg,var(--laton) 0 2%,transparent 2% 8.33%) ,radial-gradient(circle at 50% 50%,#DCD3C1 0 58%,#B9AE98 58% 62%,#E9E1D0 62% 100%);box-shadow:inset 0 0 0 3px #8F8676,0 6px 18px -8px rgba(0,0,0,.5)}
+.orbe::before{content:"";position:absolute;inset:16%;border-radius:50%;background:radial-gradient(circle at 34% 30%,rgba(255,255,255,.55) 0 10%,transparent 26%),radial-gradient(circle,#2F68B5 0 40%,#1F4F8F 72%,#133561 100%);box-shadow:inset 0 0 0 3px rgba(0,0,0,.25);transition:transform .4s var(--curva)}
+.orbe .onda{position:absolute;inset:16%;border-radius:50%;display:flex;align-items:center;justify-content:center;gap:calc(var(--t)*.035)}
+.orbe .onda i{width:calc(var(--t)*.045);height:calc(var(--t)*.1);border-radius:9px;background:#fff;opacity:.9;transform:scaleY(var(--v,.4));transition:transform .08s}
+[data-estado="pensando"] .orbe::before{animation:centrifuga 1.6s linear infinite}
+[data-estado="hablando"] .orbe{box-shadow:inset 0 0 0 3px #8F8676,0 0 0 5px color-mix(in srgb,var(--cobalto) 45%,transparent),0 6px 18px -8px rgba(0,0,0,.5)}
+[data-estado="hablando"] .orbe .onda i{animation:habla .9s ease-in-out infinite}
+[data-estado="hablando"] .orbe .onda i:nth-child(2){animation-delay:.15s}[data-estado="hablando"] .orbe .onda i:nth-child(3){animation-delay:.3s}[data-estado="hablando"] .orbe .onda i:nth-child(4){animation-delay:.45s}
+[data-estado="escuchando"] .orbe{box-shadow:inset 0 0 0 3px #8F8676,0 0 0 5px color-mix(in srgb,var(--almagra) 50%,transparent),0 6px 18px -8px rgba(0,0,0,.5)}
+@keyframes centrifuga{to{transform:rotate(360deg)}}
+@keyframes habla{0%,100%{transform:scaleY(.35)}50%{transform:scaleY(1)}}
 
-/* orbe animado */
-.orbe{width:48px;height:48px;border-radius:50%;position:relative;flex:none;display:grid;place-items:center;
-  background:radial-gradient(circle at 35% 30%,#FF8C5E,var(--senal) 45%,#8F2A06 100%);box-shadow:0 0 0 1px rgba(255,255,255,.08) inset,0 8px 24px -8px var(--senal)}
-.orbe::before,.orbe::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:1.5px solid color-mix(in srgb,var(--senal) 55%,transparent);opacity:0;transform:scale(.85)}
-.orbe .barras{display:flex;gap:3px;align-items:center;height:18px}
-.orbe .barras b{width:3px;height:6px;border-radius:2px;background:#fff;opacity:.92;transition:height .2s}
-:is(.consola,.mini)[data-estado="reposo"] .orbe{animation:respira 4.5s ease-in-out infinite}
-@keyframes respira{50%{transform:scale(1.04)}}
-:is(.consola,.mini)[data-estado="escuchando"] .orbe::before{animation:onda 1.6s var(--curva) infinite}
-:is(.consola,.mini)[data-estado="escuchando"] .orbe::after{animation:onda 1.6s var(--curva) .8s infinite}
-@keyframes onda{0%{opacity:.9;transform:scale(.9)}100%{opacity:0;transform:scale(1.55)}}
-:is(.consola,.mini)[data-estado="escuchando"] .orbe .barras b{animation:eco .9s ease-in-out infinite}
-:is(.consola,.mini)[data-estado="hablando"] .orbe .barras b{animation:eco .55s ease-in-out infinite}
-.orbe .barras b:nth-child(2){animation-delay:.12s!important}.orbe .barras b:nth-child(3){animation-delay:.24s!important}.orbe .barras b:nth-child(4){animation-delay:.36s!important}
-@keyframes eco{0%,100%{height:5px}50%{height:17px}}
-:is(.consola,.mini)[data-estado="pensando"] .orbe::before{opacity:1;transform:none;border-style:dashed;border-color:rgba(255,255,255,.45);animation:gira 2.4s linear infinite}
-@keyframes gira{to{transform:rotate(360deg)}}
+/* --- secciones --- */
+.seccion{padding:40px 0}
+.seccion+.seccion{border-top:1px solid var(--linea)}
+.antetitulo{color:var(--almagra);font-weight:700;font-size:1rem;margin-bottom:8px}
+.cabecera-sec{margin-bottom:22px}
+.cabecera-sec .bajada{color:var(--tinta-2);margin-top:10px;max-width:46ch}
+.pasos{display:grid;gap:12px;counter-reset:paso;list-style:none;padding:0;margin:0}
+.paso{background:var(--tarjeta);border:1px solid var(--linea);border-radius:16px;padding:16px 16px 16px 64px;position:relative}
+.paso::before{counter-increment:paso;content:counter(paso);position:absolute;left:16px;top:16px;width:34px;height:34px;border-radius:50%;background:var(--cobalto-suave);color:var(--cobalto);display:grid;place-items:center;font-weight:700;font-family:var(--titular)}
+.paso h3{font-size:1.15rem;margin-bottom:4px}
+.paso p{color:var(--tinta-2);font-size:1.05rem}
 
-.c-chat{flex:1;overflow-y:auto;padding:18px 16px 8px;display:flex;flex-direction:column;gap:10px;scroll-behavior:smooth;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--noche-3) transparent}
-.burbuja{max-width:88%;padding:11px 15px;border-radius:18px;font-size:15.5px;line-height:1.5;animation:entra .35s var(--curva) both;overflow-wrap:anywhere}
-@keyframes entra{from{opacity:0;transform:translateY(6px)}}
-.burbuja.tec{background:var(--noche-2);border-bottom-left-radius:6px;align-self:flex-start}
-.burbuja.cli{background:var(--senal);color:#fff;border-bottom-right-radius:6px;align-self:flex-end}
-.burbuja.cli img{width:140px;border-radius:10px;margin-bottom:6px}
-.burbuja.parcial{background:transparent;box-shadow:inset 0 0 0 1.5px color-mix(in srgb,var(--senal) 60%,transparent);color:var(--noche-txt-2);font-style:italic;align-self:flex-end;border-bottom-right-radius:6px}
-.burbuja.sistema{background:transparent;color:var(--noche-txt-2);font-size:13.5px;align-self:center;text-align:center;max-width:94%;padding:6px 8px}
-.puntos{display:inline-flex;gap:4px;padding:4px 0}
-.puntos i{width:7px;height:7px;border-radius:50%;background:var(--noche-txt-2);animation:salto 1.1s infinite}
-.puntos i:nth-child(2){animation-delay:.15s}.puntos i:nth-child(3){animation-delay:.3s}
-@keyframes salto{0%,60%,100%{opacity:.3;transform:none}30%{opacity:1;transform:translateY(-3px)}}
-
-.tarjeta-aviso{align-self:stretch;background:var(--noche-2);border:1px solid color-mix(in srgb,#3CC79E 45%,transparent);border-radius:16px;padding:14px 16px;font-size:14.5px;animation:entra .4s var(--curva) both}
-.tarjeta-aviso h4{margin:0 0 6px;font:700 15px var(--display);color:#3CC79E;display:flex;align-items:center;gap:8px}
-.tarjeta-aviso h4 svg{width:18px;height:18px}
-.tarjeta-aviso p{color:var(--noche-txt-2);margin-bottom:10px}
-.tarjeta-aviso .boton{font-size:14px;padding:9px 14px;background:#25D366;color:#0B2716}
-
-.c-chips{display:flex;gap:8px;overflow-x:auto;padding:4px 16px 10px;scrollbar-width:none;flex:none}
-.c-chips::-webkit-scrollbar{display:none}
-.chip{flex:none;border:1px solid var(--noche-linea);background:var(--noche-2);color:var(--noche-txt);border-radius:999px;padding:8px 13px;font-size:14px;transition:background-color .2s,border-color .2s}
-.chip:hover{background:var(--noche-3);border-color:rgba(233,229,220,.25)}
-
-.c-barra{display:flex;align-items:center;gap:8px;padding:10px 12px 12px;border-top:1px solid var(--noche-linea);flex:none}
-.c-campo{flex:1;min-width:0;display:flex;align-items:center;background:var(--noche-2);border-radius:999px;padding:0 6px 0 16px;height:52px;border:1px solid transparent;transition:border-color .2s}
-.c-campo:focus-within{border-color:rgba(233,229,220,.28)}
-.c-campo input{flex:1;min-width:0;border:0;background:transparent;outline:0;font-size:16px;color:var(--noche-txt)}
-.c-campo input::placeholder{color:var(--noche-txt-2)}
-.c-campo .c-icono{width:38px;height:38px;background:transparent;border-radius:50%}
-.c-mic{width:56px;height:56px;border-radius:50%;border:0;flex:none;background:var(--senal);color:#fff;display:grid;place-items:center;position:relative;box-shadow:0 10px 26px -10px var(--senal);transition:transform .2s var(--curva),background-color .2s}
-.c-mic:active{transform:scale(.94)}
-.c-mic svg{width:24px;height:24px}
-.c-mic .parar{display:none}
-:is(.consola,.mini)[data-estado="escuchando"] .c-mic{background:#fff;color:var(--senal)}
-:is(.consola,.mini)[data-estado="escuchando"] .c-mic .mic{display:none}
-:is(.consola,.mini)[data-estado="escuchando"] .c-mic .parar{display:block}
-:is(.consola,.mini)[data-estado="escuchando"] .c-mic::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:2px solid var(--senal);animation:onda 1.4s var(--curva) infinite}
-.c-mic[hidden]{display:none}
-:is(.consola,.mini)[data-llamada="activa"] .c-mic{background:#D93B30;color:#fff}
-:is(.consola,.mini)[data-llamada="activa"] .c-mic .mic{display:none}
-:is(.consola,.mini)[data-llamada="activa"] .c-mic .parar{display:block}
-.c-nota{font-size:11.5px;line-height:1.4;color:var(--noche-txt-2);text-align:center;padding:0 18px 12px;flex:none}
-.adjunto{display:flex;align-items:center;gap:10px;margin:0 16px 8px;padding:6px;background:var(--noche-2);border-radius:12px;font-size:13.5px;color:var(--noche-txt-2)}
-.adjunto img{width:40px;height:40px;object-fit:cover;border-radius:8px}
-.adjunto button{margin-left:auto;border:0;background:none;color:var(--noche-txt-2);padding:6px 10px}
-
-/* parte de trabajo (ticket) */
-.parte{margin-top:18px;background:var(--blanco);border:1px solid var(--linea);border-radius:14px;padding:16px 18px 14px;font-family:var(--mono);font-size:13px;position:relative;box-shadow:var(--sombra);animation:entra .5s var(--curva) both}
-.parte::before{content:"";position:absolute;left:14px;right:14px;top:-1px;height:8px;background:radial-gradient(circle at 5px -1px,var(--papel) 5px,transparent 5.5px) 0 0/14px 8px repeat-x}
-.parte-cab{display:flex;justify-content:space-between;gap:10px;font-weight:700;letter-spacing:.06em;font-size:11.5px;color:var(--tinta-3);text-transform:uppercase;padding-bottom:10px;border-bottom:1px dashed var(--linea-2)}
-.parte dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:12px 0 12px}
-.parte dt{color:var(--tinta-3);text-transform:uppercase;font-size:11px;letter-spacing:.06em;padding-top:2px}
-.parte dd{margin:0;color:var(--tinta);font-weight:600;min-height:1.2em;overflow-wrap:anywhere}
-.parte dd.nuevo{animation:resalta 1.2s var(--curva)}
-@keyframes resalta{0%{background:var(--senal-suave)}100%{background:transparent}}
-.parte dd:empty::before{content:"—";color:var(--linea-2);font-weight:400}
-.fases{display:flex;gap:4px;padding-top:10px;border-top:1px dashed var(--linea-2)}
-.fases span{flex:1;height:4px;border-radius:2px;background:var(--papel-3);transition:background-color .4s}
-.fases span.hecha{background:var(--senal)}
-.fases-txt{display:flex;justify-content:space-between;font-size:10.5px;color:var(--tinta-3);margin-top:6px;text-transform:uppercase;letter-spacing:.05em}
-.sello{position:absolute;right:16px;top:44px;border:2.5px solid var(--ok);color:var(--ok);font:800 14px/1 var(--display);letter-spacing:.12em;padding:8px 10px;border-radius:6px;transform:rotate(-8deg);opacity:0;scale:1.6;transition:opacity .35s,scale .45s var(--curva)}
-.parte.registrado .sello{opacity:.9;scale:1}
-.sello{background:color-mix(in srgb,var(--blanco) 70%,transparent)}
-
-/* ---------- secciones ---------- */
-.seccion{padding:72px 0}
-@media (min-width:1000px){.seccion{padding:104px 0}}
-.antetitulo{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--senal);margin-bottom:14px}
-.seccion h2{font-size:clamp(2rem,4.4vw,3.3rem);line-height:1.02;font-weight:800;max-width:18ch}
-.seccion .bajada{color:var(--tinta-2);font-size:clamp(1rem,1.4vw,1.12rem);margin-top:16px;max-width:56ch}
-.cabecera-sec{display:grid;gap:8px;margin-bottom:40px}
-@media (min-width:900px){.cabecera-sec.doble{grid-template-columns:1fr 1fr;align-items:end;gap:48px}.cabecera-sec.doble .bajada{margin:0}}
-
-/* cómo funciona */
-.pasos{display:grid;gap:14px;counter-reset:p}
-@media (min-width:860px){.pasos{grid-template-columns:repeat(3,1fr);gap:18px}}
-.paso{background:var(--blanco);border:1px solid var(--linea);border-radius:var(--radio);padding:26px 24px 28px;position:relative}
-.paso .num{font:800 15px var(--display);color:var(--senal);display:flex;align-items:center;gap:10px;margin-bottom:28px}
-.paso .num::after{content:"";height:1px;flex:1;background:var(--linea)}
-.paso h3{font-size:22px;font-weight:700;margin-bottom:8px}
-.paso p{color:var(--tinta-2);font-size:15.5px}
-
-/* aparatos */
-.aparatos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-@media (min-width:760px){.aparatos{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media (min-width:1100px){.aparatos{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}}
-.aparato{background:var(--blanco);border:1px solid var(--linea);border-radius:var(--radio);padding:20px 18px 16px;display:flex;flex-direction:column;gap:10px;transition:border-color .25s,transform .35s var(--curva),box-shadow .35s}
-.aparato:hover{border-color:var(--linea-2);transform:translateY(-3px);box-shadow:var(--sombra)}
-.aparato svg{width:44px;height:44px;color:var(--tinta)}
-.aparato h3{font-size:19px;font-weight:700}
-.sintomas{display:flex;flex-direction:column;gap:2px;margin-top:auto}
-.sintoma{text-align:left;border:0;background:none;padding:6px 0;font-size:14.5px;color:var(--tinta-2);display:flex;gap:8px;align-items:baseline;border-top:1px solid var(--linea);transition:color .2s}
-.sintoma::before{content:"→";color:var(--senal);transition:transform .25s var(--curva)}
-.sintoma:hover{color:var(--tinta)}
-.sintoma:hover::before{transform:translateX(3px)}
-.no-reparamos{margin-top:22px;font-size:14px;color:var(--tinta-3)}
-
-/* códigos de error */
-.codigos-sec{background:var(--tinta);color:var(--papel)}
-.codigos-sec .bajada{color:color-mix(in srgb,var(--papel) 72%,transparent)}
-.codigos-sec h2 .acento{color:var(--senal)}
-.pantallas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-@media (min-width:700px){.pantallas{grid-template-columns:repeat(4,minmax(0,1fr))}}
-.pantalla{border:0;text-align:left;background:#0B1216;border-radius:16px;padding:16px 16px 14px;color:var(--papel);display:flex;flex-direction:column;gap:12px;box-shadow:0 0 0 1px rgba(255,255,255,.07) inset;transition:transform .35s var(--curva),box-shadow .25s}
-.pantalla:hover{transform:translateY(-3px);box-shadow:0 0 0 1px rgba(242,84,27,.6) inset}
-.lcd{font:500 clamp(30px,4.6vw,40px)/1 var(--mono);color:#FF7A45;text-shadow:0 0 14px rgba(255,106,51,.55);letter-spacing:.06em;background:#120B08;border-radius:8px;padding:14px 12px;text-align:center;box-shadow:inset 0 2px 10px rgba(0,0,0,.6)}
-.pantalla small{font-size:13px;color:color-mix(in srgb,var(--papel) 65%,transparent);line-height:1.35}
-.pantalla small b{display:block;color:var(--papel);font-size:14.5px;font-weight:600}
-.nota-codigos{font-size:13.5px;margin-top:18px;color:color-mix(in srgb,var(--papel) 60%,transparent)}
-
-/* marcas */
-.marcas{display:flex;flex-wrap:wrap;gap:6px 26px;font:700 clamp(1.35rem,2.6vw,2rem)/1.35 var(--display);letter-spacing:-.02em;color:var(--tinta)}
-.marcas span:nth-child(3n+2){color:var(--tinta-3)}
-.marcas span:nth-child(5n){font-family:var(--serif);font-style:italic;font-weight:400}
-.aviso-indep{margin-top:26px;font-size:13.5px;color:var(--tinta-3);max-width:70ch}
-
-/* precios */
-.precios{display:grid;gap:16px}
-@media (min-width:900px){.precios{grid-template-columns:1.1fr .9fr;gap:20px}}
-.tarifa{background:var(--blanco);border:1px solid var(--linea);border-radius:22px;padding:30px 28px}
-.tarifa .cifra{font:800 clamp(3.4rem,8vw,5.4rem)/1 var(--display);letter-spacing:-.04em;display:flex;align-items:flex-start;gap:6px}
-.tarifa .cifra small{font-size:.38em;margin-top:.35em;color:var(--tinta-3);font-weight:700}
-.tarifa h3{font-size:20px;margin:8px 0 6px}
+.precios{display:grid;gap:14px}
+.tarifa{background:var(--tarjeta);border:2px solid var(--linea-fuerte);border-radius:18px;padding:20px;position:relative;box-shadow:var(--sombra)}
+.tarifa .cifra{font-family:var(--titular);font-stretch:112%;font-weight:800;font-size:3.4rem;line-height:1}
+.tarifa .cifra small{font-size:1.6rem;margin-left:2px}
+.tarifa h3{margin:6px 0 8px}
 .tarifa p{color:var(--tinta-2)}
-.descuento{display:inline-flex;margin-top:16px;background:var(--ok-suave);color:var(--ok);font-weight:600;font-size:14.5px;padding:7px 12px;border-radius:10px}
-.lista-ok{list-style:none;margin:0;padding:0;display:grid;gap:14px}
-.lista-ok li{display:flex;gap:12px;align-items:flex-start;padding:16px 18px;background:var(--blanco);border:1px solid var(--linea);border-radius:16px;font-size:15.5px;color:var(--tinta-2)}
-.lista-ok svg{width:22px;height:22px;flex:none;color:var(--ok);margin-top:1px}
-.lista-ok b{color:var(--tinta)}
+.descuento{display:inline-block;margin-top:12px;background:var(--ok-suave);color:var(--ok);font-weight:700;border-radius:8px;padding:6px 10px}
+.lista-ok{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.lista-ok li{display:flex;gap:12px;align-items:flex-start;background:var(--tarjeta);border:1px solid var(--linea);border-radius:14px;padding:14px}
+.lista-ok svg{width:26px;height:26px;flex:none;color:var(--ok);margin-top:1px}
 
-/* preguntas */
-.faq{max-width:820px}
-.faq details{border-top:1px solid var(--linea)}
-.faq details:last-child{border-bottom:1px solid var(--linea)}
-.faq summary{list-style:none;cursor:pointer;padding:22px 44px 22px 0;font:700 clamp(1.05rem,1.8vw,1.25rem)/1.3 var(--display);position:relative}
+.aparatos{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.aparato{display:flex;flex-direction:column;align-items:flex-start;gap:8px;min-height:112px;text-align:left;background:var(--tarjeta);border:1px solid var(--linea);border-radius:16px;padding:14px;font-weight:700;font-size:1.05rem;line-height:1.25}
+.aparato svg{width:40px;height:40px;color:var(--cobalto)}
+.aparato:active{background:var(--fondo-2)}
+.nota-sec{color:var(--tinta-2);font-size:1.05rem;margin-top:16px}
+.zona-caja{background:var(--tarjeta);border:1px solid var(--linea);border-radius:16px;padding:16px;margin-top:14px}
+.zona-caja b{display:block;margin-bottom:4px}
+.marcas-txt{color:var(--tinta-2);font-size:1.05rem}
+.aviso-indep{color:var(--tinta-3);font-size:.95rem;margin-top:12px}
+
+.faq{display:grid;gap:10px}
+.faq details{background:var(--tarjeta);border:1px solid var(--linea);border-radius:14px}
+.faq summary{list-style:none;cursor:pointer;padding:16px 48px 16px 16px;font-weight:700;position:relative;min-height:56px}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"";position:absolute;right:8px;top:50%;width:12px;height:12px;border-right:2px solid var(--senal);border-bottom:2px solid var(--senal);transform:translateY(-70%) rotate(45deg);transition:transform .3s var(--curva)}
-.faq details[open] summary::after{transform:translateY(-30%) rotate(225deg)}
-.faq details p{padding:0 0 22px;color:var(--tinta-2);max-width:68ch}
+.faq summary::after{content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);font-size:1.6rem;color:var(--almagra)}
+.faq details[open] summary::after{content:"–"}
+.faq details p{padding:0 16px 16px;color:var(--tinta-2)}
 
-/* cierre */
-.cierre{background:var(--noche);color:var(--noche-txt);border-radius:28px;padding:44px 24px;display:grid;gap:30px;position:relative;overflow:hidden}
-.cierre::after{content:"";position:absolute;width:520px;height:520px;right:-180px;top:-220px;background:radial-gradient(circle,color-mix(in srgb,var(--senal) 35%,transparent),transparent 65%);pointer-events:none}
-@media (min-width:900px){.cierre{grid-template-columns:1.1fr .9fr;padding:64px 56px;align-items:center}}
-.cierre h2{font-size:clamp(2rem,4.6vw,3.4rem);line-height:1;font-weight:800}
-.cierre h2 .acento{color:var(--senal)}
-.cierre p{color:var(--noche-txt-2);margin-top:14px}
-.cierre .tel-grande{display:inline-block;margin-top:22px;font:800 clamp(1.7rem,4vw,2.4rem)/1 var(--display);color:var(--noche-txt);text-decoration:none;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
-.form-llamada{position:relative;z-index:1;background:var(--noche-2);border-radius:20px;padding:22px}
-.form-llamada h3{font-size:19px;margin-bottom:4px}
-.form-llamada p{margin:0 0 14px;font-size:14px}
-.form-llamada label{display:block;font-size:13px;color:var(--noche-txt-2);margin-bottom:6px}
-.campos{display:grid;grid-template-columns:1fr;gap:10px;margin:14px 0 16px}
-@media (min-width:480px){.campos{grid-template-columns:1fr 1fr}.campo.ancho{grid-column:1/-1}}
-.campo{display:flex;flex-direction:column;gap:5px;min-width:0}
-.campo span{font-size:12.5px;color:var(--noche-txt-2)}
-.campo span i{font-style:normal;color:var(--senal)}
-.campo input{width:100%;height:46px;border-radius:12px;border:1px solid var(--noche-linea);background:var(--noche);color:var(--noche-txt);padding:0 14px;font-size:16px;outline:0;transition:border-color .2s,box-shadow .3s}
-.campo input:focus{border-color:var(--senal)}
-.campo.relleno input{animation:rellena 1.6s var(--curva)}
-@keyframes rellena{0%{box-shadow:0 0 0 0 transparent;border-color:var(--senal)}25%{box-shadow:0 0 0 4px color-mix(in srgb,var(--senal) 35%,transparent);border-color:var(--senal)}100%{box-shadow:0 0 0 0 transparent}}
-.nota-form{color:var(--noche-txt-2)}
-.form-llamada input[type=tel]{width:100%;height:54px;border-radius:14px;border:1px solid var(--noche-linea);background:var(--noche);color:var(--noche-txt);padding:0 16px;font-size:18px;font-variant-numeric:tabular-nums;outline:0}
-.form-llamada input[type=tel]:focus{border-color:var(--senal)}
-.form-llamada .chips-form{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 16px}
-.form-llamada .chip[aria-pressed="true"]{background:var(--senal);border-color:var(--senal);color:#fff}
-.form-llamada .boton{width:100%;padding:15px}
-.form-llamada .legal{font-size:12px;color:var(--noche-txt-2);margin:12px 0 0;line-height:1.45}
-.form-llamada .legal a{color:var(--noche-txt)}
-.form-ok{display:none;text-align:center;padding:24px 8px}
-.form-llamada.enviado form{display:none}
-.form-llamada.enviado .form-ok{display:block}
-.trampa{position:absolute;left:-9999px}
+.cierre{background:var(--consola);color:var(--consola-txt);border-radius:20px;padding:22px 18px}
+.cierre h2{margin-bottom:10px}
+.cierre p{color:var(--consola-txt-2)}
+.tel-grande{display:inline-block;font-family:var(--titular);font-stretch:112%;font-weight:800;font-size:2rem;margin:12px 0 18px;color:var(--consola-txt)}
+.form-rapido{display:grid;gap:12px;background:var(--consola-2);border-radius:16px;padding:16px}
+.form-rapido h3{font-size:1.2rem}
+.campo{display:grid;gap:6px}
+.campo>span{font-size:1rem;font-weight:700}
+.campo input{min-height:52px;width:100%;border-radius:10px;border:2px solid var(--linea-fuerte);background:var(--tarjeta);color:var(--tinta);padding:10px 12px;font-size:1.1rem}
+.cierre .campo input{border-color:#5E6B78;background:#0F161D;color:var(--consola-txt)}
+.legal{font-size:.95rem;color:var(--consola-txt-2)}
+.form-ok{display:none;padding:8px 0}
+#formLlamadaCaja.enviado .form-rapido{display:none}
+#formLlamadaCaja.enviado .form-ok{display:block}
+.trampa{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
 
-/* panel del dueño */
-.panel-dueno{margin-top:36px;background:var(--blanco);border:1px dashed var(--linea-2);border-radius:18px;padding:22px}
-.panel-dueno h3{font-size:18px;margin-bottom:4px}
-.panel-dueno p{color:var(--tinta-3);font-size:14px;margin-bottom:14px}
-.tabla-avisos{width:100%;border-collapse:collapse;font-size:14px}
-.tabla-avisos th,.tabla-avisos td{text-align:left;padding:9px 8px;border-top:1px solid var(--linea);vertical-align:top}
-.tabla-avisos th{font-size:12px;color:var(--tinta-3);text-transform:uppercase;letter-spacing:.06em;font-weight:600}
+.panel-dueno{margin-top:22px;background:var(--tarjeta);border:2px solid var(--laton);border-radius:16px;padding:16px}
 .envol-tabla{overflow-x:auto}
+.tabla-avisos{width:100%;border-collapse:collapse;font-size:.95rem;margin-top:10px}
+.tabla-avisos th,.tabla-avisos td{text-align:left;border-bottom:1px solid var(--linea);padding:8px;vertical-align:top}
 
-/* pie */
-.pie{padding:56px 0 120px;color:var(--tinta-3);font-size:14px}
-@media (min-width:760px){.pie{padding-bottom:56px}}
-.pie .envol{display:grid;gap:22px}
-@media (min-width:900px){.pie .envol{grid-template-columns:1.4fr 1fr 1fr}}
-.pie b{color:var(--tinta);display:block;margin-bottom:6px;font-family:var(--display)}
-.pie a{color:var(--tinta-2)}
-.pie p+p{margin-top:8px}
+.pie{padding:32px 0 24px;border-top:1px solid var(--linea);color:var(--tinta-2);font-size:1rem}
+.pie .envol{display:grid;gap:18px}
+.pie b{color:var(--tinta)}
 
-/* el técnico señala algo de la página */
-.senalado{position:relative;z-index:2;animation:senala 3.6s var(--curva) both;border-radius:var(--radio)}
-@keyframes senala{0%{box-shadow:0 0 0 0 transparent}12%{box-shadow:0 0 0 4px var(--senal),0 0 0 14px color-mix(in srgb,var(--senal) 22%,transparent)}80%{box-shadow:0 0 0 4px var(--senal),0 0 0 14px color-mix(in srgb,var(--senal) 12%,transparent)}100%{box-shadow:0 0 0 0 transparent}}
-.senal-etiqueta{position:absolute;z-index:3;top:-14px;left:16px;background:var(--senal);color:#fff;font-size:12.5px;font-weight:600;padding:4px 10px;border-radius:999px;white-space:nowrap;pointer-events:none;animation:entra .35s var(--curva) both}
+/* --- barra fija inferior (móvil) --- */
+.barra-movil{transition:transform .25s var(--curva)}
+body:not(.barra-visible) .barra-movil{transform:translateY(110%)}
+.barra-movil{position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--tarjeta);border-top:1px solid var(--linea);padding:6px 8px calc(6px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:6px;box-shadow:0 -8px 24px -18px rgba(0,0,0,.5)}
+.barra-movil .boton{min-height:56px;padding:4px;font-size:.95rem;flex-direction:column;gap:2px;border-radius:12px}
+.barra-movil .boton svg{width:24px;height:24px}
+.barra-movil .boton-borde{border-width:1px}
+body.en-conversacion .barra-movil,body.con-mini .barra-movil{display:none}
 
-/* mini consola flotante: la conversación sigue a la vista mientras se mueve por la página */
-.mini{position:fixed;z-index:45;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));width:min(380px,calc(100vw - 32px));display:flex;align-items:center;gap:12px;padding:10px 10px 10px 12px;background:var(--noche);color:var(--noche-txt);border-radius:22px;box-shadow:0 24px 60px -18px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.06) inset;transform:translateY(calc(100% + 40px));opacity:0;pointer-events:none;transition:transform .45s var(--curva),opacity .3s}
-.mini.visible{transform:none;opacity:1;pointer-events:auto}
-.mini .orbe{width:40px;height:40px}
-.mini-txt{flex:1;min-width:0;margin:0;font-size:14px;line-height:1.35;color:var(--noche-txt);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.mini-txt.parcial{font-style:italic;color:var(--noche-txt-2)}
-.mini .c-mic{width:48px;height:48px}
-.mini .c-mic svg{width:21px;height:21px}
-.mini-volver{width:36px;height:36px;border:0;border-radius:12px;background:var(--noche-2);color:var(--noche-txt-2);display:grid;place-items:center;flex:none}
-.mini-volver svg{width:18px;height:18px}
-@media (max-width:759px){.mini{left:max(12px,env(safe-area-inset-left,0px));right:max(12px,env(safe-area-inset-right,0px));width:auto;bottom:calc(12px + env(safe-area-inset-bottom,0px))}}
+/* --- pastilla de conversación minimizada --- */
+.mini{position:fixed;left:8px;right:8px;bottom:calc(8px + env(safe-area-inset-bottom));z-index:41;display:none;align-items:center;gap:10px;background:var(--consola);color:var(--consola-txt);border-radius:16px;padding:8px 8px 8px 10px;box-shadow:var(--sombra)}
+body.con-mini .mini{display:flex}
+.mini .orbe{--t:44px}
+.mini-txt{flex:1;min-width:0;font-size:1rem;line-height:1.3}
+.mini-txt>b{display:block}
+.mini-txt>span{display:block;color:var(--consola-txt-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mini .boton{min-height:48px;padding:6px 12px;font-size:1rem}
+.mini .colgar{background:var(--rojo);color:var(--sobre-rojo)}
+.mini .mini-tel{width:48px;padding:0;background:var(--consola-2);color:var(--consola-txt);border-color:var(--consola-linea)}
+.mini[data-llamada="activa"] .mini-tel{display:none}
+.mini:not([data-llamada="activa"]) .colgar{display:none}
 
-/* barra fija móvil */
-.barra-movil{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:40;display:flex;gap:8px;padding:8px;background:color-mix(in srgb,var(--tinta) 94%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:999px;box-shadow:0 14px 40px -12px rgba(0,0,0,.5);transform:translateY(140%);transition:transform .45s var(--curva)}
-.barra-movil.visible{transform:none}
-.barra-movil .boton{flex:1;padding:13px 14px;font-size:15.5px}
-.barra-movil .llamar{flex:none;width:50px;padding:0;background:rgba(255,255,255,.1);color:#fff}
-@media (min-width:760px){.barra-movil{display:none}}
+/* =====================================================================
+   CONVERSACIÓN: pantalla completa en el móvil, panel lateral en ordenador
+===================================================================== */
+.conv{position:fixed;inset:0;z-index:50;background:var(--consola);color:var(--consola-txt);display:flex;flex-direction:column;height:100dvh;padding-top:env(safe-area-inset-top)}
+.conv[hidden]{display:none}
+.conv-cab{display:flex;align-items:center;gap:10px;padding:8px 10px;border-bottom:1px solid var(--consola-linea)}
+.conv-cab .orbe{--t:48px}
+.conv-quien{flex:1;min-width:0}
+.conv-quien b{display:block;font-size:1.1rem;line-height:1.2}
+.conv-estado{display:flex;align-items:center;gap:8px;color:var(--consola-txt-2);font-size:1rem}
+.conv-estado i{width:10px;height:10px;border-radius:50%;background:#4FBF85;flex:none}
+[data-estado="escuchando"] .conv-estado i{background:#F07A5E}
+[data-estado="hablando"] .conv-estado i{background:#8DB2EA}
+[data-estado="pensando"] .conv-estado i{background:#E5B85B}
+.conv-crono{font-variant-numeric:tabular-nums;margin-left:4px}
+.icono{width:48px;height:48px;border-radius:12px;border:1px solid var(--consola-linea);background:var(--consola-2);color:var(--consola-txt);display:grid;place-items:center;flex:none}
+.icono svg{width:24px;height:24px}
+.icono[aria-pressed="false"] .voz-on,.icono[aria-pressed="true"] .voz-off{display:none}
+.fases{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;padding:8px 12px 0}
+.fases span{height:5px;border-radius:3px;background:var(--consola-linea)}
+.fases span.hecha{background:#4FBF85}
+.fases-txt span.actual{color:var(--consola-txt);font-weight:700}
+.fases-txt{display:flex;justify-content:space-between;padding:4px 12px 0;color:var(--consola-txt-2);font-size:.875rem}
 
-/* aparición al hacer scroll */
-.revela{opacity:0;transform:translateY(18px);transition:opacity .8s var(--curva),transform .8s var(--curva)}
-.revela.visto{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
-  .revela{opacity:1;transform:none}
+/* solicitud que se va rellenando */
+.solicitud{margin:8px 10px 0;background:var(--consola-2);border:1px solid var(--consola-linea);border-radius:14px}
+.solicitud>summary{list-style:none;display:flex;align-items:center;gap:10px;padding:10px 12px;min-height:56px;cursor:pointer}
+.solicitud>summary::-webkit-details-marker{display:none}
+.solicitud>summary svg{width:24px;height:24px;flex:none;color:#E5B85B}
+.sol-resumen{flex:1;min-width:0;line-height:1.3}
+.sol-resumen b{display:block}
+.sol-resumen>span{display:block;color:var(--consola-txt-2);font-size:.95rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sol-flecha{transition:transform .2s}
+.solicitud[open] .sol-flecha{transform:rotate(180deg)}
+.sol-cuerpo{padding:0 12px 12px;max-height:46dvh;overflow:auto}
+.sol-diag{background:color-mix(in srgb,var(--cobalto) 22%,transparent);border-radius:10px;padding:10px 12px;margin-bottom:10px;font-size:1rem}
+.sol-diag[hidden]{display:none}
+.sol-campos{display:grid;gap:8px}
+.sol-campos .campo>span{font-size:.95rem;color:var(--consola-txt-2);font-weight:700;display:flex;justify-content:space-between}
+.sol-campos .campo input{background:#0F161D;color:var(--consola-txt);border-color:#5E6B78;min-height:48px;font-size:1.05rem}
+.sol-campos .campo.relleno input{border-color:#5FC097;animation:destello 1.2s}
+.sol-campos .campo.lleno>span::after{content:"✓";color:#5FC097}
+@keyframes destello{0%{box-shadow:0 0 0 0 rgba(95,192,151,.7)}100%{box-shadow:0 0 0 10px rgba(95,192,151,0)}}
+.sol-enviar{margin-top:12px}
+.sol-enviar[hidden]{display:none}
+
+/* conversación */
+.conv-chat{flex:1;overflow:auto;padding:14px 14px 8px;display:flex;flex-direction:column;gap:12px;overscroll-behavior:contain}
+.burbuja{max-width:92%;line-height:1.45;font-size:1.15rem;white-space:pre-wrap;overflow-wrap:anywhere}
+.burbuja.tec{align-self:flex-start;font-size:1.2rem}
+.burbuja.tec::before{content:attr(data-quien);display:block;font-size:.85rem;color:#8DB2EA;font-weight:700;margin-bottom:2px}
+.burbuja.cli{align-self:flex-end;background:var(--consola-2);border:1px solid var(--consola-linea);border-radius:14px 14px 4px 14px;padding:10px 14px;font-size:1.1rem}
+.burbuja.parcial{align-self:flex-end;color:var(--consola-txt-2);font-style:italic}
+.burbuja.sistema{align-self:center;text-align:center;color:var(--consola-txt-2);font-size:1rem;max-width:100%}
+.burbuja img{max-width:180px;border-radius:10px;margin-bottom:6px}
+.puntos{display:inline-flex;gap:5px}.puntos i{width:8px;height:8px;border-radius:50%;background:var(--consola-txt-2);animation:habla 1s infinite}
+.puntos i:nth-child(2){animation-delay:.15s}.puntos i:nth-child(3){animation-delay:.3s}
+.tarjeta-info{align-self:stretch;background:var(--tarjeta);color:var(--tinta);border-radius:14px;padding:14px;border-left:5px solid var(--laton)}
+.tarjeta-info small{display:block;color:var(--tinta-3);font-weight:700;font-size:.9rem;margin-bottom:4px}
+.tarjeta-info p{font-size:1.05rem}
+.tarjeta-info button{margin-top:10px;min-height:44px;background:none;border:0;padding:0;color:var(--almagra);font-weight:700;text-decoration:underline}
+.tarjeta-aviso{align-self:stretch;background:var(--ok-suave);color:var(--tinta);border-radius:16px;padding:16px}
+.tarjeta-aviso h4{display:flex;gap:8px;align-items:center;margin:0 0 6px;font-size:1.25rem;font-family:var(--titular);font-stretch:112%}
+.tarjeta-aviso h4 svg{width:26px;height:26px;color:var(--ok)}
+.tarjeta-aviso ol{margin:10px 0 12px;padding-left:22px;color:var(--tinta-2)}
+.tarjeta-aviso .boton{width:100%;margin-top:8px}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 12px 8px}
+.chips[hidden]{display:none}
+.chip{min-height:52px;border-radius:12px;border:1px solid var(--consola-linea);background:var(--consola-2);color:var(--consola-txt);font-size:1rem;padding:8px 10px;text-align:left;line-height:1.25}
+.adjunto{display:flex;align-items:center;gap:10px;margin:0 12px 8px;padding:8px;border-radius:12px;background:var(--consola-2)}
+.adjunto[hidden]{display:none}
+.adjunto img{width:48px;height:48px;object-fit:cover;border-radius:8px}
+.adjunto span{flex:1;font-size:1rem}
+.adjunto button{min-height:44px;background:none;border:0;color:#F0A28F;font-weight:700}
+
+/* escribir */
+.conv-escribir{display:flex;gap:8px;padding:8px 10px;border-top:1px solid var(--consola-linea)}
+.conv-escribir[hidden]{display:none}
+.conv-escribir:not([hidden])~.conv-mandos{display:none}
+.conv-escribir:not([hidden]){padding-bottom:calc(8px + env(safe-area-inset-bottom))}
+.conv-escribir input{flex:1;min-width:0;min-height:52px;border-radius:12px;border:2px solid #5E6B78;background:#0F161D;color:var(--consola-txt);padding:8px 12px;font-size:1.1rem}
+.conv-escribir .icono{width:52px;height:52px}
+.conv-escribir .enviar{background:var(--almagra);border-color:var(--almagra);color:var(--sobre-almagra)}
+
+/* mandos */
+.conv-mandos{display:grid;grid-template-columns:1fr auto 1fr;align-items:end;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));border-top:1px solid var(--consola-linea)}
+.mando{display:flex;flex-direction:column;align-items:center;gap:4px;background:none;border:0;color:var(--consola-txt);font-size:.95rem;min-height:72px;justify-content:flex-end}
+.mando .circ{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--consola-2);border:1px solid var(--consola-linea)}
+.mando svg{width:26px;height:26px}
+.mando[aria-pressed="true"] .circ{background:var(--consola-txt);color:var(--consola)}
+.mando-central .circ{width:76px;height:76px;background:var(--cobalto);border:0;color:#fff}
+.mando-central svg{width:34px;height:34px}
+[data-estado="escuchando"] .mando-central .circ{background:var(--almagra)}
+.conv[data-llamada="activa"] .mando-central .circ,.conv[data-llamada="conectando"] .mando-central .circ{background:var(--rojo);color:var(--sobre-rojo)}
+.mando-central .i-colgar,#btnSilenciar .i-sil{display:none}
+.conv[data-llamada="activa"] #btnSilenciar .i-sil{display:block}.conv[data-llamada="activa"] #btnSilenciar .i-foto{display:none}
+.conv[data-llamada="activa"] .mando-central .i-mic,.conv[data-llamada="conectando"] .mando-central .i-mic{display:none}
+.conv[data-llamada="activa"] .mando-central .i-colgar,.conv[data-llamada="conectando"] .mando-central .i-colgar{display:block}
+.conv-nota{color:var(--consola-txt-2);font-size:.9rem;text-align:center;padding:0 12px 6px}
+
+/* hojas: permiso de micrófono y llamada final */
+.hoja{position:absolute;inset:auto 0 0 0;z-index:5;background:var(--tarjeta);color:var(--tinta);border-radius:20px 20px 0 0;padding:20px 18px calc(18px + env(safe-area-inset-bottom));box-shadow:0 -20px 50px -10px rgba(0,0,0,.6);max-height:92dvh;overflow:auto}
+.hoja[hidden]{display:none}
+.hoja h3{font-size:1.45rem;margin-bottom:10px}
+.hoja p{color:var(--tinta-2);margin-bottom:12px}
+.hoja .boton{width:100%;margin-top:8px}
+.hoja ol{padding-left:22px;color:var(--tinta-2);margin:0 0 12px}
+.hoja .pareja{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.velo{position:absolute;inset:0;background:rgba(0,0,0,.5);z-index:4}
+.velo[hidden]{display:none}
+.final-cifra{font-family:var(--titular);font-stretch:112%;font-weight:800;color:var(--ok);font-size:1rem;margin-bottom:6px}
+.final-resumen{background:var(--fondo);border-radius:12px;padding:12px;margin-bottom:12px}
+.final-resumen dt{font-weight:700;font-size:.95rem;color:var(--tinta-3)}
+.final-resumen dd{margin:0 0 6px}
+
+/* el técnico señala algo en la página (ordenador) */
+.senalado{outline:4px solid var(--laton);outline-offset:6px;border-radius:14px;transition:outline-color .3s}
+.senal-etiqueta{position:absolute;top:-14px;right:12px;background:var(--laton);color:#1D1B18;font-weight:700;font-size:.9rem;padding:4px 10px;border-radius:8px}
+
+/* ======================= ORDENADOR ======================= */
+@media (min-width:900px){
+  body{padding-bottom:0}
+  .barra-movil{display:none}
+  .cab-hablar{display:inline-flex}
+  .cab .envol{height:76px}
+  .portada{padding:40px 0 56px}
+  .portada .envol{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+  .hero-a,.hero-b{display:block}
+  .urgencia{margin:0 0 18px}.precio-linea{display:inline-flex;margin:16px 0 0}.portada .entrada{margin-bottom:0}
+  .solo-ordenador{display:inline}
+  .tarjeta-andres .ta-otras{display:grid}.tarjeta-andres .ta-nota,.tarjeta-andres .ta-saludo{display:block}.tarjeta-andres .ta-cab .orbe{--t:64px}
+  body.en-conversacion .tarjeta-andres{visibility:hidden}
+  .portada .entrada{font-size:1.3rem}
+  .seccion{padding:72px 0}
+  .pasos{grid-template-columns:repeat(3,1fr)}
+  .precios{grid-template-columns:.9fr 1.1fr;align-items:start}
+  .aparatos{grid-template-columns:repeat(4,1fr)}
+  .cierre{display:grid;grid-template-columns:1fr 1fr;gap:32px;padding:36px}
+  .pie .envol{grid-template-columns:2fr 1fr 1fr}
+  .conv{inset:auto 20px 20px auto;width:430px;height:min(760px,calc(100vh - 116px));border-radius:22px;box-shadow:0 30px 80px -20px rgba(0,0,0,.6);overflow:hidden}
+  body.en-conversacion{overflow:auto}
+  .mini{left:auto;right:20px;bottom:20px;width:380px}
+  .faq{max-width:820px}
 }
 </style>
 </head>
 <body>
-
-<div class="previa" id="previa">Vista previa · <b>teléfono, precios y nombre son provisionales</b> hasta que los confirmes</div>
+<div class="previa" id="previa" hidden>Vista previa · <b>teléfono, precios y nombre son provisionales</b> hasta que los confirmes</div>
 
 <header class="cab" id="cab">
   <div class="envol">
-    <a class="logo" href="#" aria-label="Reparo, inicio">
-      <svg class="logo-marca" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="var(--tinta)"/><rect x="8.5" y="13" width="3.4" height="8" rx="1.7" fill="var(--senal)"/><rect x="15.3" y="7.5" width="3.4" height="19" rx="1.7" fill="var(--senal)"/><rect x="22.1" y="10.5" width="3.4" height="13" rx="1.7" fill="var(--senal)"/></svg>
-      <span class="logo-txt"><b data-n="marca">Reparo</b><small>Electrodomésticos · <span data-n="ciudad">Granada</span></small></span>
+    <a class="logo" href="#" aria-label="Inicio">
+      <span class="logo-marca"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="17" r="9" stroke="#FFFDF8" stroke-width="2.6"/><circle cx="16" cy="17" r="4.2" fill="#FFFDF8"/><rect x="7" y="4" width="7" height="2.6" rx="1.3" fill="#FFFDF8"/></svg></span>
+      <span class="logo-txt"><b data-n="marca">Reparo</b><small><span class="solo-ordenador">Electrodomésticos · </span><span data-n="ciudad">Granada</span></small></span>
     </a>
-    <a class="cab-tel" data-tel href="tel:+34958000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span data-n="telefono">958 00 00 00</span></a>
-    <button class="boton boton-tinta" data-hablar type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4"/></svg><span>Hablar con el técnico</span></button>
+    <div class="cab-acciones">
+      <button class="boton boton-andres cab-hablar" type="button" data-hablar data-voz><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4"/></svg><span>Hablar con <span data-n="tecnico">Andrés</span></span></button>
+      <a class="boton boton-borde cab-llamar" data-tel href="tel:+34958000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Llamar</a>
+    </div>
   </div>
 </header>
 
 <main>
-<section class="hero">
+<section class="portada">
   <div class="envol">
-    <div class="hero-txt">
-      <span class="etiqueta"><i class="punto-vivo"></i> Técnico virtual · te atiende al momento, 24 h</span>
-      <h1>Cuéntale la avería. <span class="acento">Te la explica</span> un técnico.</h1>
-      <p class="entrada"><b data-n="tecnico">Andrés</b> es nuestro técnico virtual: conoce lavadoras, frigoríficos, hornos y lavavajillas de todas las marcas. Háblale como a un técnico de toda la vida, te dice qué le pasa a tu aparato y te reserva la visita en <span data-n="ciudad">Granada</span> en un par de minutos.</p>
-      <div class="hero-cta" id="heroCta">
-        <button class="boton boton-senal" type="button" data-hablar data-voz><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4"/></svg><span>Hablar con <span data-n="tecnico">Andrés</span></span></button>
-        <span class="o-llama">o llama al <a data-tel href="tel:+34958000000"><span data-n="telefono">958 00 00 00</span></a></span>
-      </div>
-      <p class="micro">Sin registros ni esperas. Puedes hablarle o escribirle.</p>
-      <div class="confianza">
-        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 15.5 6.7 18.4l1.2-6L3.4 8.3l6-.7z"/></svg><span><b data-n="experienciaCorta">Técnicos con 20+ años</b>Todas las marcas</span></div>
-        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg><span><b>Visita en 24-48 h</b>Urgencias el mismo día</span></div>
-        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span><b>Presupuesto antes</b>Tú decides si se repara</span></div>
-        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg><span><b>Garantía por escrito</b>Pieza y mano de obra</span></div>
-      </div>
+    <div class="hero-a">
+      <p class="urgencia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.7 3 7v5c0 5 3.8 9.3 9 10 5.2-.7 9-5 9-10V7z"/><path d="M12 8v5M12 16.5v.5"/></svg><span>¿Sale agua o huele a quemado? <b>Corta la luz.</b></span><a class="boton boton-principal" data-tel href="tel:+34958000000">Llámanos ya</a></p>
+      <h1>¿Se te ha roto un <span class="subrayado">electrodoméstico</span>?</h1>
+      <p class="entrada">Técnico en tu casa en 24-48 h, en <span data-n="ciudad">Granada</span> y alrededores. Todas las marcas.</p>
+      <p class="precio-linea"><span>Visita y diagnóstico: <b id="precioLinea">39 €</b>.</span> <span>Se descuentan si reparamos.</span></p>
     </div>
-
-    <div class="zona-consola">
-      <section class="consola" id="consola" data-estado="reposo" aria-label="Conversación con el técnico virtual">
-        <div class="c-cab">
-          <div class="orbe" aria-hidden="true"><span class="barras"><b></b><b></b><b></b><b></b></span></div>
-          <div class="c-quien">
-            <strong><span data-n="tecnico">Andrés</span> · técnico virtual</strong>
-            <span class="c-estado"><i></i><span id="estadoTxt">En línea</span></span>
-          </div>
-          <button class="c-icono" id="btnVoz" type="button" aria-pressed="true" aria-label="Voz del técnico activada" title="Activar o silenciar la voz">
-            <svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
-            <svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H2v6h4l5 4z"/><path d="M22 9l-6 6M16 9l6 6"/></svg>
-          </button>
+    <div class="hero-b">
+      <div class="tarjeta-andres" data-estado="reposo" id="tarjetaAndres">
+        <div class="ta-cab">
+          <div class="orbe" aria-hidden="true"><span class="onda"><i></i><i></i><i></i><i></i></span></div>
+          <div class="ta-quien"><b><span data-n="tecnico">Andrés</span> te atiende ahora</b><span>Asistente automático. El técnico que va a tu casa es una persona.</span></div>
         </div>
-        <div class="c-chat" id="chat" aria-live="polite"></div>
-        <div class="adjunto" id="adjunto" hidden><img id="adjuntoImg" alt=""><span>Foto lista para enviar</span><button type="button" id="quitarFoto">Quitar</button></div>
-        <div class="c-chips" id="chips">
-          <button class="chip" type="button">La lavadora no centrifuga</button>
-          <button class="chip" type="button">El frigorífico no enfría</button>
-          <button class="chip" type="button">Me sale un código de error</button>
-          <button class="chip" type="button">El lavavajillas no desagua</button>
-          <button class="chip" type="button">El horno no calienta</button>
+        <p class="ta-saludo">Cuéntame qué le pasa a tu aparato: te digo qué puede ser y te reservo la visita del técnico.</p>
+        <button class="boton boton-andres boton-hablar" type="button" data-hablar data-voz><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4"/></svg><span>Hablar con <span data-n="tecnico">Andrés</span></span></button>
+        <div class="ta-otras">
+          <button class="boton" type="button" data-hablar><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M6 9h.01M10 9h.01M14 9h.01M18 9h.01M7 15h10"/></svg>Escribir</button>
+          <a class="boton" data-wa href="https://wa.me/34600000000" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.4 8.4 0 1 1 21 11.5z"/></svg>WhatsApp</a>
+          <a class="boton" data-tel href="tel:+34958000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Llamar</a>
         </div>
-        <form class="c-barra" id="formChat" autocomplete="off">
-          <div class="c-campo">
-            <label class="oculto" for="txt">Escribe tu mensaje</label>
-            <input id="txt" type="text" enterkeyhint="send" placeholder="Escribe o pulsa el micrófono…">
-            <button class="c-icono" type="button" id="btnFoto" aria-label="Enviar una foto de la placa o del error" title="Foto de la placa o del código de error"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></button>
-            <button class="c-icono" type="submit" id="btnEnviar" aria-label="Enviar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></svg></button>
-          </div>
-          <button class="c-mic" type="button" id="btnMic" aria-label="Hablar con el técnico">
-            <svg class="mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4"/></svg>
-            <svg class="parar" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2.5"/></svg>
-          </button>
-        </form>
-        <input type="file" id="archivo" accept="image/*" capture="environment" hidden>
-        <p class="c-nota"><span data-n="tecnico">Andrés</span> es un asistente con inteligencia artificial. Los técnicos que van a tu casa son personas de nuestro equipo.</p>
-      </section>
-
-      <div class="parte" id="parte" hidden aria-live="polite">
-        <div class="parte-cab"><span>Parte de trabajo</span><span id="parteNum">Nº —</span></div>
-        <span class="sello">Registrado</span>
-        <dl>
-          <dt>Aparato</dt><dd data-f="aparato"></dd>
-          <dt>Avería</dt><dd data-f="sintoma"></dd>
-          <dt>Código</dt><dd data-f="codigo"></dd>
-          <dt>Probable</dt><dd data-f="diagnostico"></dd>
-          <dt>Cliente</dt><dd data-f="cliente"></dd>
-          <dt>Visita</dt><dd data-f="franja"></dd>
-        </dl>
-        <div class="fases" id="fases"><span></span><span></span><span></span><span></span><span></span></div>
-        <div class="fases-txt"><span>Avería</span><span>Diagnóstico</span><span>Visita</span><span>Datos</span><span>Listo</span></div>
+        <p class="ta-nota"><span data-n="tecnico">Andrés</span> es un asistente con inteligencia artificial. Los técnicos que van a tu casa son personas del equipo.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="seccion" id="como">
-  <div class="envol">
-    <div class="cabecera-sec doble revela">
-      <div><p class="antetitulo">Cómo funciona</p><h2>De «no centrifuga» a <span class="acento">técnico en tu puerta</span>.</h2></div>
-      <p class="bajada">Sin centralitas, sin «le llamamos en unos días». Le cuentas lo que pasa con tus palabras y en dos minutos sabes qué tiene tu aparato, cuánto cuesta la visita y cuándo vamos.</p>
-    </div>
-    <div class="pasos">
-      <article class="paso revela"><div class="num">01</div><h3>Cuéntale qué le pasa</h3><p>Por voz o por escrito. Si sale un código en la pantalla o tienes a mano la pegatina con el modelo, mejor: hazle una foto y se la mandas.</p></article>
-      <article class="paso revela"><div class="num">02</div><h3>Te orienta al momento</h3><p>Te explica la causa más probable en esa marca, si es algo que puedes comprobar tú sin riesgo y qué pasa si lo sigues usando.</p></article>
-      <article class="paso revela"><div class="num">03</div><h3>Vamos a tu casa</h3><p>Te reserva la visita y el técnico va con el diagnóstico previo y, si hace falta, con la pieza. Antes de reparar te da un presupuesto cerrado.</p></article>
-    </div>
-  </div>
-</section>
-
-<section class="seccion" id="aparatos" style="padding-top:0">
-  <div class="envol">
-    <div class="cabecera-sec revela"><p class="antetitulo">Qué reparamos</p><h2>Toda la gama blanca, <span class="acento">a domicilio</span>.</h2><p class="bajada">Toca una avería y <span data-n="tecnico">Andrés</span> empieza a diagnosticarla.</p></div>
-    <div class="aparatos" id="listaAparatos"></div>
-    <p class="no-reparamos" id="noReparamos"></p>
-  </div>
-</section>
-
-<section class="seccion codigos-sec" id="codigos">
-  <div class="envol">
-    <div class="cabecera-sec doble revela">
-      <div><p class="antetitulo">¿Sale un código en la pantalla?</p><h2>Pregúntale por <span class="acento">cualquier error</span>.</h2></div>
-      <p class="bajada">Cada marca habla su idioma. <span data-n="tecnico">Andrés</span> te dice qué significa el código de tu aparato, si es grave y qué hacer ahora mismo. Prueba con uno:</p>
-    </div>
-    <div class="pantallas" id="pantallas"></div>
-    <p class="nota-codigos">El significado puede variar según el modelo; el técnico lo confirma con el aparato delante.</p>
-  </div>
-</section>
-
-<section class="seccion" id="marcas">
-  <div class="envol">
-    <div class="cabecera-sec revela"><p class="antetitulo">Marcas</p><h2>Reparamos <span class="acento">todas</span>. Estas son las de cada día.</h2></div>
-    <div class="marcas revela" id="marcasLista"></div>
-    <p class="aviso-indep"><span data-n="marca">Reparo</span> es un servicio técnico independiente, no oficial. No tenemos vinculación con los fabricantes citados; sus nombres se usan solo para indicar con qué aparatos trabajamos. Utilizamos recambios originales o de calidad equivalente según el caso.</p>
-  </div>
-</section>
-
-<section class="seccion" id="precios" style="padding-top:0">
-  <div class="envol">
-    <div class="cabecera-sec revela"><p class="antetitulo">Precios claros</p><h2>Sabes lo que pagas <span class="acento">antes</span> de pagarlo.</h2></div>
-    <div class="precios">
-      <div class="tarifa revela">
-        <div class="cifra" id="precioVisita">39<small>€</small></div>
-        <h3>Visita y diagnóstico a domicilio</h3>
-        <p>IVA incluido. El técnico revisa el aparato, te dice qué tiene y te da un presupuesto cerrado. Si no te convence, solo pagas la visita.</p>
-        <span class="descuento">Si reparamos, se descuenta de la factura</span>
-      </div>
-      <ul class="lista-ok revela">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span><b>Presupuesto cerrado</b> antes de tocar nada. Sin sorpresas en la factura.</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span><b>Garantía por escrito</b> de <span id="garantiaTxt">3 meses</span> en pieza y mano de obra.</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span><b>Te decimos si compensa.</b> Si arreglarlo no merece la pena, te lo decimos claro.</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span><b>Pago al terminar</b> con tarjeta, Bizum o efectivo.</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span><b>¿No compensa repararlo?</b> Te vendemos uno nuevo: <span data-n="ventaNuevo">lo entregamos, lo instalamos y nos llevamos el viejo</span>.</span></li>
+      <a class="llamame-enlace" href="#contacto">¿Prefieres que te llamemos? Déjanos tu teléfono ›</a>
+      <ul class="confianza">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M5 21c1-4 4-6 7-6s6 2 7 6"/></svg><span><b data-n="experienciaCorta">Técnicos con 20+ años</b> de oficio</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span><b>Presupuesto cerrado</b> antes de tocar nada</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg><span><b>Garantía por escrito</b> de <span class="garantiaTxt">3 meses</span></span></li>
       </ul>
     </div>
   </div>
 </section>
 
-<section class="seccion" id="preguntas" style="padding-top:0">
+<section class="seccion" id="aparatos">
   <div class="envol">
-    <div class="cabecera-sec revela"><p class="antetitulo">Preguntas frecuentes</p><h2>Lo que nos <span class="acento">preguntáis</span> siempre.</h2></div>
-    <div class="faq revela">
-      <details><summary>¿Andrés es una persona?</summary><p>No. <span data-n="tecnico">Andrés</span> es un asistente con inteligencia artificial entrenado con el conocimiento de nuestros técnicos, para atenderte al momento y a cualquier hora. Las personas que van a tu casa a reparar son técnicos de nuestro equipo, todos con <span data-n="experiencia">un mínimo de 20 años de experiencia</span>. Si prefieres hablar con una persona, llámanos en horario de atención.</p></details>
-      <details><summary>¿Cuándo podéis venir?</summary><p id="faqPlazo">Normalmente en 24 a 48 horas, y el mismo día si es urgente y hay hueco en la ruta. Te llamamos para confirmar la hora exacta.</p></details>
-      <details><summary>¿Qué zonas cubrís?</summary><p id="faqZona"></p></details>
-      <details><summary>¿Sois el servicio técnico oficial de alguna marca?</summary><p>No. Somos un servicio técnico independiente y trabajamos con todas las marcas. Si tu aparato tiene menos de tres años, recuerda que la garantía legal la cubre gratis la tienda o el fabricante: te lo diremos si es tu caso.</p></details>
-      <details><summary>¿Merece la pena reparar o mejor compro otro?</summary><p>Como regla, compensa reparar si el aparato tiene menos de diez años y la reparación cuesta menos de la mitad que uno nuevo equivalente. En la visita el técnico te lo dice con sinceridad, y si no compensa, solo pagas la visita.</p></details>
-      <details><summary>¿Qué hacéis con lo que le cuento al técnico virtual?</summary><p>Lo usamos solo para atender tu avería y organizar la visita. No lo vendemos ni lo usamos para publicidad. Tienes los detalles en la política de privacidad.</p></details>
+    <div class="cabecera-sec"><p class="antetitulo">Toda la gama blanca, todas las marcas</p><h2>¿Qué aparato se ha roto?</h2><p class="bajada">Toca tu aparato y <span data-n="tecnico">Andrés</span> te pregunta qué le pasa.</p></div>
+    <div class="aparatos" id="listaAparatos"></div>
+    <p class="nota-sec" id="noReparamos"></p>
+    <div class="zona-caja" id="zonaCaja"><b>Dónde vamos</b><span id="faqZona"></span></div>
+    <div class="zona-caja"><b>Marcas</b><p class="marcas-txt" id="marcasLista"></p><p class="aviso-indep"><span data-n="marca">Reparo</span> es un servicio técnico independiente, no oficial. Los nombres de los fabricantes solo indican con qué aparatos trabajamos.</p></div>
+  </div>
+</section>
+
+<section class="seccion" id="como">
+  <div class="envol">
+    <div class="cabecera-sec"><p class="antetitulo">Así de fácil</p><h2>Tres pasos y el técnico en tu puerta.</h2></div>
+    <ol class="pasos">
+      <li class="paso"><h3>Cuéntale qué le pasa</h3><p>Hablando o escribiendo, con tus palabras. Si sale un código en la pantalla, díselo.</p></li>
+      <li class="paso"><h3>Te dice qué puede ser</h3><p>Te explica la causa más probable en tu marca y te reserva la visita.</p></li>
+      <li class="paso"><h3>Vamos a tu casa</h3><p>Te llamamos para confirmar la hora. El técnico va con la pieza que suele fallar.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="seccion" id="precios">
+  <div class="envol">
+    <div class="cabecera-sec"><p class="antetitulo">Precios claros</p><h2>Sabes lo que pagas antes de pagarlo.</h2></div>
+    <div class="precios">
+      <div class="tarifa">
+        <div class="cifra" id="precioVisita">39<small>€</small></div>
+        <h3>Visita y diagnóstico a domicilio</h3>
+        <p>IVA incluido. El técnico revisa el aparato y te da un presupuesto cerrado. Si no te convence, solo pagas la visita.</p>
+        <span class="descuento">Si reparamos, se descuenta de la factura</span>
+      </div>
+      <ul class="lista-ok">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span><b>Presupuesto cerrado</b> antes de tocar nada. Sin sorpresas.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span><b>Garantía por escrito</b> de <span class="garantiaTxt">3 meses</span> en pieza y mano de obra.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span><b>Pago al terminar</b> con tarjeta, Bizum o efectivo.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span><b>¿No compensa repararlo?</b> Te vendemos uno nuevo: <span data-n="ventaNuevo">lo entregamos, lo instalamos y nos llevamos el viejo</span>.</span></li>
+      </ul>
     </div>
   </div>
 </section>
 
-<section class="seccion" style="padding-top:0" id="contacto">
+<section class="seccion" id="preguntas">
   <div class="envol">
-    <div class="cierre revela">
-      <div style="position:relative;z-index:1">
-        <h2>Pide tu técnico <span class="acento">en un minuto</span>.</h2>
-        <p>Rellena lo que sepas, o díselo a <span data-n="tecnico">Andrés</span> y lo va escribiendo él mientras habláis. Te llamamos en horario de atención (<span id="horarioTxt"></span>). O llámanos tú:</p>
+    <div class="cabecera-sec"><p class="antetitulo">Preguntas frecuentes</p><h2>Lo que nos preguntáis siempre.</h2></div>
+    <div class="faq">
+      <details><summary>¿Cuándo podéis venir?</summary><p id="faqPlazo">Normalmente en 24 a 48 horas, y el mismo día si es urgente y hay hueco en la ruta. Te llamamos para confirmar la hora exacta.</p></details>
+      <details><summary>¿Andrés es una persona?</summary><p>No. <span data-n="tecnico">Andrés</span> es un asistente con inteligencia artificial que te atiende al momento y a cualquier hora. Las personas que van a tu casa son técnicos de nuestro equipo, todos con <span data-n="experiencia">un mínimo de 20 años de experiencia</span>. Si prefieres hablar con una persona, llámanos.</p></details>
+      <details><summary>¿Merece la pena reparar o mejor compro otro?</summary><p>Depende de la pieza: la mayoría de averías salen bastante más baratas que un aparato nuevo. El técnico te da un presupuesto cerrado y decides con el precio delante. Y si prefieres uno nuevo, te lo vendemos, lo instalamos y nos llevamos el viejo.</p></details>
+      <details><summary>¿Sois el servicio técnico oficial de alguna marca?</summary><p>No. Somos un servicio técnico independiente y trabajamos con todas las marcas. Si tu aparato tiene menos de tres años, la garantía legal la cubre gratis la tienda o el fabricante.</p></details>
+      <details><summary>¿Qué hacéis con lo que le cuento a Andrés?</summary><p>Lo usamos solo para atender tu avería y organizar la visita. No lo vendemos ni lo usamos para publicidad. Más detalles en la <a href="privacidad.html">política de privacidad</a>.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="seccion" id="contacto">
+  <div class="envol">
+    <div class="cierre">
+      <div>
+        <h2>¿Prefieres que te llamemos?</h2>
+        <p>Déjanos tu teléfono y te llamamos en horario de atención (<span id="horarioTxt"></span>). O llámanos tú:</p>
         <a class="tel-grande" data-tel href="tel:+34958000000"><span data-n="telefono">958 00 00 00</span></a>
       </div>
-      <div class="form-llamada" id="formLlamadaCaja">
-        <form id="formSolicitud" novalidate>
-          <h3>Solicitud de técnico</h3>
-          <p class="nota-form">Solo el teléfono es obligatorio.</p>
-          <div class="campos">
-            <label class="campo ancho"><span>Teléfono <i>*</i></span><input id="f-telefono" type="tel" inputmode="tel" autocomplete="tel" placeholder="600 000 000" required></label>
-            <label class="campo"><span>Nombre</span><input id="f-nombre" autocomplete="given-name"></label>
-            <label class="campo"><span>Aparato</span><input id="f-aparato" list="lista-aparatos" placeholder="Lavadora, frigorífico…"></label>
-            <label class="campo"><span>Marca</span><input id="f-marca" list="lista-marcas"></label>
-            <label class="campo"><span>Código de error</span><input id="f-codigo" placeholder="Si sale alguno"></label>
-            <label class="campo ancho"><span>¿Qué le pasa?</span><input id="f-averia" placeholder="No centrifuga, no enfría…"></label>
-            <label class="campo ancho"><span>Dirección</span><input id="f-direccion" autocomplete="street-address"></label>
-            <label class="campo"><span>Municipio</span><input id="f-municipio" autocomplete="address-level2"></label>
-            <label class="campo"><span>Cuándo te viene bien</span><input id="f-franja" placeholder="Mañana por la tarde"></label>
-            <input type="hidden" id="f-modelo">
-          </div>
-          <datalist id="lista-aparatos"></datalist><datalist id="lista-marcas"></datalist>
+      <div id="formLlamadaCaja">
+        <form class="form-rapido" id="formRapido" novalidate>
+          <h3>Que me llame un técnico</h3>
+          <label class="campo"><span>Tu teléfono</span><input id="r-telefono" type="tel" inputmode="tel" autocomplete="tel" placeholder="Escribe tu móvil" required></label>
+          <label class="campo"><span>¿Qué le pasa? (opcional)</span><input id="r-averia" placeholder="La lavadora no centrifuga…"></label>
           <input class="trampa" type="text" id="web" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <button class="boton boton-senal" type="submit">Pedir técnico</button>
-          <p class="legal">Usaremos tus datos solo para atender esta avería. Más información en la <a href="privacidad.html">política de privacidad</a>.</p>
+          <button class="boton boton-principal ancho" type="submit">Que me llamen</button>
+          <p class="legal">Usaremos tu teléfono solo para atender esta avería. <a href="privacidad.html">Política de privacidad</a>.</p>
         </form>
-        <div class="form-ok"><h3>¡Solicitud recibida!</h3><p style="color:var(--noche-txt-2)">Te llamamos para confirmar la hora, dentro del horario de atención.</p></div>
+        <div class="form-ok" role="status"><h3>¡Recibido!</h3><p>Te llamamos para confirmar la hora, dentro del horario de atención.</p></div>
       </div>
     </div>
     <div class="panel-dueno" id="panelDueno" hidden>
       <h3>Avisos recibidos (solo lo ves tú)</h3>
-      <p>Los avisos que registra el técnico virtual y las peticiones de llamada aparecen aquí al momento.</p>
+      <p>Los avisos que registra Andrés y las peticiones de llamada aparecen aquí al momento.</p>
       <div class="envol-tabla"><table class="tabla-avisos"><thead><tr><th>Fecha</th><th>Tipo</th><th>Cliente</th><th>Teléfono</th><th>Aparato y avería</th><th>Dirección y franja</th></tr></thead><tbody id="tablaAvisos"><tr><td colspan="6">Todavía no hay avisos.</td></tr></tbody></table></div>
     </div>
   </div>
@@ -587,26 +530,116 @@ p{margin:0}
 
 <footer class="pie">
   <div class="envol">
-    <div><b data-n="marca">Reparo</b><p>Servicio técnico independiente de reparación de electrodomésticos a domicilio en <span data-n="ciudad">Granada</span> y área metropolitana.</p><p>El técnico virtual es un sistema de inteligencia artificial; puede equivocarse, y el diagnóstico definitivo lo hace siempre un técnico en persona.</p></div>
+    <div><b data-n="marca">Reparo</b><p>Servicio técnico independiente de reparación de electrodomésticos a domicilio en <span data-n="ciudad">Granada</span> y área metropolitana.</p><p>Andrés es un sistema de inteligencia artificial; puede equivocarse. El diagnóstico definitivo lo hace el técnico.</p></div>
     <div><b>Contacto</b><p><a data-tel href="tel:+34958000000"><span data-n="telefono">958 00 00 00</span></a></p><p id="pieHorario"></p></div>
     <div><b>Legal</b><p><a href="aviso-legal.html">Aviso legal</a></p><p><a href="privacidad.html">Política de privacidad</a></p></div>
   </div>
 </footer>
 
-<div class="mini" id="mini" data-estado="reposo" role="region" aria-label="Conversación con el técnico" aria-hidden="true">
-  <div class="orbe" aria-hidden="true"><span class="barras"><b></b><b></b><b></b><b></b></span></div>
-  <p class="mini-txt" id="miniTxt"></p>
-  <button class="c-mic" type="button" id="miniMic" aria-label="Hablar con el técnico" tabindex="-1">
-    <svg class="mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4"/></svg>
-    <svg class="parar" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2.5"/></svg>
-  </button>
-  <button class="mini-volver" type="button" id="miniVolver" aria-label="Volver a la conversación completa" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg></button>
+<!-- barra fija del móvil: siempre a mano -->
+<nav class="barra-movil" id="barraMovil" aria-label="Contactar">
+  <button class="boton boton-andres" type="button" data-hablar data-voz><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4"/></svg>Hablar</button>
+  <button class="boton boton-borde" type="button" data-hablar><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M6 9h.01M10 9h.01M14 9h.01M18 9h.01M7 15h10"/></svg>Escribir</button>
+  <a class="boton boton-borde" data-tel href="tel:+34958000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Llamar</a>
+  <a class="boton boton-borde" data-wa href="https://wa.me/34600000000" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.4 8.4 0 1 1 21 11.5z"/></svg>WhatsApp</a>
+</nav>
+
+<!-- conversación minimizada -->
+<div class="mini" id="mini" data-estado="reposo" role="region" aria-label="Conversación con Andrés en curso">
+  <div class="orbe" aria-hidden="true"><span class="onda"><i></i><i></i><i></i><i></i></span></div>
+  <p class="mini-txt"><b><span data-n="tecnico">Andrés</span> · <span id="miniEstado">en línea</span></b><span id="miniTxt"></span></p>
+  <a class="boton boton-borde mini-tel" data-tel href="tel:+34958000000" aria-label="Llamar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></a>
+  <button class="boton boton-andres" type="button" id="miniVolver">Seguir</button>
+  <button class="boton colgar" type="button" id="miniColgar" aria-label="Colgar">Colgar</button>
 </div>
 
-<div class="barra-movil" id="barraMovil" aria-hidden="true">
-  <button class="boton boton-senal" type="button" data-hablar data-voz tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4"/></svg><span>Hablar con <span data-n="tecnico">Andrés</span></span></button>
-  <a class="boton llamar" data-tel href="tel:+34958000000" aria-label="Llamar" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></a>
-</div>
+<!-- CONVERSACIÓN CON ANDRÉS -->
+<section class="conv" id="conv" data-estado="reposo" data-modo="voz" aria-label="Conversación con Andrés" hidden>
+  <div class="conv-cab">
+    <button class="icono" type="button" id="btnMinimizar" aria-label="Ver la web sin colgar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+    <div class="orbe" aria-hidden="true"><span class="onda"><i></i><i></i><i></i><i></i></span></div>
+    <div class="conv-quien">
+      <b><span data-n="tecnico">Andrés</span> · asistente</b>
+      <span class="conv-estado" aria-live="polite"><i></i><span id="estadoTxt">En línea</span><span class="conv-crono" id="crono"></span></span>
+    </div>
+    <button class="icono" id="btnVoz" type="button" aria-pressed="true" aria-label="Voz de Andrés activada" title="Activar o quitar la voz de Andrés">
+      <svg class="voz-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4zM15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
+      <svg class="voz-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4zM22 9l-6 6M16 9l6 6"/></svg>
+    </button>
+  </div>
+  <div class="fases" id="fases" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="fases-txt" aria-hidden="true"><span>Avería</span><span>Qué puede ser</span><span>Visita</span><span>Tus datos</span><span>Listo</span></div>
+
+  <details class="solicitud" id="solicitud">
+    <summary>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 3v2h6V3M9 10h6M9 14h6M9 18h3"/></svg>
+      <span class="sol-resumen"><b>Tu solicitud · <span id="solCuenta">0 de 7</span></b><span id="solUltimo">Se rellena sola mientras hablas</span></span>
+      <svg class="sol-flecha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </summary>
+    <div class="sol-cuerpo">
+      <p class="sol-diag" id="solDiag" hidden></p>
+      <form id="formSolicitud" novalidate>
+        <div class="sol-campos">
+          <label class="campo"><span>Aparato</span><input id="f-aparato" list="lista-aparatos" placeholder="Andrés te lo preguntará"></label>
+          <label class="campo"><span>Marca</span><input id="f-marca" list="lista-marcas" placeholder="Andrés te lo preguntará"></label>
+          <label class="campo"><span>¿Qué le pasa?</span><input id="f-averia" placeholder="Andrés te lo preguntará"></label>
+          <label class="campo"><span>Nombre</span><input id="f-nombre" autocomplete="given-name" placeholder="Andrés te lo preguntará"></label>
+          <label class="campo"><span>Teléfono</span><input id="f-telefono" type="tel" inputmode="tel" autocomplete="tel" placeholder="Andrés te lo preguntará"></label>
+          <label class="campo"><span>Dirección</span><input id="f-direccion" autocomplete="street-address" placeholder="Andrés te lo preguntará"></label>
+          <label class="campo"><span>Pueblo o barrio</span><input id="f-municipio" autocomplete="address-level2" placeholder="Andrés te lo preguntará"></label>
+          <label class="campo"><span>Cuándo te viene bien</span><input id="f-franja" placeholder="Andrés te lo preguntará"></label>
+          <input type="hidden" id="f-codigo"><input type="hidden" id="f-modelo">
+        </div>
+        <datalist id="lista-aparatos"></datalist><datalist id="lista-marcas"></datalist>
+        <button class="boton boton-principal ancho sol-enviar" type="submit" id="solEnviar" hidden>Sí, está bien: pedir la visita</button>
+      </form>
+    </div>
+  </details>
+
+  <div class="conv-chat" id="chat" role="log" aria-live="polite"></div>
+  <div class="chips" id="chips">
+    <button class="chip" type="button">La lavadora no centrifuga</button>
+    <button class="chip" type="button">El frigorífico no enfría</button>
+    <button class="chip" type="button">Me sale un código de error</button>
+    <button class="chip" type="button">Quiero que venga un técnico</button>
+  </div>
+  <div class="adjunto" id="adjunto" hidden><img id="adjuntoImg" alt=""><span>Foto lista para enviar</span><button type="button" id="quitarFoto">Quitar</button></div>
+  <form class="conv-escribir" id="formChat" autocomplete="off" hidden>
+    <button class="icono" type="button" id="btnVolverVoz" aria-label="Volver a hablar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4"/></svg></button>
+    <label class="oculto" for="txt">Escribe tu mensaje</label>
+    <input id="txt" type="text" enterkeyhint="send" placeholder="Escribe aquí…">
+    <button class="icono" type="button" id="btnFoto" aria-label="Enviar una foto de la placa o del error"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8a2 2 0 0 1 2-2h2l2-2h6l2 2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="4"/></svg></button>
+    <button class="icono enviar" type="submit" id="btnEnviar" aria-label="Enviar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+  </form>
+  <input type="file" id="archivo" accept="image/*" capture="environment" hidden>
+  <div class="conv-mandos">
+    <button class="mando" type="button" id="btnTeclado" aria-pressed="false"><span class="circ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M6 9h.01M10 9h.01M14 9h.01M18 9h.01M7 15h10"/></svg></span>Escribir</button>
+    <button class="mando mando-central" type="button" id="btnMic" aria-label="Hablar"><span class="circ"><svg class="i-mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4"/></svg><svg class="i-colgar" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 9c-2.4 0-4.6.5-6.6 1.4-.6.3-1 .9-1 1.6v2.4c0 .8.8 1.4 1.6 1.2l2.6-.7c.6-.2 1-.7 1-1.4v-1.7a12 12 0 0 1 4.8 0v1.7c0 .7.4 1.2 1 1.4l2.6.7c.8.2 1.6-.4 1.6-1.2V12c0-.7-.4-1.3-1-1.6A15.6 15.6 0 0 0 12 9z"/></svg></span><span id="micTxt">Hablar</span></button>
+    <button class="mando" type="button" id="btnSilenciar" aria-pressed="false"><span class="circ"><svg class="i-foto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8a2 2 0 0 1 2-2h2l2-2h6l2 2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="4"/></svg><svg class="i-sil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4M3 3l18 18"/></svg></span><span id="silTxt">Foto</span></button>
+  </div>
+  <p class="conv-nota"><span data-n="tecnico">Andrés</span> es un asistente con inteligencia artificial.</p>
+
+  <div class="velo" id="velo" hidden></div>
+  <div class="hoja" id="hojaMicro" role="dialog" aria-modal="true" aria-labelledby="hmTit" hidden>
+    <h3 id="hmTit">Para hablar con <span data-n="tecnico">Andrés</span></h3>
+    <p>Tu móvil te va a preguntar si dejas usar el micrófono. Pulsa <b>«Permitir»</b>. Solo te escuchamos mientras dura la conversación.</p>
+    <button class="boton boton-andres" type="button" id="hmEmpezar">Empezar a hablar</button>
+    <div class="pareja"><button class="boton boton-borde" type="button" id="hmEscribir">Prefiero escribir</button><a class="boton boton-borde" data-tel href="tel:+34958000000">Prefiero llamar</a></div>
+  </div>
+  <div class="hoja" id="hojaSinMicro" role="dialog" aria-modal="true" aria-labelledby="hsTit" hidden>
+    <h3 id="hsTit">No tengo permiso para el micrófono</h3>
+    <p>No pasa nada: puedes escribirle a <span data-n="tecnico">Andrés</span> o llamarnos.</p>
+    <div class="pareja"><button class="boton boton-andres" type="button" id="hsEscribir">Escribir</button><a class="boton boton-borde" data-tel href="tel:+34958000000">Llamar</a></div>
+    <p style="margin-top:14px"><b>Para activarlo:</b></p>
+    <ol><li>En iPhone: toca «aA» junto a la dirección → Ajustes del sitio web → Micrófono → Permitir.</li><li>En Android: toca el icono junto a la dirección → Permisos → Micrófono → Permitir.</li></ol>
+    <button class="boton boton-borde" type="button" id="hsReintentar">Ya lo he activado, probar otra vez</button>
+  </div>
+  <div class="hoja" id="hojaAudio" role="dialog" aria-modal="true" hidden>
+    <h3>Toca para oír a <span data-n="tecnico">Andrés</span></h3>
+    <p>Tu móvil necesita un toque para dejar sonar la voz.</p>
+    <button class="boton boton-andres" type="button" id="haActivar">Activar el sonido</button>
+  </div>
+</section>
 
 <script type="module">
 import { NEGOCIO as N, saludo, instrucciones, lista } from "./cerebro.mjs";
@@ -616,26 +649,33 @@ let manual = null;
 const cargarManual = () => manual ||= Promise.all([import("./manual.mjs"), import("./conocimiento.mjs")])
   .then(([m, c]) => ({ buscar: m.buscar, datos: m.preparar(c.default) }));
 
-document.documentElement.lang = "es";
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 const SERVIDOR = ($('meta[name="servidor-tecnico"]')?.content || "").replace(/\/$/, "");
 const LK_TOKEN = $('meta[name="livekit-token"]')?.content || "";
 const reducir = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const esMovil = () => matchMedia("(max-width: 899px)").matches;
+const guardar = (k, v) => { try { localStorage.setItem(k, v); } catch {} };
+const leer = k => { try { return localStorage.getItem(k); } catch { return null; } };
 
 /* ------------------------------------------------------------------
    1. Rellenar la página con los datos del negocio
 ------------------------------------------------------------------ */
 $$("[data-n]").forEach(el => { const v = N[el.dataset.n]; if (v) el.textContent = v; });
 $$("[data-tel]").forEach(a => a.href = "tel:" + N.telefonoEnlace);
+const textoWa = "Hola, tengo una avería en mi electrodoméstico. ¿Cuándo podéis venir?";
+$$("[data-wa]").forEach(a => a.href = `https://wa.me/${N.whatsapp}?text=${encodeURIComponent(textoWa)}`);
 document.title = `Reparación de electrodomésticos en ${N.ciudad} · ${N.marca}`;
 $("#precioVisita").innerHTML = N.visita.precio.replace(/\s*€/, "") + "<small>€</small>";
-$("#garantiaTxt").textContent = (N.garantia.match(/^\d+\s+\w+/) || ["3 meses"])[0];
+$("#precioLinea").textContent = N.visita.precio;
+$$(".garantiaTxt").forEach(el => el.textContent = (N.garantia.match(/^\d+\s+\w+/) || ["3 meses"])[0]);
 $("#horarioTxt").textContent = N.horario;
-$("#pieHorario").textContent = "Atención: " + N.horario + ". El técnico virtual, 24 h.";
+$("#pieHorario").textContent = "El equipo te atiende " + N.horario + ". Andrés, a cualquier hora.";
 $("#faqZona").textContent = N.zona + ". Si estás fuera, pregúntale a " + N.tecnico + ": te confirmamos si llegamos.";
-$("#noReparamos").textContent = "También reparamos " + lista(N.climaYCalefaccion.aparatos) + " en las zonas con técnico habilitado (te lo confirmamos al llamarte). No reparamos " + lista(N.noReparamos) + ".";
-$("#marcasLista").innerHTML = N.marcas.map(m => `<span>${m}</span>`).join("");
+$("#noReparamos").textContent = "También reparamos " + lista(N.climaYCalefaccion.aparatos) + " en las zonas con técnico habilitado. No reparamos " + lista(N.noReparamos) + ".";
+$("#marcasLista").textContent = "Todas. Entre otras: " + N.marcas.join(", ") + ".";
+const plataforma = typeof window.claude?.use === "function";
+if (plataforma) $("#previa").hidden = false;
 
 const ICONOS = {
   lavadora: '<rect x="8" y="5" width="32" height="38" rx="4"/><path d="M8 14h32"/><circle cx="24" cy="29" r="9"/><path d="M18.5 30.5c2-1.6 4.2-1.6 6 0s4 1.6 6 0"/><circle cx="14" cy="9.5" r="1.2"/><path d="M28 9.5h7"/>',
@@ -647,49 +687,30 @@ const ICONOS = {
   termo: '<rect x="13" y="4" width="22" height="34" rx="11"/><path d="M19 38v6M29 38v6M24 14v10"/><circle cx="24" cy="27" r="3"/>',
   campana: '<path d="M18 4h12v12H18zM8 30l10-14h12l10 14z"/><path d="M8 30h32v4H8zM16 38v4M24 38v4M32 38v4"/>'
 };
-const APARATOS = [
-  ["lavadora", "Lavadoras", ["No centrifuga", "No desagua", "Pierde agua", "Hace mucho ruido"]],
-  ["frigorifico", "Frigoríficos y combis", ["No enfría", "Hace hielo en el congelador", "Agua en el fondo", "Hace ruido"]],
-  ["lavavajillas", "Lavavajillas", ["No desagua", "No lava bien", "No seca", "Sale un código"]],
-  ["horno", "Hornos y microondas", ["No calienta", "No enciende", "Salta la luz"]],
-  ["placa", "Vitrocerámicas e inducción", ["Un fuego no va", "No detecta el cazo", "Sale un error"]],
-  ["secadora", "Secadoras", ["No seca", "No calienta", "Se para sola"]],
-  ["termo", "Termos eléctricos", ["No calienta el agua", "Pierde agua", "Salta el diferencial"]],
-  ["campana", "Campanas extractoras", ["No aspira", "Hace ruido", "No enciende la luz"]]
-];
-const singular = { "Lavadoras":"lavadora","Frigoríficos y combis":"frigorífico","Lavavajillas":"lavavajillas","Hornos y microondas":"horno","Vitrocerámicas e inducción":"placa","Secadoras":"secadora","Termos eléctricos":"termo eléctrico","Campanas extractoras":"campana extractora" };
-$("#listaAparatos").innerHTML = APARATOS.map(([ic, nom, sint]) => `
-  <article class="aparato revela">
-    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONOS[ic]}</svg>
-    <h3>${nom}</h3>
-    <div class="sintomas">${sint.map(s => `<button type="button" class="sintoma" data-preguntar="Mi ${singular[nom]}: ${s.toLowerCase()}">${s}</button>`).join("")}</div>
-  </article>`).join("");
-
-const CODIGOS = [
-  ["E18", "Bosch · Balay · Siemens", "Lavadora", "Mi lavadora Bosch marca el error E18, ¿qué le pasa?"],
-  ["OE", "LG", "Lavadora", "Mi lavadora LG marca OE, ¿qué significa?"],
-  ["4C", "Samsung", "Lavadora", "Mi lavadora Samsung marca 4C, ¿qué hago?"],
-  ["F05", "Indesit · Ariston", "Lavadora", "Mi lavadora Indesit da el error F05"],
-  ["E24", "Bosch · Balay · Siemens", "Lavavajillas", "Mi lavavajillas Balay marca E24, ¿qué es?"],
-  ["i20", "AEG · Electrolux", "Lavavajillas", "Mi lavavajillas AEG marca i20"],
-  ["E15", "Bosch · Balay · Siemens", "Lavavajillas", "Mi lavavajillas Siemens tiene el error E15"],
-  ["U", "Inducción", "Placa", "Mi placa de inducción parpadea una U y no calienta"]
-];
-$("#pantallas").innerHTML = CODIGOS.map(([c, m, a, p]) => `
-  <button type="button" class="pantalla revela" data-preguntar="${p}"><span class="lcd">${c}</span><small><b>${a}</b>${m}</small></button>`).join("");
+const APARATOS = [["lavadora", "Lavadora"], ["frigorifico", "Frigorífico"], ["lavavajillas", "Lavavajillas"], ["horno", "Horno y microondas"], ["placa", "Vitro e inducción"], ["secadora", "Secadora"], ["termo", "Termo eléctrico"], ["campana", "Campana"]];
+$("#listaAparatos").innerHTML = APARATOS.map(([ic, nom]) => `
+  <button type="button" class="aparato" data-preguntar="Tengo una avería en mi ${nom.toLowerCase()}">
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONOS[ic]}</svg>${nom}</button>`).join("");
 
 /* ------------------------------------------------------------------
-   2. Piezas de la consola
+   2. Piezas de la conversación
 ------------------------------------------------------------------ */
-const consola = $("#consola"), chat = $("#chat"), txt = $("#txt"), btnMic = $("#btnMic"), btnVoz = $("#btnVoz"), estadoTxt = $("#estadoTxt");
-const ESTADOS = { reposo: "En línea", escuchando: "Te escucho…", pensando: "Pensando…", hablando: "Hablando…" };
-const mini = $("#mini"), miniTxt = $("#miniTxt"), barra = $("#barraMovil");
-function estado(e) { consola.dataset.estado = e; mini.dataset.estado = e; estadoTxt.textContent = ESTADOS[e]; }
-function textoMini(t, parcial = false) { miniTxt.textContent = t; miniTxt.classList.toggle("parcial", parcial); }
+const conv = $("#conv"), chat = $("#chat"), txt = $("#txt"), btnMic = $("#btnMic"), btnVoz = $("#btnVoz"), estadoTxt = $("#estadoTxt");
+const ESTADOS = { reposo: "En línea", escuchando: "Te escucho…", pensando: "Pensando…", hablando: "Hablando · puedes interrumpirle" };
+const mini = $("#mini"), miniTxt = $("#miniTxt");
+function estado(e) {
+  conv.dataset.estado = e; mini.dataset.estado = e; $("#tarjetaAndres").dataset.estado = e;
+  estadoTxt.textContent = ESTADOS[e]; $("#miniEstado").textContent = ESTADOS[e].split(" ·")[0].toLowerCase();
+  if (!llamada) $("#micTxt").textContent = e === "escuchando" ? "Terminar" : "Hablar";
+}
+function textoMini(t) { miniTxt.textContent = t; }
+function textoMiniSolicitud() { const sol = $("#miniEstado").dataset.sol; if (sol && !llamada) miniTxt.textContent = sol.charAt(0).toUpperCase() + sol.slice(1); }
 
 function burbuja(quien, texto = "", extra) {
   const b = document.createElement("div");
   b.className = "burbuja " + quien;
+  if (quien === "tec") b.dataset.quien = N.tecnico;
+  if (quien === "parcial") b.setAttribute("aria-hidden", "true");
   if (extra?.img) { const i = document.createElement("img"); i.src = extra.img; i.alt = "Foto enviada"; b.append(i); }
   if (texto) b.append(document.createTextNode(texto));
   chat.append(b); bajar(); return b;
@@ -697,13 +718,38 @@ function burbuja(quien, texto = "", extra) {
 function bajar() { chat.scrollTop = chat.scrollHeight; }
 function puntos(b) { b.innerHTML = '<span class="puntos" aria-label="Escribiendo"><i></i><i></i><i></i></span>'; }
 
+/* abrir, minimizar y cerrar la conversación (pantalla completa en móvil) */
+let conversacionIniciada = false, abierta = false;
+function abrirConversacion({ modo = "voz" } = {}) {
+  conv.hidden = false; abierta = true; conv.dataset.modo = modo;
+  document.body.classList.add("en-conversacion"); document.body.classList.remove("con-mini");
+  if (esMovil() && history.state?.conv !== 1) history.pushState({ conv: 1 }, "");
+  if (modo === "texto") mostrarTeclado(true);
+}
+function minimizar() {
+  if (!abierta) return;
+  conv.hidden = true; abierta = false;
+  document.body.classList.remove("en-conversacion");
+  document.body.classList.toggle("con-mini", conversacionIniciada);
+  textoMiniSolicitud();
+}
+addEventListener("popstate", () => { if (abierta) minimizar(); });
+$("#btnMinimizar").addEventListener("click", () => { if (history.state?.conv === 1) history.back(); else minimizar(); });
+$("#miniVolver").addEventListener("click", () => abrirConversacion({ modo: conv.dataset.modo }));
+$("#miniColgar").addEventListener("click", () => colgar());
+function mostrarTeclado(si) {
+  $("#formChat").hidden = !si; $("#btnTeclado").setAttribute("aria-pressed", String(si));
+  if (si) setTimeout(() => txt.focus({ preventScroll: true }), 60);
+}
+$("#btnTeclado").addEventListener("click", () => mostrarTeclado($("#formChat").hidden));
+$("#btnVolverVoz").addEventListener("click", () => { mostrarTeclado(false); empezarVoz(); });
+
 /* ------------------------------------------------------------------
    3. Capacidades: cerebro (IA), oídos (micrófono) y boca (voz)
    - En la vista previa de claude.ai usa las capacidades del visor.
-   - En la web publicada usa el servidor propio (meta servidor-tecnico)
+   - En la web publicada: llamada en directo con LiveKit, o servidor propio
      y el reconocimiento y la voz del navegador.
 ------------------------------------------------------------------ */
-const plataforma = typeof window.claude?.use === "function";
 const usar = name => plataforma ? window.claude.use(name).catch(() => null) : Promise.resolve(null);
 const pSample = usar("sample"), pDictado = usar("dictation"), pVoz = usar("tts"), pDb = usar("db"), pUser = usar("user");
 
@@ -721,17 +767,18 @@ pDictado.then(d => {
       if (state === "listening" || state === "starting") { escuchando = true; estado("escuchando"); }
       if (state === "idle") {
         escuchando = false; clearTimeout(temporizador);
-        if (["not_granted", "unavailable"].includes(reason)) { avisoSistema("No tengo acceso al micrófono. Puedes escribirme abajo."); }
+        if (["not_granted", "unavailable"].includes(reason)) sinMicro();
         cerrarEscucha();
       }
     });
-  } else if (!RecWeb) btnMic.hidden = true;
+  }
 });
+function hayMicro() { return !!(LK_TOKEN || dictado || RecWeb); }
 function mostrarParcial(t) {
   const visible = (bufferVoz + " " + (t || "")).trim();
   if (!visible) { parcial?.remove(); parcial = null; return; }
   if (!parcial) parcial = burbuja("parcial");
-  parcial.textContent = visible; bajar(); textoMini(visible, true);
+  parcial.textContent = visible; bajar(); textoMini(visible);
 }
 function reprogramar() {
   clearTimeout(temporizador);
@@ -743,8 +790,7 @@ function empezarEscucha() {
   if (dictado) {
     dictado.start().catch(e => {
       escuchando = false; estado("reposo");
-      if (e?.code === "not_granted") avisoSistema("Sin permiso para el micrófono. Puedes escribirme abajo.");
-      else if (e?.code === "unavailable") { btnMic.hidden = true; avisoSistema("El micrófono no está disponible en este navegador. Escríbeme abajo."); }
+      if (e?.code === "not_granted" || e?.code === "unavailable") sinMicro();
     });
     escuchando = true; estado("escuchando");
     return;
@@ -756,12 +802,12 @@ function empezarEscucha() {
       for (const r of ev.results) (r.isFinal ? (fin += r[0].transcript) : (tmp += r[0].transcript));
       bufferVoz = fin; mostrarParcial(tmp);
     };
-    recWeb.onerror = ev => { if (ev.error === "not-allowed") avisoSistema("Sin permiso para el micrófono. Puedes escribirme abajo."); };
+    recWeb.onerror = ev => { if (ev.error === "not-allowed") sinMicro(); };
     recWeb.onend = () => { escuchando = false; cerrarEscucha(); };
     try { recWeb.start(); escuchando = true; estado("escuchando"); } catch { estado("reposo"); }
     return;
   }
-  txt.focus();
+  mostrarTeclado(true);
 }
 function pararEscucha() {
   clearTimeout(temporizador);
@@ -771,10 +817,44 @@ function pararEscucha() {
 function cerrarEscucha() {
   const dicho = (bufferVoz + " " + (parcial?.textContent && !bufferVoz ? parcial.textContent : "")).trim();
   parcial?.remove(); parcial = null; bufferVoz = "";
-  if (consola.dataset.estado === "escuchando") estado("reposo");
+  if (conv.dataset.estado === "escuchando") estado("reposo");
   if (dicho) enviar(dicho, { porVoz: true });
 }
-btnMic.addEventListener("click", () => { if (LK_TOKEN) return llamada ? colgar() : llamar(); escuchando ? pararEscucha() : empezarEscucha(); });
+
+/* Antes de que el móvil pida el micrófono, le explicamos qué va a salir */
+function hoja(id) {
+  ["#hojaMicro", "#hojaSinMicro", "#hojaAudio"].forEach(h => $(h).hidden = h !== id);
+  $("#velo").hidden = !id;
+}
+async function estadoPermiso() {
+  try { return (await navigator.permissions.query({ name: "microphone" })).state; } catch { return "prompt"; }
+}
+async function pedirMicro() {
+  const st = await estadoPermiso();
+  if (st === "granted" || leer("microExplicado") === "1") return st === "denied" ? (sinMicro(), false) : true;
+  if (st === "denied") { sinMicro(); return false; }
+  return new Promise(ok => {
+    hoja("#hojaMicro");
+    $("#hmEmpezar").onclick = () => { hoja(null); guardar("microExplicado", "1"); ok(true); };
+    $("#hmEscribir").onclick = () => { hoja(null); mostrarTeclado(true); ok(false); };
+  });
+}
+function sinMicro() { estado("reposo"); hoja("#hojaSinMicro"); }
+$("#hsEscribir").addEventListener("click", () => { hoja(null); mostrarTeclado(true); });
+$("#hsReintentar").addEventListener("click", () => { hoja(null); empezarVoz(); });
+$("#velo").addEventListener("click", () => hoja(null));
+
+async function empezarVoz() {
+  if (!hayMicro() || sinCerebro) { mostrarTeclado(true); return; }
+  if (!(await pedirMicro())) return;
+  if (LK_TOKEN) { if (!llamada) llamar(); }
+  else if (!escuchando) empezarEscucha();
+}
+btnMic.addEventListener("click", () => {
+  if (llamada) return colgar();
+  if (escuchando) return pararEscucha();
+  empezarVoz();
+});
 
 // ---- boca ----
 let vozActiva = true, hablandoNavegador = 0;
@@ -782,7 +862,7 @@ pVoz.then(t => {
   vozPlataforma = t;
   t?.onState?.(({ state }) => {
     if (state === "speaking") estado("hablando");
-    else if (state === "idle" && consola.dataset.estado === "hablando") estado("reposo");
+    else if (state === "idle" && conv.dataset.estado === "hablando") estado("reposo");
   });
 });
 function vozEspanola() {
@@ -794,29 +874,24 @@ function vozEspanola() {
 function decir(frase) {
   frase = frase.trim();
   if (!vozActiva || !frase) return;
-  if (vozPlataforma) {
-    vozPlataforma.add([{ text: frase, language: "es" }]).catch(e => {
-      if (e?.code === "not_granted") { vozPlataforma = null; }
-    });
-    return;
-  }
+  if (vozPlataforma) { vozPlataforma.add([{ text: frase, language: "es" }]).catch(e => { if (e?.code === "not_granted") vozPlataforma = null; }); return; }
   if ("speechSynthesis" in window) {
     const u = new SpeechSynthesisUtterance(frase);
     u.lang = "es-ES"; u.rate = 1.03; const v = vozEspanola(); if (v) u.voice = v;
     u.onstart = () => estado("hablando");
-    u.onend = u.onerror = () => { if (--hablandoNavegador <= 0) { hablandoNavegador = 0; if (consola.dataset.estado === "hablando") estado("reposo"); } };
+    u.onend = u.onerror = () => { if (--hablandoNavegador <= 0) { hablandoNavegador = 0; if (conv.dataset.estado === "hablando") estado("reposo"); } };
     hablandoNavegador++; speechSynthesis.speak(u);
   }
 }
 function callar() {
   vozPlataforma?.stop?.().catch?.(() => {});
   if ("speechSynthesis" in window) { speechSynthesis.cancel(); hablandoNavegador = 0; }
-  if (consola.dataset.estado === "hablando") estado("reposo");
+  if (conv.dataset.estado === "hablando") estado("reposo");
 }
 btnVoz.addEventListener("click", () => {
   vozActiva = !vozActiva;
   btnVoz.setAttribute("aria-pressed", vozActiva);
-  btnVoz.setAttribute("aria-label", vozActiva ? "Voz del técnico activada" : "Voz del técnico silenciada");
+  btnVoz.setAttribute("aria-label", vozActiva ? "Voz de Andrés activada" : "Voz de Andrés quitada");
   if (!vozActiva) callar();
   audioAgente.forEach(a => a.muted = !vozActiva);
 });
@@ -868,17 +943,17 @@ async function enviar(texto, { porVoz = false } = {}) {
   const imagen = fotoPendiente; quitarFoto();
   if (!texto && !imagen) return;
   if (!texto) texto = "Te envío una foto.";
+  $("#chips").hidden = true;
   if (llamada) { burbuja("cli", texto); llamada.localParticipant.sendText(texto, { topic: "lk.chat" }).catch(() => {}); return; }
   if (enCurso) enCurso.abort();
   callar();
-  $("#chips").hidden = true;
   burbuja("cli", texto, imagen ? { img: imagen.url } : null);
   turnos.push({ role: "user", content: imagen ? `[El cliente adjunta una foto] ${texto}` : texto });
 
   const b = burbuja("tec"); puntos(b); estado("pensando");
   const ctl = new AbortController(); enCurso = ctl;
   let dichoHasta = 0, mostrado = "", yaSenalado = false;
-  conversacionIniciada = true; actualizarMini();
+  conversacionIniciada = true;
   const trocear = (final) => {
     const v = mostrado;
     let corte = -1;
@@ -903,7 +978,7 @@ async function enviar(texto, { porVoz = false } = {}) {
     turnos.push({ role: "assistant", content: respuesta.replace(/<aviso>[\s\S]*?<\/aviso>/, "<aviso>(registrado)</aviso>") });
     const f = etiqueta(respuesta, "ficha"); if (f) pintarFicha(f);
     const a = etiqueta(respuesta, "aviso"); if (a && !avisoHecho) registrarAviso({ ...a, origen: "técnico virtual" });
-    if (consola.dataset.estado === "pensando") estado("reposo");
+    if (conv.dataset.estado === "pensando") estado("reposo");
   } catch (e) {
     if (e?.code === "cancelled") return;
     turnos.pop();
@@ -911,92 +986,106 @@ async function enviar(texto, { porVoz = false } = {}) {
     const sinIA = ["sin_cerebro", "not_granted", "sampling_disabled", "not_declared", "capability_disabled"].includes(e?.code);
     if (sinIA) sinCerebro = true;
     b.textContent = e?.code === "rate_limited" ? "Ahora mismo tengo muchas consultas. Dame un minuto y vuelve a intentarlo, o llámanos al " + N.telefono + "."
-      : sinIA ? `Ahora mismo no puedo atenderte por aquí. Llámanos al ${N.telefono} o déjanos tu teléfono abajo y te llamamos.`
+      : sinIA ? `Ahora mismo no puedo atenderte por aquí. Llámanos al ${N.telefono} o déjanos tu teléfono y te llamamos.`
       : "Se me ha cortado la conexión. ¿Me lo repites?";
   } finally { if (enCurso === ctl) enCurso = null; }
 }
 
-/* El técnico señala en la página lo que está explicando */
-let conversacionIniciada = false;
+/* Andrés enseña algo: en el móvil, como tarjeta dentro de la conversación (la página no se
+   mueve sola, que marea); en el ordenador, desplazando la página que se ve al lado. */
 const sinTildes = t => String(t || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 function destino(d) {
   const [tipo, valor = ""] = sinTildes(d).trim().split(":").map(x => x.trim());
-  if (tipo === "precios") return $(".tarifa");
-  if (tipo === "garantia") return $(".lista-ok");
-  if (tipo === "como") return $(".pasos");
-  if (tipo === "marcas") return $("#marcasLista");
-  if (tipo === "contacto" || tipo === "llamada" || tipo === "formulario") return $("#formLlamadaCaja");
-  if (tipo === "zona" || tipo === "plazo") { const det = $(tipo === "zona" ? "#faqZona" : "#faqPlazo")?.closest("details"); if (det) det.open = true; return det; }
-  if (tipo === "codigos" || tipo === "codigo") {
-    const v = valor.toUpperCase();
-    return (v && $$(".pantalla").find(x => x.querySelector(".lcd").textContent.trim().toUpperCase() === v)) || $("#pantallas");
-  }
-  if (tipo === "aparato" || tipo === "aparatos") {
-    return (valor && $$(".aparato").find(x => sinTildes(x.querySelector("h3").textContent).includes(valor.slice(0, 5)))) || $("#listaAparatos");
-  }
+  if (tipo === "precios") return { el: $(".tarifa"), titulo: "Precio de la visita", texto: `${N.visita.precio}: ${N.visita.detalle}. Antes de reparar, presupuesto cerrado.` };
+  if (tipo === "garantia") return { el: $(".lista-ok"), titulo: "Garantía", texto: `${N.garantia}. Pago al terminar: ${N.pago}.` };
+  if (tipo === "como") return { el: $(".pasos"), titulo: "Cómo trabajamos", texto: "Te llamamos para confirmar la hora, el técnico revisa el aparato y te da un presupuesto cerrado antes de reparar." };
+  if (tipo === "marcas") return { el: $("#marcasLista"), titulo: "Marcas", texto: "Trabajamos con todas las marcas, entre otras " + N.marcas.slice(0, 12).join(", ") + "." };
+  if (tipo === "contacto" || tipo === "llamada" || tipo === "formulario") return { solicitud: true };
+  if (tipo === "zona") return { el: $("#zonaCaja"), titulo: "Dónde vamos", texto: N.zona + "." };
+  if (tipo === "plazo") { const det = $("#faqPlazo")?.closest("details"); if (det) det.open = true; return { el: det, titulo: "Cuándo vamos", texto: N.plazo.charAt(0).toUpperCase() + N.plazo.slice(1) + ". Te llamamos para confirmar la hora." }; }
+  if (tipo === "codigos" || tipo === "codigo") return { el: null, titulo: valor ? "Código " + valor.toUpperCase() : "Códigos de error", texto: "El técnico lo confirma con el aparato delante y lleva la pieza que suele fallar." };
+  if (tipo === "aparato" || tipo === "aparatos") return { el: $("#listaAparatos"), titulo: "Lo reparamos", texto: "Reparamos " + lista(N.aparatos) + "." };
   return null;
 }
 function senalar(d) {
-  const el = destino(d); if (!el) return;
-  el.scrollIntoView({ behavior: reducir ? "auto" : "smooth", block: "center" });
-  el.classList.remove("senalado"); void el.offsetWidth; el.classList.add("senalado");
-  el.querySelector(":scope > .senal-etiqueta")?.remove();
+  const x = destino(d); if (!x) return;
+  if (x.solicitud) { $("#solicitud").open = true; return; }
+  if (esMovil() || !x.el) {
+    const t = document.createElement("div");
+    t.className = "tarjeta-info";
+    t.innerHTML = `<small></small><p></p>`;
+    t.querySelector("small").textContent = x.titulo; t.querySelector("p").textContent = x.texto;
+    if (x.el) {
+      const ver = document.createElement("button"); ver.type = "button"; ver.textContent = "Ver en la web";
+      ver.addEventListener("click", () => { minimizar(); setTimeout(() => x.el.scrollIntoView({ behavior: reducir ? "auto" : "smooth", block: "center" }), 80); });
+      t.append(ver);
+    }
+    chat.append(t); bajar(); return;
+  }
+  x.el.scrollIntoView({ behavior: reducir ? "auto" : "smooth", block: "center" });
+  x.el.style.position ||= "relative";
+  x.el.classList.remove("senalado"); void x.el.offsetWidth; x.el.classList.add("senalado");
+  x.el.querySelector(":scope > .senal-etiqueta")?.remove();
   const et = document.createElement("span"); et.className = "senal-etiqueta"; et.textContent = N.tecnico + " te lo señala";
-  el.append(et);
-  setTimeout(() => { et.remove(); el.classList.remove("senalado"); }, 3800);
+  x.el.append(et);
+  setTimeout(() => { et.remove(); x.el.classList.remove("senalado"); }, 3800);
 }
-let consolaVisible = true;
-function actualizarMini() {
-  const ver = conversacionIniciada && !consolaVisible;
-  mini.classList.toggle("visible", ver); mini.setAttribute("aria-hidden", String(!ver));
-  $$("#mini button").forEach(x => x.tabIndex = ver ? 0 : -1);
-  if (ver) { barra.classList.remove("visible"); barra.setAttribute("aria-hidden", "true"); }
-  return ver;
-}
-$("#miniMic").addEventListener("click", () => { if (LK_TOKEN) return llamada ? colgar() : llamar(); escuchando ? pararEscucha() : empezarEscucha(); });
-$("#miniVolver").addEventListener("click", () => consola.scrollIntoView({ behavior: reducir ? "auto" : "smooth", block: "start" }));
 
 /* ------------------------------------------------------------------
-   4. Parte de trabajo y avisos
+   4. Tu solicitud (se rellena sola mientras hablan) y avisos
 ------------------------------------------------------------------ */
-const parte = $("#parte");
 const FASES = ["entendiendo", "orientando", "proponiendo", "datos", "registrado"];
-let fichaActual = {}, avisoHecho = false;
-parte.querySelector("#parteNum").textContent = "Nº " + String(Date.now()).slice(-5);
+const VISIBLES = ["aparato", "averia", "nombre", "telefono", "direccion", "municipio", "franja"];
+const NOMBRES = { aparato: "Aparato", marca: "Marca", averia: "Avería", nombre: "Nombre", telefono: "Teléfono", direccion: "Dirección", municipio: "Pueblo o barrio", franja: "Cuándo" };
+let fichaActual = {}, avisoHecho = false, ultimoCampo = "";
+const numAviso = String(Date.now()).slice(-5);
 function pintarFicha(f, alFormulario = true) {
   fichaActual = { ...fichaActual, ...Object.fromEntries(Object.entries(f).filter(([, v]) => v)) };
   const F = fichaActual;
   if (alFormulario) { ponerCampo("aparato", F.aparato); ponerCampo("marca", F.marca); ponerCampo("modelo", F.modelo); ponerCampo("averia", F.sintoma); ponerCampo("codigo", F.codigo); ponerCampo("nombre", F.nombre); ponerCampo("telefono", F.telefono); ponerCampo("franja", F.franja); }
-  const valores = {
-    aparato: [F.aparato, F.marca, F.modelo].filter(Boolean).join(" · "),
-    sintoma: F.sintoma || "", codigo: F.codigo || "", diagnostico: F.diagnostico || "",
-    cliente: [F.nombre, F.telefono, F.direccion].filter(Boolean).join(" · "), franja: F.franja || ""
-  };
-  if (!Object.values(valores).some(Boolean)) return;
-  parte.hidden = false;
-  for (const [k, v] of Object.entries(valores)) {
-    const dd = parte.querySelector(`[data-f="${k}"]`);
-    if (dd.textContent !== v) { dd.textContent = v; dd.classList.remove("nuevo"); void dd.offsetWidth; dd.classList.add("nuevo"); }
-  }
-  const n = Math.max(0, FASES.indexOf(avisoHecho ? "registrado" : F.fase)) + 1;
-  $$("#fases span").forEach((s, i) => s.classList.toggle("hecha", i < n));
+  if (F.diagnostico) { $("#solDiag").hidden = false; $("#solDiag").textContent = "Qué puede ser: " + F.diagnostico; }
+  faseModelo = Math.max(faseModelo, FASES.indexOf(avisoHecho ? "registrado" : F.fase) + 1);
+  resumirSolicitud();
+}
+let faseModelo = 0;
+function resumirSolicitud() {
+  const d = datosFormulario();
+  // avance: lo que diga Andrés o lo que ya hay escrito en la solicitud
+  const porDatos = avisoHecho ? 5 : (d.telefono || d.nombre || d.direccion) ? 4 : fichaActual.diagnostico ? 2 : (d.aparato || d.averia) ? 1 : 0;
+  const n = Math.max(faseModelo, porDatos);
+  $$("#fases span").forEach((x, i) => x.classList.toggle("hecha", i < n));
+  $$(".fases-txt span").forEach((x, i) => x.classList.toggle("actual", i === Math.max(0, Math.min(n, 5) - 1) && n > 0));
+  $("#miniEstado").dataset.sol = n ? `tu solicitud ${VISIBLES.filter(c => d[c]).length} de ${VISIBLES.length}` : "";
+  const llenos = VISIBLES.filter(c => d[c]).length;
+  $("#solCuenta").textContent = `${llenos} de ${VISIBLES.length}`;
+  if (ultimoCampo && d[ultimoCampo]) $("#solUltimo").textContent = `${NOMBRES[ultimoCampo]}: ${d[ultimoCampo]}`;
+  $$(".sol-campos .campo").forEach(c => c.classList.toggle("lleno", !!c.querySelector("input")?.value.trim()));
+  const listo = d.telefono && d.nombre && d.municipio && (d.averia || d.aparato);
+  $("#solEnviar").hidden = !listo || avisoHecho;
 }
 
 async function registrarAviso(aviso) {
-  avisoHecho = aviso.origen === "técnico virtual" ? true : avisoHecho;
+  avisoHecho = aviso.origen === "técnico virtual" || aviso.origen === "cliente" ? true : avisoHecho;
   const registro = { ...aviso, ficha: fichaActual, creado: new Date().toISOString(), pagina: location.href.slice(0, 200) };
   let guardado = false;
   try { const db = await pDb; if (db) { await db.collection("avisos").add(registro); guardado = true; } } catch {}
   if (SERVIDOR) { try { const r = await fetch(SERVIDOR + "/aviso", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(registro) }); guardado = guardado || r.ok; } catch {} }
-  if (aviso.origen === "técnico virtual") {
-    parte.classList.add("registrado"); pintarFicha({ fase: "registrado" });
+  if (aviso.origen !== "formulario") {
+    pintarFicha({ fase: "registrado" }); $("#solicitud").open = false; resumirSolicitud();
     const resumen = [aviso.aparato, aviso.marca, aviso.averia].filter(Boolean).join(" · ");
-    const wa = `Hola, soy ${aviso.nombre || ""}. Acabo de pedir ${aviso.tipo === "venta" ? "información para comprar un aparato nuevo" : "una visita"} con ${N.tecnico} en la web: ${resumen}. ${aviso.direccion || aviso.municipio || ""} ${aviso.franja ? "· " + aviso.franja : ""}`.replace(/\s+/g, " ").trim();
+    const wa = `Hola, soy ${aviso.nombre || ""}. Acabo de pedir ${aviso.tipo === "venta" ? "información para comprar un aparato nuevo" : "una visita"} con ${N.tecnico} en la web (nº ${numAviso}): ${resumen}. ${aviso.direccion || aviso.municipio || ""} ${aviso.franja ? "· " + aviso.franja : ""}`.replace(/\s+/g, " ").trim();
     const t = document.createElement("div");
-    t.className = "tarjeta-aviso";
-    t.innerHTML = `<h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>${guardado ? "Aviso registrado" : "Aviso preparado"}</h4>
-      <p>${aviso.tipo === "llamada" ? "Te llamamos en horario de atención." : aviso.tipo === "venta" ? "Te llamamos con opciones y precio del aparato nuevo." : "Te llamaremos para confirmar la hora exacta de la visita."}${guardado ? "" : " Para asegurarte, mándanoslo también por WhatsApp."}</p>
-      <a class="boton" target="_blank" rel="noopener" href="https://wa.me/${N.whatsapp}?text=${encodeURIComponent(wa)}">Enviar también por WhatsApp</a>`;
+    t.className = "tarjeta-aviso"; t.setAttribute("role", "status");
+    const titulo = !guardado ? "Solicitud preparada" : aviso.tipo === "venta" ? "¡Listo! Te llamamos con opciones" : aviso.tipo === "llamada" ? "¡Listo! Te llamamos" : "¡Listo! Visita pedida";
+    const pasos = aviso.tipo === "venta" ? ["Te llamamos con opciones y precio del aparato nuevo.", "Te lo llevamos, lo instalamos y nos llevamos el viejo."]
+      : aviso.tipo === "llamada" ? ["Te llamamos en horario de atención (" + N.horario + ")."]
+      : ["Te llamamos para confirmar la hora exacta.", "El técnico revisa el aparato y te da un presupuesto cerrado.", "Si reparamos, la visita se descuenta de la factura."];
+    t.innerHTML = `<h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></h4><p class="final-cifra"></p><p class="final-txt"></p><ol></ol><a class="boton boton-principal" target="_blank" rel="noopener">Guardarlo en WhatsApp</a>`;
+    t.querySelector("h4").append(titulo);
+    t.querySelector(".final-cifra").textContent = "Nº de aviso " + numAviso;
+    t.querySelector(".final-txt").textContent = resumen + (guardado ? "" : ". No hemos podido enviarla: mándanosla por WhatsApp para asegurarte.");
+    t.querySelector("ol").innerHTML = pasos.map(p => `<li>${p}</li>`).join("");
+    t.querySelector("a").href = `https://wa.me/${N.whatsapp}?text=${encodeURIComponent(wa)}`;
     chat.append(t); bajar();
   }
   return guardado;
@@ -1008,20 +1097,31 @@ async function registrarAviso(aviso) {
 $("#formChat").addEventListener("submit", e => { e.preventDefault(); const v = txt.value; txt.value = ""; enviar(v); });
 $$("#chips .chip").forEach(c => c.addEventListener("click", () => enviar(c.textContent)));
 
-function irConsola() {
-  const r = consola.getBoundingClientRect();
-  if (r.top < 70 || r.bottom > innerHeight) consola.scrollIntoView({ behavior: reducir ? "auto" : "smooth", block: "start" });
-}
 $$("[data-hablar]").forEach(b => b.addEventListener("click", () => {
-  irConsola();
-  if (b.hasAttribute("data-voz") && LK_TOKEN) { if (!llamada) llamar(); }
-  else if (b.hasAttribute("data-voz") && (dictado || RecWeb) && !btnMic.hidden && !escuchando && !sinCerebro) empezarEscucha();
-  else txt.focus({ preventScroll: true });
+  const voz = b.hasAttribute("data-voz");
+  abrirConversacion({ modo: voz ? "voz" : "texto" });
+  if (voz) empezarVoz(); else mostrarTeclado(true);
 }));
 document.addEventListener("click", e => {
   const p = e.target.closest("[data-preguntar]"); if (!p) return;
-  irConsola(); enviar(p.dataset.preguntar);
+  abrirConversacion({ modo: "texto" }); enviar(p.dataset.preguntar);
 });
+
+// silenciar el micrófono (solo durante la llamada en directo)
+$("#btnSilenciar").addEventListener("click", async () => {
+  if (!llamada) { $("#archivo").click(); return; }
+  const silenciado = $("#btnSilenciar").getAttribute("aria-pressed") === "true";
+  await llamada.localParticipant.setMicrophoneEnabled(silenciado).catch(() => {});
+  $("#btnSilenciar").setAttribute("aria-pressed", String(!silenciado));
+  $("#silTxt").textContent = silenciado ? "Silenciar" : "Activar micro";
+});
+function modoMandos() {
+  const enLlamada = !!llamada;
+  $("#silTxt").textContent = enLlamada ? "Silenciar" : "Foto";
+  $("#btnSilenciar").setAttribute("aria-pressed", "false");
+  $("#micTxt").textContent = enLlamada ? "Colgar" : "Hablar";
+  btnMic.setAttribute("aria-label", enLlamada ? "Colgar" : "Hablar");
+}
 
 // fotos
 let fotoPendiente = null;
@@ -1030,9 +1130,9 @@ $("#archivo").addEventListener("change", async e => {
   const f = e.target.files?.[0]; e.target.value = ""; if (!f || !f.type.startsWith("image/")) return;
   const reducida = await reducirFoto(f);
   fotoPendiente = { blob: reducida.blob, url: URL.createObjectURL(reducida.blob), dataUrl: reducida.dataUrl };
-  $("#adjuntoImg").src = fotoPendiente.url; $("#adjunto").hidden = false; txt.placeholder = "Añade un comentario o pulsa enviar"; txt.focus();
+  $("#adjuntoImg").src = fotoPendiente.url; $("#adjunto").hidden = false; mostrarTeclado(true); txt.placeholder = "Añade un comentario o pulsa enviar";
 });
-function quitarFoto() { fotoPendiente = null; $("#adjunto").hidden = true; txt.placeholder = "Escribe o pulsa el micrófono…"; }
+function quitarFoto() { fotoPendiente = null; $("#adjunto").hidden = true; txt.placeholder = "Escribe aquí…"; }
 $("#quitarFoto").addEventListener("click", quitarFoto);
 async function reducirFoto(file) {
   try {
@@ -1045,17 +1145,19 @@ async function reducirFoto(file) {
   } catch { return { blob: file, dataUrl: null }; }
 }
 
-// formulario de solicitud (lo rellena el cliente o el técnico mientras hablan)
+// solicitud (la rellena Andrés mientras hablan; el cliente puede corregir cualquier dato)
 const CAMPOS_FORM = ["aparato", "marca", "modelo", "averia", "codigo", "nombre", "telefono", "direccion", "municipio", "franja"];
-$("#lista-aparatos").innerHTML = ["Lavadora", "Lavadora-secadora", "Secadora", "Lavavajillas", "Frigorífico", "Congelador", "Horno", "Vitrocerámica", "Placa de inducción", "Campana", "Microondas", "Termo eléctrico"].map(a => `<option value="${a}">`).join("");
+$("#lista-aparatos").innerHTML = ["Lavadora", "Lavadora-secadora", "Secadora", "Lavavajillas", "Frigorífico", "Congelador", "Horno", "Vitrocerámica", "Placa de inducción", "Campana", "Microondas", "Termo eléctrico", "Aire acondicionado", "Caldera"].map(a => `<option value="${a}">`).join("");
 $("#lista-marcas").innerHTML = N.marcas.map(m => `<option value="${m}">`).join("");
 function datosFormulario() { return Object.fromEntries(CAMPOS_FORM.map(c => [c, ($("#f-" + c)?.value || "").trim()])); }
 function telefonoValido(t) { return /^(\+?34)?[6789]\d{8}$/.test(String(t).replace(/[^\d+]/g, "")); }
 function ponerCampo(campo, valor, resaltar) {
   const el = $("#f-" + campo); if (!el || !valor || el.value === valor) return;
   el.value = valor;
+  if (VISIBLES.includes(campo)) ultimoCampo = campo;
   if (resaltar) { const c = el.closest(".campo"); c?.classList.remove("relleno"); void c?.offsetWidth; c?.classList.add("relleno"); }
 }
+$$(".sol-campos input").forEach(i => i.addEventListener("input", () => { ultimoCampo = i.id.slice(2); resumirSolicitud(); }));
 function rellenarCampo(campo, valor) {
   if (!CAMPOS_FORM.includes(campo)) return "error: campo desconocido";
   valor = String(valor || "").trim().slice(0, 200);
@@ -1065,21 +1167,31 @@ function rellenarCampo(campo, valor) {
   return "ok: escrito en pantalla";
 }
 async function enviarSolicitud({ tipo = "visita", urgente = false, notas = "", origen = "técnico virtual" } = {}) {
+  if (avisoHecho && origen !== "formulario") return "ok: la solicitud ya estaba enviada";
   const d = datosFormulario();
-  const faltan = [["telefono", "teléfono"], ["nombre", "nombre"], ["municipio", "municipio"], [tipo === "venta" ? "aparato" : "averia", tipo === "venta" ? "aparato que busca" : "avería"]].filter(([c]) => origen === "técnico virtual" ? !d[c] : c === "telefono" && !d[c]).map(([, t]) => t);
+  const faltan = [["telefono", "teléfono"], ["nombre", "nombre"], ["municipio", "municipio"], [tipo === "venta" ? "aparato" : "averia", tipo === "venta" ? "aparato que busca" : "avería"]].filter(([c]) => origen === "formulario" ? c === "telefono" && !d[c] : !d[c]).map(([, t]) => t);
   if (faltan.length) return "error: falta " + faltan.join(", ");
   if (!telefonoValido(d.telefono)) return "error: el teléfono no parece un teléfono español de 9 cifras";
   const guardado = await registrarAviso({ ...d, tipo, urgente, notas, origen });
-  $("#formLlamadaCaja").classList.add("enviado");
   return guardado ? "ok: solicitud registrada" : "ok: preparada, pero sin conexión con el servidor; que la mande también por WhatsApp";
 }
+// el cliente confirma desde la pantalla
 $("#formSolicitud").addEventListener("submit", async e => {
   e.preventDefault();
+  const tel = $("#f-telefono");
+  if (!telefonoValido(tel.value)) { tel.setCustomValidity("Escribe un teléfono español de 9 cifras"); tel.reportValidity(); tel.setCustomValidity(""); return; }
+  const r = await enviarSolicitud({ tipo: "visita", origen: "cliente" });
+  if (llamada && r.startsWith("ok")) llamada.localParticipant.sendText("He confirmado mis datos y he enviado la solicitud desde la pantalla.", { topic: "lk.chat" }).catch(() => {});
+});
+// formulario de "que me llamen" al final de la página
+$("#formRapido").addEventListener("submit", async e => {
+  e.preventDefault();
   if ($("#web").value) return;
-  const inp = $("#f-telefono");
+  const inp = $("#r-telefono");
   if (!telefonoValido(inp.value)) { inp.setCustomValidity("Escribe un teléfono español de 9 cifras"); inp.reportValidity(); inp.setCustomValidity(""); return; }
-  const d = datosFormulario();
-  await enviarSolicitud({ tipo: d.averia || d.aparato ? "visita" : "llamada", origen: "formulario" });
+  ponerCampo("telefono", inp.value.trim()); ponerCampo("averia", $("#r-averia").value.trim());
+  await enviarSolicitud({ tipo: $("#r-averia").value.trim() ? "visita" : "llamada", origen: "formulario" });
+  $("#formLlamadaCaja").classList.add("enviado");
 });
 
 // panel del dueño (solo vista previa, solo el propietario)
@@ -1096,9 +1208,9 @@ pUser.then(async u => {
 
 /* ------------------------------------------------------------------
    7. Llamada de voz en directo (LiveKit): conversación continua, el
-      técnico puede interrumpirse, señala la página y rellena el formulario.
+      técnico puede interrumpirse, enseña información y rellena la solicitud.
 ------------------------------------------------------------------ */
-let llamada = null, audioAgente = [];
+let llamada = null, audioAgente = [], bloqueoPantalla = null, cronoInt = null;
 const ESTADO_AGENTE = { initializing: "pensando", listening: "escuchando", thinking: "pensando", speaking: "hablando", idle: "reposo" };
 function cargarLiveKit() {
   if (window.LivekitClient) return Promise.resolve(window.LivekitClient);
@@ -1108,19 +1220,25 @@ function cargarLiveKit() {
     sc.onload = () => ok(window.LivekitClient); sc.onerror = ko; document.head.append(sc);
   });
 }
+// que la pantalla no se apague mientras hablan
+async function mantenerPantalla() { try { bloqueoPantalla = await navigator.wakeLock?.request("screen"); } catch {} }
+document.addEventListener("visibilitychange", () => { if (llamada && document.visibilityState === "visible") mantenerPantalla(); });
+function empezarCrono() {
+  const t0 = Date.now(); clearInterval(cronoInt);
+  cronoInt = setInterval(() => { const s = Math.floor((Date.now() - t0) / 1000); $("#crono").textContent = "· " + String(Math.floor(s / 60)).padStart(2, "0") + ":" + String(s % 60).padStart(2, "0"); }, 1000);
+}
 async function llamar() {
   if (llamada) return;
-  callar(); conversacionIniciada = true; actualizarMini(); $("#chips").hidden = true;
-  if (!turnos.length) chat.querySelector(".burbuja.tec")?.remove();
-  estado("pensando"); consola.dataset.llamada = mini.dataset.llamada = "conectando";
-  const nota = burbuja("sistema", "Conectando con " + N.tecnico + "…");
+  callar(); conversacionIniciada = true; $("#chips").hidden = true;
+  estado("pensando"); conv.dataset.llamada = mini.dataset.llamada = "conectando"; estadoTxt.textContent = "Conectando…";
+  mantenerPantalla();
   try {
     const LK = await cargarLiveKit();
     const res = await fetch(LK_TOKEN, { method: "POST" });
     if (!res.ok) throw new Error("pase");
     const { url, token } = await res.json();
     const sala = new LK.Room({ adaptiveStream: true, dynacast: true });
-    llamada = sala;
+    llamada = sala; modoMandos();
     const segmentos = new Map();
     sala.registerTextStreamHandler("lk.transcription", async (lector, quien) => {
       const at = lector.info.attributes || {};
@@ -1129,7 +1247,7 @@ async function llamar() {
       let b = segmentos.get(id);
       if (!b) { b = burbuja(esCliente ? "cli" : "tec"); segmentos.set(id, b); }
       let texto = "";
-      for await (const trozo of lector) { texto += trozo; b.textContent = texto; textoMini(texto, esCliente); bajar(); }
+      for await (const trozo of lector) { texto += trozo; b.textContent = texto; textoMini(texto); bajar(); }
     });
     sala.registerRpcMethod("senalar", async d => { senalar(JSON.parse(d.payload).destino); return "ok"; });
     sala.registerRpcMethod("rellenar", async d => { const { campo, valor } = JSON.parse(d.payload); return rellenarCampo(campo, valor); });
@@ -1138,47 +1256,65 @@ async function llamar() {
       if (pista.kind !== "audio") return;
       const el = pista.attach(); el.muted = !vozActiva; audioAgente.push(el); document.body.append(el);
     });
+    sala.on(LK.RoomEvent.AudioPlaybackStatusChanged, () => { if (!sala.canPlaybackAudio) hoja("#hojaAudio"); });
     sala.on(LK.RoomEvent.ParticipantAttributesChanged, (cambios) => {
       const st = cambios["lk.agent.state"]; if (st) estado(ESTADO_AGENTE[st] || "reposo");
     });
+    sala.on(LK.RoomEvent.Reconnecting, () => { estadoTxt.textContent = "Reconectando…"; });
+    sala.on(LK.RoomEvent.Reconnected, () => estado(conv.dataset.estado || "reposo"));
     sala.on(LK.RoomEvent.Disconnected, finLlamada);
     await sala.connect(url, token);
     // Micrófono con todos los filtros del propio móvil: eco, ruido, volumen automático y,
     // donde el navegador lo admite, aislamiento de voz (deja solo la voz de quien habla)
     await sala.localParticipant.setMicrophoneEnabled(true, { echoCancellation: true, noiseSuppression: true, autoGainControl: true, voiceIsolation: true, channelCount: 1 });
-    consola.dataset.llamada = mini.dataset.llamada = "activa";
-    nota.textContent = "Llamada en curso: habla con normalidad, puedes interrumpirle. Pulsa el botón para colgar.";
-    btnMic.setAttribute("aria-label", "Colgar");
+    await sala.startAudio().catch(() => {});
+    if (!sala.canPlaybackAudio) hoja("#hojaAudio");
+    conv.dataset.llamada = mini.dataset.llamada = "activa"; empezarCrono();
+    estado("escuchando");
   } catch (e) {
-    const sinMicro = /permission|notallowed/i.test(String(e?.name || e?.message || ""));
-    llamada?.disconnect(); llamada = null; consola.dataset.llamada = mini.dataset.llamada = ""; estado("reposo");
-    nota.textContent = sinMicro ? "Necesito permiso para usar el micrófono. Puedes escribirme abajo." : "No he podido conectar la llamada. Escríbeme aquí o llámanos al " + N.telefono + ".";
+    const permiso = /permission|notallowed/i.test(String(e?.name || e?.message || ""));
+    llamada?.disconnect(); llamada = null; conv.dataset.llamada = mini.dataset.llamada = ""; estado("reposo"); modoMandos();
+    try { bloqueoPantalla?.release(); } catch {}
+    if (permiso) sinMicro();
+    else burbuja("sistema", "No he podido conectar la llamada. Escríbeme aquí o llámanos al " + N.telefono + ".");
+    mostrarTeclado(true);
   }
 }
+// Precarga: la librería de la llamada se descarga cuando el navegador está libre o en cuanto
+// el dedo toca el botón, para que no haya segundos de silencio al pulsar "Hablar".
+if (LK_TOKEN) {
+  const precargar = () => cargarLiveKit().catch(() => {});
+  (window.requestIdleCallback || (f => setTimeout(f, 2500)))(precargar);
+  $$("[data-voz]").forEach(b => b.addEventListener("pointerdown", precargar, { once: true, passive: true }));
+}
+// En el iPhone el sonido solo se puede activar dentro de un toque: lo desbloqueamos en ese mismo toque
+let audioDesbloqueado = false;
+function desbloquearAudio() {
+  if (audioDesbloqueado) return; audioDesbloqueado = true;
+  try { const C = window.AudioContext || window.webkitAudioContext; const ac = new C(); ac.resume(); const o = ac.createOscillator(), g = ac.createGain(); g.gain.value = 0; o.connect(g).connect(ac.destination); o.start(); o.stop(ac.currentTime + 0.05); } catch {}
+}
+$$("[data-voz], #btnMic, #hmEmpezar").forEach(b => b.addEventListener("click", desbloquearAudio));
+$("#haActivar").addEventListener("click", async () => { await llamada?.startAudio().catch(() => {}); hoja(null); });
 function colgar() { llamada?.disconnect(); }
 function finLlamada() {
   if (!llamada) return;
   audioAgente.forEach(a => a.remove()); audioAgente = []; llamada = null;
-  consola.dataset.llamada = mini.dataset.llamada = ""; estado("reposo"); btnMic.setAttribute("aria-label", "Hablar con el técnico");
+  clearInterval(cronoInt); $("#crono").textContent = "";
+  try { bloqueoPantalla?.release(); } catch {} bloqueoPantalla = null;
+  conv.dataset.llamada = mini.dataset.llamada = ""; estado("reposo"); modoMandos();
   burbuja("sistema", "Llamada terminada.");
+  if (!avisoHecho && datosFormulario().telefono) burbuja("sistema", "Tus datos siguen en «Tu solicitud»: si está todo bien, pulsa «pedir la visita».");
 }
 
 /* ------------------------------------------------------------------
-   6. Detalles: saludo, cabecera, barra móvil, apariciones
+   6. Detalles: saludo y cabecera
 ------------------------------------------------------------------ */
 burbuja("tec", saludo(N));
-function avisoSistema(t) { burbuja("sistema", t); }
-
 const cab = $("#cab");
+// la barra de abajo aparece cuando el botón grande de Andrés sale de la pantalla
+if ("IntersectionObserver" in window) new IntersectionObserver(([e]) => document.body.classList.toggle("barra-visible", !e.isIntersecting)).observe($(".tarjeta-andres .boton-hablar"));
+else document.body.classList.add("barra-visible");
 addEventListener("scroll", () => cab.classList.toggle("con-borde", scrollY > 8), { passive: true });
-new IntersectionObserver(([e]) => {
-  consolaVisible = e.isIntersecting;
-  const ver = !e.isIntersecting && e.boundingClientRect.top < 0 && !actualizarMini();
-  barra.classList.toggle("visible", ver); barra.setAttribute("aria-hidden", !ver);
-  $$("#barraMovil [tabindex]").forEach(x => x.tabIndex = ver ? 0 : -1);
-}).observe($("#consola"));
-const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("visto"); io.unobserve(e.target); } }), { rootMargin: "0px 0px -8% 0px" });
-$$(".revela").forEach(el => io.observe(el));
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"LocalBusiness","name":"Reparo","description":"Servicio técnico independiente de reparación de electrodomésticos a domicilio en Granada y área metropolitana. Todas las marcas.","areaServed":"Granada","telephone":"+34958000000","priceRange":"€€","openingHours":["Mo-Fr 09:00-20:00","Sa 09:00-14:00"]}

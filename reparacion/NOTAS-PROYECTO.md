@@ -81,3 +81,16 @@ Voz del navegador 0,01 $ · **LiveKit+Deepgram+Claude+ElevenLabs (montado) 0,17-
 
 ## Cómo trabajar con Juan
 Soluciones, no excusas; verificar antes de decir que algo está hecho; pedir OK antes de publicar, desplegar, gastar dinero o enviar nada; tenerle al día con cifras; directo y sin tecnicismos.
+
+## Web rediseñada para móvil (22-11-2026)
+- Hecha con 7 agentes de diseño (flujo, voz, conversión, accesibilidad, confianza, rendimiento, estilo visual) y un 8.º revisor sobre capturas; informes en el scratchpad de la sesión (diseno/01…07).
+- Estilo «taller con cal y almagra»: fondo cal, almagra = acciones del cliente, cobalto = Andrés; letra mínima 14 px, cuerpo 18 px, botones de 48-76 px; modo oscuro; respeta «reducir movimiento».
+- Móvil, primera pantalla: aviso de urgencia con «Llámanos ya», titular, precio de la visita (39 €) y botón grande «Hablar con Andrés». Barra fija inferior (Hablar · Escribir · Llamar · WhatsApp) que aparece cuando el botón grande sale de pantalla.
+- Orden: portada → «¿Qué aparato se ha roto?» (toca y Andrés pregunta) → cómo funciona → precios → preguntas → «Que me llamen» → pie. Sin animaciones de aparición. Altura en móvil ~5.900 px (antes ~10.000).
+- Conversación: pantalla completa en el móvil (el gesto de «atrás» la minimiza sin colgar), panel lateral en ordenador. Pasos que se iluminan, «Tu solicitud · 3 de 7» que se rellena sola y se puede corregir, subtítulos grandes, un solo juego de mandos (Escribir · Hablar/Colgar · Foto/Silenciar).
+- Antes de pedir el micro, hoja que explica «pulsa Permitir»; si lo deniega, pasos para iPhone y Android y alternativas. Tarjeta final «¡Listo! Visita pedida» con nº de aviso y WhatsApp.
+- En el móvil, cuando Andrés «señala» algo, sale una tarjeta en la conversación (la página no se mueve sola, que marea). En ordenador desplaza la página.
+- Pastilla minimizada: «Andrés · tu solicitud 3 de 7» + Llamar + Seguir (o Colgar en llamada).
+- Llamada: precarga de LiveKit cuando el navegador está libre o al rozar el botón; audio desbloqueado en el mismo toque (iPhone); pantalla siempre encendida; «Reconectando…»; botón «Toca para oír a Andrés» si el móvil bloquea el sonido.
+- Ruido (calle, bar): micro con cancelación de eco, supresión de ruido, aislamiento de voz y volumen automático en el navegador + filtro BVC de LiveKit en el agente + interrupción solo con 2 palabras y 0,6 s.
+- Pendiente del informe de rendimiento: fuentes propias en vez de Google Fonts (1,55 s → ~0,9 s en 4G lento), sacar las instrucciones del técnico de cerebro.mjs para que no se descarguen, navegadores de Instagram/Facebook, pausa si entra una llamada. Probar en móviles reales antes de publicar.
