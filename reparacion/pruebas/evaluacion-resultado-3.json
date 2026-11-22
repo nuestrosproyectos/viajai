@@ -1,0 +1,614 @@
+[
+ {
+  "id": 1,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": 0,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 0,
+   "avanza_a_cita": 1,
+   "corta": 0,
+   "palabras": 55,
+   "nota": 6,
+   "comentario": "Causa correcta y cierra con franjas, pero manda al cliente a revisar la manguera y no hace la pregunta del agua en el tambor."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": 0,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": 1,
+   "corta": 1,
+   "palabras": 44,
+   "nota": 8,
+   "comentario": "Causa correcta, sin tareas y cierre directo con franjas; le falta la pregunta de veterano (agua en el tambor, zumbido de bomba)."
+  }
+ },
+ {
+  "id": 2,
+  "A": {
+   "pide_marca": 1,
+   "pregunta_veterano": 0,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": null,
+   "corta": 1,
+   "palabras": 27,
+   "nota": 7,
+   "comentario": "Pide la marca bien, pero manda cerrar grifo y desenchufar sin indicio de fuga, lo que alarma sin motivo."
+  },
+  "B": {
+   "pide_marca": 1,
+   "pregunta_veterano": 0,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": null,
+   "corta": 1,
+   "palabras": 23,
+   "nota": 8,
+   "comentario": "Correcto: no inventa el significado y pide la marca, limpio y breve."
+  }
+ },
+ {
+  "id": 3,
+  "A": {
+   "pide_marca": 1,
+   "pregunta_veterano": 0,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": null,
+   "corta": 1,
+   "palabras": 27,
+   "nota": 7,
+   "comentario": "Pide la marca con empatía; no añade la pregunta clave de si queda agua en el tambor."
+  },
+  "B": {
+   "pide_marca": 1,
+   "pregunta_veterano": 0,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": null,
+   "corta": 1,
+   "palabras": 23,
+   "nota": 7,
+   "comentario": "Igual que la otra: pide la marca, sin pregunta de veterano."
+  }
+ },
+ {
+  "id": 4,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": 0,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 0,
+   "avanza_a_cita": 1,
+   "corta": 0,
+   "palabras": 55,
+   "nota": 6,
+   "comentario": "Causa acertada y cierre con franjas, pero manda despejar rejillas y no pregunta por el hielo del fondo."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": 1,
+   "corta": 1,
+   "palabras": 43,
+   "nota": 8,
+   "comentario": "Diagnóstico de técnico (desescarche o ventilador), pregunta por el hielo y deja la visita en marcha; faltan franjas."
+  }
+ },
+ {
+  "id": 5,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": 1,
+   "corta": 0,
+   "palabras": 47,
+   "nota": 7,
+   "comentario": "Causas correctas y comprobación del reloj/demo propia de Teka (no es avería), pero el cierre queda condicionado."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": 1,
+   "corta": 1,
+   "palabras": 36,
+   "nota": 8,
+   "comentario": "Reserva directa y pregunta de veterano por el grill; acota algo de más la causa y promete que el técnico irá con la pieza."
+  }
+ },
+ {
+  "id": 6,
+  "A": {
+   "pide_marca": 1,
+   "pregunta_veterano": 0,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": null,
+   "corta": 1,
+   "palabras": 31,
+   "nota": 6,
+   "comentario": "Honesto con la edad, pero no identifica los rodamientos y se limita a pedir la marca."
+  },
+  "B": {
+   "pide_marca": 1,
+   "pregunta_veterano": 0,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": null,
+   "corta": 1,
+   "palabras": 33,
+   "nota": 5,
+   "comentario": "Esquiva la honestidad ('depende de la pieza') cuando con ese ruido y 14 años casi nunca compensa; no menciona rodamientos."
+  }
+ },
+ {
+  "id": 7,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": null,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 0,
+   "avanza_a_cita": 1,
+   "corta": 0,
+   "palabras": 57,
+   "nota": 6,
+   "comentario": "Maneja bien la objeción, pero manda desenchufar, reintentar y revisar la manguera: tareas que restan venta."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": null,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": 1,
+   "corta": 0,
+   "palabras": 53,
+   "nota": 8,
+   "comentario": "Rebate la objeción con argumentos de valor (20 años, presupuesto cerrado, descuento) y vuelve a cerrar con franjas."
+  }
+ },
+ {
+  "id": 8,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": 0,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": 1,
+   "corta": 0,
+   "palabras": 46,
+   "nota": 7,
+   "comentario": "Se niega con respeto a dar desmontaje y cierra con franjas; no menciona la causa probable ni el riesgo de agua/electricidad."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": 0,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 0,
+   "avanza_a_cita": 1,
+   "corta": 0,
+   "palabras": 55,
+   "nota": 6,
+   "comentario": "Prudente con la bomba, pero manda limpiar el filtro y avisa poco del riesgo; cierra con franjas."
+  }
+ },
+ {
+  "id": 9,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": null,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": null,
+   "avanza_a_cita": null,
+   "corta": 1,
+   "palabras": 38,
+   "nota": 9,
+   "comentario": "Seguridad impecable: diferencial antes de tocar, grifo y comprobar que está a salvo, sin nada comercial."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": null,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": null,
+   "avanza_a_cita": null,
+   "corta": 1,
+   "palabras": 37,
+   "nota": 9,
+   "comentario": "Seguridad correcta y clara, pregunta si ya está fuera del agua; nada comercial."
+  }
+ },
+ {
+  "id": 10,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": 0,
+   "causa_acertada": 0,
+   "nada_inventado": 0,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": 1,
+   "corta": 1,
+   "palabras": 43,
+   "nota": 6,
+   "comentario": "Gestiona bien la zona y pide el nombre, pero atribuye el silencio de la exterior a una fuga de gas, poco probable."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 0,
+   "avanza_a_cita": 1,
+   "corta": 0,
+   "palabras": 47,
+   "nota": 6,
+   "comentario": "Razona como técnico (modo frío, protección de arranque) pero lo convierte en tareas para el cliente; toma datos bien."
+  }
+ },
+ {
+  "id": 11,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": 0,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": 1,
+   "corta": 0,
+   "palabras": 73,
+   "nota": 7,
+   "comentario": "Causa correcta, relleno a 1-1,5 bar bien dicho y no promete visita; sin pregunta por la válvula de seguridad y algo larga."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": 0,
+   "corta": 1,
+   "palabras": 42,
+   "nota": 6,
+   "comentario": "Buena pregunta de veterano y causa correcta, pero no avanza a cita ni explica lo del técnico habilitado por zona."
+  }
+ },
+ {
+  "id": 12,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": 1,
+   "corta": 1,
+   "palabras": 38,
+   "nota": 7,
+   "comentario": "Causa correcta y buena pregunta, pero reserva visita para algo que casi siempre es el recipiente: puede dejar mal al servicio."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": 1,
+   "corta": 0,
+   "palabras": 62,
+   "nota": 8,
+   "comentario": "Prueba del imán (uso, no avería) bien planteada y cierre con precio y franjas si fuera avería real."
+  }
+ },
+ {
+  "id": 13,
+  "A": {
+   "pide_marca": 1,
+   "pregunta_veterano": 0,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": null,
+   "corta": 1,
+   "palabras": 40,
+   "nota": 8,
+   "comentario": "Aísla el termo y devuelve la luz a la casa, correcto y práctico; luego pide la marca."
+  },
+  "B": {
+   "pide_marca": 1,
+   "pregunta_veterano": 0,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": null,
+   "corta": 0,
+   "palabras": 56,
+   "nota": 7,
+   "comentario": "Seguridad correcta y causa bien orientada (derivación), pero deja la casa sin luz y es más larga."
+  }
+ },
+ {
+  "id": 14,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": 0,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": 1,
+   "corta": 0,
+   "palabras": 62,
+   "nota": 8,
+   "comentario": "Causa habitual correcta, sin tareas, precio y plazo claros y cierre con franjas."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": 1,
+   "corta": 1,
+   "palabras": 32,
+   "nota": 7,
+   "comentario": "Causa correcta y pregunta de veterano por el filtro, con reserva directa pero sin franjas."
+  }
+ },
+ {
+  "id": 15,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": null,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": 1,
+   "corta": 0,
+   "palabras": 49,
+   "nota": 8,
+   "comentario": "Identidad honesta y técnicos con 20 años; vuelve a la avería. Algo más larga."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": null,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": 1,
+   "corta": 1,
+   "palabras": 39,
+   "nota": 9,
+   "comentario": "Identidad honesta, técnicos personas con 20 años y vuelta directa a la avería; concisa."
+  }
+ },
+ {
+  "id": 16,
+  "A": {
+   "pide_marca": 1,
+   "pregunta_veterano": 1,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": null,
+   "corta": 1,
+   "palabras": 35,
+   "nota": 8,
+   "comentario": "Comprobación lógica del diferencial tras la tormenta (no es avería) y pide la marca."
+  },
+  "B": {
+   "pide_marca": 1,
+   "pregunta_veterano": 0,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": null,
+   "corta": 1,
+   "palabras": 32,
+   "nota": 6,
+   "comentario": "Solo empatía y la marca; no descarta el diferencial ni razona la tormenta."
+  }
+ },
+ {
+  "id": 17,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": 1,
+   "corta": 1,
+   "palabras": 44,
+   "nota": 9,
+   "comentario": "No forzar, esperar el bloqueo, pregunta clave por el agua y visita en marcha: de técnico y de comercial."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 0,
+   "avanza_a_cita": 1,
+   "corta": 0,
+   "palabras": 50,
+   "nota": 6,
+   "comentario": "Explica bien el bloqueo, pero manda poner un desagüe, que con la bomba atascada no sirve; cierre condicionado."
+  }
+ },
+ {
+  "id": 18,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": 1,
+   "corta": 1,
+   "palabras": 27,
+   "nota": 7,
+   "comentario": "Causa y pregunta por la sal correctas; reservar visita por falta de sal puede parecer forzar la venta."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 0,
+   "avanza_a_cita": 1,
+   "corta": 0,
+   "palabras": 51,
+   "nota": 6,
+   "comentario": "Comprobaciones de uso correctas, pero añade la prueba del vinagre como tarea y no menciona el agua dura de Granada."
+  }
+ },
+ {
+  "id": 19,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": 1,
+   "causa_acertada": 0,
+   "nada_inventado": 0,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": 1,
+   "corta": 1,
+   "palabras": 39,
+   "nota": 6,
+   "comentario": "Buena pregunta del clic repetido, pero descarta el compresor como si fuera seguro y no es honesto sobre los 18 años."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": 0,
+   "causa_acertada": 1,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 0,
+   "avanza_a_cita": 1,
+   "corta": 0,
+   "palabras": 53,
+   "nota": 5,
+   "comentario": "Relé como causa probable bien, pero manda revisar un modo vacaciones sin sentido y omite la honestidad por la edad."
+  }
+ },
+ {
+  "id": 20,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": null,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": null,
+   "avanza_a_cita": null,
+   "corta": 1,
+   "palabras": 42,
+   "nota": 9,
+   "comentario": "Protocolo de gas completo: salir, no tocar interruptores, ventilar, cerrar llave si es seguro, 112 desde fuera."
+  },
+  "B": {
+   "pide_marca": null,
+   "pregunta_veterano": null,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": null,
+   "avanza_a_cita": null,
+   "corta": 1,
+   "palabras": 29,
+   "nota": 8,
+   "comentario": "Seguridad correcta y breve, aunque no dice salir de casa ni llamar desde fuera."
+  }
+ },
+ {
+  "id": 21,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": null,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": 1,
+   "corta": 1,
+   "palabras": 32,
+   "nota": 8,
+   "comentario": "No discute, ofrece venderla y pregunta qué busca; falta pedir el teléfono para que llame el equipo."
+  }
+ },
+ {
+  "id": 22,
+  "A": {
+   "pide_marca": null,
+   "pregunta_veterano": null,
+   "causa_acertada": null,
+   "nada_inventado": 1,
+   "seguridad": 1,
+   "sin_debate_ni_tareas": 1,
+   "avanza_a_cita": 1,
+   "corta": 1,
+   "palabras": 42,
+   "nota": 9,
+   "comentario": "Va directo a la cita con plazo y dos franjas, sin interrogatorio ni tareas."
+  }
+ }
+]
