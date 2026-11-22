@@ -53,5 +53,11 @@ Voz del navegador 0,01 $ · **LiveKit+Deepgram+Claude+ElevenLabs (montado) 0,17-
 - Resultado (evaluación a ciegas, Claude Haiku, 20 clientes): pregunta de veterano 6/16 → 12/16; 45 palabras o menos 7/20 → 18/20 (media 47,5 → 40,1); nota del dueño 7,05 → 7,65; causa, seguridad, marca y nada inventado se mantienen; visita 12/12 → 9/12 en la 2.ª versión. Corregido después (criterio de pieza barata/cara para si compensa, diferencial sin dejar la casa sin luz, visita mencionada junto a la pregunta): los 6 casos que fallaban salen bien en la 3.ª prueba. Pendiente: repetir la medición completa de 20 cuando haya cambios grandes.
 - Manual total: 671 fichas de código de 46 familias (339 alta), 138 síntomas.
 
+## Andrés gran comercial y venta de aparatos (22-11-2026)
+- Pedido por Juan: quien llama quiere que se lo reparen; nada de debates ni de empujarle a arreglarlo él. Andrés da la visita por hecha, va directo a la cita si el cliente ya la pide, cierra con dos opciones, pide el teléfono pronto ("por si se corta"), argumentos de confianza de uno en uno (20 años, presupuesto cerrado, garantía, descuento, 24-48 h) y urgencia natural. No propone limpiezas ni pruebas caseras salvo que lo pregunten, sea de seguridad o no sea avería (bloqueo, demo, cazo). "¿Compensa?" solo si lo preguntan, en una frase, y remite al presupuesto cerrado.
+- Venta: si el cliente prefiere un aparato nuevo, se lo vendemos (confirmado por Juan). Andrés pide teléfono, qué busca, medidas y presupuesto, y envía la solicitud con tipo "venta" (web, Telegram con 🛒, agente de voz). No da precios ni modelos. PENDIENTE: ¿entrega, instalación y retirada del viejo? (si sí, usarlo como argumento).
+- Causas siempre como "lo más probable"; no descartar piezas ni inventar causas sin ficha.
+- Medición a ciegas (Haiku, 20 clientes): sin debates ni tareas 10/18 → 18/18; 45 palabras o menos 7/20 → 17/20; pregunta de veterano 5/16 → 9/16; nota 6,9 → 7,35; avanza a cita 13/13 → 12/13. Casos nuevos de venta (21) y "que venga ya" (22): 8 y 9. Los fallos de causa (aire, frigorífico) y de teléfono en la venta, corregidos y comprobados después.
+
 ## Cómo trabajar con Juan
 Soluciones, no excusas; verificar antes de decir que algo está hecho; pedir OK antes de publicar, desplegar, gastar dinero o enviar nada; tenerle al día con cifras; directo y sin tecnicismos.
