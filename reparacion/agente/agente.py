@@ -5,6 +5,7 @@ Oído:    Deepgram Nova-3 en español
 Cerebro: Claude Haiku 5.5 sin "pensamiento" interno (rápido y barato), o Gemini Flash
 Voz:     ElevenLabs Flash v2.5 con voz de España (la mejor); Inworld TTS-2 Flash como opción barata
 
+Si el cliente sale de la web, le entra una llamada o se corta la conexión, se le espera (3 min / 90 s) sin colgar.
 Pensado para gastar lo mínimo sin perder clientes: cuelga a los 30 s de silencio (pregunta
 "¿Sigues ahí?" a los 15 s, que le da tiempo a buscar la marca) y corta a los 8 minutos solo
 como seguridad contra llamadas olvidadas, con aviso amable antes y prórroga si está dando datos.
@@ -55,6 +56,8 @@ SILENCIO_SEG = float(os.getenv("SILENCIO_SEGUNDOS", "30"))          # cuelga tra
 DURACION_MAX_MIN = float(os.getenv("DURACION_MAX_MINUTOS", "8"))     # tope de seguridad contra llamadas olvidadas, no para cortar ventas
 AVISO_ANTES_SEG = float(os.getenv("AVISO_ANTES_SEGUNDOS", "30"))     # aviso amable antes de cerrar
 PRORROGA_DATOS_MIN = float(os.getenv("PRORROGA_DATOS_MINUTOS", "1.5"))  # solo si ya está dando sus datos
+PAUSA_MAX_SEG = float(os.getenv("PAUSA_MAX_SEGUNDOS", "180"))       # le entra una llamada o sale de la web: se le espera sin colgar
+ESPERA_VUELTA_SEG = float(os.getenv("ESPERA_VUELTA_SEGUNDOS", "90"))  # se corta la conexión: se le espera para que reconecte
 
 
 class ClaudeRapido(anthropic.LLM):
@@ -239,6 +242,57 @@ async def sesion(ctx: JobContext) -> None:
         await voz.say(despedida, allow_interruptions=False)
         ctx.shutdown(motivo)
 
+    # ---- Pausa: la web avisa (atributo "pausa") si el cliente sale de la página, le entra una
+    # llamada o silencia el micro. Andrés se calla y le espera sin colgar; ese tiempo no cuenta
+    # para el tope de duración. Si se corta la conexión, le espera para que reconecte. ----
+    en_pausa = False
+    espera_pausa: asyncio.Task | None = None
+
+    def _cancelar(tarea: asyncio.Task | None) -> None:
+        if tarea and not tarea.done():
+            tarea.cancel()
+
+    async def _fin_pausa(segundos: float, motivo: str) -> None:
+        await asyncio.sleep(segundos)
+        await _colgar(motivo, "Como no vuelves, cuelgo por ahora. Tus datos siguen en la web; cuando quieras, aquí estoy.")
+
+    def _pausar(motivo: str, segundos: float) -> None:
+        nonlocal en_pausa, espera_pausa, espera_silencio
+        if colgando:
+            return
+        en_pausa = True
+        _cancelar(espera_silencio)
+        _cancelar(espera_pausa)
+        voz.interrupt()
+        espera_pausa = asyncio.create_task(_fin_pausa(segundos, motivo))
+
+    def _reanudar() -> None:
+        nonlocal en_pausa
+        if not en_pausa or colgando:
+            return
+        en_pausa = False
+        _cancelar(espera_pausa)
+        voz.say("Ya estás de vuelta. Seguimos donde lo dejamos.", allow_interruptions=True)
+
+    @ctx.room.on("participant_attributes_changed")
+    def _atributos(cambios: dict, participante) -> None:
+        if participante.identity != tecnico.cliente or "pausa" not in cambios:
+            return
+        if cambios["pausa"]:
+            _pausar("pausa larga", PAUSA_MAX_SEG)
+        else:
+            _reanudar()
+
+    @ctx.room.on("participant_disconnected")
+    def _se_va(participante) -> None:
+        if participante.identity == tecnico.cliente:
+            _pausar("se cortó la conexión", ESPERA_VUELTA_SEG)
+
+    @ctx.room.on("participant_connected")
+    def _vuelve(participante) -> None:
+        if participante.identity == tecnico.cliente:
+            _reanudar()
+
     async def _cuenta_silencio() -> None:
         await voz.say("¿Sigues ahí?")
         await asyncio.sleep(SILENCIO_SEG / 2)
@@ -249,12 +303,17 @@ async def sesion(ctx: JobContext) -> None:
         nonlocal espera_silencio
         if ev.new_state == "speaking" and espera_silencio and not espera_silencio.done():
             espera_silencio.cancel()  # ha vuelto a hablar: se anula el cuelgue
-        if ev.new_state == "away" and not colgando and not (espera_silencio and not espera_silencio.done()):
+        if ev.new_state == "away" and not colgando and not en_pausa and not (espera_silencio and not espera_silencio.done()):
             espera_silencio = asyncio.create_task(_cuenta_silencio())
 
     # ---- Duración máxima: aviso amable antes y cierre; prórroga corta si está dando sus datos ----
     async def _limite_duracion() -> None:
-        await asyncio.sleep(max(DURACION_MAX_MIN * 60 - AVISO_ANTES_SEG, 0))
+        # solo cuenta el tiempo de conversación, no las pausas
+        activo, objetivo = 0.0, max(DURACION_MAX_MIN * 60 - AVISO_ANTES_SEG, 0)
+        while activo < objetivo and not colgando:
+            await asyncio.sleep(1)
+            if not en_pausa:
+                activo += 1
         if colgando:
             return
         if tecnico.dando_datos and not tecnico.enviado:
@@ -266,8 +325,10 @@ async def sesion(ctx: JobContext) -> None:
         await _colgar("duración máxima", "Tengo que ir cerrando la llamada. Si te falta algo, déjalo en el formulario de la web y te llamamos. ¡Un saludo!")
 
     filtro = crear_filtro_ruido()
-    extra = {"room_options": room_io.RoomOptions(audio_input=room_io.AudioInputOptions(noise_cancellation=filtro))} if filtro else {}
-    await voz.start(agent=tecnico, room=ctx.room, **extra)
+    # close_on_disconnect=False: si se corta la conexión no se cierra la sesión; se le espera (ver _se_va)
+    opciones = room_io.RoomOptions(close_on_disconnect=False, audio_input=room_io.AudioInputOptions(noise_cancellation=filtro)) if filtro \
+        else room_io.RoomOptions(close_on_disconnect=False)
+    await voz.start(agent=tecnico, room=ctx.room, room_options=opciones)
     asyncio.create_task(_limite_duracion())
     await voz.say(SALUDO, allow_interruptions=True)
 
