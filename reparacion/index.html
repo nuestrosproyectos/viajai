@@ -788,9 +788,11 @@ const ICONOS = {
   campana: '<path d="M18 4h12v12H18zM8 30l10-14h12l10 14z"/><path d="M8 30h32v4H8zM16 38v4M24 38v4M32 38v4"/>'
 };
 const APARATOS = [["lavadora", "Lavadora"], ["frigorifico", "Frigorífico"], ["lavavajillas", "Lavavajillas"], ["horno", "Horno y microondas"], ["placa", "Vitro e inducción"], ["secadora", "Secadora"], ["termo", "Termo eléctrico"], ["campana", "Campana"]];
+// Cada aparato con su foto real (media/aparato-<clave>.jpg); si una foto faltara, queda el dibujo de siempre
 $("#listaAparatos").innerHTML = APARATOS.map(([ic, nom]) => `
-  <button type="button" class="aparato" data-preguntar="Tengo una avería en mi ${nom.toLowerCase()}">
-    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONOS[ic]}</svg>${nom}</button>`).join("");
+  <button type="button" class="aparato aparato-foto" data-preguntar="Tengo una avería en mi ${nom.toLowerCase()}">
+    <img src="media/aparato-${ic}.jpg" alt="" loading="lazy" width="600" height="600" onerror="this.remove()">
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONOS[ic]}</svg><span class="aparato-nombre">${nom}</span></button>`).join("");
 
 /* ------------------------------------------------------------------
    2. Piezas de la conversación
