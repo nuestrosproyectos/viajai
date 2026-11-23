@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="es" data-theme="dark">
+<html lang="es" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Reparación de electrodomésticos en Granada · Reparo</title>
 <meta name="description" content="¿Se te ha averiado la lavadora, el frigorífico o el horno? Cuéntaselo a Andrés y te reserva la visita del técnico en Granada en 24-48 h. Todas las marcas. Visita y presupuesto 60,50 €, que se descuentan si reparamos.">
-<meta name="theme-color" content="#0B0E11">
+<meta name="theme-color" content="#FFFFFF">
 <!-- Dirección del servidor del técnico en la web publicada (vacío en la vista previa). Ej.: /api -->
 <meta name="servidor-tecnico" content="/api">
 <!-- Llamada de voz en directo con LiveKit: dirección que entrega el pase (vacío = desactivado). Ej.: /api/livekit-token -->
@@ -455,11 +455,13 @@ body.con-mini .mini{display:flex}
 }
 </style>
 <!-- Piel «cine» (oscura y cinematográfica): colores, letras y portada nuevos sobre la misma colocación -->
-<link rel="stylesheet" href="cine.css">
+<link rel="stylesheet" href="claro.css">
 </head>
 <body>
-<svg class="grano" aria-hidden="true"><filter id="grano"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2"/></filter><rect width="100%" height="100%" filter="url(#grano)"/></svg>
 <div class="previa" id="previa" hidden>Vista previa · <b>teléfono, precios y nombre son provisionales</b> hasta que los confirmes</div>
+
+<!-- Franja de arriba: horario y teléfono, como cualquier negocio de verdad -->
+<div class="franja-info"><div class="envol"><span class="fi-horario">Lunes a viernes de 9:00 a 20:00 · Sábados de 9:00 a 14:00</span><a data-tel href="tel:+34958000000">Llámanos: 958 00 00 00</a></div></div>
 
 <header class="cab" id="cab">
   <div class="envol">
@@ -476,13 +478,6 @@ body.con-mini .mini{display:flex}
 
 <main>
 <section class="portada cine" id="portada">
-  <!-- Fondo de cine: vídeo en bucle (media/portada.mp4) sobre una luz animada que hace de reserva si no carga -->
-  <div class="cine-fondo" aria-hidden="true">
-    <div class="cine-luz"></div>
-    <img class="visible" src="media/portada.jpg" alt="" decoding="async" fetchpriority="high">
-    <video id="cineVideo" muted loop playsinline preload="none" data-src="media/portada.mp4"></video>
-    <div class="cine-velo"></div>
-  </div>
   <div class="envol">
     <div class="hero-a">
       <p class="sobretitulo entra">Servicio técnico a domicilio · <span data-n="ciudad">Granada</span></p>
@@ -492,6 +487,7 @@ body.con-mini .mini{display:flex}
       <p class="precio-linea entra" style="--i:2"><span>Visita y presupuesto: <b id="precioLinea">60,50 €</b>.</span> <span>Se descuentan si reparamos.</span></p>
     </div>
     <div class="hero-b">
+      <figure class="hero-foto"><img src="media/foto-lavadora.jpg" alt="Técnico reparando una lavadora en una cocina" width="1200" height="900" fetchpriority="high"></figure>
       <div class="tarjeta-andres entra" style="--i:3" data-estado="reposo" id="tarjetaAndres">
         <div class="ta-cab">
           <div class="orbe" aria-hidden="true"><span class="onda"><i></i><i></i><i></i><i></i></span></div>
@@ -504,7 +500,7 @@ body.con-mini .mini{display:flex}
           <a class="boton" data-wa href="https://wa.me/34600000000" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.4 8.4 0 1 1 21 11.5z"/></svg>WhatsApp</a>
           <a class="boton" data-tel href="tel:+34958000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Llamar</a>
         </div>
-        <p class="ta-nota"><span data-n="tecnico">Andrés</span> es un asistente con inteligencia artificial. Los técnicos que van a tu casa son personas del equipo.</p>
+        <p class="ta-nota"><span data-n="tecnico">Andrés</span> es un asistente con inteligencia artificial. Los técnicos que van a tu casa son profesionales de nuestra red.</p>
       </div>
       <a class="llamame-enlace" href="#contacto">¿Prefieres que te llamemos? Déjanos tu teléfono ›</a>
       <ul class="confianza">
@@ -534,6 +530,11 @@ body.con-mini .mini{display:flex}
       <li class="paso"><h3>Te dice qué puede ser</h3><p>Te explica la causa más probable en tu marca y te reserva la visita.</p></li>
       <li class="paso"><h3>Vamos a tu casa</h3><p>Te llamamos para confirmar la hora. El técnico va con la pieza que suele fallar.</p></li>
     </ol>
+    <div class="trabajo">
+      <figure><img src="media/foto-presupuesto.jpg" alt="Técnico enseñando un presupuesto a una clienta" loading="lazy" width="1200" height="900"><figcaption>Antes de tocar nada, te damos el presupuesto cerrado.</figcaption></figure>
+      <figure><img src="media/foto-comprobacion.jpg" alt="Técnico comprobando una bomba de desagüe con un polímetro" loading="lazy" width="1200" height="900"><figcaption>Comprobamos la pieza antes de cambiarla.</figcaption></figure>
+      <figure><img src="media/foto-frigorifico.jpg" alt="Técnico revisando la parte de atrás de un frigorífico" loading="lazy" width="1200" height="900"><figcaption>Lavadoras, frigoríficos, lavavajillas, hornos y más.</figcaption></figure>
+    </div>
   </div>
 </section>
 
@@ -1548,7 +1549,9 @@ addEventListener("scroll", () => cab.classList.toggle("con-borde", scrollY > 8),
     };
     setTimeout(() => setInterval(girar, 2400), 1600);
   }
-  setTimeout(() => portada?.classList.add("listo"), 80);   // con temporizador y no con requestAnimationFrame: en una pestaña en segundo plano este no se dispara y la portada se quedaría vacía
+  setTimeout(() => portada?.classList.add("listo"), 80);
+  // seguro: si el navegador no llega a animar (pestaña en segundo plano, móvil ahorrando batería), a los 2,5 s se muestra todo igualmente
+  setTimeout(() => portada?.classList.add("hecho"), 2500);   // con temporizador y no con requestAnimationFrame: en una pestaña en segundo plano este no se dispara y la portada se quedaría vacía
 
   // secciones: aparecen al entrar en pantalla (una sola vez)
   if (!reducir && "IntersectionObserver" in window) {
