@@ -200,3 +200,23 @@ h1 em,h2 em,.subrayado{font-style:normal;color:var(--acento);background:none}
   .escenario .sol-mapa{min-height:min(560px,62vh);align-self:stretch}
   .escenario .sol-mapa figcaption b{color:#9CC2F0}
 }
+
+/* ---------- ruta de la furgoneta en la tarjeta «¡Listo! Visita pedida» (ilustrativa: no es seguimiento en directo) ---------- */
+.ruta{margin:12px 0 4px;border-radius:14px;overflow:hidden;background:var(--tarjeta);border:1px solid var(--linea)}
+.ruta svg{display:block;width:100%;height:auto}
+.ruta .r-manzana{fill:var(--fondo-2)}
+.ruta .r-calle{stroke:var(--fondo-3);stroke-width:7;fill:none;stroke-linecap:round}
+.ruta .r-camino{stroke:var(--acento);stroke-width:3.5;fill:none;stroke-dasharray:7 7;stroke-linecap:round}
+.ruta .r-taller{fill:var(--tinta-2)}
+.ruta .r-casa{fill:var(--acento)}
+.ruta .r-texto{font:700 11px var(--texto, system-ui);fill:var(--tinta)}
+.ruta .r-onda{fill:none;stroke:var(--acento);stroke-width:2;opacity:0;transform-box:fill-box;transform-origin:center}
+.ruta.llegado .r-onda{animation:r-llega 1.6s ease-out 2}
+@keyframes r-llega{0%{opacity:.8;transform:scale(.6)}100%{opacity:0;transform:scale(2.4)}}
+.ruta .f-cuerpo{fill:#FFFFFF;stroke:var(--tinta-2);stroke-width:1.2}
+.ruta .f-franja{fill:var(--acento)}
+.ruta .f-cristal{fill:#BFD3E6}
+.ruta .f-rueda{fill:var(--tinta)}
+.ruta figcaption{padding:10px 14px 12px;border-top:1px solid var(--linea);font-size:1rem;line-height:1.35;color:var(--tinta-2)}
+.ruta figcaption b{display:block;color:var(--tinta);font-size:1.08rem}
+@media (prefers-reduced-motion:reduce){.ruta.llegado .r-onda{animation:none}}

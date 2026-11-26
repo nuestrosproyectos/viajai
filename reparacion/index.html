@@ -1239,6 +1239,47 @@ function pintarMapa(d) {
   }, sinDatos ? 150 : 900);
 }
 
+/* Ruta de la furgoneta: dibujo del trayecto del taller a casa del cliente, con la franja que ha pedido.
+   Es ilustrativo (no hay seguimiento en directo) y el texto no promete otra cosa. */
+function rutaFurgoneta(aviso) {
+  const id = "ruta" + numAviso + Math.random().toString(36).slice(2, 6);
+  const sitio = (aviso.municipio || aviso.direccion || "Tu casa").split(",")[0].trim().slice(0, 22);
+  const fr = (aviso.franja || "").trim();
+  const cuando = !fr ? "en 24-48 h" : /^(hoy|mañana|pasado|el |este |esta |lunes|martes|miércoles|jueves|viernes|sábado|domingo|por la|a partir|entre|antes|después)/i.test(fr) ? fr : "· " + fr;
+  const f = document.createElement("figure");
+  f.className = "ruta";
+  f.innerHTML = `<svg viewBox="0 0 320 150" role="img" aria-label="Dibujo de la ruta del técnico desde el taller hasta ${sitio}">
+    <rect class="r-manzana" x="0" y="0" width="320" height="150"/>
+    <path class="r-calle" d="M0 38H320M0 112H320M70 0V150M168 0V150M262 0V150"/>
+    <path class="r-camino" id="${id}" d="M44 112 C110 112 120 74 168 74 S226 46 250 46"/>
+    <g class="r-taller"><rect x="30" y="98" width="28" height="22" rx="3"/><path d="M27 100 44 87 61 100Z"/></g>
+    <text class="r-texto" x="24" y="138">Taller</text>
+    <circle class="r-onda" cx="284" cy="30" r="12"/>
+    <g class="r-casa" transform="translate(284 30)"><path d="M0 18C-10 6-12 0-12-5a12 12 0 0 1 24 0c0 5-2 11-12 23Z"/><path d="M-6-3 0-8 6-3V4H-6Z" fill="#fff"/></g>
+    <text class="r-texto" x="290" y="74" text-anchor="middle"></text>
+    <g class="furgo">
+      <g transform="translate(-17 -13)">
+        <path class="f-cuerpo" d="M2 6h21l7 6h3a2 2 0 0 1 2 2v6H2Z"/>
+        <path class="f-cristal" d="M24 7.5h-2v5h7Z"/>
+        <rect class="f-franja" x="2" y="13" width="31" height="3"/>
+        <circle class="f-rueda" cx="9" cy="21" r="3.2"/><circle class="f-rueda" cx="27" cy="21" r="3.2"/>
+      </g>
+      <animateMotion dur="3.4s" begin="indefinite" fill="freeze" rotate="auto" keyPoints="0;1" keyTimes="0;1" calcMode="spline" keySplines=".45 0 .25 1"><mpath href="#${id}"/></animateMotion>
+    </g>
+  </svg><figcaption><b></b></figcaption>`;
+  f.querySelectorAll(".r-texto")[1].textContent = sitio;
+  f.querySelector("figcaption b").textContent = "Tu técnico pasará " + cuando;
+  const furgo = f.querySelector(".furgo"), anim = f.querySelector("animateMotion");
+  const llegar = () => { f.classList.add("llegado"); };
+  if (reducir || !anim.beginElement) { furgo.setAttribute("transform", "translate(250 46)"); anim.remove(); llegar(); }
+  else {
+    anim.addEventListener("endEvent", llegar);
+    // arranca cuando la tarjeta está a la vista
+    new IntersectionObserver((e, o) => { if (e[0].isIntersecting) { o.disconnect(); setTimeout(() => { try { anim.beginElement(); } catch { llegar(); } }, 350); } }, { threshold: .4 }).observe(f);
+  }
+  return f;
+}
+
 async function registrarAviso(aviso) {
   avisoHecho = aviso.origen === "técnico virtual" || aviso.origen === "cliente" ? true : avisoHecho;
   const registro = { ...aviso, ficha: fichaActual, creado: new Date().toISOString(), pagina: location.href.slice(0, 200) };
@@ -1260,6 +1301,7 @@ async function registrarAviso(aviso) {
     t.querySelector(".final-cifra").textContent = "Nº de aviso " + numAviso;
     t.querySelector(".final-txt").textContent = resumen + (guardado ? "" : ". No hemos podido enviarla: mándanosla por WhatsApp para asegurarte.");
     t.querySelector("ol").innerHTML = pasos.map(p => `<li>${p}</li>`).join("");
+    if (aviso.tipo !== "venta" && aviso.tipo !== "llamada") t.querySelector("ol").before(rutaFurgoneta(aviso));
     t.querySelector("a").href = `https://wa.me/${N.whatsapp}?text=${encodeURIComponent(wa)}`;
     chat.append(t); bajar();
   }
