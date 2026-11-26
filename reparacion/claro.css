@@ -163,19 +163,20 @@ h1 em,h2 em,.subrayado{font-style:normal;color:var(--acento);background:none}
 /* ======================= ORDENADOR ======================= */
 @media (min-width:900px){
   .portada{padding:52px 0 60px}
-  .portada .envol{grid-template-columns:1.05fr .95fr;gap:56px;align-items:start}
+  /* dos columnas equilibradas: arriba texto frente a la foto; abajo las ventajas frente a la tarjeta de Andrés */
+  .portada .envol{grid-template-columns:1.05fr .95fr;grid-template-areas:"texto foto" "datos andres" "enlace andres";column-gap:56px;row-gap:0;align-items:start}
   .portada h1{font-size:clamp(2.3rem,3.5vw,3.5rem)}
   .portada .entrada{font-size:1.25rem}
   .urgencia{border-radius:999px;margin:28px 0 0;max-width:max-content;padding-left:18px}
   /* texto centrado en altura frente a la foto, con el aviso de urgencia al final */
-  .hero-a{display:flex;flex-direction:column;align-self:center}
+  .hero-a{grid-area:texto;display:flex;flex-direction:column;align-self:center}
   .hero-a .precio-linea{align-self:flex-start}
   /* la foto arriba a la derecha y la tarjeta de Andrés montada encima de su parte baja */
-  .hero-b{display:flex;flex-direction:column}
-  .hero-foto{order:0;margin:0;aspect-ratio:4/3}
-  .tarjeta-andres{order:1;margin:-110px 22px 0;position:relative}
-  .llamame-enlace{order:2;margin-left:22px}
-  .confianza{order:3;margin:6px 22px 0}
+  .hero-b{display:contents}
+  .hero-foto{grid-area:foto;order:0;margin:0;aspect-ratio:4/3}
+  .tarjeta-andres{grid-area:andres;order:1;margin:-110px 22px 0;position:relative}
+  .confianza{grid-area:datos;order:2;margin:34px 0 0;align-self:start;max-width:520px}
+  .llamame-enlace{grid-area:enlace;order:3;margin:18px 0 0;align-self:start}
   .seccion{padding:88px 0}
   .cabecera-sec{margin-bottom:36px}
   .cabecera-sec h2{max-width:20ch}
