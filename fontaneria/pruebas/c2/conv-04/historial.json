@@ -70,5 +70,9 @@
   "role": "assistant",
   "content": "Sí, basta con calle y municipio. Paco, te repito: visita para cambiar el termo cualquier mañana, en calle Real nueve, Maracena, y tu teléfono es seis nueve nueve, uno cero uno, dos cero dos. ¿Está todo bien?\n<ficha>{\"averia\":\"cambio de termo eléctrico; viven 4 en casa\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"Casa\",\"seguro\":\"\",\"nombre\":\"Paco\",\"telefono\":\"699 101 202\",\"municipio\":\"Maracena\",\"direccion\":\"Calle Real 9\",\"franja\":\"Cualquier mañana\",\"inicio\":\"\",\"orientacion\":\"Pide el presupuesto desglosado por escrito antes de empezar.\",\"fase\":\"datos\"}</ficha>",
   "original": "Sí, basta con calle y municipio. Paco, te repito: visita para cambiar el termo cualquier mañana, en calle Real nueve, Maracena, y tu teléfono es seis nueve nueve, uno cero uno, dos cero dos. ¿Está todo bien?\n<ficha>{\"averia\":\"cambio de termo eléctrico; viven 4 en casa\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"Casa\",\"seguro\":\"\",\"nombre\":\"Paco\",\"telefono\":\"699 101 202\",\"municipio\":\"Maracena\",\"direccion\":\"Calle Real 9\",\"franja\":\"Cualquier mañana\",\"inicio\":\"\",\"orientacion\":\"Pide el presupuesto desglosado por escrito antes de empezar.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien."
  }
 ]

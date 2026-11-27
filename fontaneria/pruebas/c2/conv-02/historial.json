@@ -70,5 +70,9 @@
   "role": "assistant",
   "content": "No hace falta el barrio: con la avenida y el número basta. Luis, repito: visita programada mañana por la mañana, Avenida de los Mondragones tres, Armilla; teléfono seis cinco cinco, nueve nueve cero, uno dos cero. ¿Está todo bien?\n<ficha>{\"averia\":\"lavabo del baño atascado; sigue igual tras echar desatascador fuerte\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Luis\",\"telefono\":\"655 990 120\",\"municipio\":\"Armilla\",\"direccion\":\"Avenida de los Mondragones 3\",\"franja\":\"Mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"No meta la mano en el sifón y pida el presupuesto por escrito antes de empezar.\",\"fase\":\"datos\"}</ficha>",
   "original": "No hace falta el barrio: con la avenida y el número basta. Luis, repito: visita programada mañana por la mañana, Avenida de los Mondragones tres, Armilla; teléfono seis cinco cinco, nueve nueve cero, uno dos cero. ¿Está todo bien?\n<ficha>{\"averia\":\"lavabo del baño atascado; sigue igual tras echar desatascador fuerte\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Luis\",\"telefono\":\"655 990 120\",\"municipio\":\"Armilla\",\"direccion\":\"Avenida de los Mondragones 3\",\"franja\":\"Mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"No meta la mano en el sifón y pida el presupuesto por escrito antes de empezar.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo correcto."
  }
 ]
