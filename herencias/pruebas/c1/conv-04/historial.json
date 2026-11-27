@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, ahora lo veo más claro. Sí, resérvame la consulta"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, te reservo la consulta. Para saber si hay testamento, pide ya el certificado de últimas voluntades, que dice ante qué notario está. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la consulta.\n<ficha>{\"situacion\":\"Herencia de tu hermano, con un préstamo, posibles tarjetas y una furgoneta\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"No lo sé\",\"bienes\":\"Una furgoneta\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"hace un mes\",\"modalidad\":\"\",\"orientacion\":\"Valorar la aceptación a beneficio de inventario, que solo responde hasta donde llega la herencia, frente a aceptar a secas o renunciar.\",\"porDecir\":\"hermanos y sobrinos sí pagan el impuesto, que tiene seis meses desde el fallecimiento · no toques cuentas ni bienes hasta hablar con el abogado, porque sacar dinero puede contar como aceptar · renunciar es ante notario e irrevocable\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, te reservo la consulta. Para saber si hay testamento, pide ya el certificado de últimas voluntades, que dice ante qué notario está. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la consulta.\n<ficha>{\"situacion\":\"Herencia de tu hermano, con un préstamo, posibles tarjetas y una furgoneta\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"No lo sé\",\"bienes\":\"Una furgoneta\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"hace un mes\",\"modalidad\":\"\",\"orientacion\":\"Valorar la aceptación a beneficio de inventario, que solo responde hasta donde llega la herencia, frente a aceptar a secas o renunciar.\",\"porDecir\":\"hermanos y sobrinos sí pagan el impuesto, que tiene seis meses desde el fallecimiento · no toques cuentas ni bienes hasta hablar con el abogado, porque sacar dinero puede contar como aceptar · renunciar es ante notario e irrevocable\",\"fase\":\"datos\"}</ficha>"
  }
 ]
