@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Siento el susto. Volviendo del trabajo es accidente laboral y la mutua cubre la baja; si el otro conductor tuvo la culpa, puedes reclamar también a su aseguradora. En la consulta gratis lo miramos juntos. ¿Sabes quién iba en ese coche?\n<ficha>{\"caso\":\"Volviendo del trabajo, un coche te sacó de la carretera\",\"como\":\"En moto\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"La mutua cubre la baja por accidente laboral; si el otro tuvo la culpa, reclamar también a su aseguradora.\",\"fase\":\"orientando\"}</ficha>",
   "original": "Siento el susto. Volviendo del trabajo es accidente laboral y la mutua cubre la baja; si el otro conductor tuvo la culpa, puedes reclamar también a su aseguradora. En la consulta gratis lo miramos juntos. ¿Sabes quién iba en ese coche?\n<ficha>{\"caso\":\"Volviendo del trabajo, un coche te sacó de la carretera\",\"como\":\"En moto\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"La mutua cubre la baja por accidente laboral; si el otro tuvo la culpa, reclamar también a su aseguradora.\",\"fase\":\"orientando\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, el otro conductor reconoció que fue culpa suya y vino la Guardia Civil e hizo atestado. Lo que no sé es si puedo reclamar a la mutua y al seguro del otro a la vez"
  }
 ]

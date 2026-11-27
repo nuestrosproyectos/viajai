@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Tu seguro puede ofrecerte su abogado, y puedes elegir el tuyo si tu póliza tiene defensa jurídica, o sea, cobertura de abogado. Nosotros reclamamos accidentes de tráfico en Granada; en la consulta gratis, sin compromiso, puedes comparar. ¿Te reservo la consulta?\n<ficha>{\"caso\":\"Su seguro le ofrece un abogado\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Puede elegir su abogado si la póliza tiene defensa jurídica; la consulta gratis sirve para compararlo.\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Tu seguro puede ofrecerte su abogado, y puedes elegir el tuyo si tu póliza tiene defensa jurídica, o sea, cobertura de abogado. Nosotros reclamamos accidentes de tráfico en Granada; en la consulta gratis, sin compromiso, puedes comparar. ¿Te reservo la consulta?\n<ficha>{\"caso\":\"Su seguro le ofrece un abogado\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Puede elegir su abogado si la póliza tiene defensa jurídica; la consulta gratis sirve para compararlo.\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Ya, pero mi póliza tiene defensa jurídica. Es que no me fío mucho del abogado del seguro, ¿vosotros en qué os diferenciáis?"
  }
 ]

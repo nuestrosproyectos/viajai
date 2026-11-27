@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Siento mucho lo de su madre, espero que la atiendan bien en la UCI. Guarde los informes médicos y el parte del accidente; en la consulta gratis el abogado lo revisa con usted. ¿Su madre iba como pasajera del autobús?\n<ficha>{\"caso\":\"Accidente de autobús en la carretera de Motril\",\"como\":\"\",\"fecha\":\"ayer\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar los informes médicos y el parte del accidente; el abogado revisa el caso en la consulta gratis.\",\"fase\":\"orientando\"}</ficha>",
   "original": "Siento mucho lo de su madre, espero que la atiendan bien en la UCI. Guarde los informes médicos y el parte del accidente; en la consulta gratis el abogado lo revisa con usted. ¿Su madre iba como pasajera del autobús?\n<ficha>{\"caso\":\"Accidente de autobús en la carretera de Motril\",\"como\":\"\",\"fecha\":\"ayer\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar los informes médicos y el parte del accidente; el abogado revisa el caso en la consulta gratis.\",\"fase\":\"orientando\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, iba de pasajera. Gracias por su amabilidad. No sé si es pronto para hablar de reclamar, la verdad, ¿qué tenemos que hacer ahora?"
  }
 ]

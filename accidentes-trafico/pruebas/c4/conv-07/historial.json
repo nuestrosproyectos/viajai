@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Siento lo de la clavícula. Lo primero es que te vea un médico ya, y guarda fotos y testigos. En la consulta gratis el abogado lo revisa con tu caso. ¿Llegó la policía o se hizo algún parte?\n<ficha>{\"caso\":\"Un coche te cerró al girar mientras ibas en bici\",\"como\":\"En bici o patinete\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Del otro\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico ya, guardar fotos y testigos, y ver si hubo parte o atestado.\",\"fase\":\"orientando\"}</ficha>",
   "original": "Siento lo de la clavícula. Lo primero es que te vea un médico ya, y guarda fotos y testigos. En la consulta gratis el abogado lo revisa con tu caso. ¿Llegó la policía o se hizo algún parte?\n<ficha>{\"caso\":\"Un coche te cerró al girar mientras ibas en bici\",\"como\":\"En bici o patinete\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Del otro\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico ya, guardar fotos y testigos, y ver si hubo parte o atestado.\",\"fase\":\"orientando\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, vino la Policía Local, hay atestado y un testigo. Pero el conductor dice que fue culpa mía, ¿tengo que pagar yo la bici?"
  }
 ]

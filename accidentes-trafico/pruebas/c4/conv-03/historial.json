@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Siento lo de tu mujer y la muñeca. Como pasajera, ella suele poder reclamar aunque la culpa fuera tuya, al seguro del coche en que iban. En la consulta gratis el abogado lo revisa. ¿Tu póliza tiene defensa jurídica?\n<ficha>{\"caso\":\"Te saltaste un ceda; ibas con tu mujer\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Tu mujer, como pasajera, puede reclamar; revisa tu póliza y si tiene defensa jurídica.\",\"fase\":\"orientando\"}</ficha>",
   "original": "Siento lo de tu mujer y la muñeca. Como pasajera, ella suele poder reclamar aunque la culpa fuera tuya, al seguro del coche en que iban. En la consulta gratis el abogado lo revisa. ¿Tu póliza tiene defensa jurídica?\n<ficha>{\"caso\":\"Te saltaste un ceda; ibas con tu mujer\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Tu mujer, como pasajera, puede reclamar; revisa tu póliza y si tiene defensa jurídica.\",\"fase\":\"orientando\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "No lo sé, tendría que mirarlo. Pero lo que me preocupa es si ella reclamando me perjudica a mí, como la culpa fue mía"
  }
 ]

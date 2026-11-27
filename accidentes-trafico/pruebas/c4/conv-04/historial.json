@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Siento lo del atropello. Eso lo confirma el abogado en la consulta gratis, pero el año suele contarse desde el alta médica, o sea el fin de la baja, y una reclamación escrita lo interrumpe. ¿Cuándo te dieron el alta?\n<ficha>{\"caso\":\"Atropello en un paso de cebra\",\"como\":\"Andando\",\"fecha\":\"hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Saber la fecha del alta y si se reclamó algo por escrito; el plazo de un año lo revisa el abogado cuanto antes.\",\"fase\":\"orientando\"}</ficha>",
   "original": "Siento lo del atropello. Eso lo confirma el abogado en la consulta gratis, pero el año suele contarse desde el alta médica, o sea el fin de la baja, y una reclamación escrita lo interrumpe. ¿Cuándo te dieron el alta?\n<ficha>{\"caso\":\"Atropello en un paso de cebra\",\"como\":\"Andando\",\"fecha\":\"hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Saber la fecha del alta y si se reclamó algo por escrito; el plazo de un año lo revisa el abogado cuanto antes.\",\"fase\":\"orientando\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Me dieron el alta hace 7 meses. Pero no he reclamado nada por escrito, y el conductor se dio a la fuga, no se sabe quién era"
  }
 ]

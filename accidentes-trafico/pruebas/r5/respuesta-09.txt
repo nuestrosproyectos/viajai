@@ -1,0 +1,3 @@
+Siento la caída. Sí, puedes reclamar: los ciclistas están muy protegidos, y la aseguradora solo se libra si la culpa fue solo de la víctima. Te puedo reservar la primera consulta gratis. ¿Ya te ha visto un médico?
+<ficha>{"caso":"Caída con la bici al cerrarle el paso un coche al girar en la calle Recogidas","como":"En bici o patinete","fecha":"","medico":"","culpa":"Del otro","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que le vea un médico y guardar testigos, fotos y el parte si lo hay","fase":"orientando"}</ficha>
+<mostrar>situaciones</mostrar>
