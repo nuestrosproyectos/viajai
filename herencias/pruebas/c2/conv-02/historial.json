@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, más o menos me hago a la idea. Sí, mejor que lo estudie el abogado. Resérvamela, por teléfono si puede ser."
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, te reservo la consulta por teléfono. Si la casa está en Granada capital, puede tocar la plusvalía municipal, que para sobrinos no tiene bonificación. Es solo para llamarte y organizarlo: ¿me dices tu nombre y un teléfono?\n<ficha>{\"situacion\":\"casa heredada de tu tía, con testamento\",\"parentesco\":\"Sobrino o sobrina\",\"testamento\":\"Sí\",\"bienes\":\"una casa, de unos 90.000 €\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"Por teléfono\",\"orientacion\":\"Como sobrino o sobrina pagas impuesto de sucesiones; el importe concreto lo confirma el abogado con el valor catastral de la casa.\",\"porDecir\":\"escritura y Registro, que van aparte\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, te reservo la consulta por teléfono. Si la casa está en Granada capital, puede tocar la plusvalía municipal, que para sobrinos no tiene bonificación. Es solo para llamarte y organizarlo: ¿me dices tu nombre y un teléfono?\n<ficha>{\"situacion\":\"casa heredada de tu tía, con testamento\",\"parentesco\":\"Sobrino o sobrina\",\"testamento\":\"Sí\",\"bienes\":\"una casa, de unos 90.000 €\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"Por teléfono\",\"orientacion\":\"Como sobrino o sobrina pagas impuesto de sucesiones; el importe concreto lo confirma el abogado con el valor catastral de la casa.\",\"porDecir\":\"escritura y Registro, que van aparte\",\"fase\":\"datos\"}</ficha>"
  }
 ]

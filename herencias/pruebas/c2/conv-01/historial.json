@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, gracias por explicarme. Sí, resérvame la consulta. Y una cosa, ¿se suele pagar mucho de impuestos? Es que me preocupa."
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, te reservo la consulta. Lo más probable es que pagues cero o casi nada, aunque hay que presentarlo en seis meses. Si no hubo testamento, hará falta la declaración de herederos, el documento que dice quién hereda. ¿Me dices tu nombre y un teléfono?\n<ficha>{\"situacion\":\"herencia de tu padre, que falleció la semana pasada\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"la semana pasada\",\"modalidad\":\"\",\"orientacion\":\"Presentar el impuesto de sucesiones en seis meses aunque salga cero; lo más probable es que pagues cero o casi nada por la reducción y la bonificación para hijos.\",\"porDecir\":\"si hay piso, la plusvalía municipal\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, te reservo la consulta. Lo más probable es que pagues cero o casi nada, aunque hay que presentarlo en seis meses. Si no hubo testamento, hará falta la declaración de herederos, el documento que dice quién hereda. ¿Me dices tu nombre y un teléfono?\n<ficha>{\"situacion\":\"herencia de tu padre, que falleció la semana pasada\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"la semana pasada\",\"modalidad\":\"\",\"orientacion\":\"Presentar el impuesto de sucesiones en seis meses aunque salga cero; lo más probable es que pagues cero o casi nada por la reducción y la bonificación para hijos.\",\"porDecir\":\"si hay piso, la plusvalía municipal\",\"fase\":\"datos\"}</ficha>"
  }
 ]

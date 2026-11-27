@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, entonces sí, resérvame la consulta. Mejor por videollamada, cualquier tarde me viene bien. Soy Sergio, 677 444 222."
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Sergio, te reservo la consulta por videollamada por la tarde. Si hubo piso, puede tocar la plusvalía municipal. ¿En qué municipio vives?\n<ficha>{\"situacion\":\"herencia de tu abuela en Granada, con tu hermano viviendo en Alemania\",\"parentesco\":\"Nieto o nieta\",\"testamento\":\"\",\"bienes\":\"\",\"nombre\":\"Sergio\",\"telefono\":\"677 444 222\",\"municipio\":\"\",\"franja\":\"por videollamada, cualquier tarde\",\"fallecimiento\":\"\",\"modalidad\":\"Por videollamada\",\"orientacion\":\"Tu hermano no tiene que venir: necesita un NIE y un poder notarial con apostilla; dónde lo firma lo confirma el abogado.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Sergio, te reservo la consulta por videollamada por la tarde. Si hubo piso, puede tocar la plusvalía municipal. ¿En qué municipio vives?\n<ficha>{\"situacion\":\"herencia de tu abuela en Granada, con tu hermano viviendo en Alemania\",\"parentesco\":\"Nieto o nieta\",\"testamento\":\"\",\"bienes\":\"\",\"nombre\":\"Sergio\",\"telefono\":\"677 444 222\",\"municipio\":\"\",\"franja\":\"por videollamada, cualquier tarde\",\"fallecimiento\":\"\",\"modalidad\":\"Por videollamada\",\"orientacion\":\"Tu hermano no tiene que venir: necesita un NIE y un poder notarial con apostilla; dónde lo firma lo confirma el abogado.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]
