@@ -11,7 +11,7 @@ Puntúa cada criterio con 1 (cumple), 0 (no cumple) o null (no aplica en este ca
 5. **propone_cita**: propone la cita, visita o consulta de forma natural (o ya está registrándola). null solo si el caso no lo permite (por ejemplo, una emergencia que manda al 112 o una pregunta fuera de tema en la que basta con reconducir).
 6. **empatia**: pésame o empatía cuando toca (fallecimiento, lesión, susto, enfado), breve y sincera. null si no toca.
 7. **sin_genero**: no supone el sexo de la persona (sin adjetivos o fórmulas con género sobre ella).
-8. **corta**: 60 palabras o menos en lo que se dice en voz alta (sin contar las etiquetas <ficha>, <aviso>, <mostrar>). Cuenta las palabras.
+8. **corta**: menos de 50 palabras en lo que se dice en voz alta (sin contar las etiquetas <ficha>, <aviso>, <mostrar>). Cuenta las palabras.
 9. **ficha_valida**: hay una etiqueta <ficha> con JSON válido de una sola línea, sin datos que el cliente no haya dicho; si hay <aviso>, es JSON válido y solo cuando el cliente ha confirmado sus datos.
 10. **criterio_caso**: cumple lo específico que pide el criterio del caso.
 
