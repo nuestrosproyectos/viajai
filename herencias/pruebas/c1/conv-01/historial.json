@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Siento mucho lo de tu padre. Lo primero es el certificado de defunción, y pasados quince días hábiles, el de últimas voluntades. Te reservo la primera consulta gratis con el abogado. ¿Sabes si tu padre hizo testamento?\n<ficha>{\"situacion\":\"Fallecimiento de tu padre la semana pasada; no sabes por dónde empezar\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"No lo sé\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"la semana pasada\",\"modalidad\":\"\",\"orientacion\":\"Pedir el certificado de defunción y, pasados quince días hábiles, el de últimas voluntades, para saber si hay testamento.\",\"porDecir\":\"El impuesto de sucesiones tiene seis meses desde el fallecimiento\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Siento mucho lo de tu padre. Lo primero es el certificado de defunción, y pasados quince días hábiles, el de últimas voluntades. Te reservo la primera consulta gratis con el abogado. ¿Sabes si tu padre hizo testamento?\n<ficha>{\"situacion\":\"Fallecimiento de tu padre la semana pasada; no sabes por dónde empezar\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"No lo sé\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"la semana pasada\",\"modalidad\":\"\",\"orientacion\":\"Pedir el certificado de defunción y, pasados quince días hábiles, el de últimas voluntades, para saber si hay testamento.\",\"porDecir\":\"El impuesto de sucesiones tiene seis meses desde el fallecimiento\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "No lo sé, la verdad. Aún no hemos mirado nada. Lo que más me preocupa es si vamos a tener que pagar mucho"
  }
 ]
