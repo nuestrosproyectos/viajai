@@ -1,0 +1,3 @@
+Cambiar bañera, azulejos y lavabo es un baño completo: suele costar entre tres mil y seis mil euros, en una o dos semanas. Sube si aparecen tuberías viejas. Avisa por escrito al presidente o administrador de la comunidad. ¿Te reservo la visita de medición?
+<ficha>{"obra":"cambiar bañera por plato de ducha, azulejos y lavabo","vivienda":"","metros":"unos 5 m²","antiguedad":"1978","presupuesto":"","nombre":"","telefono":"","municipio":"Granada capital, barrio de La Chana","direccion":"","franja":"","inicio":"","orientacion":"Un baño completo suele costar entre tres mil y seis mil euros; en un piso de 1978 conviene revisar las tuberías en la visita.","porDecir":"","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>
