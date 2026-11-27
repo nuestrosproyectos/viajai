@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Gracias por su paciencia. Sí, resérvela, pero la semana que viene, ahora mismo no puedo pensar en otra cosa que en mi madre. Que el abogado me llame por teléfono por la mañana. Soy Encarna, 644 909 808."
+ },
+ {
+  "role": "assistant",
+  "content": "Lo siento mucho. Le llamamos por teléfono la semana que viene, por la mañana, para la consulta gratis. Encarna, su teléfono es seis cuatro cuatro, nueve cero nueve, ocho cero ocho. ¿Está todo bien?\n<ficha>{\"caso\":\"Accidente de autobús en la carretera de Motril; su madre iba de pasajera\",\"como\":\"De pasajero\",\"fecha\":\"ayer\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Encarna\",\"telefono\":\"644 909 808\",\"municipio\":\"\",\"franja\":\"por teléfono, la semana que viene por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar todos los informes del hospital; como pasajera, casi siempre se la indemniza\",\"fase\":\"datos\"}</ficha>",
+  "original": "Lo siento mucho. Le llamamos por teléfono la semana que viene, por la mañana, para la consulta gratis. Encarna, su teléfono es seis cuatro cuatro, nueve cero nueve, ocho cero ocho. ¿Está todo bien?\n<ficha>{\"caso\":\"Accidente de autobús en la carretera de Motril; su madre iba de pasajera\",\"como\":\"De pasajero\",\"fecha\":\"ayer\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Encarna\",\"telefono\":\"644 909 808\",\"municipio\":\"\",\"franja\":\"por teléfono, la semana que viene por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar todos los informes del hospital; como pasajera, casi siempre se la indemniza\",\"fase\":\"datos\"}</ficha>"
  }
 ]

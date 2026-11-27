@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Ah vale, o sea que se puede las dos cosas, lo de cómo encajan ya lo ve el abogado. Pues sí, resérvamela, por teléfono y por la tarde mejor."
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, te apunto a la consulta por teléfono, por la tarde. Guarda copia del atestado y de tus bajas, que sirven mucho. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la consulta.\n<ficha>{\"caso\":\"Volviendo del trabajo en moto, un coche le sacó de la carretera\",\"como\":\"En moto\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Del otro\",\"atestado\":\"Atestado de la policía\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"por teléfono, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar el atestado y las bajas; la mutua cubre la baja y se puede reclamar también al otro seguro\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, te apunto a la consulta por teléfono, por la tarde. Guarda copia del atestado y de tus bajas, que sirven mucho. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la consulta.\n<ficha>{\"caso\":\"Volviendo del trabajo en moto, un coche le sacó de la carretera\",\"como\":\"En moto\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Del otro\",\"atestado\":\"Atestado de la policía\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"por teléfono, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar el atestado y las bajas; la mutua cubre la baja y se puede reclamar también al otro seguro\",\"fase\":\"datos\"}</ficha>"
  }
 ]
