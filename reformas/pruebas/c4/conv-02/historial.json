@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Antonio, 678 112 443"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Antonio. Si es para su vivienda y tiene más de dos años, el IVA puede bajar al 10 %, lo confirma el técnico. ¿En qué municipio y barrio está, con calle y número, y le viene mejor mañana o por la tarde?\n<ficha>{\"obra\":\"reformar la cocina entera\",\"vivienda\":\"\",\"metros\":\"unos 10 metros\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cocina completa: muchas están entre 6.000 y 10.000 €, según muebles y si se mueven fregadero, placa o campana; si sale algo oculto, se presupuesta por escrito y no se hace sin firma.\",\"porDecir\":\"Impuesto de obras del 4 % y una tasa municipal si la obra es en Granada capital\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Antonio. Si es para su vivienda y tiene más de dos años, el IVA puede bajar al 10 %, lo confirma el técnico. ¿En qué municipio y barrio está, con calle y número, y le viene mejor mañana o por la tarde?\n<ficha>{\"obra\":\"reformar la cocina entera\",\"vivienda\":\"\",\"metros\":\"unos 10 metros\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cocina completa: muchas están entre 6.000 y 10.000 €, según muebles y si se mueven fregadero, placa o campana; si sale algo oculto, se presupuesta por escrito y no se hace sin firma.\",\"porDecir\":\"Impuesto de obras del 4 % y una tasa municipal si la obra es en Granada capital\",\"fase\":\"datos\"}</ficha>"
  }
 ]
