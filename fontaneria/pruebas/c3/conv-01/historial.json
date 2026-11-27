@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Cierra ya la llave de paso de tu casa, suele estar en la cocina, el baño o junto al contador, y aparta lo que se pueda mojar. Te apunto la visita urgente del fontanero. ¿Ha parado el agua al cerrarla?\n<ficha>{\"averia\":\"Fuga de agua bajo el fregadero\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cerrar la llave de paso de la vivienda y apartar lo que se pueda mojar.\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Cierra ya la llave de paso de tu casa, suele estar en la cocina, el baño o junto al contador, y aparta lo que se pueda mojar. Te apunto la visita urgente del fontanero. ¿Ha parado el agua al cerrarla?\n<ficha>{\"averia\":\"Fuga de agua bajo el fregadero\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cerrar la llave de paso de la vivienda y apartar lo que se pueda mojar.\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "no se donde está la llave de paso!! estoy muy nerviosa"
  }
 ]

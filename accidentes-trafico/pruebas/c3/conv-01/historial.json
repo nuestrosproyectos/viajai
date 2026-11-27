@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Lo primero es que te vea un médico hoy y que quede escrito, porque ese informe une la lesión al accidente. Guarda fotos, testigos y facturas, y te reservo la primera consulta gratis con el abogado. ¿Ya te ha visto algún médico?\n<ficha>{\"caso\":\"Golpe por detrás hace tres días\",\"como\":\"\",\"fecha\":\"Hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que le vea un médico hoy y que quede por escrito; guardar fotos, testigos y facturas, y dar parte a su aseguradora en siete días.\",\"fase\":\"orientando\"}</ficha>",
   "original": "Lo primero es que te vea un médico hoy y que quede escrito, porque ese informe une la lesión al accidente. Guarda fotos, testigos y facturas, y te reservo la primera consulta gratis con el abogado. ¿Ya te ha visto algún médico?\n<ficha>{\"caso\":\"Golpe por detrás hace tres días\",\"como\":\"\",\"fecha\":\"Hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que le vea un médico hoy y que quede por escrito; guardar fotos, testigos y facturas, y dar parte a su aseguradora en siete días.\",\"fase\":\"orientando\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "No, todavía no he ido, pensaba que se me pasaría solo. Y el abogado cuánto cuesta? Es que no sé si me lo puedo permitir"
  }
 ]

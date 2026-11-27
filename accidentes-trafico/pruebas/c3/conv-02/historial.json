@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "No firmes nada hasta que lo vea el abogado, porque un papel firmado puede cerrar el caso. Te reservo la primera consulta gratis, y en ella el abogado mira la oferta con los informes delante. ¿Ya has firmado algo?\n<ficha>{\"caso\":\"La aseguradora del otro ofrece 2.300 € y le piden firmar ya\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada hasta que lo revise el abogado con los informes delante.\",\"fase\":\"orientando\"}</ficha>",
   "original": "No firmes nada hasta que lo vea el abogado, porque un papel firmado puede cerrar el caso. Te reservo la primera consulta gratis, y en ella el abogado mira la oferta con los informes delante. ¿Ya has firmado algo?\n<ficha>{\"caso\":\"La aseguradora del otro ofrece 2.300 € y le piden firmar ya\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada hasta que lo revise el abogado con los informes delante.\",\"fase\":\"orientando\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "No, no he firmado nada. Pero me llaman todos los días para que firme. Es poco 2.300 €? Estuve 2 meses de baja y sigo con rehabilitación"
  }
 ]

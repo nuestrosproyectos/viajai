@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Lo más habitual es un atasco en la bajante, la tubería vertical del edificio, que suele ser de la comunidad: avisa al presidente o al administrador. No eches sosa. ¿Te reservo la visita, por la mañana o por la tarde?\n<ficha>{\"averia\":\"Agua sucia sale por el plato de ducha al tirar de la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Avisar al presidente o al administrador de la comunidad y no echar sosa.\",\"fase\":\"orientando\"}</ficha>",
   "original": "Lo más habitual es un atasco en la bajante, la tubería vertical del edificio, que suele ser de la comunidad: avisa al presidente o al administrador. No eches sosa. ¿Te reservo la visita, por la mañana o por la tarde?\n<ficha>{\"averia\":\"Agua sucia sale por el plato de ducha al tirar de la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Avisar al presidente o al administrador de la comunidad y no echar sosa.\",\"fase\":\"orientando\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Y eso quién lo paga? yo o la comunidad? es que me entra en mi casa"
  }
 ]
