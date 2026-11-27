@@ -90,16 +90,17 @@ c2: ya no repite frases (coherente 8,8) ni tutea a la mayor; sigue dejándose un
 c3: nota 8,00; datos, fichas y avisos perfectos (10), sin datos falsos. Queda: a veces se deja un dato del criterio (4 de 8) y dijo «como hijo»/«como sobrina» copiando la opción de la ficha. Ajustado tras c3: la opción de parentesco se copia con sus dos géneros y en voz alta sin género; sobrinos con sus dos razones (10.000 € y 1,5); nietos con la reducción de hijos; declaración de herederos en el primer caso.
 
 ## Reformas, vueltas de una en una (8 conversaciones: 4 antiguas + cocina, integral en Armilla, ventanas e IVA, uralita)
-| | c4 |
-|---|---|
-| Acaban en cita | 8/8 |
-| Datos falsos | 0 |
-| Criterio / completa | 7,5 / 10 |
-| Datos, aviso | 10 / 10 |
-| Coherente / fichas | 7,5 / 7,5 |
-| Nota media | **7,88** |
+| | c4 | c5 |
+|---|---|---|
+| Acaban en cita | 8/8 | 8/8 |
+| Datos falsos | 0 | 2 |
+| Criterio / completa | 7,5 / 10 | 8,8 / 10 |
+| Datos, aviso | 10 / 10 | 10 / 10 |
+| Coherente / fichas | 7,5 / 7,5 | 3,8 / 10 |
+| Nota media | **7,88** | 7,50 |
 
 Fallos c4: al tabique le aplicó el precio por metro de una reforma integral; repitió cuatro veces «el plazo lo da el técnico» en la cocina; dio el rango del plato a un baño casi completo; ficha con «Casa» por «ventanas de casa» y una fecha de inicio que no era de la obra; no avisó de la comunidad en las ventanas de un piso. Cambios c4→c5: casos de tabique, cocina, baño y ventanas afinados; pistas de vivienda e inicio.
+c5: mejora el criterio (8,8) y las fichas (10), pero baja la coherencia (3,8): repite la misma explicación en varios turnos y mezcla tú y usted. 2 «datos falsos» límite: «el presupuesto también es gratis» (no constaba: añadido como condición PENDIENTE de confirmar por Juan) y «cambiar ventanas en un piso siempre necesita la comunidad» (culpa de mi redacción; corregida: solo si cambia el aspecto de la fachada). Cambios c5→c6: lo ya dicho no vuelve a porDecir ni se repite; tú o usted se decide en la primera respuesta y no cambia (base común).
 
 ## Qué se corrigió entre rondas (en el cerebro común, para todas las webs, salvo lo marcado)
 - R1→R2: dar siempre el rango de precio si lo pide; empatía con miedo, susto o personas mayores; usted en toda la conversación; una sola pregunta; rellenar en la ficha lo que el cliente ya dijo.

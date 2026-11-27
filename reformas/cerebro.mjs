@@ -21,7 +21,7 @@ export const NEGOCIO = {
   visita: {
     precio: "Gratis",                    // PENDIENTE: confirmar con la empresa (la competencia de Granada no la cobra)
     duracion: "unos 45 minutos",          // PENDIENTE: confirmar duración de la visita
-    detalle: "un técnico va a tu casa, mide, mira las instalaciones y te explica opciones y materiales, sin compromiso"
+    detalle: "un técnico va a tu casa, mide, mira las instalaciones y te explica opciones y materiales, sin compromiso; el presupuesto por escrito también es gratis"   // PENDIENTE: confirmar con la empresa que el presupuesto es gratis (lo habitual en Granada)
   },
   plazoPresupuesto: "en unos 5 días laborables después de la visita",   // PENDIENTE: plazo del presupuesto que asume la empresa
   plazoVisita: "normalmente en 2 a 4 días",                             // PENDIENTE: confirmar en cuántos días se hace la visita
