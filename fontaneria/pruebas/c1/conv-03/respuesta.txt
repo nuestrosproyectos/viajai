@@ -1,0 +1,3 @@
+Perfecto, Ana. Apunto la calle Arabial 12, bajo A, en el Zaidín, Granada, y el teléfono 677 450 990 para por la tarde. ¿Está bien así?
+<ficha>{"averia":"Agua sucia por el plato de ducha del bajo cuando tiran de la cisterna de arriba","cuando":"Visita programada","llave":"","vivienda":"Piso","seguro":"","nombre":"Ana","telefono":"677 450 990","municipio":"Granada (El Zaidín)","direccion":"Calle Arabial 12, bajo A","franja":"Por la tarde","inicio":"","orientacion":"Probable bajante del edificio, elemento común de la comunidad: avisar al presidente o al administrador; el informe del fontanero ayuda a aclararlo","fase":"datos"}</ficha>
+<mostrar>contacto</mostrar>

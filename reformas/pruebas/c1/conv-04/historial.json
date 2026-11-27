@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Gracias, Carmen. Lo apunto para primera hora de la mañana, porque lo primero es que su padre no se caiga. ¿Me dice un teléfono de contacto? Es solo para llamarle y organizar la visita.\n<ficha>{\"obra\":\"Cambiar la bañera por plato de ducha\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Carmen\",\"telefono\":\"\",\"municipio\":\"Maracena\",\"franja\":\"Por la mañana, a primera hora\",\"inicio\":\"\",\"orientacion\":\"Confirmar el teléfono y reservar la visita gratuita a primera hora; cambiar la bañera por plato de ducha es lo prioritario por el riesgo de caída.\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Carmen. Lo apunto para primera hora de la mañana, porque lo primero es que su padre no se caiga. ¿Me dice un teléfono de contacto? Es solo para llamarle y organizar la visita.\n<ficha>{\"obra\":\"Cambiar la bañera por plato de ducha\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Carmen\",\"telefono\":\"\",\"municipio\":\"Maracena\",\"franja\":\"Por la mañana, a primera hora\",\"inicio\":\"\",\"orientacion\":\"Confirmar el teléfono y reservar la visita gratuita a primera hora; cambiar la bañera por plato de ducha es lo prioritario por el riesgo de caída.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "699 450 212"
  }
 ]

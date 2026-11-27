@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Gracias, Antonio. Es solo para llamarle y organizar la visita de la mañana. ¿Me dice un teléfono de contacto?\n<ficha>{\"obra\":\"\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Por la mañana\",\"inicio\":\"\",\"orientacion\":\"Confirmar el teléfono y reservar la visita gratuita por la mañana; el presupuesto por escrito llega después.\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Antonio. Es solo para llamarle y organizar la visita de la mañana. ¿Me dice un teléfono de contacto?\n<ficha>{\"obra\":\"\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Por la mañana\",\"inicio\":\"\",\"orientacion\":\"Confirmar el teléfono y reservar la visita gratuita por la mañana; el presupuesto por escrito llega después.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "678 112 443"
  }
 ]

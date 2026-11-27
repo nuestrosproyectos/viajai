@@ -1,0 +1,3 @@
+Perfecto, Pilar, gracias. Apunto Recogidas 40, 2º B, en Granada, y el teléfono 610 223 344. ¿Está bien así?
+<ficha>{"averia":"Agua por debajo del fregadero, ya cortada con la llave de paso","cuando":"Hoy, en cuanto podáis","llave":"Sí, la he cerrado y ya no sale agua","vivienda":"","seguro":"","nombre":"Pilar","telefono":"610 223 344","municipio":"Granada","direccion":"Recogidas 40, 2º B","franja":"Hoy","inicio":"","orientacion":"Dejar la llave cerrada y hacer fotos para el seguro; visita urgente para revisar la fuga","fase":"datos"}</ficha>
+<mostrar>contacto</mostrar>

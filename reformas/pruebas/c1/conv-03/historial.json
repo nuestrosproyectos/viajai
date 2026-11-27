@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Perfecto, la visita será por la tarde y el técnico mirará si el tabique es de carga antes de tocar nada. ¿A qué nombre te reservo la visita? Es solo para llamarte y organizarla.\n<ficha>{\"obra\":\"Tirar el tabique entre cocina y salón\",\"vivienda\":\"Piso\",\"metros\":\"\",\"antiguedad\":\"Edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada\",\"franja\":\"Cualquier tarde\",\"inicio\":\"\",\"orientacion\":\"Comprobar si el tabique es de carga antes de tocarlo; la visita lo aclara.\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, la visita será por la tarde y el técnico mirará si el tabique es de carga antes de tocar nada. ¿A qué nombre te reservo la visita? Es solo para llamarte y organizarla.\n<ficha>{\"obra\":\"Tirar el tabique entre cocina y salón\",\"vivienda\":\"Piso\",\"metros\":\"\",\"antiguedad\":\"Edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada\",\"franja\":\"Cualquier tarde\",\"inicio\":\"\",\"orientacion\":\"Comprobar si el tabique es de carga antes de tocarlo; la visita lo aclara.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Lucía"
  }
 ]
