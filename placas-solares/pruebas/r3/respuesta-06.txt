@@ -1,0 +1,3 @@
+Eso no es del todo así: la factura no baja a cero, siempre quedan la potencia contratada, el contador, los impuestos y lo que gastas de noche. Te reservo el estudio gratuito para calcular cuánto baja de verdad. ¿Cuánto pagas de luz al mes?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Calcular cuánto baja la factura con sus facturas en el estudio gratuito; no llega a cero","fase":"proponiendo"}</ficha>
+<mostrar>como</mostrar>

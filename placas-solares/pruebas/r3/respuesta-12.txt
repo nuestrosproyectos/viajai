@@ -1,0 +1,2 @@
+Es importante revisarlo: sin contrato de compensación con la compañía, lo que sobra no se descuenta en la factura. Te reservo una revisión con el técnico, que te confirmará el precio. ¿Qué pone la pantalla del inversor, alguna luz o código?
+<ficha>{"que":"Revisar mi instalación","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Revisar si hay contrato de compensación y si la instalación está legalizada; el técnico confirma el precio de la revisión","fase":"proponiendo"}</ficha>

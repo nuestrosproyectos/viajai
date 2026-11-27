@@ -1,0 +1,2 @@
+Cargar de día con sol es lo que más aprovecha las placas, y el cargador lo confirma el técnico. Te reservo el estudio gratuito. ¿Sueles cargarlo de día o de noche?
+<ficha>{"que":"Placas para coche eléctrico","lugar":"Casa","factura":"","tejado":"","consumo":"coche eléctrico","nombre":"","telefono":"","municipio":"Maracena","franja":"","inicio":"","orientacion":"Cargar de día con sol; el técnico confirma el cargador y el tamaño de las placas","fase":"proponiendo"}</ficha>

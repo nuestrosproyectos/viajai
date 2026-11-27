@@ -1,0 +1,2 @@
+Con batería se encarece, y en muchas casas alarga la amortización, es decir, el tiempo que tarda en pagarse sola. Compensa más cuanto más gastas de noche. Te reservo el estudio gratuito con tus facturas. ¿Cuánto gastas de noche, más o menos?
+<ficha>{"que":"Placas con batería","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Ver si compensa según el consumo de noche; el estudio lo calcula con sus facturas","fase":"proponiendo"}</ficha>

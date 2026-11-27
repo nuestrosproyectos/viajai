@@ -1,0 +1,3 @@
+No, en un bloque la cubierta es común y hace falta acuerdo de la junta. Para uso común suele bastar una mayoría reducida, de un tercio orientativamente; el técnico confirma la exacta. ¿Te reservo el estudio gratuito, por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"Comunidad de vecinos","factura":"","tejado":"azotea","consumo":"","nombre":"","telefono":"","municipio":"Granada, barrio de La Chana","franja":"","inicio":"","orientacion":"Buscar el acuerdo de la junta; no puede instalar solo en la azotea común","fase":"proponiendo"}</ficha>
+<mostrar>situaciones</mostrar>
