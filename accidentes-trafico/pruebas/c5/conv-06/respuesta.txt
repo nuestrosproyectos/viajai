@@ -1,3 +1,0 @@
-Te entiendo, es normal desconfiar. Nuestro abogado está colegiado en Granada y, si no hay indemnización, no hay honorarios. Así decides tú con calma, sin compromiso. ¿Te reservo la consulta gratis?
-<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"Sí, el seguro le ofrece un abogado","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Puede quedarse con el abogado de su seguro o pedir una segunda opinión en la consulta gratis","fase":"proponiendo"}</ficha>
-<mostrar>honorarios</mostrar>

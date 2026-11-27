@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "No sé si se identificó, vino la Guardia Civil e hicieron atestado y él reconoció que fue culpa suya. ¿Puedo reclamar a la mutua y al seguro del otro a la vez o es uno u otro?"
+ },
+ {
+  "role": "assistant",
+  "content": "La mutua cubre la baja y, si hay otro culpable, se puede reclamar además a su aseguradora. El atestado de la Guardia Civil ayuda mucho, y cómo encajan las dos vías lo confirma el abogado. ¿Te reservo la consulta gratis?\n<ficha>{\"caso\":\"Volviendo del trabajo en moto, un coche le sacó de la carretera\",\"como\":\"En moto\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"Atestado de la policía\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"La mutua cubre la baja; si hay otro culpable, también se puede reclamar a su aseguradora\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "La mutua cubre la baja y, si hay otro culpable, se puede reclamar además a su aseguradora. El atestado de la Guardia Civil ayuda mucho, y cómo encajan las dos vías lo confirma el abogado. ¿Te reservo la consulta gratis?\n<ficha>{\"caso\":\"Volviendo del trabajo en moto, un coche le sacó de la carretera\",\"como\":\"En moto\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"Atestado de la policía\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"La mutua cubre la baja; si hay otro culpable, también se puede reclamar a su aseguradora\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

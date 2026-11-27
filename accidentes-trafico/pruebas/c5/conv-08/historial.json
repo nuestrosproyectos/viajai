@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Mi madre iba de pasajera, sí. Perdone, estoy muy afectada, ¿es muy pronto para hablar de reclamar? No sé qué tenemos que hacer"
+ },
+ {
+  "role": "assistant",
+  "content": "No se preocupe, para empezar a verlo no es pronto. Como pasajera, casi siempre se la indemniza, del seguro del culpable o del coche en que iba, sin hacer falta saber aún de quién fue la culpa. ¿Le reservo la consulta gratis?\n<ficha>{\"caso\":\"Accidente de autobús en la carretera de Motril; escribe en nombre de su madre, de 79 años\",\"como\":\"De pasajero\",\"fecha\":\"ayer\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar todos los informes del hospital; como pasajera, casi siempre se la indemniza\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "No se preocupe, para empezar a verlo no es pronto. Como pasajera, casi siempre se la indemniza, del seguro del culpable o del coche en que iba, sin hacer falta saber aún de quién fue la culpa. ¿Le reservo la consulta gratis?\n<ficha>{\"caso\":\"Accidente de autobús en la carretera de Motril; escribe en nombre de su madre, de 79 años\",\"como\":\"De pasajero\",\"fecha\":\"ayer\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar todos los informes del hospital; como pasajera, casi siempre se la indemniza\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

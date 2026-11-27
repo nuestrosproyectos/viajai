@@ -1,3 +1,0 @@
-No te preocupes: la consulta es gratis y, si no hay indemnización, no hay honorarios. Lo habitual es un porcentaje de lo que se consiga, entre el diez y el treinta por ciento; el porcentaje exacto te lo da el abogado. ¿Te reservo la consulta?
-<ficha>{"caso":"Golpe por detrás","como":"","fecha":"hace tres días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que te vea un médico hoy y avisar a tu aseguradora en siete días","fase":"proponiendo"}</ficha>
-<mostrar>honorarios</mostrar>
