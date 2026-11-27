@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "En Granada, en el Realejo"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Inés. Te apunto: teléfono seis cinco cinco, siete siete siete, tres tres tres, en el Realejo, Granada, para la consulta presencial por la mañana. ¿Está todo bien?\n<ficha>{\"caso\":\"Atropello en un paso de cebra hace un año y medio; el conductor se fue y no se sabe quién era\",\"como\":\"Andando\",\"fecha\":\"Hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Inés\",\"telefono\":\"655 777 333\",\"municipio\":\"Granada (Realejo)\",\"franja\":\"Presencial, por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Alta hace unos siete meses y sin reclamación por escrito. Denunciar cuanto antes, con testigos y atestado; si el conductor no se identificó, responde el Consorcio de Compensación de Seguros.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Inés. Te apunto: teléfono seis cinco cinco, siete siete siete, tres tres tres, en el Realejo, Granada, para la consulta presencial por la mañana. ¿Está todo bien?\n<ficha>{\"caso\":\"Atropello en un paso de cebra hace un año y medio; el conductor se fue y no se sabe quién era\",\"como\":\"Andando\",\"fecha\":\"Hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Inés\",\"telefono\":\"655 777 333\",\"municipio\":\"Granada (Realejo)\",\"franja\":\"Presencial, por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Alta hace unos siete meses y sin reclamación por escrito. Denunciar cuanto antes, con testigos y atestado; si el conductor no se identificó, responde el Consorcio de Compensación de Seguros.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Sí, todo bien"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Pedro. Tu solicitud queda enviada y te llamamos para confirmar la videollamada de la tarde para tu mujer. ¿Necesitas algo más?\n<ficha>{\"caso\":\"Se saltó un ceda; iba con su mujer como pasajera\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Pedro\",\"telefono\":\"600 909 303\",\"municipio\":\"Loja\",\"franja\":\"Por videollamada, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Tener a mano el informe de urgencias y el parte; la consulta es para su mujer, que como pasajera normalmente puede reclamar.\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Pedro. Tu solicitud queda enviada y te llamamos para confirmar la videollamada de la tarde para tu mujer. ¿Necesitas algo más?\n<ficha>{\"caso\":\"Se saltó un ceda; iba con su mujer como pasajera\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Pedro\",\"telefono\":\"600 909 303\",\"municipio\":\"Loja\",\"franja\":\"Por videollamada, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Tener a mano el informe de urgencias y el parte; la consulta es para su mujer, que como pasajera normalmente puede reclamar.\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"consulta\",\"caso\":\"Se saltó un ceda; iba con su mujer como pasajera\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Pedro\",\"telefono\":\"600 909 303\",\"municipio\":\"Loja\",\"franja\":\"Por videollamada, por la tarde\",\"consentimientoSalud\":\"\",\"urgente\":false,\"notas\":\"Reconoce que tuvo la culpa: se saltó un ceda. Iba con su mujer, que va como pasajera y quiere reclamar. La consulta es para ella, por videollamada por la tarde. Pregunta si la culpa suya le perjudica en algo si ella reclama. Vive en Loja con su mujer.\"}</aviso>"
  }
 ]

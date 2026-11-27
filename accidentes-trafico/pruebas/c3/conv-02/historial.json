@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Sí, está bien"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Sonia. Tu solicitud queda enviada y te llamamos por la mañana para confirmar la consulta. ¿Necesitas algo más?\n<ficha>{\"caso\":\"La aseguradora del otro ofrece 2.300 € y le piden firmar ya\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"Sonia\",\"telefono\":\"633 202 404\",\"municipio\":\"Motril\",\"franja\":\"Por teléfono, por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada; el abogado revisa la oferta antes de decidir nada.\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Sonia. Tu solicitud queda enviada y te llamamos por la mañana para confirmar la consulta. ¿Necesitas algo más?\n<ficha>{\"caso\":\"La aseguradora del otro ofrece 2.300 € y le piden firmar ya\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"Sonia\",\"telefono\":\"633 202 404\",\"municipio\":\"Motril\",\"franja\":\"Por teléfono, por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada; el abogado revisa la oferta antes de decidir nada.\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"consulta\",\"caso\":\"La aseguradora del otro ofrece 2.300 € y le piden firmar ya\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"Sonia\",\"telefono\":\"633 202 404\",\"municipio\":\"Motril\",\"franja\":\"Por teléfono, por la mañana\",\"consentimientoSalud\":\"\",\"urgente\":true,\"notas\":\"La aseguradora del otro ofrece 2.300 € y le llaman todos los días para que firme ya. No ha firmado nada. Pregunta si 2.300 € es poco. Quiere que lo revise el abogado por teléfono por la mañana.\"}</aviso>"
  }
 ]
