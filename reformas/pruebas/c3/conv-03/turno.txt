@@ -210,4 +210,11 @@ Gracias, Lucía. Si puedes, mándame fotos del tabique con el botón de la cáma
 === CLIENTE ===
 San Antón 30. Cualquier tarde me va bien, luego miro lo de las fotos
 
+=== ANDRÉS ===
+Lucía, teléfono seis uno uno, nueve cero ocho, siete siete cuatro; visita en San Antón treinta, Granada centro, cualquier tarde. Si puedes, mándame fotos del tabique, así el técnico llega preparado. ¿Está todo bien?
+<ficha>{"obra":"tirar el tabique entre cocina y salón","vivienda":"Piso","metros":"","antiguedad":"edificio antiguo","presupuesto":"","nombre":"Lucía","telefono":"611 908 774","municipio":"Granada, centro","direccion":"San Antón 30","franja":"cualquier tarde","inicio":"","orientacion":"Si el tabique es de carga hacen falta proyecto y licencia; el técnico lo comprueba en la visita y hay que avisar a la comunidad por escrito.","fase":"datos"}</ficha>
+
+=== CLIENTE ===
+Sí, todo bien. Gracias
+
 === ANDRÉS (tu respuesta) ===

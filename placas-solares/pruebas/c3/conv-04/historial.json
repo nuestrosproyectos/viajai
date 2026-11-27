@@ -38,5 +38,14 @@
  {
   "role": "user",
   "content": "Calle Arabial 50. Me va bien cualquier tarde de la semana"
+ },
+ {
+  "role": "assistant",
+  "content": "Elena, teléfono seis ocho ocho, uno dos cero, siete siete siete; estudio en Calle Arabial cincuenta, Granada, Zaidín, cualquier tarde de la semana. ¿Está todo bien?\n<ficha>{\"que\":\"Placas solares en la azotea del bloque\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea común\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"688 120 777\",\"municipio\":\"Granada, Zaidín\",\"direccion\":\"Calle Arabial 50\",\"franja\":\"cualquier tarde de la semana\",\"inicio\":\"\",\"orientacion\":\"Para la azotea común hace falta el acuerdo de la junta; el estudio sirve para llevarlo a la reunión.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Elena, teléfono seis ocho ocho, uno dos cero, siete siete siete; estudio en Calle Arabial cincuenta, Granada, Zaidín, cualquier tarde de la semana. ¿Está todo bien?\n<ficha>{\"que\":\"Placas solares en la azotea del bloque\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea común\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"688 120 777\",\"municipio\":\"Granada, Zaidín\",\"direccion\":\"Calle Arabial 50\",\"franja\":\"cualquier tarde de la semana\",\"inicio\":\"\",\"orientacion\":\"Para la azotea común hace falta el acuerdo de la junta; el estudio sirve para llevarlo a la reunión.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien. Gracias"
  }
 ]

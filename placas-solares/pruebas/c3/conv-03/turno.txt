@@ -204,4 +204,11 @@ Perfecto, te lo apunto para una tarde entre semana. Si mandas una foto de la fac
 === CLIENTE ===
 Manolo, 633 909 101
 
+=== ANDRÉS ===
+Gracias, Manolo. Las garantías de equipos y mano de obra irán por escrito en el presupuesto. ¿En qué calle y número está la casa, y en qué municipio?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"Manolo","telefono":"633 909 101","municipio":"","direccion":"","franja":"por la tarde, entre semana","inicio":"","orientacion":"Las garantías de equipos y mano de obra van por escrito en el presupuesto; el estudio con tus facturas calcula cuánto te compensa.","fase":"datos"}</ficha>
+
+=== CLIENTE ===
+Calle Nueva 3, en Pulianas
+
 === ANDRÉS (tu respuesta) ===

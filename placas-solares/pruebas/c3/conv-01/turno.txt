@@ -204,4 +204,11 @@ Perfecto, lo apunto para el viernes por la mañana. Y la deducción de la Renta 
 === CLIENTE ===
 Javier, 644 778 120
 
+=== ANDRÉS ===
+Perfecto, Javier, lo apunto para el viernes por la mañana. Si puedes, manda una foto de la factura con el botón de la cámara: así el técnico ve cuántos kilovatios hora gastas al año. ¿En qué calle y número está la casa?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 120 € al mes","tejado":"","consumo":"sobre todo de día, con teletrabajo y aire acondicionado","nombre":"Javier","telefono":"644 778 120","municipio":"Armilla","direccion":"","franja":"por la mañana, el viernes si puede ser","inicio":"","orientacion":"Gastas sobre todo de día, así que las placas se aprovechan mucho; con la factura, el estudio gratis confirma cuánto te compensa.","fase":"datos"}</ficha>
+
+=== CLIENTE ===
+Calle Granada 5, en Armilla
+
 === ANDRÉS (tu respuesta) ===

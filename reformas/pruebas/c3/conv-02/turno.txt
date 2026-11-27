@@ -210,4 +210,11 @@ Gracias, Antonio. Las Gabias tiene su propia ordenanza y sus importes, así que 
 === CLIENTE ===
 Calle Real 22. Cualquier día de la semana que viene por la mañana. Y confirmo: visita gratis y lo de los imprevistos por escrito antes de hacerlos, ¿no?
 
+=== ANDRÉS ===
+La visita es gratis, y lo oculto se presupuesta por escrito y no se hace sin tu firma. Antonio, teléfono seis siete ocho, uno uno dos, cuatro cuatro tres; visita en Calle Real veintidós, Las Gabias, la semana que viene por la mañana. ¿Está todo bien?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"678 112 443","municipio":"Las Gabias","direccion":"Calle Real 22","franja":"la semana que viene por la mañana","inicio":"","orientacion":"La visita es gratis; lo que aparezca oculto se presupuesta por escrito y no se hace sin tu firma.","fase":"datos"}</ficha>
+
+=== CLIENTE ===
+Sí, está todo bien. Quedo a la espera de su llamada.
+
 === ANDRÉS (tu respuesta) ===
