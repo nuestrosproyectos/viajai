@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "No quites la uralita este fin de semana ni la rompas: puede tener amianto. Solo la retira una empresa inscrita en el registro de amianto. La visita de medición es gratis y allí vemos qué conviene poner en el tejado. ¿Te reservo la visita?\n<ficha>{\"obra\":\"quitar el tejado de uralita de la cochera\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No quites tú la uralita: puede tener amianto, y solo la retira una empresa inscrita en el registro de amianto.\",\"porDecir\":\"la retirada la hace una empresa inscrita, con un plan de trabajo aprobado · no recomendamos marcas; el técnico ve qué material conviene\",\"fase\":\"orientando\"}</ficha>\n<mostrar>situaciones</mostrar>",
   "original": "No quites la uralita este fin de semana ni la rompas: puede tener amianto. Solo la retira una empresa inscrita en el registro de amianto. La visita de medición es gratis y allí vemos qué conviene poner en el tejado. ¿Te reservo la visita?\n<ficha>{\"obra\":\"quitar el tejado de uralita de la cochera\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No quites tú la uralita: puede tener amianto, y solo la retira una empresa inscrita en el registro de amianto.\",\"porDecir\":\"la retirada la hace una empresa inscrita, con un plan de trabajo aprobado · no recomendamos marcas; el técnico ve qué material conviene\",\"fase\":\"orientando\"}</ficha>\n<mostrar>situaciones</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Hombre, lo quería hacer yo con mi cuñado para ahorrar. ¿Tan peligroso es?"
  }
 ]

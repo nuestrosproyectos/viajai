@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Un baño completo suele costar entre tres mil y seis mil euros y tardar una o dos semanas. En pisos antiguos suelen aparecer tuberías viejas que encarecen la obra. La visita de medición es gratis y sin compromiso. ¿De qué año es el piso?\n<ficha>{\"obra\":\"reformar el baño\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Un baño completo suele rondar entre tres mil y seis mil euros; en un piso antiguo conviene revisar las tuberías.\",\"porDecir\":\"si es Granada capital, lo más probable es declaración responsable · avisar por escrito al presidente o administrador de la comunidad\",\"fase\":\"orientando\"}</ficha>\n<mostrar>orientativos</mostrar>",
   "original": "Un baño completo suele costar entre tres mil y seis mil euros y tardar una o dos semanas. En pisos antiguos suelen aparecer tuberías viejas que encarecen la obra. La visita de medición es gratis y sin compromiso. ¿De qué año es el piso?\n<ficha>{\"obra\":\"reformar el baño\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Un baño completo suele rondar entre tres mil y seis mil euros; en un piso antiguo conviene revisar las tuberías.\",\"porDecir\":\"si es Granada capital, lo más probable es declaración responsable · avisar por escrito al presidente o administrador de la comunidad\",\"fase\":\"orientando\"}</ficha>\n<mostrar>orientativos</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Es del 78. Está en la Chana, en Granada capital"
  }
 ]
