@@ -6,4 +6,8 @@ TÚ (cliente): Iba en bici por el carril de la Avenida de la Constitución y un 
 
 Andrés (asistente de la web): Siento lo de tu clavícula. Ve a urgencias hoy, que el informe de urgencias prueba la lesión. Como vas en bici, la aseguradora solo se libra si la culpa fue solo tuya. Te puedo reservar la consulta gratis con el abogado. ¿Llamaste a la policía?
 
+TÚ (cliente): Sí, vino la Policía Local, hicieron atestado y hay un testigo. Me llevaron en ambulancia a urgencias. El conductor dice que fue culpa mía, ¿tengo que pagar yo la bici?
+
+Andrés (asistente de la web): Lo que diga el conductor no decide lo de la bici. Como ciclista, la aseguradora solo se libra si la culpa fue solo tuya. El atestado y el testigo ayudan, y lo valora el abogado. Sigue el tratamiento. ¿Te reservo la consulta?
+
 === TU SIGUIENTE MENSAJE ===

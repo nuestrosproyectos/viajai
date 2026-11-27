@@ -6,4 +6,8 @@ TÚ (cliente): Hola, hace 3 días me dieron un golpe por detrás y me duele el c
 
 Andrés (asistente de la web): Siento lo de tu cuello. Lo primero, que te vea un médico hoy y quede por escrito. Como el golpe fue hace menos de siete días, avisa a tu aseguradora. Te puedo reservar la primera consulta, gratis, con el abogado. ¿Ya has ido al médico?
 
+TÚ (cliente): No, todavía no, pensaba que se me pasaría solo. Y lo del abogado, ¿cuánto me va a costar?
+
+Andrés (asistente de la web): La consulta es gratis, sin compromiso. Si encarga el caso, suele ser entre el diez y el treinta por ciento de lo que se consiga, y el abogado lo concreta. Lo primero que te vea un médico hoy y sigue el tratamiento. ¿Te reservo la consulta?
+
 === TU SIGUIENTE MENSAJE ===

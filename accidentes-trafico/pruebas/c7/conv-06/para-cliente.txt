@@ -6,4 +6,8 @@ TÚ (cliente): Mi seguro me dice que me pone ellos un abogado gratis. ¿Para qu�
 
 Andrés (asistente de la web): Tienes derecho a elegir tu propio abogado, aunque el seguro te ofrezca el suyo. Si tu póliza tiene defensa jurídica, puede cubrir parte de los honorarios. Te puedo reservar la consulta gratis como segunda opinión. ¿Ya has firmado algo con ese abogado?
 
+TÚ (cliente): No, de momento no he firmado nada con él. Es que no me fío mucho de que el abogado del seguro mire por mí
+
+Andrés (asistente de la web): Es normal querer alguien que mire solo por ti. Tú eliges abogado, y la consulta gratis sirve para ver tu caso sin compromiso. Si decides seguir con el del seguro, se respeta. ¿Te reservo la consulta?
+
 === TU SIGUIENTE MENSAJE ===
