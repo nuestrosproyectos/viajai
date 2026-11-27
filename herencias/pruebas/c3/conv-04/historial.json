@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Mi hermano ha muerto y creo que tenía deudas. ¿Si acepto la herencia tengo que pagarlas yo?"
+ },
+ {
+  "role": "assistant",
+  "content": "Siento lo de tu hermano. Si aceptas sin más, sí respondes de las deudas, incluso con tu propio dinero, así que de momento no toques cuentas ni bienes. Te reservo la primera consulta gratis con el abogado. ¿Sabes si tu hermano hizo testamento?\n<ficha>{\"situacion\":\"herencia de tu hermano, que tenía deudas\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Si aceptas sin más, también respondes de las deudas con tu propio dinero; de momento, no toques cuentas ni bienes hasta hablar con el abogado.\",\"porDecir\":\"pedir el certificado de últimas voluntades, que dice si hay testamento · a beneficio de inventario, ante notario, solo respondes de las deudas hasta donde llegue la herencia · renunciar es ante notario y es irrevocable\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Siento lo de tu hermano. Si aceptas sin más, sí respondes de las deudas, incluso con tu propio dinero, así que de momento no toques cuentas ni bienes. Te reservo la primera consulta gratis con el abogado. ¿Sabes si tu hermano hizo testamento?\n<ficha>{\"situacion\":\"herencia de tu hermano, que tenía deudas\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Si aceptas sin más, también respondes de las deudas con tu propio dinero; de momento, no toques cuentas ni bienes hasta hablar con el abogado.\",\"porDecir\":\"pedir el certificado de últimas voluntades, que dice si hay testamento · a beneficio de inventario, ante notario, solo respondes de las deudas hasta donde llegue la herencia · renunciar es ante notario y es irrevocable\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

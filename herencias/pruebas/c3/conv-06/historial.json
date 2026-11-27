@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Mi pareja ha fallecido. No estábamos casados pero llevábamos 15 años juntos. ¿Me corresponde algo?"
+ },
+ {
+  "role": "assistant",
+  "content": "Siento mucho lo de tu pareja. Sin testamento, una pareja que no estaba casada no hereda, pero con testamento sí puede recibir parte de la herencia. Te reservo la primera consulta gratis con el abogado. ¿Sabes si hizo testamento?\n<ficha>{\"situacion\":\"fallecimiento de tu pareja, con quien llevabas quince años sin estar casados\",\"parentesco\":\"Pareja de hecho\",\"testamento\":\"\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Sin testamento, una pareja que no estaba casada no hereda; con testamento sí puede recibir parte de la herencia.\",\"porDecir\":\"pedir el certificado de últimas voluntades, pasados quince días hábiles, para saber si hay testamento · si la pareja estaba inscrita, en el impuesto tiene la misma reducción que el cónyuge · el impuesto tiene seis meses desde el fallecimiento\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Siento mucho lo de tu pareja. Sin testamento, una pareja que no estaba casada no hereda, pero con testamento sí puede recibir parte de la herencia. Te reservo la primera consulta gratis con el abogado. ¿Sabes si hizo testamento?\n<ficha>{\"situacion\":\"fallecimiento de tu pareja, con quien llevabas quince años sin estar casados\",\"parentesco\":\"Pareja de hecho\",\"testamento\":\"\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Sin testamento, una pareja que no estaba casada no hereda; con testamento sí puede recibir parte de la herencia.\",\"porDecir\":\"pedir el certificado de últimas voluntades, pasados quince días hábiles, para saber si hay testamento · si la pareja estaba inscrita, en el impuesto tiene la misma reducción que el cónyuge · el impuesto tiene seis meses desde el fallecimiento\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

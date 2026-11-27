@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Hola, mi padre falleció la semana pasada y no sé por dónde empezar."
+ },
+ {
+  "role": "assistant",
+  "content": "Siento mucho lo de tu padre. Lo primero es el certificado de defunción, que se pide gratis en el Registro Civil. Te reservo la primera consulta gratis con el abogado, que te dirá qué pasos tocan. ¿Sabes si tu padre hizo testamento?\n<ficha>{\"situacion\":\"fallecimiento de tu padre la semana pasada, no sabes por dónde empezar\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"No lo sé\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"la semana pasada\",\"modalidad\":\"\",\"orientacion\":\"Pedir primero el certificado de defunción, que es gratis en el Registro Civil, y reservar la primera consulta gratis con el abogado.\",\"porDecir\":\"el certificado de últimas voluntades, pasados quince días hábiles, que dice si hay testamento · el impuesto de sucesiones tiene seis meses desde el fallecimiento\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Siento mucho lo de tu padre. Lo primero es el certificado de defunción, que se pide gratis en el Registro Civil. Te reservo la primera consulta gratis con el abogado, que te dirá qué pasos tocan. ¿Sabes si tu padre hizo testamento?\n<ficha>{\"situacion\":\"fallecimiento de tu padre la semana pasada, no sabes por dónde empezar\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"No lo sé\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"la semana pasada\",\"modalidad\":\"\",\"orientacion\":\"Pedir primero el certificado de defunción, que es gratis en el Registro Civil, y reservar la primera consulta gratis con el abogado.\",\"porDecir\":\"el certificado de últimas voluntades, pasados quince días hábiles, que dice si hay testamento · el impuesto de sucesiones tiene seis meses desde el fallecimiento\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]
