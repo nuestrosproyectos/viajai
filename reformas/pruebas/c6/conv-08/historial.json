@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Gracias, Antonio, lo apunto. La retirada exige un plan de trabajo aprobado, así que no se puede improvisar. ¿En qué municipio y calle, con número, está la vivienda, y le viene mejor mañana o tarde?\n<ficha>{\"obra\":\"Quitar el tejado de uralita de la cochera y poner otro\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"655 909 341\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No quitar la uralita uno mismo: puede tener amianto, y solo la retira una empresa inscrita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Antonio, lo apunto. La retirada exige un plan de trabajo aprobado, así que no se puede improvisar. ¿En qué municipio y calle, con número, está la vivienda, y le viene mejor mañana o tarde?\n<ficha>{\"obra\":\"Quitar el tejado de uralita de la cochera y poner otro\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"655 909 341\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No quitar la uralita uno mismo: puede tener amianto, y solo la retira una empresa inscrita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "En Atarfe, calle Granada 8. Mejor por la tarde"
  }
 ]

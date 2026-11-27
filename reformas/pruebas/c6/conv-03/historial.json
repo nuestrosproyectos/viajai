@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "No, mejor no tirarlo sin avisar: puede ser de carga, y eso lo decide el técnico tras medirlo. Si la cocina queda abierta, la campana tiene que seguir sacando los humos por su conducto, no a un patio de luces. ¿Te reservo la visita?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"Edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada\",\"direccion\":\"Calle San Antón, 5º, en el centro\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Tirar un tabique no tiene precio fijo; el técnico lo ve en la visita y, si es de carga, hace falta proyecto y licencia.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "No, mejor no tirarlo sin avisar: puede ser de carga, y eso lo decide el técnico tras medirlo. Si la cocina queda abierta, la campana tiene que seguir sacando los humos por su conducto, no a un patio de luces. ¿Te reservo la visita?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"Edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada\",\"direccion\":\"Calle San Antón, 5º, en el centro\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Tirar un tabique no tiene precio fijo; el técnico lo ve en la visita y, si es de carga, hace falta proyecto y licencia.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, tiene sentido. Reserva la visita"
  }
 ]

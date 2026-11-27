@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Perfecto, le apunto la visita. Sobre el tiempo sin cocina: depende de los muebles a medida, la fontanería y el alicatado, y el técnico lo da en la visita. Es solo para llamarle: ¿me dice su nombre y un teléfono?\n<ficha>{\"obra\":\"cocina entera\",\"vivienda\":\"\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Una cocina suele quedar entre seis mil y diez mil euros, según los muebles y si se mueven fregadero o campana.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, le apunto la visita. Sobre el tiempo sin cocina: depende de los muebles a medida, la fontanería y el alicatado, y el técnico lo da en la visita. Es solo para llamarle: ¿me dice su nombre y un teléfono?\n<ficha>{\"obra\":\"cocina entera\",\"vivienda\":\"\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Una cocina suele quedar entre seis mil y diez mil euros, según los muebles y si se mueven fregadero o campana.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Antonio. 678 112 443."
  }
 ]

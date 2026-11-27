@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Plato, azulejos y lavabo nuevos son un baño completo. Si la vivienda es para vivir y tiene más de dos años, el IVA baja al 10 %; tu gestor lo confirma. Es solo para llamarte: ¿me dices tu nombre y un teléfono?\n<ficha>{\"obra\":\"quitar la bañera, poner plato de ducha, cambiar azulejos y lavabo\",\"vivienda\":\"\",\"metros\":\"Unos 5 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Un baño completo suele costar entre tres mil y seis mil euros; el precio exacto sale de la visita de medición.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Plato, azulejos y lavabo nuevos son un baño completo. Si la vivienda es para vivir y tiene más de dos años, el IVA baja al 10 %; tu gestor lo confirma. Es solo para llamarte: ¿me dices tu nombre y un teléfono?\n<ficha>{\"obra\":\"quitar la bañera, poner plato de ducha, cambiar azulejos y lavabo\",\"vivienda\":\"\",\"metros\":\"Unos 5 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Un baño completo suele costar entre tres mil y seis mil euros; el precio exacto sale de la visita de medición.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Marta, 655 321 908"
  }
 ]

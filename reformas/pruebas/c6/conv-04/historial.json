@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Perfecto, anoto la visita para primera hora de la mañana, cuando está con su padre. Es solo para llamarle y organizar la visita: ¿me dice su nombre y un teléfono?\n<ficha>{\"obra\":\"Cambiar la bañera por plato de ducha, para su padre, que ya no puede entrar\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"Mañana, a primera hora\",\"inicio\":\"Cuanto antes\",\"orientacion\":\"Cambiar la bañera por un plato de ducha es la prioridad por seguridad; suele costar entre mil y dos mil trescientos euros.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, anoto la visita para primera hora de la mañana, cuando está con su padre. Es solo para llamarle y organizar la visita: ¿me dice su nombre y un teléfono?\n<ficha>{\"obra\":\"Cambiar la bañera por plato de ducha, para su padre, que ya no puede entrar\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"Mañana, a primera hora\",\"inicio\":\"Cuanto antes\",\"orientacion\":\"Cambiar la bañera por un plato de ducha es la prioridad por seguridad; suele costar entre mil y dos mil trescientos euros.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Carmen, 699 450 212"
  }
 ]
