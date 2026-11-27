@@ -1,0 +1,22 @@
+[Unit]
+Description=global-b2b-outreach-engine · motor de envío
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=outreach
+WorkingDirectory=/opt/global-b2b-outreach-engine
+EnvironmentFile=/opt/global-b2b-outreach-engine/.env
+ExecStart=/opt/global-b2b-outreach-engine/.venv/bin/python cli.py send --live
+Restart=on-failure
+RestartSec=30
+# Da tiempo a terminar el envío en curso antes de parar.
+KillSignal=SIGTERM
+TimeoutStopSec=60
+NoNewPrivileges=true
+ProtectSystem=full
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,28 @@
+[
+  {
+    "email": "laura@colabora-tudominio.com",
+    "from_name": "Laura Martín",
+    "smtp_host": "smtp.tuproveedor.com",
+    "smtp_port": 587,
+    "smtp_security": "starttls",
+    "username": "laura@colabora-tudominio.com",
+    "password": "CONTRASEÑA_O_APP_PASSWORD",
+    "imap_host": "imap.tuproveedor.com",
+    "imap_port": 993,
+    "daily_limit": 30,
+    "reply_to": null
+  },
+  {
+    "email": "equipo@colabora-tudominio.com",
+    "from_name": "Laura Martín",
+    "smtp_host": "smtp.tuproveedor.com",
+    "smtp_port": 465,
+    "smtp_security": "ssl",
+    "username": "equipo@colabora-tudominio.com",
+    "password": "CONTRASEÑA_O_APP_PASSWORD",
+    "imap_host": "imap.tuproveedor.com",
+    "imap_port": 993,
+    "daily_limit": 30,
+    "reply_to": null
+  }
+]

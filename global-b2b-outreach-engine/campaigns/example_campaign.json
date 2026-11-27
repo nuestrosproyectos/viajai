@@ -1,0 +1,19 @@
+{
+  "campaign_name": "colaboradores_espana_test",
+  "niche_label": "averías de fontanería",
+  "city_label": "Granada",
+  "search_terms": ["empresa de fontanería", "fontanero urgente"],
+  "locations": ["Granada, Spain"],
+  "country_code": "ES",
+  "language": "es",
+  "timezone": "Europe/Madrid",
+  "business_hours_start": "09:00",
+  "business_hours_end": "19:00",
+  "max_places_per_search": 50,
+  "whatsapp_number": "34600111222",
+  "whatsapp_prefill_template": "Hola, he visto vuestro correo sobre {niche_label} en {city_label} ({business_name}). ¿Me pasáis info de cómo funciona? [Ref: {lead_ref}]",
+  "offer_context": "Recibimos cada semana avisos de particulares y comunidades de Granada que necesitan un fontanero y no damos abasto. Buscamos profesionales de la zona a los que pasarles esos trabajos. No cobramos cuotas de alta ni hay permanencia: solo se paga una comisión acordada por trabajo realizado y cobrado.",
+  "send_weekdays": [1, 2, 3, 4, 5],
+  "followup_1_days": 3,
+  "followup_2_days": 7
+}

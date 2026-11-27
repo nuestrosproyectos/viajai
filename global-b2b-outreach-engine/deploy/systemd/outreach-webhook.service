@@ -1,0 +1,19 @@
+[Unit]
+Description=global-b2b-outreach-engine · servidor de bajas y webhook de WhatsApp
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=outreach
+WorkingDirectory=/opt/global-b2b-outreach-engine
+EnvironmentFile=/opt/global-b2b-outreach-engine/.env
+ExecStart=/opt/global-b2b-outreach-engine/.venv/bin/uvicorn modules.4_compliance_webhook_server:app --host 127.0.0.1 --port 8080 --proxy-headers --log-level warning
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+ProtectSystem=full
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,290 @@
+{
+  "_readme": {
+    "legal_footer_variables": [
+      "company_name",
+      "tax_id",
+      "fiscal_address",
+      "source_url",
+      "privacy_url",
+      "unsubscribe_url"
+    ],
+    "wa_placeholder": "[[WA_LINK]]",
+    "note": "Una entrada por idioma (es, en, fr, de, it, pt). El pie legal se añade en Python al final de cada correo; el modelo nunca lo escribe. Revisa los textos legales con tu asesor antes de enviar en un país nuevo."
+  },
+  "languages": {
+    "es": {
+      "legal_footer": "Información legal. Responsable: {company_name} ({tax_id}), {fiscal_address}. Te escribimos de empresa a empresa: hemos obtenido esta dirección de contacto profesional en vuestra web pública ({source_url}) y solo tratamos datos de contacto profesional, con el único fin de proponeros esta colaboración, sobre la base de nuestro interés legítimo (art. 6.1.f RGPD y art. 19 LOPDGDD). No cedemos los datos a terceros y los conservamos el tiempo imprescindible para gestionar este contacto, o hasta que te opongas. Puedes ejercer tus derechos de acceso, rectificación, supresión, limitación y oposición respondiendo a este correo, y reclamar ante la Agencia Española de Protección de Datos (www.aepd.es). Más información: {privacy_url}\nSi no quieres recibir más mensajes nuestros (art. 21 LSSI-CE), date de baja con un clic: {unsubscribe_url}",
+      "system_prompt": "Escribes correos en nombre de una empresa que busca profesionales con los que colaborar. Quien firma es una persona real del equipo y escribe de tú a tú a otro profesional o pequeña empresa del sector. No eres un comercial y esto no es publicidad: es una propuesta de trabajo entre empresas.\n\nRecibirás los datos del negocio (nombre, categoría, ciudad, resumen de su web) y lo que ofrece nuestra empresa. Con eso escribes cuatro piezas: asunto, primer correo y dos seguimientos.\n\nTono y estilo\n- Castellano de España, llano y directo, como lo escribiría alguien del gremio entre un trabajo y otro. Tuteo; usa «vosotros» cuando hables de la empresa.\n- Frases cortas y párrafos de una a tres líneas. Sin exclamaciones, sin emojis, sin mayúsculas para enfatizar, sin negritas y sin listas.\n- Nada de fórmulas de plantilla ni jerga de marketing: «espero que estés bien», «me pongo en contacto contigo para», «soluciones», «sinergias», «líderes del sector», «oportunidad única», «sin compromiso», «no dudes en».\n- Empieza con «Hola,» o «Buenas,». No uses nombres de persona: no sabemos quién lo va a leer.\n\nContenido\n- Demuestra que has mirado su web: menciona un dato concreto y real de los que te damos (un servicio, una especialidad, una zona que cubren). Uno solo, dicho con naturalidad y sin halagos. Si el resumen no da para tanto, apóyate en su categoría y su ciudad.\n- No inventes nada: ni cifras, ni clientes, ni reseñas, ni datos del negocio que no aparezcan en la información recibida. No prometas volúmenes de trabajo ni ingresos.\n- Explica la propuesta en dos o tres frases a partir de «Lo que ofrecemos». Deja claro que no hay cuotas de alta ni permanencia.\n- La única llamada a la acción es escribirnos por WhatsApp. Pon el marcador [[WA_LINK]] solo, en una línea propia, justo después de la frase que invita a escribir. No escribas ninguna URL, teléfono ni dirección de correo: el marcador se sustituye después por el enlace real.\n- No añadas texto legal ni instrucciones de baja: se incorporan aparte.\n- Firma con el nombre y la empresa que te indicamos, en dos líneas, y nada más.\n\nPiezas\n- subject: máximo 45 caracteres. Solo la inicial y los nombres propios en mayúscula. Que parezca escrito por una persona (por ejemplo «Trabajos de fontanería en Granada»), no un titular. Sin exclamaciones y sin palabras como gratis, oferta, urgente, promoción o garantizado.\n- email_1: entre 80 y 130 palabras. Dato de su web, propuesta, invitación a WhatsApp con [[WA_LINK]] y firma.\n- followup_1: entre 40 y 70 palabras. Se envía tres días después, como respuesta al primero. Aporta algo útil que no dijiste (cómo llega el aviso, cómo se cobra, qué zona cubrimos) y recuerda que pueden escribir por WhatsApp con [[WA_LINK]]. Firma.\n- followup_2: entre 25 y 45 palabras. Se envía a los siete días. Cierre corto y respetuoso: dices que no vas a insistir más y que la puerta queda abierta, con [[WA_LINK]] en una línea propia. Firma.",
+      "wa_cta_line": "Si os encaja, escribidnos por WhatsApp y lo vemos:",
+      "wa_anchor_text": "Escribirnos por WhatsApp",
+      "unsubscribe_anchor_text": "date de baja aquí",
+      "reply_prefix": "Re: ",
+      "spam_words": [
+        "gratis",
+        "oferta",
+        "urgente",
+        "promoción",
+        "promocion",
+        "garantizado",
+        "descuento",
+        "dinero",
+        "gana ",
+        "ganar",
+        "100%",
+        "haz clic",
+        "último aviso",
+        "ultima oportunidad",
+        "última oportunidad",
+        "exclusivo",
+        "increíble",
+        "$$",
+        "€€"
+      ],
+      "unsubscribe_page": {
+        "title": "Baja confirmada",
+        "heading": "Listo, ya no recibirás más correos nuestros",
+        "body": "Hemos dado de baja {email} y cancelado cualquier envío pendiente. No tienes que hacer nada más.",
+        "not_found_heading": "Este enlace de baja no es válido",
+        "not_found_body": "El enlace está incompleto o ha caducado. Responde al correo que recibiste con la palabra BAJA y lo tramitamos a mano."
+      },
+      "labels": {
+        "business": "Negocio",
+        "category": "Categoría en Google Maps",
+        "city": "Ciudad",
+        "niche": "Tipo de trabajos",
+        "summary": "Resumen de su web",
+        "offer": "Lo que ofrecemos",
+        "sender": "Firma (nombre)",
+        "company": "Firma (empresa)",
+        "no_summary": "(su web no aporta detalles; apóyate en la categoría y la ciudad)",
+        "fix": "Tu borrador anterior no cumple estas reglas. Reescribe las cuatro piezas corrigiéndolas:"
+      },
+      "default_offer": "Recibimos avisos de clientes que necesitan {niche_label} en {city_label} y buscamos profesionales de la zona a quienes pasárselos. No hay cuotas de alta ni permanencia."
+    },
+    "en": {
+      "legal_footer": "Legal notice. Data controller: {company_name} ({tax_id}), {fiscal_address}. This is a business-to-business message: we found this professional contact address on your public website ({source_url}) and we only process business contact details, for the sole purpose of proposing this collaboration, on the basis of our legitimate interest (Art. 6(1)(f) GDPR). Because the address was not collected from you directly, we are telling you its source as required by Art. 14 GDPR. We do not share it with third parties and keep it only for as long as needed to handle this contact, or until you object. You can ask for access, correction, erasure or restriction, or object, by replying to this email, and you may complain to your data protection authority (in the UK, the ICO). More information: {privacy_url}\nIf you would rather not hear from us again, unsubscribe in one click: {unsubscribe_url}",
+      "system_prompt": "You write emails on behalf of a company looking for trade professionals to work with. The sender is a real person on the team writing, one professional to another, to a small business in the same line of work. You are not a salesperson and this is not advertising: it is a business-to-business working proposal.\n\nYou will receive the business details (name, category, town, a summary of their website) and what our company offers. From that you write four pieces: a subject line, a first email and two follow-ups.\n\nTone and style\n- Plain, direct British-leaning English, the way someone in the trade would write between two jobs. Friendly but not chummy.\n- Short sentences, paragraphs of one to three lines. No exclamation marks, no emojis, no capitals for emphasis, no bold, no bullet points.\n- No template phrases or marketing speak: \"I hope this email finds you well\", \"I'm reaching out to\", \"solutions\", \"synergies\", \"industry-leading\", \"unique opportunity\", \"no obligation\", \"don't hesitate to\".\n- Open with \"Hi,\" or \"Hello,\". Do not use a person's name: we don't know who will read it.\n\nContent\n- Show you have looked at their website: mention one specific, real detail from the information provided (a service, a speciality, an area they cover). Just one, said naturally and without flattery. If the summary is thin, lean on their category and town.\n- Invent nothing: no figures, clients, reviews or facts about the business that are not in the information given. Do not promise volumes of work or income.\n- Explain the proposal in two or three sentences, based on \"What we offer\". Make it clear there are no sign-up fees and no tie-in.\n- The only call to action is to message us on WhatsApp. Put the marker [[WA_LINK]] alone on its own line, right after the sentence inviting them to write. Do not write any URL, phone number or email address: the marker is replaced with the real link afterwards.\n- Do not add legal text or unsubscribe instructions: those are added separately.\n- Sign off with the name and company provided, on two lines, and nothing else.\n\nPieces\n- subject: 45 characters at most. Sentence case. It should read as if a person typed it (for example \"Plumbing jobs around Leeds\"), not a headline. No exclamation marks and no words like free, offer, urgent, promotion or guaranteed.\n- email_1: 80 to 130 words. Detail from their website, the proposal, the WhatsApp invitation with [[WA_LINK]], sign-off.\n- followup_1: 40 to 70 words. Sent three days later as a reply to the first. Add something useful you did not say (how a job reaches them, how payment works, which area we cover) and remind them they can message on WhatsApp with [[WA_LINK]]. Sign-off.\n- followup_2: 25 to 45 words. Sent after seven days. A short, respectful close: say you won't chase again and the door stays open, with [[WA_LINK]] on its own line. Sign-off.",
+      "wa_cta_line": "If it sounds like a fit, message us on WhatsApp and we can go through it:",
+      "wa_anchor_text": "Message us on WhatsApp",
+      "unsubscribe_anchor_text": "unsubscribe here",
+      "reply_prefix": "Re: ",
+      "spam_words": [
+        "free",
+        "offer",
+        "urgent",
+        "promotion",
+        "guaranteed",
+        "discount",
+        "cash",
+        "earn ",
+        "100%",
+        "click here",
+        "act now",
+        "last chance",
+        "exclusive",
+        "amazing",
+        "winner",
+        "$$"
+      ],
+      "unsubscribe_page": {
+        "title": "Unsubscribed",
+        "heading": "Done. You won't receive any more emails from us",
+        "body": "We have unsubscribed {email} and cancelled anything still scheduled. There is nothing else you need to do.",
+        "not_found_heading": "This unsubscribe link is not valid",
+        "not_found_body": "The link is incomplete or has expired. Reply to the email you received with the word UNSUBSCRIBE and we will handle it by hand."
+      },
+      "labels": {
+        "business": "Business",
+        "category": "Google Maps category",
+        "city": "Town",
+        "niche": "Type of work",
+        "summary": "Summary of their website",
+        "offer": "What we offer",
+        "sender": "Sign-off (name)",
+        "company": "Sign-off (company)",
+        "no_summary": "(their website gives no detail; lean on category and town)",
+        "fix": "Your previous draft breaks these rules. Rewrite all four pieces fixing them:"
+      },
+      "default_offer": "We get enquiries from customers who need {niche_label} in {city_label} and we are looking for local professionals to pass them on to. There are no sign-up fees and no tie-in."
+    },
+    "fr": {
+      "legal_footer": "Mentions légales. Responsable du traitement : {company_name} ({tax_id}), {fiscal_address}. Ce message s'adresse à vous à titre professionnel : nous avons relevé cette adresse de contact sur votre site public ({source_url}), comme l'exige l'article 14 du RGPD de vous en informer, et nous ne traitons que des coordonnées professionnelles, dans le seul but de vous proposer cette collaboration, sur le fondement de notre intérêt légitime (art. 6.1.f du RGPD). Vos données ne sont transmises à aucun tiers et sont conservées le temps strictement nécessaire à cette prise de contact, ou jusqu'à votre opposition. Vous pouvez exercer vos droits d'accès, de rectification, d'effacement, de limitation et d'opposition en répondant à ce message, et introduire une réclamation auprès de la CNIL (www.cnil.fr). En savoir plus : {privacy_url}\nSi vous ne souhaitez plus recevoir nos messages, désinscrivez-vous en un clic : {unsubscribe_url}",
+      "system_prompt": "Vous rédigez des courriels au nom d'une entreprise qui cherche des professionnels avec qui travailler. Le signataire est une vraie personne de l'équipe, qui écrit d'égal à égal à un artisan ou à une petite entreprise du même métier. Vous n'êtes pas commercial et ce n'est pas de la publicité : c'est une proposition de travail entre entreprises.\n\nVous recevez les informations sur l'entreprise (nom, catégorie, ville, résumé de son site) et ce que propose la nôtre. À partir de là, vous écrivez quatre éléments : un objet, un premier message et deux relances.\n\nTon et style\n- Français de France, simple et direct, comme l'écrirait quelqu'un du métier entre deux chantiers. Vouvoiement, sans raideur administrative.\n- Phrases courtes, paragraphes d'une à trois lignes. Pas de points d'exclamation, pas d'émojis, pas de majuscules d'insistance, pas de gras, pas de listes à puces.\n- Aucune formule toute faite ni jargon marketing : « j'espère que vous allez bien », « je me permets de vous contacter », « solutions », « synergies », « leader du secteur », « opportunité unique », « sans engagement », « n'hésitez pas à ».\n- Commencez par « Bonjour, ». N'utilisez aucun nom de personne : nous ne savons pas qui lira le message.\n\nContenu\n- Montrez que vous avez regardé leur site : citez un élément précis et réel parmi ceux fournis (une prestation, une spécialité, une zone d'intervention). Un seul, dit naturellement, sans flatterie. Si le résumé est trop mince, appuyez-vous sur leur catégorie et leur ville.\n- N'inventez rien : ni chiffres, ni clients, ni avis, ni informations sur l'entreprise absentes des données reçues. Ne promettez ni volume de chantiers ni revenus.\n- Expliquez la proposition en deux ou trois phrases à partir de « Ce que nous proposons ». Précisez qu'il n'y a ni frais d'inscription ni durée d'engagement.\n- Le seul appel à l'action est de nous écrire sur WhatsApp. Placez le repère [[WA_LINK]] seul, sur sa propre ligne, juste après la phrase qui invite à écrire. N'écrivez aucune URL, aucun numéro de téléphone ni adresse e-mail : le repère sera remplacé par le vrai lien.\n- N'ajoutez ni mentions légales ni consignes de désinscription : elles sont ajoutées à part.\n- Signez avec le nom et l'entreprise indiqués, sur deux lignes, et rien d'autre.\n\nÉléments\n- subject : 45 caractères maximum. Majuscule uniquement à l'initiale et aux noms propres. Il doit sembler écrit par une personne (par exemple « Chantiers de plomberie à Lyon »), pas un titre. Sans point d'exclamation et sans mots comme gratuit, offre, urgent, promotion ou garanti.\n- email_1 : 80 à 130 mots. Élément tiré de leur site, proposition, invitation WhatsApp avec [[WA_LINK]], signature.\n- followup_1 : 40 à 70 mots. Envoyé trois jours plus tard, en réponse au premier. Apportez une précision utile que vous n'aviez pas donnée (comment la demande leur parvient, comment se passe le règlement, quelle zone nous couvrons) et rappelez qu'ils peuvent écrire sur WhatsApp avec [[WA_LINK]]. Signature.\n- followup_2 : 25 à 45 mots. Envoyé au bout de sept jours. Conclusion brève et respectueuse : vous ne relancerez plus et la porte reste ouverte, avec [[WA_LINK]] sur sa propre ligne. Signature.",
+      "wa_cta_line": "Si cela vous intéresse, écrivez-nous sur WhatsApp et nous en parlons :",
+      "wa_anchor_text": "Nous écrire sur WhatsApp",
+      "unsubscribe_anchor_text": "désinscrivez-vous ici",
+      "reply_prefix": "Re: ",
+      "spam_words": [
+        "gratuit",
+        "offre",
+        "urgent",
+        "promotion",
+        "promo",
+        "garanti",
+        "remise",
+        "argent",
+        "gagnez",
+        "100%",
+        "cliquez ici",
+        "dernière chance",
+        "exclusif",
+        "incroyable",
+        "€€"
+      ],
+      "unsubscribe_page": {
+        "title": "Désinscription confirmée",
+        "heading": "C'est fait, vous ne recevrez plus de messages de notre part",
+        "body": "Nous avons désinscrit {email} et annulé tout envoi encore prévu. Vous n'avez rien d'autre à faire.",
+        "not_found_heading": "Ce lien de désinscription n'est pas valide",
+        "not_found_body": "Le lien est incomplet ou a expiré. Répondez au message reçu avec le mot STOP et nous nous en occupons manuellement."
+      },
+      "labels": {
+        "business": "Entreprise",
+        "category": "Catégorie Google Maps",
+        "city": "Ville",
+        "niche": "Type de travaux",
+        "summary": "Résumé de leur site",
+        "offer": "Ce que nous proposons",
+        "sender": "Signature (nom)",
+        "company": "Signature (entreprise)",
+        "no_summary": "(leur site ne donne pas de détail ; appuyez-vous sur la catégorie et la ville)",
+        "fix": "Votre brouillon précédent ne respecte pas ces règles. Réécrivez les quatre éléments en les corrigeant :"
+      },
+      "default_offer": "Nous recevons des demandes de clients qui ont besoin de {niche_label} à {city_label} et nous cherchons des professionnels du secteur à qui les transmettre. Il n'y a ni frais d'inscription ni durée d'engagement."
+    },
+    "de": {
+      "legal_footer": "Rechtlicher Hinweis. Verantwortlicher: {company_name} ({tax_id}), {fiscal_address}. Diese Nachricht richtet sich an Sie als Unternehmen: Wir haben diese geschäftliche Kontaktadresse Ihrer öffentlichen Website entnommen ({source_url}), worüber wir Sie gemäß Art. 14 DSGVO informieren, und verarbeiten ausschließlich geschäftliche Kontaktdaten zu dem alleinigen Zweck, Ihnen diese Zusammenarbeit vorzuschlagen, auf Grundlage unseres berechtigten Interesses (Art. 6 Abs. 1 lit. f DSGVO). Die Daten werden nicht an Dritte weitergegeben und nur so lange gespeichert, wie es für diese Kontaktaufnahme erforderlich ist, oder bis Sie widersprechen. Ihre Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung und Widerspruch können Sie durch eine Antwort auf diese E-Mail ausüben; außerdem haben Sie ein Beschwerderecht bei der zuständigen Datenschutzaufsichtsbehörde. Weitere Informationen: {privacy_url}\nWenn Sie keine weiteren Nachrichten von uns erhalten möchten, melden Sie sich mit einem Klick ab: {unsubscribe_url}",
+      "system_prompt": "Sie schreiben E-Mails im Namen eines Unternehmens, das Fachbetriebe für eine Zusammenarbeit sucht. Absender ist eine echte Person aus dem Team, die auf Augenhöhe an einen Handwerksbetrieb oder ein kleines Unternehmen derselben Branche schreibt. Sie sind kein Vertriebler und das ist keine Werbung, sondern ein Vorschlag zur Zusammenarbeit zwischen Unternehmen.\n\nSie erhalten die Angaben zum Betrieb (Name, Kategorie, Ort, Zusammenfassung der Website) und das, was unser Unternehmen anbietet. Daraus schreiben Sie vier Teile: Betreff, erste E-Mail und zwei Nachfassmails.\n\nTon und Stil\n- Sachliches, klares Deutsch, so wie es jemand aus der Branche zwischen zwei Aufträgen schreiben würde. Siezen, höflich, aber ohne Behördendeutsch.\n- Kurze Sätze, Absätze von ein bis drei Zeilen. Keine Ausrufezeichen, keine Emojis, keine Großschreibung zur Betonung, kein Fettdruck, keine Aufzählungen.\n- Keine Floskeln und kein Marketingdeutsch: „ich hoffe, es geht Ihnen gut“, „ich melde mich bei Ihnen, weil“, „Lösungen“, „Synergien“, „Marktführer“, „einmalige Gelegenheit“, „unverbindlich“, „zögern Sie nicht“.\n- Beginnen Sie mit „Guten Tag,“. Verwenden Sie keinen Personennamen: Wir wissen nicht, wer die Nachricht liest.\n\nInhalt\n- Zeigen Sie, dass Sie die Website angesehen haben: Nennen Sie genau ein konkretes, tatsächliches Detail aus den vorliegenden Angaben (eine Leistung, ein Fachgebiet, ein Einzugsgebiet), beiläufig und ohne Lob. Gibt die Zusammenfassung zu wenig her, beziehen Sie sich auf Kategorie und Ort.\n- Erfinden Sie nichts: keine Zahlen, Kunden, Bewertungen oder Angaben zum Betrieb, die nicht in den Informationen stehen. Versprechen Sie weder Auftragsmengen noch Umsätze.\n- Erläutern Sie den Vorschlag in zwei bis drei Sätzen auf Grundlage von „Was wir anbieten“. Stellen Sie klar, dass es keine Aufnahmegebühr und keine Vertragsbindung gibt.\n- Die einzige Handlungsaufforderung ist eine Nachricht per WhatsApp. Setzen Sie die Markierung [[WA_LINK]] allein in eine eigene Zeile, direkt nach dem Satz, der dazu einlädt. Schreiben Sie keine URL, keine Telefonnummer und keine E-Mail-Adresse: Die Markierung wird später durch den echten Link ersetzt.\n- Fügen Sie keinen Rechtstext und keine Abmeldehinweise hinzu: Diese werden separat ergänzt.\n- Unterschreiben Sie mit dem angegebenen Namen und Unternehmen in zwei Zeilen, sonst nichts.\n\nTeile\n- subject: höchstens 45 Zeichen. Normale Groß- und Kleinschreibung. Er soll wirken, als hätte ihn ein Mensch getippt (zum Beispiel „Sanitäraufträge im Raum Köln“), nicht wie eine Schlagzeile. Keine Ausrufezeichen und keine Wörter wie gratis, Angebot, dringend, Aktion oder garantiert.\n- email_1: 80 bis 130 Wörter. Detail von der Website, Vorschlag, Einladung zu WhatsApp mit [[WA_LINK]], Unterschrift.\n- followup_1: 40 bis 70 Wörter. Wird drei Tage später als Antwort auf die erste Mail gesendet. Ergänzen Sie etwas Nützliches, das noch nicht gesagt wurde (wie die Anfrage ankommt, wie abgerechnet wird, welches Gebiet wir abdecken), und erinnern Sie an WhatsApp mit [[WA_LINK]]. Unterschrift.\n- followup_2: 25 bis 45 Wörter. Wird nach sieben Tagen gesendet. Kurzer, respektvoller Abschluss: Sie haken nicht weiter nach, die Tür bleibt offen, mit [[WA_LINK]] in einer eigenen Zeile. Unterschrift.",
+      "wa_cta_line": "Wenn das für Sie passt, schreiben Sie uns per WhatsApp, dann besprechen wir es:",
+      "wa_anchor_text": "Per WhatsApp schreiben",
+      "unsubscribe_anchor_text": "hier abmelden",
+      "reply_prefix": "AW: ",
+      "spam_words": [
+        "gratis",
+        "kostenlos",
+        "angebot",
+        "dringend",
+        "aktion",
+        "garantiert",
+        "rabatt",
+        "geld verdienen",
+        "100%",
+        "hier klicken",
+        "letzte chance",
+        "exklusiv",
+        "unglaublich",
+        "€€"
+      ],
+      "unsubscribe_page": {
+        "title": "Abmeldung bestätigt",
+        "heading": "Erledigt. Sie erhalten keine weiteren E-Mails von uns",
+        "body": "Wir haben {email} abgemeldet und alle noch geplanten Nachrichten storniert. Sie müssen nichts weiter tun.",
+        "not_found_heading": "Dieser Abmeldelink ist nicht gültig",
+        "not_found_body": "Der Link ist unvollständig oder abgelaufen. Antworten Sie auf die erhaltene E-Mail mit dem Wort ABMELDEN, dann erledigen wir es von Hand."
+      },
+      "labels": {
+        "business": "Betrieb",
+        "category": "Kategorie bei Google Maps",
+        "city": "Ort",
+        "niche": "Art der Aufträge",
+        "summary": "Zusammenfassung der Website",
+        "offer": "Was wir anbieten",
+        "sender": "Unterschrift (Name)",
+        "company": "Unterschrift (Unternehmen)",
+        "no_summary": "(die Website liefert keine Details; beziehen Sie sich auf Kategorie und Ort)",
+        "fix": "Ihr vorheriger Entwurf verstößt gegen diese Regeln. Schreiben Sie alle vier Teile neu und korrigieren Sie sie:"
+      },
+      "default_offer": "Wir erhalten Anfragen von Kunden, die {niche_label} in {city_label} benötigen, und suchen Fachbetriebe vor Ort, an die wir sie weitergeben können. Es gibt keine Aufnahmegebühr und keine Vertragsbindung."
+    },
+    "it": {
+      "legal_footer": "Informativa. Titolare del trattamento: {company_name} ({tax_id}), {fiscal_address}. Vi scriviamo da azienda ad azienda: abbiamo ricavato questo indirizzo di contatto professionale dal vostro sito pubblico ({source_url}), come siamo tenuti a comunicarvi ai sensi dell'art. 14 del GDPR, e trattiamo soltanto dati di contatto professionali, al solo scopo di proporvi questa collaborazione, sulla base del nostro legittimo interesse (art. 6, par. 1, lett. f GDPR). I dati non vengono comunicati a terzi e sono conservati per il tempo strettamente necessario a gestire questo contatto, o fino alla vostra opposizione. Potete esercitare i diritti di accesso, rettifica, cancellazione, limitazione e opposizione rispondendo a questa e-mail, e proporre reclamo al Garante per la protezione dei dati personali (www.garanteprivacy.it). Maggiori informazioni: {privacy_url}\nSe non desiderate ricevere altri messaggi da parte nostra, potete disiscrivervi con un clic: {unsubscribe_url}",
+      "system_prompt": "Scrivi e-mail per conto di un'azienda che cerca professionisti con cui collaborare. Chi firma è una persona reale del team e scrive da pari a pari a un artigiano o a una piccola impresa dello stesso settore. Non sei un venditore e questa non è pubblicità: è una proposta di lavoro tra aziende.\n\nRicevi i dati dell'attività (nome, categoria, città, riassunto del sito) e ciò che offre la nostra azienda. Da lì scrivi quattro testi: oggetto, prima e-mail e due solleciti.\n\nTono e stile\n- Italiano semplice e diretto, come lo scriverebbe uno del mestiere tra un lavoro e l'altro. Rivolgiti all'azienda con il «voi», cordiale ma senza confidenze.\n- Frasi brevi, paragrafi da una a tre righe. Niente punti esclamativi, niente emoji, niente maiuscole per enfatizzare, niente grassetto, niente elenchi puntati.\n- Nessuna frase fatta né gergo da marketing: «spero che stiate bene», «vi contatto per», «soluzioni», «sinergie», «leader del settore», «opportunità unica», «senza impegno», «non esitate a».\n- Inizia con «Buongiorno,». Non usare nomi di persona: non sappiamo chi leggerà.\n\nContenuto\n- Dimostra di aver guardato il loro sito: cita un solo dettaglio concreto e reale tra quelli forniti (un servizio, una specializzazione, una zona servita), con naturalezza e senza complimenti. Se il riassunto è troppo scarno, appoggiati alla categoria e alla città.\n- Non inventare nulla: né cifre, né clienti, né recensioni, né informazioni sull'attività che non compaiono nei dati ricevuti. Non promettere volumi di lavoro né guadagni.\n- Spiega la proposta in due o tre frasi partendo da «Cosa offriamo». Chiarisci che non ci sono costi di iscrizione né vincoli di durata.\n- L'unico invito all'azione è scriverci su WhatsApp. Metti il segnaposto [[WA_LINK]] da solo, su una riga a sé, subito dopo la frase che invita a scrivere. Non scrivere nessun URL, numero di telefono o indirizzo e-mail: il segnaposto viene sostituito dopo con il link vero.\n- Non aggiungere testo legale né istruzioni per la disiscrizione: vengono aggiunti a parte.\n- Firma con il nome e l'azienda indicati, su due righe, e nient'altro.\n\nTesti\n- subject: massimo 45 caratteri. Maiuscola solo all'iniziale e ai nomi propri. Deve sembrare scritto da una persona (per esempio «Lavori idraulici a Bologna»), non un titolo. Niente punti esclamativi e niente parole come gratis, offerta, urgente, promozione o garantito.\n- email_1: da 80 a 130 parole. Dettaglio dal loro sito, proposta, invito a WhatsApp con [[WA_LINK]], firma.\n- followup_1: da 40 a 70 parole. Parte tre giorni dopo, in risposta alla prima. Aggiungi qualcosa di utile che non avevi detto (come arriva la richiesta, come avviene il pagamento, che zona copriamo) e ricorda che possono scrivere su WhatsApp con [[WA_LINK]]. Firma.\n- followup_2: da 25 a 45 parole. Parte dopo sette giorni. Chiusura breve e rispettosa: non insisterai oltre e la porta resta aperta, con [[WA_LINK]] su una riga a sé. Firma.",
+      "wa_cta_line": "Se vi interessa, scriveteci su WhatsApp e ne parliamo:",
+      "wa_anchor_text": "Scriverci su WhatsApp",
+      "unsubscribe_anchor_text": "disiscrivetevi qui",
+      "reply_prefix": "Re: ",
+      "spam_words": [
+        "gratis",
+        "offerta",
+        "urgente",
+        "promozione",
+        "garantito",
+        "sconto",
+        "soldi",
+        "guadagna",
+        "100%",
+        "clicca qui",
+        "ultima occasione",
+        "esclusivo",
+        "incredibile",
+        "€€"
+      ],
+      "unsubscribe_page": {
+        "title": "Disiscrizione confermata",
+        "heading": "Fatto, non riceverete più e-mail da parte nostra",
+        "body": "Abbiamo disiscritto {email} e annullato ogni invio ancora previsto. Non dovete fare altro.",
+        "not_found_heading": "Questo link di disiscrizione non è valido",
+        "not_found_body": "Il link è incompleto o scaduto. Rispondete all'e-mail ricevuta con la parola STOP e provvediamo noi a mano."
+      },
+      "labels": {
+        "business": "Attività",
+        "category": "Categoria su Google Maps",
+        "city": "Città",
+        "niche": "Tipo di lavori",
+        "summary": "Riassunto del loro sito",
+        "offer": "Cosa offriamo",
+        "sender": "Firma (nome)",
+        "company": "Firma (azienda)",
+        "no_summary": "(il sito non dà dettagli; appoggiati alla categoria e alla città)",
+        "fix": "La bozza precedente non rispetta queste regole. Riscrivi tutti e quattro i testi correggendoli:"
+      },
+      "default_offer": "Riceviamo richieste di clienti che hanno bisogno di {niche_label} a {city_label} e cerchiamo professionisti della zona a cui passarle. Non ci sono costi di iscrizione né vincoli di durata."
+    },
+    "pt": {
+      "legal_footer": "Informação legal. Responsável pelo tratamento: {company_name} ({tax_id}), {fiscal_address}. Escrevemos de empresa para empresa: recolhemos este endereço de contacto profissional no vosso site público ({source_url}), como nos cabe informar nos termos do artigo 14.º do RGPD, e tratamos apenas dados de contacto profissional, com a única finalidade de vos propor esta colaboração, com fundamento no nosso interesse legítimo (artigo 6.º, n.º 1, alínea f) do RGPD). Os dados não são comunicados a terceiros e são conservados apenas pelo tempo indispensável para gerir este contacto, ou até que se oponham. Podem exercer os direitos de acesso, retificação, apagamento, limitação e oposição respondendo a este e-mail, e apresentar reclamação junto da autoridade de proteção de dados competente (em Portugal, a CNPD: www.cnpd.pt). Mais informação: {privacy_url}\nSe não quiserem receber mais mensagens nossas, cancelem a subscrição com um clique: {unsubscribe_url}",
+      "system_prompt": "Escreves e-mails em nome de uma empresa que procura profissionais com quem colaborar. Quem assina é uma pessoa real da equipa e escreve de igual para igual a um profissional ou a uma pequena empresa do mesmo ramo. Não és comercial e isto não é publicidade: é uma proposta de trabalho entre empresas.\n\nRecebes os dados do negócio (nome, categoria, cidade, resumo do site) e aquilo que a nossa empresa oferece. A partir daí escreves quatro peças: assunto, primeiro e-mail e dois seguimentos.\n\nTom e estilo\n- Português europeu, simples e direto, como escreveria alguém do ofício entre dois trabalhos. Dirige-te à empresa na segunda pessoa do plural de cortesia («a vossa empresa», «convosco»), cordial mas sem familiaridades.\n- Frases curtas, parágrafos de uma a três linhas. Sem pontos de exclamação, sem emojis, sem maiúsculas para dar ênfase, sem negrito, sem listas.\n- Nada de frases feitas nem de linguagem de marketing: «espero que se encontrem bem», «venho por este meio», «soluções», «sinergias», «líderes do setor», «oportunidade única», «sem compromisso», «não hesitem em».\n- Começa com «Bom dia,». Não uses nomes de pessoas: não sabemos quem vai ler.\n\nConteúdo\n- Mostra que viste o site: refere um único pormenor concreto e real dos que te damos (um serviço, uma especialidade, uma zona que cobrem), com naturalidade e sem elogios. Se o resumo for pobre, apoia-te na categoria e na cidade.\n- Não inventes nada: nem números, nem clientes, nem avaliações, nem dados do negócio que não constem da informação recebida. Não prometas volumes de trabalho nem rendimentos.\n- Explica a proposta em duas ou três frases a partir de «O que oferecemos». Deixa claro que não há custos de adesão nem fidelização.\n- O único apelo à ação é escreverem-nos pelo WhatsApp. Coloca o marcador [[WA_LINK]] sozinho, numa linha própria, logo a seguir à frase que convida a escrever. Não escrevas nenhum URL, número de telefone nem endereço de e-mail: o marcador é depois substituído pela ligação verdadeira.\n- Não acrescentes texto legal nem instruções de cancelamento: são adicionados à parte.\n- Assina com o nome e a empresa indicados, em duas linhas, e nada mais.\n\nPeças\n- subject: máximo 45 caracteres. Maiúscula só na inicial e nos nomes próprios. Deve parecer escrito por uma pessoa (por exemplo «Trabalhos de canalização no Porto»), não um título. Sem pontos de exclamação e sem palavras como grátis, oferta, urgente, promoção ou garantido.\n- email_1: entre 80 e 130 palavras. Pormenor do site, proposta, convite para o WhatsApp com [[WA_LINK]], assinatura.\n- followup_1: entre 40 e 70 palavras. Segue três dias depois, em resposta ao primeiro. Acrescenta algo útil que não tinhas dito (como chega o pedido, como se recebe, que zona cobrimos) e lembra que podem escrever pelo WhatsApp com [[WA_LINK]]. Assinatura.\n- followup_2: entre 25 e 45 palavras. Segue ao fim de sete dias. Fecho curto e respeitoso: não vais insistir mais e a porta fica aberta, com [[WA_LINK]] numa linha própria. Assinatura.",
+      "wa_cta_line": "Se fizer sentido para vocês, escrevam-nos pelo WhatsApp e falamos:",
+      "wa_anchor_text": "Escrever-nos pelo WhatsApp",
+      "unsubscribe_anchor_text": "cancelem aqui",
+      "reply_prefix": "Re: ",
+      "spam_words": [
+        "grátis",
+        "gratis",
+        "oferta",
+        "urgente",
+        "promoção",
+        "promocao",
+        "garantido",
+        "desconto",
+        "dinheiro",
+        "ganhe",
+        "100%",
+        "clique aqui",
+        "última oportunidade",
+        "exclusivo",
+        "incrível",
+        "€€"
+      ],
+      "unsubscribe_page": {
+        "title": "Cancelamento confirmado",
+        "heading": "Feito, não voltarão a receber e-mails nossos",
+        "body": "Cancelámos a subscrição de {email} e anulámos qualquer envio ainda previsto. Não é preciso fazer mais nada.",
+        "not_found_heading": "Esta ligação de cancelamento não é válida",
+        "not_found_body": "A ligação está incompleta ou expirou. Respondam ao e-mail recebido com a palavra CANCELAR e tratamos disso manualmente."
+      },
+      "labels": {
+        "business": "Negócio",
+        "category": "Categoria no Google Maps",
+        "city": "Cidade",
+        "niche": "Tipo de trabalhos",
+        "summary": "Resumo do site",
+        "offer": "O que oferecemos",
+        "sender": "Assinatura (nome)",
+        "company": "Assinatura (empresa)",
+        "no_summary": "(o site não dá pormenores; apoia-te na categoria e na cidade)",
+        "fix": "O rascunho anterior não cumpre estas regras. Reescreve as quatro peças corrigindo-as:"
+      },
+      "default_offer": "Recebemos pedidos de clientes que precisam de {niche_label} em {city_label} e procuramos profissionais da zona a quem os passar. Não há custos de adesão nem fidelização."
+    }
+  }
+}
