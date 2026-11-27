@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Si el fallo está en la bajante, lo normal es que pague la comunidad; si está en tu tramo hasta el empalme, suele ser cosa tuya. Avisa al administrador. ¿Te reservo la visita con cámara, por la mañana o por la tarde?\n<ficha>{\"averia\":\"en el bajo, agua sucia por el plato de ducha cuando tiran de la cisterna de arriba; solo en tu plato de ducha\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Avisa al administrador: si la bajante es del edificio, lo normal es que pague la comunidad.\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Si el fallo está en la bajante, lo normal es que pague la comunidad; si está en tu tramo hasta el empalme, suele ser cosa tuya. Avisa al administrador. ¿Te reservo la visita con cámara, por la mañana o por la tarde?\n<ficha>{\"averia\":\"en el bajo, agua sucia por el plato de ducha cuando tiran de la cisterna de arriba; solo en tu plato de ducha\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Avisa al administrador: si la bajante es del edificio, lo normal es que pague la comunidad.\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, aviso al administrador. Sí, que venga el fontanero a mirarlo con la cámara y me haga un informe. Por la tarde"
  }
 ]

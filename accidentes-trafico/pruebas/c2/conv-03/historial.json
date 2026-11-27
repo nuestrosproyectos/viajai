@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Entiendo la preocupación. Tu culpa no impide que tu mujer reclame como pasajera, pero a ti tu seguro obligatorio no te cubre tus lesiones salvo que tengas seguro de conductor. ¿Te reservo la consulta por la mañana o por la tarde?\n<ficha>{\"caso\":\"Accidente por saltarse un ceda; iba de pasajera su mujer\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que tu mujer vea un médico hoy; revisa si tienes seguro de conductor o de accidentes.\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Entiendo la preocupación. Tu culpa no impide que tu mujer reclame como pasajera, pero a ti tu seguro obligatorio no te cubre tus lesiones salvo que tengas seguro de conductor. ¿Te reservo la consulta por la mañana o por la tarde?\n<ficha>{\"caso\":\"Accidente por saltarse un ceda; iba de pasajera su mujer\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que tu mujer vea un médico hoy; revisa si tienes seguro de conductor o de accidentes.\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, gracias. Entonces por la tarde mejor, y por videollamada si puede ser, que es para mi mujer"
  }
 ]

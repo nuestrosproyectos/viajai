@@ -1,0 +1,2 @@
+Perfecto, le apunto la visita para mañana por la mañana, si puede ser. Solo necesito sus datos para llamarle y organizarla. ¿Me dice su nombre, por favor?
+<ficha>{"averia":"lavabo del baño atascado; sigue igual tras echar desatascador fuerte","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"Mañana por la mañana","inicio":"","orientacion":"No meta la mano en el sifón y pida el presupuesto por escrito antes de empezar.","fase":"datos"}</ficha>

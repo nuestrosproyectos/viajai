@@ -1,0 +1,2 @@
+Me alegra que ya haya parado, Pilar. Con la llave cerrada puede esperar a mañana, y te reservo la visita. Haz fotos del agua y del fregadero para el seguro. ¿En qué municipio y barrio vives?
+<ficha>{"averia":"agua por debajo del fregadero","cuando":"","llave":"Sí, la encontraste y ya no sale agua","vivienda":"","seguro":"","nombre":"Pilar","telefono":"610 223 344","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Haz fotos para el seguro; con la llave cerrada puede esperar a mañana.","fase":"proponiendo"}</ficha>

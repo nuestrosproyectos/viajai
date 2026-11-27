@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "La mayoría exacta no te la sé decir: el administrador la confirma, y orientativamente es un tercio. Por tu cuenta no, porque la azotea es común y sin acuerdo no se puede instalar. ¿Te reservo el estudio por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares en la azotea del bloque\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada (Zaidín)\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Hace falta el acuerdo de la junta; la azotea es común y no se puede instalar por cuenta propia. El administrador confirma la mayoría exacta.\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "La mayoría exacta no te la sé decir: el administrador la confirma, y orientativamente es un tercio. Por tu cuenta no, porque la azotea es común y sin acuerdo no se puede instalar. ¿Te reservo el estudio por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares en la azotea del bloque\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada (Zaidín)\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Hace falta el acuerdo de la junta; la azotea es común y no se puede instalar por cuenta propia. El administrador confirma la mayoría exacta.\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, entonces el estudio me sirve para llevarlo a la junta. Por la tarde mejor"
  }
 ]

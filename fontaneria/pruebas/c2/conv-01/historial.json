@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Entiendo el susto. Si no encuentras la llave, busca junto al contador y ciérrala. ¿Te mando al fontanero urgente ahora? Dime tu nombre y un teléfono.\n<ficha>{\"averia\":\"agua por debajo del fregadero, no para\",\"cuando\":\"\",\"llave\":\"No la encuentras; sigue saliendo agua\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Busca la llave junto al contador y ciérrala; aparta lo que se pueda mojar.\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Entiendo el susto. Si no encuentras la llave, busca junto al contador y ciérrala. ¿Te mando al fontanero urgente ahora? Dime tu nombre y un teléfono.\n<ficha>{\"averia\":\"agua por debajo del fregadero, no para\",\"cuando\":\"\",\"llave\":\"No la encuentras; sigue saliendo agua\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Busca la llave junto al contador y ciérrala; aparta lo que se pueda mojar.\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "La encontré, estaba debajo del fregadero y ya ha parado el agua. Soy Pilar, 610 223 344"
  }
 ]
