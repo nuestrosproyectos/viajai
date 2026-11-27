@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Lo entiendo, Pilar. Te apunto la visita lo antes posible y, al recibir el aviso, te llamamos para darte la hora. ¿Me dices la calle y el número?\n<ficha>{\"averia\":\"agua por debajo del fregadero, ya parada\",\"cuando\":\"Hoy, en cuanto podáis\",\"llave\":\"Sí, la encontraste y ya no sale agua\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Pilar\",\"telefono\":\"610 223 344\",\"municipio\":\"Granada capital\",\"direccion\":\"Barrio de Recogidas\",\"franja\":\"lo antes posible\",\"inicio\":\"\",\"orientacion\":\"Haz fotos del agua y del fregadero para el seguro.\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Lo entiendo, Pilar. Te apunto la visita lo antes posible y, al recibir el aviso, te llamamos para darte la hora. ¿Me dices la calle y el número?\n<ficha>{\"averia\":\"agua por debajo del fregadero, ya parada\",\"cuando\":\"Hoy, en cuanto podáis\",\"llave\":\"Sí, la encontraste y ya no sale agua\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Pilar\",\"telefono\":\"610 223 344\",\"municipio\":\"Granada capital\",\"direccion\":\"Barrio de Recogidas\",\"franja\":\"lo antes posible\",\"inicio\":\"\",\"orientacion\":\"Haz fotos del agua y del fregadero para el seguro.\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Recogidas 40, 2º B"
  }
 ]
