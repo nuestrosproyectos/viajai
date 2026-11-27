@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Perfecto, Carmen, te reservo la consulta en el despacho por la mañana. Si la casa de tu madre está en Granada capital, la bonificación de la plusvalía municipal se pierde si se presenta fuera de plazo. ¿En qué municipio vives?\n<ficha>{\"situacion\":\"herencia de tu madre, fallecida hace cinco meses y medio, sin tramitar\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"\",\"bienes\":\"\",\"nombre\":\"Carmen\",\"telefono\":\"611 222 999\",\"municipio\":\"\",\"franja\":\"en el despacho, por la mañana\",\"fallecimiento\":\"hace cinco meses y medio\",\"modalidad\":\"En el despacho\",\"orientacion\":\"Quedan unas dos semanas para presentar el impuesto de sucesiones, sin prórroga: que el abogado lo vea cuanto antes y pedir el certificado de últimas voluntades.\",\"porDecir\":\"si se pasa del plazo, hay recargo\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Carmen, te reservo la consulta en el despacho por la mañana. Si la casa de tu madre está en Granada capital, la bonificación de la plusvalía municipal se pierde si se presenta fuera de plazo. ¿En qué municipio vives?\n<ficha>{\"situacion\":\"herencia de tu madre, fallecida hace cinco meses y medio, sin tramitar\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"\",\"bienes\":\"\",\"nombre\":\"Carmen\",\"telefono\":\"611 222 999\",\"municipio\":\"\",\"franja\":\"en el despacho, por la mañana\",\"fallecimiento\":\"hace cinco meses y medio\",\"modalidad\":\"En el despacho\",\"orientacion\":\"Quedan unas dos semanas para presentar el impuesto de sucesiones, sin prórroga: que el abogado lo vea cuanto antes y pedir el certificado de últimas voluntades.\",\"porDecir\":\"si se pasa del plazo, hay recargo\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Vivo en Granada, en el Realejo. Y sí, la casa de mi madre está en Granada capital."
  }
 ]
