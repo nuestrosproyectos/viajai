@@ -89,6 +89,18 @@ Fallos c1: repite la misma frase si el cliente vuelve a preguntar; rellena «No 
 c2: ya no repite frases (coherente 8,8) ni tutea a la mayor; sigue dejándose un punto del criterio en 5 de 8 y en 2 pide la franja antes del nombre (tres preguntas). Cambios c2→c3: sumar los datos de TODOS los tipos de caso que encajan; la franja ya no se pregunta al ofrecer la cita sino con los datos (base común); si no sabe si hay testamento (o si la pareja estaba inscrita), esa es la pregunta de cierre; parentesco solo con quien falleció.
 c3: nota 8,00; datos, fichas y avisos perfectos (10), sin datos falsos. Queda: a veces se deja un dato del criterio (4 de 8) y dijo «como hijo»/«como sobrina» copiando la opción de la ficha. Ajustado tras c3: la opción de parentesco se copia con sus dos géneros y en voz alta sin género; sobrinos con sus dos razones (10.000 € y 1,5); nietos con la reducción de hijos; declaración de herederos en el primer caso.
 
+## Reformas, vueltas de una en una (8 conversaciones: 4 antiguas + cocina, integral en Armilla, ventanas e IVA, uralita)
+| | c4 |
+|---|---|
+| Acaban en cita | 8/8 |
+| Datos falsos | 0 |
+| Criterio / completa | 7,5 / 10 |
+| Datos, aviso | 10 / 10 |
+| Coherente / fichas | 7,5 / 7,5 |
+| Nota media | **7,88** |
+
+Fallos c4: al tabique le aplicó el precio por metro de una reforma integral; repitió cuatro veces «el plazo lo da el técnico» en la cocina; dio el rango del plato a un baño casi completo; ficha con «Casa» por «ventanas de casa» y una fecha de inicio que no era de la obra; no avisó de la comunidad en las ventanas de un piso. Cambios c4→c5: casos de tabique, cocina, baño y ventanas afinados; pistas de vivienda e inicio.
+
 ## Qué se corrigió entre rondas (en el cerebro común, para todas las webs, salvo lo marcado)
 - R1→R2: dar siempre el rango de precio si lo pide; empatía con miedo, susto o personas mayores; usted en toda la conversación; una sola pregunta; rellenar en la ficha lo que el cliente ya dijo.
 - R2→R3 (2 datos falsos en reformas): no repartir ni reasignar cifras; revisar excepciones (edificios protegidos, otro municipio); proponer la cita de forma explícita como muy tarde en la 2.ª respuesta; reformas: Albaicín/centro → licencia y técnico.
