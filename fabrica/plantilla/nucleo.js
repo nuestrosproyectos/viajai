@@ -216,6 +216,9 @@ function cebarAviso() {
   avisoCebado = avisoMicro.play().then(() => { avisoMicro.pause(); avisoMicro.currentTime = 0; }).catch(() => {}).finally(() => { avisoMicro.muted = false; });
 }
 async function pedirMicro() {
+  // En la vista previa de claude.ai el micrófono lo da el visor (dictation): pide el permiso él al empezar a
+  // escuchar. Pedirlo aquí al navegador falla siempre dentro del visor y salía «No tengo permiso» (encontrado por Juan).
+  if (dictado || (LK_TOKEN === "" && plataforma)) return true;
   const st = await estadoPermiso();
   if (st === "granted") return true;
   if (st === "denied") { sinMicro(); return false; }

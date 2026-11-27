@@ -196,6 +196,7 @@ export default function web(N) {
     },
     revelar: [],
     legal: {
+      abogacia: true,
       emergencia: "Si hay heridos o peligro, llama al 112.",
       actividad: "es un servicio de abogados que reclama indemnizaciones por accidentes de tráfico en la provincia de " + N.provincia + ". Los casos los estudia y los lleva siempre un abogado colegiado; la web no ofrece servicios a quien no los ha pedido.",
       colegio: N.colegio + " y número de colegiado del abogado responsable",

@@ -1,0 +1,3 @@
+Entiendo que quieras tranquilidad. Lo que sí te puedo decir es que el presupuesto va por escrito antes de empezar, no pagas nada que no hayas aceptado, y la garantía de la reparación la confirma el fontanero por escrito en la factura. ¿Te reservo la visita?
+<ficha>{"averia":"","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Presupuesto por escrito antes de empezar; la garantía la confirma el fontanero por escrito en la factura.","fase":"proponiendo"}</ficha>
+<mostrar>garantia</mostrar>

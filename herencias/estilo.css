@@ -264,3 +264,7 @@ h1 em,h2 em,.subrayado{font-style:normal;color:var(--acento);background:none}
   .escenario .sol-campos .campo:nth-child(3),.escenario .sol-campos .campo:nth-child(6){grid-column:auto}
   .escenario .sol-campos .campo:nth-child(1),.escenario .sol-campos .campo:nth-child(4),.escenario .sol-campos .campo:nth-child(8){grid-column:1/-1}
 }
+/* ventanas medianas (portátil, panel lateral de la app): un campo por línea para que no se corten */
+@media (min-width:900px) and (max-width:1500px){
+  .escenario .sol-campos{grid-template-columns:1fr}
+}

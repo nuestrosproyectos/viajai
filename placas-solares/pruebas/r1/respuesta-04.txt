@@ -1,0 +1,3 @@
+Si el edificio no está catalogado ni en la zona antigua protegida, el permiso va por declaración responsable, que tramita la instaladora. El técnico lo confirma en el estudio gratuito. ¿Es una casa o un bloque de pisos?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"Granada (Zaidín)","franja":"","inicio":"","orientacion":"Comprobar si el edificio está catalogado antes de tramitar el permiso","fase":"entendiendo"}</ficha>
+<mostrar>permisos</mostrar>

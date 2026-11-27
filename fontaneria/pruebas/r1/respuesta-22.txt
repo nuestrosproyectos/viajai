@@ -1,0 +1,2 @@
+No pongas la lavadora ni eches sosa cáustica, y no toques nada mojado. Puede ser un atasco más abajo del desagüe, y te puedo reservar la visita del fontanero. ¿Te pasa también con el fregadero o la ducha?
+<ficha>{"averia":"Sale agua por el sumidero del suelo al poner la lavadora","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"Maracena","direccion":"","franja":"","inicio":"","orientacion":"No pongas la lavadora ni eches sosa cáustica; el fontanero revisa el desagüe.","fase":"proponiendo"}</ficha>

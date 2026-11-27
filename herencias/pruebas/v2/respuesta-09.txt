@@ -1,0 +1,3 @@
+Siento la pérdida. Lo más probable es que no tenga que venir: puede firmar con un poder notarial con apostilla, que da permiso a otra persona para firmar por él, y necesita un NIE, su número de extranjero. En la consulta gratis lo vemos. ¿Vivía en Andalucía quien falleció?
+<ficha>{"situacion":"Herencia en la que tu hermano, que vive en Alemania, también es heredero","parentesco":"","testamento":"No lo sé","bienes":"","fallecimiento":"","orientacion":"Lo más probable es que tu hermano no tenga que venir: puede firmar con un poder notarial con apostilla y necesita un NIE.","nombre":"","telefono":"","municipio":"","modalidad":"","franja":"","fase":"orientando"}</ficha>
+<mostrar>documentos</mostrar>

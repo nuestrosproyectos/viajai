@@ -1,0 +1,3 @@
+Sin acuerdo de la junta no se puede: la azotea es común, y para renovables de uso común hace falta una mayoría reducida, en torno a un tercio. El estudio gratuito te da números para llevar a la junta. ¿Te viene mejor por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"Comunidad de vecinos","factura":"","tejado":"Azotea","consumo":"","nombre":"","telefono":"","municipio":"Granada (La Chana)","franja":"","inicio":"","orientacion":"Hace falta acuerdo de la junta para la azotea común; estudio gratuito para llevar números","fase":"proponiendo"}</ficha>
+<mostrar>situaciones</mostrar>

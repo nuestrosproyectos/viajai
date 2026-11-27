@@ -1,0 +1,3 @@
+Entiendo que te moleste, y no te voy a discutir. Un goteo suele ser cita normal, no urgencia, y la salida suele andar entre veinte y cuarenta euros, orientativo, que el fontanero confirma antes de ir. ¿Te reservo la visita?
+<ficha>{"averia":"Grifo que gotea","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Un goteo suele ser cita normal, no urgencia; la salida es orientativa, de 20 a 40 euros, y el fontanero la confirma antes de ir.","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>

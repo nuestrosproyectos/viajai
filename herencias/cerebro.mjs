@@ -10,7 +10,7 @@
 import { ASISTENTE } from "./asistente.mjs";   // nombre y voz del asistente: se cambian en asistente.json
 
 export const NEGOCIO = {
-  marca: "Herencia Clara",               // PENDIENTE: marca definitiva (comprobar dominio y OEPM)
+  marca: "Herencial",                    // elegida por Juan el 27-11-2026 (.es y .com libres ese día; PENDIENTE: registrar dominio y comprobar OEPM)
   tecnico: ASISTENTE.nombre,             // nombre del asistente: se cambia SOLO en asistente.json
   sector: "herencias",
 
@@ -54,5 +54,5 @@ export const lista = xs => xs.length > 1 ? xs.slice(0, -1).join(", ") + " y " + 
 
 // Saludo inicial: lo dice la propia página al instante (corto: cada palabra dicha cuesta)
 export function saludo(n = NEGOCIO) {
-  return `Hola, soy ${n.tecnico}, el asistente de ${n.marca}. Siento la pérdida. Cuéntame tu situación y te digo qué te toca hacer.`;
+  return `Hola, soy ${n.tecnico}, el asistente de ${n.marca}. Cuéntame tu caso y te explico qué te toca hacer.`;   // sin pésame de entrada: aún no sabe si ha fallecido alguien (Juan, 27-11-2026)
 }

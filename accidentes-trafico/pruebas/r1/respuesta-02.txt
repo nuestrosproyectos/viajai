@@ -1,0 +1,2 @@
+El plazo habitual para reclamar es de un año, y en lesiones suele contar desde el alta médica definitiva, no desde el día del accidente. En la primera consulta gratis el abogado lo revisa con los informes delante. ¿Cuándo fue el accidente?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Ver desde cuándo cuenta el plazo de un año; en lesiones suele ser desde el alta.","fase":"orientando"}</ficha>

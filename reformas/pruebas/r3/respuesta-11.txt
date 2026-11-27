@@ -1,0 +1,3 @@
+Una reforma integral suele salir entre 460 y 690 euros por metro cuadrado en calidades medias, y de tres a cinco meses. En pisos de los setenta suelen aparecer tuberías viejas al abrir. La visita de medición, gratis, lo concreta. ¿Qué nivel de acabados tienes en mente?
+<ficha>{"obra":"Reforma integral de un piso de 90 metros","vivienda":"Piso","metros":"90 metros","antiguedad":"De los años 70","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Reforma integral en calidades medias; las tuberías viejas son el imprevisto más probable; la visita de medición da el precio por partidas.","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>

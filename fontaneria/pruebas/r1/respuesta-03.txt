@@ -1,0 +1,2 @@
+La salida suele andar entre veinte y cuarenta euros en horario normal, orientativo. De noche, fin de semana o festivo suele subir entre un cincuenta por ciento y el doble. El fontanero confirma su tarifa antes de ir. ¿Qué te pasa en casa, es urgente o puede esperar?
+<ficha>{"averia":"","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Pide la tarifa confirmada antes de la visita; la salida orientativa ronda los veinte a cuarenta euros.","fase":"orientando"}</ficha>

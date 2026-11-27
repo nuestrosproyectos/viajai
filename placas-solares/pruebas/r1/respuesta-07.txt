@@ -1,0 +1,2 @@
+Depende de cuánto gastes de noche: la batería guarda el sol para la noche, pero encarece y en muchas casas alarga el tiempo que tarda en pagarse. No te quita la factura del todo, siempre queda la potencia. ¿Cuánto gastas de noche, más o menos?
+<ficha>{"que":"Placas con batería","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Ver si la batería compensa según tu consumo de noche","fase":"orientando"}</ficha>

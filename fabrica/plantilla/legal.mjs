@@ -39,11 +39,12 @@ export function avisoLegal(N, W) {
 <li><b>NIF:</b> ${P("NIF")}</li>
 <li><b>Domicilio:</b> ${P("dirección completa")}, ${N.provincia || N.ciudad} (España)</li>
 <li><b>Registro Mercantil:</b> ${P("datos registrales, si es sociedad")}</li>
-${L.colegio ? `<li><b>Colegio profesional:</b> ${P(L.colegio)}</li>\n` : ""}<li><b>Contacto:</b> ${P("teléfono y correo")}</li>
+${L.colegio && !L.abogacia ? `<li><b>Colegio profesional:</b> ${P(L.colegio)}</li>\n` : ""}<li><b>Contacto:</b> ${P("teléfono y correo")}</li>
 </ul>
 
 <h2>2. Qué hacemos</h2>
 <p>${N.marca} ${L.actividad}${L.independiente ? " " + L.independiente : ""}</p>
+${L.abogacia ? `<p>Los servicios jurídicos los presta ${P("nombre del abogado o despacho")}, abogado colegiado en el Ilustre Colegio de la Abogacía de ${N.provincia} con el número ${P("nº de colegiado")}, sujeto al Estatuto General de la Abogacía Española (RD 135/2021) y al Código Deontológico de la Abogacía Española. Seguro de responsabilidad civil profesional: ${P("aseguradora")}.</p>` : ""}
 
 <h2>3. ${N.tecnico} es una inteligencia artificial</h2>
 <p>«${N.tecnico}», el asistente de la web, es un sistema de inteligencia artificial, no una persona. ${L.orienta} Puede equivocarse: <b>${L.decide}</b>. ${L.emergencia || "Si hay peligro para alguien, llama al 112."}</p>
@@ -88,7 +89,7 @@ ${L.datosSalud ? `<li><b>Datos de salud:</b> ${L.datosSalud}</li>\n` : ""}</ul>
 <li><b>Atender tu consulta y organizar ${W.legal.cita || "la cita"}</b> que nos pides. Base legal: las medidas previas al contrato que solicitas (artículo 6.1.b del RGPD).</li>
 <li><b>Cumplir obligaciones legales</b> (facturación, garantías). Base legal: obligación legal (artículo 6.1.c del RGPD).</li>
 ${L.datosSalud ? `<li><b>Datos de salud</b>, solo con tu consentimiento expreso (artículo 9.2.a del RGPD), que puedes retirar cuando quieras.</li>\n` : ""}</ul>
-<p>No usamos tus datos para publicidad ni los vendemos o cedemos a otras empresas. No tomamos decisiones automatizadas con efectos jurídicos sobre ti: el asistente solo orienta y organiza la cita.</p>
+<p>${L.abogacia ? "Lo que nos cuentas queda amparado por el secreto profesional del abogado. " : ""}No usamos tus datos para publicidad ni los vendemos o cedemos a otras empresas. No tomamos decisiones automatizadas con efectos jurídicos sobre ti: el asistente solo orienta y organiza la cita.</p>
 
 <h2>4. Inteligencia artificial y proveedores</h2>
 <p>El asistente funciona con un modelo de inteligencia artificial de <b>Anthropic</b>, que actúa como encargado del tratamiento: procesa el texto de la conversación para generar las respuestas y no lo usa para entrenar sus modelos. Para hablar por voz usamos ${P("proveedores de voz: p. ej. LiveKit, Deepgram y ElevenLabs")}, y un proveedor de alojamiento web (${P("p. ej. Cloudflare")}). Algunos pueden tratar datos fuera del Espacio Económico Europeo, siempre con las garantías del RGPD (cláusulas contractuales tipo o marco de privacidad UE-EE. UU.).</p>

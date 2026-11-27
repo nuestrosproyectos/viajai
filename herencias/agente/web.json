@@ -1,6 +1,6 @@
 {
   "web": "herencias",
-  "marca": "Herencia Clara",
+  "marca": "Herencial",
   "sector": "herencias",
   "asistente": {
     "nombre": "Andrés",
@@ -84,7 +84,7 @@
     "situacion"
   ],
   "palabrasClave": [
-    "Herencia Clara"
+    "Herencial"
   ],
   "tipos": [
     "consulta",

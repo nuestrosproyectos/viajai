@@ -1,0 +1,3 @@
+No firmes nada todavía, y revisa la oferta con el abogado: no hay una cifra fija por latigazo, se suma partida a partida según lo que acrediten los informes. ¿Te parece bien que apunte lo de tu rehabilitación para el abogado? Es solo para tu consulta.
+<ficha>{"caso":"Latigazo; la aseguradora del otro te ha ofrecido una cantidad por carta","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"No firmar nada; que el abogado revise la oferta con los informes médicos.","fase":"orientando"}</ficha>
+<mostrar>oferta</mostrar>

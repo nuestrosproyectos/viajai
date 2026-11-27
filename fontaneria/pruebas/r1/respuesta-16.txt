@@ -1,0 +1,2 @@
+Esa ayuda no la puedo confirmar, así que no te digo si existe ni cuánto es. Lo apunto para que el fontanero te diga si la podemos tramitar. ¿Te reservo una visita para revisar tus tuberías?
+<ficha>{"averia":"Cambiar tuberías viejas de plomo","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Preguntar al fontanero por la ayuda de 600 euros que mencionas y si la podemos tramitar; no está confirmada.","fase":"proponiendo"}</ficha>

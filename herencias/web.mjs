@@ -181,10 +181,11 @@ export default function web(N) {
     },
 
     legal: {
+      abogacia: true,
       emergencia: "Si hay peligro para alguien, llama al 112.",
       actividad: "es un servicio de abogados especialistas en herencias que atiende en la provincia de " + N.provincia + ". Los asuntos los estudia y los firma siempre un abogado colegiado.",
       colegio: "Ilustre Colegio de Abogados en el que está colegiado el abogado responsable y su número",
-      orienta: "Te orienta de forma general sobre tu herencia y organiza la primera consulta, pero no es un abogado ni da asesoramiento jurídico.",
+      orienta: "No es una persona ni un abogado: da información general y orientativa sobre herencias y organiza la primera consulta, pero no es asesoramiento jurídico.",
       decide: "tu caso lo estudia siempre un abogado con tus documentos",
       precios: ["La primera consulta es " + N.consulta.precio.toLowerCase() + ", sin compromiso.", "Los honorarios se dan por escrito en una hoja de encargo antes de empezar. Notaría, registro e impuestos van aparte."],
       datosCaso: "la situación de la herencia, el parentesco, si hay testamento y los bienes", cita: "la primera consulta",

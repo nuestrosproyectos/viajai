@@ -1,0 +1,3 @@
+En Granada, cada kilovatio de placas produce del orden de mil cuatrocientos a mil setecientos kilovatios hora al año, según orientación y sombras. El sur es lo mejor, y el estudio gratuito con visita técnica lo concreta con tus facturas. ¿Es para una casa, un bloque o un negocio?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"Granada","franja":"","inicio":"","orientacion":"Estimar la producción con el tejado y las sombras en la visita","fase":"entendiendo"}</ficha>
+<mostrar>orientativos</mostrar>

@@ -1,0 +1,2 @@
+Lo habitual en el sector es un porcentaje de lo que se consiga, entre el diez y el treinta por ciento. Si no hay indemnización, no hay honorarios. El porcentaje exacto te lo da el abogado por escrito. ¿Te reservo la consulta gratis por la mañana o por la tarde?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Pedir el porcentaje por escrito en la consulta gratis; sin indemnización no hay honorarios.","fase":"proponiendo"}</ficha>

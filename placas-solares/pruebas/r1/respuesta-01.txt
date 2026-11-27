@@ -1,0 +1,3 @@
+Con la factura de la luz se calcula el tamaño. Una casa típica suele necesitar unos cinco kilovatios de placas, del orden de cuatro mil quinientos a siete mil quinientos euros sin batería; el estudio gratuito con visita técnica lo deja cerrado. ¿Cuánto pagas de luz al mes?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"Armilla","franja":"","inicio":"","orientacion":"Ver el tamaño con tu factura de la luz; estudio gratuito con visita técnica","fase":"orientando"}</ficha>
+<mostrar>preparar</mostrar>

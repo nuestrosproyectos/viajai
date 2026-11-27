@@ -266,3 +266,9 @@ h1 em,h2 em,.subrayado{font-style:normal;color:var(--acento);background:none}
 /* aviso de urgencia arriba del todo (webs de urgencias: textos.urgencia.arriba) */
 .urgencia.urgencia-arriba{order:-1!important;margin:0 0 14px}
 @media (min-width:900px){.urgencia.urgencia-arriba{margin:0 0 22px}}
+
+/* ventanas medianas (portátil, panel lateral de la app): un campo de la solicitud por línea para que no se corten */
+@media (min-width:900px) and (max-width:1500px){
+  .escenario .sol-campos{grid-template-columns:1fr}
+  .escenario .sol-campos .campo.campo-ancho{grid-column:auto}
+}

@@ -1,0 +1,2 @@
+Cargar de día con sol es lo que más aprovecha las placas, y el estudio gratuito con visita técnica mira también el cargador. En Maracena las bonificaciones dependen de su ordenanza, que el técnico comprueba. ¿Sueles cargarlo de día o de noche?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"","tejado":"","consumo":"coche eléctrico","nombre":"","telefono":"","municipio":"Maracena","franja":"","inicio":"","orientacion":"Cargar de día con placas; ver la potencia y el cargador en el estudio","fase":"orientando"}</ficha>

@@ -1,0 +1,3 @@
+Cerrado no te lo doy sin verla, pero orientativamente un atasco serio con máquina suele andar desde unos ciento cincuenta euros y puede pasar de quinientos. El precio exacto sale del presupuesto escrito antes de empezar. ¿Te reservo la visita para verla?
+<ficha>{"averia":"Desatasco de bajante","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"El precio cerrado sale del presupuesto escrito del fontanero antes de empezar; es orientativo, desde unos 150 euros y puede pasar de 500.","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>

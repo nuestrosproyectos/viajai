@@ -1,0 +1,2 @@
+Eso se revisa: el técnico mira si el contrato de compensación está firmado y si la instalación está legalizada. Mientras, apunta qué luces o códigos marca el inversor. ¿Te reservo una visita para revisarla, por la mañana o por la tarde?
+<ficha>{"que":"Revisar mi instalación","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Comprobar contrato de compensación y legalización; el cliente no lo sabe","fase":"proponiendo"}</ficha>

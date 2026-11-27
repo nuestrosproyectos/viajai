@@ -1,0 +1,2 @@
+Como lo alquiláis, no lo puedo afirmar: el 10 % pide vivienda de un particular, no una actividad, y eso lo confirma el técnico o un gestor. En la visita de medición, gratis, medimos la cocina. ¿De qué año es el apartamento?
+<ficha>{"obra":"Reformar la cocina del apartamento alquilado","vivienda":"Piso","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"Almuñécar","franja":"","inicio":"","orientacion":"Si el 10 % del IVA aplica depende de que sea vivienda de un particular; lo confirma un gestor o el técnico.","fase":"orientando"}</ficha>

@@ -1,0 +1,2 @@
+Eso le toca a Emasagra, porque lo que va antes del contador es suyo. Llámales ya al 958 24 22 00, que atienden a todas horas, y aléjate del chorro. ¿Te está entrando agua en casa?
+<ficha>{"averia":"Tubería rota en la calle, antes del contador, sale un chorro","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Avisa a Emasagra en el 958 24 22 00; lo que va antes del contador le toca a ellos.","fase":"orientando"}</ficha>

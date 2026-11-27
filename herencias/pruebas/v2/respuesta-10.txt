@@ -1,0 +1,2 @@
+Siento la pérdida de tu abuelo. Entiendo que la espera te preocupe. Puedes pedir una consulta gratis sin compromiso con nosotros; si quieres cambiar de abogado, hay que avisar al anterior. ¿Sabes si tu abuelo vivía en Andalucía?
+<ficha>{"situacion":"Herencia de tu abuelo, que ya lleva otro abogado","parentesco":"Nieto o nieta","testamento":"No lo sé","bienes":"","fallecimiento":"","orientacion":"Puedes consultar sin compromiso; si cambias de abogado, hay que avisar al anterior.","nombre":"","telefono":"","municipio":"","modalidad":"","franja":"","fase":"orientando"}</ficha>

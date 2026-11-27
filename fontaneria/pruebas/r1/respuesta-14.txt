@@ -1,0 +1,2 @@
+Siento que te haya pasado. Lo de si es legal no te lo puedo confirmar yo, pero tienes derecho a presupuesto por escrito antes de empezar, factura detallada y hojas de reclamaciones. ¿Necesitas que te reserve otra visita?
+<ficha>{"averia":"Desatasco de váter que te cobraron 480 euros","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Pide copia del papel que firmaste y factura detallada, y presupuesto por escrito antes de empezar.","fase":"proponiendo"}</ficha>

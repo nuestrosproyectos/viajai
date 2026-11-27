@@ -1,2 +1,2 @@
-Puede ser el 10 % si es para tu vivienda, tiene más de dos años y los materiales que pone la empresa no pasan del 40 % del precio sin IVA. Si no, va al 21 %. En la visita lo revisa el técnico. ¿De qué año es?
+Puede ser el 10 % si es para tu vivienda, tiene más de dos años y los materiales de la empresa no pasan del 40 % sin IVA. Si no, va al 21 %. La visita de medición, gratis, lo revisa. ¿De qué año es?
 <ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Comprobar si tu obra cumple las condiciones del IVA del 10 %; lo revisa el técnico en la visita.","fase":"orientando"}</ficha>

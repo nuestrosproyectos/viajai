@@ -1,0 +1,2 @@
+Eso no lo sé, para el tiempo mira la previsión que uses en el móvil. ¿Hay algo de agua o desagües en casa que quieras que revisemos?
+<ficha>{"averia":"","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"","fase":"entendiendo"}</ficha>
