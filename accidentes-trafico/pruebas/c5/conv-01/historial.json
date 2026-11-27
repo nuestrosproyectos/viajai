@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Raúl, 644 555 888"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Raúl. Cuando vayas al médico, pide que quede por escrito el golpe del cuello. ¿En qué municipio vives y prefieres la consulta por teléfono, por videollamada o en el despacho, por la mañana o por la tarde?\n<ficha>{\"caso\":\"Golpe por detrás\",\"como\":\"\",\"fecha\":\"hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Raúl\",\"telefono\":\"644 555 888\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico hoy y avisar a tu aseguradora en siete días\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Raúl. Cuando vayas al médico, pide que quede por escrito el golpe del cuello. ¿En qué municipio vives y prefieres la consulta por teléfono, por videollamada o en el despacho, por la mañana o por la tarde?\n<ficha>{\"caso\":\"Golpe por detrás\",\"como\":\"\",\"fecha\":\"hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Raúl\",\"telefono\":\"644 555 888\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico hoy y avisar a tu aseguradora en siete días\",\"fase\":\"datos\"}</ficha>"
  }
 ]

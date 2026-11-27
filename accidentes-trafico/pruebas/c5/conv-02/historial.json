@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Sonia, 633 202 404"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Sonia. Guarda también las cartas que te mande la aseguradora, y no firmes nada hasta la llamada. ¿En qué municipio vives y prefieres que te llamemos por la mañana o por la tarde?\n<ficha>{\"caso\":\"Oferta de la aseguradora contraria, con prisa para firmar\",\"como\":\"\",\"fecha\":\"hace cinco meses\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"Sonia\",\"telefono\":\"633 202 404\",\"municipio\":\"\",\"franja\":\"por teléfono\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada hasta que lo revise el abogado; sin el alta no se puede valorar lo definitivo\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Sonia. Guarda también las cartas que te mande la aseguradora, y no firmes nada hasta la llamada. ¿En qué municipio vives y prefieres que te llamemos por la mañana o por la tarde?\n<ficha>{\"caso\":\"Oferta de la aseguradora contraria, con prisa para firmar\",\"como\":\"\",\"fecha\":\"hace cinco meses\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"Sonia\",\"telefono\":\"633 202 404\",\"municipio\":\"\",\"franja\":\"por teléfono\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada hasta que lo revise el abogado; sin el alta no se puede valorar lo definitivo\",\"fase\":\"datos\"}</ficha>"
  }
 ]

@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Inés, 655 777 333"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Inés. Como ibas por un paso de cebra, la protección es muy alta: el seguro solo se libra si la culpa fue solo de la víctima. ¿Has reclamado algo por escrito a alguien?\n<ficha>{\"caso\":\"Atropello en un paso de cebra; el conductor se fue y no se sabe quién era\",\"como\":\"Andando\",\"fecha\":\"hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Inés\",\"telefono\":\"655 777 333\",\"municipio\":\"\",\"franja\":\"en el despacho, por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar el alta y los informes médicos; el plazo de un año lo revisa el abogado\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Inés. Como ibas por un paso de cebra, la protección es muy alta: el seguro solo se libra si la culpa fue solo de la víctima. ¿Has reclamado algo por escrito a alguien?\n<ficha>{\"caso\":\"Atropello en un paso de cebra; el conductor se fue y no se sabe quién era\",\"como\":\"Andando\",\"fecha\":\"hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Inés\",\"telefono\":\"655 777 333\",\"municipio\":\"\",\"franja\":\"en el despacho, por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar el alta y los informes médicos; el plazo de un año lo revisa el abogado\",\"fase\":\"datos\"}</ficha>"
  }
 ]

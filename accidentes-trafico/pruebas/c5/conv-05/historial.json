@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Lorena, 622 118 900"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Lorena. Si el otro conductor reconoció la culpa, apunta cuándo lo dijo y quién lo oyó. ¿En qué municipio vives?\n<ficha>{\"caso\":\"Volviendo del trabajo en moto, un coche le sacó de la carretera\",\"como\":\"En moto\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Del otro\",\"atestado\":\"Atestado de la policía\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Lorena\",\"telefono\":\"622 118 900\",\"municipio\":\"\",\"franja\":\"por teléfono, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar el atestado y las bajas; la mutua cubre la baja y se puede reclamar también al otro seguro\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Lorena. Si el otro conductor reconoció la culpa, apunta cuándo lo dijo y quién lo oyó. ¿En qué municipio vives?\n<ficha>{\"caso\":\"Volviendo del trabajo en moto, un coche le sacó de la carretera\",\"como\":\"En moto\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Del otro\",\"atestado\":\"Atestado de la policía\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Lorena\",\"telefono\":\"622 118 900\",\"municipio\":\"\",\"franja\":\"por teléfono, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar el atestado y las bajas; la mutua cubre la baja y se puede reclamar también al otro seguro\",\"fase\":\"datos\"}</ficha>"
  }
 ]

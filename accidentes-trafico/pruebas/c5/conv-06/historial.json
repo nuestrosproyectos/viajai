@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Sí, todo bien. Gracias"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Javi. La solicitud queda enviada y te llamamos por la mañana para confirmar la consulta. Guarda también lo que te mande tu seguro. ¿Necesitas algo más?\n<ficha>{\"caso\":\"\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"Sí, el seguro le ofrece un abogado\",\"nombre\":\"Javi\",\"telefono\":\"633 445 566\",\"municipio\":\"\",\"franja\":\"por teléfono, por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Puede quedarse con el abogado de su seguro o pedir una segunda opinión en la consulta gratis\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Javi. La solicitud queda enviada y te llamamos por la mañana para confirmar la consulta. Guarda también lo que te mande tu seguro. ¿Necesitas algo más?\n<ficha>{\"caso\":\"\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"Sí, el seguro le ofrece un abogado\",\"nombre\":\"Javi\",\"telefono\":\"633 445 566\",\"municipio\":\"\",\"franja\":\"por teléfono, por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Puede quedarse con el abogado de su seguro o pedir una segunda opinión en la consulta gratis\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"consulta\",\"caso\":\"\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"Sí, el seguro le ofrece un abogado\",\"nombre\":\"Javi\",\"telefono\":\"633 445 566\",\"municipio\":\"\",\"franja\":\"por teléfono, por la mañana\",\"consentimientoSalud\":\"\",\"urgente\":false,\"notas\":\"Quiere una segunda opinión; el seguro le ofrece un abogado gratis y prefiere valorarlo con el nuestro. No ha indicado el municipio.\"}</aviso>"
  }
 ]

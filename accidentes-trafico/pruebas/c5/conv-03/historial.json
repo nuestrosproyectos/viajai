@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Pedro, 600 909 303"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Pedro. Y pide a tu mujer que guarde el parte de urgencias: es lo que une la muñeca al accidente. ¿En qué municipio vives?\n<ficha>{\"caso\":\"Se saltó un ceda; iba con su mujer\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Pedro\",\"telefono\":\"600 909 303\",\"municipio\":\"\",\"franja\":\"por videollamada, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que su mujer vea un médico hoy; ella puede reclamar al seguro del coche en que iban\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Pedro. Y pide a tu mujer que guarde el parte de urgencias: es lo que une la muñeca al accidente. ¿En qué municipio vives?\n<ficha>{\"caso\":\"Se saltó un ceda; iba con su mujer\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Pedro\",\"telefono\":\"600 909 303\",\"municipio\":\"\",\"franja\":\"por videollamada, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que su mujer vea un médico hoy; ella puede reclamar al seguro del coche en que iban\",\"fase\":\"datos\"}</ficha>"
  }
 ]
