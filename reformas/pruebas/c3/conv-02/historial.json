@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Sí, está todo bien. Quedo a la espera de su llamada."
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Antonio. Antes de enviar la solicitud me falta saber qué quiere reformar: ¿el baño, la cocina o el piso entero?\n<ficha>{\"obra\":\"\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"Las Gabias\",\"direccion\":\"Calle Real 22\",\"franja\":\"la semana que viene por la mañana\",\"inicio\":\"\",\"orientacion\":\"La visita es gratis; lo que aparezca oculto se presupuesta por escrito y no se hace sin su firma.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Antonio. Antes de enviar la solicitud me falta saber qué quiere reformar: ¿el baño, la cocina o el piso entero?\n<ficha>{\"obra\":\"\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"Las Gabias\",\"direccion\":\"Calle Real 22\",\"franja\":\"la semana que viene por la mañana\",\"inicio\":\"\",\"orientacion\":\"La visita es gratis; lo que aparezca oculto se presupuesta por escrito y no se hace sin su firma.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

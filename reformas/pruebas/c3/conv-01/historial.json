@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Sí, todo bien. Gracias"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Marta, tu solicitud queda enviada: te llamamos para confirmar la visita del jueves o viernes por la tarde. ¿Necesitas algo más?\n<ficha>{\"obra\":\"cambiar bañera por plato de ducha, azulejos y lavabo\",\"vivienda\":\"Piso\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Marta\",\"telefono\":\"655 321 908\",\"municipio\":\"Granada capital, La Chana\",\"direccion\":\"Calle Doctor Olóriz 14\",\"franja\":\"jueves o viernes por la tarde\",\"inicio\":\"\",\"orientacion\":\"Visita de medición gratis solicitada; el técnico mirará si hay que mover el desagüe y qué hay detrás de los azulejos.\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Marta, tu solicitud queda enviada: te llamamos para confirmar la visita del jueves o viernes por la tarde. ¿Necesitas algo más?\n<ficha>{\"obra\":\"cambiar bañera por plato de ducha, azulejos y lavabo\",\"vivienda\":\"Piso\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Marta\",\"telefono\":\"655 321 908\",\"municipio\":\"Granada capital, La Chana\",\"direccion\":\"Calle Doctor Olóriz 14\",\"franja\":\"jueves o viernes por la tarde\",\"inicio\":\"\",\"orientacion\":\"Visita de medición gratis solicitada; el técnico mirará si hay que mover el desagüe y qué hay detrás de los azulejos.\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"obra\":\"cambiar bañera por plato de ducha, azulejos y lavabo\",\"vivienda\":\"Piso\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Marta\",\"telefono\":\"655 321 908\",\"municipio\":\"Granada capital, La Chana\",\"direccion\":\"Calle Doctor Olóriz 14\",\"franja\":\"jueves o viernes por la tarde\",\"inicio\":\"\",\"urgente\":false,\"notas\":\"Piso en La Chana (Granada capital). Quiere reformar el baño: quitar la bañera y poner plato de ducha, cambiar azulejos y lavabo. Visita por la tarde, el jueves o el viernes. Teléfono y datos confirmados tras repetirlos. Metros, antigüedad y presupuesto no indicados.\"}</aviso>"
  }
 ]

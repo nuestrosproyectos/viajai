@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Calle Nueva 3, en Pulianas"
+ },
+ {
+  "role": "assistant",
+  "content": "Manolo, te confirmo: teléfono seis tres tres, nueve cero nueve, uno cero uno; estudio en Calle Nueva tres, en Pulianas, una tarde entre semana. ¿Está todo bien?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"Manolo\",\"telefono\":\"633 909 101\",\"municipio\":\"Pulianas\",\"direccion\":\"Calle Nueva 3\",\"franja\":\"por la tarde, entre semana\",\"inicio\":\"\",\"orientacion\":\"Lo que decide es lo que gastas de noche; el estudio con tus facturas calcula cuánto te compensa, sin garantizar factura cero.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Manolo, te confirmo: teléfono seis tres tres, nueve cero nueve, uno cero uno; estudio en Calle Nueva tres, en Pulianas, una tarde entre semana. ¿Está todo bien?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"Manolo\",\"telefono\":\"633 909 101\",\"municipio\":\"Pulianas\",\"direccion\":\"Calle Nueva 3\",\"franja\":\"por la tarde, entre semana\",\"inicio\":\"\",\"orientacion\":\"Lo que decide es lo que gastas de noche; el estudio con tus facturas calcula cuánto te compensa, sin garantizar factura cero.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

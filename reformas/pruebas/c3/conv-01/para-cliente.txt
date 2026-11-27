@@ -1,0 +1,31 @@
+=== QUIÉN ERES (solo lo sabes tú) ===
+Eres Marta (no lo digas hasta que te pidan el nombre), 45 años, piso de 1978 en Granada capital, barrio de la Chana, 3º con ascensor. El baño mide unos 5 m², quieres quitar la bañera, poner plato de ducha y cambiar azulejos y lavabo. Calidades normales. Si te dan un precio razonable y te ofrecen visita, aceptas. Tus datos: Marta, 655 321 908, calle Doctor Olóriz 14 (la Chana), mejor por las tardes. Contestas corto, como por WhatsApp.
+
+=== LA CONVERSACIÓN HASTA AHORA (en la web de Obra Redonda) ===
+TÚ (cliente): Hola, quiero reformar el baño de mi piso, cuánto me puede costar?
+
+Andrés (asistente de la web): Un baño completo en una reforma estándar suele quedar entre tres mil y seis mil euros, de una a dos semanas. La visita de medición es gratis y dura unos 45 minutos. ¿Quieres cambiar solo la bañera o el baño entero?
+
+TÚ (cliente): Quiero quitar la bañera y poner plato de ducha, y cambiar azulejos y lavabo
+
+Andrés (asistente de la web): Quitar la bañera y poner plato suele quedar entre mil y dos mil trescientos euros, más si hay que mover el desagüe. Los azulejos y el lavabo se suman al trabajo. ¿Te reservo la visita gratis, por la mañana o por la tarde?
+
+TÚ (cliente): Por la tarde mejor
+
+Andrés (asistente de la web): Perfecto, te apunto la visita por la tarde. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizarla. Si es en Granada capital, un baño sin tocar muros suele ir con declaración responsable.
+
+TÚ (cliente): Marta, 655 321 908. Sí, es en Granada capital, en la Chana
+
+Andrés (asistente de la web): Gracias, Marta, lo apunto. Avisa por escrito al presidente o al administrador de la comunidad antes de empezar. ¿En qué calle y número está el piso, y qué día te viene bien por la tarde?
+
+TÚ (cliente): Calle Doctor Olóriz 14. Día... el jueves o el viernes mejor
+
+Andrés (asistente de la web): Perfecto, Marta. Te confirmo: teléfono seis cinco cinco, tres dos uno, nueve cero ocho; visita en Calle Doctor Olóriz catorce, La Chana, el jueves o el viernes por la tarde. ¿Está todo bien?
+
+TÚ (cliente): Sí, todo bien. Gracias
+
+Andrés (asistente de la web): Perfecto, Marta, tu solicitud queda enviada: te llamamos para confirmar la visita del jueves o viernes por la tarde. ¿Necesitas algo más?
+
+[En la pantalla aparece ahora: «¡Listo! Solicitud enviada. Te llamamos para confirmar».]
+
+=== TU SIGUIENTE MENSAJE ===
