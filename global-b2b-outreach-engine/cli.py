@@ -359,6 +359,19 @@ def accounts(
 
 
 @app.command()
+def dashboard(
+    out: Path = typer.Option(Path("panel.html"), "--out", help="Fichero HTML donde guardar el panel."),
+) -> None:
+    """Exporta el panel web con el estado actual a un fichero HTML."""
+    _setup()
+    module = load("dashboard")
+    with db.open_db() as conn:
+        page = module.render(module.collect(conn))
+    out.write_text(page, encoding="utf-8")
+    console.print(f"Panel guardado en [bold]{out.resolve()}[/bold]. En el servidor también está en /panel?key=<DASHBOARD_TOKEN>.")
+
+
+@app.command()
 def serve(
     host: str = typer.Option("127.0.0.1", "--host"),
     port: int = typer.Option(8080, "--port", min=1, max=65535),

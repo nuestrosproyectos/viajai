@@ -173,65 +173,75 @@ def persist_places(
     conn: sqlite3.Connection, campaign: CampaignConfig, items: list[dict[str, Any]], stats: ExtractStats
 ) -> None:
     """Guarda los negocios. Deduplica por place_id y por cadena; nunca pisa estados avanzados."""
+    before = (stats.fetched, stats.inserted, stats.duplicates_chain, stats.out_of_niche)
     with db.transaction(conn):
-        for item in items:
-            stats.fetched += 1
-            place_id = str(item.get("placeId") or "").strip()
-            name = str(item.get("title") or "").strip()
-            if not place_id or not name or item.get("permanentlyClosed") or item.get("temporarilyClosed"):
-                stats.skipped_invalid += 1
+        _persist(conn, campaign, items, stats)
+        db.add_event(
+            conn, None, "extraction", campaign=campaign.campaign_name, fetched=stats.fetched - before[0],
+            inserted=stats.inserted - before[1], duplicates=stats.duplicates_chain - before[2],
+            out_of_niche=stats.out_of_niche - before[3],
+        )
+
+
+def _persist(conn: sqlite3.Connection, campaign: CampaignConfig, items: list[dict[str, Any]], stats: ExtractStats) -> None:
+    for item in items:
+        stats.fetched += 1
+        place_id = str(item.get("placeId") or "").strip()
+        name = str(item.get("title") or "").strip()
+        if not place_id or not name or item.get("permanentlyClosed") or item.get("temporarilyClosed"):
+            stats.skipped_invalid += 1
+            continue
+        if not campaign.category_matches(str(item.get("categoryName") or "")):
+            stats.out_of_niche += 1  # Google mezcla ferreterías, constructoras... con el nicho buscado
+            continue
+        country = str(item.get("countryCode") or campaign.country_code).upper()
+        website = normalize_website(str(item.get("website") or ""))
+        phone_raw = str(item.get("phoneUnformatted") or item.get("phone") or "").strip()
+        phone = to_e164(phone_raw, country) or to_e164(phone_raw, campaign.country_code)
+        root = root_domain(website)
+        now = db.iso()
+        descriptive = (
+            name,
+            str(item.get("categoryName") or "").strip(),
+            str(item.get("address") or "").strip(),
+            str(item.get("city") or "").strip(),
+            country,
+            phone_raw,
+            phone,
+            website,
+            root,
+            str(item.get("url") or "").strip(),
+            item.get("totalScore") if isinstance(item.get("totalScore"), (int, float)) else None,
+            item.get("reviewsCount") if isinstance(item.get("reviewsCount"), int) else None,
+        )
+        existing = conn.execute("SELECT id, status FROM leads WHERE place_id = ?", (place_id,)).fetchone()
+        if existing is not None:
+            if existing["status"] in db.PROTECTED_STATUSES or existing["status"] in (db.ENRICHED, db.READY):
+                # Ya está trabajado: no se toca nada, ni datos ni estado.
+                stats.protected_untouched += 1
                 continue
-            if not campaign.category_matches(str(item.get("categoryName") or "")):
-                stats.out_of_niche += 1  # Google mezcla ferreterías, constructoras... con el nicho buscado
-                continue
-            country = str(item.get("countryCode") or campaign.country_code).upper()
-            website = normalize_website(str(item.get("website") or ""))
-            phone_raw = str(item.get("phoneUnformatted") or item.get("phone") or "").strip()
-            phone = to_e164(phone_raw, country) or to_e164(phone_raw, campaign.country_code)
-            root = root_domain(website)
-            now = db.iso()
-            descriptive = (
-                name,
-                str(item.get("categoryName") or "").strip(),
-                str(item.get("address") or "").strip(),
-                str(item.get("city") or "").strip(),
-                country,
-                phone_raw,
-                phone,
-                website,
-                root,
-                str(item.get("url") or "").strip(),
-                item.get("totalScore") if isinstance(item.get("totalScore"), (int, float)) else None,
-                item.get("reviewsCount") if isinstance(item.get("reviewsCount"), int) else None,
+            conn.execute(
+                "UPDATE leads SET business_name=?, category=?, address=?, city=?, country_code=?, "
+                "phone_raw=?, phone_e164=?, website=?, root_domain=?, maps_url=?, rating=?, "
+                "reviews_count=?, updated_at=? WHERE id=?",
+                (*descriptive, now, existing["id"]),
             )
-            existing = conn.execute("SELECT id, status FROM leads WHERE place_id = ?", (place_id,)).fetchone()
-            if existing is not None:
-                if existing["status"] in db.PROTECTED_STATUSES or existing["status"] in (db.ENRICHED, db.READY):
-                    # Ya está trabajado: no se toca nada, ni datos ni estado.
-                    stats.protected_untouched += 1
-                    continue
-                conn.execute(
-                    "UPDATE leads SET business_name=?, category=?, address=?, city=?, country_code=?, "
-                    "phone_raw=?, phone_e164=?, website=?, root_domain=?, maps_url=?, rating=?, "
-                    "reviews_count=?, updated_at=? WHERE id=?",
-                    (*descriptive, now, existing["id"]),
-                )
-                stats.refreshed += 1
-                continue
-            parent = _find_chain_parent(conn, root, phone)
-            status = db.DUPLICATE if parent is not None else db.NEW
-            cursor = conn.execute(
-                "INSERT INTO leads (campaign_name, place_id, business_name, category, address, city, "
-                "country_code, phone_raw, phone_e164, website, root_domain, maps_url, rating, reviews_count, "
-                "status, duplicate_of, language, created_at, updated_at) "
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-                (campaign.campaign_name, place_id, *descriptive, status, parent, campaign.language, now, now),
-            )
-            if parent is not None:
-                stats.duplicates_chain += 1
-                db.add_event(conn, cursor.lastrowid, "duplicate_of_chain", parent=parent, root_domain=root, phone=phone)
-            else:
-                stats.inserted += 1
+            stats.refreshed += 1
+            continue
+        parent = _find_chain_parent(conn, root, phone)
+        status = db.DUPLICATE if parent is not None else db.NEW
+        cursor = conn.execute(
+            "INSERT INTO leads (campaign_name, place_id, business_name, category, address, city, "
+            "country_code, phone_raw, phone_e164, website, root_domain, maps_url, rating, reviews_count, "
+            "status, duplicate_of, language, created_at, updated_at) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            (campaign.campaign_name, place_id, *descriptive, status, parent, campaign.language, now, now),
+        )
+        if parent is not None:
+            stats.duplicates_chain += 1
+            db.add_event(conn, cursor.lastrowid, "duplicate_of_chain", parent=parent, root_domain=root, phone=phone)
+        else:
+            stats.inserted += 1
 
 
 async def run_extraction(

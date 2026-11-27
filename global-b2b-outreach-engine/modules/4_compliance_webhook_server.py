@@ -262,6 +262,20 @@ def _unsubscribe_response(request: Request, token: str, channel: str) -> HTMLRes
     return _render(language, texts["title"], texts["heading"], str(texts["body"]).format(email=_mask(str(lead["email"]))))
 
 
+@app.get("/panel", response_class=HTMLResponse)
+def panel(key: str = Query(default="")) -> HTMLResponse:
+    """Panel de solo lectura. Solo se abre con la clave DASHBOARD_TOKEN; sin clave configurada no existe."""
+    expected = get_settings().dashboard_token
+    if not expected or not hmac.compare_digest(key.encode(), expected.encode()):
+        raise HTTPException(status_code=404, detail="Not Found")
+    from modules import load
+
+    dashboard = load("dashboard")
+    with _connection() as conn:
+        page = dashboard.render(dashboard.collect(conn), refresh_seconds=60)
+    return HTMLResponse(page, headers={"Cache-Control": "no-store", "Referrer-Policy": "no-referrer"})
+
+
 @app.get("/unsubscribe/{token}", response_class=HTMLResponse)
 def unsubscribe_get(request: Request, token: str) -> HTMLResponse:
     return _unsubscribe_response(request, token, "link")

@@ -10,6 +10,7 @@ _NAMES = {
     "copywriter": "modules.3_ai_copywriter",
     "server": "modules.4_compliance_webhook_server",
     "sender": "modules.5_sender_daemon",
+    "dashboard": "modules.6_dashboard",
 }
 
 

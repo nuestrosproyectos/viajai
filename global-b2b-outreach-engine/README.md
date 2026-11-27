@@ -38,6 +38,7 @@ python cli.py send     --live                                       #    envía 
 python cli.py stats                                                 # 5. embudo completo
 python cli.py accounts                                              #    uso y pausas de cada cuenta
 python cli.py serve    --port 8080                                  #    servidor de bajas y WhatsApp
+python cli.py dashboard --out panel.html                            #    panel web con el estado actual
 ```
 
 `send` sin opciones equivale a `--dry-run`: nunca envía por accidente. `send --live --once` hace una pasada y termina.
@@ -133,6 +134,7 @@ python cli.py accounts --resume laura@colabora-tudominio.com
 | `POST /unsubscribe/{token}` | El botón de baja nativo de Gmail/Outlook (RFC 8058) |
 | `POST /webhook/whatsapp-inbound` | Mensajes entrantes de WhatsApp. Localiza el lead por `[Ref: XXXX]` o por teléfono, lo marca `CONVERTED_TO_WA` y cancela los correos pendientes |
 | `GET /webhook/whatsapp-inbound` | Verificación que exige Meta al dar de alta el webhook |
+| `GET /panel?key=…` | Panel web de solo lectura: embudo, cola de envío, leads, cuentas y actividad. Solo existe si defines `DASHBOARD_TOKEN` |
 | `GET /health` | Comprobación de vida |
 
 El webhook entiende tres formatos sin configurar nada:

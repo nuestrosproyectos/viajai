@@ -769,6 +769,25 @@ def test_whatsapp_webhook_all_providers(conn, campaign, client):
     assert client.get("/health").json() == {"status": "ok"}
 
 
+def test_dashboard_reads_real_state_and_is_protected(conn, campaign, client, monkeypatch):
+    dashboard = load("dashboard")
+    ready_leads(conn, campaign, 2)
+    asyncio.run(engine_for(conn, make_accounts("a@envios.test"), Clock(TUESDAY_10), Outbox()).send_pass(live=True))
+    with db.transaction(conn):
+        conn.execute("UPDATE leads SET business_name = '<script>alert(1)</script>' WHERE id = 1")
+    data = dashboard.collect(conn)
+    assert dict(data.funnel)["Primer correo enviado"] == 2 and dict(data.funnel)["Con email corporativo"] == 2
+    page = dashboard.render(data)
+    assert "<script>alert(1)</script>" not in page and "&lt;script&gt;" in page and "info@negocio1.es" in page
+    assert page.startswith("<!doctype html>") and not dashboard.render(data, standalone=False).startswith("<!doctype")
+    assert client.get("/panel").status_code == 404  # sin clave configurada, el panel no existe
+    monkeypatch.setenv("DASHBOARD_TOKEN", "clave-panel")
+    settings_module.get_settings.cache_clear()
+    assert client.get("/panel?key=mala").status_code == 404
+    ok = client.get("/panel?key=clave-panel")
+    assert ok.status_code == 200 and "Captación B2B" in ok.text
+
+
 def test_unsubscribed_lead_is_not_reopened_by_whatsapp(conn, campaign, client):
     ids = ready_leads(conn, campaign, 1)
     row = conn.execute("SELECT unsubscribe_token, lead_ref FROM leads WHERE id = ?", (ids[0],)).fetchone()

@@ -68,6 +68,7 @@ class Settings:
     webhook_secret: str
     whatsapp_verify_token: str
     whatsapp_app_secret: str
+    dashboard_token: str
     accounts_file: Path
     jitter_min: int
     jitter_max: int
@@ -114,6 +115,7 @@ def get_settings() -> Settings:
         webhook_secret=env.get("WEBHOOK_SECRET", "").strip(),
         whatsapp_verify_token=env.get("WHATSAPP_VERIFY_TOKEN", "").strip(),
         whatsapp_app_secret=env.get("WHATSAPP_APP_SECRET", "").strip(),
+        dashboard_token=env.get("DASHBOARD_TOKEN", "").strip(),
         accounts_file=_path("ACCOUNTS_FILE", "accounts.json"),
         jitter_min=jitter_min,
         jitter_max=jitter_max,
