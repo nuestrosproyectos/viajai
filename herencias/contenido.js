@@ -14,10 +14,10 @@ window.__IMPUESTO = {
 
 window.__PREGUNTAS = [
   ["¿Cuánto tiempo tengo para los trámites de la herencia?", "El impuesto de sucesiones se presenta en seis meses desde el fallecimiento, y se puede pedir una prórroga de otros seis dentro de los cinco primeros meses. La plusvalía municipal tiene el mismo plazo. Conviene empezar pronto: algunos certificados tardan semanas."],
-  ["¿Tengo que pagar para hablar con vosotros?", "No. Hablar con Andrés es gratis y la primera consulta con el abogado también. Si después nos encargas la herencia, te damos un precio cerrado por escrito antes de empezar."],
+  ["¿Tengo que pagar para hablar con vosotros?", "No. Hablar con {asistente} es gratis y la primera consulta con el abogado también. Si después nos encargas la herencia, te damos un precio cerrado por escrito antes de empezar."],
   ["No sé si había testamento. ¿Cómo lo averiguo?", "Con el certificado de últimas voluntades, que se pide pasados 15 días hábiles desde el fallecimiento. Dice si hay testamento y en qué notaría está. Si no lo hay, hace falta una declaración de herederos, y nos encargamos nosotros."],
   ["Si acepto la herencia, ¿heredo también las deudas?", "Al aceptar se acepta todo, bienes y deudas. Pero se puede aceptar a beneficio de inventario, y entonces solo respondes de las deudas con lo que hay en la herencia, no con tu dinero. Mientras tanto, mejor no tocar cuentas ni bienes. Te ayudamos a decidir antes de firmar nada."],
   ["Mis hermanos y yo no nos ponemos de acuerdo. ¿Podéis ayudarnos?", "Sí. Primero buscamos un acuerdo hablando con todos. Si no es posible, hay salidas: un contador-partidor nombrado por el notario o, como último recurso, la división judicial. Te explicamos cuál conviene en tu caso."],
-  ["¿Andrés es un abogado?", "No. Andrés es un asistente con inteligencia artificial que te orienta y recoge tu caso para que no tengas que contarlo dos veces. Lo que dice es orientativo: tu caso lo estudia y lo firma siempre un abogado colegiado."],
-  ["¿Qué hacéis con lo que le cuento a Andrés?", "Lo usamos solo para atender tu consulta. No lo vendemos ni lo usamos para publicidad, y no te pedimos datos bancarios ni el DNI completo. Más detalles en la política de privacidad."]
+  ["¿{asistente} es un abogado?", "No. {asistente} es un asistente con inteligencia artificial que te orienta y recoge tu caso para que no tengas que contarlo dos veces. Lo que dice es orientativo: tu caso lo estudia y lo firma siempre un abogado colegiado."],
+  ["¿Qué hacéis con lo que le cuento a {asistente}?", "Lo usamos solo para atender tu consulta. No lo vendemos ni lo usamos para publicidad, y no te pedimos datos bancarios ni el DNI completo. Más detalles en la política de privacidad."]
 ];

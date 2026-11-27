@@ -41,7 +41,7 @@ function pintarBloque() {
 function pintarPreguntas() {
   const F = window.__PREGUNTAS || [];
   $("#faqLista").innerHTML = F.map(() => "<details><summary></summary><p></p></details>").join("");
-  $$("#faqLista details").forEach((d, k) => { d.querySelector("summary").textContent = F[k][0]; d.querySelector("p").textContent = F[k][1]; });
+  $$("#faqLista details").forEach((d, k) => { const n = t => String(t).replaceAll("{asistente}", N.tecnico); d.querySelector("summary").textContent = n(F[k][0]); d.querySelector("p").textContent = n(F[k][1]); });
 }
 
 /* ------------------------------------------------------------------

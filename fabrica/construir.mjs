@@ -14,6 +14,7 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { pagina } from "./plantilla/pagina.mjs";
+import { avisoLegal, privacidad } from "./plantilla/legal.mjs";
 
 const FABRICA = dirname(fileURLToPath(import.meta.url));
 export const RAIZ = resolve(FABRICA, "..");
@@ -51,6 +52,15 @@ export async function construir(nombre, { silencioso = false } = {}) {
   const dir = join(RAIZ, nombre);
   if (!existsSync(join(dir, "web.mjs"))) throw new Error(`${nombre}: no tiene web.mjs`);
   const A = escribirAsistente(dir);
+  // copia del cerebro común junto a la web (la vista previa y el servidor no pueden subir de carpeta)
+  writeFileSync(join(dir, "base-instrucciones.mjs"), "// GENERADO: copia de fabrica/plantilla/instrucciones-base.mjs (no editar aquí).\n" + readFileSync(join(PL, "instrucciones-base.mjs"), "utf8"));
+  // conocimiento compacto del asistente (conocimiento/resumen-para-andres.md) → saber.mjs, para que lo lean
+  // igual la vista previa (navegador), el servidor y el agente de voz. Las fuentes siguen en el archivo grande.
+  const resumen = join(dir, "conocimiento", "resumen-para-andres.md");
+  if (existsSync(resumen)) {
+    const texto = readFileSync(resumen, "utf8").replace(/^# .*\n+/, "").replace(/^## /gm, "## ").trim();
+    writeFileSync(join(dir, "saber.mjs"), `// GENERADO desde conocimiento/resumen-para-andres.md por fabrica/construir.mjs: no editar aquí.\nexport const SABER = ${JSON.stringify(texto)};\n`);
+  }
   const v = "?v=" + Date.now();   // para que Node vuelva a leer los módulos si se construye dos veces
   const { NEGOCIO: N, saludo } = await import(pathToFileURL(join(dir, "cerebro.mjs")).href + v);
   const W = (await import(pathToFileURL(join(dir, "web.mjs")).href + v)).default(N);
@@ -60,11 +70,12 @@ export async function construir(nombre, { silencioso = false } = {}) {
   if (pend.length) {
     const esc = s => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
     // en la misma línea de la franja (no empuja la portada): al tocarla se despliega la lista encima
-    W.textos.previa = `<details class="previa-pend"><summary>${W.textos.previa} · <u>${pend.length} pendientes</u></summary><ul>${pend.map(p => `<li>${esc(p)}</li>`).join("")}</ul></details>`;
+    W.textos.previa = `<details class="previa-pend"><summary>Vista previa · <u>${pend.length} datos pendientes</u> <small>(toca para verlos)</small></summary><ul>${pend.map(p => `<li>${esc(p)}</li>`).join("")}</ul></details>`;
   }
   const comun = { W, N, A, css, js };
   writeFileSync(join(dir, "index.html"), pagina(comun));
   writeFileSync(join(dir, "vista-previa.html"), pagina({ ...comun, previa: true }));
+  if (W.legal) { writeFileSync(join(dir, "aviso-legal.html"), avisoLegal(N, W)); writeFileSync(join(dir, "privacidad.html"), privacidad(N, W)); }
 
   // agente de voz: instrucciones con herramientas, saludo y datos de la web (campos, voz, destinos)
   if (existsSync(join(dir, "instrucciones.mjs"))) {

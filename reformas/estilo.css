@@ -1,0 +1,58 @@
+/* =====================================================================
+   PIEL «OBRA LIMPIA» · Reformas (Granada)
+   Lo que se ve el día que se quitan los plásticos: yeso recién lijado (fondos casi
+   blancos y neutros), grafito para el texto, el amarillo del nivel de burbuja SOLO
+   para lo que pulsa la persona y el azul de la cerámica de Fajalauza para todo lo que
+   es Andrés. Esquinas más rectas (8 px: esto es obra), sin degradados, y una retícula
+   de papel milimetrado detrás de los precios y de la solicitud, como el plano de la visita.
+   Contrastes WCAG calculados en estudio/estudio-marca-diseno.md (4.1).
+   Lo común (colocación, conversación) está en fabrica/plantilla/: aquí solo lo propio.
+   ===================================================================== */
+:root,:root[data-theme="light"]{
+  --fondo:#F7F6F3; --fondo-2:#EFEEEA; --fondo-3:#E3E2DD; --tarjeta:#FFFFFF;
+  --tinta:#1A1C1F; --tinta-2:#4B5058; --tinta-3:#5F646C;
+  --linea:#DEDDD8; --linea-fuerte:#8C9099;
+  --acento:#F2B92E; --acento-pulsado:#D9A31F; --acento-suave:#FBF1D6; --sobre-acento:#1A1C1F;
+  --acento-texto:#7A5300;
+  --almagra:var(--acento); --almagra-pulsado:var(--acento-pulsado); --almagra-suave:var(--acento-suave); --sobre-almagra:#1A1C1F;
+  --cobalto:#23408E; --cobalto-pulsado:#1A3070; --cobalto-suave:#E9EDF7; --laton:#7A5300;
+  --ok:#1E7A4F; --ok-suave:#E3F2EA; --rojo:#B3261E; --sobre-rojo:#FFFFFF;
+  --consola:#1A1C1F; --consola-2:#25282C; --consola-txt:#F1F1EF; --consola-txt-2:#B9BCC2; --consola-linea:rgba(241,241,239,.14);
+  --consola-acento:#F5C443;
+  --titular:"Bricolage Grotesque",var(--texto);
+  --texto:"Public Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --sombra:0 1px 2px rgba(26,28,31,.06),0 10px 26px -18px rgba(26,28,31,.35);
+  --r-tarjeta:8px; --r-campo:6px;
+  --cab-fondo:rgba(247,246,243,.94);
+  color-scheme:light;
+}
+::selection{background:var(--acento);color:var(--sobre-acento)}
+
+/* titulares con carácter de oficio; el texto, neutro y muy legible */
+h1,h2,h3,.logo-txt b{font-family:var(--titular);font-stretch:normal;font-weight:800;letter-spacing:-.03em}
+h3{font-weight:700;letter-spacing:-.015em}
+h1 em,h2 em{color:var(--tinta);font-style:normal;background:linear-gradient(transparent 62%,var(--acento) 62%,var(--acento) 92%,transparent 92%);padding:0 .06em}
+.sobretitulo{color:var(--acento-texto)}
+
+/* botón de la persona: amarillo nivel con texto grafito (9,6:1) */
+.boton-principal{background:var(--acento);color:var(--sobre-acento);box-shadow:0 1px 0 var(--acento-pulsado)}
+.boton-principal:active{background:var(--acento-pulsado)}
+.boton{border-radius:8px}
+.tarjeta-andres .boton-hablar,.boton-andres{border-radius:8px}
+.logo-marca{background:var(--tinta);border-radius:8px}
+.llamame-enlace,.aparato:not(.aparato-foto) svg,.confianza svg,.faq summary::after{color:var(--cobalto)}
+.paso::before{background:var(--tinta);color:var(--acento)}
+.tarifa{border-color:var(--tinta)}
+.tarifa .cifra{font-family:var(--titular);font-weight:800}
+.descuento{background:var(--acento-suave);color:var(--tinta)}
+.bd-caso .bd-cifra{color:var(--tinta);font-family:var(--titular);font-weight:800;letter-spacing:-.02em}
+.bd-caso{border-top:3px solid var(--acento)}
+
+/* papel milimetrado detrás de los precios y de la solicitud en grande (el plano de la visita) */
+#precios-orientativos,#precios{background-color:var(--fondo);background-image:linear-gradient(rgba(140,144,153,.13) 1px,transparent 1px),linear-gradient(90deg,rgba(140,144,153,.13) 1px,transparent 1px);background-size:8px 8px}
+@media (min-width:900px){.escenario{background-image:linear-gradient(rgba(140,144,153,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(140,144,153,.12) 1px,transparent 1px);background-size:8px 8px}}
+/* cotas de plano en las casillas de situación: una línea fina con topes, como una medida */
+.aparato:not(.aparato-foto){position:relative}
+.aparato:not(.aparato-foto)::after{content:"";position:absolute;left:14px;right:14px;bottom:8px;height:6px;border-left:1px solid var(--linea-fuerte);border-right:1px solid var(--linea-fuerte);background:linear-gradient(var(--linea-fuerte),var(--linea-fuerte)) center/100% 1px no-repeat;opacity:.45}
+.escenario .esc-cab small,.esc-estado{color:var(--tinta)}
+.hero-foto img{object-position:50% 60%}
