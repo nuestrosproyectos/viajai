@@ -1,0 +1,2 @@
+No toques enchufes con agua cerca, no uses la lavadora ni eches sosa. Te mando al fontanero, urgente o programado, según si sigue saliendo agua. ¿Atasca solo ese sumidero o también otros de la casa?
+<ficha>{"averia":"Sale agua por el sumidero del suelo del baño de abajo cuando pones la lavadora","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"Maracena","direccion":"","franja":"","inicio":"","orientacion":"No uses la lavadora ni eches sosa, y no toques enchufes con agua cerca.","fase":"proponiendo"}</ficha>

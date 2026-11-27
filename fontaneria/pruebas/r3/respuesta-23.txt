@@ -1,0 +1,3 @@
+Cierra la llave de paso de casa si puedes. Antes del contador suele ser cosa de la empresa de agua de tu municipio; si es Emasagra, llama al 958 24 22 00. ¿Sabes qué municipio es el tuyo?
+<ficha>{"averia":"Tubería rota en la calle, antes del contador, sale un chorro","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Lo que hay antes del contador suele ser de la empresa de agua de tu municipio; si es Emasagra, su teléfono es el 958 24 22 00.","fase":"orientando"}</ficha>
+<mostrar>seguridad</mostrar>

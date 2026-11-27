@@ -1,0 +1,2 @@
+No tengo previsión del tiempo; para eso mejor mira la app del móvil. ¿Hay algo de agua o de desagüe en lo que te pueda ayudar?
+<ficha>{"averia":"","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"","fase":"entendiendo"}</ficha>

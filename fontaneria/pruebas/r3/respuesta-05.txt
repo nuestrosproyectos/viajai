@@ -1,0 +1,3 @@
+Cierra ya la llave de paso, suele estar en la cocina, el baño o junto al contador. Aparta lo que se pueda mojar y haz fotos para el seguro. Esto es urgente, te mando al fontanero ahora. ¿Me dices tu nombre y un teléfono?
+<ficha>{"averia":"Fuga de agua debajo del mueble del baño, ya llega al pasillo","cuando":"Urgente, ahora","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Cierra la llave de paso ya, aparta lo mojable y haz fotos para el seguro.","fase":"proponiendo"}</ficha>
+<mostrar>seguridad</mostrar>

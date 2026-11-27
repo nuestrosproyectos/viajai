@@ -1,0 +1,2 @@
+Esa ayuda de 600 euros no te la puedo confirmar. Compruébala en la Junta o en tu ayuntamiento, y lo apunto para que el fontanero te lo confirme. ¿Te reservo la visita por la mañana o por la tarde?
+<ficha>{"averia":"Tuberías viejas de plomo que quieres cambiar","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Mira la ayuda en la Junta o en tu ayuntamiento; el fontanero te confirma lo de la ayuda al venir a verlo.","fase":"proponiendo"}</ficha>

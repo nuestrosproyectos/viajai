@@ -1,0 +1,2 @@
+La salida suele costar unos veinte a cuarenta euros, orientativo; el fontanero confirma la tarifa antes de ir. De noche o en festivo puede subir hasta el doble. Dime qué te pasa y te reservo la visita. ¿Es una fuga, un atasco u otra cosa?
+<ficha>{"averia":"","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Confirma la tarifa de salida con el fontanero antes de que venga.","fase":"entendiendo"}</ficha>

@@ -1,0 +1,3 @@
+Entiendo el susto. No pises el agua ni vayas al cuadro, y no toques nada mojado. Llama al 112 y no vuelvas a dar la luz hasta que lo revise un profesional. Te mando al fontanero urgente; ¿me dices tu nombre y un teléfono?
+<ficha>{"averia":"El agua del baño ha llegado a la regleta del ordenador; todo está a oscuras","cuando":"Urgente, ahora","llave":"Sí, ya la has cerrado","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No pises el agua ni vayas al cuadro; llama al 112 y no vuelvas a dar la luz hasta que lo revise un profesional.","fase":"proponiendo"}</ficha>
+<mostrar>seguridad</mostrar>

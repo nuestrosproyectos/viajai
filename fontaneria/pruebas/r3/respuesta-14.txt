@@ -1,0 +1,3 @@
+Eso no lo puedo confirmar, pero un desatasco de váter suele costar unos 70 a 150 euros, y de noche o en festivo puede subir bastante. Tienes derecho a presupuesto por escrito, factura y hojas de reclamaciones. ¿Quieres una segunda opinión de un fontanero?
+<ficha>{"averia":"Váter atascado; ayer lo desatascó otra empresa y te cobró 480 euros","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Pide presupuesto por escrito y factura antes de aceptar nada; un desatasco de váter suele ir de 70 a 150 euros, orientativo.","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>
