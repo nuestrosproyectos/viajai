@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Sí, el otro conductor reconoció que fue culpa suya y vino la Guardia Civil e hizo atestado. Lo que no sé es si puedo reclamar a la mutua y al seguro del otro a la vez"
+ },
+ {
+  "role": "assistant",
+  "content": "Sí, se puede reclamar también a la aseguradora del otro conductor, además de a la mutua. Conviene que el abogado mire las dos vías juntas, con el atestado delante. ¿Te reservo la consulta gratis?\n<ficha>{\"caso\":\"Volviendo del trabajo, un coche te sacó de la carretera\",\"como\":\"En moto\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Del otro\",\"atestado\":\"Atestado de la policía\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"La mutua cubre la baja por accidente laboral y el otro conductor reconoció su culpa; el abogado revisa las dos vías juntas.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>situaciones</mostrar>",
+  "original": "Sí, se puede reclamar también a la aseguradora del otro conductor, además de a la mutua. Conviene que el abogado mire las dos vías juntas, con el atestado delante. ¿Te reservo la consulta gratis?\n<ficha>{\"caso\":\"Volviendo del trabajo, un coche te sacó de la carretera\",\"como\":\"En moto\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Del otro\",\"atestado\":\"Atestado de la policía\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"La mutua cubre la baja por accidente laboral y el otro conductor reconoció su culpa; el abogado revisa las dos vías juntas.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>situaciones</mostrar>"
  }
 ]

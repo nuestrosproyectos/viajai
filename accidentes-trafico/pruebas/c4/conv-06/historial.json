@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Ya, pero mi póliza tiene defensa jurídica. Es que no me fío mucho del abogado del seguro, ¿vosotros en qué os diferenciáis?"
+ },
+ {
+  "role": "assistant",
+  "content": "Es normal querer comparar, y no hablo mal de otros. Nuestro abogado está colegiado en Granada y el equipo tiene experiencia reclamando a aseguradoras aquí. Y si tu póliza tiene defensa jurídica, puedes elegir a quien quieras. ¿Te reservo la consulta gratis?\n<ficha>{\"caso\":\"Tu seguro te ofrece su abogado\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"Sí\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Puedes elegir tu abogado si la póliza tiene defensa jurídica; la consulta gratis sirve para compararlo.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>honorarios</mostrar>",
+  "original": "Es normal querer comparar, y no hablo mal de otros. Nuestro abogado está colegiado en Granada y el equipo tiene experiencia reclamando a aseguradoras aquí. Y si tu póliza tiene defensa jurídica, puedes elegir a quien quieras. ¿Te reservo la consulta gratis?\n<ficha>{\"caso\":\"Tu seguro te ofrece su abogado\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"Sí\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Puedes elegir tu abogado si la póliza tiene defensa jurídica; la consulta gratis sirve para compararlo.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>honorarios</mostrar>"
  }
 ]

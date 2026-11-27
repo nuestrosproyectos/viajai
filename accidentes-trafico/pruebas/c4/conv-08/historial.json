@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Sí, iba de pasajera. Gracias por su amabilidad. No sé si es pronto para hablar de reclamar, la verdad, ¿qué tenemos que hacer ahora?"
+ },
+ {
+  "role": "assistant",
+  "content": "Lo primero es que su madre esté bien atendida; no hace falta decidir nada ahora. Como pasajera, casi siempre se la indemniza, del seguro del culpable o del coche en que iba, sin saber aún de quién fue la culpa. ¿Le reservo la consulta gratis?\n<ficha>{\"caso\":\"Accidente de autobús en la carretera de Motril\",\"como\":\"De pasajero\",\"fecha\":\"ayer\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Como su madre iba de pasajera, casi siempre se la indemniza aunque no se sepa de quién fue la culpa; no tiene que decidir nada ahora.\",\"fase\":\"orientando\"}</ficha>\n<mostrar>documentos</mostrar>",
+  "original": "Lo primero es que su madre esté bien atendida; no hace falta decidir nada ahora. Como pasajera, casi siempre se la indemniza, del seguro del culpable o del coche en que iba, sin saber aún de quién fue la culpa. ¿Le reservo la consulta gratis?\n<ficha>{\"caso\":\"Accidente de autobús en la carretera de Motril\",\"como\":\"De pasajero\",\"fecha\":\"ayer\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Como su madre iba de pasajera, casi siempre se la indemniza aunque no se sepa de quién fue la culpa; no tiene que decidir nada ahora.\",\"fase\":\"orientando\"}</ficha>\n<mostrar>documentos</mostrar>"
  }
 ]

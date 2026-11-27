@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "No lo sé, tendría que mirarlo. Pero lo que me preocupa es si ella reclamando me perjudica a mí, como la culpa fue mía"
+ },
+ {
+  "role": "assistant",
+  "content": "Entiendo tu preocupación, pero no quiero adivinarlo. Si ella reclama, cómo afecta a tu póliza y a tu defensa lo revisa el abogado con el atestado delante. ¿Te reservo la consulta gratis para mirarlo?\n<ficha>{\"caso\":\"Te saltaste un ceda; ibas con tu mujer\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"No lo sé\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Tu mujer, como pasajera, puede reclamar; el abogado revisa tu póliza y si tiene defensa jurídica.\",\"fase\":\"orientando\"}</ficha>",
+  "original": "Entiendo tu preocupación, pero no quiero adivinarlo. Si ella reclama, cómo afecta a tu póliza y a tu defensa lo revisa el abogado con el atestado delante. ¿Te reservo la consulta gratis para mirarlo?\n<ficha>{\"caso\":\"Te saltaste un ceda; ibas con tu mujer\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"No lo sé\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Tu mujer, como pasajera, puede reclamar; el abogado revisa tu póliza y si tiene defensa jurídica.\",\"fase\":\"orientando\"}</ficha>"
  }
 ]

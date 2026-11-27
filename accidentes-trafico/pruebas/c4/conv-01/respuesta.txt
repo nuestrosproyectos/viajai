@@ -1,3 +1,0 @@
-Entiendo el miedo: lo primero es que te vea un médico hoy. La primera consulta es gratis; si luego lo lleva, suele cobrar entre el diez y el treinta por ciento de lo que se consiga, pactado por escrito. ¿Te reservo la consulta?
-<ficha>{"caso":"Golpe por detrás","como":"","fecha":"hace 3 días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que te vea un médico hoy y quede por escrito; guardar parte, fotos e informes.","fase":"proponiendo"}</ficha>
-<mostrar>honorarios</mostrar>
