@@ -1,0 +1,18 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Llave de Paso. Si te está saliendo agua, cierra primero la llave de paso. Cuéntame qué te pasa y te mando al fontanero.
+
+CLIENTE: ¿Me podéis cambiar el termo? Uno me ha pedido 900 € y me parece un robo.
+
+ANDRÉS: Entiendo que te choque esa cifra. Cambiar un termo eléctrico instalado suele costar unos ciento ochenta a seiscientos euros según capacidad, orientativo. Pide el presupuesto desglosado por escrito antes de aceptar. Te reservo la visita: ¿el termo es eléctrico o de gas?
+<ficha>{"averia":"Cambio de termo; le han presupuestado 900 €","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Pedir el presupuesto desglosado por escrito; un termo eléctrico instalado suele rondar 180 a 600 € según capacidad, orientativo","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>
+
+CLIENTE: Es eléctrico, de 100 litros, pierde agua por abajo. Somos 4 en casa. ¿900 € es mucho? ¿Y me lo paga el seguro?
+
+ANDRÉS: Cierra la llave de paso para que no pierda agua. Lo habitual para un termo eléctrico instalado es de 180 a 600 euros, orientativo; 900 queda por encima. Según tu póliza: llama antes a tu aseguradora. ¿Te reservo la visita por la mañana o por la tarde?
+<ficha>{"averia":"Cambio de termo eléctrico que pierde agua por abajo; le han presupuestado 900 €","cuando":"","llave":"","vivienda":"","seguro":"Pendiente de revisar tu póliza","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Cerrar la llave de paso; pedir el presupuesto desglosado por escrito; cambio habitual unos 180 a 600 € según capacidad, orientativo","fase":"proponiendo"}</ficha>
+
+CLIENTE: Pues entonces me lo cambiáis vosotros, que 900 es demasiado. Paco, 699 101 202, en Maracena. Cualquier mañana me va bien
+
+ANDRÉS: Perfecto, Paco, la solicitud queda enviada para cualquier mañana. Te llamamos al 699 101 202 para confirmar la hora, y antes de empezar tendrás el presupuesto por escrito. ¿Necesitas algo más?
+<ficha>{"averia":"Cambio de termo eléctrico que pierde agua por abajo; le han presupuestado 900 €","cuando":"Visita programada","llave":"No lo ha dicho","vivienda":"","seguro":"Pendiente de revisar tu póliza","nombre":"Paco","telefono":"699 101 202","municipio":"Maracena","direccion":"","franja":"Cualquier mañana","inicio":"","orientacion":"Cerrar la llave de paso; pedir el presupuesto desglosado por escrito; cambio habitual unos 180 a 600 € según capacidad, orientativo","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","averia":"Cambio de termo eléctrico que pierde agua por abajo","cuando":"Visita programada","llave":"No lo ha dicho","vivienda":"","seguro":"Pendiente de revisar","nombre":"Paco","telefono":"699 101 202","municipio":"Maracena","direccion":"","franja":"Cualquier mañana","inicio":"","urgente":false,"notas":"Termo eléctrico de 100 litros que pierde agua por la parte de abajo; 4 personas en casa. Le han presupuestado 900 € y le parece mucho; pide que se lo cambiemos. Pregunta si lo paga el seguro: se le ha dicho que llame antes a su aseguradora. No consta si ha cerrado la llave de paso del termo. Quiere presupuesto desglosado por escrito antes de empezar."}</aviso>

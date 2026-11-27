@@ -18,7 +18,7 @@ import { join } from "node:path";
 import { pathToFileURL } from "node:url";
 import { construir, RAIZ } from "../construir.mjs";
 
-const MAX_TURNOS = 6;   // respuestas del asistente como mucho
+const MAX_TURNOS = 9;   // respuestas del asistente como mucho
 const [orden, web, ronda] = process.argv.slice(2);
 const dir = join(RAIZ, web, "pruebas", ronda);
 const { NEGOCIO, saludo } = await import(pathToFileURL(join(RAIZ, web, "cerebro.mjs")).href + "?v=" + Date.now());

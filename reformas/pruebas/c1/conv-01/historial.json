@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Marta"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Marta. Te apunto la visita por la tarde, gratis y de unos cuarenta y cinco minutos; si el piso es antiguo, las tuberías viejas son lo que más mueve el precio. ¿Me dices un teléfono de contacto?\n<ficha>{\"obra\":\"Reforma del baño\",\"vivienda\":\"Piso\",\"metros\":\"unos 5 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Marta\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Reservar la visita gratuita por la tarde y tomar teléfono.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Marta. Te apunto la visita por la tarde, gratis y de unos cuarenta y cinco minutos; si el piso es antiguo, las tuberías viejas son lo que más mueve el precio. ¿Me dices un teléfono de contacto?\n<ficha>{\"obra\":\"Reforma del baño\",\"vivienda\":\"Piso\",\"metros\":\"unos 5 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Marta\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Reservar la visita gratuita por la tarde y tomar teléfono.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

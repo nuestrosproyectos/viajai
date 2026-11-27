@@ -1,0 +1,28 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Llave de Paso. Si te está saliendo agua, cierra primero la llave de paso. Cuéntame qué te pasa y te mando al fontanero.
+
+CLIENTE: En el bajo nos sale agua sucia por el plato de ducha cuando los de arriba tiran de la cisterna
+
+ANDRÉS: Eso suele ser la bajante del edificio, que es elemento común, y lo normal es que pague la comunidad. Avisa al presidente o al administrador. ¿Te reservo la visita del fontanero por la mañana o por la tarde?
+<ficha>{"averia":"Agua sucia por el plato de ducha del bajo cuando tiran de la cisterna de arriba","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Probable bajante del edificio, elemento común de la comunidad: avisar al presidente o al administrador","fase":"proponiendo"}</ficha>
+
+CLIENTE: ¿Y quién paga esto? Yo no tengo culpa de que la bajante esté mal
+
+ANDRÉS: Entiendo el enfado. La bajante suele ser de la comunidad, y lo decide la comunidad con su administrador; el informe del fontanero, con cámara si hace falta, ayuda a aclararlo. ¿Te reservo la visita por la mañana o por la tarde?
+<ficha>{"averia":"Agua sucia por el plato de ducha del bajo cuando tiran de la cisterna de arriba","cuando":"","llave":"","vivienda":"Piso","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Probable bajante del edificio, elemento común: avisar al presidente o al administrador; el informe del fontanero ayuda a decidir quién paga","fase":"proponiendo"}</ficha>
+
+CLIENTE: No sé, la verdad. Vale, que lo mire el fontanero y haga un informe entonces. Soy Ana, 677 450 990. Mejor por la tarde
+
+ANDRÉS: Vale, Ana, te apunto la visita para la tarde. El informe del fontanero, con cámara si hace falta, ayuda a aclarar la bajante. ¿En qué barrio o municipio estás?
+<ficha>{"averia":"Agua sucia por el plato de ducha del bajo cuando tiran de la cisterna de arriba","cuando":"Visita programada","llave":"","vivienda":"Piso","seguro":"","nombre":"Ana","telefono":"677 450 990","municipio":"","direccion":"","franja":"Por la tarde","inicio":"","orientacion":"Probable bajante del edificio, elemento común de la comunidad: avisar al presidente o al administrador; el informe del fontanero ayuda a aclararlo","fase":"datos"}</ficha>
+
+CLIENTE: En el Zaidín, Granada. Calle Arabial 12, bajo A
+
+ANDRÉS: Perfecto, Ana. Apunto la calle Arabial 12, bajo A, en el Zaidín, Granada, y el teléfono 677 450 990 para por la tarde. ¿Está bien así?
+<ficha>{"averia":"Agua sucia por el plato de ducha del bajo cuando tiran de la cisterna de arriba","cuando":"Visita programada","llave":"","vivienda":"Piso","seguro":"","nombre":"Ana","telefono":"677 450 990","municipio":"Granada (El Zaidín)","direccion":"Calle Arabial 12, bajo A","franja":"Por la tarde","inicio":"","orientacion":"Probable bajante del edificio, elemento común de la comunidad: avisar al presidente o al administrador; el informe del fontanero ayuda a aclararlo","fase":"datos"}</ficha>
+<mostrar>contacto</mostrar>
+
+CLIENTE: Sí, correcto
+
+ANDRÉS: Perfecto, Ana, la solicitud queda enviada para por la tarde y te llamamos para confirmar la hora. Mientras, avisa al administrador de la comunidad. ¿Necesitas algo más?
+<ficha>{"averia":"Agua sucia por el plato de ducha del bajo cuando tiran de la cisterna de arriba","cuando":"Visita programada","llave":"","vivienda":"Piso","seguro":"","nombre":"Ana","telefono":"677 450 990","municipio":"Granada (El Zaidín)","direccion":"Calle Arabial 12, bajo A","franja":"Por la tarde","inicio":"","orientacion":"Probable bajante del edificio, elemento común de la comunidad: avisar al presidente o al administrador; el informe del fontanero ayuda a decidir quién paga","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","averia":"Agua sucia por el plato de ducha del bajo cuando tiran de la cisterna de arriba","cuando":"Visita programada","llave":"","vivienda":"Piso","seguro":"","nombre":"Ana","telefono":"677 450 990","municipio":"Granada (El Zaidín)","direccion":"Calle Arabial 12, bajo A","franja":"Por la tarde","inicio":"","urgente":false,"notas":"Sale agua sucia por el plato de ducha del bajo al tirar de la cisterna de los vecinos de arriba. Probable bajante del edificio, elemento común: avisar al presidente o al administrador. No sabe quién paga; pide que el fontanero revise y haga un informe, con cámara si hace falta, para decidirlo. No consta que haya agua cerca de electricidad ni afectación a otros pisos fuera de lo descrito. No consta seguro. Quiere visita por la tarde."}</aviso>

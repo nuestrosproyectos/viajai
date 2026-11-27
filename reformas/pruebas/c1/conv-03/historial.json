@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Lucía"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Lucía. Te apunto la visita para cualquier tarde, gratis y de unos cuarenta y cinco minutos; el técnico mirará si el tabique es de carga antes de tocar nada. ¿Me dices un teléfono de contacto?\n<ficha>{\"obra\":\"Tirar el tabique entre cocina y salón\",\"vivienda\":\"Piso\",\"metros\":\"\",\"antiguedad\":\"Edificio antiguo; quinto piso\",\"presupuesto\":\"\",\"nombre\":\"Lucía\",\"telefono\":\"\",\"municipio\":\"Granada, centro\",\"franja\":\"Cualquier tarde\",\"inicio\":\"\",\"orientacion\":\"Comprobar si el tabique es de carga antes de tocarlo; la visita lo aclara.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Lucía. Te apunto la visita para cualquier tarde, gratis y de unos cuarenta y cinco minutos; el técnico mirará si el tabique es de carga antes de tocar nada. ¿Me dices un teléfono de contacto?\n<ficha>{\"obra\":\"Tirar el tabique entre cocina y salón\",\"vivienda\":\"Piso\",\"metros\":\"\",\"antiguedad\":\"Edificio antiguo; quinto piso\",\"presupuesto\":\"\",\"nombre\":\"Lucía\",\"telefono\":\"\",\"municipio\":\"Granada, centro\",\"franja\":\"Cualquier tarde\",\"inicio\":\"\",\"orientacion\":\"Comprobar si el tabique es de carga antes de tocarlo; la visita lo aclara.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

@@ -1,0 +1,20 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Accidente Claro. Siento lo del accidente. Cuéntame qué pasó y te digo qué conviene hacer ahora.
+
+CLIENTE: La aseguradora del otro me ofrece 2.300 € y me dicen que firme ya. ¿Firmo?
+
+ANDRÉS: No firmes nada todavía; una oferta así la revisa el abogado con los informes delante, y es urgente. Te reservo la consulta gratis cuanto antes. ¿Lo que te piden firmar es un finiquito o un recibo en pago total?
+<ficha>{"caso":"La aseguradora del otro ofrece 2.300 € y pide firmar ya","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"No firmar nada hasta que lo vea el abogado; es urgente","fase":"proponiendo"}</ficha>
+<mostrar>oferta</mostrar>
+
+CLIENTE: Es un papel que pone recibo en pago total. Hace 5 meses del accidente y sigo con rehabilitación, no me han dado el alta. ¿2.300 es poco?
+
+ANDRÉS: No firmes ese recibo. Si es poco o mucho lo dice el abogado: se calcula por días hasta el alta, de unos 39 a 131 € por día según categoría, más secuelas y gastos. Te reservo la consulta gratis: ¿por la mañana o por la tarde?
+<ficha>{"caso":"Accidente hace cinco meses; oferta de 2.300 € con recibo en pago total","como":"","fecha":"Hace cinco meses","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"No firmar el recibo en pago total; que lo vea el abogado antes de decidir; la cuantía se calcula por días hasta el alta y secuelas, orientativo","fase":"proponiendo"}</ficha>
+<mostrar>oferta</mostrar>
+
+CLIENTE: Vale, entonces no firmo. Que lo mire el abogado. ¿Se puede por teléfono? Soy Sonia, 633 202 404, de Motril. Mejor por las mañanas
+
+ANDRÉS: Perfecto, Sonia, la solicitud queda enviada como urgente y te llamamos al 633 202 404 para confirmar la consulta por teléfono por la mañana. Y no firmes el recibo. ¿Necesitas algo más?
+<ficha>{"caso":"La aseguradora del otro ofrece 2.300 € y pide firmar un recibo en pago total","como":"","fecha":"Hace cinco meses","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"Sonia","telefono":"633 202 404","municipio":"Motril","franja":"Por teléfono, por la mañana","consentimientoSalud":"","orientacion":"No firmar el recibo en pago total; que lo vea el abogado antes de decidir; la cuantía se calcula por días hasta el alta y secuelas, orientativo","fase":"registrado"}</ficha>
+<mostrar>oferta</mostrar>
+<aviso>{"tipo":"consulta","caso":"La aseguradora del otro ofrece 2.300 € y pide firmar un recibo en pago total","como":"","fecha":"Hace cinco meses","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"Sonia","telefono":"633 202 404","municipio":"Motril","franja":"Por teléfono, por la mañana","consentimientoSalud":"","urgente":true,"notas":"Accidente hace cinco meses. La aseguradora del otro ofrece 2.300 € y pide firmar un recibo en pago total; no ha firmado nada. Pregunta si 2.300 € es poco: se le ha explicado que lo calcula el abogado. No ha dado permiso para apuntar datos de salud, por eso no se han apuntado. Quiere la consulta por teléfono por la mañana. Es urgente por el recibo."}</aviso>

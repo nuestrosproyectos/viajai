@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "678 112 443"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Antonio, lo apunto: seiscientos setenta y ocho, ciento doce, cuatrocientos cuarenta y tres. ¿En qué municipio está la vivienda?\n<ficha>{\"obra\":\"\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"\",\"franja\":\"Por la mañana\",\"inicio\":\"\",\"orientacion\":\"Confirmar el municipio y reservar la visita gratuita por la mañana; el presupuesto por escrito llega después.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Antonio, lo apunto: seiscientos setenta y ocho, ciento doce, cuatrocientos cuarenta y tres. ¿En qué municipio está la vivienda?\n<ficha>{\"obra\":\"\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"\",\"franja\":\"Por la mañana\",\"inicio\":\"\",\"orientacion\":\"Confirmar el municipio y reservar la visita gratuita por la mañana; el presupuesto por escrito llega después.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Javier"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Javier. Con esa orientación el tejado va bien; lo anoto para el estudio gratuito de una hora, por la mañana y, si puede ser, un viernes. ¿Me dices un teléfono de contacto?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"A dos aguas, una cara al sur, sin sombras\",\"consumo\":\"\",\"nombre\":\"Javier\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"franja\":\"Por la mañana, preferiblemente un viernes\",\"inicio\":\"\",\"orientacion\":\"Reservar el estudio gratuito con tus facturas para afinar el tamaño.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Javier. Con esa orientación el tejado va bien; lo anoto para el estudio gratuito de una hora, por la mañana y, si puede ser, un viernes. ¿Me dices un teléfono de contacto?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"A dos aguas, una cara al sur, sin sombras\",\"consumo\":\"\",\"nombre\":\"Javier\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"franja\":\"Por la mañana, preferiblemente un viernes\",\"inicio\":\"\",\"orientacion\":\"Reservar el estudio gratuito con tus facturas para afinar el tamaño.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

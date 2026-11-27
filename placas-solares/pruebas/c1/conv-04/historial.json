@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Elena"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Elena. Lo anoto para la tarde, y el técnico verá la azotea para que la junta tenga números concretos. ¿Me dices un teléfono de contacto?\n<ficha>{\"que\":\"Placas solares en la azotea\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea del bloque\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"\",\"municipio\":\"Zaidín, Granada\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Llevar el estudio a la junta de vecinos; hace falta acuerdo de la comunidad.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Elena. Lo anoto para la tarde, y el técnico verá la azotea para que la junta tenga números concretos. ¿Me dices un teléfono de contacto?\n<ficha>{\"que\":\"Placas solares en la azotea\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea del bloque\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"\",\"municipio\":\"Zaidín, Granada\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Llevar el estudio a la junta de vecinos; hace falta acuerdo de la comunidad.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

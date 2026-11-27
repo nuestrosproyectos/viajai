@@ -1,0 +1,19 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Accidente Claro. Siento lo del accidente. Cuéntame qué pasó y te digo qué conviene hacer ahora.
+
+CLIENTE: Hola, hace 3 días me dieron un golpe por detrás y me duele el cuello. ¿Qué hago?
+
+ANDRÉS: Lo primero, que vayas al médico hoy aunque el dolor parezca leve, cuéntale el golpe y que quede escrito. Guarda fotos y testigos. Te reservo la consulta gratis con el abogado. ¿Ya te ha visto un médico?
+<ficha>{"caso":"Golpe por detrás hace tres días","como":"","fecha":"Hace tres días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Ir al médico hoy y que quede escrito; guardar fotos y testigos; primera consulta gratis con el abogado","fase":"proponiendo"}</ficha>
+<mostrar>documentos</mostrar>
+
+CLIENTE: No, todavía no he ido, pensaba que se me pasaría. Oye, ¿y cuánto cobra el abogado? Que no quiero meterme en un gasto
+
+ANDRÉS: Entiendo que no quieras un gasto: la primera consulta es gratis. Si encargas el caso, suele ser un porcentaje de lo que se consiga, del 10 al 30 %, y si no hay indemnización no hay honorarios. Lo mejor es que vayas al médico hoy. ¿Te reservo la consulta?
+<ficha>{"caso":"Golpe por detrás hace tres días","como":"","fecha":"Hace tres días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Ir al médico hoy y que quede escrito; primera consulta gratis; en el mercado suele ser un porcentaje del 10 al 30 % de lo conseguido, orientativo","fase":"proponiendo"}</ficha>
+<mostrar>honorarios</mostrar>
+
+CLIENTE: Vale, si la primera consulta es gratis y solo cobráis si hay indemnización, me parece bien. Iré al médico hoy. Soy Raúl, 644 555 888, del Zaidín. ¿Se puede por videollamada? Mejor por la tarde
+
+ANDRÉS: Perfecto, Raúl, la solicitud queda enviada para una videollamada por la tarde. Te llamamos al 644 555 888 para confirmar la hora. Y acuérdate de contarle al médico el golpe y que quede escrito. ¿Necesitas algo más?
+<ficha>{"caso":"Golpe por detrás hace tres días","como":"","fecha":"Hace tres días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Raúl","telefono":"644 555 888","municipio":"Granada, barrio del Zaidín","franja":"Por la tarde, por videollamada","consentimientoSalud":"","orientacion":"Ir al médico hoy y que quede escrito; guardar fotos y testigos; la primera consulta es gratis y puede ser por videollamada","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","caso":"Golpe por detrás hace tres días","como":"","fecha":"Hace tres días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Raúl","telefono":"644 555 888","municipio":"Granada, barrio del Zaidín","franja":"Por la tarde, por videollamada","consentimientoSalud":"","urgente":false,"notas":"Golpe por detrás hace tres días. Todavía no ha ido al médico; dice que irá hoy. Quiere la primera consulta por videollamada por la tarde. Preguntó cuánto cobra el abogado: se le ha explicado que la primera consulta es gratis y que, si encarga el caso, es un porcentaje pactado por escrito. No ha dado permiso para apuntar datos de salud; no se han apuntado."}</aviso>

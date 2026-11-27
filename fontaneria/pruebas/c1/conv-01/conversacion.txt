@@ -1,0 +1,30 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Llave de Paso. Si te está saliendo agua, cierra primero la llave de paso. Cuéntame qué te pasa y te mando al fontanero.
+
+CLIENTE: Socorro, sale agua por debajo del fregadero y no para!!
+
+ANDRÉS: Entiendo el susto. Cierra ya la llave de paso de tu casa, suele estar en la cocina, el baño o junto al contador, y aparta lo que se pueda mojar. Te reservo la visita urgente ahora mismo. ¿Ha parado el agua al cerrarla?
+<ficha>{"averia":"Sale agua por debajo del fregadero y no para","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Cerrar la llave de paso y apartar lo que se pueda mojar; visita urgente","fase":"proponiendo"}</ficha>
+<mostrar>seguridad</mostrar>
+
+CLIENTE: no se donde esta la llave de paso!! no la encuentro
+
+ANDRÉS: No te preocupes, busca la llave junto al contador y ciérrala para cortar el agua de casa. Si sigue saliendo agua, te reservo ya el fontanero urgente: ¿me dices tu nombre y un teléfono?
+<ficha>{"averia":"Sale agua por debajo del fregadero y no para","cuando":"","llave":"No la encuentras todavía","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Buscar la llave junto al contador y cerrarla; visita urgente","fase":"proponiendo"}</ficha>
+<mostrar>seguridad</mostrar>
+
+CLIENTE: Ah espera, creo que la he encontrado, estaba debajo del fregadero. La he cerrado y ya no sale agua! Soy Pilar, 610 223 344. ¿Puede venir alguien hoy?
+
+ANDRÉS: Muy bien, Pilar, deja la llave cerrada y haz fotos de la zona para tu seguro. Te reservo la visita urgente; al recibir el aviso te llamamos para darte la hora. ¿En qué barrio o municipio estás?
+<ficha>{"averia":"Agua por debajo del fregadero, ya cortada con la llave de paso","cuando":"Hoy, en cuanto podáis","llave":"Sí, la he cerrado y ya no sale agua","vivienda":"","seguro":"","nombre":"Pilar","telefono":"610 223 344","municipio":"","direccion":"","franja":"Hoy","inicio":"","orientacion":"Dejar la llave cerrada y hacer fotos para el seguro; visita urgente para revisar la fuga","fase":"datos"}</ficha>
+
+CLIENTE: Granada, en Recogidas 40, 2º B
+
+ANDRÉS: Perfecto, Pilar, gracias. Apunto Recogidas 40, 2º B, en Granada, y el teléfono 610 223 344. ¿Está bien así?
+<ficha>{"averia":"Agua por debajo del fregadero, ya cortada con la llave de paso","cuando":"Hoy, en cuanto podáis","llave":"Sí, la he cerrado y ya no sale agua","vivienda":"","seguro":"","nombre":"Pilar","telefono":"610 223 344","municipio":"Granada","direccion":"Recogidas 40, 2º B","franja":"Hoy","inicio":"","orientacion":"Dejar la llave cerrada y hacer fotos para el seguro; visita urgente para revisar la fuga","fase":"datos"}</ficha>
+<mostrar>contacto</mostrar>
+
+CLIENTE: Sí, está bien. Cuanto antes mejor, por favor
+
+ANDRÉS: Perfecto, Pilar, la solicitud de visita urgente queda enviada y te llamamos para confirmar la hora. Mientras tanto, deja la llave cerrada y guarda las fotos para tu seguro. ¿Necesitas algo más?
+<ficha>{"averia":"Agua por debajo del fregadero, ya cortada con la llave de paso","cuando":"Hoy, en cuanto podáis","llave":"Sí, la he cerrado y ya no sale agua","vivienda":"Piso","seguro":"","nombre":"Pilar","telefono":"610 223 344","municipio":"Granada","direccion":"Recogidas 40, 2º B","franja":"Hoy","inicio":"","orientacion":"Dejar la llave cerrada y hacer fotos para el seguro; visita urgente para revisar la fuga","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","averia":"Agua por debajo del fregadero, ya cortada con la llave de paso","cuando":"Hoy, en cuanto podáis","llave":"Sí, la he cerrado y ya no sale agua","vivienda":"Piso","seguro":"","nombre":"Pilar","telefono":"610 223 344","municipio":"Granada","direccion":"Recogidas 40, 2º B","franja":"Hoy","inicio":"","urgente":true,"notas":"Fuga bajo el fregadero. La llave de paso estaba debajo del fregadero y ya está cerrada; no sale agua. Pide que vayamos hoy, cuanto antes. No consta que haya mandado fotos; se le ha pedido que las guarde para el seguro. Seguro y tipo de vivienda no indicados."}</aviso>

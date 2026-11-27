@@ -1,0 +1,29 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Llave de Paso. Si te está saliendo agua, cierra primero la llave de paso. Cuéntame qué te pasa y te mando al fontanero.
+
+CLIENTE: Tengo el lavabo del baño atascado, ¿cuánto cuesta desatascarlo?
+
+ANDRÉS: Que no eche sosa, quema y puede empeorar el atasco. Lo más probable es el sifón del lavabo. Un desatasco sencillo suele costar unos setenta a ciento cincuenta euros más IVA, orientativo. ¿Te reservo la visita por la mañana o por la tarde?
+<ficha>{"averia":"Lavabo del baño atascado","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Probable sifón del lavabo; no echar sosa; desatasco sencillo unos 70 a 150 € más IVA, orientativo","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>
+
+CLIENTE: Ya lo he echado, un bote de desatascador fuerte y nada, sigue igual. Solo es el lavabo. Vale, ¿me mandáis a alguien?
+
+ANDRÉS: Vale, te reservo la visita. No eches nada más ni metas la mano en el sifón, que ese producto quema; lo apunto para el fontanero. Es solo para llamarte y organizarla: ¿me dices tu nombre?
+<ficha>{"averia":"Lavabo del baño atascado; ya echaste un desatascador fuerte sin resultado","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Probable sifón del lavabo; no echar más producto ni meter la mano; desatasco sencillo unos 70 a 150 € más IVA, orientativo","fase":"datos"}</ficha>
+
+CLIENTE: Luis, 655 990 120. Mañana por la mañana mejor
+
+ANDRÉS: Vale, Luis, te apunto la visita para mañana por la mañana y te llamamos para darte la hora. Mientras, no eches nada más ni metas la mano en el sifón. ¿En qué barrio o municipio estás?
+<ficha>{"averia":"Lavabo del baño atascado; ya echó un desatascador fuerte sin resultado","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Luis","telefono":"655 990 120","municipio":"","direccion":"","franja":"Mañana por la mañana","inicio":"","orientacion":"Probable sifón del lavabo; no echar más producto ni meter la mano; desatasco sencillo unos 70 a 150 € más IVA, orientativo","fase":"datos"}</ficha>
+
+CLIENTE: Armilla, avenida de los Mondragones 3
+
+ANDRÉS: Perfecto, Luis. Apunto la avenida de los Mondragones 3, en Armilla, y el teléfono 655, 990, 120, para mañana por la mañana. ¿Está bien así?
+<ficha>{"averia":"Lavabo del baño atascado; ya echaste un desatascador fuerte sin resultado","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Luis","telefono":"655 990 120","municipio":"Armilla","direccion":"Avenida de los Mondragones 3","franja":"Mañana por la mañana","inicio":"","orientacion":"Probable sifón del lavabo; no echar más producto ni meter la mano; desatasco sencillo unos 70 a 150 € más IVA, orientativo","fase":"datos"}</ficha>
+<mostrar>contacto</mostrar>
+
+CLIENTE: Sí, todo correcto
+
+ANDRÉS: Perfecto, Luis, la solicitud queda enviada para mañana por la mañana y te llamamos para confirmar la hora. Mientras tanto, no eches nada más por el lavabo. ¿Necesitas algo más?
+<ficha>{"averia":"Lavabo del baño atascado; ya echaste un desatascador fuerte sin resultado","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Luis","telefono":"655 990 120","municipio":"Armilla","direccion":"Avenida de los Mondragones 3","franja":"Mañana por la mañana","inicio":"","orientacion":"Probable sifón del lavabo; no echar más producto ni meter la mano; desatasco sencillo unos 70 a 150 € más IVA, orientativo","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","averia":"Lavabo del baño atascado; ya echaste un desatascador fuerte sin resultado","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Luis","telefono":"655 990 120","municipio":"Armilla","direccion":"Avenida de los Mondragones 3","franja":"Mañana por la mañana","inicio":"","urgente":false,"notas":"Atasco solo en el lavabo del baño; dice que no atasca nada más. Ya echó un desatascador fuerte sin resultado: no usar sosa ni meter la mano en el sifón, avisar al fontanero. No consta que haya cerrado llave de paso ni que haya agua cerca de electricidad. No consta seguro ni afectación a vecinos. Quiere visita mañana por la mañana."}</aviso>
