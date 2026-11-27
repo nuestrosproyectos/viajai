@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Quiero tirar el tabique entre cocina y salón, es un 5º en el centro de Granada, edificio antiguo. ¿Cuánto cuesta?"
+ },
+ {
+  "role": "assistant",
+  "content": "Solo el tabique no tiene precio propio; con reforma de cocina suelen estar entre 6.000 y 10.000 €. Si es de carga o estás en el centro histórico, lo más probable es que haga falta licencia y técnico. ¿Te reservo la visita, mañana o tarde?\n<ficha>{\"obra\":\"Tirar el tabique entre cocina y salón\",\"vivienda\":\"Piso\",\"metros\":\"\",\"antiguedad\":\"Edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Comprobar si el tabique es de carga antes de tocarlo; la visita lo aclara.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>permisos</mostrar>",
+  "original": "Solo el tabique no tiene precio propio; con reforma de cocina suelen estar entre 6.000 y 10.000 €. Si es de carga o estás en el centro histórico, lo más probable es que haga falta licencia y técnico. ¿Te reservo la visita, mañana o tarde?\n<ficha>{\"obra\":\"Tirar el tabique entre cocina y salón\",\"vivienda\":\"Piso\",\"metros\":\"\",\"antiguedad\":\"Edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Comprobar si el tabique es de carga antes de tocarlo; la visita lo aclara.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>permisos</mostrar>"
  }
 ]

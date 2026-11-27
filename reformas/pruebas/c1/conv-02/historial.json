@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Buenas. Antes de nada, ¿la visita la cobráis? Porque luego siempre hay sorpresas."
+ },
+ {
+  "role": "assistant",
+  "content": "La visita de medición es gratis, de unos cuarenta y cinco minutos y sin compromiso. Si sale algo oculto en la obra, se enseña, se presupuesta por escrito y no se hace sin tu firma. ¿Te reservo la visita por la mañana o por la tarde?\n<ficha>{\"obra\":\"\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Reservar la visita gratuita; el presupuesto por escrito llega después.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>precios</mostrar>",
+  "original": "La visita de medición es gratis, de unos cuarenta y cinco minutos y sin compromiso. Si sale algo oculto en la obra, se enseña, se presupuesta por escrito y no se hace sin tu firma. ¿Te reservo la visita por la mañana o por la tarde?\n<ficha>{\"obra\":\"\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Reservar la visita gratuita; el presupuesto por escrito llega después.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>precios</mostrar>"
  }
 ]
