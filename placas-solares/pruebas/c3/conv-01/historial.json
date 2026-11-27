@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Gastando sobre todo de día, las placas se aprovechan mucho más, y eso suele acortar la amortización. Te reservo el estudio gratis, ¿te viene mejor por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"sobre todo de día, con teletrabajo y aire acondicionado\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Gastas sobre todo de día, así que las placas se aprovechan mucho; el estudio gratis con tus facturas confirma cuánto te compensa.\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Gastando sobre todo de día, las placas se aprovechan mucho más, y eso suele acortar la amortización. Te reservo el estudio gratis, ¿te viene mejor por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"sobre todo de día, con teletrabajo y aire acondicionado\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Gastas sobre todo de día, así que las placas se aprovechan mucho; el estudio gratis con tus facturas confirma cuánto te compensa.\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Por la mañana mejor, el viernes si puede ser"
  }
 ]

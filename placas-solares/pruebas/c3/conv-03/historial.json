@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Con batería tampoco baja a cero: cubre lo que gastas de noche y cuesta entre 450 y 800 euros por kWh, así que en muchas casas alarga la amortización. Te reservo el estudio gratis, ¿por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares, y pregunta por batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con batería la factura tampoco baja a cero; lo que decide es lo que gastas de noche, y el estudio lo mira con tus facturas.\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Con batería tampoco baja a cero: cubre lo que gastas de noche y cuesta entre 450 y 800 euros por kWh, así que en muchas casas alarga la amortización. Te reservo el estudio gratis, ¿por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares, y pregunta por batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con batería la factura tampoco baja a cero; lo que decide es lo que gastas de noche, y el estudio lo mira con tus facturas.\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, está claro. Pues que vaya el técnico a hacer el estudio. Por la tarde, entre semana"
  }
 ]

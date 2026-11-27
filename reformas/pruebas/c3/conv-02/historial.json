@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Perfecto, te apunto la visita por la mañana. El presupuesto incluye escombros, limpieza final y la garantía por escrito en el contrato. ¿Me dices tu nombre y un teléfono, solo para llamarte y organizar la visita?\n<ficha>{\"obra\":\"\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"por la mañana\",\"inicio\":\"\",\"orientacion\":\"La visita es gratis y el presupuesto llega por escrito, por partidas, unos cinco días laborables después.\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, te apunto la visita por la mañana. El presupuesto incluye escombros, limpieza final y la garantía por escrito en el contrato. ¿Me dices tu nombre y un teléfono, solo para llamarte y organizar la visita?\n<ficha>{\"obra\":\"\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"por la mañana\",\"inicio\":\"\",\"orientacion\":\"La visita es gratis y el presupuesto llega por escrito, por partidas, unos cinco días laborables después.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Antonio, 678 112 443. Las Gabias."
  }
 ]

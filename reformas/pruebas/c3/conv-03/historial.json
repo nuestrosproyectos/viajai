@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Perfecto, te apunto la visita por la tarde. Si la cocina queda abierta, la campana tiene que seguir sacando los humos por su conducto. ¿Me dices tu nombre y un teléfono, solo para llamarte y organizar la visita?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"Piso\",\"metros\":\"\",\"antiguedad\":\"edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada, centro\",\"direccion\":\"\",\"franja\":\"por la tarde\",\"inicio\":\"\",\"orientacion\":\"Si el tabique es de carga hacen falta proyecto y licencia; el técnico lo comprueba en la visita.\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, te apunto la visita por la tarde. Si la cocina queda abierta, la campana tiene que seguir sacando los humos por su conducto. ¿Me dices tu nombre y un teléfono, solo para llamarte y organizar la visita?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"Piso\",\"metros\":\"\",\"antiguedad\":\"edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada, centro\",\"direccion\":\"\",\"franja\":\"por la tarde\",\"inicio\":\"\",\"orientacion\":\"Si el tabique es de carga hacen falta proyecto y licencia; el técnico lo comprueba en la visita.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Lucía, 611 908 774"
  }
 ]

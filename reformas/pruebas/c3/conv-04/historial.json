@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Se lo apunto para la visita de la mañana. El presupuesto llega por escrito unos cinco días laborables después de medir. ¿En qué calle y número está el piso de su padre, y qué día le viene bien?\n<ficha>{\"obra\":\"cambiar la bañera por un plato de ducha\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Carmen\",\"telefono\":\"699 450 212\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"por la mañana\",\"inicio\":\"\",\"orientacion\":\"Le conviene cambiar la bañera por un plato de ducha cuanto antes; la visita de medición es gratis y suele hacerse en dos a cuatro días.\",\"fase\":\"datos\"}</ficha>",
   "original": "Se lo apunto para la visita de la mañana. El presupuesto llega por escrito unos cinco días laborables después de medir. ¿En qué calle y número está el piso de su padre, y qué día le viene bien?\n<ficha>{\"obra\":\"cambiar la bañera por un plato de ducha\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Carmen\",\"telefono\":\"699 450 212\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"por la mañana\",\"inicio\":\"\",\"orientacion\":\"Le conviene cambiar la bañera por un plato de ducha cuanto antes; la visita de medición es gratis y suele hacerse en dos a cuatro días.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Calle Ancha 8, en Maracena. Es una casa de planta baja. Cualquier día me viene bien, mejor a primera hora de la mañana, que es cuando yo estoy allí."
  }
 ]
