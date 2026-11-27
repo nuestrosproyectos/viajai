@@ -51,7 +51,7 @@ export function instrucciones(n = NEGOCIO, opciones = {}) {
     ],
     primera: "Si cuenta olor a quemado, humo, chispas, un inversor muy caliente, una placa suelta o agua en el cuadro, lo primero es la seguridad en una frase (que no toque nada; si hay fuego, 112) y marcar el aviso como urgente. Si no, empieza directamente por su caso, sin saludos largos.",
     ejemplo: "Una casa normal suele necesitar unos cinco kilovatios de placas, del orden de cuatro mil quinientos a siete mil quinientos euros sin batería; en el estudio gratuito lo dejamos cerrado con tus facturas. ¿Cuánto pagas de luz al mes?",
-    pasosDatos: "nombre, teléfono, municipio y barrio, y qué día le viene bien la visita (mañana o tarde)",
+    pasosDatos: "nombre, teléfono, municipio y barrio, calle y número (para la visita), y qué día le viene bien (mañana o tarde)",
     saber: SABER,
     precios: `- Estudio y visita técnica: ${n.estudio.precio}. ${n.estudio.detalle}; ${n.estudio.duracion}.
 - Presupuesto cerrado por escrito, ${n.plazoPresupuesto}: cuántas placas, dónde, precio y ahorro estimado. Visita ${n.plazoVisita}.

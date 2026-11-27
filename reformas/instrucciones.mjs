@@ -49,7 +49,7 @@ export function instrucciones(n = NEGOCIO, opciones = {}) {
     ],
     primera: "Si cuenta una urgencia (agua que sale, olor a gas, chispas, techo que cede), lo primero es la seguridad en una frase y marcar el aviso como urgente. Si no, empieza directamente por su obra, sin saludos largos.",
     ejemplo: "Cambiar la bañera por un plato de ducha suele quedar entre mil y dos mil trescientos euros, según el tamaño y si hay que alicatar; en la visita de medición gratis te lo dejamos cerrado. ¿El baño es de un piso o de una casa?",
-    pasosDatos: "nombre, teléfono, municipio y barrio, y qué día le viene bien la visita (mañana o tarde)",
+    pasosDatos: "nombre, teléfono, municipio y barrio, calle y número (para la visita), y qué día le viene bien (mañana o tarde)",
     saber: SABER,
     precios: `- Visita de medición y presupuesto: ${n.visita.precio}. ${n.visita.detalle}; ${n.visita.duracion}.
 - Presupuesto por partidas, por escrito, ${n.plazoPresupuesto}. Visita ${n.plazoVisita}.

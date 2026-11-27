@@ -1,0 +1,40 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Tejaluz. Dime más o menos cuánto pagas de luz al mes y te digo cuántas placas te harían falta y lo que costarían.
+
+CLIENTE: Me han dado un presupuesto de 6.800 € por 5 kWp con una batería de 10 kWh. ¿Está bien de precio?
+
+ANDRÉS: Orientativamente, 5 kWp de placas son de 5.000 a 7.500 € y 10 kWh de batería de 4.500 a 8.000 €: 6.800 € queda por debajo. Te reservo el estudio para comparar y revisa que incluya boletín y garantías por escrito. ¿Cuánto gasta de noche?
+<ficha>{"que":"Placas con batería","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Comparar el presupuesto de 6.800 € con el orientativo y pedir que incluya boletín y garantías por escrito.","fase":"proponiendo"}</ficha>
+<mostrar>orientativos</mostrar>
+
+CLIENTE: De noche no mucho, ahora mismo no sabría decirle. ¿Y me bajan el IBI con las placas?
+
+ANDRÉS: En Granada capital, si la vivienda no es obra nueva, el IBI tiene una bonificación del 50 % que hay que pedir; en otro municipio depende de su ordenanza. Le reservo el estudio para revisar ese presupuesto. ¿En qué municipio está la vivienda?
+<ficha>{"que":"Placas con batería","lugar":"","factura":"","tejado":"","consumo":"De noche, no mucho","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Comparar el presupuesto de 6.800 € (5 kWp y 10 kWh) con lo orientativo y pedir que incluya boletín y garantías por escrito.","fase":"datos"}</ficha>
+<mostrar>ayudas</mostrar>
+
+CLIENTE: En Granada capital, en el Zaidín. Es casa baja con azotea
+
+ANDRÉS: Como es una casa baja y no un bloque, no hace falta junta; en el Zaidín lo más probable es una declaración responsable que gestiona la instaladora. ¿Te reservo el estudio, por la mañana o por la tarde?
+<ficha>{"que":"Placas con batería","lugar":"Casa","factura":"","tejado":"Casa baja con azotea","consumo":"De noche, no mucho","nombre":"","telefono":"","municipio":"Granada capital, Zaidín","franja":"","inicio":"","orientacion":"Comparar el presupuesto de 6.800 € (5 kWp y 10 kWh) con lo orientativo y pedir que incluya boletín y garantías por escrito.","fase":"proponiendo"}</ficha>
+
+CLIENTE: Por la tarde mejor. Sin prisa, solo quiero comparar
+
+ANDRÉS: Sin prisa, claro: el estudio sirve para comparar tu presupuesto con uno cerrado por escrito. ¿A qué nombre te reservo el estudio por la tarde? Es solo para llamarte y organizarlo.
+<ficha>{"que":"Placas con batería","lugar":"Casa","factura":"","tejado":"Casa baja con azotea","consumo":"De noche, no mucho","nombre":"","telefono":"","municipio":"Granada capital, Zaidín","franja":"Por la tarde","inicio":"","orientacion":"Comparar el presupuesto de 6.800 € (5 kWp y 10 kWh) con lo orientativo y pedir que incluya boletín y garantías por escrito.","fase":"datos"}</ficha>
+
+CLIENTE: Rosa
+
+ANDRÉS: Gracias, Rosa. Lo anoto para el estudio por la tarde, sin prisa, para comparar tu presupuesto con uno cerrado por escrito. ¿Me dices un teléfono de contacto? Es solo para llamarte y organizarlo.
+<ficha>{"que":"Placas con batería","lugar":"Casa","factura":"","tejado":"Casa baja con azotea","consumo":"De noche, no mucho","nombre":"Rosa","telefono":"","municipio":"Granada capital, Zaidín","franja":"Por la tarde","inicio":"","orientacion":"Comparar el presupuesto de 6.800 € (5 kWp y 10 kWh) con lo orientativo y pedir que incluya boletín y garantías por escrito.","fase":"datos"}</ficha>
+<mostrar>contacto</mostrar>
+
+CLIENTE: 622 300 415
+
+ANDRÉS: Gracias, Rosa. Repito tu teléfono: seiscientos veintidós, trescientos, cuatrocientos quince. Con el estudio, el técnico compara tu presupuesto con uno cerrado por escrito. ¿Confirmo el estudio por la tarde?
+<ficha>{"que":"Placas con batería","lugar":"Casa","factura":"","tejado":"Casa baja con azotea","consumo":"De noche, no mucho","nombre":"Rosa","telefono":"622 300 415","municipio":"Granada capital, Zaidín","franja":"Por la tarde","inicio":"","orientacion":"Confirmar el estudio por la tarde y comparar con el presupuesto de 6.800 € (5 kWp y 10 kWh), pidiendo que incluya boletín y garantías por escrito.","fase":"datos"}</ficha>
+
+CLIENTE: Sí, por la tarde
+
+ANDRÉS: Perfecto, Rosa. La solicitud queda enviada y te llamamos al seiscientos veintidós, trescientos, cuatrocientos quince para confirmar el estudio de la tarde. ¿Necesitas algo más?
+<ficha>{"que":"Placas con batería","lugar":"Casa","factura":"","tejado":"Casa baja con azotea","consumo":"De noche, no mucho","nombre":"Rosa","telefono":"622 300 415","municipio":"Granada capital, Zaidín","franja":"Por la tarde","inicio":"","orientacion":"Estudio gratuito confirmado por la tarde; comparar el presupuesto de 6.800 € con lo orientativo y pedir que incluya boletín y garantías por escrito.","fase":"registrado"}</ficha>
+<aviso>{"tipo":"estudio","que":"Placas con batería","lugar":"Casa","factura":"","tejado":"Casa baja con azotea","consumo":"De noche, no mucho","nombre":"Rosa","telefono":"622 300 415","municipio":"Granada capital, Zaidín","franja":"Por la tarde","inicio":"","urgente":false,"notas":"Quiere placas con batería: presupuesto de 6.800 € por 5 kWp y 10 kWh, para comparar. Se le dio el rango orientativo (placas de 5.000 a 7.500 €, batería de 4.500 a 8.000 €) y se dijo que queda por debajo. Casa baja con azotea en el Zaidín, Granada capital: lo más probable es declaración responsable, sin junta. Consumo nocturno bajo, no lo sabe con exactitud; factura mensual no indicada, pedir facturas en el estudio. Preguntó por la bonificación del IBI (50 %, hay que pedirla). Quiere que el presupuesto incluya boletín y garantías por escrito. Sin prisa, solo quiere comparar. Estudio por la tarde."}</aviso>

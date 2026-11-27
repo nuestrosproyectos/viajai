@@ -66,6 +66,12 @@
       "grupo": ""
     },
     {
+      "id": "direccion",
+      "etiqueta": "Calle y número",
+      "pista": "",
+      "grupo": ""
+    },
+    {
       "id": "franja",
       "etiqueta": "Cuándo te viene bien la visita",
       "pista": "",

@@ -1,0 +1,33 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Tejaluz. Dime más o menos cuánto pagas de luz al mes y te digo cuántas placas te harían falta y lo que costarían.
+
+CLIENTE: Hola, me estoy planteando poner placas, pago unos 120 € de luz al mes. ¿Me compensa?
+
+ANDRÉS: Con esa factura suelen hacer falta unos 5 kWp (kilovatios de paneles), de 4.500 a 7.500 € sin batería, y suele amortizarse en seis a diez años. Te reservo el estudio gratuito para ver tu tejado. ¿Vives en casa o en un bloque?
+<ficha>{"que":"Placas solares","lugar":"","factura":"unos 120 € al mes","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Ver el estudio gratuito con tus facturas para afinar el tamaño.","fase":"proponiendo"}</ficha>
+<mostrar>orientativos</mostrar>
+
+CLIENTE: En casa, adosada en Armilla. Tejado a dos aguas con una cara al sur y sin sombras
+
+ANDRÉS: Con una cara al sur y sin sombras, el tejado es lo más favorable. Cada kilovatio de paneles suele dar unos mil cuatrocientos a mil setecientos kilovatios hora al año en Granada. ¿Te reservo el estudio gratis, mejor por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 120 € al mes","tejado":"A dos aguas, una cara al sur, sin sombras","consumo":"","nombre":"","telefono":"","municipio":"Armilla","franja":"","inicio":"","orientacion":"Reservar el estudio gratuito con tus facturas para afinar el tamaño.","fase":"proponiendo"}</ficha>
+
+CLIENTE: Por la mañana, mejor un viernes
+
+ANDRÉS: Perfecto, lo anoto para la mañana y, si puede ser, un viernes. Con tus facturas el técnico afina cuántas placas te hacen falta. ¿A qué nombre te reservo el estudio? Es solo para llamarte y organizarlo.
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 120 € al mes","tejado":"A dos aguas, una cara al sur, sin sombras","consumo":"","nombre":"","telefono":"","municipio":"Armilla","franja":"Por la mañana, preferiblemente un viernes","inicio":"","orientacion":"Reservar el estudio gratuito con tus facturas para afinar el tamaño.","fase":"datos"}</ficha>
+
+CLIENTE: Javier
+
+ANDRÉS: Gracias, Javier. Con esa orientación el tejado va bien; lo anoto para el estudio gratuito de una hora, por la mañana y, si puede ser, un viernes. ¿Me dices un teléfono de contacto?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 120 € al mes","tejado":"A dos aguas, una cara al sur, sin sombras","consumo":"","nombre":"Javier","telefono":"","municipio":"Armilla","franja":"Por la mañana, preferiblemente un viernes","inicio":"","orientacion":"Reservar el estudio gratuito con tus facturas para afinar el tamaño.","fase":"datos"}</ficha>
+
+CLIENTE: 644 778 120
+
+ANDRÉS: Repito tu teléfono: seiscientos cuarenta y cuatro, setecientos setenta y ocho, ciento veinte. Y como Armilla es otro municipio, su ayuntamiento tiene su propia ordenanza, que el técnico te confirmará. ¿Confirmo el estudio por la mañana?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 120 € al mes","tejado":"A dos aguas, una cara al sur, sin sombras","consumo":"","nombre":"Javier","telefono":"644 778 120","municipio":"Armilla","franja":"Por la mañana, preferiblemente un viernes","inicio":"","orientacion":"Confirmar el estudio gratuito por la mañana y mandar una foto de la factura de la luz.","fase":"datos"}</ficha>
+
+CLIENTE: Sí, confírmalo
+
+ANDRÉS: Perfecto, Javier: queda enviada la solicitud y te llamamos para confirmar el estudio por la mañana. Si puedes, manda una foto de la factura de la luz desde aquí, así el técnico va preparado. ¿Necesitas algo más?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 120 € al mes","tejado":"A dos aguas, una cara al sur, sin sombras","consumo":"","nombre":"Javier","telefono":"644 778 120","municipio":"Armilla","franja":"Por la mañana, preferiblemente un viernes","inicio":"","orientacion":"Estudio confirmado por la mañana; mandar una foto de la factura de la luz.","fase":"registrado"}</ficha>
+<aviso>{"tipo":"estudio","que":"Placas solares","lugar":"Casa","factura":"unos 120 € al mes","tejado":"A dos aguas, una cara al sur, sin sombras","consumo":"","nombre":"Javier","telefono":"644 778 120","municipio":"Armilla","franja":"Por la mañana, preferiblemente un viernes","inicio":"","urgente":false,"notas":"Casa adosada en Armilla, otro municipio: su ordenanza propia la confirma el técnico (bonificaciones incluidas). Tejado a dos aguas con una cara al sur y sin sombras. Factura de unos 120 € al mes; no hay consumo anual en kWh ni horas de consumo. No consta si tiene coche eléctrico o aerotermia. Quiere saber si le compensa. Estudio por la mañana, preferiblemente un viernes, confirmado por quien escribe. Puede mandar foto de la factura."}</aviso>

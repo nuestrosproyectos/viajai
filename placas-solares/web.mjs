@@ -128,6 +128,7 @@ export default function web(N) {
       { id: "nombre", etiqueta: "Nombre", visible: true, autocomplete: "given-name" },
       { id: "telefono", etiqueta: "Teléfono", visible: true, tipo: "tel" },
       { id: "municipio", etiqueta: "Municipio y barrio", corto: "Municipio", visible: true, autocomplete: "address-level2" },
+      { id: "direccion", etiqueta: "Calle y número", corto: "Dirección", visible: true, autocomplete: "street-address", ancho: true, placeholder: "Calle, número, piso…" },
       { id: "franja", etiqueta: "Cuándo te viene bien la visita", corto: "Visita", visible: true, placeholder: "Jueves por la mañana…", ancho: true },
       { id: "inicio", oculto: true }
     ],
@@ -135,7 +136,7 @@ export default function web(N) {
     campoResumen: "que",
     tipoPrincipal: "estudio",
     resumenAviso: [["que", ""], ["lugar", ""], ["factura", "paga "]],
-    panelLugar: ["municipio", "franja"],
+    panelLugar: ["municipio", "direccion", "franja"],
     panelExtra: ["tejado", "consumo"],
 
     preparar: {
