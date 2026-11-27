@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "El IVA puede ser del diez por ciento si la vivienda tiene más de dos años y los materiales no pasan del cuarenta por ciento del precio. Y como es piso, cambiar ventanas toca la fachada: pide acuerdo de la comunidad. ¿Te reservo la visita?\n<ficha>{\"obra\":\"cambiar 6 ventanas por otras que aíslen\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Las ventanas pueden dar deducción del 20 o del 40 % con certificado energético antes y después; el IVA puede ser del 10 % si se cumplen sus condiciones; lo confirma tu gestor.\",\"porDecir\":\"el certificado posterior tiene que estar hecho antes del 1 de enero de 2027, y no consta prórroga\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>permisos</mostrar>",
   "original": "El IVA puede ser del diez por ciento si la vivienda tiene más de dos años y los materiales no pasan del cuarenta por ciento del precio. Y como es piso, cambiar ventanas toca la fachada: pide acuerdo de la comunidad. ¿Te reservo la visita?\n<ficha>{\"obra\":\"cambiar 6 ventanas por otras que aíslen\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Las ventanas pueden dar deducción del 20 o del 40 % con certificado energético antes y después; el IVA puede ser del 10 % si se cumplen sus condiciones; lo confirma tu gestor.\",\"porDecir\":\"el certificado posterior tiene que estar hecho antes del 1 de enero de 2027, y no consta prórroga\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>permisos</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, lo de las ventanas lo hablaría con la comunidad. Pero entonces el IVA al 10% me lo aplicarían o no? Y el certificado ese quién lo hace?"
  }
 ]

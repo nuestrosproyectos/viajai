@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Lo primero que mira el técnico en la visita es si el tabique es de carga, porque sin verlo no hay precio. En el centro lo más probable es licencia y técnico, y conviene avisar a la comunidad. ¿Te reservo la visita?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"Piso sin ascensor\",\"metros\":\"\",\"antiguedad\":\"edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada, centro\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Tirar el tabique no tiene precio fijo sin verlo; el técnico comprueba si es de carga, y en el centro lo más probable es licencia y técnico.\",\"porDecir\":\"si la cocina queda abierta, la campana sigue sacando humos por su conducto\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>permisos</mostrar>",
   "original": "Lo primero que mira el técnico en la visita es si el tabique es de carga, porque sin verlo no hay precio. En el centro lo más probable es licencia y técnico, y conviene avisar a la comunidad. ¿Te reservo la visita?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"Piso sin ascensor\",\"metros\":\"\",\"antiguedad\":\"edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada, centro\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Tirar el tabique no tiene precio fijo sin verlo; el técnico comprueba si es de carga, y en el centro lo más probable es licencia y técnico.\",\"porDecir\":\"si la cocina queda abierta, la campana sigue sacando humos por su conducto\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>permisos</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "¿Y no podemos tirarlo sin decir nada a nadie para ahorrar el permiso?"
  }
 ]
