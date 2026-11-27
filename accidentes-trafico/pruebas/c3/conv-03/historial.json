@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Tuve yo la culpa del accidente, me salté un ceda. Iba con mi mujer y ella se rompió la muñeca."
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias por contarlo. Como pasajera, tu mujer normalmente sí puede reclamar, y te reservo la primera consulta gratis para verlo con los informes delante. ¿Ya le ha visto un médico?\n<ficha>{\"caso\":\"Se saltó un ceda; iba con su mujer como pasajera\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que su mujer vea un médico hoy y quede por escrito; como pasajera, ella normalmente puede reclamar.\",\"fase\":\"orientando\"}</ficha>",
+  "original": "Gracias por contarlo. Como pasajera, tu mujer normalmente sí puede reclamar, y te reservo la primera consulta gratis para verlo con los informes delante. ¿Ya le ha visto un médico?\n<ficha>{\"caso\":\"Se saltó un ceda; iba con su mujer como pasajera\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que su mujer vea un médico hoy y quede por escrito; como pasajera, ella normalmente puede reclamar.\",\"fase\":\"orientando\"}</ficha>"
  }
 ]

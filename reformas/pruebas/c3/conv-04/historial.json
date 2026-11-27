@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Buenas tardes, le escribo por mi padre, que tiene 86 años y ya no puede entrar en la bañera. Vive solo en Maracena."
+ },
+ {
+  "role": "assistant",
+  "content": "Entiendo, lo primero es que su padre esté seguro. Cambiar la bañera por un plato de ducha suele quedar entre mil y dos mil trescientos euros, y a ras de suelo encarece algo. ¿Le reservo la visita por la mañana o por la tarde?\n<ficha>{\"obra\":\"cambiar la bañera por un plato de ducha\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Como su padre vive solo y no puede entrar en la bañera, le conviene cambiarla por un plato de ducha cuanto antes; la visita de medición es gratis.\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Entiendo, lo primero es que su padre esté seguro. Cambiar la bañera por un plato de ducha suele quedar entre mil y dos mil trescientos euros, y a ras de suelo encarece algo. ¿Le reservo la visita por la mañana o por la tarde?\n<ficha>{\"obra\":\"cambiar la bañera por un plato de ducha\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Como su padre vive solo y no puede entrar en la bañera, le conviene cambiarla por un plato de ducha cuanto antes; la visita de medición es gratis.\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Quiero placas pero solo si me garantizáis por escrito que no vuelvo a pagar luz."
+ },
+ {
+  "role": "assistant",
+  "content": "Eso no te lo puedo garantizar: la factura nunca baja a cero, quedan la potencia, el contador y lo que gastas de noche. Por escrito irán las garantías de los equipos y la mano de obra, y el ahorro estimado. ¿Te reservo el estudio?\n<ficha>{\"que\":\"Placas solares, pero con garantía por escrito de no pagar luz\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No se puede garantizar factura cero; lo que sí se ve en el estudio es tu caso y qué va por escrito en el presupuesto.\",\"fase\":\"orientando\"}</ficha>",
+  "original": "Eso no te lo puedo garantizar: la factura nunca baja a cero, quedan la potencia, el contador y lo que gastas de noche. Por escrito irán las garantías de los equipos y la mano de obra, y el ahorro estimado. ¿Te reservo el estudio?\n<ficha>{\"que\":\"Placas solares, pero con garantía por escrito de no pagar luz\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No se puede garantizar factura cero; lo que sí se ve en el estudio es tu caso y qué va por escrito en el presupuesto.\",\"fase\":\"orientando\"}</ficha>"
  }
 ]
