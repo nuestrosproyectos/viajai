@@ -1,0 +1,2 @@
+Gracias, Sonia, anoto Motril. Y cobrar a cuenta no es firmar un finiquito; eso lo revisa el abogado. ¿Prefieres la consulta por teléfono, por videollamada o en el despacho?
+<ficha>{"caso":"Accidente de tráfico; la aseguradora del otro ofrece 2.300 € y pide firmar","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"Sonia","telefono":"633 202 404","municipio":"Motril","franja":"Por la mañana","consentimientoSalud":"","orientacion":"No firmes; si insisten, pide la oferta por escrito con su cálculo.","fase":"datos"}</ficha>

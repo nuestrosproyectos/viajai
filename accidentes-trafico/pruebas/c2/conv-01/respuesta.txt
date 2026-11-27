@@ -1,0 +1,2 @@
+Gracias, Raúl, ya tengo el teléfono. Recuerda que el plazo para reclamar es de un año, y el abogado te dirá cómo se cuenta en tu caso. ¿En qué municipio vives?
+<ficha>{"caso":"golpe por detrás hace tres días","como":"","fecha":"hace tres días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Raúl","telefono":"644 555 888","municipio":"","franja":"Por la tarde, por videollamada","consentimientoSalud":"","orientacion":"Ve al médico hoy y no firmes nada de la aseguradora hasta que lo vea el abogado.","fase":"datos"}</ficha>
