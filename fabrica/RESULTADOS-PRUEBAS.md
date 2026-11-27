@@ -55,19 +55,21 @@ Cambios entre vueltas (en la base común): confirmar nombre, teléfono, direcci�
 Pendiente: las conversaciones se alargan (7,6 respuestas): conviene pedir nombre y teléfono juntos y la dirección completa de una vez. Dato falso de la vuelta 2: fontanería dijo que una fuga cortada «puede esperar a mañana» (el conocimiento dice «unas horas»); corregido en sus casos.
 
 ## Abogados de accidentes, vueltas de una en una (8 conversaciones completas cada vez)
-| | c5 | c6 |
-|---|---|---|
-| Acaban en cita | 8/8 | 8/8 |
-| Datos falsos | 1 | 0 |
-| Cuenta lo que pide su caso (criterio) | 1,3 | **8,8** |
-| Da lo esencial (completa) | 5,0 | **8,8** |
-| Datos bien tomados | 7,5 | 8,8 |
-| Coherente | 8,8 | 6,3 |
-| Empatía | 10 | 10 |
-| Nota media | 6,38 | **7,38** |
+| | c5 | c6 | c7 |
+|---|---|---|---|
+| Acaban en cita | 8/8 | 8/8 | 8/8 |
+| Datos falsos | 1 | 0 | 0 |
+| Cuenta lo que pide su caso (criterio) | 1,3 | **8,8** | 6,3 |
+| Da lo esencial (completa) | 5,0 | **8,8** | **10** |
+| Datos bien tomados | 7,5 | 8,8 | **10** |
+| Coherente | 8,8 | 6,3 | 8,8 |
+| Empatía | 10 | 10 | 10 |
+| Respuestas hasta la cita | 5,6 | 5,6 | **4,0** |
+| Nota media | 6,38 | 7,38 | **8,00** |
 
 Cambio c5→c6: Andrés lleva en la ficha una lista interna «porDecir» con lo que le falta contar de su caso y cada respuesta dice el primero; pide siempre el municipio y lo repite al confirmar; nunca dice cuándo será la cita; con un familiar en la UCI, primero la salud y sin cifras en la primera respuesta.
 Lo que bajó (coherente): a veces suelta el punto pendiente sin venir a cuento («si aún no has ido al médico…» a quien tiene el alta). Cambio c6→c7: primero contesta lo que pregunta, el pendiente va enlazado y explicado, y se descarta si ya no le sirve; en el aviso, nada de lesiones sin permiso.
+c7: nota 8,00, cita en 4 respuestas de media (antes 5,6), sin datos falsos. Lo que queda (criterio 6,3 en 3 de 8): al ser más corta, a veces no llega a decir un punto (pasajeros en la UCI, culpa compartida). Ajustado tras c7: con un familiar grave, primero salud y «los pasajeros casi siempre cobran», el baremo después; urgente si la aseguradora mete prisa; si pregunta «¿para cuándo?», el plazo habitual.
 
 ## Qué se corrigió entre rondas (en el cerebro común, para todas las webs, salvo lo marcado)
 - R1→R2: dar siempre el rango de precio si lo pide; empatía con miedo, susto o personas mayores; usted en toda la conversación; una sola pregunta; rellenar en la ficha lo que el cliente ya dijo.
