@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, entonces sí, resérvame la visita"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, te apunto la visita. Es solo para llamarte y organizarla: ¿me dices tu nombre y un teléfono?\n<ficha>{\"obra\":\"Cambiar las ventanas por otras que aíslen\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"1990\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Para el IVA, lo más probable es el 10 % si es para vivir, tiene más de dos años y los materiales no pasan del 40 % sin IVA; si es piso y cambian la fachada, hace falta acuerdo de la comunidad.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, te apunto la visita. Es solo para llamarte y organizarla: ¿me dices tu nombre y un teléfono?\n<ficha>{\"obra\":\"Cambiar las ventanas por otras que aíslen\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"1990\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Para el IVA, lo más probable es el 10 % si es para vivir, tiene más de dos años y los materiales no pasan del 40 % sin IVA; si es piso y cambian la fachada, hace falta acuerdo de la comunidad.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

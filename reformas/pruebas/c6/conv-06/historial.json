@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale. ¿Y lo del permiso me lo pueden aclarar en la visita?"
+ },
+ {
+  "role": "assistant",
+  "content": "Sí, eso lo aclara el técnico en la visita, y de paso te dice qué pide el ayuntamiento de Armilla. Y como cambiáis la electricidad, la instalación la hace una empresa habilitada, que emite el boletín. ¿Te reservo la visita?\n<ficha>{\"obra\":\"Reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros\",\"vivienda\":\"\",\"metros\":\"90 metros\",\"antiguedad\":\"Años 80\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"La electricidad la hace una empresa habilitada, que emite el boletín; el permiso en Armilla lo aclara el técnico en la visita.\",\"porDecir\":\"el IVA puede ser del 10 % si es vivienda suya y tiene más de dos años; lo confirma el gestor\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Sí, eso lo aclara el técnico en la visita, y de paso te dice qué pide el ayuntamiento de Armilla. Y como cambiáis la electricidad, la instalación la hace una empresa habilitada, que emite el boletín. ¿Te reservo la visita?\n<ficha>{\"obra\":\"Reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros\",\"vivienda\":\"\",\"metros\":\"90 metros\",\"antiguedad\":\"Años 80\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"La electricidad la hace una empresa habilitada, que emite el boletín; el permiso en Armilla lo aclara el técnico en la visita.\",\"porDecir\":\"el IVA puede ser del 10 % si es vivienda suya y tiene más de dos años; lo confirma el gestor\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

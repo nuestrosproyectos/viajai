@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Pero más o menos, ¿días, semanas, un mes? Una idea aunque sea aproximada"
+ },
+ {
+  "role": "assistant",
+  "content": "No tengo un plazo fiable para tu cocina, así que no te doy una cifra que luego falle; lo apunto para que el técnico te lo confirme. El presupuesto por escrito llega unos cinco días laborables después de medir. ¿Te reservo la visita?\n<ficha>{\"obra\":\"Cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"Unos 9 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Muchas cocinas completas están entre seis mil y diez mil euros; mover el fregadero lo encarece, y el precio exacto sale de la visita de medición.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "No tengo un plazo fiable para tu cocina, así que no te doy una cifra que luego falle; lo apunto para que el técnico te lo confirme. El presupuesto por escrito llega unos cinco días laborables después de medir. ¿Te reservo la visita?\n<ficha>{\"obra\":\"Cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"Unos 9 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Muchas cocinas completas están entre seis mil y diez mil euros; mover el fregadero lo encarece, y el precio exacto sale de la visita de medición.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]
