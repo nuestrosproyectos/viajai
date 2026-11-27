@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Gracias, Lucía. Antes de tocar un muro, avisa a la comunidad, mejor por escrito con fecha. ¿En qué calle y número está el piso, y te viene mejor mañana o por la tarde?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"\",\"metros\":\"unos 70 m²\",\"antiguedad\":\"edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"Lucía\",\"telefono\":\"611 908 774\",\"municipio\":\"Granada (centro)\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No tirar el tabique sin comprobar si es de carga: si lo es, lo más probable es proyecto y licencia; la visita de medición, gratis, lo comprueba.\",\"porDecir\":\"Si la cocina queda abierta, la campana sigue sacando humos por su conducto\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Lucía. Antes de tocar un muro, avisa a la comunidad, mejor por escrito con fecha. ¿En qué calle y número está el piso, y te viene mejor mañana o por la tarde?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"\",\"metros\":\"unos 70 m²\",\"antiguedad\":\"edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"Lucía\",\"telefono\":\"611 908 774\",\"municipio\":\"Granada (centro)\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No tirar el tabique sin comprobar si es de carga: si lo es, lo más probable es proyecto y licencia; la visita de medición, gratis, lo comprueba.\",\"porDecir\":\"Si la cocina queda abierta, la campana sigue sacando humos por su conducto\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Calle San Antón 30, en Granada centro. Cualquier tarde me viene bien"
  }
 ]

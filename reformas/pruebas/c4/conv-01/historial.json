@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Gracias, Marta. Si el piso tiene más de dos años y es para vivir en él, el IVA puede bajar al 10 %, lo confirma el técnico. ¿En qué municipio y barrio está, con calle y número, y te viene mejor mañana o por la tarde?\n<ficha>{\"obra\":\"cambiar bañera por plato de ducha, cambiar azulejos y lavabo\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Marta\",\"telefono\":\"655 321 908\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Quitar la bañera y poner plato de ducha: entre unos 1.000 y 2.300 €, lo más habitual; sube si hay que mover el desagüe o si el plato va a ras de suelo.\",\"porDecir\":\"En pisos antiguos, las tuberías viejas son el imprevisto más habitual\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Marta. Si el piso tiene más de dos años y es para vivir en él, el IVA puede bajar al 10 %, lo confirma el técnico. ¿En qué municipio y barrio está, con calle y número, y te viene mejor mañana o por la tarde?\n<ficha>{\"obra\":\"cambiar bañera por plato de ducha, cambiar azulejos y lavabo\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Marta\",\"telefono\":\"655 321 908\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Quitar la bañera y poner plato de ducha: entre unos 1.000 y 2.300 €, lo más habitual; sube si hay que mover el desagüe o si el plato va a ras de suelo.\",\"porDecir\":\"En pisos antiguos, las tuberías viejas son el imprevisto más habitual\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Granada, barrio de la Chana, calle Doctor Olóriz 14. Mejor por las tardes"
  }
 ]

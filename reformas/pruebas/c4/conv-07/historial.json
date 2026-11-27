@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Gracias, Paco. Con eso te llamamos para cuadrar la visita. ¿En qué municipio y calle está la casa, y te viene mejor mañana o por la tarde?\n<ficha>{\"obra\":\"cambiar 6 ventanas de aluminio viejo por unas que aíslen\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Paco\",\"telefono\":\"633 778 120\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"cuanto antes\",\"orientacion\":\"Deducción del 20 % o del 40 % en la renta con certificados energéticos de antes y después; el de después, antes del 1 de enero de 2027. El IVA puede ser del 10 % si es para vivir en ella, tiene más de dos años y los materiales no pasan del 40 %; lo confirma el gestor.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Paco. Con eso te llamamos para cuadrar la visita. ¿En qué municipio y calle está la casa, y te viene mejor mañana o por la tarde?\n<ficha>{\"obra\":\"cambiar 6 ventanas de aluminio viejo por unas que aíslen\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Paco\",\"telefono\":\"633 778 120\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"cuanto antes\",\"orientacion\":\"Deducción del 20 % o del 40 % en la renta con certificados energéticos de antes y después; el de después, antes del 1 de enero de 2027. El IVA puede ser del 10 % si es para vivir en ella, tiene más de dos años y los materiales no pasan del 40 %; lo confirma el gestor.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Granada, calle Recogidas 31. Por las mañanas"
  }
 ]

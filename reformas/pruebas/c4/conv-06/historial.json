@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Gracias, Nuria. Si el piso es para vivir y tiene más de dos años, el IVA puede bajar al 10 %, lo confirma el técnico. ¿En qué calle y número está, y te viene mejor mañana o por la tarde?\n<ficha>{\"obra\":\"reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros\",\"vivienda\":\"\",\"metros\":\"90 m²\",\"antiguedad\":\"años 80\",\"presupuesto\":\"\",\"nombre\":\"Nuria\",\"telefono\":\"699 202 515\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Si no se tocan muros, lo más probable es declaración responsable; en Armilla lo confirma el técnico. La electricidad la hace una empresa habilitada, con boletín.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Nuria. Si el piso es para vivir y tiene más de dos años, el IVA puede bajar al 10 %, lo confirma el técnico. ¿En qué calle y número está, y te viene mejor mañana o por la tarde?\n<ficha>{\"obra\":\"reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros\",\"vivienda\":\"\",\"metros\":\"90 m²\",\"antiguedad\":\"años 80\",\"presupuesto\":\"\",\"nombre\":\"Nuria\",\"telefono\":\"699 202 515\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Si no se tocan muros, lo más probable es declaración responsable; en Armilla lo confirma el técnico. La electricidad la hace una empresa habilitada, con boletín.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Calle Real de Armilla 22. Por las tardes mejor"
  }
 ]
