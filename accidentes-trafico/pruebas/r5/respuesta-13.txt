@@ -1,0 +1,3 @@
+Siento lo de la muñeca. Si la culpa fue tuya, el seguro obligatorio no paga tus lesiones, salvo que tengas un seguro de conductor o de accidentes; el abogado revisa tu póliza. Te puedo reservar la consulta gratis. ¿Tienes alguno de los dos?
+<ficha>{"caso":"Alcance al coche de delante en la autovía","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Mirar si tiene seguro de conductor o de accidentes; el abogado revisa la póliza","fase":"orientando"}</ficha>
+<mostrar>situaciones</mostrar>

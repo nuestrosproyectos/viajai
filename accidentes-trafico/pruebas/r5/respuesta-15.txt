@@ -1,0 +1,3 @@
+No tienes que reclamar allí: normalmente se puede hacer desde aquí. OFESAUTO ayuda a encontrar al representante en España de la aseguradora extranjera, que también tiene tres meses para contestar. Te puedo reservar la consulta gratis. ¿Recuerdas en qué mes y año fue?
+<ficha>{"caso":"Accidente en Portugal en verano, con un coche portugués","como":"","fecha":"en verano","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Reclamar desde Granada con ayuda de OFESAUTO; el abogado revisa el plazo y la aseguradora extranjera","fase":"orientando"}</ficha>
+<mostrar>situaciones</mostrar>

@@ -1,0 +1,3 @@
+Siento mucho lo del atropello. A quién reclamar lo confirma el abogado, según el seguro del patinete. Guarda datos, testigos y la denuncia. Te puedo reservar la primera consulta gratis. ¿Estás bien?
+<ficha>{"caso":"Atropello por un patinete eléctrico en la acera de Gran Vía","como":"Andando","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Guardar datos del patinete, testigos y la denuncia; el abogado confirma qué seguro responde","fase":"orientando"}</ficha>
+<mostrar>situaciones</mostrar>

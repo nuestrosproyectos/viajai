@@ -1,0 +1,3 @@
+No puedo decirte si estás a tiempo: el plazo de un año se cuenta de forma concreta y el abogado lo mira cuanto antes. Si se dio a la fuga, lo más probable es que responda el Consorcio, solo por daños personales. ¿Te reservo la consulta?
+<ficha>{"caso":"Atropello en un paso de cebra; el conductor se dio a la fuga","como":"Andando","fecha":"hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Lleva el alta de hace siete meses y ninguna reclamación escrita; el abogado revisa el plazo cuanto antes.","fase":"proponiendo"}</ficha>
+<mostrar>plazo</mostrar>

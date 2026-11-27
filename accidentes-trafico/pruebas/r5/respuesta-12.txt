@@ -1,0 +1,3 @@
+Siento lo que has pasado con la rehabilitación. Hay un plazo de un año, que suele contar desde el alta y se interrumpe al reclamar. Cómo se cuenta en tu caso lo revisa el abogado. Te puedo reservar la consulta gratis. ¿Cuándo te dieron el alta?
+<ficha>{"caso":"Accidente en Motril","como":"","fecha":"octubre de 2024","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Saber cuándo le dieron el alta y si reclamó algo por escrito; el abogado revisa el plazo cuanto antes","fase":"orientando"}</ficha>
+<mostrar>plazo</mostrar>
