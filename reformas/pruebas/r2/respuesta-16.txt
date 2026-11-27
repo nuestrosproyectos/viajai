@@ -1,0 +1,3 @@
+Un baño completo con reforma estándar suele quedar entre tres mil y seis mil euros, y más si eliges calidades altas. Quitar el bidé lo ajusta el técnico. En la visita de medición gratis te dejamos el precio cerrado. ¿Cuántos metros tiene más o menos el baño?
+<ficha>{"obra":"Baño nuevo con plato de ducha y quitar el bidé","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"Las Gabias","franja":"","inicio":"","orientacion":"Un baño completo con reforma estándar suele rondar entre tres mil y seis mil euros; la visita gratis da el precio cerrado.","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>

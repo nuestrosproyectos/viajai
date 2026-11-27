@@ -77,11 +77,15 @@ h1 em,h2 em{font-style:normal;color:var(--acento)}
 .bd-caso{border-top:3px solid var(--acento)}
 .bd-caso .bd-cifra{color:var(--tinta);letter-spacing:0}
 .precio-linea{background:var(--fondo)}
+.precio-linea b{white-space:nowrap}
 
 /* fotos de «Mientras llegamos» con el consejo en negrita */
 .trabajo figcaption b{color:var(--tinta)}
 .trabajo figure:last-child figcaption b{color:var(--rojo)}
 .hero-foto img{object-position:42% 45%}
+
+/* el nombre de Andrés no se esconde aunque la pantalla sea baja (la plantilla oculta todos los span de .ta-quien) */
+.ta-quien b span{display:inline!important}
 
 /* móvil: el aviso de urgencia sustituye al sobretítulo para que «Hablar con Andrés» se vea al abrir */
 @media (max-width:560px){

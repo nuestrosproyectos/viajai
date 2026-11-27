@@ -1,0 +1,130 @@
+{
+  "web": "accidentes-trafico",
+  "marca": "Accidente Claro",
+  "sector": "abogados de accidentes de tráfico",
+  "asistente": {
+    "nombre": "Andrés",
+    "genero": "hombre",
+    "tono": "sereno, cercano y empático, como un abogado que explica las cosas con calma y sin tecnicismos",
+    "voz": {
+      "proveedor": "elevenlabs",
+      "id": "gc61tTk93h3LBXPxew2V",
+      "nombre": "Rafa",
+      "modelo": "eleven_flash_v2_5",
+      "estabilidad": 0.4,
+      "parecido": 0.8,
+      "velocidad": 0.93
+    }
+  },
+  "campos": [
+    {
+      "id": "caso",
+      "etiqueta": "Qué pasó",
+      "pista": "",
+      "grupo": "caso"
+    },
+    {
+      "id": "como",
+      "etiqueta": "Cómo ibas",
+      "pista": "",
+      "grupo": "caso"
+    },
+    {
+      "id": "fecha",
+      "etiqueta": "Cuándo fue",
+      "pista": "",
+      "grupo": "caso"
+    },
+    {
+      "id": "medico",
+      "etiqueta": "Médico y alta (solo si das permiso)",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "culpa",
+      "etiqueta": "De quién fue la culpa",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "atestado",
+      "etiqueta": "Parte amistoso o atestado",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "oferta",
+      "etiqueta": "Oferta de la aseguradora",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "defensa",
+      "etiqueta": "Defensa jurídica en tu póliza",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "nombre",
+      "etiqueta": "Nombre",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "telefono",
+      "etiqueta": "Teléfono",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "municipio",
+      "etiqueta": "Municipio",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "franja",
+      "etiqueta": "Consulta y cuándo",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "consentimientoSalud",
+      "etiqueta": "consentimientoSalud",
+      "pista": "",
+      "grupo": ""
+    }
+  ],
+  "obligatorios": [
+    "telefono",
+    "nombre",
+    "caso"
+  ],
+  "palabrasClave": [
+    "Accidente Claro"
+  ],
+  "tipos": [
+    "consulta",
+    "llamada"
+  ],
+  "urgente": "",
+  "destinos": [
+    "precios",
+    "consulta",
+    "honorarios",
+    "baremo",
+    "calculo",
+    "indemnizacion",
+    "como",
+    "plazo",
+    "oferta",
+    "zona",
+    "situaciones",
+    "contacto",
+    "llamada",
+    "formulario",
+    "preparar",
+    "documentos"
+  ]
+}

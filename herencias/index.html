@@ -71,7 +71,7 @@ img,svg{display:block;max-width:100%}
 a{color:inherit}
 button,input,textarea{font:inherit;color:inherit}
 button{cursor:pointer}
-:focus-visible{outline:3px solid var(--cobalto);outline-offset:3px;border-radius:6px}
+:focus-visible{outline:3px solid var(--foco,var(--cobalto));outline-offset:3px;border-radius:6px}
 .oculto{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .envol{width:100%;max-width:1160px;margin:0 auto;padding:0 16px}
 h1,h2,h3{font-family:var(--titular);font-stretch:112%;line-height:1.08;margin:0;letter-spacing:-.01em}
@@ -465,7 +465,7 @@ html,body{overflow-x:clip}
 body{background:var(--fondo)}
 ::selection{background:var(--acento);color:#fff}
 /* lo que es del asistente, en azul Sierra */
-.boton-andres{background:var(--cobalto)!important;box-shadow:0 1px 0 var(--cobalto-pulsado,#244968)!important}
+.boton-andres{background:var(--cobalto)!important;color:var(--sobre-cobalto,#fff)!important;box-shadow:0 1px 0 var(--cobalto-pulsado,#244968)!important}
 .boton-andres:active{background:var(--cobalto-pulsado,#244968)!important}
 
 /* ---------- letras ---------- */
@@ -716,8 +716,12 @@ h1 em,h2 em,.subrayado{font-style:normal;color:var(--acento);background:none}
 }
 @media (max-width:560px) and (max-height:700px){
   .portada .entrada{display:none}
-  .ta-quien span{display:none}
+  .ta-quien>span{display:none}
 }
+
+/* aviso de urgencia arriba del todo (webs de urgencias: textos.urgencia.arriba) */
+.urgencia.urgencia-arriba{order:-1!important;margin:0 0 14px}
+@media (min-width:900px){.urgencia.urgencia-arriba{margin:0 0 22px}}
 
 </style>
 <!-- Piel propia de esta web: colores, letras y detalles -->
@@ -1526,7 +1530,7 @@ async function registrarAviso(aviso) {
     t.className = "tarjeta-aviso"; t.setAttribute("role", "status");
     const titulo = !guardado ? W.textos.preparada : fin.titulo;
     const pasos = fin.pasos;
-    t.innerHTML = `<h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></h4><p class="final-cifra"></p><p class="final-txt"></p><ol></ol><a class="boton boton-principal" target="_blank" rel="noopener">Guardarlo en WhatsApp</a>`;
+    t.innerHTML = `<h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></h4><p class="final-cifra"></p><p class="final-txt"></p><ol></ol><a class="boton boton-principal boton-wa" target="_blank" rel="noopener">Guardarlo en WhatsApp</a>`;
     t.querySelector("h4").append(titulo);
     t.querySelector(".final-cifra").textContent = "Nº de aviso " + numAviso;
     t.querySelector(".final-txt").textContent = resumen + (guardado ? "" : ". No hemos podido enviarla: mándanosla por WhatsApp para asegurarte.");

@@ -3,7 +3,6 @@
   "marca": "Obra Redonda",
   "sector": "reformas",
   "asistente": {
-    "_leeme": "ÚNICO sitio donde se cambia el asistente de esta web (nombre, voz, tono). Lo leen la web, el agente de voz y las pruebas. Para cambiarlo: node fabrica/crear.mjs asistente reformas",
     "nombre": "Andrés",
     "genero": "hombre",
     "tono": "cercano, práctico y seguro, como un jefe de obra que explica las cosas claras",

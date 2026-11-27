@@ -1,0 +1,3 @@
+Entiendo lo de ahorrar, pero sin factura no trabajamos, y es lo que te protege con la garantía. Y con los requisitos, el IVA puede ser del 10 %, no del 21 %; el técnico lo confirma en la visita gratis. ¿Mañana o pasado?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Trabajar con factura y presupuesto por escrito; con los requisitos el IVA puede ser del 10 %, que confirma el técnico.","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>

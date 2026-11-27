@@ -119,7 +119,7 @@ ${css}
   <div class="envol">
     <div class="hero-a">
       <p class="sobretitulo entra">${T.sobretitulo}</p>
-      ${T.urgencia ? `<p class="urgencia">${svg24(T.urgencia.icono || "reloj", 2.2)}<span>${T.urgencia.texto}</span><a class="boton boton-principal" data-tel href="tel:${tel}">${T.urgencia.boton || "Llámanos"}</a></p>` : ""}
+      ${T.urgencia ? `<p class="urgencia${T.urgencia.arriba ? " urgencia-arriba" : ""}">${svg24(T.urgencia.icono || "reloj", 2.2)}<span>${T.urgencia.texto}</span><a class="boton boton-principal" data-tel href="tel:${tel}">${T.urgencia.boton || "Llámanos"}</a></p>` : ""}
       <h1 id="titular" aria-label="${attr(T.titularAria)}"><span class="titular-fijo">${T.titularFijo}</span> <span class="gira" id="gira" aria-hidden="true"><span class="gira-pieza"><em>${esc(T.gira[0])}</em></span></span></h1>
       <p class="entrada entra" style="--i:1">${T.entrada}</p>
       <p class="precio-linea entra" style="--i:2">${T.precioLinea}</p>

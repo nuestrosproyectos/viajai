@@ -1,0 +1,3 @@
+Con calidades medias suele ir de 460 a 690 euros por metro cuadrado, unos cuarenta y un mil a sesenta y dos mil, y tarda tres a cinco meses. En pisos de los setenta aparecen tuberías viejas, por eso la visita gratis da el precio cerrado. ¿Qué acabados buscas?
+<ficha>{"obra":"Reforma integral de un piso entero","vivienda":"","metros":"90 metros","antiguedad":"Años 70","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Orientativo: unos 41.000 a 62.000 € con calidades medias. La visita gratis da el precio cerrado.","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>

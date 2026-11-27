@@ -49,7 +49,7 @@ img,svg{display:block;max-width:100%}
 a{color:inherit}
 button,input,textarea{font:inherit;color:inherit}
 button{cursor:pointer}
-:focus-visible{outline:3px solid var(--cobalto);outline-offset:3px;border-radius:6px}
+:focus-visible{outline:3px solid var(--foco,var(--cobalto));outline-offset:3px;border-radius:6px}
 .oculto{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .envol{width:100%;max-width:1160px;margin:0 auto;padding:0 16px}
 h1,h2,h3{font-family:var(--titular);font-stretch:112%;line-height:1.08;margin:0;letter-spacing:-.01em}

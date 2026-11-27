@@ -502,7 +502,7 @@ async function registrarAviso(aviso) {
     t.className = "tarjeta-aviso"; t.setAttribute("role", "status");
     const titulo = !guardado ? W.textos.preparada : fin.titulo;
     const pasos = fin.pasos;
-    t.innerHTML = `<h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></h4><p class="final-cifra"></p><p class="final-txt"></p><ol></ol><a class="boton boton-principal" target="_blank" rel="noopener">Guardarlo en WhatsApp</a>`;
+    t.innerHTML = `<h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></h4><p class="final-cifra"></p><p class="final-txt"></p><ol></ol><a class="boton boton-principal boton-wa" target="_blank" rel="noopener">Guardarlo en WhatsApp</a>`;
     t.querySelector("h4").append(titulo);
     t.querySelector(".final-cifra").textContent = "Nº de aviso " + numAviso;
     t.querySelector(".final-txt").textContent = resumen + (guardado ? "" : ". No hemos podido enviarla: mándanosla por WhatsApp para asegurarte.");

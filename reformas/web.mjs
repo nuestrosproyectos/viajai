@@ -173,6 +173,7 @@ export default function web(N) {
     },
     revelar: [],
     legal: {
+      emergencia: "Ante una emergencia (olor a gas, humo, riesgo eléctrico o peligro para alguien), llama al 112.",
       actividad: "es una empresa de reformas de viviendas y locales que trabaja en la provincia de " + N.provincia + ". Las mediciones, los presupuestos y las obras los hace siempre el equipo de la empresa.",
       orienta: "Te orienta de forma general sobre tu reforma (precios orientativos, plazos y trámites) y organiza la visita de medición.",
       decide: "el precio cerrado y lo que se puede hacer en tu casa los decide siempre un técnico después de la visita",

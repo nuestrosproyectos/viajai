@@ -1,0 +1,3 @@
+Una cocina completa suele quedar entre seis mil y diez mil euros, según los muebles y si se mueven fregadero o campana. Para el presupuesto cerrado, la visita de medición es gratis y el escrito llega unos cinco días laborables después. ¿Cuántos metros tiene más o menos la cocina?
+<ficha>{"obra":"reforma de cocina","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"Armilla","franja":"","inicio":"","orientacion":"Una cocina completa suele quedar entre seis mil y diez mil euros; después de la visita gratis llega el presupuesto por escrito.","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>

@@ -46,7 +46,7 @@ ${L.colegio ? `<li><b>Colegio profesional:</b> ${P(L.colegio)}</li>\n` : ""}<li>
 <p>${N.marca} ${L.actividad}${L.independiente ? " " + L.independiente : ""}</p>
 
 <h2>3. ${N.tecnico} es una inteligencia artificial</h2>
-<p>«${N.tecnico}», el asistente de la web, es un sistema de inteligencia artificial, no una persona. ${L.orienta} Puede equivocarse: <b>${L.decide}</b>. Ante una emergencia (olor a gas, humo, riesgo eléctrico o peligro para alguien), llama al 112.</p>
+<p>«${N.tecnico}», el asistente de la web, es un sistema de inteligencia artificial, no una persona. ${L.orienta} Puede equivocarse: <b>${L.decide}</b>. ${L.emergencia || "Si hay peligro para alguien, llama al 112."}</p>
 
 <h2>4. Precios y condiciones</h2>
 <ul>

@@ -1,0 +1,1882 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Abogados de accidentes de tráfico en Granada · Accidente Claro</title>
+<meta name="description" content="¿Has tenido un accidente de tráfico en Granada? Habla con Andrés, nuestro asistente: te dice qué hacer ahora, qué papeles guardar y te reserva la primera consulta gratis con un abogado.">
+<meta name="theme-color" content="#FFFFFF">
+<!-- Dirección del servidor del técnico en la web publicada (vacío en la vista previa). Ej.: /api -->
+<meta name="servidor-tecnico" content="">
+<!-- Llamada de voz en directo con LiveKit: dirección que entrega el pase (vacío = desactivado). Ej.: /api/livekit-token -->
+<meta name="livekit-token" content="">
+<meta property="og:title" content="Accidente Claro · Abogados de accidentes de tráfico en Granada">
+<meta property="og:description" content="Qué hacer después del accidente, qué no firmar y cómo se reclama a la aseguradora. Primera consulta gratis con el abogado.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="media/compartir.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231C2027'/%3E%3Cpath d='M9 28 13.5 4M23 28 18.5 4' stroke='%23fff' stroke-width='2.2' fill='none'/%3E%3Cpath d='M16 27v-4M16 18v-4M16 9V6' stroke='%23F2B705' stroke-width='2.6'/%3E%3C/svg%3E">
+<!-- Fuentes propias (sin Google Fonts): servidas desde la propia web -->
+<link rel="preload" href="fuentes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fuentes/barlow-sc-700.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Barlow Semi Condensed";src:url(fuentes/barlow-sc-700.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Barlow Semi Condensed";src:url(fuentes/barlow-sc-600.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Barlow Semi Condensed";src:url(fuentes/barlow-sc-800.woff2) format("woff2");font-weight:800;font-display:swap}
+@font-face{font-family:"Public Sans";src:url(fuentes/public-sans.woff2) format("woff2");font-weight:100 900;font-display:swap}
+/* =====================================================================
+   Diseño "taller con cal y almagra": cálido, legible y sin marear.
+   Pensado primero para el móvil (la mayoría entra desde el móvil).
+   Cobalto = todo lo que es el asistente. Almagra = acciones de la persona.
+===================================================================== */
+:root{
+  --fondo:#F5F1E8; --fondo-2:#ECE6D8; --fondo-3:#DED6C4; --tarjeta:#FFFDF8;
+  --tinta:#1D1B18; --tinta-2:#4A453D; --tinta-3:#615A4E;
+  --linea:#CFC6B3; --linea-fuerte:#8F8676;
+  --almagra:#B8432B; --almagra-pulsado:#963321; --almagra-suave:#F3DDD4; --sobre-almagra:#FFFFFF;
+  --cobalto:#1F4F8F; --cobalto-suave:#DCE6F3; --laton:#B48A2C;
+  --ok:#2E6B4E; --ok-suave:#DCEDE3; --rojo:#C0392B; --sobre-rojo:#FFFFFF;
+  --consola:#17202B; --consola-2:#212C39; --consola-txt:#F2ECE1; --consola-txt-2:#B9C2CC; --consola-linea:rgba(242,236,225,.16);
+  --titular:"Archivo",ui-sans-serif,system-ui,sans-serif;
+  --texto:"Atkinson Hyperlegible Next","Atkinson Hyperlegible",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  --sombra:0 1px 0 rgba(29,27,24,.08),0 12px 32px -18px rgba(29,27,24,.45);
+  --curva:cubic-bezier(.23,1,.32,1);
+  --barra-alto:68px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --fondo:#14120F; --fondo-2:#1C1915; --fondo-3:#2A251F; --tarjeta:#211D18;
+  --tinta:#F2ECE1; --tinta-2:#C9C0B2; --tinta-3:#A79E8F;
+  --linea:#433C33; --linea-fuerte:#7D7466;
+  --almagra:#E0654A; --almagra-pulsado:#EB8169; --almagra-suave:#3A2119; --sobre-almagra:#1D1B18;
+  --cobalto:#8DB2EA; --cobalto-suave:#1C2A3F; --laton:#D2AA52;
+  --ok:#5FC097; --ok-suave:#15291F; --rojo:#E5604F; --sobre-rojo:#1D1B18;
+  --consola:#0E1318; --consola-2:#18212A;
+  --sombra:0 1px 0 rgba(0,0,0,.4),0 14px 34px -18px rgba(0,0,0,.8);
+  color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --fondo:#14120F; --fondo-2:#1C1915; --fondo-3:#2A251F; --tarjeta:#211D18;
+  --tinta:#F2ECE1; --tinta-2:#C9C0B2; --tinta-3:#A79E8F; --linea:#433C33; --linea-fuerte:#7D7466;
+  --almagra:#E0654A; --almagra-pulsado:#EB8169; --almagra-suave:#3A2119; --sobre-almagra:#1D1B18;
+  --cobalto:#8DB2EA; --cobalto-suave:#1C2A3F; --laton:#D2AA52; --ok:#5FC097; --ok-suave:#15291F; --rojo:#E5604F; --sobre-rojo:#1D1B18;
+  --consola:#0E1318; --consola-2:#18212A; color-scheme:dark;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .tarjeta-andres,:root:not([data-theme="light"]) .cierre{background:#1B2230;border:1px solid rgba(255,255,255,.12)}}
+:root[data-theme="dark"] .tarjeta-andres{background:#1B2230;border:1px solid rgba(255,255,255,.12)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:84px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+body{margin:0;background:var(--fondo);color:var(--tinta);font:400 1.125rem/1.55 var(--texto);padding-bottom:calc(var(--barra-alto) + 16px + env(safe-area-inset-bottom))}
+@supports (font:-apple-system-body){body{font-size:max(1.125rem,1rem)}}
+body.en-conversacion{overflow:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--foco,var(--cobalto));outline-offset:3px;border-radius:6px}
+.oculto{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.envol{width:100%;max-width:1160px;margin:0 auto;padding:0 16px}
+h1,h2,h3{font-family:var(--titular);font-stretch:112%;line-height:1.08;margin:0;letter-spacing:-.01em}
+h1{font-weight:800;font-size:clamp(2rem,8.2vw,3.6rem);overflow-wrap:break-word}
+h2{font-weight:800;font-size:clamp(1.65rem,6.6vw,3rem);overflow-wrap:break-word}
+h3{font-weight:700;font-size:1.3rem}
+p{margin:0}
+.subrayado{background:linear-gradient(transparent 68%,color-mix(in srgb,var(--almagra) 32%,transparent) 68% 92%,transparent 92%)}
+
+/* --- botones --- */
+.boton{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:12px 22px;border-radius:12px;border:2px solid transparent;font-weight:700;font-size:1.125rem;text-decoration:none;line-height:1.2;text-align:center;white-space:normal;transition:transform .12s,background-color .15s,box-shadow .15s}
+.boton svg{width:24px;height:24px;flex:none}
+.boton-principal{background:var(--almagra);color:var(--sobre-almagra);box-shadow:0 3px 0 var(--almagra-pulsado)}
+.boton-principal:active{transform:translateY(2px);box-shadow:0 1px 0 var(--almagra-pulsado)}
+.boton-andres{background:var(--cobalto);color:#fff;box-shadow:0 3px 0 color-mix(in srgb,var(--cobalto) 70%,#000)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .boton-andres{color:#0E1318}}
+:root[data-theme="dark"] .boton-andres{color:#0E1318}
+.boton-andres:active{transform:translateY(2px)}
+.boton-borde{background:var(--tarjeta);color:var(--tinta);border-color:var(--linea-fuerte)}
+.boton-borde:active{background:var(--fondo-2)}
+.ancho{width:100%}
+
+/* --- franja de vista previa (solo en la vista previa) --- */
+.previa{background:var(--consola);color:var(--consola-txt);font-size:.9rem;text-align:center;padding:6px 16px}
+.previa b{color:#F0A28F}
+
+/* --- cabecera --- */
+.cab{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--fondo) 92%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .2s}
+.cab.con-borde{border-bottom-color:var(--linea)}
+.cab .envol{display:flex;align-items:center;justify-content:space-between;gap:12px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-marca{width:40px;height:40px;border-radius:10px;background:var(--almagra);display:grid;place-items:center;flex:none}
+.logo-marca svg{width:26px;height:26px}
+.logo-txt b{display:block;font-family:var(--titular);font-stretch:112%;font-weight:800;font-size:1.3rem;line-height:1}
+.logo-txt small{display:block;color:var(--tinta-3);font-size:.9rem;line-height:1.3}
+.cab-acciones{display:flex;gap:8px;align-items:center}
+.cab-llamar{min-height:48px;padding:8px 16px;font-size:1rem}
+.cab-hablar{display:none}
+
+/* --- portada --- */
+.portada{padding:16px 0 28px}
+.portada .envol{display:flex;flex-direction:column}
+.hero-a,.hero-b{display:contents}
+.urgencia{order:0}.portada h1{order:1}.portada .entrada{order:2}.precio-linea{order:3;margin-bottom:16px!important}.tarjeta-andres{order:4}.llamame-enlace{order:5}.confianza{order:6}
+.tarjeta-andres .ta-otras,.tarjeta-andres .ta-nota,.tarjeta-andres .ta-saludo{display:none}
+.precio-linea{padding:6px 12px;font-size:1rem}.precio-linea b{font-size:1.2rem}
+.portada h1{font-size:clamp(1.9rem,7.9vw,3.6rem)}
+.portada .entrada{font-size:1.1rem}
+.tarjeta-andres .ta-cab .orbe{--t:56px}
+.llamame-enlace{display:flex;align-items:center;min-height:48px;font-weight:700;color:var(--almagra);margin-top:6px}
+.solo-ordenador{display:none}
+.urgencia{display:flex;gap:10px;align-items:center;background:var(--almagra-suave);border-radius:12px;padding:8px 8px 8px 14px;font-size:1rem;margin:0 0 16px}
+.urgencia>span{flex:1}
+.urgencia .boton{min-height:48px;padding:6px 14px;font-size:1rem;flex:none}
+.urgencia svg{width:22px;height:22px;flex:none;margin-top:2px;color:var(--almagra)}
+.urgencia a{font-weight:700}
+.portada h1{margin-bottom:14px}
+.portada .entrada{font-size:1.2rem;color:var(--tinta-2);max-width:36ch}
+.precio-linea{display:flex;flex-wrap:wrap;gap:2px 10px;align-items:baseline;margin:16px 0 0;padding:8px 14px;border:2px dashed var(--laton);border-radius:12px;background:var(--tarjeta);font-size:1.05rem}
+.precio-linea b{font-family:var(--titular);font-stretch:112%;font-size:1.35rem}
+
+.tarjeta-andres{background:var(--consola);color:var(--consola-txt);border-radius:20px;padding:18px;box-shadow:var(--sombra)}
+.ta-cab{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.ta-cab .orbe{--t:64px}
+.ta-quien b{display:block;font-size:1.15rem}
+.ta-quien>span{color:var(--consola-txt-2);font-size:1rem}
+.ta-saludo{font-size:1.15rem;line-height:1.5;margin-bottom:16px}
+.tarjeta-andres .boton-hablar{width:100%;min-height:64px;font-size:1.25rem;border-radius:14px}
+.ta-otras{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.ta-otras .boton{min-height:52px;padding:8px;font-size:1rem;flex-direction:column;gap:2px;background:var(--consola-2);color:var(--consola-txt);border-color:var(--consola-linea)}
+.ta-otras .boton svg{width:22px;height:22px}
+.ta-nota{color:var(--consola-txt-2);font-size:.95rem;margin-top:12px}
+.confianza{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:10px}
+.confianza li{display:flex;gap:12px;align-items:center;font-size:1.05rem}
+.confianza svg{width:28px;height:28px;flex:none;color:var(--ok)}
+.confianza b{font-weight:700}
+
+/* --- orbe del asistente: la puerta de una lavadora --- */
+.orbe{--t:96px;width:var(--t);height:var(--t);border-radius:50%;flex:none;position:relative;background:conic-gradient(from 0deg,var(--laton) 0 2%,transparent 2% 8.33%) ,radial-gradient(circle at 50% 50%,#DCD3C1 0 58%,#B9AE98 58% 62%,#E9E1D0 62% 100%);box-shadow:inset 0 0 0 3px #8F8676,0 6px 18px -8px rgba(0,0,0,.5)}
+.orbe::before{content:"";position:absolute;inset:16%;border-radius:50%;background:radial-gradient(circle at 34% 30%,rgba(255,255,255,.55) 0 10%,transparent 26%),radial-gradient(circle,#2F68B5 0 40%,#1F4F8F 72%,#133561 100%);box-shadow:inset 0 0 0 3px rgba(0,0,0,.25);transition:transform .4s var(--curva)}
+.orbe .onda{position:absolute;inset:16%;border-radius:50%;display:flex;align-items:center;justify-content:center;gap:calc(var(--t)*.035)}
+.orbe .onda i{width:calc(var(--t)*.045);height:calc(var(--t)*.1);border-radius:9px;background:#fff;opacity:.9;transform:scaleY(var(--v,.4));transition:transform .08s}
+[data-estado="pensando"] .orbe::before{animation:centrifuga 1.6s linear infinite}
+[data-estado="hablando"] .orbe{box-shadow:inset 0 0 0 3px #8F8676,0 0 0 5px color-mix(in srgb,var(--cobalto) 45%,transparent),0 6px 18px -8px rgba(0,0,0,.5)}
+[data-estado="hablando"] .orbe .onda i{animation:habla .9s ease-in-out infinite}
+[data-estado="hablando"] .orbe .onda i:nth-child(2){animation-delay:.15s}[data-estado="hablando"] .orbe .onda i:nth-child(3){animation-delay:.3s}[data-estado="hablando"] .orbe .onda i:nth-child(4){animation-delay:.45s}
+[data-estado="escuchando"] .orbe{box-shadow:inset 0 0 0 3px #8F8676,0 0 0 5px color-mix(in srgb,var(--almagra) 50%,transparent),0 6px 18px -8px rgba(0,0,0,.5)}
+@keyframes centrifuga{to{transform:rotate(360deg)}}
+@keyframes habla{0%,100%{transform:scaleY(.35)}50%{transform:scaleY(1)}}
+
+/* --- secciones --- */
+.seccion{padding:40px 0}
+.seccion+.seccion{border-top:1px solid var(--linea)}
+.antetitulo{color:var(--almagra);font-weight:700;font-size:1rem;margin-bottom:8px}
+.cabecera-sec{margin-bottom:22px}
+.cabecera-sec .bajada{color:var(--tinta-2);margin-top:10px;max-width:46ch}
+.pasos{display:grid;gap:12px;counter-reset:paso;list-style:none;padding:0;margin:0}
+.paso{background:var(--tarjeta);border:1px solid var(--linea);border-radius:16px;padding:16px 16px 16px 64px;position:relative}
+.paso::before{counter-increment:paso;content:counter(paso);position:absolute;left:16px;top:16px;width:34px;height:34px;border-radius:50%;background:var(--cobalto-suave);color:var(--cobalto);display:grid;place-items:center;font-weight:700;font-family:var(--titular)}
+.paso h3{font-size:1.15rem;margin-bottom:4px}
+.paso p{color:var(--tinta-2);font-size:1.05rem}
+
+.precios{display:grid;gap:14px}
+.tarifa{background:var(--tarjeta);border:2px solid var(--linea-fuerte);border-radius:18px;padding:20px;position:relative;box-shadow:var(--sombra)}
+.tarifa .cifra{font-family:var(--titular);font-stretch:112%;font-weight:800;font-size:3.4rem;line-height:1}
+.tarifa .cifra small{font-size:1.6rem;margin-left:2px}
+.tarifa h3{margin:6px 0 8px}
+.tarifa p{color:var(--tinta-2)}
+.descuento{display:inline-block;margin-top:12px;background:var(--ok-suave);color:var(--ok);font-weight:700;border-radius:8px;padding:6px 10px}
+.lista-ok{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.lista-ok li{display:flex;gap:12px;align-items:flex-start;background:var(--tarjeta);border:1px solid var(--linea);border-radius:14px;padding:14px}
+.lista-ok svg{width:26px;height:26px;flex:none;color:var(--ok);margin-top:1px}
+
+.aparatos{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.aparato{display:flex;flex-direction:column;align-items:flex-start;gap:8px;min-height:112px;text-align:left;background:var(--tarjeta);border:1px solid var(--linea);border-radius:16px;padding:14px;font-weight:700;font-size:1.05rem;line-height:1.25}
+.aparato svg{width:40px;height:40px;color:var(--cobalto)}
+.aparato:active{background:var(--fondo-2)}
+.nota-sec{color:var(--tinta-2);font-size:1.05rem;margin-top:16px}
+.zona-caja{background:var(--tarjeta);border:1px solid var(--linea);border-radius:16px;padding:16px;margin-top:14px}
+.zona-caja b{display:block;margin-bottom:4px}
+.marcas-txt{color:var(--tinta-2);font-size:1.05rem}
+.aviso-indep{color:var(--tinta-3);font-size:.95rem;margin-top:12px}
+
+.faq{display:grid;gap:10px}
+.faq details{background:var(--tarjeta);border:1px solid var(--linea);border-radius:14px}
+.faq summary{list-style:none;cursor:pointer;padding:16px 48px 16px 16px;font-weight:700;position:relative;min-height:56px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);font-size:1.6rem;color:var(--almagra)}
+.faq details[open] summary::after{content:"–"}
+.faq details p{padding:0 16px 16px;color:var(--tinta-2)}
+
+.cierre{background:var(--consola);color:var(--consola-txt);border-radius:20px;padding:22px 18px}
+.cierre h2{margin-bottom:10px}
+.cierre p{color:var(--consola-txt-2)}
+.tel-grande{display:inline-block;font-family:var(--titular);font-stretch:112%;font-weight:800;font-size:2rem;margin:12px 0 18px;color:var(--consola-txt)}
+.form-rapido{display:grid;gap:12px;background:var(--consola-2);border-radius:16px;padding:16px}
+.form-rapido h3{font-size:1.2rem}
+.campo{display:grid;gap:6px}
+.campo>span{font-size:1rem;font-weight:700}
+.campo input{min-height:52px;width:100%;border-radius:10px;border:2px solid var(--linea-fuerte);background:var(--tarjeta);color:var(--tinta);padding:10px 12px;font-size:1.1rem}
+.cierre .campo input{border-color:#5E6B78;background:#0F161D;color:var(--consola-txt)}
+.legal{font-size:.95rem;color:var(--consola-txt-2)}
+.form-ok{display:none;padding:8px 0}
+#formLlamadaCaja.enviado .form-rapido{display:none}
+#formLlamadaCaja.enviado .form-ok{display:block}
+.trampa{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+
+.panel-dueno{margin-top:22px;background:var(--tarjeta);border:2px solid var(--laton);border-radius:16px;padding:16px}
+.envol-tabla{overflow-x:auto}
+.tabla-avisos{width:100%;border-collapse:collapse;font-size:.95rem;margin-top:10px}
+.tabla-avisos th,.tabla-avisos td{text-align:left;border-bottom:1px solid var(--linea);padding:8px;vertical-align:top}
+
+.pie{padding:32px 0 24px;border-top:1px solid var(--linea);color:var(--tinta-2);font-size:1rem}
+.pie .envol{display:grid;gap:18px}
+.pie b{color:var(--tinta)}
+
+/* --- barra fija inferior (móvil) --- */
+.barra-movil{transition:transform .25s var(--curva)}
+body:not(.barra-visible) .barra-movil{transform:translateY(110%)}
+.barra-movil{position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--tarjeta);border-top:1px solid var(--linea);padding:6px 8px calc(6px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:6px;box-shadow:0 -8px 24px -18px rgba(0,0,0,.5)}
+.barra-movil .boton{min-height:56px;padding:4px;font-size:.95rem;flex-direction:column;gap:2px;border-radius:12px}
+.barra-movil .boton svg{width:24px;height:24px}
+.barra-movil .boton-borde{border-width:1px}
+body.en-conversacion .barra-movil,body.con-mini .barra-movil{display:none}
+
+/* --- pastilla de conversación minimizada --- */
+.mini{position:fixed;left:8px;right:8px;bottom:calc(8px + env(safe-area-inset-bottom));z-index:41;display:none;align-items:center;gap:10px;background:var(--consola);color:var(--consola-txt);border-radius:16px;padding:8px 8px 8px 10px;box-shadow:var(--sombra)}
+body.con-mini .mini{display:flex}
+.mini .orbe{--t:44px}
+.mini-txt{flex:1;min-width:0;font-size:1rem;line-height:1.3}
+.mini-txt>b{display:block}
+.mini-txt>span{display:block;color:var(--consola-txt-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mini .boton{min-height:48px;padding:6px 12px;font-size:1rem}
+.mini .colgar{background:var(--rojo);color:var(--sobre-rojo)}
+.mini .mini-tel{width:48px;padding:0;background:var(--consola-2);color:var(--consola-txt);border-color:var(--consola-linea)}
+.mini[data-llamada="activa"] .mini-tel{display:none}
+.mini:not([data-llamada="activa"]) .colgar{display:none}
+
+/* =====================================================================
+   CONVERSACIÓN: pantalla completa en el móvil, panel lateral en ordenador
+===================================================================== */
+.conv{position:fixed;inset:0;z-index:50;background:var(--consola);color:var(--consola-txt);display:flex;flex-direction:column;height:100dvh;padding-top:env(safe-area-inset-top)}
+.conv[hidden]{display:none}
+.conv-cab{display:flex;align-items:center;gap:10px;padding:8px 10px;border-bottom:1px solid var(--consola-linea)}
+.conv-cab .orbe{--t:48px}
+.conv-quien{flex:1;min-width:0}
+.conv-quien b{display:block;font-size:1.1rem;line-height:1.2}
+.conv-estado{display:flex;align-items:center;gap:8px;color:var(--consola-txt-2);font-size:1rem}
+.conv-estado i{width:10px;height:10px;border-radius:50%;background:#4FBF85;flex:none}
+[data-estado="escuchando"] .conv-estado i{background:#F07A5E}
+[data-estado="hablando"] .conv-estado i{background:#8DB2EA}
+[data-estado="pensando"] .conv-estado i{background:#E5B85B}
+.conv-crono{font-variant-numeric:tabular-nums;margin-left:4px}
+.icono{width:48px;height:48px;border-radius:12px;border:1px solid var(--consola-linea);background:var(--consola-2);color:var(--consola-txt);display:grid;place-items:center;flex:none}
+.icono svg{width:24px;height:24px}
+.icono[aria-pressed="false"] .voz-on,.icono[aria-pressed="true"] .voz-off{display:none}
+.fases{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;padding:8px 12px 0}
+.fases span{height:5px;border-radius:3px;background:var(--consola-linea)}
+.fases span.hecha{background:#4FBF85}
+.fases-txt span.actual{color:var(--consola-txt);font-weight:700}
+.fases-txt{display:flex;justify-content:space-between;padding:4px 12px 0;color:var(--consola-txt-2);font-size:.875rem}
+
+/* solicitud que se va rellenando */
+.solicitud{margin:8px 10px 0;background:var(--consola-2);border:1px solid var(--consola-linea);border-radius:14px}
+.solicitud>summary{list-style:none;display:flex;align-items:center;gap:10px;padding:10px 12px;min-height:56px;cursor:pointer}
+.solicitud>summary::-webkit-details-marker{display:none}
+.solicitud>summary svg{width:24px;height:24px;flex:none;color:#E5B85B}
+.sol-resumen{flex:1;min-width:0;line-height:1.3}
+.sol-resumen b{display:block}
+.sol-resumen>span{display:block;color:var(--consola-txt-2);font-size:.95rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sol-flecha{transition:transform .2s}
+.solicitud[open] .sol-flecha{transform:rotate(180deg)}
+.sol-cuerpo{padding:0 12px 12px;max-height:46dvh;overflow:auto}
+.sol-diag{background:color-mix(in srgb,var(--cobalto) 22%,transparent);border-radius:10px;padding:10px 12px;margin-bottom:10px;font-size:1rem}
+.sol-diag[hidden]{display:none}
+.sol-campos{display:grid;gap:8px}
+.sol-campos .campo>span{font-size:.95rem;color:var(--consola-txt-2);font-weight:700;display:flex;justify-content:space-between}
+.sol-campos .campo input{background:#0F161D;color:var(--consola-txt);border-color:#5E6B78;min-height:48px;font-size:1.05rem}
+.sol-campos .campo.relleno input{border-color:#5FC097;animation:destello 1.2s}
+.sol-campos .campo.lleno>span::after{content:"✓";color:#5FC097}
+@keyframes destello{0%{box-shadow:0 0 0 0 rgba(95,192,151,.7)}100%{box-shadow:0 0 0 10px rgba(95,192,151,0)}}
+.sol-enviar{margin-top:12px}
+.sol-enviar[hidden]{display:none}
+
+/* conversación */
+.conv-chat{flex:1;overflow:auto;padding:14px 14px 8px;display:flex;flex-direction:column;gap:12px;overscroll-behavior:contain}
+.burbuja{max-width:92%;line-height:1.45;font-size:1.15rem;white-space:pre-wrap;overflow-wrap:anywhere}
+.burbuja.tec{align-self:flex-start;font-size:1.2rem}
+.burbuja.tec::before{content:attr(data-quien);display:block;font-size:.85rem;color:#8DB2EA;font-weight:700;margin-bottom:2px}
+.burbuja.cli{align-self:flex-end;background:var(--consola-2);border:1px solid var(--consola-linea);border-radius:14px 14px 4px 14px;padding:10px 14px;font-size:1.1rem}
+.burbuja.parcial{align-self:flex-end;color:var(--consola-txt-2);font-style:italic}
+.burbuja.sistema{align-self:center;text-align:center;color:var(--consola-txt-2);font-size:1rem;max-width:100%}
+.burbuja img{max-width:180px;border-radius:10px;margin-bottom:6px}
+.puntos{display:inline-flex;gap:5px}.puntos i{width:8px;height:8px;border-radius:50%;background:var(--consola-txt-2);animation:habla 1s infinite}
+.puntos i:nth-child(2){animation-delay:.15s}.puntos i:nth-child(3){animation-delay:.3s}
+.tarjeta-info{align-self:stretch;background:var(--tarjeta);color:var(--tinta);border-radius:14px;padding:14px;border-left:5px solid var(--laton)}
+.tarjeta-info small{display:block;color:var(--tinta-3);font-weight:700;font-size:.9rem;margin-bottom:4px}
+.tarjeta-info p{font-size:1.05rem}
+.tarjeta-info button{margin-top:10px;min-height:44px;background:none;border:0;padding:0;color:var(--almagra);font-weight:700;text-decoration:underline}
+.tarjeta-aviso{align-self:stretch;background:var(--ok-suave);color:var(--tinta);border-radius:16px;padding:16px}
+.tarjeta-aviso h4{display:flex;gap:8px;align-items:center;margin:0 0 6px;font-size:1.25rem;font-family:var(--titular);font-stretch:112%}
+.tarjeta-aviso h4 svg{width:26px;height:26px;color:var(--ok)}
+.tarjeta-aviso ol{margin:10px 0 12px;padding-left:22px;color:var(--tinta-2)}
+.tarjeta-aviso .boton{width:100%;margin-top:8px}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 12px 8px}
+.chips[hidden]{display:none}
+.chip{min-height:52px;border-radius:12px;border:1px solid var(--consola-linea);background:var(--consola-2);color:var(--consola-txt);font-size:1rem;padding:8px 10px;text-align:left;line-height:1.25}
+.adjunto{display:flex;align-items:center;gap:10px;margin:0 12px 8px;padding:8px;border-radius:12px;background:var(--consola-2)}
+.adjunto[hidden]{display:none}
+.adjunto img{width:48px;height:48px;object-fit:cover;border-radius:8px}
+.adjunto span{flex:1;font-size:1rem}
+.adjunto button{min-height:44px;background:none;border:0;color:#F0A28F;font-weight:700}
+
+/* escribir */
+.conv-escribir{display:flex;gap:8px;padding:8px 10px;border-top:1px solid var(--consola-linea)}
+.conv-escribir[hidden]{display:none}
+.conv-escribir:not([hidden])~.conv-mandos{display:none}
+.conv-escribir:not([hidden]){padding-bottom:calc(8px + env(safe-area-inset-bottom))}
+.conv-escribir input{flex:1;min-width:0;min-height:52px;border-radius:12px;border:2px solid #5E6B78;background:#0F161D;color:var(--consola-txt);padding:8px 12px;font-size:1.1rem}
+.conv-escribir .icono{width:52px;height:52px}
+.conv-escribir .enviar{background:var(--almagra);border-color:var(--almagra);color:var(--sobre-almagra)}
+
+/* mandos */
+.conv-mandos{display:grid;grid-template-columns:1fr auto 1fr;align-items:end;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));border-top:1px solid var(--consola-linea)}
+.mando{display:flex;flex-direction:column;align-items:center;gap:4px;background:none;border:0;color:var(--consola-txt);font-size:.95rem;min-height:72px;justify-content:flex-end}
+.mando .circ{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--consola-2);border:1px solid var(--consola-linea)}
+.mando svg{width:26px;height:26px}
+.mando[aria-pressed="true"] .circ{background:var(--consola-txt);color:var(--consola)}
+.mando-central .circ{width:76px;height:76px;background:var(--cobalto);border:0;color:#fff}
+.mando-central svg{width:34px;height:34px}
+[data-estado="escuchando"] .mando-central .circ{background:var(--almagra)}
+.conv[data-llamada="activa"] .mando-central .circ,.conv[data-llamada="conectando"] .mando-central .circ{background:var(--rojo);color:var(--sobre-rojo)}
+.mando-central .i-colgar,#btnSilenciar .i-sil{display:none}
+.conv[data-llamada="activa"] #btnSilenciar .i-sil{display:block}.conv[data-llamada="activa"] #btnSilenciar .i-foto{display:none}
+.conv[data-llamada="activa"] .mando-central .i-mic,.conv[data-llamada="conectando"] .mando-central .i-mic{display:none}
+.conv[data-llamada="activa"] .mando-central .i-colgar,.conv[data-llamada="conectando"] .mando-central .i-colgar{display:block}
+.conv-nota{color:var(--consola-txt-2);font-size:.9rem;text-align:center;padding:0 12px 6px}
+
+/* hojas: permiso de micrófono y llamada final */
+.hoja{position:absolute;inset:auto 0 0 0;z-index:5;background:var(--tarjeta);color:var(--tinta);border-radius:20px 20px 0 0;padding:20px 18px calc(18px + env(safe-area-inset-bottom));box-shadow:0 -20px 50px -10px rgba(0,0,0,.6);max-height:92dvh;overflow:auto}
+.hoja[hidden]{display:none}
+.hoja h3{font-size:1.45rem;margin-bottom:10px}
+.hoja p{color:var(--tinta-2);margin-bottom:12px}
+.hoja .boton{width:100%;margin-top:8px}
+.hoja ol{padding-left:22px;color:var(--tinta-2);margin:0 0 12px}
+.hoja .pareja{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.velo{position:absolute;inset:0;background:rgba(0,0,0,.5);z-index:4}
+.velo[hidden]{display:none}
+.final-cifra{font-family:var(--titular);font-stretch:112%;font-weight:800;color:var(--ok);font-size:1rem;margin-bottom:6px}
+.final-resumen{background:var(--fondo);border-radius:12px;padding:12px;margin-bottom:12px}
+.final-resumen dt{font-weight:700;font-size:.95rem;color:var(--tinta-3)}
+.final-resumen dd{margin:0 0 6px}
+
+/* el técnico señala algo en la página (ordenador) */
+.senalado{outline:4px solid var(--laton);outline-offset:6px;border-radius:14px;transition:outline-color .3s}
+.senal-etiqueta{position:absolute;top:-14px;right:12px;background:var(--laton);color:#1D1B18;font-weight:700;font-size:.9rem;padding:4px 10px;border-radius:8px}
+
+/* Mapa de la dirección de la visita (dentro de la solicitud) */
+.sol-mapa{margin:12px 0 0;border-radius:14px;overflow:hidden;border:1px solid var(--consola-linea);background:#0F161D;position:relative;min-height:200px;display:grid}
+.sol-mapa iframe{grid-area:1/1;width:100%;height:100%;min-height:220px;border:0;display:block;animation:mapa-entra .7s var(--curva)}
+.sol-mapa iframe[hidden],.mapa-espera[hidden],.sol-mapa figcaption[hidden]{display:none}
+.mapa-espera{grid-area:1/1;display:grid;place-content:center;justify-items:center;gap:4px;text-align:center;padding:20px;color:var(--consola-txt-2);font-size:.95rem;
+  background-image:linear-gradient(var(--consola-linea) 1px,transparent 1px),linear-gradient(90deg,var(--consola-linea) 1px,transparent 1px);background-size:38px 38px}
+.mapa-espera svg{width:36px;height:36px;color:#E5B85B;margin-bottom:4px}
+.mapa-espera b{color:var(--consola-txt);font-size:1.05rem}
+.sol-mapa figcaption{position:absolute;left:10px;right:10px;bottom:10px;background:rgba(23,32,43,.94);color:#F2ECE1;border-radius:10px;padding:8px 12px;font-size:.95rem;line-height:1.3}
+.sol-mapa figcaption b{display:block;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:#E5B85B}
+@keyframes mapa-entra{from{opacity:0;transform:scale(1.04)}to{opacity:1;transform:none}}
+.escenario{display:none}
+
+/* ======================= ORDENADOR ======================= */
+@media (min-width:900px){
+  /* Escenario: la conversación a la izquierda y la solicitud en grande, con el mapa, ocupando el resto */
+  body.escenario-on{overflow:hidden}
+  .escenario{display:block;position:fixed;inset:0;z-index:49;background:radial-gradient(1100px 700px at 72% 0%,#2A3B52 0,#141B24 62%);animation:esc-fondo .35s ease-out}
+  .escenario[hidden]{display:none}
+  body.escenario-on .conv{inset:20px auto 20px 20px;width:430px;height:auto;animation:esc-conv .45s var(--curva)}
+  .esc-panel{position:absolute;inset:20px 20px 20px 470px;background:var(--tarjeta);color:var(--tinta);border-radius:22px;box-shadow:0 30px 80px -20px rgba(0,0,0,.65);display:flex;flex-direction:column;overflow:hidden;animation:esc-entra .55s var(--curva)}
+  .esc-cab{display:flex;align-items:center;gap:16px;padding:22px 28px 18px;border-bottom:1px solid var(--linea)}
+  .esc-cab small{display:block;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--almagra)}
+  .esc-cab h2{font:800 clamp(1.5rem,2.3vw,2.2rem)/1.1 var(--titular);margin:4px 0 0}
+  .esc-estado{margin-left:auto;display:inline-flex;align-items:center;gap:8px;background:var(--cobalto-suave);color:var(--cobalto);font-weight:700;border-radius:999px;padding:8px 14px;font-size:.95rem;white-space:nowrap}
+  .esc-estado i{width:10px;height:10px;border-radius:50%;background:currentColor;animation:esc-pulso 1.3s ease-in-out infinite}
+  .escenario[data-estado="enviada"] .esc-estado{background:var(--ok-suave);color:var(--ok)}
+  .escenario[data-estado="enviada"] .esc-estado i{animation:none}
+  .esc-cerrar{min-height:44px;padding:6px 14px;font-size:1rem}
+  .esc-hueco{flex:1;min-height:0;position:relative}
+  .esc-pie{display:flex;justify-content:space-between;gap:16px;padding:12px 28px;border-top:1px solid var(--linea);color:var(--tinta-3);font-size:.95rem}
+  .esc-pie #escAviso{font-weight:700;color:var(--tinta-2);white-space:nowrap}
+  /* la solicitud, ya dentro del escenario */
+  .escenario .solicitud{margin:0;border:0;background:none;border-radius:0}
+  .escenario .solicitud>summary{display:none}
+  .escenario .sol-cuerpo{position:absolute;inset:0;max-height:none;overflow:auto;padding:24px 28px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);grid-template-rows:auto 1fr;gap:20px 30px}
+  .escenario .sol-diag{grid-column:1/-1;margin:0;background:var(--cobalto-suave);color:var(--tinta);font-size:1.05rem;padding:12px 16px}
+  .escenario .sol-cuerpo>form{grid-column:1;display:flex;flex-direction:column;min-height:0}
+  .escenario .sol-campos{grid-template-columns:1fr 1fr;gap:6px 22px;align-content:start}
+  .escenario .sol-campos .campo{position:relative;gap:0;padding:10px 0 4px;border-bottom:2px solid var(--linea)}
+  .escenario .sol-campos .campo:nth-child(3),.escenario .sol-campos .campo:nth-child(6),.escenario .sol-campos .campo:nth-child(8){grid-column:1/-1}
+  .escenario .sol-campos .campo>span{font-size:.78rem;letter-spacing:.11em;text-transform:uppercase;color:var(--tinta-3)}
+  .escenario .sol-campos .campo input{background:none;border:0;border-radius:0;padding:0;min-height:44px;color:var(--tinta);font:700 1.4rem/1.2 var(--titular)}
+  .escenario .sol-campos .campo input::placeholder{color:var(--linea-fuerte);font:400 1.05rem var(--texto)}
+  .escenario .sol-campos .campo input:focus-visible{outline:0}
+  .escenario .sol-campos .campo:focus-within{border-bottom-color:var(--cobalto)}
+  .escenario .sol-campos .campo.lleno{border-bottom-color:var(--ok)}
+  .escenario .sol-campos .campo.lleno>span::after{color:var(--ok);font-size:1rem}
+  .escenario .sol-campos .campo.relleno input{animation:none}
+  .escenario .sol-campos .campo.relleno::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:3px;background:var(--laton);transform-origin:left;animation:esc-linea 1.1s var(--curva) both}
+  .escenario .sol-enviar{margin-top:auto}
+  .escenario .sol-mapa{grid-column:2;margin:0;min-height:300px;border-color:var(--linea);background:var(--fondo-2);border-radius:18px}
+  .escenario .sol-mapa iframe{min-height:0}
+  .escenario .mapa-espera{color:var(--tinta-3);background-image:linear-gradient(var(--linea) 1px,transparent 1px),linear-gradient(90deg,var(--linea) 1px,transparent 1px)}
+  .escenario .mapa-espera b{color:var(--tinta)}.escenario .mapa-espera svg{color:var(--almagra)}
+  @keyframes esc-fondo{from{opacity:0}to{opacity:1}}
+  @keyframes esc-entra{from{opacity:0;transform:translateX(48px) scale(.98)}to{opacity:1;transform:none}}
+  @keyframes esc-conv{from{opacity:.4;transform:translateX(60px)}to{opacity:1;transform:none}}
+  @keyframes esc-linea{0%{transform:scaleX(0);opacity:1}70%{transform:scaleX(1);opacity:1}100%{transform:scaleX(1);opacity:0}}
+  @keyframes esc-pulso{50%{opacity:.35}}
+
+  body{padding-bottom:0}
+  .barra-movil{display:none}
+  .cab-hablar{display:inline-flex}
+  .cab .envol{height:76px}
+  .portada{padding:40px 0 56px}
+  .portada .envol{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+  .hero-a,.hero-b{display:block}
+  .urgencia{margin:0 0 18px}.precio-linea{display:inline-flex;margin:16px 0 0}.portada .entrada{margin-bottom:0}
+  .solo-ordenador{display:inline}
+  .tarjeta-andres .ta-otras{display:grid}.tarjeta-andres .ta-nota,.tarjeta-andres .ta-saludo{display:block}.tarjeta-andres .ta-cab .orbe{--t:64px}
+  body.en-conversacion .tarjeta-andres{visibility:hidden}
+  .portada .entrada{font-size:1.3rem}
+  .seccion{padding:72px 0}
+  .pasos{grid-template-columns:repeat(3,1fr)}
+  .precios{grid-template-columns:.9fr 1.1fr;align-items:start}
+  .aparatos{grid-template-columns:repeat(4,1fr)}
+  .cierre{display:grid;grid-template-columns:1fr 1fr;gap:32px;padding:36px}
+  .pie .envol{grid-template-columns:2fr 1fr 1fr}
+  .conv{inset:auto 20px 20px auto;width:430px;height:min(760px,calc(100vh - 116px));border-radius:22px;box-shadow:0 30px 80px -20px rgba(0,0,0,.6);overflow:hidden}
+  body.en-conversacion{overflow:auto}
+  .mini{left:auto;right:20px;bottom:20px;width:380px}
+  .faq{max-width:820px}
+}
+
+/* =====================================================================
+   PIEL COMÚN DE LA FÁBRICA (sacada de la piel «claro» de Reparo y Herencias)
+   Va después de nucleo.css. Cada web pone sus colores y letras en su estilo.css
+   (variables de :root) y, si quiere, algún detalle propio.
+   Variables opcionales con valor por defecto: --cobalto-pulsado, --urgencia-fondo,
+   --urgencia-borde, --consola-acento, --cab-fondo.
+   ===================================================================== */
+html,body{overflow-x:clip}
+body{background:var(--fondo)}
+::selection{background:var(--acento);color:#fff}
+/* lo que es del asistente, en azul Sierra */
+.boton-andres{background:var(--cobalto)!important;color:var(--sobre-cobalto,#fff)!important;box-shadow:0 1px 0 var(--cobalto-pulsado,#244968)!important}
+.boton-andres:active{background:var(--cobalto-pulsado,#244968)!important}
+
+/* ---------- letras ---------- */
+h1,h2,h3{font-family:var(--texto);font-stretch:normal;font-weight:700;letter-spacing:-.022em;line-height:1.08;text-wrap:balance}
+h1{font-size:clamp(2.1rem,8.4vw,4rem)}
+h2{font-size:clamp(1.7rem,5.8vw,2.7rem)}
+h1 em,h2 em,.subrayado{font-style:normal;color:var(--acento);background:none}
+.bajada,.portada .entrada{text-wrap:pretty}
+.cabecera-sec .antetitulo{display:none}
+.logo-txt b{font-family:var(--texto);font-stretch:normal;font-weight:700}
+
+/* ---------- botones ---------- */
+.boton{border-radius:999px}
+.boton-principal,.boton-andres{background:var(--acento);color:#fff;box-shadow:0 1px 0 var(--acento-pulsado)}
+.boton-principal:active,.boton-andres:active{background:var(--acento-pulsado);transform:translateY(1px);box-shadow:none}
+.boton-borde{border-color:var(--linea-fuerte);background:var(--tarjeta);color:var(--tinta)}
+
+/* ---------- franja de arriba con horario y teléfono (como cualquier negocio de verdad) ---------- */
+.franja-info{background:var(--consola);color:var(--consola-txt);font-size:.92rem}
+.franja-info .envol{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:38px}
+.franja-info a{color:#fff;font-weight:700;text-decoration:none;white-space:nowrap}
+.franja-info .fi-horario{color:var(--consola-txt-2)}
+@media (max-width:560px){.franja-info .fi-horario{display:none}.franja-info .envol{justify-content:center}}
+
+/* ---------- cabecera ---------- */
+.cab{background:var(--cab-fondo,rgba(255,255,255,.94));backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--linea)}
+.logo-marca{border-radius:10px;background:var(--acento)}
+.previa{background:var(--consola);border-bottom:1px solid var(--linea)}
+.previa b{color:var(--consola-acento,#9CC2F0)}
+
+/* ---------- PORTADA: texto a la izquierda, foto real y el asistente a la derecha ---------- */
+.portada{padding:22px 0 34px;background:var(--tarjeta);border-bottom:1px solid var(--linea)}
+.sobretitulo{order:0;display:block;margin:0 0 10px;font-size:.95rem;font-weight:700;color:var(--acento)}
+.urgencia{order:8!important;background:var(--urgencia-fondo,#FCEDEB);border:1px solid var(--urgencia-borde,#F1C9C4);border-radius:var(--r-tarjeta);margin:18px 0 0}
+.urgencia svg{color:var(--rojo)}
+.portada h1{order:1;margin-bottom:14px}
+.portada .entrada{font-size:1.15rem;color:var(--tinta-2);max-width:36ch}
+.precio-linea{border:1px solid var(--linea);border-radius:var(--r-campo);background:var(--fondo);padding:10px 14px}
+.precio-linea b{font-family:var(--texto);font-weight:700;font-size:1.25rem;color:var(--tinta)}
+.tarjeta-andres{order:4;border-radius:var(--r-tarjeta);box-shadow:var(--sombra)}
+.tarjeta-andres .boton-hablar{border-radius:999px}
+.hero-foto{order:5;margin:16px 0 0;border-radius:var(--r-tarjeta);overflow:hidden;aspect-ratio:16/10;background:var(--fondo-2)}
+.hero-foto img{width:100%;height:100%;object-fit:cover;object-position:40% 50%;display:block}
+.llamame-enlace{order:6;color:var(--acento)}
+.confianza{order:7;gap:0;margin-top:14px;border-top:1px solid var(--linea)}
+.confianza li{padding:12px 0;border-bottom:1px solid var(--linea)}
+.confianza svg{color:var(--acento)}
+.cine-fondo,.grano{display:none}
+
+/* ---------- secciones ---------- */
+.seccion{padding:56px 0}
+.seccion+.seccion{border-top:1px solid var(--linea)}
+#como,#preguntas{background:var(--tarjeta)}
+.cabecera-sec{margin-bottom:26px}
+.aparato,.paso,.tarifa,.lista-ok li,.zona-caja,.faq details{background:var(--tarjeta);border:1px solid var(--linea);border-radius:var(--r-tarjeta);box-shadow:none;transition:border-color .2s,box-shadow .2s}
+.aparato svg{color:var(--acento)}
+@media (hover:hover){.aparato:hover{border-color:var(--acento);box-shadow:0 0 0 1px var(--acento)}}
+.paso::before{background:var(--acento);color:#fff}
+.tarifa{border-color:var(--acento);border-width:2px}
+.tarifa .cifra{font-family:var(--texto);font-weight:700;font-size:clamp(3.4rem,15vw,5.4rem);letter-spacing:-.04em;color:var(--tinta)}
+.tarifa .cifra small{font-size:.4em;color:var(--tinta-2)}
+.descuento{border-radius:999px;padding:8px 14px}
+.lista-ok svg{color:var(--ok)}
+.faq summary{font-size:1.08rem}
+.faq summary::after{color:var(--acento)}
+.campo input{border-radius:var(--r-campo)}
+.cierre{border-radius:var(--r-tarjeta)}
+.pie{background:var(--tarjeta)}
+
+/* Aparatos con foto real: la foto llena la tarjeta y el nombre va abajo sobre una franja oscura */
+.aparatos{gap:10px}
+.aparato.aparato-foto{position:relative;display:block;padding:0;min-height:0;aspect-ratio:1/1;overflow:hidden;border:0;background:var(--fondo-2);isolation:isolate;cursor:pointer}
+.aparato-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s var(--curva)}
+.aparato-foto img+svg{display:none}
+.aparato-foto svg{position:absolute;top:14px;left:14px;width:36px;height:36px}
+.aparato-foto::after{content:"";position:absolute;inset:auto 0 0 0;height:55%;background:linear-gradient(180deg,rgba(20,25,31,0),rgba(20,25,31,.78));z-index:1}
+.aparato-nombre{position:absolute;left:12px;right:12px;bottom:10px;z-index:2;color:#fff;font-weight:700;font-size:1.05rem;line-height:1.2;text-align:left}
+.aparato-foto:focus-visible{outline:3px solid var(--acento);outline-offset:3px}
+@media (hover:hover){.aparato-foto:hover{box-shadow:none}.aparato-foto:hover img{transform:scale(1.05)}}
+#noReparamos{font-size:.98rem;color:var(--tinta-3)}
+@media (min-width:900px){.aparatos{gap:14px}.aparato-nombre{font-size:1.15rem;left:16px;bottom:14px}}
+
+/* Fotos de trabajo: debajo de «cómo funciona», con una frase sencilla debajo de cada una */
+.trabajo{display:grid;gap:14px;margin-top:26px}
+.trabajo figure{margin:0;background:var(--fondo);border:1px solid var(--linea);border-radius:var(--r-tarjeta);overflow:hidden}
+.trabajo img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.trabajo figcaption{padding:12px 14px;font-size:1rem;color:var(--tinta-2)}
+
+/* ---------- movimiento justo (y nada si el visitante pide menos movimiento) ---------- */
+.palabra{display:inline-block;overflow:clip;vertical-align:bottom;padding:0 .03em .08em;margin:0 -.03em -.08em}
+.palabra>span{display:inline-block}
+@media (prefers-reduced-motion:no-preference){
+  .cine .palabra>span{transform:translateY(110%);transition:transform .8s var(--curva);transition-delay:calc(var(--i)*50ms + 60ms)}
+  .cine.listo .palabra>span{transform:none}
+  .cine .entra{opacity:0;transform:translateY(10px);transition:opacity .6s var(--curva),transform .6s var(--curva);transition-delay:calc(var(--i,0)*70ms + 180ms)}
+  .cine.listo .entra{opacity:1;transform:none}
+  .rev{opacity:0;transform:translateY(16px);transition:opacity .6s var(--curva),transform .6s var(--curva);transition-delay:calc(var(--i,0)*50ms)}
+  .rev.ver{opacity:1;transform:none}
+}
+
+/* titular que gira: «¿Se te ha averiado» fijo y debajo el aparato */
+.titular-fijo{white-space:nowrap}
+.junto{white-space:nowrap}
+.gira{display:block;overflow:hidden;white-space:nowrap;max-width:100%;padding:.06em 0 .12em;margin:-.06em 0 -.12em;perspective:600px}
+.gira-pieza{display:inline-block;transform-origin:50% 100%;transition:transform .55s var(--curva),opacity .4s ease}
+.gira-pieza.sale{transform:translateY(-105%) rotateX(55deg);opacity:0}
+.gira-pieza.espera{transform:translateY(105%) rotateX(-55deg);opacity:0;transition:none}
+@media (prefers-reduced-motion:no-preference){
+  .cine .gira{opacity:0;transform:translateY(10px);transition:opacity .6s var(--curva),transform .6s var(--curva);transition-delay:.25s}
+  .cine.listo .gira{opacity:1;transform:none}
+}
+.hero-a,.portada .envol>*{min-width:0}
+/* seguro: la portada nunca se queda en blanco aunque la animación no llegue a correr */
+.cine.hecho .entra,.cine.hecho .palabra>span,.cine.hecho .gira{opacity:1!important;transform:none!important;transition:none!important}
+
+/* ---------- escenario de la solicitud y el mapa, en claro ---------- */
+.sol-mapa{border-radius:var(--r-tarjeta)}
+.sol-mapa figcaption b{color:var(--consola-acento,#9CC2F0)}
+.mapa-espera svg{color:var(--consola-txt-2)}
+.solicitud>summary svg{color:var(--consola-txt-2)}
+
+/* aviso del micrófono hablado por el asistente */
+.hm-pista{display:flex;align-items:center;gap:10px;margin:12px 0 14px;font-weight:700;color:var(--tinta)}
+.hm-pista[hidden]{display:none}
+.hm-punto{width:12px;height:12px;border-radius:50%;background:var(--acento);flex:none;animation:hm-late 1.1s ease-in-out infinite}
+@keyframes hm-late{50%{transform:scale(.55);opacity:.5}}
+@media (prefers-reduced-motion:reduce){.hm-punto{animation:none}}
+.hoja .boton[hidden]{display:none}
+
+/* ======================= ORDENADOR ======================= */
+@media (min-width:900px){
+  .portada{padding:52px 0 60px}
+  /* dos columnas equilibradas: arriba texto frente a la foto; abajo las ventajas frente a la tarjeta del asistente */
+  .portada .envol{grid-template-columns:1.05fr .95fr;grid-template-areas:"texto foto" "datos andres" "enlace andres";column-gap:56px;row-gap:0;align-items:start}
+  .portada h1{font-size:clamp(2.3rem,3.5vw,3.5rem)}
+  .portada .entrada{font-size:1.25rem}
+  .urgencia{border-radius:999px;margin:28px 0 0;max-width:max-content;padding-left:18px}
+  /* texto centrado en altura frente a la foto, con el aviso de urgencia al final */
+  .hero-a{grid-area:texto;display:flex;flex-direction:column;align-self:center}
+  .hero-a .precio-linea{align-self:flex-start}
+  /* la foto arriba a la derecha y la tarjeta del asistente montada encima de su parte baja */
+  .hero-b{display:contents}
+  .hero-foto{grid-area:foto;order:0;margin:0;aspect-ratio:4/3}
+  .tarjeta-andres{grid-area:andres;order:1;margin:-110px 22px 0;position:relative}
+  .confianza{grid-area:datos;order:2;margin:34px 0 0;align-self:start;max-width:520px}
+  .llamame-enlace{grid-area:enlace;order:3;margin:18px 0 0;align-self:start}
+  .seccion{padding:88px 0}
+  .cabecera-sec{margin-bottom:36px}
+  .cabecera-sec h2{max-width:20ch}
+  .cabecera-sec .bajada{max-width:46ch}
+  .trabajo{grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+  .escenario{background:var(--fondo-2)}
+  .esc-panel{border:1px solid var(--linea);border-radius:var(--r-tarjeta);box-shadow:var(--sombra)}
+  body.escenario-on .conv{border-radius:var(--r-tarjeta)}
+  .esc-cab small{color:var(--acento);letter-spacing:.08em}
+  .esc-cab h2{font-size:clamp(1.6rem,2.2vw,2.1rem)}
+  .esc-estado{background:var(--acento-suave);color:var(--acento)}
+  .esc-estado i{background:var(--acento)}
+  .escenario[data-estado="enviada"] .esc-estado{background:var(--ok-suave);color:var(--ok)}
+  .escenario[data-estado="enviada"] .esc-estado i{background:var(--ok)}
+  .escenario .sol-diag{background:var(--acento-suave)}
+  .escenario .sol-campos .campo input{font-family:var(--texto);font-weight:700;font-size:1.3rem;letter-spacing:-.01em}
+  .escenario .sol-campos .campo:focus-within{border-bottom-color:var(--acento)}
+  .escenario .sol-campos .campo.relleno::after{background:var(--acento)}
+  .escenario .mapa-espera svg{color:var(--acento)}
+  .escenario .sol-cuerpo{grid-template-rows:auto minmax(0,1fr)}
+  .escenario .sol-mapa{min-height:min(560px,62vh);align-self:stretch}
+  .escenario .sol-mapa figcaption b{color:var(--consola-acento,#9CC2F0)}
+}
+
+/* ---------- ruta de la furgoneta en la tarjeta «¡Listo! Visita pedida» (ilustrativa: no es seguimiento en directo) ---------- */
+.ruta{margin:12px 0 4px;border-radius:14px;overflow:hidden;background:var(--tarjeta);border:1px solid var(--linea)}
+.ruta svg{display:block;width:100%;height:auto}
+.ruta .r-manzana{fill:var(--fondo-2)}
+.ruta .r-calle{stroke:var(--fondo-3);stroke-width:7;fill:none;stroke-linecap:round}
+.ruta .r-camino{stroke:var(--acento);stroke-width:3.5;fill:none;stroke-dasharray:7 7;stroke-linecap:round}
+.ruta .r-taller{fill:var(--tinta-2)}
+.ruta .r-casa{fill:var(--acento)}
+.ruta .r-texto{font:700 11px var(--texto, system-ui);fill:var(--tinta)}
+.ruta .r-onda{fill:none;stroke:var(--acento);stroke-width:2;opacity:0;transform-box:fill-box;transform-origin:center}
+.ruta.llegado .r-onda{animation:r-llega 1.6s ease-out 2}
+@keyframes r-llega{0%{opacity:.8;transform:scale(.6)}100%{opacity:0;transform:scale(2.4)}}
+.ruta .f-cuerpo{fill:#FFFFFF;stroke:var(--tinta-2);stroke-width:1.2}
+.ruta .f-franja{fill:var(--acento)}
+.ruta .f-cristal{fill:#BFD3E6}
+.ruta .f-rueda{fill:var(--tinta)}
+.ruta figcaption{padding:10px 14px 12px;border-top:1px solid var(--linea);font-size:1rem;line-height:1.35;color:var(--tinta-2)}
+.ruta figcaption b{display:block;color:var(--tinta);font-size:1.08rem}
+@media (prefers-reduced-motion:reduce){.ruta.llegado .r-onda{animation:none}}
+
+/* =====================================================================
+   Piezas de las webs de la fábrica (situaciones, bloque de datos y lista de lo que hay que preparar)
+   ===================================================================== */
+/* casillas de situación: con dibujo, sin foto */
+.aparato:not(.aparato-foto) .aparato-nombre{position:static;color:var(--tinta);font-size:1.05rem;text-align:left}
+.aparato:not(.aparato-foto) svg{color:var(--acento)}
+@media (hover:hover){.aparato:not(.aparato-foto):hover{border-color:var(--acento)}}
+
+/* bloque de datos del sector (impuesto, precios orientativos, plazos…): casos tipo con su cifra */
+.bloque-datos{display:grid;gap:12px}
+.bd-caso{background:var(--tarjeta);border:1px solid var(--linea);border-radius:var(--r-tarjeta);padding:16px 18px;display:grid;gap:4px}
+.bd-caso b{font-size:1.05rem}
+.bd-caso .bd-cifra{font-size:1.6rem;font-weight:700;color:var(--acento);line-height:1.15;font-variant-numeric:tabular-nums}
+.bd-caso p{color:var(--tinta-2);font-size:1rem}
+.seccion-datos .aviso-indep{margin-top:14px;font-size:.95rem;color:var(--tinta-3)}
+@media (min-width:900px){.bloque-datos{grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}}
+
+/* lo que el cliente debe preparar (en lugar del mapa de la visita) */
+.sol-docs{display:block;min-height:0;padding:14px 16px;background:var(--consola-2)}
+.sol-docs figcaption{position:static;background:none;padding:0;margin:0 0 10px;color:var(--consola-txt-2);font-size:.95rem}
+.sol-docs figcaption b{display:block;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:2px}
+.sol-docs ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.sol-docs li{display:grid;gap:1px;padding-left:26px;position:relative;color:var(--consola-txt);font-size:1rem;line-height:1.35}
+.sol-docs li::before{content:"";position:absolute;left:2px;top:4px;width:14px;height:14px;border:2px solid var(--consola-txt-2);border-radius:4px}
+.sol-docs li span{color:var(--consola-txt-2);font-size:.92rem}
+@media (min-width:900px){
+  .escenario .sol-docs{background:var(--tarjeta);border:1px solid var(--linea);padding:22px 24px;overflow:auto}
+  .escenario .sol-docs figcaption{color:var(--tinta-3)}
+  .escenario .sol-docs figcaption b{color:var(--acento)}
+  .escenario .sol-docs li{color:var(--tinta);font-size:1.05rem}
+  .escenario .sol-docs li span{color:var(--tinta-3)}
+  .escenario .sol-docs li::before{border-color:var(--acento)}
+}
+/* solicitud en grande (ordenador): a lo ancho los campos que llevan frases (los marca la web con «ancho») */
+@media (min-width:900px){
+  .escenario .sol-campos .campo:nth-child(n){grid-column:auto}
+  .escenario .sol-campos .campo.campo-ancho{grid-column:1/-1}
+}
+
+/* franja de la vista previa con lo que sigue PENDIENTE (solo la ve el dueño en la vista privada) */
+.previa{position:relative}
+.previa-pend summary{list-style:none;cursor:pointer}
+.previa-pend summary::-webkit-details-marker{display:none}
+.previa-pend u{text-underline-offset:3px;font-weight:700}
+.previa-pend ul{position:absolute;z-index:60;left:8px;right:8px;top:100%;margin:4px auto 0;max-width:640px;max-height:60vh;overflow:auto;padding:12px 14px 12px 32px;text-align:left;background:var(--tarjeta);color:var(--tinta);border:1px solid var(--linea);border-radius:var(--r-tarjeta,12px);box-shadow:var(--sombra);font-size:.95rem;line-height:1.4}
+.previa-pend li+li{margin-top:6px}
+.previa-pend small{opacity:.75;font-size:.85em}
+
+/* móviles de pantalla baja (iPhone con barras, Android pequeños): la portada se compacta un poco
+   para que «Hablar con …» se vea sin bajar (comprobado con fabrica/probar-web.mjs) */
+@media (max-width:560px){
+  .portada{padding-top:14px}
+  .sobretitulo{font-size:.88rem;margin-bottom:6px}
+  .portada h1{margin-bottom:10px}
+  .portada .entrada{font-size:1.06rem;line-height:1.45}
+  .precio-linea{padding:8px 12px;margin-top:12px}
+  .precio-linea b{font-size:1.12rem}
+}
+@media (max-width:560px) and (max-height:700px){
+  .portada .entrada{display:none}
+  .ta-quien>span{display:none}
+}
+
+/* aviso de urgencia arriba del todo (webs de urgencias: textos.urgencia.arriba) */
+.urgencia.urgencia-arriba{order:-1!important;margin:0 0 14px}
+@media (min-width:900px){.urgencia.urgencia-arriba{margin:0 0 22px}}
+
+</style>
+<!-- Piel propia de esta web: colores, letras y detalles -->
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div class="previa" id="previa" hidden><details class="previa-pend"><summary>Vista previa · <u>20 datos pendientes</u> <small>(toca para verlos)</small></summary><ul><li>marca (accidenteclaro.es y .com libres el 27-11-2026; falta mirar la OEPM y EUIPO, clases 45 y 35)</li><li>confirmar zona (costa, Baza, Guadix, Loja) y si se atienden accidentes de fuera de Granada</li><li>teléfono real del despacho</li><li>mismo teléfono en formato internacional</li><li>WhatsApp real (sin + ni espacios)</li><li>horario del despacho</li><li>confirmar el Colegio del abogado responsable</li><li>número de colegiado (la publicidad debe indicar el Colegio; art. 6.3 del Código Deontológico)</li><li>confirmar que la primera consulta es gratuita (en Granada lo es en todos los despachos del sector)</li><li>duración real de la primera consulta</li><li>modalidades reales de la consulta y dirección del despacho</li><li>en cuántos días se hace la primera consulta</li><li>porcentaje del despacho y si lleva IVA (mercado orientativo: 15-20 %, franja 10-30 %)</li><li>confirmar que el despacho no cobra honorarios si no hay indemnización</li><li>quién paga perito médico, procurador y costas si hay juicio</li><li>años reales del abogado o del despacho</li><li>casos que no lleva el despacho (vía penal, fallecimientos, grandes lesionados, defensa del culpable)</li><li>confirmar plazos de conservación con el despacho</li><li>que el abogado confirme las cuatro cuantías diarias en la tabla 3.B de la resolución de la DGSFP de 2026</li><li>que el despacho revise y feche las preguntas frecuentes (sobre todo plazos y honorarios)</li></ul></details></div>
+
+<!-- Franja de arriba: horario y teléfono, como cualquier negocio de verdad -->
+<div class="franja-info"><div class="envol"><span class="fi-horario" id="fiHorario">De lunes a viernes de 9:00 a 14:00 y de 16:30 a 19:30</span><a data-tel href="tel:+34958000000">Llámanos: <span data-n="telefono">958 00 00 00</span></a></div></div>
+
+<header class="cab" id="cab">
+  <div class="envol">
+    <a class="logo" href="#" aria-label="Inicio">
+      <span class="logo-marca"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M8.5 27.5 13.5 4.5M23.5 27.5 18.5 4.5" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/><path d="M16 27v-4.5M16 18v-4M16 9.5V7" stroke="#F2B705" stroke-width="2.6" stroke-linecap="round"/></svg></span>
+      <span class="logo-txt"><b data-n="marca">Accidente Claro</b><small><span class="solo-ordenador">Abogados de accidentes · </span><span data-n="provincia">Granada</span></small></span>
+    </a>
+    <div class="cab-acciones">
+      <button class="boton boton-andres cab-hablar" type="button" data-hablar data-voz><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4"/></svg><span>Hablar con <span data-n="tecnico">Andrés</span></span></button>
+      <a class="boton boton-borde cab-llamar" data-tel href="tel:+34958000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Llamar</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="portada cine" id="portada">
+  <div class="envol">
+    <div class="hero-a">
+      <p class="sobretitulo entra">Abogados de accidentes de tráfico · <span data-n="provincia">Granada</span></p>
+      <p class="urgencia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span>¿La aseguradora te ofrece dinero? <b>No firmes el finiquito</b> sin que lo vea un abogado.</span><a class="boton boton-principal" data-tel href="tel:+34958000000">Llámanos</a></p>
+      <h1 id="titular" aria-label="Reclama tu accidente de tráfico en Granada, con un abogado"><span class="titular-fijo">Reclama tu accidente</span> <span class="gira" id="gira" aria-hidden="true"><span class="gira-pieza"><em>de coche</em></span></span></h1>
+      <p class="entrada entra" style="--i:1">Siento lo del accidente. Primero, tu salud; después te explicamos qué guardar, qué no firmar y cómo se reclama a la aseguradora.</p>
+      <p class="precio-linea entra" style="--i:2"><span>Primera consulta con el abogado: <b id="precioLinea">gratis</b>.</span> <span>Honorarios por escrito antes de empezar.</span></p>
+    </div>
+    <div class="hero-b">
+      <figure class="hero-foto"><img src="media/portada.jpg" alt="Una mujer, de espaldas, se lleva la mano al cuello dolorido" width="1600" height="1067" fetchpriority="high" onerror="this.closest('figure').remove()"></figure>
+      <div class="tarjeta-andres entra" style="--i:3" data-estado="reposo" id="tarjetaAndres">
+        <div class="ta-cab">
+          <div class="orbe" aria-hidden="true"><span class="onda"><i></i><i></i><i></i><i></i></span></div>
+          <div class="ta-quien"><b><span data-n="tecnico">Andrés</span> te atiende ahora</b><span>Asistente con IA. Orienta; no es abogado.</span></div>
+        </div>
+        <p class="ta-saludo">Cuéntame qué pasó: te digo qué conviene hacer ahora y te reservo la primera consulta gratis con el abogado.</p>
+        <button class="boton boton-andres boton-hablar" type="button" data-hablar data-voz><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4"/></svg><span>Hablar con <span data-n="tecnico">Andrés</span></span></button>
+        <div class="ta-otras">
+          <button class="boton" type="button" data-hablar><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M6 9h.01M10 9h.01M14 9h.01M18 9h.01M7 15h10"/></svg>Escribir</button>
+          <a class="boton" data-wa href="https://wa.me/34600000000" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.4 8.4 0 1 1 21 11.5z"/></svg>WhatsApp</a>
+          <a class="boton" data-tel href="tel:+34958000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Llamar</a>
+        </div>
+        <p class="ta-nota"><span data-n="tecnico">Andrés</span> es un asistente con inteligencia artificial: orienta, pero no asesora ni dice cuánto vas a cobrar. Tu caso lo estudia siempre un abogado.</p>
+      </div>
+      <a class="llamame-enlace" href="#contacto">¿Prefieres que te llame un abogado? Déjanos tu teléfono ›</a>
+      <ul class="confianza">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6.5A7 7 0 1 0 18 17.5"/><path d="M4 10h9M4 14h9"/></svg><span><b>Primera consulta gratis</b> y sin compromiso</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span><b>Honorarios por escrito</b> en la hoja de encargo, antes de firmar nada</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M5 21c1-4 4-6 7-6s6 2 7 6"/></svg><span><b>Abogado colegiado en el Ilustre Colegio de la Abogacía de Granada</b></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="seccion" id="situaciones">
+  <div class="envol">
+    <div class="cabecera-sec"><p class="antetitulo">Cada accidente es distinto</p><h2>¿Cómo <em>ibas</em>?</h2><p class="bajada">Toca lo tuyo y <span data-n="tecnico">Andrés</span> te dice qué conviene hacer ahora y qué papeles guardar.</p></div>
+    <div class="aparatos" id="listaAparatos">
+  <button type="button" class="aparato" data-preguntar="Me dieron un golpe con el coche (por ejemplo, por detrás) y me duele el cuello">
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 31v-6l5-2 5-9h17l7 9 6 2v6"/><path d="M4 31h5M17 31h14M39 31h5"/><circle cx="13" cy="31" r="4"/><circle cx="35" cy="31" r="4"/><path d="M12 23h26"/></svg><span class="aparato-nombre">Me dieron un golpe con el coche</span></button>
+  <button type="button" class="aparato" data-preguntar="Tuve un accidente con la moto y estoy de baja">
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="31" r="7"/><circle cx="37" cy="31" r="7"/><path d="M11 31l8-11h10l8 11"/><path d="M27 20l3-7h5"/><path d="M17 24h11"/></svg><span class="aparato-nombre">Iba en moto</span></button>
+  <button type="button" class="aparato" data-preguntar="Me tiró un coche cuando iba en bici o en patinete">
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="31" r="7.5"/><circle cx="37" cy="31" r="7.5"/><path d="M11 31l6-13h14l6 13"/><path d="M17 18l7 13h-13M31 18l-3-6h-4"/><path d="M14 13h6"/></svg><span class="aparato-nombre">Iba en bici o en patinete</span></button>
+  <button type="button" class="aparato" data-preguntar="Me atropelló un coche cuando cruzaba la calle">
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="7.5" r="3.5"/><path d="M24 13v11l-5 9M24 24l5 9M18 19l6-4 6 4"/><path d="M5 41h6M15 41h6M25 41h6M35 41h6"/></svg><span class="aparato-nombre">Me atropellaron andando</span></button>
+  <button type="button" class="aparato" data-preguntar="Iba de pasajero en un coche que tuvo un accidente: ¿puedo reclamar aunque conozca al conductor?">
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 35V21a6 6 0 0 1 6-6h24a6 6 0 0 1 6 6v14"/><path d="M4 35h40"/><circle cx="17" cy="24" r="3.5"/><circle cx="31" cy="24" r="3.5"/><path d="M11 35c0-3.5 2.7-5.5 6-5.5s6 2 6 5.5M25 35c0-3.5 2.7-5.5 6-5.5s6 2 6 5.5"/></svg><span class="aparato-nombre">Iba de pasajero</span></button>
+  <button type="button" class="aparato" data-preguntar="La aseguradora me ha hecho una oferta y no sé si firmarla">
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 4h19l9 9v31H10z"/><path d="M29 4v9h9"/><path d="M28 20.5a6 6 0 1 0 0 9"/><path d="M17 23.5h8M17 26.5h8"/><path d="M16 37h16"/></svg><span class="aparato-nombre">La aseguradora me ofrece dinero</span></button>
+  <button type="button" class="aparato" data-preguntar="El otro conductor no tenía seguro o se dio a la fuga">
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 4 8 10v11c0 10 7 17 16 19 9-2 16-9 16-19V10z"/><path d="M24 15v11"/><path d="M24 32v.5"/></svg><span class="aparato-nombre">El otro no tenía seguro o se fue</span></button>
+  <button type="button" class="aparato" data-preguntar="Tuve el accidente yendo al trabajo: ¿qué puedo reclamar?">
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="15" width="36" height="24" rx="3"/><path d="M18 15v-5h12v5"/><path d="M6 25h36"/><path d="M21 25v4h6v-4"/></svg><span class="aparato-nombre">Fue yendo o volviendo del trabajo</span></button></div>
+    <div class="zona-caja" id="zonaCaja"><b>Dónde te atendemos</b><span id="faqZona">En Granada capital y toda la provincia. La consulta puede ser por teléfono, por videollamada y en el despacho.</span></div>
+  </div>
+</section>
+
+<section class="seccion seccion-datos" id="como-se-calcula">
+  <div class="envol">
+    <div class="cabecera-sec"><p class="antetitulo">Baremo de tráfico 2026</p><h2>¿Cómo se calcula <em>la indemnización</em>?</h2><p class="bajada" id="impuestoBajada"></p></div>
+    <div class="impuesto bloque-datos" id="impuestoDatos"></div>
+    <p class="aviso-indep" id="impuestoFuente"></p>
+  </div>
+</section>
+
+<section class="seccion" id="como">
+  <div class="envol">
+    <div class="cabecera-sec"><p class="antetitulo">Así trabajamos</p><h2>Tres pasos, <em>sin prisas</em> y por escrito.</h2></div>
+    <ol class="pasos">
+      <li class="paso"><h3>Cuéntaselo a Andrés</h3><p>Ahora, hablando o por escrito. Te dice qué hacer ya y qué papeles guardar, y apunta tu caso para que no lo repitas.</p></li>
+      <li class="paso"><h3>Primera consulta gratis con el abogado</h3><p>Revisa tus informes y, si la hay, la oferta de la aseguradora. Te dice con franqueza qué ve y qué costaría.</p></li>
+      <li class="paso"><h3>Si sigues adelante, reclamamos</h3><p>Hoja de encargo por escrito, reclamación a la aseguradora y negociación; si no hay acuerdo, al juzgado. Tú te centras en recuperarte.</p></li>
+    </ol>
+    <div class="trabajo">
+      <figure><img src="media/rehabilitacion.jpg" alt="Un fisioterapeuta corrige la postura de una paciente sentada en la camilla" loading="lazy" width="1400" height="933" onerror="this.closest('figure').remove()"><figcaption>Lo primero es recuperarte: los informes médicos son la base de la reclamación.</figcaption></figure>
+      <figure><img src="media/consulta.jpg" alt="Sobre una mesa, una mano ofrece un documento y un bolígrafo a otra persona" loading="lazy" width="1400" height="933" onerror="this.closest('figure').remove()"><figcaption>Los honorarios, por escrito en la hoja de encargo, antes de firmar nada.</figcaption></figure>
+      <figure><img src="media/taller.jpg" alt="Un mecánico revisa el motor de un coche con el capó abierto" loading="lazy" width="1400" height="933" onerror="this.closest('figure').remove()"><figcaption>Si el vehículo tiene daños, guarda el presupuesto o la factura del taller.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="seccion" id="precios">
+  <div class="envol">
+    <div class="cabecera-sec"><p class="antetitulo">Sin sorpresas</p><h2>Sabes lo que cuesta <em>antes</em> de firmar nada.</h2></div>
+    <div class="precios">
+      <div class="tarifa">
+        <div class="cifra" id="precioVisita">0<small>€</small></div>
+        <h3>Primera consulta con el abogado</h3>
+        <p id="consultaDetalle">El abogado revisa lo que tengas (informes médicos, parte o atestado y, si la hay, la oferta de la aseguradora) y te dice con franqueza qué ve y qué costaría, sin compromiso.</p>
+        <span class="descuento">Sin compromiso: decides después, con los honorarios por escrito delante</span>
+      </div>
+      <ul class="lista-ok">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span><b>Si nos encargas el caso:</b> un porcentaje de la indemnización que se consiga, pactado por escrito en la hoja de encargo antes de empezar.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span><b>Si no hay indemnización, no hay honorarios.</b></span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span><b>Gastos a la vista:</b> si hiciera falta un perito médico o un procurador, te decimos antes quién lo paga.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span><b>Si tu póliza tiene defensa jurídica,</b> puede cubrir parte de los honorarios: lo miramos en la consulta.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="seccion" id="preguntas">
+  <div class="envol">
+    <div class="cabecera-sec"><p class="antetitulo">Preguntas frecuentes</p><h2>Lo que más nos <em>preguntáis</em>.</h2></div>
+    <div class="faq" id="faqLista"></div>
+  </div>
+</section>
+
+<section class="seccion" id="contacto">
+  <div class="envol">
+    <div class="cierre">
+      <div>
+        <h2>¿Prefieres que te llame <em>un abogado</em>?</h2>
+        <p>Déjanos tu teléfono y te llamamos en horario de despacho (<span id="horarioTxt">de lunes a viernes de 9:00 a 14:00 y de 16:30 a 19:30</span>). O llámanos tú:</p>
+        <a class="tel-grande" data-tel href="tel:+34958000000"><span data-n="telefono">958 00 00 00</span></a>
+      </div>
+      <div id="formLlamadaCaja">
+        <form class="form-rapido" id="formRapido" novalidate>
+          <h3>Que me llame un abogado</h3>
+          <label class="campo"><span>Tu teléfono</span><input id="r-telefono" type="tel" inputmode="tel" autocomplete="tel" placeholder="Escribe tu móvil" required></label>
+          <label class="campo"><span>¿Qué pasó? (opcional)</span><input id="r-averia" placeholder="Me dieron por detrás en un semáforo…"></label>
+          <input class="trampa" type="text" id="web" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="boton boton-principal ancho" type="submit">Que me llamen</button>
+          <p class="legal">Usaremos tu teléfono solo para atender tu consulta. No escribas aquí datos de salud. <a href="privacidad.html">Política de privacidad</a>.</p>
+        </form>
+        <div class="form-ok" role="status"><h3>¡Recibido!</h3><p>Te llama un abogado en horario de despacho.</p></div>
+      </div>
+    </div>
+    <div class="panel-dueno" id="panelDueno" hidden>
+      <h3>Solicitudes recibidas (solo lo ves tú)</h3>
+      <p>Las consultas que registra Andrés y las peticiones de llamada aparecen aquí al momento.</p>
+      <div class="envol-tabla"><table class="tabla-avisos"><thead><tr><th>Fecha</th><th>Tipo</th><th>Cliente</th><th>Teléfono</th><th>Qué pasó</th><th>Municipio y consulta</th></tr></thead><tbody id="tablaAvisos"><tr><td colspan="6">Todavía no hay solicitudes.</td></tr></tbody></table></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="pie">
+  <div class="envol">
+    <div><b data-n="marca">Accidente Claro</b><p>Abogados de accidentes de tráfico en <span data-n="provincia">Granada</span> y provincia. Abogado colegiado en el Ilustre Colegio de la Abogacía de Granada.</p><p>Andrés es un sistema de inteligencia artificial; puede equivocarse. Orienta de forma general: no asesora ni promete resultados. Tu caso lo estudia siempre un abogado con tus informes.</p></div>
+    <div><b>Contacto</b><p><a data-tel href="tel:+34958000000"><span data-n="telefono">958 00 00 00</span></a></p><p id="pieHorario">El despacho atiende de lunes a viernes de 9:00 a 14:00 y de 16:30 a 19:30. Andrés, a cualquier hora.</p></div>
+    <div><b>Legal</b><p><a href="aviso-legal.html">Aviso legal</a></p><p><a href="privacidad.html">Política de privacidad</a></p></div>
+  </div>
+</footer>
+
+<!-- barra fija del móvil: siempre a mano -->
+<nav class="barra-movil" id="barraMovil" aria-label="Contactar">
+  <button class="boton boton-andres" type="button" data-hablar data-voz><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4"/></svg>Hablar</button>
+  <button class="boton boton-borde" type="button" data-hablar><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M6 9h.01M10 9h.01M14 9h.01M18 9h.01M7 15h10"/></svg>Escribir</button>
+  <a class="boton boton-borde" data-tel href="tel:+34958000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Llamar</a>
+  <a class="boton boton-borde" data-wa href="https://wa.me/34600000000" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.4 8.4 0 1 1 21 11.5z"/></svg>WhatsApp</a>
+</nav>
+
+<!-- conversación minimizada -->
+<div class="mini" id="mini" data-estado="reposo" role="region" aria-label="Conversación con Andrés en curso">
+  <div class="orbe" aria-hidden="true"><span class="onda"><i></i><i></i><i></i><i></i></span></div>
+  <p class="mini-txt"><b><span data-n="tecnico">Andrés</span> · <span id="miniEstado">en línea</span></b><span id="miniTxt"></span></p>
+  <a class="boton boton-borde mini-tel" data-tel href="tel:+34958000000" aria-label="Llamar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></a>
+  <button class="boton boton-andres" type="button" id="miniVolver">Seguir</button>
+  <button class="boton colgar" type="button" id="miniColgar" aria-label="Colgar">Colgar</button>
+</div>
+
+<!-- ESCENARIO (solo en ordenador): la solicitud en grande al lado de la conversación, con lo que hay que
+     preparar. Se abre al empezar la conversación; la solicitud (#solicitud) se muda aquí dentro. -->
+<div class="escenario" id="escenario" data-estado="rellenando" hidden>
+  <div class="esc-panel" role="region" aria-label="Tu solicitud de consulta">
+    <header class="esc-cab">
+      <div>
+        <small><span data-n="marca">Accidente Claro</span> · Solicitud de primera consulta</small>
+        <h2>Así queda tu solicitud</h2>
+      </div>
+      <span class="esc-estado" aria-live="polite"><i></i><span id="escEstado">Se rellena mientras hablas</span></span>
+      <button class="boton boton-borde esc-cerrar" type="button" id="escCerrar">Ver la web</button>
+    </header>
+    <div class="esc-hueco" id="escHueco"></div>
+    <footer class="esc-pie"><span>¿Algo no está bien? Tócalo y corrígelo, o díselo a <span data-n="tecnico">Andrés</span>.</span><span id="escAviso"></span></footer>
+  </div>
+</div>
+
+<!-- CONVERSACIÓN CON ANDRÉS -->
+<section class="conv" id="conv" data-estado="reposo" data-modo="voz" aria-label="Conversación con Andrés" hidden>
+  <div class="conv-cab">
+    <button class="icono" type="button" id="btnMinimizar" aria-label="Ver la web sin colgar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+    <div class="orbe" aria-hidden="true"><span class="onda"><i></i><i></i><i></i><i></i></span></div>
+    <div class="conv-quien">
+      <b><span data-n="tecnico">Andrés</span> · asistente</b>
+      <span class="conv-estado" aria-live="polite"><i></i><span id="estadoTxt">En línea</span><span class="conv-crono" id="crono"></span></span>
+    </div>
+    <button class="icono" id="btnVoz" type="button" aria-pressed="true" aria-label="Voz de Andrés activada" title="Activar o quitar la voz de Andrés">
+      <svg class="voz-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4zM15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
+      <svg class="voz-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4zM22 9l-6 6M16 9l6 6"/></svg>
+    </button>
+  </div>
+  <div class="fases" id="fases" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="fases-txt" aria-hidden="true"><span>Qué pasó</span><span>Qué hacer</span><span>Consulta</span><span>Tus datos</span><span>Listo</span></div>
+
+  <details class="solicitud" id="solicitud">
+    <summary>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 3v2h6V3M9 10h6M9 14h6M9 18h3"/></svg>
+      <span class="sol-resumen"><b>Tu solicitud · <span id="solCuenta">0 de 8</span></b><span id="solUltimo">Se rellena sola mientras hablas</span></span>
+      <svg class="sol-flecha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </summary>
+    <div class="sol-cuerpo">
+      <p class="sol-diag" id="solDiag" hidden></p>
+      <form id="formSolicitud" novalidate>
+        <div class="sol-campos">
+          <label class="campo campo-ancho"><span>Qué pasó</span><input id="f-caso" placeholder="Me dieron por detrás en un semáforo…"></label>
+          <label class="campo"><span>Cómo ibas</span><input id="f-como" list="lista-como" placeholder="Andrés te lo preguntará"></label>
+          <label class="campo"><span>Cuándo fue</span><input id="f-fecha" placeholder="Hace dos semanas, el 3 de noviembre…"></label>
+          <label class="campo campo-ancho"><span>Médico y alta (solo si das permiso)</span><input id="f-medico" placeholder="Urgencias el mismo día; sigo en rehabilitación…"></label>
+          <label class="campo"><span>De quién fue la culpa</span><input id="f-culpa" list="lista-culpa" placeholder="Andrés te lo preguntará"></label>
+          <label class="campo"><span>Parte amistoso o atestado</span><input id="f-atestado" list="lista-atestado" placeholder="Andrés te lo preguntará"></label>
+          <label class="campo"><span>Oferta de la aseguradora</span><input id="f-oferta" list="lista-oferta" placeholder="Andrés te lo preguntará"></label>
+          <label class="campo"><span>Defensa jurídica en tu póliza</span><input id="f-defensa" list="lista-defensa" placeholder="Andrés te lo preguntará"></label>
+          <label class="campo"><span>Nombre</span><input id="f-nombre" autocomplete="given-name" placeholder="Andrés te lo preguntará"></label>
+          <label class="campo"><span>Teléfono</span><input id="f-telefono" type="tel" inputmode="tel" autocomplete="tel" placeholder="Andrés te lo preguntará"></label>
+          <label class="campo"><span>Municipio</span><input id="f-municipio" autocomplete="address-level2" placeholder="Andrés te lo preguntará"></label>
+          <label class="campo campo-ancho"><span>Consulta y cuándo</span><input id="f-franja" placeholder="Por teléfono, mañana por la tarde…"></label>
+          <input type="hidden" id="f-consentimientoSalud">
+        </div>
+        <datalist id="lista-como"><option value="Conduciendo un coche"><option value="De pasajero"><option value="En moto"><option value="En bici o patinete"><option value="Andando"><option value="Otro"></datalist>
+        <datalist id="lista-culpa"><option value="Del otro"><option value="Compartida"><option value="Mía"><option value="No lo sé"></datalist>
+        <datalist id="lista-atestado"><option value="Parte amistoso"><option value="Atestado de la policía"><option value="Ninguno"><option value="No lo sé"></datalist>
+        <datalist id="lista-oferta"><option value="No"><option value="Sí, sin firmar"><option value="He firmado algo"></datalist>
+        <datalist id="lista-defensa"><option value="Sí"><option value="No"><option value="No lo sé"></datalist>
+        <button class="boton boton-principal ancho sol-enviar" type="submit" id="solEnviar" hidden>Sí, está bien: pedir la consulta</button>
+      </form>
+      <!-- Lo que el cliente debe preparar: se adapta a lo que va contando -->
+      <figure class="sol-mapa sol-docs" id="solDocs">
+        <figcaption><b>Ten a mano para la consulta</b><span>Se ajusta a tu caso mientras hablas. No hace falta tenerlo todo: el abogado te dice qué falta.</span></figcaption>
+        <ul id="listaDocs"></ul>
+      </figure>
+    </div>
+  </details>
+
+  <div class="conv-chat" id="chat" role="log" aria-live="polite"></div>
+  <div class="chips" id="chips">
+    <button class="chip" type="button">Me dieron un golpe por detrás y me duele el cuello</button>
+    <button class="chip" type="button">¿Cuánto tiempo tengo para reclamar?</button>
+    <button class="chip" type="button">La aseguradora me ofrece dinero</button>
+    <button class="chip" type="button">¿Cuánto cobráis?</button>
+  </div>
+  <div class="adjunto" id="adjunto" hidden><img id="adjuntoImg" alt=""><span>Foto lista para enviar</span><button type="button" id="quitarFoto">Quitar</button></div>
+  <form class="conv-escribir" id="formChat" autocomplete="off" hidden>
+    <button class="icono" type="button" id="btnVolverVoz" aria-label="Volver a hablar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4"/></svg></button>
+    <label class="oculto" for="txt">Escribe tu mensaje</label>
+    <input id="txt" type="text" enterkeyhint="send" placeholder="Escribe aquí…">
+    <button class="icono" type="button" id="btnFoto" aria-label="Enviar una foto (del parte o de los daños del coche)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8a2 2 0 0 1 2-2h2l2-2h6l2 2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="4"/></svg></button>
+    <button class="icono enviar" type="submit" id="btnEnviar" aria-label="Enviar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+  </form>
+  <input type="file" id="archivo" accept="image/*" capture="environment" hidden>
+  <div class="conv-mandos">
+    <button class="mando" type="button" id="btnTeclado" aria-pressed="false"><span class="circ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M6 9h.01M10 9h.01M14 9h.01M18 9h.01M7 15h10"/></svg></span>Escribir</button>
+    <button class="mando mando-central" type="button" id="btnMic" aria-label="Hablar"><span class="circ"><svg class="i-mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4"/></svg><svg class="i-colgar" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 9c-2.4 0-4.6.5-6.6 1.4-.6.3-1 .9-1 1.6v2.4c0 .8.8 1.4 1.6 1.2l2.6-.7c.6-.2 1-.7 1-1.4v-1.7a12 12 0 0 1 4.8 0v1.7c0 .7.4 1.2 1 1.4l2.6.7c.8.2 1.6-.4 1.6-1.2V12c0-.7-.4-1.3-1-1.6A15.6 15.6 0 0 0 12 9z"/></svg></span><span id="micTxt">Hablar</span></button>
+    <button class="mando" type="button" id="btnSilenciar" aria-pressed="false"><span class="circ"><svg class="i-foto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8a2 2 0 0 1 2-2h2l2-2h6l2 2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="4"/></svg><svg class="i-sil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4M3 3l18 18"/></svg></span><span id="silTxt">Foto</span></button>
+  </div>
+  <p class="conv-nota"><span data-n="tecnico">Andrés</span> es un asistente con inteligencia artificial. Orienta; el abogado estudia tu caso.</p>
+
+  <div class="velo" id="velo" hidden></div>
+  <div class="hoja" id="hojaMicro" role="dialog" aria-modal="true" aria-labelledby="hmTit" hidden>
+    <h3 id="hmTit">Para hablar con <span data-n="tecnico">Andrés</span></h3>
+    <p>Tu navegador te pregunta ahora si dejas usar el micrófono. Pulsa <b>«Permitir»</b> en el aviso y empezamos. Solo te escuchamos mientras dura la conversación.</p>
+    <p class="hm-pista" id="hmPista" aria-live="polite"><span class="hm-punto"></span>Esperando a que pulses «Permitir»…</p>
+    <button class="boton boton-andres" type="button" id="hmEmpezar" hidden>No me sale el aviso: probar otra vez</button>
+    <div class="pareja"><button class="boton boton-borde" type="button" id="hmEscribir">Prefiero escribir</button><a class="boton boton-borde" data-tel href="tel:+34958000000">Prefiero llamar</a></div>
+  </div>
+  <div class="hoja" id="hojaSinMicro" role="dialog" aria-modal="true" aria-labelledby="hsTit" hidden>
+    <h3 id="hsTit">No tengo permiso para el micrófono</h3>
+    <p>No pasa nada: puedes escribirle a <span data-n="tecnico">Andrés</span> o llamarnos.</p>
+    <div class="pareja"><button class="boton boton-andres" type="button" id="hsEscribir">Escribir</button><a class="boton boton-borde" data-tel href="tel:+34958000000">Llamar</a></div>
+    <p style="margin-top:14px"><b>Para activarlo:</b></p>
+    <ol><li>En iPhone: toca «aA» junto a la dirección → Ajustes del sitio web → Micrófono → Permitir.</li><li>En Android: toca el icono junto a la dirección → Permisos → Micrófono → Permitir.</li></ol>
+    <button class="boton boton-borde" type="button" id="hsReintentar">Ya lo he activado, probar otra vez</button>
+  </div>
+  <div class="hoja" id="hojaAudio" role="dialog" aria-modal="true" hidden>
+    <h3>Toca para oír a <span data-n="tecnico">Andrés</span></h3>
+    <p>Tu móvil necesita un toque para dejar sonar la voz.</p>
+    <button class="boton boton-andres" type="button" id="haActivar">Activar el sonido</button>
+  </div>
+</section>
+
+<script src="contenido.js"></script>
+<script type="application/json" id="web-datos">{"asistente":{"nombre":"Andrés","genero":"hombre"},"campos":[{"id":"caso","etiqueta":"Qué pasó","corto":"Qué pasó","visible":true,"oculto":false,"grupo":"caso"},{"id":"como","etiqueta":"Cómo ibas","corto":"Cómo ibas","visible":true,"oculto":false,"grupo":"caso"},{"id":"fecha","etiqueta":"Cuándo fue","corto":"Fecha","visible":true,"oculto":false,"grupo":"caso"},{"id":"medico","etiqueta":"Médico y alta (solo si das permiso)","corto":"Médico","visible":true,"oculto":false,"grupo":""},{"id":"culpa","etiqueta":"De quién fue la culpa","corto":"Culpa","visible":false,"oculto":false,"grupo":""},{"id":"atestado","etiqueta":"Parte amistoso o atestado","corto":"Parte","visible":false,"oculto":false,"grupo":""},{"id":"oferta","etiqueta":"Oferta de la aseguradora","corto":"Oferta","visible":false,"oculto":false,"grupo":""},{"id":"defensa","etiqueta":"Defensa jurídica en tu póliza","corto":"Defensa jurídica","visible":false,"oculto":false,"grupo":""},{"id":"nombre","etiqueta":"Nombre","corto":"Nombre","visible":true,"oculto":false,"grupo":""},{"id":"telefono","etiqueta":"Teléfono","corto":"Teléfono","visible":true,"oculto":false,"grupo":""},{"id":"municipio","etiqueta":"Municipio","corto":"Municipio","visible":true,"oculto":false,"grupo":""},{"id":"franja","etiqueta":"Consulta y cuándo","corto":"Consulta","visible":true,"oculto":false,"grupo":""},{"id":"consentimientoSalud","visible":false,"oculto":true,"grupo":""}],"obligatorios":[["telefono","teléfono"],["nombre","nombre"],["caso","qué pasó"]],"campoResumen":"caso","tipoPrincipal":"consulta","tiposExtra":[],"resumenAviso":[["caso",""],["como",""],["fecha","fecha: "]],"panelLugar":["municipio","franja"],"panelExtra":["culpa","atestado","oferta","defensa"],"preparar":{"reglas":[{"doc":["DNI",""]},{"grupo":"parte","campos":["atestado","caso"],"re":"amistoso|declaracion","doc":["Tu copia del parte amistoso","Y si no estabas de acuerdo con algo, apúntalo ya."]},{"grupo":"parte","campos":["atestado","caso"],"re":"atestado|policia|guardia|agentes","doc":["Número del atestado","Y la comisaría o el cuartel que lo hizo."]},{"grupo":"parte","doc":["Parte amistoso o número del atestado","Si los hay."]},{"grupo":"otro","campos":["caso"],"re":"fuga|se fue|huy|sin seguro|no tenia seguro|robado","doc":["La denuncia y lo que recuerdes del otro vehículo","Responde el Consorcio de Compensación de Seguros: denunciar cuanto antes ayuda."]},{"grupo":"otro","doc":["Matrícula y aseguradora del otro vehículo","Si las tienes."]},{"doc":["Informe de urgencias y los informes médicos posteriores","Son la base de la reclamación. No los mandes por aquí: los ve el abogado en la consulta."]},{"campos":["medico"],"re":"baja|rehabilit|fisio|tratamiento","doc":["Partes de baja y justificantes de rehabilitación","Y no dejes el tratamiento: los días que no constan no cuentan."]},{"campos":["medico"],"re":"alta","doc":["El informe de alta","Con su fecha: importa para el plazo de un año."]},{"doc":["Tickets y facturas de gastos","Farmacia, taxis, desplazamientos, muletas…"]},{"doc":["Fotos del lugar y de los vehículos, y nombre de testigos","Las fotos, sin publicarlas en redes."]},{"doc":["Tu póliza de seguro","Para ver si tiene defensa jurídica, que puede cubrir parte de los honorarios."]},{"grupo":"oferta","campos":["oferta"],"re":"^si|firm","doc":["La carta u oferta de la aseguradora","No firmes nada todavía."]},{"grupo":"oferta","campos":["caso"],"re":"oferta|finiquito|firm|ofrece","doc":["La carta u oferta de la aseguradora","No firmes nada todavía."]},{"campos":["caso","como"],"re":"trabajo|itinere|curro|empresa|mutua","doc":["Parte de la mutua o de la empresa","Es accidente laboral «in itinere»: el abogado mira las dos vías juntas."]},{"campos":["medico"],"re":"baja","doc":["Nóminas o declaración de autónomo","Si has dejado de ganar dinero."]},{"campos":["caso","como"],"re":"coche|moto|taller|danos|chapa","doc":["Presupuesto o factura del taller","Si el vehículo tiene daños."]}]},"destinos":{"precios":{"sel":".tarifa","titulo":"Primera consulta","texto":"Gratis: el abogado revisa lo que tengas (informes médicos, parte o atestado y, si la hay, la oferta de la aseguradora) y te dice con franqueza qué ve y qué costaría, sin compromiso."},"consulta":{"sel":".tarifa","titulo":"Primera consulta","texto":"Gratis: el abogado revisa lo que tengas (informes médicos, parte o atestado y, si la hay, la oferta de la aseguradora) y te dice con franqueza qué ve y qué costaría, sin compromiso."},"honorarios":{"sel":".lista-ok","titulo":"Honorarios","texto":"Un porcentaje de la indemnización que se consiga, pactado por escrito en la hoja de encargo antes de empezar. Si no hay indemnización, no hay honorarios. Si hiciera falta un perito médico o un procurador, te decimos antes quién lo paga."},"baremo":{"sel":"#como-se-calcula .envol","titulo":"Cómo se calcula (baremo 2026)","bloque":true,"texto":"La cantidad depende de tus informes médicos: el abogado la calcula con ellos."},"calculo":{"sel":"#como-se-calcula .envol","titulo":"Cómo se calcula (baremo 2026)","bloque":true,"texto":"La cantidad depende de tus informes médicos: el abogado la calcula con ellos."},"indemnizacion":{"sel":"#como-se-calcula .envol","titulo":"Cómo se calcula (baremo 2026)","bloque":true,"texto":"La cantidad depende de tus informes médicos: el abogado la calcula con ellos."},"como":{"sel":".pasos","titulo":"Cómo trabajamos","texto":"Te orienta Andrés, el abogado estudia tu caso en la primera consulta y, si sigues adelante, reclamamos a la aseguradora con honorarios por escrito."},"plazo":{"sel":"#faqLista","titulo":"Plazos","texto":"Hay un año para reclamar; en lesiones suele contar desde el alta médica y se interrumpe al reclamar por escrito. Cómo se cuenta en tu caso lo revisa el abogado."},"oferta":{"sel":".urgencia","titulo":"Antes de firmar","texto":"No firmes un finiquito ni aceptes una oferta definitiva sin que la vea el abogado. Cobrar a cuenta no es lo mismo que firmar un finiquito."},"zona":{"sel":"#zonaCaja","titulo":"Dónde te atendemos","texto":"En Granada capital y toda la provincia, por teléfono, por videollamada y en el despacho."},"situaciones":{"sel":"#listaAparatos","titulo":"Te ayudamos con","texto":"Reclamación de lesiones a la aseguradora del culpable, revisión de ofertas y finiquitos de la aseguradora, pasajeros, peatones, ciclistas, motoristas y usuarios de patinete, accidentes con vehículo sin seguro, desconocido o extranjero (Consorcio y OFESAUTO) y accidentes yendo o volviendo del trabajo."},"contacto":{"solicitud":true},"llamada":{"solicitud":true},"formulario":{"solicitud":true},"preparar":{"solicitud":true},"documentos":{"solicitud":true}},"final":{"principal":{"titulo":"¡Listo! Consulta pedida","pasos":["Te llamamos para confirmar el día y la hora de la consulta.","El abogado revisa contigo lo que tengas y te dice con franqueza qué ve y qué costaría, por escrito.","Mientras, sigue con el médico y no firmes nada de la aseguradora."]},"llamada":{"titulo":"¡Listo! Te llama un abogado","pasos":["Te llama un abogado en horario de despacho (de lunes a viernes de 9:00 a 14:00 y de 16:30 a 19:30)."]}},"textos":{"fases":["Qué pasó","Qué hacer","Consulta","Tus datos","Listo"],"escEstado":{"rellenando":"Se rellena mientras hablas","lista":"Lista: confírmala y te llamamos","enviada":"Solicitud enviada"},"waInicial":"Hola, he tenido un accidente de tráfico y quiero información. ¿Podéis atenderme?","waAviso":{"principal":"la primera consulta","llamada":"que me llaméis"},"trasLlamada":"Tus datos siguen en «Tu solicitud»: si está todo bien, pulsa «pedir la consulta».","orientacion":"Lo que te conviene: ","preparada":"Solicitud preparada"},"gira":["de coche","de moto","en bici o patinete","como peatón","de pasajero","yendo al trabajo"],"revelar":[],"audioMicro":""}</script>
+<script type="module">
+// =====================================================================
+//  CONVERSACIÓN CON EL ASISTENTE · código común de todas las webs de la fábrica
+//  (fabrica/plantilla/nucleo.js). Lo propio de cada web llega en W (web-datos):
+//  campos de la solicitud, lo que hay que preparar, destinos, textos y tarjeta final.
+//  No editar en index.html: se genera con  node fabrica/construir.mjs <web>
+// =====================================================================
+import { NEGOCIO as N, saludo, lista } from "./cerebro.mjs";
+// Lo que sabe el asistente va en sus instrucciones (instrucciones.mjs), que solo se descargan
+// en la vista previa; con servidor, el móvil del cliente no descarga nada.
+const W = JSON.parse(document.getElementById("web-datos").textContent);
+
+const $ = (s, el = document) => el.querySelector(s);
+const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+const SERVIDOR = ($('meta[name="servidor-tecnico"]')?.content || "").replace(/\/$/, "");
+const LK_TOKEN = $('meta[name="livekit-token"]')?.content || "";
+const reducir = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const esMovil = () => matchMedia("(max-width: 899px)").matches;
+const guardar = (k, v) => { try { localStorage.setItem(k, v); } catch {} };
+const leer = k => { try { return localStorage.getItem(k); } catch { return null; } };
+
+/* ------------------------------------------------------------------
+   1. Rellenar la página con los datos del negocio
+------------------------------------------------------------------ */
+$$("[data-n]").forEach(el => { const v = N[el.dataset.n]; if (v) el.textContent = v; });
+$$("[data-tel]").forEach(a => a.href = "tel:" + N.telefonoEnlace);
+$$("[data-wa]").forEach(a => a.href = `https://wa.me/${N.whatsapp}?text=${encodeURIComponent(W.textos.waInicial)}`);
+// (título, precios, horario y zona ya vienen escritos en la página al construirla)
+pintarBloque(); pintarPreguntas();
+const plataforma = typeof window.claude?.use === "function";
+if (plataforma) $("#previa").hidden = false;
+
+/* Bloque de datos del sector (impuesto, precios orientativos…): llega de contenido.js, con fuente y fecha */
+function pintarBloque() {
+  const I = window.__BLOQUE || window.__IMPUESTO; const sec = $(".seccion-datos");
+  if (!I || !sec) { if (sec) sec.hidden = true; return; }
+  $("#impuestoBajada").textContent = I.bajada;
+  $("#impuestoDatos").innerHTML = I.casos.map(() => `<div class="imp-caso bd-caso"><b></b><span class="imp-cifra bd-cifra"></span><p></p></div>`).join("");
+  $$("#impuestoDatos .imp-caso").forEach((el, k) => { const c = I.casos[k]; el.querySelector("b").textContent = c.quien; el.querySelector(".imp-cifra").textContent = c.cifra; el.querySelector("p").textContent = c.texto; });
+  $("#impuestoFuente").textContent = I.fuente;
+}
+function pintarPreguntas() {
+  const F = window.__PREGUNTAS || [];
+  $("#faqLista").innerHTML = F.map(() => "<details><summary></summary><p></p></details>").join("");
+  $$("#faqLista details").forEach((d, k) => { const n = t => String(t).replaceAll("{asistente}", N.tecnico); d.querySelector("summary").textContent = n(F[k][0]); d.querySelector("p").textContent = n(F[k][1]); });
+}
+
+/* ------------------------------------------------------------------
+   2. Piezas de la conversación
+------------------------------------------------------------------ */
+const conv = $("#conv"), chat = $("#chat"), txt = $("#txt"), btnMic = $("#btnMic"), btnVoz = $("#btnVoz"), estadoTxt = $("#estadoTxt");
+const ESTADOS = { reposo: "En línea", escuchando: "Te escucho…", pensando: "Pensando…", hablando: "Hablando · puedes interrumpirle" };
+const mini = $("#mini"), miniTxt = $("#miniTxt");
+function estado(e) {
+  conv.dataset.estado = e; mini.dataset.estado = e; $("#tarjetaAndres").dataset.estado = e;
+  estadoTxt.textContent = ESTADOS[e]; $("#miniEstado").textContent = ESTADOS[e].split(" ·")[0].toLowerCase();
+  if (!llamada) $("#micTxt").textContent = e === "escuchando" ? "Terminar" : "Hablar";
+}
+function textoMini(t) { miniTxt.textContent = t; }
+function textoMiniSolicitud() { const sol = $("#miniEstado").dataset.sol; if (sol && !llamada) miniTxt.textContent = sol.charAt(0).toUpperCase() + sol.slice(1); }
+
+function burbuja(quien, texto = "", extra) {
+  const b = document.createElement("div");
+  b.className = "burbuja " + quien;
+  if (quien === "tec") b.dataset.quien = N.tecnico;
+  if (quien === "parcial") b.setAttribute("aria-hidden", "true");
+  if (extra?.img) { const i = document.createElement("img"); i.src = extra.img; i.alt = "Foto enviada"; b.append(i); }
+  if (texto) b.append(document.createTextNode(texto));
+  chat.append(b); bajar(); return b;
+}
+function bajar() { chat.scrollTop = chat.scrollHeight; }
+function puntos(b) { b.innerHTML = '<span class="puntos" aria-label="Escribiendo"><i></i><i></i><i></i></span>'; }
+
+/* abrir, minimizar y cerrar la conversación (pantalla completa en móvil) */
+let conversacionIniciada = false, abierta = false;
+function abrirConversacion({ modo = "voz" } = {}) {
+  conv.hidden = false; abierta = true; conv.dataset.modo = modo;
+  document.body.classList.add("en-conversacion"); document.body.classList.remove("con-mini");
+  if (esMovil() && history.state?.conv !== 1) history.pushState({ conv: 1 }, "");
+  if (modo === "texto") mostrarTeclado(true);
+  abrirEscenario();  // pedido por Juan: la solicitud y el mapa están a la vista desde el primer momento, antes de empezar a hablar
+}
+/* Escenario (solo ordenador): la solicitud se muda a un panel grande al lado de la conversación */
+const escenario = $("#escenario");
+const enEscenario = () => document.body.classList.contains("escenario-on");
+function abrirEscenario() {
+  if (esMovil() || enEscenario() || !abierta) return;
+  $("#escHueco").append($("#solicitud")); $("#solicitud").open = true;
+  escenario.hidden = false; document.body.classList.add("escenario-on");
+  $("#escAviso").textContent = "Nº de aviso " + numAviso;
+  pintarDocumentos(datosFormulario());
+}
+function cerrarEscenario() {
+  if (!enEscenario()) return;
+  conv.insertBefore($("#solicitud"), $("#chat")); $("#solicitud").open = false;
+  escenario.hidden = true; document.body.classList.remove("escenario-on");
+}
+$("#escCerrar").addEventListener("click", () => minimizar());
+matchMedia("(max-width: 899px)").addEventListener("change", e => { if (e.matches) cerrarEscenario(); });
+function minimizar() {
+  if (!abierta) return;
+  cerrarEscenario();
+  conv.hidden = true; abierta = false;
+  document.body.classList.remove("en-conversacion");
+  document.body.classList.toggle("con-mini", conversacionIniciada);
+  textoMiniSolicitud();
+}
+addEventListener("popstate", () => { if (abierta) minimizar(); });
+$("#btnMinimizar").addEventListener("click", () => { if (history.state?.conv === 1) history.back(); else minimizar(); });
+$("#miniVolver").addEventListener("click", () => abrirConversacion({ modo: conv.dataset.modo }));
+$("#miniColgar").addEventListener("click", () => colgar());
+function mostrarTeclado(si) {
+  $("#formChat").hidden = !si; $("#btnTeclado").setAttribute("aria-pressed", String(si));
+  if (si) setTimeout(() => txt.focus({ preventScroll: true }), 60);
+}
+$("#btnTeclado").addEventListener("click", () => mostrarTeclado($("#formChat").hidden));
+$("#btnVolverVoz").addEventListener("click", () => { mostrarTeclado(false); empezarVoz(); });
+
+/* ------------------------------------------------------------------
+   3. Capacidades: cerebro (IA), oídos (micrófono) y boca (voz)
+   - En la vista previa de claude.ai usa las capacidades del visor.
+   - En la web publicada: llamada en directo con LiveKit, o servidor propio
+     y el reconocimiento y la voz del navegador.
+------------------------------------------------------------------ */
+const usar = name => plataforma ? window.claude.use(name).catch(() => null) : Promise.resolve(null);
+const pSample = usar("sample"), pDictado = usar("dictation"), pVoz = usar("tts"), pDb = usar("db"), pUser = usar("user");
+
+let dictado = null, vozPlataforma = null, sinCerebro = false;
+const RecWeb = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+// ---- oídos ----
+let escuchando = false, bufferVoz = "", parcial = null, temporizador = null, recWeb = null;
+pDictado.then(d => {
+  dictado = d;
+  if (d) {
+    d.onPartial(({ text }) => { mostrarParcial(text); reprogramar(); });
+    d.onFinal(({ text }) => { bufferVoz += text; mostrarParcial(""); reprogramar(); });
+    d.onState(({ state, reason }) => {
+      if (state === "listening" || state === "starting") { escuchando = true; estado("escuchando"); }
+      if (state === "idle") {
+        escuchando = false; clearTimeout(temporizador);
+        if (["not_granted", "unavailable"].includes(reason)) sinMicro();
+        cerrarEscucha();
+      }
+    });
+  }
+});
+function hayMicro() { return !!(LK_TOKEN || dictado || RecWeb); }
+function mostrarParcial(t) {
+  const visible = (bufferVoz + " " + (t || "")).trim();
+  if (!visible) { parcial?.remove(); parcial = null; return; }
+  if (!parcial) parcial = burbuja("parcial");
+  parcial.textContent = visible; bajar(); textoMini(visible);
+}
+function reprogramar() {
+  clearTimeout(temporizador);
+  temporizador = setTimeout(() => { if (escuchando) pararEscucha(); }, 1700);
+}
+function empezarEscucha() {
+  callar();
+  bufferVoz = "";
+  if (dictado) {
+    dictado.start().catch(e => {
+      escuchando = false; estado("reposo");
+      if (e?.code === "not_granted" || e?.code === "unavailable") sinMicro();
+    });
+    escuchando = true; estado("escuchando");
+    return;
+  }
+  if (RecWeb) {
+    recWeb = new RecWeb(); recWeb.lang = "es-ES"; recWeb.interimResults = true; recWeb.continuous = false;
+    recWeb.onresult = ev => {
+      let fin = "", tmp = "";
+      for (const r of ev.results) (r.isFinal ? (fin += r[0].transcript) : (tmp += r[0].transcript));
+      bufferVoz = fin; mostrarParcial(tmp);
+    };
+    recWeb.onerror = ev => { if (ev.error === "not-allowed") sinMicro(); };
+    recWeb.onend = () => { escuchando = false; cerrarEscucha(); };
+    try { recWeb.start(); escuchando = true; estado("escuchando"); } catch { estado("reposo"); }
+    return;
+  }
+  mostrarTeclado(true);
+}
+function pararEscucha() {
+  clearTimeout(temporizador);
+  if (dictado) dictado.stop().catch(() => {});
+  else if (recWeb) recWeb.stop();
+}
+function cerrarEscucha() {
+  const dicho = (bufferVoz + " " + (parcial?.textContent && !bufferVoz ? parcial.textContent : "")).trim();
+  parcial?.remove(); parcial = null; bufferVoz = "";
+  if (conv.dataset.estado === "escuchando") estado("reposo");
+  if (dicho) enviar(dicho, { porVoz: true });
+}
+
+/* Antes de que el móvil pida el micrófono, le explicamos qué va a salir */
+function hoja(id) {
+  ["#hojaMicro", "#hojaSinMicro", "#hojaAudio"].forEach(h => $(h).hidden = h !== id);
+  $("#velo").hidden = !id;
+}
+async function estadoPermiso() {
+  try { return (await navigator.permissions.query({ name: "microphone" })).state; } catch { return "prompt"; }
+}
+/* El navegador SIEMPRE pide permiso para el micrófono la primera vez: no se puede evitar.
+   Lo que sí se puede es que lo explique el propio asistente de viva voz (para hablar él no hace falta
+   permiso): al pulsar «Hablar», el asistente dice «tu navegador te va a pedir el micrófono, pulsa Permitir»
+   y el aviso sale justo mientras lo dice. Pedido por Juan el 22-11-2026: sin botón intermedio. */
+// El audio está grabado con la voz del asistente (asistente.json). Si se cambia el nombre o la voz y aún no
+// se ha vuelto a grabar, la fábrica lo deja vacío y la frase la dice la voz del navegador.
+const avisoMicro = new Audio(); avisoMicro.preload = "none"; if (W.audioMicro) avisoMicro.src = W.audioMicro;
+else { avisoMicro.play = () => { decir(`Tu navegador te va a pedir permiso para el micrófono. Pulsa «Permitir» y hablamos.`); return Promise.resolve(); }; avisoMicro.pause = () => {}; }
+let avisoCebado = Promise.resolve();
+// Safari solo deja sonar un audio que se haya «tocado» dentro de la pulsación: se ceba en silencio en ese instante
+function cebarAviso() {
+  if (!W.audioMicro) return;
+  avisoMicro.muted = true;
+  avisoCebado = avisoMicro.play().then(() => { avisoMicro.pause(); avisoMicro.currentTime = 0; }).catch(() => {}).finally(() => { avisoMicro.muted = false; });
+}
+async function pedirMicro() {
+  const st = await estadoPermiso();
+  if (st === "granted") return true;
+  if (st === "denied") { sinMicro(); return false; }
+  return new Promise(ok => {
+    let resuelto = false, espera = 0;
+    const terminar = (vale) => { if (resuelto) return; resuelto = true; clearTimeout(espera); avisoMicro.pause(); if (vale) hoja(null); ok(vale); };
+    const pedir = async () => {
+      $("#hmEmpezar").hidden = true; $("#hmPista").hidden = false;
+      setTimeout(() => { if (!resuelto) $("#hmEmpezar").hidden = false; }, 9000);   // por si el aviso no llega a salir
+      try {
+        const flujo = await navigator.mediaDevices.getUserMedia({ audio: true });
+        flujo.getTracks().forEach(p => p.stop());   // solo era para conseguir el permiso: el micro de verdad lo abre la llamada
+        terminar(true);
+      } catch { if (!resuelto) { resuelto = true; avisoMicro.pause(); sinMicro(); ok(false); } }
+    };
+    hoja("#hojaMicro");
+    avisoCebado.then(() => { if (!resuelto && !reducirVoz()) avisoMicro.play().catch(() => {}); });
+    espera = setTimeout(pedir, 1900);   // el aviso del navegador sale cuando el asistente está diciendo «te va a pedir el micrófono»
+    $("#hmEmpezar").onclick = pedir;
+    $("#hmEscribir").onclick = () => { terminar(false); hoja(null); mostrarTeclado(true); };
+  });
+}
+function reducirVoz() { return $("#btnVoz")?.getAttribute("aria-pressed") === "false"; }   // si ha quitado la voz del asistente, no suena
+function sinMicro() { estado("reposo"); hoja("#hojaSinMicro"); }
+$("#hsEscribir").addEventListener("click", () => { hoja(null); mostrarTeclado(true); });
+$("#hsReintentar").addEventListener("click", () => { hoja(null); empezarVoz(); });
+$("#velo").addEventListener("click", () => hoja(null));
+
+async function empezarVoz() {
+  if (!hayMicro() || sinCerebro) { mostrarTeclado(true); return; }
+  if (!(await pedirMicro())) return;
+  if (LK_TOKEN) { if (!llamada) llamar(); }
+  else if (!escuchando) empezarEscucha();
+}
+btnMic.addEventListener("click", () => {
+  if (llamada) return colgar();
+  if (escuchando) return pararEscucha();
+  empezarVoz();
+});
+
+// ---- boca ----
+let vozActiva = true, hablandoNavegador = 0;
+pVoz.then(t => {
+  vozPlataforma = t;
+  t?.onState?.(({ state }) => {
+    if (state === "speaking") estado("hablando");
+    else if (state === "idle" && conv.dataset.estado === "hablando") estado("reposo");
+  });
+});
+function vozEspanola() {
+  const vs = speechSynthesis.getVoices().filter(v => /^es[-_]ES/i.test(v.lang));
+  // voz del navegador acorde con el asistente (hombre o mujer, en asistente.json)
+  const mujer = W.asistente.genero === "mujer";
+  const suyo = mujer ? /m[óo]nica|elvira|lucia|luc[ií]a|paulina|helena|laura|elena|female|mujer/i : /jorge|alvaro|[áa]lvaro|pablo|dar[ií]o|enrique|male(?!.*female)|hombre/i;
+  const pref = [v => suyo.test(v.name) && /natural|neural|online/i.test(v.name), v => suyo.test(v.name), v => /natural|neural|online/i.test(v.name), v => /google/i.test(v.name)];
+  for (const r of pref) { const v = vs.find(r); if (v) return v; }
+  return vs[0] || speechSynthesis.getVoices().find(v => /^es/i.test(v.lang));
+}
+function decir(frase) {
+  frase = frase.trim();
+  if (!vozActiva || !frase) return;
+  if (vozPlataforma) { vozPlataforma.add([{ text: frase, language: "es" }]).catch(e => { if (e?.code === "not_granted") vozPlataforma = null; }); return; }
+  if ("speechSynthesis" in window) {
+    const u = new SpeechSynthesisUtterance(frase);
+    u.lang = "es-ES"; u.rate = 1.03; const v = vozEspanola(); if (v) u.voice = v;
+    u.onstart = () => estado("hablando");
+    u.onend = u.onerror = () => { if (--hablandoNavegador <= 0) { hablandoNavegador = 0; if (conv.dataset.estado === "hablando") estado("reposo"); } };
+    hablandoNavegador++; speechSynthesis.speak(u);
+  }
+}
+function callar() {
+  vozPlataforma?.stop?.().catch?.(() => {});
+  if ("speechSynthesis" in window) { speechSynthesis.cancel(); hablandoNavegador = 0; }
+  if (conv.dataset.estado === "hablando") estado("reposo");
+}
+btnVoz.addEventListener("click", () => {
+  vozActiva = !vozActiva;
+  btnVoz.setAttribute("aria-pressed", vozActiva);
+  btnVoz.setAttribute("aria-label", vozActiva ? `Voz de ${N.tecnico} activada` : `Voz de ${N.tecnico} quitada`);
+  if (!vozActiva) callar();
+  audioAgente.forEach(a => a.muted = !vozActiva);
+});
+
+// ---- cerebro ----
+const turnos = [];
+let enCurso = null;
+
+async function pensar(onText, signal, imagen) {
+  const recientes = turnos.slice(-30);
+  const sample = await pSample;
+  if (sample) {
+    // El técnico consulta su manual con lo que acaba de decir el cliente y recibe solo las fichas que tocan
+    const { instrucciones } = await import("./instrucciones.mjs");
+    const conversacion = [{ role: "user", content: instrucciones(N) }, { role: "assistant", content: saludo(N) }, ...recientes];
+    const opciones = { modelTier: "quick", cache: false, onText, signal };
+    if (imagen) opciones.images = imagen.blob;
+    const r = await sample(conversacion, opciones);
+    return r.text;
+  }
+  if (SERVIDOR) {
+    const res = await fetch(SERVIDOR + "/tecnico", {
+      method: "POST", signal, headers: { "content-type": "application/json" },
+      body: JSON.stringify({ turnos: turnos.slice(-30), imagen: imagen?.dataUrl || null })
+    });
+    if (!res.ok || !res.body) throw { code: "upstream_error" };
+    const lector = res.body.getReader(), dec = new TextDecoder();
+    let total = "";
+    for (;;) {
+      const { value, done } = await lector.read(); if (done) break;
+      const delta = dec.decode(value, { stream: true }); total += delta; onText({ text: total, delta });
+    }
+    return total;
+  }
+  throw { code: "sin_cerebro" };
+}
+
+// separa lo que se dice en voz alta de las etiquetas internas
+function visible(t) { const i = t.search(/<(ficha|aviso|mostrar)/); return (i >= 0 ? t.slice(0, i) : t).replace(/<\/?[a-z]*$/i, "").trim(); }
+function etiqueta(t, nombre, crudo = false) {
+  const m = t.match(new RegExp(`<${nombre}>\\s*([\\s\\S]*?)\\s*</${nombre}>`));
+  if (!m) return null; if (crudo) return m[1].trim(); try { return JSON.parse(m[1]); } catch { return null; }
+}
+
+async function enviar(texto, { porVoz = false } = {}) {
+  texto = (texto || "").trim();
+  const imagen = fotoPendiente; quitarFoto();
+  if (!texto && !imagen) return;
+  if (!texto) texto = "Te envío una foto.";
+  $("#chips").hidden = true;
+  if (llamada) { burbuja("cli", texto); llamada.localParticipant.sendText(texto, { topic: "lk.chat" }).catch(() => {}); return; }
+  if (enCurso) enCurso.abort();
+  callar();
+  burbuja("cli", texto, imagen ? { img: imagen.url } : null);
+  turnos.push({ role: "user", content: imagen ? `[El cliente adjunta una foto] ${texto}` : texto });
+
+  const b = burbuja("tec"); puntos(b); estado("pensando");
+  const ctl = new AbortController(); enCurso = ctl;
+  let dichoHasta = 0, mostrado = "", yaSenalado = false;
+  conversacionIniciada = true;
+  const trocear = (final) => {
+    const v = mostrado;
+    let corte = -1;
+    const re = /[.!?…:](\s+|$)/g; let m;
+    while ((m = re.exec(v))) if (m.index + 1 > dichoHasta && (m[1] || final)) corte = m.index + 1;
+    if (final) corte = v.length;
+    if (corte > dichoHasta) { decir(v.slice(dichoHasta, corte)); dichoHasta = corte; }
+  };
+  try {
+    const respuesta = await pensar(({ text }) => {
+      if (ctl.signal.aborted) return;
+      const v = visible(text);
+      if (v && v !== mostrado) { mostrado = v; b.textContent = v; bajar(); textoMini(v); if (porVoz || vozActiva) trocear(false); }
+      if (!yaSenalado) { const d = etiqueta(text, "mostrar", true); if (d) { yaSenalado = true; senalar(d); } }
+    }, ctl.signal, imagen);
+    if (ctl.signal.aborted) return;
+    if (!respuesta || !respuesta.trim()) throw { code: "upstream_error" };
+    mostrado = visible(respuesta) || mostrado;
+    b.textContent = mostrado || "Perdona, ¿me lo repites?"; textoMini(b.textContent);
+    if (!yaSenalado) { const d = etiqueta(respuesta, "mostrar", true); if (d) senalar(d); }
+    trocear(true);
+    turnos.push({ role: "assistant", content: respuesta.replace(/<aviso>[\s\S]*?<\/aviso>/, "<aviso>(registrado)</aviso>") });
+    const f = etiqueta(respuesta, "ficha"); if (f) pintarFicha(f);
+    const a = etiqueta(respuesta, "aviso"); if (a && !avisoHecho) registrarAviso({ ...a, origen: "técnico virtual" });
+    if (conv.dataset.estado === "pensando") estado("reposo");
+  } catch (e) {
+    if (e?.code === "cancelled") return;
+    turnos.pop();
+    estado("reposo");
+    const sinIA = ["sin_cerebro", "not_granted", "sampling_disabled", "not_declared", "capability_disabled"].includes(e?.code);
+    if (sinIA) sinCerebro = true;
+    b.textContent = e?.code === "rate_limited" ? "Ahora mismo tengo muchas consultas. Dame un minuto y vuelve a intentarlo, o llámanos al " + N.telefono + "."
+      : sinIA ? `Ahora mismo no puedo atenderte por aquí. Llámanos al ${N.telefono} o déjanos tu teléfono y te llamamos.`
+      : "Se me ha cortado la conexión. ¿Me lo repites?";
+  } finally { if (enCurso === ctl) enCurso = null; }
+}
+
+/* El asistente enseña algo: en el móvil, como tarjeta dentro de la conversación (la página no se
+   mueve sola, que marea); en el ordenador, desplazando la página que se ve al lado. */
+const sinTildes = t => String(t || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+function destino(d) {
+  const [tipo, extra] = sinTildes(d).trim().split(":").map(x => x.trim());
+  const x = W.destinos[tipo]; if (!x) return null;
+  if (x.solicitud) return { solicitud: true };
+  const B = window.__BLOQUE || window.__IMPUESTO;
+  return { el: x.sel ? $(x.sel) : null, titulo: x.titulo, texto: (x.bloque && B?.resumen) || x.texto, extra };
+}
+function senalar(d) {
+  const x = destino(d); if (!x) return;
+  if (x.solicitud) { $("#solicitud").open = true; abrirEscenario(); return; }
+  if (esMovil() || enEscenario() || !x.el) {   // con el escenario abierto la web queda tapada: se enseña en una tarjeta
+    const t = document.createElement("div");
+    t.className = "tarjeta-info";
+    t.innerHTML = `<small></small><p></p>`;
+    t.querySelector("small").textContent = x.titulo; t.querySelector("p").textContent = x.texto;
+    if (x.el) {
+      const ver = document.createElement("button"); ver.type = "button"; ver.textContent = "Ver en la web";
+      ver.addEventListener("click", () => { minimizar(); setTimeout(() => x.el.scrollIntoView({ behavior: reducir ? "auto" : "smooth", block: "center" }), 80); });
+      t.append(ver);
+    }
+    chat.append(t); bajar(); return;
+  }
+  x.el.scrollIntoView({ behavior: reducir ? "auto" : "smooth", block: "center" });
+  x.el.style.position ||= "relative";
+  x.el.classList.remove("senalado"); void x.el.offsetWidth; x.el.classList.add("senalado");
+  x.el.querySelector(":scope > .senal-etiqueta")?.remove();
+  const et = document.createElement("span"); et.className = "senal-etiqueta"; et.textContent = N.tecnico + " te lo señala";
+  x.el.append(et);
+  setTimeout(() => { et.remove(); x.el.classList.remove("senalado"); }, 3800);
+}
+
+/* ------------------------------------------------------------------
+   4. Tu solicitud (se rellena sola mientras hablan) y avisos
+------------------------------------------------------------------ */
+const FASES = ["entendiendo", "orientando", "proponiendo", "datos", "registrado"];
+const VISIBLES = W.campos.filter(c => c.visible).map(c => c.id);
+const NOMBRES = Object.fromEntries(W.campos.map(c => [c.id, c.corto]));
+const DEL_CASO = W.campos.filter(c => c.grupo === "caso").map(c => c.id);
+let fichaActual = {}, avisoHecho = false, ultimoCampo = "";
+const numAviso = String(Date.now()).slice(-5);
+function pintarFicha(f, alFormulario = true) {
+  fichaActual = { ...fichaActual, ...Object.fromEntries(Object.entries(f).filter(([, v]) => v)) };
+  const F = fichaActual;
+  if (alFormulario) CAMPOS_FORM.forEach(c => ponerCampo(c, F[c]));
+  if (F.orientacion) { $("#solDiag").hidden = false; $("#solDiag").textContent = W.textos.orientacion + F.orientacion; }
+  faseModelo = Math.max(faseModelo, FASES.indexOf(avisoHecho ? "registrado" : F.fase) + 1);
+  resumirSolicitud();
+}
+let faseModelo = 0;
+function resumirSolicitud() {
+  const d = datosFormulario();
+  // avance: lo que diga el asistente o lo que ya hay escrito en la solicitud
+  const porDatos = avisoHecho ? 5 : (d.telefono || d.nombre) ? 4 : fichaActual.orientacion ? 2 : DEL_CASO.some(c => d[c]) ? 1 : 0;
+  const n = Math.max(faseModelo, porDatos);
+  $$("#fases span").forEach((x, i) => x.classList.toggle("hecha", i < n));
+  $$(".fases-txt span").forEach((x, i) => x.classList.toggle("actual", i === Math.max(0, Math.min(n, 5) - 1) && n > 0));
+  $("#miniEstado").dataset.sol = n ? `tu solicitud ${VISIBLES.filter(c => d[c]).length} de ${VISIBLES.length}` : "";
+  const llenos = VISIBLES.filter(c => d[c]).length;
+  $("#solCuenta").textContent = `${llenos} de ${VISIBLES.length}`;
+  if (ultimoCampo && d[ultimoCampo]) $("#solUltimo").textContent = `${NOMBRES[ultimoCampo]}: ${d[ultimoCampo]}`;
+  $$(".sol-campos .campo").forEach(c => c.classList.toggle("lleno", !!c.querySelector("input")?.value.trim()));
+  const listo = W.obligatorios.every(([c]) => d[c]);
+  $("#solEnviar").hidden = !listo || avisoHecho;
+  if (llenos) abrirEscenario();
+  escenario.dataset.estado = avisoHecho ? "enviada" : "rellenando";
+  $("#escEstado").textContent = W.textos.escEstado[avisoHecho ? "enviada" : listo ? "lista" : "rellenando"];
+  pintarDocumentos(d);
+}
+
+/* Lo que el cliente debe preparar: la lista se ajusta a lo que va contando (reglas de web.mjs).
+   Cada regla añade un documento si alguno de sus campos encaja con su expresión; las de un mismo
+   «grupo» se excluyen (vale la primera que encaje, y la que no tiene condición es la de por defecto).
+   Es orientativa: el profesional confirma. */
+let docsActual = "";
+function pintarDocumentos(d) {
+  if (!W.preparar || !$("#listaDocs")) return;
+  const docs = [], grupos = new Set();
+  for (const r of W.preparar.reglas) {
+    if (r.grupo && grupos.has(r.grupo)) continue;
+    const vale = !r.campos || r.campos.some(c => new RegExp(r.re, "i").test(sinTildes(d[c])));
+    if (!vale) continue;
+    if (r.grupo) grupos.add(r.grupo);
+    docs.push(r.doc);
+  }
+  const clave = docs.map(x => x[0]).join("|");
+  if (clave === docsActual) return;
+  docsActual = clave;
+  $("#listaDocs").innerHTML = docs.map(() => "<li><b></b><span></span></li>").join("");
+  $$("#listaDocs li").forEach((li, k) => { li.querySelector("b").textContent = docs[k][0]; li.querySelector("span").textContent = docs[k][1]; if (!docs[k][1]) li.querySelector("span").remove(); });
+}
+
+async function registrarAviso(aviso) {
+  avisoHecho = aviso.origen === "técnico virtual" || aviso.origen === "cliente" ? true : avisoHecho;
+  const registro = { ...aviso, ficha: fichaActual, creado: new Date().toISOString(), pagina: location.href.slice(0, 200) };
+  let guardado = false;
+  try { const db = await pDb; if (db) { await db.collection("avisos").add(registro); guardado = true; } } catch {}
+  if (SERVIDOR) { try { const r = await fetch(SERVIDOR + "/aviso", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(registro) }); guardado = guardado || r.ok; } catch {} }
+  if (aviso.origen !== "formulario") {
+    pintarFicha({ fase: "registrado" }); if (!enEscenario()) $("#solicitud").open = false; resumirSolicitud();
+    const resumen = W.resumenAviso.map(([c, pre]) => aviso[c] && pre + aviso[c]).filter(Boolean).join(" · ");
+    const queTipo = aviso.tipo === W.tipoPrincipal ? "principal" : aviso.tipo;
+    const fin = W.final[queTipo] || W.final.principal;
+    const wa = `Hola, soy ${aviso.nombre || ""}. Acabo de pedir ${W.textos.waAviso[queTipo] || W.textos.waAviso.principal} con ${N.tecnico} en la web (nº ${numAviso}): ${resumen}. ${aviso.municipio || ""} ${aviso.franja ? "· " + aviso.franja : ""}`.replace(/\s+/g, " ").trim();
+    const t = document.createElement("div");
+    t.className = "tarjeta-aviso"; t.setAttribute("role", "status");
+    const titulo = !guardado ? W.textos.preparada : fin.titulo;
+    const pasos = fin.pasos;
+    t.innerHTML = `<h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></h4><p class="final-cifra"></p><p class="final-txt"></p><ol></ol><a class="boton boton-principal boton-wa" target="_blank" rel="noopener">Guardarlo en WhatsApp</a>`;
+    t.querySelector("h4").append(titulo);
+    t.querySelector(".final-cifra").textContent = "Nº de aviso " + numAviso;
+    t.querySelector(".final-txt").textContent = resumen + (guardado ? "" : ". No hemos podido enviarla: mándanosla por WhatsApp para asegurarte.");
+    t.querySelector("ol").innerHTML = pasos.map(p => `<li>${p}</li>`).join("");
+    t.querySelector("a").href = `https://wa.me/${N.whatsapp}?text=${encodeURIComponent(wa)}`;
+    chat.append(t); bajar();
+  }
+  return guardado;
+}
+
+/* ------------------------------------------------------------------
+   5. Interacción
+------------------------------------------------------------------ */
+$("#formChat").addEventListener("submit", e => { e.preventDefault(); const v = txt.value; txt.value = ""; enviar(v); });
+$$("#chips .chip").forEach(c => c.addEventListener("click", () => enviar(c.textContent)));
+
+$$("[data-hablar]").forEach(b => b.addEventListener("click", () => {
+  const voz = b.hasAttribute("data-voz");
+  abrirConversacion({ modo: voz ? "voz" : "texto" });
+  if (voz) empezarVoz(); else mostrarTeclado(true);
+}));
+document.addEventListener("click", e => {
+  const p = e.target.closest("[data-preguntar]"); if (!p) return;
+  abrirConversacion({ modo: "texto" }); enviar(p.dataset.preguntar);
+});
+
+// silenciar el micrófono (solo durante la llamada en directo)
+$("#btnSilenciar").addEventListener("click", async () => {
+  if (!llamada) { $("#archivo").click(); return; }
+  const silenciado = $("#btnSilenciar").getAttribute("aria-pressed") === "true";
+  await llamada.localParticipant.setMicrophoneEnabled(silenciado).catch(() => {});
+  $("#btnSilenciar").setAttribute("aria-pressed", String(!silenciado));
+  $("#silTxt").textContent = silenciado ? "Silenciar" : "Activar micro";
+});
+function modoMandos() {
+  const enLlamada = !!llamada;
+  $("#silTxt").textContent = enLlamada ? "Silenciar" : "Foto";
+  $("#btnSilenciar").setAttribute("aria-pressed", "false");
+  $("#micTxt").textContent = enLlamada ? "Colgar" : "Hablar";
+  btnMic.setAttribute("aria-label", enLlamada ? "Colgar" : "Hablar");
+}
+
+// fotos
+let fotoPendiente = null;
+$("#btnFoto").addEventListener("click", () => $("#archivo").click());
+$("#archivo").addEventListener("change", async e => {
+  const f = e.target.files?.[0]; e.target.value = ""; if (!f || !f.type.startsWith("image/")) return;
+  const reducida = await reducirFoto(f);
+  fotoPendiente = { blob: reducida.blob, url: URL.createObjectURL(reducida.blob), dataUrl: reducida.dataUrl };
+  $("#adjuntoImg").src = fotoPendiente.url; $("#adjunto").hidden = false; mostrarTeclado(true); txt.placeholder = "Añade un comentario o pulsa enviar";
+});
+function quitarFoto() { fotoPendiente = null; $("#adjunto").hidden = true; txt.placeholder = "Escribe aquí…"; }
+$("#quitarFoto").addEventListener("click", quitarFoto);
+async function reducirFoto(file) {
+  try {
+    const bmp = await createImageBitmap(file);
+    const k = Math.min(1, 1400 / Math.max(bmp.width, bmp.height));
+    const c = document.createElement("canvas"); c.width = Math.round(bmp.width * k); c.height = Math.round(bmp.height * k);
+    c.getContext("2d").drawImage(bmp, 0, 0, c.width, c.height);
+    const blob = await new Promise(r => c.toBlob(r, "image/jpeg", .85));
+    return { blob, dataUrl: c.toDataURL("image/jpeg", .85) };
+  } catch { return { blob: file, dataUrl: null }; }
+}
+
+// solicitud (la rellena el asistente mientras hablan; el cliente puede corregir cualquier dato)
+const CAMPOS_FORM = W.campos.map(c => c.id);
+function datosFormulario() { return Object.fromEntries(CAMPOS_FORM.map(c => { const el = $("#f-" + c); return [c, (el?.dataset.valor ?? el?.value ?? "").trim()]; })); }
+function telefonoValido(t) { return /^(\+?34)?[6789]\d{8}$/.test(String(t).replace(/[^\d+]/g, "")); }
+function ponerCampo(campo, valor, resaltar) {
+  const el = $("#f-" + campo); if (!el || !valor || (el.dataset.valor ?? el.value) === valor) return;
+  clearInterval(el._tecleo); delete el.dataset.valor;
+  if (resaltar && enEscenario() && !reducir && el.type !== "hidden") {
+    // en el escenario el dato se «teclea» a la vista (como mucho medio segundo)
+    el.dataset.valor = valor; let i = 0; const paso = Math.max(1, Math.ceil(valor.length / 22));
+    el._tecleo = setInterval(() => {
+      i += paso; el.value = valor.slice(0, i);
+      if (i >= valor.length) { clearInterval(el._tecleo); delete el.dataset.valor; resumirSolicitud(); }
+    }, 22);
+  } else el.value = valor;
+  if (VISIBLES.includes(campo)) ultimoCampo = campo;
+  if (resaltar) { const c = el.closest(".campo"); c?.classList.remove("relleno"); void c?.offsetWidth; c?.classList.add("relleno"); }
+}
+$$(".sol-campos input").forEach(i => i.addEventListener("input", () => { ultimoCampo = i.id.slice(2); resumirSolicitud(); }));
+function rellenarCampo(campo, valor) {
+  if (!CAMPOS_FORM.includes(campo)) return "error: campo desconocido";
+  valor = String(valor || "").trim().slice(0, 200);
+  ponerCampo(campo, valor, true);
+  const d = datosFormulario();
+  pintarFicha({ ...d, fase: "datos" }, false);
+  return "ok: escrito en pantalla";
+}
+async function enviarSolicitud({ tipo = W.tipoPrincipal, urgente = false, notas = "", origen = "técnico virtual" } = {}) {
+  if (avisoHecho && origen !== "formulario") return "ok: la solicitud ya estaba enviada";
+  const d = datosFormulario();
+  const faltan = W.obligatorios.filter(([c]) => origen === "formulario" ? c === "telefono" && !d[c] : !d[c]).map(([, t]) => t);
+  if (faltan.length) return "error: falta " + faltan.join(", ");
+  if (!telefonoValido(d.telefono)) return "error: el teléfono no parece un teléfono español de 9 cifras";
+  const guardado = await registrarAviso({ ...d, tipo, urgente, notas, origen });
+  return guardado ? "ok: solicitud registrada" : "ok: preparada, pero sin conexión con el servidor; que la mande también por WhatsApp";
+}
+// el cliente confirma desde la pantalla
+$("#formSolicitud").addEventListener("submit", async e => {
+  e.preventDefault();
+  const tel = $("#f-telefono");
+  if (!telefonoValido(tel.value)) { tel.setCustomValidity("Escribe un teléfono español de 9 cifras"); tel.reportValidity(); tel.setCustomValidity(""); return; }
+  const r = await enviarSolicitud({ tipo: W.tipoPrincipal, origen: "cliente" });
+  if (llamada && r.startsWith("ok")) llamada.localParticipant.sendText("He confirmado mis datos y he enviado la solicitud desde la pantalla.", { topic: "lk.chat" }).catch(() => {});
+});
+// formulario de "que me llamen" al final de la página
+$("#formRapido").addEventListener("submit", async e => {
+  e.preventDefault();
+  if ($("#web").value) return;
+  const inp = $("#r-telefono");
+  if (!telefonoValido(inp.value)) { inp.setCustomValidity("Escribe un teléfono español de 9 cifras"); inp.reportValidity(); inp.setCustomValidity(""); return; }
+  ponerCampo("telefono", inp.value.trim()); ponerCampo(W.campoResumen, $("#r-averia").value.trim());
+  await enviarSolicitud({ tipo: "llamada", origen: "formulario" });
+  $("#formLlamadaCaja").classList.add("enviado");
+});
+
+// panel del dueño (solo vista previa, solo el propietario)
+pUser.then(async u => {
+  if (!u || !(await u.isOwner?.().catch(() => false))) return;
+  const db = await pDb; if (!db) return;
+  $("#panelDueno").hidden = false;
+  db.collection("avisos").orderBy("creado", "desc").limit(50).onSnapshot(snap => {
+    const filas = snap.docs.map(d => d.data());
+    const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+    $("#tablaAvisos").innerHTML = filas.length ? filas.map(a => `<tr><td>${esc(new Date(a.creado).toLocaleString("es-ES", { dateStyle: "short", timeStyle: "short" }))}</td><td>${esc(a.tipo)}</td><td>${esc(a.nombre)}</td><td>${esc(a.telefono)}</td><td>${esc([...W.resumenAviso.map(([c, pre]) => a[c] && pre + a[c]), ...W.panelExtra.map(c => a[c])].filter(Boolean).join(" · "))}<br><small>${esc(a.notas)}</small></td><td>${esc(W.panelLugar.map(c => a[c]).filter(Boolean).join(" · "))}</td></tr>`).join("") : '<tr><td colspan="6">Todavía no hay solicitudes.</td></tr>';
+  }, () => {});
+});
+
+/* ------------------------------------------------------------------
+   7. Llamada de voz en directo (LiveKit): conversación continua, el
+      técnico puede interrumpirse, enseña información y rellena la solicitud.
+------------------------------------------------------------------ */
+let llamada = null, audioAgente = [], bloqueoPantalla = null, cronoInt = null;
+const ESTADO_AGENTE = { initializing: "pensando", listening: "escuchando", thinking: "pensando", speaking: "hablando", idle: "reposo" };
+function cargarLiveKit() {
+  if (window.LivekitClient) return Promise.resolve(window.LivekitClient);
+  return new Promise((ok, ko) => {
+    const sc = document.createElement("script");
+    sc.src = "https://cdn.jsdelivr.net/npm/livekit-client@2.23.0/dist/livekit-client.umd.js";
+    sc.onload = () => ok(window.LivekitClient); sc.onerror = ko; document.head.append(sc);
+  });
+}
+// que la pantalla no se apague mientras hablan
+async function mantenerPantalla() { try { bloqueoPantalla = await navigator.wakeLock?.request("screen"); } catch {} }
+document.addEventListener("visibilitychange", () => { if (llamada && document.visibilityState === "visible") mantenerPantalla(); });
+function empezarCrono() {
+  const t0 = Date.now(); clearInterval(cronoInt);
+  cronoInt = setInterval(() => { const s = Math.floor((Date.now() - t0) / 1000); $("#crono").textContent = "· " + String(Math.floor(s / 60)).padStart(2, "0") + ":" + String(s % 60).padStart(2, "0"); }, 1000);
+}
+async function llamar() {
+  if (llamada) return;
+  callar(); conversacionIniciada = true; $("#chips").hidden = true;
+  estado("pensando"); conv.dataset.llamada = mini.dataset.llamada = "conectando"; estadoTxt.textContent = "Conectando…";
+  mantenerPantalla();
+  try {
+    const LK = await cargarLiveKit();
+    const res = await fetch(LK_TOKEN, { method: "POST" });
+    if (!res.ok) throw new Error("pase");
+    const { url, token } = await res.json();
+    const sala = new LK.Room({ adaptiveStream: true, dynacast: true });
+    llamada = sala; modoMandos();
+    const segmentos = new Map();
+    sala.registerTextStreamHandler("lk.transcription", async (lector, quien) => {
+      const at = lector.info.attributes || {};
+      const id = at["lk.segment_id"] || lector.info.id;
+      const esCliente = quien.identity === sala.localParticipant.identity;
+      let b = segmentos.get(id);
+      if (!b) { b = burbuja(esCliente ? "cli" : "tec"); segmentos.set(id, b); }
+      let texto = "";
+      for await (const trozo of lector) { texto += trozo; b.textContent = texto; textoMini(texto); bajar(); }
+    });
+    sala.registerRpcMethod("senalar", async d => { senalar(JSON.parse(d.payload).destino); return "ok"; });
+    sala.registerRpcMethod("rellenar", async d => { const { campo, valor } = JSON.parse(d.payload); return rellenarCampo(campo, valor); });
+    sala.registerRpcMethod("enviar", async d => enviarSolicitud(JSON.parse(d.payload)));
+    sala.on(LK.RoomEvent.TrackSubscribed, pista => {
+      if (pista.kind !== "audio") return;
+      const el = pista.attach(); el.muted = !vozActiva; audioAgente.push(el); document.body.append(el);
+    });
+    sala.on(LK.RoomEvent.AudioPlaybackStatusChanged, () => { if (!sala.canPlaybackAudio) hoja("#hojaAudio"); });
+    sala.on(LK.RoomEvent.ParticipantAttributesChanged, (cambios) => {
+      const st = cambios["lk.agent.state"]; if (st) estado(ESTADO_AGENTE[st] || "reposo");
+    });
+    sala.on(LK.RoomEvent.Reconnecting, () => { estadoTxt.textContent = "Reconectando…"; });
+    sala.on(LK.RoomEvent.Reconnected, () => estado(conv.dataset.estado || "reposo"));
+    sala.on(LK.RoomEvent.Disconnected, finLlamada);
+    // Si el asistente cuelga por su lado, la web cuelga también: antes se quedaba la llamada «abierta» con el micro encendido
+    sala.on(LK.RoomEvent.ParticipantDisconnected, () => {
+      setTimeout(() => { if (llamada === sala && sala.remoteParticipants.size === 0) colgar(); }, 1500);
+    });
+    await sala.connect(url, token);
+    // Micrófono con todos los filtros del propio móvil: eco, ruido, volumen automático y,
+    // donde el navegador lo admite, aislamiento de voz (deja solo la voz de quien habla)
+    await sala.localParticipant.setMicrophoneEnabled(true, { echoCancellation: true, noiseSuppression: true, autoGainControl: true, voiceIsolation: true, channelCount: 1 });
+    await sala.startAudio().catch(() => {});
+    if (!sala.canPlaybackAudio) hoja("#hojaAudio");
+    conv.dataset.llamada = mini.dataset.llamada = "activa"; empezarCrono();
+    estado("escuchando");
+  } catch (e) {
+    const permiso = /permission|notallowed/i.test(String(e?.name || e?.message || ""));
+    llamada?.disconnect(); llamada = null; conv.dataset.llamada = mini.dataset.llamada = ""; estado("reposo"); modoMandos();
+    try { bloqueoPantalla?.release(); } catch {}
+    if (permiso) sinMicro();
+    else burbuja("sistema", "No he podido conectar la llamada. Escríbeme aquí o llámanos al " + N.telefono + ".");
+    mostrarTeclado(true);
+  }
+}
+// Precarga: la librería de la llamada se descarga cuando el navegador está libre o en cuanto
+// el dedo toca el botón, para que no haya segundos de silencio al pulsar "Hablar".
+if (LK_TOKEN) {
+  const precargar = () => cargarLiveKit().catch(() => {});
+  (window.requestIdleCallback || (f => setTimeout(f, 2500)))(precargar);
+  $$("[data-voz]").forEach(b => b.addEventListener("pointerdown", precargar, { once: true, passive: true }));
+}
+// En el iPhone el sonido solo se puede activar dentro de un toque: lo desbloqueamos en ese mismo toque
+let audioDesbloqueado = false;
+function desbloquearAudio() {
+  if (audioDesbloqueado) return; audioDesbloqueado = true;
+  try { const C = window.AudioContext || window.webkitAudioContext; const ac = new C(); ac.resume(); const o = ac.createOscillator(), g = ac.createGain(); g.gain.value = 0; o.connect(g).connect(ac.destination); o.start(); o.stop(ac.currentTime + 0.05); } catch {}
+}
+$$("[data-voz], #btnMic, #hmEmpezar").forEach(b => b.addEventListener("click", desbloquearAudio));
+$$("[data-voz], #btnMic").forEach(b => b.addEventListener("click", cebarAviso));
+$("#haActivar").addEventListener("click", async () => { await llamada?.startAudio().catch(() => {}); hoja(null); });
+function colgar() { llamada?.disconnect(); }
+function finLlamada() {
+  if (!llamada) return;
+  audioAgente.forEach(a => a.remove()); audioAgente = []; llamada = null;
+  clearInterval(cronoInt); $("#crono").textContent = "";
+  try { bloqueoPantalla?.release(); } catch {} bloqueoPantalla = null;
+  conv.dataset.llamada = mini.dataset.llamada = ""; estado("reposo"); modoMandos();
+  burbuja("sistema", "Llamada terminada.");
+  if (!avisoHecho && datosFormulario().telefono) burbuja("sistema", W.textos.trasLlamada);
+}
+
+/* ------------------------------------------------------------------
+   6. Detalles: saludo y cabecera
+------------------------------------------------------------------ */
+burbuja("tec", saludo(N));
+const cab = $("#cab");
+// la barra de abajo aparece cuando el botón grande del asistente sale de la pantalla
+if ("IntersectionObserver" in window) new IntersectionObserver(([e]) => document.body.classList.toggle("barra-visible", !e.isIntersecting)).observe($(".tarjeta-andres .boton-hablar"));
+else document.body.classList.add("barra-visible");
+addEventListener("scroll", () => cab.classList.toggle("con-borde", scrollY > 8), { passive: true });
+
+/* ------------------------------------------------------------------
+   Piel «cine»: titular que entra palabra a palabra, secciones que
+   aparecen al bajar, vídeo de la portada y botón «magnético».
+   Todo es adorno: si algo falla o el visitante pide menos movimiento,
+   la web se ve entera igualmente.
+------------------------------------------------------------------ */
+(() => {
+  const portada = $("#portada"), titular = $("#titular");
+  if (titular && !reducir) {   // trocea el titular en palabras conservando la cursiva
+    let i = 0;
+    const trocear = nodo => [...nodo.childNodes].forEach(n => {
+      if (n.nodeType === 3) {
+        const f = document.createDocumentFragment();
+        n.textContent.split(/(\s+)/).forEach(t => {
+          if (!t.trim()) { f.append(t); return; }
+          const p = document.createElement("span"); p.className = "palabra"; p.setAttribute("aria-hidden", "true");
+          const d = document.createElement("span"); d.textContent = t; d.style.setProperty("--i", i++); p.append(d); f.append(p);
+        });
+        n.replaceWith(f);
+      } else if (n.nodeType === 1 && !n.classList.contains("gira")) trocear(n);   // la línea que gira no se trocea
+    });
+    trocear(titular);
+  }
+
+  // Titular que gira: «¿Se te ha roto» se queda y debajo va rodando el aparato.
+  // Empieza por «un electrodoméstico» (lo que busca Google y lo que lee un lector de pantalla).
+  const pieza = $("#gira .gira-pieza");
+  if (pieza && !reducir && W.gira.length > 1) {
+    const APARATOS = W.gira;
+    let n = 0;
+    // si el aparato es largo («el aire acondicionado») se encoge lo justo para caber en la línea, sin mover nada más
+    const caja = $("#gira");
+    const encajar = () => { pieza.style.fontSize = ""; const sobra = caja.clientWidth / pieza.offsetWidth; if (sobra < 1) pieza.style.fontSize = Math.max(.6, sobra * .98) + "em"; };
+    encajar(); addEventListener("resize", encajar); document.fonts?.ready.then(encajar);
+    const girar = () => {
+      if (document.hidden || document.body.classList.contains("en-conversacion")) return;   // no gira si no se está mirando
+      pieza.classList.add("sale");
+      setTimeout(() => {
+        n = (n + 1) % APARATOS.length;
+        pieza.querySelector("em").textContent = APARATOS[n];
+        pieza.classList.add("espera"); pieza.classList.remove("sale"); encajar();
+        void pieza.offsetWidth;   // aplica la posición de espera antes de soltarla
+        pieza.classList.remove("espera");
+      }, 460);
+    };
+    setTimeout(() => setInterval(girar, 2400), 1600);
+  }
+  setTimeout(() => portada?.classList.add("listo"), 80);
+  // seguro: si el navegador no llega a animar (pestaña en segundo plano, móvil ahorrando batería), a los 2,5 s se muestra todo igualmente
+  setTimeout(() => portada?.classList.add("hecho"), 2500);   // con temporizador y no con requestAnimationFrame: en una pestaña en segundo plano este no se dispara y la portada se quedaría vacía
+
+  // secciones: aparecen al entrar en pantalla (una sola vez)
+  if (!reducir && "IntersectionObserver" in window) {
+    const grupos = [".cabecera-sec", ".aparato", ".bd-caso", ".paso", ".tarifa", ".lista-ok li", ".zona-caja", ".faq details", ".cierre", ...W.revelar];
+    const ver = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("ver"); ver.unobserve(e.target); } }), { rootMargin: "0px 0px -8% 0px" });
+    const preparar = () => grupos.forEach(sel => $$(sel).forEach(el => {
+      if (el.classList.contains("rev")) return;
+      const hermanos = [...el.parentElement.children].filter(h => h.matches(sel));
+      el.style.setProperty("--i", Math.min(hermanos.indexOf(el), 7)); el.classList.add("rev"); ver.observe(el);
+    }));
+    preparar(); setTimeout(preparar, 600);   // la lista de aparatos se pinta con JS: segunda pasada
+  }
+
+  // vídeo de la portada: se pide cuando el navegador está libre y solo se mueve mientras se ve
+  const video = $("#cineVideo");
+  if (video && !reducir) {
+    const cargar = () => {
+      fetch(video.dataset.src, { method: "HEAD" }).then(r => {
+        if (!r.ok || !(r.headers.get("content-type") || "").startsWith("video")) return;   // aún no hay vídeo: se queda la luz animada
+        video.src = video.dataset.src;
+        video.addEventListener("canplay", () => { video.classList.add("visible"); video.play().catch(() => {}); }, { once: true });
+        new IntersectionObserver(e => { e[0].isIntersecting && !document.body.classList.contains("escenario-on") ? video.play().catch(() => {}) : video.pause(); }).observe(portada);
+      }).catch(() => {});
+    };
+    "requestIdleCallback" in window ? requestIdleCallback(cargar, { timeout: 2500 }) : setTimeout(cargar, 1200);
+  }
+
+  // botón grande de hablar: se acerca un poco al ratón (solo con ratón)
+  if (!reducir && matchMedia("(pointer:fine)").matches) $$(".boton-hablar").forEach(b => {
+    b.addEventListener("pointermove", e => {
+      const r = b.getBoundingClientRect();
+      b.style.transform = `translate(${((e.clientX - r.left) / r.width - .5) * 10}px, ${((e.clientY - r.top) / r.height - .5) * 8}px)`;
+    });
+    b.addEventListener("pointerleave", () => { b.style.transition = "transform .5s var(--curva)"; b.style.transition = "transform .5s cubic-bezier(.23,1,.32,1)"; b.style.transform = ""; setTimeout(() => b.style.transition = "", 500); });
+  });
+})();
+
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LegalService","name":"Accidente Claro","description":"Abogados de accidentes de tráfico en Granada y provincia: reclamación de lesiones a la aseguradora, revisión de ofertas, pasajeros, peatones, ciclistas y motoristas.","areaServed":"Provincia de Granada","telephone":"+34958000000","priceRange":"€€","openingHours":["Mo-Fr 09:00-14:00","Mo-Fr 16:30-19:30"]}
+</script>
+</body>
+</html>

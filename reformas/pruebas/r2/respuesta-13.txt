@@ -1,0 +1,3 @@
+Entiendo la prisa. Cambiar la bañera por plato suele quedar entre mil y dos mil trescientos euros, más si hay que mover la salida del agua. La visita de medición gratis te deja el precio cerrado. ¿Te viene mejor mañana por la mañana o por la tarde?
+<ficha>{"obra":"Cambiar la bañera por plato de ducha","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Rango orientativo de mil a dos mil trescientos euros; la visita gratis da el precio cerrado.","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>

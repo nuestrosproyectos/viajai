@@ -1,0 +1,3 @@
+Entiendo que tras la experiencia anterior quieras seguridad. No te puedo prometer que no haya filtraciones, pero el presupuesto y la garantía van por escrito en el contrato, y el técnico te detalla su alcance en la visita. ¿Te viene mejor mañana o pasado para la visita gratis?
+<ficha>{"obra":"Cambiar la bañera por plato de ducha","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Pedir la visita gratis; la garantía concreta te la dará el técnico por escrito, en el contrato.","fase":"proponiendo"}</ficha>
+<mostrar>garantia</mostrar>

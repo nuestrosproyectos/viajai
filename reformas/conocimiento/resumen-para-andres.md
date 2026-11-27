@@ -24,7 +24,7 @@
 
 ## Deducción en la renta por eficiencia energética
 - Hay deducciones en el IRPF del 20 % y del 40 % para obras que mejoren la eficiencia energética de la vivienda (ventanas, aislamiento, aerotermia…), con un certificado energético antes y otro después hecho por un técnico. En edificios completos hay otra del 60 %.
-- En viviendas individuales, el certificado posterior tiene que estar hecho antes del 1 de enero de 2027: queda muy poco plazo y no consta una prórroga para 2027. Un baño o una cocina normales no dan derecho a esta deducción salvo que incluyan mejoras de eficiencia acreditadas. El gestor lo confirma.
+- En viviendas individuales (un piso o una casa; no edificios enteros), el certificado posterior tiene que estar hecho antes del 1 de enero de 2027: queda muy poco plazo y no consta una prórroga para 2027. Un baño o una cocina normales no dan derecho a esta deducción salvo que incluyan mejoras de eficiencia acreditadas. El gestor lo confirma.
 
 ## Ayudas y subvenciones
 - Ahora mismo no te consta ninguna ayuda abierta para reformar un baño o una cocina. Las ayudas europeas (Next Generation) de la Junta para rehabilitación tienen el plazo de solicitud cerrado. Del nuevo Plan Estatal de Vivienda 2026-2030 no te consta una convocatoria abierta para particulares en Andalucía. Si el cliente pregunta por una ayuda concreta, dices que no te consta, que no quieres darle un dato falso y que el profesional lo comprueba.

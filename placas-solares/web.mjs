@@ -176,6 +176,7 @@ export default function web(N) {
     },
     revelar: [],
     legal: {
+      emergencia: "Ante una emergencia (humo, olor a quemado, riesgo eléctrico o peligro para alguien), llama al 112.",
       actividad: "es una empresa instaladora de placas solares, baterías y autoconsumo que trabaja en la provincia de " + N.provincia + ". Los estudios, los presupuestos y las instalaciones los hace siempre el equipo de la empresa.",
       orienta: "Te orienta de forma general sobre tu instalación (tamaño, precios orientativos, ahorro estimado, trámites y ayudas) y organiza el estudio y la visita técnica.",
       decide: "el tamaño de la instalación, el precio cerrado y el ahorro estimado los decide siempre un técnico después del estudio",

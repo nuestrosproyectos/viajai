@@ -1,0 +1,3 @@
+Anotado: seiscientos cuarenta y cuatro, doscientos diez, trescientos treinta y siete; por la tarde, desde las seis. El IVA suele ser el 10 % en piso propio habitado de más de dos años, si los materiales no pasan del 40 % del precio; lo confirma el técnico. ¿Mañana o pasado?
+<ficha>{"obra":"Cambiar bañera por plato","vivienda":"Piso (2º, ascensor sin confirmar)","metros":"","antiguedad":"Unos 40 años","presupuesto":"","nombre":"Toni","telefono":"644 210 337","municipio":"Granada (La Chana)","franja":"Tardes, a partir de las 18:00","inicio":"","orientacion":"Visita de medición gratis; el IVA del 10 % es lo más probable si los materiales no pasan del 40 % del precio, lo confirma el técnico.","fase":"datos"}</ficha>
+<mostrar>precios</mostrar>

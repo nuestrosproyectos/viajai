@@ -165,7 +165,8 @@ export default function web(N) {
         { doc: ["Tickets y facturas de gastos", "Farmacia, taxis, desplazamientos, muletas…"] },
         { doc: ["Fotos del lugar y de los vehículos, y nombre de testigos", "Las fotos, sin publicarlas en redes."] },
         { doc: ["Tu póliza de seguro", "Para ver si tiene defensa jurídica, que puede cubrir parte de los honorarios."] },
-        { campos: ["oferta", "caso"], re: "^s|oferta|firm|finiquito|dinero", doc: ["La carta u oferta de la aseguradora", "No firmes nada todavía."] },
+        { grupo: "oferta", campos: ["oferta"], re: "^si|firm", doc: ["La carta u oferta de la aseguradora", "No firmes nada todavía."] },
+        { grupo: "oferta", campos: ["caso"], re: "oferta|finiquito|firm|ofrece", doc: ["La carta u oferta de la aseguradora", "No firmes nada todavía."] },
         { campos: ["caso", "como"], re: "trabajo|itinere|curro|empresa|mutua", doc: ["Parte de la mutua o de la empresa", "Es accidente laboral «in itinere»: el abogado mira las dos vías juntas."] },
         { campos: ["medico"], re: "baja", doc: ["Nóminas o declaración de autónomo", "Si has dejado de ganar dinero."] },
         { campos: ["caso", "como"], re: "coche|moto|taller|danos|chapa", doc: ["Presupuesto o factura del taller", "Si el vehículo tiene daños."] }
@@ -195,6 +196,7 @@ export default function web(N) {
     },
     revelar: [],
     legal: {
+      emergencia: "Si hay heridos o peligro, llama al 112.",
       actividad: "es un servicio de abogados que reclama indemnizaciones por accidentes de tráfico en la provincia de " + N.provincia + ". Los casos los estudia y los lleva siempre un abogado colegiado; la web no ofrece servicios a quien no los ha pedido.",
       colegio: N.colegio + " y número de colegiado del abogado responsable",
       orienta: "Te orienta de forma general (qué hacer después del accidente, qué guardar, cómo funciona la reclamación) y organiza la primera consulta, pero no es un abogado, no da asesoramiento jurídico y no dice cuánto vas a cobrar.",

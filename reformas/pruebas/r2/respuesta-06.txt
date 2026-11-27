@@ -1,0 +1,2 @@
+Puede ser el 10 % si es para tu vivienda, que se construyó o rehabilitó hace más de dos años, y nuestros materiales no pasan del 40 % sin IVA. Si no, va al 21 %, y el técnico lo confirma en la visita. ¿Hace cuánto se construyó?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Puede ser el 10 % si se cumplen las condiciones; si no, el 21 %. Lo confirma el técnico o tu gestor.","fase":"orientando"}</ficha>

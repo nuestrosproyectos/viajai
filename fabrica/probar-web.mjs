@@ -82,6 +82,8 @@ for (const [nombre, eq] of equipos) {
   if (capturas) {   // recorre la página para que carguen las fotos diferidas y las secciones que aparecen al bajar
     await pag.evaluate(async () => { for (let y = 0; y < document.body.scrollHeight; y += 500) { scrollTo(0, y); await new Promise(r => setTimeout(r, 120)); } scrollTo(0, 0); });
     await pag.waitForTimeout(900);
+    await pag.evaluate(() => document.querySelectorAll(".rev").forEach(e => e.classList.add("ver")));   // lo que aparece al bajar, ya visible en la captura
+    await pag.waitForTimeout(700);
     await pag.screenshot({ path: join(capturas, `${web}-${nombre}-entera.png`), fullPage: true });
   }
 

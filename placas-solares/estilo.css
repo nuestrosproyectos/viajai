@@ -92,3 +92,5 @@ h1 em,h2 em{color:var(--acento)}
 /* móviles de pantalla baja: la plantilla esconde el subtítulo de la tarjeta, pero su regla
    (.ta-quien span) se lleva también el nombre de Andrés; aquí se devuelve el nombre */
 @media (max-width:560px) and (max-height:700px){.ta-quien b span{display:inline}}
+/* sobre el azul oscuro (conversación, tarjeta de Andrés) el foco va en azul claro: el célula no se vería */
+.conv :focus-visible,.tarjeta-andres :focus-visible,.mini :focus-visible,.franja-info :focus-visible{outline-color:#8FB2FF}
