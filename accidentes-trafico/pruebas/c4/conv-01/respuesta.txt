@@ -1,0 +1,2 @@
+Perfecto, te la reservo. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la consulta. Y recuerda ir al médico hoy.
+<ficha>{"caso":"Golpe por detrás","como":"","fecha":"hace 3 días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que te vea un médico hoy y quede por escrito; guardar parte, fotos e informes.","fase":"datos"}</ficha>
