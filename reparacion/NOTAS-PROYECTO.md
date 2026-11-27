@@ -8,7 +8,7 @@ Web de reparación de electrodomésticos (Granada y área metropolitana) atendid
 ## Dónde está todo
 - Repositorio `nuestrosproyectos/viajai`, carpeta `reparacion/` (no toca la web de viajes de la raíz ni `/lia/`).
 - Rama con el trabajo: `claude/brave-pascal-azy07j`.
-- Vista previa privada (solo la ve Juan): https://claude.ai/artifact/9QGWbc2JTTN6J12d7L2Am4 — se genera desde `reparacion/index.html` quitando doctype/html/head/body y con `cerebro.mjs` como archivo adjunto (capacidades: sample con imágenes, dictation, tts, db, user).
+- Vista previa privada ACTUAL (plantilla de la fábrica, 27-11-2026): https://claude.ai/artifact/DYurfeiT5q3jRYcS5p8MBw · La antigua (diseño viejo): https://claude.ai/artifact/9QGWbc2JTTN6J12d7L2Am4 — se genera desde `reparacion/index.html` quitando doctype/html/head/body y con `cerebro.mjs` como archivo adjunto (capacidades: sample con imágenes, dictation, tts, db, user).
 
 ## Archivos
 - `cerebro.mjs`: datos del negocio (NEGOCIO) + instrucciones del técnico. Fuente única para web, servidor y agente. `instrucciones(n, {herramientas:true})` = versión para el agente de voz en directo.

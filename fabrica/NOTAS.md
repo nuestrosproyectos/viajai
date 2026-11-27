@@ -19,6 +19,7 @@ Una herramienta para crear, para cualquier negocio, una web como Reparo y Herenc
 
 ## Páginas privadas (claude.ai)
 - Asistente de la fábrica: https://claude.ai/artifact/GAeFwZbmHzgd3uhWjj3Mb9 (guarda los encargos en su base de datos, colección `encargos`; Claude los lee con ArtifactData y ejecuta `crear.mjs`).
+- Vista previa de Reparo (con la plantilla): https://claude.ai/artifact/DYurfeiT5q3jRYcS5p8MBw (la antigua 9QGWbc2JTTN6J12d7L2Am4 es del diseño viejo; no se tocó).
 - Vistas previas: reformas https://claude.ai/artifact/5fu2zhpaHtyvJnqHJLv3Lx · placas solares https://claude.ai/artifact/VQ4sYVKEaqDyNaYmLkoN8m · fontanería https://claude.ai/artifact/7GJGrr2KbFtU6VpAMwr4kQ · accidentes de tráfico https://claude.ai/artifact/6DKbh3RuJEES6Va6mdRo6g
 - Resultados de las pruebas del cerebro: `fabrica/RESULTADOS-PRUEBAS.md`. Datos que caducan: `fabrica/CADUCIDAD.md` (`node fabrica/caducidad.mjs`).
 
