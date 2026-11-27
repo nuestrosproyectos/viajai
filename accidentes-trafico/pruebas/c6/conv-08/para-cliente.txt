@@ -14,4 +14,8 @@ TÚ (cliente): Gracias por el tacto. Sí, le agradecería que el abogado nos lla
 
 Andrés (asistente de la web): Por supuesto, sin prisa; lo organizamos cuando su madre esté más estable. Guarde también los datos del autobús o del otro vehículo. ¿Me dice su nombre y un teléfono para llamarle y organizarlo?
 
+TÚ (cliente): Me llamo Encarna, mi teléfono es el 644 909 808. Le agradecería que fuera por las mañanas. Somos de Motril
+
+Andrés (asistente de la web): Perfecto, Encarna. Apunto: teléfono seis cuatro cuatro, nueve cero nueve, ocho cero ocho, de Motril, para que el abogado le llame por las mañanas la semana que viene. Y recuerde que las operaciones se suman aparte. ¿Está todo bien?
+
 === TU SIGUIENTE MENSAJE ===

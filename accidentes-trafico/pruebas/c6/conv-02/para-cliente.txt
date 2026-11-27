@@ -14,4 +14,8 @@ TÚ (cliente): Por teléfono mejor, y por las mañanas. Resérvamela, que no qui
 
 Andrés (asistente de la web): Haces bien en no firmar nada hasta que lo mire el abogado. Ya te anoto la consulta por teléfono, por la mañana. Para llamarte y organizarla, ¿me dices tu nombre y un teléfono?
 
+TÚ (cliente): Sonia, 633 202 404. Soy de Motril
+
+Andrés (asistente de la web): Perfecto, Sonia. Apunto: teléfono seis tres tres, dos cero dos, cuatro cero cuatro, en Motril, por teléfono y por la mañana. Y ojo, un finiquito firmado puede cerrar la puerta, así que no lo firmes. ¿Está todo bien?
+
 === TU SIGUIENTE MENSAJE ===

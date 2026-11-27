@@ -25,5 +25,14 @@
   "role": "assistant",
   "content": "Perfecto, te llamamos para organizar la consulta y hablarlo con el abogado. Y si prefieres seguir con el abogado del seguro, se respeta. ¿Me dices tu nombre y un teléfono?\n<ficha>{\"caso\":\"\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"por teléfono\",\"consentimientoSalud\":\"\",\"orientacion\":\"Si la póliza tiene defensa jurídica, puede elegir su propio abogado; la consulta gratis le sirve de segunda opinión.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, te llamamos para organizar la consulta y hablarlo con el abogado. Y si prefieres seguir con el abogado del seguro, se respeta. ¿Me dices tu nombre y un teléfono?\n<ficha>{\"caso\":\"\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"por teléfono\",\"consentimientoSalud\":\"\",\"orientacion\":\"Si la póliza tiene defensa jurídica, puede elegir su propio abogado; la consulta gratis le sirve de segunda opinión.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Javi, 633 445 566. Por las mañanas mejor"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Javi. Y no firmes nada del seguro sin que lo vea el abogado. Para organizar la consulta, ¿en qué municipio vives?\n<ficha>{\"caso\":\"\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Javi\",\"telefono\":\"633 445 566\",\"municipio\":\"\",\"franja\":\"por teléfono, por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Si la póliza tiene defensa jurídica, puede elegir su propio abogado; la consulta gratis le sirve de segunda opinión.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Javi. Y no firmes nada del seguro sin que lo vea el abogado. Para organizar la consulta, ¿en qué municipio vives?\n<ficha>{\"caso\":\"\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Javi\",\"telefono\":\"633 445 566\",\"municipio\":\"\",\"franja\":\"por teléfono, por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Si la póliza tiene defensa jurídica, puede elegir su propio abogado; la consulta gratis le sirve de segunda opinión.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

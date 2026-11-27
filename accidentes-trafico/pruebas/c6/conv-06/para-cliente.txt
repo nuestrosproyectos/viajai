@@ -14,4 +14,8 @@ TÚ (cliente): Vale, pues sin compromiso y gratis sí. Que me llamen y lo hablo 
 
 Andrés (asistente de la web): Perfecto, te llamamos para organizar la consulta y hablarlo con el abogado. Y si prefieres seguir con el abogado del seguro, se respeta. ¿Me dices tu nombre y un teléfono?
 
+TÚ (cliente): Javi, 633 445 566. Por las mañanas mejor
+
+Andrés (asistente de la web): Gracias, Javi. Y no firmes nada del seguro sin que lo vea el abogado. Para organizar la consulta, ¿en qué municipio vives?
+
 === TU SIGUIENTE MENSAJE ===

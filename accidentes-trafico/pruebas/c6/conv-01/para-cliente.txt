@@ -14,4 +14,8 @@ TÚ (cliente): Vale, si es gratis y solo cobráis si hay indemnización, sí, re
 
 Andrés (asistente de la web): Perfecto, te la dejo apuntada. Mañana al médico, muy bien. Y guarda fotos, testigos, informes y facturas. Para llamarte y organizar la consulta, ¿me dices tu nombre y un teléfono?
 
+TÚ (cliente): Raúl, 644 555 888
+
+Andrés (asistente de la web): Gracias, Raúl. Lo apunto para llamarte y organizar la consulta. Recuerda que tienes un año para reclamar, que en lesiones suele contar desde el alta. ¿En qué municipio vives y prefieres la consulta por teléfono, por videollamada o en el despacho?
+
 === TU SIGUIENTE MENSAJE ===

@@ -14,4 +14,8 @@ TÚ (cliente): Vale, gracias por explicármelo. Sí, resérvame la consulta, mej
 
 Andrés (asistente de la web): Vale, te reservo la consulta por videollamada. Y si fue hace menos de siete días, da parte a tu aseguradora. Para llamarte y organizarla, ¿me dices tu nombre y un teléfono?
 
+TÚ (cliente): Daniel, 611 777 222. Cualquier tarde me viene bien
+
+Andrés (asistente de la web): Gracias, Daniel. Y guarda fotos, testigos, informes y facturas. Para organizar la videollamada, ¿en qué municipio vives?
+
 === TU SIGUIENTE MENSAJE ===
