@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Lucía, 611 908 774"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Lucía. Si puedes, mándame fotos del tabique con el botón de la cámara: así el técnico llega preparado. ¿En qué calle y número está el piso, y qué día te viene bien por la tarde?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"Piso\",\"metros\":\"\",\"antiguedad\":\"edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"Lucía\",\"telefono\":\"611 908 774\",\"municipio\":\"Granada, centro\",\"direccion\":\"\",\"franja\":\"por la tarde\",\"inicio\":\"\",\"orientacion\":\"Si el tabique es de carga hacen falta proyecto y licencia; el técnico lo comprueba en la visita y hay que avisar a la comunidad por escrito.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Lucía. Si puedes, mándame fotos del tabique con el botón de la cámara: así el técnico llega preparado. ¿En qué calle y número está el piso, y qué día te viene bien por la tarde?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"Piso\",\"metros\":\"\",\"antiguedad\":\"edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"Lucía\",\"telefono\":\"611 908 774\",\"municipio\":\"Granada, centro\",\"direccion\":\"\",\"franja\":\"por la tarde\",\"inicio\":\"\",\"orientacion\":\"Si el tabique es de carga hacen falta proyecto y licencia; el técnico lo comprueba en la visita y hay que avisar a la comunidad por escrito.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

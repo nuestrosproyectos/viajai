@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Perfecto, Pilar. Mientras llega, haz fotos para el seguro. Lo apunto así: teléfono seis uno cero, dos dos tres, tres cuatro cuatro, en Granada capital, calle Recogidas cuarenta, segundo B, visita urgente para hoy. ¿Está todo bien?\n<ficha>{\"averia\":\"Fuga de agua bajo el fregadero\",\"cuando\":\"Urgente, hoy en cuanto podáis\",\"llave\":\"Sí, ya ha parado el agua\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Pilar\",\"telefono\":\"610 223 344\",\"municipio\":\"Granada capital\",\"direccion\":\"Calle Recogidas 40, 2º B\",\"franja\":\"Hoy, cuanto antes\",\"inicio\":\"\",\"orientacion\":\"Haz fotos para el seguro y llama antes a tu aseguradora; no toques aparatos mojados.\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Pilar. Mientras llega, haz fotos para el seguro. Lo apunto así: teléfono seis uno cero, dos dos tres, tres cuatro cuatro, en Granada capital, calle Recogidas cuarenta, segundo B, visita urgente para hoy. ¿Está todo bien?\n<ficha>{\"averia\":\"Fuga de agua bajo el fregadero\",\"cuando\":\"Urgente, hoy en cuanto podáis\",\"llave\":\"Sí, ya ha parado el agua\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Pilar\",\"telefono\":\"610 223 344\",\"municipio\":\"Granada capital\",\"direccion\":\"Calle Recogidas 40, 2º B\",\"franja\":\"Hoy, cuanto antes\",\"inicio\":\"\",\"orientacion\":\"Haz fotos para el seguro y llama antes a tu aseguradora; no toques aparatos mojados.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien. ¿Y vendrá hoy entonces?"
  }
 ]

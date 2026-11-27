@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Perfecto, por la tarde lo apunto. Solo es para llamarte y organizar la visita: ¿me dices tu nombre y un teléfono?\n<ficha>{\"averia\":\"Agua sucia sale por el plato de ducha del bajo al tirar de la cisterna de arriba\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Hacer fotos de los daños para el seguro. El informe del fontanero con cámara ayuda a decidir quién paga; la comunidad lo decide con su administrador.\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, por la tarde lo apunto. Solo es para llamarte y organizar la visita: ¿me dices tu nombre y un teléfono?\n<ficha>{\"averia\":\"Agua sucia sale por el plato de ducha del bajo al tirar de la cisterna de arriba\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Hacer fotos de los daños para el seguro. El informe del fontanero con cámara ayuda a decidir quién paga; la comunidad lo decide con su administrador.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Ana, 677 450 990"
  }
 ]

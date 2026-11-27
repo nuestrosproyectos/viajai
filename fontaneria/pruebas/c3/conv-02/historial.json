@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Perfecto, Luis, lo apunto para mañana por la mañana. ¿En qué municipio y en qué calle es la vivienda?\n<ficha>{\"averia\":\"Lavabo del baño atascado, solo ese; ya echó un desatascador fuerte\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Luis\",\"telefono\":\"655 990 120\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"No echar más productos; el fontanero revisará el sifón del lavabo. Un desatasco sencillo suele costar unos 70 a 150 euros más IVA, orientativo.\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Luis, lo apunto para mañana por la mañana. ¿En qué municipio y en qué calle es la vivienda?\n<ficha>{\"averia\":\"Lavabo del baño atascado, solo ese; ya echó un desatascador fuerte\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Luis\",\"telefono\":\"655 990 120\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"No echar más productos; el fontanero revisará el sifón del lavabo. Un desatasco sencillo suele costar unos 70 a 150 euros más IVA, orientativo.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Armilla, avenida de los Mondragones 3"
  }
 ]

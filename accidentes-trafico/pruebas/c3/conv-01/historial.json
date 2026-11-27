@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Gracias, Raúl, lo apunto para la videollamada por la tarde. Y recuerda dar parte a tu aseguradora en siete días. ¿En qué municipio vives?\n<ficha>{\"caso\":\"Golpe por detrás hace tres días\",\"como\":\"\",\"fecha\":\"Hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Raúl\",\"telefono\":\"644 555 888\",\"municipio\":\"\",\"franja\":\"Por la tarde, por videollamada\",\"consentimientoSalud\":\"\",\"orientacion\":\"Ir al médico hoy y dejarlo por escrito; la primera consulta con el abogado es gratis.\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Raúl, lo apunto para la videollamada por la tarde. Y recuerda dar parte a tu aseguradora en siete días. ¿En qué municipio vives?\n<ficha>{\"caso\":\"Golpe por detrás hace tres días\",\"como\":\"\",\"fecha\":\"Hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Raúl\",\"telefono\":\"644 555 888\",\"municipio\":\"\",\"franja\":\"Por la tarde, por videollamada\",\"consentimientoSalud\":\"\",\"orientacion\":\"Ir al médico hoy y dejarlo por escrito; la primera consulta con el abogado es gratis.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "En Granada, en el Zaidín"
  }
 ]
