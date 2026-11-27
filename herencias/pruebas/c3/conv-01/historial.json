@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "No lo sé la verdad, no sé si hizo testamento. Todo esto me ha pillado de sorpresa. Lo que más me preocupa es si vamos a tener que pagar mucho"
+ },
+ {
+  "role": "assistant",
+  "content": "Entiendo el susto. Como hijo, lo más probable es que pagues cero o casi nada de impuesto de sucesiones, aunque hay que presentarlo en seis meses. Luego pide el certificado de últimas voluntades, que dice si hubo testamento. ¿Te reservo la consulta con el abogado?\n<ficha>{\"situacion\":\"fallecimiento de tu padre la semana pasada, no sabes por dónde empezar\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"No lo sé\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"la semana pasada\",\"modalidad\":\"\",\"orientacion\":\"Como hijo, lo más probable es que pagues cero o casi nada de impuesto, pero hay que presentarlo en seis meses; después pide el certificado de últimas voluntades para saber si hubo testamento.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Entiendo el susto. Como hijo, lo más probable es que pagues cero o casi nada de impuesto de sucesiones, aunque hay que presentarlo en seis meses. Luego pide el certificado de últimas voluntades, que dice si hubo testamento. ¿Te reservo la consulta con el abogado?\n<ficha>{\"situacion\":\"fallecimiento de tu padre la semana pasada, no sabes por dónde empezar\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"No lo sé\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"la semana pasada\",\"modalidad\":\"\",\"orientacion\":\"Como hijo, lo más probable es que pagues cero o casi nada de impuesto, pero hay que presentarlo en seis meses; después pide el certificado de últimas voluntades para saber si hubo testamento.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]
