@@ -18,4 +18,10 @@ TÚ (cliente): Pedro, 600 909 303. Por la tarde mejor, y somos de Loja
 
 Andrés (asistente de la web): Siento lo de la muñeca. Apunto: Pedro, teléfono seis cero cero, nueve cero nueve, tres cero tres, de Loja, por videollamada por la tarde. Y mira si tu póliza tiene defensa jurídica, que puede cubrir parte de los honorarios. ¿Está todo bien?
 
+TÚ (cliente): Sí, todo bien. Pero entonces, ¿a mí no me perjudica que la culpa fuera mía?
+
+Andrés (asistente de la web): Tu seguro obligatorio no paga tus propias lesiones, salvo con seguro de conductor o de accidentes; lo de tu póliza lo ve el abogado. Queda enviada la solicitud y te llamamos para confirmar el día y la hora de la tarde. ¿Necesitas algo más?
+
+[En la pantalla aparece ahora: «¡Listo! Solicitud enviada. Te llamamos para confirmar».]
+
 === TU SIGUIENTE MENSAJE ===

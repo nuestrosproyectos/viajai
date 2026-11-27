@@ -34,5 +34,14 @@
   "role": "assistant",
   "content": "Gracias, Raúl. Lo apunto para llamarte y organizar la consulta. Recuerda que tienes un año para reclamar, que en lesiones suele contar desde el alta. ¿En qué municipio vives y prefieres la consulta por teléfono, por videollamada o en el despacho?\n<ficha>{\"caso\":\"Golpe por detrás\",\"como\":\"\",\"fecha\":\"hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Raúl\",\"telefono\":\"644 555 888\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico hoy y quede por escrito; dar parte a tu aseguradora en siete días.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Raúl. Lo apunto para llamarte y organizar la consulta. Recuerda que tienes un año para reclamar, que en lesiones suele contar desde el alta. ¿En qué municipio vives y prefieres la consulta por teléfono, por videollamada o en el despacho?\n<ficha>{\"caso\":\"Golpe por detrás\",\"como\":\"\",\"fecha\":\"hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Raúl\",\"telefono\":\"644 555 888\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico hoy y quede por escrito; dar parte a tu aseguradora en siete días.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Vivo en Granada, en el Zaidín. Por videollamada mejor"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Raúl, por videollamada y desde Granada. Te reservo la consulta, gratis y sin compromiso. ¿Te viene mejor por la mañana o por la tarde?\n<ficha>{\"caso\":\"Golpe por detrás\",\"como\":\"\",\"fecha\":\"hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Raúl\",\"telefono\":\"644 555 888\",\"municipio\":\"Granada, barrio del Zaidín\",\"franja\":\"por videollamada\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico hoy y quede por escrito; dar parte a tu aseguradora en siete días.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Raúl, por videollamada y desde Granada. Te reservo la consulta, gratis y sin compromiso. ¿Te viene mejor por la mañana o por la tarde?\n<ficha>{\"caso\":\"Golpe por detrás\",\"como\":\"\",\"fecha\":\"hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Raúl\",\"telefono\":\"644 555 888\",\"municipio\":\"Granada, barrio del Zaidín\",\"franja\":\"por videollamada\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico hoy y quede por escrito; dar parte a tu aseguradora en siete días.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

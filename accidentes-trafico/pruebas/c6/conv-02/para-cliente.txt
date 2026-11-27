@@ -18,4 +18,10 @@ TÚ (cliente): Sonia, 633 202 404. Soy de Motril
 
 Andrés (asistente de la web): Perfecto, Sonia. Apunto: teléfono seis tres tres, dos cero dos, cuatro cero cuatro, en Motril, por teléfono y por la mañana. Y ojo, un finiquito firmado puede cerrar la puerta, así que no lo firmes. ¿Está todo bien?
 
+TÚ (cliente): Sí, está todo bien. Gracias
+
+Andrés (asistente de la web): Perfecto, Sonia. Queda enviada la solicitud y te llamamos para confirmar el día y la hora de la mañana. Hasta entonces, no firmes nada. ¿Necesitas algo más?
+
+[En la pantalla aparece ahora: «¡Listo! Solicitud enviada. Te llamamos para confirmar».]
+
 === TU SIGUIENTE MENSAJE ===

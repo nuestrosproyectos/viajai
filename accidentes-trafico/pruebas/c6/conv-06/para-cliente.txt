@@ -18,4 +18,8 @@ TÚ (cliente): Javi, 633 445 566. Por las mañanas mejor
 
 Andrés (asistente de la web): Gracias, Javi. Y no firmes nada del seguro sin que lo vea el abogado. Para organizar la consulta, ¿en qué municipio vives?
 
+TÚ (cliente): Vivo en Granada, en la Chana
+
+Andrés (asistente de la web): Javi, repaso para confirmar: teléfono seis tres tres, cuatro cuatro cinco, cinco seis seis; Granada, en La Chana; consulta por teléfono por la mañana. ¿Está todo bien?
+
 === TU SIGUIENTE MENSAJE ===

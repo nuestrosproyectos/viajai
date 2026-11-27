@@ -18,4 +18,8 @@ TÚ (cliente): Raúl, 644 555 888
 
 Andrés (asistente de la web): Gracias, Raúl. Lo apunto para llamarte y organizar la consulta. Recuerda que tienes un año para reclamar, que en lesiones suele contar desde el alta. ¿En qué municipio vives y prefieres la consulta por teléfono, por videollamada o en el despacho?
 
+TÚ (cliente): Vivo en Granada, en el Zaidín. Por videollamada mejor
+
+Andrés (asistente de la web): Perfecto, Raúl, por videollamada y desde Granada. Te reservo la consulta, gratis y sin compromiso. ¿Te viene mejor por la mañana o por la tarde?
+
 === TU SIGUIENTE MENSAJE ===

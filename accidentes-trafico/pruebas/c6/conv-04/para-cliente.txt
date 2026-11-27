@@ -18,4 +18,8 @@ TÚ (cliente): Inés, 655 777 333. Mejor por las mañanas
 
 Andrés (asistente de la web): Gracias, Inés. Y si hubo testigos o atestado, guárdalo todo junto con informes y facturas. Para organizar bien la consulta en el despacho, ¿en qué municipio vives?
 
+TÚ (cliente): En Granada, en el Realejo
+
+Andrés (asistente de la web): Inés, repaso para confirmar: teléfono seis cinco cinco, siete siete siete, tres tres tres; Granada, en el Realejo; consulta en el despacho por la mañana. Si aún no has ido al médico, ve cuanto antes. ¿Está todo bien?
+
 === TU SIGUIENTE MENSAJE ===

@@ -18,4 +18,10 @@ TÚ (cliente): Me llamo Encarna, mi teléfono es el 644 909 808. Le agradecería
 
 Andrés (asistente de la web): Perfecto, Encarna. Apunto: teléfono seis cuatro cuatro, nueve cero nueve, ocho cero ocho, de Motril, para que el abogado le llame por las mañanas la semana que viene. Y recuerde que las operaciones se suman aparte. ¿Está todo bien?
 
+TÚ (cliente): Sí, todo bien, gracias. Y perdone, ¿qué quiere decir que las operaciones se suman aparte?
+
+Andrés (asistente de la web): Queda enviada la solicitud y le llamaremos por las mañanas para confirmar día y hora. Las operaciones se cuentan aparte de los días de hospital y se suman a lo demás; cuánto supone, lo calcula el abogado con los informes. ¿Necesita algo más?
+
+[En la pantalla aparece ahora: «¡Listo! Solicitud enviada. Te llamamos para confirmar».]
+
 === TU SIGUIENTE MENSAJE ===
