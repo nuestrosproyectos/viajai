@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Gracias, Elena, lo apunto. La instaladora se encarga de la legalización y los trámites; el presupuesto llega por escrito unos cinco días laborables después. ¿En qué calle y número está el bloque, y qué día te viene bien por la tarde?\n<ficha>{\"que\":\"Placas solares en la azotea del bloque\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea común\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"688 120 777\",\"municipio\":\"Granada, Zaidín\",\"direccion\":\"\",\"franja\":\"por la tarde\",\"inicio\":\"\",\"orientacion\":\"Hace falta el acuerdo de la junta para la azotea común; el estudio sirve para llevarlo a la reunión y la instaladora gestiona los trámites.\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Elena, lo apunto. La instaladora se encarga de la legalización y los trámites; el presupuesto llega por escrito unos cinco días laborables después. ¿En qué calle y número está el bloque, y qué día te viene bien por la tarde?\n<ficha>{\"que\":\"Placas solares en la azotea del bloque\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea común\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"688 120 777\",\"municipio\":\"Granada, Zaidín\",\"direccion\":\"\",\"franja\":\"por la tarde\",\"inicio\":\"\",\"orientacion\":\"Hace falta el acuerdo de la junta para la azotea común; el estudio sirve para llevarlo a la reunión y la instaladora gestiona los trámites.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Calle Arabial 50. Me va bien cualquier tarde de la semana"
  }
 ]

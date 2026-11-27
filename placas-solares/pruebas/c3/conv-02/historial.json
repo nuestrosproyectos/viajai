@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Te lo apunto, Rosa. Y la deducción de la Renta de 2026 va muy justa de plazo; un asesor fiscal lo confirma. ¿En qué calle y número está la casa, y qué día te viene bien por la tarde?\n<ficha>{\"que\":\"Revisar un presupuesto de 6.800 € por 5 kWp con batería de 10 kWh\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"Rosa\",\"telefono\":\"622 300 415\",\"municipio\":\"Granada, Zaidín\",\"direccion\":\"\",\"franja\":\"por la tarde\",\"inicio\":\"\",\"orientacion\":\"Conviene revisar que el presupuesto de 6.800 € incluya la legalización y las garantías por escrito; lo miramos en el estudio gratis.\",\"fase\":\"datos\"}</ficha>",
   "original": "Te lo apunto, Rosa. Y la deducción de la Renta de 2026 va muy justa de plazo; un asesor fiscal lo confirma. ¿En qué calle y número está la casa, y qué día te viene bien por la tarde?\n<ficha>{\"que\":\"Revisar un presupuesto de 6.800 € por 5 kWp con batería de 10 kWh\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"Rosa\",\"telefono\":\"622 300 415\",\"municipio\":\"Granada, Zaidín\",\"direccion\":\"\",\"franja\":\"por la tarde\",\"inicio\":\"\",\"orientacion\":\"Conviene revisar que el presupuesto de 6.800 € incluya la legalización y las garantías por escrito; lo miramos en el estudio gratis.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Calle Palencia 10. Cualquier tarde, sin prisa"
  }
 ]

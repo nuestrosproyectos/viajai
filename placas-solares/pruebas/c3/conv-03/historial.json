@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Perfecto, te lo apunto para una tarde entre semana. Si mandas una foto de la factura con el botón de la cámara, el técnico llega preparado. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar el estudio.\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"por la tarde, entre semana\",\"inicio\":\"\",\"orientacion\":\"Lo que decide es lo que gastas de noche; el estudio con tus facturas calcula cuánto te compensa, sin garantizar factura cero.\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, te lo apunto para una tarde entre semana. Si mandas una foto de la factura con el botón de la cámara, el técnico llega preparado. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar el estudio.\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"por la tarde, entre semana\",\"inicio\":\"\",\"orientacion\":\"Lo que decide es lo que gastas de noche; el estudio con tus facturas calcula cuánto te compensa, sin garantizar factura cero.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Manolo, 633 909 101"
  }
 ]
