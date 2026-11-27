@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Entiendo la preocupación. La visita suele hacerse en dos a cuatro días, y en Maracena el ayuntamiento tiene su propia ordenanza, que confirma el técnico. ¿Le reservo la visita?\n<ficha>{\"obra\":\"cambiar la bañera de su padre por un plato de ducha\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cambiar la bañera por un plato de ducha: entre unos 1.000 y 2.300 € lo más habitual; la visita de medición es gratis y suele hacerse en dos a cuatro días.\",\"porDecir\":\"Quitar la bañera: sube si el plato va a ras de suelo, si hay que mover el desagüe o si lleva mampara a medida\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Entiendo la preocupación. La visita suele hacerse en dos a cuatro días, y en Maracena el ayuntamiento tiene su propia ordenanza, que confirma el técnico. ¿Le reservo la visita?\n<ficha>{\"obra\":\"cambiar la bañera de su padre por un plato de ducha\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cambiar la bañera por un plato de ducha: entre unos 1.000 y 2.300 € lo más habitual; la visita de medición es gratis y suele hacerse en dos a cuatro días.\",\"porDecir\":\"Quitar la bañera: sube si el plato va a ras de suelo, si hay que mover el desagüe o si lleva mampara a medida\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, resérvela por favor, cuanto antes mejor."
  }
 ]
