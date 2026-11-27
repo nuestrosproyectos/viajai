@@ -1,2 +1,0 @@
-Un baño completo en reforma estándar suele quedar entre tres mil y seis mil euros, en una o dos semanas. Las tuberías viejas son lo que más lo mueve. ¿Te reservo la visita gratis, mejor por la mañana o por la tarde?
-<ficha>{"obra":"Reforma del baño","vivienda":"Piso","metros":"unos 5 m²","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Medir el baño en la visita gratuita para afinar el precio.","fase":"proponiendo"}</ficha>

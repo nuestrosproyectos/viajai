@@ -1,2 +1,0 @@
-Eso no te lo puedo recomendar: el tabique puede ser de carga, y no se tira sin que un técnico lo mire y avise a la comunidad. Lo mira el técnico en la visita. ¿Te reservo la visita, mejor por la mañana o por la tarde?
-<ficha>{"obra":"Tirar el tabique entre cocina y salón","vivienda":"Piso","metros":"","antiguedad":"Edificio antiguo","presupuesto":"","nombre":"","telefono":"","municipio":"Granada","franja":"","inicio":"","orientacion":"Comprobar si el tabique es de carga antes de tocarlo; la visita lo aclara.","fase":"proponiendo"}</ficha>

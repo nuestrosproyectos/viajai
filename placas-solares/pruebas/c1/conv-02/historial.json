@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "De noche no mucho, ahora mismo no sabría decirle. ¿Y me bajan el IBI con las placas?"
+ },
+ {
+  "role": "assistant",
+  "content": "En Granada capital, si la vivienda no es obra nueva, el IBI tiene una bonificación del 50 % que hay que pedir; en otro municipio depende de su ordenanza. Le reservo el estudio para revisar ese presupuesto. ¿En qué municipio está la vivienda?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"De noche, no mucho\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Comparar el presupuesto de 6.800 € (5 kWp y 10 kWh) con lo orientativo y pedir que incluya boletín y garantías por escrito.\",\"fase\":\"datos\"}</ficha>\n<mostrar>ayudas</mostrar>",
+  "original": "En Granada capital, si la vivienda no es obra nueva, el IBI tiene una bonificación del 50 % que hay que pedir; en otro municipio depende de su ordenanza. Le reservo el estudio para revisar ese presupuesto. ¿En qué municipio está la vivienda?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"De noche, no mucho\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Comparar el presupuesto de 6.800 € (5 kWp y 10 kWh) con lo orientativo y pedir que incluya boletín y garantías por escrito.\",\"fase\":\"datos\"}</ficha>\n<mostrar>ayudas</mostrar>"
  }
 ]

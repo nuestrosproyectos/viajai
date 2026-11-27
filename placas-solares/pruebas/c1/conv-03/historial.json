@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Hombre, de noche gasto bastante, trabajo fuera de día. Pero por escrito que no pago luz, ¿eso no?"
+ },
+ {
+  "role": "assistant",
+  "content": "Eso nadie te lo puede garantizar: la factura nunca baja a cero, siempre quedan potencia, contador e impuestos. Con gasto de noche, la batería puede merecer la pena, pero encarece la instalación. ¿Te reservo el estudio gratis, mejor por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"De noche\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Ver el estudio con tus facturas; las garantías de placas y batería van por escrito en el presupuesto.\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Eso nadie te lo puede garantizar: la factura nunca baja a cero, siempre quedan potencia, contador e impuestos. Con gasto de noche, la batería puede merecer la pena, pero encarece la instalación. ¿Te reservo el estudio gratis, mejor por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"De noche\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Ver el estudio con tus facturas; las garantías de placas y batería van por escrito en el presupuesto.\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "En casa, adosada en Armilla. Tejado a dos aguas con una cara al sur y sin sombras"
+ },
+ {
+  "role": "assistant",
+  "content": "Con una cara al sur y sin sombras, el tejado es lo más favorable. Cada kilovatio de paneles suele dar unos mil cuatrocientos a mil setecientos kilovatios hora al año en Granada. ¿Te reservo el estudio gratis, mejor por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"A dos aguas, una cara al sur, sin sombras\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Reservar el estudio gratuito con tus facturas para afinar el tamaño.\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Con una cara al sur y sin sombras, el tejado es lo más favorable. Cada kilovatio de paneles suele dar unos mil cuatrocientos a mil setecientos kilovatios hora al año en Granada. ¿Te reservo el estudio gratis, mejor por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"A dos aguas, una cara al sur, sin sombras\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Reservar el estudio gratuito con tus facturas para afinar el tamaño.\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]
