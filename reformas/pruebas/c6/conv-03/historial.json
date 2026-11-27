@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Tirar un tabique no tiene precio fijo: lo da el técnico en la visita, gratis, tras ver si sostiene el edificio. Si lo es, suele hacer falta proyecto y licencia y avisar a la comunidad. ¿Está en el Albaicín, el Realejo o el centro histórico?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"Edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"El técnico ve en la visita si el tabique sostiene el edificio; si lo hace, hace falta proyecto y licencia.\",\"porDecir\":\"en el Albaicín, el Realejo o el centro histórico, lo más probable es licencia y técnico aunque no se toquen muros · si la cocina queda abierta, la campana sigue sacando los humos por su conducto\",\"fase\":\"orientando\"}</ficha>\n<mostrar>permisos</mostrar>",
   "original": "Tirar un tabique no tiene precio fijo: lo da el técnico en la visita, gratis, tras ver si sostiene el edificio. Si lo es, suele hacer falta proyecto y licencia y avisar a la comunidad. ¿Está en el Albaicín, el Realejo o el centro histórico?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"Edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"El técnico ve en la visita si el tabique sostiene el edificio; si lo hace, hace falta proyecto y licencia.\",\"porDecir\":\"en el Albaicín, el Realejo o el centro histórico, lo más probable es licencia y técnico aunque no se toquen muros · si la cocina queda abierta, la campana sigue sacando los humos por su conducto\",\"fase\":\"orientando\"}</ficha>\n<mostrar>permisos</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Es en la calle San Antón, en el centro. No es el Albaicín ni el Realejo, creo"
  }
 ]

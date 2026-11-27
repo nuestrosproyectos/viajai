@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Muchas cocinas completas están entre unos seis mil y diez mil euros, según los muebles. Mover el fregadero lo encarece, porque hay que mover las tuberías de agua y desagüe. Lo concretamos en la visita de medición, gratis. ¿Cuántos metros tiene la cocina, más o menos?\n<ficha>{\"obra\":\"Cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Mover el fregadero encarece la cocina; el precio exacto sale de la visita de medición.\",\"porDecir\":\"cuánto tiempo estará sin cocina depende de los muebles a medida, la fontanería y el alicatado; eso lo da el técnico en la visita y por escrito en el presupuesto\",\"fase\":\"orientando\"}</ficha>\n<mostrar>precios</mostrar>",
   "original": "Muchas cocinas completas están entre unos seis mil y diez mil euros, según los muebles. Mover el fregadero lo encarece, porque hay que mover las tuberías de agua y desagüe. Lo concretamos en la visita de medición, gratis. ¿Cuántos metros tiene la cocina, más o menos?\n<ficha>{\"obra\":\"Cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Mover el fregadero encarece la cocina; el precio exacto sale de la visita de medición.\",\"porDecir\":\"cuánto tiempo estará sin cocina depende de los muebles a medida, la fontanería y el alicatado; eso lo da el técnico en la visita y por escrito en el presupuesto\",\"fase\":\"orientando\"}</ficha>\n<mostrar>precios</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Unos 9 m². Y cuánto tiempo me quedaría sin cocina?"
  }
 ]

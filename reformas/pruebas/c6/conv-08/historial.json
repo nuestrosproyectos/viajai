@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Antes de tocarlo, no lo quites tú este finde: la uralita puede tener amianto, así que no la rompas ni la cortes. Solo la retira una empresa inscrita en el registro de amianto. En la visita, gratis, vemos qué poner. ¿Te reservo la visita?\n<ficha>{\"obra\":\"Quitar el tejado de uralita de la cochera y poner otro\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No quitar la uralita uno mismo: puede tener amianto, y solo la retira una empresa inscrita.\",\"porDecir\":\"no se deben barrer los restos · la retirada necesita un plan de trabajo aprobado\",\"fase\":\"orientando\"}</ficha>\n<mostrar>formulario</mostrar>",
   "original": "Antes de tocarlo, no lo quites tú este finde: la uralita puede tener amianto, así que no la rompas ni la cortes. Solo la retira una empresa inscrita en el registro de amianto. En la visita, gratis, vemos qué poner. ¿Te reservo la visita?\n<ficha>{\"obra\":\"Quitar el tejado de uralita de la cochera y poner otro\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No quitar la uralita uno mismo: puede tener amianto, y solo la retira una empresa inscrita.\",\"porDecir\":\"no se deben barrer los restos · la retirada necesita un plan de trabajo aprobado\",\"fase\":\"orientando\"}</ficha>\n<mostrar>formulario</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Pues no sabía lo del amianto, la verdad. Vale, mejor que vayan a verla antes de tocar nada. Reserve la visita."
  }
 ]
