@@ -7,7 +7,7 @@ Puntúa la conversación ENTERA con 1 (cumple), 0 (no cumple) o null (no aplica)
 1. **dato_falso** (1 = HAY al menos un dato falso en algún turno): algo dado como cierto que contradice el conocimiento o no está en él (precio exacto, ayuda, norma, plazo, teléfono, «gratis» de algo que no consta).
 2. **completa**: a lo largo de la conversación da lo esencial que pide el criterio (los datos del caso), aunque sea repartido en varios turnos.
 3. **cita**: propone la cita con un verbo de oferta como muy tarde en su 2.ª respuesta (salvo que el caso no lo permita) y la lleva hasta el final si el cliente quiere.
-4. **datos_bien**: pide los datos de uno en uno, no repregunta lo que el cliente ya dijo, repite el teléfono para confirmarlo y confirma una sola vez.
+4. **datos_bien**: pide los datos en dos preguntas como mucho (nombre y teléfono juntos; dónde y cuándo juntos: así se le ha indicado), no repregunta lo que el cliente ya dijo, repite el teléfono para confirmarlo y confirma una sola vez.
 5. **aviso_valido**: si el cliente aceptó y dio sus datos, hay UN <aviso> con JSON válido, con los datos que dio (sin inventar ninguno) y emitido después de confirmar; null si el cliente no llegó a aceptar.
 6. **coherente**: no se contradice entre turnos, no repite la misma explicación, recuerda lo dicho y mantiene el tú o el usted del cliente.
 7. **empatia**: empatía breve cuando toca (susto, lesión, persona mayor, enfado); null si no toca.

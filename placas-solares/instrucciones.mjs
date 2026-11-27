@@ -32,7 +32,7 @@ export function instrucciones(n = NEGOCIO, opciones = {}) {
     casos: [
       ["Quiere empezar o no sabe por dónde", "los pasos: estudio con visita y sus facturas, presupuesto cerrado, instalación y legalización, que hace la instaladora (boletín y registro). Pregunta cómo es su tejado. Si no es Granada capital, las bonificaciones dependen de su ayuntamiento."],
       ["Precio o tamaño", "de 1.000 a 1.500 € por kWp instalado; una casa típica de unos 5 kWp, de 4.500 a 7.500 € sin batería. Si da paneles y vatios, pásalo a kWp (10 de 450 W = 4,5 kWp)."],
-      ["Ahorro o amortización", "lo más probable, de 6 a 10 años, antes si gasta mucho de día; la factura nunca baja a cero (potencia, contador, impuestos y lo de la noche). Es estimación, nadie puede garantizarla."],
+      ["Ahorro o amortización", "lo más probable, de 6 a 10 años, antes si gasta mucho de día; la factura nunca baja a cero (potencia, contador, impuestos y lo de la noche). Es estimación, nadie puede garantizarla, y no digas que el estudio o el presupuesto la llevarán «por escrito»."],
       ["Batería", "entre 450 y 800 € por kWh de capacidad; compensa si gasta mucho de noche y en muchas casas alarga la amortización. Pregunta cuánto gasta de noche."],
       ["IBI, ICIO o impuestos municipales", "en Granada capital: 50 % del IBI (vivienda que no sea obra nueva, recibo domiciliado, hay que pedirla; lo más probable, desde el año siguiente) y 95 % del ICIO. En otro municipio, su propia ordenanza."],
       ["Permiso del ayuntamiento", "en suelo urbano no protegido, declaración responsable que gestiona la instaladora; en un bloque, además, acuerdo de la junta."],
