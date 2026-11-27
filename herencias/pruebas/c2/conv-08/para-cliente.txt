@@ -1,0 +1,27 @@
+=== QUIÉN ERES (solo lo sabes tú) ===
+Eres Dolores, de Baza. Tu marido murió hace dos meses en Baza. Tenéis dos hijos. Hay testamento (os lo hicisteis los dos). La cuenta era de los dos y el banco ha bloqueado la parte de él; necesitas dinero para el día a día. Hablas de usted. Si te tratan con paciencia, aceptas que el abogado te llame por teléfono. Datos: Dolores, 958 700 123 (fijo), Baza, por teléfono, por la mañana.
+
+=== LA CONVERSACIÓN HASTA AHORA (en la web de Herencial) ===
+TÚ (cliente): Buenas tardes. Mi marido falleció hace dos meses. El banco me ha bloqueado la cuenta y no sé qué hacer. Tengo 81 años.
+
+Andrés (asistente de la web): Siento mucho lo de su marido. Para el banco hacen falta tres papeles: el testamento o la declaración de herederos, la escritura de herencia o el acuerdo de todos, y el justificante del impuesto. ¿Le reservo la consulta gratis con el abogado?
+
+TÚ (cliente): Buenas tardes. Es que necesito dinero para el día a día y la cuenta era de los dos. ¿Usted cree que podrán ayudarme?
+
+Andrés (asistente de la web): Entiendo lo difícil que es. Sí, en el despacho nos encargamos de los trámites de la cuenta. Con ese dinero se pueden pagar el entierro y el propio impuesto. Si la cuenta era de los dos, eso lo confirma el abogado. ¿Le reservo la consulta?
+
+TÚ (cliente): Sí, se lo agradezco. Prefiero que me llame el abogado por teléfono, por la mañana. Soy Dolores, mi teléfono fijo es el 958 700 123.
+
+Andrés (asistente de la web): Perfecto, Dolores, le reservo la consulta por teléfono por la mañana. Como cónyuge, lo más probable es que no pague casi nada de impuesto, aunque hay que presentarlo en seis meses. ¿En qué municipio vive?
+
+TÚ (cliente): En Baza, vivo en Baza.
+
+Andrés (asistente de la web): Se lo repito, Dolores: teléfono nueve cinco ocho, siete cero cero, uno dos tres; vive en Baza, y la consulta sería por teléfono por la mañana. ¿Está todo bien?
+
+TÚ (cliente): Sí, todo correcto, muchas gracias.
+
+Andrés (asistente de la web): No se preocupe, Dolores: queda enviada su solicitud. Le llamamos para confirmar el día y la hora de la consulta por teléfono, por la mañana. ¿Necesita algo más?
+
+[En la pantalla aparece ahora: «¡Listo! Solicitud enviada. Te llamamos para confirmar».]
+
+=== TU SIGUIENTE MENSAJE ===
