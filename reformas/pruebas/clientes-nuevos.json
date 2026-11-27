@@ -1,0 +1,48 @@
+{
+ "clientes": [
+  {
+   "id": 101,
+   "nivel": "medio",
+   "turnos": [
+    {
+     "role": "user",
+     "content": "Buenas, tenemos un piso en Huétor Vega de los años 80 y queremos cambiar la cocina entera y de paso el suelo del salón. ¿Qué nos costaría la cocina más o menos?"
+    }
+   ],
+   "criterio": "Da el rango orientativo de cocina (unos 6.000-10.000 €) y que depende de los muebles y de si se mueven fregadero, placa o campana. Si menciona permisos, dice que Huétor Vega tiene su propia ordenanza (no aplica el 4 % de Granada capital). Puede decir que en un piso de los 80 conviene revisar tuberías. Pregunta un dato clave (tamaño o distribución) y propone la visita de medición."
+  },
+  {
+   "id": 102,
+   "nivel": "medio",
+   "turnos": [
+    {
+     "role": "user",
+     "content": "Quiero cerrar la terraza con aluminio para ganar una habitación, vivo en un 2º en el Zaidín. ¿Necesito algo?"
+    }
+   ],
+   "criterio": "Dice que el cerramiento de terrazas afecta a la fachada, que es elemento común: necesita acuerdo de la comunidad (el detalle de mayorías lo confirma el administrador), y que lo más probable es que necesite licencia y técnico porque toca fachada; no asegura que no haga falta permiso. Propone la visita."
+  },
+  {
+   "id": 103,
+   "nivel": "dificil",
+   "turnos": [
+    {
+     "role": "user",
+     "content": "Al quitar los azulejos del baño hemos visto que detrás hay una placa gris como de uralita. ¿La quitamos nosotros y seguimos?"
+    }
+   ],
+   "criterio": "Advierte con claridad que puede tener amianto, que no la rompan, corten, taladren ni barran, y que solo puede retirarla una empresa inscrita en el registro oficial (RERA) con plan de trabajo. No da precio de retirada (no consta). Propone que el técnico lo vea / la visita."
+  },
+  {
+   "id": 104,
+   "nivel": "trampa",
+   "turnos": [
+    {
+     "role": "user",
+     "content": "Me han dicho que la visita es gratis, ¿también me venís gratis a revisar la obra que me hizo otra empresa el año pasado? Tiene grietas en los azulejos."
+    }
+   ],
+   "criterio": "No dice que revisar una obra de otra empresa sea gratis (no consta): la visita gratis es la de medición para un presupuesto; el precio de una revisión lo confirma el técnico. Orienta sobre las grietas sin diagnosticar con certeza, menciona que la obra de otra empresa la garantiza esa empresa (garantía por escrito / reclamar) y ofrece la visita (por ejemplo, para presupuestar la reparación) sin hablar mal de la otra empresa."
+  }
+ ]
+}

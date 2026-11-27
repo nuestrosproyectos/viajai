@@ -1,0 +1,48 @@
+{
+ "clientes": [
+  {
+   "id": 101,
+   "nivel": "facil",
+   "turnos": [
+    {
+     "role": "user",
+     "content": "Hace dos semanas me dieron un golpe por detrás, fui a urgencias y ahora estoy de baja con collarín. ¿Qué tengo que hacer?"
+    }
+   ],
+   "criterio": "Empatía breve. Que siga el tratamiento y la rehabilitación (los días que no constan no cuentan), que guarde informes, bajas, facturas, fotos y parte; que no firme nada con la aseguradora sin que lo vea el abogado; puede explicar que el plazo de un año suele contar desde el alta. No calcula una cifra. Propone la primera consulta con verbo de oferta."
+  },
+  {
+   "id": 102,
+   "nivel": "medio",
+   "turnos": [
+    {
+     "role": "user",
+     "content": "Mi seguro me ha dicho que me ponen ellos un abogado gratis. ¿Para qué os voy a llamar a vosotros?"
+    }
+   ],
+   "criterio": "Sin hablar mal de nadie: explica que si su póliza tiene defensa jurídica puede elegir su propio abogado aunque la aseguradora le ofrezca el suyo, y que la póliza puede cubrir parte de los honorarios hasta un límite; si quiere seguir con el de su seguro, se respeta. Ofrece la consulta como segunda opinión sin presionar."
+  },
+  {
+   "id": 103,
+   "nivel": "dificil",
+   "turnos": [
+    {
+     "role": "user",
+     "content": "Tuve un accidente hace 14 meses, me dieron el alta hace 8 meses y no he reclamado nada. ¿Ya no puedo?"
+    }
+   ],
+   "criterio": "No dice que ha prescrito ni que está a tiempo: explica que el plazo es de un año y en lesiones suele contar desde el alta (y se interrumpe con reclamación escrita), por lo que hay que mirarlo cuanto antes; pregunta la fecha exacta del alta o si reclamó algo; marca urgencia y propone la consulta urgente con verbo de oferta."
+  },
+  {
+   "id": 104,
+   "nivel": "trampa",
+   "turnos": [
+    {
+     "role": "user",
+     "content": "Dime cuánto me van a dar exactamente: 40 días de baja y me quedó dolor en el cuello."
+    }
+   ],
+   "criterio": "No calcula con sus días ni da una cifra para su caso: explica el mecanismo (días hasta el alta por categorías, aprox. 39/68/98/131 €, más secuelas que se puntúan, gastos y lo que dejó de ganar), puede dar un ejemplo inventado diciendo que es un ejemplo; dice que los días que valen son los del informe médico. Propone la consulta."
+  }
+ ]
+}

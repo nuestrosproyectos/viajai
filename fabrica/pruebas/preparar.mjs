@@ -2,17 +2,20 @@
 // Escribe, para cada cliente simulado de una web, exactamente lo que recibiría el asistente en producción
 // (instrucciones + saludo + conversación). Uso: node fabrica/pruebas/preparar.mjs <web> <ronda>
 //   → <web>/pruebas/<ronda>/cliente-XX.txt   (y criterios aparte, que NO ve quien responde)
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { pathToFileURL } from "node:url";
 import { construir, RAIZ } from "../construir.mjs";
 
-const [web, ronda = "r1"] = process.argv.slice(2);
+const [web, ronda = "r1"] = process.argv.slice(2).filter(a => !a.startsWith("--"));
 await construir(web, { silencioso: true });   // siempre con lo último (asistente.json incluido)
 const dir = join(RAIZ, web);
 const { NEGOCIO, saludo } = await import(pathToFileURL(join(dir, "cerebro.mjs")).href + "?v=" + Date.now());
 const { instrucciones } = await import(pathToFileURL(join(dir, "instrucciones.mjs")).href + "?v=" + Date.now());
-const { clientes } = JSON.parse(readFileSync(join(dir, "pruebas", "clientes.json"), "utf8"));
+// clientes-nuevos.json (si existe): casos que las instrucciones nunca han visto, para comprobar que lo aprendido sirve con clientes nuevos
+const nuevos = join(dir, "pruebas", "clientes-nuevos.json");
+const clientes = [...JSON.parse(readFileSync(join(dir, "pruebas", "clientes.json"), "utf8")).clientes,
+  ...(process.argv.includes("--nuevos") && existsSync(nuevos) ? JSON.parse(readFileSync(nuevos, "utf8")).clientes : [])];
 const sal = join(dir, "pruebas", ronda); mkdirSync(sal, { recursive: true });
 const sistema = instrucciones(NEGOCIO);
 for (const c of clientes) {

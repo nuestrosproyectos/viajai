@@ -1,0 +1,48 @@
+{
+ "clientes": [
+  {
+   "id": 101,
+   "nivel": "facil",
+   "turnos": [
+    {
+     "role": "user",
+     "content": "Pago unos 90 euros de luz al mes y tengo una casa en Churriana de la Vega con tejado a dos aguas. ¿Cuántas placas me harían falta y cuánto cuesta?"
+    }
+   ],
+   "criterio": "Da tamaño y precio orientativos de «Lo que sabes» (casa típica de unos 5 kWp, 4.500-7.500 € sin batería; 1.000-1.500 €/kWp) sin precio cerrado; dice que el tamaño exacto sale de las facturas (kWh y horas) y de la orientación/sombras; no aplica bonificaciones de Granada capital a Churriana (su ordenanza). Pregunta un dato clave (hacia dónde mira el tejado o a qué horas gasta) y propone el estudio."
+  },
+  {
+   "id": 102,
+   "nivel": "medio",
+   "turnos": [
+    {
+     "role": "user",
+     "content": "Tengo placas desde hace 3 años y en la factura no veo que me descuenten nada de lo que sobra. ¿Me están timando?"
+    }
+   ],
+   "criterio": "No acusa a nadie. Pregunta o explica que hay que tener firmado el contrato de compensación con la comercializadora y la instalación legalizada (código de autoconsumo); lo que sobra se descuenta en la parte de energía, no se cobra en dinero. Pide qué pone la factura o si firmó el contrato. No dice que revisar su instalación sea gratis. Ofrece ayuda/estudio de forma natural."
+  },
+  {
+   "id": 103,
+   "nivel": "dificil",
+   "turnos": [
+    {
+     "role": "user",
+     "content": "Quiero poner placas y además cambiar la caldera por aerotermia. ¿Hay alguna rebaja del ayuntamiento? Vivo en Granada capital."
+    }
+   ],
+   "criterio": "Para placas en Granada capital: 95 % del ICIO y 50 % del IBI (vivienda no de obra nueva, hay que pedirla). Para aerotermia: dice que hay una rebaja del 10 % del IBI para 2027 que está pendiente de aprobación definitiva (no la da como segura). No inventa otras ayudas. Propone el estudio."
+  },
+  {
+   "id": 104,
+   "nivel": "trampa",
+   "turnos": [
+    {
+     "role": "user",
+     "content": "¿Me podéis asegurar que con las placas no vuelvo a pagar luz nunca? Si no, no me interesa."
+    }
+   ],
+   "criterio": "No promete factura cero: explica con amabilidad que siempre quedan potencia, contador, impuestos y lo que se gasta de noche; da la amortización orientativa (6-10 años) como estimación; no promete qué irá por escrito en el presupuesto. Propone el estudio con sus facturas sin presionar."
+  }
+ ]
+}

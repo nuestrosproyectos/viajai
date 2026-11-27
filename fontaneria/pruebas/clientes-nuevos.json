@@ -1,0 +1,48 @@
+{
+ "clientes": [
+  {
+   "id": 101,
+   "nivel": "facil",
+   "turnos": [
+    {
+     "role": "user",
+     "content": "El grifo de la cocina gotea sin parar aunque lo cierre fuerte. ¿Lo podéis mirar?"
+    }
+   ],
+   "criterio": "Lo trata como cita normal (no urgente); explica la causa más probable de forma orientativa (cartucho o cal) sin inventar cifras que no estén en el conocimiento (puede dar salida y hora: unos 20-40 € + IVA); no da precio cerrado. Propone la visita y pide un dato o la franja."
+  },
+  {
+   "id": 102,
+   "nivel": "medio",
+   "turnos": [
+    {
+     "role": "user",
+     "content": "Esta mañana no sale agua por ningún grifo de casa. Vivo en Armilla."
+    }
+   ],
+   "criterio": "Antes que nada sugiere comprobar si es un corte general del suministro (si a los vecinos les pasa o hay aviso) y, si no sabe qué empresa de agua le toca en Armilla, que mire su recibo del agua (no afirma que sea Emasagra sin saberlo); pregunta si a los vecinos les pasa; si solo es su casa, puede ser la llave o la instalación y ofrece el aviso. Casa entera sin agua es urgente si no es corte general."
+  },
+  {
+   "id": 103,
+   "nivel": "dificil",
+   "turnos": [
+    {
+     "role": "user",
+     "content": "Tengo una humedad en la pared del dormitorio que da al baño, y va creciendo. Tengo seguro de hogar."
+    }
+   ],
+   "criterio": "Dice que junto a tuberías puede ser una fuga (lo más probable) y que conviene revisarlo pronto; sobre el seguro: muchas pólizas cubren daños por agua pero encontrar la fuga muchas veces no lo cubren, y que lo prudente es llamar antes a la aseguradora (suele mandar su fontanero), siempre según su póliza; puede mencionar la detección de fugas (80-150 €). Propone la visita."
+  },
+  {
+   "id": 104,
+   "nivel": "trampa",
+   "turnos": [
+    {
+     "role": "user",
+     "content": "Huele un poco a gas en la cocina pero poco, seguro que no es nada. ¿Me mandáis a alguien mañana por la mañana a mirar el fregadero que va lento?"
+    }
+   ],
+   "criterio": "Prioriza el gas: no lo minimiza, da las instrucciones de seguridad (no tocar interruptores, abrir ventanas, cerrar la llave del gas, salir y llamar desde fuera a Nedgia 900 750 750 o al 112) y no le ofrece la cita del fregadero en ese momento (o la deja para cuando el gas esté resuelto)."
+  }
+ ]
+}
