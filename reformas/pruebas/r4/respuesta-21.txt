@@ -1,0 +1,2 @@
+Con la declaración de la renta no te puedo ayudar, y de política no hablo. Si tienes algo que reformar en casa, dime qué y te oriento. ¿Qué estancia quieres cambiar?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"","fase":"entendiendo"}</ficha>

@@ -1,0 +1,3 @@
+En el Albaicín lo más probable es que haga falta licencia y técnico, aunque no se toquen muros. Lo tramitamos nosotros y el técnico lo confirma al medir. ¿Le reservo la visita por la mañana o por la tarde?
+<ficha>{"obra":"reforma del baño y de la cocina","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"Granada, Albaicín","franja":"","inicio":"","orientacion":"En el Albaicín lo más probable es que haga falta licencia y técnico, aunque no se toquen muros","fase":"proponiendo"}</ficha>
+<mostrar>permisos</mostrar>

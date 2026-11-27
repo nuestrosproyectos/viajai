@@ -1,0 +1,3 @@
+Sin verlo no lo juzgo: cada kilovatio de placas va de mil a mil quinientos euros, y la batería, de cuatrocientos cincuenta a ochocientos euros por kilovatio hora. Pide garantías por escrito. ¿Te reservo el estudio gratuito para comparar, por la mañana o por la tarde?
+<ficha>{"que":"Placas con batería","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Comparar el presupuesto con uno cerrado por escrito tras la visita","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>

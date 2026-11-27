@@ -1,0 +1,3 @@
+Céntimo a céntimo no te lo puedo dar sin medir. Un baño completo suele estar entre unos tres mil y seis mil euros en reforma estándar, según lo que haya tras los azulejos. ¿Te reservo la visita por la mañana o por la tarde?
+<ficha>{"obra":"reforma completa del baño: quitar bañera, plato de 140, alicatado hasta el techo, mueble con lavabo e inodoro suspendido","vivienda":"","metros":"2,10 x 1,60","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Baño completo suele estar entre 3.000 y 6.000 euros en reforma estándar; el precio cerrado sale de la visita y del presupuesto por escrito","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>

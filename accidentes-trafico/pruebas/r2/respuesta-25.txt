@@ -1,0 +1,3 @@
+Sí, cuando el culpable no tiene seguro responde el Consorcio de Compensación de Seguros, aunque eso lo confirma el abogado. Denunciar cuanto antes ayuda, y si el coche es desconocido, probablemente solo cubra daños personales. ¿Te ha visto ya un médico?
+<ficha>{"caso":"Accidente con su coche; el otro conductor no tenía seguro","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Denunciar cuanto antes; que el abogado confirme qué seguro responde.","fase":"orientando"}</ficha>
+<mostrar>situaciones</mostrar>

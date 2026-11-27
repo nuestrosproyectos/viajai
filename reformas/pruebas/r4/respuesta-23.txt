@@ -1,0 +1,2 @@
+No podemos hacerla sin factura: trabajamos siempre con factura y presupuesto por escrito, que es lo que te protege con la garantía. Y si la vivienda cumple los requisitos, el IVA baja al diez por ciento. ¿Te reservo la visita, mañana o tarde?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Trabajar con factura y presupuesto por escrito; el IVA baja al 10 % si la vivienda cumple los requisitos","fase":"proponiendo"}</ficha>

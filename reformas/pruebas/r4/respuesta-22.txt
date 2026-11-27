@@ -1,0 +1,2 @@
+Entiendo el susto. Primero la seguridad: no enciendas ni apagues nada ni uses el móvil dentro, cierra la llave del gas, sal y llama desde fuera al uno, uno, dos. La reforma la vemos después. ¿Ya estás fuera de casa?
+<ficha>{"obra":"reforma de la cocina","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Salir de casa, no encender ni apagar nada, cerrar la llave del gas y llamar desde fuera al 112","fase":"orientando"}</ficha>

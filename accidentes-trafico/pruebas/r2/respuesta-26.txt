@@ -1,0 +1,2 @@
+Ve al médico hoy; si el dolor de cabeza es fuerte o te mareas, urgencias o el 112. Ir tarde no quita el derecho, aunque los plazos los confirma el abogado. ¿Te reservo la consulta por la mañana o por la tarde?
+<ficha>{"caso":"Accidente hace tres semanas, sin ir al médico al principio","como":"","fecha":"Hace tres semanas","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Ve al médico hoy y que quede escrito; el abogado revisa los plazos.","fase":"proponiendo"}</ficha>
