@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Vale, pues me quedo con que lo pondrán por escrito en el presupuesto. Resérvame la visita entonces"
+ },
+ {
+  "role": "assistant",
+  "content": "Genial, te organizo la visita, que es gratis y sin compromiso. Es solo para llamarte y cuadrarla: ¿me dices tu nombre y un teléfono?\n<ficha>{\"obra\":\"cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"unos 9 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cocina completa: muchas están entre 6.000 y 10.000 €, según los muebles; pide el plazo de inicio y de obra por escrito en el presupuesto.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Genial, te organizo la visita, que es gratis y sin compromiso. Es solo para llamarte y cuadrarla: ¿me dices tu nombre y un teléfono?\n<ficha>{\"obra\":\"cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"unos 9 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cocina completa: muchas están entre 6.000 y 10.000 €, según los muebles; pide el plazo de inicio y de obra por escrito en el presupuesto.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]
