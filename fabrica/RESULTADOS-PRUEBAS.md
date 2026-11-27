@@ -71,6 +71,20 @@ Cambio c5→c6: Andrés lleva en la ficha una lista interna «porDecir» con lo 
 Lo que bajó (coherente): a veces suelta el punto pendiente sin venir a cuento («si aún no has ido al médico…» a quien tiene el alta). Cambio c6→c7: primero contesta lo que pregunta, el pendiente va enlazado y explicado, y se descarta si ya no le sirve; en el aviso, nada de lesiones sin permiso.
 c7: nota 8,00, cita en 4 respuestas de media (antes 5,6), sin datos falsos. Lo que queda (criterio 6,3 en 3 de 8): al ser más corta, a veces no llega a decir un punto (pasajeros en la UCI, culpa compartida). Ajustado tras c7: con un familiar grave, primero salud y «los pasajeros casi siempre cobran», el baremo después; urgente si la aseguradora mete prisa; si pregunta «¿para cuándo?», el plazo habitual.
 
+## Abogados de herencias (Andrés pasado a la plantilla común; 8 conversaciones)
+| | c1 |
+|---|---|
+| Acaban en cita | 8/8 |
+| Datos falsos | 0 |
+| Criterio del caso | 5,0 |
+| Completa | 7,5 |
+| Coherente | 5,0 |
+| Fichas / aviso válidos | 7,5 / 7,5 |
+| Empatía, datos, corta | 10 |
+| Nota media | **7,25** |
+
+Fallos c1: repite la misma frase si el cliente vuelve a preguntar; rellena «No lo sé» o un parentesco por defecto en la ficha; tutea a una señora de 81 años en la primera respuesta; se deja plusvalía, prórroga, parte libre de la pareja y usufructo de la viuda. Cambios c1→c2: si repite la pregunta, explicarlo de otra forma con lo concreto; campos con opciones vacíos hasta que lo diga; usted desde la primera respuesta si es mayor o saluda formal (base común); casos de herencias completados (viudo, banco con los tres papeles, plazo para sobrinos, plusvalía para hijos, parte libre).
+
 ## Qué se corrigió entre rondas (en el cerebro común, para todas las webs, salvo lo marcado)
 - R1→R2: dar siempre el rango de precio si lo pide; empatía con miedo, susto o personas mayores; usted en toda la conversación; una sola pregunta; rellenar en la ficha lo que el cliente ya dijo.
 - R2→R3 (2 datos falsos en reformas): no repartir ni reasignar cifras; revisar excepciones (edificios protegidos, otro municipio); proponer la cita de forma explícita como muy tarde en la 2.ª respuesta; reformas: Albaicín/centro → licencia y técnico.
