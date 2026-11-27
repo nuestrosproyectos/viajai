@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Antonio, 655 909 341"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Antonio. Para organizar la visita, ¿en qué municipio y calle está la cochera, y le viene mejor por la mañana o por la tarde?\n<ficha>{\"obra\":\"quitar el tejado de uralita de la cochera\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"655 909 341\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Mejor que no quite la uralita: puede tener amianto; la retira una empresa inscrita, y el técnico ve qué material conviene.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Antonio. Para organizar la visita, ¿en qué municipio y calle está la cochera, y le viene mejor por la mañana o por la tarde?\n<ficha>{\"obra\":\"quitar el tejado de uralita de la cochera\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"655 909 341\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Mejor que no quite la uralita: puede tener amianto; la retira una empresa inscrita, y el técnico ve qué material conviene.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

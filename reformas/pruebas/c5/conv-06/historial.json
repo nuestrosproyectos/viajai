@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Vale, que lo mire el técnico entonces. Sí, resérvame la visita"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, apunto la visita de medición gratis; suele hacerse en dos a cuatro días. Solo es para llamarte y organizarla: ¿me dices tu nombre y un teléfono?\n<ficha>{\"obra\":\"reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros\",\"vivienda\":\"\",\"metros\":\"90 metros\",\"antiguedad\":\"años 80\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Sin tirar muros, el técnico confirma en Armilla qué trámite hace falta; la electricidad la hace una empresa habilitada con boletín.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, apunto la visita de medición gratis; suele hacerse en dos a cuatro días. Solo es para llamarte y organizarla: ¿me dices tu nombre y un teléfono?\n<ficha>{\"obra\":\"reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros\",\"vivienda\":\"\",\"metros\":\"90 metros\",\"antiguedad\":\"años 80\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Sin tirar muros, el técnico confirma en Armilla qué trámite hace falta; la electricidad la hace una empresa habilitada con boletín.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

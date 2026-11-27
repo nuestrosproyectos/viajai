@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Vale, queda claro. Sí, reserve la visita"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, queda apuntada la visita de medición gratis, de unos 45 minutos. Es solo para llamarle y organizarla: ¿me dice su nombre y un teléfono?\n<ficha>{\"obra\":\"cambiar 6 ventanas por otras que aíslen\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Las ventanas pueden dar deducción del 20 o del 40 % con certificado energético antes y después; el IVA puede ser del 10 % si se cumplen sus condiciones; lo confirma su gestor.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, queda apuntada la visita de medición gratis, de unos 45 minutos. Es solo para llamarle y organizarla: ¿me dice su nombre y un teléfono?\n<ficha>{\"obra\":\"cambiar 6 ventanas por otras que aíslen\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Las ventanas pueden dar deducción del 20 o del 40 % con certificado energético antes y después; el IVA puede ser del 10 % si se cumplen sus condiciones; lo confirma su gestor.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

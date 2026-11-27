@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Vale, me parece razonable. Sí, resérvame la visita"
+ },
+ {
+  "role": "assistant",
+  "content": "Genial, apunto la visita de medición gratis, de unos 45 minutos. El presupuesto por partidas llega por escrito unos cinco días laborables después. ¿Me dices tu nombre y un teléfono?\n<ficha>{\"obra\":\"cambiar bañera por plato de ducha, azulejos y lavabo\",\"vivienda\":\"\",\"metros\":\"unos 5 m²\",\"antiguedad\":\"1978\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada capital, barrio de La Chana\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Un baño completo suele costar entre tres mil y seis mil euros; en un piso de 1978 conviene revisar las tuberías en la visita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Genial, apunto la visita de medición gratis, de unos 45 minutos. El presupuesto por partidas llega por escrito unos cinco días laborables después. ¿Me dices tu nombre y un teléfono?\n<ficha>{\"obra\":\"cambiar bañera por plato de ducha, azulejos y lavabo\",\"vivienda\":\"\",\"metros\":\"unos 5 m²\",\"antiguedad\":\"1978\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada capital, barrio de La Chana\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Un baño completo suele costar entre tres mil y seis mil euros; en un piso de 1978 conviene revisar las tuberías en la visita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]
