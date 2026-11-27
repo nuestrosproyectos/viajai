@@ -65,5 +65,10 @@
  {
   "role": "user",
   "content": "Calle Real, 22."
+ },
+ {
+  "role": "assistant",
+  "content": "Antonio, te repito: visita gratis por la mañana, en Calle Real, veintidós, en Las Gabias, y tu teléfono es seis, siete, ocho, uno, uno, dos, cuatro, cuatro, tres. ¿Está todo bien?\n<ficha>{\"obra\":\"Cocina entera\",\"vivienda\":\"Casa\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"Las Gabias\",\"direccion\":\"Calle Real, 22\",\"franja\":\"Por la mañana\",\"inicio\":\"\",\"orientacion\":\"Cocina completa: el precio depende sobre todo de los muebles y de si se mueven fregadero, placa o campana; en Las Gabias los permisos los confirma el técnico.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Antonio, te repito: visita gratis por la mañana, en Calle Real, veintidós, en Las Gabias, y tu teléfono es seis, siete, ocho, uno, uno, dos, cuatro, cuatro, tres. ¿Está todo bien?\n<ficha>{\"obra\":\"Cocina entera\",\"vivienda\":\"Casa\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"Las Gabias\",\"direccion\":\"Calle Real, 22\",\"franja\":\"Por la mañana\",\"inicio\":\"\",\"orientacion\":\"Cocina completa: el precio depende sobre todo de los muebles y de si se mueven fregadero, placa o campana; en Las Gabias los permisos los confirma el técnico.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

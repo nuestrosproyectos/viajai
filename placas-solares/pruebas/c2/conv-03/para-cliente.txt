@@ -1,0 +1,39 @@
+=== QUIÉN ERES (solo lo sabes tú) ===
+Eres Manolo, casa en Pulianas, pagas unos 80 €/mes, gastas sobre todo por la noche (trabajas fuera de día). Insistes una vez más en la garantía de factura cero. Luego preguntas si con batería sí. Si te lo explican con honestidad, aceptas que vaya el técnico a hacer el estudio. Datos: Manolo, 633 909 101, Pulianas, calle Nueva 3, sábados no; entre semana por la tarde.
+
+=== LA CONVERSACIÓN HASTA AHORA (en la web de Tejaluz) ===
+TÚ (cliente): Quiero placas pero solo si me garantizáis por escrito que no vuelvo a pagar luz.
+
+Andrés (asistente de la web): Nadie puede garantizar eso: la factura nunca baja a cero, siempre quedan la potencia, el contador, los impuestos y lo de la noche. Las garantías de los equipos van por escrito en el presupuesto. ¿Te reservo el estudio por la mañana o por la tarde?
+
+TÚ (cliente): Ya, pero con batería sí que no pagaría luz, ¿no? Yo gasto sobre todo por la noche, que de día trabajo fuera
+
+Andrés (asistente de la web): Con batería aprovechas lo que sobra para la noche, pero la factura no baja a cero: quedan potencia, contador e impuestos. La batería suele costar entre 450 y 800 € por kWh. ¿Te reservo el estudio por la mañana o por la tarde?
+
+TÚ (cliente): Vale, al menos sois claros. Pues que venga el técnico a hacer el estudio. Entre semana por la tarde
+
+Andrés (asistente de la web): Entre semana por la tarde, perfecto. Para llamarte y organizar el estudio, ¿me dices tu nombre? Y ojo, la batería encarece la instalación y en muchas casas alarga la amortización; el técnico lo calcula contigo.
+
+TÚ (cliente): Manolo
+
+Andrés (asistente de la web): Gracias, Manolo, lo tengo apuntado para entre semana por la tarde. Para llamarte y organizar el estudio, ¿me dices tu número de teléfono?
+
+TÚ (cliente): 633 909 101
+
+Andrés (asistente de la web): Gracias, Manolo, anotado. Un detalle: las sombras de chimeneas o árboles restan mucho producción, y eso se ve en la visita. ¿En qué municipio está la vivienda?
+
+TÚ (cliente): En Pulianas
+
+Andrés (asistente de la web): En Pulianas, que no es Granada capital, las bonificaciones dependen de su ordenanza y el técnico lo confirma. Para reservarte el estudio entre semana por la tarde, ¿en qué calle y número está la vivienda?
+
+TÚ (cliente): Calle Nueva 3
+
+Andrés (asistente de la web): Manolo, te confirmo: estudio entre semana por la tarde, en calle Nueva 3, Pulianas, y te llamamos al seis tres tres, nueve cero nueve, uno cero uno. Después del estudio, el presupuesto cerrado llega por escrito en unos cinco días laborables. ¿Está todo bien?
+
+TÚ (cliente): Sí, correcto
+
+Andrés (asistente de la web): Perfecto, Manolo. La solicitud queda enviada: te llamamos para confirmar el estudio entre semana por la tarde. Si puedes, manda una foto del tejado desde la conversación; ayuda al técnico a ir preparado. ¿Necesitas algo más?
+
+[En la pantalla aparece ahora: «¡Listo! Solicitud enviada. Te llamamos para confirmar».]
+
+=== TU SIGUIENTE MENSAJE ===
