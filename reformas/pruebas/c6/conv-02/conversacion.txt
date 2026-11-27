@@ -1,0 +1,33 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Obra Redonda. Cuéntame qué quieres reformar y te doy una idea de precio y plazo.
+
+CLIENTE: Buenas. Antes de nada, ¿la visita la cobráis? Porque luego siempre hay sorpresas.
+
+ANDRÉS: Entiendo que te preocupen las sorpresas. La visita de medición es gratis, dura unos 45 minutos y no tienes ningún compromiso; el presupuesto por escrito también es gratis. ¿Qué estancia quieres reformar?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Aclarar qué quiere reformar; la visita de medición es gratis y sin compromiso.","porDecir":"","fase":"entendiendo"}</ficha>
+<mostrar>precios</mostrar>
+
+CLIENTE: La cocina entera, unos 10 m². Y dígame, si al abrir sale algo imprevisto, ¿quién lo paga? ¿El presupuesto es cerrado o luego se sube?
+
+ANDRÉS: Lo que aparezca oculto se lo enseñamos, se presupuesta por escrito y no se hace sin su firma. Una cocina suele quedar entre seis mil y diez mil euros, según los muebles y si hay que mover fregadero o campana. ¿Le reservo la visita?
+<ficha>{"obra":"cocina entera","vivienda":"","metros":"unos 10 m²","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Una cocina suele quedar entre seis mil y diez mil euros, según los muebles y si se mueven fregadero o campana.","porDecir":"cuánto tiempo estará sin cocina depende de los muebles a medida, la fontanería y el alicatado; lo da el técnico en la visita y por escrito en el presupuesto","fase":"proponiendo"}</ficha>
+
+CLIENTE: Está bien, si es como dice, resérveme la visita.
+
+ANDRÉS: Perfecto, le apunto la visita. Sobre el tiempo sin cocina: depende de los muebles a medida, la fontanería y el alicatado, y el técnico lo da en la visita. Es solo para llamarle: ¿me dice su nombre y un teléfono?
+<ficha>{"obra":"cocina entera","vivienda":"","metros":"unos 10 m²","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Una cocina suele quedar entre seis mil y diez mil euros, según los muebles y si se mueven fregadero o campana.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Antonio. 678 112 443.
+
+ANDRÉS: Gracias, Antonio. ¿En qué municipio, barrio y calle está la vivienda, y le viene bien por la mañana o por la tarde?
+<ficha>{"obra":"cocina entera","vivienda":"","metros":"unos 10 m²","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"678 112 443","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Una cocina suele quedar entre seis mil y diez mil euros, según los muebles y si se mueven fregadero o campana.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: En Las Gabias, calle Real 22. Por la mañana.
+
+ANDRÉS: Perfecto, Antonio. Le confirmo: teléfono seis siete ocho, uno uno dos, cuatro cuatro tres; cocina entera en la calle Real veintidós de Las Gabias, por la mañana. Como es un pueblo, su ayuntamiento tiene sus propios importes de permiso. ¿Está todo bien?
+<ficha>{"obra":"cocina entera","vivienda":"","metros":"unos 10 m²","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"678 112 443","municipio":"Las Gabias","direccion":"calle Real 22","franja":"Por la mañana","inicio":"","orientacion":"Una cocina suele quedar entre seis mil y diez mil euros, según los muebles y si se mueven fregadero o campana.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, correcto.
+
+ANDRÉS: Perfecto, Antonio, tu solicitud queda enviada y te llamamos para confirmar el día y la hora de la visita. Si tienes fotos de la cocina, mándalas por el botón de la cámara; ayudan al técnico a ir preparado. ¿Necesitas algo más?
+<ficha>{"obra":"cocina entera","vivienda":"","metros":"unos 10 m²","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"678 112 443","municipio":"Las Gabias","direccion":"calle Real 22","franja":"Por la mañana","inicio":"","orientacion":"Una cocina suele quedar entre seis mil y diez mil euros, según los muebles y si se mueven fregadero o campana.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","obra":"cocina entera","vivienda":"","metros":"unos 10 m²","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"678 112 443","municipio":"Las Gabias","direccion":"calle Real 22","franja":"Por la mañana","inicio":"","urgente":false,"notas":"Cocina entera de unos 10 m², calle Real 22 de Las Gabias. Quiere la visita por la mañana. Pregunta si el presupuesto es cerrado y quién paga lo que aparezca al abrir: se le dijo que lo oculto se enseña, se presupuesta por escrito y no se hace sin su firma. Preguntó cuánto tiempo estará sin cocina. No dijo si es piso o casa ni la antigüedad."}</aviso>

@@ -1,0 +1,33 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Obra Redonda. Cuéntame qué quieres reformar y te doy una idea de precio y plazo.
+
+CLIENTE: Hola, quiero reformar el baño de mi piso, cuánto me puede costar?
+
+ANDRÉS: Un baño completo suele quedar entre tres mil y seis mil euros, de una a dos semanas. Si el piso es antiguo, suelen aparecer tuberías viejas al abrir, así que conviene la visita de medición, gratis. ¿Cuántos metros tiene el baño?
+<ficha>{"obra":"reformar el baño","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Un baño completo suele costar entre tres mil y seis mil euros; conviene medirlo antes en la visita gratis.","porDecir":"la visita dura unos cuarenta y cinco minutos · el IVA es del 10 % si la vivienda es suya para vivir y tiene más de dos años, lo confirma el gestor","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>
+
+CLIENTE: Unos 5 m²
+
+ANDRÉS: Con esos cinco metros, lo que más pesa es lo que aparezca detrás de los azulejos, y eso solo se ve al medir. La visita dura unos cuarenta y cinco minutos, sin compromiso, y el técnico mide y mira las instalaciones. ¿Te reservo la visita?
+<ficha>{"obra":"reformar el baño","vivienda":"","metros":"Unos 5 m²","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Un baño completo suele costar entre tres mil y seis mil euros; conviene medirlo antes en la visita.","porDecir":"el IVA es del 10 % si la vivienda es tuya para vivir y tiene más de dos años, lo confirma el gestor","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, sí. Quiero quitar la bañera y poner plato de ducha, y cambiar azulejos y lavabo
+
+ANDRÉS: Plato, azulejos y lavabo nuevos son un baño completo. Si la vivienda es para vivir y tiene más de dos años, el IVA baja al 10 %; tu gestor lo confirma. Es solo para llamarte: ¿me dices tu nombre y un teléfono?
+<ficha>{"obra":"quitar la bañera, poner plato de ducha, cambiar azulejos y lavabo","vivienda":"","metros":"Unos 5 m²","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Un baño completo suele costar entre tres mil y seis mil euros; el precio exacto sale de la visita de medición.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Marta, 655 321 908
+
+ANDRÉS: Gracias, Marta. ¿En qué municipio, barrio y calle está el piso, y te viene bien por la mañana o por la tarde?
+<ficha>{"obra":"quitar la bañera, poner plato de ducha, cambiar azulejos y lavabo","vivienda":"","metros":"Unos 5 m²","antiguedad":"","presupuesto":"","nombre":"Marta","telefono":"655 321 908","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Un baño completo suele costar entre tres mil y seis mil euros; el precio exacto sale de la visita de medición.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: En Granada, la Chana, calle Doctor Olóriz 14. Mejor por las tardes
+
+ANDRÉS: Perfecto, Marta. Te apunto: teléfono seis cinco cinco, tres dos uno, nueve cero ocho; visita en la calle Doctor Olóriz catorce, en La Chana, Granada, por la tarde. ¿Está todo bien?
+<ficha>{"obra":"quitar la bañera, poner plato de ducha, cambiar azulejos y lavabo","vivienda":"","metros":"Unos 5 m²","antiguedad":"","presupuesto":"","nombre":"Marta","telefono":"655 321 908","municipio":"Granada","direccion":"La Chana, calle Doctor Olóriz 14","franja":"Por la tarde","inicio":"","orientacion":"Un baño completo suele costar entre tres mil y seis mil euros; el precio exacto sale de la visita de medición.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Perfecto, Marta, tu solicitud queda enviada y te llamamos para confirmar el día y la hora de la visita. Como el piso está en Granada capital, si la obra no toca estructura lo más probable es una declaración responsable, que tramitamos nosotros. ¿Necesitas algo más?
+<ficha>{"obra":"quitar la bañera, poner plato de ducha, cambiar azulejos y lavabo","vivienda":"","metros":"Unos 5 m²","antiguedad":"","presupuesto":"","nombre":"Marta","telefono":"655 321 908","municipio":"Granada","direccion":"La Chana, calle Doctor Olóriz 14","franja":"Por la tarde","inicio":"","orientacion":"Un baño completo suele costar entre tres mil y seis mil euros; el precio exacto sale de la visita de medición.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","obra":"quitar la bañera, poner plato de ducha, cambiar azulejos y lavabo","vivienda":"","metros":"Unos 5 m²","antiguedad":"","presupuesto":"","nombre":"Marta","telefono":"655 321 908","municipio":"Granada","direccion":"La Chana, calle Doctor Olóriz 14","franja":"Por la tarde","inicio":"","urgente":false,"notas":"Baño de un piso (no dijo si tiene ascensor). Quiere quitar la bañera y poner plato de ducha, cambiar azulejos y lavabo. Prefiere visita por la tarde. No dijo la antigüedad del edificio ni el presupuesto."}</aviso>

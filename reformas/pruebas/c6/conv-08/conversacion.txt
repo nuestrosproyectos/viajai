@@ -1,0 +1,28 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Obra Redonda. Cuéntame qué quieres reformar y te doy una idea de precio y plazo.
+
+CLIENTE: Tengo un tejado de uralita en la cochera y quiero quitarlo yo mismo este finde. ¿Qué pongo en su lugar?
+
+ANDRÉS: Antes de tocarlo, no lo quites tú este finde: la uralita puede tener amianto, así que no la rompas ni la cortes. Solo la retira una empresa inscrita en el registro de amianto. En la visita, gratis, vemos qué poner. ¿Te reservo la visita?
+<ficha>{"obra":"Quitar el tejado de uralita de la cochera y poner otro","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No quitar la uralita uno mismo: puede tener amianto, y solo la retira una empresa inscrita.","porDecir":"no se deben barrer los restos · la retirada necesita un plan de trabajo aprobado","fase":"orientando"}</ficha>
+<mostrar>formulario</mostrar>
+
+CLIENTE: Pues no sabía lo del amianto, la verdad. Vale, mejor que vayan a verla antes de tocar nada. Reserve la visita.
+
+ANDRÉS: Hace bien, mejor que la vean antes. Y no la barra: los restos también pueden tener amianto. ¿Me dice su nombre y un teléfono? Es solo para llamarle y organizar la visita.
+<ficha>{"obra":"Quitar el tejado de uralita de la cochera y poner otro","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No quitar la uralita uno mismo: puede tener amianto, y solo la retira una empresa inscrita.","porDecir":"la retirada necesita un plan de trabajo aprobado","fase":"datos"}</ficha>
+
+CLIENTE: Antonio, 655 909 341
+
+ANDRÉS: Gracias, Antonio, lo apunto. La retirada exige un plan de trabajo aprobado, así que no se puede improvisar. ¿En qué municipio y calle, con número, está la vivienda, y le viene mejor mañana o tarde?
+<ficha>{"obra":"Quitar el tejado de uralita de la cochera y poner otro","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"655 909 341","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No quitar la uralita uno mismo: puede tener amianto, y solo la retira una empresa inscrita.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: En Atarfe, calle Granada 8. Mejor por la tarde
+
+ANDRÉS: Perfecto, Antonio. Le confirmo: teléfono seis cinco cinco, nueve cero nueve, tres cuatro uno; visita en Atarfe, calle Granada número ocho, por la tarde. ¿Está todo bien?
+<ficha>{"obra":"Quitar el tejado de uralita de la cochera y poner otro","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"655 909 341","municipio":"Atarfe","direccion":"Calle Granada 8","franja":"Tarde","inicio":"","orientacion":"No quitar la uralita uno mismo: puede tener amianto, y solo la retira una empresa inscrita.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo correcto.
+
+ANDRÉS: Perfecto, Antonio. Queda enviada la solicitud: le llamamos para confirmar el día y la hora de la visita, por la tarde, y el presupuesto por escrito llega unos cinco días laborables después. ¿Necesita algo más?
+<ficha>{"obra":"Quitar el tejado de uralita de la cochera y poner otro","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"655 909 341","municipio":"Atarfe","direccion":"Calle Granada 8","franja":"Por la tarde","inicio":"","orientacion":"No quitar la uralita uno mismo: puede tener amianto, y solo la retira una empresa inscrita.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","obra":"Quitar el tejado de uralita de la cochera y poner otro","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"655 909 341","municipio":"Atarfe","direccion":"Calle Granada 8","franja":"Por la tarde","inicio":"","urgente":false,"notas":"Tejado de uralita en la cochera. Quería quitarlo uno mismo este fin de semana y preguntó qué poner en su lugar. No sabía lo del amianto; quiere que vayan a verlo antes de tocar nada."}</aviso>

@@ -1,0 +1,33 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Obra Redonda. Cuéntame qué quieres reformar y te doy una idea de precio y plazo.
+
+CLIENTE: Quiero cambiar las ventanas de casa por unas que aíslen. ¿Me desgrava algo en la renta?
+
+ANDRÉS: Puede que sí: deducciones del 20 o del 40 % en la renta, con certificados energéticos antes y después. El posterior tiene que estar hecho antes del 1 de enero de 2027. En la visita, gratis, miramos las ventanas. ¿Tiene ya el certificado de antes?
+<ficha>{"obra":"Cambiar las ventanas por otras que aíslen","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Revisar pronto el certificado energético: el posterior tiene que estar hecho antes del 1 de enero de 2027 para la deducción.","porDecir":"si es un piso y las ventanas cambian el aspecto de la fachada, hace falta el acuerdo de la comunidad · el IVA puede ser del 10 % si la vivienda es suya para vivir y tiene más de dos años; lo confirma el gestor","fase":"orientando"}</ficha>
+<mostrar>plazo</mostrar>
+
+CLIENTE: No, no tengo ningún certificado. Es mi vivienda de siempre, de 1990, con 6 ventanas de aluminio viejo. Y otra cosa, ¿me cobráis el 21 % de IVA?
+
+ANDRÉS: Suele ser el 10 % si es para vivir, tiene más de dos años y los materiales no pasan del 40 % sin IVA. Si es piso y cambian el aspecto de la fachada, probablemente haga falta acuerdo de la comunidad. ¿Te reservo la visita?
+<ficha>{"obra":"Cambiar las ventanas por otras que aíslen","vivienda":"","metros":"","antiguedad":"1990","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Para el IVA, lo más probable es el 10 % si es para vivir, tiene más de dos años y los materiales no pasan del 40 % sin IVA.","porDecir":"","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, entonces sí, resérvame la visita
+
+ANDRÉS: Perfecto, te apunto la visita. Es solo para llamarte y organizarla: ¿me dices tu nombre y un teléfono?
+<ficha>{"obra":"Cambiar las ventanas por otras que aíslen","vivienda":"","metros":"","antiguedad":"1990","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Para el IVA, lo más probable es el 10 % si es para vivir, tiene más de dos años y los materiales no pasan del 40 % sin IVA; si es piso y cambian la fachada, hace falta acuerdo de la comunidad.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Paco, 633 778 120
+
+ANDRÉS: Gracias, Paco. ¿En qué municipio, barrio y calle está la vivienda, y te viene bien por la mañana o por la tarde?
+<ficha>{"obra":"Cambiar las ventanas por otras que aíslen","vivienda":"","metros":"","antiguedad":"1990","presupuesto":"","nombre":"Paco","telefono":"633 778 120","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Para el IVA, lo más probable es el 10 % si es para vivir, tiene más de dos años y los materiales no pasan del 40 % sin IVA; si es piso y cambian la fachada, hace falta acuerdo de la comunidad.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: En Granada, zona Ronda, calle Recogidas 31. Por las mañanas
+
+ANDRÉS: Gracias, Paco. Te confirmo: teléfono seis tres tres, siete siete ocho, uno dos cero; visita en calle Recogidas treinta y uno, zona Ronda, Granada, por las mañanas. ¿Está todo bien?
+<ficha>{"obra":"Cambiar las ventanas por otras que aíslen","vivienda":"","metros":"","antiguedad":"1990","presupuesto":"","nombre":"Paco","telefono":"633 778 120","municipio":"Granada","direccion":"Zona Ronda, calle Recogidas 31","franja":"Por las mañanas","inicio":"","orientacion":"Para el IVA, lo más probable es el 10 % si es para vivir, tiene más de dos años y los materiales no pasan del 40 % sin IVA; si es piso y cambian la fachada, hace falta acuerdo de la comunidad.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Paco, tu solicitud queda enviada y te llamamos para confirmar día y hora de la visita. Ojo con el plazo: el certificado posterior debe estar antes del uno de enero de dos mil veintisiete, y no consta ninguna prórroga. ¿Necesitas algo más?
+<ficha>{"obra":"Cambiar las ventanas por otras que aíslen","vivienda":"","metros":"","antiguedad":"1990","presupuesto":"","nombre":"Paco","telefono":"633 778 120","municipio":"Granada","direccion":"Zona Ronda, calle Recogidas 31","franja":"Por las mañanas","inicio":"","orientacion":"Conviene hacer el certificado energético cuanto antes: el posterior tiene que estar hecho antes del 1 de enero de 2027.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","obra":"Cambiar las ventanas por otras que aíslen","vivienda":"","metros":"","antiguedad":"1990","presupuesto":"","nombre":"Paco","telefono":"633 778 120","municipio":"Granada","direccion":"Zona Ronda, calle Recogidas 31","franja":"Por las mañanas","inicio":"","urgente":false,"notas":"Quiere cambiar seis ventanas de aluminio viejo de su vivienda de 1990 por otras que aíslen. No tiene certificado energético. Pregunta si desgrava en la renta y si el IVA es del 21 %. No dijo si es piso o casa ni si tiene ascensor."}</aviso>
