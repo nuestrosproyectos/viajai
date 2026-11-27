@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Perfecto, te apunto a la consulta en el despacho, por la mañana. Guarda el alta y todos los informes médicos, que son lo que más pesa. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la consulta.\n<ficha>{\"caso\":\"Atropello en un paso de cebra; el conductor se fue y no se sabe quién era\",\"como\":\"Andando\",\"fecha\":\"hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"en el despacho, por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar el alta y los informes médicos; el plazo de un año lo revisa el abogado\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, te apunto a la consulta en el despacho, por la mañana. Guarda el alta y todos los informes médicos, que son lo que más pesa. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la consulta.\n<ficha>{\"caso\":\"Atropello en un paso de cebra; el conductor se fue y no se sabe quién era\",\"como\":\"Andando\",\"fecha\":\"hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"en el despacho, por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar el alta y los informes médicos; el plazo de un año lo revisa el abogado\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Inés, 655 777 333"
  }
 ]

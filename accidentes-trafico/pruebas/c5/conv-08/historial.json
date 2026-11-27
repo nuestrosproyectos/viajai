@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Lo siento mucho. Le llamamos por teléfono la semana que viene, por la mañana, para la consulta gratis. Encarna, su teléfono es seis cuatro cuatro, nueve cero nueve, ocho cero ocho. ¿Está todo bien?\n<ficha>{\"caso\":\"Accidente de autobús en la carretera de Motril; su madre iba de pasajera\",\"como\":\"De pasajero\",\"fecha\":\"ayer\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Encarna\",\"telefono\":\"644 909 808\",\"municipio\":\"\",\"franja\":\"por teléfono, la semana que viene por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar todos los informes del hospital; como pasajera, casi siempre se la indemniza\",\"fase\":\"datos\"}</ficha>",
   "original": "Lo siento mucho. Le llamamos por teléfono la semana que viene, por la mañana, para la consulta gratis. Encarna, su teléfono es seis cuatro cuatro, nueve cero nueve, ocho cero ocho. ¿Está todo bien?\n<ficha>{\"caso\":\"Accidente de autobús en la carretera de Motril; su madre iba de pasajera\",\"como\":\"De pasajero\",\"fecha\":\"ayer\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Encarna\",\"telefono\":\"644 909 808\",\"municipio\":\"\",\"franja\":\"por teléfono, la semana que viene por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar todos los informes del hospital; como pasajera, casi siempre se la indemniza\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, está todo bien. Muchas gracias"
  }
 ]
