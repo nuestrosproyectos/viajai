@@ -43,5 +43,14 @@
   "role": "assistant",
   "content": "Perfecto, Raúl, por videollamada y desde Granada. Te reservo la consulta, gratis y sin compromiso. ¿Te viene mejor por la mañana o por la tarde?\n<ficha>{\"caso\":\"Golpe por detrás\",\"como\":\"\",\"fecha\":\"hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Raúl\",\"telefono\":\"644 555 888\",\"municipio\":\"Granada, barrio del Zaidín\",\"franja\":\"por videollamada\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico hoy y quede por escrito; dar parte a tu aseguradora en siete días.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Raúl, por videollamada y desde Granada. Te reservo la consulta, gratis y sin compromiso. ¿Te viene mejor por la mañana o por la tarde?\n<ficha>{\"caso\":\"Golpe por detrás\",\"como\":\"\",\"fecha\":\"hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Raúl\",\"telefono\":\"644 555 888\",\"municipio\":\"Granada, barrio del Zaidín\",\"franja\":\"por videollamada\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico hoy y quede por escrito; dar parte a tu aseguradora en siete días.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Por la tarde mejor"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto. Te lo repito para confirmarlo: Raúl, seis cuatro cuatro, cinco cinco cinco, ocho ocho ocho, en el Zaidín de Granada, por videollamada por la tarde. Mañana al médico, como dijiste, y que quede por escrito. ¿Está todo bien?\n<ficha>{\"caso\":\"Golpe por detrás\",\"como\":\"\",\"fecha\":\"hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Raúl\",\"telefono\":\"644 555 888\",\"municipio\":\"Granada, barrio del Zaidín\",\"franja\":\"por videollamada, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico mañana y quede por escrito; dar parte a tu aseguradora en siete días.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto. Te lo repito para confirmarlo: Raúl, seis cuatro cuatro, cinco cinco cinco, ocho ocho ocho, en el Zaidín de Granada, por videollamada por la tarde. Mañana al médico, como dijiste, y que quede por escrito. ¿Está todo bien?\n<ficha>{\"caso\":\"Golpe por detrás\",\"como\":\"\",\"fecha\":\"hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Raúl\",\"telefono\":\"644 555 888\",\"municipio\":\"Granada, barrio del Zaidín\",\"franja\":\"por videollamada, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico mañana y quede por escrito; dar parte a tu aseguradora en siete días.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

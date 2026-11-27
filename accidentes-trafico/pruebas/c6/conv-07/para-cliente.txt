@@ -22,4 +22,10 @@ TÚ (cliente): En Granada capital
 
 Andrés (asistente de la web): Daniel, repaso: teléfono seis uno uno, siete siete siete, dos dos dos; Granada capital; videollamada cualquier tarde. Y recuerda que tienes un año para reclamar, que en lesiones suele contar desde el alta. ¿Está todo bien?
 
+TÚ (cliente): Sí, todo correcto
+
+Andrés (asistente de la web): Perfecto, Daniel. La solicitud queda enviada: te llamamos para confirmar el día y la hora, por videollamada y por la tarde. Y si te ofrecen algo, no firmes nada sin que lo vea el abogado. ¿Necesitas algo más?
+
+[En la pantalla aparece ahora: «¡Listo! Solicitud enviada. Te llamamos para confirmar».]
+
 === TU SIGUIENTE MENSAJE ===

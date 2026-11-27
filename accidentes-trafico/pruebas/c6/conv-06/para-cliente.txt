@@ -22,4 +22,10 @@ TÚ (cliente): Vivo en Granada, en la Chana
 
 Andrés (asistente de la web): Javi, repaso para confirmar: teléfono seis tres tres, cuatro cuatro cinco, cinco seis seis; Granada, en La Chana; consulta por teléfono por la mañana. ¿Está todo bien?
 
+TÚ (cliente): Sí, todo bien
+
+Andrés (asistente de la web): Perfecto, Javi. La solicitud queda enviada: te llamamos para confirmar el día y la hora, por teléfono y por la mañana. Y no firmes nada del seguro sin que lo vea el abogado. ¿Necesitas algo más?
+
+[En la pantalla aparece ahora: «¡Listo! Solicitud enviada. Te llamamos para confirmar».]
+
 === TU SIGUIENTE MENSAJE ===
