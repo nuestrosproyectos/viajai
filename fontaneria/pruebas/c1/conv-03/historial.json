@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Entiendo el enfado. La bajante suele ser de la comunidad, y lo decide la comunidad con su administrador; el informe del fontanero, con cámara si hace falta, ayuda a aclararlo. ¿Te reservo la visita por la mañana o por la tarde?\n<ficha>{\"averia\":\"Agua sucia por el plato de ducha del bajo cuando tiran de la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Probable bajante del edificio, elemento común: avisar al presidente o al administrador; el informe del fontanero ayuda a decidir quién paga\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Entiendo el enfado. La bajante suele ser de la comunidad, y lo decide la comunidad con su administrador; el informe del fontanero, con cámara si hace falta, ayuda a aclararlo. ¿Te reservo la visita por la mañana o por la tarde?\n<ficha>{\"averia\":\"Agua sucia por el plato de ducha del bajo cuando tiran de la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Probable bajante del edificio, elemento común: avisar al presidente o al administrador; el informe del fontanero ayuda a decidir quién paga\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "No sé, la verdad. Vale, que lo mire el fontanero y haga un informe entonces. Soy Ana, 677 450 990. Mejor por la tarde"
  }
 ]

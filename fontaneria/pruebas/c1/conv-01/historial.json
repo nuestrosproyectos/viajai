@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "No te preocupes, busca la llave junto al contador y ciérrala para cortar el agua de casa. Si sigue saliendo agua, te reservo ya el fontanero urgente: ¿me dices tu nombre y un teléfono?\n<ficha>{\"averia\":\"Sale agua por debajo del fregadero y no para\",\"cuando\":\"\",\"llave\":\"No la encuentras todavía\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Buscar la llave junto al contador y cerrarla; visita urgente\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>seguridad</mostrar>",
   "original": "No te preocupes, busca la llave junto al contador y ciérrala para cortar el agua de casa. Si sigue saliendo agua, te reservo ya el fontanero urgente: ¿me dices tu nombre y un teléfono?\n<ficha>{\"averia\":\"Sale agua por debajo del fregadero y no para\",\"cuando\":\"\",\"llave\":\"No la encuentras todavía\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Buscar la llave junto al contador y cerrarla; visita urgente\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>seguridad</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Ah espera, creo que la he encontrado, estaba debajo del fregadero. La he cerrado y ya no sale agua! Soy Pilar, 610 223 344. ¿Puede venir alguien hoy?"
  }
 ]

@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "No firmes ese recibo. Si es poco o mucho lo dice el abogado: se calcula por días hasta el alta, de unos 39 a 131 € por día según categoría, más secuelas y gastos. Te reservo la consulta gratis: ¿por la mañana o por la tarde?\n<ficha>{\"caso\":\"Accidente hace cinco meses; oferta de 2.300 € con recibo en pago total\",\"como\":\"\",\"fecha\":\"Hace cinco meses\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar el recibo en pago total; que lo vea el abogado antes de decidir; la cuantía se calcula por días hasta el alta y secuelas, orientativo\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>oferta</mostrar>",
   "original": "No firmes ese recibo. Si es poco o mucho lo dice el abogado: se calcula por días hasta el alta, de unos 39 a 131 € por día según categoría, más secuelas y gastos. Te reservo la consulta gratis: ¿por la mañana o por la tarde?\n<ficha>{\"caso\":\"Accidente hace cinco meses; oferta de 2.300 € con recibo en pago total\",\"como\":\"\",\"fecha\":\"Hace cinco meses\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar el recibo en pago total; que lo vea el abogado antes de decidir; la cuantía se calcula por días hasta el alta y secuelas, orientativo\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>oferta</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, entonces no firmo. Que lo mire el abogado. ¿Se puede por teléfono? Soy Sonia, 633 202 404, de Motril. Mejor por las mañanas"
  }
 ]
