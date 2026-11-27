@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Mi hermano ha muerto y creo que tenía deudas. ¿Si acepto la herencia tengo que pagarlas yo?"
+ },
+ {
+  "role": "assistant",
+  "content": "Siento lo de tu hermano. Aceptando a secas, sí respondes de las deudas, incluso con tu dinero. Por eso, no toques cuentas ni bienes hasta verlo con el abogado. Te reservo la consulta gratis, ¿por la mañana o por la tarde?\n<ficha>{\"situacion\":\"herencia de tu hermano, con deudas\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"No aceptar a secas ni tocar cuentas o bienes hasta verlo con el abogado, porque aceptar a secas incluye las deudas.\",\"porDecir\":\"a beneficio de inventario, ante notario, solo respondes hasta donde llegue la herencia · renunciar es ante notario e irrevocable · si hay hipoteca, revisar si hay seguro de amortización\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Siento lo de tu hermano. Aceptando a secas, sí respondes de las deudas, incluso con tu dinero. Por eso, no toques cuentas ni bienes hasta verlo con el abogado. Te reservo la consulta gratis, ¿por la mañana o por la tarde?\n<ficha>{\"situacion\":\"herencia de tu hermano, con deudas\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"No aceptar a secas ni tocar cuentas o bienes hasta verlo con el abogado, porque aceptar a secas incluye las deudas.\",\"porDecir\":\"a beneficio de inventario, ante notario, solo respondes hasta donde llegue la herencia · renunciar es ante notario e irrevocable · si hay hipoteca, revisar si hay seguro de amortización\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

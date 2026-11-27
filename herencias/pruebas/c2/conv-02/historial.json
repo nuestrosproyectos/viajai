@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Mi tía me ha dejado su casa en el testamento. ¿Cuánto voy a tener que pagar?"
+ },
+ {
+  "role": "assistant",
+  "content": "Siento lo de tu tía. Como sobrino o sobrina sí pagas impuesto, con diez mil euros de reducción. Un sobrino que hereda sesenta mil euros pagaría entre seis mil quinientos y siete mil cuatrocientos, orientativo. ¿Te reservo la consulta gratis con el abogado?\n<ficha>{\"situacion\":\"casa heredada de tu tía, con testamento\",\"parentesco\":\"Sobrino o sobrina\",\"testamento\":\"Sí\",\"bienes\":\"una casa\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Como sobrino o sobrina pagas impuesto de sucesiones, con diez mil euros de reducción, y lo confirma el abogado con los documentos.\",\"porDecir\":\"el plazo del impuesto son seis meses desde el fallecimiento, prorrogables otros seis si se pide en los cinco primeros · si la casa está en Granada capital, la plusvalía municipal, sin bonificación para sobrinos · escritura y Registro, que van aparte\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Siento lo de tu tía. Como sobrino o sobrina sí pagas impuesto, con diez mil euros de reducción. Un sobrino que hereda sesenta mil euros pagaría entre seis mil quinientos y siete mil cuatrocientos, orientativo. ¿Te reservo la consulta gratis con el abogado?\n<ficha>{\"situacion\":\"casa heredada de tu tía, con testamento\",\"parentesco\":\"Sobrino o sobrina\",\"testamento\":\"Sí\",\"bienes\":\"una casa\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Como sobrino o sobrina pagas impuesto de sucesiones, con diez mil euros de reducción, y lo confirma el abogado con los documentos.\",\"porDecir\":\"el plazo del impuesto son seis meses desde el fallecimiento, prorrogables otros seis si se pide en los cinco primeros · si la casa está en Granada capital, la plusvalía municipal, sin bonificación para sobrinos · escritura y Registro, que van aparte\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

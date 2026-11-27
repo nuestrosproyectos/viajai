@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Somos cuatro hermanos y uno no quiere firmar el reparto de la casa del pueblo. ¿Qué podemos hacer?"
+ },
+ {
+  "role": "assistant",
+  "content": "Primero, intentad negociar con él. Si los que queréis repartir sumáis al menos la mitad, el notario puede nombrar un contador-partidor, quien hace el reparto sin su firma. Te reservo la consulta gratis con el abogado, ¿por la mañana o por la tarde?\n<ficha>{\"situacion\":\"reparto de la casa del pueblo entre cuatro hermanos, uno no quiere firmar\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"\",\"bienes\":\"casa del pueblo\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Negociar con el hermano que no firma; si los demás suman al menos la mitad, el notario puede nombrar un contador-partidor que haga el reparto sin su firma.\",\"porDecir\":\"si no se llega a un acuerdo, división judicial, de uno a tres años · si ya sois copropietarios, uno puede compensar a los demás, vender la casa o, en el peor caso, subasta\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Primero, intentad negociar con él. Si los que queréis repartir sumáis al menos la mitad, el notario puede nombrar un contador-partidor, quien hace el reparto sin su firma. Te reservo la consulta gratis con el abogado, ¿por la mañana o por la tarde?\n<ficha>{\"situacion\":\"reparto de la casa del pueblo entre cuatro hermanos, uno no quiere firmar\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"\",\"bienes\":\"casa del pueblo\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Negociar con el hermano que no firma; si los demás suman al menos la mitad, el notario puede nombrar un contador-partidor que haga el reparto sin su firma.\",\"porDecir\":\"si no se llega a un acuerdo, división judicial, de uno a tres años · si ya sois copropietarios, uno puede compensar a los demás, vender la casa o, en el peor caso, subasta\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

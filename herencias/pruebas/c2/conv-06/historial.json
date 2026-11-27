@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Mi pareja ha fallecido. No estábamos casados pero llevábamos 15 años juntos. ¿Me corresponde algo?"
+ },
+ {
+  "role": "assistant",
+  "content": "Siento mucho lo de tu pareja. Por ley, sin testamento la pareja de hecho no hereda; con testamento sí puede recibir la parte libre. Te reservo la consulta gratis con el abogado. ¿Sabes si dejó testamento?\n<ficha>{\"situacion\":\"herencia de tu pareja, tras quince años juntos sin casarse\",\"parentesco\":\"Pareja de hecho\",\"testamento\":\"\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Sin testamento la pareja de hecho no hereda; con testamento sí puede recibir la parte libre, y lo confirma el abogado con los documentos.\",\"porDecir\":\"si estabais inscritos como pareja de hecho, en el impuesto tenéis la misma reducción que un cónyuge · si no hay testamento, la declaración de herederos ante notario · si hay piso, la plusvalía municipal\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Siento mucho lo de tu pareja. Por ley, sin testamento la pareja de hecho no hereda; con testamento sí puede recibir la parte libre. Te reservo la consulta gratis con el abogado. ¿Sabes si dejó testamento?\n<ficha>{\"situacion\":\"herencia de tu pareja, tras quince años juntos sin casarse\",\"parentesco\":\"Pareja de hecho\",\"testamento\":\"\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Sin testamento la pareja de hecho no hereda; con testamento sí puede recibir la parte libre, y lo confirma el abogado con los documentos.\",\"porDecir\":\"si estabais inscritos como pareja de hecho, en el impuesto tenéis la misma reducción que un cónyuge · si no hay testamento, la declaración de herederos ante notario · si hay piso, la plusvalía municipal\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]
