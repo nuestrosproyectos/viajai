@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Genial, te apunto la visita de medición gratis, de unos 45 minutos. Es solo para llamarte y organizarla: ¿me dices tu nombre y un teléfono?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"Piso sin ascensor\",\"metros\":\"\",\"antiguedad\":\"edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada, centro\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Tirar el tabique no tiene precio fijo sin verlo; el técnico comprueba si es de carga, y en el centro lo más probable es licencia y técnico.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Genial, te apunto la visita de medición gratis, de unos 45 minutos. Es solo para llamarte y organizarla: ¿me dices tu nombre y un teléfono?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"Piso sin ascensor\",\"metros\":\"\",\"antiguedad\":\"edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada, centro\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Tirar el tabique no tiene precio fijo sin verlo; el técnico comprueba si es de carga, y en el centro lo más probable es licencia y técnico.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Lucía, 611 908 774"
  }
 ]

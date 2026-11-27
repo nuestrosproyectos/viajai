@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Perfecto, anoto la visita. Según cómo quede la distribución, el técnico te confirma si basta una declaración responsable o hace falta licencia. ¿Me dices tu nombre y un teléfono?\n<ficha>{\"obra\":\"cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"unos 9 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Una cocina completa suele quedar entre seis mil y diez mil euros, y mover el fregadero la encarece; el plazo sin cocina lo da el técnico en la visita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, anoto la visita. Según cómo quede la distribución, el técnico te confirma si basta una declaración responsable o hace falta licencia. ¿Me dices tu nombre y un teléfono?\n<ficha>{\"obra\":\"cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"unos 9 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Una cocina completa suele quedar entre seis mil y diez mil euros, y mover el fregadero la encarece; el plazo sin cocina lo da el técnico en la visita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Javier, 622 410 870"
  }
 ]

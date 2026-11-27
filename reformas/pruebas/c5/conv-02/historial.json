@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Perfecto, le apunto la visita de medición, gratis y de unos 45 minutos, sin compromiso. Solo es para llamarle y organizarla. ¿Me dice su nombre y un teléfono?\n<ficha>{\"obra\":\"cocina entera\",\"vivienda\":\"\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Pedir la visita para medir; el presupuesto por partidas llega por escrito unos cinco días laborables después, y lo que aparezca al abrir se aprueba antes de hacerse.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, le apunto la visita de medición, gratis y de unos 45 minutos, sin compromiso. Solo es para llamarle y organizarla. ¿Me dice su nombre y un teléfono?\n<ficha>{\"obra\":\"cocina entera\",\"vivienda\":\"\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Pedir la visita para medir; el presupuesto por partidas llega por escrito unos cinco días laborables después, y lo que aparezca al abrir se aprueba antes de hacerse.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Antonio, 678 112 443"
  }
 ]

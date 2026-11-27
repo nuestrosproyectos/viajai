@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Gracias, Carmen. ¿En qué calle y número está la casa de su padre, y le viene mejor por la mañana o por la tarde?\n<ficha>{\"obra\":\"cambiar la bañera por un plato de ducha (su padre ya no puede entrar)\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Carmen\",\"telefono\":\"699 450 212\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Para su padre lo prioritario es cambiar la bañera por un plato de ducha; la visita suele ser en dos a cuatro días.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Carmen. ¿En qué calle y número está la casa de su padre, y le viene mejor por la mañana o por la tarde?\n<ficha>{\"obra\":\"cambiar la bañera por un plato de ducha (su padre ya no puede entrar)\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Carmen\",\"telefono\":\"699 450 212\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Para su padre lo prioritario es cambiar la bañera por un plato de ducha; la visita suele ser en dos a cuatro días.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Calle Ancha 8, en Maracena. Mejor a primera hora de la mañana, que es cuando yo estoy allí."
  }
 ]
