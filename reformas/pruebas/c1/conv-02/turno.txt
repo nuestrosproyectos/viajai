@@ -209,4 +209,11 @@ Perfecto, Antonio, lo apunto: seiscientos setenta y ocho, ciento doce, cuatrocie
 === CLIENTE ===
 Las Gabias.
 
+=== ANDRÉS ===
+Perfecto, Antonio. Las Gabias lo anoto. Como es otro municipio, su ayuntamiento tiene su propia ordenanza y el técnico le confirma los importes. ¿Qué quiere reformar en la vivienda?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"678 112 443","municipio":"Las Gabias","franja":"Por la mañana","inicio":"","orientacion":"Preguntar qué quiere reformar y reservar la visita gratuita por la mañana; el presupuesto por escrito llega después.","fase":"datos"}</ficha>
+
+=== CLIENTE ===
+La cocina entera, unos 10 metros cuadrados.
+
 === ANDRÉS (tu respuesta) ===

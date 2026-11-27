@@ -38,5 +38,14 @@
  {
   "role": "user",
   "content": "Manolo"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Manolo. Lo anoto para entre semana por la tarde, nada de sábados; con tus facturas, el técnico calcula si la batería compensa en tu caso. ¿Me dices un teléfono de contacto?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"De noche, bastante; trabaja fuera de día\",\"nombre\":\"Manolo\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Entre semana por la tarde; no los sábados\",\"inicio\":\"\",\"orientacion\":\"Ver el estudio con tus facturas; las garantías de placas y batería van por escrito en el presupuesto.\",\"fase\":\"datos\"}</ficha>\n<mostrar>contacto</mostrar>",
+  "original": "Gracias, Manolo. Lo anoto para entre semana por la tarde, nada de sábados; con tus facturas, el técnico calcula si la batería compensa en tu caso. ¿Me dices un teléfono de contacto?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"De noche, bastante; trabaja fuera de día\",\"nombre\":\"Manolo\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Entre semana por la tarde; no los sábados\",\"inicio\":\"\",\"orientacion\":\"Ver el estudio con tus facturas; las garantías de placas y batería van por escrito en el presupuesto.\",\"fase\":\"datos\"}</ficha>\n<mostrar>contacto</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "633 909 101"
  }
 ]

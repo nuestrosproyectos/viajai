@@ -38,5 +38,14 @@
  {
   "role": "user",
   "content": "688 120 777"
+ },
+ {
+  "role": "assistant",
+  "content": "Repito tu teléfono: seiscientos ochenta y ocho, ciento veinte, setecientos setenta y siete. Con el estudio, la junta tendrá números concretos para decidir. ¿Confirmo el estudio por la tarde?\n<ficha>{\"que\":\"Placas solares en la azotea\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea del bloque\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"688 120 777\",\"municipio\":\"Zaidín, Granada\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Confirmar el estudio por la tarde y llevar los números a la junta; hace falta acuerdo de la comunidad.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Repito tu teléfono: seiscientos ochenta y ocho, ciento veinte, setecientos setenta y siete. Con el estudio, la junta tendrá números concretos para decidir. ¿Confirmo el estudio por la tarde?\n<ficha>{\"que\":\"Placas solares en la azotea\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea del bloque\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"688 120 777\",\"municipio\":\"Zaidín, Granada\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Confirmar el estudio por la tarde y llevar los números a la junta; hace falta acuerdo de la comunidad.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, por la tarde"
  }
 ]

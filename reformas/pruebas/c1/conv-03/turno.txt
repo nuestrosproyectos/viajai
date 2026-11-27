@@ -209,4 +209,11 @@ Gracias, Lucía. Te apunto la visita para cualquier tarde, gratis y de unos cuar
 === CLIENTE ===
 611 908 774
 
+=== ANDRÉS ===
+Gracias, Lucía. Repito tu teléfono: seiscientos once, novecientos ocho, setecientos setenta y cuatro. Si el tabique es de carga o estás en el centro histórico, lo más probable es que haga falta licencia y técnico. ¿Confirmo el teléfono y la visita para cualquier tarde?
+<ficha>{"obra":"Tirar el tabique entre cocina y salón","vivienda":"Piso","metros":"","antiguedad":"Edificio antiguo; quinto piso","presupuesto":"","nombre":"Lucía","telefono":"611 908 774","municipio":"Granada, centro","franja":"Cualquier tarde","inicio":"","orientacion":"Confirmar la visita para cualquier tarde y que el técnico mire si el tabique es de carga antes de tocarlo.","fase":"datos"}</ficha>
+
+=== CLIENTE ===
+Sí, confirmado
+
 === ANDRÉS (tu respuesta) ===

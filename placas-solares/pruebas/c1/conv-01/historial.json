@@ -38,5 +38,14 @@
  {
   "role": "user",
   "content": "644 778 120"
+ },
+ {
+  "role": "assistant",
+  "content": "Repito tu teléfono: seiscientos cuarenta y cuatro, setecientos setenta y ocho, ciento veinte. Y como Armilla es otro municipio, su ayuntamiento tiene su propia ordenanza, que el técnico te confirmará. ¿Confirmo el estudio por la mañana?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"A dos aguas, una cara al sur, sin sombras\",\"consumo\":\"\",\"nombre\":\"Javier\",\"telefono\":\"644 778 120\",\"municipio\":\"Armilla\",\"franja\":\"Por la mañana, preferiblemente un viernes\",\"inicio\":\"\",\"orientacion\":\"Confirmar el estudio gratuito por la mañana y mandar una foto de la factura de la luz.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Repito tu teléfono: seiscientos cuarenta y cuatro, setecientos setenta y ocho, ciento veinte. Y como Armilla es otro municipio, su ayuntamiento tiene su propia ordenanza, que el técnico te confirmará. ¿Confirmo el estudio por la mañana?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"A dos aguas, una cara al sur, sin sombras\",\"consumo\":\"\",\"nombre\":\"Javier\",\"telefono\":\"644 778 120\",\"municipio\":\"Armilla\",\"franja\":\"Por la mañana, preferiblemente un viernes\",\"inicio\":\"\",\"orientacion\":\"Confirmar el estudio gratuito por la mañana y mandar una foto de la factura de la luz.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, confírmalo"
  }
 ]

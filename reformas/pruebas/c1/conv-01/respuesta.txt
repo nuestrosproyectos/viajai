@@ -1,2 +1,0 @@
-Perfecto, Marta. Te apunto con ese teléfono: seiscientos cincuenta y cinco, trescientos veintiuno, novecientos ocho. ¿En qué municipio o barrio está el piso?
-<ficha>{"obra":"Reforma del baño","vivienda":"Piso","metros":"unos 5 m²","antiguedad":"","presupuesto":"","nombre":"Marta","telefono":"655 321 908","municipio":"","franja":"Por la tarde","inicio":"","orientacion":"Confirmar el municipio o barrio del piso y reservar la visita gratuita por la tarde.","fase":"datos"}</ficha>
