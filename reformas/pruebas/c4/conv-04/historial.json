@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Lo entiendo, la organizamos cuanto antes. Y tenga en cuenta que si el plato va a ras de suelo, el precio sube algo. Es solo para llamarle y cuadrar la visita: ¿me dice su nombre y un teléfono?\n<ficha>{\"obra\":\"cambiar la bañera de su padre por un plato de ducha\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cambiar la bañera por un plato de ducha: entre unos 1.000 y 2.300 € lo más habitual; la visita de medición es gratis y suele hacerse en dos a cuatro días.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Lo entiendo, la organizamos cuanto antes. Y tenga en cuenta que si el plato va a ras de suelo, el precio sube algo. Es solo para llamarle y cuadrar la visita: ¿me dice su nombre y un teléfono?\n<ficha>{\"obra\":\"cambiar la bañera de su padre por un plato de ducha\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cambiar la bañera por un plato de ducha: entre unos 1.000 y 2.300 € lo más habitual; la visita de medición es gratis y suele hacerse en dos a cuatro días.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Carmen, 699 450 212"
  }
 ]

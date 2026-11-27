@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Perfecto, la organizamos. La reforma suele llevar de tres a cinco meses, y en pisos antiguos conviene revisar tuberías e instalación eléctrica. Es solo para llamarte y organizar la visita: ¿me dices tu nombre y un teléfono?\n<ficha>{\"obra\":\"reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros\",\"vivienda\":\"\",\"metros\":\"90 m²\",\"antiguedad\":\"años 80\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Si no se tocan muros, lo más probable es declaración responsable; en Armilla lo confirma el técnico. La electricidad la hace una empresa habilitada, con boletín.\",\"porDecir\":\"IVA del 10 % si es para tu vivienda, con más de dos años y materiales que no pasan del 40 % del precio sin IVA; si no está claro, lo confirma el gestor\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, la organizamos. La reforma suele llevar de tres a cinco meses, y en pisos antiguos conviene revisar tuberías e instalación eléctrica. Es solo para llamarte y organizar la visita: ¿me dices tu nombre y un teléfono?\n<ficha>{\"obra\":\"reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros\",\"vivienda\":\"\",\"metros\":\"90 m²\",\"antiguedad\":\"años 80\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Si no se tocan muros, lo más probable es declaración responsable; en Armilla lo confirma el técnico. La electricidad la hace una empresa habilitada, con boletín.\",\"porDecir\":\"IVA del 10 % si es para tu vivienda, con más de dos años y materiales que no pasan del 40 % del precio sin IVA; si no está claro, lo confirma el gestor\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Nuria, 699 202 515"
  }
 ]

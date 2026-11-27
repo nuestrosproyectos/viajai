@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Genial, la organizamos. Y ojo con el plazo: no nos consta prórroga, así que el certificado de después va justo; lo confirma tu gestor. Es solo para llamarte y cuadrar la visita: ¿me dices tu nombre y un teléfono?\n<ficha>{\"obra\":\"cambiar 6 ventanas de aluminio viejo por unas que aíslen\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"cuanto antes\",\"orientacion\":\"Deducción del 20 % o del 40 % en la renta con certificados energéticos de antes y después; el de después, antes del 1 de enero de 2027. El IVA puede ser del 10 % si es para vivir en ella, tiene más de dos años y los materiales no pasan del 40 %; lo confirma el gestor.\",\"porDecir\":\"Si las ventanas cambian la fachada, hace falta acuerdo de la comunidad\",\"fase\":\"datos\"}</ficha>",
   "original": "Genial, la organizamos. Y ojo con el plazo: no nos consta prórroga, así que el certificado de después va justo; lo confirma tu gestor. Es solo para llamarte y cuadrar la visita: ¿me dices tu nombre y un teléfono?\n<ficha>{\"obra\":\"cambiar 6 ventanas de aluminio viejo por unas que aíslen\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"cuanto antes\",\"orientacion\":\"Deducción del 20 % o del 40 % en la renta con certificados energéticos de antes y después; el de después, antes del 1 de enero de 2027. El IVA puede ser del 10 % si es para vivir en ella, tiene más de dos años y los materiales no pasan del 40 %; lo confirma el gestor.\",\"porDecir\":\"Si las ventanas cambian la fachada, hace falta acuerdo de la comunidad\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Paco, 633 778 120"
  }
 ]

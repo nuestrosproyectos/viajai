@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Sí, el presupuesto llega por escrito y por partidas, unos cinco días laborables tras la visita. Si la obra es en Granada capital, suele bastar una declaración responsable. Es solo para llamarle y organizar la visita: ¿me dice su nombre y un teléfono?\n<ficha>{\"obra\":\"reformar la cocina entera\",\"vivienda\":\"\",\"metros\":\"unos 10 metros\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cocina completa: muchas están entre 6.000 y 10.000 €, según muebles y si se mueven fregadero, placa o campana; si sale algo oculto, se presupuesta por escrito y no se hace sin firma.\",\"porDecir\":\"IVA del 10 % si es para su vivienda con más de dos años\",\"fase\":\"datos\"}</ficha>",
   "original": "Sí, el presupuesto llega por escrito y por partidas, unos cinco días laborables tras la visita. Si la obra es en Granada capital, suele bastar una declaración responsable. Es solo para llamarle y organizar la visita: ¿me dice su nombre y un teléfono?\n<ficha>{\"obra\":\"reformar la cocina entera\",\"vivienda\":\"\",\"metros\":\"unos 10 metros\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cocina completa: muchas están entre 6.000 y 10.000 €, según muebles y si se mueven fregadero, placa o campana; si sale algo oculto, se presupuesta por escrito y no se hace sin firma.\",\"porDecir\":\"IVA del 10 % si es para su vivienda con más de dos años\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Antonio, 678 112 443"
  }
 ]
