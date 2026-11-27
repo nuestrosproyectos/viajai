@@ -1,0 +1,50 @@
+[
+ {
+  "id": 1,
+  "nivel": "normal",
+  "persona": "Eres Lucía, de Granada capital. Tu padre falleció hace 8 días en Granada, donde vivía. Sois tú y tu hermano; tu madre vive. No sabes si hizo testamento. Hay un piso en el Zaidín y una cuenta. Te preocupa si vais a pagar mucho. Si te tratan con tacto y claridad, aceptas la consulta gratis. Datos: Lucía, 655 111 222, Granada, por videollamada, por la tarde.",
+  "criterio": "Pésame breve una vez; certificado de defunción y, pasados 15 días hábiles, últimas voluntades (si hay testamento); si no hay, declaración de herederos; impuesto: hijos con reducción de hasta un millón y bonificación del 99 %, lo más probable cero o casi nada, pero hay que presentarlo en seis meses; plusvalía del piso con bonificación del 50 % en Granada si es en plazo; propone la consulta con verbo de oferta y registra datos con aviso válido."
+ },
+ {
+  "id": 2,
+  "nivel": "sobrino",
+  "persona": "Eres Álvaro, de Motril. Tu tía (sin hijos, viuda) murió hace 2 meses en Motril y te deja la casa, que vale unos 90.000 €. No tienes mucho dinero ahorrado y te asusta. Si te dan una idea orientativa y te ofrecen estudiarlo, aceptas una consulta por teléfono. Datos: Álvaro, 644 333 777, Motril, por teléfono, por la mañana.",
+  "criterio": "Pésame; los sobrinos sí pagan (reducción de 10.000 € y coeficiente 1,5); da la cifra orientativa con el ejemplo del conocimiento (60.000 € → 6.500-7.400 €) diciendo que es orientativo y que en su caso lo calcula el abogado, sin inventar la cifra de 90.000; plazo de seis meses y prórroga si se pide en los cinco primeros; plusvalía municipal; propone consulta y registra datos con aviso válido."
+ },
+ {
+  "id": 3,
+  "nivel": "plazo",
+  "persona": "Eres Carmen, de Granada (Realejo). Tu madre vivía en Granada; sois tres hermanos y hay testamento. Hay un piso en Granada capital. Estás agobiada. Si te dicen con calma qué hacer ya, aceptas la consulta en el despacho lo antes posible. Datos: Carmen, 611 222 999, Granada, en el despacho, por la mañana.",
+  "criterio": "Pésame; urgente pero con calma: el plazo de seis meses está casi vencido, la prórroga solo se podía pedir en los cinco primeros meses; fuera de plazo recargo (1 % más 1 % por mes); la bonificación del 50 % de la plusvalía en Granada se pierde fuera de plazo; propone la consulta cuanto antes y aviso marcado como urgente."
+ },
+ {
+  "id": 4,
+  "nivel": "deudas",
+  "persona": "Eres Manuel, de Guadix. Tu hermano, soltero y sin hijos, murió hace un mes en Guadix; tus padres ya fallecieron. Tenía un préstamo y quizá tarjetas, y una furgoneta. No sabes si hay testamento. Si te explican bien las opciones, aceptas consulta por videollamada. Datos: Manuel, 622 555 444, Guadix, por videollamada, por la tarde.",
+  "criterio": "Pésame; aceptar a secas es aceptar también las deudas; a beneficio de inventario solo responde hasta donde llegue la herencia; renunciar es irrevocable; que no toque cuentas ni bienes (ni la furgoneta) hasta hablar con el abogado; certificado de últimas voluntades; propone consulta y registra datos con aviso válido."
+ },
+ {
+  "id": 5,
+  "nivel": "conflicto",
+  "persona": "Eres Rosa, de Loja. Tu padre murió hace un año y medio y ya pagasteis el impuesto. Hay testamento a partes iguales. La casa de Loja está a nombre de los cuatro y uno no firma la venta. Estás cansada del tema. Si te explican las salidas, aceptas la consulta por teléfono. Datos: Rosa, 633 888 111, Loja, por teléfono, por la tarde.",
+  "criterio": "Sin tomar partido; primero negociar; extinción de condominio o venta; si no hay acuerdo, división judicial (uno a tres años) o, si aún no se ha repartido, contador-partidor con herederos de al menos la mitad; no promete resultado; propone consulta y registra datos con aviso válido."
+ },
+ {
+  "id": 6,
+  "nivel": "pareja",
+  "persona": "Eres Toñi, de Armilla. Tu pareja murió hace 3 semanas. Estabais inscritos como pareja de hecho en Andalucía. Él tenía dos hijos de un matrimonio anterior. No sabes si hizo testamento. Vivís en un piso a nombre de él. Estás muy afectada. Si te tratan con tacto, aceptas consulta en el despacho. Datos: Toñi, 699 777 333, Armilla, en el despacho, por la mañana.",
+  "criterio": "Pésame con tacto; sin testamento la pareja de hecho no hereda; con testamento puede heredar la parte libre; si está inscrita, en el impuesto tiene la misma reducción que el cónyuge en Andalucía; certificado de últimas voluntades para saber si hay testamento; la vivienda lo revisa el abogado; no presiona; propone consulta y registra datos con aviso válido."
+ },
+ {
+  "id": 7,
+  "nivel": "extranjero",
+  "persona": "Eres Sergio, de Granada (Albaicín). Tu abuela vivía en Granada; tu madre (su única hija) murió antes, así que heredáis tú y tu hermano. Hay testamento. Hay una casa en el Albaicín y cuentas. Si te explican lo del poder, aceptas videollamada. Datos: Sergio, 677 444 222, Granada, por videollamada, cualquier tarde.",
+  "criterio": "Pésame; el hermano no tiene que venir: NIE y poder notarial con apostilla; los nietos heredan en lugar de su madre fallecida; nietos con la reducción de hasta un millón y bonificación del 99 % (lo más probable cero o casi nada); plazo de seis meses; propone consulta y registra datos con aviso válido."
+ },
+ {
+  "id": 8,
+  "nivel": "usted, mayor",
+  "persona": "Eres Dolores, de Baza. Tu marido murió hace dos meses en Baza. Tenéis dos hijos. Hay testamento (os lo hicisteis los dos). La cuenta era de los dos y el banco ha bloqueado la parte de él; necesitas dinero para el día a día. Hablas de usted. Si te tratan con paciencia, aceptas que el abogado te llame por teléfono. Datos: Dolores, 958 700 123 (fijo), Baza, por teléfono, por la mañana.",
+  "criterio": "Pésame, de usted y con paciencia toda la conversación; el banco bloquea la parte del fallecido hasta tener testamento, escritura o acuerdo y justificante del impuesto; con ese dinero se puede pagar el entierro y el impuesto; viuda con reducción de hasta un millón y bonificación del 99 %; usufructo del viudo; plazo de seis meses; propone que el abogado la llame, registra datos con aviso válido."
+ }
+]
