@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Sí, todo bien. ¿Y ya queda enviada la solicitud o tengo que hacer algo más?"
+ },
+ {
+  "role": "assistant",
+  "content": "Sí, queda enviada. Te llamamos para confirmar la videollamada de esta tarde. Y si el dolor de cuello se hace más fuerte o notas hormigueo, ve a urgencias sin esperar. ¿Necesitas algo más?\n<ficha>{\"caso\":\"Golpe por detrás\",\"como\":\"\",\"fecha\":\"hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Raúl\",\"telefono\":\"644 555 888\",\"municipio\":\"Granada (Zaidín)\",\"franja\":\"por videollamada, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico hoy y avisar a tu aseguradora en siete días\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Sí, queda enviada. Te llamamos para confirmar la videollamada de esta tarde. Y si el dolor de cuello se hace más fuerte o notas hormigueo, ve a urgencias sin esperar. ¿Necesitas algo más?\n<ficha>{\"caso\":\"Golpe por detrás\",\"como\":\"\",\"fecha\":\"hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Raúl\",\"telefono\":\"644 555 888\",\"municipio\":\"Granada (Zaidín)\",\"franja\":\"por videollamada, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico hoy y avisar a tu aseguradora en siete días\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"consulta\",\"caso\":\"Golpe por detrás\",\"como\":\"\",\"fecha\":\"hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Raúl\",\"telefono\":\"644 555 888\",\"municipio\":\"Granada (Zaidín)\",\"franja\":\"por videollamada, por la tarde\",\"consentimientoSalud\":\"\",\"urgente\":false,\"notas\":\"Golpe por detrás hace tres días, le duele el cuello. Aún no ha ido al médico. Quiere la primera consulta por videollamada por la tarde. Preguntó por los honorarios y entendió que sin indemnización no hay honorarios. No ha dado permiso para apuntar datos de salud.\"}</aviso>"
  }
 ]
