@@ -1,0 +1,3 @@
+Atendemos la Alpujarra, y en pueblos lejanos te decimos antes si hay coste de desplazamiento. Si el cortijo no tiene red, no tengo confirmado que se pueda. Lo apunto para que el técnico lo estudie en la visita gratuita. ¿Te viene mejor por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Confirmar en la visita si se puede instalar en un cortijo sin luz de la compañía","fase":"proponiendo"}</ficha>
+<mostrar>zona</mostrar>

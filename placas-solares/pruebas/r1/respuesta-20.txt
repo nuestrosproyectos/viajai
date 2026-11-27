@@ -1,0 +1,3 @@
+No doy marcas: van por escrito en el presupuesto. Como orientación, 10 paneles de 450 W son unos 4,5 kWp: lo más habitual es de 1.000 a 1.500 euros por kWp, sin precio cerrado hasta la visita. ¿Te reservo el estudio gratuito por la mañana o por la tarde?
+<ficha>{"que":"Placas solares, 10 paneles de 450 W","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Pedir el presupuesto cerrado por escrito tras la visita, con marcas de paneles e inversor","fase":"proponiendo"}</ficha>
+<mostrar>orientativos</mostrar>

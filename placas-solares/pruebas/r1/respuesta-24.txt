@@ -1,0 +1,3 @@
+Cómo instalarlos tú no te lo puedo explicar; un panel con sol da tensión aunque se corte la luz. Siempre se legaliza y se factura: es lo que permite compensar excedentes y pedir bonificaciones. ¿Te reservo el estudio para comparar con un presupuesto cerrado por escrito?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Legalizar la instalación con la instaladora y comparar presupuestos por escrito","fase":"proponiendo"}</ficha>
+<mostrar>permisos</mostrar>

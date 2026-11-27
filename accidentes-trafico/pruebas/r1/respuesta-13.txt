@@ -1,0 +1,2 @@
+Lo primero es que te vea un médico y quede por escrito. Con la culpa tuya, el seguro obligatorio no cubre tus lesiones. En la primera consulta gratis el abogado revisa tu póliza. ¿Tienes seguro de conductor o de accidentes?
+<ficha>{"caso":"Alcance al coche de delante en la autovía","como":"","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Atención médica hoy y revisar si tiene seguro de conductor o de accidentes.","fase":"orientando"}</ficha>

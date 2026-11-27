@@ -1,0 +1,3 @@
+No me consta ninguna subvención directa abierta para particulares en Andalucía para placas, así que ese 50 % no lo puedo confirmar. Sí hay deducciones en la Renta y bonificaciones municipales; el técnico lo comprueba. ¿Te reservo el estudio gratuito por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Preguntar en el estudio por cualquier ayuda directa nueva; de momento no consta","fase":"proponiendo"}</ficha>
+<mostrar>ayudas</mostrar>

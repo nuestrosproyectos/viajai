@@ -1,0 +1,2 @@
+Mira si ha saltado algún interruptor del cuadro, pero no abras tú el termo. Lo más habitual es la resistencia, la pieza que calienta el agua, o el termostato, y puede esperar a una visita. ¿Te la reservo por la mañana o por la tarde?
+<ficha>{"averia":"Sin agua caliente, termo eléctrico de 80 litros","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Mira si ha saltado algún interruptor del cuadro y no abras tú el termo.","fase":"proponiendo"}</ficha>

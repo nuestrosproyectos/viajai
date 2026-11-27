@@ -1,0 +1,2 @@
+No eche más sosa cáustica, que quema la piel y los ojos. Si le ha salpicado, aclárese con agua abundante, y lo anoto para que el fontanero lo sepa. No es urgente. ¿Le reservo la visita por la mañana o por la tarde?
+<ficha>{"averia":"Lavabo atascado; ya ha echado medio bote de sosa cáustica","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No eche más sosa cáustica; lo anotamos para que el fontanero lo sepa.","fase":"proponiendo"}</ficha>

@@ -1,0 +1,2 @@
+Puedes elegir tu propio abogado aunque el seguro te ofrezca el suyo. Lo de gratis depende de tu póliza, que puede cubrir parte de los honorarios hasta un límite; eso se mira en la consulta. ¿Cómo fue el accidente?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"El seguro ofrece su abogado gratis","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Puedes elegir tu abogado; mirar en la consulta si la póliza cubre parte de los honorarios.","fase":"orientando"}</ficha>

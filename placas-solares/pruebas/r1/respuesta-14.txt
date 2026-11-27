@@ -1,0 +1,2 @@
+Sin sus facturas no le puedo dar un ahorro exacto. En Granada cada kilovatio instalado produce del orden de mil cuatrocientos a mil setecientos kilovatios hora al año. El técnico lo afina en el estudio gratuito. ¿Se lo reservo por la mañana o por la tarde?
+<ficha>{"que":"Placas solares, 4 placas","lugar":"","factura":"unos 90 € al mes","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Tener a mano las facturas de luz para cerrar el ahorro en el estudio gratuito","fase":"proponiendo"}</ficha>

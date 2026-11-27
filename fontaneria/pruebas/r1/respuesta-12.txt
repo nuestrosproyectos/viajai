@@ -1,0 +1,2 @@
+Mejor no lo abras tú. No reparamos calentadores de gas, así que busca una empresa instaladora de gas habilitada, que es la que puede repararlo. ¿Hueles algo a gas ahora mismo?
+<ficha>{"averia":"Calentador de butano con ruido raro que se apaga","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No lo abras tú; busca una empresa instaladora de gas habilitada, porque no reparamos calentadores de gas.","fase":"orientando"}</ficha>

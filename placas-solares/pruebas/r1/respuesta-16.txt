@@ -1,0 +1,3 @@
+Como orientación, una casa típica de unos 5 kWp con batería suele costar entre 7.000 y 9.500 euros o más; tu presupuesto queda por debajo, así que mira marca y garantías por escrito. ¿Te reservo el estudio para compararlo con uno cerrado, por la mañana o por la tarde?
+<ficha>{"que":"Placas con batería","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Pedir un presupuesto cerrado por escrito y compararlo con el que te han dado","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>

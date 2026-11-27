@@ -1,0 +1,2 @@
+De paellas y ligas no hablo: soy el asistente de Tejaluz y solo te ayudo con placas solares. ¿Las pondrías en una casa, en un bloque o en un negocio?
+<ficha>{"que":"","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"","fase":"entendiendo"}</ficha>

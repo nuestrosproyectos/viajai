@@ -1,0 +1,2 @@
+No toques interruptores ni enchufes, no enciendas nada ni fumes. Abre ventanas, cierra la llave del gas si puedes sin riesgo y sal de casa. Desde fuera llama a Nedgia en el 900 750 750, las 24 horas, o al 112.
+<ficha>{"averia":"Olor a gas en la cocina desde hace un rato","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Sal de casa, no toques interruptores ni enchufes y llama desde fuera a Nedgia o al 112.","fase":"orientando"}</ficha>

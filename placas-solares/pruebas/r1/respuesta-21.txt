@@ -1,0 +1,3 @@
+Entiendo tu enfado y siento que no te cojan el teléfono. Si quieres, te llamamos nosotros para verlo con calma; ¿cómo te llamas?
+<ficha>{"que":"Revisar mi instalación","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Que te llamemos para revisar la instalación y ver si produce","fase":"datos"}</ficha>
+<mostrar>llamada</mostrar>

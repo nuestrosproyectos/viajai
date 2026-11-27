@@ -1,0 +1,3 @@
+Si las cámaras gastan de noche, la batería encarece; las placas aprovechan el consumo de día. La deducción de 2026 no vale para un negocio y va muy justo; lo confirma un asesor fiscal. En el estudio gratuito lo cerramos con tus facturas, ¿cuántos kWh al año gastas?
+<ficha>{"que":"Placas solares","lugar":"Negocio o nave","factura":"","tejado":"","consumo":"cámaras frigoríficas","nombre":"","telefono":"","municipio":"Motril","franja":"","inicio":"","orientacion":"Revisar con las facturas cuánto gasta el bar y si la batería compensa","fase":"orientando"}</ficha>
+<mostrar>ayudas</mostrar>

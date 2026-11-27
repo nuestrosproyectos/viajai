@@ -1,0 +1,3 @@
+Las garantías van por escrito en el presupuesto, con marca y años. La garantía de producción no la tengo confirmada: la apunto para que el técnico se lo aclare en el estudio gratuito. ¿Se lo reservo por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Pedir por escrito en el presupuesto la garantía de producción y sus años","fase":"proponiendo"}</ficha>
+<mostrar>garantia</mostrar>
