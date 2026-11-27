@@ -52,5 +52,9 @@
   "role": "assistant",
   "content": "Gracias, Manolo. Repito tu teléfono: seiscientos treinta y tres, novecientos nueve, ciento uno. Lo anoto para entre semana por la tarde, y con tus facturas el técnico calcula si la batería compensa. ¿En qué municipio o barrio está la vivienda?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"De noche, bastante\",\"nombre\":\"Manolo\",\"telefono\":\"633 909 101\",\"municipio\":\"\",\"franja\":\"Entre semana por la tarde; no los sábados\",\"inicio\":\"\",\"orientacion\":\"Ver el estudio con tus facturas; las garantías de placas y batería van por escrito en el presupuesto.\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Manolo. Repito tu teléfono: seiscientos treinta y tres, novecientos nueve, ciento uno. Lo anoto para entre semana por la tarde, y con tus facturas el técnico calcula si la batería compensa. ¿En qué municipio o barrio está la vivienda?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"De noche, bastante\",\"nombre\":\"Manolo\",\"telefono\":\"633 909 101\",\"municipio\":\"\",\"franja\":\"Entre semana por la tarde; no los sábados\",\"inicio\":\"\",\"orientacion\":\"Ver el estudio con tus facturas; las garantías de placas y batería van por escrito en el presupuesto.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Pulianas"
  }
 ]

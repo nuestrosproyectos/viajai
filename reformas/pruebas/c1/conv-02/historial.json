@@ -52,5 +52,9 @@
   "role": "assistant",
   "content": "Una cocina entera suele estar entre seis mil y diez mil euros, según los muebles y si se mueven fregadero, placa o campana. En Las Gabias el técnico le confirma la ordenanza y los importes. ¿Le confirmo la visita de la mañana?\n<ficha>{\"obra\":\"Cocina entera\",\"vivienda\":\"\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"Las Gabias\",\"franja\":\"Por la mañana\",\"inicio\":\"\",\"orientacion\":\"Confirmar la visita de la mañana; en Las Gabias el ayuntamiento tiene su propia ordenanza.\",\"fase\":\"datos\"}</ficha>",
   "original": "Una cocina entera suele estar entre seis mil y diez mil euros, según los muebles y si se mueven fregadero, placa o campana. En Las Gabias el técnico le confirma la ordenanza y los importes. ¿Le confirmo la visita de la mañana?\n<ficha>{\"obra\":\"Cocina entera\",\"vivienda\":\"\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"Las Gabias\",\"franja\":\"Por la mañana\",\"inicio\":\"\",\"orientacion\":\"Confirmar la visita de la mañana; en Las Gabias el ayuntamiento tiene su propia ordenanza.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, confírmela. Por la mañana."
  }
 ]
