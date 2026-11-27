@@ -17,7 +17,7 @@ ssh <usuario>@<ip-del-servidor> 'bash -s' < deploy/diagnostico.sh
 Comprueba que hay al menos 2 GB libres en disco y que nada ocupa ya los puertos 80 y 443. Si otro programa
 (por ejemplo un contenedor Docker con Nginx o Traefik) usa esos puertos, no instales Caddy: añade el panel a ese proxy.
 
-## Vía rápida: un solo comando (probado en Hostinger KVM 1, Ubuntu 24.04)
+## Vía rápida: un solo comando (Ubuntu 24.04; pendiente de probar en el Hostinger KVM 1)
 
 Como root en el servidor (sirve la «Terminal del navegador» de hPanel). Hace los pasos 1 a 5 de abajo, es seguro
 repetirlo (no pisa `.env`, `accounts.json` ni `data/`) y genera solo las claves del panel y del webhook:
