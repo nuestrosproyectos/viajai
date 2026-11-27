@@ -6,4 +6,8 @@ TÚ (cliente): La aseguradora del otro me ofrece 2.300 € y me dicen que firme 
 
 Andrés (asistente de la web): No firmes nada todavía: es urgente y lo tiene que ver el abogado antes. Si aún no tienes el alta, lo definitivo no se puede valorar. Te reservo la consulta gratis para revisar esa oferta. ¿Ya te han dado el alta médica?
 
+TÚ (cliente): No, el alta no me la han dado, sigo con rehabilitación. ¿Y 2.300 € es poco?
+
+Andrés (asistente de la web): Eso lo valora el abogado con tu informe delante, porque depende de los días hasta el alta, las secuelas y los gastos. Cobrar a cuenta no es firmar un finiquito. ¿Te reservo la consulta gratis, por teléfono o en el despacho?
+
 === TU SIGUIENTE MENSAJE ===

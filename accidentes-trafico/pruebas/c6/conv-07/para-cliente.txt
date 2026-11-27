@@ -6,4 +6,8 @@ TÚ (cliente): Iba en bici por el carril de la Avenida de la Constitución y un 
 
 Andrés (asistente de la web): Siento lo de la clavícula. Lo primero es que quede por escrito en el médico. Los ciclistas están muy protegidos: la aseguradora solo se libra si la culpa fue solo tuya. Te reservo la consulta gratis. ¿Te han atendido ya en urgencias?
 
+TÚ (cliente): Sí, me llevaron en ambulancia a urgencias. Vino la Policía Local, hay atestado y un testigo. Pero el conductor dice que fue culpa mía, ¿tengo que pagar yo la bici?
+
+Andrés (asistente de la web): Con atestado y testigo, la aseguradora solo se libra si la culpa fue solo tuya, y si fue compartida se reduce; eso y lo de la bici lo mira el abogado. Sigue el tratamiento y la rehabilitación. ¿Te reservo la consulta gratis?
+
 === TU SIGUIENTE MENSAJE ===

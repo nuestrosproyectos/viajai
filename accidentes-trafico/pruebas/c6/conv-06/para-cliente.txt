@@ -6,4 +6,8 @@ TÚ (cliente): Mi seguro me dice que me pone ellos un abogado gratis. ¿Para qu�
 
 Andrés (asistente de la web): Eso depende de tu póliza: si tiene defensa jurídica, puedes elegir tu propio abogado aunque el seguro te ofrezca el suyo. Te reservo la consulta gratis, que te sirve de segunda opinión. ¿Sabes si tu póliza tiene defensa jurídica?
 
+TÚ (cliente): No lo sé la verdad. Es que no me fío mucho del abogado del seguro. ¿Vosotros qué hacéis distinto?
+
+Andrés (asistente de la web): Nosotros trabajamos para ti, con un abogado colegiado en Granada; si no hay indemnización, no hay honorarios, y la primera consulta es gratis y sin compromiso. Si tu póliza tiene defensa jurídica, puede cubrir parte de nuestros honorarios, hasta un límite. ¿Te reservo la consulta?
+
 === TU SIGUIENTE MENSAJE ===

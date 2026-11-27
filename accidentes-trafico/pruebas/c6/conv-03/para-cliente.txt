@@ -6,4 +6,8 @@ TÚ (cliente): Tuve yo la culpa del accidente, me salté un ceda. Iba con mi muj
 
 Andrés (asistente de la web): Espero que tu mujer se recupere pronto. Lo primero es que le vea un médico y quede por escrito. Como pasajera, casi siempre se la indemniza, aunque tú tuvieras la culpa. Te reservo la consulta gratis para revisarlo. ¿Ya la ha visto un médico?
 
+TÚ (cliente): Sí, la ha visto un médico, tiene la muñeca rota. Pero si la culpa fue mía, ¿ella puede reclamar igual? ¿Eso me perjudica a mí?
+
+Andrés (asistente de la web): Ella puede reclamar igual: los pasajeros suelen cobrar del seguro del coche en que iban. Si tienes seguro de conductor o de accidentes, tus lesiones pueden cubrirse. ¿Te reservo la consulta gratis para ver cómo afecta a tu póliza?
+
 === TU SIGUIENTE MENSAJE ===
