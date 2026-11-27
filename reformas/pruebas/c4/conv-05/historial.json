@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "Ya, pero alguna referencia tendréis de otras cocinas parecidas. Sin una idea no sé si me compensa"
+ },
+ {
+  "role": "assistant",
+  "content": "Un plazo seguro de cocina no te lo puedo dar, y no quiero inventarlo. Sí puedes pedir el plazo de inicio y de obra por escrito en el presupuesto, que llega unos cinco días laborables tras la visita. ¿Te reservo la visita?\n<ficha>{\"obra\":\"cambiar la cocina entera, con muebles de gama media, y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"unos 9 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cocina completa: muchas están entre 6.000 y 10.000 €, según los muebles; pide el plazo de inicio y de obra por escrito en el presupuesto.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Un plazo seguro de cocina no te lo puedo dar, y no quiero inventarlo. Sí puedes pedir el plazo de inicio y de obra por escrito en el presupuesto, que llega unos cinco días laborables tras la visita. ¿Te reservo la visita?\n<ficha>{\"obra\":\"cambiar la cocina entera, con muebles de gama media, y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"unos 9 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cocina completa: muchas están entre 6.000 y 10.000 €, según los muebles; pide el plazo de inicio y de obra por escrito en el presupuesto.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

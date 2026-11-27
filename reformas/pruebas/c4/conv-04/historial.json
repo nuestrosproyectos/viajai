@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "Calle Ancha 8, Maracena. Mejor a primera hora de la mañana, que es cuando yo estoy allí"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Carmen: visita gratis a primera hora de la mañana en calle Ancha 8, Maracena, y le llamamos al seis nueve nueve, cuatro cinco cero, dos uno dos. Entiendo que quiera que sea cuanto antes, lo tendremos en cuenta. ¿Está todo bien?\n<ficha>{\"obra\":\"cambiar la bañera de su padre por un plato de ducha\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Carmen\",\"telefono\":\"699 450 212\",\"municipio\":\"Maracena\",\"direccion\":\"Calle Ancha 8\",\"franja\":\"primera hora de la mañana\",\"inicio\":\"\",\"orientacion\":\"Cambiar la bañera por un plato de ducha: entre unos 1.000 y 2.300 € lo más habitual; la visita de medición es gratis y suele hacerse en dos a cuatro días.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Carmen: visita gratis a primera hora de la mañana en calle Ancha 8, Maracena, y le llamamos al seis nueve nueve, cuatro cinco cero, dos uno dos. Entiendo que quiera que sea cuanto antes, lo tendremos en cuenta. ¿Está todo bien?\n<ficha>{\"obra\":\"cambiar la bañera de su padre por un plato de ducha\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Carmen\",\"telefono\":\"699 450 212\",\"municipio\":\"Maracena\",\"direccion\":\"Calle Ancha 8\",\"franja\":\"primera hora de la mañana\",\"inicio\":\"\",\"orientacion\":\"Cambiar la bañera por un plato de ducha: entre unos 1.000 y 2.300 € lo más habitual; la visita de medición es gratis y suele hacerse en dos a cuatro días.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

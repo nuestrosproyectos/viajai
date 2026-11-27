@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "Granada, calle Recogidas 31. Por las mañanas"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Paco: visita gratis por las mañanas en calle Recogidas 31, Granada, y te llamamos al seis tres tres, siete siete ocho, uno dos cero. Y la visita suele hacerse en dos a cuatro días. ¿Está todo bien?\n<ficha>{\"obra\":\"cambiar 6 ventanas de aluminio viejo por unas que aíslen\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Paco\",\"telefono\":\"633 778 120\",\"municipio\":\"Granada\",\"direccion\":\"Calle Recogidas 31\",\"franja\":\"mañanas\",\"inicio\":\"cuanto antes\",\"orientacion\":\"Deducción del 20 % o del 40 % en la renta con certificados energéticos de antes y después; el de después, antes del 1 de enero de 2027. El IVA puede ser del 10 % si es para vivir en ella, tiene más de dos años y los materiales no pasan del 40 %; lo confirma el gestor.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Paco: visita gratis por las mañanas en calle Recogidas 31, Granada, y te llamamos al seis tres tres, siete siete ocho, uno dos cero. Y la visita suele hacerse en dos a cuatro días. ¿Está todo bien?\n<ficha>{\"obra\":\"cambiar 6 ventanas de aluminio viejo por unas que aíslen\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Paco\",\"telefono\":\"633 778 120\",\"municipio\":\"Granada\",\"direccion\":\"Calle Recogidas 31\",\"franja\":\"mañanas\",\"inicio\":\"cuanto antes\",\"orientacion\":\"Deducción del 20 % o del 40 % en la renta con certificados energéticos de antes y después; el de después, antes del 1 de enero de 2027. El IVA puede ser del 10 % si es para vivir en ella, tiene más de dos años y los materiales no pasan del 40 %; lo confirma el gestor.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]
