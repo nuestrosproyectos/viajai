@@ -1,2 +1,0 @@
-Perfecto, te apunto la visita para cambiar el termo cualquier mañana, y el fontanero te confirma su precio antes de empezar. Solo es para llamarte y organizarla. ¿Me dices tu nombre?
-<ficha>{"averia":"cambio de termo eléctrico; viven 4 en casa","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"Cualquier mañana","inicio":"","orientacion":"Pide el presupuesto desglosado por escrito antes de empezar.","fase":"datos"}</ficha>

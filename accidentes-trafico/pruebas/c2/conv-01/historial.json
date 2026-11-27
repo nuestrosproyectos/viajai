@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, si la primera es gratis me parece bien. Por la tarde y por videollamada, si puede ser"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, te apunto la consulta por la tarde, por videollamada. No firmes nada de la aseguradora hasta que lo vea el abogado. Solo es para llamarte y organizarla. ¿Me dices tu nombre?\n<ficha>{\"caso\":\"golpe por detrás hace tres días\",\"como\":\"\",\"fecha\":\"hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Por la tarde, por videollamada\",\"consentimientoSalud\":\"\",\"orientacion\":\"Ve al médico hoy y no firmes nada de la aseguradora hasta que lo vea el abogado.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, te apunto la consulta por la tarde, por videollamada. No firmes nada de la aseguradora hasta que lo vea el abogado. Solo es para llamarte y organizarla. ¿Me dices tu nombre?\n<ficha>{\"caso\":\"golpe por detrás hace tres días\",\"como\":\"\",\"fecha\":\"hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Por la tarde, por videollamada\",\"consentimientoSalud\":\"\",\"orientacion\":\"Ve al médico hoy y no firmes nada de la aseguradora hasta que lo vea el abogado.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, pues sí, resérvamela. Por la mañana mejor"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, te apunto la consulta gratis por la mañana. Busca el informe del alta y las facturas de lo que has gastado. Solo es para llamarte y organizarla. ¿Me dices tu nombre?\n<ficha>{\"caso\":\"Atropello en un paso de cebra; alta hace siete meses y sin reclamar nada\",\"como\":\"Andando\",\"fecha\":\"Hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guarda el informe del alta y las facturas; reclamar por escrito interrumpe el plazo.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, te apunto la consulta gratis por la mañana. Busca el informe del alta y las facturas de lo que has gastado. Solo es para llamarte y organizarla. ¿Me dices tu nombre?\n<ficha>{\"caso\":\"Atropello en un paso de cebra; alta hace siete meses y sin reclamar nada\",\"como\":\"Andando\",\"fecha\":\"Hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guarda el informe del alta y las facturas; reclamar por escrito interrumpe el plazo.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

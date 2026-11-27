@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, gracias. Entonces por la tarde mejor, y por videollamada si puede ser, que es para mi mujer"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, te apunto la consulta por la tarde, por videollamada, para tu mujer. Guarda el parte amistoso y las fotos. Solo es para llamarte y organizarla. ¿Me dices tu nombre?\n<ficha>{\"caso\":\"Accidente por saltarse un ceda; iba de pasajera su mujer\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Por la tarde, por videollamada\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que tu mujer vea un médico hoy y guarda el parte amistoso y las fotos.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, te apunto la consulta por la tarde, por videollamada, para tu mujer. Guarda el parte amistoso y las fotos. Solo es para llamarte y organizarla. ¿Me dices tu nombre?\n<ficha>{\"caso\":\"Accidente por saltarse un ceda; iba de pasajera su mujer\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Por la tarde, por videollamada\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que tu mujer vea un médico hoy y guarda el parte amistoso y las fotos.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

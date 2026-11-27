@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, al menos sois claros. Pues que venga el técnico a hacer el estudio. Entre semana por la tarde"
+ },
+ {
+  "role": "assistant",
+  "content": "Entre semana por la tarde, perfecto. Para llamarte y organizar el estudio, ¿me dices tu nombre? Y ojo, la batería encarece la instalación y en muchas casas alarga la amortización; el técnico lo calcula contigo.\n<ficha>{\"que\":\"Placas solares con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"De noche; de día trabaja fuera\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Entre semana por la tarde\",\"inicio\":\"\",\"orientacion\":\"Consume sobre todo de noche y está fuera de día: con batería puede compensar; el estudio lo calcula con sus facturas.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Entre semana por la tarde, perfecto. Para llamarte y organizar el estudio, ¿me dices tu nombre? Y ojo, la batería encarece la instalación y en muchas casas alarga la amortización; el técnico lo calcula contigo.\n<ficha>{\"que\":\"Placas solares con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"De noche; de día trabaja fuera\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Entre semana por la tarde\",\"inicio\":\"\",\"orientacion\":\"Consume sobre todo de noche y está fuera de día: con batería puede compensar; el estudio lo calcula con sus facturas.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

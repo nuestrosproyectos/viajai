@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, entiendo. Entonces por la tarde, cualquier día"
+ },
+ {
+  "role": "assistant",
+  "content": "Por la tarde, cualquier día, perfecto. Para llamarte y organizar la visita, ¿me dices tu nombre? Y si la cocina queda abierta, la campana tiene que seguir sacando humos por su conducto.\n<ficha>{\"obra\":\"Tirar el tabique entre cocina y salón para abrir la cocina al salón\",\"vivienda\":\"Piso\",\"metros\":\"\",\"antiguedad\":\"Edificio de 1950\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada (San Antón)\",\"direccion\":\"\",\"franja\":\"Por la tarde, cualquier día\",\"inicio\":\"\",\"orientacion\":\"Comprobar si el tabique es de carga; si lo es, hacen falta proyecto y licencia, y avisar a la comunidad.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Por la tarde, cualquier día, perfecto. Para llamarte y organizar la visita, ¿me dices tu nombre? Y si la cocina queda abierta, la campana tiene que seguir sacando humos por su conducto.\n<ficha>{\"obra\":\"Tirar el tabique entre cocina y salón para abrir la cocina al salón\",\"vivienda\":\"Piso\",\"metros\":\"\",\"antiguedad\":\"Edificio de 1950\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada (San Antón)\",\"direccion\":\"\",\"franja\":\"Por la tarde, cualquier día\",\"inicio\":\"\",\"orientacion\":\"Comprobar si el tabique es de carga; si lo es, hacen falta proyecto y licencia, y avisar a la comunidad.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

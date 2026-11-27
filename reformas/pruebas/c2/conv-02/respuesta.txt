@@ -1,2 +1,0 @@
-Por la mañana, perfecto. Para llamarte y organizar la visita, ¿me dices tu nombre? Y un consejo: pide el presupuesto por escrito, con partidas, y no pagues todo por adelantado.
-<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"Por la mañana","inicio":"","orientacion":"Pedir el presupuesto por escrito, por partidas, y no pagar todo por adelantado; la visita de medición es gratis.","fase":"datos"}</ficha>

@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, entonces el estudio me sirve para llevarlo a la junta. Por la tarde mejor"
+ },
+ {
+  "role": "assistant",
+  "content": "Por la tarde, perfecto; el estudio te sirve para llevarlo a la junta. Para llamarte y organizarlo, ¿me dices tu nombre? Y que sepas que también existe el autoconsumo compartido entre vecinos, que podéis valorar en la junta.\n<ficha>{\"que\":\"Placas solares en la azotea del bloque\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada (Zaidín)\",\"direccion\":\"\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Hace falta el acuerdo de la junta, porque la azotea es común; el estudio le sirve para llevarlo a la junta.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Por la tarde, perfecto; el estudio te sirve para llevarlo a la junta. Para llamarte y organizarlo, ¿me dices tu nombre? Y que sepas que también existe el autoconsumo compartido entre vecinos, que podéis valorar en la junta.\n<ficha>{\"que\":\"Placas solares en la azotea del bloque\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada (Zaidín)\",\"direccion\":\"\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Hace falta el acuerdo de la junta, porque la azotea es común; el estudio le sirve para llevarlo a la junta.\",\"fase\":\"datos\"}</ficha>"
  }
 ]
