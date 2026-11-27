@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "En Loja."
+ },
+ {
+  "role": "assistant",
+  "content": "Te lo repito, Rosa: teléfono seis tres tres, ocho ocho ocho, uno uno uno; vives en Loja, y la consulta sería por teléfono por la tarde. ¿Está todo bien?\n<ficha>{\"situacion\":\"reparto de la casa del pueblo entre cuatro hermanos, uno no quiere firmar\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"\",\"bienes\":\"casa del pueblo\",\"nombre\":\"Rosa\",\"telefono\":\"633 888 111\",\"municipio\":\"Loja\",\"franja\":\"por teléfono, por la tarde\",\"fallecimiento\":\"\",\"modalidad\":\"Por teléfono\",\"orientacion\":\"Negociar con el hermano que no firma; si no hay acuerdo, división judicial, o, si ya sois copropietarios, que uno compense a los demás o se venda la casa. El abogado busca primero el acuerdo.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Te lo repito, Rosa: teléfono seis tres tres, ocho ocho ocho, uno uno uno; vives en Loja, y la consulta sería por teléfono por la tarde. ¿Está todo bien?\n<ficha>{\"situacion\":\"reparto de la casa del pueblo entre cuatro hermanos, uno no quiere firmar\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"\",\"bienes\":\"casa del pueblo\",\"nombre\":\"Rosa\",\"telefono\":\"633 888 111\",\"municipio\":\"Loja\",\"franja\":\"por teléfono, por la tarde\",\"fallecimiento\":\"\",\"modalidad\":\"Por teléfono\",\"orientacion\":\"Negociar con el hermano que no firma; si no hay acuerdo, división judicial, o, si ya sois copropietarios, que uno compense a los demás o se venda la casa. El abogado busca primero el acuerdo.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "En Guadix."
+ },
+ {
+  "role": "assistant",
+  "content": "Te lo repito, Manuel: teléfono seis dos dos, cinco cinco cinco, cuatro cuatro cuatro; en Guadix, y la consulta por videollamada por la tarde. ¿Está todo bien?\n<ficha>{\"situacion\":\"herencia de tu hermano, con deudas\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"\",\"bienes\":\"una furgoneta\",\"nombre\":\"Manuel\",\"telefono\":\"622 555 444\",\"municipio\":\"Guadix\",\"franja\":\"videollamada, por la tarde\",\"fallecimiento\":\"\",\"modalidad\":\"Por videollamada\",\"orientacion\":\"No aceptar a secas ni tocar cuentas o bienes hasta verlo con el abogado, porque aceptar a secas incluye las deudas.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Te lo repito, Manuel: teléfono seis dos dos, cinco cinco cinco, cuatro cuatro cuatro; en Guadix, y la consulta por videollamada por la tarde. ¿Está todo bien?\n<ficha>{\"situacion\":\"herencia de tu hermano, con deudas\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"\",\"bienes\":\"una furgoneta\",\"nombre\":\"Manuel\",\"telefono\":\"622 555 444\",\"municipio\":\"Guadix\",\"franja\":\"videollamada, por la tarde\",\"fallecimiento\":\"\",\"modalidad\":\"Por videollamada\",\"orientacion\":\"No aceptar a secas ni tocar cuentas o bienes hasta verlo con el abogado, porque aceptar a secas incluye las deudas.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

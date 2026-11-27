@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "En Baza, vivo en Baza."
+ },
+ {
+  "role": "assistant",
+  "content": "Se lo repito, Dolores: teléfono nueve cinco ocho, siete cero cero, uno dos tres; vive en Baza, y la consulta sería por teléfono por la mañana. ¿Está todo bien?\n<ficha>{\"situacion\":\"cuenta bloqueada tras el fallecimiento de su marido\",\"parentesco\":\"Cónyuge o viudo/a\",\"testamento\":\"\",\"bienes\":\"una cuenta bloqueada en el banco, que era de los dos\",\"nombre\":\"Dolores\",\"telefono\":\"958 700 123\",\"municipio\":\"Baza\",\"franja\":\"por teléfono, por la mañana\",\"fallecimiento\":\"hace dos meses\",\"modalidad\":\"Por teléfono\",\"orientacion\":\"Para desbloquear la cuenta, el banco le pide tres papeles: testamento o declaración de herederos, escritura de herencia o acuerdo de todos, y justificante del impuesto. Si la cuenta era de los dos, lo confirma el abogado.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Se lo repito, Dolores: teléfono nueve cinco ocho, siete cero cero, uno dos tres; vive en Baza, y la consulta sería por teléfono por la mañana. ¿Está todo bien?\n<ficha>{\"situacion\":\"cuenta bloqueada tras el fallecimiento de su marido\",\"parentesco\":\"Cónyuge o viudo/a\",\"testamento\":\"\",\"bienes\":\"una cuenta bloqueada en el banco, que era de los dos\",\"nombre\":\"Dolores\",\"telefono\":\"958 700 123\",\"municipio\":\"Baza\",\"franja\":\"por teléfono, por la mañana\",\"fallecimiento\":\"hace dos meses\",\"modalidad\":\"Por teléfono\",\"orientacion\":\"Para desbloquear la cuenta, el banco le pide tres papeles: testamento o declaración de herederos, escritura de herencia o acuerdo de todos, y justificante del impuesto. Si la cuenta era de los dos, lo confirma el abogado.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

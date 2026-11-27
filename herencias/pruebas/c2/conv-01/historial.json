@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Soy Lucía y mi teléfono es el 655 111 222."
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Lucía. Si hay un piso, la plusvalía municipal, el impuesto del ayuntamiento por subir el valor del suelo, tiene seis meses de plazo. ¿En qué municipio vives y prefieres la consulta en despacho, videollamada o teléfono, y por la mañana o la tarde?\n<ficha>{\"situacion\":\"herencia de tu padre, que falleció la semana pasada\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"No lo sé\",\"bienes\":\"\",\"nombre\":\"Lucía\",\"telefono\":\"655 111 222\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"la semana pasada\",\"modalidad\":\"\",\"orientacion\":\"Presentar el impuesto de sucesiones en seis meses aunque salga cero; lo más probable es que pagues cero o casi nada por la reducción y la bonificación para hijos.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Lucía. Si hay un piso, la plusvalía municipal, el impuesto del ayuntamiento por subir el valor del suelo, tiene seis meses de plazo. ¿En qué municipio vives y prefieres la consulta en despacho, videollamada o teléfono, y por la mañana o la tarde?\n<ficha>{\"situacion\":\"herencia de tu padre, que falleció la semana pasada\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"No lo sé\",\"bienes\":\"\",\"nombre\":\"Lucía\",\"telefono\":\"655 111 222\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"la semana pasada\",\"modalidad\":\"\",\"orientacion\":\"Presentar el impuesto de sucesiones en seis meses aunque salga cero; lo más probable es que pagues cero o casi nada por la reducción y la bonificación para hijos.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]
