@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale. ¿Y con batería sí me garantizáis que no pago nada?"
+ },
+ {
+  "role": "assistant",
+  "content": "Con batería tampoco se puede garantizar: la factura nunca baja a cero. Con lo que gastas de noche, la batería puede compensar, aunque cada kWh de batería suele costar entre 450 y 800 €. ¿Te reservo el estudio, por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"De noche, bastante; trabaja fuera de día\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Ver el estudio con tus facturas; las garantías de placas y batería van por escrito en el presupuesto.\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Con batería tampoco se puede garantizar: la factura nunca baja a cero. Con lo que gastas de noche, la batería puede compensar, aunque cada kWh de batería suele costar entre 450 y 800 €. ¿Te reservo el estudio, por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"De noche, bastante; trabaja fuera de día\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Ver el estudio con tus facturas; las garantías de placas y batería van por escrito en el presupuesto.\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

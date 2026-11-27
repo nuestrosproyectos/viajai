@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Por la mañana, mejor un viernes"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, lo anoto para la mañana y, si puede ser, un viernes. Con tus facturas el técnico afina cuántas placas te hacen falta. ¿A qué nombre te reservo el estudio? Es solo para llamarte y organizarlo.\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"A dos aguas, una cara al sur, sin sombras\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"franja\":\"Por la mañana, preferiblemente un viernes\",\"inicio\":\"\",\"orientacion\":\"Reservar el estudio gratuito con tus facturas para afinar el tamaño.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, lo anoto para la mañana y, si puede ser, un viernes. Con tus facturas el técnico afina cuántas placas te hacen falta. ¿A qué nombre te reservo el estudio? Es solo para llamarte y organizarlo.\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"A dos aguas, una cara al sur, sin sombras\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"franja\":\"Por la mañana, preferiblemente un viernes\",\"inicio\":\"\",\"orientacion\":\"Reservar el estudio gratuito con tus facturas para afinar el tamaño.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

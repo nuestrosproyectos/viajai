@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Vale, Ana, te apunto la visita para la tarde. El informe del fontanero, con cámara si hace falta, ayuda a aclarar la bajante. ¿En qué barrio o municipio estás?\n<ficha>{\"averia\":\"Agua sucia por el plato de ducha del bajo cuando tiran de la cisterna de arriba\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"Ana\",\"telefono\":\"677 450 990\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Probable bajante del edificio, elemento común de la comunidad: avisar al presidente o al administrador; el informe del fontanero ayuda a aclararlo\",\"fase\":\"datos\"}</ficha>",
   "original": "Vale, Ana, te apunto la visita para la tarde. El informe del fontanero, con cámara si hace falta, ayuda a aclarar la bajante. ¿En qué barrio o municipio estás?\n<ficha>{\"averia\":\"Agua sucia por el plato de ducha del bajo cuando tiran de la cisterna de arriba\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"Ana\",\"telefono\":\"677 450 990\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Probable bajante del edificio, elemento común de la comunidad: avisar al presidente o al administrador; el informe del fontanero ayuda a aclararlo\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "En el Zaidín, Granada. Calle Arabial 12, bajo A"
  }
 ]

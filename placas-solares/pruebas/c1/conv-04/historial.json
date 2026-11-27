@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Por la tarde. Llevarlo a la junta con el estudio me parece buena idea"
+ },
+ {
+  "role": "assistant",
+  "content": "Buena idea: con el estudio y tus facturas, la junta tendrá números concretos. ¿A qué nombre te reservo el estudio por la tarde? Es solo para llamarte y organizarlo.\n<ficha>{\"que\":\"Placas solares en la azotea\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea del bloque\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Zaidín, Granada\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Llevar el estudio a la junta de vecinos; hace falta acuerdo de la comunidad.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Buena idea: con el estudio y tus facturas, la junta tendrá números concretos. ¿A qué nombre te reservo el estudio por la tarde? Es solo para llamarte y organizarlo.\n<ficha>{\"que\":\"Placas solares en la azotea\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea del bloque\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Zaidín, Granada\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Llevar el estudio a la junta de vecinos; hace falta acuerdo de la comunidad.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

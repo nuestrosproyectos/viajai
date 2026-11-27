@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "En Granada capital, en el Zaidín. Es casa baja con azotea"
+ },
+ {
+  "role": "assistant",
+  "content": "Como es una casa baja y no un bloque, no hace falta junta; en el Zaidín lo más probable es una declaración responsable que gestiona la instaladora. ¿Te reservo el estudio, por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"Casa baja con azotea\",\"consumo\":\"De noche, no mucho\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada capital, Zaidín\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Comparar el presupuesto de 6.800 € (5 kWp y 10 kWh) con lo orientativo y pedir que incluya boletín y garantías por escrito.\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Como es una casa baja y no un bloque, no hace falta junta; en el Zaidín lo más probable es una declaración responsable que gestiona la instaladora. ¿Te reservo el estudio, por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"Casa baja con azotea\",\"consumo\":\"De noche, no mucho\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada capital, Zaidín\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Comparar el presupuesto de 6.800 € (5 kWp y 10 kWh) con lo orientativo y pedir que incluya boletín y garantías por escrito.\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]
