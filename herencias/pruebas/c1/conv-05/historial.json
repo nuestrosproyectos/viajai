@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Te repito, Rosa: teléfono seis tres tres, ocho ocho ocho, uno uno uno, vives en Loja, y la consulta es por teléfono, por la tarde. ¿Está todo bien?\n<ficha>{\"situacion\":\"Casa de Loja que hay que repartir entre cuatro hermanos; uno no quiere firmar\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"Sí\",\"bienes\":\"Casa en Loja, a nombre de los cuatro hermanos\",\"nombre\":\"Rosa\",\"telefono\":\"633 888 111\",\"municipio\":\"Loja\",\"franja\":\"por teléfono, por la tarde\",\"fallecimiento\":\"\",\"modalidad\":\"Por teléfono\",\"orientacion\":\"Ya son copropietarios: valorar la extinción de condominio (que uno compense a los demás, venta o, en el peor caso, subasta). El testamento reparte a partes iguales entre los cuatro.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Te repito, Rosa: teléfono seis tres tres, ocho ocho ocho, uno uno uno, vives en Loja, y la consulta es por teléfono, por la tarde. ¿Está todo bien?\n<ficha>{\"situacion\":\"Casa de Loja que hay que repartir entre cuatro hermanos; uno no quiere firmar\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"Sí\",\"bienes\":\"Casa en Loja, a nombre de los cuatro hermanos\",\"nombre\":\"Rosa\",\"telefono\":\"633 888 111\",\"municipio\":\"Loja\",\"franja\":\"por teléfono, por la tarde\",\"fallecimiento\":\"\",\"modalidad\":\"Por teléfono\",\"orientacion\":\"Ya son copropietarios: valorar la extinción de condominio (que uno compense a los demás, venta o, en el peor caso, subasta). El testamento reparte a partes iguales entre los cuatro.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, está bien. Una cosa, ¿esto lo hace el mismo abogado para todos o hay que ponerse de acuerdo los cuatro antes?"
  }
 ]

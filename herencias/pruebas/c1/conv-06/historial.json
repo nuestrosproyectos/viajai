@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Te repito, Toñi: teléfono seis nueve nueve, siete siete siete, tres tres tres, vives en Armilla, y la consulta es en el despacho, por la mañana. Y el impuesto tiene seis meses desde el fallecimiento. ¿Está todo bien?\n<ficha>{\"situacion\":\"Fallecimiento de tu pareja, sin matrimonio, tras quince años juntos; inscritos como pareja de hecho en Andalucía\",\"parentesco\":\"Pareja de hecho\",\"testamento\":\"No lo sé\",\"bienes\":\"Piso a nombre de tu pareja, donde vivíais juntos\",\"nombre\":\"Toñi\",\"telefono\":\"699 777 333\",\"municipio\":\"Armilla\",\"franja\":\"en el despacho, por la mañana\",\"fallecimiento\":\"\",\"modalidad\":\"En el despacho\",\"orientacion\":\"Sin testamento, la pareja de hecho no hereda por ley; con testamento, solo si aparece en él. Al estar inscritos en Andalucía, el impuesto suele ser muy bajo; el abogado lo confirma con el testamento.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Te repito, Toñi: teléfono seis nueve nueve, siete siete siete, tres tres tres, vives en Armilla, y la consulta es en el despacho, por la mañana. Y el impuesto tiene seis meses desde el fallecimiento. ¿Está todo bien?\n<ficha>{\"situacion\":\"Fallecimiento de tu pareja, sin matrimonio, tras quince años juntos; inscritos como pareja de hecho en Andalucía\",\"parentesco\":\"Pareja de hecho\",\"testamento\":\"No lo sé\",\"bienes\":\"Piso a nombre de tu pareja, donde vivíais juntos\",\"nombre\":\"Toñi\",\"telefono\":\"699 777 333\",\"municipio\":\"Armilla\",\"franja\":\"en el despacho, por la mañana\",\"fallecimiento\":\"\",\"modalidad\":\"En el despacho\",\"orientacion\":\"Sin testamento, la pareja de hecho no hereda por ley; con testamento, solo si aparece en él. Al estar inscritos en Andalucía, el impuesto suele ser muy bajo; el abogado lo confirma con el testamento.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien"
  }
 ]

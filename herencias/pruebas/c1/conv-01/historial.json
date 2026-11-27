@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Te repito: Lucía, teléfono seis cinco cinco, uno uno uno, dos dos dos, Granada capital, y la consulta por videollamada, por la tarde. Si tu padre tenía seguro de vida, ese dinero no entra en la herencia, aunque sí tributa. ¿Está todo bien?\n<ficha>{\"situacion\":\"Fallecimiento de tu padre la semana pasada; no sabes por dónde empezar\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"No lo sé\",\"bienes\":\"\",\"nombre\":\"Lucía\",\"telefono\":\"655 111 222\",\"municipio\":\"Granada capital\",\"franja\":\"videollamada, por la tarde\",\"fallecimiento\":\"la semana pasada\",\"modalidad\":\"Por videollamada\",\"orientacion\":\"Pagar cero o casi nada por la bonificación de hijos, pero presentar el impuesto en seis meses aunque salga cero; pedir el certificado de defunción y, pasados quince días hábiles, el de últimas voluntades.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Te repito: Lucía, teléfono seis cinco cinco, uno uno uno, dos dos dos, Granada capital, y la consulta por videollamada, por la tarde. Si tu padre tenía seguro de vida, ese dinero no entra en la herencia, aunque sí tributa. ¿Está todo bien?\n<ficha>{\"situacion\":\"Fallecimiento de tu padre la semana pasada; no sabes por dónde empezar\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"No lo sé\",\"bienes\":\"\",\"nombre\":\"Lucía\",\"telefono\":\"655 111 222\",\"municipio\":\"Granada capital\",\"franja\":\"videollamada, por la tarde\",\"fallecimiento\":\"la semana pasada\",\"modalidad\":\"Por videollamada\",\"orientacion\":\"Pagar cero o casi nada por la bonificación de hijos, pero presentar el impuesto en seis meses aunque salga cero; pedir el certificado de defunción y, pasados quince días hábiles, el de últimas voluntades.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien. Gracias"
  }
 ]

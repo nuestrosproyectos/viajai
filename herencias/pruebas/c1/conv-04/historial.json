@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Te repito, Manuel: teléfono seis dos dos, cinco cinco cinco, cuatro cuatro cuatro, vives en Guadix, y la consulta es por videollamada, por la tarde. Y mientras decides, no toques cuentas ni bienes: sacar dinero puede contar como aceptar. ¿Está todo bien?\n<ficha>{\"situacion\":\"Herencia de tu hermano, con un préstamo, posibles tarjetas y una furgoneta\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"No lo sé\",\"bienes\":\"Una furgoneta\",\"nombre\":\"Manuel\",\"telefono\":\"622 555 444\",\"municipio\":\"Guadix\",\"franja\":\"videollamada, por la tarde\",\"fallecimiento\":\"hace un mes\",\"modalidad\":\"Por videollamada\",\"orientacion\":\"Valorar la aceptación a beneficio de inventario, que solo responde hasta donde llega la herencia, frente a aceptar a secas o renunciar.\",\"porDecir\":\"renunciar es ante notario e irrevocable\",\"fase\":\"datos\"}</ficha>",
   "original": "Te repito, Manuel: teléfono seis dos dos, cinco cinco cinco, cuatro cuatro cuatro, vives en Guadix, y la consulta es por videollamada, por la tarde. Y mientras decides, no toques cuentas ni bienes: sacar dinero puede contar como aceptar. ¿Está todo bien?\n<ficha>{\"situacion\":\"Herencia de tu hermano, con un préstamo, posibles tarjetas y una furgoneta\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"No lo sé\",\"bienes\":\"Una furgoneta\",\"nombre\":\"Manuel\",\"telefono\":\"622 555 444\",\"municipio\":\"Guadix\",\"franja\":\"videollamada, por la tarde\",\"fallecimiento\":\"hace un mes\",\"modalidad\":\"Por videollamada\",\"orientacion\":\"Valorar la aceptación a beneficio de inventario, que solo responde hasta donde llega la herencia, frente a aceptar a secas o renunciar.\",\"porDecir\":\"renunciar es ante notario e irrevocable\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, está todo bien"
  }
 ]

@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Te repito, Álvaro: teléfono seis cuatro cuatro, tres tres tres, siete siete siete, vives en Motril, y la consulta es por teléfono, por la mañana. ¿Está todo bien?\n<ficha>{\"situacion\":\"Casa que te deja tu tía en testamento\",\"parentesco\":\"Sobrino o sobrina\",\"testamento\":\"Sí\",\"bienes\":\"Una casa que vale unos 90.000 euros; tienes pocos ahorros\",\"nombre\":\"Álvaro\",\"telefono\":\"644 333 777\",\"municipio\":\"Motril\",\"franja\":\"por teléfono, por la mañana\",\"fallecimiento\":\"\",\"modalidad\":\"Por teléfono\",\"orientacion\":\"Confirmar cuánto paga un sobrino con el valor real de la casa; el abogado lo revisa con los documentos.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Te repito, Álvaro: teléfono seis cuatro cuatro, tres tres tres, siete siete siete, vives en Motril, y la consulta es por teléfono, por la mañana. ¿Está todo bien?\n<ficha>{\"situacion\":\"Casa que te deja tu tía en testamento\",\"parentesco\":\"Sobrino o sobrina\",\"testamento\":\"Sí\",\"bienes\":\"Una casa que vale unos 90.000 euros; tienes pocos ahorros\",\"nombre\":\"Álvaro\",\"telefono\":\"644 333 777\",\"municipio\":\"Motril\",\"franja\":\"por teléfono, por la mañana\",\"fallecimiento\":\"\",\"modalidad\":\"Por teléfono\",\"orientacion\":\"Confirmar cuánto paga un sobrino con el valor real de la casa; el abogado lo revisa con los documentos.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien"
  }
 ]
