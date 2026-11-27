@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Tu mujer sí puede reclamar aunque la culpa fuera tuya. Tus lesiones no las paga el seguro obligatorio, salvo con seguro de conductor o de accidentes. Si te afecta en algo, lo mira el abogado con tu póliza y el atestado. ¿Te reservo la consulta, mañana o tarde?\n<ficha>{\"caso\":\"Se saltó un ceda; iba con su mujer como pasajera\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que su mujer quede por escrito con el médico; como pasajera ella normalmente puede reclamar. Si tiene seguro de conductor, que lo diga al abogado.\",\"fase\":\"orientando\"}</ficha>",
   "original": "Tu mujer sí puede reclamar aunque la culpa fuera tuya. Tus lesiones no las paga el seguro obligatorio, salvo con seguro de conductor o de accidentes. Si te afecta en algo, lo mira el abogado con tu póliza y el atestado. ¿Te reservo la consulta, mañana o tarde?\n<ficha>{\"caso\":\"Se saltó un ceda; iba con su mujer como pasajera\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que su mujer quede por escrito con el médico; como pasajera ella normalmente puede reclamar. Si tiene seguro de conductor, que lo diga al abogado.\",\"fase\":\"orientando\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, entiendo. Pues sí, quiero la consulta para ella, por videollamada y por la tarde"
  }
 ]

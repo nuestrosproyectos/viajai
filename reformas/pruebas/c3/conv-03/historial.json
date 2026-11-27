@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Y no podemos tirarlo sin decir nada a nadie para ahorrar el permiso?"
+ },
+ {
+  "role": "assistant",
+  "content": "Mejor no: si es de carga, hacen falta proyecto y licencia, y en el centro histórico suele pedirse licencia. Además tienes que avisar al presidente o al administrador, por escrito. ¿Te reservo la visita, por la mañana o por la tarde?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No se tira sin que el técnico compruebe si es de carga; hay que avisar a la comunidad por escrito y lo más probable es que pida licencia.\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Mejor no: si es de carga, hacen falta proyecto y licencia, y en el centro histórico suele pedirse licencia. Además tienes que avisar al presidente o al administrador, por escrito. ¿Te reservo la visita, por la mañana o por la tarde?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No se tira sin que el técnico compruebe si es de carga; hay que avisar a la comunidad por escrito y lo más probable es que pida licencia.\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

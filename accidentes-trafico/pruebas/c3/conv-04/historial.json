@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Gracias por la fecha: lo más habitual es que el plazo cuente desde el alta, y se interrumpe si reclamaste por escrito. Cómo cuenta en tu caso lo confirma el abogado, y te reservo la consulta. ¿Reclamaste algo por escrito a la aseguradora?\n<ficha>{\"caso\":\"Atropello en un paso de cebra hace un año y medio\",\"como\":\"Andando\",\"fecha\":\"Hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Alta hace unos siete meses. Conviene saber si ya se reclamó algo por escrito; el abogado revisa cómo se cuenta el plazo.\",\"fase\":\"orientando\"}</ficha>\n<mostrar>plazo</mostrar>",
   "original": "Gracias por la fecha: lo más habitual es que el plazo cuente desde el alta, y se interrumpe si reclamaste por escrito. Cómo cuenta en tu caso lo confirma el abogado, y te reservo la consulta. ¿Reclamaste algo por escrito a la aseguradora?\n<ficha>{\"caso\":\"Atropello en un paso de cebra hace un año y medio\",\"como\":\"Andando\",\"fecha\":\"Hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Alta hace unos siete meses. Conviene saber si ya se reclamó algo por escrito; el abogado revisa cómo se cuenta el plazo.\",\"fase\":\"orientando\"}</ficha>\n<mostrar>plazo</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "No, no he reclamado nada por escrito. El conductor se fue y nunca supimos quién era. ¿Eso cambia algo?"
  }
 ]
