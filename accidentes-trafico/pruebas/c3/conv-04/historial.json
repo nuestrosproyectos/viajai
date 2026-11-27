@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "No, no he reclamado nada por escrito. El conductor se fue y nunca supimos quién era. ¿Eso cambia algo?"
+ },
+ {
+  "role": "assistant",
+  "content": "Sí, cambia: si el conductor se fue, suele responder el Consorcio de Compensación de Seguros, y lo más probable es que cubra los daños personales. Denunciar cuanto antes ayuda. ¿Te reservo la consulta, mañana o tarde?\n<ficha>{\"caso\":\"Atropello en un paso de cebra hace un año y medio; el conductor se fue y no se sabe quién era\",\"como\":\"Andando\",\"fecha\":\"Hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Alta hace unos siete meses y sin reclamación por escrito. Denunciar cuanto antes, con testigos y atestado; si el conductor no se identificó, responde el Consorcio de Compensación de Seguros.\",\"fase\":\"orientando\"}</ficha>",
+  "original": "Sí, cambia: si el conductor se fue, suele responder el Consorcio de Compensación de Seguros, y lo más probable es que cubra los daños personales. Denunciar cuanto antes ayuda. ¿Te reservo la consulta, mañana o tarde?\n<ficha>{\"caso\":\"Atropello en un paso de cebra hace un año y medio; el conductor se fue y no se sabe quién era\",\"como\":\"Andando\",\"fecha\":\"Hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Alta hace unos siete meses y sin reclamación por escrito. Denunciar cuanto antes, con testigos y atestado; si el conductor no se identificó, responde el Consorcio de Compensación de Seguros.\",\"fase\":\"orientando\"}</ficha>"
  }
 ]

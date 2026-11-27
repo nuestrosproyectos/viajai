@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Gracias, eso ayuda. La factura nunca baja a cero, porque quedan la potencia, el contador y los impuestos, y en Armilla las bonificaciones las confirma el técnico. Te reservo el estudio gratis; ¿gastas más de día o de noche?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Lo que más pesa es a qué horas gastas; con tus facturas el estudio gratis calcula si te compensa.\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Gracias, eso ayuda. La factura nunca baja a cero, porque quedan la potencia, el contador y los impuestos, y en Armilla las bonificaciones las confirma el técnico. Te reservo el estudio gratis; ¿gastas más de día o de noche?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Lo que más pesa es a qué horas gastas; con tus facturas el estudio gratis calcula si te compensa.\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "De día sobre todo, teletrabajo y tengo aire"
  }
 ]

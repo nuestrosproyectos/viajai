@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, entonces no firmo. Sí, quiero que lo mire el abogado, por teléfono mejor, y por las mañanas"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, lo dejamos por teléfono por la mañana, y el abogado revisará esos dos meses de baja con tu informe. ¿Me dices tu nombre y un teléfono, solo para llamarte y organizar la consulta?\n<ficha>{\"caso\":\"La aseguradora del otro ofrece 2.300 € y le piden firmar ya\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Por teléfono, por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada; el abogado revisa la oferta con el informe médico y los días de baja.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, lo dejamos por teléfono por la mañana, y el abogado revisará esos dos meses de baja con tu informe. ¿Me dices tu nombre y un teléfono, solo para llamarte y organizar la consulta?\n<ficha>{\"caso\":\"La aseguradora del otro ofrece 2.300 € y le piden firmar ya\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Por teléfono, por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada; el abogado revisa la oferta con el informe médico y los días de baja.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

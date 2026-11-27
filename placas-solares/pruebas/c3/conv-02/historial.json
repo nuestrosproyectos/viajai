@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "En Zaidín, al ser Granada capital, el IBI tiene un 50 % de bonificación si la casa no es de obra nueva y el recibo está domiciliado; hay que pedirla. ¿Te reservo el estudio gratis, por la mañana o por la tarde?\n<ficha>{\"que\":\"Revisar un presupuesto de 6.800 € por 5 kWp con batería de 10 kWh\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada, Zaidín\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"El IBI tiene una bonificación del 50 % en Granada capital si la casa no es de obra nueva y el recibo está domiciliado; hay que pedirla.\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "En Zaidín, al ser Granada capital, el IBI tiene un 50 % de bonificación si la casa no es de obra nueva y el recibo está domiciliado; hay que pedirla. ¿Te reservo el estudio gratis, por la mañana o por la tarde?\n<ficha>{\"que\":\"Revisar un presupuesto de 6.800 € por 5 kWp con batería de 10 kWh\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada, Zaidín\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"El IBI tiene una bonificación del 50 % en Granada capital si la casa no es de obra nueva y el recibo está domiciliado; hay que pedirla.\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, resérvame el estudio. Por la tarde."
  }
 ]

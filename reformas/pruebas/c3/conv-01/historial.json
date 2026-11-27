@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Quitar la bañera y poner plato suele quedar entre mil y dos mil trescientos euros, más si hay que mover el desagüe. Los azulejos y el lavabo se suman al trabajo. ¿Te reservo la visita gratis, por la mañana o por la tarde?\n<ficha>{\"obra\":\"cambiar bañera por plato de ducha, azulejos y lavabo\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Quitar la bañera por plato suele ir de mil a dos mil trescientos euros; conviene la visita de medición gratis.\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Quitar la bañera y poner plato suele quedar entre mil y dos mil trescientos euros, más si hay que mover el desagüe. Los azulejos y el lavabo se suman al trabajo. ¿Te reservo la visita gratis, por la mañana o por la tarde?\n<ficha>{\"obra\":\"cambiar bañera por plato de ducha, azulejos y lavabo\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Quitar la bañera por plato suele ir de mil a dos mil trescientos euros; conviene la visita de medición gratis.\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Por la tarde mejor"
  }
 ]

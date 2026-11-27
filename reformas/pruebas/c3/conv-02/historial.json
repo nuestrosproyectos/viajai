@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Entiendo la desconfianza tras otras experiencias. El presupuesto llega por escrito, por partidas, unos cinco días laborables después de la visita, y ese es el precio cerrado. Te aconsejo no pagar todo por adelantado. ¿Te reservo la visita, por la mañana o por la tarde?\n<ficha>{\"obra\":\"\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"El presupuesto va por partidas y por escrito unos cinco días laborables tras la visita; no conviene pagar todo por adelantado.\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Entiendo la desconfianza tras otras experiencias. El presupuesto llega por escrito, por partidas, unos cinco días laborables después de la visita, y ese es el precio cerrado. Te aconsejo no pagar todo por adelantado. ¿Te reservo la visita, por la mañana o por la tarde?\n<ficha>{\"obra\":\"\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"El presupuesto va por partidas y por escrito unos cinco días laborables tras la visita; no conviene pagar todo por adelantado.\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Está bien. Por la mañana."
  }
 ]
