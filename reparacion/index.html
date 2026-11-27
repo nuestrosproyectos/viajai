@@ -4,26 +4,28 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Reparación de electrodomésticos en Granada · Reparo</title>
-<meta name="description" content="¿Se te ha averiado la lavadora, el frigorífico o el horno? Cuéntaselo a Andrés y te reserva la visita del técnico en Granada en 24-48 h. Todas las marcas. Visita y presupuesto 60,50 €, que se descuentan si reparamos.">
+<meta name="description" content="¿Se te ha averiado la lavadora, el frigorífico o el horno? Cuéntaselo a Andrés y te reserva la visita del técnico en Granada en 24-48 h. Todas las marcas. Visita y presupuesto: 60,50 €, que se descuentan si reparas.">
 <meta name="theme-color" content="#FFFFFF">
 <!-- Dirección del servidor del técnico en la web publicada (vacío en la vista previa). Ej.: /api -->
 <meta name="servidor-tecnico" content="/api">
 <!-- Llamada de voz en directo con LiveKit: dirección que entrega el pase (vacío = desactivado). Ej.: /api/livekit-token -->
 <meta name="livekit-token" content="/api/livekit-token">
+<!-- Mapa de la visita: clave de Google Maps Embed API (gratuita). Vacío = mapa incrustado normal de Google -->
+<meta name="google-maps-clave" content="">
 <meta property="og:title" content="Reparo · Reparación de electrodomésticos en Granada">
 <meta property="og:description" content="Habla con Andrés, nuestro asistente: te dice qué le pasa a tu aparato y te reserva la visita. Todas las marcas.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23B8432B'/%3E%3Ccircle cx='16' cy='17' r='8' fill='none' stroke='%23FFFDF8' stroke-width='2.5'/%3E%3Ccircle cx='16' cy='17' r='4' fill='%23FFFDF8'/%3E%3Crect x='8' y='5' width='6' height='2.4' rx='1.2' fill='%23FFFDF8'/%3E%3C/svg%3E">
-<!-- Fuentes propias (sin Google Fonts): recortadas a las letras del español, 39 KB en total -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231F5FAD'/%3E%3Ccircle cx='16' cy='17' r='8' fill='none' stroke='%23fff' stroke-width='2.6'/%3E%3Ccircle cx='16' cy='17' r='3.6' fill='%23fff'/%3E%3C/svg%3E">
+<!-- Fuentes propias (sin Google Fonts): servidas desde la propia web -->
 <link rel="preload" href="fuentes/atkinson.min.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fuentes/archivo.min.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-@font-face{font-family:"Archivo";src:url(fuentes/archivo.min.woff2) format("woff2");font-weight:700 800;font-stretch:112%;font-display:swap}
 @font-face{font-family:"Atkinson Hyperlegible Next";src:url(fuentes/atkinson.min.woff2) format("woff2");font-weight:400 700;font-display:swap}
+@font-face{font-family:"Archivo";src:url(fuentes/archivo.min.woff2) format("woff2");font-weight:700 800;font-stretch:112%;font-display:swap}
 /* =====================================================================
    Diseño "taller con cal y almagra": cálido, legible y sin marear.
    Pensado primero para el móvil (la mayoría entra desde el móvil).
-   Cobalto = todo lo que es Andrés. Almagra = acciones de la persona.
+   Cobalto = todo lo que es el asistente. Almagra = acciones de la persona.
 ===================================================================== */
 :root{
   --fondo:#F5F1E8; --fondo-2:#ECE6D8; --fondo-3:#DED6C4; --tarjeta:#FFFDF8;
@@ -71,7 +73,7 @@ img,svg{display:block;max-width:100%}
 a{color:inherit}
 button,input,textarea{font:inherit;color:inherit}
 button{cursor:pointer}
-:focus-visible{outline:3px solid var(--cobalto);outline-offset:3px;border-radius:6px}
+:focus-visible{outline:3px solid var(--foco,var(--cobalto));outline-offset:3px;border-radius:6px}
 .oculto{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .envol{width:100%;max-width:1160px;margin:0 auto;padding:0 16px}
 h1,h2,h3{font-family:var(--titular);font-stretch:112%;line-height:1.08;margin:0;letter-spacing:-.01em}
@@ -149,7 +151,7 @@ p{margin:0}
 .confianza svg{width:28px;height:28px;flex:none;color:var(--ok)}
 .confianza b{font-weight:700}
 
-/* --- orbe de Andrés: la puerta de una lavadora --- */
+/* --- orbe del asistente: la puerta de una lavadora --- */
 .orbe{--t:96px;width:var(--t);height:var(--t);border-radius:50%;flex:none;position:relative;background:conic-gradient(from 0deg,var(--laton) 0 2%,transparent 2% 8.33%) ,radial-gradient(circle at 50% 50%,#DCD3C1 0 58%,#B9AE98 58% 62%,#E9E1D0 62% 100%);box-shadow:inset 0 0 0 3px #8F8676,0 6px 18px -8px rgba(0,0,0,.5)}
 .orbe::before{content:"";position:absolute;inset:16%;border-radius:50%;background:radial-gradient(circle at 34% 30%,rgba(255,255,255,.55) 0 10%,transparent 26%),radial-gradient(circle,#2F68B5 0 40%,#1F4F8F 72%,#133561 100%);box-shadow:inset 0 0 0 3px rgba(0,0,0,.25);transition:transform .4s var(--curva)}
 .orbe .onda{position:absolute;inset:16%;border-radius:50%;display:flex;align-items:center;justify-content:center;gap:calc(var(--t)*.035)}
@@ -453,15 +455,294 @@ body.con-mini .mini{display:flex}
   .mini{left:auto;right:20px;bottom:20px;width:380px}
   .faq{max-width:820px}
 }
+
+/* =====================================================================
+   PIEL COMÚN DE LA FÁBRICA (sacada de la piel «claro» de Reparo y Herencias)
+   Va después de nucleo.css. Cada web pone sus colores y letras en su estilo.css
+   (variables de :root) y, si quiere, algún detalle propio.
+   Variables opcionales con valor por defecto: --cobalto-pulsado, --urgencia-fondo,
+   --urgencia-borde, --consola-acento, --cab-fondo.
+   ===================================================================== */
+html,body{overflow-x:clip}
+body{background:var(--fondo)}
+::selection{background:var(--acento);color:#fff}
+/* lo que es del asistente, en azul Sierra */
+.boton-andres{background:var(--cobalto)!important;color:var(--sobre-cobalto,#fff)!important;box-shadow:0 1px 0 var(--cobalto-pulsado,#244968)!important}
+.boton-andres:active{background:var(--cobalto-pulsado,#244968)!important}
+
+/* ---------- letras ---------- */
+h1,h2,h3{font-family:var(--texto);font-stretch:normal;font-weight:700;letter-spacing:-.022em;line-height:1.08;text-wrap:balance}
+h1{font-size:clamp(2.1rem,8.4vw,4rem)}
+h2{font-size:clamp(1.7rem,5.8vw,2.7rem)}
+h1 em,h2 em,.subrayado{font-style:normal;color:var(--acento);background:none}
+.bajada,.portada .entrada{text-wrap:pretty}
+.cabecera-sec .antetitulo{display:none}
+.logo-txt b{font-family:var(--texto);font-stretch:normal;font-weight:700}
+
+/* ---------- botones ---------- */
+.boton{border-radius:999px}
+.boton-principal,.boton-andres{background:var(--acento);color:#fff;box-shadow:0 1px 0 var(--acento-pulsado)}
+.boton-principal:active,.boton-andres:active{background:var(--acento-pulsado);transform:translateY(1px);box-shadow:none}
+.boton-borde{border-color:var(--linea-fuerte);background:var(--tarjeta);color:var(--tinta)}
+
+/* ---------- franja de arriba con horario y teléfono (como cualquier negocio de verdad) ---------- */
+.franja-info{background:var(--consola);color:var(--consola-txt);font-size:.92rem}
+.franja-info .envol{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:38px}
+.franja-info a{color:#fff;font-weight:700;text-decoration:none;white-space:nowrap}
+.franja-info .fi-horario{color:var(--consola-txt-2)}
+@media (max-width:560px){.franja-info .fi-horario{display:none}.franja-info .envol{justify-content:center}}
+
+/* ---------- cabecera ---------- */
+.cab{background:var(--cab-fondo,rgba(255,255,255,.94));backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--linea)}
+.logo-marca{border-radius:10px;background:var(--acento)}
+.previa{background:var(--consola);border-bottom:1px solid var(--linea)}
+.previa b{color:var(--consola-acento,#9CC2F0)}
+
+/* ---------- PORTADA: texto a la izquierda, foto real y el asistente a la derecha ---------- */
+.portada{padding:22px 0 34px;background:var(--tarjeta);border-bottom:1px solid var(--linea)}
+.sobretitulo{order:0;display:block;margin:0 0 10px;font-size:.95rem;font-weight:700;color:var(--acento)}
+.urgencia{order:8!important;background:var(--urgencia-fondo,#FCEDEB);border:1px solid var(--urgencia-borde,#F1C9C4);border-radius:var(--r-tarjeta);margin:18px 0 0}
+.urgencia svg{color:var(--rojo)}
+.portada h1{order:1;margin-bottom:14px}
+.portada .entrada{font-size:1.15rem;color:var(--tinta-2);max-width:36ch}
+.precio-linea{border:1px solid var(--linea);border-radius:var(--r-campo);background:var(--fondo);padding:10px 14px}
+.precio-linea b{font-family:var(--texto);font-weight:700;font-size:1.25rem;color:var(--tinta)}
+.tarjeta-andres{order:4;border-radius:var(--r-tarjeta);box-shadow:var(--sombra)}
+.tarjeta-andres .boton-hablar{border-radius:999px}
+.hero-foto{order:5;margin:16px 0 0;border-radius:var(--r-tarjeta);overflow:hidden;aspect-ratio:16/10;background:var(--fondo-2)}
+.hero-foto img{width:100%;height:100%;object-fit:cover;object-position:40% 50%;display:block}
+.llamame-enlace{order:6;color:var(--acento)}
+.confianza{order:7;gap:0;margin-top:14px;border-top:1px solid var(--linea)}
+.confianza li{padding:12px 0;border-bottom:1px solid var(--linea)}
+.confianza svg{color:var(--acento)}
+.cine-fondo,.grano{display:none}
+
+/* ---------- secciones ---------- */
+.seccion{padding:56px 0}
+.seccion+.seccion{border-top:1px solid var(--linea)}
+#como,#preguntas{background:var(--tarjeta)}
+.cabecera-sec{margin-bottom:26px}
+.aparato,.paso,.tarifa,.lista-ok li,.zona-caja,.faq details{background:var(--tarjeta);border:1px solid var(--linea);border-radius:var(--r-tarjeta);box-shadow:none;transition:border-color .2s,box-shadow .2s}
+.aparato svg{color:var(--acento)}
+@media (hover:hover){.aparato:hover{border-color:var(--acento);box-shadow:0 0 0 1px var(--acento)}}
+.paso::before{background:var(--acento);color:#fff}
+.tarifa{border-color:var(--acento);border-width:2px}
+.tarifa .cifra{font-family:var(--texto);font-weight:700;font-size:clamp(3.4rem,15vw,5.4rem);letter-spacing:-.04em;color:var(--tinta)}
+.tarifa .cifra small{font-size:.4em;color:var(--tinta-2)}
+.descuento{border-radius:999px;padding:8px 14px}
+.lista-ok svg{color:var(--ok)}
+.faq summary{font-size:1.08rem}
+.faq summary::after{color:var(--acento)}
+.campo input{border-radius:var(--r-campo)}
+.cierre{border-radius:var(--r-tarjeta)}
+.pie{background:var(--tarjeta)}
+
+/* Aparatos con foto real: la foto llena la tarjeta y el nombre va abajo sobre una franja oscura */
+.aparatos{gap:10px}
+.aparato.aparato-foto{position:relative;display:block;padding:0;min-height:0;aspect-ratio:1/1;overflow:hidden;border:0;background:var(--fondo-2);isolation:isolate;cursor:pointer}
+.aparato-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s var(--curva)}
+.aparato-foto img+svg{display:none}
+.aparato-foto svg{position:absolute;top:14px;left:14px;width:36px;height:36px}
+.aparato-foto::after{content:"";position:absolute;inset:auto 0 0 0;height:55%;background:linear-gradient(180deg,rgba(20,25,31,0),rgba(20,25,31,.78));z-index:1}
+.aparato-nombre{position:absolute;left:12px;right:12px;bottom:10px;z-index:2;color:#fff;font-weight:700;font-size:1.05rem;line-height:1.2;text-align:left}
+.aparato-foto:focus-visible{outline:3px solid var(--acento);outline-offset:3px}
+@media (hover:hover){.aparato-foto:hover{box-shadow:none}.aparato-foto:hover img{transform:scale(1.05)}}
+#noReparamos{font-size:.98rem;color:var(--tinta-3)}
+@media (min-width:900px){.aparatos{gap:14px}.aparato-nombre{font-size:1.15rem;left:16px;bottom:14px}}
+
+/* Fotos de trabajo: debajo de «cómo funciona», con una frase sencilla debajo de cada una */
+.trabajo{display:grid;gap:14px;margin-top:26px}
+.trabajo figure{margin:0;background:var(--fondo);border:1px solid var(--linea);border-radius:var(--r-tarjeta);overflow:hidden}
+.trabajo img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.trabajo figcaption{padding:12px 14px;font-size:1rem;color:var(--tinta-2)}
+
+/* ---------- movimiento justo (y nada si el visitante pide menos movimiento) ---------- */
+.palabra{display:inline-block;overflow:clip;vertical-align:bottom;padding:0 .03em .08em;margin:0 -.03em -.08em}
+.palabra>span{display:inline-block}
+@media (prefers-reduced-motion:no-preference){
+  .cine .palabra>span{transform:translateY(110%);transition:transform .8s var(--curva);transition-delay:calc(var(--i)*50ms + 60ms)}
+  .cine.listo .palabra>span{transform:none}
+  .cine .entra{opacity:0;transform:translateY(10px);transition:opacity .6s var(--curva),transform .6s var(--curva);transition-delay:calc(var(--i,0)*70ms + 180ms)}
+  .cine.listo .entra{opacity:1;transform:none}
+  .rev{opacity:0;transform:translateY(16px);transition:opacity .6s var(--curva),transform .6s var(--curva);transition-delay:calc(var(--i,0)*50ms)}
+  .rev.ver{opacity:1;transform:none}
+}
+
+/* titular que gira: «¿Se te ha averiado» fijo y debajo el aparato */
+.titular-fijo{white-space:nowrap}
+.junto{white-space:nowrap}
+.gira{display:block;overflow:hidden;white-space:nowrap;max-width:100%;padding:.06em 0 .12em;margin:-.06em 0 -.12em;perspective:600px}
+.gira-pieza{display:inline-block;transform-origin:50% 100%;transition:transform .55s var(--curva),opacity .4s ease}
+.gira-pieza.sale{transform:translateY(-105%) rotateX(55deg);opacity:0}
+.gira-pieza.espera{transform:translateY(105%) rotateX(-55deg);opacity:0;transition:none}
+@media (prefers-reduced-motion:no-preference){
+  .cine .gira{opacity:0;transform:translateY(10px);transition:opacity .6s var(--curva),transform .6s var(--curva);transition-delay:.25s}
+  .cine.listo .gira{opacity:1;transform:none}
+}
+.hero-a,.portada .envol>*{min-width:0}
+/* seguro: la portada nunca se queda en blanco aunque la animación no llegue a correr */
+.cine.hecho .entra,.cine.hecho .palabra>span,.cine.hecho .gira{opacity:1!important;transform:none!important;transition:none!important}
+
+/* ---------- escenario de la solicitud y el mapa, en claro ---------- */
+.sol-mapa{border-radius:var(--r-tarjeta)}
+.sol-mapa figcaption b{color:var(--consola-acento,#9CC2F0)}
+.mapa-espera svg{color:var(--consola-txt-2)}
+.solicitud>summary svg{color:var(--consola-txt-2)}
+
+/* aviso del micrófono hablado por el asistente */
+.hm-pista{display:flex;align-items:center;gap:10px;margin:12px 0 14px;font-weight:700;color:var(--tinta)}
+.hm-pista[hidden]{display:none}
+.hm-punto{width:12px;height:12px;border-radius:50%;background:var(--acento);flex:none;animation:hm-late 1.1s ease-in-out infinite}
+@keyframes hm-late{50%{transform:scale(.55);opacity:.5}}
+@media (prefers-reduced-motion:reduce){.hm-punto{animation:none}}
+.hoja .boton[hidden]{display:none}
+
+/* ======================= ORDENADOR ======================= */
+@media (min-width:900px){
+  .portada{padding:52px 0 60px}
+  /* dos columnas equilibradas: arriba texto frente a la foto; abajo las ventajas frente a la tarjeta del asistente */
+  .portada .envol{grid-template-columns:1.05fr .95fr;grid-template-areas:"texto foto" "datos andres" "enlace andres";column-gap:56px;row-gap:0;align-items:start}
+  .portada h1{font-size:clamp(2.3rem,3.5vw,3.5rem)}
+  .portada .entrada{font-size:1.25rem}
+  .urgencia{border-radius:999px;margin:28px 0 0;max-width:max-content;padding-left:18px}
+  /* texto centrado en altura frente a la foto, con el aviso de urgencia al final */
+  .hero-a{grid-area:texto;display:flex;flex-direction:column;align-self:center}
+  .hero-a .precio-linea{align-self:flex-start}
+  /* la foto arriba a la derecha y la tarjeta del asistente montada encima de su parte baja */
+  .hero-b{display:contents}
+  .hero-foto{grid-area:foto;order:0;margin:0;aspect-ratio:4/3}
+  .tarjeta-andres{grid-area:andres;order:1;margin:-110px 22px 0;position:relative}
+  .confianza{grid-area:datos;order:2;margin:34px 0 0;align-self:start;max-width:520px}
+  .llamame-enlace{grid-area:enlace;order:3;margin:18px 0 0;align-self:start}
+  .seccion{padding:88px 0}
+  .cabecera-sec{margin-bottom:36px}
+  .cabecera-sec h2{max-width:20ch}
+  .cabecera-sec .bajada{max-width:46ch}
+  .trabajo{grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+  .escenario{background:var(--fondo-2)}
+  .esc-panel{border:1px solid var(--linea);border-radius:var(--r-tarjeta);box-shadow:var(--sombra)}
+  body.escenario-on .conv{border-radius:var(--r-tarjeta)}
+  .esc-cab small{color:var(--acento);letter-spacing:.08em}
+  .esc-cab h2{font-size:clamp(1.6rem,2.2vw,2.1rem)}
+  .esc-estado{background:var(--acento-suave);color:var(--acento)}
+  .esc-estado i{background:var(--acento)}
+  .escenario[data-estado="enviada"] .esc-estado{background:var(--ok-suave);color:var(--ok)}
+  .escenario[data-estado="enviada"] .esc-estado i{background:var(--ok)}
+  .escenario .sol-diag{background:var(--acento-suave)}
+  .escenario .sol-campos .campo input{font-family:var(--texto);font-weight:700;font-size:1.3rem;letter-spacing:-.01em}
+  .escenario .sol-campos .campo:focus-within{border-bottom-color:var(--acento)}
+  .escenario .sol-campos .campo.relleno::after{background:var(--acento)}
+  .escenario .mapa-espera svg{color:var(--acento)}
+  .escenario .sol-cuerpo{grid-template-rows:auto minmax(0,1fr)}
+  .escenario .sol-mapa{min-height:min(560px,62vh);align-self:stretch}
+  .escenario .sol-mapa figcaption b{color:var(--consola-acento,#9CC2F0)}
+}
+
+/* ---------- ruta de la furgoneta en la tarjeta «¡Listo! Visita pedida» (ilustrativa: no es seguimiento en directo) ---------- */
+.ruta{margin:12px 0 4px;border-radius:14px;overflow:hidden;background:var(--tarjeta);border:1px solid var(--linea)}
+.ruta svg{display:block;width:100%;height:auto}
+.ruta .r-manzana{fill:var(--fondo-2)}
+.ruta .r-calle{stroke:var(--fondo-3);stroke-width:7;fill:none;stroke-linecap:round}
+.ruta .r-camino{stroke:var(--acento);stroke-width:3.5;fill:none;stroke-dasharray:7 7;stroke-linecap:round}
+.ruta .r-taller{fill:var(--tinta-2)}
+.ruta .r-casa{fill:var(--acento)}
+.ruta .r-texto{font:700 11px var(--texto, system-ui);fill:var(--tinta)}
+.ruta .r-onda{fill:none;stroke:var(--acento);stroke-width:2;opacity:0;transform-box:fill-box;transform-origin:center}
+.ruta.llegado .r-onda{animation:r-llega 1.6s ease-out 2}
+@keyframes r-llega{0%{opacity:.8;transform:scale(.6)}100%{opacity:0;transform:scale(2.4)}}
+.ruta .f-cuerpo{fill:#FFFFFF;stroke:var(--tinta-2);stroke-width:1.2}
+.ruta .f-franja{fill:var(--acento)}
+.ruta .f-cristal{fill:#BFD3E6}
+.ruta .f-rueda{fill:var(--tinta)}
+.ruta figcaption{padding:10px 14px 12px;border-top:1px solid var(--linea);font-size:1rem;line-height:1.35;color:var(--tinta-2)}
+.ruta figcaption b{display:block;color:var(--tinta);font-size:1.08rem}
+@media (prefers-reduced-motion:reduce){.ruta.llegado .r-onda{animation:none}}
+
+/* =====================================================================
+   Piezas de las webs de la fábrica (situaciones, bloque de datos y lista de lo que hay que preparar)
+   ===================================================================== */
+/* casillas de situación: con dibujo, sin foto */
+.aparato:not(.aparato-foto) .aparato-nombre{position:static;color:var(--tinta);font-size:1.05rem;text-align:left}
+.aparato:not(.aparato-foto) svg{color:var(--acento)}
+@media (hover:hover){.aparato:not(.aparato-foto):hover{border-color:var(--acento)}}
+
+/* bloque de datos del sector (impuesto, precios orientativos, plazos…): casos tipo con su cifra */
+.bloque-datos{display:grid;gap:12px}
+.bd-caso{background:var(--tarjeta);border:1px solid var(--linea);border-radius:var(--r-tarjeta);padding:16px 18px;display:grid;gap:4px}
+.bd-caso b{font-size:1.05rem}
+.bd-caso .bd-cifra{font-size:1.6rem;font-weight:700;color:var(--acento);line-height:1.15;font-variant-numeric:tabular-nums}
+.bd-caso p{color:var(--tinta-2);font-size:1rem}
+.seccion-datos .aviso-indep{margin-top:14px;font-size:.95rem;color:var(--tinta-3)}
+@media (min-width:900px){.bloque-datos{grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}}
+
+/* lo que el cliente debe preparar (en lugar del mapa de la visita) */
+.sol-docs{display:block;min-height:0;padding:14px 16px;background:var(--consola-2)}
+.sol-docs figcaption{position:static;background:none;padding:0;margin:0 0 10px;color:var(--consola-txt-2);font-size:.95rem}
+.sol-docs figcaption b{display:block;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:2px}
+.sol-docs ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.sol-docs li{display:grid;gap:1px;padding-left:26px;position:relative;color:var(--consola-txt);font-size:1rem;line-height:1.35}
+.sol-docs li::before{content:"";position:absolute;left:2px;top:4px;width:14px;height:14px;border:2px solid var(--consola-txt-2);border-radius:4px}
+.sol-docs li span{color:var(--consola-txt-2);font-size:.92rem}
+@media (min-width:900px){
+  .escenario .sol-docs{background:var(--tarjeta);border:1px solid var(--linea);padding:22px 24px;overflow:auto}
+  .escenario .sol-docs figcaption{color:var(--tinta-3)}
+  .escenario .sol-docs figcaption b{color:var(--acento)}
+  .escenario .sol-docs li{color:var(--tinta);font-size:1.05rem}
+  .escenario .sol-docs li span{color:var(--tinta-3)}
+  .escenario .sol-docs li::before{border-color:var(--acento)}
+}
+/* solicitud en grande (ordenador): a lo ancho los campos que llevan frases (los marca la web con «ancho») */
+@media (min-width:900px){
+  .escenario .sol-campos .campo:nth-child(n){grid-column:auto}
+  .escenario .sol-campos .campo.campo-ancho{grid-column:1/-1}
+}
+
+/* franja de la vista previa con lo que sigue PENDIENTE (solo la ve el dueño en la vista privada) */
+.previa{position:relative}
+.previa-pend summary{list-style:none;cursor:pointer}
+.previa-pend summary::-webkit-details-marker{display:none}
+.previa-pend u{text-underline-offset:3px;font-weight:700}
+.previa-pend ul{position:absolute;z-index:60;left:8px;right:8px;top:100%;margin:4px auto 0;max-width:640px;max-height:60vh;overflow:auto;padding:12px 14px 12px 32px;text-align:left;background:var(--tarjeta);color:var(--tinta);border:1px solid var(--linea);border-radius:var(--r-tarjeta,12px);box-shadow:var(--sombra);font-size:.95rem;line-height:1.4}
+.previa-pend li+li{margin-top:6px}
+.previa-pend small{opacity:.75;font-size:.85em}
+
+/* móviles de pantalla baja (iPhone con barras, Android pequeños): la portada se compacta un poco
+   para que «Hablar con …» se vea sin bajar (comprobado con fabrica/probar-web.mjs) */
+@media (max-width:560px){
+  .portada{padding-top:14px}
+  .sobretitulo{font-size:.88rem;margin-bottom:6px}
+  .portada h1{margin-bottom:10px}
+  .portada .entrada{font-size:1.06rem;line-height:1.45}
+  .precio-linea{padding:8px 12px;margin-top:12px}
+  .precio-linea b{font-size:1.12rem}
+}
+@media (max-width:560px) and (max-height:700px){
+  .portada .entrada{display:none}
+  .ta-quien>span{display:none}
+}
+
+/* aviso de urgencia arriba del todo (webs de urgencias: textos.urgencia.arriba) */
+.urgencia.urgencia-arriba{order:-1!important;margin:0 0 14px}
+@media (min-width:900px){.urgencia.urgencia-arriba{margin:0 0 22px}}
+
+/* ventanas medianas (portátil, panel lateral de la app): un campo de la solicitud por línea para que no se corten */
+@media (min-width:900px) and (max-width:1500px){
+  .escenario .sol-campos{grid-template-columns:1fr}
+  .escenario .sol-campos .campo.campo-ancho{grid-column:auto}
+}
+
+/* botón de cita bajo la respuesta del asistente */
+.cta-cita{display:block;margin:-2px 0 6px auto;min-height:44px;border-color:var(--acento);background:var(--acento-suave);color:var(--tinta);font-weight:700;max-width:85%}
+
 </style>
-<!-- Piel «cine» (oscura y cinematográfica): colores, letras y portada nuevos sobre la misma colocación -->
-<link rel="stylesheet" href="claro.css">
+<!-- Piel propia de esta web: colores, letras y detalles -->
+<link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-<div class="previa" id="previa" hidden>Vista previa · <b>teléfono, precios y nombre son provisionales</b> hasta que los confirmes</div>
+<div class="previa" id="previa" hidden><details class="previa-pend"><summary>Vista previa · <u>10 datos pendientes</u> <small>(toca para verlos)</small></summary><ul><li>nombre definitivo (y comprobar dominio)</li><li>teléfono real</li><li>mismo teléfono en formato internacional</li><li>WhatsApp real (sin + ni espacios)</li><li>¿3 o 6 meses?</li><li>completar con lo que diga Juan.</li><li>confirmar con el taller</li><li>lista de municipios donde sí hay técnico habilitado (para que el asistente lo confirme al momento).</li><li>revisar con los precios reales del taller. Son orientativos, con pieza,</li><li>voz de Andrés: elegir y copiar su identificador en asistente.json</li></ul></details></div>
 
 <!-- Franja de arriba: horario y teléfono, como cualquier negocio de verdad -->
-<div class="franja-info"><div class="envol"><span class="fi-horario">Lunes a viernes de 9:00 a 20:00 · Sábados de 9:00 a 14:00</span><a data-tel href="tel:+34958000000">Llámanos: 958 00 00 00</a></div></div>
+<div class="franja-info"><div class="envol"><span class="fi-horario" id="fiHorario">Lunes a viernes de 9:00 a 20:00 · Sábados de 9:00 a 14:00</span><a data-tel href="tel:+34958000000">Llámanos: <span data-n="telefono">958 00 00 00</span></a></div></div>
 
 <header class="cab" id="cab">
   <div class="envol">
@@ -482,12 +763,12 @@ body.con-mini .mini{display:flex}
     <div class="hero-a">
       <p class="sobretitulo entra">Servicio técnico a domicilio · <span data-n="ciudad">Granada</span></p>
       <p class="urgencia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.7 3 7v5c0 5 3.8 9.3 9 10 5.2-.7 9-5 9-10V7z"/><path d="M12 8v5M12 16.5v.5"/></svg><span>¿Sale agua o huele a quemado? <b>Corta la luz.</b></span><a class="boton boton-principal" data-tel href="tel:+34958000000">Llámanos ya</a></p>
-      <h1 id="titular" aria-label="¿Se te ha averiado un electrodoméstico?"><span class="titular-fijo">¿Se te ha averiado</span> <span class="gira" id="gira" aria-hidden="true"><span class="gira-pieza"><em>un electrodoméstico</em>?</span></span></h1>
+      <h1 id="titular" aria-label="¿Se te ha averiado un electrodoméstico?"><span class="titular-fijo">¿Se te ha averiado</span> <span class="gira" id="gira" aria-hidden="true"><span class="gira-pieza"><em>un electrodoméstico</em></span></span></h1>
       <p class="entrada entra" style="--i:1">Técnico en tu casa en 24-48 h, en <span data-n="ciudad">Granada</span> y alrededores. Todas las marcas.</p>
       <p class="precio-linea entra" style="--i:2"><span>Visita y presupuesto: <b id="precioLinea">60,50 €</b>.</span> <span>Se descuentan si reparamos.</span></p>
     </div>
     <div class="hero-b">
-      <figure class="hero-foto"><img src="media/foto-lavadora.jpg" alt="Técnico reparando una lavadora en una cocina" width="1200" height="900" fetchpriority="high"></figure>
+      <figure class="hero-foto"><img src="media/foto-lavadora.jpg" alt="Técnico reparando una lavadora en una cocina" width="1200" height="900" fetchpriority="high" onerror="this.closest('figure').remove()"></figure>
       <div class="tarjeta-andres entra" style="--i:3" data-estado="reposo" id="tarjetaAndres">
         <div class="ta-cab">
           <div class="orbe" aria-hidden="true"><span class="onda"><i></i><i></i><i></i><i></i></span></div>
@@ -506,19 +787,35 @@ body.con-mini .mini{display:flex}
       <ul class="confianza">
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M5 21c1-4 4-6 7-6s6 2 7 6"/></svg><span><b data-n="experienciaCorta">Técnicos con 35+ años</b> de oficio</span></li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span><b>Presupuesto cerrado</b> antes de tocar nada</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg><span><b>Garantía por escrito</b> de <span class="garantiaTxt">3 meses</span></span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8.4 8 9 4.6-.6 8-4 8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><span><b>Garantía por escrito</b> de 3 meses</span></li>
       </ul>
     </div>
   </div>
 </section>
 
-<section class="seccion" id="aparatos">
+<section class="seccion" id="situaciones">
   <div class="envol">
     <div class="cabecera-sec"><p class="antetitulo">Toda la gama blanca, todas las marcas</p><h2>¿Qué aparato se ha <em>averiado</em>?</h2><p class="bajada">Toca tu aparato y <span data-n="tecnico">Andrés</span> te pregunta qué le pasa.</p></div>
-    <div class="aparatos" id="listaAparatos"></div>
-    <p class="nota-sec" id="noReparamos"></p>
-    <div class="zona-caja" id="zonaCaja"><b>Dónde vamos</b><span id="faqZona"></span></div>
-    <div class="zona-caja"><b>Marcas</b><p class="marcas-txt" id="marcasLista"></p><p class="aviso-indep"><span data-n="marca">Reparo</span> es un servicio técnico independiente, no oficial. Los nombres de los fabricantes solo indican con qué aparatos trabajamos.</p></div>
+    <div class="aparatos" id="listaAparatos">
+  <button type="button" class="aparato aparato-foto" data-preguntar="Tengo una avería en mi lavadora"><img src="media/aparato-lavadora.jpg" alt="" loading="lazy">
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="5" width="32" height="38" rx="4"/><path d="M8 14h32"/><circle cx="24" cy="29" r="9"/><path d="M18.5 30.5c2-1.6 4.2-1.6 6 0s4 1.6 6 0"/><circle cx="14" cy="9.5" r="1.2"/><path d="M28 9.5h7"/></svg><span class="aparato-nombre">Lavadora</span></button>
+  <button type="button" class="aparato aparato-foto" data-preguntar="Tengo una avería en mi frigorífico"><img src="media/aparato-frigorifico.jpg" alt="" loading="lazy">
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="11" y="3" width="26" height="42" rx="4"/><path d="M11 18h26M16 9v5M16 23v8"/></svg><span class="aparato-nombre">Frigorífico</span></button>
+  <button type="button" class="aparato aparato-foto" data-preguntar="Tengo una avería en mi lavavajillas"><img src="media/aparato-lavavajillas.jpg" alt="" loading="lazy">
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="5" width="32" height="38" rx="4"/><path d="M8 13h32M14 22h20M14 30h20M17 22v8M24 22v8M31 22v8"/><path d="M30 9h5"/></svg><span class="aparato-nombre">Lavavajillas</span></button>
+  <button type="button" class="aparato aparato-foto" data-preguntar="Tengo una avería en mi horno y microondas"><img src="media/aparato-horno.jpg" alt="" loading="lazy">
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="7" width="36" height="34" rx="4"/><path d="M6 15h36"/><rect x="12" y="20" width="24" height="15" rx="2"/><circle cx="13" cy="11" r="1.4"/><circle cx="19" cy="11" r="1.4"/><path d="M28 11h8"/></svg><span class="aparato-nombre">Horno y microondas</span></button>
+  <button type="button" class="aparato aparato-foto" data-preguntar="Tengo una avería en mi vitro e inducción"><img src="media/aparato-placa.jpg" alt="" loading="lazy">
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="12" width="40" height="24" rx="4"/><circle cx="15" cy="21" r="4.5"/><circle cx="31" cy="21" r="3.5"/><circle cx="24" cy="29.5" r="3"/><path d="M36 32h3"/></svg><span class="aparato-nombre">Vitro e inducción</span></button>
+  <button type="button" class="aparato aparato-foto" data-preguntar="Tengo una avería en mi secadora"><img src="media/aparato-secadora.jpg" alt="" loading="lazy">
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="5" width="32" height="38" rx="4"/><path d="M8 14h32"/><circle cx="24" cy="29" r="9"/><path d="M20 27c1.5-2 3-2 4 0s2.5 2 4 0M20 31.5c1.5-2 3-2 4 0s2.5 2 4 0"/><circle cx="14" cy="9.5" r="1.2"/></svg><span class="aparato-nombre">Secadora</span></button>
+  <button type="button" class="aparato aparato-foto" data-preguntar="Tengo una avería en mi termo eléctrico"><img src="media/aparato-termo.jpg" alt="" loading="lazy">
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="13" y="4" width="22" height="34" rx="11"/><path d="M19 38v6M29 38v6M24 14v10"/><circle cx="24" cy="27" r="3"/></svg><span class="aparato-nombre">Termo eléctrico</span></button>
+  <button type="button" class="aparato aparato-foto" data-preguntar="Tengo una avería en mi campana"><img src="media/aparato-campana.jpg" alt="" loading="lazy">
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 4h12v12H18zM8 30l10-14h12l10 14z"/><path d="M8 30h32v4H8zM16 38v4M24 38v4M32 38v4"/></svg><span class="aparato-nombre">Campana</span></button></div>
+    <p class="nota-sec" id="notaSituaciones">También reparamos aire acondicionado, bombas de calor, calderas y calentadores de gas en las zonas con técnico habilitado. No reparamos aparatos con menos de tres años, que están en garantía (te los arregla gratis la tienda o la marca), pequeño electrodoméstico (cafeteras, aspiradoras, planchas), televisores y electrónica.</p>
+    <div class="zona-caja" id="zonaCaja"><b>Dónde vamos</b><span id="faqZona">Granada capital y área metropolitana: Armilla, Maracena, Albolote, Atarfe, Peligros, Pulianas, Jun, Huétor Vega, Cájar, La Zubia, Monachil, Ogíjares, Gójar, Alhendín, Churriana de la Vega, Las Gabias, Cúllar Vega, Santa Fe, Vegas del Genil y alrededores. Si estás fuera, pregúntale a Andrés: te confirmamos si llegamos.</span></div>
+    <div class="zona-caja" id="marcasCaja"><b>Marcas</b><p class="marcas-txt" id="marcasLista">Todas. Entre otras: Bosch, Balay, Siemens, Neff, LG, Samsung, Whirlpool, Indesit, Hotpoint, Beko, Teka, Fagor, Edesa, AEG, Electrolux, Zanussi, Candy, Hoover, Haier, Miele, Smeg, Cata, Hisense, Corberó, Aspes, Liebherr, Gorenje, Daewoo.</p><p class="aviso-indep"><span data-n="marca">Reparo</span> es un servicio técnico independiente, no oficial. Los nombres de los fabricantes solo indican con qué aparatos trabajamos.</p></div>
   </div>
 </section>
 
@@ -531,9 +828,9 @@ body.con-mini .mini{display:flex}
       <li class="paso"><h3>Vamos a tu casa</h3><p>Te llamamos para confirmar la hora. El técnico va con la pieza que suele fallar.</p></li>
     </ol>
     <div class="trabajo">
-      <figure><img src="media/foto-presupuesto.jpg" alt="Técnico enseñando un presupuesto a una clienta" loading="lazy" width="1200" height="900"><figcaption>Antes de tocar nada, te damos el presupuesto cerrado.</figcaption></figure>
-      <figure><img src="media/foto-comprobacion.jpg" alt="Técnico comprobando una bomba de desagüe con un polímetro" loading="lazy" width="1200" height="900"><figcaption>Comprobamos la pieza antes de cambiarla.</figcaption></figure>
-      <figure><img src="media/foto-frigorifico.jpg" alt="Técnico revisando la parte de atrás de un frigorífico" loading="lazy" width="1200" height="900"><figcaption>Lavadoras, frigoríficos, lavavajillas, hornos y más.</figcaption></figure>
+      <figure><img src="media/foto-presupuesto.jpg" alt="Técnico enseñando un presupuesto a una clienta" loading="lazy" width="1200" height="900" onerror="this.closest('figure').remove()"><figcaption>Antes de tocar nada, te damos el presupuesto cerrado.</figcaption></figure>
+      <figure><img src="media/foto-comprobacion.jpg" alt="Técnico comprobando una bomba de desagüe con un polímetro" loading="lazy" width="1200" height="900" onerror="this.closest('figure').remove()"><figcaption>Comprobamos la pieza antes de cambiarla.</figcaption></figure>
+      <figure><img src="media/foto-frigorifico.jpg" alt="Técnico revisando la parte de atrás de un frigorífico" loading="lazy" width="1200" height="900" onerror="this.closest('figure').remove()"><figcaption>Lavadoras, frigoríficos, lavavajillas, hornos y más.</figcaption></figure>
     </div>
   </div>
 </section>
@@ -545,12 +842,12 @@ body.con-mini .mini{display:flex}
       <div class="tarifa">
         <div class="cifra" id="precioVisita">60,50<small>€</small></div>
         <h3>Visita y presupuesto a domicilio</h3>
-        <p>Son 50 € más IVA. Cubre el desplazamiento del técnico y la elaboración del presupuesto cerrado. Si no te convence, solo pagas la visita.</p>
+        <p id="consultaDetalle">Son 50 € más IVA. Cubre el desplazamiento del técnico y la elaboración del presupuesto cerrado. Si no te convence, solo pagas la visita.</p>
         <span class="descuento">Si decides reparar, se descuentan de la factura</span>
       </div>
       <ul class="lista-ok">
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span><b>Presupuesto cerrado</b> antes de tocar nada. Sin sorpresas.</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span><b>Garantía por escrito</b> de <span class="garantiaTxt">3 meses</span> en pieza y mano de obra.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span><b>Garantía por escrito</b> de 3 meses en pieza y mano de obra.</span></li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span><b>Pago al terminar</b> con tarjeta, Bizum o efectivo.</span></li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span><b>¿No compensa repararlo?</b> Te vendemos uno nuevo: <span data-n="ventaNuevo">lo entregamos, lo instalamos y nos llevamos el viejo</span>.</span></li>
       </ul>
@@ -561,13 +858,7 @@ body.con-mini .mini{display:flex}
 <section class="seccion" id="preguntas">
   <div class="envol">
     <div class="cabecera-sec"><p class="antetitulo">Preguntas frecuentes</p><h2>Lo que nos preguntáis <em>siempre</em>.</h2></div>
-    <div class="faq">
-      <details><summary>¿Cuándo podéis venir?</summary><p id="faqPlazo">Normalmente en 24 a 48 horas, y el mismo día si es urgente y hay hueco en la ruta. Te llamamos para confirmar la hora exacta.</p></details>
-      <details><summary>¿Andrés es una persona?</summary><p>No. <span data-n="tecnico">Andrés</span> es un asistente con inteligencia artificial que te atiende al momento y a cualquier hora. Las personas que van a tu casa son técnicos de nuestro equipo, todos con <span data-n="experiencia">más de 35 años de experiencia</span>. Si prefieres hablar con una persona, llámanos.</p></details>
-      <details><summary>¿Merece la pena reparar o mejor compro otro?</summary><p>Depende de la pieza: la mayoría de averías salen bastante más baratas que un aparato nuevo. El técnico te da un presupuesto cerrado y decides con el precio delante. Y si prefieres uno nuevo, te lo vendemos, lo instalamos y nos llevamos el viejo.</p></details>
-      <details><summary>¿Sois el servicio técnico oficial de alguna marca?</summary><p>No. Somos un servicio técnico independiente y trabajamos con todas las marcas. Si tu aparato tiene menos de tres años, la garantía legal la cubre gratis la tienda o el fabricante.</p></details>
-      <details><summary>¿Qué hacéis con lo que le cuento a Andrés?</summary><p>Lo usamos solo para atender tu avería y organizar la visita. No lo vendemos ni lo usamos para publicidad. Más detalles en la <a href="privacidad.html">política de privacidad</a>.</p></details>
-    </div>
+    <div class="faq" id="faqLista"></div>
   </div>
 </section>
 
@@ -576,7 +867,7 @@ body.con-mini .mini{display:flex}
     <div class="cierre">
       <div>
         <h2>¿Prefieres que <em>te llamemos</em>?</h2>
-        <p>Déjanos tu teléfono y te llamamos en horario de atención (<span id="horarioTxt"></span>). O llámanos tú:</p>
+        <p>Déjanos tu teléfono y te llamamos en horario de atención (<span id="horarioTxt">de lunes a viernes de 9:00 a 20:00 y los sábados de 9:00 a 14:00</span>). O llámanos tú:</p>
         <a class="tel-grande" data-tel href="tel:+34958000000"><span data-n="telefono">958 00 00 00</span></a>
       </div>
       <div id="formLlamadaCaja">
@@ -592,9 +883,9 @@ body.con-mini .mini{display:flex}
       </div>
     </div>
     <div class="panel-dueno" id="panelDueno" hidden>
-      <h3>Avisos recibidos (solo lo ves tú)</h3>
+      <h3>Solicitudes recibidas (solo lo ves tú)</h3>
       <p>Los avisos que registra Andrés y las peticiones de llamada aparecen aquí al momento.</p>
-      <div class="envol-tabla"><table class="tabla-avisos"><thead><tr><th>Fecha</th><th>Tipo</th><th>Cliente</th><th>Teléfono</th><th>Aparato y avería</th><th>Dirección y franja</th></tr></thead><tbody id="tablaAvisos"><tr><td colspan="6">Todavía no hay avisos.</td></tr></tbody></table></div>
+      <div class="envol-tabla"><table class="tabla-avisos"><thead><tr><th>Fecha</th><th>Tipo</th><th>Cliente</th><th>Teléfono</th><th>Aparato y avería</th><th>Dirección y franja</th></tr></thead><tbody id="tablaAvisos"><tr><td colspan="6">Todavía no hay solicitudes.</td></tr></tbody></table></div>
     </div>
   </div>
 </section>
@@ -603,7 +894,7 @@ body.con-mini .mini{display:flex}
 <footer class="pie">
   <div class="envol">
     <div><b data-n="marca">Reparo</b><p>Servicio técnico independiente de reparación de electrodomésticos a domicilio en <span data-n="ciudad">Granada</span> y área metropolitana.</p><p>Andrés es un sistema de inteligencia artificial; puede equivocarse. El diagnóstico definitivo lo hace el técnico.</p></div>
-    <div><b>Contacto</b><p><a data-tel href="tel:+34958000000"><span data-n="telefono">958 00 00 00</span></a></p><p id="pieHorario"></p></div>
+    <div><b>Contacto</b><p><a data-tel href="tel:+34958000000"><span data-n="telefono">958 00 00 00</span></a></p><p id="pieHorario">El equipo te atiende de lunes a viernes de 9:00 a 20:00 y los sábados de 9:00 a 14:00. Andrés, a cualquier hora.</p></div>
     <div><b>Legal</b><p><a href="aviso-legal.html">Aviso legal</a></p><p><a href="privacidad.html">Política de privacidad</a></p></div>
   </div>
 </footer>
@@ -625,14 +916,14 @@ body.con-mini .mini{display:flex}
   <button class="boton colgar" type="button" id="miniColgar" aria-label="Colgar">Colgar</button>
 </div>
 
-<!-- ESCENARIO (solo en ordenador): la solicitud en grande al lado de la conversación, con el mapa.
-     Se abre sola cuando Andrés apunta el primer dato; la solicitud (#solicitud) se muda aquí dentro. -->
+<!-- ESCENARIO (solo en ordenador): la solicitud en grande al lado de la conversación, con lo que hay que
+     preparar. Se abre al empezar la conversación; la solicitud (#solicitud) se muda aquí dentro. -->
 <div class="escenario" id="escenario" data-estado="rellenando" hidden>
   <div class="esc-panel" role="region" aria-label="Tu solicitud de visita">
     <header class="esc-cab">
       <div>
-        <small>Reparo · Solicitud de visita</small>
-        <h2>Así queda tu aviso</h2>
+        <small><span data-n="marca">Reparo</span> · Aviso de reparación</small>
+        <h2>Así queda tu solicitud</h2>
       </div>
       <span class="esc-estado" aria-live="polite"><i></i><span id="escEstado">Se rellena mientras hablas</span></span>
       <button class="boton boton-borde esc-cerrar" type="button" id="escCerrar">Ver la web</button>
@@ -669,8 +960,8 @@ body.con-mini .mini{display:flex}
       <p class="sol-diag" id="solDiag" hidden></p>
       <form id="formSolicitud" novalidate>
         <div class="sol-campos">
-          <label class="campo"><span>Aparato</span><input id="f-aparato" list="lista-aparatos" placeholder="Andrés te lo preguntará"></label>
-          <label class="campo"><span>Marca</span><input id="f-marca" list="lista-marcas" placeholder="Andrés te lo preguntará"></label>
+          <label class="campo"><span>Aparato</span><input id="f-aparato" list="lista-aparato" placeholder="Andrés te lo preguntará"></label>
+          <label class="campo"><span>Marca</span><input id="f-marca" list="lista-marca" placeholder="Andrés te lo preguntará"></label>
           <label class="campo"><span>¿Qué le pasa?</span><input id="f-averia" placeholder="Andrés te lo preguntará"></label>
           <label class="campo"><span>Nombre</span><input id="f-nombre" autocomplete="given-name" placeholder="Andrés te lo preguntará"></label>
           <label class="campo"><span>Teléfono</span><input id="f-telefono" type="tel" inputmode="tel" autocomplete="tel" placeholder="Andrés te lo preguntará"></label>
@@ -679,19 +970,21 @@ body.con-mini .mini{display:flex}
           <label class="campo"><span>Cuándo te viene bien</span><input id="f-franja" placeholder="Andrés te lo preguntará"></label>
           <input type="hidden" id="f-codigo"><input type="hidden" id="f-modelo">
         </div>
-        <datalist id="lista-aparatos"></datalist><datalist id="lista-marcas"></datalist>
+        <datalist id="lista-aparato"><option value="Lavadora"><option value="Lavadora-secadora"><option value="Secadora"><option value="Lavavajillas"><option value="Frigorífico"><option value="Congelador"><option value="Horno"><option value="Vitrocerámica"><option value="Placa de inducción"><option value="Campana"><option value="Microondas"><option value="Termo eléctrico"><option value="Aire acondicionado"><option value="Caldera"></datalist>
+        <datalist id="lista-marca"><option value="Bosch"><option value="Balay"><option value="Siemens"><option value="Neff"><option value="LG"><option value="Samsung"><option value="Whirlpool"><option value="Indesit"><option value="Hotpoint"><option value="Beko"><option value="Teka"><option value="Fagor"><option value="Edesa"><option value="AEG"><option value="Electrolux"><option value="Zanussi"><option value="Candy"><option value="Hoover"><option value="Haier"><option value="Miele"><option value="Smeg"><option value="Cata"><option value="Hisense"><option value="Corberó"><option value="Aspes"><option value="Liebherr"><option value="Gorenje"><option value="Daewoo"></datalist>
         <button class="boton boton-principal ancho sol-enviar" type="submit" id="solEnviar" hidden>Sí, está bien: pedir la visita</button>
       </form>
       <!-- Mapa de la dirección: aparece cuando el cliente dice dónde es la visita -->
       <figure class="sol-mapa" id="solMapa">
         <div class="mapa-espera" id="mapaEspera">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.500C5 14.800 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
           <b>Aquí verás dónde irá el técnico</b>
           <span>En cuanto digas la dirección, aparece el mapa.</span>
         </div>
         <iframe id="mapaMarco" title="Mapa con la dirección de la visita" loading="lazy" referrerpolicy="no-referrer-when-downgrade" hidden></iframe>
         <figcaption id="mapaPie" hidden></figcaption>
       </figure>
+      
     </div>
   </details>
 
@@ -716,7 +1009,7 @@ body.con-mini .mini{display:flex}
     <button class="mando mando-central" type="button" id="btnMic" aria-label="Hablar"><span class="circ"><svg class="i-mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4"/></svg><svg class="i-colgar" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 9c-2.4 0-4.6.5-6.6 1.4-.6.3-1 .9-1 1.6v2.4c0 .8.8 1.4 1.6 1.2l2.6-.7c.6-.2 1-.7 1-1.4v-1.7a12 12 0 0 1 4.8 0v1.7c0 .7.4 1.2 1 1.4l2.6.7c.8.2 1.6-.4 1.6-1.2V12c0-.7-.4-1.3-1-1.6A15.6 15.6 0 0 0 12 9z"/></svg></span><span id="micTxt">Hablar</span></button>
     <button class="mando" type="button" id="btnSilenciar" aria-pressed="false"><span class="circ"><svg class="i-foto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8a2 2 0 0 1 2-2h2l2-2h6l2 2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="4"/></svg><svg class="i-sil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4M3 3l18 18"/></svg></span><span id="silTxt">Foto</span></button>
   </div>
-  <p class="conv-nota"><span data-n="tecnico">Andrés</span> es un asistente con inteligencia artificial.</p>
+  <p class="conv-nota"><span data-n="tecnico">Andrés</span> es un asistente con inteligencia artificial. El diagnóstico definitivo lo hace el técnico.</p>
 
   <div class="velo" id="velo" hidden></div>
   <div class="hoja" id="hojaMicro" role="dialog" aria-modal="true" aria-labelledby="hmTit" hidden>
@@ -741,13 +1034,19 @@ body.con-mini .mini{display:flex}
   </div>
 </section>
 
+<script src="contenido.js"></script>
+<script type="application/json" id="web-datos">{"asistente":{"nombre":"Andrés","genero":"hombre"},"campos":[{"id":"aparato","etiqueta":"Aparato","corto":"Aparato","visible":true,"oculto":false,"grupo":"caso"},{"id":"marca","etiqueta":"Marca","corto":"Marca","visible":false,"oculto":false,"grupo":"caso"},{"id":"averia","etiqueta":"¿Qué le pasa?","corto":"Avería","visible":true,"oculto":false,"grupo":"caso"},{"id":"nombre","etiqueta":"Nombre","corto":"Nombre","visible":true,"oculto":false,"grupo":""},{"id":"telefono","etiqueta":"Teléfono","corto":"Teléfono","visible":true,"oculto":false,"grupo":""},{"id":"direccion","etiqueta":"Dirección","corto":"Dirección","visible":true,"oculto":false,"grupo":""},{"id":"municipio","etiqueta":"Pueblo o barrio","corto":"Municipio","visible":true,"oculto":false,"grupo":""},{"id":"franja","etiqueta":"Cuándo te viene bien","corto":"Cuándo","visible":true,"oculto":false,"grupo":""},{"id":"codigo","visible":false,"oculto":true,"grupo":""},{"id":"modelo","visible":false,"oculto":true,"grupo":""}],"obligatorios":[["telefono","teléfono"],["nombre","nombre"],["municipio","municipio"],["averia","avería"]],"obligatoriosTipo":{"venta":[["telefono","teléfono"],["nombre","nombre"],["municipio","municipio"],["aparato","aparato que busca"]]},"campoResumen":"averia","tipoPrincipal":"visita","tiposExtra":["venta"],"resumenAviso":[["aparato",""],["marca",""],["averia",""]],"panelLugar":["direccion","municipio","franja"],"panelExtra":["codigo","modelo"],"preparar":null,"destinos":{"precios":{"sel":".tarifa","titulo":"Precio de la visita","texto":"60,50 €: desplazamiento del técnico y elaboración del presupuesto (son 50 € más IVA, 60,50 € en total); si decides reparar con nosotros, esos 60,50 € se descuentan de la factura. Antes de reparar, presupuesto cerrado."},"garantia":{"sel":".lista-ok","titulo":"Garantía","texto":"3 meses por escrito en la reparación (pieza y mano de obra). Pago al terminar: tarjeta, Bizum o efectivo al terminar."},"como":{"sel":".pasos","titulo":"Cómo trabajamos","texto":"Te llamamos para confirmar la hora, el técnico revisa el aparato y te da un presupuesto cerrado antes de reparar."},"marcas":{"sel":"#marcasLista","titulo":"Marcas","texto":"Trabajamos con todas las marcas, entre otras Bosch, Balay, Siemens, Neff, LG, Samsung, Whirlpool, Indesit, Hotpoint, Beko, Teka, Fagor."},"contacto":{"solicitud":true},"llamada":{"solicitud":true},"formulario":{"solicitud":true},"zona":{"sel":"#zonaCaja","titulo":"Dónde vamos","texto":"Granada capital y área metropolitana: Armilla, Maracena, Albolote, Atarfe, Peligros, Pulianas, Jun, Huétor Vega, Cájar, La Zubia, Monachil, Ogíjares, Gójar, Alhendín, Churriana de la Vega, Las Gabias, Cúllar Vega, Santa Fe, Vegas del Genil y alrededores."},"plazo":{"sel":"#faqLista details","abrir":true,"titulo":"Cuándo vamos","texto":"Normalmente en 24 a 48 horas, y el mismo día si es urgente y hay hueco en la ruta. Te llamamos para confirmar la hora."},"codigos":{"titulo":"Códigos de error","tituloValor":"Código {VALOR}","texto":"El técnico lo confirma con el aparato delante y lleva la pieza que suele fallar."},"codigo":{"titulo":"Códigos de error","tituloValor":"Código {VALOR}","texto":"El técnico lo confirma con el aparato delante y lleva la pieza que suele fallar."},"aparatos":{"sel":"#listaAparatos","titulo":"Lo reparamos","texto":"Reparamos lavadoras, lavadoras-secadoras, secadoras, lavavajillas, frigoríficos y combis, congeladores, hornos, vitrocerámicas y placas de inducción, campanas extractoras, microondas y termos eléctricos."},"aparato":{"sel":"#listaAparatos","titulo":"Lo reparamos","texto":"Reparamos lavadoras, lavadoras-secadoras, secadoras, lavavajillas, frigoríficos y combis, congeladores, hornos, vitrocerámicas y placas de inducción, campanas extractoras, microondas y termos eléctricos."}},"manual":true,"fichaAlias":{"sintoma":"averia"},"campoOrientacion":"diagnostico","mapa":{"provincia":"Granada","zonaTitulo":"Dónde vamos","zonaTexto":"Granada y alrededores. Cuando digas tu dirección, el mapa te lleva a tu calle.","visitaTitulo":"El técnico irá aquí"},"final":{"principal":{"titulo":"¡Listo! Visita pedida","pasos":["Te llamamos para confirmar la hora exacta.","El técnico revisa el aparato y te da un presupuesto cerrado.","Si reparamos, la visita se descuenta de la factura."],"ruta":{"origen":"Taller","texto":"Tu técnico pasará","plazo":"en 24-48 h"}},"llamada":{"titulo":"¡Listo! Te llamamos","pasos":["Te llamamos en horario de atención (de lunes a viernes de 9:00 a 20:00 y los sábados de 9:00 a 14:00)."]},"venta":{"titulo":"¡Listo! Te llamamos con opciones","pasos":["Te llamamos con opciones y precio del aparato nuevo.","Te lo llevamos, lo instalamos y nos llevamos el viejo."]}},"textos":{"fases":["Avería","Qué puede ser","Visita","Tus datos","Listo"],"escEstado":{"rellenando":"Se rellena mientras hablas","lista":"Lista: confírmala y te llamamos","enviada":"Solicitud enviada"},"waInicial":"Hola, tengo una avería en mi electrodoméstico. ¿Cuándo podéis venir?","waAviso":{"principal":"una visita","llamada":"que me llaméis","venta":"información para comprar un aparato nuevo"},"trasLlamada":"Tus datos siguen en «Tu solicitud»: si está todo bien, pulsa «pedir la visita».","botonCita":"Quiero la visita del técnico","orientacion":"Qué puede ser: ","preparada":"Solicitud preparada"},"gira":["un electrodoméstico","una lavadora","un frigorífico","un lavavajillas","una secadora","un horno","un calentador","la vitrocerámica","el aire acondicionado"],"revelar":[],"audioMicro":"media/andres-micro.mp3"}</script>
 <script type="module">
+// =====================================================================
+//  CONVERSACIÓN CON EL ASISTENTE · código común de todas las webs de la fábrica
+//  (fabrica/plantilla/nucleo.js). Lo propio de cada web llega en W (web-datos):
+//  campos de la solicitud, lo que hay que preparar, destinos, textos y tarjeta final.
+//  No editar en index.html: se genera con  node fabrica/construir.mjs <web>
+// =====================================================================
 import { NEGOCIO as N, saludo, lista } from "./cerebro.mjs";
-// El manual técnico solo se descarga cuando el técnico responde desde el navegador (vista previa);
-// con servidor, lo consulta el servidor y el móvil del cliente no descarga nada.
-let manual = null;
-const cargarManual = () => manual ||= Promise.all([import("./manual.mjs"), import("./conocimiento.mjs")])
-  .then(([m, c]) => ({ buscar: m.buscar, datos: m.preparar(c.default) }));
+// Lo que sabe el asistente va en sus instrucciones (instrucciones.mjs), que solo se descargan
+// en la vista previa; con servidor, el móvil del cliente no descarga nada.
+const W = JSON.parse(document.getElementById("web-datos").textContent);
 
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
@@ -763,36 +1062,26 @@ const leer = k => { try { return localStorage.getItem(k); } catch { return null;
 ------------------------------------------------------------------ */
 $$("[data-n]").forEach(el => { const v = N[el.dataset.n]; if (v) el.textContent = v; });
 $$("[data-tel]").forEach(a => a.href = "tel:" + N.telefonoEnlace);
-const textoWa = "Hola, tengo una avería en mi electrodoméstico. ¿Cuándo podéis venir?";
-$$("[data-wa]").forEach(a => a.href = `https://wa.me/${N.whatsapp}?text=${encodeURIComponent(textoWa)}`);
-document.title = `Reparación de electrodomésticos en ${N.ciudad} · ${N.marca}`;
-$("#precioVisita").innerHTML = N.visita.precio.replace(/\s*€/, "") + "<small>€</small>";
-$("#precioLinea").textContent = N.visita.precio;
-$$(".garantiaTxt").forEach(el => el.textContent = (N.garantia.match(/^\d+\s+\w+/) || ["3 meses"])[0]);
-$("#horarioTxt").textContent = N.horario;
-$("#pieHorario").textContent = "El equipo te atiende " + N.horario + ". Andrés, a cualquier hora.";
-$("#faqZona").textContent = N.zona + ". Si estás fuera, pregúntale a " + N.tecnico + ": te confirmamos si llegamos.";
-$("#noReparamos").textContent = "También reparamos " + lista(N.climaYCalefaccion.aparatos) + " en las zonas con técnico habilitado. No reparamos " + lista(N.noReparamos) + ".";
-$("#marcasLista").textContent = "Todas. Entre otras: " + N.marcas.join(", ") + ".";
+$$("[data-wa]").forEach(a => a.href = `https://wa.me/${N.whatsapp}?text=${encodeURIComponent(W.textos.waInicial)}`);
+// (título, precios, horario y zona ya vienen escritos en la página al construirla)
+pintarBloque(); pintarPreguntas();
 const plataforma = typeof window.claude?.use === "function";
 if (plataforma) $("#previa").hidden = false;
 
-const ICONOS = {
-  lavadora: '<rect x="8" y="5" width="32" height="38" rx="4"/><path d="M8 14h32"/><circle cx="24" cy="29" r="9"/><path d="M18.5 30.5c2-1.6 4.2-1.6 6 0s4 1.6 6 0"/><circle cx="14" cy="9.5" r="1.2"/><path d="M28 9.5h7"/>',
-  frigorifico: '<rect x="11" y="3" width="26" height="42" rx="4"/><path d="M11 18h26M16 9v5M16 23v8"/>',
-  lavavajillas: '<rect x="8" y="5" width="32" height="38" rx="4"/><path d="M8 13h32M14 22h20M14 30h20M17 22v8M24 22v8M31 22v8"/><path d="M30 9h5"/>',
-  horno: '<rect x="6" y="7" width="36" height="34" rx="4"/><path d="M6 15h36"/><rect x="12" y="20" width="24" height="15" rx="2"/><circle cx="13" cy="11" r="1.4"/><circle cx="19" cy="11" r="1.4"/><path d="M28 11h8"/>',
-  placa: '<rect x="4" y="12" width="40" height="24" rx="4"/><circle cx="15" cy="21" r="4.5"/><circle cx="31" cy="21" r="3.5"/><circle cx="24" cy="29.5" r="3"/><path d="M36 32h3"/>',
-  secadora: '<rect x="8" y="5" width="32" height="38" rx="4"/><path d="M8 14h32"/><circle cx="24" cy="29" r="9"/><path d="M20 27c1.5-2 3-2 4 0s2.5 2 4 0M20 31.5c1.5-2 3-2 4 0s2.5 2 4 0"/><circle cx="14" cy="9.5" r="1.2"/>',
-  termo: '<rect x="13" y="4" width="22" height="34" rx="11"/><path d="M19 38v6M29 38v6M24 14v10"/><circle cx="24" cy="27" r="3"/>',
-  campana: '<path d="M18 4h12v12H18zM8 30l10-14h12l10 14z"/><path d="M8 30h32v4H8zM16 38v4M24 38v4M32 38v4"/>'
-};
-const APARATOS = [["lavadora", "Lavadora"], ["frigorifico", "Frigorífico"], ["lavavajillas", "Lavavajillas"], ["horno", "Horno y microondas"], ["placa", "Vitro e inducción"], ["secadora", "Secadora"], ["termo", "Termo eléctrico"], ["campana", "Campana"]];
-// Cada aparato con su foto real (media/aparato-<clave>.jpg); si una foto faltara, queda el dibujo de siempre
-$("#listaAparatos").innerHTML = APARATOS.map(([ic, nom]) => `
-  <button type="button" class="aparato aparato-foto" data-preguntar="Tengo una avería en mi ${nom.toLowerCase()}">
-    <img src="media/aparato-${ic}.jpg" alt="" loading="lazy" width="600" height="600" onerror="this.remove()">
-    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONOS[ic]}</svg><span class="aparato-nombre">${nom}</span></button>`).join("");
+/* Bloque de datos del sector (impuesto, precios orientativos…): llega de contenido.js, con fuente y fecha */
+function pintarBloque() {
+  const I = window.__BLOQUE || window.__IMPUESTO; const sec = $(".seccion-datos");
+  if (!I || !sec) { if (sec) sec.hidden = true; return; }
+  $("#impuestoBajada").textContent = I.bajada;
+  $("#impuestoDatos").innerHTML = I.casos.map(() => `<div class="imp-caso bd-caso"><b></b><span class="imp-cifra bd-cifra"></span><p></p></div>`).join("");
+  $$("#impuestoDatos .imp-caso").forEach((el, k) => { const c = I.casos[k]; el.querySelector("b").textContent = c.quien; el.querySelector(".imp-cifra").textContent = c.cifra; el.querySelector("p").textContent = c.texto; });
+  $("#impuestoFuente").textContent = I.fuente;
+}
+function pintarPreguntas() {
+  const F = window.__PREGUNTAS || [];
+  $("#faqLista").innerHTML = F.map(() => "<details><summary></summary><p></p></details>").join("");
+  $$("#faqLista details").forEach((d, k) => { const n = t => String(t).replaceAll("{asistente}", N.tecnico); d.querySelector("summary").textContent = n(F[k][0]); d.querySelector("p").textContent = n(F[k][1]); });
+}
 
 /* ------------------------------------------------------------------
    2. Piezas de la conversación
@@ -837,7 +1126,7 @@ function abrirEscenario() {
   $("#escHueco").append($("#solicitud")); $("#solicitud").open = true;
   escenario.hidden = false; document.body.classList.add("escenario-on");
   $("#escAviso").textContent = "Nº de aviso " + numAviso;
-  pintarMapa(datosFormulario());
+  pintarDocumentos(datosFormulario());
 }
 function cerrarEscenario() {
   if (!enEscenario()) return;
@@ -951,13 +1240,17 @@ async function estadoPermiso() {
   try { return (await navigator.permissions.query({ name: "microphone" })).state; } catch { return "prompt"; }
 }
 /* El navegador SIEMPRE pide permiso para el micrófono la primera vez: no se puede evitar.
-   Lo que sí se puede es que lo explique el propio Andrés de viva voz (para hablar él no hace falta
-   permiso): al pulsar «Hablar», Andrés dice «tu navegador te va a pedir el micrófono, pulsa Permitir»
+   Lo que sí se puede es que lo explique el propio asistente de viva voz (para hablar él no hace falta
+   permiso): al pulsar «Hablar», el asistente dice «tu navegador te va a pedir el micrófono, pulsa Permitir»
    y el aviso sale justo mientras lo dice. Pedido por Juan el 22-11-2026: sin botón intermedio. */
-const avisoMicro = new Audio(); avisoMicro.preload = "none"; avisoMicro.src = "media/andres-micro.mp3";
+// El audio está grabado con la voz del asistente (asistente.json). Si se cambia el nombre o la voz y aún no
+// se ha vuelto a grabar, la fábrica lo deja vacío y la frase la dice la voz del navegador.
+const avisoMicro = new Audio(); avisoMicro.preload = "none"; if (W.audioMicro) avisoMicro.src = W.audioMicro;
+else { avisoMicro.play = () => { decir(`Tu navegador te va a pedir permiso para el micrófono. Pulsa «Permitir» y hablamos.`); return Promise.resolve(); }; avisoMicro.pause = () => {}; }
 let avisoCebado = Promise.resolve();
 // Safari solo deja sonar un audio que se haya «tocado» dentro de la pulsación: se ceba en silencio en ese instante
 function cebarAviso() {
+  if (!W.audioMicro) return;
   avisoMicro.muted = true;
   avisoCebado = avisoMicro.play().then(() => { avisoMicro.pause(); avisoMicro.currentTime = 0; }).catch(() => {}).finally(() => { avisoMicro.muted = false; });
 }
@@ -982,12 +1275,12 @@ async function pedirMicro() {
     };
     hoja("#hojaMicro");
     avisoCebado.then(() => { if (!resuelto && !reducirVoz()) avisoMicro.play().catch(() => {}); });
-    espera = setTimeout(pedir, 1900);   // el aviso del navegador sale cuando Andrés está diciendo «te va a pedir el micrófono»
+    espera = setTimeout(pedir, 1900);   // el aviso del navegador sale cuando el asistente está diciendo «te va a pedir el micrófono»
     $("#hmEmpezar").onclick = pedir;
     $("#hmEscribir").onclick = () => { terminar(false); hoja(null); mostrarTeclado(true); };
   });
 }
-function reducirVoz() { return $("#btnVoz")?.getAttribute("aria-pressed") === "false"; }   // si ha quitado la voz de Andrés, no suena
+function reducirVoz() { return $("#btnVoz")?.getAttribute("aria-pressed") === "false"; }   // si ha quitado la voz del asistente, no suena
 function sinMicro() { estado("reposo"); hoja("#hojaSinMicro"); }
 $("#hsEscribir").addEventListener("click", () => { hoja(null); mostrarTeclado(true); });
 $("#hsReintentar").addEventListener("click", () => { hoja(null); empezarVoz(); });
@@ -1016,8 +1309,11 @@ pVoz.then(t => {
 });
 function vozEspanola() {
   const vs = speechSynthesis.getVoices().filter(v => /^es[-_]ES/i.test(v.lang));
-  const pref = [/natural|neural|online/i, /google/i, /m[óo]nica|jorge|elvira|alvaro|lucia|paulina/i];
-  for (const r of pref) { const v = vs.find(v => r.test(v.name)); if (v) return v; }
+  // voz del navegador acorde con el asistente (hombre o mujer, en asistente.json)
+  const mujer = W.asistente.genero === "mujer";
+  const suyo = mujer ? /m[óo]nica|elvira|lucia|luc[ií]a|paulina|helena|laura|elena|female|mujer/i : /jorge|alvaro|[áa]lvaro|pablo|dar[ií]o|enrique|male(?!.*female)|hombre/i;
+  const pref = [v => suyo.test(v.name) && /natural|neural|online/i.test(v.name), v => suyo.test(v.name), v => /natural|neural|online/i.test(v.name), v => /google/i.test(v.name)];
+  for (const r of pref) { const v = vs.find(r); if (v) return v; }
   return vs[0] || speechSynthesis.getVoices().find(v => /^es/i.test(v.lang));
 }
 function decir(frase) {
@@ -1040,23 +1336,30 @@ function callar() {
 btnVoz.addEventListener("click", () => {
   vozActiva = !vozActiva;
   btnVoz.setAttribute("aria-pressed", vozActiva);
-  btnVoz.setAttribute("aria-label", vozActiva ? "Voz de Andrés activada" : "Voz de Andrés quitada");
+  btnVoz.setAttribute("aria-label", vozActiva ? `Voz de ${N.tecnico} activada` : `Voz de ${N.tecnico} quitada`);
   if (!vozActiva) callar();
   audioAgente.forEach(a => a.muted = !vozActiva);
 });
 
 // ---- cerebro ----
 const turnos = [];
+// Manual técnico opcional de la web (W.manual: manual.mjs + conocimiento.mjs junto a la página). Solo se
+// descarga cuando el asistente responde desde el navegador (vista previa); con servidor, lo consulta el servidor.
+let manual = null;
+const cargarManual = () => manual ||= Promise.all([import("./manual.mjs"), import("./conocimiento.mjs")])
+  .then(([m, c]) => ({ buscar: m.buscar, datos: m.preparar(c.default) }));
 let enCurso = null;
 
 async function pensar(onText, signal, imagen) {
   const recientes = turnos.slice(-30);
   const sample = await pSample;
   if (sample) {
-    // El técnico consulta su manual con lo que acaba de decir el cliente y recibe solo las fichas que tocan
-    const [m, { instrucciones }] = await Promise.all([cargarManual(), import("./instrucciones.mjs")]);
-    const consulta = m.buscar(m.datos, recientes).texto;
-    const ultimos = consulta ? [...recientes.slice(0, -1), { ...recientes.at(-1), content: recientes.at(-1).content + "\n\n" + consulta }] : recientes;
+    const { instrucciones } = await import("./instrucciones.mjs");
+    let ultimos = recientes;
+    if (W.manual) {   // el asistente consulta su manual con lo último que ha dicho el cliente y recibe solo las fichas que tocan
+      const m = await cargarManual(), consulta = m.buscar(m.datos, recientes).texto;
+      if (consulta) ultimos = [...recientes.slice(0, -1), { ...recientes.at(-1), content: recientes.at(-1).content + "\n\n" + consulta }];
+    }
     const conversacion = [{ role: "user", content: instrucciones(N) }, { role: "assistant", content: saludo(N) }, ...ultimos];
     const opciones = { modelTier: "quick", cache: false, onText, signal };
     if (imagen) opciones.images = imagen.blob;
@@ -1126,7 +1429,13 @@ async function enviar(texto, { porVoz = false } = {}) {
     trocear(true);
     turnos.push({ role: "assistant", content: respuesta.replace(/<aviso>[\s\S]*?<\/aviso>/, "<aviso>(registrado)</aviso>") });
     const f = etiqueta(respuesta, "ficha"); if (f) pintarFicha(f);
-    const a = etiqueta(respuesta, "aviso"); if (a && !avisoHecho) registrarAviso({ ...a, origen: "técnico virtual" });
+    // el aviso solo vale con los datos obligatorios y un teléfono válido (si el asistente se adelanta, se ignora y sigue la conversación)
+    const a = etiqueta(respuesta, "aviso");
+    if (a && !avisoHecho) {
+      const d = { ...datosFormulario(), ...Object.fromEntries(Object.entries(a).filter(([, v]) => v)) };
+      if (obligatorios(a.tipo || W.tipoPrincipal).every(([c]) => d[c]) && telefonoValido(d.telefono)) { CAMPOS_FORM.forEach(c => a[c] && !datosFormulario()[c] && ponerCampo(c, String(a[c]))); registrarAviso({ ...a, ...d, origen: "técnico virtual" }); }
+    }
+    ofrecerCita(b);
     if (conv.dataset.estado === "pensando") estado("reposo");
   } catch (e) {
     if (e?.code === "cancelled") return;
@@ -1140,21 +1449,29 @@ async function enviar(texto, { porVoz = false } = {}) {
   } finally { if (enCurso === ctl) enCurso = null; }
 }
 
-/* Andrés enseña algo: en el móvil, como tarjeta dentro de la conversación (la página no se
+/* Botón «Quiero la cita» bajo la última respuesta: la venta no depende de que el asistente la proponga
+   con las palabras justas. Solo uno a la vista, y se quita en cuanto se pide o se registra. */
+function ofrecerCita(tras) {
+  $$(".cta-cita").forEach(x => x.replaceWith());
+  if (avisoHecho || llamada || FASES.indexOf(fichaActual.fase) >= 3 || turnos.filter(t => t.role === "user").length < 1) return;
+  const t = W.textos.botonCita || ("Quiero " + W.textos.waAviso.principal);
+  const btn = document.createElement("button"); btn.type = "button"; btn.className = "chip cta-cita"; btn.textContent = t;
+  btn.addEventListener("click", () => { btn.replaceWith(); enviar(t + "."); });
+  tras.after(btn); bajar();
+}
+
+/* El asistente enseña algo: en el móvil, como tarjeta dentro de la conversación (la página no se
    mueve sola, que marea); en el ordenador, desplazando la página que se ve al lado. */
 const sinTildes = t => String(t || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 function destino(d) {
-  const [tipo, valor = ""] = sinTildes(d).trim().split(":").map(x => x.trim());
-  if (tipo === "precios") return { el: $(".tarifa"), titulo: "Precio de la visita", texto: `${N.visita.precio}: ${N.visita.detalle}. Antes de reparar, presupuesto cerrado.` };
-  if (tipo === "garantia") return { el: $(".lista-ok"), titulo: "Garantía", texto: `${N.garantia}. Pago al terminar: ${N.pago}.` };
-  if (tipo === "como") return { el: $(".pasos"), titulo: "Cómo trabajamos", texto: "Te llamamos para confirmar la hora, el técnico revisa el aparato y te da un presupuesto cerrado antes de reparar." };
-  if (tipo === "marcas") return { el: $("#marcasLista"), titulo: "Marcas", texto: "Trabajamos con todas las marcas, entre otras " + N.marcas.slice(0, 12).join(", ") + "." };
-  if (tipo === "contacto" || tipo === "llamada" || tipo === "formulario") return { solicitud: true };
-  if (tipo === "zona") return { el: $("#zonaCaja"), titulo: "Dónde vamos", texto: N.zona + "." };
-  if (tipo === "plazo") { const det = $("#faqPlazo")?.closest("details"); if (det) det.open = true; return { el: det, titulo: "Cuándo vamos", texto: N.plazo.charAt(0).toUpperCase() + N.plazo.slice(1) + ". Te llamamos para confirmar la hora." }; }
-  if (tipo === "codigos" || tipo === "codigo") return { el: null, titulo: valor ? "Código " + valor.toUpperCase() : "Códigos de error", texto: "El técnico lo confirma con el aparato delante y lleva la pieza que suele fallar." };
-  if (tipo === "aparato" || tipo === "aparatos") return { el: $("#listaAparatos"), titulo: "Lo reparamos", texto: "Reparamos " + lista(N.aparatos) + "." };
-  return null;
+  const [tipo, extra] = sinTildes(d).trim().split(":").map(x => x.trim());
+  const x = W.destinos[tipo]; if (!x) return null;
+  if (x.solicitud) return { solicitud: true };
+  const B = window.__BLOQUE || window.__IMPUESTO;
+  const el = x.sel ? $(x.sel) : null;
+  if (el && x.abrir && "open" in el) el.open = true;
+  const titulo = extra && x.tituloValor ? x.tituloValor.replace("{VALOR}", extra.toUpperCase()) : x.titulo;
+  return { el, titulo, texto: (x.bloque && B?.resumen) || x.texto, extra };
 }
 function senalar(d) {
   const x = destino(d); if (!x) return;
@@ -1184,23 +1501,28 @@ function senalar(d) {
    4. Tu solicitud (se rellena sola mientras hablan) y avisos
 ------------------------------------------------------------------ */
 const FASES = ["entendiendo", "orientando", "proponiendo", "datos", "registrado"];
-const VISIBLES = ["aparato", "averia", "nombre", "telefono", "direccion", "municipio", "franja"];
-const NOMBRES = { aparato: "Aparato", marca: "Marca", averia: "Avería", nombre: "Nombre", telefono: "Teléfono", direccion: "Dirección", municipio: "Pueblo o barrio", franja: "Cuándo" };
+const VISIBLES = W.campos.filter(c => c.visible).map(c => c.id);
+const NOMBRES = Object.fromEntries(W.campos.map(c => [c.id, c.corto]));
+const DEL_CASO = W.campos.filter(c => c.grupo === "caso").map(c => c.id);
 let fichaActual = {}, avisoHecho = false, ultimoCampo = "";
 const numAviso = String(Date.now()).slice(-5);
+const obligatorios = (tipo = W.tipoPrincipal) => (W.obligatoriosTipo && W.obligatoriosTipo[tipo]) || W.obligatorios;
 function pintarFicha(f, alFormulario = true) {
   fichaActual = { ...fichaActual, ...Object.fromEntries(Object.entries(f).filter(([, v]) => v)) };
   const F = fichaActual;
-  if (alFormulario) { ponerCampo("aparato", F.aparato); ponerCampo("marca", F.marca); ponerCampo("modelo", F.modelo); ponerCampo("averia", F.sintoma); ponerCampo("codigo", F.codigo); ponerCampo("nombre", F.nombre); ponerCampo("telefono", F.telefono); ponerCampo("franja", F.franja); }
-  if (F.diagnostico) { $("#solDiag").hidden = false; $("#solDiag").textContent = "Qué puede ser: " + F.diagnostico; }
+  // la <ficha> puede llamar distinto a algún campo (W.fichaAlias, p. ej. «sintoma» → «averia»)
+  const G = { ...F }; for (const [de, a] of Object.entries(W.fichaAlias || {})) if (F[de]) G[a] = F[de];
+  if (alFormulario) CAMPOS_FORM.forEach(c => ponerCampo(c, G[c]));
+  const orient = F[W.campoOrientacion || "orientacion"];
+  if (orient) { $("#solDiag").hidden = false; $("#solDiag").textContent = W.textos.orientacion + orient; }
   faseModelo = Math.max(faseModelo, FASES.indexOf(avisoHecho ? "registrado" : F.fase) + 1);
   resumirSolicitud();
 }
 let faseModelo = 0;
 function resumirSolicitud() {
   const d = datosFormulario();
-  // avance: lo que diga Andrés o lo que ya hay escrito en la solicitud
-  const porDatos = avisoHecho ? 5 : (d.telefono || d.nombre || d.direccion) ? 4 : fichaActual.diagnostico ? 2 : (d.aparato || d.averia) ? 1 : 0;
+  // avance: lo que diga el asistente o lo que ya hay escrito en la solicitud
+  const porDatos = avisoHecho ? 5 : (d.telefono || d.nombre) ? 4 : fichaActual[W.campoOrientacion || "orientacion"] ? 2 : DEL_CASO.some(c => d[c]) ? 1 : 0;
   const n = Math.max(faseModelo, porDatos);
   $$("#fases span").forEach((x, i) => x.classList.toggle("hecha", i < n));
   $$(".fases-txt span").forEach((x, i) => x.classList.toggle("actual", i === Math.max(0, Math.min(n, 5) - 1) && n > 0));
@@ -1209,25 +1531,27 @@ function resumirSolicitud() {
   $("#solCuenta").textContent = `${llenos} de ${VISIBLES.length}`;
   if (ultimoCampo && d[ultimoCampo]) $("#solUltimo").textContent = `${NOMBRES[ultimoCampo]}: ${d[ultimoCampo]}`;
   $$(".sol-campos .campo").forEach(c => c.classList.toggle("lleno", !!c.querySelector("input")?.value.trim()));
-  const listo = d.telefono && d.nombre && d.municipio && (d.averia || d.aparato);
+  const listo = obligatorios().every(([c]) => d[c]);
   $("#solEnviar").hidden = !listo || avisoHecho;
   if (llenos) abrirEscenario();
   escenario.dataset.estado = avisoHecho ? "enviada" : "rellenando";
-  $("#escEstado").textContent = avisoHecho ? "Solicitud enviada" : listo ? "Lista: confírmala y te llamamos" : "Se rellena mientras hablas";
-  pintarMapa(d);
+  $("#escEstado").textContent = W.textos.escEstado[avisoHecho ? "enviada" : listo ? "lista" : "rellenando"];
+  pintarDocumentos(d);
+  if (W.mapa) pintarMapa(d);
 }
 
-/* Mapa de Google con la dirección de la visita. Sin clave usa el mapa incrustado normal de Google;
+/* Mapa de Google con la dirección de la visita (W.mapa). Sin clave usa el mapa incrustado normal de Google;
    con <meta name="google-maps-clave"> usa la versión oficial (Maps Embed API, gratuita).
-   Solo se carga cuando el cliente ya ha dado una dirección o un municipio. */
+   En el móvil solo se carga cuando el cliente ya ha dado una dirección o un municipio; en el escenario
+   (ordenador) enseña ya la zona de servicio. */
 const CLAVE_MAPA = $('meta[name="google-maps-clave"]')?.content || "";
 let mapaActual = "", mapaEspera = 0;
 function pintarMapa(d) {
-  // Sin dirección todavía: en el escenario (ordenador) se enseña ya la zona de servicio, para que el mapa
-  // esté a la vista desde que se abre la conversación; en el móvil se espera a tener la dirección.
-  const sinDatos = !d.direccion && !d.municipio;
+  if (!$("#mapaMarco")) return;
+  const M = W.mapa, sinDatos = !d.direccion && !d.municipio;
   if (sinDatos && !enEscenario()) return;
-  const lugar = sinDatos ? N.ciudad + ", España" : [d.direccion, d.municipio, /granada/i.test(d.municipio || "") ? "" : "Granada", "España"].filter(Boolean).join(", ");
+  const prov = new RegExp(sinTildes(M.provincia), "i");
+  const lugar = sinDatos ? N.ciudad + ", España" : [d.direccion, d.municipio, prov.test(sinTildes(d.municipio)) ? "" : M.provincia, "España"].filter(Boolean).join(", ");
   if (lugar === mapaActual) return;
   mapaActual = lugar;
   clearTimeout(mapaEspera);
@@ -1237,26 +1561,27 @@ function pintarMapa(d) {
       ? `https://www.google.com/maps/embed/v1/place?key=${encodeURIComponent(CLAVE_MAPA)}&q=${q}&zoom=${zoom}&language=es`
       : `https://www.google.com/maps?q=${q}&z=${zoom}&hl=es&output=embed`;
     $("#mapaMarco").hidden = false; $("#mapaEspera").hidden = true;
-    const pie = $("#mapaPie"); pie.hidden = false; pie.innerHTML = sinDatos ? "<b>Dónde vamos</b>" : "<b>El técnico irá aquí</b>";
-    pie.append(sinDatos ? N.ciudad + " y alrededores. Cuando digas tu dirección, el mapa te lleva a tu calle." : [d.direccion, d.municipio].filter(Boolean).join(", "));
+    const pie = $("#mapaPie"); pie.hidden = false;
+    pie.innerHTML = `<b>${sinDatos ? M.zonaTitulo : M.visitaTitulo}</b>`;
+    pie.append(sinDatos ? M.zonaTexto : [d.direccion, d.municipio].filter(Boolean).join(", "));
   }, sinDatos ? 150 : 900);
 }
 
-/* Ruta de la furgoneta: dibujo del trayecto del taller a casa del cliente, con la franja que ha pedido.
-   Es ilustrativo (no hay seguimiento en directo) y el texto no promete otra cosa. */
-function rutaFurgoneta(aviso) {
+/* Ruta de la visita (W.final.<tipo>.ruta): dibujo del trayecto de la base a casa del cliente, con la franja
+   que ha pedido. Es ilustrativo (no hay seguimiento en directo) y el texto no promete otra cosa. */
+function rutaVisita(aviso, R) {
   const id = "ruta" + numAviso + Math.random().toString(36).slice(2, 6);
   const sitio = (aviso.municipio || aviso.direccion || "Tu casa").split(",")[0].trim().slice(0, 22);
   const fr = (aviso.franja || "").trim();
-  const cuando = !fr ? "en 24-48 h" : /^(hoy|mañana|pasado|el |este |esta |lunes|martes|miércoles|jueves|viernes|sábado|domingo|por la|a partir|entre|antes|después)/i.test(fr) ? fr : "· " + fr;
+  const cuando = !fr ? R.plazo : /^(hoy|mañana|pasado|el |este |esta |lunes|martes|miércoles|jueves|viernes|sábado|domingo|por la|a partir|entre|antes|después)/i.test(fr) ? fr : "· " + fr;
   const f = document.createElement("figure");
   f.className = "ruta";
-  f.innerHTML = `<svg viewBox="0 0 320 150" role="img" aria-label="Dibujo de la ruta del técnico desde el taller hasta ${sitio}">
+  f.innerHTML = `<svg viewBox="0 0 320 150" role="img">
     <rect class="r-manzana" x="0" y="0" width="320" height="150"/>
     <path class="r-calle" d="M0 38H320M0 112H320M70 0V150M168 0V150M262 0V150"/>
     <path class="r-camino" id="${id}" d="M44 112 C110 112 120 74 168 74 S226 46 250 46"/>
     <g class="r-taller"><rect x="30" y="98" width="28" height="22" rx="3"/><path d="M27 100 44 87 61 100Z"/></g>
-    <text class="r-texto" x="24" y="138">Taller</text>
+    <text class="r-texto" x="24" y="138"></text>
     <circle class="r-onda" cx="284" cy="30" r="12"/>
     <g class="r-casa" transform="translate(284 30)"><path d="M0 18C-10 6-12 0-12-5a12 12 0 0 1 24 0c0 5-2 11-12 23Z"/><path d="M-6-3 0-8 6-3V4H-6Z" fill="#fff"/></g>
     <text class="r-texto" x="290" y="74" text-anchor="middle"></text>
@@ -1270,8 +1595,10 @@ function rutaFurgoneta(aviso) {
       <animateMotion dur="3.4s" begin="indefinite" fill="freeze" rotate="auto" keyPoints="0;1" keyTimes="0;1" calcMode="spline" keySplines=".45 0 .25 1"><mpath href="#${id}"/></animateMotion>
     </g>
   </svg><figcaption><b></b></figcaption>`;
+  f.querySelector("svg").setAttribute("aria-label", `Dibujo de la ruta desde ${R.origen.toLowerCase()} hasta ${sitio}`);
+  f.querySelectorAll(".r-texto")[0].textContent = R.origen;
   f.querySelectorAll(".r-texto")[1].textContent = sitio;
-  f.querySelector("figcaption b").textContent = "Tu técnico pasará " + cuando;
+  f.querySelector("figcaption b").textContent = R.texto + " " + cuando;
   const furgo = f.querySelector(".furgo"), anim = f.querySelector("animateMotion");
   const llegar = () => { f.classList.add("llegado"); };
   if (reducir || !anim.beginElement) { furgo.setAttribute("transform", "translate(250 46)"); anim.remove(); llegar(); }
@@ -1283,6 +1610,28 @@ function rutaFurgoneta(aviso) {
   return f;
 }
 
+/* Lo que el cliente debe preparar: la lista se ajusta a lo que va contando (reglas de web.mjs).
+   Cada regla añade un documento si alguno de sus campos encaja con su expresión; las de un mismo
+   «grupo» se excluyen (vale la primera que encaje, y la que no tiene condición es la de por defecto).
+   Es orientativa: el profesional confirma. */
+let docsActual = "";
+function pintarDocumentos(d) {
+  if (!W.preparar || !$("#listaDocs")) return;
+  const docs = [], grupos = new Set();
+  for (const r of W.preparar.reglas) {
+    if (r.grupo && grupos.has(r.grupo)) continue;
+    const vale = !r.campos || r.campos.some(c => new RegExp(r.re, "i").test(sinTildes(d[c])));
+    if (!vale) continue;
+    if (r.grupo) grupos.add(r.grupo);
+    docs.push(r.doc);
+  }
+  const clave = docs.map(x => x[0]).join("|");
+  if (clave === docsActual) return;
+  docsActual = clave;
+  $("#listaDocs").innerHTML = docs.map(() => "<li><b></b><span></span></li>").join("");
+  $$("#listaDocs li").forEach((li, k) => { li.querySelector("b").textContent = docs[k][0]; li.querySelector("span").textContent = docs[k][1]; if (!docs[k][1]) li.querySelector("span").remove(); });
+}
+
 async function registrarAviso(aviso) {
   avisoHecho = aviso.origen === "técnico virtual" || aviso.origen === "cliente" ? true : avisoHecho;
   const registro = { ...aviso, ficha: fichaActual, creado: new Date().toISOString(), pagina: location.href.slice(0, 200) };
@@ -1291,20 +1640,20 @@ async function registrarAviso(aviso) {
   if (SERVIDOR) { try { const r = await fetch(SERVIDOR + "/aviso", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(registro) }); guardado = guardado || r.ok; } catch {} }
   if (aviso.origen !== "formulario") {
     pintarFicha({ fase: "registrado" }); if (!enEscenario()) $("#solicitud").open = false; resumirSolicitud();
-    const resumen = [aviso.aparato, aviso.marca, aviso.averia].filter(Boolean).join(" · ");
-    const wa = `Hola, soy ${aviso.nombre || ""}. Acabo de pedir ${aviso.tipo === "venta" ? "información para comprar un aparato nuevo" : "una visita"} con ${N.tecnico} en la web (nº ${numAviso}): ${resumen}. ${aviso.direccion || aviso.municipio || ""} ${aviso.franja ? "· " + aviso.franja : ""}`.replace(/\s+/g, " ").trim();
+    const resumen = W.resumenAviso.map(([c, pre]) => aviso[c] && pre + aviso[c]).filter(Boolean).join(" · ");
+    const queTipo = aviso.tipo === W.tipoPrincipal ? "principal" : aviso.tipo;
+    const fin = W.final[queTipo] || W.final.principal;
+    const wa = `Hola, soy ${aviso.nombre || ""}. Acabo de pedir ${W.textos.waAviso[queTipo] || W.textos.waAviso.principal} con ${N.tecnico} en la web (nº ${numAviso}): ${resumen}. ${aviso.direccion || aviso.municipio || ""} ${aviso.franja ? "· " + aviso.franja : ""}`.replace(/\s+/g, " ").trim();
     const t = document.createElement("div");
     t.className = "tarjeta-aviso"; t.setAttribute("role", "status");
-    const titulo = !guardado ? "Solicitud preparada" : aviso.tipo === "venta" ? "¡Listo! Te llamamos con opciones" : aviso.tipo === "llamada" ? "¡Listo! Te llamamos" : "¡Listo! Visita pedida";
-    const pasos = aviso.tipo === "venta" ? ["Te llamamos con opciones y precio del aparato nuevo.", "Te lo llevamos, lo instalamos y nos llevamos el viejo."]
-      : aviso.tipo === "llamada" ? ["Te llamamos en horario de atención (" + N.horario + ")."]
-      : ["Te llamamos para confirmar la hora exacta.", "El técnico revisa el aparato y te da un presupuesto cerrado.", "Si reparamos, la visita se descuenta de la factura."];
-    t.innerHTML = `<h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></h4><p class="final-cifra"></p><p class="final-txt"></p><ol></ol><a class="boton boton-principal" target="_blank" rel="noopener">Guardarlo en WhatsApp</a>`;
+    const titulo = !guardado ? W.textos.preparada : fin.titulo;
+    const pasos = fin.pasos;
+    t.innerHTML = `<h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></h4><p class="final-cifra"></p><p class="final-txt"></p><ol></ol><a class="boton boton-principal boton-wa" target="_blank" rel="noopener">Guardarlo en WhatsApp</a>`;
     t.querySelector("h4").append(titulo);
     t.querySelector(".final-cifra").textContent = "Nº de aviso " + numAviso;
     t.querySelector(".final-txt").textContent = resumen + (guardado ? "" : ". No hemos podido enviarla: mándanosla por WhatsApp para asegurarte.");
     t.querySelector("ol").innerHTML = pasos.map(p => `<li>${p}</li>`).join("");
-    if (aviso.tipo !== "venta" && aviso.tipo !== "llamada") t.querySelector("ol").before(rutaFurgoneta(aviso));
+    if (fin.ruta) t.querySelector("ol").before(rutaVisita(aviso, fin.ruta));
     t.querySelector("a").href = `https://wa.me/${N.whatsapp}?text=${encodeURIComponent(wa)}`;
     chat.append(t); bajar();
   }
@@ -1365,10 +1714,8 @@ async function reducirFoto(file) {
   } catch { return { blob: file, dataUrl: null }; }
 }
 
-// solicitud (la rellena Andrés mientras hablan; el cliente puede corregir cualquier dato)
-const CAMPOS_FORM = ["aparato", "marca", "modelo", "averia", "codigo", "nombre", "telefono", "direccion", "municipio", "franja"];
-$("#lista-aparatos").innerHTML = ["Lavadora", "Lavadora-secadora", "Secadora", "Lavavajillas", "Frigorífico", "Congelador", "Horno", "Vitrocerámica", "Placa de inducción", "Campana", "Microondas", "Termo eléctrico", "Aire acondicionado", "Caldera"].map(a => `<option value="${a}">`).join("");
-$("#lista-marcas").innerHTML = N.marcas.map(m => `<option value="${m}">`).join("");
+// solicitud (la rellena el asistente mientras hablan; el cliente puede corregir cualquier dato)
+const CAMPOS_FORM = W.campos.map(c => c.id);
 function datosFormulario() { return Object.fromEntries(CAMPOS_FORM.map(c => { const el = $("#f-" + c); return [c, (el?.dataset.valor ?? el?.value ?? "").trim()]; })); }
 function telefonoValido(t) { return /^(\+?34)?[6789]\d{8}$/.test(String(t).replace(/[^\d+]/g, "")); }
 function ponerCampo(campo, valor, resaltar) {
@@ -1391,13 +1738,13 @@ function rellenarCampo(campo, valor) {
   valor = String(valor || "").trim().slice(0, 200);
   ponerCampo(campo, valor, true);
   const d = datosFormulario();
-  pintarFicha({ aparato: d.aparato, marca: d.marca, modelo: d.modelo, sintoma: d.averia, codigo: d.codigo, nombre: d.nombre, telefono: d.telefono, direccion: [d.direccion, d.municipio].filter(Boolean).join(", "), franja: d.franja, fase: "datos" }, false);
+  pintarFicha({ ...d, fase: "datos" }, false);
   return "ok: escrito en pantalla";
 }
-async function enviarSolicitud({ tipo = "visita", urgente = false, notas = "", origen = "técnico virtual" } = {}) {
+async function enviarSolicitud({ tipo = W.tipoPrincipal, urgente = false, notas = "", origen = "técnico virtual" } = {}) {
   if (avisoHecho && origen !== "formulario") return "ok: la solicitud ya estaba enviada";
   const d = datosFormulario();
-  const faltan = [["telefono", "teléfono"], ["nombre", "nombre"], ["municipio", "municipio"], [tipo === "venta" ? "aparato" : "averia", tipo === "venta" ? "aparato que busca" : "avería"]].filter(([c]) => origen === "formulario" ? c === "telefono" && !d[c] : !d[c]).map(([, t]) => t);
+  const faltan = obligatorios(tipo).filter(([c]) => origen === "formulario" ? c === "telefono" && !d[c] : !d[c]).map(([, t]) => t);
   if (faltan.length) return "error: falta " + faltan.join(", ");
   if (!telefonoValido(d.telefono)) return "error: el teléfono no parece un teléfono español de 9 cifras";
   const guardado = await registrarAviso({ ...d, tipo, urgente, notas, origen });
@@ -1408,7 +1755,7 @@ $("#formSolicitud").addEventListener("submit", async e => {
   e.preventDefault();
   const tel = $("#f-telefono");
   if (!telefonoValido(tel.value)) { tel.setCustomValidity("Escribe un teléfono español de 9 cifras"); tel.reportValidity(); tel.setCustomValidity(""); return; }
-  const r = await enviarSolicitud({ tipo: "visita", origen: "cliente" });
+  const r = await enviarSolicitud({ tipo: W.tipoPrincipal, origen: "cliente" });
   if (llamada && r.startsWith("ok")) llamada.localParticipant.sendText("He confirmado mis datos y he enviado la solicitud desde la pantalla.", { topic: "lk.chat" }).catch(() => {});
 });
 // formulario de "que me llamen" al final de la página
@@ -1417,8 +1764,8 @@ $("#formRapido").addEventListener("submit", async e => {
   if ($("#web").value) return;
   const inp = $("#r-telefono");
   if (!telefonoValido(inp.value)) { inp.setCustomValidity("Escribe un teléfono español de 9 cifras"); inp.reportValidity(); inp.setCustomValidity(""); return; }
-  ponerCampo("telefono", inp.value.trim()); ponerCampo("averia", $("#r-averia").value.trim());
-  await enviarSolicitud({ tipo: $("#r-averia").value.trim() ? "visita" : "llamada", origen: "formulario" });
+  ponerCampo("telefono", inp.value.trim()); ponerCampo(W.campoResumen, $("#r-averia").value.trim());
+  await enviarSolicitud({ tipo: "llamada", origen: "formulario" });
   $("#formLlamadaCaja").classList.add("enviado");
 });
 
@@ -1430,7 +1777,7 @@ pUser.then(async u => {
   db.collection("avisos").orderBy("creado", "desc").limit(50).onSnapshot(snap => {
     const filas = snap.docs.map(d => d.data());
     const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-    $("#tablaAvisos").innerHTML = filas.length ? filas.map(a => `<tr><td>${esc(new Date(a.creado).toLocaleString("es-ES", { dateStyle: "short", timeStyle: "short" }))}</td><td>${esc(a.tipo)}</td><td>${esc(a.nombre)}</td><td>${esc(a.telefono)}</td><td>${esc([a.aparato, a.marca, a.averia, a.codigo].filter(Boolean).join(" · "))}<br><small>${esc(a.notas)}</small></td><td>${esc([a.direccion, a.municipio, a.franja].filter(Boolean).join(" · "))}</td></tr>`).join("") : '<tr><td colspan="6">Todavía no hay avisos.</td></tr>';
+    $("#tablaAvisos").innerHTML = filas.length ? filas.map(a => `<tr><td>${esc(new Date(a.creado).toLocaleString("es-ES", { dateStyle: "short", timeStyle: "short" }))}</td><td>${esc(a.tipo)}</td><td>${esc(a.nombre)}</td><td>${esc(a.telefono)}</td><td>${esc([...W.resumenAviso.map(([c, pre]) => a[c] && pre + a[c]), ...W.panelExtra.map(c => a[c])].filter(Boolean).join(" · "))}<br><small>${esc(a.notas)}</small></td><td>${esc(W.panelLugar.map(c => a[c]).filter(Boolean).join(" · "))}</td></tr>`).join("") : '<tr><td colspan="6">Todavía no hay solicitudes.</td></tr>';
   }, () => {});
 });
 
@@ -1491,7 +1838,7 @@ async function llamar() {
     sala.on(LK.RoomEvent.Reconnecting, () => { estadoTxt.textContent = "Reconectando…"; });
     sala.on(LK.RoomEvent.Reconnected, () => estado(conv.dataset.estado || "reposo"));
     sala.on(LK.RoomEvent.Disconnected, finLlamada);
-    // Si Andrés cuelga por su lado, la web cuelga también: antes se quedaba la llamada «abierta» con el micro encendido
+    // Si el asistente cuelga por su lado, la web cuelga también: antes se quedaba la llamada «abierta» con el micro encendido
     sala.on(LK.RoomEvent.ParticipantDisconnected, () => {
       setTimeout(() => { if (llamada === sala && sala.remoteParticipants.size === 0) colgar(); }, 1500);
     });
@@ -1536,7 +1883,7 @@ function finLlamada() {
   try { bloqueoPantalla?.release(); } catch {} bloqueoPantalla = null;
   conv.dataset.llamada = mini.dataset.llamada = ""; estado("reposo"); modoMandos();
   burbuja("sistema", "Llamada terminada.");
-  if (!avisoHecho && datosFormulario().telefono) burbuja("sistema", "Tus datos siguen en «Tu solicitud»: si está todo bien, pulsa «pedir la visita».");
+  if (!avisoHecho && datosFormulario().telefono) burbuja("sistema", W.textos.trasLlamada);
 }
 
 /* ------------------------------------------------------------------
@@ -1544,7 +1891,7 @@ function finLlamada() {
 ------------------------------------------------------------------ */
 burbuja("tec", saludo(N));
 const cab = $("#cab");
-// la barra de abajo aparece cuando el botón grande de Andrés sale de la pantalla
+// la barra de abajo aparece cuando el botón grande del asistente sale de la pantalla
 if ("IntersectionObserver" in window) new IntersectionObserver(([e]) => document.body.classList.toggle("barra-visible", !e.isIntersecting)).observe($(".tarjeta-andres .boton-hablar"));
 else document.body.classList.add("barra-visible");
 addEventListener("scroll", () => cab.classList.toggle("con-borde", scrollY > 8), { passive: true });
@@ -1576,8 +1923,8 @@ addEventListener("scroll", () => cab.classList.toggle("con-borde", scrollY > 8),
   // Titular que gira: «¿Se te ha roto» se queda y debajo va rodando el aparato.
   // Empieza por «un electrodoméstico» (lo que busca Google y lo que lee un lector de pantalla).
   const pieza = $("#gira .gira-pieza");
-  if (pieza && !reducir) {
-    const APARATOS = ["un electrodoméstico", "una lavadora", "un frigorífico", "un lavavajillas", "una secadora", "un horno", "un calentador", "la vitrocerámica", "el aire acondicionado"];
+  if (pieza && !reducir && W.gira.length > 1) {
+    const APARATOS = W.gira;
     let n = 0;
     // si el aparato es largo («el aire acondicionado») se encoge lo justo para caber en la línea, sin mover nada más
     const caja = $("#gira");
@@ -1602,7 +1949,7 @@ addEventListener("scroll", () => cab.classList.toggle("con-borde", scrollY > 8),
 
   // secciones: aparecen al entrar en pantalla (una sola vez)
   if (!reducir && "IntersectionObserver" in window) {
-    const grupos = [".cabecera-sec", ".aparato", ".paso", ".tarifa", ".lista-ok li", ".zona-caja", ".faq details", ".cierre"];
+    const grupos = [".cabecera-sec", ".aparato", ".bd-caso", ".paso", ".tarifa", ".lista-ok li", ".zona-caja", ".faq details", ".cierre", ...W.revelar];
     const ver = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("ver"); ver.unobserve(e.target); } }), { rootMargin: "0px 0px -8% 0px" });
     const preparar = () => grupos.forEach(sel => $$(sel).forEach(el => {
       if (el.classList.contains("rev")) return;
@@ -1635,6 +1982,7 @@ addEventListener("scroll", () => cab.classList.toggle("con-borde", scrollY > 8),
     b.addEventListener("pointerleave", () => { b.style.transition = "transform .5s var(--curva)"; b.style.transition = "transform .5s cubic-bezier(.23,1,.32,1)"; b.style.transform = ""; setTimeout(() => b.style.transition = "", 500); });
   });
 })();
+
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"LocalBusiness","name":"Reparo","description":"Servicio técnico independiente de reparación de electrodomésticos a domicilio en Granada y área metropolitana. Todas las marcas.","areaServed":"Granada","telephone":"+34958000000","priceRange":"€€","openingHours":["Mo-Fr 09:00-20:00","Sa 09:00-14:00"]}

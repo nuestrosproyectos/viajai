@@ -304,15 +304,24 @@ btnVoz.addEventListener("click", () => {
 
 // ---- cerebro ----
 const turnos = [];
+// Manual técnico opcional de la web (W.manual: manual.mjs + conocimiento.mjs junto a la página). Solo se
+// descarga cuando el asistente responde desde el navegador (vista previa); con servidor, lo consulta el servidor.
+let manual = null;
+const cargarManual = () => manual ||= Promise.all([import("./manual.mjs"), import("./conocimiento.mjs")])
+  .then(([m, c]) => ({ buscar: m.buscar, datos: m.preparar(c.default) }));
 let enCurso = null;
 
 async function pensar(onText, signal, imagen) {
   const recientes = turnos.slice(-30);
   const sample = await pSample;
   if (sample) {
-    // El técnico consulta su manual con lo que acaba de decir el cliente y recibe solo las fichas que tocan
     const { instrucciones } = await import("./instrucciones.mjs");
-    const conversacion = [{ role: "user", content: instrucciones(N) }, { role: "assistant", content: saludo(N) }, ...recientes];
+    let ultimos = recientes;
+    if (W.manual) {   // el asistente consulta su manual con lo último que ha dicho el cliente y recibe solo las fichas que tocan
+      const m = await cargarManual(), consulta = m.buscar(m.datos, recientes).texto;
+      if (consulta) ultimos = [...recientes.slice(0, -1), { ...recientes.at(-1), content: recientes.at(-1).content + "\n\n" + consulta }];
+    }
+    const conversacion = [{ role: "user", content: instrucciones(N) }, { role: "assistant", content: saludo(N) }, ...ultimos];
     const opciones = { modelTier: "quick", cache: false, onText, signal };
     if (imagen) opciones.images = imagen.blob;
     const r = await sample(conversacion, opciones);
@@ -385,7 +394,7 @@ async function enviar(texto, { porVoz = false } = {}) {
     const a = etiqueta(respuesta, "aviso");
     if (a && !avisoHecho) {
       const d = { ...datosFormulario(), ...Object.fromEntries(Object.entries(a).filter(([, v]) => v)) };
-      if (W.obligatorios.every(([c]) => d[c]) && telefonoValido(d.telefono)) registrarAviso({ ...a, ...d, origen: "técnico virtual" });
+      if (obligatorios(a.tipo || W.tipoPrincipal).every(([c]) => d[c]) && telefonoValido(d.telefono)) { CAMPOS_FORM.forEach(c => a[c] && !datosFormulario()[c] && ponerCampo(c, String(a[c]))); registrarAviso({ ...a, ...d, origen: "técnico virtual" }); }
     }
     ofrecerCita(b);
     if (conv.dataset.estado === "pensando") estado("reposo");
@@ -420,7 +429,10 @@ function destino(d) {
   const x = W.destinos[tipo]; if (!x) return null;
   if (x.solicitud) return { solicitud: true };
   const B = window.__BLOQUE || window.__IMPUESTO;
-  return { el: x.sel ? $(x.sel) : null, titulo: x.titulo, texto: (x.bloque && B?.resumen) || x.texto, extra };
+  const el = x.sel ? $(x.sel) : null;
+  if (el && x.abrir && "open" in el) el.open = true;
+  const titulo = extra && x.tituloValor ? x.tituloValor.replace("{VALOR}", extra.toUpperCase()) : x.titulo;
+  return { el, titulo, texto: (x.bloque && B?.resumen) || x.texto, extra };
 }
 function senalar(d) {
   const x = destino(d); if (!x) return;
@@ -455,11 +467,15 @@ const NOMBRES = Object.fromEntries(W.campos.map(c => [c.id, c.corto]));
 const DEL_CASO = W.campos.filter(c => c.grupo === "caso").map(c => c.id);
 let fichaActual = {}, avisoHecho = false, ultimoCampo = "";
 const numAviso = String(Date.now()).slice(-5);
+const obligatorios = (tipo = W.tipoPrincipal) => (W.obligatoriosTipo && W.obligatoriosTipo[tipo]) || W.obligatorios;
 function pintarFicha(f, alFormulario = true) {
   fichaActual = { ...fichaActual, ...Object.fromEntries(Object.entries(f).filter(([, v]) => v)) };
   const F = fichaActual;
-  if (alFormulario) CAMPOS_FORM.forEach(c => ponerCampo(c, F[c]));
-  if (F.orientacion) { $("#solDiag").hidden = false; $("#solDiag").textContent = W.textos.orientacion + F.orientacion; }
+  // la <ficha> puede llamar distinto a algún campo (W.fichaAlias, p. ej. «sintoma» → «averia»)
+  const G = { ...F }; for (const [de, a] of Object.entries(W.fichaAlias || {})) if (F[de]) G[a] = F[de];
+  if (alFormulario) CAMPOS_FORM.forEach(c => ponerCampo(c, G[c]));
+  const orient = F[W.campoOrientacion || "orientacion"];
+  if (orient) { $("#solDiag").hidden = false; $("#solDiag").textContent = W.textos.orientacion + orient; }
   faseModelo = Math.max(faseModelo, FASES.indexOf(avisoHecho ? "registrado" : F.fase) + 1);
   resumirSolicitud();
 }
@@ -467,7 +483,7 @@ let faseModelo = 0;
 function resumirSolicitud() {
   const d = datosFormulario();
   // avance: lo que diga el asistente o lo que ya hay escrito en la solicitud
-  const porDatos = avisoHecho ? 5 : (d.telefono || d.nombre) ? 4 : fichaActual.orientacion ? 2 : DEL_CASO.some(c => d[c]) ? 1 : 0;
+  const porDatos = avisoHecho ? 5 : (d.telefono || d.nombre) ? 4 : fichaActual[W.campoOrientacion || "orientacion"] ? 2 : DEL_CASO.some(c => d[c]) ? 1 : 0;
   const n = Math.max(faseModelo, porDatos);
   $$("#fases span").forEach((x, i) => x.classList.toggle("hecha", i < n));
   $$(".fases-txt span").forEach((x, i) => x.classList.toggle("actual", i === Math.max(0, Math.min(n, 5) - 1) && n > 0));
@@ -476,12 +492,83 @@ function resumirSolicitud() {
   $("#solCuenta").textContent = `${llenos} de ${VISIBLES.length}`;
   if (ultimoCampo && d[ultimoCampo]) $("#solUltimo").textContent = `${NOMBRES[ultimoCampo]}: ${d[ultimoCampo]}`;
   $$(".sol-campos .campo").forEach(c => c.classList.toggle("lleno", !!c.querySelector("input")?.value.trim()));
-  const listo = W.obligatorios.every(([c]) => d[c]);
+  const listo = obligatorios().every(([c]) => d[c]);
   $("#solEnviar").hidden = !listo || avisoHecho;
   if (llenos) abrirEscenario();
   escenario.dataset.estado = avisoHecho ? "enviada" : "rellenando";
   $("#escEstado").textContent = W.textos.escEstado[avisoHecho ? "enviada" : listo ? "lista" : "rellenando"];
   pintarDocumentos(d);
+  if (W.mapa) pintarMapa(d);
+}
+
+/* Mapa de Google con la dirección de la visita (W.mapa). Sin clave usa el mapa incrustado normal de Google;
+   con <meta name="google-maps-clave"> usa la versión oficial (Maps Embed API, gratuita).
+   En el móvil solo se carga cuando el cliente ya ha dado una dirección o un municipio; en el escenario
+   (ordenador) enseña ya la zona de servicio. */
+const CLAVE_MAPA = $('meta[name="google-maps-clave"]')?.content || "";
+let mapaActual = "", mapaEspera = 0;
+function pintarMapa(d) {
+  if (!$("#mapaMarco")) return;
+  const M = W.mapa, sinDatos = !d.direccion && !d.municipio;
+  if (sinDatos && !enEscenario()) return;
+  const prov = new RegExp(sinTildes(M.provincia), "i");
+  const lugar = sinDatos ? N.ciudad + ", España" : [d.direccion, d.municipio, prov.test(sinTildes(d.municipio)) ? "" : M.provincia, "España"].filter(Boolean).join(", ");
+  if (lugar === mapaActual) return;
+  mapaActual = lugar;
+  clearTimeout(mapaEspera);
+  mapaEspera = setTimeout(() => {   // espera a que el dato deje de cambiar para no recargar el mapa a cada letra
+    const q = encodeURIComponent(lugar), zoom = d.direccion ? 17 : sinDatos ? 12 : 13;
+    $("#mapaMarco").src = CLAVE_MAPA
+      ? `https://www.google.com/maps/embed/v1/place?key=${encodeURIComponent(CLAVE_MAPA)}&q=${q}&zoom=${zoom}&language=es`
+      : `https://www.google.com/maps?q=${q}&z=${zoom}&hl=es&output=embed`;
+    $("#mapaMarco").hidden = false; $("#mapaEspera").hidden = true;
+    const pie = $("#mapaPie"); pie.hidden = false;
+    pie.innerHTML = `<b>${sinDatos ? M.zonaTitulo : M.visitaTitulo}</b>`;
+    pie.append(sinDatos ? M.zonaTexto : [d.direccion, d.municipio].filter(Boolean).join(", "));
+  }, sinDatos ? 150 : 900);
+}
+
+/* Ruta de la visita (W.final.<tipo>.ruta): dibujo del trayecto de la base a casa del cliente, con la franja
+   que ha pedido. Es ilustrativo (no hay seguimiento en directo) y el texto no promete otra cosa. */
+function rutaVisita(aviso, R) {
+  const id = "ruta" + numAviso + Math.random().toString(36).slice(2, 6);
+  const sitio = (aviso.municipio || aviso.direccion || "Tu casa").split(",")[0].trim().slice(0, 22);
+  const fr = (aviso.franja || "").trim();
+  const cuando = !fr ? R.plazo : /^(hoy|mañana|pasado|el |este |esta |lunes|martes|miércoles|jueves|viernes|sábado|domingo|por la|a partir|entre|antes|después)/i.test(fr) ? fr : "· " + fr;
+  const f = document.createElement("figure");
+  f.className = "ruta";
+  f.innerHTML = `<svg viewBox="0 0 320 150" role="img">
+    <rect class="r-manzana" x="0" y="0" width="320" height="150"/>
+    <path class="r-calle" d="M0 38H320M0 112H320M70 0V150M168 0V150M262 0V150"/>
+    <path class="r-camino" id="${id}" d="M44 112 C110 112 120 74 168 74 S226 46 250 46"/>
+    <g class="r-taller"><rect x="30" y="98" width="28" height="22" rx="3"/><path d="M27 100 44 87 61 100Z"/></g>
+    <text class="r-texto" x="24" y="138"></text>
+    <circle class="r-onda" cx="284" cy="30" r="12"/>
+    <g class="r-casa" transform="translate(284 30)"><path d="M0 18C-10 6-12 0-12-5a12 12 0 0 1 24 0c0 5-2 11-12 23Z"/><path d="M-6-3 0-8 6-3V4H-6Z" fill="#fff"/></g>
+    <text class="r-texto" x="290" y="74" text-anchor="middle"></text>
+    <g class="furgo">
+      <g transform="translate(-17 -13)">
+        <path class="f-cuerpo" d="M2 6h21l7 6h3a2 2 0 0 1 2 2v6H2Z"/>
+        <path class="f-cristal" d="M24 7.5h-2v5h7Z"/>
+        <rect class="f-franja" x="2" y="13" width="31" height="3"/>
+        <circle class="f-rueda" cx="9" cy="21" r="3.2"/><circle class="f-rueda" cx="27" cy="21" r="3.2"/>
+      </g>
+      <animateMotion dur="3.4s" begin="indefinite" fill="freeze" rotate="auto" keyPoints="0;1" keyTimes="0;1" calcMode="spline" keySplines=".45 0 .25 1"><mpath href="#${id}"/></animateMotion>
+    </g>
+  </svg><figcaption><b></b></figcaption>`;
+  f.querySelector("svg").setAttribute("aria-label", `Dibujo de la ruta desde ${R.origen.toLowerCase()} hasta ${sitio}`);
+  f.querySelectorAll(".r-texto")[0].textContent = R.origen;
+  f.querySelectorAll(".r-texto")[1].textContent = sitio;
+  f.querySelector("figcaption b").textContent = R.texto + " " + cuando;
+  const furgo = f.querySelector(".furgo"), anim = f.querySelector("animateMotion");
+  const llegar = () => { f.classList.add("llegado"); };
+  if (reducir || !anim.beginElement) { furgo.setAttribute("transform", "translate(250 46)"); anim.remove(); llegar(); }
+  else {
+    anim.addEventListener("endEvent", llegar);
+    // arranca cuando la tarjeta está a la vista
+    new IntersectionObserver((e, o) => { if (e[0].isIntersecting) { o.disconnect(); setTimeout(() => { try { anim.beginElement(); } catch { llegar(); } }, 350); } }, { threshold: .4 }).observe(f);
+  }
+  return f;
 }
 
 /* Lo que el cliente debe preparar: la lista se ajusta a lo que va contando (reglas de web.mjs).
@@ -517,7 +604,7 @@ async function registrarAviso(aviso) {
     const resumen = W.resumenAviso.map(([c, pre]) => aviso[c] && pre + aviso[c]).filter(Boolean).join(" · ");
     const queTipo = aviso.tipo === W.tipoPrincipal ? "principal" : aviso.tipo;
     const fin = W.final[queTipo] || W.final.principal;
-    const wa = `Hola, soy ${aviso.nombre || ""}. Acabo de pedir ${W.textos.waAviso[queTipo] || W.textos.waAviso.principal} con ${N.tecnico} en la web (nº ${numAviso}): ${resumen}. ${aviso.municipio || ""} ${aviso.franja ? "· " + aviso.franja : ""}`.replace(/\s+/g, " ").trim();
+    const wa = `Hola, soy ${aviso.nombre || ""}. Acabo de pedir ${W.textos.waAviso[queTipo] || W.textos.waAviso.principal} con ${N.tecnico} en la web (nº ${numAviso}): ${resumen}. ${aviso.direccion || aviso.municipio || ""} ${aviso.franja ? "· " + aviso.franja : ""}`.replace(/\s+/g, " ").trim();
     const t = document.createElement("div");
     t.className = "tarjeta-aviso"; t.setAttribute("role", "status");
     const titulo = !guardado ? W.textos.preparada : fin.titulo;
@@ -527,6 +614,7 @@ async function registrarAviso(aviso) {
     t.querySelector(".final-cifra").textContent = "Nº de aviso " + numAviso;
     t.querySelector(".final-txt").textContent = resumen + (guardado ? "" : ". No hemos podido enviarla: mándanosla por WhatsApp para asegurarte.");
     t.querySelector("ol").innerHTML = pasos.map(p => `<li>${p}</li>`).join("");
+    if (fin.ruta) t.querySelector("ol").before(rutaVisita(aviso, fin.ruta));
     t.querySelector("a").href = `https://wa.me/${N.whatsapp}?text=${encodeURIComponent(wa)}`;
     chat.append(t); bajar();
   }
@@ -617,7 +705,7 @@ function rellenarCampo(campo, valor) {
 async function enviarSolicitud({ tipo = W.tipoPrincipal, urgente = false, notas = "", origen = "técnico virtual" } = {}) {
   if (avisoHecho && origen !== "formulario") return "ok: la solicitud ya estaba enviada";
   const d = datosFormulario();
-  const faltan = W.obligatorios.filter(([c]) => origen === "formulario" ? c === "telefono" && !d[c] : !d[c]).map(([, t]) => t);
+  const faltan = obligatorios(tipo).filter(([c]) => origen === "formulario" ? c === "telefono" && !d[c] : !d[c]).map(([, t]) => t);
   if (faltan.length) return "error: falta " + faltan.join(", ");
   if (!telefonoValido(d.telefono)) return "error: el teléfono no parece un teléfono español de 9 cifras";
   const guardado = await registrarAviso({ ...d, tipo, urgente, notas, origen });

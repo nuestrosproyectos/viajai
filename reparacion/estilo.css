@@ -1,0 +1,23 @@
+/* =====================================================================
+   PIEL «CLARO» · Reparo (reparación de electrodomésticos, Granada)
+   Pedida por Juan el 23-11-2026: que parezca la web de un servicio técnico de verdad
+   que lleva años abierto. Fondo claro y frío, un solo acento azul de servicio técnico
+   (#1F5FAD), titulares en la letra del texto (Atkinson, negrita), fotos de trabajo con
+   luz de día. Lo común (colocación, conversación) está en fabrica/plantilla/: aquí solo lo propio.
+   ===================================================================== */
+:root,:root[data-theme="light"]{
+  --fondo:#F4F6F8; --fondo-2:#EBEFF3; --fondo-3:#DEE4EA; --tarjeta:#FFFFFF;
+  --tinta:#14191F; --tinta-2:#45505B; --tinta-3:#626C77;
+  --linea:#D5DCE3; --linea-fuerte:#8B949D;
+  --acento:#1F5FAD; --acento-pulsado:#174C8C; --acento-suave:#E5EEF8;
+  --almagra:var(--acento); --almagra-pulsado:var(--acento-pulsado); --almagra-suave:var(--acento-suave); --sobre-almagra:#FFFFFF;
+  --cobalto:var(--acento); --cobalto-suave:var(--acento-suave); --laton:var(--acento);
+  --ok:#1D7A4E; --ok-suave:#E2F2EA; --rojo:#C4362A; --sobre-rojo:#FFFFFF;
+  --consola:#15212E; --consola-2:#1D2C3C; --consola-txt:#F2F5F8; --consola-txt-2:#B2BECA; --consola-linea:rgba(242,245,248,.14);
+  --titular:var(--texto);
+  --sombra:0 1px 2px rgba(20,25,31,.06),0 12px 30px -18px rgba(20,25,31,.35);
+  --r-tarjeta:14px; --r-campo:10px;
+  color-scheme:light;
+}
+/* el texto de «No reparamos…» bajo los aparatos */
+#notaSituaciones{margin-top:14px}

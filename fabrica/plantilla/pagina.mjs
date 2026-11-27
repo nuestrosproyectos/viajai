@@ -46,11 +46,12 @@ export function datosNavegador(W, A) {
   return {
     asistente: { nombre: A.nombre, genero: A.genero || "hombre" },
     campos: W.campos.map(({ id, etiqueta, corto, visible, oculto, grupo }) => ({ id, etiqueta, corto: corto || etiqueta, visible: !!visible, oculto: !!oculto, grupo: grupo || "" })),
-    obligatorios: W.obligatorios, campoResumen: W.campoResumen, tipoPrincipal: W.tipoPrincipal,
+    obligatorios: W.obligatorios, obligatoriosTipo: W.obligatoriosTipo || null, campoResumen: W.campoResumen, tipoPrincipal: W.tipoPrincipal,
     tiposExtra: W.tiposExtra || [],
     resumenAviso: W.resumenAviso, panelLugar: W.panelLugar, panelExtra: W.panelExtra || [],
     preparar: W.preparar ? { reglas: W.preparar.reglas } : null,
     destinos: Object.fromEntries(Object.keys(W.destinos).map(k => [k, resolver(k)])),
+    manual: !!W.manual, fichaAlias: W.fichaAlias || null, campoOrientacion: W.campoOrientacion || "", mapa: W.mapa ? { provincia: W.mapa.provincia, zonaTitulo: W.mapa.zonaTitulo, zonaTexto: W.mapa.zonaTexto, visitaTitulo: W.mapa.visitaTitulo } : null,
     final: W.final, textos: {
       fases: W.textos.fases, escEstado: W.textos.escEstado, waInicial: W.textos.waInicial, waAviso: W.textos.waAviso,
       trasLlamada: W.textos.trasLlamada, botonCita: W.textos.botonCita || "", orientacion: W.textos.orientacion, preparada: W.textos.preparada || "Solicitud preparada"
@@ -80,9 +81,11 @@ export function pagina({ W, N, A, css, js, previa = false }) {
 <meta name="description" content="${attr(W.descripcion)}">
 <meta name="theme-color" content="${W.colorTema || "#FFFFFF"}">
 <!-- Dirección del servidor del técnico en la web publicada (vacío en la vista previa). Ej.: /api -->
-<meta name="servidor-tecnico" content="">
+<meta name="servidor-tecnico" content="${attr(W.servidor || "")}">
 <!-- Llamada de voz en directo con LiveKit: dirección que entrega el pase (vacío = desactivado). Ej.: /api/livekit-token -->
-<meta name="livekit-token" content="">
+<meta name="livekit-token" content="${attr(W.livekit || "")}">${W.mapa ? `
+<!-- Mapa de la visita: clave de Google Maps Embed API (gratuita). Vacío = mapa incrustado normal de Google -->
+<meta name="google-maps-clave" content="">` : ""}
 <meta property="og:title" content="${attr(W.og.titulo)}">
 <meta property="og:description" content="${attr(W.og.descripcion)}">
 <meta property="og:type" content="website">
@@ -154,7 +157,9 @@ ${css}
     <div class="aparatos" id="listaAparatos">${W.situaciones.map(([ic, nom, frase, foto]) => `
   <button type="button" class="aparato${foto ? " aparato-foto" : ""}" data-preguntar="${attr(frase)}">${foto ? `<img src="${foto}" alt="" loading="lazy">` : ""}
     <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${W.iconos[ic]}</svg><span class="aparato-nombre">${nom}</span></button>`).join("")}</div>
+    ${T.situaciones.nota ? `<p class="nota-sec" id="notaSituaciones">${T.situaciones.nota}</p>` : ""}
     ${T.zona ? `<div class="zona-caja" id="zonaCaja"><b>${T.zona.titulo}</b><span id="faqZona">${T.zona.texto}</span></div>` : ""}
+    ${T.situaciones.despues || ""}
   </div>
 </section>
 ${datos ? `
@@ -306,6 +311,16 @@ ${datos ? `
         ${datalist}
         <button class="boton boton-principal ancho sol-enviar" type="submit" id="solEnviar" hidden>${T.botonEnviar}</button>
       </form>
+      ${W.mapa ? `<!-- Mapa de la dirección: aparece cuando el cliente dice dónde es la visita -->
+      <figure class="sol-mapa" id="solMapa">
+        <div class="mapa-espera" id="mapaEspera">
+          ${svg24("mapa")}
+          <b>${W.mapa.esperaTitulo}</b>
+          <span>${W.mapa.esperaTexto}</span>
+        </div>
+        <iframe id="mapaMarco" title="Mapa con la dirección de la visita" loading="lazy" referrerpolicy="no-referrer-when-downgrade" hidden></iframe>
+        <figcaption id="mapaPie" hidden></figcaption>
+      </figure>` : ""}
       ${W.preparar ? `<!-- Lo que el cliente debe preparar: se adapta a lo que va contando -->
       <figure class="sol-mapa sol-docs" id="solDocs">
         <figcaption><b>${W.preparar.titulo}</b><span>${W.preparar.nota}</span></figcaption>

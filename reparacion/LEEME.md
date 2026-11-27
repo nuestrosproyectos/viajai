@@ -4,7 +4,7 @@
 
 | Archivo | Para qué sirve |
 |---|---|
-| `index.html` | La web completa (diseño, consola de voz del técnico, parte de trabajo, formulario «te llamamos»). |
+| `index.html` | La web completa. GENERADA desde la plantilla de la fábrica: no se edita a mano. Se cambia en `web.mjs` (textos, aparatos, campos, mapa, tarjeta final), `estilo.css` (colores), `contenido.js` (preguntas) o `asistente.json` (nombre y voz), y se reconstruye con `node fabrica/construir.mjs reparacion`. |
 | `cerebro.mjs` | **Lo único que hay que tocar para cambiar datos**: nombre, teléfono, zona, precios, marcas y las instrucciones del técnico. Lo usan la web y el servidor a la vez. |
 | `aviso-legal.html`, `privacidad.html` | Páginas legales con huecos marcados como PENDIENTE (razón social, NIF, dirección, correo). |
 | `servidor/` | El servidor para la web publicada (Cloudflare Workers): guarda la clave de la IA a salvo y recibe los avisos. |

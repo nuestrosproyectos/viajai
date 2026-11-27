@@ -1,0 +1,109 @@
+{
+  "web": "reparacion",
+  "marca": "Reparo",
+  "asistente": {
+    "nombre": "Andrés",
+    "genero": "hombre",
+    "tono": "cercano y de oficio: un técnico veterano que habla claro, tutea y va al grano",
+    "voz": {
+      "proveedor": "elevenlabs",
+      "id": "",
+      "nombre": "Javi - Relaxed and Natural (ES)",
+      "estabilidad": 0.35,
+      "parecido": 0.8,
+      "velocidad": 0.95
+    }
+  },
+  "campos": [
+    {
+      "id": "aparato",
+      "etiqueta": "Aparato",
+      "pista": "",
+      "grupo": "caso"
+    },
+    {
+      "id": "marca",
+      "etiqueta": "Marca",
+      "pista": "",
+      "grupo": "caso"
+    },
+    {
+      "id": "averia",
+      "etiqueta": "¿Qué le pasa?",
+      "pista": "",
+      "grupo": "caso"
+    },
+    {
+      "id": "nombre",
+      "etiqueta": "Nombre",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "telefono",
+      "etiqueta": "Teléfono",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "direccion",
+      "etiqueta": "Dirección",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "municipio",
+      "etiqueta": "Pueblo o barrio",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "franja",
+      "etiqueta": "Cuándo te viene bien",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "codigo",
+      "etiqueta": "codigo",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "modelo",
+      "etiqueta": "modelo",
+      "pista": "",
+      "grupo": ""
+    }
+  ],
+  "obligatorios": [
+    "telefono",
+    "nombre",
+    "municipio",
+    "averia"
+  ],
+  "palabrasClave": [
+    "Reparo"
+  ],
+  "tipos": [
+    "visita",
+    "llamada",
+    "venta"
+  ],
+  "urgente": "",
+  "destinos": [
+    "precios",
+    "garantia",
+    "como",
+    "marcas",
+    "contacto",
+    "llamada",
+    "formulario",
+    "zona",
+    "plazo",
+    "codigos",
+    "codigo",
+    "aparatos",
+    "aparato"
+  ]
+}
