@@ -52,5 +52,5 @@ export const lista = xs => xs.length > 1 ? xs.slice(0, -1).join(", ") + " y " + 
 
 // Saludo inicial: lo dice la propia página al instante (corto: cada palabra dicha cuesta)
 export function saludo(n = NEGOCIO) {
-  return `Hola, soy ${n.tecnico}, el asistente de ${n.marca}. Siento la pérdida. Cuéntame tu situación y te digo qué te toca hacer.`;
+  return `Hola, soy ${n.tecnico}, el asistente de ${n.marca}. Cuéntame tu caso y te explico qué te toca hacer.`;   // sin pésame de entrada: aún no sabe si ha fallecido alguien (Juan, 27-11-2026)
 }
