@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "No lo rompas ni lo cortes: la uralita puede tener amianto, y solo lo retira una empresa inscrita en el registro oficial. Qué va en su lugar lo decide el técnico; te puedo reservar la visita gratis. ¿Cuántos metros tiene el tejado?\n<ficha>{\"obra\":\"cambiar el tejado de uralita de la cochera\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No tocar la uralita por cuenta propia: puede tener amianto y solo la retira una empresa inscrita en el registro oficial.\",\"porDecir\":\"La retirada necesita un plan de trabajo aprobado, y la hace la empresa inscrita\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "No lo rompas ni lo cortes: la uralita puede tener amianto, y solo lo retira una empresa inscrita en el registro oficial. Qué va en su lugar lo decide el técnico; te puedo reservar la visita gratis. ¿Cuántos metros tiene el tejado?\n<ficha>{\"obra\":\"cambiar el tejado de uralita de la cochera\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No tocar la uralita por cuenta propia: puede tener amianto y solo la retira una empresa inscrita en el registro oficial.\",\"porDecir\":\"La retirada necesita un plan de trabajo aprobado, y la hace la empresa inscrita\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Unos 30 metros. Mi cuñado y yo ya lo habíamos hablado, ¿tan peligroso es de verdad?"
  }
 ]
