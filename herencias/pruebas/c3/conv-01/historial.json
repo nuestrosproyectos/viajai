@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "De Granada. Mejor por videollamada, por la tarde"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Lucía. Te apunto el teléfono seis cinco cinco, uno uno uno, dos dos dos; municipio Granada, y la consulta por videollamada por la tarde. ¿Está todo bien?\n<ficha>{\"situacion\":\"fallecimiento de tu padre la semana pasada, no sabes por dónde empezar\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"No lo sé\",\"bienes\":\"\",\"nombre\":\"Lucía\",\"telefono\":\"655 111 222\",\"municipio\":\"Granada\",\"franja\":\"videollamada, por la tarde\",\"fallecimiento\":\"la semana pasada\",\"modalidad\":\"Por videollamada\",\"orientacion\":\"Como hijo, lo más probable es que pagues cero o casi nada de impuesto, pero hay que presentarlo en seis meses; después pide el certificado de últimas voluntades para saber si hubo testamento.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Lucía. Te apunto el teléfono seis cinco cinco, uno uno uno, dos dos dos; municipio Granada, y la consulta por videollamada por la tarde. ¿Está todo bien?\n<ficha>{\"situacion\":\"fallecimiento de tu padre la semana pasada, no sabes por dónde empezar\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"No lo sé\",\"bienes\":\"\",\"nombre\":\"Lucía\",\"telefono\":\"655 111 222\",\"municipio\":\"Granada\",\"franja\":\"videollamada, por la tarde\",\"fallecimiento\":\"la semana pasada\",\"modalidad\":\"Por videollamada\",\"orientacion\":\"Como hijo, lo más probable es que pagues cero o casi nada de impuesto, pero hay que presentarlo en seis meses; después pide el certificado de últimas voluntades para saber si hubo testamento.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

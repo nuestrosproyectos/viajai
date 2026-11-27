@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "De Guadix. Por videollamada, por la tarde"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Manuel. Te apunto el teléfono seis dos dos, cinco cinco cinco, cuatro cuatro cuatro; municipio Guadix, y la consulta por videollamada por la tarde. ¿Está todo bien?\n<ficha>{\"situacion\":\"herencia de tu hermano, que tenía deudas (un préstamo, quizá tarjetas) y una furgoneta\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"No lo sé\",\"bienes\":\"una furgoneta\",\"nombre\":\"Manuel\",\"telefono\":\"622 555 444\",\"municipio\":\"Guadix\",\"franja\":\"por videollamada, por la tarde\",\"fallecimiento\":\"\",\"modalidad\":\"Por videollamada\",\"orientacion\":\"Lo más seguro suele ser aceptar a beneficio de inventario, ante notario; renunciar es irrevocable; pedir el certificado de últimas voluntades para saber si hubo testamento.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Manuel. Te apunto el teléfono seis dos dos, cinco cinco cinco, cuatro cuatro cuatro; municipio Guadix, y la consulta por videollamada por la tarde. ¿Está todo bien?\n<ficha>{\"situacion\":\"herencia de tu hermano, que tenía deudas (un préstamo, quizá tarjetas) y una furgoneta\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"No lo sé\",\"bienes\":\"una furgoneta\",\"nombre\":\"Manuel\",\"telefono\":\"622 555 444\",\"municipio\":\"Guadix\",\"franja\":\"por videollamada, por la tarde\",\"fallecimiento\":\"\",\"modalidad\":\"Por videollamada\",\"orientacion\":\"Lo más seguro suele ser aceptar a beneficio de inventario, ante notario; renunciar es irrevocable; pedir el certificado de últimas voluntades para saber si hubo testamento.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

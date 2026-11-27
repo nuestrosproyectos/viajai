@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "De Granada, del Realejo. En el despacho, por la mañana"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Carmen. Te apunto el teléfono seis uno uno, dos dos dos, nueve nueve nueve; municipio Granada, en el Realejo, y la consulta en el despacho por la mañana. ¿Está todo bien?\n<ficha>{\"situacion\":\"herencia de tu madre, fallecida hace cinco meses y medio; hay testamento, sois tres hermanos y hay un piso en Granada\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"Sí\",\"bienes\":\"un piso en Granada\",\"nombre\":\"Carmen\",\"telefono\":\"611 222 999\",\"municipio\":\"Granada\",\"franja\":\"en el despacho, por la mañana\",\"fallecimiento\":\"hace cinco meses y medio\",\"modalidad\":\"En el despacho\",\"orientacion\":\"Hay que presentar el impuesto antes de que venza a los seis meses, sin prórroga; pedir el certificado de últimas voluntades para localizar el testamento.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Carmen. Te apunto el teléfono seis uno uno, dos dos dos, nueve nueve nueve; municipio Granada, en el Realejo, y la consulta en el despacho por la mañana. ¿Está todo bien?\n<ficha>{\"situacion\":\"herencia de tu madre, fallecida hace cinco meses y medio; hay testamento, sois tres hermanos y hay un piso en Granada\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"Sí\",\"bienes\":\"un piso en Granada\",\"nombre\":\"Carmen\",\"telefono\":\"611 222 999\",\"municipio\":\"Granada\",\"franja\":\"en el despacho, por la mañana\",\"fallecimiento\":\"hace cinco meses y medio\",\"modalidad\":\"En el despacho\",\"orientacion\":\"Hay que presentar el impuesto antes de que venza a los seis meses, sin prórroga; pedir el certificado de últimas voluntades para localizar el testamento.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]
