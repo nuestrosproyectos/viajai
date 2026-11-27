@@ -1,3 +1,0 @@
-El presupuesto llega por escrito y por partidas unos cinco días laborables tras la visita. Lo de al abrir también: te lo enseñamos y no se hace sin tu firma. El tiempo sin cocina depende de los muebles y la fontanería. ¿Te reservo la visita?
-<ficha>{"obra":"cocina entera","vivienda":"","metros":"unos 10 m²","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Pedir la visita para medir; el presupuesto por partidas llega por escrito unos cinco días laborables después, y lo que aparezca al abrir se aprueba antes de hacerse.","porDecir":"","fase":"proponiendo"}</ficha>
-<mostrar>como</mostrar>

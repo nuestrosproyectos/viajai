@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "No vamos a tirar ningún muro, solo baño, cocina, suelos y la electricidad. Entonces qué permiso haría falta?"
+ },
+ {
+  "role": "assistant",
+  "content": "En Armilla el ayuntamiento tiene su propia ordenanza, así que eso lo confirma el técnico. Lo que sí es seguro: la electricidad la hace una empresa habilitada, con boletín. El IVA del diez por ciento puede aplicarse; lo confirma su gestor. ¿Te reservo la visita?\n<ficha>{\"obra\":\"reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros\",\"vivienda\":\"\",\"metros\":\"90 metros\",\"antiguedad\":\"años 80\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Sin tirar muros, el técnico confirma en Armilla qué trámite hace falta; la electricidad la hace una empresa habilitada con boletín.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>orientativos</mostrar>",
+  "original": "En Armilla el ayuntamiento tiene su propia ordenanza, así que eso lo confirma el técnico. Lo que sí es seguro: la electricidad la hace una empresa habilitada, con boletín. El IVA del diez por ciento puede aplicarse; lo confirma su gestor. ¿Te reservo la visita?\n<ficha>{\"obra\":\"reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros\",\"vivienda\":\"\",\"metros\":\"90 metros\",\"antiguedad\":\"años 80\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Sin tirar muros, el técnico confirma en Armilla qué trámite hace falta; la electricidad la hace una empresa habilitada con boletín.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>orientativos</mostrar>"
  }
 ]

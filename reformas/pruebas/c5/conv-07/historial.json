@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, lo de las ventanas lo hablaría con la comunidad. Pero entonces el IVA al 10% me lo aplicarían o no? Y el certificado ese quién lo hace?"
+ },
+ {
+  "role": "assistant",
+  "content": "Puede ser del 10 % si la vivienda tiene más de dos años y los materiales no pasan del 40 %; lo confirma su gestor. El certificado lo hace un técnico antes y después de la obra; el posterior, antes del 1 de enero de 2027. ¿Te reservo la visita?\n<ficha>{\"obra\":\"cambiar 6 ventanas por otras que aíslen\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Las ventanas pueden dar deducción del 20 o del 40 % con certificado energético antes y después; el IVA puede ser del 10 % si se cumplen sus condiciones; lo confirma tu gestor.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>contacto</mostrar>",
+  "original": "Puede ser del 10 % si la vivienda tiene más de dos años y los materiales no pasan del 40 %; lo confirma su gestor. El certificado lo hace un técnico antes y después de la obra; el posterior, antes del 1 de enero de 2027. ¿Te reservo la visita?\n<ficha>{\"obra\":\"cambiar 6 ventanas por otras que aíslen\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Las ventanas pueden dar deducción del 20 o del 40 % con certificado energético antes y después; el IVA puede ser del 10 % si se cumplen sus condiciones; lo confirma tu gestor.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>contacto</mostrar>"
  }
 ]
