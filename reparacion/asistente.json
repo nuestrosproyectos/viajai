@@ -1,0 +1,6 @@
+{
+  "_leeme": "Nombre y voz del asistente de Reparo. Lo leen cerebro.mjs (web y servidor) y el agente de voz (voz). OJO: Reparo aún no está pasada a la plantilla de la fábrica y su index.html tiene el nombre escrito a mano en varios textos; hasta migrarla, un cambio de nombre no llega a todos los textos de la página.",
+  "nombre": "Andrés",
+  "genero": "hombre",
+  "voz": { "proveedor": "elevenlabs", "id": "", "nombre": "Javi - Relaxed and Natural (ES)", "estabilidad": 0.35, "parecido": 0.8, "velocidad": 0.95 }
+}

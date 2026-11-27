@@ -201,8 +201,8 @@ async function estadoPermiso() {
   try { return (await navigator.permissions.query({ name: "microphone" })).state; } catch { return "prompt"; }
 }
 /* El navegador SIEMPRE pide permiso para el micrófono la primera vez: no se puede evitar.
-   Lo que sí se puede es que lo explique el propio Andrés de viva voz (para hablar él no hace falta
-   permiso): al pulsar «Hablar», Andrés dice «tu navegador te va a pedir el micrófono, pulsa Permitir»
+   Lo que sí se puede es que lo explique el propio asistente de viva voz (para hablar él no hace falta
+   permiso): al pulsar «Hablar», el asistente dice «tu navegador te va a pedir el micrófono, pulsa Permitir»
    y el aviso sale justo mientras lo dice. Pedido por Juan el 22-11-2026: sin botón intermedio. */
 // El audio está grabado con la voz del asistente (asistente.json). Si se cambia el nombre o la voz y aún no
 // se ha vuelto a grabar, la fábrica lo deja vacío y la frase la dice la voz del navegador.
@@ -233,12 +233,12 @@ async function pedirMicro() {
     };
     hoja("#hojaMicro");
     avisoCebado.then(() => { if (!resuelto && !reducirVoz()) avisoMicro.play().catch(() => {}); });
-    espera = setTimeout(pedir, 1900);   // el aviso del navegador sale cuando Andrés está diciendo «te va a pedir el micrófono»
+    espera = setTimeout(pedir, 1900);   // el aviso del navegador sale cuando el asistente está diciendo «te va a pedir el micrófono»
     $("#hmEmpezar").onclick = pedir;
     $("#hmEscribir").onclick = () => { terminar(false); hoja(null); mostrarTeclado(true); };
   });
 }
-function reducirVoz() { return $("#btnVoz")?.getAttribute("aria-pressed") === "false"; }   // si ha quitado la voz de Andrés, no suena
+function reducirVoz() { return $("#btnVoz")?.getAttribute("aria-pressed") === "false"; }   // si ha quitado la voz del asistente, no suena
 function sinMicro() { estado("reposo"); hoja("#hojaSinMicro"); }
 $("#hsEscribir").addEventListener("click", () => { hoja(null); mostrarTeclado(true); });
 $("#hsReintentar").addEventListener("click", () => { hoja(null); empezarVoz(); });
@@ -392,7 +392,7 @@ async function enviar(texto, { porVoz = false } = {}) {
   } finally { if (enCurso === ctl) enCurso = null; }
 }
 
-/* Andrés enseña algo: en el móvil, como tarjeta dentro de la conversación (la página no se
+/* El asistente enseña algo: en el móvil, como tarjeta dentro de la conversación (la página no se
    mueve sola, que marea); en el ordenador, desplazando la página que se ve al lado. */
 const sinTildes = t => String(t || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 function destino(d) {
@@ -446,7 +446,7 @@ function pintarFicha(f, alFormulario = true) {
 let faseModelo = 0;
 function resumirSolicitud() {
   const d = datosFormulario();
-  // avance: lo que diga Andrés o lo que ya hay escrito en la solicitud
+  // avance: lo que diga el asistente o lo que ya hay escrito en la solicitud
   const porDatos = avisoHecho ? 5 : (d.telefono || d.nombre) ? 4 : fichaActual.orientacion ? 2 : DEL_CASO.some(c => d[c]) ? 1 : 0;
   const n = Math.max(faseModelo, porDatos);
   $$("#fases span").forEach((x, i) => x.classList.toggle("hecha", i < n));
@@ -567,7 +567,7 @@ async function reducirFoto(file) {
   } catch { return { blob: file, dataUrl: null }; }
 }
 
-// solicitud (la rellena Andrés mientras hablan; el cliente puede corregir cualquier dato)
+// solicitud (la rellena el asistente mientras hablan; el cliente puede corregir cualquier dato)
 const CAMPOS_FORM = W.campos.map(c => c.id);
 function datosFormulario() { return Object.fromEntries(CAMPOS_FORM.map(c => { const el = $("#f-" + c); return [c, (el?.dataset.valor ?? el?.value ?? "").trim()]; })); }
 function telefonoValido(t) { return /^(\+?34)?[6789]\d{8}$/.test(String(t).replace(/[^\d+]/g, "")); }
@@ -691,7 +691,7 @@ async function llamar() {
     sala.on(LK.RoomEvent.Reconnecting, () => { estadoTxt.textContent = "Reconectando…"; });
     sala.on(LK.RoomEvent.Reconnected, () => estado(conv.dataset.estado || "reposo"));
     sala.on(LK.RoomEvent.Disconnected, finLlamada);
-    // Si Andrés cuelga por su lado, la web cuelga también: antes se quedaba la llamada «abierta» con el micro encendido
+    // Si el asistente cuelga por su lado, la web cuelga también: antes se quedaba la llamada «abierta» con el micro encendido
     sala.on(LK.RoomEvent.ParticipantDisconnected, () => {
       setTimeout(() => { if (llamada === sala && sala.remoteParticipants.size === 0) colgar(); }, 1500);
     });
@@ -744,7 +744,7 @@ function finLlamada() {
 ------------------------------------------------------------------ */
 burbuja("tec", saludo(N));
 const cab = $("#cab");
-// la barra de abajo aparece cuando el botón grande de Andrés sale de la pantalla
+// la barra de abajo aparece cuando el botón grande del asistente sale de la pantalla
 if ("IntersectionObserver" in window) new IntersectionObserver(([e]) => document.body.classList.toggle("barra-visible", !e.isIntersecting)).observe($(".tarjeta-andres .boton-hablar"));
 else document.body.classList.add("barra-visible");
 addEventListener("scroll", () => cab.classList.toggle("con-borde", scrollY > 8), { passive: true });

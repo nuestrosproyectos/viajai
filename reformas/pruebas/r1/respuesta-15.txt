@@ -1,0 +1,3 @@
+Es normal querer tenerlo claro. Pídele el presupuesto por escrito, firmado, con partidas, plazos y forma de pago por fases, y no pagues todo por adelantado. Si quieres, una visita gratis te da una segunda opinión para comparar. ¿Ya ha empezado la obra?
+<ficha>{"obra":"Reforma del baño, ya en marcha con otro albañil","vivienda":"","metros":"","antiguedad":"","presupuesto":"Sin nada por escrito","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Pedir presupuesto firmado con partidas y plazos, y valorar una segunda opinión para comparar.","fase":"orientando"}</ficha>
+<mostrar>como</mostrar>

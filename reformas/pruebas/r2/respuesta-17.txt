@@ -1,0 +1,3 @@
+Si solo cambian baño y cocina sin tocar muros ni fachada, suele bastar una declaración responsable, o sea, un aviso al Ayuntamiento. En el Albaicín, si se tocan muros o fachada, lo normal es licencia y técnico. Lo confirma el técnico en la visita gratis. ¿Mañana o por la tarde?
+<ficha>{"obra":"Reforma de baño y cocina","vivienda":"Casa","metros":"","antiguedad":"Antigua, sin año indicado","presupuesto":"","nombre":"","telefono":"","municipio":"Granada (Albaicín)","franja":"","inicio":"","orientacion":"Confirmar con el técnico si se tocan muros o fachada, porque en el Albaicín suele hacer falta licencia.","fase":"orientando"}</ficha>
+<mostrar>permisos</mostrar>

@@ -1,0 +1,3 @@
+Cambiar azulejos y plato suele ir con declaración responsable en el Ayuntamiento, siempre que no se toquen muros ni la distribución. Lo confirma el técnico en la visita de medición, que es gratis. ¿El edificio es antiguo, de hace cuántos años más o menos?
+<ficha>{"obra":"cambiar azulejos y plato de ducha","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Lo más probable es una declaración responsable en el Ayuntamiento si no se tocan muros ni distribución; el técnico lo confirma","fase":"orientando"}</ficha>
+<mostrar>permisos</mostrar>

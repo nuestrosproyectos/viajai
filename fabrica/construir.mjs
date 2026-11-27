@@ -39,7 +39,8 @@ export function pendientes(dir, A) {
   for (const f of ["cerebro.mjs", "web.mjs", "contenido.js"]) {
     if (!existsSync(join(dir, f))) continue;
     for (const l of readFileSync(join(dir, f), "utf8").split("\n")) {
-      const m = l.match(/PENDIENTE:?\s*(.+?)\s*(\*\/)?$/);
+      // «// PENDIENTE: …» al final de la línea, o «"PENDIENTE: …"» dentro de un texto
+      const m = l.match(/\/\/\s*PENDIENTE:?\s*(.+?)\s*(\*\/)?$/) || l.match(/PENDIENTE:\s*([^"`<\]]+)/);
       if (m && !/^\s*\/\/\s*>>>/.test(l) && !/marcado con PENDIENTE/.test(l)) lista.push(m[1].replace(/^[-–:]\s*/, ""));
     }
   }
@@ -84,8 +85,9 @@ export async function construir(nombre, { silencioso = false } = {}) {
     writeFileSync(join(dir, "agente", "instrucciones.txt"), instrucciones(N, { herramientas: true }));
     writeFileSync(join(dir, "agente", "saludo.txt"), saludo(N) + "\n");
     writeFileSync(join(dir, "agente", "web.json"), JSON.stringify({
-      web: nombre, marca: N.marca, sector: W.sectorAgente || N.sector, asistente: A,
-      campos: W.campos.map(c => ({ id: c.id, etiqueta: c.etiqueta, pista: c.pista || "" })),
+      web: nombre, marca: N.marca, sector: W.sectorAgente || N.sector, asistente: { nombre: A.nombre, genero: A.genero, tono: A.tono, voz: A.voz },
+      campos: W.campos.map(c => ({ id: c.id, etiqueta: c.etiqueta || c.id, pista: c.pista || "", grupo: c.grupo || "" })),
+      obligatorios: W.obligatorios.map(([c]) => c), palabrasClave: W.palabrasClave || [N.marca],
       tipos: [W.tipoPrincipal, "llamada", ...(W.tiposExtra || [])], urgente: W.urgenteAgente || "",
       destinos: Object.keys(W.destinos)
     }, null, 2));

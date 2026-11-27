@@ -1,0 +1,3 @@
+Cambiar la bañera por un plato de ducha suele quedar entre mil y dos mil trescientos euros, según el tamaño y si hay que alicatar. La visita de medición es gratis y ahí se cierra el precio exacto. ¿Cuántos metros tiene más o menos el baño?
+<ficha>{"obra":"cambiar bañera por plato de ducha","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Lo más habitual son entre mil y dos mil trescientos euros; el precio exacto sale de la visita de medición gratis","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>

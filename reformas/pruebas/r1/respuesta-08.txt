@@ -1,0 +1,3 @@
+Mejor no la toques tú: la uralita puede tener amianto, y romperla, cortarla o barrerla puede soltar fibras peligrosas. La retira solo una empresa inscrita en el registro de amianto, con plan de trabajo aprobado, y el técnico lo ve en la visita. ¿Te viene mejor por la mañana o por la tarde?
+<ficha>{"obra":"quitar caseta de uralita del patio, aprovechando la reforma","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"No quitar la uralita tú mismo: puede tener amianto y solo la retira una empresa inscrita en el registro de amianto","fase":"proponiendo"}</ficha>
+<mostrar>situaciones</mostrar>

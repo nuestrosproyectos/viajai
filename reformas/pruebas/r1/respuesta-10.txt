@@ -1,0 +1,3 @@
+Eso lo confirma el técnico. Si el tabique es de carga, que sostiene el edificio, lo más probable es que pida proyecto y licencia. Una visita gratis de unos 45 minutos lo aclara. ¿Cuántos metros tiene más o menos el piso?
+<ficha>{"obra":"Tirar el tabique entre cocina y salón para hacer la cocina abierta","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Que el técnico vea si el tabique es de carga antes de hacer nada; si lo es, hará falta proyecto y licencia.","fase":"orientando"}</ficha>
+<mostrar>permisos</mostrar>

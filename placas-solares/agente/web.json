@@ -1,0 +1,114 @@
+{
+  "web": "placas-solares",
+  "marca": "Tejaluz",
+  "sector": "placas solares",
+  "asistente": {
+    "nombre": "Andrés",
+    "genero": "hombre",
+    "tono": "cercano, claro y con los pies en el suelo, como un buen técnico de pueblo que hace las cuentas delante de ti",
+    "voz": {
+      "proveedor": "elevenlabs",
+      "id": "E3gU1I86D0XjvRrEszPm",
+      "nombre": "Daniel",
+      "modelo": "eleven_flash_v2_5",
+      "estabilidad": 0.4,
+      "parecido": 0.8,
+      "velocidad": 0.95
+    }
+  },
+  "campos": [
+    {
+      "id": "que",
+      "etiqueta": "Qué te interesa",
+      "pista": "",
+      "grupo": "caso"
+    },
+    {
+      "id": "lugar",
+      "etiqueta": "Dónde irían",
+      "pista": "",
+      "grupo": "caso"
+    },
+    {
+      "id": "factura",
+      "etiqueta": "Lo que pagas de luz al mes",
+      "pista": "",
+      "grupo": "caso"
+    },
+    {
+      "id": "tejado",
+      "etiqueta": "Tejado",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "consumo",
+      "etiqueta": "Cuándo gastas más luz",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "nombre",
+      "etiqueta": "Nombre",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "telefono",
+      "etiqueta": "Teléfono",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "municipio",
+      "etiqueta": "Municipio y barrio",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "franja",
+      "etiqueta": "Cuándo te viene bien la visita",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "inicio",
+      "etiqueta": "inicio",
+      "pista": "",
+      "grupo": ""
+    }
+  ],
+  "obligatorios": [
+    "telefono",
+    "nombre",
+    "que",
+    "municipio"
+  ],
+  "palabrasClave": [
+    "Tejaluz"
+  ],
+  "tipos": [
+    "estudio",
+    "llamada"
+  ],
+  "urgente": "",
+  "destinos": [
+    "precios",
+    "estudio",
+    "visita",
+    "orientativos",
+    "cuanto",
+    "ahorro",
+    "como",
+    "plazo",
+    "garantia",
+    "permisos",
+    "ayudas",
+    "zona",
+    "situaciones",
+    "contacto",
+    "llamada",
+    "formulario",
+    "preparar"
+  ]
+}

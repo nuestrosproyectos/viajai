@@ -1,0 +1,2 @@
+Para darte un presupuesto por partidas lo mejor es la visita de medición, que es gratis y dura unos 45 minutos; el presupuesto escrito sale unos cinco días laborables después. Si puedes, mándame una foto de la cocina. ¿Te viene mejor por la mañana o por la tarde?
+<ficha>{"obra":"reforma de cocina","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"Armilla","franja":"","inicio":"","orientacion":"Visita de medición gratis para hacerte un presupuesto por partidas, por escrito","fase":"proponiendo"}</ficha>

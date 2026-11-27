@@ -1,0 +1,12 @@
+/* Piel neutra provisional de una web nueva: sustituir por la dirección visual del estudio del sector. */
+:root,:root[data-theme="light"]{
+  --fondo:#F5F6F8; --fondo-2:#ECEEF1; --fondo-3:#DFE2E7; --tarjeta:#FFFFFF;
+  --tinta:#16191D; --tinta-2:#474E57; --tinta-3:#5D646D; --linea:#D8DCE1; --linea-fuerte:#89909A;
+  --acento:#203040; --acento-pulsado:#162230; --acento-suave:#E4E9EF;
+  --almagra:var(--acento); --almagra-pulsado:var(--acento-pulsado); --almagra-suave:var(--acento-suave); --sobre-almagra:#FFFFFF;
+  --cobalto:#2F5D86; --cobalto-suave:#E4ECF4; --laton:#7A5A00;
+  --ok:#1D7A4E; --ok-suave:#E2F2EA; --rojo:#C4362A; --sobre-rojo:#FFFFFF;
+  --consola:#16191D; --consola-2:#22262C; --consola-txt:#EEF0F3; --consola-txt-2:#B3B9C2; --consola-linea:rgba(238,240,243,.14);
+  --texto:"Public Sans",ui-sans-serif,system-ui,sans-serif; --titular:var(--texto);
+  --sombra:0 1px 2px rgba(22,25,29,.06),0 12px 30px -18px rgba(22,25,29,.35); --r-tarjeta:12px; --r-campo:10px; color-scheme:light;
+}

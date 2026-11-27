@@ -113,7 +113,7 @@ def crear_tts():
         # Menos estabilidad = más entonación; velocidad 0,95 = un pelín más pausada.
         return elevenlabs.TTS(
             model=os.getenv("ELEVENLABS_MODELO", "eleven_flash_v2_5"),
-            voice_id=os.environ["ELEVENLABS_VOZ_ID"],
+            voice_id=os.getenv("ELEVENLABS_VOZ_ID") or json.loads((AQUI.parent / "asistente.json").read_text(encoding="utf-8"))["voz"]["id"],  # .env o asistente.json
             language="es",
             voice_settings=elevenlabs.VoiceSettings(
                 stability=float(os.getenv("ELEVENLABS_ESTABILIDAD", "0.35")),

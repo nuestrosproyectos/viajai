@@ -1,0 +1,2 @@
+No te puedo recomendar una marca ni una mampara concreta; eso lo elige contigo el técnico en la visita, según el espacio y el presupuesto que tengas. La gama y si la mampara es a medida cambian mucho el total. ¿Te viene bien que pase a medirlo y te enseñe opciones?
+<ficha>{"obra":"Plato de ducha y mampara","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Elegir plato y mampara con el técnico en la visita de medición.","fase":"orientando"}</ficha>

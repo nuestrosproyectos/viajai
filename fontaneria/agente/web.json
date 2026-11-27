@@ -1,0 +1,120 @@
+{
+  "web": "fontaneria",
+  "marca": "Llave de Paso",
+  "sector": "fontanería y desatascos",
+  "asistente": {
+    "nombre": "Andrés",
+    "genero": "hombre",
+    "tono": "tranquilo, directo y seguro, como un fontanero veterano que al teléfono te dice primero qué cerrar y luego cuándo llega",
+    "voz": {
+      "proveedor": "elevenlabs",
+      "id": "gc61tTk93h3LBXPxew2V",
+      "nombre": "Rafa",
+      "modelo": "eleven_flash_v2_5",
+      "estabilidad": 0.4,
+      "parecido": 0.8,
+      "velocidad": 1
+    }
+  },
+  "campos": [
+    {
+      "id": "averia",
+      "etiqueta": "Qué pasa",
+      "pista": "",
+      "grupo": "caso"
+    },
+    {
+      "id": "cuando",
+      "etiqueta": "¿Urgente o programada?",
+      "pista": "",
+      "grupo": "caso"
+    },
+    {
+      "id": "llave",
+      "etiqueta": "¿Llave de paso cerrada?",
+      "pista": "",
+      "grupo": "caso"
+    },
+    {
+      "id": "vivienda",
+      "etiqueta": "Piso o casa",
+      "pista": "",
+      "grupo": "caso"
+    },
+    {
+      "id": "seguro",
+      "etiqueta": "Seguro de hogar",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "nombre",
+      "etiqueta": "Nombre",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "telefono",
+      "etiqueta": "Teléfono",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "municipio",
+      "etiqueta": "Municipio y barrio",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "direccion",
+      "etiqueta": "Calle y número",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "franja",
+      "etiqueta": "Cuándo te viene bien",
+      "pista": "",
+      "grupo": ""
+    },
+    {
+      "id": "inicio",
+      "etiqueta": "inicio",
+      "pista": "",
+      "grupo": ""
+    }
+  ],
+  "obligatorios": [
+    "telefono",
+    "nombre",
+    "averia",
+    "municipio"
+  ],
+  "palabrasClave": [
+    "Llave de Paso"
+  ],
+  "tipos": [
+    "visita",
+    "llamada"
+  ],
+  "urgente": "",
+  "destinos": [
+    "precios",
+    "salida",
+    "visita",
+    "orientativos",
+    "cuanto",
+    "seguridad",
+    "llave",
+    "como",
+    "gas",
+    "garantia",
+    "zona",
+    "situaciones",
+    "preguntas",
+    "contacto",
+    "llamada",
+    "formulario",
+    "preparar"
+  ]
+}

@@ -18,7 +18,7 @@
 /* =====================================================================
    Diseño "taller con cal y almagra": cálido, legible y sin marear.
    Pensado primero para el móvil (la mayoría entra desde el móvil).
-   Cobalto = todo lo que es Andrés. Almagra = acciones de la persona.
+   Cobalto = todo lo que es el asistente. Almagra = acciones de la persona.
 ===================================================================== */
 :root{
   --fondo:#F5F1E8; --fondo-2:#ECE6D8; --fondo-3:#DED6C4; --tarjeta:#FFFDF8;
@@ -144,7 +144,7 @@ p{margin:0}
 .confianza svg{width:28px;height:28px;flex:none;color:var(--ok)}
 .confianza b{font-weight:700}
 
-/* --- orbe de Andrés: la puerta de una lavadora --- */
+/* --- orbe del asistente: la puerta de una lavadora --- */
 .orbe{--t:96px;width:var(--t);height:var(--t);border-radius:50%;flex:none;position:relative;background:conic-gradient(from 0deg,var(--laton) 0 2%,transparent 2% 8.33%) ,radial-gradient(circle at 50% 50%,#DCD3C1 0 58%,#B9AE98 58% 62%,#E9E1D0 62% 100%);box-shadow:inset 0 0 0 3px #8F8676,0 6px 18px -8px rgba(0,0,0,.5)}
 .orbe::before{content:"";position:absolute;inset:16%;border-radius:50%;background:radial-gradient(circle at 34% 30%,rgba(255,255,255,.55) 0 10%,transparent 26%),radial-gradient(circle,#2F68B5 0 40%,#1F4F8F 72%,#133561 100%);box-shadow:inset 0 0 0 3px rgba(0,0,0,.25);transition:transform .4s var(--curva)}
 .orbe .onda{position:absolute;inset:16%;border-radius:50%;display:flex;align-items:center;justify-content:center;gap:calc(var(--t)*.035)}
@@ -459,7 +459,7 @@ body.con-mini .mini{display:flex}
 html,body{overflow-x:clip}
 body{background:var(--fondo)}
 ::selection{background:var(--acento);color:#fff}
-/* lo que es de Andrés, en azul Sierra */
+/* lo que es del asistente, en azul Sierra */
 .boton-andres{background:var(--cobalto)!important;box-shadow:0 1px 0 var(--cobalto-pulsado,#244968)!important}
 .boton-andres:active{background:var(--cobalto-pulsado,#244968)!important}
 
@@ -491,7 +491,7 @@ h1 em,h2 em,.subrayado{font-style:normal;color:var(--acento);background:none}
 .previa{background:var(--consola);border-bottom:1px solid var(--linea)}
 .previa b{color:var(--consola-acento,#9CC2F0)}
 
-/* ---------- PORTADA: texto a la izquierda, foto real y Andrés a la derecha ---------- */
+/* ---------- PORTADA: texto a la izquierda, foto real y el asistente a la derecha ---------- */
 .portada{padding:22px 0 34px;background:var(--tarjeta);border-bottom:1px solid var(--linea)}
 .sobretitulo{order:0;display:block;margin:0 0 10px;font-size:.95rem;font-weight:700;color:var(--acento)}
 .urgencia{order:8!important;background:var(--urgencia-fondo,#FCEDEB);border:1px solid var(--urgencia-borde,#F1C9C4);border-radius:var(--r-tarjeta);margin:18px 0 0}
@@ -582,7 +582,7 @@ h1 em,h2 em,.subrayado{font-style:normal;color:var(--acento);background:none}
 .mapa-espera svg{color:var(--consola-txt-2)}
 .solicitud>summary svg{color:var(--consola-txt-2)}
 
-/* aviso del micrófono hablado por Andrés */
+/* aviso del micrófono hablado por el asistente */
 .hm-pista{display:flex;align-items:center;gap:10px;margin:12px 0 14px;font-weight:700;color:var(--tinta)}
 .hm-pista[hidden]{display:none}
 .hm-punto{width:12px;height:12px;border-radius:50%;background:var(--acento);flex:none;animation:hm-late 1.1s ease-in-out infinite}
@@ -593,7 +593,7 @@ h1 em,h2 em,.subrayado{font-style:normal;color:var(--acento);background:none}
 /* ======================= ORDENADOR ======================= */
 @media (min-width:900px){
   .portada{padding:52px 0 60px}
-  /* dos columnas equilibradas: arriba texto frente a la foto; abajo las ventajas frente a la tarjeta de Andrés */
+  /* dos columnas equilibradas: arriba texto frente a la foto; abajo las ventajas frente a la tarjeta del asistente */
   .portada .envol{grid-template-columns:1.05fr .95fr;grid-template-areas:"texto foto" "datos andres" "enlace andres";column-gap:56px;row-gap:0;align-items:start}
   .portada h1{font-size:clamp(2.3rem,3.5vw,3.5rem)}
   .portada .entrada{font-size:1.25rem}
@@ -601,7 +601,7 @@ h1 em,h2 em,.subrayado{font-style:normal;color:var(--acento);background:none}
   /* texto centrado en altura frente a la foto, con el aviso de urgencia al final */
   .hero-a{grid-area:texto;display:flex;flex-direction:column;align-self:center}
   .hero-a .precio-linea{align-self:flex-start}
-  /* la foto arriba a la derecha y la tarjeta de Andrés montada encima de su parte baja */
+  /* la foto arriba a la derecha y la tarjeta del asistente montada encima de su parte baja */
   .hero-b{display:contents}
   .hero-foto{grid-area:foto;order:0;margin:0;aspect-ratio:4/3}
   .tarjeta-andres{grid-area:andres;order:1;margin:-110px 22px 0;position:relative}
@@ -1220,8 +1220,8 @@ async function estadoPermiso() {
   try { return (await navigator.permissions.query({ name: "microphone" })).state; } catch { return "prompt"; }
 }
 /* El navegador SIEMPRE pide permiso para el micrófono la primera vez: no se puede evitar.
-   Lo que sí se puede es que lo explique el propio Andrés de viva voz (para hablar él no hace falta
-   permiso): al pulsar «Hablar», Andrés dice «tu navegador te va a pedir el micrófono, pulsa Permitir»
+   Lo que sí se puede es que lo explique el propio asistente de viva voz (para hablar él no hace falta
+   permiso): al pulsar «Hablar», el asistente dice «tu navegador te va a pedir el micrófono, pulsa Permitir»
    y el aviso sale justo mientras lo dice. Pedido por Juan el 22-11-2026: sin botón intermedio. */
 // El audio está grabado con la voz del asistente (asistente.json). Si se cambia el nombre o la voz y aún no
 // se ha vuelto a grabar, la fábrica lo deja vacío y la frase la dice la voz del navegador.
@@ -1252,12 +1252,12 @@ async function pedirMicro() {
     };
     hoja("#hojaMicro");
     avisoCebado.then(() => { if (!resuelto && !reducirVoz()) avisoMicro.play().catch(() => {}); });
-    espera = setTimeout(pedir, 1900);   // el aviso del navegador sale cuando Andrés está diciendo «te va a pedir el micrófono»
+    espera = setTimeout(pedir, 1900);   // el aviso del navegador sale cuando el asistente está diciendo «te va a pedir el micrófono»
     $("#hmEmpezar").onclick = pedir;
     $("#hmEscribir").onclick = () => { terminar(false); hoja(null); mostrarTeclado(true); };
   });
 }
-function reducirVoz() { return $("#btnVoz")?.getAttribute("aria-pressed") === "false"; }   // si ha quitado la voz de Andrés, no suena
+function reducirVoz() { return $("#btnVoz")?.getAttribute("aria-pressed") === "false"; }   // si ha quitado la voz del asistente, no suena
 function sinMicro() { estado("reposo"); hoja("#hojaSinMicro"); }
 $("#hsEscribir").addEventListener("click", () => { hoja(null); mostrarTeclado(true); });
 $("#hsReintentar").addEventListener("click", () => { hoja(null); empezarVoz(); });
@@ -1411,7 +1411,7 @@ async function enviar(texto, { porVoz = false } = {}) {
   } finally { if (enCurso === ctl) enCurso = null; }
 }
 
-/* Andrés enseña algo: en el móvil, como tarjeta dentro de la conversación (la página no se
+/* El asistente enseña algo: en el móvil, como tarjeta dentro de la conversación (la página no se
    mueve sola, que marea); en el ordenador, desplazando la página que se ve al lado. */
 const sinTildes = t => String(t || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 function destino(d) {
@@ -1465,7 +1465,7 @@ function pintarFicha(f, alFormulario = true) {
 let faseModelo = 0;
 function resumirSolicitud() {
   const d = datosFormulario();
-  // avance: lo que diga Andrés o lo que ya hay escrito en la solicitud
+  // avance: lo que diga el asistente o lo que ya hay escrito en la solicitud
   const porDatos = avisoHecho ? 5 : (d.telefono || d.nombre) ? 4 : fichaActual.orientacion ? 2 : DEL_CASO.some(c => d[c]) ? 1 : 0;
   const n = Math.max(faseModelo, porDatos);
   $$("#fases span").forEach((x, i) => x.classList.toggle("hecha", i < n));
@@ -1586,7 +1586,7 @@ async function reducirFoto(file) {
   } catch { return { blob: file, dataUrl: null }; }
 }
 
-// solicitud (la rellena Andrés mientras hablan; el cliente puede corregir cualquier dato)
+// solicitud (la rellena el asistente mientras hablan; el cliente puede corregir cualquier dato)
 const CAMPOS_FORM = W.campos.map(c => c.id);
 function datosFormulario() { return Object.fromEntries(CAMPOS_FORM.map(c => { const el = $("#f-" + c); return [c, (el?.dataset.valor ?? el?.value ?? "").trim()]; })); }
 function telefonoValido(t) { return /^(\+?34)?[6789]\d{8}$/.test(String(t).replace(/[^\d+]/g, "")); }
@@ -1710,7 +1710,7 @@ async function llamar() {
     sala.on(LK.RoomEvent.Reconnecting, () => { estadoTxt.textContent = "Reconectando…"; });
     sala.on(LK.RoomEvent.Reconnected, () => estado(conv.dataset.estado || "reposo"));
     sala.on(LK.RoomEvent.Disconnected, finLlamada);
-    // Si Andrés cuelga por su lado, la web cuelga también: antes se quedaba la llamada «abierta» con el micro encendido
+    // Si el asistente cuelga por su lado, la web cuelga también: antes se quedaba la llamada «abierta» con el micro encendido
     sala.on(LK.RoomEvent.ParticipantDisconnected, () => {
       setTimeout(() => { if (llamada === sala && sala.remoteParticipants.size === 0) colgar(); }, 1500);
     });
@@ -1763,7 +1763,7 @@ function finLlamada() {
 ------------------------------------------------------------------ */
 burbuja("tec", saludo(N));
 const cab = $("#cab");
-// la barra de abajo aparece cuando el botón grande de Andrés sale de la pantalla
+// la barra de abajo aparece cuando el botón grande del asistente sale de la pantalla
 if ("IntersectionObserver" in window) new IntersectionObserver(([e]) => document.body.classList.toggle("barra-visible", !e.isIntersecting)).observe($(".tarjeta-andres .boton-hablar"));
 else document.body.classList.add("barra-visible");
 addEventListener("scroll", () => cab.classList.toggle("con-borde", scrollY > 8), { passive: true });

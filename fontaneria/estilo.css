@@ -1,0 +1,95 @@
+/* =====================================================================
+   PIEL «LLAVE DE PASO» · Fontanería y desatascos (Granada)
+   El grifo de casa: rojo caliente, azul frío. Fondo blanco frío y tinta casi negra azulada;
+   el ROJO de la maneta de la llave de paso SOLO para llamar y para lo urgente, y el AZUL
+   PETRÓLEO del agua para todo lo que es Andrés. Esquinas de 8 px (herramienta, no app),
+   bordes de 1 px, sin degradados, y titulares en Archivo semicondensado, como la rotulación
+   de una furgoneta o un albarán. Contrastes WCAG en estudio/estudio-marca-diseno.md (4.1).
+   Detalles propios: el aviso de urgencia arriba del todo, la «tubería» que une los pasos de
+   «Mientras llegamos» y las cifras de precios en tabular, como en un albarán.
+   Lo común (colocación, conversación) está en fabrica/plantilla/: aquí solo lo propio.
+   ===================================================================== */
+:root,:root[data-theme="light"]{
+  --fondo:#F1F5F8; --fondo-2:#E7EDF1; --fondo-3:#D9E2E8; --tarjeta:#FFFFFF;
+  --tinta:#0E1A24; --tinta-2:#475663; --tinta-3:#56636F;
+  --linea:#CFD9E0; --linea-fuerte:#8795A1;
+  /* acento general = agua (petróleo); el rojo va aparte y solo para llamar y urgencias */
+  --acento:#006A7D; --acento-pulsado:#00525F; --acento-suave:#E2F0F3; --sobre-acento:#FFFFFF;
+  --acento-texto:#006A7D;
+  --almagra:#B4131F; --almagra-pulsado:#8E0E18; --almagra-suave:#FBE9EA; --sobre-almagra:#FFFFFF;
+  --cobalto:#006A7D; --cobalto-pulsado:#00525F; --cobalto-suave:#E2F0F3; --laton:#8F5E00;
+  --ok:#1E7A4F; --ok-suave:#E3F2EA; --rojo:#B4131F; --sobre-rojo:#FFFFFF;
+  --aviso:#8F5E00;
+  --urgencia-fondo:#FBE9EA; --urgencia-borde:#F0C4C8;
+  --consola:#0E1A24; --consola-2:#16242F; --consola-txt:#E8EEF2; --consola-txt-2:#A3B1BC; --consola-linea:rgba(232,238,242,.14);
+  --consola-acento:#5FC9DC;
+  --titular:"Archivo",var(--texto);
+  --texto:"Public Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --sombra:0 1px 2px rgba(14,26,36,.06),0 10px 26px -18px rgba(14,26,36,.4);
+  --r-tarjeta:8px; --r-campo:6px;
+  --cab-fondo:rgba(255,255,255,.95);
+  color-scheme:light;
+}
+::selection{background:var(--acento);color:#fff}
+
+/* titulares semicondensados (rotulación de furgoneta); el texto, neutro y muy legible */
+h1,h2,h3,.logo-txt b{font-family:var(--titular);font-stretch:87.5%;font-weight:800;letter-spacing:-.015em}
+h3{font-weight:700;letter-spacing:0}
+h1 em,h2 em{font-style:normal;color:var(--acento)}
+.logo-txt b{font-size:1.35rem;letter-spacing:0}
+.sobretitulo{color:var(--acento-texto)}
+.antetitulo{color:var(--acento)}
+
+/* botones: rojo solo para llamar y para lo urgente; Andrés en agua */
+.boton{border-radius:8px}
+.tarjeta-andres .boton-hablar,.boton-andres{border-radius:8px}
+.boton-principal{background:var(--rojo);color:#fff;box-shadow:0 1px 0 var(--almagra-pulsado)}
+.boton-principal:active{background:var(--almagra-pulsado)}
+.cab-llamar,.barra-movil a[data-tel]{background:var(--rojo)!important;border-color:var(--rojo)!important;color:#fff!important}
+.cab-llamar:active,.barra-movil a[data-tel]:active{background:var(--almagra-pulsado)!important}
+.logo-marca{background:var(--tinta);border-radius:8px}
+.tarjeta-andres{border-top:4px solid var(--acento)}
+.llamame-enlace,.confianza svg,.faq summary::after,.aparato:not(.aparato-foto) svg{color:var(--acento)}
+
+/* AVISO DE URGENCIA: lo primero que se ve, antes del titular (en móvil y en ordenador) */
+.urgencia{order:-1!important;margin:0 0 14px!important;border-left:4px solid var(--rojo);font-size:1rem;line-height:1.35}
+.urgencia b{color:var(--rojo)}
+.urgencia .boton{min-height:48px;font-weight:800}
+
+/* «Mientras llegamos»: los tres pasos unidos por una tubería, con la llave como junta */
+.pasos{position:relative}
+.paso::before{background:var(--acento);color:#fff;border-radius:8px;font-variant-numeric:tabular-nums}
+.paso{border-left:3px solid var(--acento)}
+@media (max-width:899px){
+  .pasos::before{content:"";position:absolute;left:32px;top:24px;bottom:24px;width:4px;background:var(--fondo-3);z-index:0}
+  .paso{z-index:1}
+}
+@media (min-width:900px){
+  .pasos::before{content:"";position:absolute;left:24px;right:24px;top:32px;height:4px;background:var(--fondo-3);z-index:0}
+  .paso{z-index:1;border-left:1px solid var(--linea);border-top:3px solid var(--acento)}
+}
+
+/* precios como en un albarán: cifras tabulares en Archivo */
+.tarifa{border-color:var(--tinta)}
+.tarifa .cifra,.bd-caso .bd-cifra,.precio-linea b,.tel-grande{font-family:var(--titular);font-stretch:87.5%;font-weight:800;font-variant-numeric:tabular-nums}
+.tarifa .cifra{letter-spacing:-.02em}
+.descuento{background:var(--acento-suave);color:var(--tinta)}
+.bd-caso{border-top:3px solid var(--acento)}
+.bd-caso .bd-cifra{color:var(--tinta);letter-spacing:0}
+.precio-linea{background:var(--fondo)}
+
+/* fotos de «Mientras llegamos» con el consejo en negrita */
+.trabajo figcaption b{color:var(--tinta)}
+.trabajo figure:last-child figcaption b{color:var(--rojo)}
+.hero-foto img{object-position:42% 45%}
+
+/* móvil: el aviso de urgencia sustituye al sobretítulo para que «Hablar con Andrés» se vea al abrir */
+@media (max-width:560px){
+  .portada .sobretitulo{display:none}
+  .urgencia{padding:8px 8px 8px 12px;font-size:.98rem;margin-bottom:12px!important}
+  .portada h1{font-size:2.15rem}
+}
+@media (min-width:900px){
+  .urgencia{border-radius:8px;border-left-width:4px;margin:0 0 22px!important}
+  .escenario .esc-estado{background:var(--acento-suave);color:var(--acento)}
+}

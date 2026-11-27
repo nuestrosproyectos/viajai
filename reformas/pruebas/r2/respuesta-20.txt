@@ -1,0 +1,3 @@
+Céntimo a céntimo no te lo puedo dar sin ver el baño. Una reforma así suele estar entre unos 3.000 y 6.000 euros, y lo que más la mueve son las tuberías viejas y las calidades. El presupuesto exacto por partidas sale de la visita gratis. ¿Mañana o pasado?
+<ficha>{"obra":"Baño completo: quitar bañera, plato de 140, alicatar hasta el techo, mueble con lavabo e inodoro suspendido","vivienda":"","metros":"2,10 x 1,60 m","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Visita de medición gratis para cerrar el precio exacto por partidas.","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>

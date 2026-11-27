@@ -1,0 +1,2 @@
+Primero, la seguridad: no enciendas ni apagues nada ni uses el móvil dentro; cierra la llave del gas, sal de casa y llama desde fuera al 112 o a la compañía del gas. Luego vemos la cocina con calma. ¿Ya has salido?
+<ficha>{"obra":"Reformar la cocina","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Primero salir de casa y llamar desde fuera al 112 o a la compañía del gas.","fase":"entendiendo"}</ficha>

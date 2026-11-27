@@ -1,0 +1,2 @@
+La renta no es lo mío, y de política tampoco hablo; yo soy el asistente de reformas de Obra Redonda. Si estás pensando en reformar algo de tu casa, te oriento sin compromiso. ¿Qué estancia quieres cambiar?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"","fase":"entendiendo"}</ficha>

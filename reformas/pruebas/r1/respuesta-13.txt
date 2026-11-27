@@ -1,0 +1,3 @@
+Entiendo que quieras una cifra ya. El precio cerrado solo sale midiendo: la visita es gratis, dura unos 45 minutos y el presupuesto por escrito llega en unos cinco días laborables. ¿Te viene mejor por la mañana o por la tarde?
+<ficha>{"obra":"Cambiar la bañera por un plato de ducha","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Visita de medición gratis para dar un precio cerrado por escrito.","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>

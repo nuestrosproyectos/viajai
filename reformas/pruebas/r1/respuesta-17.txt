@@ -1,0 +1,3 @@
+Por ser el Albaicín, que es zona protegida, lo más probable es que haga falta licencia y técnico, aunque eso lo confirma el profesional en la visita de medición, que es gratis. ¿Hay que tocar algún muro o solo cambiar el baño y la cocina por dentro?
+<ficha>{"obra":"Reformar baño y cocina","vivienda":"","metros":"","antiguedad":"Casa antigua","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Confirmar con el técnico si hace falta licencia, por estar en el Albaicín.","fase":"orientando"}</ficha>
+<mostrar>permisos</mostrar>

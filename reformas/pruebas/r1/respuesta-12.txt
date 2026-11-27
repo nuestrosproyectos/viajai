@@ -1,0 +1,3 @@
+Con un piso alquilado no te lo puedo afirmar; eso lo confirma el profesional o tu gestor, y lo apunto para que el técnico te lo confirme. El 10 % depende de quién encarga la obra y para qué. ¿Solo cambias muebles o también mueves fregadero o campana?
+<ficha>{"obra":"Reformar la cocina","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"Almuñécar","franja":"","inicio":"","orientacion":"Confirmar con el profesional o con tu gestor si el IVA del 10 % aplica, al ser un piso alquilado.","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>

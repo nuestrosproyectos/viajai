@@ -21,52 +21,72 @@
     {
       "id": "obra",
       "etiqueta": "Qué quieres reformar",
-      "pista": ""
+      "pista": "",
+      "grupo": "caso"
     },
     {
       "id": "vivienda",
       "etiqueta": "Tipo de vivienda",
-      "pista": ""
+      "pista": "",
+      "grupo": "caso"
     },
     {
       "id": "metros",
       "etiqueta": "Metros aproximados",
-      "pista": ""
+      "pista": "",
+      "grupo": "caso"
     },
     {
       "id": "antiguedad",
       "etiqueta": "Año del edificio o última reforma",
-      "pista": ""
+      "pista": "",
+      "grupo": ""
     },
     {
       "id": "presupuesto",
       "etiqueta": "Presupuesto que tienes en mente",
-      "pista": ""
+      "pista": "",
+      "grupo": ""
     },
     {
       "id": "nombre",
       "etiqueta": "Nombre",
-      "pista": ""
+      "pista": "",
+      "grupo": ""
     },
     {
       "id": "telefono",
       "etiqueta": "Teléfono",
-      "pista": ""
+      "pista": "",
+      "grupo": ""
     },
     {
       "id": "municipio",
       "etiqueta": "Municipio y barrio",
-      "pista": ""
+      "pista": "",
+      "grupo": ""
     },
     {
       "id": "franja",
       "etiqueta": "Cuándo te viene bien la visita",
-      "pista": ""
+      "pista": "",
+      "grupo": ""
     },
     {
       "id": "inicio",
-      "pista": ""
+      "etiqueta": "inicio",
+      "pista": "",
+      "grupo": ""
     }
+  ],
+  "obligatorios": [
+    "telefono",
+    "nombre",
+    "obra",
+    "municipio"
+  ],
+  "palabrasClave": [
+    "Obra Redonda"
   ],
   "tipos": [
     "visita",

@@ -1,0 +1,2 @@
+Ahora no me consta ninguna ayuda abierta para cambiar la bañera, y no quiero darte un dato falso. Lo apunto para que el técnico en la visita te confirme si hay una ayuda que aplique y si la tramitamos. ¿Te viene mejor por la mañana o por la tarde?
+<ficha>{"obra":"Cambiar bañera por ducha","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Pedir la visita de medición gratis para confirmar ayudas y precio.","fase":"orientando"}</ficha>

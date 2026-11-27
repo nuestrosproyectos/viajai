@@ -1,0 +1,3 @@
+Un baño completo suele durar de una a dos semanas, y en una reforma estándar ronda entre tres mil y seis mil euros. El técnico lo cierra en la visita de medición, que es gratis. ¿Es piso o casa, y de qué año es más o menos?
+<ficha>{"obra":"reformar el baño entero","vivienda":"","metros":"unos 4 metros","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Un baño completo te puede llevar de una a dos semanas y costar entre tres mil y seis mil euros; conviene la visita gratis","fase":"orientando"}</ficha>
+<mostrar>plazo</mostrar>

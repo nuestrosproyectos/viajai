@@ -7,9 +7,11 @@
 //  >>> Lo que hay que revisar antes de publicar está marcado con PENDIENTE.
 // =====================================================================
 
+import { ASISTENTE } from "./asistente.mjs";   // nombre del asistente: asistente.json
+
 export const NEGOCIO = {
   marca: "Reparo",                       // PENDIENTE: nombre definitivo (y comprobar dominio)
-  tecnico: "Andrés",                     // nombre del técnico virtual
+  tecnico: ASISTENTE.nombre,             // nombre del técnico virtual (asistente.json)
   ciudad: "Granada",
   zona: "Granada capital y área metropolitana: Armilla, Maracena, Albolote, Atarfe, Peligros, Pulianas, Jun, Huétor Vega, Cájar, La Zubia, Monachil, Ogíjares, Gójar, Alhendín, Churriana de la Vega, Las Gabias, Cúllar Vega, Santa Fe, Vegas del Genil y alrededores",
   telefono: "958 00 00 00",              // PENDIENTE: teléfono real

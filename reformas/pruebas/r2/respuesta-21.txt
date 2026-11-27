@@ -1,0 +1,2 @@
+Con la renta no te puedo ayudar y de política no hablo; me centro en reformas. Si tienes una obra en mente, te doy una idea de precio y plazo. ¿Qué estancia quieres cambiar?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"","fase":"entendiendo"}</ficha>
