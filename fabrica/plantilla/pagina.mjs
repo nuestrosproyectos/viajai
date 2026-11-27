@@ -53,7 +53,7 @@ export function datosNavegador(W, A) {
     destinos: Object.fromEntries(Object.keys(W.destinos).map(k => [k, resolver(k)])),
     final: W.final, textos: {
       fases: W.textos.fases, escEstado: W.textos.escEstado, waInicial: W.textos.waInicial, waAviso: W.textos.waAviso,
-      trasLlamada: W.textos.trasLlamada, orientacion: W.textos.orientacion, preparada: W.textos.preparada || "Solicitud preparada"
+      trasLlamada: W.textos.trasLlamada, botonCita: W.textos.botonCita || "", orientacion: W.textos.orientacion, preparada: W.textos.preparada || "Solicitud preparada"
     },
     gira: W.textos.gira || [], revelar: W.revelar || [],
     audioMicro: A.audioMicro && A.audioMicro.voz === (A.voz && A.voz.id) && A.audioMicro.nombre === A.nombre ? A.audioMicro.archivo : ""

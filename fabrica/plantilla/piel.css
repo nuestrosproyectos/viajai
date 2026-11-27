@@ -272,3 +272,6 @@ h1 em,h2 em,.subrayado{font-style:normal;color:var(--acento);background:none}
   .escenario .sol-campos{grid-template-columns:1fr}
   .escenario .sol-campos .campo.campo-ancho{grid-column:auto}
 }
+
+/* botón de cita bajo la respuesta del asistente */
+.cta-cita{display:block;margin:-2px 0 6px auto;min-height:44px;border-color:var(--acento);background:var(--acento-suave);color:var(--tinta);font-weight:700;max-width:85%}

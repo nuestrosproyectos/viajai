@@ -382,6 +382,7 @@ async function enviar(texto, { porVoz = false } = {}) {
     turnos.push({ role: "assistant", content: respuesta.replace(/<aviso>[\s\S]*?<\/aviso>/, "<aviso>(registrado)</aviso>") });
     const f = etiqueta(respuesta, "ficha"); if (f) pintarFicha(f);
     const a = etiqueta(respuesta, "aviso"); if (a && !avisoHecho) registrarAviso({ ...a, origen: "técnico virtual" });
+    ofrecerCita(b);
     if (conv.dataset.estado === "pensando") estado("reposo");
   } catch (e) {
     if (e?.code === "cancelled") return;
@@ -393,6 +394,17 @@ async function enviar(texto, { porVoz = false } = {}) {
       : sinIA ? `Ahora mismo no puedo atenderte por aquí. Llámanos al ${N.telefono} o déjanos tu teléfono y te llamamos.`
       : "Se me ha cortado la conexión. ¿Me lo repites?";
   } finally { if (enCurso === ctl) enCurso = null; }
+}
+
+/* Botón «Quiero la cita» bajo la última respuesta: la venta no depende de que el asistente la proponga
+   con las palabras justas. Solo uno a la vista, y se quita en cuanto se pide o se registra. */
+function ofrecerCita(tras) {
+  $$(".cta-cita").forEach(x => x.replaceWith());
+  if (avisoHecho || llamada || FASES.indexOf(fichaActual.fase) >= 3 || turnos.filter(t => t.role === "user").length < 1) return;
+  const t = W.textos.botonCita || ("Quiero " + W.textos.waAviso.principal);
+  const btn = document.createElement("button"); btn.type = "button"; btn.className = "chip cta-cita"; btn.textContent = t;
+  btn.addEventListener("click", () => { btn.replaceWith(); enviar(t + "."); });
+  tras.after(btn); bajar();
 }
 
 /* El asistente enseña algo: en el móvil, como tarjeta dentro de la conversación (la página no se
