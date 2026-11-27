@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Sí, por la tarde"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Elena: queda enviada la solicitud y te llamamos para confirmar el estudio por la tarde. Con el estudio, la junta tendrá números concretos. ¿Necesitas algo más?\n<ficha>{\"que\":\"Placas solares en la azotea\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea del bloque\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"688 120 777\",\"municipio\":\"Zaidín, Granada\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Estudio confirmado por la tarde; llevar los números a la junta, que debe dar su acuerdo.\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Elena: queda enviada la solicitud y te llamamos para confirmar el estudio por la tarde. Con el estudio, la junta tendrá números concretos. ¿Necesitas algo más?\n<ficha>{\"que\":\"Placas solares en la azotea\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea del bloque\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"688 120 777\",\"municipio\":\"Zaidín, Granada\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Estudio confirmado por la tarde; llevar los números a la junta, que debe dar su acuerdo.\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"estudio\",\"que\":\"Placas solares en la azotea\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea del bloque\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"688 120 777\",\"municipio\":\"Zaidín, Granada\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"urgente\":false,\"notas\":\"Bloque en el Zaidín: la azotea es común y hace falta acuerdo de la junta, con mayoría reducida (un tercio, orientativo; el administrador confirma la mayoría exacta y quién paga). Aún no se ha hablado en la comunidad; quiere llevar el estudio a la junta. Preguntó si puede poner placas solo para su vivienda: se le dijo que no en la azotea común y se le mencionó el autoconsumo compartido. Sin factura ni consumo anual todavía. Estudio por la tarde, confirmado por quien escribe.\"}</aviso>"
  }
 ]

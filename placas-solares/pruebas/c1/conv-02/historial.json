@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "622 300 415"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Rosa. Repito tu teléfono: seiscientos veintidós, trescientos, cuatrocientos quince. Con el estudio, el técnico compara tu presupuesto con uno cerrado por escrito. ¿Confirmo el estudio por la tarde?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"Casa baja con azotea\",\"consumo\":\"De noche, no mucho\",\"nombre\":\"Rosa\",\"telefono\":\"622 300 415\",\"municipio\":\"Granada capital, Zaidín\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Confirmar el estudio por la tarde y comparar con el presupuesto de 6.800 € (5 kWp y 10 kWh), pidiendo que incluya boletín y garantías por escrito.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Rosa. Repito tu teléfono: seiscientos veintidós, trescientos, cuatrocientos quince. Con el estudio, el técnico compara tu presupuesto con uno cerrado por escrito. ¿Confirmo el estudio por la tarde?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"Casa baja con azotea\",\"consumo\":\"De noche, no mucho\",\"nombre\":\"Rosa\",\"telefono\":\"622 300 415\",\"municipio\":\"Granada capital, Zaidín\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Confirmar el estudio por la tarde y comparar con el presupuesto de 6.800 € (5 kWp y 10 kWh), pidiendo que incluya boletín y garantías por escrito.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

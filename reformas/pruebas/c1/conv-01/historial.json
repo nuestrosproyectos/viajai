@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "En la Chana, Granada capital"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Marta, en La Chana. En Granada capital, un baño que no toca estructura ni distribución lo más probable es que vaya con declaración responsable, y la tramitamos nosotros. ¿Confirmo la visita de la tarde?\n<ficha>{\"obra\":\"Reforma del baño\",\"vivienda\":\"Piso\",\"metros\":\"unos 5 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Marta\",\"telefono\":\"655 321 908\",\"municipio\":\"Granada capital, La Chana\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Confirmar la visita de la tarde; el presupuesto por escrito llega después.\",\"fase\":\"datos\"}</ficha>\n<mostrar>permisos</mostrar>",
+  "original": "Perfecto, Marta, en La Chana. En Granada capital, un baño que no toca estructura ni distribución lo más probable es que vaya con declaración responsable, y la tramitamos nosotros. ¿Confirmo la visita de la tarde?\n<ficha>{\"obra\":\"Reforma del baño\",\"vivienda\":\"Piso\",\"metros\":\"unos 5 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Marta\",\"telefono\":\"655 321 908\",\"municipio\":\"Granada capital, La Chana\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Confirmar la visita de la tarde; el presupuesto por escrito llega después.\",\"fase\":\"datos\"}</ficha>\n<mostrar>permisos</mostrar>"
  }
 ]
