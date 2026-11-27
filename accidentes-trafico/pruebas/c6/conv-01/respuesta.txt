@@ -1,3 +1,0 @@
-Siento el golpe en el cuello. Lo primero es que te vea un médico hoy y quede por escrito. Da parte a tu aseguradora, que aún tienes siete días. Te reservo la primera consulta con el abogado, que es gratis. ¿Ya has ido al médico?
-
-<ficha>{"caso":"Golpe por detrás","como":"","fecha":"hace tres días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que te vea un médico hoy y quede por escrito; dar parte a tu aseguradora en siete días.","porDecir":"seguir el tratamiento y la rehabilitación · guardar fotos, testigos, informes y facturas · un año para reclamar, que en lesiones suele contar desde el alta","fase":"orientando"}</ficha>

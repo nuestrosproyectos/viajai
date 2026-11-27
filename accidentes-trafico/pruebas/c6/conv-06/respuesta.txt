@@ -1,3 +1,0 @@
-Eso depende de tu póliza: si tiene defensa jurídica, puedes elegir tu propio abogado aunque el seguro te ofrezca el suyo. Te reservo la consulta gratis, que te sirve de segunda opinión. ¿Sabes si tu póliza tiene defensa jurídica?
-
-<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Si la póliza tiene defensa jurídica, puede elegir su propio abogado; la consulta gratis le sirve de segunda opinión.","porDecir":"la póliza puede cubrir parte de los honorarios hasta un límite · si prefiere seguir con el abogado del seguro, se respeta","fase":"orientando"}</ficha>

@@ -1,3 +1,0 @@
-Siento lo que te pasó. Sí puedes: la mutua cubre tu baja, y si el otro conductor tuvo la culpa, puedes reclamar a su aseguradora a la vez. Tienes un año desde el alta. Te reservo la consulta gratis. ¿Hubo atestado de la policía?
-
-<ficha>{"caso":"Un coche le sacó de la carretera","como":"En moto","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Puede reclamar a la aseguradora del otro conductor si tuvo la culpa, a la vez que la mutua; el plazo es de un año desde el alta.","porDecir":"guardar fotos, testigos, informes y facturas · que el abogado mire las dos vías juntas","fase":"orientando"}</ficha>

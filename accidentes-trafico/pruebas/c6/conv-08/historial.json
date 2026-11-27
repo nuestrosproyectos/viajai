@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Buenos días. Le escribo porque mi madre, de 79 años, está en la UCI tras un accidente de autobús ayer en la carretera de Motril."
+ },
+ {
+  "role": "assistant",
+  "content": "Siento lo de su madre. Lo primero es su salud, lo legal puede esperar. Guarde informes y el parte o atestado. Los días de UCI cuentan en una categoría más alta del baremo. Cuando pueda le reservo la consulta gratis. ¿Iba su madre como pasajera?\n\n<ficha>{\"caso\":\"Accidente de autobús en la carretera de Motril\",\"como\":\"\",\"fecha\":\"ayer\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar los informes y el parte o atestado; los días de UCI son de una categoría más alta del baremo.\",\"porDecir\":\"si iba de pasajera, casi siempre se la indemniza, aunque aún no se sepa de quién fue la culpa · guardar los datos del otro vehículo o del autobús · las operaciones se suman aparte\",\"fase\":\"orientando\"}</ficha>",
+  "original": "Siento lo de su madre. Lo primero es su salud, lo legal puede esperar. Guarde informes y el parte o atestado. Los días de UCI cuentan en una categoría más alta del baremo. Cuando pueda le reservo la consulta gratis. ¿Iba su madre como pasajera?\n\n<ficha>{\"caso\":\"Accidente de autobús en la carretera de Motril\",\"como\":\"\",\"fecha\":\"ayer\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar los informes y el parte o atestado; los días de UCI son de una categoría más alta del baremo.\",\"porDecir\":\"si iba de pasajera, casi siempre se la indemniza, aunque aún no se sepa de quién fue la culpa · guardar los datos del otro vehículo o del autobús · las operaciones se suman aparte\",\"fase\":\"orientando\"}</ficha>"
  }
 ]

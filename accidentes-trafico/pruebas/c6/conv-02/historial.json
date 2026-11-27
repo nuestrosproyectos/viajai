@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "La aseguradora del otro me ofrece 2.300 € y me dicen que firme ya. ¿Firmo?"
+ },
+ {
+  "role": "assistant",
+  "content": "No firmes nada todavía: es urgente y lo tiene que ver el abogado antes. Si aún no tienes el alta, lo definitivo no se puede valorar. Te reservo la consulta gratis para revisar esa oferta. ¿Ya te han dado el alta médica?\n\n<ficha>{\"caso\":\"Oferta de la aseguradora del otro conductor\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada hasta que lo vea el abogado; una oferta motivada debe traer su cálculo y su informe médico.\",\"porDecir\":\"cobrar a cuenta no es firmar un finiquito\",\"fase\":\"orientando\"}</ficha>",
+  "original": "No firmes nada todavía: es urgente y lo tiene que ver el abogado antes. Si aún no tienes el alta, lo definitivo no se puede valorar. Te reservo la consulta gratis para revisar esa oferta. ¿Ya te han dado el alta médica?\n\n<ficha>{\"caso\":\"Oferta de la aseguradora del otro conductor\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada hasta que lo vea el abogado; una oferta motivada debe traer su cálculo y su informe médico.\",\"porDecir\":\"cobrar a cuenta no es firmar un finiquito\",\"fase\":\"orientando\"}</ficha>"
  }
 ]
