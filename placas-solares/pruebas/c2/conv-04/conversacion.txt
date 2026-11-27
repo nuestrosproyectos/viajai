@@ -1,0 +1,38 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Tejaluz. Dime más o menos cuánto pagas de luz al mes y te digo cuántas placas te harían falta y lo que costarían.
+
+CLIENTE: Vivo en un bloque en el Zaidín y quiero placas en la azotea. ¿Cómo lo hago?
+
+ANDRÉS: Lo primero es llevarlo a la junta: en un bloque la azotea es común y hace falta su acuerdo, con mayoría reducida, orientativamente un tercio. ¿Te reservo el estudio gratis por la mañana o por la tarde?
+<ficha>{"que":"Placas solares en la azotea del bloque","lugar":"Comunidad de vecinos","factura":"","tejado":"Azotea","consumo":"","nombre":"","telefono":"","municipio":"Granada (Zaidín)","direccion":"","franja":"","inicio":"","orientacion":"Antes de instalar, la junta de vecinos tiene que dar su acuerdo; el estudio sirve para llevarlo a la junta.","fase":"proponiendo"}</ficha>
+<mostrar>situaciones</mostrar>
+
+CLIENTE: ¿Y qué mayoría hace falta exactamente? ¿Puedo ponerlas solo para mí sin que me digan nada los vecinos?
+
+ANDRÉS: La mayoría exacta no te la sé decir: el administrador la confirma, y orientativamente es un tercio. Por tu cuenta no, porque la azotea es común y sin acuerdo no se puede instalar. ¿Te reservo el estudio por la mañana o por la tarde?
+<ficha>{"que":"Placas solares en la azotea del bloque","lugar":"Comunidad de vecinos","factura":"","tejado":"Azotea","consumo":"","nombre":"","telefono":"","municipio":"Granada (Zaidín)","direccion":"","franja":"","inicio":"","orientacion":"Hace falta el acuerdo de la junta; la azotea es común y no se puede instalar por cuenta propia. El administrador confirma la mayoría exacta.","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, entonces el estudio me sirve para llevarlo a la junta. Por la tarde mejor
+
+ANDRÉS: Por la tarde, perfecto; el estudio te sirve para llevarlo a la junta. Para llamarte y organizarlo, ¿me dices tu nombre? Y que sepas que también existe el autoconsumo compartido entre vecinos, que podéis valorar en la junta.
+<ficha>{"que":"Placas solares en la azotea del bloque","lugar":"Comunidad de vecinos","factura":"","tejado":"Azotea","consumo":"","nombre":"","telefono":"","municipio":"Granada (Zaidín)","direccion":"","franja":"Por la tarde","inicio":"","orientacion":"Hace falta el acuerdo de la junta, porque la azotea es común; el estudio le sirve para llevarlo a la junta.","fase":"datos"}</ficha>
+
+CLIENTE: Elena
+
+ANDRÉS: Gracias, Elena, lo anoto para la tarde. Para llamarte y organizar el estudio, ¿me dices tu número de teléfono?
+<ficha>{"que":"Placas solares en la azotea del bloque","lugar":"Comunidad de vecinos","factura":"","tejado":"Azotea","consumo":"","nombre":"Elena","telefono":"","municipio":"Granada (Zaidín)","direccion":"","franja":"Por la tarde","inicio":"","orientacion":"Hace falta el acuerdo de la junta, porque la azotea es común; el estudio le sirve para llevarlo a la junta.","fase":"datos"}</ficha>
+
+CLIENTE: 688 120 777
+
+ANDRÉS: Gracias, Elena, anotado. En Granada capital, el impuesto de obras tiene una bonificación del 95 % si la instalación es voluntaria, pero hay que pedirla. Para la visita, ¿en qué calle y número está el bloque?
+<ficha>{"que":"Placas solares en la azotea del bloque","lugar":"Comunidad de vecinos","factura":"","tejado":"Azotea","consumo":"","nombre":"Elena","telefono":"688 120 777","municipio":"Granada (Zaidín)","direccion":"","franja":"Por la tarde","inicio":"","orientacion":"Hace falta el acuerdo de la junta, porque la azotea es común; el estudio le sirve para llevarlo a la junta.","fase":"datos"}</ficha>
+
+CLIENTE: Calle Arabial 50
+
+ANDRÉS: Elena, te confirmo: estudio por la tarde, en la calle Arabial 50 del Zaidín, Granada, y te llamamos al seis ocho ocho, uno dos cero, siete siete siete. ¿Está todo bien?
+<ficha>{"que":"Placas solares en la azotea del bloque","lugar":"Comunidad de vecinos","factura":"","tejado":"Azotea","consumo":"","nombre":"Elena","telefono":"688 120 777","municipio":"Granada (Zaidín)","direccion":"Calle Arabial 50","franja":"Por la tarde","inicio":"","orientacion":"Hace falta el acuerdo de la junta, porque la azotea es común; el estudio le sirve para llevarlo a la junta.","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Gracias, Elena. La solicitud queda enviada y te llamamos para confirmar el estudio de la tarde. Después del estudio, el presupuesto cerrado llega por escrito en unos cinco días laborables. ¿Necesitas algo más?
+<ficha>{"que":"Placas solares en la azotea del bloque","lugar":"Comunidad de vecinos","factura":"","tejado":"Azotea","consumo":"","nombre":"Elena","telefono":"688 120 777","municipio":"Granada (Zaidín)","direccion":"Calle Arabial 50","franja":"Por la tarde","inicio":"","orientacion":"Hace falta el acuerdo de la junta, porque la azotea es común; el estudio le sirve para llevarlo a la junta.","fase":"registrado"}</ficha>
+<aviso>{"tipo":"estudio","que":"Placas solares en la azotea del bloque","lugar":"Comunidad de vecinos","factura":"","tejado":"Azotea","consumo":"","nombre":"Elena","telefono":"688 120 777","municipio":"Granada (Zaidín)","direccion":"Calle Arabial 50","franja":"Por la tarde","inicio":"","urgente":false,"notas":"Vive en un bloque en el Zaidín y quiere placas en la azotea, que es común. Preguntó qué mayoría hace falta en la junta y si puede instalarlas por su cuenta sin que los vecinos digan nada. Quiere el estudio por la tarde, para llevarlo a la junta."}</aviso>

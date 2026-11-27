@@ -1,0 +1,44 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Tejaluz. Dime más o menos cuánto pagas de luz al mes y te digo cuántas placas te harían falta y lo que costarían.
+
+CLIENTE: Me han dado un presupuesto de 6.800 € por 5 kWp con una batería de 10 kWh. ¿Está bien de precio?
+
+ANDRÉS: Orientativamente, cinco kilovatios de placas y diez kilovatios hora de batería rondan entre nueve mil quinientos y quince mil quinientos euros: tu presupuesto queda por debajo. Revisa boletín, legalización y garantías por escrito. ¿Te reservo el estudio por la mañana o por la tarde?
+<ficha>{"que":"Revisar un presupuesto de placas con batería","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Presupuesto de 6.800 € por 5 kWp con batería de 10 kWh, por debajo del rango orientativo; revisar que incluya legalización y garantías por escrito.","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>
+
+CLIENTE: Vale, ¿y si el mío es más barato por qué es? Y otra cosa, ¿me bajan el IBI con las placas?
+
+ANDRÉS: En Granada capital, el IBI baja un 50 % si lo pides y está domiciliado; en otros municipios depende de su ordenanza. Por qué es más barato no lo sé seguro: lo revisa el técnico. ¿Te reservo el estudio por la mañana o por la tarde?
+<ficha>{"que":"Revisar un presupuesto de placas con batería","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Presupuesto de 6.800 € por 5 kWp con batería de 10 kWh, por debajo del rango orientativo; revisar que incluya legalización y garantías por escrito.","fase":"proponiendo"}</ficha>
+<mostrar>ayudas</mostrar>
+
+CLIENTE: Vale, gracias. Pues sí, resérvame el estudio para comparar, por la tarde
+
+ANDRÉS: Por la tarde, perfecto, lo dejo anotado. Para llamarte y organizar el estudio, ¿me dices tu nombre? Y el IBI hay que pedirlo; lo más probable es que la bonificación se aplique desde el año siguiente a la instalación.
+<ficha>{"que":"Placas con batería, para comparar con su presupuesto","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"Por la tarde","inicio":"","orientacion":"Comparar el presupuesto de 6.800 € (5 kWp con batería de 10 kWh) con el estudio; revisar que incluya legalización y garantías por escrito.","fase":"datos"}</ficha>
+
+CLIENTE: Rosa
+
+ANDRÉS: Gracias, Rosa, lo dejo anotado para la tarde. Para llamarte y organizar el estudio, ¿me dices tu número de teléfono?
+<ficha>{"que":"Placas con batería, para comparar con su presupuesto","lugar":"","factura":"","tejado":"","consumo":"","nombre":"Rosa","telefono":"","municipio":"","direccion":"","franja":"Por la tarde","inicio":"","orientacion":"Comparar el presupuesto de 6.800 € (5 kWp con batería de 10 kWh) con el estudio; revisar que incluya legalización y garantías por escrito.","fase":"datos"}</ficha>
+
+CLIENTE: 622 300 415
+
+ANDRÉS: Gracias, Rosa, anotado. Para comparar bien, mira que el presupuesto tenga por escrito las garantías de placas, inversor, batería y mano de obra. ¿En qué municipio está la vivienda?
+<ficha>{"que":"Placas con batería, para comparar con su presupuesto","lugar":"","factura":"","tejado":"","consumo":"","nombre":"Rosa","telefono":"622 300 415","municipio":"","direccion":"","franja":"Por la tarde","inicio":"","orientacion":"Comparar el presupuesto de 6.800 € (5 kWp con batería de 10 kWh) con el estudio; revisar que incluya legalización y garantías por escrito.","fase":"datos"}</ficha>
+
+CLIENTE: Granada capital, en el Zaidín
+
+ANDRÉS: Rosa, en Granada capital el impuesto de obras tiene una bonificación del noventa y cinco por ciento si la instalación es de autoconsumo y voluntaria. Para reservarte el estudio de la tarde, ¿en qué calle y número está la vivienda?
+<ficha>{"que":"Placas con batería, para comparar con su presupuesto","lugar":"","factura":"","tejado":"","consumo":"","nombre":"Rosa","telefono":"622 300 415","municipio":"Granada capital, Zaidín","direccion":"","franja":"Por la tarde","inicio":"","orientacion":"Comparar el presupuesto de 6.800 € (5 kWp con batería de 10 kWh) con el estudio; revisar que incluya legalización y garantías por escrito.","fase":"datos"}</ficha>
+
+CLIENTE: Calle Palencia 10
+
+ANDRÉS: Rosa, te confirmo: estudio por la tarde, en la calle Palencia 10 del Zaidín, Granada, y te llamamos al seis dos dos, tres cero cero, cuatro uno cinco. Después del estudio, el presupuesto cerrado llega por escrito en unos cinco días laborables. ¿Está todo bien?
+<ficha>{"que":"Placas con batería, para comparar con su presupuesto","lugar":"","factura":"","tejado":"","consumo":"","nombre":"Rosa","telefono":"622 300 415","municipio":"Granada capital, Zaidín","direccion":"Calle Palencia 10","franja":"Por la tarde","inicio":"","orientacion":"Comparar el presupuesto de 6.800 € (5 kWp con batería de 10 kWh) con el estudio; revisar que incluya legalización y garantías por escrito.","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien. Gracias
+
+ANDRÉS: Perfecto, Rosa. La solicitud queda enviada: te llamamos para confirmar el estudio de la tarde. Si puedes, manda una foto de tu factura de luz desde la conversación; ayuda al técnico a ir preparado. ¿Necesitas algo más?
+<ficha>{"que":"Placas con batería, para comparar con su presupuesto","lugar":"","factura":"","tejado":"","consumo":"","nombre":"Rosa","telefono":"622 300 415","municipio":"Granada capital, Zaidín","direccion":"Calle Palencia 10","franja":"Por la tarde","inicio":"","orientacion":"Comparar el presupuesto de 6.800 € (5 kWp con batería de 10 kWh) con el estudio; revisar que incluya legalización y garantías por escrito.","fase":"registrado"}</ficha>
+<aviso>{"tipo":"estudio","que":"Placas con batería, para comparar con su presupuesto","lugar":"","factura":"","tejado":"","consumo":"","nombre":"Rosa","telefono":"622 300 415","municipio":"Granada capital, Zaidín","direccion":"Calle Palencia 10","franja":"Por la tarde","inicio":"","urgente":false,"notas":"Tiene un presupuesto de 6.800 € por 5 kWp con batería de 10 kWh y quiere el estudio para compararlo. Preguntó si el precio está bien, por qué puede salir más barato y si le bajan el IBI con las placas."}

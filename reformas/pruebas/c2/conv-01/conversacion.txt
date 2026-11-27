@@ -1,0 +1,43 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Obra Redonda. Cuéntame qué quieres reformar y te doy una idea de precio y plazo.
+
+CLIENTE: Hola, quiero reformar el baño de mi piso, cuánto me puede costar?
+
+ANDRÉS: Un baño completo suele quedar entre tres mil y seis mil euros, de una a dos semanas. El precio exacto sale del presupuesto tras la visita de medición, gratis y de unos cuarenta y cinco minutos. ¿Quieres cambiar solo la bañera o el baño entero?
+<ficha>{"obra":"reformar el baño","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Ver si basta con cambiar la bañera o hace falta reformar el baño entero; la visita de medición es gratis.","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>
+
+CLIENTE: Solo la bañera no, quiero quitarla y poner plato de ducha, y cambiar azulejos y lavabo también. Es un piso del 78, unos 5 m²
+
+ANDRÉS: Con azulejos y lavabo es un baño completo y el rango de antes sí aplica. En un piso del setenta y ocho, el imprevisto más habitual son las tuberías viejas, por eso conviene medir antes. ¿Te reservo la visita por la mañana o por la tarde?
+<ficha>{"obra":"Cambiar bañera por plato de ducha, azulejos y lavabo del baño","vivienda":"","metros":"unos 5 m²","antiguedad":"Piso del 78","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Baño completo; en un piso de 1978 conviene revisar las tuberías en la visita de medición, que es gratis.","fase":"proponiendo"}</ficha>
+
+CLIENTE: Por la tarde mejor
+
+ANDRÉS: Por la tarde, perfecto. Para llamarte y organizar la visita, ¿me dices tu nombre? Y como es un piso, conviene avisar por escrito al presidente o al administrador de la comunidad.
+<ficha>{"obra":"Cambiar bañera por plato de ducha, azulejos y lavabo del baño","vivienda":"Piso","metros":"unos 5 m²","antiguedad":"Piso del 78","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"Por la tarde","inicio":"","orientacion":"Baño completo; en un piso de 1978 conviene revisar las tuberías en la visita de medición, que es gratis.","fase":"datos"}</ficha>
+
+CLIENTE: Marta
+
+ANDRÉS: Perfecto, Marta, queda anotado. Para llamarte y organizar la visita, ¿me dices tu número de teléfono?
+<ficha>{"obra":"Cambiar bañera por plato de ducha, azulejos y lavabo del baño","vivienda":"Piso","metros":"unos 5 m²","antiguedad":"Piso del 78","presupuesto":"","nombre":"Marta","telefono":"","municipio":"","direccion":"","franja":"Por la tarde","inicio":"","orientacion":"Baño completo; en un piso de 1978 conviene revisar las tuberías en la visita de medición, que es gratis.","fase":"datos"}</ficha>
+
+CLIENTE: 655 321 908
+
+ANDRÉS: Gracias, Marta, anotado. En un piso antiguo también conviene revisar la instalación eléctrica: la cambia una empresa habilitada, que emite el boletín. ¿En qué municipio y barrio está el piso?
+<ficha>{"obra":"Cambiar bañera por plato de ducha, azulejos y lavabo del baño","vivienda":"Piso","metros":"unos 5 m²","antiguedad":"Piso del 78","presupuesto":"","nombre":"Marta","telefono":"655 321 908","municipio":"","direccion":"","franja":"Por la tarde","inicio":"","orientacion":"Baño completo; conviene revisar tuberías y electricidad en la visita de medición, que es gratis.","fase":"datos"}</ficha>
+
+CLIENTE: Granada capital, en la Chana
+
+ANDRÉS: Gracias, Marta. En Granada capital, lo más probable es que un baño sin tocar muros vaya con declaración responsable, y la tramitamos nosotros. Para reservarte la visita de la tarde, ¿me dices la calle y el número?
+<ficha>{"obra":"Cambiar bañera por plato de ducha, azulejos y lavabo del baño","vivienda":"Piso","metros":"unos 5 m²","antiguedad":"Piso del 78","presupuesto":"","nombre":"Marta","telefono":"655 321 908","municipio":"Granada capital, La Chana","direccion":"","franja":"Por la tarde","inicio":"","orientacion":"Baño completo; conviene revisar tuberías y electricidad en la visita de medición, que es gratis.","fase":"datos"}</ficha>
+
+CLIENTE: Calle Doctor Olóriz 14
+
+ANDRÉS: Muy bien, Marta. Tras la visita, el presupuesto por escrito llega en unos cinco días laborables. Te repito: visita gratis por la tarde, en Doctor Olóriz catorce, La Chana, y tu teléfono es seis cinco cinco, tres dos uno, nueve cero ocho. ¿Está todo bien?
+<ficha>{"obra":"Cambiar bañera por plato de ducha, azulejos y lavabo del baño","vivienda":"Piso","metros":"unos 5 m²","antiguedad":"Piso del 78","presupuesto":"","nombre":"Marta","telefono":"655 321 908","municipio":"Granada capital, La Chana","direccion":"Calle Doctor Olóriz 14","franja":"Por la tarde","inicio":"","orientacion":"Baño completo; conviene revisar tuberías y electricidad en la visita de medición, que es gratis.","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien. Gracias
+
+ANDRÉS: Perfecto, Marta. La solicitud queda enviada y te llamamos para confirmar la visita, gratis y por la tarde; el técnico revisará allí tuberías y electricidad. ¿Necesitas algo más?
+<ficha>{"obra":"Cambiar bañera por plato de ducha, azulejos y lavabo del baño","vivienda":"Piso","metros":"unos 5 m²","antiguedad":"Piso del 78","presupuesto":"","nombre":"Marta","telefono":"655 321 908","municipio":"Granada capital, La Chana","direccion":"Calle Doctor Olóriz 14","franja":"Por la tarde","inicio":"","orientacion":"Visita de medición gratis solicitada por la tarde; el técnico revisará tuberías y electricidad.","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","obra":"Cambiar bañera por plato de ducha, azulejos y lavabo del baño","vivienda":"Piso","metros":"unos 5 m²","antiguedad":"Piso del 78","presupuesto":"","nombre":"Marta","telefono":"655 321 908","municipio":"Granada capital, La Chana","direccion":"Calle Doctor Olóriz 14","franja":"Por la tarde","inicio":"","urgente":false,"notas":"Baño completo: cambiar bañera por plato de ducha, azulejos y lavabo. Piso de 1978, unos 5 m². Visita por la tarde. Preguntó por el baño completo y el precio orientativo."}

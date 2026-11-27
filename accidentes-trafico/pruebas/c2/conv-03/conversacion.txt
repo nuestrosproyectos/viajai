@@ -1,0 +1,37 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Accidente Claro. Siento lo del accidente. Cuéntame qué pasó y te digo qué conviene hacer ahora.
+
+CLIENTE: Tuve yo la culpa del accidente, me salté un ceda. Iba con mi mujer y ella se rompió la muñeca.
+
+ANDRÉS: Lo primero es que tu mujer vea un médico hoy y quede por escrito. Como pasajera, ella normalmente sí puede reclamar aunque la culpa fuera tuya. ¿Te reservo la primera consulta gratis, por la mañana o por la tarde?
+<ficha>{"caso":"Accidente por saltarse un ceda; iba de pasajera su mujer","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Tu mujer, como pasajera, puede reclamar; que vea un médico hoy.","fase":"proponiendo"}</ficha>
+
+CLIENTE: Y eso a mi no me perjudica en nada? Que la culpa fue mia y no se si me van a complicar la vida
+
+ANDRÉS: Entiendo la preocupación. Tu culpa no impide que tu mujer reclame como pasajera, pero a ti tu seguro obligatorio no te cubre tus lesiones salvo que tengas seguro de conductor. ¿Te reservo la consulta por la mañana o por la tarde?
+<ficha>{"caso":"Accidente por saltarse un ceda; iba de pasajera su mujer","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que tu mujer vea un médico hoy; revisa si tienes seguro de conductor o de accidentes.","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, gracias. Entonces por la tarde mejor, y por videollamada si puede ser, que es para mi mujer
+
+ANDRÉS: Perfecto, te apunto la consulta por la tarde, por videollamada, para tu mujer. Guarda el parte amistoso y las fotos. Solo es para llamarte y organizarla. ¿Me dices tu nombre?
+<ficha>{"caso":"Accidente por saltarse un ceda; iba de pasajera su mujer","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"Por la tarde, por videollamada","consentimientoSalud":"","orientacion":"Que tu mujer vea un médico hoy y guarda el parte amistoso y las fotos.","fase":"datos"}</ficha>
+
+CLIENTE: Pedro
+
+ANDRÉS: Gracias, Pedro. Si a tu mujer le duele mucho o no puede mover la mano, que vaya a urgencias ya. ¿Me das un teléfono para organizar la consulta?
+<ficha>{"caso":"Accidente por saltarse un ceda; iba de pasajera su mujer","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"Pedro","telefono":"","municipio":"","franja":"Por la tarde, por videollamada","consentimientoSalud":"","orientacion":"Que tu mujer vea un médico hoy y guarda el parte amistoso y las fotos.","fase":"datos"}</ficha>
+
+CLIENTE: 600 909 303
+
+ANDRÉS: Gracias, Pedro, ya tengo el teléfono. Y tú, comunica el accidente a tu aseguradora en siete días. ¿En qué municipio vives?
+<ficha>{"caso":"Accidente por saltarse un ceda; iba de pasajera su mujer","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"Pedro","telefono":"600 909 303","municipio":"","franja":"Por la tarde, por videollamada","consentimientoSalud":"","orientacion":"Que tu mujer vea un médico hoy; avisa a tu aseguradora en siete días y guarda el parte amistoso y las fotos.","fase":"datos"}</ficha>
+
+CLIENTE: En Loja
+
+ANDRÉS: Perfecto, Pedro. Te llamamos al seis cero cero, nueve cero nueve, tres cero tres, para la consulta de tu mujer por videollamada por la tarde, en Loja. ¿Está todo bien?
+<ficha>{"caso":"Accidente por saltarse un ceda; iba de pasajera su mujer","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"Pedro","telefono":"600 909 303","municipio":"Loja","franja":"Por la tarde, por videollamada","consentimientoSalud":"","orientacion":"Que tu mujer vea un médico hoy; avisa a tu aseguradora en siete días y guarda el parte amistoso y las fotos.","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Perfecto, Pedro. La solicitud queda enviada y te llamamos por la tarde para la consulta de tu mujer. Mientras, reúne sus informes médicos y guárdalos. ¿Necesitas algo más?
+<ficha>{"caso":"Accidente por saltarse un ceda; iba de pasajera su mujer","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"Pedro","telefono":"600 909 303","municipio":"Loja","franja":"Por la tarde, por videollamada","consentimientoSalud":"","orientacion":"Que tu mujer vea un médico hoy; avisa a tu aseguradora en siete días y guarda el parte amistoso y las fotos.","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","caso":"Accidente por saltarse un ceda; iba de pasajera su mujer","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"Pedro","telefono":"600 909 303","municipio":"Loja","franja":"Por la tarde, por videollamada","consentimientoSalud":"","urgente":false,"notas":"Él conducía y se saltó un ceda; reconoce la culpa. Iba con su mujer, que era pasajera. La consulta es para su mujer, por la tarde, por videollamada. Preguntó si la culpa le perjudica: se le dijo que el seguro obligatorio no cubre sus propias lesiones salvo seguro de conductor o de accidentes, y que el abogado lo revisa. Le preocupa que le compliquen la vida."}</aviso>

@@ -1,0 +1,43 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Accidente Claro. Siento lo del accidente. Cuéntame qué pasó y te digo qué conviene hacer ahora.
+
+CLIENTE: Me atropellaron hace un año y medio en un paso de cebra. ¿Ya es tarde para reclamar?
+
+ANDRÉS: Entiendo la preocupación. El plazo de un año suele contar desde el alta médica, no desde el día del atropello, pero eso lo mira el abogado. Si quieres, te reservo la consulta gratis para cuanto antes. ¿Cuándo te dieron el alta?
+<ficha>{"caso":"Atropello en un paso de cebra","como":"Andando","fecha":"Hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Ver cuanto antes la fecha del alta y si se reclamó algo por escrito.","fase":"proponiendo"}</ficha>
+<mostrar>plazo</mostrar>
+
+CLIENTE: Me dieron el alta hace 7 meses, pero no he reclamado nada todavía
+
+ANDRÉS: Gracias por contarlo. Con el accidente hace más de un año, conviene que el abogado mire pronto cómo se cuenta el plazo desde el alta. Reclamar por escrito lo interrumpe. ¿Te reservo la consulta gratis, por la mañana o por la tarde?
+<ficha>{"caso":"Atropello en un paso de cebra","como":"Andando","fecha":"Hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Ver cuanto antes el plazo: alta hace siete meses y ninguna reclamación por escrito todavía.","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, pues sí, resérvamela. Por la mañana mejor
+
+ANDRÉS: Perfecto, te apunto la consulta gratis por la mañana. Busca el informe del alta y las facturas de lo que has gastado. Solo es para llamarte y organizarla. ¿Me dices tu nombre?
+<ficha>{"caso":"Atropello en un paso de cebra; alta hace siete meses y sin reclamar nada","como":"Andando","fecha":"Hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"Por la mañana","consentimientoSalud":"","orientacion":"Guarda el informe del alta y las facturas; reclamar por escrito interrumpe el plazo.","fase":"datos"}</ficha>
+
+CLIENTE: Inés
+
+ANDRÉS: Gracias, Inés. Si te llega algo de la aseguradora, no firmes nada antes de la consulta. ¿Me dejas un teléfono para llamarte y organizarla?
+<ficha>{"caso":"Atropello en un paso de cebra; alta hace siete meses y sin reclamar nada","como":"Andando","fecha":"Hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Inés","telefono":"","municipio":"","franja":"Por la mañana","consentimientoSalud":"","orientacion":"Guarda el informe del alta y las facturas; reclamar por escrito interrumpe el plazo.","fase":"datos"}</ficha>
+
+CLIENTE: 655 777 333
+
+ANDRÉS: Gracias, Inés. La ley protege mucho a los peatones: la aseguradora solo se libra si la culpa fue solo de la víctima. ¿En qué municipio vives?
+<ficha>{"caso":"Atropello en un paso de cebra; alta hace siete meses y sin reclamar nada","como":"Andando","fecha":"Hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Inés","telefono":"655 777 333","municipio":"","franja":"Por la mañana","consentimientoSalud":"","orientacion":"Guarda el informe del alta y las facturas; reclamar por escrito interrumpe el plazo.","fase":"datos"}</ficha>
+
+CLIENTE: En Granada capital, en el Realejo
+
+ANDRÉS: Gracias, Inés. Te apunto la consulta de la mañana en el Realejo. ¿La prefieres por teléfono, por videollamada o en el despacho?
+<ficha>{"caso":"Atropello en un paso de cebra; alta hace siete meses y sin reclamar nada","como":"Andando","fecha":"Hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Inés","telefono":"655 777 333","municipio":"Granada capital (Realejo)","franja":"Por la mañana","consentimientoSalud":"","orientacion":"Guarda el informe del alta y las facturas; reclamar por escrito interrumpe el plazo.","fase":"datos"}</ficha>
+
+CLIENTE: En el despacho, presencial
+
+ANDRÉS: Perfecto, Inés. Te apunto la consulta presencial en el despacho, por la mañana, para Granada capital, Realejo. Te llamamos al seis cinco cinco, siete siete siete, tres tres tres. ¿Está todo bien?
+<ficha>{"caso":"Atropello en un paso de cebra; alta hace siete meses y sin reclamar nada","como":"Andando","fecha":"Hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Inés","telefono":"655 777 333","municipio":"Granada capital (Realejo)","franja":"Por la mañana, en el despacho","consentimientoSalud":"","orientacion":"Guarda el informe del alta y las facturas; reclamar por escrito interrumpe el plazo.","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Perfecto, Inés. La solicitud queda enviada y te llamamos para confirmar la consulta gratis de la mañana, en el despacho. ¿Necesitas algo más?
+<ficha>{"caso":"Atropello en un paso de cebra; alta hace siete meses y sin reclamar nada","como":"Andando","fecha":"Hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Inés","telefono":"655 777 333","municipio":"Granada capital (Realejo)","franja":"Por la mañana, en el despacho","consentimientoSalud":"","orientacion":"Guarda el informe del alta y las facturas; reclamar por escrito interrumpe el plazo.","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","caso":"Atropello en un paso de cebra; alta hace siete meses y sin reclamar nada","como":"Andando","fecha":"Hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Inés","telefono":"655 777 333","municipio":"Granada capital (Realejo)","franja":"Por la mañana, en el despacho","consentimientoSalud":"","urgente":true,"notas":"Atropello en un paso de cebra hace un año y medio. Le dieron el alta hace siete meses y todavía no ha reclamado nada por escrito; pregunta si ya es tarde para reclamar. Quiere la consulta por la mañana, presencial en el despacho. No ha dado datos de salud ni de culpa."}

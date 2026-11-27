@@ -74,5 +74,10 @@
  {
   "role": "user",
   "content": "Sí, correcto."
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Antonio: queda enviada tu solicitud para la visita de medición gratis por la mañana, en Calle Real, veintidós, en Las Gabias. Te llamamos para confirmarla. ¿Necesitas algo más?\n<ficha>{\"obra\":\"Cocina entera\",\"vivienda\":\"Casa\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"Las Gabias\",\"direccion\":\"Calle Real, 22\",\"franja\":\"Por la mañana\",\"inicio\":\"\",\"orientacion\":\"Solicitud enviada: visita de medición gratis por la mañana y le llamamos para confirmarla.\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>\n</content>",
+  "original": "Perfecto, Antonio: queda enviada tu solicitud para la visita de medición gratis por la mañana, en Calle Real, veintidós, en Las Gabias. Te llamamos para confirmarla. ¿Necesitas algo más?\n<ficha>{\"obra\":\"Cocina entera\",\"vivienda\":\"Casa\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"Las Gabias\",\"direccion\":\"Calle Real, 22\",\"franja\":\"Por la mañana\",\"inicio\":\"\",\"orientacion\":\"Solicitud enviada: visita de medición gratis por la mañana y le llamamos para confirmarla.\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"obra\":\"Cocina entera\",\"vivienda\":\"Casa\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"Las Gabias\",\"direccion\":\"Calle Real, 22\",\"franja\":\"Por la mañana\",\"inicio\":\"\",\"urgente\":false,\"notas\":\"Cocina entera de unos 10 m² en una casa de Las Gabias. Quiere la visita de medición por la mañana. Preguntó si la visita tiene coste (es gratis) y si el presupuesto es cerrado; se le explicó que es por partidas y por escrito, y que lo oculto se presupuesta y no se hace sin su firma. No dijo antigüedad, presupuesto ni fecha de inicio.\"}</aviso>\n</content>"
  }
 ]

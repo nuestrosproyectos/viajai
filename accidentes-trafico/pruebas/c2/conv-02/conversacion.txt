@@ -1,0 +1,38 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Accidente Claro. Siento lo del accidente. Cuéntame qué pasó y te digo qué conviene hacer ahora.
+
+CLIENTE: La aseguradora del otro me ofrece 2.300 € y me dicen que firme ya. ¿Firmo?
+
+ANDRÉS: No firmes nada todavía: un papel definitivo puede cerrar la puerta a reclamar más. El abogado revisa la oferta con los informes delante, en la primera consulta gratis. ¿Te reservo la consulta por la mañana o por la tarde?
+<ficha>{"caso":"Accidente de tráfico; la aseguradora del otro ofrece 2.300 € y pide firmar","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"No firmes nada hasta que lo revise el abogado.","fase":"proponiendo"}</ficha>
+<mostrar>oferta</mostrar>
+
+CLIENTE: Por la mañana mejor. Pero dime, 2.300 € ¿es poco? Me estan presionando para firmar
+
+ANDRÉS: Sin ver tu caso no sé decirte si es poco: depende de tus días de baja, las secuelas y los gastos. Y no firmes con prisas; un papel definitivo cierra la puerta. Te apunto para la consulta por la mañana. ¿Cómo te llamas?
+<ficha>{"caso":"Accidente de tráfico; la aseguradora del otro ofrece 2.300 € y pide firmar","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"por la mañana","consentimientoSalud":"","orientacion":"No firmes nada hasta que lo revise el abogado.","fase":"datos"}</ficha>
+
+CLIENTE: Sonia
+
+ANDRÉS: Gracias, Sonia. Entiendo la presión, pero no tienes que decidir hoy. Si insisten, pide la oferta por escrito con su cálculo. ¿Qué teléfono te llamamos para la consulta?
+<ficha>{"caso":"Accidente de tráfico; la aseguradora del otro ofrece 2.300 € y pide firmar","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"Sonia","telefono":"","municipio":"","franja":"Por la mañana","consentimientoSalud":"","orientacion":"No firmes; si insisten, pide la oferta por escrito con su cálculo.","fase":"datos"}</ficha>
+
+CLIENTE: 633 202 404
+
+ANDRÉS: Gracias, Sonia, lo apunto. Si aún no tienes el alta médica, eso también lo mira el abogado en la consulta. ¿En qué municipio vives?
+<ficha>{"caso":"Accidente de tráfico; la aseguradora del otro ofrece 2.300 € y pide firmar","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"Sonia","telefono":"633 202 404","municipio":"","franja":"Por la mañana","consentimientoSalud":"","orientacion":"No firmes; si insisten, pide la oferta por escrito con su cálculo.","fase":"datos"}</ficha>
+
+CLIENTE: En Motril
+
+ANDRÉS: Gracias, Sonia, anoto Motril. Y cobrar a cuenta no es firmar un finiquito; eso lo revisa el abogado. ¿Prefieres la consulta por teléfono, por videollamada o en el despacho?
+<ficha>{"caso":"Accidente de tráfico; la aseguradora del otro ofrece 2.300 € y pide firmar","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"Sonia","telefono":"633 202 404","municipio":"Motril","franja":"Por la mañana","consentimientoSalud":"","orientacion":"No firmes; si insisten, pide la oferta por escrito con su cálculo.","fase":"datos"}</ficha>
+
+CLIENTE: Por teléfono
+
+ANDRÉS: Perfecto, Sonia. Te llamamos por teléfono por la mañana, al seis tres tres, dos cero dos, cuatro cero cuatro, para la consulta de Motril. ¿Está todo bien?
+<ficha>{"caso":"Accidente de tráfico; la aseguradora del otro ofrece 2.300 € y pide firmar","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"Sonia","telefono":"633 202 404","municipio":"Motril","franja":"Por la mañana, por teléfono","consentimientoSalud":"","orientacion":"No firmes; si insisten, pide la oferta por escrito con su cálculo.","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Perfecto, Sonia. La solicitud queda enviada y te llamamos por la mañana para la consulta. Mientras, guarda cualquier carta de la aseguradora sin firmar nada. ¿Necesitas algo más?
+<ficha>{"caso":"Accidente de tráfico; la aseguradora del otro ofrece 2.300 € y pide firmar","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"Sonia","telefono":"633 202 404","municipio":"Motril","franja":"Por la mañana, por teléfono","consentimientoSalud":"","orientacion":"No firmes; si insisten, pide la oferta por escrito con su cálculo.","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","caso":"Accidente de tráfico; la aseguradora del otro ofrece 2.300 € y pide firmar","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"Sonia","telefono":"633 202 404","municipio":"Motril","franja":"Por la mañana, por teléfono","consentimientoSalud":"","urgente":true,"notas":"La aseguradora del otro ofrece 2.300 € y le piden firmar ya; dice que la presionan. Aún no ha firmado nada. Pregunta si la cifra es poca; se le dijo que el abogado lo confirma con su caso delante. Prefiere la consulta por teléfono por la mañana."}

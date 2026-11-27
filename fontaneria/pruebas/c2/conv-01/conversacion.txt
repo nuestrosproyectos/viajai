@@ -1,0 +1,33 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Llave de Paso. Si te está saliendo agua, cierra primero la llave de paso. Cuéntame qué te pasa y te mando al fontanero.
+
+CLIENTE: Socorro, sale agua por debajo del fregadero y no para!!
+
+ANDRÉS: Cierra ya la llave de paso de tu casa, suele estar en la cocina, el baño o junto al contador, y aparta lo que se pueda mojar. Te mando al fontanero urgente o lo dejamos programado. ¿Ha parado el agua al cerrarla?
+<ficha>{"averia":"agua por debajo del fregadero, no para","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Cierra ya la llave de paso y aparta lo que se pueda mojar.","fase":"orientando"}</ficha>
+<mostrar>seguridad</mostrar>
+
+CLIENTE: No sé dónde está la llave de paso, estoy muy nerviosa, el agua sigue saliendo
+
+ANDRÉS: Entiendo el susto. Si no encuentras la llave, busca junto al contador y ciérrala. ¿Te mando al fontanero urgente ahora? Dime tu nombre y un teléfono.
+<ficha>{"averia":"agua por debajo del fregadero, no para","cuando":"","llave":"No la encuentras; sigue saliendo agua","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Busca la llave junto al contador y ciérrala; aparta lo que se pueda mojar.","fase":"proponiendo"}</ficha>
+
+CLIENTE: La encontré, estaba debajo del fregadero y ya ha parado el agua. Soy Pilar, 610 223 344
+
+ANDRÉS: Me alegra que ya haya parado, Pilar. Con la llave cerrada puede esperar a mañana, y te reservo la visita. Haz fotos del agua y del fregadero para el seguro. ¿En qué municipio y barrio vives?
+<ficha>{"averia":"agua por debajo del fregadero","cuando":"","llave":"Sí, la encontraste y ya no sale agua","vivienda":"","seguro":"","nombre":"Pilar","telefono":"610 223 344","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Haz fotos para el seguro; con la llave cerrada puede esperar a mañana.","fase":"proponiendo"}</ficha>
+
+CLIENTE: En Granada capital, en Recogidas. No puede venir alguien hoy? Prefiero que lo miren cuanto antes
+
+ANDRÉS: Lo entiendo, Pilar. Te apunto la visita lo antes posible y, al recibir el aviso, te llamamos para darte la hora. ¿Me dices la calle y el número?
+<ficha>{"averia":"agua por debajo del fregadero, ya parada","cuando":"Hoy, en cuanto podáis","llave":"Sí, la encontraste y ya no sale agua","vivienda":"","seguro":"","nombre":"Pilar","telefono":"610 223 344","municipio":"Granada capital","direccion":"Barrio de Recogidas","franja":"lo antes posible","inicio":"","orientacion":"Haz fotos del agua y del fregadero para el seguro.","fase":"proponiendo"}</ficha>
+
+CLIENTE: Recogidas 40, 2º B
+
+ANDRÉS: Pilar, lo apunto: Recogidas cuarenta, segundo B, Granada capital, visita lo antes posible. Te llamamos al seis uno cero, dos dos tres, tres cuatro cuatro. Si tienes seguro de hogar, llámalos antes, según tu póliza. ¿Está todo bien?
+<ficha>{"averia":"agua por debajo del fregadero, ya parada","cuando":"Hoy, en cuanto podáis","llave":"Sí, la encontraste y ya no sale agua","vivienda":"","seguro":"","nombre":"Pilar","telefono":"610 223 344","municipio":"Granada capital","direccion":"Recogidas 40, 2º B","franja":"lo antes posible","inicio":"","orientacion":"Haz fotos del agua y del fregadero para el seguro; si tienes seguro, llámalos antes.","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien. Pero ¿podrá venir hoy? Tengo el seguro de hogar, los llamo ahora
+
+ANDRÉS: Tu solicitud queda enviada, Pilar, y te llamamos para confirmar. Lo de hoy depende de la agenda: la hora la da el fontanero al llamarte. Y según tu póliza, tu aseguradora puede mandar el suyo, así que llámala ya. ¿Necesitas algo más?
+<ficha>{"averia":"agua por debajo del fregadero, ya parada","cuando":"Hoy, en cuanto podáis","llave":"Sí, la encontraste y ya no sale agua","vivienda":"","seguro":"Sí, tiene seguro de hogar y lo llama ahora","nombre":"Pilar","telefono":"610 223 344","municipio":"Granada capital","direccion":"Recogidas 40, 2º B","franja":"hoy, cuanto antes","inicio":"","orientacion":"Si llama a su aseguradora, que lo haga según su póliza; haz fotos del agua y del fregadero.","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","averia":"agua por debajo del fregadero, ya parada","cuando":"Hoy, en cuanto podáis","llave":"Sí, la encontró debajo del fregadero y ya no sale agua","vivienda":"","seguro":"Sí, tiene seguro de hogar y lo llama ahora","nombre":"Pilar","telefono":"610 223 344","municipio":"Granada capital","direccion":"Recogidas 40, 2º B","franja":"hoy, cuanto antes","inicio":"","urgente":false,"notas":"Ya no sale agua; cerró la llave de paso, que estaba debajo del fregadero. Quiere que venga hoy si puede, cuanto antes. Tiene seguro de hogar y va a llamar a su aseguradora ahora. Aún no ha mandado fotos."}</aviso>

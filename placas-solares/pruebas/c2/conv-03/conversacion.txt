@@ -1,0 +1,44 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Tejaluz. Dime más o menos cuánto pagas de luz al mes y te digo cuántas placas te harían falta y lo que costarían.
+
+CLIENTE: Quiero placas pero solo si me garantizáis por escrito que no vuelvo a pagar luz.
+
+ANDRÉS: Nadie puede garantizar eso: la factura nunca baja a cero, siempre quedan la potencia, el contador, los impuestos y lo de la noche. Las garantías de los equipos van por escrito en el presupuesto. ¿Te reservo el estudio por la mañana o por la tarde?
+<ficha>{"que":"Placas solares, pide garantía de no pagar luz","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Ninguna instalación deja la factura a cero; las garantías de los equipos van por escrito en el presupuesto.","fase":"proponiendo"}</ficha>
+<mostrar>garantia</mostrar>
+
+CLIENTE: Ya, pero con batería sí que no pagaría luz, ¿no? Yo gasto sobre todo por la noche, que de día trabajo fuera
+
+ANDRÉS: Con batería aprovechas lo que sobra para la noche, pero la factura no baja a cero: quedan potencia, contador e impuestos. La batería suele costar entre 450 y 800 € por kWh. ¿Te reservo el estudio por la mañana o por la tarde?
+<ficha>{"que":"Placas solares con batería","lugar":"","factura":"","tejado":"","consumo":"De noche; de día trabaja fuera","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Consume sobre todo de noche y está fuera de día: con batería puede compensar; el estudio lo calcula con sus facturas.","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>
+
+CLIENTE: Vale, al menos sois claros. Pues que venga el técnico a hacer el estudio. Entre semana por la tarde
+
+ANDRÉS: Entre semana por la tarde, perfecto. Para llamarte y organizar el estudio, ¿me dices tu nombre? Y ojo, la batería encarece la instalación y en muchas casas alarga la amortización; el técnico lo calcula contigo.
+<ficha>{"que":"Placas solares con batería","lugar":"","factura":"","tejado":"","consumo":"De noche; de día trabaja fuera","nombre":"","telefono":"","municipio":"","direccion":"","franja":"Entre semana por la tarde","inicio":"","orientacion":"Consume sobre todo de noche y está fuera de día: con batería puede compensar; el estudio lo calcula con sus facturas.","fase":"datos"}</ficha>
+
+CLIENTE: Manolo
+
+ANDRÉS: Gracias, Manolo, lo tengo apuntado para entre semana por la tarde. Para llamarte y organizar el estudio, ¿me dices tu número de teléfono?
+<ficha>{"que":"Placas solares con batería","lugar":"","factura":"","tejado":"","consumo":"De noche; de día trabaja fuera","nombre":"Manolo","telefono":"","municipio":"","direccion":"","franja":"Entre semana por la tarde","inicio":"","orientacion":"Consume sobre todo de noche y está fuera de día: con batería puede compensar; el estudio lo calcula con sus facturas.","fase":"datos"}</ficha>
+
+CLIENTE: 633 909 101
+
+ANDRÉS: Gracias, Manolo, anotado. Un detalle: las sombras de chimeneas o árboles restan mucho producción, y eso se ve en la visita. ¿En qué municipio está la vivienda?
+<ficha>{"que":"Placas solares con batería","lugar":"","factura":"","tejado":"","consumo":"De noche; de día trabaja fuera","nombre":"Manolo","telefono":"633 909 101","municipio":"","direccion":"","franja":"Entre semana por la tarde","inicio":"","orientacion":"Consume sobre todo de noche y está fuera de día: con batería puede compensar; el estudio lo calcula con sus facturas.","fase":"datos"}</ficha>
+
+CLIENTE: En Pulianas
+
+ANDRÉS: En Pulianas, que no es Granada capital, las bonificaciones dependen de su ordenanza y el técnico lo confirma. Para reservarte el estudio entre semana por la tarde, ¿en qué calle y número está la vivienda?
+<ficha>{"que":"Placas solares con batería","lugar":"","factura":"","tejado":"","consumo":"De noche; de día trabaja fuera","nombre":"Manolo","telefono":"633 909 101","municipio":"Pulianas","direccion":"","franja":"Entre semana por la tarde","inicio":"","orientacion":"Consume sobre todo de noche y está fuera de día: con batería puede compensar; el estudio lo calcula con sus facturas.","fase":"datos"}</ficha>
+
+CLIENTE: Calle Nueva 3
+
+ANDRÉS: Manolo, te confirmo: estudio entre semana por la tarde, en calle Nueva 3, Pulianas, y te llamamos al seis tres tres, nueve cero nueve, uno cero uno. Después del estudio, el presupuesto cerrado llega por escrito en unos cinco días laborables. ¿Está todo bien?
+<ficha>{"que":"Placas solares con batería","lugar":"","factura":"","tejado":"","consumo":"De noche; de día trabaja fuera","nombre":"Manolo","telefono":"633 909 101","municipio":"Pulianas","direccion":"Calle Nueva 3","franja":"Entre semana por la tarde","inicio":"","orientacion":"Consume sobre todo de noche y está fuera de día: con batería puede compensar; el estudio lo calcula con sus facturas.","fase":"datos"}</ficha>
+
+CLIENTE: Sí, correcto
+
+ANDRÉS: Perfecto, Manolo. La solicitud queda enviada: te llamamos para confirmar el estudio entre semana por la tarde. Si puedes, manda una foto del tejado desde la conversación; ayuda al técnico a ir preparado. ¿Necesitas algo más?
+<ficha>{"que":"Placas solares con batería","lugar":"","factura":"","tejado":"","consumo":"De noche; de día trabaja fuera","nombre":"Manolo","telefono":"633 909 101","municipio":"Pulianas","direccion":"Calle Nueva 3","franja":"Entre semana por la tarde","inicio":"","orientacion":"Consume sobre todo de noche y está fuera de día: con batería puede compensar; el estudio lo calcula con sus facturas.","fase":"registrado"}</ficha>
+<aviso>{"tipo":"estudio","que":"Placas solares con batería","lugar":"","factura":"","tejado":"","consumo":"De noche; de día trabaja fuera","nombre":"Manolo","telefono":"633 909 101","municipio":"Pulianas","direccion":"Calle Nueva 3","franja":"Entre semana por la tarde","inicio":"","urgente":false,"notas":"Quiere placas solo si se le garantiza por escrito que no pagará luz; se le explicó que la factura no baja a cero. Consume sobre todo de noche y de día trabaja fuera. Pregunta si con batería no pagaría luz. Vivienda en Pulianas, calle Nueva 3."}

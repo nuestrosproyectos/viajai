@@ -1,0 +1,49 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Llave de Paso. Si te está saliendo agua, cierra primero la llave de paso. Cuéntame qué te pasa y te mando al fontanero.
+
+CLIENTE: Tengo el lavabo del baño atascado, ¿cuánto cuesta desatascarlo?
+
+ANDRÉS: Un desatasco sencillo de lavabo suele costar unos 70 a 150 € más IVA, orientativo. El fontanero te confirma su precio antes de ir. No eches sosa, que puede empeorar el atasco. ¿Atasca también la ducha o el lavavajillas?
+<ficha>{"averia":"lavabo del baño atascado","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No eches sosa y pide el presupuesto por escrito antes de empezar.","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>
+
+CLIENTE: Ya eché un bote de desatascador fuerte y sigue igual
+
+ANDRÉS: Entiendo que siga igual. No metas la mano ni desmontes el sifón: un desatascador fuerte quema la piel y puede empeorar el atasco. Lo apunto para el fontanero. ¿Te reservo la visita, mejor por la mañana o por la tarde?
+<ficha>{"averia":"lavabo del baño atascado; sigue igual tras echar desatascador fuerte","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No metas la mano en el sifón y pide el presupuesto por escrito antes de empezar.","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale. Sí, resérvela por la mañana, mañana si puede ser
+
+ANDRÉS: Perfecto, le apunto la visita para mañana por la mañana, si puede ser. Solo necesito sus datos para llamarle y organizarla. ¿Me dice su nombre, por favor?
+<ficha>{"averia":"lavabo del baño atascado; sigue igual tras echar desatascador fuerte","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"Mañana por la mañana","inicio":"","orientacion":"No meta la mano en el sifón y pida el presupuesto por escrito antes de empezar.","fase":"datos"}</ficha>
+
+CLIENTE: Luis
+
+ANDRÉS: Gracias, Luis. Para llamarle y organizar la visita, ¿me deja un teléfono? Y si también le atasca la ducha, dígaselo al fontanero: suele indicar un problema más abajo.
+<ficha>{"averia":"lavabo del baño atascado; sigue igual tras echar desatascador fuerte","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Luis","telefono":"","municipio":"","direccion":"","franja":"Mañana por la mañana","inicio":"","orientacion":"No meta la mano en el sifón y pida el presupuesto por escrito antes de empezar.","fase":"datos"}</ficha>
+
+CLIENTE: 655 990 120
+
+ANDRÉS: Gracias, Luis, ya tengo el teléfono. Y usted tiene derecho a una factura detallada, con mano de obra, materiales e IVA. ¿En qué municipio y barrio está la vivienda?
+<ficha>{"averia":"lavabo del baño atascado; sigue igual tras echar desatascador fuerte","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Luis","telefono":"655 990 120","municipio":"","direccion":"","franja":"Mañana por la mañana","inicio":"","orientacion":"No meta la mano en el sifón y pida el presupuesto por escrito antes de empezar.","fase":"datos"}</ficha>
+
+CLIENTE: En Armilla
+
+ANDRÉS: Gracias, Luis, Armilla queda apuntado. Antes de empezar, el fontanero te dará el presupuesto por escrito. ¿Me dices la calle y el número?
+<ficha>{"averia":"lavabo del baño atascado; sigue igual tras echar desatascador fuerte","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Luis","telefono":"655 990 120","municipio":"Armilla","direccion":"","franja":"Mañana por la mañana","inicio":"","orientacion":"No metas la mano en el sifón y pide el presupuesto por escrito antes de empezar.","fase":"datos"}</ficha>
+
+CLIENTE: Avenida de los Mondragones 3
+
+ANDRÉS: Anotado, Avenida de los Mondragones, número 3. Mientras tanto, la garantía de la reparación la confirma el fontanero por escrito en la factura. ¿En qué barrio de Armilla está la vivienda?
+<ficha>{"averia":"lavabo del baño atascado; sigue igual tras echar desatascador fuerte","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Luis","telefono":"655 990 120","municipio":"Armilla","direccion":"Avenida de los Mondragones 3","franja":"Mañana por la mañana","inicio":"","orientacion":"No meta la mano en el sifón y pida el presupuesto por escrito antes de empezar.","fase":"datos"}</ficha>
+
+CLIENTE: Pues no sé decirle el barrio, es la avenida de los Mondragones, en Armilla. ¿Hace falta?
+
+ANDRÉS: No hace falta el barrio: con la avenida y el número basta. Luis, repito: visita programada mañana por la mañana, Avenida de los Mondragones tres, Armilla; teléfono seis cinco cinco, nueve nueve cero, uno dos cero. ¿Está todo bien?
+<ficha>{"averia":"lavabo del baño atascado; sigue igual tras echar desatascador fuerte","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Luis","telefono":"655 990 120","municipio":"Armilla","direccion":"Avenida de los Mondragones 3","franja":"Mañana por la mañana","inicio":"","orientacion":"No meta la mano en el sifón y pida el presupuesto por escrito antes de empezar.","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo correcto.
+
+ANDRÉS: Perfecto, Luis: queda enviada su solicitud de visita programada para mañana por la mañana, en la Avenida de los Mondragones, número tres, en Armilla. Le llamamos para confirmarla. ¿Necesita algo más?
+<ficha>{"averia":"Lavabo del baño atascado; sigue igual tras echar un desatascador fuerte","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Luis","telefono":"655 990 120","municipio":"Armilla","direccion":"Avenida de los Mondragones 3","franja":"Mañana por la mañana","inicio":"","orientacion":"Solicitud enviada: visita programada mañana por la mañana y le llamamos para confirmarla. Antes de empezar, pida el presupuesto por escrito.","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","averia":"Lavabo del baño atascado; sigue igual tras echar un desatascador fuerte","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Luis","telefono":"655 990 120","municipio":"Armilla","direccion":"Avenida de los Mondragones 3","franja":"Mañana por la mañana","inicio":"","urgente":false,"notas":"Lavabo del baño atascado; sigue igual tras echar un bote de desatascador fuerte. Quien escribe preguntó cuánto cuesta desatascarlo y pidió visita programada mañana por la mañana. No dijo si también atasca la ducha o el lavavajillas, ni si el termo es eléctrico o de gas. Municipio: Armilla; no dio el barrio."}</aviso>
+</content>
