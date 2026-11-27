@@ -1,0 +1,3 @@
+Gracias, Rosa. Lo anoto para el estudio por la tarde, sin prisa, para comparar tu presupuesto con uno cerrado por escrito. ¿Me dices un teléfono de contacto? Es solo para llamarte y organizarlo.
+<ficha>{"que":"Placas con batería","lugar":"Casa","factura":"","tejado":"Casa baja con azotea","consumo":"De noche, no mucho","nombre":"Rosa","telefono":"","municipio":"Granada capital, Zaidín","franja":"Por la tarde","inicio":"","orientacion":"Comparar el presupuesto de 6.800 € (5 kWp y 10 kWh) con lo orientativo y pedir que incluya boletín y garantías por escrito.","fase":"datos"}</ficha>
+<mostrar>contacto</mostrar>
