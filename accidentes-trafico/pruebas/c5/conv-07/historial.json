@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Gracias, Daniel. Y no firmes ningún papel de la aseguradora sin que lo vea el abogado. ¿En qué municipio vives?\n<ficha>{\"caso\":\"Iba en bici y un coche te cerró al girar\",\"como\":\"En bici o patinete\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"No lo sé\",\"atestado\":\"Atestado de la policía\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Daniel\",\"telefono\":\"611 777 222\",\"municipio\":\"\",\"franja\":\"por videollamada, cualquier tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Pedir copia del informe de urgencias; guardar fotos, el atestado y los datos del testigo\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Daniel. Y no firmes ningún papel de la aseguradora sin que lo vea el abogado. ¿En qué municipio vives?\n<ficha>{\"caso\":\"Iba en bici y un coche te cerró al girar\",\"como\":\"En bici o patinete\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"No lo sé\",\"atestado\":\"Atestado de la policía\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Daniel\",\"telefono\":\"611 777 222\",\"municipio\":\"\",\"franja\":\"por videollamada, cualquier tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Pedir copia del informe de urgencias; guardar fotos, el atestado y los datos del testigo\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "En Granada"
  }
 ]
