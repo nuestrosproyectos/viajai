@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Por la tarde mejor"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, te apunto la visita por la tarde. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizarla. Si es en Granada capital, un baño sin tocar muros suele ir con declaración responsable.\n<ficha>{\"obra\":\"cambiar bañera por plato de ducha, azulejos y lavabo\",\"vivienda\":\"Piso\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"por la tarde\",\"inicio\":\"\",\"orientacion\":\"Lo más probable es un baño de tres mil a seis mil euros; la visita de medición, gratis, mira lo que hay detrás de los azulejos.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, te apunto la visita por la tarde. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizarla. Si es en Granada capital, un baño sin tocar muros suele ir con declaración responsable.\n<ficha>{\"obra\":\"cambiar bañera por plato de ducha, azulejos y lavabo\",\"vivienda\":\"Piso\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"por la tarde\",\"inicio\":\"\",\"orientacion\":\"Lo más probable es un baño de tres mil a seis mil euros; la visita de medición, gratis, mira lo que hay detrás de los azulejos.\",\"fase\":\"datos\"}</ficha>"
  }
 ]
