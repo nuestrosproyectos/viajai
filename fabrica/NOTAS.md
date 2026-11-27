@@ -19,7 +19,8 @@ Una herramienta para crear, para cualquier negocio, una web como Reparo y Herenc
 
 ## Páginas privadas (claude.ai)
 - Asistente de la fábrica: https://claude.ai/artifact/GAeFwZbmHzgd3uhWjj3Mb9 (guarda los encargos en su base de datos, colección `encargos`; Claude los lee con ArtifactData y ejecuta `crear.mjs`).
-- Vista previa de reformas: https://claude.ai/artifact/5fu2zhpaHtyvJnqHJLv3Lx
+- Vistas previas: reformas https://claude.ai/artifact/5fu2zhpaHtyvJnqHJLv3Lx · placas solares https://claude.ai/artifact/VQ4sYVKEaqDyNaYmLkoN8m · fontanería https://claude.ai/artifact/7GJGrr2KbFtU6VpAMwr4kQ · accidentes de tráfico https://claude.ai/artifact/6DKbh3RuJEES6Va6mdRo6g
+- Resultados de las pruebas del cerebro: `fabrica/RESULTADOS-PRUEBAS.md`. Datos que caducan: `fabrica/CADUCIDAD.md` (`node fabrica/caducidad.mjs`).
 
 ## Decisiones
 - Juan: una marca por sector; el asistente se llama Andrés en todas por ahora; primero las webs y luego buscar profesionales (mientras, las solicitudes le llegan a él).
@@ -34,3 +35,11 @@ Una herramienta para crear, para cualquier negocio, una web como Reparo y Herenc
 - OEPM y EUIPO: sin comprobar en las cuatro marcas (hacerlo a mano en el Localizador de marcas).
 - Autores de varias fotos de Pexels: sin apuntar (pexels.com bloqueado).
 - Llamada de voz real: sin probar.
+
+## Pendiente (al cerrar el 27-11-2026)
+- Juan: datos reales de cada negocio (teléfonos, horarios, precios propios, garantías, años), OEPM de las 4 marcas, revisión de cada `revision-profesional.md` por el profesional del sector.
+- Pasar Reparo a la plantilla (mapa, manual de códigos, venta y garantía como piezas opcionales de la plantilla).
+- Probar una llamada de voz real con el agente común (claves de LiveKit, Deepgram, ElevenLabs y Anthropic).
+- Casilla de consentimiento de datos de salud en la solicitud (accidentes) cuando `legal.datosSalud`.
+- Grabar el audio del aviso del micrófono con la voz de cada web (cuesta créditos de ElevenLabs: pedir OK).
+- Autores de las fotos de Pexels en `media/CREDITOS.md` (pexels.com bloqueado desde aquí).

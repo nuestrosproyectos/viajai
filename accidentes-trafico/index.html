@@ -1428,7 +1428,12 @@ async function enviar(texto, { porVoz = false } = {}) {
     trocear(true);
     turnos.push({ role: "assistant", content: respuesta.replace(/<aviso>[\s\S]*?<\/aviso>/, "<aviso>(registrado)</aviso>") });
     const f = etiqueta(respuesta, "ficha"); if (f) pintarFicha(f);
-    const a = etiqueta(respuesta, "aviso"); if (a && !avisoHecho) registrarAviso({ ...a, origen: "técnico virtual" });
+    // el aviso solo vale con los datos obligatorios y un teléfono válido (si el asistente se adelanta, se ignora y sigue la conversación)
+    const a = etiqueta(respuesta, "aviso");
+    if (a && !avisoHecho) {
+      const d = { ...datosFormulario(), ...Object.fromEntries(Object.entries(a).filter(([, v]) => v)) };
+      if (W.obligatorios.every(([c]) => d[c]) && telefonoValido(d.telefono)) registrarAviso({ ...a, ...d, origen: "técnico virtual" });
+    }
     ofrecerCita(b);
     if (conv.dataset.estado === "pensando") estado("reposo");
   } catch (e) {
