@@ -1,0 +1,2 @@
+Gracias, Luis. Para llamarle y organizar la visita, ¿me deja un teléfono? Y si también le atasca la ducha, dígaselo al fontanero: suele indicar un problema más abajo.
+<ficha>{"averia":"lavabo del baño atascado; sigue igual tras echar desatascador fuerte","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Luis","telefono":"","municipio":"","direccion":"","franja":"Mañana por la mañana","inicio":"","orientacion":"No meta la mano en el sifón y pida el presupuesto por escrito antes de empezar.","fase":"datos"}</ficha>

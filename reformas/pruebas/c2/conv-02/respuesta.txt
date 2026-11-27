@@ -1,0 +1,2 @@
+Gracias, Antonio, lo tengo apuntado. Para llamarte y organizar la visita, ¿me dices tu número de teléfono?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"","municipio":"","direccion":"","franja":"Por la mañana","inicio":"","orientacion":"Pedir el presupuesto por escrito, por partidas, y no pagar todo por adelantado; la visita de medición es gratis.","fase":"datos"}</ficha>
