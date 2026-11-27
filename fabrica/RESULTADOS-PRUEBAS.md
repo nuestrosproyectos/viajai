@@ -72,20 +72,22 @@ Lo que bajó (coherente): a veces suelta el punto pendiente sin venir a cuento (
 c7: nota 8,00, cita en 4 respuestas de media (antes 5,6), sin datos falsos. Lo que queda (criterio 6,3 en 3 de 8): al ser más corta, a veces no llega a decir un punto (pasajeros en la UCI, culpa compartida). Ajustado tras c7: con un familiar grave, primero salud y «los pasajeros casi siempre cobran», el baremo después; urgente si la aseguradora mete prisa; si pregunta «¿para cuándo?», el plazo habitual.
 
 ## Abogados de herencias (Andrés pasado a la plantilla común; 8 conversaciones)
-| | c1 | c2 |
-|---|---|---|
-| Acaban en cita | 8/8 | 8/8 |
-| Datos falsos | 0 | 0 |
-| Criterio del caso | 5,0 | 3,8 |
-| Completa | 7,5 | **10** |
-| Coherente | 5,0 | **8,8** |
-| Datos bien tomados | 10 | 7,5 |
-| Fichas / aviso válidos | 7,5 / 7,5 | 8,8 / 7,5 |
-| Empatía, corta | 10 | 10 |
-| Nota media | 7,25 | **7,38** |
+| | c1 | c2 | c3 |
+|---|---|---|---|
+| Acaban en cita | 8/8 | 8/8 | 8/8 |
+| Datos falsos | 0 | 0 | 0 |
+| Criterio del caso | 5,0 | 3,8 | 5,0 |
+| Completa | 7,5 | 10 | 8,8 |
+| Coherente | 5,0 | 8,8 | 7,5 |
+| Datos bien tomados | 10 | 7,5 | **10** |
+| Fichas / aviso válidos | 7,5 / 7,5 | 8,8 / 7,5 | **10 / 10** |
+| Sin suponer sexo | 10 | 10 | 7,5 |
+| Empatía, corta | 10 | 10 | 10 |
+| Nota media | 7,25 | 7,38 | **8,00** |
 
 Fallos c1: repite la misma frase si el cliente vuelve a preguntar; rellena «No lo sé» o un parentesco por defecto en la ficha; tutea a una señora de 81 años en la primera respuesta; se deja plusvalía, prórroga, parte libre de la pareja y usufructo de la viuda. Cambios c1→c2: si repite la pregunta, explicarlo de otra forma con lo concreto; campos con opciones vacíos hasta que lo diga; usted desde la primera respuesta si es mayor o saluda formal (base común); casos de herencias completados (viudo, banco con los tres papeles, plazo para sobrinos, plusvalía para hijos, parte libre).
 c2: ya no repite frases (coherente 8,8) ni tutea a la mayor; sigue dejándose un punto del criterio en 5 de 8 y en 2 pide la franja antes del nombre (tres preguntas). Cambios c2→c3: sumar los datos de TODOS los tipos de caso que encajan; la franja ya no se pregunta al ofrecer la cita sino con los datos (base común); si no sabe si hay testamento (o si la pareja estaba inscrita), esa es la pregunta de cierre; parentesco solo con quien falleció.
+c3: nota 8,00; datos, fichas y avisos perfectos (10), sin datos falsos. Queda: a veces se deja un dato del criterio (4 de 8) y dijo «como hijo»/«como sobrina» copiando la opción de la ficha. Ajustado tras c3: la opción de parentesco se copia con sus dos géneros y en voz alta sin género; sobrinos con sus dos razones (10.000 € y 1,5); nietos con la reducción de hijos; declaración de herederos en el primer caso.
 
 ## Qué se corrigió entre rondas (en el cerebro común, para todas las webs, salvo lo marcado)
 - R1→R2: dar siempre el rango de precio si lo pide; empatía con miedo, susto o personas mayores; usted en toda la conversación; una sola pregunta; rellenar en la ficha lo que el cliente ya dijo.
