@@ -1,0 +1,32 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Accidente Claro. Siento lo del accidente. Cuéntame qué pasó y te digo qué conviene hacer ahora.
+
+CLIENTE: Iba en bici por el carril de la Avenida de la Constitución y un coche me cerró al girar. Me he roto la clavícula.
+
+ANDRÉS: Siento lo de la clavícula. Lo primero es que vayas a urgencias ya, y guarda las fotos de la bici y del coche. Te reservo la consulta gratis con el abogado. ¿Hubo testigos o atestado de la policía?
+<ficha>{"caso":"Iba en bici y un coche te cerró al girar","como":"En bici o patinete","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Ir a urgencias ya y guardar fotos de la bici y del coche","fase":"proponiendo"}</ficha>
+
+CLIENTE: Sí, vino la Policía Local, hay atestado y un testigo. Fui a urgencias en ambulancia. El conductor dice que fue culpa mía, ¿tengo que pagar yo la bici?
+
+ANDRÉS: Tener atestado y testigo ayuda mucho. Que el conductor lo diga no basta: la aseguradora solo se libra si la culpa fue solo de la víctima. Lo de la bici lo confirma el abogado. ¿Te reservo la consulta gratis?
+<ficha>{"caso":"Iba en bici y un coche te cerró al girar","como":"En bici o patinete","fecha":"","medico":"","culpa":"No lo sé","atestado":"Atestado de la policía","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Guardar fotos, el atestado y los datos del testigo; que el conductor lo diga no basta para pagar tú","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, me quedo más tranquilo. Sí, resérvamela, por videollamada. Me va bien cualquier tarde.
+
+ANDRÉS: Perfecto, te apunto a la consulta por videollamada, cualquier tarde. Pide copia del informe de urgencias, que es lo que más pesa. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la consulta.
+<ficha>{"caso":"Iba en bici y un coche te cerró al girar","como":"En bici o patinete","fecha":"","medico":"","culpa":"No lo sé","atestado":"Atestado de la policía","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"por videollamada, cualquier tarde","consentimientoSalud":"","orientacion":"Pedir copia del informe de urgencias; guardar fotos, el atestado y los datos del testigo","fase":"datos"}</ficha>
+
+CLIENTE: Daniel, 611 777 222
+
+ANDRÉS: Gracias, Daniel. Y no firmes ningún papel de la aseguradora sin que lo vea el abogado. ¿En qué municipio vives?
+<ficha>{"caso":"Iba en bici y un coche te cerró al girar","como":"En bici o patinete","fecha":"","medico":"","culpa":"No lo sé","atestado":"Atestado de la policía","oferta":"","defensa":"","nombre":"Daniel","telefono":"611 777 222","municipio":"","franja":"por videollamada, cualquier tarde","consentimientoSalud":"","orientacion":"Pedir copia del informe de urgencias; guardar fotos, el atestado y los datos del testigo","fase":"datos"}</ficha>
+
+CLIENTE: En Granada
+
+ANDRÉS: Perfecto, Daniel. Te apunto la consulta por videollamada. Repito tu teléfono: seis uno uno, siete siete siete, dos dos dos. Y si la culpa fue compartida, se reparte entre los dos; eso lo mira el abogado. ¿Está todo bien?
+<ficha>{"caso":"Iba en bici y un coche te cerró al girar","como":"En bici o patinete","fecha":"","medico":"","culpa":"No lo sé","atestado":"Atestado de la policía","oferta":"","defensa":"","nombre":"Daniel","telefono":"611 777 222","municipio":"Granada","franja":"por videollamada, cualquier tarde","consentimientoSalud":"","orientacion":"Pedir copia del informe de urgencias; guardar fotos, el atestado y los datos del testigo","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien. ¿Y ya queda enviada la solicitud?
+
+ANDRÉS: Sí, queda enviada. Te llamamos para confirmar la hora de tu videollamada. Y apunta ya los datos del testigo, que son muy útiles. ¿Necesitas algo más?
+<ficha>{"caso":"Iba en bici y un coche te cerró al girar","como":"En bici o patinete","fecha":"","medico":"","culpa":"No lo sé","atestado":"Atestado de la policía","oferta":"","defensa":"","nombre":"Daniel","telefono":"611 777 222","municipio":"Granada","franja":"por videollamada, cualquier tarde","consentimientoSalud":"","orientacion":"Pedir copia del informe de urgencias; guardar fotos, el atestado y los datos del testigo","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","caso":"Iba en bici y un coche te cerró al girar","como":"En bici o patinete","fecha":"","medico":"","culpa":"No lo sé","atestado":"Atestado de la policía","oferta":"","defensa":"","nombre":"Daniel","telefono":"611 777 222","municipio":"Granada","franja":"por videollamada, cualquier tarde","consentimientoSalud":"","urgente":false,"notas":"Iba en bici por la Avenida de la Constitución; un coche le cerró al girar. Vino la Policía Local, hay atestado y un testigo. El conductor del coche dice que la culpa fue de quien escribe, en la bici. Pregunta si tiene que pagar la bici. No ha dado permiso para apuntar datos de salud. Quiere la consulta por videollamada, cualquier tarde. Vive en Granada."}</aviso>

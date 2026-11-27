@@ -1,0 +1,37 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Accidente Claro. Siento lo del accidente. Cuéntame qué pasó y te digo qué conviene hacer ahora.
+
+CLIENTE: Me atropellaron hace un año y medio en un paso de cebra. ¿Ya es tarde para reclamar?
+
+ANDRÉS: Siento lo del atropello. Eso no te lo puedo decir yo: el plazo de un año suele contarse desde el alta, con interrupciones, y lo mira el abogado. Te reservo la consulta gratis para mirarlo cuanto antes. ¿Recuerdas cuándo te dieron el alta?
+<ficha>{"caso":"Atropello en un paso de cebra","como":"Andando","fecha":"hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Mirar cuanto antes el plazo de un año, que suele contarse desde el alta","fase":"proponiendo"}</ficha>
+
+CLIENTE: Es que no tengo claro lo del alta, creo que hace unos 7 meses. Y el que me atropelló se fue, no sé quién era. ¿Aun así se puede hacer algo?
+
+ANDRÉS: Con el alta de hace unos siete meses, el plazo de un año suele contarse desde ahí, y eso lo confirma el abogado. Si el conductor se fue, lo más probable es que responda el Consorcio de Compensación de Seguros. ¿Te reservo la consulta gratis?
+<ficha>{"caso":"Atropello en un paso de cebra; el conductor se fue y no se sabe quién era","como":"Andando","fecha":"hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Mirar cuanto antes el plazo de un año, que suele contarse desde el alta; si el conductor se fue, responde el Consorcio","fase":"proponiendo"}</ficha>
+
+CLIENTE: Ah, vale, qué alivio, pensaba que ya lo había perdido todo. Sí, resérvamela por favor, y cuanto antes mejor. Prefiero ir en persona, por las mañanas.
+
+ANDRÉS: Perfecto, te apunto a la consulta en el despacho, por la mañana. Guarda el alta y todos los informes médicos, que son lo que más pesa. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la consulta.
+<ficha>{"caso":"Atropello en un paso de cebra; el conductor se fue y no se sabe quién era","como":"Andando","fecha":"hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"en el despacho, por la mañana","consentimientoSalud":"","orientacion":"Guardar el alta y los informes médicos; el plazo de un año lo revisa el abogado","fase":"datos"}</ficha>
+
+CLIENTE: Inés, 655 777 333
+
+ANDRÉS: Gracias, Inés. Como ibas por un paso de cebra, la protección es muy alta: el seguro solo se libra si la culpa fue solo de la víctima. ¿Has reclamado algo por escrito a alguien?
+<ficha>{"caso":"Atropello en un paso de cebra; el conductor se fue y no se sabe quién era","como":"Andando","fecha":"hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Inés","telefono":"655 777 333","municipio":"","franja":"en el despacho, por la mañana","consentimientoSalud":"","orientacion":"Guardar el alta y los informes médicos; el plazo de un año lo revisa el abogado","fase":"datos"}</ficha>
+
+CLIENTE: No, no he reclamado nada por escrito a nadie
+
+ANDRÉS: Gracias, Inés. Te apunto la consulta en el despacho, por la mañana. Como no has reclamado todavía, conviene hacerlo por escrito cuanto antes: esa reclamación interrumpe el plazo, y el abogado lo revisa contigo. ¿En qué municipio vives?
+<ficha>{"caso":"Atropello en un paso de cebra; el conductor se fue y no se sabe quién era","como":"Andando","fecha":"hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Inés","telefono":"655 777 333","municipio":"","franja":"en el despacho, por la mañana","consentimientoSalud":"","orientacion":"Reclamar por escrito cuanto antes y guardar el alta y los informes médicos; el plazo de un año lo revisa el abogado","fase":"datos"}</ficha>
+
+CLIENTE: En Granada, en el Realejo
+
+ANDRÉS: Gracias, Inés. Repito: en el despacho de Granada, por la mañana, y tu teléfono es seis cinco cinco, siete siete siete, tres tres tres. Y si hubo denuncia o hay testigos, guárdalos, ayudan mucho. ¿Está todo bien?
+<ficha>{"caso":"Atropello en un paso de cebra; el conductor se fue y no se sabe quién era","como":"Andando","fecha":"hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Inés","telefono":"655 777 333","municipio":"Granada (Realejo)","franja":"en el despacho, por la mañana","consentimientoSalud":"","orientacion":"Reclamar por escrito cuanto antes y guardar el alta y los informes médicos; el plazo de un año lo revisa el abogado","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien. ¿Y ya queda enviada la solicitud?
+
+ANDRÉS: Sí, Inés, queda enviada. Te llamamos para confirmar la consulta gratis en el despacho, por la mañana. Como el plazo de un año se cuenta de forma concreta, el abogado lo mirará cuanto antes. ¿Necesitas algo más?
+<ficha>{"caso":"Atropello en un paso de cebra; el conductor se fue y no se sabe quién era","como":"Andando","fecha":"hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Inés","telefono":"655 777 333","municipio":"Granada (Realejo)","franja":"en el despacho, por la mañana","consentimientoSalud":"","orientacion":"Reclamar por escrito cuanto antes y guardar el alta y los informes médicos; el plazo de un año lo revisa el abogado","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","caso":"Atropello en un paso de cebra; el conductor se fue y no se sabe quién era","como":"Andando","fecha":"hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Inés","telefono":"655 777 333","municipio":"Granada (Realejo)","franja":"en el despacho, por la mañana","consentimientoSalud":"","urgente":true,"notas":"Atropello en paso de cebra hace un año y medio; alta hace unos siete meses; el conductor se fue y no sabe quién era. No ha reclamado nada por escrito a nadie. Quiere la consulta en el despacho, por la mañana. No ha dado permiso para apuntar datos de salud. Pregunta si puede hacerse algo: se le indicó que, si el conductor se fue, lo más probable es que responda el Consorcio de Compensación de Seguros."}</aviso>

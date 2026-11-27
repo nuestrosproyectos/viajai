@@ -1,0 +1,23 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Accidente Claro. Siento lo del accidente. Cuéntame qué pasó y te digo qué conviene hacer ahora.
+
+CLIENTE: Mi seguro me dice que me pone ellos un abogado gratis. ¿Para qué os quiero a vosotros?
+
+ANDRÉS: Puedes quedarte con el abogado de tu seguro, y eso se respeta. Nosotros te damos una segunda opinión en la consulta gratis, sin compromiso, para que decidas con calma. ¿Te reservo la consulta?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"Sí, el seguro le ofrece un abogado","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Puede quedarse con el abogado de su seguro o pedir una segunda opinión en la consulta gratis","fase":"orientando"}</ficha>
+
+CLIENTE: Ya, pero no me fío mucho de que el abogado del seguro mire por mí. ¿En qué os diferenciáis?
+
+ANDRÉS: Te entiendo, es normal desconfiar. Nuestro abogado está colegiado en Granada y, si no hay indemnización, no hay honorarios. Así decides tú con calma, sin compromiso. ¿Te reservo la consulta gratis?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"Sí, el seguro le ofrece un abogado","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Puede quedarse con el abogado de su seguro o pedir una segunda opinión en la consulta gratis","fase":"proponiendo"}</ficha>
+<mostrar>honorarios</mostrar>
+
+CLIENTE: Vale, no pierdo nada por oír una segunda opinión. Que me llamen mejor, por la mañana. Soy Javi, 633 445 566.
+
+ANDRÉS: Vale, Javi. Te llamamos por teléfono por la mañana para la consulta gratis. Tu número es seis, tres, tres, cuatro, cuatro, cinco, cinco, seis, seis. Y no firmes nada de tu seguro hasta que lo vea el abogado. ¿Está todo bien?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"Sí, el seguro le ofrece un abogado","nombre":"Javi","telefono":"633 445 566","municipio":"","franja":"por teléfono, por la mañana","consentimientoSalud":"","orientacion":"Puede quedarse con el abogado de su seguro o pedir una segunda opinión en la consulta gratis","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien. Gracias
+
+ANDRÉS: Perfecto, Javi. La solicitud queda enviada y te llamamos por la mañana para confirmar la consulta. Guarda también lo que te mande tu seguro. ¿Necesitas algo más?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"Sí, el seguro le ofrece un abogado","nombre":"Javi","telefono":"633 445 566","municipio":"","franja":"por teléfono, por la mañana","consentimientoSalud":"","orientacion":"Puede quedarse con el abogado de su seguro o pedir una segunda opinión en la consulta gratis","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"Sí, el seguro le ofrece un abogado","nombre":"Javi","telefono":"633 445 566","municipio":"","franja":"por teléfono, por la mañana","consentimientoSalud":"","urgente":false,"notas":"Quiere una segunda opinión; el seguro le ofrece un abogado gratis y prefiere valorarlo con el nuestro. No ha indicado el municipio."}</aviso>

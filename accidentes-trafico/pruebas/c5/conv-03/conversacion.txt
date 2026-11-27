@@ -1,0 +1,32 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Accidente Claro. Siento lo del accidente. Cuéntame qué pasó y te digo qué conviene hacer ahora.
+
+CLIENTE: Tuve yo la culpa del accidente, me salté un ceda. Iba con mi mujer y ella se rompió la muñeca.
+
+ANDRÉS: Siento lo de tu mujer y su muñeca. Ella puede reclamar al seguro del coche en que ibais aunque la culpa fuera tuya, y lo primero es que le vea un médico. Te reservo la consulta gratis con el abogado. ¿Ya ha ido al médico?
+<ficha>{"caso":"Se saltó un ceda; iba con su mujer","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que su mujer vea un médico; ella puede reclamar al seguro del coche en que iban","fase":"orientando"}</ficha>
+
+CLIENTE: Todavía no ha ido, solo le pusimos hielo. Pero si la culpa fue mía, ¿eso a mí me perjudica de algo? ¿Y ella puede reclamar igual?
+
+ANDRÉS: Ella sí puede reclamar aunque la culpa fuera tuya, y cómo afecta a tu póliza lo ve el abogado. Lo primero es que hoy vea un médico y quede por escrito. ¿Te reservo la consulta gratis?
+<ficha>{"caso":"Se saltó un ceda; iba con su mujer","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que su mujer vea un médico hoy; ella puede reclamar al seguro del coche en que iban","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, entonces sí que puede reclamar, eso me deja más tranquilo. Lo de mi póliza se lo preguntamos al abogado. Sí, resérvanos la consulta para ella, por videollamada mejor, por la tarde.
+
+ANDRÉS: Perfecto, te apunto a la consulta por videollamada, por la tarde. Y recuerda avisar de lo ocurrido a tu propia aseguradora en siete días. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la consulta.
+<ficha>{"caso":"Se saltó un ceda; iba con su mujer","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"por videollamada, por la tarde","consentimientoSalud":"","orientacion":"Que su mujer vea un médico hoy; ella puede reclamar al seguro del coche en que iban","fase":"datos"}</ficha>
+
+CLIENTE: Pedro, 600 909 303
+
+ANDRÉS: Gracias, Pedro. Y pide a tu mujer que guarde el parte de urgencias: es lo que une la muñeca al accidente. ¿En qué municipio vives?
+<ficha>{"caso":"Se saltó un ceda; iba con su mujer","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"Pedro","telefono":"600 909 303","municipio":"","franja":"por videollamada, por la tarde","consentimientoSalud":"","orientacion":"Que su mujer vea un médico hoy; ella puede reclamar al seguro del coche en que iban","fase":"datos"}</ficha>
+
+CLIENTE: En Loja
+
+ANDRÉS: Perfecto, Pedro. Te apunto la consulta para tu mujer, por videollamada, por la tarde. Repito tu teléfono: seis cero cero, nueve cero nueve, tres cero tres. Y si tu póliza tiene defensa jurídica, puede cubrir parte de los honorarios. ¿Está todo bien?
+<ficha>{"caso":"Se saltó un ceda; iba con su mujer","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"Pedro","telefono":"600 909 303","municipio":"Loja","franja":"por videollamada, por la tarde","consentimientoSalud":"","orientacion":"Que su mujer vea un médico hoy; ella puede reclamar al seguro del coche en que iban","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien. Gracias. ¿Entonces ya queda enviada la solicitud?
+
+ANDRÉS: Sí, queda enviada. Te llamamos para confirmar la hora de la videollamada de tu mujer. Y si alguien te reclama algo a ti, no contestes por tu cuenta: el abogado lo revisa junto con el atestado. ¿Necesitas algo más?
+<ficha>{"caso":"Se saltó un ceda; iba con su mujer","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"Pedro","telefono":"600 909 303","municipio":"Loja","franja":"por videollamada, por la tarde","consentimientoSalud":"","orientacion":"Que su mujer vea un médico hoy; ella puede reclamar al seguro del coche en que iban","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","caso":"Se saltó un ceda; iba con su mujer","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"Pedro","telefono":"600 909 303","municipio":"Loja","franja":"por videollamada, por la tarde","consentimientoSalud":"","urgente":false,"notas":"Dice que fue culpa suya, se saltó un ceda. Iba de pasajero su mujer. Quiere la consulta por videollamada por la tarde, para su mujer. Pregunta si la culpa le perjudica en su póliza y si ella puede reclamar igual; dice que la póliza se lo pregunta al abogado. No ha dado permiso para apuntar datos de salud. Vive en Loja. Fecha del accidente y atestado no dichos."}</aviso>

@@ -1,0 +1,33 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Accidente Claro. Siento lo del accidente. Cuéntame qué pasó y te digo qué conviene hacer ahora.
+
+CLIENTE: La aseguradora del otro me ofrece 2.300 € y me dicen que firme ya. ¿Firmo?
+
+ANDRÉS: No firmes nada todavía, porque una firma definitiva cierra la puerta. El abogado revisa la oferta con los informes delante, y eso no se puede esperar. ¿Te reservo la consulta gratis para verlo cuanto antes?
+<ficha>{"caso":"Oferta de la aseguradora contraria, con prisa para firmar","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"No firmar nada hasta que lo revise el abogado","fase":"proponiendo"}</ficha>
+
+CLIENTE: ¿2.300 es poco? Llevo 5 meses de lío, 2 de baja y todavía voy a rehabilitación, no me han dado el alta
+
+ANDRÉS: Entiendo, cinco meses no son fáciles. Sin el alta no se puede saber si es poca: faltan días y posibles secuelas, y sigue la rehabilitación, porque los días que no constan no cuentan. ¿Te reservo la consulta gratis?
+<ficha>{"caso":"Oferta de la aseguradora contraria, con prisa para firmar","como":"","fecha":"hace cinco meses","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"No firmar nada hasta que lo revise el abogado; sin el alta no se puede valorar lo definitivo","fase":"proponiendo"}</ficha>
+<mostrar>oferta</mostrar>
+
+CLIENTE: Vale, no firmo entonces. Sí, que lo mire el abogado. ¿Puede ser por teléfono?
+
+ANDRÉS: Claro, por teléfono. Guarda los justificantes de la baja y de la rehabilitación, que cuentan para el caso. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la consulta.
+<ficha>{"caso":"Oferta de la aseguradora contraria, con prisa para firmar","como":"","fecha":"hace cinco meses","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"por teléfono","consentimientoSalud":"","orientacion":"No firmar nada hasta que lo revise el abogado; sin el alta no se puede valorar lo definitivo","fase":"datos"}</ficha>
+
+CLIENTE: Sonia, 633 202 404
+
+ANDRÉS: Gracias, Sonia. Guarda también las cartas que te mande la aseguradora, y no firmes nada hasta la llamada. ¿En qué municipio vives y prefieres que te llamemos por la mañana o por la tarde?
+<ficha>{"caso":"Oferta de la aseguradora contraria, con prisa para firmar","como":"","fecha":"hace cinco meses","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"Sonia","telefono":"633 202 404","municipio":"","franja":"por teléfono","consentimientoSalud":"","orientacion":"No firmar nada hasta que lo revise el abogado; sin el alta no se puede valorar lo definitivo","fase":"datos"}</ficha>
+
+CLIENTE: Vivo en Motril. Por la mañana mejor
+
+ANDRÉS: Perfecto, Sonia. Te apunto la consulta por teléfono por la mañana, en Motril. Repito tu teléfono: seis tres tres, dos cero dos, cuatro cero cuatro. La aseguradora tiene tres meses para responder con una oferta motivada. ¿Está todo bien?
+<ficha>{"caso":"Oferta de la aseguradora contraria, con prisa para firmar","como":"","fecha":"hace cinco meses","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"Sonia","telefono":"633 202 404","municipio":"Motril","franja":"por teléfono, por la mañana","consentimientoSalud":"","orientacion":"No firmar nada hasta que lo revise el abogado; sin el alta no se puede valorar lo definitivo","fase":"datos"}</ficha>
+
+CLIENTE: Sí, está todo bien. ¿Y a qué hora me llamarán más o menos?
+
+ANDRÉS: Sí, queda enviada. No te sé decir la hora exacta; te llamamos para confirmarla, normalmente en uno o dos días laborables. Y las cartas de la aseguradora, guárdalas tal como llegan. ¿Necesitas algo más?
+<ficha>{"caso":"Oferta de la aseguradora contraria, con prisa para firmar","como":"","fecha":"hace cinco meses","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"Sonia","telefono":"633 202 404","municipio":"Motril","franja":"por teléfono, por la mañana","consentimientoSalud":"","orientacion":"No firmar nada hasta que lo revise el abogado; sin el alta no se puede valorar lo definitivo","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","caso":"Oferta de la aseguradora contraria, con prisa para firmar","como":"","fecha":"hace cinco meses","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"Sonia","telefono":"633 202 404","municipio":"Motril","franja":"por teléfono, por la mañana","consentimientoSalud":"","urgente":true,"notas":"La aseguradora del otro ofrece 2.300 euros y le dicen que firme ya (no ha dicho si es finiquito). No ha firmado nada. Pregunta si la oferta es poca; lleva cinco meses de lío. No ha dado permiso para apuntar datos de salud. Quiere que lo vea el abogado por teléfono por la mañana, en Motril. Pregunta a qué hora la llamarán."}</aviso>

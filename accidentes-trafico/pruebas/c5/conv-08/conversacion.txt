@@ -1,0 +1,22 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Accidente Claro. Siento lo del accidente. Cuéntame qué pasó y te digo qué conviene hacer ahora.
+
+CLIENTE: Buenos días. Le escribo porque mi madre, de 79 años, está en la UCI tras un accidente de autobús ayer en la carretera de Motril.
+
+ANDRÉS: Siento lo de su madre. Guarde todos los informes de la UCI: esos días cuentan en la categoría más alta del baremo, unos ciento treinta y un euros por día en 2026. Le reservo la consulta gratis con el abogado. ¿Iba su madre como pasajera?
+<ficha>{"caso":"Accidente de autobús en la carretera de Motril; escribe en nombre de su madre, de 79 años","como":"","fecha":"ayer","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Guardar todos los informes del hospital; le reservo la consulta gratis con el abogado","fase":"proponiendo"}</ficha>
+
+CLIENTE: Mi madre iba de pasajera, sí. Perdone, estoy muy afectada, ¿es muy pronto para hablar de reclamar? No sé qué tenemos que hacer
+
+ANDRÉS: No se preocupe, para empezar a verlo no es pronto. Como pasajera, casi siempre se la indemniza, del seguro del culpable o del coche en que iba, sin hacer falta saber aún de quién fue la culpa. ¿Le reservo la consulta gratis?
+<ficha>{"caso":"Accidente de autobús en la carretera de Motril; escribe en nombre de su madre, de 79 años","como":"De pasajero","fecha":"ayer","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Guardar todos los informes del hospital; como pasajera, casi siempre se la indemniza","fase":"proponiendo"}</ficha>
+
+CLIENTE: Gracias por su paciencia. Sí, resérvela, pero la semana que viene, ahora mismo no puedo pensar en otra cosa que en mi madre. Que el abogado me llame por teléfono por la mañana. Soy Encarna, 644 909 808.
+
+ANDRÉS: Lo siento mucho. Le llamamos por teléfono la semana que viene, por la mañana, para la consulta gratis. Encarna, su teléfono es seis cuatro cuatro, nueve cero nueve, ocho cero ocho. ¿Está todo bien?
+<ficha>{"caso":"Accidente de autobús en la carretera de Motril; su madre iba de pasajera","como":"De pasajero","fecha":"ayer","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Encarna","telefono":"644 909 808","municipio":"","franja":"por teléfono, la semana que viene por la mañana","consentimientoSalud":"","orientacion":"Guardar todos los informes del hospital; como pasajera, casi siempre se la indemniza","fase":"datos"}</ficha>
+
+CLIENTE: Sí, está todo bien. Muchas gracias
+
+ANDRÉS: Perfecto, Encarna. La solicitud queda enviada y le llamamos la semana que viene por la mañana para confirmar la consulta. Espero que su madre se recupere pronto. ¿Necesita algo más?
+<ficha>{"caso":"Accidente de autobús en la carretera de Motril; su madre iba de pasajera","como":"De pasajero","fecha":"ayer","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Encarna","telefono":"644 909 808","municipio":"","franja":"por teléfono, la semana que viene por la mañana","consentimientoSalud":"","orientacion":"Guardar todos los informes del hospital; como pasajera, casi siempre se la indemniza","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","caso":"Accidente de autobús en la carretera de Motril; su madre iba de pasajera","como":"De pasajero","fecha":"ayer","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Encarna","telefono":"644 909 808","municipio":"","franja":"por teléfono, la semana que viene por la mañana","consentimientoSalud":"","urgente":false,"notas":"Escribe en nombre de su madre, de 79 años, que iba de pasajera en un accidente de autobús ayer en la carretera de Motril. Quiere la consulta y prefiere que la llamen por teléfono la semana que viene por la mañana. No ha indicado el municipio."}</aviso>
