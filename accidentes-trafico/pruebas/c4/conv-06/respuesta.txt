@@ -1,0 +1,2 @@
+Perfecto, te llamamos por la mañana. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la consulta. Y no firmes nada del seguro hasta que lo vea el abogado.
+<ficha>{"caso":"Tu seguro te ofrece su abogado","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"Sí","nombre":"","telefono":"","municipio":"","franja":"que te llamen por la mañana","consentimientoSalud":"","orientacion":"Puedes elegir tu abogado si la póliza tiene defensa jurídica; la consulta gratis sirve para compararlo.","fase":"datos"}</ficha>
