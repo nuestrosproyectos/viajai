@@ -44,6 +44,10 @@ Cómo: 16 escenarios (4 por sector, `<web>/pruebas/conversaciones.json`): un cli
 |---|---|---|---|---|---|---|---|---|---|
 | 1 (antes) | 16/16 | 0 | 6,3 | 3,1 | 7,5 | 2,5 | 6,3 | 6,75 | 5,0 |
 | 2 (después) | 16/16 | 1 | **9,4** | **8,8** | **10** | **5,0** | 6,9 | **7,00** | 7,6 |
+| 3 (datos en dos preguntas) | 16/16 | 2 (1 real*) | — ** | 6,9 | 6,7 | 2,5 | **10** | 6,94 | **6,2** |
+
+\* Vuelta 3: uno de los dos «datos falsos» es una condición nuestra de reformas («el presupuesto incluye escombros y limpieza final», está en sus condiciones pero sin confirmar por Juan: queda como PENDIENTE); el otro, placas prometiendo «el ahorro por escrito», ya corregido. \*\* «Datos bien tomados» no se puede comparar: los correctores usaron la hoja antigua («de uno en uno») y penalizaron justo el cambio pedido; según sus propios comentarios, las 16 repiten el teléfono y confirman una sola vez (hoja ya corregida).
+Vuelta 3 en resumen: la solicitud llega antes (6,2 respuestas frente a 7,6) y todos los avisos son válidos (10), pero bajan la empatía y lo que pedía el caso, en parte por ruido (una sola pasada por conversación). Nota igual (6,94 frente a 7,00).
 
 Cambios entre vueltas (en la base común): confirmar nombre, teléfono, dirección y hora ANTES de enviar aunque el cliente lo dé todo de golpe; ir dando el resto de datos del caso mientras se toman los datos; no repetir explicaciones; empatía en la primera respuesta; en el aviso solo lo que dijo el cliente; reformas y placas piden calle y número.
 
