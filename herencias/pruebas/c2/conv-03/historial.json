@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Te lo repito, Carmen: teléfono seis uno uno, dos dos dos, nueve nueve nueve; en el Realejo, Granada, y consulta en el despacho por la mañana. Y si se pasa del plazo hay recargo. ¿Está todo bien?\n<ficha>{\"situacion\":\"herencia de tu madre, fallecida hace cinco meses y medio, sin tramitar\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"\",\"bienes\":\"una casa en Granada capital\",\"nombre\":\"Carmen\",\"telefono\":\"611 222 999\",\"municipio\":\"Granada, Realejo\",\"franja\":\"en el despacho, por la mañana\",\"fallecimiento\":\"hace cinco meses y medio\",\"modalidad\":\"En el despacho\",\"orientacion\":\"Quedan unas dos semanas para presentar el impuesto de sucesiones, sin prórroga: que el abogado lo vea cuanto antes y pedir el certificado de últimas voluntades.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Te lo repito, Carmen: teléfono seis uno uno, dos dos dos, nueve nueve nueve; en el Realejo, Granada, y consulta en el despacho por la mañana. Y si se pasa del plazo hay recargo. ¿Está todo bien?\n<ficha>{\"situacion\":\"herencia de tu madre, fallecida hace cinco meses y medio, sin tramitar\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"\",\"bienes\":\"una casa en Granada capital\",\"nombre\":\"Carmen\",\"telefono\":\"611 222 999\",\"municipio\":\"Granada, Realejo\",\"franja\":\"en el despacho, por la mañana\",\"fallecimiento\":\"hace cinco meses y medio\",\"modalidad\":\"En el despacho\",\"orientacion\":\"Quedan unas dos semanas para presentar el impuesto de sucesiones, sin prórroga: que el abogado lo vea cuanto antes y pedir el certificado de últimas voluntades.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, está todo bien. Gracias."
  }
 ]

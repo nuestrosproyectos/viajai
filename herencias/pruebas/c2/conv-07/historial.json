@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Te lo repito, Sergio: teléfono seis siete siete, cuatro cuatro cuatro, dos dos dos; en Granada, y consulta por videollamada por la tarde. Y la plusvalía, el impuesto del ayuntamiento por la casa de tu abuela, tiene seis meses de plazo. ¿Está todo bien?\n<ficha>{\"situacion\":\"herencia de tu abuela en Granada, con tu hermano viviendo en Alemania\",\"parentesco\":\"Nieto o nieta\",\"testamento\":\"\",\"bienes\":\"una casa en el Albaicín\",\"nombre\":\"Sergio\",\"telefono\":\"677 444 222\",\"municipio\":\"Granada, Albaicín\",\"franja\":\"por videollamada, por la tarde\",\"fallecimiento\":\"\",\"modalidad\":\"Por videollamada\",\"orientacion\":\"Tu hermano no tiene que venir: necesita un NIE y un poder notarial con apostilla; dónde lo firma lo confirma el abogado.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Te lo repito, Sergio: teléfono seis siete siete, cuatro cuatro cuatro, dos dos dos; en Granada, y consulta por videollamada por la tarde. Y la plusvalía, el impuesto del ayuntamiento por la casa de tu abuela, tiene seis meses de plazo. ¿Está todo bien?\n<ficha>{\"situacion\":\"herencia de tu abuela en Granada, con tu hermano viviendo en Alemania\",\"parentesco\":\"Nieto o nieta\",\"testamento\":\"\",\"bienes\":\"una casa en el Albaicín\",\"nombre\":\"Sergio\",\"telefono\":\"677 444 222\",\"municipio\":\"Granada, Albaicín\",\"franja\":\"por videollamada, por la tarde\",\"fallecimiento\":\"\",\"modalidad\":\"Por videollamada\",\"orientacion\":\"Tu hermano no tiene que venir: necesita un NIE y un poder notarial con apostilla; dónde lo firma lo confirma el abogado.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien."
  }
 ]
