@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Buenas tardes. Sí, señor, hay testamento, nos lo hicimos los dos. Tenemos dos hijos. Lo que necesito es dinero para el día a día, la cuenta era de los dos"
+ },
+ {
+  "role": "assistant",
+  "content": "Como la cuenta era de los dos, lo habitual es que el banco bloquee solo la parte de su marido. Como cónyuge, lo más probable es que el impuesto salga en cero, aunque hay que presentarlo en seis meses. ¿Le reservo la consulta gratis?\n<ficha>{\"situacion\":\"Cuenta bloqueada por el banco tras el fallecimiento de su marido; necesita dinero para el día a día\",\"parentesco\":\"Cónyuge o viudo/a\",\"testamento\":\"Sí\",\"bienes\":\"Una cuenta bancaria a nombre de los dos, bloqueada por el banco\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"hace dos meses\",\"modalidad\":\"\",\"orientacion\":\"Pedir que el banco bloquee solo la parte de su marido; reunir el testamento y el justificante del impuesto. Necesita dinero para el día a día: lo confirma el abogado.\",\"porDecir\":\"Con ese dinero del banco se pueden pagar el entierro y el propio impuesto\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Como la cuenta era de los dos, lo habitual es que el banco bloquee solo la parte de su marido. Como cónyuge, lo más probable es que el impuesto salga en cero, aunque hay que presentarlo en seis meses. ¿Le reservo la consulta gratis?\n<ficha>{\"situacion\":\"Cuenta bloqueada por el banco tras el fallecimiento de su marido; necesita dinero para el día a día\",\"parentesco\":\"Cónyuge o viudo/a\",\"testamento\":\"Sí\",\"bienes\":\"Una cuenta bancaria a nombre de los dos, bloqueada por el banco\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"hace dos meses\",\"modalidad\":\"\",\"orientacion\":\"Pedir que el banco bloquee solo la parte de su marido; reunir el testamento y el justificante del impuesto. Necesita dinero para el día a día: lo confirma el abogado.\",\"porDecir\":\"Con ese dinero del banco se pueden pagar el entierro y el propio impuesto\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]
