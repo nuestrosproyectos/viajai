@@ -1,0 +1,3 @@
+No comparamos marcas; el presupuesto las detalla por escrito con garantías. Diez paneles de 450 vatios son 4,5 kilovatios, orientativamente de cuatro mil quinientos a seis mil setecientos cincuenta euros; el precio exacto sale del estudio. ¿Te reservo el estudio, mañana o tarde?
+<ficha>{"que":"Placas solares, 10 paneles de 450 W","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Son 4,5 kilovatios: precio orientativo de cuatro mil quinientos a seis mil setecientos cincuenta euros; marca y precio exacto, en el presupuesto tras el estudio","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>

@@ -1,0 +1,3 @@
+Entiendo que quieras tenerlo claro. Nadie puede garantizar un plazo: lo habitual son de seis a diez años, antes si gastas mucho de día. En el estudio, con tus facturas, lo afinamos. ¿Te reservo el estudio, por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Plazo orientativo de seis a diez años; el estudio con tus facturas lo afina","fase":"orientando"}</ficha>
+<mostrar>plazo</mostrar>

@@ -1,0 +1,3 @@
+Orientativamente, cinco kilovatios de placas y diez kilovatios-hora de batería salen de nueve mil quinientos a quince mil quinientos euros; tu presupuesto queda por debajo de ese rango. Pide que incluya boletín, marcas y garantías por escrito. ¿Te reservo el estudio gratuito, mañana o tarde?
+<ficha>{"que":"Placas con batería","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Comparar su presupuesto de 6.800 € con uno cerrado por escrito, con boletín, marcas y garantías","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>

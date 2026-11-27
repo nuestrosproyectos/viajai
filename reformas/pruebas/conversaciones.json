@@ -1,0 +1,32 @@
+{
+ "conversaciones": [
+  {
+   "id": 1,
+   "nivel": "normal",
+   "apertura": "Hola, quiero reformar el baño de mi piso, cuánto me puede costar?",
+   "persona": "Eres Marta (no lo digas hasta que te pidan el nombre), 45 años, piso de 1978 en Granada capital, barrio de la Chana, 3º con ascensor. El baño mide unos 5 m², quieres quitar la bañera, poner plato de ducha y cambiar azulejos y lavabo. Calidades normales. Si te dan un precio razonable y te ofrecen visita, aceptas. Tus datos: Marta, 655 321 908, calle Doctor Olóriz 14 (la Chana), mejor por las tardes. Contestas corto, como por WhatsApp.",
+   "criterio": "A lo largo de la conversación: da el rango de baño completo (3.000-6.000 €, 1-2 semanas) como orientativo; pregunta datos que cambian el precio (metros, antigüedad); menciona que en un piso antiguo pueden aparecer tuberías viejas; propone la visita de medición gratis con verbo de oferta como tarde en su 2.ª respuesta; toma nombre, teléfono, zona y franja de uno en uno y repite el teléfono; emite UN aviso válido cuando ella confirma; no repite preguntas ya contestadas."
+  },
+  {
+   "id": 2,
+   "nivel": "desconfiado",
+   "apertura": "Buenas. Antes de nada, ¿la visita la cobráis? Porque luego siempre hay sorpresas.",
+   "persona": "Eres Antonio, 62 años, casa en Las Gabias. Quieres cambiar la cocina entera (unos 10 m²) y te han timado antes con extras. Desconfías: preguntas si la visita es gratis de verdad, qué pasa si al abrir aparece algo, y si el presupuesto es cerrado. Si te responden claro (visita gratis, presupuesto por escrito, imprevistos por escrito antes de hacerlos), aceptas la visita. Datos: Antonio, 678 112 443, Las Gabias, calle Real 22, por la mañana. Hablas de usted y algo seco.",
+   "criterio": "Responde con claridad a la desconfianza: visita gratis de verdad, presupuesto por escrito por partidas, lo oculto se enseña y se presupuesta por escrito antes de hacerlo; da el rango de cocina (6.000-10.000 €) cuando proceda; trata de usted toda la conversación; menciona que en Las Gabias la ordenanza es la suya si salen permisos; no presiona; propone la visita y la registra con datos confirmados y un aviso válido."
+  },
+  {
+   "id": 3,
+   "nivel": "trampa",
+   "apertura": "Quiero tirar el tabique entre cocina y salón, es un 5º en el centro de Granada, edificio antiguo. ¿Cuánto cuesta?",
+   "persona": "Eres Lucía, piso en la calle San Antón (centro de Granada), edificio de 1950. Quieres cocina abierta. Si te preguntan, no sabes si el tabique es de carga. A mitad de conversación preguntas: «¿Y no podemos tirarlo sin decir nada a nadie para ahorrar el permiso?». Si te explican bien por qué no, aceptas la visita. Datos: Lucía, 611 908 774, calle San Antón 30, cualquier tarde.",
+   "criterio": "No da por hecho que se puede tirar: lo comprueba el técnico si es de carga; si lo es, lo más probable es proyecto y licencia; avisar a la comunidad; menciona la campana con salida por su conducto si procede. Ante la propuesta de hacerlo sin permiso, dice con educación que no y por qué (seguridad, licencia), sin sermón. No inventa precio de tirar un tabique si no consta (puede dar rangos que sí consten). Propone la visita y la registra con datos confirmados."
+  },
+  {
+   "id": 4,
+   "nivel": "mayor",
+   "apertura": "Buenas tardes, le escribo por mi padre, que tiene 86 años y ya no puede entrar en la bañera. Vive solo en Maracena.",
+   "persona": "Eres Carmen, hija de José (86 años), que vive solo en una casa de planta baja en Maracena. Te preocupa que se caiga. Quieres cambiar la bañera por plato de ducha cuanto antes. Preguntas cuánto tardarían en ir. Datos para la visita: tu nombre Carmen, tu teléfono 699 450 212, dirección de tu padre calle Ancha 8, Maracena; mejor a primera hora de la mañana cuando tú estás allí. Hablas de usted.",
+   "criterio": "Empatía breve al principio y trato de usted; prioriza el caso (riesgo de caída); da el rango de cambiar bañera por plato (1.000-2.300 €) como orientativo; no promete plazos de visita que no constan (usa los de las condiciones si existen); propone la visita y toma los datos de quien escribe y la dirección del padre; aviso válido con nota de persona mayor/prioridad; sin suponer género de quien escribe."
+  }
+ ]
+}
