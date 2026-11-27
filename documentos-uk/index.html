@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Paperbridge · UK documents for Spain</title>
+<meta name="description" content="UK birth, marriage and death certificates ordered, apostilled and translated into Spanish by a sworn translator, for paperwork in Spain. Not a government service.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Paperbridge — página de prueba para medir demanda.
+   Diseño: papel frío y tinta, un único acento verde «sello de apostilla». Columna de texto a la izquierda,
+   conversación con Andrés a la derecha; el recorrido del documento (certificado → apostilla → traducción) es el elemento estrella. */
+:root{
+  --fondo:#F4F6F4; --fondo-2:#E9EDEA; --tarjeta:#FFFFFF; --tinta:#16201C; --tinta-2:#46524D; --tinta-3:#6A7570;
+  --linea:#D5DDD8; --sello:#0E6B5C; --sello-2:#0A5246; --sello-suave:#DDEFEA; --aviso:#FFF4D6; --aviso-borde:#E8C96A;
+  --consola:#12201B; --consola-2:#1B2C26; --consola-txt:#EAF1EE; --consola-txt-2:#A7B8B1;
+  --display:"Schibsted Grotesk",ui-sans-serif,system-ui,sans-serif; --texto:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --curva:cubic-bezier(.23,1,.32,1); color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --fondo:#0F1513; --fondo-2:#17201D; --tarjeta:#18211E; --tinta:#E8EFEC; --tinta-2:#B9C6C0; --tinta-3:#8E9C96;
+  --linea:#2C3A35; --sello:#3FB89F; --sello-2:#5CCAB2; --sello-suave:#163A31; --aviso:#2E2812; --aviso-borde:#7A6420;
+  --consola:#0B1210; --consola-2:#15201C; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --fondo:#0F1513; --fondo-2:#17201D; --tarjeta:#18211E; --tinta:#E8EFEC; --tinta-2:#B9C6C0; --tinta-3:#8E9C96;
+  --linea:#2C3A35; --sello:#3FB89F; --sello-2:#5CCAB2; --sello-suave:#163A31; --aviso:#2E2812; --aviso-borde:#7A6420;
+  --consola:#0B1210; --consola-2:#15201C; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{overflow-x:hidden;overflow-x:clip}
+body{margin:0;background:var(--fondo);color:var(--tinta);font:400 17px/1.6 var(--texto);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--display);letter-spacing:-.02em;margin:0;text-wrap:balance}
+p{margin:0}
+a{color:var(--sello)}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--sello);outline-offset:3px;border-radius:6px}
+.envol{width:min(1160px,100%);margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+.boton{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:12px 22px;border-radius:999px;border:0;font-weight:600;text-decoration:none;cursor:pointer;transition:transform .2s var(--curva),background-color .2s}
+.boton:active{transform:scale(.97)}
+.boton svg{width:20px;height:20px}
+.principal{background:var(--sello);color:#fff}
+.principal:hover{background:var(--sello-2)}
+.secundario{background:transparent;color:var(--tinta);box-shadow:inset 0 0 0 1.5px var(--linea)}
+.secundario:hover{box-shadow:inset 0 0 0 1.5px var(--tinta-2)}
+
+/* aviso de transparencia */
+.aviso-oficial{background:var(--aviso);border-bottom:1px solid var(--aviso-borde);font-size:14.5px;line-height:1.45}
+.aviso-oficial .envol{padding-block:10px;display:flex;gap:10px;align-items:flex-start}
+.aviso-oficial svg{width:18px;height:18px;flex:none;margin-top:2px}
+.previa{background:var(--consola);color:var(--consola-txt);font-size:13px;text-align:center;padding:6px 16px}
+
+/* cabecera */
+.cab{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--fondo) 90%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--linea)}
+.cab .envol{display:flex;align-items:center;gap:12px;min-height:62px}
+.marca{display:flex;align-items:center;gap:10px;margin-right:auto;text-decoration:none;color:var(--tinta)}
+.marca svg{width:32px;height:32px;flex:none}
+.marca b{font:800 19px/1 var(--display)}
+.marca small{display:block;font-size:12px;color:var(--tinta-3);margin-top:3px}
+.idioma{display:flex;border-radius:999px;box-shadow:inset 0 0 0 1.5px var(--linea);padding:3px}
+.idioma button{border:0;background:none;border-radius:999px;padding:6px 12px;font-size:14px;font-weight:600;color:var(--tinta-2);cursor:pointer;min-height:36px}
+.idioma button[aria-pressed="true"]{background:var(--tinta);color:var(--fondo)}
+
+/* portada */
+.portada{padding:36px 0 48px}
+.portada .envol{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media (min-width:960px){.portada{padding:56px 0 72px}.portada .envol{grid-template-columns:1.05fr .95fr;gap:56px;align-items:start}}
+.sobre{font-size:14px;font-weight:600;color:var(--sello);letter-spacing:.02em}
+.portada h1{font-size:clamp(2.2rem,5.4vw,3.6rem);line-height:1.02;margin:12px 0 16px}
+.portada .entrada{font-size:1.15rem;color:var(--tinta-2);max-width:40ch}
+.acciones{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.micro{font-size:14px;color:var(--tinta-3);margin-top:12px}
+
+/* recorrido del documento (elemento estrella) */
+.recorrido{margin-top:30px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;counter-reset:paso}
+.etapa{background:var(--tarjeta);border:1px solid var(--linea);border-radius:16px;padding:14px 12px 12px;position:relative;min-width:0}
+.etapa svg{width:100%;height:auto;display:block;max-height:92px}
+.etapa b{display:block;font:700 14.5px/1.25 var(--display);margin-top:8px}
+.etapa span{display:block;font-size:12.5px;color:var(--tinta-3);line-height:1.35;margin-top:3px}
+.etapa .papel{fill:var(--tarjeta);stroke:var(--tinta-3);stroke-width:1.5}
+.etapa .renglon{stroke:var(--linea);stroke-width:3;stroke-linecap:round}
+.etapa .sello{fill:none;stroke:var(--sello);stroke-width:3}
+.etapa .sello-rel{fill:var(--sello)}
+.etapa .flecha{fill:var(--tinta-3)}
+@media (prefers-reduced-motion:no-preference){
+  .etapa{animation:sube .6s var(--curva) both}
+  .etapa:nth-child(2){animation-delay:.12s}.etapa:nth-child(3){animation-delay:.24s}
+  .etapa .estampa{transform-box:fill-box;transform-origin:center;animation:estampa .5s var(--curva) .7s both}
+}
+@keyframes sube{from{opacity:0;transform:translateY(10px)}}
+@keyframes estampa{from{opacity:0;transform:scale(1.8) rotate(-12deg)}}
+
+/* consola de Andrés */
+.consola{background:var(--consola);color:var(--consola-txt);border-radius:22px;display:flex;flex-direction:column;height:min(600px,78svh);min-height:460px;overflow:hidden;box-shadow:0 24px 60px -28px rgba(0,0,0,.55);scroll-margin-top:80px}
+.c-cab{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid rgba(255,255,255,.08)}
+.orbe{width:44px;height:44px;border-radius:50%;flex:none;background:radial-gradient(circle at 35% 30%,#7FE0CB,#0E6B5C 60%,#063A31);display:grid;place-items:center}
+.orbe i{width:16px;height:3px;border-radius:2px;background:#fff;opacity:.9;box-shadow:0 -6px 0 -1px rgba(255,255,255,.7),0 6px 0 -1px rgba(255,255,255,.7)}
+.consola[data-estado="escuchando"] .orbe{animation:late 1s ease-in-out infinite}
+.consola[data-estado="pensando"] .orbe{animation:late 1.6s ease-in-out infinite;opacity:.8}
+@keyframes late{50%{transform:scale(1.08)}}
+.c-quien{margin-right:auto;line-height:1.25}
+.c-quien b{font:700 16px var(--display)}
+.c-quien small{display:block;font-size:12.5px;color:var(--consola-txt-2)}
+.c-voz{width:40px;height:40px;border-radius:12px;border:0;background:var(--consola-2);color:var(--consola-txt-2);display:grid;place-items:center;cursor:pointer}
+.c-voz svg{width:20px;height:20px}
+.c-voz[aria-pressed="false"] .on,.c-voz[aria-pressed="true"] .off{display:none}
+.chat{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px;overscroll-behavior:contain}
+.burbuja{max-width:88%;padding:10px 14px;border-radius:16px;font-size:15.5px;line-height:1.5;overflow-wrap:anywhere}
+.burbuja.tec{background:var(--consola-2);align-self:flex-start;border-bottom-left-radius:5px}
+.burbuja.cli{background:var(--sello);color:#fff;align-self:flex-end;border-bottom-right-radius:5px}
+.burbuja.sis{align-self:center;color:var(--consola-txt-2);font-size:13.5px;text-align:center;background:none}
+.burbuja.ok{align-self:stretch;max-width:none;background:var(--sello-suave);color:var(--tinta)}
+.burbuja.ok b{display:block;font-family:var(--display)}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:0 16px 10px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;border:1px solid rgba(255,255,255,.14);background:var(--consola-2);color:var(--consola-txt);border-radius:999px;padding:8px 13px;font-size:14px;cursor:pointer}
+.barra{display:flex;gap:8px;padding:10px 12px 12px;border-top:1px solid rgba(255,255,255,.08)}
+.barra input{flex:1;min-width:0;height:50px;border-radius:999px;border:1px solid transparent;background:var(--consola-2);color:var(--consola-txt);padding:0 16px;font-size:16px;outline:0}
+.barra input:focus{border-color:rgba(255,255,255,.3)}
+.barra input::placeholder{color:var(--consola-txt-2)}
+.icono{width:50px;height:50px;border-radius:50%;border:0;flex:none;display:grid;place-items:center;cursor:pointer}
+.icono svg{width:22px;height:22px}
+.enviar{background:var(--consola-2);color:var(--consola-txt)}
+.mic{background:#3FB89F;color:#06231D}
+.consola[data-estado="escuchando"] .mic{background:#fff}
+.c-nota{font-size:11.5px;color:var(--consola-txt-2);text-align:center;padding:0 16px 10px}
+
+/* secciones */
+.seccion{padding:64px 0}
+.seccion.tenue{background:var(--fondo-2)}
+.cabecera-sec{margin-bottom:28px;max-width:62ch}
+.cabecera-sec h2{font-size:clamp(1.8rem,3.6vw,2.6rem);line-height:1.08}
+.cabecera-sec p{color:var(--tinta-2);margin-top:10px}
+.usos{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:12px}
+.uso{background:var(--tarjeta);border:1px solid var(--linea);border-radius:16px;padding:18px;text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:6px;transition:border-color .2s,transform .3s var(--curva)}
+.uso:hover{border-color:var(--sello);transform:translateY(-2px)}
+.uso b{font:700 17px/1.25 var(--display)}
+.uso span{font-size:14.5px;color:var(--tinta-2)}
+.uso em{font-style:normal;font-size:13.5px;font-weight:600;color:var(--sello);margin-top:auto;padding-top:6px}
+.tabla-envol{overflow-x:auto;border:1px solid var(--linea);border-radius:16px;background:var(--tarjeta)}
+table{width:100%;border-collapse:collapse;font-size:15.5px;min-width:520px}
+th,td{text-align:left;padding:12px 16px;border-top:1px solid var(--linea);vertical-align:top}
+thead th{border-top:0;font-size:12.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--tinta-3);font-weight:600}
+td.cifra{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.nota{font-size:14px;color:var(--tinta-3);margin-top:12px;max-width:70ch}
+.faq details{border-top:1px solid var(--linea)}
+.faq details:last-child{border-bottom:1px solid var(--linea)}
+.faq summary{cursor:pointer;list-style:none;padding:18px 36px 18px 0;font:700 17px/1.3 var(--display);position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:6px;top:14px;font-size:24px;color:var(--sello)}
+.faq details[open] summary::after{content:"–"}
+.faq details p{padding:0 0 18px;color:var(--tinta-2);max-width:68ch}
+
+/* formulario de presupuesto */
+.form-caja{background:var(--tarjeta);border:1px solid var(--linea);border-radius:20px;padding:22px;max-width:760px}
+.campos{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+@media (min-width:640px){.campos{grid-template-columns:1fr 1fr}.ancho{grid-column:1/-1}}
+.campo{display:flex;flex-direction:column;gap:6px;min-width:0}
+.campo span{font-size:14px;font-weight:600;color:var(--tinta-2)}
+.campo input,.campo select,.campo textarea{width:100%;min-height:48px;border-radius:12px;border:1px solid var(--linea);background:var(--fondo);padding:10px 14px;font-size:16px;outline:0}
+.campo textarea{min-height:90px;resize:vertical}
+.campo input:focus,.campo select:focus,.campo textarea:focus{border-color:var(--sello)}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--tinta-2);margin:16px 0}
+.consent input{width:20px;height:20px;margin-top:2px;flex:none;accent-color:var(--sello)}
+.trampa{position:absolute;left:-9999px}
+.form-ok{padding:10px 0}
+.form-ok b{font:700 20px var(--display);display:block;margin-bottom:6px}
+
+/* panel del dueño */
+.panel{margin-top:28px;border:1px dashed var(--linea);border-radius:16px;padding:18px;background:var(--tarjeta)}
+.panel h3{font-size:17px;margin-bottom:6px}
+.panel p{font-size:14px;color:var(--tinta-3);margin-bottom:10px}
+
+.pie{padding:40px 0 60px;font-size:14px;color:var(--tinta-3);border-top:1px solid var(--linea)}
+.pie .envol{display:grid;gap:14px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="previa" data-t="previa">Preview · test page to measure demand · prices and company details pending</div>
+<div class="aviso-oficial" role="note"><div class="envol">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v5M12 16.5v.5"/></svg>
+  <p data-t="aviso" data-html>Paperbridge is a private service, <b>not a government website</b>. You can order a UK certificate yourself on <a href="https://www.gov.uk/order-copy-birth-death-marriage-certificate" target="_blank" rel="noopener">GOV.UK</a> for £12.50. We handle the whole process for you: certificate, apostille and sworn Spanish translation.</p>
+</div></div>
+
+<header class="cab"><div class="envol">
+  <a class="marca" href="#" aria-label="Paperbridge">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--sello)"/><path d="M8 21c4-7 12-7 16 0" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round"/><rect x="10" y="7" width="12" height="9" rx="1.5" fill="#fff"/><circle cx="19" cy="14" r="2.6" fill="var(--sello)" stroke="#fff" stroke-width="1.2"/></svg>
+    <span><b>Paperbridge</b><small data-t="marcaSub">UK documents for life in Spain</small></span>
+  </a>
+  <div class="idioma" role="group" aria-label="Language / Idioma">
+    <button type="button" data-lang="en" aria-pressed="true">EN</button>
+    <button type="button" data-lang="es" aria-pressed="false">ES</button>
+  </div>
+</div></header>
+
+<main>
+<section class="portada"><div class="envol">
+  <div>
+    <p class="sobre" data-t="sobre">For British people living in Spain</p>
+    <h1 data-t="h1">Your UK certificates, ready for Spanish paperwork.</h1>
+    <p class="entrada" data-t="entrada">Birth, marriage and death certificates from the UK, ordered for you, apostilled by the FCDO and translated into Spanish by a sworn translator. Delivered to your door in Spain.</p>
+    <div class="acciones">
+      <button class="boton principal" type="button" data-hablar><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4"/></svg><span data-t="ctaHablar">Talk to Andrés</span></button>
+      <a class="boton secundario" href="#presupuesto" data-t="ctaPresupuesto">Get a free quote</a>
+    </div>
+    <p class="micro" data-t="micro">Andrés is our AI assistant. Tell him what your Spanish office asked for and he'll tell you exactly what you need.</p>
+    <div class="recorrido" aria-label="How your document travels">
+      <div class="etapa">
+        <svg viewBox="0 0 120 80" aria-hidden="true"><rect class="papel" x="34" y="6" width="52" height="68" rx="4"/><path class="renglon" d="M44 22h32M44 32h32M44 42h22"/><path class="renglon" d="M44 58h14"/></svg>
+        <b data-t="e1">1 · UK certificate</b><span data-t="e1s">Ordered from the official register</span>
+      </div>
+      <div class="etapa">
+        <svg viewBox="0 0 120 80" aria-hidden="true"><rect class="papel" x="34" y="6" width="52" height="68" rx="4"/><path class="renglon" d="M44 22h32M44 32h32M44 42h22"/><g class="estampa"><circle class="sello" cx="72" cy="56" r="13"/><circle class="sello-rel" cx="72" cy="56" r="6"/></g></svg>
+        <b data-t="e2">2 · Apostille</b><span data-t="e2s">Issued by the FCDO</span>
+      </div>
+      <div class="etapa">
+        <svg viewBox="0 0 120 80" aria-hidden="true"><rect class="papel" x="24" y="12" width="46" height="62" rx="4"/><rect class="papel" x="52" y="6" width="46" height="62" rx="4"/><path class="renglon" d="M60 20h30M60 30h30M60 40h18"/><path class="flecha" d="M44 44l8-5v10z"/></svg>
+        <b data-t="e3">3 · Spanish translation</b><span data-t="e3s">By a sworn translator</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="consola" id="consola" data-estado="reposo" aria-label="Chat with Andrés">
+    <div class="c-cab">
+      <div class="orbe" aria-hidden="true"><i></i></div>
+      <div class="c-quien"><b>Andrés</b><small data-t="cQuien">AI assistant · English & Español</small></div>
+      <button class="c-voz" id="btnVoz" type="button" aria-pressed="true" aria-label="Voice on / off">
+        <svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
+        <svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H2v6h4l5 4z"/><path d="M22 9l-6 6M16 9l6 6"/></svg>
+      </button>
+    </div>
+    <div class="chat" id="chat" role="log" aria-live="polite"></div>
+    <div class="chips" id="chips">
+      <button class="chip" type="button" data-t="chip1">I'm getting married in Spain</button>
+      <button class="chip" type="button" data-t="chip2">I'm applying for Spanish nationality</button>
+      <button class="chip" type="button" data-t="chip3">A relative died and there's an inheritance</button>
+      <button class="chip" type="button" data-t="chip4">Can I do it myself?</button>
+    </div>
+    <form class="barra" id="formChat" autocomplete="off">
+      <label class="oculto" for="txt" hidden>Message</label>
+      <input id="txt" type="text" enterkeyhint="send" data-tp="placeholder" placeholder="Type or press the microphone…">
+      <button class="icono enviar" type="submit" aria-label="Send"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <button class="icono mic" id="btnMic" type="button" aria-label="Speak"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4"/></svg></button>
+    </form>
+    <p class="c-nota" data-t="cNota">Andrés is an artificial intelligence. Our team reviews every request.</p>
+  </section>
+</div></section>
+
+<section class="seccion tenue" id="usos"><div class="envol">
+  <div class="cabecera-sec"><h2 data-t="usosH">What do you need it for?</h2><p data-t="usosP">Spanish offices ask for UK certificates with an apostille and a sworn translation. Tap your case and Andrés will tell you what to order.</p></div>
+  <div class="usos">
+    <button class="uso" type="button" data-pregunta="u1q"><b data-t="u1">Getting married in Spain</b><span data-t="u1s">The Civil Registry asks for your birth certificate and proof you're free to marry.</span><em data-t="preguntar">Ask Andrés →</em></button>
+    <button class="uso" type="button" data-pregunta="u2q"><b data-t="u2">Spanish nationality</b><span data-t="u2s">Your birth certificate, and often your parents' marriage certificate.</span><em data-t="preguntar">Ask Andrés →</em></button>
+    <button class="uso" type="button" data-pregunta="u3q"><b data-t="u3">Inheritance in Spain</b><span data-t="u3s">The notary needs the death certificate of the person who died in the UK.</span><em data-t="preguntar">Ask Andrés →</em></button>
+    <button class="uso" type="button" data-pregunta="u4q"><b data-t="u4">Registering your child</b><span data-t="u4s">Your marriage certificate for a birth registered in Spain.</span><em data-t="preguntar">Ask Andrés →</em></button>
+  </div>
+</div></section>
+
+<section class="seccion" id="precios"><div class="envol">
+  <div class="cabecera-sec"><h2 data-t="preciosH">What it costs</h2><p data-t="preciosP">These are the official fees you'd pay anyway. Our quote adds the sworn translation, international post and our service fee, all in one price before you pay anything.</p></div>
+  <div class="tabla-envol"><table>
+    <thead><tr><th data-t="tConcepto">Item</th><th data-t="tOficial">Official fee</th><th data-t="tQuien">Who issues it</th></tr></thead>
+    <tbody>
+      <tr><td data-t="t1">UK certificate (England & Wales), standard</td><td class="cifra" data-t="c1">£12.50</td><td><a href="https://www.gov.uk/order-copy-birth-death-marriage-certificate" target="_blank" rel="noopener">General Register Office</a></td></tr>
+      <tr><td data-t="t2">UK certificate (England & Wales), priority</td><td class="cifra" data-t="c2">£38.50</td><td><a href="https://www.gro.gov.uk/gro/content/certificates/faq.asp" target="_blank" rel="noopener">General Register Office</a></td></tr>
+      <tr><td data-t="t3">Apostille, standard</td><td class="cifra" data-t="c3">£45</td><td><a href="https://www.gov.uk/guidance/consular-services-fees" target="_blank" rel="noopener">FCDO</a></td></tr>
+      <tr><td data-t="t4">Sworn translation into Spanish</td><td class="cifra" data-t="t4p">In your quote</td><td data-t="t4q">Translator appointed by Spain's Ministry of Foreign Affairs</td></tr>
+    </tbody>
+  </table></div>
+  <p class="nota" data-t="preciosNota">Official fees checked in November 2026 on GOV.UK. Scotland and Northern Ireland have their own registers and fees; Andrés will tell you which one applies.</p>
+</div></section>
+
+<section class="seccion tenue" id="preguntas"><div class="envol">
+  <div class="cabecera-sec"><h2 data-t="faqH">Questions people ask</h2></div>
+  <div class="faq">
+    <details><summary data-t="f1">Is this an official service?</summary><p data-t="f1r">No. Paperbridge is a private company. We are not part of any government and the official fees above are the same ones you'd pay on your own.</p></details>
+    <details><summary data-t="f2">Can I do it myself?</summary><p data-t="f2r">Yes. You can order the certificate on GOV.UK, send it to the FCDO for the apostille and find a sworn translator in Spain. We do all three for you, with one quote and one point of contact.</p></details>
+    <details><summary data-t="f3">Will the Spanish office accept the translation?</summary><p data-t="f3r">Sworn translations by translators appointed by Spain's Ministry of Foreign Affairs are accepted by Spanish authorities. Some offices also ask for recent certificates; tell Andrés your procedure and province and we'll check.</p></details>
+    <details><summary data-t="f4">How long does it take?</summary><p data-t="f4r">It depends on the register, the apostille service and the post. We give you a realistic timeline with your quote, before you pay.</p></details>
+    <details><summary data-t="f5">Is Andrés a real person?</summary><p data-t="f5r">No. Andrés is an AI assistant that explains the process and takes your request. A person from our team reviews every request and sends your quote.</p></details>
+  </div>
+</div></section>
+
+<section class="seccion" id="presupuesto"><div class="envol">
+  <div class="cabecera-sec"><h2 data-t="presH">Get a free quote</h2><p data-t="presP">Tell us what you need. We reply within one working day with the total price and timeline. No payment now.</p></div>
+  <div class="form-caja">
+    <form id="formPres" novalidate>
+      <div class="campos">
+        <label class="campo"><span data-t="fNombre">Your name</span><input id="p-nombre" autocomplete="name" required></label>
+        <label class="campo"><span data-t="fEmail">Email</span><input id="p-email" type="email" autocomplete="email" required></label>
+        <label class="campo"><span data-t="fTel">WhatsApp (optional)</span><input id="p-tel" type="tel" autocomplete="tel"></label>
+        <label class="campo"><span data-t="fDoc">Document</span><select id="p-doc">
+          <option value="birth" data-t="oBirth">Birth certificate</option><option value="marriage" data-t="oMarriage">Marriage certificate</option><option value="death" data-t="oDeath">Death certificate</option><option value="other" data-t="oOther">Other / not sure</option></select></label>
+        <label class="campo"><span data-t="fPara">For</span><select id="p-para">
+          <option value="marriage" data-t="pMarriage">Getting married in Spain</option><option value="nationality" data-t="pNationality">Spanish nationality</option><option value="inheritance" data-t="pInheritance">Inheritance</option><option value="child" data-t="pChild">Registering a child</option><option value="other" data-t="oOther">Other / not sure</option></select></label>
+        <label class="campo"><span data-t="fProv">Province in Spain</span><input id="p-prov" placeholder="Alicante, Málaga…"></label>
+        <label class="campo ancho"><span data-t="fNotas">Anything else? (deadline, whose certificate…)</span><textarea id="p-notas"></textarea></label>
+      </div>
+      <input class="trampa" id="web" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label class="consent"><input type="checkbox" id="p-ok" required><span data-t="fConsent">I agree that Paperbridge uses my details only to prepare this quote.</span></label>
+      <button class="boton principal" type="submit" data-t="fEnviar">Send my request</button>
+    </form>
+    <div class="form-ok" id="formOk" hidden><b data-t="okH">Request received</b><p data-t="okP">We'll email you the total price and timeline within one working day.</p></div>
+  </div>
+  <div class="panel" id="panel" hidden>
+    <h3>Solicitudes recibidas (solo lo ves tú)</h3>
+    <p>Cada solicitud del formulario o de Andrés aparece aquí al momento.</p>
+    <div class="tabla-envol"><table><thead><tr><th>Fecha</th><th>Nombre</th><th>Contacto</th><th>Documento</th><th>Para</th><th>Provincia</th><th>Notas</th></tr></thead><tbody id="filas"><tr><td colspan="7">Todavía no hay solicitudes.</td></tr></tbody></table></div>
+  </div>
+</div></section>
+</main>
+
+<footer class="pie"><div class="envol">
+  <p data-t="pie1">Paperbridge is a private service and is not affiliated with HM Passport Office, the General Register Office, the FCDO or any Spanish authority.</p>
+  <p data-t="pie2">Company details, privacy policy and terms: pending before launch.</p>
+</div></footer>
+
+<script type="module">
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+const reducir = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* ---------- textos en inglés y español ---------- */
+const T = {
+ en: {},
+ es: {
+  previa: "Vista previa · página de prueba para medir demanda · precios y datos de la empresa pendientes",
+  aviso: 'Paperbridge es un servicio privado, <b>no una web del Gobierno</b>. Puedes pedir un certificado británico tú mismo en <a href="https://www.gov.uk/order-copy-birth-death-marriage-certificate" target="_blank" rel="noopener">GOV.UK</a> por 12,50 £. Nosotros hacemos todo el proceso: certificado, apostilla y traducción jurada al español.',
+  marcaSub: "Documentos británicos para tu vida en España", sobre: "Para británicos que viven en España",
+  h1: "Tus certificados británicos, listos para los trámites en España.",
+  entrada: "Certificados de nacimiento, matrimonio y defunción del Reino Unido: los pedimos por ti, con la apostilla del Ministerio de Exteriores británico y la traducción jurada al español. Te los enviamos a casa en España.",
+  ctaHablar: "Hablar con Andrés", ctaPresupuesto: "Pedir presupuesto gratis",
+  micro: "Andrés es nuestro asistente con inteligencia artificial. Cuéntale qué te han pedido y te dice exactamente qué necesitas.",
+  e1: "1 · Certificado británico", e1s: "Pedido al registro oficial", e2: "2 · Apostilla", e2s: "Del Ministerio de Exteriores británico", e3: "3 · Traducción al español", e3s: "Por un traductor jurado",
+  cQuien: "Asistente con IA · English & Español",
+  chip1: "Me caso en España", chip2: "Pido la nacionalidad española", chip3: "Ha fallecido un familiar y hay herencia", chip4: "¿Puedo hacerlo yo solo?",
+  placeholder: "Escribe o pulsa el micrófono…", cNota: "Andrés es una inteligencia artificial. Nuestro equipo revisa cada solicitud.",
+  usosH: "¿Para qué lo necesitas?", usosP: "Las oficinas españolas piden los certificados británicos con apostilla y traducción jurada. Toca tu caso y Andrés te dice qué pedir.",
+  u1: "Casarte en España", u1s: "El Registro Civil pide tu certificado de nacimiento y que acredites que puedes casarte.",
+  u2: "Nacionalidad española", u2s: "Tu certificado de nacimiento y, a menudo, el de matrimonio de tus padres.",
+  u3: "Herencia en España", u3s: "El notario necesita el certificado de defunción de quien falleció en el Reino Unido.",
+  u4: "Inscribir a tu hijo", u4s: "Tu certificado de matrimonio para un nacimiento inscrito en España.", preguntar: "Pregunta a Andrés →",
+  preciosH: "Lo que cuesta", preciosP: "Estas son las tasas oficiales que pagarías de todas formas. Nuestro presupuesto suma la traducción jurada, el envío internacional y nuestro servicio, todo en un precio antes de pagar nada.",
+  tConcepto: "Concepto", tOficial: "Tasa oficial", tQuien: "Quién lo expide",
+  t1: "Certificado británico (Inglaterra y Gales), normal", t2: "Certificado británico (Inglaterra y Gales), prioritario", t3: "Apostilla, normal", t4: "Traducción jurada al español", t4p: "En tu presupuesto", t4q: "Traductor nombrado por el Ministerio de Asuntos Exteriores de España",
+  preciosNota: "Tasas oficiales comprobadas en noviembre de 2026 en GOV.UK. Escocia e Irlanda del Norte tienen sus propios registros y tasas; Andrés te dice cuál te toca.",
+  faqH: "Lo que nos preguntáis",
+  f1: "¿Es un servicio oficial?", f1r: "No. Paperbridge es una empresa privada. No formamos parte de ningún Gobierno y las tasas oficiales de arriba son las mismas que pagarías tú.",
+  f2: "¿Puedo hacerlo yo solo?", f2r: "Sí. Puedes pedir el certificado en GOV.UK, enviarlo al Ministerio de Exteriores británico para la apostilla y buscar un traductor jurado en España. Nosotros hacemos las tres cosas, con un solo presupuesto y una sola persona de contacto.",
+  f3: "¿Aceptará la traducción la oficina española?", f3r: "Las traducciones juradas de traductores nombrados por el Ministerio de Asuntos Exteriores de España las aceptan las autoridades españolas. Algunas oficinas piden además certificados recientes; dile a Andrés tu trámite y tu provincia y lo comprobamos.",
+  f4: "¿Cuánto tarda?", f4r: "Depende del registro, del servicio de apostillas y del correo. Te damos un plazo realista con el presupuesto, antes de pagar.",
+  f5: "¿Andrés es una persona?", f5r: "No. Andrés es un asistente con inteligencia artificial que explica el proceso y toma tu solicitud. Una persona del equipo revisa cada solicitud y te envía el presupuesto.",
+  presH: "Pide tu presupuesto gratis", presP: "Cuéntanos qué necesitas. Te respondemos en un día laborable con el precio total y el plazo. No pagas nada ahora.",
+  fNombre: "Tu nombre", fEmail: "Correo electrónico", fTel: "WhatsApp (opcional)", fDoc: "Documento", fPara: "Para", fProv: "Provincia en España", fNotas: "¿Algo más? (plazo, de quién es el certificado…)",
+  oBirth: "Certificado de nacimiento", oMarriage: "Certificado de matrimonio", oDeath: "Certificado de defunción", oOther: "Otro / no lo sé",
+  pMarriage: "Casarme en España", pNationality: "Nacionalidad española", pInheritance: "Herencia", pChild: "Inscribir a un hijo",
+  fConsent: "Acepto que Paperbridge use mis datos solo para preparar este presupuesto.", fEnviar: "Enviar mi solicitud",
+  c1: "12,50 £", c2: "38,50 £", c3: "45 £",
+  okH: "Solicitud recibida", okP: "Te enviaremos por correo el precio total y el plazo en un día laborable.",
+  pie1: "Paperbridge es un servicio privado y no tiene relación con HM Passport Office, el General Register Office, el Ministerio de Exteriores británico ni ninguna autoridad española.",
+  pie2: "Datos de la empresa, política de privacidad y condiciones: pendientes antes del lanzamiento."
+ }
+};
+// las preguntas de las tarjetas, por idioma
+const PREG = {
+  en: { u1q: "I'm getting married in Spain. Which UK documents do I need?", u2q: "I'm applying for Spanish nationality. Which UK certificates do I need?", u3q: "A relative died in the UK and there's an inheritance in Spain. What do I need?", u4q: "I need my marriage certificate to register my child in Spain." },
+  es: { u1q: "Me caso en España. ¿Qué documentos británicos necesito?", u2q: "Pido la nacionalidad española. ¿Qué certificados británicos necesito?", u3q: "Ha fallecido un familiar en el Reino Unido y hay una herencia en España. ¿Qué necesito?", u4q: "Necesito mi certificado de matrimonio para inscribir a mi hijo en España." }
+};
+// guarda el texto inglés original de cada elemento
+$$("[data-t]").forEach(el => { T.en[el.dataset.t] = el.hasAttribute("data-html") ? el.innerHTML : el.textContent; });
+$$("[data-tp]").forEach(el => { T.en[el.dataset.tp] = el.getAttribute("placeholder"); });
+
+let lang = null;
+try { lang = localStorage.getItem("pb-idioma"); } catch {}
+if (lang !== "en" && lang !== "es") lang = (navigator.language || "").toLowerCase().startsWith("es") ? "es" : "en";
+function aplicarIdioma(l) {
+  lang = l; document.documentElement.lang = l;
+  $$("[data-t]").forEach(el => { const v = T[l][el.dataset.t] ?? T.en[el.dataset.t]; if (el.hasAttribute("data-html")) el.innerHTML = v; else el.textContent = v; });
+  $$("[data-tp]").forEach(el => el.setAttribute("placeholder", T[l][el.dataset.tp] ?? T.en[el.dataset.tp]));
+  $$(".idioma button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.lang === l)));
+  try { localStorage.setItem("pb-idioma", l); } catch {}
+}
+$$(".idioma button").forEach(b => b.addEventListener("click", () => aplicarIdioma(b.dataset.lang)));
+aplicarIdioma(lang);
+
+/* ---------- capacidades de la vista previa (Claude, dictado, voz, base de datos) ---------- */
+const plataforma = typeof window.claude?.use === "function";
+const usar = n => plataforma ? window.claude.use(n).catch(() => null) : Promise.resolve(null);
+const pSample = usar("sample"), pDictado = usar("dictation"), pVoz = usar("tts"), pDb = usar("db"), pUser = usar("user");
+
+/* ---------- Andrés ---------- */
+const INSTRUCCIONES = `You are Andrés, the AI assistant of Paperbridge, a PRIVATE service (not a government website) that helps British people living in Spain get their UK birth, marriage and death certificates ordered, apostilled and translated into Spanish by a sworn translator, for paperwork in Spain.
+
+Language: reply in the language the customer writes in (English or Spanish from Spain). Keep it short and spoken: 1-3 sentences, about 45 words maximum, one question at a time, no lists, no markdown, no emojis. Your replies may be read aloud.
+
+Honesty, always:
+- Say you are an AI assistant if asked; a person from the team reviews every request and sends the quote.
+- Paperbridge is private and not affiliated with any government. If asked, explain they can do it themselves: order on GOV.UK (England and Wales certificates cost £12.50 standard or £38.50 priority), send it to the FCDO for an apostille (£45 standard), and find a sworn translator in Spain appointed by Spain's Ministry of Foreign Affairs. Then explain the value of doing it with us: one quote, one contact, international post handled.
+- Scotland (National Records of Scotland) and Northern Ireland (GRONI) have their own registers and fees: say so and that we handle them too.
+- Never give our service price or a total: say the team sends a free quote within one working day. Never promise timelines; say they come with the quote.
+- Never give legal advice. Requirements vary by office: say what is usually asked and that we check with their procedure and province. Common cases: marrying in Spain (birth certificate, proof of single status; offices often want recent documents), Spanish nationality (birth certificate, sometimes parents' marriage certificate), inheritance in Spain (death certificate of the deceased for the notary), registering a child (parents' marriage certificate).
+
+Your goal: understand which certificate(s) they need, for which procedure, whose certificate (name, and roughly year and place of the event if they know), the province in Spain and any deadline, then take their name and email (WhatsApp optional) so the team can send the quote. Ask one thing at a time. Before taking details, say briefly they are only used for the quote.
+
+When you have at least name, email, the document and the purpose, and the customer agrees to receive a quote, add at the very end, on its own line, once in the whole conversation:
+<lead>{"nombre":"","email":"","whatsapp":"","documento":"","para":"","provincia":"","notas":""}</lead>
+In "notas" put what the team needs (whose certificate, year and place, deadline, register). Never mention this line in what you say.`;
+const SALUDO = { en: "Hi, I'm Andrés, Paperbridge's AI assistant. Which UK certificate do you need, and what is it for in Spain?", es: "Hola, soy Andrés, el asistente con IA de Paperbridge. ¿Qué certificado británico necesitas y para qué trámite en España?" };
+
+const chat = $("#chat"), consola = $("#consola"), txt = $("#txt");
+const turnos = []; let leadHecho = false, enCurso = null, vozActiva = true;
+function burbuja(clase, texto) { const b = document.createElement("div"); b.className = "burbuja " + clase; b.textContent = texto; chat.append(b); chat.scrollTop = chat.scrollHeight; return b; }
+function estado(e) { consola.dataset.estado = e; }
+burbuja("tec", SALUDO[lang]);
+
+function visible(t) { const i = t.search(/<lead/); return (i >= 0 ? t.slice(0, i) : t).replace(/<\/?[a-z]*$/i, "").trim(); }
+function leerLead(t) { const m = t.match(/<lead>\s*([\s\S]*?)\s*<\/lead>/); if (!m) return null; try { return JSON.parse(m[1]); } catch { return null; } }
+
+async function decir(frase) {
+  if (!vozActiva || !frase) return;
+  const t = await pVoz;
+  if (t) { t.add([{ text: frase, language: lang }]).catch(() => {}); return; }
+  if ("speechSynthesis" in window) { const u = new SpeechSynthesisUtterance(frase); u.lang = lang === "es" ? "es-ES" : "en-GB"; speechSynthesis.speak(u); }
+}
+function callar() { pVoz.then(t => t?.stop?.().catch?.(() => {})); if ("speechSynthesis" in window) speechSynthesis.cancel(); }
+
+async function enviar(texto) {
+  texto = (texto || "").trim(); if (!texto) return;
+  if (enCurso) enCurso.abort(); callar();
+  $("#chips").hidden = true;
+  burbuja("cli", texto); turnos.push({ role: "user", content: texto });
+  const b = burbuja("tec", "…"); estado("pensando");
+  const ctl = new AbortController(); enCurso = ctl;
+  try {
+    const sample = await pSample;
+    if (!sample) throw { code: "sin_ia" };
+    const conv = [{ role: "user", content: INSTRUCCIONES }, { role: "assistant", content: SALUDO[lang] }, ...turnos.slice(-30)];
+    const r = await sample(conv, { modelTier: "quick", cache: false, signal: ctl.signal, onText: ({ text }) => { const v = visible(text); if (v) { b.textContent = v; chat.scrollTop = chat.scrollHeight; } } });
+    if (ctl.signal.aborted) return;
+    const v = visible(r.text) || "…"; b.textContent = v; decir(v);
+    turnos.push({ role: "assistant", content: r.text.replace(/<lead>[\s\S]*?<\/lead>/, "<lead>(saved)</lead>") });
+    const l = leerLead(r.text);
+    if (l && !leadHecho) { leadHecho = true; const ok = await guardar({ ...l, origen: "Andrés" }); const c = burbuja("ok", ""); c.innerHTML = `<b>${lang === "es" ? "Solicitud recibida" : "Request received"}</b>`; c.append(lang === "es" ? "Te enviaremos el presupuesto por correo en un día laborable." : "We'll email you the quote within one working day."); if (!ok) c.append(lang === "es" ? " (Vista previa: no se ha podido guardar.)" : " (Preview: could not be saved.)"); }
+  } catch (e) {
+    if (e?.code === "cancelled") return;
+    turnos.pop();
+    b.textContent = lang === "es" ? "Ahora mismo no puedo responder por aquí. Usa el formulario de presupuesto de abajo y te contestamos en un día laborable." : "I can't reply here right now. Please use the quote form below and we'll get back to you within one working day.";
+  } finally { if (enCurso === ctl) enCurso = null; estado("reposo"); }
+}
+$("#formChat").addEventListener("submit", e => { e.preventDefault(); const v = txt.value; txt.value = ""; enviar(v); });
+$$("#chips .chip").forEach(c => c.addEventListener("click", () => enviar(c.textContent)));
+$$("[data-pregunta]").forEach(c => c.addEventListener("click", () => { consola.scrollIntoView({ behavior: reducir ? "auto" : "smooth", block: "start" }); enviar(PREG[lang][c.dataset.pregunta]); }));
+$$("[data-hablar]").forEach(b => b.addEventListener("click", () => { consola.scrollIntoView({ behavior: reducir ? "auto" : "smooth", block: "start" }); escuchar(); }));
+$("#btnVoz").addEventListener("click", () => { vozActiva = !vozActiva; $("#btnVoz").setAttribute("aria-pressed", String(vozActiva)); if (!vozActiva) callar(); });
+
+/* dictado: el visor de Claude en la vista previa; el del navegador en la web publicada */
+let dictado = null, escuchando = false, buffer = "", reloj = 0, rec = null;
+const RecWeb = window.SpeechRecognition || window.webkitSpeechRecognition;
+pDictado.then(d => {
+  dictado = d; if (!d) { if (!RecWeb) $("#btnMic").hidden = true; return; }
+  d.onFinal(({ text }) => { buffer += text; programar(); });
+  d.onPartial(() => programar());
+  d.onState(({ state }) => { if (state === "idle") { escuchando = false; estado("reposo"); const t = buffer.trim(); buffer = ""; if (t) enviar(t); } });
+});
+function programar() { clearTimeout(reloj); reloj = setTimeout(() => { if (escuchando) parar(); }, 1600); }
+function parar() { if (dictado) dictado.stop().catch(() => {}); else rec?.stop(); }
+function escuchar() {
+  callar();
+  if (escuchando) { parar(); return; }
+  if (dictado) { buffer = ""; dictado.start().catch(() => { escuchando = false; estado("reposo"); txt.focus(); }); escuchando = true; estado("escuchando"); return; }
+  if (RecWeb) {
+    rec = new RecWeb(); rec.lang = lang === "es" ? "es-ES" : "en-GB"; rec.interimResults = false;
+    rec.onresult = ev => { buffer = [...ev.results].map(r => r[0].transcript).join(" "); };
+    rec.onend = () => { escuchando = false; estado("reposo"); const t = buffer.trim(); buffer = ""; if (t) enviar(t); };
+    try { rec.start(); escuchando = true; estado("escuchando"); } catch {}
+    return;
+  }
+  txt.focus();
+}
+$("#btnMic").addEventListener("click", escuchar);
+
+/* ---------- solicitudes ---------- */
+async function guardar(datos) {
+  const fila = { ...datos, idioma: lang, creado: new Date().toISOString() };
+  try { const db = await pDb; if (db) { await db.collection("solicitudes").add(fila); return true; } } catch {}
+  return false;
+}
+$("#formPres").addEventListener("submit", async e => {
+  e.preventDefault();
+  if ($("#web").value) return;
+  const nombre = $("#p-nombre"), email = $("#p-email"), ok = $("#p-ok");
+  for (const el of [nombre, email, ok]) if (!el.checkValidity()) { el.reportValidity(); return; }
+  await guardar({ nombre: nombre.value.trim(), email: email.value.trim(), whatsapp: $("#p-tel").value.trim(), documento: $("#p-doc").value, para: $("#p-para").value, provincia: $("#p-prov").value.trim(), notas: $("#p-notas").value.trim(), origen: "formulario" });
+  $("#formPres").hidden = true; $("#formOk").hidden = false;
+});
+
+// panel del dueño: solo lo ve el propietario de la vista previa
+pUser.then(async u => {
+  if (!u || !(await u.isOwner?.().catch(() => false))) return;
+  const db = await pDb; if (!db) return;
+  $("#panel").hidden = false;
+  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  db.collection("solicitudes").orderBy("creado", "desc").limit(100).onSnapshot(snap => {
+    const f = snap.docs.map(d => d.data());
+    $("#filas").innerHTML = f.length ? f.map(a => `<tr><td>${esc(new Date(a.creado).toLocaleString("es-ES", { dateStyle: "short", timeStyle: "short" }))}</td><td>${esc(a.nombre)}</td><td>${esc([a.email, a.whatsapp].filter(Boolean).join(" · "))}</td><td>${esc(a.documento)}</td><td>${esc(a.para)}</td><td>${esc(a.provincia)}</td><td>${esc(a.notas)} <small>(${esc(a.origen)}, ${esc(a.idioma)})</small></td></tr>`).join("") : '<tr><td colspan="7">Todavía no hay solicitudes.</td></tr>';
+  }, () => {});
+});
+</script>
+</body>
+</html>
