@@ -210,4 +210,11 @@ Gracias, Pedro. Y pide a tu mujer que guarde el parte de urgencias: es lo que un
 === CLIENTE ===
 En Loja
 
+=== ANDRÉS ===
+Perfecto, Pedro. Te apunto la consulta para tu mujer, por videollamada, por la tarde. Repito tu teléfono: seis cero cero, nueve cero nueve, tres cero tres. Y si tu póliza tiene defensa jurídica, puede cubrir parte de los honorarios. ¿Está todo bien?
+<ficha>{"caso":"Se saltó un ceda; iba con su mujer","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"Pedro","telefono":"600 909 303","municipio":"Loja","franja":"por videollamada, por la tarde","consentimientoSalud":"","orientacion":"Que su mujer vea un médico hoy; ella puede reclamar al seguro del coche en que iban","fase":"datos"}</ficha>
+
+=== CLIENTE ===
+Sí, todo bien. Gracias. ¿Entonces ya queda enviada la solicitud?
+
 === ANDRÉS (tu respuesta) ===

@@ -211,4 +211,11 @@ Gracias, Raúl. Cuando vayas al médico, pide que quede por escrito el golpe del
 === CLIENTE ===
 Vivo en Granada, en el Zaidín. Mejor por videollamada y por la tarde
 
+=== ANDRÉS ===
+Perfecto, Raúl. Te apunto la videollamada con el abogado por la tarde. Repito tu teléfono: seis cuatro cuatro, cinco cinco cinco, ocho ocho ocho. No firmes nada que te mande la aseguradora sin que lo vea el abogado. ¿Está todo bien?
+<ficha>{"caso":"Golpe por detrás","como":"","fecha":"hace tres días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Raúl","telefono":"644 555 888","municipio":"Granada (Zaidín)","franja":"por videollamada, por la tarde","consentimientoSalud":"","orientacion":"Que te vea un médico hoy y avisar a tu aseguradora en siete días","fase":"datos"}</ficha>
+
+=== CLIENTE ===
+Sí, todo bien. ¿Y ya queda enviada la solicitud o tengo que hacer algo más?
+
 === ANDRÉS (tu respuesta) ===

@@ -38,5 +38,14 @@
  {
   "role": "user",
   "content": "En Granada"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Daniel. Te apunto la consulta por videollamada. Repito tu teléfono: seis uno uno, siete siete siete, dos dos dos. Y si la culpa fue compartida, se reparte entre los dos; eso lo mira el abogado. ¿Está todo bien?\n<ficha>{\"caso\":\"Iba en bici y un coche te cerró al girar\",\"como\":\"En bici o patinete\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"No lo sé\",\"atestado\":\"Atestado de la policía\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Daniel\",\"telefono\":\"611 777 222\",\"municipio\":\"Granada\",\"franja\":\"por videollamada, cualquier tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Pedir copia del informe de urgencias; guardar fotos, el atestado y los datos del testigo\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Daniel. Te apunto la consulta por videollamada. Repito tu teléfono: seis uno uno, siete siete siete, dos dos dos. Y si la culpa fue compartida, se reparte entre los dos; eso lo mira el abogado. ¿Está todo bien?\n<ficha>{\"caso\":\"Iba en bici y un coche te cerró al girar\",\"como\":\"En bici o patinete\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"No lo sé\",\"atestado\":\"Atestado de la policía\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Daniel\",\"telefono\":\"611 777 222\",\"municipio\":\"Granada\",\"franja\":\"por videollamada, cualquier tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Pedir copia del informe de urgencias; guardar fotos, el atestado y los datos del testigo\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien. ¿Y ya queda enviada la solicitud?"
  }
 ]

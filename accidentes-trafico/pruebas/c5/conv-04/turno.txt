@@ -210,4 +210,11 @@ Gracias, Inés. Como ibas por un paso de cebra, la protección es muy alta: el s
 === CLIENTE ===
 No, no he reclamado nada por escrito a nadie
 
+=== ANDRÉS ===
+Gracias, Inés. Te apunto la consulta en el despacho, por la mañana. Como no has reclamado todavía, conviene hacerlo por escrito cuanto antes: esa reclamación interrumpe el plazo, y el abogado lo revisa contigo. ¿En qué municipio vives?
+<ficha>{"caso":"Atropello en un paso de cebra; el conductor se fue y no se sabe quién era","como":"Andando","fecha":"hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Inés","telefono":"655 777 333","municipio":"","franja":"en el despacho, por la mañana","consentimientoSalud":"","orientacion":"Reclamar por escrito cuanto antes y guardar el alta y los informes médicos; el plazo de un año lo revisa el abogado","fase":"datos"}</ficha>
+
+=== CLIENTE ===
+En Granada, en el Realejo
+
 === ANDRÉS (tu respuesta) ===

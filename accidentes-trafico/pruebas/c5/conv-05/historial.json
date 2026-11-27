@@ -38,5 +38,14 @@
  {
   "role": "user",
   "content": "En Armilla"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Lorena. Te apunto la consulta por teléfono, por la tarde, desde Armilla. Repito tu teléfono: seis dos dos, uno uno ocho, nueve cero cero. Y no firmes nada de la aseguradora del otro hasta que lo vea el abogado. ¿Está todo bien?\n<ficha>{\"caso\":\"Volviendo del trabajo en moto, un coche le sacó de la carretera\",\"como\":\"En moto\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Del otro\",\"atestado\":\"Atestado de la policía\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Lorena\",\"telefono\":\"622 118 900\",\"municipio\":\"Armilla\",\"franja\":\"por teléfono, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar el atestado y las bajas; la mutua cubre la baja y se puede reclamar también al otro seguro\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Lorena. Te apunto la consulta por teléfono, por la tarde, desde Armilla. Repito tu teléfono: seis dos dos, uno uno ocho, nueve cero cero. Y no firmes nada de la aseguradora del otro hasta que lo vea el abogado. ¿Está todo bien?\n<ficha>{\"caso\":\"Volviendo del trabajo en moto, un coche le sacó de la carretera\",\"como\":\"En moto\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Del otro\",\"atestado\":\"Atestado de la policía\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Lorena\",\"telefono\":\"622 118 900\",\"municipio\":\"Armilla\",\"franja\":\"por teléfono, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar el atestado y las bajas; la mutua cubre la baja y se puede reclamar también al otro seguro\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien. Gracias"
  }
 ]
