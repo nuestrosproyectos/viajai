@@ -5,7 +5,7 @@
    "nivel": "normal",
    "apertura": "Hola, quiero reformar el baño de mi piso, cuánto me puede costar?",
    "persona": "Eres Marta (no lo digas hasta que te pidan el nombre), 45 años, piso de 1978 en Granada capital, barrio de la Chana, 3º con ascensor. El baño mide unos 5 m², quieres quitar la bañera, poner plato de ducha y cambiar azulejos y lavabo. Calidades normales. Si te dan un precio razonable y te ofrecen visita, aceptas. Tus datos: Marta, 655 321 908, calle Doctor Olóriz 14 (la Chana), mejor por las tardes. Contestas corto, como por WhatsApp.",
-   "criterio": "A lo largo de la conversación: da el rango de baño completo (3.000-6.000 €, 1-2 semanas) como orientativo; pregunta datos que cambian el precio (metros, antigüedad); menciona que en un piso antiguo pueden aparecer tuberías viejas; propone la visita de medición gratis con verbo de oferta como tarde en su 2.ª respuesta; toma nombre, teléfono, zona y franja de uno en uno y repite el teléfono; emite UN aviso válido cuando ella confirma; no repite preguntas ya contestadas."
+   "criterio": "A lo largo de la conversación: da el rango de baño completo (3.000-6.000 €, 1-2 semanas) como orientativo; pregunta datos que cambian el precio (metros, antigüedad); menciona que en un piso antiguo pueden aparecer tuberías viejas; propone la visita de medición gratis con verbo de oferta como tarde en su 2.ª respuesta; toma nombre, teléfono, zona y franja en dos preguntas como mucho y repite el teléfono; emite UN aviso válido cuando ella confirma; no repite preguntas ya contestadas."
   },
   {
    "id": 2,
@@ -27,6 +27,34 @@
    "apertura": "Buenas tardes, le escribo por mi padre, que tiene 86 años y ya no puede entrar en la bañera. Vive solo en Maracena.",
    "persona": "Eres Carmen, hija de José (86 años), que vive solo en una casa de planta baja en Maracena. Te preocupa que se caiga. Quieres cambiar la bañera por plato de ducha cuanto antes. Preguntas cuánto tardarían en ir. Datos para la visita: tu nombre Carmen, tu teléfono 699 450 212, dirección de tu padre calle Ancha 8, Maracena; mejor a primera hora de la mañana cuando tú estás allí. Hablas de usted.",
    "criterio": "Empatía breve al principio y trato de usted; prioriza el caso (riesgo de caída); da el rango de cambiar bañera por plato (1.000-2.300 €) como orientativo; no promete plazos de visita que no constan (usa los de las condiciones si existen); propone la visita y toma los datos de quien escribe y la dirección del padre; aviso válido con nota de persona mayor/prioridad; sin suponer género de quien escribe."
+  },
+  {
+   "id": 5,
+   "nivel": "cocina",
+   "apertura": "Quiero cambiar la cocina entera y mover el fregadero debajo de la ventana. ¿Cuánto sale más o menos?",
+   "persona": "Eres Javier, de Granada capital (Zaidín). Cocina de unos 9 m² en un piso de 1985. Quieres muebles nuevos de gama media y mover el fregadero 2 metros. Te preocupa cuánto tiempo estarás sin cocina. Si te dan una idea clara, aceptas la visita. Datos: Javier, 622 410 870, calle Arabial 50, por las mañanas. Contestas corto.",
+   "criterio": "Rango de cocina 6.000-10.000 € orientativo; que mover el fregadero (agua y desagüe) sube el precio; pregunta el tamaño o la distribución; plazo exacto lo da el técnico; propone la visita gratis con verbo de oferta como tarde en la 2.ª respuesta; toma datos (incluida calle y número), confirma antes de enviar y emite un aviso válido."
+  },
+  {
+   "id": 6,
+   "nivel": "integral pueblo",
+   "apertura": "Hemos comprado un piso de 90 metros en Armilla para reformarlo entero. ¿Qué presupuesto calculo?",
+   "persona": "Eres Nuria, de Armilla. Piso de 90 m² de los años 80, quieres cambiarlo todo (baño, cocina, suelos, electricidad), sin tirar muros. Te preocupan los permisos. Si te dan una cifra orientativa y te explican lo del ayuntamiento, aceptas la visita. Datos: Nuria, 699 202 515, calle Real de Armilla 22, por las tardes.",
+   "criterio": "Multiplica 460-690 €/m² por 90 m² (unos 41.000-62.000 €) como orientativo; electricidad e instalaciones antiguas pueden subir; permisos: en Armilla su propio ayuntamiento y ordenanza, sin aplicar las cifras de Granada capital; IVA del 10 % si es su vivienda y cumple los requisitos (si lo menciona); propone visita, toma datos, confirma y aviso válido."
+  },
+  {
+   "id": 7,
+   "nivel": "ventanas e IVA",
+   "apertura": "Quiero cambiar las ventanas de casa por unas que aíslen. ¿Me desgrava algo en la renta?",
+   "persona": "Eres Paco, de Granada capital (Ronda). Piso propio de 1990 donde vives, 6 ventanas de aluminio viejo. Has oído que se puede desgravar. Preguntas también si te cobran el 21 % de IVA. Si te lo explican bien, aceptas la visita. Datos: Paco, 633 778 120, calle Recogidas 31, por las mañanas.",
+   "criterio": "Deducción del 20 o 40 % solo con certificado energético antes y después hecho por un técnico; IVA del 10 % si es particular, vivienda con más de dos años y materiales que no pasan del 40 %; lo que no sepa (plazos de la deducción) lo confirma su gestor o el técnico, sin inventar; propone visita, toma datos, confirma y aviso válido."
+  },
+  {
+   "id": 8,
+   "nivel": "uralita",
+   "apertura": "Tengo un tejado de uralita en la cochera y quiero quitarlo yo mismo este finde. ¿Qué pongo en su lugar?",
+   "persona": "Eres Antonio, de Atarfe. Cochera de unos 30 m² con tejado de uralita de los 70. Pensabas quitarla tú con tu cuñado. Si te explican el riesgo con respeto, aceptas que vayan a verla. Datos: Antonio, 655 909 341, calle Granada 8 de Atarfe, cualquier tarde.",
+   "criterio": "Lo primero, con calma: puede tener amianto, que no la rompa, corte ni taladre; solo la retira una empresa inscrita en el registro oficial (RERA); no juzga; luego la alternativa (lo ve el técnico) sin inventar precios que no consten; propone visita, toma datos, confirma y aviso urgente o normal según el caso, válido."
   }
  ]
 }
