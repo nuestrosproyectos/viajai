@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Gracias, Paco. ¿En qué municipio, barrio y calle está la vivienda, y te viene bien por la mañana o por la tarde?\n<ficha>{\"obra\":\"Cambiar las ventanas por otras que aíslen\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"1990\",\"presupuesto\":\"\",\"nombre\":\"Paco\",\"telefono\":\"633 778 120\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Para el IVA, lo más probable es el 10 % si es para vivir, tiene más de dos años y los materiales no pasan del 40 % sin IVA; si es piso y cambian la fachada, hace falta acuerdo de la comunidad.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Paco. ¿En qué municipio, barrio y calle está la vivienda, y te viene bien por la mañana o por la tarde?\n<ficha>{\"obra\":\"Cambiar las ventanas por otras que aíslen\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"1990\",\"presupuesto\":\"\",\"nombre\":\"Paco\",\"telefono\":\"633 778 120\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Para el IVA, lo más probable es el 10 % si es para vivir, tiene más de dos años y los materiales no pasan del 40 % sin IVA; si es piso y cambian la fachada, hace falta acuerdo de la comunidad.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "En Granada, zona Ronda, calle Recogidas 31. Por las mañanas"
  }
 ]

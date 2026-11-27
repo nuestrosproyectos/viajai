@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Gracias, Carmen. ¿En qué calle y número de Maracena está la casa de su padre, para la visita?\n<ficha>{\"obra\":\"Cambiar la bañera por plato de ducha, para su padre, que ya no puede entrar\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Carmen\",\"telefono\":\"699 450 212\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"Mañana, a primera hora\",\"inicio\":\"Cuanto antes\",\"orientacion\":\"Cambiar la bañera por un plato de ducha es la prioridad por seguridad; suele costar entre mil y dos mil trescientos euros.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Carmen. ¿En qué calle y número de Maracena está la casa de su padre, para la visita?\n<ficha>{\"obra\":\"Cambiar la bañera por plato de ducha, para su padre, que ya no puede entrar\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Carmen\",\"telefono\":\"699 450 212\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"Mañana, a primera hora\",\"inicio\":\"Cuanto antes\",\"orientacion\":\"Cambiar la bañera por un plato de ducha es la prioridad por seguridad; suele costar entre mil y dos mil trescientos euros.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Calle Ancha 8, Maracena."
  }
 ]

@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Gracias, Antonio. ¿En qué municipio, barrio y calle está la vivienda, y le viene bien por la mañana o por la tarde?\n<ficha>{\"obra\":\"cocina entera\",\"vivienda\":\"\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Una cocina suele quedar entre seis mil y diez mil euros, según los muebles y si se mueven fregadero o campana.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Antonio. ¿En qué municipio, barrio y calle está la vivienda, y le viene bien por la mañana o por la tarde?\n<ficha>{\"obra\":\"cocina entera\",\"vivienda\":\"\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Una cocina suele quedar entre seis mil y diez mil euros, según los muebles y si se mueven fregadero o campana.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "En Las Gabias, calle Real 22. Por la mañana."
  }
 ]
