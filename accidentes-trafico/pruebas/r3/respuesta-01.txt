@@ -1,0 +1,2 @@
+Siento el golpe. Lo primero es que te vea un médico cuanto antes y quede por escrito; guarda el parte y las fotos. En la primera consulta gratis el abogado revisa tu caso con calma. ¿Ya has ido al médico?
+<ficha>{"caso":"Golpe por detrás en un semáforo en la Avenida de Dílar","como":"","fecha":"ayer","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Ir al médico cuanto antes y guardar el parte y las fotos.","fase":"orientando"}</ficha>

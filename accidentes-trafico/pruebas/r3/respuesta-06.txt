@@ -1,0 +1,3 @@
+Entiendo la duda. Lo primero, no firmes nada hasta que lo vea el abogado. Cada día cuenta en una categoría con su cuantía orientativa, unos sesenta y ocho euros por día moderado, y el abogado lo suma con lo demás y te dice si es razonable. ¿Te reservo la consulta gratis, por la mañana o por la tarde?
+<ficha>{"caso":"Accidente de tráfico; la aseguradora del otro te ha enviado una oferta","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"No firmar la oferta hasta que la revise el abogado con tus informes.","fase":"proponiendo"}</ficha>
+<mostrar>oferta</mostrar>
