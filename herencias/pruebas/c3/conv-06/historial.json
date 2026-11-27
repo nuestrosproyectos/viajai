@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Toñi, 699 777 333"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Toñi. Si no hubo testamento, la herencia iría primero a sus dos hijos, y eso lo confirma el abogado. ¿De qué municipio eres y cómo te viene mejor la consulta, en el despacho, por videollamada o por teléfono?\n<ficha>{\"situacion\":\"fallecimiento de tu pareja, con quien llevabas quince años; estabais inscritos como pareja de hecho en Andalucía; vivías con él en un piso a su nombre\",\"parentesco\":\"Pareja de hecho\",\"testamento\":\"No lo sé\",\"bienes\":\"un piso a nombre de él\",\"nombre\":\"Toñi\",\"telefono\":\"699 777 333\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Inscritos como pareja de hecho, en el impuesto tienes la misma reducción que un cónyuge; pide el certificado de últimas voluntades para saber si hubo testamento.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Toñi. Si no hubo testamento, la herencia iría primero a sus dos hijos, y eso lo confirma el abogado. ¿De qué municipio eres y cómo te viene mejor la consulta, en el despacho, por videollamada o por teléfono?\n<ficha>{\"situacion\":\"fallecimiento de tu pareja, con quien llevabas quince años; estabais inscritos como pareja de hecho en Andalucía; vivías con él en un piso a su nombre\",\"parentesco\":\"Pareja de hecho\",\"testamento\":\"No lo sé\",\"bienes\":\"un piso a nombre de él\",\"nombre\":\"Toñi\",\"telefono\":\"699 777 333\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Inscritos como pareja de hecho, en el impuesto tienes la misma reducción que un cónyuge; pide el certificado de últimas voluntades para saber si hubo testamento.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

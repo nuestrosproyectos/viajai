@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Carmen, 611 222 999"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Carmen. Y si el piso está en Granada capital, la bonificación de la plusvalía se pierde si se presenta fuera de plazo. ¿De qué municipio eres y cómo te viene mejor la consulta, en el despacho, por videollamada o por teléfono?\n<ficha>{\"situacion\":\"herencia de tu madre, fallecida hace cinco meses y medio; hay testamento, sois tres hermanos y hay un piso en Granada\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"Sí\",\"bienes\":\"un piso en Granada\",\"nombre\":\"Carmen\",\"telefono\":\"611 222 999\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"hace cinco meses y medio\",\"modalidad\":\"\",\"orientacion\":\"Hay que presentar el impuesto antes de que venza a los seis meses, sin prórroga; pedir el certificado de últimas voluntades para localizar el testamento.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Carmen. Y si el piso está en Granada capital, la bonificación de la plusvalía se pierde si se presenta fuera de plazo. ¿De qué municipio eres y cómo te viene mejor la consulta, en el despacho, por videollamada o por teléfono?\n<ficha>{\"situacion\":\"herencia de tu madre, fallecida hace cinco meses y medio; hay testamento, sois tres hermanos y hay un piso en Granada\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"Sí\",\"bienes\":\"un piso en Granada\",\"nombre\":\"Carmen\",\"telefono\":\"611 222 999\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"hace cinco meses y medio\",\"modalidad\":\"\",\"orientacion\":\"Hay que presentar el impuesto antes de que venza a los seis meses, sin prórroga; pedir el certificado de últimas voluntades para localizar el testamento.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

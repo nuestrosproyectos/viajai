@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Manuel, 622 555 444"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Manuel. Si algún acreedor te reclama ante notario, tienes treinta días naturales para contestar; si callas, se entiende que aceptas. ¿De qué municipio eres y cómo te viene mejor la consulta, en el despacho, por videollamada o por teléfono?\n<ficha>{\"situacion\":\"herencia de tu hermano, que tenía deudas (un préstamo, quizá tarjetas) y una furgoneta\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"No lo sé\",\"bienes\":\"una furgoneta\",\"nombre\":\"Manuel\",\"telefono\":\"622 555 444\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Lo más seguro suele ser aceptar a beneficio de inventario, ante notario; renunciar es irrevocable; pedir el certificado de últimas voluntades para saber si hubo testamento.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Manuel. Si algún acreedor te reclama ante notario, tienes treinta días naturales para contestar; si callas, se entiende que aceptas. ¿De qué municipio eres y cómo te viene mejor la consulta, en el despacho, por videollamada o por teléfono?\n<ficha>{\"situacion\":\"herencia de tu hermano, que tenía deudas (un préstamo, quizá tarjetas) y una furgoneta\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"No lo sé\",\"bienes\":\"una furgoneta\",\"nombre\":\"Manuel\",\"telefono\":\"622 555 444\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Lo más seguro suele ser aceptar a beneficio de inventario, ante notario; renunciar es irrevocable; pedir el certificado de últimas voluntades para saber si hubo testamento.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]
