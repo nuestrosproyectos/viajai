@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "De los años 80. Quiero cambiar todo: baño, cocina, suelos y electricidad, sin tirar muros. ¿Hace falta algún permiso del ayuntamiento?"
+ },
+ {
+  "role": "assistant",
+  "content": "En Armilla el permiso lo fija su propio ayuntamiento, con su ordenanza, así que eso no te lo puedo asegurar. La reforma suele durar de tres a cinco meses. ¿Te reservo la visita?\n<ficha>{\"obra\":\"Reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros\",\"vivienda\":\"\",\"metros\":\"90 metros\",\"antiguedad\":\"Años 80\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"En Armilla el permiso lo fija su ayuntamiento con su propia ordenanza; la reforma suele durar de tres a cinco meses.\",\"porDecir\":\"la instalación eléctrica la cambia una empresa habilitada, que emite el boletín · el IVA puede ser del 10 % si es vivienda suya y tiene más de dos años; lo confirma el gestor\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "En Armilla el permiso lo fija su propio ayuntamiento, con su ordenanza, así que eso no te lo puedo asegurar. La reforma suele durar de tres a cinco meses. ¿Te reservo la visita?\n<ficha>{\"obra\":\"Reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros\",\"vivienda\":\"\",\"metros\":\"90 metros\",\"antiguedad\":\"Años 80\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"En Armilla el permiso lo fija su ayuntamiento con su propia ordenanza; la reforma suele durar de tres a cinco meses.\",\"porDecir\":\"la instalación eléctrica la cambia una empresa habilitada, que emite el boletín · el IVA puede ser del 10 % si es vivienda suya y tiene más de dos años; lo confirma el gestor\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

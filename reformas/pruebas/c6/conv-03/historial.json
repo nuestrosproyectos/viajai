@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Es en la calle San Antón, en el centro. No es el Albaicín ni el Realejo, creo"
+ },
+ {
+  "role": "assistant",
+  "content": "Por estar en el centro, lo más probable es que haga falta licencia y técnico, aunque sea solo un tabique. ¿Te reservo la visita para que lo mida?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"Edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada\",\"direccion\":\"Calle San Antón\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Por estar en el centro, lo más probable es que haga falta licencia y técnico; el precio lo da el técnico tras verlo.\",\"porDecir\":\"si la cocina queda abierta, la campana sigue sacando los humos por su conducto\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Por estar en el centro, lo más probable es que haga falta licencia y técnico, aunque sea solo un tabique. ¿Te reservo la visita para que lo mida?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"Edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada\",\"direccion\":\"Calle San Antón\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Por estar en el centro, lo más probable es que haga falta licencia y técnico; el precio lo da el técnico tras verlo.\",\"porDecir\":\"si la cocina queda abierta, la campana sigue sacando los humos por su conducto\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

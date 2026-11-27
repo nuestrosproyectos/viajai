@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "No, no tengo ningún certificado. Es mi vivienda de siempre, de 1990, con 6 ventanas de aluminio viejo. Y otra cosa, ¿me cobráis el 21 % de IVA?"
+ },
+ {
+  "role": "assistant",
+  "content": "Suele ser el 10 % si es para vivir, tiene más de dos años y los materiales no pasan del 40 % sin IVA. Si es piso y cambian el aspecto de la fachada, probablemente haga falta acuerdo de la comunidad. ¿Te reservo la visita?\n<ficha>{\"obra\":\"Cambiar las ventanas por otras que aíslen\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"1990\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Para el IVA, lo más probable es el 10 % si es para vivir, tiene más de dos años y los materiales no pasan del 40 % sin IVA.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Suele ser el 10 % si es para vivir, tiene más de dos años y los materiales no pasan del 40 % sin IVA. Si es piso y cambian el aspecto de la fachada, probablemente haga falta acuerdo de la comunidad. ¿Te reservo la visita?\n<ficha>{\"obra\":\"Cambiar las ventanas por otras que aíslen\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"1990\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Para el IVA, lo más probable es el 10 % si es para vivir, tiene más de dos años y los materiales no pasan del 40 % sin IVA.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

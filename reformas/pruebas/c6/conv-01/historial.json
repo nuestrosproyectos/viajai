@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Unos 5 m²"
+ },
+ {
+  "role": "assistant",
+  "content": "Con esos cinco metros, lo que más pesa es lo que aparezca detrás de los azulejos, y eso solo se ve al medir. La visita dura unos cuarenta y cinco minutos, sin compromiso, y el técnico mide y mira las instalaciones. ¿Te reservo la visita?\n<ficha>{\"obra\":\"reformar el baño\",\"vivienda\":\"\",\"metros\":\"Unos 5 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Un baño completo suele costar entre tres mil y seis mil euros; conviene medirlo antes en la visita.\",\"porDecir\":\"el IVA es del 10 % si la vivienda es tuya para vivir y tiene más de dos años, lo confirma el gestor\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Con esos cinco metros, lo que más pesa es lo que aparezca detrás de los azulejos, y eso solo se ve al medir. La visita dura unos cuarenta y cinco minutos, sin compromiso, y el técnico mide y mira las instalaciones. ¿Te reservo la visita?\n<ficha>{\"obra\":\"reformar el baño\",\"vivienda\":\"\",\"metros\":\"Unos 5 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Un baño completo suele costar entre tres mil y seis mil euros; conviene medirlo antes en la visita.\",\"porDecir\":\"el IVA es del 10 % si la vivienda es tuya para vivir y tiene más de dos años, lo confirma el gestor\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]
