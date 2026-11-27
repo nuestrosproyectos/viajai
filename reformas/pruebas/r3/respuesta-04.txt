@@ -1,0 +1,3 @@
+Lo más probable es que cambiar azulejos y plato vaya con declaración responsable en el Ayuntamiento, si no toca estructura. Dentro de tu piso debes avisar al presidente o al administrador. La visita de medición gratis lo confirma. ¿De qué año es el edificio?
+<ficha>{"obra":"Cambiar azulejos y plato de ducha","vivienda":"Piso","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"Granada (Zaidín)","franja":"","inicio":"","orientacion":"Declaración responsable en el Ayuntamiento si no toca estructura; avisar al presidente o al administrador.","fase":"orientando"}</ficha>
+<mostrar>permisos</mostrar>

@@ -1,0 +1,2 @@
+No tengo datos fiables de esa ayuda, así que no te la puedo confirmar; lo apunto para que el abogado te lo confirme. Lo primero es que te vea un médico y quede por escrito. En la consulta gratis lo revisamos con calma. ¿Ya te ha visto uno?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Ver a un médico y dejarlo por escrito; la ayuda de la Junta de Andalucía la confirma el abogado.","fase":"orientando"}</ficha>

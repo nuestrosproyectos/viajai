@@ -1,0 +1,3 @@
+Entiendo tu enfado. Lo habitual en el sector es un porcentaje de lo que se consiga, pactado por escrito antes de empezar, y el abogado te dice el nuestro y revisa la oferta en la consulta gratis. ¿Te viene mejor por la mañana o por la tarde?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Antes de aceptar nada, que el abogado revise el porcentaje por escrito y la oferta de la aseguradora.","fase":"proponiendo"}</ficha>
+<mostrar>honorarios</mostrar>

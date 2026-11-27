@@ -1,0 +1,3 @@
+Un baño completo suele durar de una a dos semanas, aunque depende de lo que haya detrás de los azulejos. El técnico lo confirma en la visita de medición, que es gratis. ¿Te reservo la visita por la mañana o por la tarde?
+<ficha>{"obra":"Reformar el baño entero","vivienda":"","metros":"unos 4 metros","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Reforma completa de un baño pequeño; el plazo exacto lo confirma el técnico en la visita.","fase":"proponiendo"}</ficha>
+<mostrar>plazo</mostrar>

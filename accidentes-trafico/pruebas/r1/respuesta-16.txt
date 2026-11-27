@@ -1,0 +1,2 @@
+Lo lamento mucho por su madre. Guarde todos los informes del hospital, y en la primera consulta gratis el abogado revisa su caso con calma. ¿Ya le han dado el alta a su madre?
+<ficha>{"caso":"Atropello de su madre, de 82 años, en Baza","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Guarde todos los informes del hospital y llévelos a la consulta.","fase":"orientando"}</ficha>

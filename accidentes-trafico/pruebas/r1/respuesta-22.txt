@@ -1,0 +1,3 @@
+Entiendo que te preocupe. Lo primero es que no firmes nada ni aceptes la oferta sin que la vea tu abogado. Si quieres una segunda opinión, la puede dar el abogado en la consulta gratis. ¿Te viene mejor por la mañana o por la tarde?
+<ficha>{"caso":"Accidente con abogado ya en el caso y una oferta de la aseguradora","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que tu abogado revise la oferta antes de firmar o aceptar nada.","fase":"proponiendo"}</ficha>
+<mostrar>oferta</mostrar>

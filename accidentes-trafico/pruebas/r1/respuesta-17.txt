@@ -1,0 +1,3 @@
+Una cifra exacta solo la puede dar el abogado con tu informe delante. El baremo paga cada día de lesión según su gravedad: unos 68 € por día moderado, que suele coincidir con la baja laboral. Los días que valen son los del informe médico. ¿Ya te han dado el alta?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Guardar el informe médico al día; la cuantía exacta la calcula el abogado con tus informes.","fase":"orientando"}</ficha>
+<mostrar>baremo</mostrar>
