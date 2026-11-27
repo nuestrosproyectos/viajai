@@ -1,0 +1,3 @@
+No tengo ese dato seguro. Las garantías de placas, inversor y mano de obra van por escrito en el presupuesto. El técnico te explica el mantenimiento en la visita. Te reservo el estudio gratuito; ¿te viene mejor por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Pedir por escrito las garantías y el mantenimiento en el presupuesto","fase":"orientando"}</ficha>
+<mostrar>garantia</mostrar>

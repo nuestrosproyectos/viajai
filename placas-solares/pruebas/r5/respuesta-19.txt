@@ -1,0 +1,2 @@
+Es normal que pidas seguridad. Lo más probable es que se pague en unos 6 a 10 años, pero es una estimación y nadie puede garantizarla. Te reservo el estudio gratuito, sin compromiso; ¿te viene mejor por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Pide por escrito que se amortiza en 5 años; solo hay una estimación de 6 a 10 años","fase":"orientando"}</ficha>

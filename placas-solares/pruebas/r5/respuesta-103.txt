@@ -1,0 +1,3 @@
+En Granada capital, el ICIO (impuesto de la obra) tiene un 95 % por autoconsumo, y el IBI un 50 %; hay que pedirlos. Para 2027 hay en trámite un 10 % del IBI por aerotermia, pendiente de aprobación definitiva. ¿Te reservo el estudio gratuito?
+<ficha>{"que":"Placas solares y aerotermia","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"Granada capital","franja":"","inicio":"","orientacion":"Pedir la bonificación del ICIO y del IBI; la del IBI por aerotermia aún no está aprobada","fase":"orientando"}</ficha>
+<mostrar>ayudas</mostrar>

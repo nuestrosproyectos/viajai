@@ -1,0 +1,2 @@
+Entiendo tu enfado, y con razón si la instalación no produce. Reclama la garantía a tu instaladora por escrito. Si quieres, te apunto para que te llamemos. ¿Qué marca de inversor tiene y qué luces o códigos muestra?
+<ficha>{"que":"Revisar mi instalación","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Reclamar la garantía a tu instaladora por escrito; mirar qué marca y códigos muestra el inversor","fase":"orientando"}</ficha>

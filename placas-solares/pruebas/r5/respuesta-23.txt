@@ -1,0 +1,2 @@
+Sí se puede estudiar: sin red sería una instalación aislada, con baterías que guardan la energía. Te reservo el estudio gratuito con visita; ¿es vivienda habitual o de fines de semana?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Cortijo en la Alpujarra sin luz de la red: instalación aislada con baterías; falta el municipio y si es habitual","fase":"orientando"}</ficha>

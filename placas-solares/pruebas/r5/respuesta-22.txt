@@ -1,0 +1,2 @@
+Eso no es lo mío: soy el asistente de placas solares de Tejaluz. Si te interesan, dime cuánto pagas de luz al mes y te digo cuántas placas harían falta.
+<ficha>{"que":"","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"","fase":"entendiendo"}</ficha>

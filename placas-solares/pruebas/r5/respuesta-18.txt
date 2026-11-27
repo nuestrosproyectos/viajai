@@ -1,0 +1,3 @@
+Esa subvención no me consta, así que lo apunto para que el técnico en el estudio te lo confirme. Lo que sí hay son bonificaciones municipales que dependen del ayuntamiento. Te reservo el estudio gratuito; ¿en qué municipio está?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Quiere que tramitemos una ayuda del 50 % que no nos consta; el técnico lo comprueba","fase":"orientando"}</ficha>
+<mostrar>ayudas</mostrar>

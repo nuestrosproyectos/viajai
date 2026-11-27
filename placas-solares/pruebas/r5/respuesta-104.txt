@@ -1,0 +1,2 @@
+No te lo puedo asegurar: siempre quedan la potencia contratada, el contador, los impuestos y lo que se gasta de noche. Puede bajar mucho, pero no a cero. Te reservo el estudio gratuito; ¿te viene mejor por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Quiere la seguridad de no pagar luz nunca; no se puede asegurar, la factura no baja a cero","fase":"orientando"}</ficha>

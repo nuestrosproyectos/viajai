@@ -1,0 +1,2 @@
+Sin ver tu caso no puedo juzgar a nadie. Lo que sobra solo se descuenta con un contrato de compensación firmado con tu comercializadora, y sin legalizar no compensa. Te puedo apuntar a una revisión: su precio lo confirma el técnico. ¿Firmaste ese contrato?
+<ficha>{"que":"Revisar mi instalación","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Placas de hace 3 años y sin compensación en la factura: revisar contrato y legalización","fase":"orientando"}</ficha>

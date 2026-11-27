@@ -1,0 +1,2 @@
+Con batería, una casa de unos cinco kilovatios suele salir de 7.000 a 9.500 € orientativos, así que tu presupuesto queda algo por debajo. Lo clave es que incluya legalización y garantías por escrito. ¿Te reservo el estudio gratuito para compararlo con uno cerrado?
+<ficha>{"que":"Placas con batería","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Comparar el presupuesto de otra empresa con uno cerrado por escrito en el estudio","fase":"orientando"}</ficha>

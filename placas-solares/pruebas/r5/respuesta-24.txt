@@ -1,0 +1,2 @@
+Respeto que ya tengas instalador. Mejor que no subas al tejado ni toques nada, porque con sol hay tensión. La instaladora habilitada es la que legaliza y responde, y así sí puedes compensar lo que sobra. ¿Necesitas algo más?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"la semana que viene, con otro instalador","orientacion":"No subir al tejado ni montar paneles tú mismo; que legalice la instaladora contratada","fase":"orientando"}</ficha>

@@ -1,0 +1,3 @@
+Gracias, Paco. Las Gabias es otro municipio: el IBI depende de su ordenanza, así que no te lo puedo confirmar y el técnico lo comprueba. Repito tu teléfono para confirmarlo: seiscientos veintidós, cuatrocientos cincuenta y seis, setecientos ochenta y nueve. ¿Es correcto?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 110 € al mes","tejado":"propio, mirando al sur","consumo":"de tarde, con aire acondicionado","nombre":"Paco Ruiz","telefono":"622 456 789","municipio":"Las Gabias","franja":"por las mañanas","inicio":"","orientacion":"Estudio gratuito con visita; el IBI de Las Gabias depende de su ordenanza","fase":"datos"}</ficha>
+<mostrar>ayudas</mostrar>

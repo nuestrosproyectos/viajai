@@ -1,0 +1,2 @@
+Si el bar gasta mucho de día, las placas suelen compensar. La deducción de autoconsumo de la Renta no vale para un negocio; eso lo confirma tu asesor. Te reservo el estudio gratuito; para afinar, ¿cuánta luz gastáis al año, según la factura?
+<ficha>{"que":"Placas para un bar","lugar":"Negocio o nave","factura":"","tejado":"","consumo":"cámaras frigoríficas","nombre":"","telefono":"","municipio":"Motril","franja":"","inicio":"","orientacion":"Mirar cuánto gasta de día; la deducción de autoconsumo de la Renta no vale para un negocio","fase":"orientando"}</ficha>
