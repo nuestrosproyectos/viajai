@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Sí, vale, me vendría bien saber qué salidas hay. Resérvamela"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, la reservamos. Si no hay acuerdo ni partidor, queda la división judicial, que puede tardar de uno a tres años, así que conviene empezar ya. Para llamarte y organizar la consulta, ¿me dices tu nombre y un teléfono?\n<ficha>{\"situacion\":\"reparto de la casa del pueblo entre cuatro hermanos; hay testamento a partes iguales y uno no quiere firmar\",\"parentesco\":\"\",\"testamento\":\"Sí\",\"bienes\":\"la casa del pueblo, en Loja\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"El impuesto ya está pagado; primero negociar, y si no hay acuerdo, el notario puede nombrar un contador-partidor que reparta aunque uno no firme.\",\"porDecir\":\"si ya son copropietarios, extinción de condominio: uno compensa a los demás, se vende o, en el peor caso, subasta\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, la reservamos. Si no hay acuerdo ni partidor, queda la división judicial, que puede tardar de uno a tres años, así que conviene empezar ya. Para llamarte y organizar la consulta, ¿me dices tu nombre y un teléfono?\n<ficha>{\"situacion\":\"reparto de la casa del pueblo entre cuatro hermanos; hay testamento a partes iguales y uno no quiere firmar\",\"parentesco\":\"\",\"testamento\":\"Sí\",\"bienes\":\"la casa del pueblo, en Loja\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"El impuesto ya está pagado; primero negociar, y si no hay acuerdo, el notario puede nombrar un contador-partidor que reparta aunque uno no firme.\",\"porDecir\":\"si ya son copropietarios, extinción de condominio: uno compensa a los demás, se vende o, en el peor caso, subasta\",\"fase\":\"datos\"}</ficha>"
  }
 ]

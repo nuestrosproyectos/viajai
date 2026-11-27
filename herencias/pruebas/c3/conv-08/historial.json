@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Sí, muchas gracias por la paciencia. Que me llame el abogado por teléfono, por favor"
+ },
+ {
+  "role": "assistant",
+  "content": "Queda reservada por teléfono. Para el banco necesitará tres papeles: el testamento, la escritura de herencia o el acuerdo de todos, y el justificante del impuesto. Solo es para llamarle y organizar la consulta: ¿me dice su nombre y un teléfono?\n<ficha>{\"situacion\":\"herencia de su marido, con la cuenta bloqueada por el banco\",\"parentesco\":\"Cónyuge o viudo/a\",\"testamento\":\"Sí\",\"bienes\":\"una cuenta compartida; el banco ha bloqueado la parte de su marido\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"hace dos meses\",\"modalidad\":\"Por teléfono\",\"orientacion\":\"Como cónyuge, lo más probable es que pague cero o casi nada de impuesto, aunque hay que presentarlo en seis meses; el banco libera la parte bloqueada al presentar tres papeles.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Queda reservada por teléfono. Para el banco necesitará tres papeles: el testamento, la escritura de herencia o el acuerdo de todos, y el justificante del impuesto. Solo es para llamarle y organizar la consulta: ¿me dice su nombre y un teléfono?\n<ficha>{\"situacion\":\"herencia de su marido, con la cuenta bloqueada por el banco\",\"parentesco\":\"Cónyuge o viudo/a\",\"testamento\":\"Sí\",\"bienes\":\"una cuenta compartida; el banco ha bloqueado la parte de su marido\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"hace dos meses\",\"modalidad\":\"Por teléfono\",\"orientacion\":\"Como cónyuge, lo más probable es que pague cero o casi nada de impuesto, aunque hay que presentarlo en seis meses; el banco libera la parte bloqueada al presentar tres papeles.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

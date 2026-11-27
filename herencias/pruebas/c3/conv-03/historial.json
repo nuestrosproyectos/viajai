@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Sí por favor, lo antes posible. Ya no sé ni por dónde empezar"
+ },
+ {
+  "role": "assistant",
+  "content": "No te preocupes, te lo vamos ordenando. Y si el plazo se pasa, hay recargo: un 1 % más un 1 % por cada mes de retraso. Para llamarte y organizar la consulta cuanto antes, ¿me dices tu nombre y un teléfono?\n<ficha>{\"situacion\":\"herencia de tu madre, fallecida hace cinco meses y medio; hay testamento, sois tres hermanos y hay un piso en Granada\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"Sí\",\"bienes\":\"un piso en Granada\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"hace cinco meses y medio\",\"modalidad\":\"\",\"orientacion\":\"Hay que presentar el impuesto antes de que venza a los seis meses, sin prórroga; pedir el certificado de últimas voluntades para localizar el testamento.\",\"porDecir\":\"si el piso está en Granada capital, la bonificación de la plusvalía se pierde fuera de plazo\",\"fase\":\"datos\"}</ficha>",
+  "original": "No te preocupes, te lo vamos ordenando. Y si el plazo se pasa, hay recargo: un 1 % más un 1 % por cada mes de retraso. Para llamarte y organizar la consulta cuanto antes, ¿me dices tu nombre y un teléfono?\n<ficha>{\"situacion\":\"herencia de tu madre, fallecida hace cinco meses y medio; hay testamento, sois tres hermanos y hay un piso en Granada\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"Sí\",\"bienes\":\"un piso en Granada\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"hace cinco meses y medio\",\"modalidad\":\"\",\"orientacion\":\"Hay que presentar el impuesto antes de que venza a los seis meses, sin prórroga; pedir el certificado de últimas voluntades para localizar el testamento.\",\"porDecir\":\"si el piso está en Granada capital, la bonificación de la plusvalía se pierde fuera de plazo\",\"fase\":\"datos\"}</ficha>"
  }
 ]
