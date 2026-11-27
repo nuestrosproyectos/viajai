@@ -17,6 +17,20 @@ ssh <usuario>@<ip-del-servidor> 'bash -s' < deploy/diagnostico.sh
 Comprueba que hay al menos 2 GB libres en disco y que nada ocupa ya los puertos 80 y 443. Si otro programa
 (por ejemplo un contenedor Docker con Nginx o Traefik) usa esos puertos, no instales Caddy: añade el panel a ese proxy.
 
+## Vía rápida: un solo comando (probado en Hostinger KVM 1, Ubuntu 24.04)
+
+Como root en el servidor (sirve la «Terminal del navegador» de hPanel). Hace los pasos 1 a 5 de abajo, es seguro
+repetirlo (no pisa `.env`, `accounts.json` ni `data/`) y genera solo las claves del panel y del webhook:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/nuestrosproyectos/viajai/claude/kind-maxwell-uq5vsh/global-b2b-outreach-engine/deploy/instalar.sh | bash
+```
+
+Después rellena `.env` (paso 4) y publica con HTTPS (paso 6). Los pasos manuales quedan abajo como referencia.
+
+Ojo: los valores de ejemplo de `.env.example` cuentan como vacíos. Hasta que pongas tus datos reales,
+el motor se niega a redactar o enviar.
+
 ## 1. Preparar el servidor
 
 ```bash
@@ -47,7 +61,7 @@ sudo chown -R outreach: /opt/global-b2b-outreach-engine
 cd /opt/global-b2b-outreach-engine
 sudo -u outreach python3 -m venv .venv
 sudo -u outreach .venv/bin/pip install -r requirements.txt
-sudo -u outreach .venv/bin/python -m pytest tests -q      # debe terminar en «35 passed»
+sudo -u outreach .venv/bin/python -m pytest tests -q      # debe terminar en «36 passed»
 ```
 
 ## 4. Configurar

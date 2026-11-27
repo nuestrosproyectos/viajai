@@ -862,3 +862,17 @@ def test_unsubscribed_lead_is_not_reopened_by_whatsapp(conn, campaign, client):
     client.get(f"/unsubscribe/{row['unsubscribe_token']}")
     client.post("/webhook/whatsapp-inbound", json={"phone": "34611", "message": f"[Ref: {row['lead_ref']}]"}, headers={"X-Webhook-Secret": "s3creto"})
     assert conn.execute("SELECT status FROM leads WHERE id = ?", (ids[0],)).fetchone()[0] == "UNSUBSCRIBED"
+
+
+def test_example_env_values_count_as_missing(env, monkeypatch):
+    """Si se copia .env.example sin cambiarlo, los datos de ejemplo no valen: nunca se firma con «Tu Empresa»."""
+    examples = settings_module._example_values()
+    for key in ("COMPANY_NAME", "TAX_ID", "FISCAL_ADDRESS", "PRIVACY_URL", "PUBLIC_BASE_URL",
+                "WEBHOOK_SECRET", "ANTHROPIC_API_KEY", "APIFY_TOKEN"):
+        assert examples.get(key), f"{key} debería tener valor de ejemplo en .env.example"
+        monkeypatch.setenv(key, examples[key])
+    settings_module.get_settings.cache_clear()
+    settings = settings_module.get_settings()
+    assert set(settings.missing_legal_fields()) == {
+        "COMPANY_NAME", "TAX_ID", "FISCAL_ADDRESS", "PRIVACY_URL", "PUBLIC_BASE_URL"}
+    assert settings.anthropic_api_key == "" and settings.apify_token == "" and settings.webhook_secret == ""

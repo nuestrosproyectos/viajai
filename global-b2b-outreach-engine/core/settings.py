@@ -29,6 +29,34 @@ def load_env_file(path: Path) -> None:
         os.environ.setdefault(key, value)
 
 
+# Variables cuyo valor de `.env.example` es solo un ejemplo: si alguien copia el fichero y no las
+# cambia, se tratan como vacías. Así nunca se firma un correo con «Tu Empresa, S.L.» ni se usa una clave falsa.
+_PLACEHOLDER_KEYS = (
+    "APIFY_TOKEN", "ANTHROPIC_API_KEY", "COMPANY_NAME", "TAX_ID", "FISCAL_ADDRESS",
+    "PRIVACY_URL", "SENDER_NAME", "PUBLIC_BASE_URL", "WEBHOOK_SECRET",
+)
+
+
+def _example_values() -> dict[str, str]:
+    path = BASE_DIR / ".env.example"
+    values: dict[str, str] = {}
+    if path.is_file():
+        for raw in path.read_text(encoding="utf-8").splitlines():
+            line = raw.strip()
+            if line and not line.startswith("#") and "=" in line:
+                key, _, value = line.partition("=")
+                values[key.strip()] = value.strip().strip("\"'")
+    return values
+
+
+def _str(name: str, examples: dict[str, str]) -> str:
+    """Valor de la variable sin espacios; vacío si sigue siendo el de ejemplo."""
+    value = os.environ.get(name, "").strip()
+    if name in _PLACEHOLDER_KEYS and value and value == examples.get(name):
+        return ""
+    return value
+
+
 def _bool(name: str, default: bool) -> bool:
     raw = os.environ.get(name)
     if raw is None or raw.strip() == "":
@@ -95,24 +123,25 @@ class Settings:
 def get_settings() -> Settings:
     load_env_file(BASE_DIR / ".env")
     env = os.environ
+    examples = _example_values()
     jitter_min = _int("SEND_JITTER_MIN_SECONDS", 90)
     jitter_max = _int("SEND_JITTER_MAX_SECONDS", 240)
     if jitter_min < 0 or jitter_max < jitter_min:
         raise ValueError("SEND_JITTER_MIN_SECONDS debe ser >= 0 y <= SEND_JITTER_MAX_SECONDS")
     return Settings(
         db_path=_path("DB_PATH", "data/leads.db"),
-        apify_token=env.get("APIFY_TOKEN", "").strip(),
-        anthropic_api_key=env.get("ANTHROPIC_API_KEY", "").strip(),
+        apify_token=_str("APIFY_TOKEN", examples),
+        anthropic_api_key=_str("ANTHROPIC_API_KEY", examples),
         anthropic_model=env.get("ANTHROPIC_MODEL", "").strip() or "claude-haiku-4-5-20251001",
-        company_name=env.get("COMPANY_NAME", "").strip(),
-        tax_id=env.get("TAX_ID", "").strip(),
-        fiscal_address=env.get("FISCAL_ADDRESS", "").strip(),
-        privacy_url=env.get("PRIVACY_URL", "").strip(),
-        sender_name=env.get("SENDER_NAME", "").strip(),
-        public_base_url=env.get("PUBLIC_BASE_URL", "").strip().rstrip("/"),
+        company_name=_str("COMPANY_NAME", examples),
+        tax_id=_str("TAX_ID", examples),
+        fiscal_address=_str("FISCAL_ADDRESS", examples),
+        privacy_url=_str("PRIVACY_URL", examples),
+        sender_name=_str("SENDER_NAME", examples),
+        public_base_url=_str("PUBLIC_BASE_URL", examples).rstrip("/"),
         strict_b2b_only=_bool("STRICT_B2B_ONLY", True),
         robinson_file=_path("ROBINSON_FILE", "external_robinson_blocklist.csv"),
-        webhook_secret=env.get("WEBHOOK_SECRET", "").strip(),
+        webhook_secret=_str("WEBHOOK_SECRET", examples),
         whatsapp_verify_token=env.get("WHATSAPP_VERIFY_TOKEN", "").strip(),
         whatsapp_app_secret=env.get("WHATSAPP_APP_SECRET", "").strip(),
         dashboard_token=env.get("DASHBOARD_TOKEN", "").strip(),

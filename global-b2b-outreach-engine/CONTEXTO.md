@@ -15,7 +15,7 @@ Léelo entero antes de tocar nada. Háblale a Juan siempre en español de Españ
 - Repositorio `nuestrosproyectos/viajai`, rama `claude/global-b2b-outreach-engine-usf73l`, carpeta `global-b2b-outreach-engine/`.
 - No hay pull request abierto (Juan no lo ha pedido).
 - `README.md` explica el uso; `deploy/INSTALL.md` es la guía de instalación en un servidor Ubuntu 24.04.
-- Pruebas: `python -m pytest tests -q` → 35 pasan. No llaman a ningún servicio externo.
+- Pruebas: `python -m pytest tests -q` → 36 pasan. No llaman a ningún servicio externo.
 
 ## Qué hay construido
 
@@ -61,6 +61,8 @@ Léelo entero antes de tocar nada. Háblale a Juan siempre en español de Españ
    - Decisión de Juan: quedarse con Hostinger e instalar **desde su PC por SSH** (opción 1). No contratar OVH ahora.
    - Visto de paso: paga dos alojamientos web de 203,88 €/año (Business, mayo; Unlimited, 21-11-2026). Se le avisó; no se ha tocado.
    - El token de la API de Hostinger quedó guardado en el entorno en la nube `viajai` (secreto de red para developers.hostinger.com).
+   - **Disco liberado (27-11-2026, 21:55):** `/copias` ocupaba 43 GB (copia puntual del PC de Juan del 30-10 y copias de licitaciones). Juan confirmó que el PC va a Hetzner y licitaciones sigue en OVH; se borró con su OK. Disco: 97 % → 7 % (45 GB libres). Nada seguía escribiendo ahí.
+   - Acceso al servidor: la «Terminal del navegador» de hPanel (como root) manejada por Claude in Chrome en el PC de Juan. Esta sesión en la nube no puede hacer SSH.
 2. Instalar siguiendo `deploy/INSTALL.md` (con OK de Juan antes de desplegar).
 3. Reunir lo que falta: clave de Apify, clave de Anthropic, datos legales (razón social, CIF, domicilio, URL de privacidad), dominio de envío con SPF/DKIM/DMARC y dos buzones, subdominio para el panel.
 4. Redactar los correos reales de los leads con email y enseñárselos a Juan **antes** de enviar ninguno.

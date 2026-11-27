@@ -20,7 +20,7 @@ python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env                       # claves y datos legales de tu empresa
 cp accounts.example.json accounts.json     # cuentas de correo desde las que se envía
-python -m pytest tests -q                  # 32 pruebas; no llaman a ningún servicio externo
+python -m pytest tests -q                  # 36 pruebas; no llaman a ningún servicio externo
 ```
 
 En `.env` son obligatorios `APIFY_TOKEN`, `ANTHROPIC_API_KEY`, los datos legales (`COMPANY_NAME`, `TAX_ID`, `FISCAL_ADDRESS`, `PRIVACY_URL`) y `PUBLIC_BASE_URL`, que es la dirección pública del servidor de bajas. Sin los datos legales el sistema se niega a redactar o enviar.
