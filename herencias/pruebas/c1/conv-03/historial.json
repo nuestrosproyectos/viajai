@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Entiendo el agobio, y el abogado te dice por dónde empezar. Te reservo la consulta gratis por la mañana, lo antes posible. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizarla.\n<ficha>{\"situacion\":\"Herencia de tu madre, fallecida hace cinco meses y medio, sin gestiones hechas\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"No lo sé\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Por la mañana, lo antes posible\",\"fallecimiento\":\"hace cinco meses y medio\",\"modalidad\":\"\",\"orientacion\":\"Presentar el impuesto de sucesiones antes de cumplirse los seis meses; la prórroga ya no se puede pedir.\",\"porDecir\":\"Si hay piso en Granada capital, la plusvalía municipal también tiene seis meses y su bonificación se pierde fuera de plazo · fuera de plazo el impuesto tiene recargo (1 % más 1 % por mes)\",\"fase\":\"datos\"}</ficha>",
   "original": "Entiendo el agobio, y el abogado te dice por dónde empezar. Te reservo la consulta gratis por la mañana, lo antes posible. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizarla.\n<ficha>{\"situacion\":\"Herencia de tu madre, fallecida hace cinco meses y medio, sin gestiones hechas\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"No lo sé\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Por la mañana, lo antes posible\",\"fallecimiento\":\"hace cinco meses y medio\",\"modalidad\":\"\",\"orientacion\":\"Presentar el impuesto de sucesiones antes de cumplirse los seis meses; la prórroga ya no se puede pedir.\",\"porDecir\":\"Si hay piso en Granada capital, la plusvalía municipal también tiene seis meses y su bonificación se pierde fuera de plazo · fuera de plazo el impuesto tiene recargo (1 % más 1 % por mes)\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Carmen, 611 222 999"
  }
 ]
