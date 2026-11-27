@@ -137,6 +137,9 @@ def social_profile(url: str) -> tuple[str, str] | None:
     url = url.strip()
     if url.startswith("//"):
         url = "https:" + url
+    inner = re.search(r"https?://.+?(https?://.+)$", url)
+    if inner:  # enlace pegado dos veces en la web del negocio: vale la dirección de dentro
+        return social_profile(inner.group(1))
     parts = urlsplit(url if "://" in url else "https://" + url)
     host = (parts.hostname or "").lower()
     network = next((name for domain, name in SOCIAL_NETWORKS.items() if host == domain or host.endswith("." + domain)), None)

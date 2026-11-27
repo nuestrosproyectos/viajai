@@ -241,6 +241,7 @@ def test_social_profiles_are_told_apart_from_share_buttons():
     assert enricher.social_profile("https://www.instagram.com/fontanerialucimart/?utm_medium=copy_link") == ("Instagram", "https://www.instagram.com/fontanerialucimart")
     assert enricher.social_profile("https://www.facebook.com/profile.php?id=1000123") == ("Facebook", "https://www.facebook.com/profile.php?id=1000123")
     assert enricher.social_profile("https://es.linkedin.com/company/acme") == ("LinkedIn", "https://es.linkedin.com/company/acme")
+    assert enricher.social_profile("https://instagram.com/https://www.instagram.com/midagra_desatascos") == ("Instagram", "https://www.instagram.com/midagra_desatascos")
     for noise in ("https://www.facebook.com/sharer/sharer.php?u=x", "https://twitter.com/intent/tweet?text=x", "https://www.facebook.com/",
                   "https://www.linkedin.com/shareArticle?url=x", "https://www.youtube.com/watch?v=abc", "https://fontaneriaperez.es/facebook"):
         assert enricher.social_profile(noise) is None, noise
