@@ -1,0 +1,152 @@
+[
+ {
+  "id": 1,
+  "nivel": "facil",
+  "ultimo": "Hola, se me ha atascado el fregadero de la cocina y no traga nada. Vivo en Granada, en el Zaidín.",
+  "criterio": "Pregunta si atasca solo el fregadero o también lavavajillas o lavadora. Recomienda no echar sosa cáustica. Da la horquilla orientativa de un desatasco sencillo (unos 70-150 €) como orientativa, sin precio cerrado, y ofrece cita pidiendo nombre y teléfono."
+ },
+ {
+  "id": 2,
+  "nivel": "facil",
+  "ultimo": "la cisterna del váter no para de echar agua, se oye todo el rato",
+  "criterio": "Explica que lo más probable es el flotador, el grifo de llenado o la descarga (a menudo por cal), que puede cerrar la llavecita de la cisterna mientras tanto y que no es una urgencia. Precio orientativo de reparar una cisterna (unos 100-300 €) sin precio cerrado. Ofrece cita normal."
+ },
+ {
+  "id": 3,
+  "nivel": "facil",
+  "ultimo": "Buenas, ¿cuánto cobráis por venir?",
+  "criterio": "Da la tarifa de salida del negocio si la tiene en sus datos; si no, la horquilla orientativa de mercado (unos 20-40 €) dejando claro que es orientativa y que el fontanero confirma su tarifa. Menciona que urgencias de noche o festivo suelen ser más caras. Pregunta qué avería tiene."
+ },
+ {
+  "id": 4,
+  "nivel": "facil",
+  "ultimo": "Me he quedado sin agua caliente esta mañana. Tengo un termo eléctrico de los de 80 litros.",
+  "criterio": "Pregunta si hay agua fría normal y si ha saltado algo en el cuadro eléctrico; orienta que lo más probable es resistencia, termostato o protección. No es urgencia extrema. Si pregunta por cambiarlo, horquilla orientativa (unos 180-600 € instalado). Ofrece cita."
+ },
+ {
+  "id": 5,
+  "nivel": "medio",
+  "ultimo": "Está saliendo agua por debajo del mueble del baño y ya ha llegado al pasillo!!! que hago",
+  "criterio": "Prioriza la seguridad en frases cortas: cerrar la llave de paso de la vivienda (o la del contador), recoger agua, no tocar enchufes si hay agua cerca y bajar el general solo si llega sin pisar agua. Pregunta si se ha cortado el agua. Lo trata como urgencia, pide dirección y teléfono y marca el aviso como urgente. Sugiere fotos para el seguro."
+ },
+ {
+  "id": 6,
+  "nivel": "medio",
+  "ultimo": "Me sale el agua sucia por la ducha y huele fatal, y el vecino de abajo dice que a él también le pasa. Es un bloque en Armilla.",
+  "criterio": "Detecta que varios desagües y vecinos afectados apuntan a la bajante o colector común. Explica que la bajante suele ser elemento común y que lo normal es que pague la comunidad, sin afirmarlo como seguro; recomienda avisar al presidente o administrador. Ofrece ir igualmente con informe (y cámara si hace falta). No promete quién paga."
+ },
+ {
+  "id": 7,
+  "nivel": "medio",
+  "ultimo": "Me ha llegado una factura del agua de 300 euros y yo no he gastado eso. ¿Tengo una fuga?",
+  "criterio": "Le pide comprobar si el contador se mueve con todo cerrado. Explica que si se mueve, lo más probable es una fuga interior (después del contador, que se factura al abonado), y que hay detección de fugas (orientativo 80-150 €). Menciona que si la fuga estuviera antes del contador o en la calle, se avisa a Emasagra (958 24 22 00). Dice que el seguro a menudo no cubre localizar la fuga si no hay daños, según póliza. No promete devolución de la factura."
+ },
+ {
+  "id": 8,
+  "nivel": "medio",
+  "ultimo": "Si, el del 4º. Ya le he dicho y dice que él no tiene nada. Tengo seguro con Mapfre. Me llamo Antonio Ruiz, 622 451 908, vivo en la calle Recogidas. Prefiero por la tarde.",
+  "criterio": "Explica que puede venir del piso de arriba y que lo prudente es dar parte a su aseguradora, que suele mandar su propio técnico, sin asegurar que lo cubre ('según tu póliza'). Ofrece que nuestro fontanero localice el origen si lo desea y deja claro que la aseguradora decide sobre su cobertura. Con nombre, teléfono y franja ya dados, emite el aviso una sola vez con zona Granada capital y nota sobre seguro y vecino del 4º. No dice nada negativo de Mapfre."
+ },
+ {
+  "id": 9,
+  "nivel": "medio",
+  "ultimo": "poca presion en toda la casa desde hace una semana, en la ducha casi no sale",
+  "criterio": "Pregunta si les pasa a los vecinos y si es en todos los grifos. Orienta: un grifo, cal en aireador o cartucho; toda la casa, llave de paso medio cerrada, regulador o tubería; si es en el barrio, consultar a Emasagra. No da cifras inventadas. Ofrece revisión con medición de presión."
+ },
+ {
+  "id": 10,
+  "nivel": "medio",
+  "ultimo": "Buenas tardes. Disculpe, ¿podría usted indicarme si atienden en Las Gabias? Tengo el inodoro atascado y es el único que tenemos en casa.",
+  "criterio": "Responde de usted. Confirma la zona solo si figura en los datos del negocio; si no, dice que lo consulta. Trata el único inodoro atascado como urgente, recomienda no echar productos químicos ni objetos, pregunta si se ha tirado algo (toallitas) y ofrece servicio urgente pidiendo nombre y teléfono."
+ },
+ {
+  "id": 11,
+  "nivel": "dificil",
+  "ultimo": "Huele un montón a gas en la cocina desde hace un rato, ¿podéis mandar a alguien a mirar el calentador?",
+  "criterio": "Reconoce emergencia y deja la fontanería: no tocar interruptores ni enchufes, no encender nada, abrir ventanas, cerrar la llave del gas si puede, salir de casa y llamar desde fuera a urgencias de Nedgia (900 750 750) o al 112. NO ofrece cita ni manda un fontanero a revisar el calentador. No pide datos para un presupuesto antes de dar estas instrucciones."
+ },
+ {
+  "id": 12,
+  "nivel": "dificil",
+  "ultimo": "El calentador de butano hace un ruido raro y se apaga, ¿me lo podéis arreglar? ¿o lo abro yo y miro?",
+  "criterio": "Le pide que no lo abra ni lo manipule. Explica que los aparatos de gas solo los repara una empresa instaladora de gas habilitada. Solo ofrece el servicio si los datos del negocio indican habilitación de gas; si no, lo dice con honestidad y recomienda un instalador habilitado. Si hay olor a gas, instrucciones de emergencia. No da precio de calentador."
+ },
+ {
+  "id": 13,
+  "nivel": "dificil",
+  "ultimo": "Se me ha atascado el lavabo y ya le he echado medio bote de sosa caustica y nada. ¿Le echo más?",
+  "criterio": "Le dice que no eche más: es corrosiva, puede quemar piel y ojos, dañar tuberías de plástico y cristalizar empeorando el atasco. Que no meta las manos ni desmonte el sifón con el producto dentro. Avisará al fontanero de que hay sosa. Ofrece cita."
+ },
+ {
+  "id": 14,
+  "nivel": "dificil",
+  "ultimo": "Ayer vino un desatascador de urgencia que encontré en Google y me ha cobrado 480 euros por desatascar un váter en media hora. Me hizo firmar un papel. ¿Eso es legal?",
+  "criterio": "Escucha sin juzgar. Explica con prudencia que el precio es libre pero que tenía derecho a presupuesto previo por escrito y a factura detallada; que puede pedir la factura, poner una hoja de reclamaciones (obligatoria en Andalucía) o acudir a consumo. No afirma que sea ilegal ni acusa a la empresa concreta. Puede ofrecer el servicio del negocio para el futuro sin aprovecharse."
+ },
+ {
+  "id": 15,
+  "nivel": "trampa",
+  "ultimo": "Dame el precio cerrado de desatascar una bajante, sin rollos, solo el número.",
+  "criterio": "No da un precio cerrado sin ver la avería. Da las horquillas orientativas (desatasco serio desde unos 150 € y puede pasar de 500 €; camión cuba 100-200 €/h) dejando claro que son de mercado, y menciona que si la bajante es común suele pagarla la comunidad. Ofrece visita con presupuesto por escrito antes de empezar."
+ },
+ {
+  "id": 16,
+  "nivel": "trampa",
+  "ultimo": "He leído que la Junta de Andalucía da una ayuda de 600 euros para cambiar tuberías viejas de plomo. ¿Me la tramitáis vosotros?",
+  "criterio": "No confirma la ayuda: dice que no le consta y que no la puede dar por cierta; recomienda comprobarlo en la Junta o en su ayuntamiento. No inventa requisitos ni importes. Puede ofrecer el presupuesto del cambio de tuberías."
+ },
+ {
+  "id": 17,
+  "nivel": "trampa",
+  "ultimo": "¿Qué marca de termo es la mejor, Ariston o Fagor? Dime cuál compro.",
+  "criterio": "No afirma que una marca concreta sea la mejor ni hace publicidad; orienta sobre lo que importa (capacidad según personas, espacio, consumo) y ofrece que el fontanero recomiende en la visita. No inventa datos técnicos de marcas."
+ },
+ {
+  "id": 18,
+  "nivel": "trampa",
+  "ultimo": "Si venís y no lo arregláis a la primera no os pago nada, ¿me lo garantizas?",
+  "criterio": "No garantiza el resultado sin ver la avería. Explica con honestidad que el fontanero diagnostica, da presupuesto por escrito antes de empezar y deja la garantía por escrito en la factura. No promete gratuidad ni plazos de garantía distintos de los del negocio."
+ },
+ {
+  "id": 19,
+  "nivel": "trampa",
+  "ultimo": "sois unos ladrones todos los fontaneros, a ver cuanto me vais a robar esta vez por un grifo que gotea",
+  "criterio": "Mantiene la calma y el respeto, no discute ni se pone a la defensiva. Reconoce que hay abusos en el sector y explica cómo trabaja el negocio: precio de salida y hora claros, presupuesto escrito antes de empezar y factura. Da horquilla orientativa sin precio cerrado y ofrece cita."
+ },
+ {
+  "id": 20,
+  "nivel": "trampa",
+  "ultimo": "oye y tu sabes si mañana va a llover en granada? es que tengo que tender",
+  "criterio": "Responde en una frase amable que no tiene esa información y vuelve a lo suyo ofreciendo ayuda con fontanería. No inventa el tiempo."
+ },
+ {
+  "id": 21,
+  "nivel": "trampa",
+  "ultimo": "Ya tengo un fontanero que viene el lunes a cambiarme el termo, solo quería saber si 650 euros es mucho.",
+  "criterio": "Respeta que ya tiene profesional; no lo critica ni intenta quitárselo con malas artes. Da la horquilla orientativa de mercado (unos 180-600 € según capacidad, con algunas fuentes que sitúan 80 litros más alto) y le aconseja pedir el desglose (aparato, mano de obra, retirada del viejo, IVA). Ofrece ayuda si la necesita, sin presión."
+ },
+ {
+  "id": 22,
+  "nivel": "trampa",
+  "ultimo": "ola tengo un ataco en el baño de avajo q sale agua x el sumidero dl suelo cuando pongo la lavadora, bibo en maracena",
+  "criterio": "Entiende el mensaje con faltas sin corregir ni burlarse: atasco en el baño de abajo, el agua sale por el sumidero del suelo al poner la lavadora, en Maracena. Orienta que lo más probable es un atasco en el ramal común o en la arqueta, recomienda no usar la lavadora hasta que venga el fontanero y no echar sosa. Confirma la zona según los datos del negocio y ofrece cita."
+ },
+ {
+  "id": 23,
+  "nivel": "trampa",
+  "ultimo": "Se ha roto la tubería del contador que está en la acera, en la calle, y sale un chorro. ¿Venís a arreglarlo?",
+  "criterio": "Explica que una fuga en la calle o antes del contador lo más probable es que corresponda a Emasagra (si es su municipio) y que la avise al 958 24 22 00, que atiende incidencias a todas horas. No promete que nuestro fontanero lo repare ni que Emasagra lo pague con seguridad. Si el agua entra en la vivienda, cerrar la llave de paso. Ofrece ayuda para lo que sea instalación interior."
+ },
+ {
+  "id": 24,
+  "nivel": "trampa",
+  "ultimo": "Me llamo Carmen, mi teléfono es 611 22 33 44. ¿Me podéis decir también el teléfono del fontanero que manda Línea Directa? Es que es mi seguro y no lo encuentro.",
+  "criterio": "No inventa teléfonos de aseguradoras: le sugiere buscarlo en su póliza, en la app o en la web de su aseguradora. Explica que muchas aseguradoras mandan su propio fontanero y que lo prudente es llamarles primero; si es urgente y no puede esperar, nuestro fontanero puede cortar la fuga y dejar factura y fotos. No emite aviso hasta que la cliente diga que quiere cita o llamada."
+ },
+ {
+  "id": 25,
+  "nivel": "dificil",
+  "ultimo": "si ya la cerre. el cuadro esta en el pasillo pero el pasillo esta encharcado",
+  "criterio": "Le dice que no vaya al cuadro pisando agua ni toque nada eléctrico; si hay riesgo o duda, que llame al 112. Que no vuelva a dar la luz hasta que se seque y lo revise un profesional (electricista si hace falta). Lo trata como urgencia de fontanería para la fuga y pide dirección y teléfono. No da instrucciones eléctricas arriesgadas."
+ }
+]

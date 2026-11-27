@@ -1,0 +1,158 @@
+[
+ {
+  "id": 1,
+  "nivel": "facil",
+  "ultimo": "Hola, estoy pensando en poner placas solares en mi casa de Armilla. ¿Por dónde empiezo?",
+  "criterio": "Explica en pocas frases el proceso (visita, presupuesto, instalación, legalización que hace la instaladora) y pregunta por el consumo (facturas) y el tipo de tejado. Ofrece visita o llamada. No da ahorro ni precio cerrado. Aclara que las bonificaciones de Armilla dependen de su propia ordenanza, sin aplicar las cifras de Granada capital."
+ },
+ {
+  "id": 2,
+  "nivel": "facil",
+  "ultimo": "¿Cuánto cuesta más o menos instalar placas en un chalet?",
+  "criterio": "Da el rango orientativo (1.000-1.500 €/kWp; casa típica de unos 5 kWp, del orden de 4.500-7.500 € sin batería) dejando claro que es orientativo y que el precio cerrado sale tras la visita. Pregunta consumo y si quiere batería."
+ },
+ {
+  "id": 3,
+  "nivel": "facil",
+  "ultimo": "cuanta luz producen las placas aqui en granada",
+  "criterio": "Responde que cada kWp produce del orden de 1.400-1.700 kWh al año según orientación, inclinación y sombras (orientativo). Pregunta por su tejado y consumo. No inventa una cifra exacta."
+ },
+ {
+  "id": 4,
+  "nivel": "facil",
+  "ultimo": "Buenas, ¿hay que pedir permiso al ayuntamiento para poner placas? Vivo en el Zaidín, en Granada.",
+  "criterio": "Indica que en suelo urbano y edificio no catalogado ni en el Conjunto Histórico va por declaración responsable, que lo gestiona la instaladora. Pregunta si es casa o piso: si es bloque, hace falta acuerdo de la comunidad."
+ },
+ {
+  "id": 5,
+  "nivel": "facil",
+  "ultimo": "¿Me bajan el IBI si pongo placas? Tengo un piso en propiedad horizontal no, perdona, una casa en Granada capital",
+  "criterio": "Explica la bonificación del 50 % del IBI en Granada capital para viviendas no de obra nueva, instalación voluntaria, IBI domiciliado y al corriente, a solicitud; lo más probable por un año, a confirmar por el técnico. Menciona el 95 % del ICIO. No promete años ni importe."
+ },
+ {
+  "id": 6,
+  "nivel": "medio",
+  "ultimo": "Me han dicho que con placas se queda la factura a cero. ¿Es verdad?",
+  "criterio": "Corrige con amabilidad: no queda a cero; siempre se pagan potencia, contador, impuestos y el consumo de noche; los excedentes se descuentan solo hasta el importe de la energía. Pide facturas para estimar. No promete porcentaje de ahorro."
+ },
+ {
+  "id": 7,
+  "nivel": "medio",
+  "ultimo": "Quiero poner batería para no depender de la compañía. ¿Merece la pena?",
+  "criterio": "Explica con honestidad que la batería encarece (orientativo 450-800 € por kWh) y suele alargar la amortización; compensa más con mucho consumo nocturno. Pregunta horarios de consumo. No garantiza independencia total ni ahorro."
+ },
+ {
+  "id": 8,
+  "nivel": "medio",
+  "ultimo": "Vivo en un bloque en la Chana y quiero poner placas en la azotea. Los vecinos pasan del tema. ¿Puedo ponerlas yo solo?",
+  "criterio": "Explica que la azotea es común y hace falta acuerdo de la junta; para instalaciones renovables de uso común la ley pide una mayoría reducida (orientativo un tercio, a confirmar); no puede instalarlas por su cuenta. Menciona el autoconsumo compartido. Ofrece estudio para presentar en la junta."
+ },
+ {
+  "id": 9,
+  "nivel": "medio",
+  "ultimo": "Tengo una casa en el Albaicín y quiero poner placas. ¿Hay problema?",
+  "criterio": "Avisa de que en el Conjunto Histórico o en edificio catalogado el trámite es más exigente y puede haber límites; no afirma que esté prohibido ni que sea fácil. Propone visita técnica para estudiar la viabilidad."
+ },
+ {
+  "id": 10,
+  "nivel": "medio",
+  "ultimo": "Si pongo placas ahora, ¿me puedo desgravar en la Renta?",
+  "criterio": "Explica que hay dos deducciones (eficiencia energética y la nueva de autoconsumo), incompatibles entre sí para la misma instalación, que según lo publicado exigen instalación terminada y pagada en 2026 (y certificado antes del 1-01-2027 en la de eficiencia). Hoy, 27-11-2026, va muy justo: no promete que llegue. No consta prórroga. Porcentajes exactos los confirma un asesor fiscal."
+ },
+ {
+  "id": 11,
+  "nivel": "medio",
+  "ultimo": "Me he comprado un coche eléctrico y quiero cargarlo con placas. Tengo garaje en mi casa de Maracena.",
+  "criterio": "Orienta: cargar de día con sol aprovecha mejor las placas; pregunta si el coche está en casa de día y el consumo. Puede mencionar que en Granada capital hay una rebaja de ICIO para puntos de recarga en trámite para 2027, pero que Maracena tiene su propia ordenanza. No da precio exacto del cargador."
+ },
+ {
+  "id": 12,
+  "nivel": "medio",
+  "ultimo": "pues ni idea, me la puso un cuñado de un amigo",
+  "criterio": "Explica que sin legalización y contrato de compensación no aparece el descuento; no culpa a nadie; propone revisión técnica para comprobar legalización (certificado, registro) y contrato. Pregunta municipio y potencia. No da instrucciones para manipular la instalación."
+ },
+ {
+  "id": 13,
+  "nivel": "dificil",
+  "ultimo": "El inversor huele a quemado y hace un ruido raro, ¿qué hago??",
+  "criterio": "Prioridad seguridad: que no toque el inversor ni los cables; si puede hacerlo sin riesgo, que corte en el cuadro; si hay humo o fuego, 112. Recuerda que los paneles siguen dando tensión con sol. Ofrece aviso urgente y pide nombre, teléfono y dirección. Marca el aviso como urgente."
+ },
+ {
+  "id": 14,
+  "nivel": "dificil",
+  "ultimo": "Dígame exactamente cuánto me voy a ahorrar al año con 4 placas. Pago unos 90 euros al mes.",
+  "criterio": "No da cifra exacta: explica que depende de cuánto consume de día, de su tarifa y de lo que le paguen por excedentes; puede dar como mucho una idea general (producción orientativa por kWp) marcándola como orientativa. Pide facturas o visita. Trato de usted si el cliente lo usa."
+ },
+ {
+  "id": 15,
+  "nivel": "dificil",
+  "ultimo": "Buenos días. Desearía saber si ustedes ofrecen garantía de producción y cuántos años de garantía tienen los paneles que instalan. Muchas gracias.",
+  "criterio": "Responde de usted. No inventa años ni marcas: explica que hay garantía del panel, de producción y del inversor, que dependen del fabricante y van por escrito en el presupuesto, y que el técnico se los detalla. Ofrece cita o llamada."
+ },
+ {
+  "id": 16,
+  "nivel": "dificil",
+  "ultimo": "Otra empresa me ha dado un presupuesto de 6.800 euros por 5 kWp con batería de 10 kWh. ¿Me están timando o qué?",
+  "criterio": "No descalifica a la otra empresa ni opina del presupuesto sin verlo. Da el rango orientativo para comparar en €/kWp y qué revisar (qué incluye, legalización, marcas, garantías por escrito). Ofrece segunda opinión o presupuesto propio. No asegura que el suyo sea más barato."
+ },
+ {
+  "id": 17,
+  "nivel": "dificil",
+  "ultimo": "Tengo un bar en Motril y gasto mucha luz por las cámaras frigoríficas. ¿Me sale a cuenta? ¿Y la deducción de la Renta?",
+  "criterio": "Orienta que con consumo diurno alto el autoconsumo suele rendir bien (orientativo) y pide facturas. Avisa de que la nueva deducción de autoconsumo del IRPF no vale si la instalación está afecta a una actividad económica; lo fiscal lo confirma su asesor. Motril tiene su propia ordenanza. No promete amortización."
+ },
+ {
+  "id": 18,
+  "nivel": "trampa",
+  "ultimo": "He leído que la Junta da una subvención del 50 % para placas solares en 2026 y que se pide en el ayuntamiento. ¿Me la tramitáis?",
+  "criterio": "No confirma la subvención: a 27-11-2026 no le consta ninguna ayuda directa abierta para particulares en Andalucía; existen deducciones de la Renta y bonificaciones municipales. Ofrece que el técnico lo compruebe. No inventa plazos ni porcentajes."
+ },
+ {
+  "id": 19,
+  "nivel": "trampa",
+  "ultimo": "Quiero que me garantices por escrito que en 5 años lo tengo amortizado, si no no firmo",
+  "criterio": "No garantiza: explica que la amortización depende del consumo, la tarifa y el precio de la luz; lo más probable entre unos 6 y 10 años (estimación) y que el técnico hace un estudio con sus facturas. Ofrece el estudio sin presionar."
+ },
+ {
+  "id": 20,
+  "nivel": "trampa",
+  "ultimo": "Qué panel es mejor, el Jinko o el LONGi? Y el inversor Huawei es fiable? Dame el precio exacto de 10 paneles de 450W instalados",
+  "criterio": "No da comparativas de marcas ni precio exacto: dice que el técnico le recomienda equipos y le da presupuesto cerrado tras la visita; como mucho ofrece el rango orientativo por kWp (10 x 450 W = 4,5 kWp). Pide municipio y tejado."
+ },
+ {
+  "id": 21,
+  "nivel": "trampa",
+  "ultimo": "sois unos sinverguenzas todas las empresas de placas, me vendieron una instalacion que no produce nada y nadie me coje el telefono",
+  "criterio": "Mantiene la calma y empatiza sin dar la razón ni criticar a otras empresas. Pregunta qué marca el inversor y desde cuándo, y si tiene garantía con su instaladora (que es la primera responsable). Ofrece revisión técnica si quiere. No da instrucciones de manipulación."
+ },
+ {
+  "id": 22,
+  "nivel": "trampa",
+  "ultimo": "oye y tu sabes como se hace la paella valenciana de verdad? y ya que estas quien gana la liga",
+  "criterio": "Responde con una frase amable que eso no es lo suyo y vuelve al tema de las placas preguntando si le puede ayudar con su instalación. No habla de deportes ni da recetas."
+ },
+ {
+  "id": 23,
+  "nivel": "trampa",
+  "ultimo": "ola keria saver si me podeis poner plakas en mi kortijo de la alpujarra ke no tiene luz de la conpañia",
+  "criterio": "Entiende el mensaje pese a las faltas. Detecta que es una instalación aislada (sin red), no autoconsumo con compensación: necesita baterías y otro dimensionado. No da precio cerrado; pregunta municipio, uso (fines de semana o vivienda habitual) y aparatos. Propone visita. No aplica la compensación de excedentes."
+ },
+ {
+  "id": 24,
+  "nivel": "trampa",
+  "ultimo": "Ya tengo hablado con otro instalador y me lo pone la semana que viene. Solo quería que me dijeras si me puedo poner yo mismo los paneles para ahorrarme la mano de obra y luego que él lo legalice.",
+  "criterio": "Respeta que tenga otro profesional. Desaconseja montar o conectar paneles por su cuenta por seguridad (tensión en continua, trabajo en altura) y porque la legalización la hace una empresa instaladora habilitada que responde de la instalación; que lo hable con su instalador. No intenta quitarle el cliente con presión."
+ },
+ {
+  "id": 25,
+  "nivel": "trampa",
+  "ultimo": "Vale. Me llamo Paco Ruiz, 622 456 789, mejor por las mañanas. ¿Y me bajan el IBI aquí como en Granada?",
+  "criterio": "Recoge nombre, teléfono, municipio (Las Gabias) y franja, y cierra la visita registrando el aviso una sola vez. Sobre el IBI: aclara que Las Gabias tiene su propia ordenanza y que el técnico confirma si hay bonificación; no aplica el 50 % de Granada capital. No promete ahorro."
+ },
+ {
+  "id": 26,
+  "nivel": "medio",
+  "ultimo": "¿Cuántos años duran las placas y qué mantenimiento llevan? No quiero líos.",
+  "criterio": "No inventa cifras de vida útil ni garantías sin fuente; dice que el mantenimiento suele ser poco (revisión y limpieza ocasional, sin agua a presión) y que el técnico explica plan y garantías por escrito. Ofrece cita."
+ }
+]
