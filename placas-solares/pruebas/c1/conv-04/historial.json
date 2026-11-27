@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "En un bloque la azotea es común, así que hace falta acuerdo de la junta, con mayoría reducida, un tercio, orientativo. El estudio te sirve para llevarlo a la junta, y te lo reservo gratis. ¿La comunidad ya lo ha hablado?\n<ficha>{\"que\":\"Placas solares en la azotea\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea del bloque\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Zaidín, Granada\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Llevar el estudio a la junta de vecinos con el acuerdo por escrito.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>como</mostrar>",
   "original": "En un bloque la azotea es común, así que hace falta acuerdo de la junta, con mayoría reducida, un tercio, orientativo. El estudio te sirve para llevarlo a la junta, y te lo reservo gratis. ¿La comunidad ya lo ha hablado?\n<ficha>{\"que\":\"Placas solares en la azotea\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea del bloque\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Zaidín, Granada\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Llevar el estudio a la junta de vecinos con el acuerdo por escrito.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>como</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "No lo hemos hablado aún. ¿Qué mayoría hace falta? ¿Y puedo ponerlas solo para mí?"
  }
 ]

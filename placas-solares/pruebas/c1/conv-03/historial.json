@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Eso no te lo puede garantizar nadie: siempre quedan la potencia, el contador, los impuestos y lo que gastas de noche. Las garantías de placas y batería van por escrito en el presupuesto, y te reservo el estudio para verlo. ¿Cuánto gastas de noche?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Ver el estudio con tus facturas y las garantías por escrito en el presupuesto.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>garantia</mostrar>",
   "original": "Eso no te lo puede garantizar nadie: siempre quedan la potencia, el contador, los impuestos y lo que gastas de noche. Las garantías de placas y batería van por escrito en el presupuesto, y te reservo el estudio para verlo. ¿Cuánto gastas de noche?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Ver el estudio con tus facturas y las garantías por escrito en el presupuesto.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>garantia</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Hombre, de noche gasto bastante, trabajo fuera de día. Pero por escrito que no pago luz, ¿eso no?"
  }
 ]

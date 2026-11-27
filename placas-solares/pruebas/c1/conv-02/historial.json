@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Orientativamente, 5 kWp de placas son de 5.000 a 7.500 € y 10 kWh de batería de 4.500 a 8.000 €: 6.800 € queda por debajo. Te reservo el estudio para comparar y revisa que incluya boletín y garantías por escrito. ¿Cuánto gasta de noche?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Comparar el presupuesto de 6.800 € con el orientativo y pedir que incluya boletín y garantías por escrito.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>orientativos</mostrar>",
   "original": "Orientativamente, 5 kWp de placas son de 5.000 a 7.500 € y 10 kWh de batería de 4.500 a 8.000 €: 6.800 € queda por debajo. Te reservo el estudio para comparar y revisa que incluya boletín y garantías por escrito. ¿Cuánto gasta de noche?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Comparar el presupuesto de 6.800 € con el orientativo y pedir que incluya boletín y garantías por escrito.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>orientativos</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "De noche no mucho, ahora mismo no sabría decirle. ¿Y me bajan el IBI con las placas?"
  }
 ]

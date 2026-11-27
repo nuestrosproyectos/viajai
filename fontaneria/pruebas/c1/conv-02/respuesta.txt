@@ -1,0 +1,2 @@
+Vale, te reservo la visita. No eches nada más ni metas la mano en el sifón, que ese producto quema; lo apunto para el fontanero. Es solo para llamarte y organizarla: ¿me dices tu nombre?
+<ficha>{"averia":"Lavabo del baño atascado; ya echaste un desatascador fuerte sin resultado","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Probable sifón del lavabo; no echar más producto ni meter la mano; desatasco sencillo unos 70 a 150 € más IVA, orientativo","fase":"datos"}</ficha>

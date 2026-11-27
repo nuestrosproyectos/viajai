@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Con esa factura suelen hacer falta unos 5 kWp (kilovatios de paneles), de 4.500 a 7.500 € sin batería, y suele amortizarse en seis a diez años. Te reservo el estudio gratuito para ver tu tejado. ¿Vives en casa o en un bloque?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Ver el estudio gratuito con tus facturas para afinar el tamaño.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>orientativos</mostrar>",
   "original": "Con esa factura suelen hacer falta unos 5 kWp (kilovatios de paneles), de 4.500 a 7.500 € sin batería, y suele amortizarse en seis a diez años. Te reservo el estudio gratuito para ver tu tejado. ¿Vives en casa o en un bloque?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Ver el estudio gratuito con tus facturas para afinar el tamaño.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>orientativos</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "En casa, adosada en Armilla. Tejado a dos aguas con una cara al sur y sin sombras"
  }
 ]

@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Un baño completo en una reforma estándar suele costar entre tres mil y seis mil euros. Te reservo la visita de medición, gratis y de unos cuarenta y cinco minutos, para darte el presupuesto por escrito. ¿Cuántos metros tiene el baño?\n<ficha>{\"obra\":\"Reforma del baño\",\"vivienda\":\"Piso\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Medir el baño en la visita gratuita para afinar el precio.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>precios</mostrar>",
   "original": "Un baño completo en una reforma estándar suele costar entre tres mil y seis mil euros. Te reservo la visita de medición, gratis y de unos cuarenta y cinco minutos, para darte el presupuesto por escrito. ¿Cuántos metros tiene el baño?\n<ficha>{\"obra\":\"Reforma del baño\",\"vivienda\":\"Piso\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Medir el baño en la visita gratuita para afinar el precio.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>precios</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "5 m² más o menos"
  }
 ]

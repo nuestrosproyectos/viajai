@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Entiendo su preocupación: cambiar la bañera por plato de ducha suele quedar entre unos 1.000 y 2.300 €, más si va a ras de suelo. Le reservo cuanto antes la visita, gratis, para medir. ¿Por la mañana o por la tarde?\n<ficha>{\"obra\":\"Cambiar la bañera por plato de ducha\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Maracena\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cambiar la bañera por plato de ducha cuanto antes y revisar en Maracena la ordenanza del ayuntamiento.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>precios</mostrar>",
   "original": "Entiendo su preocupación: cambiar la bañera por plato de ducha suele quedar entre unos 1.000 y 2.300 €, más si va a ras de suelo. Le reservo cuanto antes la visita, gratis, para medir. ¿Por la mañana o por la tarde?\n<ficha>{\"obra\":\"Cambiar la bañera por plato de ducha\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Maracena\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cambiar la bañera por plato de ducha cuanto antes y revisar en Maracena la ordenanza del ayuntamiento.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>precios</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Por la mañana, a primera hora. ¿Cuánto tardarían en ir? Me preocupa que se caiga."
  }
 ]
