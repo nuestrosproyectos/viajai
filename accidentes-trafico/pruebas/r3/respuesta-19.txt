@@ -1,0 +1,2 @@
+Esa ayuda de tres mil euros no la tengo confirmada, así que no te la puedo dar por segura: la apunto para que el abogado te la confirme en la primera consulta gratis. ¿Cuándo fue el accidente?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Pedir al abogado que confirme si existe la ayuda de 3.000 € y cómo se solicita.","fase":"orientando"}</ficha>

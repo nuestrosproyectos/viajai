@@ -1,0 +1,3 @@
+No lo abras tú ni lo toques, porque es gas. No lo reparamos, porque no consta que tengamos habilitación de gas; te recomiendo una empresa instaladora de gas habilitada. Si notas olor a gas, sal de casa y llama a Nedgia o al 112. ¿Tienes también un termo eléctrico en casa?
+<ficha>{"averia":"Calentador de butano con un ruido raro que se apaga","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No lo abras; lo repara una empresa instaladora de gas habilitada.","fase":"orientando"}</ficha>
+<mostrar>gas</mostrar>

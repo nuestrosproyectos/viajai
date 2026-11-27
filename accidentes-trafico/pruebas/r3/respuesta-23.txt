@@ -1,0 +1,2 @@
+Con la elección del coche no te puedo ayudar, porque lo mío es tu reclamación. Si además tuviste alguna lesión, el abogado te orienta en la consulta gratis. ¿Tuviste algún daño personal o solo daños en el coche?
+<ficha>{"caso":"Coche con siniestro total","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Si hubo lesiones, revisarlo con el abogado en la consulta gratis.","fase":"orientando"}</ficha>

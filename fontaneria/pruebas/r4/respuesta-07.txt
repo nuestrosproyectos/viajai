@@ -1,0 +1,3 @@
+Una factura así suele ser una fuga oculta, y hay equipos para localizarla sin romper a ciegas. Detectar fugas cuesta lo más habitual entre ochenta y ciento cincuenta euros, orientativo. Te reservo la visita; con todos los grifos cerrados, ¿se mueve el contador?
+<ficha>{"averia":"Factura de agua de 300 euros que no cuadra con el consumo","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Mira si el contador se mueve con todos los grifos cerrados.","fase":"datos"}</ficha>
+<mostrar>precios</mostrar>

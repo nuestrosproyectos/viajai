@@ -1,0 +1,3 @@
+Lo más sensato es que sea tu abogado quien revise la oferta, así que pídele el cálculo por escrito y no firmes nada hasta que la vea. Si quieres una segunda opinión, nuestro abogado puede dártela en la consulta gratis. ¿Has firmado ya algo?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Pide a tu abogado el cálculo de la oferta por escrito y no firmes nada antes de que la revise.","fase":"orientando"}</ficha>
+<mostrar>oferta</mostrar>

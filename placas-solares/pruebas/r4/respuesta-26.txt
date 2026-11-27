@@ -1,0 +1,2 @@
+Entiendo que quieras tranquilidad. Los años exactos de vida y las garantías los confirma el técnico: van por escrito en el presupuesto, con marca y años. El mantenimiento es poco y sencillo, pero no subas al tejado ni limpies con agua a presión. ¿Te reservo el estudio gratuito, por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Pedir en el estudio los años de vida y las garantías por escrito.","fase":"orientando"}</ficha>

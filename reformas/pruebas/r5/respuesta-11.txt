@@ -1,0 +1,3 @@
+Una reforma integral suele estar entre unos 460 y 690 euros por metro cuadrado en calidades medias, orientativo; como referencia, un piso de 80 metros ronda los 37.000 a 55.000 euros. En pisos así es habitual encontrar tuberías viejas, así que te reservo la visita de medición gratis. ¿Qué nivel de acabados tienes en mente, más básico o de gama alta?
+<ficha>{"obra":"reforma integral del piso","vivienda":"","metros":"90 metros","antiguedad":"de los años 70","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Reforma integral: orientativo entre 460 y 690 € por metro en calidades medias; en pisos de esa época suelen salir tuberías viejas, y la visita gratis lo mide.","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>

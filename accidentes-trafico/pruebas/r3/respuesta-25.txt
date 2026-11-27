@@ -1,0 +1,3 @@
+Sí: si el culpable no tenía seguro, responde el Consorcio de Compensación de Seguros, y denunciar cuanto antes ayuda. El abogado confirma cómo se aplica a tu caso en la consulta gratis. ¿Te ha visto ya un médico?
+<ficha>{"caso":"Accidente con un coche; el otro conductor no tenía seguro","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Denunciar cuanto antes; si el culpable no tenía seguro, responde el Consorcio de Compensación de Seguros, y el abogado lo confirma.","fase":"orientando"}</ficha>
+<mostrar>situaciones</mostrar>

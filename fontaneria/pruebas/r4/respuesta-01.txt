@@ -1,0 +1,3 @@
+Mientras llega el fontanero, no eches sosa cáustica, que quema y puede empeorar el atasco. Si solo atasca el fregadero, suele estar en el sifón o en el tramo cercano. Un desatasco sencillo suele costar entre setenta y ciento cincuenta euros, más IVA, orientativo. ¿Te reservo la visita, mañana por la mañana o por la tarde?
+<ficha>{"averia":"Fregadero de la cocina atascado, no traga nada","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"Granada, Zaidín","direccion":"","franja":"","inicio":"","orientacion":"No eches sosa cáustica; lo más probable es el sifón o el tramo cercano.","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>

@@ -1,0 +1,3 @@
+Cierra ya la llave de paso, suele estar en la cocina, el baño o junto al contador, y aparta lo que se pueda mojar. Haz fotos para el seguro y no toques enchufes si el agua llega a ellos. Esto no puede esperar, ¿te mando al fontanero ahora? Dime tu nombre y un teléfono.
+<ficha>{"averia":"Fuga de agua bajo el mueble del baño, ya llega al pasillo","cuando":"Urgente, ahora","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Cierra la llave de paso, aparta lo mojable y haz fotos para el seguro.","fase":"proponiendo"}</ficha>
+<mostrar>seguridad</mostrar>

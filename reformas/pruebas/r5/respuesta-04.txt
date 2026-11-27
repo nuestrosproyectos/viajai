@@ -1,0 +1,3 @@
+En Granada capital, cambiar azulejos y plato lo más probable es que vaya con declaración responsable ante el Ayuntamiento, y eso lo confirma el técnico. Lo tramitamos nosotros, va incluido en el presupuesto, y hay que avisar por escrito al presidente o al administrador. Te reservo la visita gratis para verlo. ¿De qué año es el edificio?
+<ficha>{"obra":"cambiar azulejos y plato de ducha","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"Granada capital (Zaidín)","franja":"","inicio":"","orientacion":"Lo más probable es una declaración responsable ante el Ayuntamiento, y avisar por escrito al presidente o administrador; lo confirma el técnico.","fase":"proponiendo"}</ficha>
+<mostrar>permisos</mostrar>

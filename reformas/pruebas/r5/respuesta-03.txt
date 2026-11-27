@@ -1,0 +1,3 @@
+Para darte un presupuesto ajustado lo mejor es medir la cocina, y en el área metropolitana de Granada también trabajamos. Te reservo la visita de medición, gratis y de unos 45 minutos; el presupuesto por partidas llega por escrito unos cinco días laborables después. ¿Te viene mejor por la mañana o por la tarde?
+<ficha>{"obra":"reforma de cocina","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"Armilla","franja":"","inicio":"","orientacion":"Visita de medición gratis; después llega el presupuesto por partidas, por escrito, en unos cinco días laborables.","fase":"proponiendo"}</ficha>
+<mostrar>zona</mostrar>

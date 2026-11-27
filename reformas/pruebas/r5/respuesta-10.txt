@@ -1,0 +1,3 @@
+Eso no te lo puedo asegurar: tirar un tabique lo tiene que ver un técnico, porque si es de carga hace falta proyecto y licencia. Te reservo la visita de medición gratis para mirarlo. ¿Sabes si ese tabique es de carga?
+<ficha>{"obra":"tirar el tabique entre cocina y salón para abrir la cocina","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"Granada capital (Camino de Ronda)","franja":"","inicio":"","orientacion":"Si el tabique es de carga hace falta proyecto y licencia; lo confirma el técnico en la visita gratis.","fase":"proponiendo"}</ficha>
+<mostrar>permisos</mostrar>

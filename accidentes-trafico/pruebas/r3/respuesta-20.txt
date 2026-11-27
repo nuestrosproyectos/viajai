@@ -1,0 +1,3 @@
+Ninguna cifra te la puedo garantizar, y nadie honrado puede hacerlo: depende de los informes médicos, de la culpa y de lo que se pueda acreditar. Lo que sí hace el abogado es decirte con franqueza qué posibilidades ve, en la consulta gratis y sin compromiso. ¿Te viene mejor por la mañana o por la tarde?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Nadie puede garantizar una cifra; el abogado dice con franqueza qué posibilidades ve en la consulta gratis.","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>

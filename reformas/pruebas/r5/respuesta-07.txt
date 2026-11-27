@@ -1,0 +1,3 @@
+Sí, hay deducciones del 20 % o del 40 % en el IRPF por mejoras de eficiencia. En piso o casa, el certificado final debe estar antes del 1 de enero de 2027 y no consta prórroga. El coste de ventanas lo ve el técnico en la visita, que te reservo. ¿Es solo tu vivienda o todo el edificio?
+<ficha>{"obra":"cambiar ventanas y poner aislamiento","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Deducción en el IRPF del 20 % o del 40 % por mejorar la eficiencia, con certificado energético antes y después; en piso o casa, el último debe estar hecho antes del 1 de enero de 2027. Lo confirma el gestor.","fase":"proponiendo"}</ficha>
+<mostrar>plazo</mostrar>

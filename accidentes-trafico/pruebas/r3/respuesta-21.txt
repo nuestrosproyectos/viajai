@@ -1,0 +1,3 @@
+Entiendo el enfado, y tienes razón en que hay que mirar bien cuánto se cobra. Puedes reclamar por tu cuenta, pero el abogado conoce el baremo, y si no hay indemnización no hay honorarios; el porcentaje exacto te lo da por escrito en la consulta gratis. ¿Te interesa verlo ahí?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Puedes reclamar por tu cuenta, pero el abogado conoce el baremo; los honorarios se pactan por escrito antes de empezar.","fase":"proponiendo"}</ficha>
+<mostrar>honorarios</mostrar>

@@ -1,0 +1,2 @@
+Gracias, Carmen; te apunto en el 611 22 33 44. Del fontanero de tu seguro no tengo el teléfono, así que búscalo en tu póliza o en la app de la aseguradora. ¿Te mando al fontanero mañana por la mañana o por la tarde?
+<ficha>{"averia":"","cuando":"","llave":"","vivienda":"","seguro":"Línea Directa","nombre":"Carmen","telefono":"611 22 33 44","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Busca el teléfono de tu aseguradora en tu póliza o en su app.","fase":"datos"}</ficha>
