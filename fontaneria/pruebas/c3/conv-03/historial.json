@@ -52,5 +52,9 @@
   "role": "assistant",
   "content": "Perfecto, Ana. Te apunto la visita de la tarde en Granada capital, en el Zaidín, calle Arabial 12, bajo A, y el teléfono seis siete siete, cuatro cinco cero, nueve nueve cero. ¿Está todo bien?\n<ficha>{\"averia\":\"Agua sucia sale por el plato de ducha del bajo al tirar de la cisterna de arriba\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"Ana\",\"telefono\":\"677 450 990\",\"municipio\":\"Granada\",\"direccion\":\"Calle Arabial 12, bajo A, El Zaidín\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Hacer fotos de los daños para el seguro. Las tuberías de cada piso hasta el empalme suelen ser de cada vivienda; el informe con cámara ayuda a decidir quién paga.\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Ana. Te apunto la visita de la tarde en Granada capital, en el Zaidín, calle Arabial 12, bajo A, y el teléfono seis siete siete, cuatro cinco cero, nueve nueve cero. ¿Está todo bien?\n<ficha>{\"averia\":\"Agua sucia sale por el plato de ducha del bajo al tirar de la cisterna de arriba\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"Ana\",\"telefono\":\"677 450 990\",\"municipio\":\"Granada\",\"direccion\":\"Calle Arabial 12, bajo A, El Zaidín\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Hacer fotos de los daños para el seguro. Las tuberías de cada piso hasta el empalme suelen ser de cada vivienda; el informe con cámara ayuda a decidir quién paga.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo correcto"
  }
 ]
