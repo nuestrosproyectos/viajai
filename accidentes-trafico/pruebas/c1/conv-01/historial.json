@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "No, todavía no he ido, pensaba que se me pasaría. Oye, ¿y cuánto cobra el abogado? Que no quiero meterme en un gasto"
+ },
+ {
+  "role": "assistant",
+  "content": "Entiendo que no quieras un gasto: la primera consulta es gratis. Si encargas el caso, suele ser un porcentaje de lo que se consiga, del 10 al 30 %, y si no hay indemnización no hay honorarios. Lo mejor es que vayas al médico hoy. ¿Te reservo la consulta?\n<ficha>{\"caso\":\"Golpe por detrás hace tres días\",\"como\":\"\",\"fecha\":\"Hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Ir al médico hoy y que quede escrito; primera consulta gratis; en el mercado suele ser un porcentaje del 10 al 30 % de lo conseguido, orientativo\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>honorarios</mostrar>",
+  "original": "Entiendo que no quieras un gasto: la primera consulta es gratis. Si encargas el caso, suele ser un porcentaje de lo que se consiga, del 10 al 30 %, y si no hay indemnización no hay honorarios. Lo mejor es que vayas al médico hoy. ¿Te reservo la consulta?\n<ficha>{\"caso\":\"Golpe por detrás hace tres días\",\"como\":\"\",\"fecha\":\"Hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Ir al médico hoy y que quede escrito; primera consulta gratis; en el mercado suele ser un porcentaje del 10 al 30 % de lo conseguido, orientativo\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>honorarios</mostrar>"
  }
 ]

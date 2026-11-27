@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Es eléctrico, de 100 litros, pierde agua por abajo. Somos 4 en casa. ¿900 € es mucho? ¿Y me lo paga el seguro?"
+ },
+ {
+  "role": "assistant",
+  "content": "Cierra la llave de paso para que no pierda agua. Lo habitual para un termo eléctrico instalado es de 180 a 600 euros, orientativo; 900 queda por encima. Según tu póliza: llama antes a tu aseguradora. ¿Te reservo la visita por la mañana o por la tarde?\n<ficha>{\"averia\":\"Cambio de termo eléctrico que pierde agua por abajo; le han presupuestado 900 €\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Pendiente de revisar tu póliza\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cerrar la llave de paso; pedir el presupuesto desglosado por escrito; cambio habitual unos 180 a 600 € según capacidad, orientativo\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Cierra la llave de paso para que no pierda agua. Lo habitual para un termo eléctrico instalado es de 180 a 600 euros, orientativo; 900 queda por encima. Según tu póliza: llama antes a tu aseguradora. ¿Te reservo la visita por la mañana o por la tarde?\n<ficha>{\"averia\":\"Cambio de termo eléctrico que pierde agua por abajo; le han presupuestado 900 €\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Pendiente de revisar tu póliza\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cerrar la llave de paso; pedir el presupuesto desglosado por escrito; cambio habitual unos 180 a 600 € según capacidad, orientativo\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

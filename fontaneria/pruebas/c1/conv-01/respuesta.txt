@@ -1,3 +1,0 @@
-No te preocupes, busca la llave junto al contador y ciérrala para cortar el agua de casa. Si sigue saliendo agua, te reservo ya el fontanero urgente: ¿me dices tu nombre y un teléfono?
-<ficha>{"averia":"Sale agua por debajo del fregadero y no para","cuando":"","llave":"No la encuentras todavía","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Buscar la llave junto al contador y cerrarla; visita urgente","fase":"proponiendo"}</ficha>
-<mostrar>seguridad</mostrar>

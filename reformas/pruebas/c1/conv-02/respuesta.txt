@@ -1,0 +1,2 @@
+El precio cerrado sale del presupuesto por escrito que llega unos cinco días laborables después de la visita. Si aparece algo oculto, se le enseña, se presupuesta y no se hace sin su firma. Por la mañana, perfecto. ¿A qué nombre le reservo la visita?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"Por la mañana","inicio":"","orientacion":"Pedir nombre y teléfono para reservar la visita gratuita por la mañana.","fase":"datos"}</ficha>

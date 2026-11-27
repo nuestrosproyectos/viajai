@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Me dieron el alta hace 7 meses. No he reclamado nada por escrito. Y el conductor se fue sin parar, no se sabe quién era"
+ },
+ {
+  "role": "assistant",
+  "content": "Con el alta hace siete meses, conviene reclamar ya; lo mira el abogado. Si el conductor era desconocido, lo más probable es que responda el Consorcio, solo por daños personales; denuncia cuanto antes. ¿Te reservo la consulta urgente?\n<ficha>{\"caso\":\"Atropello en un paso de cebra; el conductor se fue sin parar\",\"como\":\"Andando\",\"fecha\":\"Hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Reclamar por escrito cuanto antes; denunciar si no se ha hecho; si el conductor es desconocido, el Consorcio de Compensación de Seguros; el abogado revisa el plazo con la fecha del alta\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>plazo</mostrar>",
+  "original": "Con el alta hace siete meses, conviene reclamar ya; lo mira el abogado. Si el conductor era desconocido, lo más probable es que responda el Consorcio, solo por daños personales; denuncia cuanto antes. ¿Te reservo la consulta urgente?\n<ficha>{\"caso\":\"Atropello en un paso de cebra; el conductor se fue sin parar\",\"como\":\"Andando\",\"fecha\":\"Hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Reclamar por escrito cuanto antes; denunciar si no se ha hecho; si el conductor es desconocido, el Consorcio de Compensación de Seguros; el abogado revisa el plazo con la fecha del alta\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>plazo</mostrar>"
  }
 ]

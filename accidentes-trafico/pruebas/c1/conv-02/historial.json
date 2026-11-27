@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Es un papel que pone recibo en pago total. Hace 5 meses del accidente y sigo con rehabilitación, no me han dado el alta. ¿2.300 es poco?"
+ },
+ {
+  "role": "assistant",
+  "content": "No firmes ese recibo. Si es poco o mucho lo dice el abogado: se calcula por días hasta el alta, de unos 39 a 131 € por día según categoría, más secuelas y gastos. Te reservo la consulta gratis: ¿por la mañana o por la tarde?\n<ficha>{\"caso\":\"Accidente hace cinco meses; oferta de 2.300 € con recibo en pago total\",\"como\":\"\",\"fecha\":\"Hace cinco meses\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar el recibo en pago total; que lo vea el abogado antes de decidir; la cuantía se calcula por días hasta el alta y secuelas, orientativo\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>oferta</mostrar>",
+  "original": "No firmes ese recibo. Si es poco o mucho lo dice el abogado: se calcula por días hasta el alta, de unos 39 a 131 € por día según categoría, más secuelas y gastos. Te reservo la consulta gratis: ¿por la mañana o por la tarde?\n<ficha>{\"caso\":\"Accidente hace cinco meses; oferta de 2.300 € con recibo en pago total\",\"como\":\"\",\"fecha\":\"Hace cinco meses\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar el recibo en pago total; que lo vea el abogado antes de decidir; la cuantía se calcula por días hasta el alta y secuelas, orientativo\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>oferta</mostrar>"
  }
 ]

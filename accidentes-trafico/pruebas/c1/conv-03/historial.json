@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Vale, ¿y eso a mí me perjudica en algo? Ella iba de copiloto y yo conducía"
+ },
+ {
+  "role": "assistant",
+  "content": "Tu mujer, como pasajera, sí puede reclamar. Para ti, el seguro obligatorio no cubre tus propias lesiones, si las tienes, salvo que tengas seguro de conductor o de accidentes; lo revisa el abogado. ¿Te reservo la consulta por la mañana o por la tarde?\n<ficha>{\"caso\":\"Te saltaste un ceda; ibas conduciendo y tu mujer de pasajera\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Tu mujer, como pasajera, casi siempre puede reclamar; si tienes seguro de conductor o de accidentes, el abogado lo revisa\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>situaciones</mostrar>",
+  "original": "Tu mujer, como pasajera, sí puede reclamar. Para ti, el seguro obligatorio no cubre tus propias lesiones, si las tienes, salvo que tengas seguro de conductor o de accidentes; lo revisa el abogado. ¿Te reservo la consulta por la mañana o por la tarde?\n<ficha>{\"caso\":\"Te saltaste un ceda; ibas conduciendo y tu mujer de pasajera\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Tu mujer, como pasajera, casi siempre puede reclamar; si tienes seguro de conductor o de accidentes, el abogado lo revisa\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>situaciones</mostrar>"
  }
 ]
