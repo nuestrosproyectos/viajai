@@ -1,0 +1,3 @@
+Cierra ya la llave de paso, suele estar en la cocina, el baño o junto al contador, y aparta lo que se pueda mojar. Esto no puede esperar, te mando a alguien ahora. ¿Ha parado el agua al cerrar la llave?
+<ficha>{"averia":"Agua saliendo por debajo del mueble del baño, ya llega al pasillo","cuando":"Urgente, ahora","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Cerrar ya la llave de paso y apartar lo que se pueda mojar; hacer fotos antes de tocar nada para el seguro","fase":"proponiendo"}</ficha>
+<mostrar>seguridad</mostrar>

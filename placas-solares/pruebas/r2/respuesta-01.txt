@@ -1,0 +1,2 @@
+Lo primero es mirar tu factura: cuántos kilovatios hora gastas al año y a qué horas. Con eso y una visita técnica gratuita de una hora te decimos qué tamaño te conviene. ¿Te reservo el estudio, mejor por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"Armilla","franja":"","inicio":"","orientacion":"Mirar la factura de la luz y reservar el estudio gratuito con visita técnica.","fase":"proponiendo"}</ficha>

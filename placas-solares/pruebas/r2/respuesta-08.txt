@@ -1,0 +1,3 @@
+No se puede por tu cuenta: la azotea es común y un vecino no puede ponerlas sin acuerdo de la junta. Para renovables de uso común suele bastar una mayoría reducida, un tercio, orientativo, que confirma el administrador. ¿Te reservo el estudio para la junta?
+<ficha>{"que":"Placas solares","lugar":"Comunidad de vecinos","factura":"","tejado":"azotea","consumo":"","nombre":"","telefono":"","municipio":"Granada (La Chana)","franja":"","inicio":"","orientacion":"Conseguir el acuerdo de la junta antes de instalar; el administrador confirma la mayoría.","fase":"proponiendo"}</ficha>
+<mostrar>situaciones</mostrar>

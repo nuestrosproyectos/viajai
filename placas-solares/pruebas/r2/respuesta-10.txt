@@ -1,0 +1,3 @@
+Hay una deducción de dos mil veintiséis por autoconsumo, orientativamente un diez por ciento con límite, pero solo vale si la instalación está terminada y pagada este año; hoy va muy justo. Un asesor fiscal lo confirma. ¿Te reservo el estudio?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Consultar la deducción de la Renta con un asesor fiscal; el plazo va muy justo.","fase":"proponiendo"}</ficha>
+<mostrar>ayudas</mostrar>

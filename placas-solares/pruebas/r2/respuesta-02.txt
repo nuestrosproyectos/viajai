@@ -1,0 +1,3 @@
+Lo más habitual es de mil a mil quinientos euros por kilovatio instalado. Una casa típica de unos cinco kilovatios sale del orden de cuatro mil quinientos a siete mil quinientos sin batería. ¿Te reservo el estudio por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Ver el presupuesto cerrado en el estudio gratuito; el tamaño depende de la casa.","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>

@@ -1,0 +1,2 @@
+Con batería se encarece la instalación y en muchas casas tarda más en pagarse sola, así que depende de tu caso. Compensa más si gastas mucho de noche. ¿Cuánta luz gastas de noche, más o menos?
+<ficha>{"que":"Placas con batería","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Decidir la batería según lo que gaste de noche.","fase":"entendiendo"}</ficha>

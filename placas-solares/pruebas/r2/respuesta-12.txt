@@ -1,0 +1,2 @@
+Entiendo que te preocupe. Mira qué luces o códigos muestra el inversor, y pregunta a tu compañía de luz si firmaste el contrato de compensación. Con eso y una visita técnica gratuita, lo revisamos. ¿Me dices qué marca es el inversor?
+<ficha>{"que":"Revisar mi instalación","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Revisar luces del inversor y el contrato de compensación; lo revisa el técnico.","fase":"orientando"}</ficha>

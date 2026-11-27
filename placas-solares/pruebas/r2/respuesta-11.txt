@@ -1,0 +1,2 @@
+Cargar de día con sol es lo que más aprovecha las placas. Las ayudas de Maracena dependen de su ordenanza, y eso lo comprueba el técnico. ¿Cuándo sueles cargarlo, de día o de noche?
+<ficha>{"que":"Placas para cargar coche eléctrico","lugar":"Casa","factura":"","tejado":"","consumo":"coche eléctrico","nombre":"","telefono":"","municipio":"Maracena","franja":"","inicio":"","orientacion":"Cargar de día con sol; las ayudas municipales las confirma el técnico.","fase":"entendiendo"}</ficha>

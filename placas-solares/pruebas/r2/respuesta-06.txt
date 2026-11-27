@@ -1,0 +1,2 @@
+La factura no baja a cero, y es mejor saberlo antes: siempre quedan la potencia, el contador, los impuestos y lo que gastas de noche. Lo que sobra se descuenta en la parte de energía de la factura. ¿Cuánto pagas de luz al mes?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Calcular el ahorro con sus facturas; la factura no baja a cero.","fase":"entendiendo"}</ficha>

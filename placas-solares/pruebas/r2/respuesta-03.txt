@@ -1,0 +1,3 @@
+En Granada, cada kilovatio de placas suele producir entre mil cuatrocientos y mil setecientos kilovatios hora al año, según orientación y sombras. Tu tejado concreto lo medimos en el estudio gratuito. ¿Te reservo el estudio por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"Granada","franja":"","inicio":"","orientacion":"Ver cuánto produciría su tejado concreto en el estudio gratuito.","fase":"proponiendo"}</ficha>
+<mostrar>orientativos</mostrar>

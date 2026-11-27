@@ -1,0 +1,3 @@
+Lo primero: no toques nada, y si puedes hacerlo sin riesgo, corta la luz en el cuadro; si hay fuego, llama al 112. Lo paso como urgente a la instaladora en cuanto me des un teléfono. ¿Cuál es tu teléfono?
+<ficha>{"que":"Revisar mi instalación","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Inversor con olor a quemado y ruido: no tocar, cortar en el cuadro si es seguro, aviso urgente a la instaladora.","fase":"datos"}</ficha>
+<mostrar>contacto</mostrar>

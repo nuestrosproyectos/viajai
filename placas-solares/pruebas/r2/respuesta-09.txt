@@ -1,0 +1,3 @@
+No tiene por qué ser un no, pero en el Albaicín el trámite es más exigente y puede haber límites. Lo estudia el técnico en la visita. ¿Sabes si tu casa está catalogada o protegida?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"Granada (Albaicín)","franja":"","inicio":"","orientacion":"Comprobar si la casa está catalogada; el técnico lo estudia en la visita.","fase":"entendiendo"}</ficha>
+<mostrar>permisos</mostrar>
