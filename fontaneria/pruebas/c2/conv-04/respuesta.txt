@@ -1,0 +1,3 @@
+Entiendo que te parezca mucho. Si es un termo eléctrico, cambiarlo suele costar unos 180 a 600 € según capacidad, orientativo; pide presupuesto por escrito antes de empezar. ¿Cuántas personas viven en casa?
+<ficha>{"averia":"cambio de termo","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Pide el desglose del presupuesto de 900 euros por escrito; la capacidad y el IVA lo cambian.","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>

@@ -1,0 +1,3 @@
+Lo primero es que te vea un médico hoy y que quede escrito; el informe liga el dolor al accidente. Guarda fotos y avisa a tu aseguradora en siete días. La primera consulta es gratis y el abogado lo revisa. ¿Ya has ido al médico?
+<ficha>{"caso":"golpe por detrás hace tres días","como":"","fecha":"hace tres días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que te vea un médico hoy, guarda fotos y avisa a tu aseguradora en siete días.","fase":"orientando"}</ficha>
+<mostrar>documentos</mostrar>

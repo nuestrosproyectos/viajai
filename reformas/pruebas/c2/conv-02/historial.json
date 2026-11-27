@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Buenas. Antes de nada, ¿la visita la cobráis? Porque luego siempre hay sorpresas."
+ },
+ {
+  "role": "assistant",
+  "content": "Sí, la visita de medición es gratis, dura unos cuarenta y cinco minutos y no tiene compromiso. Después te llega el presupuesto por partidas, por escrito, en unos cinco días laborables. ¿Te reservo la visita por la mañana o por la tarde?\n<ficha>{\"obra\":\"\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"La visita de medición es gratis y sin compromiso; el presupuesto por partidas llega por escrito después.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>como</mostrar>",
+  "original": "Sí, la visita de medición es gratis, dura unos cuarenta y cinco minutos y no tiene compromiso. Después te llega el presupuesto por partidas, por escrito, en unos cinco días laborables. ¿Te reservo la visita por la mañana o por la tarde?\n<ficha>{\"obra\":\"\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"La visita de medición es gratis y sin compromiso; el presupuesto por partidas llega por escrito después.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>como</mostrar>"
  }
 ]

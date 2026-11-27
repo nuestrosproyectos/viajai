@@ -1,0 +1,3 @@
+Eso no te lo puedo decir seguro: el plazo de un año se cuenta desde el alta médica y con interrupciones, así que conviene mirarlo cuanto antes. Lo revisa el abogado en la primera consulta, gratis. ¿Cuándo te dieron el alta?
+<ficha>{"caso":"atropello en un paso de cebra","como":"Andando","fecha":"hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Conviene que el abogado lo mire cuanto antes, con la fecha del alta.","fase":"orientando"}</ficha>
+<mostrar>plazo</mostrar>

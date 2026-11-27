@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Me han dado un presupuesto de 6.800 € por 5 kWp con una batería de 10 kWh. ¿Está bien de precio?"
+ },
+ {
+  "role": "assistant",
+  "content": "Orientativamente, cinco kilovatios de placas y diez kilovatios hora de batería rondan entre nueve mil quinientos y quince mil quinientos euros: tu presupuesto queda por debajo. Revisa boletín, legalización y garantías por escrito. ¿Te reservo el estudio por la mañana o por la tarde?\n<ficha>{\"que\":\"Revisar un presupuesto de placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Presupuesto de 6.800 € por 5 kWp con batería de 10 kWh, por debajo del rango orientativo; revisar que incluya legalización y garantías por escrito.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>precios</mostrar>",
+  "original": "Orientativamente, cinco kilovatios de placas y diez kilovatios hora de batería rondan entre nueve mil quinientos y quince mil quinientos euros: tu presupuesto queda por debajo. Revisa boletín, legalización y garantías por escrito. ¿Te reservo el estudio por la mañana o por la tarde?\n<ficha>{\"que\":\"Revisar un presupuesto de placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Presupuesto de 6.800 € por 5 kWp con batería de 10 kWh, por debajo del rango orientativo; revisar que incluya legalización y garantías por escrito.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>precios</mostrar>"
  }
 ]

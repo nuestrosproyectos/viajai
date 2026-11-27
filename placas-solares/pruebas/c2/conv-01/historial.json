@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Hola, me estoy planteando poner placas, pago unos 120 € de luz al mes. ¿Me compensa?"
+ },
+ {
+  "role": "assistant",
+  "content": "Suele compensar si gastas de día. Con unos ciento veinte euros al mes, lo habitual es unos cinco kilovatios, de cuatro mil quinientos a siete mil quinientos euros sin batería. El estudio gratis con tus facturas lo afina; ¿es casa o piso en comunidad?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con unos 120 € al mes suele compensar si gastas de día; el estudio gratis con tus facturas da el tamaño exacto.\",\"fase\":\"orientando\"}</ficha>\n<mostrar>precios</mostrar>",
+  "original": "Suele compensar si gastas de día. Con unos ciento veinte euros al mes, lo habitual es unos cinco kilovatios, de cuatro mil quinientos a siete mil quinientos euros sin batería. El estudio gratis con tus facturas lo afina; ¿es casa o piso en comunidad?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con unos 120 € al mes suele compensar si gastas de día; el estudio gratis con tus facturas da el tamaño exacto.\",\"fase\":\"orientando\"}</ficha>\n<mostrar>precios</mostrar>"
  }
 ]
