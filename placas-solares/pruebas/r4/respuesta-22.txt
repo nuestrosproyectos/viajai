@@ -1,0 +1,2 @@
+De paella y de fútbol no sé mucho; yo me dedico a las placas solares. Si quieres saber qué tamaño te haría falta, con tu factura de la luz te lo digo y reservamos el estudio gratuito. ¿Cuánto pagas de luz al mes?
+<ficha>{"que":"","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"","fase":"entendiendo"}</ficha>

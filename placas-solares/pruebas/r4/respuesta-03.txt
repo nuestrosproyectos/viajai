@@ -1,0 +1,2 @@
+En Granada, cada kilovatio de placas instaladas produce del orden de mil cuatrocientos a mil setecientos kilovatios-hora al año (la energía que mide la factura), según orientación y sombras. Con tus facturas, el estudio gratuito te lo concreta para tu tejado. ¿Cuánto pagas de luz al mes?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"Granada","franja":"","inicio":"","orientacion":"Pasar tu factura de la luz y reservar el estudio gratuito.","fase":"entendiendo"}</ficha>

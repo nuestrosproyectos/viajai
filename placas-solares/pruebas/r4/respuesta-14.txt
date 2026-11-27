@@ -1,0 +1,2 @@
+No le doy un ahorro exacto: depende de cuánta luz gasta de día y de cómo se compensan los excedentes. La factura nunca baja a cero, porque siempre quedan la potencia, el contador y lo de noche. Le reservo el estudio gratuito con visita técnica, y con sus facturas se lo calculamos. ¿Por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"","factura":"unos 90 €","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Calcular el ahorro con sus facturas en el estudio gratuito.","fase":"orientando"}</ficha>

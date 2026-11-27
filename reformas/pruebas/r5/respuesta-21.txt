@@ -1,0 +1,2 @@
+Con la declaración de la renta no te puedo ayudar, y de lo del metro no entro; para eso te conviene un gestor. Si lo tuyo es una reforma, ¿qué quieres cambiar, el baño o la cocina?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"","fase":"entendiendo"}</ficha>

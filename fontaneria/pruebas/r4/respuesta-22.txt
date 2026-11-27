@@ -1,0 +1,3 @@
+Mientras no lo revisen, no pongas la lavadora, que sigue sacando agua por el sumidero, la rejilla del suelo. Un desatasco sencillo va de setenta a ciento cincuenta euros, y un atasco serio con máquina, desde ciento cincuenta y puede pasar de quinientos, orientativo. ¿Te reservo la visita mañana por la mañana o por la tarde?
+<ficha>{"averia":"atasco: sale agua por el sumidero del suelo al poner la lavadora","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"Maracena","direccion":"","franja":"","inicio":"","orientacion":"No pongas la lavadora hasta que lo revise el fontanero.","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>

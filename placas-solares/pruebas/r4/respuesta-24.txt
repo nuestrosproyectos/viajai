@@ -1,0 +1,2 @@
+Eso no te lo puedo explicar: un panel con sol da tensión aunque se corte la luz, y la instalación siempre se hace y se legaliza con boletín. Lo mejor es que lo hables con tu instalador antes de empezar. ¿Quieres una segunda opinión sobre el presupuesto?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Hablarlo con tu instalador antes de empezar; que lo legalice con boletín y factura.","fase":"orientando"}</ficha>

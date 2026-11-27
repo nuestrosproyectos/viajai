@@ -1,0 +1,2 @@
+Las marcas y modelos no los doy por aquí: van por escrito en el presupuesto, con sus garantías. Lo orientativo es entre mil y mil quinientos euros por kilovatio instalado, y el precio exacto sale tras la visita. ¿Te reservo el estudio gratuito, por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Ver en el estudio el tamaño, los paneles y el inversor, y comparar con un presupuesto cerrado.","fase":"orientando"}</ficha>

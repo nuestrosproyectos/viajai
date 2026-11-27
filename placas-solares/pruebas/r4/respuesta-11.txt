@@ -1,0 +1,2 @@
+Cargar de día con sol es lo que más aprovecha las placas, y en Maracena cada ayuntamiento tiene su ordenanza, que el técnico comprueba. El estudio gratuito te dice cuántas placas hacen falta para el coche y la casa. ¿A qué horas sueles cargarlo?
+<ficha>{"que":"Placas para el coche eléctrico","lugar":"Casa","factura":"","tejado":"","consumo":"coche eléctrico","nombre":"","telefono":"","municipio":"Maracena","franja":"","inicio":"","orientacion":"Cargar de día con sol y ver cuántas placas hacen falta.","fase":"orientando"}</ficha>

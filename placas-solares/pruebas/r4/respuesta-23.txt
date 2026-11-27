@@ -1,0 +1,2 @@
+Sin red eléctrica es otro tipo de instalación, con baterías, y eso lo estudia el técnico en la visita gratuita. Para orientarte, ¿la luz sería solo para la casa o también para la bomba de agua o el frigorífico?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Instalación sin red eléctrica con baterías: la estudia el técnico en la visita.","fase":"orientando"}</ficha>

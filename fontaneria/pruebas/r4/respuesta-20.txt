@@ -1,0 +1,2 @@
+Del tiempo no te puedo informar, así que mira la previsión en una app o en la radio. ¿Tienes algún problema de agua o de desagües en casa que quieras que miremos?
+<ficha>{"averia":"","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"","fase":"entendiendo"}</ficha>

@@ -1,0 +1,2 @@
+Entiendo el susto. No toques nada, y si hay humo o fuego llama al 112 ya. Avisa a tu instaladora cuanto antes para que lo revise con la garantía. ¿Qué luces o códigos da la pantalla del inversor?
+<ficha>{"que":"Revisar mi instalación","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"No toques nada; si hay humo o fuego, llama al 112 y avisa a tu instaladora.","fase":"orientando"}</ficha>

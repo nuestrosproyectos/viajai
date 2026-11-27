@@ -1,0 +1,2 @@
+Con batería tampoco te desconectas del todo, porque siguen la potencia contratada y el contador. Compensa más si gastas mucho de noche: cuesta unos 450 a 800 euros por cada kilovatio-hora que guarda, y en muchas casas alarga la amortización. El estudio gratuito te dice si en tu caso merece la pena. ¿Cuánta luz gastas de noche?
+<ficha>{"que":"Batería","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Ver cuánta luz gastas de noche antes de decidir la batería.","fase":"orientando"}</ficha>

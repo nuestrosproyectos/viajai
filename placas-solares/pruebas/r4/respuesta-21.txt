@@ -1,0 +1,2 @@
+Entiendo lo frustrante que es tener una instalación que no produce y no conseguir que te cojan el teléfono. Mejor que no toques el inversor; el técnico revisa por qué no produce. Te apunto para que te llamemos: ¿me dices tu nombre y tu teléfono?
+<ficha>{"que":"Revisar mi instalación","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Que el técnico revise por qué no produce; el coste de la revisión lo confirma él.","fase":"orientando"}</ficha>

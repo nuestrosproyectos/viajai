@@ -1,0 +1,2 @@
+En Granada capital normalmente basta una declaración responsable, un trámite sencillo que gestiona la instaladora, salvo que el edificio esté catalogado. Eso lo confirma el técnico en el estudio gratuito. ¿Es una casa o un piso en un bloque?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"Granada, Zaidín","franja":"","inicio":"","orientacion":"Ver si el edificio está catalogado y cómo es el trámite del ayuntamiento.","fase":"orientando"}</ficha>

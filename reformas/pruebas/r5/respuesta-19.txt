@@ -1,0 +1,3 @@
+No recomiendo marcas concretas; el técnico en la visita te aconseja según tu baño y tu presupuesto. Como orientación del trabajo completo, lo más básico sin mampara puede rondar los seiscientos euros, y con gama alta o mampara a medida, desde tres mil trescientos. ¿Te reservo la visita gratis por la mañana o por la tarde?
+<ficha>{"obra":"Cambiar bañera por plato de ducha","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Marca y mampara las elige el técnico en la visita; el trabajo completo puede ir desde unos 600 € hasta más de 3.300 € según gama.","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>

@@ -1,0 +1,3 @@
+No te recomiendo marcas; eso lo confirma el fontanero al ver tu termo y tu casa. Cambiar un termo eléctrico instalado suele costar entre ciento ochenta y seiscientos euros según la capacidad, orientativo, más el IVA. ¿Te reservo la visita mañana por la mañana o por la tarde?
+<ficha>{"averia":"duda sobre qué termo comprar","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No hay marca recomendada; el fontanero te aconseja según tu termo y tu casa.","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>

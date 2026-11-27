@@ -1,0 +1,3 @@
+No eches más sosa, que quema y daña la tubería. Ni metas la mano ni desmontes el sifón, el tubo curvo de debajo del lavabo. Un desatasco sencillo suele costar entre setenta y ciento cincuenta euros, orientativo, y el fontanero lo confirma antes de empezar. ¿Te mando al fontanero mañana por la mañana o por la tarde?
+<ficha>{"averia":"lavabo atascado","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No eches más sosa ni metas la mano en el sifón; el fontanero lo revisa.","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>

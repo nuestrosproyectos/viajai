@@ -1,0 +1,3 @@
+En el Albaicín lo más probable es que haga falta licencia y técnico, aunque no se toquen muros; el técnico lo confirma en la visita. El impuesto de obras en Granada capital es del 4 % y la licencia la tramitamos nosotros, incluida en el presupuesto. ¿Le reservo la visita por la mañana o por la tarde?
+<ficha>{"obra":"Reforma de baño y cocina","vivienda":"Casa","metros":"","antiguedad":"Antigua","presupuesto":"","nombre":"","telefono":"","municipio":"Granada (Albaicín)","franja":"","inicio":"","orientacion":"En el Albaicín lo más probable es licencia y técnico; la visita lo confirma.","fase":"proponiendo"}</ficha>
+<mostrar>permisos</mostrar>

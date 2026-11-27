@@ -1,0 +1,2 @@
+Entiendo la duda, pero no suele quedar a cero: siempre quedan la potencia contratada, el contador, los impuestos y lo que gastas de noche. Lo que sobra se descuenta en la parte de energía de la factura, y el estudio gratuito con tus facturas calcula el ahorro probable en tu caso. ¿Cuánto pagas de luz al mes?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Mirar tus facturas y reservar el estudio gratuito.","fase":"orientando"}</ficha>

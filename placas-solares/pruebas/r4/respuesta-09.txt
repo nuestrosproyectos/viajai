@@ -1,0 +1,2 @@
+En el Albaicín el trámite del ayuntamiento es más exigente y puede haber límites, pero el técnico lo estudia en el estudio gratuito. ¿Sabes si el edificio está catalogado o protegido?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"Granada, Albaicín","franja":"","inicio":"","orientacion":"Comprobar si el edificio está catalogado y cómo es el trámite en el Albaicín.","fase":"orientando"}</ficha>

@@ -1,0 +1,2 @@
+Depende sobre todo del tamaño que necesites, y eso sale de tu factura. Como orientación, una casa típica de unos cinco kilovatios suele costar del orden de cuatro mil quinientos a siete mil quinientos euros sin batería, y el estudio gratuito lo concreta con una visita. ¿Cuánto pagas de luz al mes?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Ver el tamaño con tu factura de la luz y reservar el estudio gratuito.","fase":"orientando"}</ficha>

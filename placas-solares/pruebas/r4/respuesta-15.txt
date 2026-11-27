@@ -1,0 +1,2 @@
+Las garantías de paneles, inversor, batería y mano de obra van por escrito en el presupuesto. Sobre una garantía de producción no le puedo confirmar nada seguro, así que lo apunto para que el técnico en el estudio se lo aclare. ¿Le reservo el estudio gratuito, por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Pedir las garantías por escrito en el presupuesto del estudio.","fase":"orientando"}</ficha>
