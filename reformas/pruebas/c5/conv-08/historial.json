@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Perfecto, le repito los datos: Antonio, teléfono seis cinco cinco, nueve cero nueve, tres cuatro uno. La visita en la calle Granada, número 8, en Atarfe, por la tarde. Y hasta entonces, que nadie rompa, corte ni barra la uralita. ¿Está todo bien?\n<ficha>{\"obra\":\"quitar el tejado de uralita de la cochera\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"655 909 341\",\"municipio\":\"Atarfe\",\"direccion\":\"Calle Granada 8\",\"franja\":\"Tarde\",\"inicio\":\"\",\"orientacion\":\"Mejor que no quite la uralita: puede tener amianto; la retira una empresa inscrita, y el técnico ve qué material conviene.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, le repito los datos: Antonio, teléfono seis cinco cinco, nueve cero nueve, tres cuatro uno. La visita en la calle Granada, número 8, en Atarfe, por la tarde. Y hasta entonces, que nadie rompa, corte ni barra la uralita. ¿Está todo bien?\n<ficha>{\"obra\":\"quitar el tejado de uralita de la cochera\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"655 909 341\",\"municipio\":\"Atarfe\",\"direccion\":\"Calle Granada 8\",\"franja\":\"Tarde\",\"inicio\":\"\",\"orientacion\":\"Mejor que no quite la uralita: puede tener amianto; la retira una empresa inscrita, y el técnico ve qué material conviene.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien. Gracias."
  }
 ]

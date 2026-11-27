@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Gracias, Paco, ya tengo su nombre y su teléfono. En la visita, el técnico mide las seis ventanas. ¿En qué municipio, calle y número está la vivienda, y le viene mejor por la mañana o por la tarde?\n<ficha>{\"obra\":\"cambiar 6 ventanas por otras que aíslen\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Paco\",\"telefono\":\"633 778 120\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Las ventanas pueden dar deducción del 20 o del 40 % con certificado energético antes y después; el IVA puede ser del 10 % si se cumplen sus condiciones; lo confirma su gestor.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Paco, ya tengo su nombre y su teléfono. En la visita, el técnico mide las seis ventanas. ¿En qué municipio, calle y número está la vivienda, y le viene mejor por la mañana o por la tarde?\n<ficha>{\"obra\":\"cambiar 6 ventanas por otras que aíslen\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Paco\",\"telefono\":\"633 778 120\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Las ventanas pueden dar deducción del 20 o del 40 % con certificado energético antes y después; el IVA puede ser del 10 % si se cumplen sus condiciones; lo confirma su gestor.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "En Granada capital, calle Recogidas 31. Por las mañanas"
  }
 ]

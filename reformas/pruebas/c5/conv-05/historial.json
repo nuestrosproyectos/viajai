@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Gracias, Javier, ya tengo tu nombre y tu teléfono. Con el fregadero junto a la ventana, el técnico revisa el desagüe en la visita. ¿En qué municipio, calle y número está la vivienda, y te viene mejor por la mañana o por la tarde?\n<ficha>{\"obra\":\"cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"unos 9 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Javier\",\"telefono\":\"622 410 870\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Una cocina completa suele quedar entre seis mil y diez mil euros, y mover el fregadero la encarece; el plazo sin cocina lo da el técnico en la visita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Javier, ya tengo tu nombre y tu teléfono. Con el fregadero junto a la ventana, el técnico revisa el desagüe en la visita. ¿En qué municipio, calle y número está la vivienda, y te viene mejor por la mañana o por la tarde?\n<ficha>{\"obra\":\"cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"unos 9 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Javier\",\"telefono\":\"622 410 870\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Una cocina completa suele quedar entre seis mil y diez mil euros, y mover el fregadero la encarece; el plazo sin cocina lo da el técnico en la visita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Granada, en el Zaidín. Calle Arabial 50. Por las mañanas"
  }
 ]

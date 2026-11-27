@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Gracias, Nuria, ya tengo tu nombre y tu teléfono. Con un piso de los años ochenta, el técnico mirará las instalaciones en la visita. ¿En qué calle y número está el piso, y te viene mejor por la mañana o por la tarde?\n<ficha>{\"obra\":\"reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros\",\"vivienda\":\"\",\"metros\":\"90 metros\",\"antiguedad\":\"años 80\",\"presupuesto\":\"\",\"nombre\":\"Nuria\",\"telefono\":\"699 202 515\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Sin tirar muros, el técnico confirma en Armilla qué trámite hace falta; la electricidad la hace una empresa habilitada con boletín.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Nuria, ya tengo tu nombre y tu teléfono. Con un piso de los años ochenta, el técnico mirará las instalaciones en la visita. ¿En qué calle y número está el piso, y te viene mejor por la mañana o por la tarde?\n<ficha>{\"obra\":\"reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros\",\"vivienda\":\"\",\"metros\":\"90 metros\",\"antiguedad\":\"años 80\",\"presupuesto\":\"\",\"nombre\":\"Nuria\",\"telefono\":\"699 202 515\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Sin tirar muros, el técnico confirma en Armilla qué trámite hace falta; la electricidad la hace una empresa habilitada con boletín.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Calle Real de Armilla 22. Por las tardes"
  }
 ]
