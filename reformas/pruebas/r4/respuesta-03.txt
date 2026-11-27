@@ -1,0 +1,3 @@
+Una cocina completa suele estar entre seis mil y diez mil euros, con IVA; depende sobre todo de los muebles y de si se mueven fregadero, placa o campana. ¿Te reservo la visita de medición, gratis, mejor por la mañana o por la tarde?
+<ficha>{"obra":"reformar cocina","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"Armilla","franja":"","inicio":"","orientacion":"Cocina completa; el precio depende de los muebles y de si se mueven fregadero, placa o campana. Visita de medición gratis.","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>

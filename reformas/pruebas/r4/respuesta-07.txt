@@ -1,0 +1,2 @@
+Sí, hay deducciones del 20 % o del 40 %, pero en piso o casa el certificado posterior debe estar antes del 1 de enero de 2027, así que queda poco. ¿Te reservo la visita por la mañana o por la tarde?
+<ficha>{"obra":"cambiar ventanas y poner aislamiento","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Pide certificado energético antes y después de la obra; el de después, en piso o casa, va antes del 1 de enero de 2027. Tu gestor lo confirma.","fase":"proponiendo"}</ficha>

@@ -1,0 +1,3 @@
+Entiendo que te preocupe, después de lo de antes. Lo que sí va por escrito es la garantía en el contrato, y lo que hay detrás del plato lo confirma el técnico al medir. ¿Te reservo la visita por la mañana o por la tarde?
+<ficha>{"obra":"plato de ducha nuevo","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Pedir la garantía por escrito en el contrato y revisar en la visita lo que hay detrás del plato","fase":"proponiendo"}</ficha>
+<mostrar>garantia</mostrar>

@@ -1,0 +1,2 @@
+Lo habitual es un año, y en lesiones suele contarse desde el alta médica, no desde el accidente. Reclamar por escrito lo interrumpe, y el abogado lo confirma. Te reservo la primera consulta gratis. ¿Ya te han dado el alta?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Tener a mano el informe de alta y revisar con el abogado si ya se reclamó algo por escrito.","fase":"proponiendo"}</ficha>

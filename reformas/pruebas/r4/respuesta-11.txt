@@ -1,0 +1,3 @@
+Una reforma integral ronda los 460 a 690 euros por metro cuadrado en calidades medias, y suele llevar de tres a cinco meses. En pisos de esa época suelen salir tuberías viejas. ¿Te reservo la visita, mejor por la mañana o por la tarde?
+<ficha>{"obra":"reforma integral del piso","vivienda":"Piso","metros":"90 metros","antiguedad":"años 70","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Reforma integral: del orden de 460 a 690 euros por metro cuadrado y de tres a cinco meses; revisar tuberías y electricidad con el técnico en la visita.","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>

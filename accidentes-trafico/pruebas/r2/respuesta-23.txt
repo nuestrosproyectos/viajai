@@ -1,0 +1,2 @@
+De qué coche comprar no te puedo orientar, pero siento que el tuyo haya quedado siniestro total. ¿Te lesionaste en el accidente?
+<ficha>{"caso":"Accidente; el coche ha quedado en siniestro total","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Lo primero es tu salud: que un médico te revise.","fase":"entendiendo"}</ficha>

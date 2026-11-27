@@ -1,0 +1,2 @@
+Lo primero es pedirle el presupuesto por escrito, firmado y por partidas, con medidas y materiales, y no pagar todo por adelantado. Si quieres una segunda opinión, la visita de medición es gratis. ¿Quieres que te reserve una visita para comparar?
+<ficha>{"obra":"reforma del baño, con albañil ya contratado","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Pedir presupuesto por escrito, firmado y por partidas, y no pagar todo por adelantado","fase":"orientando"}</ficha>

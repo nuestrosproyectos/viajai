@@ -1,0 +1,2 @@
+Del tiempo no sé decirte, no es lo mío. ¿Tienes algún problema de agua en casa que te preocupe?
+<ficha>{"averia":"","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"","fase":"entendiendo"}</ficha>

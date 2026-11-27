@@ -1,0 +1,2 @@
+La primera consulta es gratis, y sin indemnización no hay honorarios. Lo habitual es un porcentaje de la indemnización, entre el diez y el treinta por ciento; el de este despacho lo da el abogado por escrito. ¿Mañana o tarde te viene mejor?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Pedir al abogado el porcentaje de este despacho por escrito antes de firmar nada.","fase":"proponiendo"}</ficha>

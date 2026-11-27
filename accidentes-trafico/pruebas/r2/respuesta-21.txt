@@ -1,0 +1,2 @@
+Entiendo el enfado, y tienes razón en que puedes reclamar solo. El abogado conoce el baremo, y si no hay indemnización no hay honorarios. ¿Te reservo la consulta gratis, por la mañana o por la tarde?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Puedes reclamar por tu cuenta; el abogado conoce el baremo, y si no hay indemnización no hay honorarios.","fase":"proponiendo"}</ficha>

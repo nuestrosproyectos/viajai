@@ -1,0 +1,3 @@
+Un baño completo en reforma estándar suele durar de una a dos semanas y cuesta entre tres mil y seis mil euros, con IVA. Depende de lo que aparezca al abrir. ¿Te reservo la visita, mejor por la mañana o por la tarde?
+<ficha>{"obra":"reformar baño completo","vivienda":"","metros":"unos 4 metros","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Baño completo en reforma estándar, de una a dos semanas; la visita de medición gratis afina el precio y el plazo.","fase":"proponiendo"}</ficha>
+<mostrar>plazo</mostrar>

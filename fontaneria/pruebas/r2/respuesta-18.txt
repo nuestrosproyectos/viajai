@@ -1,0 +1,3 @@
+Depende de la avería, y eso lo valora el fontanero al verla. La garantía de la reparación va por escrito en la factura, y no se cobra lo que no hayas aceptado. ¿Te reservo la visita por la mañana o por la tarde?
+<ficha>{"averia":"","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Pide presupuesto por escrito antes de empezar y que la garantía conste en la factura","fase":"proponiendo"}</ficha>
+<mostrar>garantia</mostrar>

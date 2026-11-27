@@ -1,0 +1,2 @@
+Lo más habitual es que venga de arriba o de una bajante: avisa al administrador y a tu seguro. Si cae agua o hay enchufes cerca, es urgente. Te reservo una visita para verlo. ¿Gotea agua o hay algún enchufe cerca?
+<ficha>{"obra":"reparar humedad en el techo del baño","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Avisar al administrador y al seguro; mirar si hay goteo o enchufes cerca, que sería urgente.","fase":"datos"}</ficha>

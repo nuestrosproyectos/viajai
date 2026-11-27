@@ -1,0 +1,3 @@
+Entiendo tu enfado, y tienes derecho a presupuesto escrito antes de empezar. Un goteo es cita normal, no urgencia; salida y hora cada una entre veinte y cuarenta euros, orientativo. ¿Te reservo la visita por la mañana o por la tarde?
+<ficha>{"averia":"Grifo que gotea","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Un goteo es cita normal; pide presupuesto por escrito antes de empezar","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>

@@ -1,0 +1,3 @@
+Eso lo decide el técnico: si el tabique es de carga o el edificio tiene protección, puede hacer falta licencia y, si es común, acuerdo de la comunidad. ¿Te reservo la visita, mejor por la mañana o por la tarde?
+<ficha>{"obra":"tirar tabique entre cocina y salón para cocina abierta","vivienda":"Piso","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Piso en 4º, en Camino de Ronda. Si el tabique es de carga o el edificio tiene protección, hace falta licencia; lo confirma el técnico.","fase":"proponiendo"}</ficha>
+<mostrar>permisos</mostrar>

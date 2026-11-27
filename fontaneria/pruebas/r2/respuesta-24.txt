@@ -1,0 +1,2 @@
+Gracias, Carmen. El teléfono de tu aseguradora no lo tengo; míralo en tu póliza o en su app. Te apunto el seiscientos once, veintidós, treinta y tres, cuarenta y cuatro, solo para llamarte. ¿Qué pasa en casa ahora mismo?
+<ficha>{"averia":"","cuando":"","llave":"","vivienda":"","seguro":"Línea Directa","nombre":"Carmen","telefono":"611 22 33 44","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Llama a tu aseguradora antes de nada, que muchas mandan su propio fontanero","fase":"datos"}</ficha>

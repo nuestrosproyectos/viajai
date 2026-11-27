@@ -1,0 +1,3 @@
+Entiendo el susto. No toques el cuadro: con el pasillo encharcado, llama al 112 en vez de bajar el general. No toques nada mojado ni enchufado. ¿Estás ahora en una zona seca, sin agua cerca?
+<ficha>{"averia":"Agua del baño ha llegado a la regleta del ordenador; ha saltado algo y está todo a oscuras","cuando":"Urgente, ahora","llave":"Sí, ya la has cerrado","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No toques el cuadro ni nada mojado; con el pasillo encharcado, llama al 112","fase":"entendiendo"}</ficha>
+<mostrar>seguridad</mostrar>

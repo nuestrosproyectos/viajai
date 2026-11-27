@@ -1,0 +1,3 @@
+Entiendo que te preocupe no tener noticias. No aceptes ni firmes la oferta sin que la vea tu abogado, y pídele que te explique el caso. ¿Quieres una segunda opinión gratis con nuestro abogado?
+<ficha>{"caso":"Ya tiene abogado; la aseguradora le ha hecho una oferta","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"No firmes la oferta sin que la vea tu abogado; pídele que te explique el caso.","fase":"proponiendo"}</ficha>
+<mostrar>oferta</mostrar>

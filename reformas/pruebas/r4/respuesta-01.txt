@@ -1,0 +1,3 @@
+Cambiar la bañera por plato de ducha suele estar entre mil y dos mil trescientos euros, con IVA. Sube si hay que mover el desagüe, la salida del agua. ¿Te reservo la visita de medición, gratis, mejor por la mañana o por la tarde?
+<ficha>{"obra":"cambiar bañera por plato de ducha","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Plato de ducha; el precio cerrado sale del presupuesto por escrito tras la visita de medición, gratis y sin compromiso.","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>

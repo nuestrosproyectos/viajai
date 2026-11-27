@@ -1,0 +1,2 @@
+Entiendo la duda. No firmes nada todavía: no hay una cifra fija por latigazo y el abogado revisa esa oferta con tus informes médicos. Te reservo la consulta gratis; ¿te viene mejor por la mañana o por la tarde?
+<ficha>{"caso":"Accidente de tráfico con una oferta de la aseguradora del otro","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"No firmar la oferta hasta que la revise el abogado con los informes.","fase":"proponiendo"}</ficha>

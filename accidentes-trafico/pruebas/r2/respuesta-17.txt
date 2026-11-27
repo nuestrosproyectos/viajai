@@ -1,0 +1,3 @@
+Una cifra exacta no te la doy: depende del informe médico. Como ejemplo inventado, treinta días de baja y sesenta sin baja serían unos cuatro mil cuatrocientos euros solo por los días. ¿Te importa que apunte lo de tu baja para el abogado?
+<ficha>{"caso":"Accidente de tráfico; pregunta cuánto le pagarían","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Lo que cuenta es el informe médico; la cuantía la calcula el abogado.","fase":"orientando"}</ficha>
+<mostrar>baremo</mostrar>

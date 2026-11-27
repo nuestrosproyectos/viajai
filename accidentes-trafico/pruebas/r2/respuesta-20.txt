@@ -1,0 +1,2 @@
+Nadie serio puede garantizarte una cantidad: depende de los informes y de la culpa. Lo que sí ofrecemos es la primera consulta gratis, sin compromiso, donde el abogado dice con franqueza qué posibilidades ve. ¿Te reservo mejor por la mañana o por la tarde?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Ningún despacho serio garantiza una cantidad; la consulta gratis revisa el caso.","fase":"proponiendo"}</ficha>
