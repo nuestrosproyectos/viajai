@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "En Baza, señorita. Por teléfono, por la mañana, como le dije"
+ },
+ {
+  "role": "assistant",
+  "content": "Le repito, Dolores: teléfono nueve cinco ocho, siete cero cero, uno dos tres; vive en Baza, y la consulta es por teléfono, por la mañana. Y con lo que libere el banco se pueden pagar el entierro y el propio impuesto. ¿Está todo bien?\n<ficha>{\"situacion\":\"Cuenta bloqueada por el banco tras el fallecimiento de su marido; necesita dinero para el día a día\",\"parentesco\":\"Cónyuge o viudo/a\",\"testamento\":\"Sí\",\"bienes\":\"Una cuenta bancaria a nombre de los dos, bloqueada por el banco\",\"nombre\":\"Dolores\",\"telefono\":\"958 700 123\",\"municipio\":\"Baza\",\"franja\":\"por teléfono, por la mañana\",\"fallecimiento\":\"hace dos meses\",\"modalidad\":\"Por teléfono\",\"orientacion\":\"Pida al banco que bloquee solo la parte de su marido, y reúna el testamento y el justificante del impuesto. Para el día a día, el abogado le confirma los pasos.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Le repito, Dolores: teléfono nueve cinco ocho, siete cero cero, uno dos tres; vive en Baza, y la consulta es por teléfono, por la mañana. Y con lo que libere el banco se pueden pagar el entierro y el propio impuesto. ¿Está todo bien?\n<ficha>{\"situacion\":\"Cuenta bloqueada por el banco tras el fallecimiento de su marido; necesita dinero para el día a día\",\"parentesco\":\"Cónyuge o viudo/a\",\"testamento\":\"Sí\",\"bienes\":\"Una cuenta bancaria a nombre de los dos, bloqueada por el banco\",\"nombre\":\"Dolores\",\"telefono\":\"958 700 123\",\"municipio\":\"Baza\",\"franja\":\"por teléfono, por la mañana\",\"fallecimiento\":\"hace dos meses\",\"modalidad\":\"Por teléfono\",\"orientacion\":\"Pida al banco que bloquee solo la parte de su marido, y reúna el testamento y el justificante del impuesto. Para el día a día, el abogado le confirma los pasos.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]
