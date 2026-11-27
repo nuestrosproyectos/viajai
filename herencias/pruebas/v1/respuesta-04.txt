@@ -1,0 +1,3 @@
+Sí, conviene actuar ya: si vivía en Andalucía, el plazo de seis meses para el impuesto ya ha pasado, y hay recargo que sube cada mes. Como cónyuge, lo más probable es que pagues cero o casi nada, y el abogado lo confirma. ¿Vivía tu marido en Andalucía?
+<ficha>{"situacion":"Herencia de tu marido, fallecido en abril, sin gestiones todavía","parentesco":"Cónyuge","testamento":"","bienes":"","fallecimiento":"Abril de este año","orientacion":"Presenta cuanto antes el impuesto de sucesiones; si vivía en Andalucía hay recargo por el retraso, y el abogado lo confirma","nombre":"","telefono":"","municipio":"","modalidad":"","franja":"","fase":"orientando"}</ficha>
+<mostrar>plazo</mostrar>

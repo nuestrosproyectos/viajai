@@ -1,0 +1,3 @@
+Tranquilo, tienes plazo y no hace falta decidir nada ya. Primero pide copias del certificado de defunción en el Registro Civil, y el de últimas voluntades, que dice si hubo testamento; ya puedes pedirlo. ¿Tu padre vivía en Andalucía?
+<ficha>{"situacion":"Herencia de tu padre, fallecido hace unas tres semanas","parentesco":"Hijo o hija","testamento":"","bienes":"","fallecimiento":"Hace unas tres semanas","orientacion":"Pide copias del certificado de defunción y, cuando pase el plazo, el certificado de últimas voluntades","nombre":"","telefono":"","municipio":"","modalidad":"","franja":"","fase":"orientando"}</ficha>
+<mostrar>documentos</mostrar>

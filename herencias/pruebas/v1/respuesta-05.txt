@@ -1,0 +1,3 @@
+Las deudas pasan a los herederos, pero depende de cómo aceptes la herencia. Si aceptas a beneficio de inventario, que es responder solo hasta donde llegue lo que dejó tu padre, en principio no respondes con tu dinero. Mientras tanto, no saques dinero de sus cuentas. ¿Cuándo falleció?
+<ficha>{"situacion":"Herencia de tu padre, que tenía un bar y dejó posibles deudas con proveedores y Hacienda","parentesco":"Hijo o hija","testamento":"","bienes":"Un bar","fallecimiento":"","orientacion":"No saques dinero de sus cuentas ni vendas nada; a beneficio de inventario respondes solo hasta donde llegue la herencia","nombre":"","telefono":"","municipio":"","modalidad":"","franja":"","fase":"orientando"}</ficha>
+<mostrar>situaciones</mostrar>

@@ -1,0 +1,3 @@
+Primero conviene hablarlo con calma, porque sin la firma de los tres la casa no se puede vender. Si no cede, con dos de los tres puedes pedir al notario un contador-partidor, que es quien reparte la herencia sin unanimidad. ¿Cuándo falleció y vivía en Andalucía?
+<ficha>{"situacion":"Casa de tus padres: tú y tus dos hermanos heredáis, pero uno no quiere vender","parentesco":"Hijos, como tus dos hermanos","testamento":"","bienes":"Casa de tus padres","fallecimiento":"","orientacion":"Hablarlo con calma; si no hay acuerdo, con dos de los tres puedes pedir un contador-partidor al notario, que reparte sin unanimidad","nombre":"","telefono":"","municipio":"","modalidad":"","franja":"","fase":"orientando"}</ficha>
+<mostrar>situaciones</mostrar>

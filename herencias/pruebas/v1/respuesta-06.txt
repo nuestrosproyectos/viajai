@@ -1,0 +1,3 @@
+Sin testamento, la ley no te da herencia como pareja de hecho, pero tu parte de lo que era de los dos sigue siendo tuya. Un seguro de vida a tu nombre es tuyo y no entra en la herencia. ¿Había algún piso o cuenta a nombre de los dos?
+<ficha>{"situacion":"Tu pareja falleció sin testamento, después de 15 años juntos sin estar casados","parentesco":"Pareja de hecho","testamento":"No","bienes":"Por ver: piso o cuentas a nombre de los dos, y seguros de vida","fallecimiento":"","orientacion":"Sin testamento no heredas como pareja de hecho, pero tu parte de lo que era de los dos sigue siendo tuya; el abogado lo revisa","nombre":"","telefono":"","municipio":"","modalidad":"","franja":"","fase":"orientando"}</ficha>
+<mostrar>documentos</mostrar>

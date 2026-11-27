@@ -1,0 +1,3 @@
+Depende de lo que haya y de si hay acuerdo; en una sencilla suele ser de unos cientos de euros a algo más de mil, orientativo. Notaría, registro e impuestos van aparte. ¿Te reservo la primera consulta gratis, con presupuesto por escrito?
+<ficha>{"situacion":"Quieres saber cuánto cuesta tramitar una herencia","parentesco":"","testamento":"","bienes":"","fallecimiento":"","orientacion":"En la primera consulta, gratis, el abogado te da el presupuesto exacto por escrito","nombre":"","telefono":"","municipio":"","modalidad":"","franja":"","fase":"proponiendo"}</ficha>
+<mostrar>honorarios</mostrar>

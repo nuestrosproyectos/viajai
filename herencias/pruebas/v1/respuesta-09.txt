@@ -1,0 +1,3 @@
+No tiene por qué venir: lo habitual es que firme ante un notario de su país con apostilla, un sello que valida el documento, o que dé un poder a alguien en España. ¿Cuándo falleció y vivía en Andalucía?
+<ficha>{"situacion":"Herencia en la que tu hermano, que vive en Alemania, también hereda","parentesco":"Hijo o hija, como tu hermano","testamento":"","bienes":"","fallecimiento":"","orientacion":"Tu hermano no tiene que venir: puede firmar ante notario en Alemania con apostilla o dar un poder a alguien en España","nombre":"","telefono":"","municipio":"","modalidad":"","franja":"","fase":"orientando"}</ficha>
+<mostrar>documentos</mostrar>

@@ -1,0 +1,3 @@
+Puedes consultarnos sin compromiso si quieres una segunda opinión. Si decides cambiar de abogado, hay que comunicárselo antes al actual, y mientras tanto puedes pedirle por escrito un calendario. ¿Te reservo una consulta sin compromiso?
+<ficha>{"situacion":"Herencia de tu abuelo, que ya lleva otro abogado y tarda mucho","parentesco":"Nieto o nieta","testamento":"","bienes":"","fallecimiento":"","orientacion":"Puedes consultar sin compromiso; si cambias de abogado, antes hay que comunicárselo al actual","nombre":"","telefono":"","municipio":"","modalidad":"","franja":"","fase":"proponiendo"}</ficha>
+<mostrar>consulta</mostrar>
