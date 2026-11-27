@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Siento lo de tu hermano. Aceptando a secas, sí respondes de las deudas, incluso con tu dinero. Por eso, no toques cuentas ni bienes hasta verlo con el abogado. Te reservo la consulta gratis, ¿por la mañana o por la tarde?\n<ficha>{\"situacion\":\"herencia de tu hermano, con deudas\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"No aceptar a secas ni tocar cuentas o bienes hasta verlo con el abogado, porque aceptar a secas incluye las deudas.\",\"porDecir\":\"a beneficio de inventario, ante notario, solo respondes hasta donde llegue la herencia · renunciar es ante notario e irrevocable · si hay hipoteca, revisar si hay seguro de amortización\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Siento lo de tu hermano. Aceptando a secas, sí respondes de las deudas, incluso con tu dinero. Por eso, no toques cuentas ni bienes hasta verlo con el abogado. Te reservo la consulta gratis, ¿por la mañana o por la tarde?\n<ficha>{\"situacion\":\"herencia de tu hermano, con deudas\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"No aceptar a secas ni tocar cuentas o bienes hasta verlo con el abogado, porque aceptar a secas incluye las deudas.\",\"porDecir\":\"a beneficio de inventario, ante notario, solo respondes hasta donde llegue la herencia · renunciar es ante notario e irrevocable · si hay hipoteca, revisar si hay seguro de amortización\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Mejor por la tarde. Pero antes, ¿qué opciones tengo? Mi hermano tenía un préstamo y quizá tarjetas, y una furgoneta. ¿Hay alguna forma de no responder de las deudas?"
  }
 ]

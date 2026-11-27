@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Siento lo de tu abuela. Tu hermano no tiene que venir: le hace falta un NIE, el número de identificación de extranjero, y un poder notarial con apostilla, o sello oficial. Te reservo la consulta gratis con el abogado, ¿te viene bien?\n<ficha>{\"situacion\":\"herencia de tu abuela en Granada, con tu hermano viviendo en Alemania\",\"parentesco\":\"Nieto o nieta\",\"testamento\":\"\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Tu hermano no tiene que venir: necesita un NIE y un poder notarial con apostilla.\",\"porDecir\":\"en el impuesto, como nieto, lo más probable es que pagues cero o casi nada, pero hay que presentarlo en seis meses aunque salga cero · si hay piso, la plusvalía municipal\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Siento lo de tu abuela. Tu hermano no tiene que venir: le hace falta un NIE, el número de identificación de extranjero, y un poder notarial con apostilla, o sello oficial. Te reservo la consulta gratis con el abogado, ¿te viene bien?\n<ficha>{\"situacion\":\"herencia de tu abuela en Granada, con tu hermano viviendo en Alemania\",\"parentesco\":\"Nieto o nieta\",\"testamento\":\"\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Tu hermano no tiene que venir: necesita un NIE y un poder notarial con apostilla.\",\"porDecir\":\"en el impuesto, como nieto, lo más probable es que pagues cero o casi nada, pero hay que presentarlo en seis meses aunque salga cero · si hay piso, la plusvalía municipal\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, pero ¿cómo funciona lo del poder? ¿Dónde lo tiene que hacer mi hermano, en Alemania?"
  }
 ]
