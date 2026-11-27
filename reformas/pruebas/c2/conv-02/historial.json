@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "La cocina entera, unos 10 metros cuadrados."
+ },
+ {
+  "role": "assistant",
+  "content": "Una cocina completa suele quedar entre seis mil y diez mil euros, según los muebles y si se mueven fregadero, placa o campana. Para reservarte la visita de la mañana, ¿en qué municipio y barrio está?\n<ficha>{\"obra\":\"Cocina entera\",\"vivienda\":\"\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Por la mañana\",\"inicio\":\"\",\"orientacion\":\"Cocina completa: el precio depende sobre todo de los muebles y de si se mueven fregadero, placa o campana; la visita de medición es gratis.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Una cocina completa suele quedar entre seis mil y diez mil euros, según los muebles y si se mueven fregadero, placa o campana. Para reservarte la visita de la mañana, ¿en qué municipio y barrio está?\n<ficha>{\"obra\":\"Cocina entera\",\"vivienda\":\"\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Por la mañana\",\"inicio\":\"\",\"orientacion\":\"Cocina completa: el precio depende sobre todo de los muebles y de si se mueven fregadero, placa o campana; la visita de medición es gratis.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

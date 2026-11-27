@@ -1,0 +1,31 @@
+=== QUIÉN ERES (solo lo sabes tú) ===
+Eres Pilar, piso en Granada capital, calle Recogidas 40, 2º. Estás nerviosa. Si te dicen que cierres la llave de paso, dices que no sabes dónde está; luego la encuentras bajo el fregadero y el agua para. Tienes seguro de hogar. Quieres que venga alguien hoy. Datos: Pilar, 610 223 344, Recogidas 40, 2º B, cuanto antes.
+
+=== LA CONVERSACIÓN HASTA AHORA (en la web de Llave de Paso) ===
+TÚ (cliente): Socorro, sale agua por debajo del fregadero y no para!!
+
+Andrés (asistente de la web): Cierra ya la llave de paso de tu casa, suele estar en la cocina, el baño o junto al contador, y aparta lo que se pueda mojar. Te mando al fontanero urgente o lo dejamos programado. ¿Ha parado el agua al cerrarla?
+
+TÚ (cliente): No sé dónde está la llave de paso, estoy muy nerviosa, el agua sigue saliendo
+
+Andrés (asistente de la web): Entiendo el susto. Si no encuentras la llave, busca junto al contador y ciérrala. ¿Te mando al fontanero urgente ahora? Dime tu nombre y un teléfono.
+
+TÚ (cliente): La encontré, estaba debajo del fregadero y ya ha parado el agua. Soy Pilar, 610 223 344
+
+Andrés (asistente de la web): Me alegra que ya haya parado, Pilar. Con la llave cerrada puede esperar a mañana, y te reservo la visita. Haz fotos del agua y del fregadero para el seguro. ¿En qué municipio y barrio vives?
+
+TÚ (cliente): En Granada capital, en Recogidas. No puede venir alguien hoy? Prefiero que lo miren cuanto antes
+
+Andrés (asistente de la web): Lo entiendo, Pilar. Te apunto la visita lo antes posible y, al recibir el aviso, te llamamos para darte la hora. ¿Me dices la calle y el número?
+
+TÚ (cliente): Recogidas 40, 2º B
+
+Andrés (asistente de la web): Pilar, lo apunto: Recogidas cuarenta, segundo B, Granada capital, visita lo antes posible. Te llamamos al seis uno cero, dos dos tres, tres cuatro cuatro. Si tienes seguro de hogar, llámalos antes, según tu póliza. ¿Está todo bien?
+
+TÚ (cliente): Sí, todo bien. Pero ¿podrá venir hoy? Tengo el seguro de hogar, los llamo ahora
+
+Andrés (asistente de la web): Tu solicitud queda enviada, Pilar, y te llamamos para confirmar. Lo de hoy depende de la agenda: la hora la da el fontanero al llamarte. Y según tu póliza, tu aseguradora puede mandar el suyo, así que llámala ya. ¿Necesitas algo más?
+
+[En la pantalla aparece ahora: «¡Listo! Solicitud enviada. Te llamamos para confirmar».]
+
+=== TU SIGUIENTE MENSAJE ===

@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Granada capital, en el Zaidín"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Ana, Granada capital, Zaidín, queda apuntado, y la visita con cámara por la tarde. Ya solo falta la calle y el número. ¿Me los dices?\n<ficha>{\"averia\":\"en el bajo, agua sucia por el plato de ducha cuando tiran de la cisterna de arriba\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Ana\",\"telefono\":\"677 450 990\",\"municipio\":\"Granada capital\",\"direccion\":\"Zaidín\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Avisa al administrador; el informe con cámara del fontanero ayuda a decidir quién paga.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Ana, Granada capital, Zaidín, queda apuntado, y la visita con cámara por la tarde. Ya solo falta la calle y el número. ¿Me los dices?\n<ficha>{\"averia\":\"en el bajo, agua sucia por el plato de ducha cuando tiran de la cisterna de arriba\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Ana\",\"telefono\":\"677 450 990\",\"municipio\":\"Granada capital\",\"direccion\":\"Zaidín\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Avisa al administrador; el informe con cámara del fontanero ayuda a decidir quién paga.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

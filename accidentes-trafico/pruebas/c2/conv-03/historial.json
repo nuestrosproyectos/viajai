@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "En Loja"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Pedro. Te llamamos al seis cero cero, nueve cero nueve, tres cero tres, para la consulta de tu mujer por videollamada por la tarde, en Loja. ¿Está todo bien?\n<ficha>{\"caso\":\"Accidente por saltarse un ceda; iba de pasajera su mujer\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Pedro\",\"telefono\":\"600 909 303\",\"municipio\":\"Loja\",\"franja\":\"Por la tarde, por videollamada\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que tu mujer vea un médico hoy; avisa a tu aseguradora en siete días y guarda el parte amistoso y las fotos.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Pedro. Te llamamos al seis cero cero, nueve cero nueve, tres cero tres, para la consulta de tu mujer por videollamada por la tarde, en Loja. ¿Está todo bien?\n<ficha>{\"caso\":\"Accidente por saltarse un ceda; iba de pasajera su mujer\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Pedro\",\"telefono\":\"600 909 303\",\"municipio\":\"Loja\",\"franja\":\"Por la tarde, por videollamada\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que tu mujer vea un médico hoy; avisa a tu aseguradora en siete días y guarda el parte amistoso y las fotos.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

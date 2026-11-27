@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "En Granada capital, en el Realejo"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Inés. Te apunto la consulta de la mañana en el Realejo. ¿La prefieres por teléfono, por videollamada o en el despacho?\n<ficha>{\"caso\":\"Atropello en un paso de cebra; alta hace siete meses y sin reclamar nada\",\"como\":\"Andando\",\"fecha\":\"Hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Inés\",\"telefono\":\"655 777 333\",\"municipio\":\"Granada capital (Realejo)\",\"franja\":\"Por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guarda el informe del alta y las facturas; reclamar por escrito interrumpe el plazo.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Inés. Te apunto la consulta de la mañana en el Realejo. ¿La prefieres por teléfono, por videollamada o en el despacho?\n<ficha>{\"caso\":\"Atropello en un paso de cebra; alta hace siete meses y sin reclamar nada\",\"como\":\"Andando\",\"fecha\":\"Hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Inés\",\"telefono\":\"655 777 333\",\"municipio\":\"Granada capital (Realejo)\",\"franja\":\"Por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guarda el informe del alta y las facturas; reclamar por escrito interrumpe el plazo.\",\"fase\":\"datos\"}</ficha>"
  }
 ]
