@@ -1,0 +1,3 @@
+Lo habitual es un porcentaje de lo que se consiga, entre el diez y el treinta por ciento, pactado por escrito antes de empezar. El de este despacho te lo da el abogado en la consulta, que es gratis. ¿Te la reservo?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Honorarios habituales: un porcentaje de lo que se consiga, pactado por escrito; la primera consulta es gratis.","fase":"proponiendo"}</ficha>
+<mostrar>honorarios</mostrar>

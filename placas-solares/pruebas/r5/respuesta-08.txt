@@ -1,0 +1,2 @@
+Entiendo el lío con los vecinos, pero la cubierta es común: sin acuerdo de la junta de vecinos no hay placas. La ley pide una mayoría reducida, en torno a un tercio, y el estudio sirve para llevarlo a la junta. ¿Te reservo el estudio?
+<ficha>{"que":"Placas solares","lugar":"Comunidad de vecinos","factura":"","tejado":"Azotea común","consumo":"","nombre":"","telefono":"","municipio":"Granada, barrio de la Chana","franja":"","inicio":"","orientacion":"Conseguir el acuerdo de la junta de vecinos; un vecino no puede instalar por su cuenta.","fase":"proponiendo"}</ficha>

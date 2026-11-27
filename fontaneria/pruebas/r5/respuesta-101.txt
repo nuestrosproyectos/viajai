@@ -1,0 +1,2 @@
+Un grifo que gotea es cita normal, no urgencia, y puede esperar. La salida y la hora van, orientativamente, de veinte a cuarenta euros cada una. ¿Te reservo la visita, mañana por la mañana o por la tarde?
+<ficha>{"averia":"Grifo de la cocina que gotea sin parar","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Un goteo es cita normal; pedir presupuesto por escrito antes de empezar.","fase":"orientando"}</ficha>

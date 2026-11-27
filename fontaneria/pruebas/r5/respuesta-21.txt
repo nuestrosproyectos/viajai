@@ -1,0 +1,2 @@
+Cambiar un termo eléctrico instalado suele ir de ciento ochenta a seiscientos euros según capacidad, así que seiscientos cincuenta queda algo por encima. Pide el desglose, porque la capacidad, el IVA y lo que incluya lo mueven. ¿Quieres una segunda opinión antes del lunes?
+<ficha>{"averia":"Cambio de termo","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Pedir el desglose del presupuesto (capacidad, IVA y lo que incluye) antes del lunes.","fase":"orientando"}</ficha>

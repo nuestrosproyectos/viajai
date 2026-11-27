@@ -1,0 +1,2 @@
+Revisa que la llave de paso de casa esté abierta, y mira si a los vecinos también les falta agua: si es un corte, tu recibo te dirá a quién llamar. Si no, te mando al fontanero. ¿Me das tu nombre y un teléfono?
+<ficha>{"averia":"Sin agua por ningún grifo desde esta mañana","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"Armilla","direccion":"","franja":"","inicio":"","orientacion":"Revisar que la llave de paso esté abierta y si a los vecinos también les falta agua.","fase":"orientando"}</ficha>

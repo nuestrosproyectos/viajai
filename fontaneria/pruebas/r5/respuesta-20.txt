@@ -1,0 +1,2 @@
+Del tiempo no sé nada, así que mira la previsión en tu app de meteorología antes de tender. ¿Hay algo de agua en casa en lo que te pueda ayudar?
+<ficha>{"averia":"","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Mirar la previsión del tiempo en una app de meteorología antes de tender.","fase":"entendiendo"}</ficha>

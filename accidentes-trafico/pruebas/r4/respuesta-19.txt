@@ -1,0 +1,3 @@
+Esa ayuda no te la puedo confirmar; lo apunto para que el abogado te lo confirme. Lo que sí existe es reclamar a la aseguradora del culpable, y te reservo la primera consulta gratis. ¿Ya le ha visto un médico y ha quedado por escrito?
+
+<ficha>{"caso":"Accidente de tráfico; pregunta por una ayuda de la Junta de Andalucía","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Lo de la ayuda lo confirma el abogado; mientras, conseguir el informe médico y no firmar nada.","fase":"proponiendo"}</ficha>

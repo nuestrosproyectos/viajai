@@ -1,0 +1,3 @@
+Entiendo el enfado, y tienes razón en que el porcentaje hay que mirarlo con cuidado. Por eso, si no hay indemnización, no hay honorarios, y la primera consulta es gratis. ¿Te reservo la consulta o prefieres que te llamemos?
+
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Pedir el porcentaje por escrito antes de firmar nada; en la consulta el abogado lo explica.","fase":"proponiendo"}</ficha>

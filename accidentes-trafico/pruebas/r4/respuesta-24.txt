@@ -1,0 +1,3 @@
+Entiendo el susto. Sí, el antiguo juicio de faltas desapareció en dos mil quince. Una citación del juzgado es urgente, así que le reservo cuanto antes la consulta con el abogado. ¿Su hijo es el denunciado o el perjudicado?
+
+<ficha>{"caso":"Su hijo tuvo un accidente con la moto y le han citado en el juzgado por un delito leve de imprudencia","como":"En moto","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que el abogado vea la citación cuanto antes, sin interpretarla por su cuenta.","fase":"proponiendo"}</ficha>

@@ -1,0 +1,2 @@
+Con honestidad: la batería cuesta entre cuatrocientos cincuenta y ochocientos euros por kilovatio hora de capacidad, y en muchas casas alarga la amortización. Compensa si gastas mucho de noche; en el estudio gratuito lo vemos con tus facturas. ¿Cuánto gastas de noche, más o menos?
+<ficha>{"que":"Placas con batería","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Ver cuánto gasta de noche; la batería compensa si ese consumo es alto.","fase":"orientando"}</ficha>

@@ -1,0 +1,2 @@
+No me consta esa ayuda; no te doy un dato falso, lo apunto para que el técnico en la visita te lo confirme. Cambiar la bañera por plato de ducha suele quedar entre 1.000 y 2.300 €. ¿Te reservo la visita, mañana o tarde?
+<ficha>{"obra":"Cambiar la bañera por plato de ducha","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Pendiente de confirmar la ayuda de la Junta que menciona; el técnico lo revisa en la visita.","fase":"orientando"}</ficha>

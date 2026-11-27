@@ -1,0 +1,3 @@
+En Granada capital hay una bonificación del cincuenta por ciento del IBI, el impuesto de la casa, si no es obra nueva, con el recibo domiciliado y al día. Hay que pedirla, y suele aplicarse desde el año siguiente. ¿Tu casa es de obra nueva?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"Granada capital","franja":"","inicio":"","orientacion":"Pedir la bonificación del IBI y confirmar con el técnico el plazo.","fase":"orientando"}</ficha>
+<mostrar>ayudas</mostrar>

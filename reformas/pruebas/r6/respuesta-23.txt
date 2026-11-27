@@ -1,0 +1,2 @@
+No, con educación: trabajamos siempre con factura y presupuesto por escrito; con factura el IVA ya puede ser del 10 %, según el caso. El permiso municipal lo tramitamos nosotros. ¿Te reservo la visita, mañana o tarde?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Hacer la obra con factura y presupuesto por escrito; el IVA puede ser del 10 % según el caso y el permiso se tramita.","fase":"orientando"}</ficha>

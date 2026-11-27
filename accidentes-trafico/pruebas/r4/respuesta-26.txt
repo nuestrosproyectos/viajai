@@ -1,0 +1,3 @@
+No se pierde el derecho, pero cuanto más tarde, más cuesta probar que la lesión viene del accidente. Lo primero es que vayas hoy a urgencias y cuentes el accidente. Te reservo la consulta gratis con el abogado. ¿Por la mañana o por la tarde?
+
+<ficha>{"caso":"Accidente hace tres semanas","como":"","fecha":"hace tres semanas","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Ir hoy a urgencias y contar el accidente y los dolores; guardar fotos y testigos.","fase":"proponiendo"}</ficha>

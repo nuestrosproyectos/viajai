@@ -1,0 +1,3 @@
+Entiendo lo duro que es esto. Como peatón, su madre está muy protegida: la aseguradora solo se libra si la culpa fue solo de ella. Guarde los informes médicos. Le reservo la primera consulta gratis con el abogado. ¿Sabe si la policía levantó atestado?
+
+<ficha>{"caso":"Atropello de su madre en Baza","como":"Andando","fecha":"hace tres semanas","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"Baza","franja":"","consentimientoSalud":"","orientacion":"Guarde los informes médicos y no firme nada hasta que lo vea el abogado.","fase":"proponiendo"}</ficha>

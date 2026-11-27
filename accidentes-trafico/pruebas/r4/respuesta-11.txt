@@ -1,0 +1,2 @@
+Si tu póliza tiene defensa jurídica, puedes elegir tu propio abogado aunque te ofrezcan el suyo, y puede cubrir parte de los honorarios. Te reservo una consulta gratis para revisarla. ¿Tienes la póliza a mano?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Si la póliza tiene defensa jurídica, puede elegir su propio abogado y cubrir parte de los honorarios; conviene revisarla en la consulta.","fase":"proponiendo"}</ficha>

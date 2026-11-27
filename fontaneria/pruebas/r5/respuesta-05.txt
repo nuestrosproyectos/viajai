@@ -1,0 +1,2 @@
+Entiendo el susto. Cierra ya la llave de paso, suele estar en la cocina, el baño o junto al contador, y aparta lo que se pueda mojar. Te mando al fontanero urgente ahora. ¿Ha parado el agua al cerrarla?
+<ficha>{"averia":"Fuga de agua bajo el mueble del baño, ya llega al pasillo","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Cerrar ya la llave de paso, apartar lo que se pueda mojar y pedir la visita del fontanero.","fase":"proponiendo"}</ficha>

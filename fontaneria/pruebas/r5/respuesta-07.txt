@@ -1,0 +1,2 @@
+Lo más probable es una fuga oculta, que no se ve, y localizarla suele rondar los 80 a 150 €. Si la fuga está antes del contador, es cosa de Emasagra. Te reservo la visita. ¿Con todos los grifos cerrados, se mueve el contador?
+<ficha>{"averia":"Factura del agua de 300 euros, posible fuga oculta","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Mira si el contador se mueve con todo cerrado y pide la visita; el seguro, según tu póliza.","fase":"proponiendo"}</ficha>

@@ -1,0 +1,2 @@
+Con la declaración de la renta y con lo del metro no te puedo ayudar; soy el asistente de reformas de Obra Redonda. ¿Hay alguna estancia de tu casa que quieras reformar?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Consulta fuera de las reformas (renta y obras del metro); ofrecer ayuda para reformar una estancia.","fase":"entendiendo"}</ficha>

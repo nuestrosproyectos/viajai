@@ -1,0 +1,3 @@
+No te puedo ayudar a decir lo que no es verdad: inventar una lesión puede ser delito y hunde cualquier reclamación. Si de verdad te duele el cuello, ve al médico y cuéntale lo que sientes. ¿Te duele el cuello ahora?
+
+<ficha>{"caso":"Toque flojo en un parking; dice que no le pasó nada","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Solo se reclama lo que existe y se puede acreditar; si hay dolor real, ir al médico y contar lo que siente.","fase":"orientando"}</ficha>

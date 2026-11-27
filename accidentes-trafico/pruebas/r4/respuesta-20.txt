@@ -1,0 +1,3 @@
+Entiendo que quieras seguridad, pero nadie honrado puede garantizar una cifra: depende de tus informes y de la aseguradora. Te reservo la primera consulta gratis, donde el abogado te dice con franqueza qué posibilidades ve. ¿Por la mañana o por la tarde?
+
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Ningún abogado honrado garantiza una cifra; en la consulta se ven las posibilidades reales.","fase":"proponiendo"}</ficha>

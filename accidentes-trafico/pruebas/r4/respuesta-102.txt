@@ -1,0 +1,3 @@
+Si tu póliza tiene defensa jurídica, puedes elegir tu propio abogado aunque el seguro te ofrezca el suyo. Te reservo la primera consulta gratis, sin compromiso, y el abogado te dice con franqueza qué posibilidades ve. ¿Por la mañana o por la tarde?
+
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"Sí","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Revisar la póliza: con defensa jurídica puede elegir su propio abogado; no firmar nada sin verlo.","fase":"proponiendo"}</ficha>

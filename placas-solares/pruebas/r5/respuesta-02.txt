@@ -1,0 +1,3 @@
+Como orientación, una casa típica de unos cinco kilovatios de placas sale, sin batería, de cuatro mil quinientos a siete mil quinientos euros. Para ajustarlo a tu caso, te reservo el estudio gratuito con tus facturas. ¿Cuánto pagas de luz al mes?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Estudio gratuito con tus facturas para ajustar tamaño y precio.","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>

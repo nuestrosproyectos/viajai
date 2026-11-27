@@ -1,0 +1,2 @@
+No eches sosa, que quema y puede empeorar el atasco. Lo más habitual es el sifón, la curva bajo el fregadero. Un desatasco sencillo suele rondar los 70 a 150 € más IVA. ¿Te reservo la visita, mañana por la mañana o por la tarde?
+<ficha>{"averia":"Fregadero de la cocina atascado","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"Granada (Zaidín)","direccion":"","franja":"","inicio":"","orientacion":"No eches sosa y pide la visita del fontanero para revisar el sifón.","fase":"proponiendo"}</ficha>

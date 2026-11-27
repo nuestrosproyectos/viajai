@@ -1,0 +1,3 @@
+Empieza por el estudio, gratis: un técnico sube a tu tejado, mide y, con tus facturas, calcula cuántas placas necesitas. Luego llega el presupuesto cerrado, y la instaladora gestiona el boletín, que es el certificado de instalación. ¿Hacia dónde mira tu tejado?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"Armilla","franja":"","inicio":"","orientacion":"Empezar por el estudio gratuito con visita y facturas, después presupuesto cerrado.","fase":"orientando"}</ficha>
+<mostrar>preparar</mostrar>

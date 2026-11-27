@@ -1,0 +1,2 @@
+Gracias por contarlo. Antes de firmar nada, que la vea el abogado; si es poco o mucho depende del cálculo y de tus informes, y eso lo confirma él. ¿Te reservo la consulta gratis, por la mañana o por la tarde?
+<ficha>{"caso":"Oferta por carta de la aseguradora del otro conductor","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"No firmar nada y que el abogado revise la oferta antes de contestar.","fase":"proponiendo"}</ficha>

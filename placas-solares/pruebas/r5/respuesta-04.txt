@@ -1,0 +1,3 @@
+En el Zaidín, si el edificio no está catalogado ni en el Conjunto Histórico, el permiso va por declaración responsable, un trámite sencillo que gestiona la instaladora. Si vives en un bloque, hace falta acuerdo de la junta. ¿Es casa o piso en bloque?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"Granada, barrio del Zaidín","franja":"","inicio":"","orientacion":"Revisar si el edificio está catalogado; si es bloque, hace falta acuerdo de la junta.","fase":"orientando"}</ficha>
+<mostrar>permisos</mostrar>

@@ -1,0 +1,2 @@
+Entiendo que lo quieras claro. La garantía va por escrito en la factura y el fontanero te confirma el plazo; no se cobra nada que no hayas aceptado en el presupuesto escrito. ¿Te reservo la visita, mañana por la mañana o por la tarde?
+<ficha>{"averia":"","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Pedir el presupuesto por escrito antes de empezar; la garantía va por escrito en la factura.","fase":"orientando"}</ficha>

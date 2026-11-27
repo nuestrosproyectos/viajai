@@ -1,0 +1,3 @@
+Sí, en ese caso suele responder el Consorcio de Compensación de Seguros; el abogado confirma los detalles de tu caso. Te reservo la primera consulta gratis, donde lo revisa con calma. ¿Te lesionaste o solo fueron daños en el coche?
+
+<ficha>{"caso":"Accidente con su coche; el otro conductor no tenía seguro","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Ver si hubo lesiones; si el otro no tenía seguro, suele responder el Consorcio; guardar fotos y papeles.","fase":"proponiendo"}</ficha>

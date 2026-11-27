@@ -1,0 +1,2 @@
+Esa ayuda no la tengo confirmada, así que lo apunto para que el fontanero te lo confirme. Mientras, ¿te reservo una visita para revisar esas tuberías, mañana por la mañana o por la tarde?
+<ficha>{"averia":"Cambio de tuberías viejas de plomo","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Que el fontanero confirme si esa ayuda de 600 euros aplica a su caso y si la tramitamos.","fase":"orientando"}</ficha>

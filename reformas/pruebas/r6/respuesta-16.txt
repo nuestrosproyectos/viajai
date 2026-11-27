@@ -1,0 +1,2 @@
+Un baño completo con plato de ducha suele quedar entre unos 3.000 y 6.000 €, de una a dos semanas. En Las Gabias su ayuntamiento tiene su propia ordenanza, y en la visita de medición gratis lo concretamos. ¿Cuántos metros tiene el baño?
+<ficha>{"obra":"Baño completo con plato de ducha y quitar el bidé","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"Las Gabias","franja":"","inicio":"","orientacion":"Reforma de baño completo; pedir la visita de medición para concretar el precio.","fase":"orientando"}</ficha>

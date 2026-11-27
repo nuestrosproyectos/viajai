@@ -1,0 +1,3 @@
+Siento el golpe. Lo más útil ahora es guardar el informe de urgencias y las bajas, no firmar nada y avisar a tu aseguradora si no lo has hecho. Te reservo la consulta gratis con el abogado. ¿Por la mañana o por la tarde?
+
+<ficha>{"caso":"Golpe por detrás; fue a urgencias","como":"","fecha":"hace dos semanas","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Guardar el informe de urgencias y las bajas; no firmar nada y avisar a tu aseguradora si no lo has hecho.","fase":"proponiendo"}</ficha>

@@ -1,0 +1,2 @@
+Sí bajan mucho, pero no a cero: siempre queda la potencia, lo que pagas por tener luz disponible, impuestos y lo que gastas de noche. Te reservo el estudio gratuito y con tus facturas vemos el ahorro. ¿Cuánto pagas de luz al mes?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Ver con tus facturas cuánto baja en tu caso, sin llegar a cero.","fase":"proponiendo"}</ficha>

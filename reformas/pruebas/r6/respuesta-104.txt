@@ -1,0 +1,2 @@
+La visita de medición es gratis para presupuestar una reforma; revisar una obra de otra empresa no lo puedo confirmar como gratis, lo dice el técnico en la visita. ¿Te reservo la visita para verlas, mañana o tarde?
+<ficha>{"obra":"Revisar una obra que hizo otra empresa el año pasado (grietas en los azulejos)","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Revisar la obra de otra empresa: el coste y si es gratis lo confirma el técnico en la visita.","fase":"orientando"}</ficha>

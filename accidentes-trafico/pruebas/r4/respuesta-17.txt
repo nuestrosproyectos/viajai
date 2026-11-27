@@ -1,0 +1,3 @@
+Una cifra no te la puedo dar: depende del informe médico. Como orientación, un día moderado suele valer unos sesenta y ocho euros, más secuelas y gastos. ¿Te reservo la consulta gratis, por la mañana o por la tarde?
+
+<ficha>{"caso":"Accidente de tráfico; pregunta cuánto le corresponde","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Guardar el informe médico y las bajas; el abogado calcula la cifra con los informes delante.","fase":"proponiendo"}</ficha>

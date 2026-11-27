@@ -1,0 +1,2 @@
+En el Albaicín el trámite es más exigente, porque es Conjunto Histórico, o sea zona protegida, y puede haber límites. El técnico lo estudia en la visita gratuita: te reservo el estudio, ¿por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"Granada, Albaicín","franja":"","inicio":"","orientacion":"Que el técnico compruebe en la visita el trámite en zona protegida.","fase":"proponiendo"}</ficha>

@@ -1,0 +1,2 @@
+La salida suele rondar los 20 a 40 €, igual que la hora de trabajo; es orientativo, el fontanero confirma su tarifa. De noche o festivo suele subir entre un cincuenta por ciento y el doble. ¿Te reservo la visita, mañana o por la tarde?
+<ficha>{"averia":"","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Pide la visita y que el fontanero te confirme su tarifa antes de ir.","fase":"entendiendo"}</ficha>

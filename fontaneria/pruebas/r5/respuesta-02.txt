@@ -1,0 +1,2 @@
+Cierra la llavecita para que pare el agua. Lo más habitual es el flotador, la boya que regula el nivel, gastado por la cal. Repararlo suele rondar los 100 a 300 €. ¿Te reservo la visita, mañana o por la tarde?
+<ficha>{"averia":"Cisterna del váter que no para de echar agua","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Cerrar la llavecita de la cisterna y pedir la visita del fontanero; suele ser el flotador.","fase":"proponiendo"}</ficha>

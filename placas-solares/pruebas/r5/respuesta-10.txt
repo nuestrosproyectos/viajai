@@ -1,0 +1,3 @@
+La Renta tiene una deducción por autoconsumo de 2026, orientativamente un diez por ciento, que no se suma con la de eficiencia. Va muy justo: la instalación debe estar terminada y pagada este año, y un asesor fiscal lo confirma. ¿Te reservo el estudio?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Confirmar con un asesor fiscal si la deducción de 2026 llega a tiempo.","fase":"orientando"}</ficha>
+<mostrar>ayudas</mostrar>

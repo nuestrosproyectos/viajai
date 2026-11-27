@@ -1,0 +1,3 @@
+Eso está antes del contador, así que es cosa de la compañía de agua: si es Emasagra, llama ya al 958 24 22 00, atienden a todas horas. Si notas agua dentro de casa, te reservo la visita. ¿Hay agua dentro de casa ahora?
+<ficha>{"averia":"Tubería rota antes del contador, en la calle; sale un chorro","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Llamar ya a la compañía de agua; si hay agua dentro de casa, avisar para la visita.","fase":"orientando"}</ficha>
+<mostrar>seguridad</mostrar>

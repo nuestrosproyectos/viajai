@@ -1,0 +1,2 @@
+Lo más habitual es la resistencia, que calienta el agua, o el termostato; mira si ha saltado la protección del cuadro. Cambiar el termo suele rondar los 180 a 600 € según capacidad. Te reservo la visita. ¿El agua fría sale normal?
+<ficha>{"averia":"Sin agua caliente con termo eléctrico de 80 litros","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Mirar si ha saltado la protección del cuadro y pedir la visita; el fontanero revisa el termo.","fase":"proponiendo"}</ficha>

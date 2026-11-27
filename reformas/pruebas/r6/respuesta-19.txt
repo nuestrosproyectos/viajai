@@ -1,0 +1,2 @@
+No recomiendo marcas; lo que más mueve el precio es la gama y la mampara a medida. El trabajo completo suele quedar entre 1.000 y 2.300 €; con gama alta o mampara a medida, desde 3.300 €. ¿Te reservo la visita, mañana o tarde?
+<ficha>{"obra":"Cambiar la bañera por plato de ducha","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Elegir la gama del plato y si la mampara es a medida; el técnico lo ve en la visita.","fase":"orientando"}</ficha>

@@ -1,0 +1,2 @@
+Ese teléfono no lo tengo y no te lo invento: míralo en tu póliza o en la app de la aseguradora. Carmen, ¿qué pasa con el agua en casa? Así te reservo la visita.
+<ficha>{"averia":"","cuando":"","llave":"","vivienda":"","seguro":"Línea Directa","nombre":"Carmen","telefono":"611 22 33 44","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Mirar el teléfono de la aseguradora en la póliza o en su app.","fase":"datos"}</ficha>
