@@ -63,6 +63,7 @@ class DashboardData:
     events: list[dict[str, Any]]
     sample: dict[str, str] | None
     checklist: list[tuple[bool, str]]
+    socials: list[dict[str, Any]] = field(default_factory=list)
     last_extraction: dict[str, Any] = field(default_factory=dict)
 
 
@@ -294,6 +295,15 @@ def collect(conn: sqlite3.Connection) -> DashboardData:
         )
     ]
 
+    socials = []
+    for row in conn.execute("SELECT business_name, email, phone_e164, social_links FROM leads WHERE social_links IS NOT NULL AND status != ? ORDER BY (email IS NULL) DESC, id", (db.DUPLICATE,)):
+        try:
+            links = json.loads(row["social_links"])
+        except (TypeError, ValueError):
+            continue
+        if isinstance(links, dict) and links:
+            socials.append({"business": row["business_name"], "email": row["email"] or "", "phone": row["phone_e164"] or "", "links": links})
+
     sender = load("sender")
     accounts: list[dict[str, Any]] = []
     accounts_note = ""
@@ -318,7 +328,7 @@ def collect(conn: sqlite3.Connection) -> DashboardData:
     return DashboardData(
         generated_at=datetime.now(tz).strftime("%d-%m-%Y %H:%M"), funnel=funnel, kpis=kpis, campaigns=campaigns, queue=queue,
         leads=leads, accounts=accounts, accounts_note=accounts_note, events=events, sample=sample, checklist=checklist,
-        last_extraction=last_extraction,
+        last_extraction=last_extraction, socials=socials,
     )
 
 
@@ -423,6 +433,19 @@ def render(data: DashboardData, standalone: bool = True, refresh_seconds: int = 
         add("</tbody></table></div>")
     else:
         add('<p class="empty">Todavía no hay leads con email. Ejecuta <code>extract</code> y <code>enrich</code>.</p>')
+    add("</section>")
+
+    add('<section class="panel"><h2>Redes sociales encontradas</h2>')
+    if data.socials:
+        add(f'<p class="empty">{len(data.socials)} negocios enlazan sus perfiles desde su web. Primero los que no tienen email corporativo.</p>')
+        add('<div class="scroll"><table><thead><tr><th>Negocio</th><th>Perfiles</th><th>Teléfono</th><th>Email</th></tr></thead><tbody>')
+        for item in data.socials:
+            links = " · ".join(f'<a href="{_e(url)}" rel="noopener noreferrer">{_e(network)}</a>' for network, url in item["links"].items() if str(url).startswith("https://"))
+            email = _e(item["email"]) if item["email"] else '<span class="pill neutral">Sin email</span>'
+            add(f"<tr><td><strong>{_e(item['business'])}</strong></td><td>{links}</td><td style=\"white-space:nowrap\">{_e(item['phone'])}</td><td>{email}</td></tr>")
+        add("</tbody></table></div>")
+    else:
+        add('<p class="empty">Todavía no se han buscado. Aparecen al ejecutar «Buscar emails».</p>')
     add("</section>")
 
     add('<section class="panel"><h2>Ejemplo de correo que sale</h2>')

@@ -193,8 +193,16 @@ def connect(db_path: Path | None = None) -> sqlite3.Connection:
     return conn
 
 
+# Columnas añadidas después de la primera versión: se crean solas en bases de datos ya existentes.
+MIGRATIONS = (("leads", "social_links", "TEXT"),)
+
+
 def init_db(conn: sqlite3.Connection) -> None:
     conn.executescript(SCHEMA)
+    for table, column, definition in MIGRATIONS:
+        existing = {row["name"] for row in conn.execute(f"PRAGMA table_info({table})")}
+        if column not in existing:
+            conn.execute(f"ALTER TABLE {table} ADD COLUMN {column} {definition}")
 
 
 @contextmanager

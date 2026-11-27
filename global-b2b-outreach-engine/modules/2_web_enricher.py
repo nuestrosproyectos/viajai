@@ -4,6 +4,7 @@ from __future__ import annotations
 import asyncio
 import contextlib
 import ipaddress
+import json
 import logging
 import re
 import sqlite3
@@ -82,6 +83,8 @@ _OBFUSCATED_DOT = re.compile(r"\s*[\[\(\{]\s*(?:dot|punto|punkt|point)\s*[\]\)\}
 _WHATSAPP_RE = re.compile(r"(?:wa\.me/|api\.whatsapp\.com/|web\.whatsapp\.com/|whatsapp://)", re.IGNORECASE)
 _WS = re.compile(r"\s+")
 
+_CHALLENGE_RE = re.compile(r"<title>\s*(Just a moment|Un momento|Attention Required|Access denied)[^<]*</title>|cf-browser-verification|challenge-platform", re.IGNORECASE)
+
 MxChecker = Callable[[str], Awaitable[bool]]
 
 
@@ -110,8 +113,50 @@ class EnrichResult:
     has_contact_form: bool = False
     has_whatsapp_link: bool = False
     services_summary: str = ""
+    social_links: dict[str, str] = field(default_factory=dict)
     note: str = ""
     discarded: dict[str, int] = field(default_factory=dict)
+
+
+# ── Redes sociales ──────────────────────────────────────────────────────────
+
+SOCIAL_NETWORKS = {
+    "facebook.com": "Facebook", "fb.com": "Facebook", "instagram.com": "Instagram", "linkedin.com": "LinkedIn",
+    "twitter.com": "X", "x.com": "X", "tiktok.com": "TikTok", "youtube.com": "YouTube",
+}
+# Rutas que no son el perfil del negocio: botones de compartir, políticas, plugins...
+_SOCIAL_NOISE = re.compile(
+    r"/(sharer|share|intent|dialog|plugins|policies|policy|privacy|legal|help|hashtag|explore|login|signup|"
+    r"watch|embed|shorts|results|home|tr|p)(/|\.php|\?|$)|/(tos|terms)\b|shareArticle",
+    re.IGNORECASE,
+)
+
+
+def social_profile(url: str) -> tuple[str, str] | None:
+    """(red, url limpia) si el enlace es un perfil de red social; None si es un botón de compartir o similar."""
+    url = url.strip()
+    if url.startswith("//"):
+        url = "https:" + url
+    parts = urlsplit(url if "://" in url else "https://" + url)
+    host = (parts.hostname or "").lower()
+    network = next((name for domain, name in SOCIAL_NETWORKS.items() if host == domain or host.endswith("." + domain)), None)
+    path = parts.path.rstrip("/")
+    if path.lower() in ("/http", "/https", "/www"):  # enlace mal escrito en la web del negocio
+        return None
+    if network is None or not path or _SOCIAL_NOISE.search(parts.path + ("?" + parts.query if parts.query else "")):
+        return None
+    if network == "Facebook" and path.lower() == "/profile.php":
+        return (network, f"https://www.facebook.com/profile.php?{parts.query}") if "id=" in parts.query else None
+    return network, f"https://{host}{path}"
+
+
+def extract_social_links(soup: BeautifulSoup) -> dict[str, str]:
+    found: dict[str, str] = {}
+    for anchor in soup.find_all("a", href=True):
+        profile = social_profile(str(anchor["href"]))
+        if profile and profile[0] not in found:
+            found[profile[0]] = profile[1]
+    return found
 
 
 # ── Emails ──────────────────────────────────────────────────────────────────
@@ -357,7 +402,11 @@ async def crawl_site(
     if not host or (not allow_private_hosts and not _is_public_host(host)):
         return EnrichResult(status=db.NO_CORPORATE_EMAIL, note="web no válida")
     if any(host == social or host.endswith("." + social) for social in SOCIAL_HOSTS):
-        return EnrichResult(status=db.NO_CORPORATE_EMAIL, note="la web es un perfil social")
+        profile = social_profile(website)
+        return EnrichResult(
+            status=db.NO_CORPORATE_EMAIL, note="la web es un perfil social",
+            social_links={profile[0]: profile[1]} if profile else {},
+        )
 
     home: tuple[str, str] | None = None
     last_error = ""
@@ -379,6 +428,9 @@ async def crawl_site(
         return EnrichResult(status=db.NO_CORPORATE_EMAIL, note="la home no existe o no es HTML")
 
     home_url, home_html = home
+    if _CHALLENGE_RE.search(home_html[:6000]):
+        # Página de «comprobando tu navegador»: no es la web real, así que no vale como «sin email».
+        raise EnrichError("la web está tras una protección anti-robots (Cloudflare o similar)")
     site_root = root_domain_of_host(host_of(home_url)) or root_domain_of_host(host)
     result = EnrichResult(status=db.NO_CORPORATE_EMAIL)
     candidates: list[EmailCandidate] = []
@@ -387,6 +439,8 @@ async def crawl_site(
         soup = BeautifulSoup(html, "html.parser")
         result.has_contact_form = result.has_contact_form or detect_contact_form(soup)
         result.has_whatsapp_link = result.has_whatsapp_link or detect_whatsapp(html)
+        for network, link in extract_social_links(soup).items():
+            result.social_links.setdefault(network, link)
         for email, via_mailto in extract_emails(html, soup):
             reason = reject_reason(email, strict_b2b_only)
             if reason:
@@ -465,12 +519,13 @@ def _save(conn: sqlite3.Connection, lead_id: int, attempts: int, result: EnrichR
             return db.ERROR
         conn.execute(
             "UPDATE leads SET status=?, email=?, email_domain=?, email_type=?, source_url=?, has_contact_form=?, "
-            "has_whatsapp_link=?, services_summary=?, enrich_attempts=?, retry_after=NULL, last_error=?, updated_at=? "
+            "has_whatsapp_link=?, services_summary=?, social_links=?, enrich_attempts=?, retry_after=NULL, last_error=?, updated_at=? "
             "WHERE id=? AND status IN (?, ?)",
             (
                 result.status, result.email, result.email.split("@")[1] if result.email else None,
                 result.email_type, result.source_url, int(result.has_contact_form),
-                int(result.has_whatsapp_link), result.services_summary, attempts,
+                int(result.has_whatsapp_link), result.services_summary,
+                json.dumps(result.social_links, ensure_ascii=False) if result.social_links else None, attempts,
                 result.note or None, db.iso(now), lead_id, db.NEW, db.ERROR,
             ),
         )

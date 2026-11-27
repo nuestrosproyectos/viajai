@@ -177,12 +177,15 @@ SITES = {
               '<body><nav>menu</nav><h1>Fontanería Pérez</h1><h2>Desatascos y calderas en Granada y el área metropolitana</h2>'
               '<p>Reparamos fugas de agua, instalamos calderas de condensación y hacemos desatascos urgentes las 24 horas.</p>'
               '<img src="logo@2x.png"><a href="/corp/contacto">Contacto</a><a href="https://wa.me/34600000000">WhatsApp</a>'
+              '<a href="https://www.facebook.com/fontaneriaperez/">fb</a><a href="https://www.facebook.com/sharer/sharer.php?u=x">compartir</a>'
+              '<a href="https://instagram.com/fontaneria.perez?igshid=1">ig</a>'
               '<p>noreply@fontaneriaperez.test sentry@sentry.io</p></body></html>',
     "/corp/contacto": '<html><body><form><textarea name="m"></textarea></form>'
                       '<a href="mailto:Info@Fontaneriaperez.test?subject=Hola">Escríbenos</a> juan.perez@fontaneriaperez.test</body></html>',
     "/free/": '<html><body><h1>Fontanero Paco</h1><a href="mailto:pacofontanero@gmail.com">mail</a> paco@hotmail.es</body></html>',
     "/nomx/": '<html><body><a href="mailto:info@sinmx.test">mail</a></body></html>',
     "/blocked/": None,
+    "/challenge/": "<html><head><title>Un momento…</title></head><body>challenge-platform</body></html>",
 }
 
 
@@ -228,6 +231,21 @@ def insert_lead(conn, place_id, website, name="Negocio", phone=None, status="NEW
     return cursor.lastrowid
 
 
+def rows_error(conn, lead_id):
+    row = conn.execute("SELECT status, last_error FROM leads WHERE id = ?", (lead_id,)).fetchone()
+    return f"{row['status']} {row['last_error']}"
+
+
+def test_social_profiles_are_told_apart_from_share_buttons():
+    enricher = load("enricher")
+    assert enricher.social_profile("https://www.instagram.com/fontanerialucimart/?utm_medium=copy_link") == ("Instagram", "https://www.instagram.com/fontanerialucimart")
+    assert enricher.social_profile("https://www.facebook.com/profile.php?id=1000123") == ("Facebook", "https://www.facebook.com/profile.php?id=1000123")
+    assert enricher.social_profile("https://es.linkedin.com/company/acme") == ("LinkedIn", "https://es.linkedin.com/company/acme")
+    for noise in ("https://www.facebook.com/sharer/sharer.php?u=x", "https://twitter.com/intent/tweet?text=x", "https://www.facebook.com/",
+                  "https://www.linkedin.com/shareArticle?url=x", "https://www.youtube.com/watch?v=abc", "https://fontaneriaperez.es/facebook"):
+        assert enricher.social_profile(noise) is None, noise
+
+
 def test_email_filters():
     enricher = load("enricher")
     assert enricher.reject_reason("logo@2x.png", True) == "static_file"
@@ -252,6 +270,7 @@ def test_enrichment_classifies_leads(conn, site):
         "nomx": insert_lead(conn, "e3", f"{site}/nomx/"),
         "blocked": insert_lead(conn, "e4", f"{site}/blocked/"),
         "noweb": insert_lead(conn, "e5", ""),
+        "challenge": insert_lead(conn, "e7", f"{site}/challenge/"),
         "contacted": insert_lead(conn, "e6", f"{site}/corp/", status="CONTACTED"),
     }
 
@@ -259,12 +278,14 @@ def test_enrichment_classifies_leads(conn, site):
         return domain != "sinmx.test"
 
     stats = asyncio.run(enricher.run_enrichment(conn, mx_checker=fake_mx, allow_private_hosts=True))
-    assert (stats.total, stats.enriched, stats.no_corporate_email, stats.errors) == (5, 1, 3, 1)
+    assert (stats.total, stats.enriched, stats.no_corporate_email, stats.errors) == (6, 1, 3, 2)
+    assert "anti-robots" in rows_error(conn, ids["challenge"])
     rows = {row["id"]: row for row in conn.execute("SELECT * FROM leads")}
     corp = rows[ids["corp"]]
     assert corp["status"] == "ENRICHED" and corp["email"] == "info@fontaneriaperez.test" and corp["email_type"] == "generic"
     assert corp["source_url"] == f"{site}/corp/contacto"  # trazabilidad: la página exacta donde estaba el email
     assert corp["has_contact_form"] == 1 and corp["has_whatsapp_link"] == 1
+    assert json.loads(corp["social_links"]) == {"Facebook": "https://www.facebook.com/fontaneriaperez", "Instagram": "https://instagram.com/fontaneria.perez"}
     assert "calderas" in corp["services_summary"] and len(corp["services_summary"]) <= 1800 and "menu" not in corp["services_summary"]
     assert rows[ids["free"]]["status"] == "NO_CORPORATE_EMAIL" and rows[ids["free"]]["email"] is None
     assert rows[ids["nomx"]]["status"] == "NO_CORPORATE_EMAIL"
