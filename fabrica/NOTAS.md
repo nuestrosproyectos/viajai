@@ -49,3 +49,9 @@ Una herramienta para crear, para cualquier negocio, una web como Reparo y Herenc
 - Casilla de consentimiento de datos de salud en la solicitud (accidentes) cuando `legal.datosSalud`.
 - Grabar el audio del aviso del micrófono con la voz de cada web (cuesta créditos de ElevenLabs: pedir OK).
 - Autores de las fotos de Pexels en `media/CREDITOS.md` (pexels.com bloqueado desde aquí).
+
+## Vueltas de una en una (petición de Juan: «da solo vueltas con un tipo de negocio y ajústalo»)
+- Accidentes (abogados): c5 6,38 → c6 7,38 → c7 8,00 (cita en 4 respuestas, 0 datos falsos). Clave: lista interna «porDecir» en la ficha.
+- Herencias (abogados): Andrés pasado a la plantilla común (instrucciones.mjs con casos, conocimiento/resumen-para-andres.md, pruebas/conversaciones.json). c1 7,25 → c2 7,38 → c3 8,00.
+- Ajustes de la base común en estas vueltas (llegan a todas las webs): porDecir, municipio siempre y repetido al confirmar, nunca decir cuándo será la cita, no repetir la misma frase si vuelve a preguntar, campos con opciones vacíos hasta que lo diga, usted desde la primera respuesta si es mayor o formal, la franja se pide con los datos (no al ofrecer la cita), sumar los datos de todos los tipos de caso que encajan.
+- Siguiente: el resto de sectores de uno en uno (reformas, placas, fontanería, Reparo).
