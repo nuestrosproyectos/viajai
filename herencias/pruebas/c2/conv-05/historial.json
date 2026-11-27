@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Hemos intentado hablar con él y nada. Estoy cansada ya del tema. ¿Qué salidas hay si no quiere firmar?"
+ },
+ {
+  "role": "assistant",
+  "content": "Entiendo el cansancio. Si no hay acuerdo, queda la división judicial, de uno a tres años. Y si ya sois copropietarios, uno puede compensar a los demás, vender la casa o, en el peor caso, subastarla. ¿Te reservo la consulta para verlo?\n<ficha>{\"situacion\":\"reparto de la casa del pueblo entre cuatro hermanos, uno no quiere firmar\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"\",\"bienes\":\"casa del pueblo\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Negociar con el hermano que no firma; si no hay acuerdo, división judicial, o, si ya sois copropietarios, que uno compense a los demás o se venda la casa. El abogado busca primero el acuerdo.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Entiendo el cansancio. Si no hay acuerdo, queda la división judicial, de uno a tres años. Y si ya sois copropietarios, uno puede compensar a los demás, vender la casa o, en el peor caso, subastarla. ¿Te reservo la consulta para verlo?\n<ficha>{\"situacion\":\"reparto de la casa del pueblo entre cuatro hermanos, uno no quiere firmar\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"\",\"bienes\":\"casa del pueblo\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Negociar con el hermano que no firma; si no hay acuerdo, división judicial, o, si ya sois copropietarios, que uno compense a los demás o se venda la casa. El abogado busca primero el acuerdo.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

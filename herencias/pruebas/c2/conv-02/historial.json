@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Uf, es que son unos 90.000 € la casa y no tengo mucho ahorrado. ¿Cuánto saldría más o menos?"
+ },
+ {
+  "role": "assistant",
+  "content": "Entiendo el susto. Un sobrino que hereda sesenta mil euros pagaría entre seis mil quinientos y siete mil cuatrocientos, orientativo; con noventa mil sería más, y el abogado lo confirma con el valor catastral. El plazo del impuesto son seis meses. ¿Te reservo la consulta?\n<ficha>{\"situacion\":\"casa heredada de tu tía, con testamento\",\"parentesco\":\"Sobrino o sobrina\",\"testamento\":\"Sí\",\"bienes\":\"una casa, de unos 90.000 €\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Como sobrino o sobrina pagas impuesto de sucesiones; el importe concreto lo confirma el abogado con el valor catastral de la casa.\",\"porDecir\":\"si la casa está en Granada capital, la plusvalía municipal, sin bonificación para sobrinos · escritura y Registro, que van aparte\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Entiendo el susto. Un sobrino que hereda sesenta mil euros pagaría entre seis mil quinientos y siete mil cuatrocientos, orientativo; con noventa mil sería más, y el abogado lo confirma con el valor catastral. El plazo del impuesto son seis meses. ¿Te reservo la consulta?\n<ficha>{\"situacion\":\"casa heredada de tu tía, con testamento\",\"parentesco\":\"Sobrino o sobrina\",\"testamento\":\"Sí\",\"bienes\":\"una casa, de unos 90.000 €\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Como sobrino o sobrina pagas impuesto de sucesiones; el importe concreto lo confirma el abogado con el valor catastral de la casa.\",\"porDecir\":\"si la casa está en Granada capital, la plusvalía municipal, sin bonificación para sobrinos · escritura y Registro, que van aparte\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Buenas tardes. Es que necesito dinero para el día a día y la cuenta era de los dos. ¿Usted cree que podrán ayudarme?"
+ },
+ {
+  "role": "assistant",
+  "content": "Entiendo lo difícil que es. Sí, en el despacho nos encargamos de los trámites de la cuenta. Con ese dinero se pueden pagar el entierro y el propio impuesto. Si la cuenta era de los dos, eso lo confirma el abogado. ¿Le reservo la consulta?\n<ficha>{\"situacion\":\"cuenta bloqueada tras el fallecimiento de su marido\",\"parentesco\":\"Cónyuge o viudo/a\",\"testamento\":\"\",\"bienes\":\"una cuenta bloqueada en el banco, que era de los dos\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"hace dos meses\",\"modalidad\":\"\",\"orientacion\":\"Para el banco hacen falta tres papeles: testamento o declaración de herederos, escritura de herencia o acuerdo de todos, y justificante del impuesto. Si la cuenta era de los dos, lo confirma el abogado.\",\"porDecir\":\"como cónyuge, en el impuesto lo más probable es que no pague casi nada, aunque hay que presentarlo en seis meses\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Entiendo lo difícil que es. Sí, en el despacho nos encargamos de los trámites de la cuenta. Con ese dinero se pueden pagar el entierro y el propio impuesto. Si la cuenta era de los dos, eso lo confirma el abogado. ¿Le reservo la consulta?\n<ficha>{\"situacion\":\"cuenta bloqueada tras el fallecimiento de su marido\",\"parentesco\":\"Cónyuge o viudo/a\",\"testamento\":\"\",\"bienes\":\"una cuenta bloqueada en el banco, que era de los dos\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"hace dos meses\",\"modalidad\":\"\",\"orientacion\":\"Para el banco hacen falta tres papeles: testamento o declaración de herederos, escritura de herencia o acuerdo de todos, y justificante del impuesto. Si la cuenta era de los dos, lo confirma el abogado.\",\"porDecir\":\"como cónyuge, en el impuesto lo más probable es que no pague casi nada, aunque hay que presentarlo en seis meses\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "No sé, la verdad. Aún no he mirado nada, estoy un poco perdida. ¿Cómo puedo saberlo?"
+ },
+ {
+  "role": "assistant",
+  "content": "Ese certificado dice si hubo testamento y en qué notaría. Se pide cuando pasen quince días hábiles, así que te quedan unas dos semanas. Y el impuesto de sucesiones tiene seis meses desde el fallecimiento, hay tiempo. ¿Te reservo la consulta para verlo juntos?\n<ficha>{\"situacion\":\"herencia de tu padre, que falleció la semana pasada\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"la semana pasada\",\"modalidad\":\"\",\"orientacion\":\"Pedir el certificado de últimas voluntades cuando pasen quince días hábiles desde el fallecimiento, para saber si hubo testamento.\",\"porDecir\":\"si no hay testamento, la declaración de herederos ante notario · si hay piso, la plusvalía municipal\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Ese certificado dice si hubo testamento y en qué notaría. Se pide cuando pasen quince días hábiles, así que te quedan unas dos semanas. Y el impuesto de sucesiones tiene seis meses desde el fallecimiento, hay tiempo. ¿Te reservo la consulta para verlo juntos?\n<ficha>{\"situacion\":\"herencia de tu padre, que falleció la semana pasada\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"la semana pasada\",\"modalidad\":\"\",\"orientacion\":\"Pedir el certificado de últimas voluntades cuando pasen quince días hábiles desde el fallecimiento, para saber si hubo testamento.\",\"porDecir\":\"si no hay testamento, la declaración de herederos ante notario · si hay piso, la plusvalía municipal\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

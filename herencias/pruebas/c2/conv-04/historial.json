@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Mejor por la tarde. Pero antes, ¿qué opciones tengo? Mi hermano tenía un préstamo y quizá tarjetas, y una furgoneta. ¿Hay alguna forma de no responder de las deudas?"
+ },
+ {
+  "role": "assistant",
+  "content": "Hay dos vías: aceptar a beneficio de inventario, ante notario, que solo te obliga hasta donde llegue la herencia; o renunciar, que es irrevocable. Ojo, si tienes cosas suyas el plazo es de treinta días. ¿Me dices tu nombre y un teléfono para reservarte la consulta?\n<ficha>{\"situacion\":\"herencia de tu hermano, con deudas\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"\",\"bienes\":\"una furgoneta\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"por la tarde\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Ante las deudas, elegir entre aceptar a beneficio de inventario o renunciar, con el abogado; mientras tanto, no tocar cuentas ni bienes.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Hay dos vías: aceptar a beneficio de inventario, ante notario, que solo te obliga hasta donde llegue la herencia; o renunciar, que es irrevocable. Ojo, si tienes cosas suyas el plazo es de treinta días. ¿Me dices tu nombre y un teléfono para reservarte la consulta?\n<ficha>{\"situacion\":\"herencia de tu hermano, con deudas\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"\",\"bienes\":\"una furgoneta\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"por la tarde\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Ante las deudas, elegir entre aceptar a beneficio de inventario o renunciar, con el abogado; mientras tanto, no tocar cuentas ni bienes.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]
