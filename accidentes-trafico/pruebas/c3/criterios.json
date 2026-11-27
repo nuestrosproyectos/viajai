@@ -1,0 +1,26 @@
+[
+ {
+  "id": 1,
+  "nivel": "normal",
+  "persona": "Eres Raúl, de Granada capital. Fue en la Ronda Sur, el otro reconoció la culpa en el parte amistoso. No has ido al médico todavía porque pensabas que se pasaría. Te preocupa cuánto cuesta el abogado. Si te lo explican claro, aceptas la consulta gratis. Datos: Raúl, 644 555 888, Granada (Zaidín), por videollamada, por la tarde.",
+  "criterio": "Empatía breve; que vaya al médico hoy (72 horas, informe que liga la lesión); parte a su aseguradora en 7 días; guardar parte, fotos, informes y facturas; plazo de un año desde el alta; honorarios: rango de mercado 10-30 % y condiciones del despacho por escrito (si constan, las del despacho), sin prometer cifras de indemnización; propone la consulta con verbo de oferta y registra datos (sin datos de salud innecesarios) con aviso válido."
+ },
+ {
+  "id": 2,
+  "nivel": "oferta",
+  "persona": "Eres Sonia, de Motril. Tuviste un accidente hace 5 meses, estuviste 2 meses de baja y aún vas a rehabilitación (no tienes el alta). Te presionan para firmar. Preguntas si es poco. Si te recomiendan no firmar y te ofrecen que el abogado lo mire, aceptas una consulta por teléfono. Datos: Sonia, 633 202 404, Motril, por teléfono, mañanas.",
+  "criterio": "Que no firme ni acepte nada definitivo sin que lo vea el abogado; una oferta motivada debe traer cálculo e informe médico; sin alta aún, no se puede valorar lo definitivo (días hasta el alta, secuelas); no dice si 2.300 € es poco o mucho con una cifra para su caso (puede explicar el mecanismo); marca urgencia; propone consulta y registra datos con aviso válido."
+ },
+ {
+  "id": 3,
+  "nivel": "culpa",
+  "persona": "Eres Pedro, de Loja. Tu mujer iba de copiloto. Tú estás bien. Preguntas si ella puede reclamar aunque la culpa fuera tuya y si eso te perjudica a ti. Si te lo aclaran, aceptas consulta presencial o por videollamada para ella. Datos: Pedro (tú escribes), 600 909 303, Loja, videollamada por la tarde.",
+  "criterio": "Sin juzgar; los pasajeros casi siempre se indemnizan, también si el culpable es el conductor del coche en que iban (del seguro de ese coche); al conductor culpable el seguro obligatorio no le paga sus lesiones salvo seguro de conductor/accidentes (aquí él está bien); no dice cifras; que ella vaya al médico/guarde informes; propone la consulta y registra datos; no supone género innecesario (aquí el cliente se identifica)."
+ },
+ {
+  "id": 4,
+  "nivel": "plazo",
+  "persona": "Eres Inés, de Granada capital. Te dieron el alta hace 7 meses. No has reclamado nada por escrito. El conductor huyó y no se sabe quién era. Si te lo explican con calma y te ofrecen mirarlo pronto, aceptas consulta presencial. Datos: Inés, 655 777 333, Granada (Realejo), presencial, mañanas.",
+  "criterio": "No dice que haya prescrito ni que está a tiempo: plazo de un año que suele contar desde el alta (hace 7 meses) y se interrumpe con reclamación escrita; hay que mirarlo cuanto antes (urgente); conductor desconocido: Consorcio de Compensación de Seguros, lo más probable solo daños personales; propone consulta urgente y registra datos con aviso urgente válido."
+ }
+]
