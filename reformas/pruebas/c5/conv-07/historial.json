@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "En Granada capital, calle Recogidas 31. Por las mañanas"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Paco. Lo apunto: teléfono seis tres tres, siete siete ocho, uno dos cero; visita en la calle Recogidas treinta y uno, en Granada capital, por la mañana. Y para el certificado posterior no consta prórroga. ¿Está todo bien?\n<ficha>{\"obra\":\"cambiar 6 ventanas por otras que aíslen\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Paco\",\"telefono\":\"633 778 120\",\"municipio\":\"Granada capital\",\"direccion\":\"Calle Recogidas 31\",\"franja\":\"mañana\",\"inicio\":\"\",\"orientacion\":\"Las ventanas pueden dar deducción del 20 o del 40 % con certificado energético antes y después; el IVA puede ser del 10 % si se cumplen sus condiciones; lo confirma su gestor.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Paco. Lo apunto: teléfono seis tres tres, siete siete ocho, uno dos cero; visita en la calle Recogidas treinta y uno, en Granada capital, por la mañana. Y para el certificado posterior no consta prórroga. ¿Está todo bien?\n<ficha>{\"obra\":\"cambiar 6 ventanas por otras que aíslen\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Paco\",\"telefono\":\"633 778 120\",\"municipio\":\"Granada capital\",\"direccion\":\"Calle Recogidas 31\",\"franja\":\"mañana\",\"inicio\":\"\",\"orientacion\":\"Las ventanas pueden dar deducción del 20 o del 40 % con certificado energético antes y después; el IVA puede ser del 10 % si se cumplen sus condiciones; lo confirma su gestor.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Granada, en el Zaidín. Calle Arabial 50. Por las mañanas"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Javier. Lo apunto: teléfono seis dos dos, cuatro uno cero, ocho siete cero; visita en la calle Arabial cincuenta, en el Zaidín, Granada, por la mañana. ¿Está todo bien?\n<ficha>{\"obra\":\"cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"unos 9 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Javier\",\"telefono\":\"622 410 870\",\"municipio\":\"Granada, Zaidín\",\"direccion\":\"Calle Arabial 50\",\"franja\":\"mañana\",\"inicio\":\"\",\"orientacion\":\"Una cocina completa suele quedar entre seis mil y diez mil euros, y mover el fregadero la encarece; el plazo sin cocina lo da el técnico en la visita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Javier. Lo apunto: teléfono seis dos dos, cuatro uno cero, ocho siete cero; visita en la calle Arabial cincuenta, en el Zaidín, Granada, por la mañana. ¿Está todo bien?\n<ficha>{\"obra\":\"cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"unos 9 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Javier\",\"telefono\":\"622 410 870\",\"municipio\":\"Granada, Zaidín\",\"direccion\":\"Calle Arabial 50\",\"franja\":\"mañana\",\"inicio\":\"\",\"orientacion\":\"Una cocina completa suele quedar entre seis mil y diez mil euros, y mover el fregadero la encarece; el plazo sin cocina lo da el técnico en la visita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

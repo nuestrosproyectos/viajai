@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Las Gabias, calle Real 22. Por la mañana."
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Antonio. Lo apunto: teléfono seis siete ocho, uno uno dos, cuatro cuatro tres; visita de medición en la calle Real veintidós, en Las Gabias, por la mañana. ¿Está todo bien?\n<ficha>{\"obra\":\"cocina entera\",\"vivienda\":\"\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"Las Gabias\",\"direccion\":\"Calle Real 22\",\"franja\":\"mañana\",\"inicio\":\"\",\"orientacion\":\"Pedir la visita para medir; el presupuesto por partidas llega por escrito unos cinco días laborables después, y lo que aparezca al abrir se aprueba antes de hacerse.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Antonio. Lo apunto: teléfono seis siete ocho, uno uno dos, cuatro cuatro tres; visita de medición en la calle Real veintidós, en Las Gabias, por la mañana. ¿Está todo bien?\n<ficha>{\"obra\":\"cocina entera\",\"vivienda\":\"\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"Las Gabias\",\"direccion\":\"Calle Real 22\",\"franja\":\"mañana\",\"inicio\":\"\",\"orientacion\":\"Pedir la visita para medir; el presupuesto por partidas llega por escrito unos cinco días laborables después, y lo que aparezca al abrir se aprueba antes de hacerse.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]
