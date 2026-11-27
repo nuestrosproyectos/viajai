@@ -11,6 +11,7 @@ _NAMES = {
     "server": "modules.4_compliance_webhook_server",
     "sender": "modules.5_sender_daemon",
     "dashboard": "modules.6_dashboard",
+    "jobs": "modules.7_job_runner",
 }
 
 

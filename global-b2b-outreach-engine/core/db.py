@@ -148,6 +148,22 @@ CREATE TABLE IF NOT EXISTS events (
     created_at TEXT NOT NULL
 );
 CREATE INDEX IF NOT EXISTS idx_events_lead ON events(lead_id);
+
+CREATE TABLE IF NOT EXISTS jobs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    kind TEXT NOT NULL,
+    campaign_name TEXT,
+    status TEXT NOT NULL,
+    summary TEXT NOT NULL DEFAULT '',
+    started_at TEXT NOT NULL,
+    finished_at TEXT
+);
+
+CREATE TABLE IF NOT EXISTS control (
+    key TEXT PRIMARY KEY,
+    value TEXT NOT NULL,
+    updated_at TEXT NOT NULL
+);
 """
 
 
@@ -213,6 +229,55 @@ def add_event(conn: sqlite3.Connection, lead_id: int | None, event_type: str, **
         "INSERT INTO events (lead_id, type, payload, created_at) VALUES (?, ?, ?, ?)",
         (lead_id, event_type, json.dumps(payload, ensure_ascii=False, default=str), iso()),
     )
+
+
+# ── Control y cerrojo del motor de envío ────────────────────────────────────
+
+SENDER_LEASE = "sender_lease"
+SENDER_LEASE_STALE_SECONDS = 20 * 60
+
+
+def get_control(conn: sqlite3.Connection, key: str) -> str | None:
+    row = conn.execute("SELECT value FROM control WHERE key = ?", (key,)).fetchone()
+    return str(row["value"]) if row else None
+
+
+def set_control(conn: sqlite3.Connection, key: str, value: str) -> None:
+    with transaction(conn):
+        conn.execute(
+            "INSERT INTO control (key, value, updated_at) VALUES (?, ?, ?) "
+            "ON CONFLICT(key) DO UPDATE SET value = excluded.value, updated_at = excluded.updated_at",
+            (key, value, iso()),
+        )
+
+
+def acquire_sender_lease(conn: sqlite3.Connection, owner: str, now: datetime | None = None) -> bool:
+    """Solo un motor de envío a la vez (daemon o panel). Un cerrojo sin latido en 20 min se considera muerto."""
+    moment = now or utcnow()
+    with transaction(conn):
+        row = conn.execute("SELECT value, updated_at FROM control WHERE key = ?", (SENDER_LEASE,)).fetchone()
+        if row and row["value"] and row["value"] != owner:
+            age = (moment - parse_iso(row["updated_at"])).total_seconds()
+            if age < SENDER_LEASE_STALE_SECONDS:
+                return False
+        conn.execute(
+            "INSERT INTO control (key, value, updated_at) VALUES (?, ?, ?) "
+            "ON CONFLICT(key) DO UPDATE SET value = excluded.value, updated_at = excluded.updated_at",
+            (SENDER_LEASE, owner, iso(moment)),
+        )
+    return True
+
+
+def release_sender_lease(conn: sqlite3.Connection, owner: str) -> None:
+    with transaction(conn):
+        conn.execute("UPDATE control SET value = '', updated_at = ? WHERE key = ? AND value = ?", (iso(), SENDER_LEASE, owner))
+
+
+def sender_lease_active(conn: sqlite3.Connection) -> bool:
+    row = conn.execute("SELECT value, updated_at FROM control WHERE key = ?", (SENDER_LEASE,)).fetchone()
+    if not row or not row["value"]:
+        return False
+    return (utcnow() - parse_iso(row["updated_at"])).total_seconds() < SENDER_LEASE_STALE_SECONDS
 
 
 # ── Campañas ────────────────────────────────────────────────────────────────

@@ -781,11 +781,57 @@ def test_dashboard_reads_real_state_and_is_protected(conn, campaign, client, mon
     assert "<script>alert(1)</script>" not in page and "&lt;script&gt;" in page and "info@negocio1.es" in page
     assert page.startswith("<!doctype html>") and not dashboard.render(data, standalone=False).startswith("<!doctype")
     assert client.get("/panel").status_code == 404  # sin clave configurada, el panel no existe
+    assert client.post("/panel/action", data={"action": "enrich", "confirm": "1"}).status_code == 404
     monkeypatch.setenv("DASHBOARD_TOKEN", "clave-panel")
     settings_module.get_settings.cache_clear()
-    assert client.get("/panel?key=mala").status_code == 404
-    ok = client.get("/panel?key=clave-panel")
-    assert ok.status_code == 200 and "Captación B2B" in ok.text
+    assert client.get("/panel?key=mala").status_code == 401 and "Clave incorrecta" in client.get("/panel?key=mala").text
+    assert "Clave del panel" in client.get("/panel").text and "Lanzar" not in client.get("/panel").text
+    assert client.post("/panel/action", data={"action": "enrich", "confirm": "1"}).status_code == 403  # sin sesión no se lanza nada
+    ok = client.get("/panel?key=clave-panel")  # entra, guarda la sesión y redirige sin la clave en la dirección
+    assert ok.status_code == 200 and "Lanzar" in ok.text and "Iniciar envíos" in ok.text and "key=" not in str(ok.url)
+    assert client.post("/panel/action", data={"action": "enrich", "confirm": "1"}, headers={"Origin": "https://otra-web.example"}).status_code == 403
+
+
+def test_panel_launches_jobs_with_confirmation(conn, campaign, client, monkeypatch, env):
+    import time
+
+    monkeypatch.setenv("DASHBOARD_TOKEN", "clave-panel")
+    settings_module.get_settings.cache_clear()
+    client.get("/panel?key=clave-panel")
+    insert_lead(conn, "sinweb", "")  # un lead sin web: el enriquecido lo clasifica sin tocar la red
+
+    sin_confirmar = client.post("/panel/action", data={"action": "enrich"})
+    assert "Marca la casilla" in sin_confirmar.text and conn.execute("SELECT COUNT(*) FROM jobs").fetchone()[0] == 0
+    assert "Falta APIFY_TOKEN" in client.post("/panel/action", data={"action": "extract", "campaign": "colaboradores_espana_test", "confirm": "1"}).text
+    assert "accounts.json" in client.post("/panel/action", data={"action": "send", "confirm": "1"}).text  # sin buzones no arranca
+
+    lanzado = client.post("/panel/action", data={"action": "enrich", "confirm": "1"})
+    assert "en marcha" in lanzado.text
+    for _ in range(50):
+        job = conn.execute("SELECT status, summary FROM jobs WHERE kind = 'enrich'").fetchone()
+        if job and job["status"] != "RUNNING":
+            break
+        time.sleep(0.1)
+    assert job["status"] == "DONE" and "1 webs" in job["summary"] and "1 sin email" in job["summary"]
+    assert conn.execute("SELECT status FROM leads WHERE place_id = 'sinweb'").fetchone()[0] == "NO_CORPORATE_EMAIL"
+    assert "Terminado" in client.get("/panel").text
+
+    # Iniciar y parar envíos desde el panel, con un solo motor a la vez.
+    (env.accounts_file).write_text(json.dumps([{"email": "a@envios.test", "from_name": "Laura", "smtp_host": "127.0.0.1", "smtp_port": 1,
+                                                 "smtp_security": "none", "password": "x"}]), encoding="utf-8")
+    assert "en marcha" in client.post("/panel/action", data={"action": "send", "confirm": "1"}).text
+    time.sleep(0.3)
+    assert "Parar envíos" in client.get("/panel").text and db.sender_lease_active(conn)
+    engine = engine_for(conn, make_accounts("b@envios.test"), Clock(TUESDAY_10), Outbox())
+    with pytest.raises(load("sender").SenderBusy):  # el servicio no puede arrancar un segundo motor mientras el panel envía
+        asyncio.run(engine.run(live=True, once=True))
+    assert "detenidos" in client.post("/panel/action", data={"action": "stop_send"}).text
+    for _ in range(50):
+        if conn.execute("SELECT status FROM jobs WHERE kind = 'send'").fetchone()["status"] != "RUNNING":
+            break
+        time.sleep(0.1)
+    assert conn.execute("SELECT status FROM jobs WHERE kind = 'send'").fetchone()["status"] == "DONE"
+    assert not db.sender_lease_active(conn) and db.get_control(conn, "sending_wanted") == "0"
 
 
 def test_unsubscribed_lead_is_not_reopened_by_whatsapp(conn, campaign, client):

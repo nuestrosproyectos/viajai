@@ -66,6 +66,139 @@ class DashboardData:
     last_extraction: dict[str, Any] = field(default_factory=dict)
 
 
+@dataclass
+class PanelState:
+    """Lo que necesitan los botones del panel: campañas, costes estimados y trabajos en marcha."""
+
+    campaigns: list[dict[str, Any]]
+    running: dict[str, str]
+    jobs: list[dict[str, Any]]
+    sender_elsewhere: bool
+    pending_enrich: int
+    due_now: int
+    message: str = ""
+    preview: bool = False
+    invalid_campaigns: list[str] = field(default_factory=list)
+
+
+JOB_STATUS = {"RUNNING": ("En marcha", "info"), "DONE": ("Terminado", "good"), "FAILED": ("Falló", "bad"), "INTERRUPTED": ("Interrumpido", "warn")}
+
+
+def panel_state(conn: sqlite3.Connection, runner: Any = None, message: str = "", preview: bool = False) -> PanelState:
+    from core.campaign import CAMPAIGNS_DIR, CampaignError, parse_campaign
+
+    jobs_module = load("jobs")
+    copywriter = load("copywriter")
+    tz = ZoneInfo("Europe/Madrid")
+    campaigns, invalid = [], []
+    for path in sorted(CAMPAIGNS_DIR.glob("*.json")):
+        try:
+            config = parse_campaign(path.read_text(encoding="utf-8"), path.name)
+        except (CampaignError, OSError):
+            invalid.append(path.name)
+            continue
+        places = len(config.search_terms) * len(config.locations) * config.max_places_per_search
+        plan = copywriter.estimate(conn, config, None, True)
+        campaigns.append({
+            "name": config.campaign_name, "label": f"{config.campaign_name} · {config.niche_label} · {config.city_label}",
+            "extract_places": places, "extract_cost": places * 0.004, "to_write": plan.leads, "write_cost": plan.cost_usd,
+        })
+    running = {}
+    for row in conn.execute("SELECT kind, started_at FROM jobs WHERE status = 'RUNNING' ORDER BY id"):
+        if runner is None or runner.is_running(row["kind"]):
+            running[str(row["kind"])] = _local(row["started_at"], tz)
+    jobs = [
+        {"what": jobs_module.KIND_LABELS.get(row["kind"], row["kind"]), "campaign": row["campaign_name"] or "", "status": row["status"],
+         "summary": row["summary"], "when": _local(row["started_at"], tz)}
+        for row in conn.execute("SELECT * FROM jobs ORDER BY id DESC LIMIT 8")
+    ]
+    return PanelState(
+        campaigns=campaigns, running=running, jobs=jobs,
+        sender_elsewhere=db.sender_lease_active(conn) and "send" not in running,
+        pending_enrich=_count(conn, "SELECT COUNT(*) FROM leads WHERE status = ? OR (status = ? AND (retry_after IS NULL OR retry_after <= ?))", (db.NEW, db.ERROR, db.iso())),
+        due_now=_count(conn, "SELECT COUNT(*) FROM outbox WHERE status = ? AND scheduled_at IS NOT NULL AND scheduled_at <= ?", (db.OUT_PENDING, db.iso())),
+        message=message, preview=preview, invalid_campaigns=invalid,
+    )
+
+
+def _actions_html(state: PanelState) -> str:
+    """Los cuatro pasos del embudo como tarjetas con su botón."""
+    options = "".join(f'<option value="{_e(c["name"])}">{_e(c["label"])}</option>' for c in state.campaigns)
+    first = state.campaigns[0] if state.campaigns else None
+    out: list[str] = ['<section class="panel" aria-label="Acciones"><h2>Lanzar</h2>']
+    if state.preview:
+        out.append('<p class="banner info">Vista previa: aquí los botones no hacen nada. En tu servidor lanzan cada paso de verdad.</p>')
+    if state.message:
+        out.append(f'<p class="banner good" role="status">{_e(state.message)}</p>')
+    if state.invalid_campaigns:
+        out.append(f'<p class="banner warn">Campañas con errores, no se pueden usar: {_e(", ".join(state.invalid_campaigns))}</p>')
+    out.append('<div class="steps">')
+
+    def card(number: int, kind: str, title: str, text: str, fields: str, button: str, disabled_reason: str = "") -> None:
+        started = state.running.get(kind)
+        out.append(f'<form class="step" method="post" action="/panel/action"><input type="hidden" name="action" value="{kind}">')
+        out.append(f'<div class="stephead"><span class="num">{number}</span><h3>{_e(title)}</h3></div><p class="small muted">{text}</p>')
+        if started:
+            out.append(f'<p class="banner info" role="status">En marcha desde las {_e(started[-5:])}. El panel se actualiza solo.</p>')
+        elif disabled_reason:
+            out.append(f'<p class="small muted">{_e(disabled_reason)}</p><button type="submit" disabled>{_e(button)}</button>')
+        else:
+            out.append(f"{fields}<button type=\"submit\">{_e(button)}</button>")
+        out.append("</form>")
+
+    select = f'<label class="small" for="{{id}}">Campaña</label><select id="{{id}}" name="campaign" required>{options}</select>'
+    no_campaign = "" if state.campaigns else "No hay campañas válidas en la carpeta campaigns/."
+
+    cost = f"{first['extract_cost']:.2f}" if first else "0"
+    card(1, "extract", "Extraer de Google Maps",
+         "Busca negocios con Apify y los guarda sin duplicados." + (f" Con la primera campaña: hasta {first['extract_places']} negocios." if first else ""),
+         select.format(id="c-extract") + f'<label class="tick"><input type="checkbox" name="confirm" value="1" required> Acepto el gasto en Apify (aprox. {cost} $ como máximo con la primera campaña)</label>',
+         "Extraer", no_campaign)
+    card(2, "enrich", "Buscar emails",
+         f"Visita las webs y busca un email corporativo. No cuesta nada. Pendientes ahora: <strong>{state.pending_enrich}</strong>.",
+         '<input type="hidden" name="confirm" value="1">', "Buscar emails",
+         "" if state.pending_enrich else "No hay webs pendientes de rastrear.")
+    write_cost = f"{first['write_cost']:.3f} $" if first and first["write_cost"] is not None else "desconocido"
+    to_write = first["to_write"] if first else 0
+    card(3, "generate", "Redactar correos",
+         f"La IA escribe el primer correo y dos seguimientos por negocio. Pendientes en la primera campaña: <strong>{to_write}</strong> (aprox. {write_cost}).",
+         select.format(id="c-generate") + '<label class="small" for="limit">Máximo de negocios</label><input id="limit" name="limit" type="number" min="1" max="500" value="20" inputmode="numeric">'
+         '<label class="tick"><input type="checkbox" name="confirm" value="1" required> Acepto el gasto en la IA</label>',
+         "Redactar", no_campaign)
+    if "send" in state.running:
+        out.append('<form class="step" method="post" action="/panel/action"><input type="hidden" name="action" value="stop_send">'
+                   '<div class="stephead"><span class="num">4</span><h3>Enviar correos</h3></div>'
+                   f'<p class="banner good" role="status">Enviando desde las {_e(state.running["send"][-5:])}, despacio y solo en horario laboral.</p>'
+                   '<button type="submit" class="danger">Parar envíos</button></form>')
+    else:
+        card(4, "send", "Enviar correos",
+             f"Envía de verdad, con pausas de 90 a 240 segundos y solo en el horario de cada campaña. Listos para salir ahora: <strong>{state.due_now}</strong>.",
+             '<label class="tick"><input type="checkbox" name="confirm" value="1" required> Sí, enviar correos reales</label>',
+             "Iniciar envíos", "Ya hay un motor de envío en marcha fuera del panel (el servicio)." if state.sender_elsewhere else "")
+    out.append("</div>")
+    if state.jobs:
+        out.append('<div class="scroll"><table><thead><tr><th>Cuándo</th><th>Acción</th><th>Campaña</th><th>Estado</th><th>Resultado</th></tr></thead><tbody>')
+        for job in state.jobs:
+            label, tone = JOB_STATUS.get(job["status"], (job["status"], "neutral"))
+            out.append(f"<tr><td class=\"muted\" style=\"white-space:nowrap\">{_e(job['when'])}</td><td>{_e(job['what'])}</td><td>{_e(job['campaign'])}</td>"
+                       f"<td><span class=\"pill {tone}\">{_e(label)}</span></td><td>{_e(job['summary'])}</td></tr>")
+        out.append("</tbody></table></div>")
+    out.append("</section>")
+    return "\n".join(out)
+
+
+def login_page(error: bool = False) -> str:
+    message = '<p class="banner bad" role="alert">Clave incorrecta.</p>' if error else ""
+    return (
+        '<!doctype html>\n<html lang="es">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+        f'<meta name="robots" content="noindex, nofollow">\n<title>Panel de captación B2B</title>\n<style>{_CSS}</style>\n</head>\n<body>\n'
+        '<div class="wrap" style="max-width:420px"><h1>Captación B2B</h1>'
+        f'<form class="panel" method="post" action="/panel/login">{message}<label for="key">Clave del panel</label>'
+        '<input id="key" name="key" type="password" autocomplete="current-password" required autofocus>'
+        "<button type=\"submit\">Entrar</button></form></div>\n</body>\n</html>\n"
+    )
+
+
 def _count(conn: sqlite3.Connection, sql: str, params: tuple[Any, ...] = ()) -> int:
     return int(conn.execute(sql, params).fetchone()[0])
 
@@ -224,6 +357,18 @@ td{padding:11px 12px 11px 0;border-bottom:1px solid var(--line);vertical-align:t
 .mail pre{margin:0;padding:16px;white-space:pre-wrap;overflow-wrap:anywhere;font-family:var(--body);font-size:14px;line-height:1.6}
 a{color:var(--accent)}a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .empty{color:var(--muted);font-size:14px;margin:0}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.step{border:1px solid var(--line);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px;min-width:0;background:var(--bg)}
+.step p{margin:0}.stephead{display:flex;align-items:center;gap:10px}
+h3{font-family:var(--display);font-weight:600;font-size:16px;margin:0}
+.num{flex:0 0 auto;width:26px;height:26px;border-radius:50%;background:var(--accent);color:var(--surface);display:inline-flex;align-items:center;justify-content:center;font-weight:600;font-size:13px}
+label{font-size:14px}.tick{display:flex;gap:8px;align-items:flex-start;font-size:13px;line-height:1.4}.tick input{margin-top:2px;width:18px;height:18px;flex:0 0 auto}
+select,input[type=number],input[type=password]{min-height:44px;padding:0 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--fg);font:inherit;width:100%;box-sizing:border-box}
+button{min-height:44px;padding:0 18px;border-radius:8px;border:1px solid var(--accent);background:var(--accent);color:var(--surface);font:inherit;font-weight:600;cursor:pointer;margin-top:auto}
+button:hover{filter:brightness(1.08)}button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+button[disabled]{background:var(--track);border-color:var(--line);color:var(--muted);cursor:not-allowed;filter:none}
+button.danger{background:var(--bad);border-color:var(--bad)}
+.banner{margin:0;padding:10px 12px;border-radius:8px;font-size:14px}
 """
 
 
@@ -238,7 +383,7 @@ def _link(url: str) -> str:
     return f'<a href="{_e(url)}" rel="noopener noreferrer">{_e(label[:30])}</a>'
 
 
-def render(data: DashboardData, standalone: bool = True, refresh_seconds: int = 0) -> str:
+def render(data: DashboardData, standalone: bool = True, refresh_seconds: int = 0, panel: PanelState | None = None) -> str:
     """Devuelve el HTML del panel. `standalone=False` omite doctype/head/body (para incrustarlo)."""
     top = max((value for _, value in data.funnel), default=0) or 1
     parts: list[str] = []
@@ -251,6 +396,9 @@ def render(data: DashboardData, standalone: bool = True, refresh_seconds: int = 
     for label, value, note in data.kpis:
         add(f'<div class="kpi"><span class="muted small">{_e(label)}</span><b>{_e(value)}</b><span class="muted small">{_e(note)}</span></div>')
     add("</section>")
+
+    if panel is not None:
+        add(_actions_html(panel))
 
     add('<div class="cols"><div class="main">')
 

@@ -134,7 +134,7 @@ python cli.py accounts --resume laura@colabora-tudominio.com
 | `POST /unsubscribe/{token}` | El botón de baja nativo de Gmail/Outlook (RFC 8058) |
 | `POST /webhook/whatsapp-inbound` | Mensajes entrantes de WhatsApp. Localiza el lead por `[Ref: XXXX]` o por teléfono, lo marca `CONVERTED_TO_WA` y cancela los correos pendientes |
 | `GET /webhook/whatsapp-inbound` | Verificación que exige Meta al dar de alta el webhook |
-| `GET /panel?key=…` | Panel web de solo lectura: embudo, cola de envío, leads, cuentas y actividad. Solo existe si defines `DASHBOARD_TOKEN` |
+| `GET /panel` | Panel de control: embudo, cola de envío, leads, cuentas, actividad y **botones para extraer, buscar emails, redactar e iniciar o parar los envíos**. Solo existe si defines `DASHBOARD_TOKEN`; se entra con esa clave |
 | `GET /health` | Comprobación de vida |
 
 El webhook entiende tres formatos sin configurar nada:
@@ -144,6 +144,16 @@ El webhook entiende tres formatos sin configurar nada:
 - **Make, n8n, GoHighLevel**: un JSON plano como `{"phone": "34611222333", "message": "Hola… [Ref: GR-8F3A]"}` con la cabecera `X-Webhook-Secret` o `?secret=` en la URL.
 
 Sin `WEBHOOK_SECRET` ni `WHATSAPP_APP_SECRET` el webhook rechaza todas las peticiones.
+
+## Panel de control
+
+Con `DASHBOARD_TOKEN` definido, abre `https://tu-servidor/panel` e introduce la clave. Desde ahí se lanza todo sin terminal:
+
+1. **Extraer de Google Maps** y 3. **Redactar correos** cuestan dinero: el panel muestra el coste aproximado y exige marcar una casilla.
+2. **Buscar emails** es gratis.
+4. **Iniciar envíos** exige confirmar que son correos reales; el botón pasa a ser **Parar envíos**. Si el servidor se reinicia con los envíos en marcha, se reanudan solos.
+
+Solo puede haber un motor de envío a la vez: si usas el panel para enviar, no actives además el servicio `outreach-sender` (el segundo se negaría a arrancar). El panel no se puede usar con varios procesos de uvicorn (`--workers`): déjalo en uno, como viene.
 
 ## Servicios systemd
 

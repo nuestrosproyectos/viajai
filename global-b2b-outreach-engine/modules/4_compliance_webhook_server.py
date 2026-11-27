@@ -11,12 +11,13 @@ import json
 import logging
 import re
 import sqlite3
+from urllib.parse import parse_qs, quote
 from contextlib import asynccontextmanager, contextmanager
 from typing import Any, AsyncIterator, Iterator
 
 from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.concurrency import run_in_threadpool
-from fastapi.responses import HTMLResponse, JSONResponse, PlainTextResponse
+from fastapi.responses import HTMLResponse, JSONResponse, PlainTextResponse, RedirectResponse, Response
 
 from core import db
 from core.logs import configure_logging, get_logger, log
@@ -226,8 +227,23 @@ async def lifespan(application: FastAPI) -> AsyncIterator[None]:
     configure_logging(get_settings().log_level)
     conn = db.connect()
     db.init_db(conn)  # crea el esquema si aún no existe
+    from modules import load
+
+    jobs = load("jobs")
+    jobs.mark_interrupted_jobs(conn)
+    runner = jobs.JobRunner()
+    application.state.runner = runner
+    # Si los envíos estaban en marcha cuando se reinició el servidor, se reanudan solos.
+    if get_settings().dashboard_token and db.get_control(conn, jobs.SENDING_WANTED) == "1":
+        try:
+            runner.start("send")
+        except jobs.JobError as exc:
+            log(logger, logging.WARNING, "sender_not_resumed", reason=str(exc))
     conn.close()
-    yield
+    try:
+        yield
+    finally:
+        await runner.shutdown()
 
 
 @contextmanager
@@ -262,18 +278,98 @@ def _unsubscribe_response(request: Request, token: str, channel: str) -> HTMLRes
     return _render(language, texts["title"], texts["heading"], str(texts["body"]).format(email=_mask(str(lead["email"]))))
 
 
+PANEL_COOKIE = "panel_session"
+
+
+def _panel_cookie_value() -> str:
+    """La cookie no contiene la clave, sino una firma derivada de ella."""
+    return hmac.new(get_settings().dashboard_token.encode(), b"panel-session-v1", hashlib.sha256).hexdigest()
+
+
+def _panel_enabled() -> None:
+    if not get_settings().dashboard_token:
+        raise HTTPException(status_code=404, detail="Not Found")  # sin clave configurada, el panel no existe
+
+
+def _panel_logged_in(request: Request) -> bool:
+    cookie = request.cookies.get(PANEL_COOKIE, "")
+    return bool(cookie) and hmac.compare_digest(cookie.encode(), _panel_cookie_value().encode())
+
+
+def _same_origin(request: Request) -> bool:
+    """Las órdenes solo se aceptan si vienen del propio panel, no de otra web."""
+    origin = request.headers.get("origin")
+    if not origin:
+        return True
+    host = request.headers.get("x-forwarded-host") or request.headers.get("host", "")
+    return origin.split("://", 1)[-1] == host
+
+
+def _login_response(request: Request) -> RedirectResponse:
+    response = RedirectResponse("/panel", status_code=303)
+    secure = request.url.scheme == "https" or request.headers.get("x-forwarded-proto") == "https"
+    response.set_cookie(PANEL_COOKIE, _panel_cookie_value(), max_age=30 * 24 * 3600, httponly=True, samesite="strict", secure=secure)
+    return response
+
+
+async def _form(request: Request) -> dict[str, str]:
+    raw = (await request.body()).decode("utf-8", errors="replace")
+    return {key: values[-1] for key, values in parse_qs(raw, keep_blank_values=True).items()}
+
+
 @app.get("/panel", response_class=HTMLResponse)
-def panel(key: str = Query(default="")) -> HTMLResponse:
-    """Panel de solo lectura. Solo se abre con la clave DASHBOARD_TOKEN; sin clave configurada no existe."""
-    expected = get_settings().dashboard_token
-    if not expected or not hmac.compare_digest(key.encode(), expected.encode()):
-        raise HTTPException(status_code=404, detail="Not Found")
+def panel(request: Request, key: str = Query(default=""), msg: str = Query(default="")) -> Response:
+    """Panel de control: estado del embudo y botones para lanzar cada paso."""
+    _panel_enabled()
+    if key and hmac.compare_digest(key.encode(), get_settings().dashboard_token.encode()):
+        return _login_response(request)  # entra con el enlace y la clave desaparece de la barra de direcciones
     from modules import load
 
     dashboard = load("dashboard")
+    if not _panel_logged_in(request):
+        return HTMLResponse(dashboard.login_page(error=bool(key)), status_code=401 if key else 200, headers={"Cache-Control": "no-store"})
     with _connection() as conn:
-        page = dashboard.render(dashboard.collect(conn), refresh_seconds=60)
+        state = dashboard.panel_state(conn, request.app.state.runner, message=msg[:300])
+        page = dashboard.render(dashboard.collect(conn), refresh_seconds=10 if state.running else 0, panel=state)
     return HTMLResponse(page, headers={"Cache-Control": "no-store", "Referrer-Policy": "no-referrer"})
+
+
+@app.post("/panel/login")
+async def panel_login(request: Request) -> Response:
+    _panel_enabled()
+    form = await _form(request)
+    if not hmac.compare_digest(form.get("key", "").encode(), get_settings().dashboard_token.encode()):
+        from modules import load
+
+        return HTMLResponse(load("dashboard").login_page(error=True), status_code=401, headers={"Cache-Control": "no-store"})
+    return _login_response(request)
+
+
+@app.post("/panel/action")
+async def panel_action(request: Request) -> Response:
+    """Lanza o para un paso. Lo que cuesta dinero o envía correos exige marcar la casilla de confirmación."""
+    _panel_enabled()
+    if not _panel_logged_in(request) or not _same_origin(request):
+        raise HTTPException(status_code=403, detail="no autorizado")
+    from core.campaign import CampaignError, load_campaign
+    from modules import load
+
+    jobs = load("jobs")
+    runner = request.app.state.runner
+    form = await _form(request)
+    action = form.get("action", "")
+    try:
+        if action == "stop_send":
+            message = runner.stop_sender()
+        else:
+            if form.get("confirm") != "1":
+                raise jobs.JobError("Marca la casilla de confirmación antes de lanzar.")
+            campaign = load_campaign(form["campaign"]) if form.get("campaign") else None
+            limit = max(1, min(int(form["limit"]), 500)) if form.get("limit", "").isdigit() else None
+            message = runner.start(action, campaign, limit)
+    except (jobs.JobError, CampaignError) as exc:
+        message = f"No se ha lanzado: {exc}"
+    return RedirectResponse("/panel?msg=" + quote(message), status_code=303)
 
 
 @app.get("/unsubscribe/{token}", response_class=HTMLResponse)

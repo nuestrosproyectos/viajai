@@ -24,6 +24,7 @@ import smtplib
 import socket
 import sqlite3
 import ssl
+import uuid
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
 from email.message import EmailMessage, Message
@@ -232,6 +233,10 @@ def build_message(
 # ── SMTP ────────────────────────────────────────────────────────────────────
 
 
+class SenderBusy(Exception):
+    """Ya hay otro motor de envío en marcha (el daemon o el panel)."""
+
+
 class SendFailure(Exception):
     """kind: 'account' (no salió, culpa de la cuenta), 'recipient' (rechazo definitivo del destinatario),
     'temporary' (rechazo temporal del destinatario) o 'ambiguous' (no se sabe si salió)."""
@@ -427,6 +432,7 @@ class SenderEngine:
         self._bounces: dict[str, int] = {}
         self._robinson = RobinsonList()
         self._last_imap: datetime | None = None
+        self._lease_owner = uuid.uuid4().hex
         self.stop = asyncio.Event()
 
     # — cuentas —
@@ -643,6 +649,7 @@ class SenderEngine:
         return "sent", ""
 
     async def _jitter(self) -> None:
+        self._heartbeat()
         delay = random.uniform(self.settings.jitter_min, self.settings.jitter_max)
         if delay <= 0:
             return
@@ -790,12 +797,31 @@ class SenderEngine:
             )
         return cursor.rowcount
 
+    def _heartbeat(self) -> None:
+        if self._has_lease:
+            db.acquire_sender_lease(self.conn, self._lease_owner)
+
+    _has_lease = False
+
     async def run(self, live: bool, once: bool, on_pass: Callable[[PassReport], None] | None = None) -> PassReport:
+        if not live:
+            return await self._run(live, once, on_pass)
+        if not db.acquire_sender_lease(self.conn, self._lease_owner):
+            raise SenderBusy("Ya hay un motor de envío en marcha (el servicio o el panel). No se arranca un segundo.")
+        self._has_lease = True
+        try:
+            return await self._run(live, once, on_pass)
+        finally:
+            self._has_lease = False
+            db.release_sender_lease(self.conn, self._lease_owner)
+
+    async def _run(self, live: bool, once: bool, on_pass: Callable[[PassReport], None] | None = None) -> PassReport:
         last = PassReport()
         if live:
             self.recover_interrupted()
         while not self.stop.is_set():
             report = PassReport()
+            self._heartbeat()
             if live:
                 await self.maybe_check_inboxes(report)
             sent_report = await self.send_pass(live)

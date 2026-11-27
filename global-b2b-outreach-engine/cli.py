@@ -252,7 +252,10 @@ def send(
                 f"revisión IMAP cada {settings.imap_check_interval} s\nCtrl+C para detener.",
                 title="Envío REAL en marcha", border_style="green",
             ))
-        asyncio.run(main())
+        try:
+            asyncio.run(main())
+        except sender.SenderBusy as exc:
+            raise _fail(str(exc)) from exc
 
 
 def _stats_rows(conn: sqlite3.Connection, campaign: str | None) -> dict[str, int]:
