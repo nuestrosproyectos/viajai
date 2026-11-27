@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "No, con educación: no podemos tirarlo sin permiso ni sin que el técnico compruebe antes si es de carga, por seguridad del edificio. Ese trámite lo llevamos nosotros. Si la cocina queda abierta, la campana sigue sacando humos por su conducto. ¿Te reservo la visita?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"Piso sin ascensor\",\"metros\":\"\",\"antiguedad\":\"edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada, centro\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No se tira sin que el técnico compruebe si es de carga y sin el permiso que toque; el trámite lo llevamos nosotros.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>permisos</mostrar>",
   "original": "No, con educación: no podemos tirarlo sin permiso ni sin que el técnico compruebe antes si es de carga, por seguridad del edificio. Ese trámite lo llevamos nosotros. Si la cocina queda abierta, la campana sigue sacando humos por su conducto. ¿Te reservo la visita?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"Piso sin ascensor\",\"metros\":\"\",\"antiguedad\":\"edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada, centro\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No se tira sin que el técnico compruebe si es de carga y sin el permiso que toque; el trámite lo llevamos nosotros.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>permisos</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, entiendo. Pues sí, resérvame la visita"
  }
 ]

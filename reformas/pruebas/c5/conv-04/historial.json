@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Lo entiendo, que no se caiga es lo primero. Solo necesito su nombre y un teléfono para llamarle y organizar la visita. Y en Maracena el ayuntamiento tiene su propia ordenanza, y eso lo confirma el técnico. ¿Me dice su nombre y un teléfono?\n<ficha>{\"obra\":\"cambiar la bañera por un plato de ducha (su padre ya no puede entrar)\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Para su padre lo prioritario es cambiar la bañera por un plato de ducha; la visita suele ser en dos a cuatro días.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>\n<mostrar>contacto</mostrar>",
   "original": "Lo entiendo, que no se caiga es lo primero. Solo necesito su nombre y un teléfono para llamarle y organizar la visita. Y en Maracena el ayuntamiento tiene su propia ordenanza, y eso lo confirma el técnico. ¿Me dice su nombre y un teléfono?\n<ficha>{\"obra\":\"cambiar la bañera por un plato de ducha (su padre ya no puede entrar)\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Para su padre lo prioritario es cambiar la bañera por un plato de ducha; la visita suele ser en dos a cuatro días.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>\n<mostrar>contacto</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Me llamo Carmen y mi teléfono es el 699 450 212."
  }
 ]

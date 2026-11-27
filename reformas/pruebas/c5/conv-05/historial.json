@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Ese número aproximado no lo tengo, así que lo apunto para que el técnico se lo confirme. En la visita el técnico mira los muebles y la fontanería, y el plazo sale en el presupuesto por escrito. ¿Te reservo la visita?\n<ficha>{\"obra\":\"cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"unos 9 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Una cocina completa suele quedar entre seis mil y diez mil euros; el plazo sin cocina lo da el técnico en la visita.\",\"porDecir\":\"según cómo quede la distribución, el técnico confirma si basta declaración responsable o hace falta licencia\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>preparar</mostrar>",
   "original": "Ese número aproximado no lo tengo, así que lo apunto para que el técnico se lo confirme. En la visita el técnico mira los muebles y la fontanería, y el plazo sale en el presupuesto por escrito. ¿Te reservo la visita?\n<ficha>{\"obra\":\"cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"unos 9 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Una cocina completa suele quedar entre seis mil y diez mil euros; el plazo sin cocina lo da el técnico en la visita.\",\"porDecir\":\"según cómo quede la distribución, el técnico confirma si basta declaración responsable o hace falta licencia\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>preparar</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, que me lo digan en la visita entonces. Resérvamela"
  }
 ]

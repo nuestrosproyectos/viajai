@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Me parece bien que lo vea el técnico. La visita suele ser en dos a cuatro días y es gratis. Y qué material poner lo decide el técnico, sin recomendar marcas. ¿Me dice su nombre y un teléfono, solo para llamarle y organizar la visita?\n<ficha>{\"obra\":\"quitar el tejado de uralita de la cochera\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Mejor que no quite la uralita: puede tener amianto; la retira una empresa inscrita, y el técnico ve qué material conviene.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>\n<mostrar>contacto</mostrar>",
   "original": "Me parece bien que lo vea el técnico. La visita suele ser en dos a cuatro días y es gratis. Y qué material poner lo decide el técnico, sin recomendar marcas. ¿Me dice su nombre y un teléfono, solo para llamarle y organizar la visita?\n<ficha>{\"obra\":\"quitar el tejado de uralita de la cochera\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Mejor que no quite la uralita: puede tener amianto; la retira una empresa inscrita, y el técnico ve qué material conviene.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>\n<mostrar>contacto</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Antonio, 655 909 341"
  }
 ]
