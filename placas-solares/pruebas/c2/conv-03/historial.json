@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Gracias, Manolo, anotado. Un detalle: las sombras de chimeneas o árboles restan mucho producción, y eso se ve en la visita. ¿En qué municipio está la vivienda?\n<ficha>{\"que\":\"Placas solares con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"De noche; de día trabaja fuera\",\"nombre\":\"Manolo\",\"telefono\":\"633 909 101\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Entre semana por la tarde\",\"inicio\":\"\",\"orientacion\":\"Consume sobre todo de noche y está fuera de día: con batería puede compensar; el estudio lo calcula con sus facturas.\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Manolo, anotado. Un detalle: las sombras de chimeneas o árboles restan mucho producción, y eso se ve en la visita. ¿En qué municipio está la vivienda?\n<ficha>{\"que\":\"Placas solares con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"De noche; de día trabaja fuera\",\"nombre\":\"Manolo\",\"telefono\":\"633 909 101\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Entre semana por la tarde\",\"inicio\":\"\",\"orientacion\":\"Consume sobre todo de noche y está fuera de día: con batería puede compensar; el estudio lo calcula con sus facturas.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "En Pulianas"
  }
 ]
