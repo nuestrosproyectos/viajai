@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Pero más o menos, ¿una semana, un mes? Algo de idea me tendrán que dar"
+ },
+ {
+  "role": "assistant",
+  "content": "Te entiendo, pero el plazo de la cocina no te lo puedo dar seguro: depende de los muebles y de lo que haya que mover. Lo mira el técnico en la visita. Y avisa por escrito al presidente o administrador. ¿Te reservo la visita?\n<ficha>{\"obra\":\"cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"unos 9 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cocina completa: muchas están entre 6.000 y 10.000 €, según los muebles; mover el fregadero puede subirla. El plazo de la cocina lo confirma el técnico en la visita.\",\"porDecir\":\"La campana tiene que sacar los humos por su conducto, no a un patio de luces\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Te entiendo, pero el plazo de la cocina no te lo puedo dar seguro: depende de los muebles y de lo que haya que mover. Lo mira el técnico en la visita. Y avisa por escrito al presidente o administrador. ¿Te reservo la visita?\n<ficha>{\"obra\":\"cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"unos 9 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cocina completa: muchas están entre 6.000 y 10.000 €, según los muebles; mover el fregadero puede subirla. El plazo de la cocina lo confirma el técnico en la visita.\",\"porDecir\":\"La campana tiene que sacar los humos por su conducto, no a un patio de luces\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

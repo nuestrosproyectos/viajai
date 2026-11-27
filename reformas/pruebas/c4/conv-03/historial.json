@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, entiendo. Pues sí, resérvame la visita"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, te organizo la visita. Es solo para llamarte y cuadrarla. Y ojo: si el piso está en el centro histórico, lo más probable es que haga falta licencia y técnico aunque no se toquen muros. ¿Me dices tu nombre y un teléfono?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"\",\"metros\":\"unos 70 m²\",\"antiguedad\":\"edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada (centro)\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No tirar el tabique sin comprobar si es de carga: si lo es, lo más probable es proyecto y licencia; la visita de medición, gratis, lo comprueba.\",\"porDecir\":\"Avisar a la comunidad antes de tocar un muro · Si la cocina queda abierta, la campana sigue sacando humos por su conducto\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, te organizo la visita. Es solo para llamarte y cuadrarla. Y ojo: si el piso está en el centro histórico, lo más probable es que haga falta licencia y técnico aunque no se toquen muros. ¿Me dices tu nombre y un teléfono?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"\",\"metros\":\"unos 70 m²\",\"antiguedad\":\"edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada (centro)\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No tirar el tabique sin comprobar si es de carga: si lo es, lo más probable es proyecto y licencia; la visita de medición, gratis, lo comprueba.\",\"porDecir\":\"Avisar a la comunidad antes de tocar un muro · Si la cocina queda abierta, la campana sigue sacando humos por su conducto\",\"fase\":\"datos\"}</ficha>"
  }
 ]
