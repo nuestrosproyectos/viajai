@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Para tirar el tabique no tengo una cifra fiable; depende de si es de carga. En el centro y en edificio antiguo, lo más probable es que haga falta licencia y técnico. ¿Te reservo la visita gratis por la mañana o por la tarde?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"Piso\",\"metros\":\"\",\"antiguedad\":\"Edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Comprobar si el tabique es de carga antes de tirarlo; en el centro lo más probable es licencia y técnico.\",\"fase\":\"orientando\"}</ficha>\n<mostrar>permisos</mostrar>",
   "original": "Para tirar el tabique no tengo una cifra fiable; depende de si es de carga. En el centro y en edificio antiguo, lo más probable es que haga falta licencia y técnico. ¿Te reservo la visita gratis por la mañana o por la tarde?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"Piso\",\"metros\":\"\",\"antiguedad\":\"Edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Comprobar si el tabique es de carga antes de tirarlo; en el centro lo más probable es licencia y técnico.\",\"fase\":\"orientando\"}</ficha>\n<mostrar>permisos</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Es un 5º en San Antón, edificio de 1950. Quiero la cocina abierta al salón. ¿Y no podemos tirarlo sin decir nada a nadie para ahorrar el permiso?"
  }
 ]

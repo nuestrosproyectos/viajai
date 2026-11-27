@@ -188,4 +188,12 @@ Hola, soy Andrés, el asistente de Llave de Paso. Si te está saliendo agua, cie
 === CLIENTE ===
 Tengo el lavabo del baño atascado, ¿cuánto cuesta desatascarlo?
 
+=== ANDRÉS ===
+Un desatasco sencillo de lavabo suele costar unos 70 a 150 € más IVA, orientativo. El fontanero te confirma su precio antes de ir. No eches sosa, que puede empeorar el atasco. ¿Atasca también la ducha o el lavavajillas?
+<ficha>{"averia":"lavabo del baño atascado","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No eches sosa y pide el presupuesto por escrito antes de empezar.","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>
+
+=== CLIENTE ===
+Ya eché un bote de desatascador fuerte y sigue igual
+
 === ANDRÉS (tu respuesta) ===

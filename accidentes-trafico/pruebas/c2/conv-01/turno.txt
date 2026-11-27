@@ -179,4 +179,12 @@ Hola, soy Andrés, el asistente de Accidente Claro. Siento lo del accidente. Cu�
 === CLIENTE ===
 Hola, hace 3 días me dieron un golpe por detrás y me duele el cuello. ¿Qué hago?
 
+=== ANDRÉS ===
+Lo primero es que te vea un médico hoy y que quede escrito; el informe liga el dolor al accidente. Guarda fotos y avisa a tu aseguradora en siete días. La primera consulta es gratis y el abogado lo revisa. ¿Ya has ido al médico?
+<ficha>{"caso":"golpe por detrás hace tres días","como":"","fecha":"hace tres días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que te vea un médico hoy, guarda fotos y avisa a tu aseguradora en siete días.","fase":"orientando"}</ficha>
+<mostrar>documentos</mostrar>
+
+=== CLIENTE ===
+No, todavía no he ido, pensaba que se me pasaría. ¿Y cuánto me cobra el abogado?
+
 === ANDRÉS (tu respuesta) ===

@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Nadie puede garantizar eso: la factura nunca baja a cero, siempre quedan la potencia, el contador, los impuestos y lo de la noche. Las garantías de los equipos van por escrito en el presupuesto. ¿Te reservo el estudio por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares, pide garantía de no pagar luz\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Ninguna instalación deja la factura a cero; las garantías de los equipos van por escrito en el presupuesto.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>garantia</mostrar>",
   "original": "Nadie puede garantizar eso: la factura nunca baja a cero, siempre quedan la potencia, el contador, los impuestos y lo de la noche. Las garantías de los equipos van por escrito en el presupuesto. ¿Te reservo el estudio por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares, pide garantía de no pagar luz\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Ninguna instalación deja la factura a cero; las garantías de los equipos van por escrito en el presupuesto.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>garantia</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Ya, pero con batería sí que no pagaría luz, ¿no? Yo gasto sobre todo por la noche, que de día trabajo fuera"
  }
 ]

@@ -1,3 +1,2 @@
-No firmes nada todavía: hasta que lo vea el abogado no conviene aceptar nada definitivo, y es urgente. Cobrar a cuenta no es firmar un finiquito, y en la primera consulta gratis lo revisa contigo. ¿Has firmado ya algo?
-<ficha>{"caso":"accidente de tráfico con una oferta de la aseguradora del otro","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"No firmes nada hasta que lo vea el abogado.","fase":"orientando"}</ficha>
-<mostrar>oferta</mostrar>
+Lo primero es que tu mujer vea un médico hoy y quede por escrito. Como pasajera, ella normalmente sí puede reclamar aunque la culpa fuera tuya. ¿Te reservo la primera consulta gratis, por la mañana o por la tarde?
+<ficha>{"caso":"Accidente por saltarse un ceda; iba de pasajera su mujer","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Tu mujer, como pasajera, puede reclamar; que vea un médico hoy.","fase":"proponiendo"}</ficha>

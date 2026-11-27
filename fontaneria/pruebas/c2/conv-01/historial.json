@@ -2,5 +2,14 @@
  {
   "role": "user",
   "content": "Socorro, sale agua por debajo del fregadero y no para!!"
+ },
+ {
+  "role": "assistant",
+  "content": "Cierra ya la llave de paso de tu casa, suele estar en la cocina, el baño o junto al contador, y aparta lo que se pueda mojar. Te mando al fontanero urgente o lo dejamos programado. ¿Ha parado el agua al cerrarla?\n<ficha>{\"averia\":\"agua por debajo del fregadero, no para\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cierra ya la llave de paso y aparta lo que se pueda mojar.\",\"fase\":\"orientando\"}</ficha>\n<mostrar>seguridad</mostrar>",
+  "original": "Cierra ya la llave de paso de tu casa, suele estar en la cocina, el baño o junto al contador, y aparta lo que se pueda mojar. Te mando al fontanero urgente o lo dejamos programado. ¿Ha parado el agua al cerrarla?\n<ficha>{\"averia\":\"agua por debajo del fregadero, no para\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cierra ya la llave de paso y aparta lo que se pueda mojar.\",\"fase\":\"orientando\"}</ficha>\n<mostrar>seguridad</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "No sé dónde está la llave de paso, estoy muy nerviosa, el agua sigue saliendo"
  }
 ]

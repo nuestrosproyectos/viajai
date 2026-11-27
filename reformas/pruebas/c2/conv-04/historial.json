@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Entiendo, lo primero es la seguridad de su padre. Cambiar la bañera por un plato de ducha suele quedar entre unos mil y dos mil trescientos euros, según el tamaño. ¿Le reservo la visita de medición gratis, por la mañana o por la tarde?\n<ficha>{\"obra\":\"Adaptar el baño para su padre, que ya no puede entrar en la bañera\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cambiar la bañera por un plato de ducha, cuanto antes, y medir en la visita gratis.\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Entiendo, lo primero es la seguridad de su padre. Cambiar la bañera por un plato de ducha suele quedar entre unos mil y dos mil trescientos euros, según el tamaño. ¿Le reservo la visita de medición gratis, por la mañana o por la tarde?\n<ficha>{\"obra\":\"Adaptar el baño para su padre, que ya no puede entrar en la bañera\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cambiar la bañera por un plato de ducha, cuanto antes, y medir en la visita gratis.\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Cuanto antes mejor. ¿Cuánto tardarían en venir a verlo? Mi padre se levanta de noche y me da miedo que se caiga."
  }
 ]

@@ -1,3 +1,3 @@
-Eso no te lo puedo decir seguro: el plazo de un año se cuenta desde el alta médica y con interrupciones, así que conviene mirarlo cuanto antes. Lo revisa el abogado en la primera consulta, gratis. ¿Cuándo te dieron el alta?
-<ficha>{"caso":"atropello en un paso de cebra","como":"Andando","fecha":"hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Conviene que el abogado lo mire cuanto antes, con la fecha del alta.","fase":"orientando"}</ficha>
-<mostrar>plazo</mostrar>
+No firmes nada todavía: un papel definitivo puede cerrar la puerta a reclamar más. El abogado revisa la oferta con los informes delante, en la primera consulta gratis. ¿Te reservo la consulta por la mañana o por la tarde?
+<ficha>{"caso":"Accidente de tráfico; la aseguradora del otro ofrece 2.300 € y pide firmar","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"No firmes nada hasta que lo revise el abogado.","fase":"proponiendo"}</ficha>
+<mostrar>oferta</mostrar>

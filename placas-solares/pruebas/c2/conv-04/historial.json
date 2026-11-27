@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Lo primero es llevarlo a la junta: en un bloque la azotea es común y hace falta su acuerdo, con mayoría reducida, orientativamente un tercio. ¿Te reservo el estudio gratis por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares en la azotea del bloque\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada (Zaidín)\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Antes de instalar, la junta de vecinos tiene que dar su acuerdo; el estudio sirve para llevarlo a la junta.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>situaciones</mostrar>",
   "original": "Lo primero es llevarlo a la junta: en un bloque la azotea es común y hace falta su acuerdo, con mayoría reducida, orientativamente un tercio. ¿Te reservo el estudio gratis por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares en la azotea del bloque\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada (Zaidín)\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Antes de instalar, la junta de vecinos tiene que dar su acuerdo; el estudio sirve para llevarlo a la junta.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>situaciones</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "¿Y qué mayoría hace falta exactamente? ¿Puedo ponerlas solo para mí sin que me digan nada los vecinos?"
  }
 ]

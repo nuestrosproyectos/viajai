@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Un baño completo suele quedar entre tres mil y seis mil euros, de una a dos semanas. El precio exacto sale del presupuesto tras la visita de medición, gratis y de unos cuarenta y cinco minutos. ¿Quieres cambiar solo la bañera o el baño entero?\n<ficha>{\"obra\":\"reformar el baño\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Ver si basta con cambiar la bañera o hace falta reformar el baño entero; la visita de medición es gratis.\",\"fase\":\"orientando\"}</ficha>\n<mostrar>precios</mostrar>",
   "original": "Un baño completo suele quedar entre tres mil y seis mil euros, de una a dos semanas. El precio exacto sale del presupuesto tras la visita de medición, gratis y de unos cuarenta y cinco minutos. ¿Quieres cambiar solo la bañera o el baño entero?\n<ficha>{\"obra\":\"reformar el baño\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Ver si basta con cambiar la bañera o hace falta reformar el baño entero; la visita de medición es gratis.\",\"fase\":\"orientando\"}</ficha>\n<mostrar>precios</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Solo la bañera no, quiero quitarla y poner plato de ducha, y cambiar azulejos y lavabo también. Es un piso del 78, unos 5 m²"
  }
 ]
