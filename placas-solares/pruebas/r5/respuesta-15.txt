@@ -1,0 +1,3 @@
+Las garantías de placas, inversor, batería y mano de obra van por escrito en el presupuesto, con marca y años. Le reservo el estudio gratuito, y el presupuesto cerrado llega unos cinco días laborables después. ¿Le viene mejor por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Revisar las garantías por escrito en el presupuesto, tras el estudio gratuito.","fase":"proponiendo"}</ficha>
+<mostrar>garantia</mostrar>

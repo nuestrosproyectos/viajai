@@ -1,0 +1,2 @@
+Entiendo, si es el único inodoro es urgente. Muchas veces son toallitas u objetos, así que no eche sosa. En cuanto a Las Gabias, la zona la confirma el fontanero. ¿Le mando al fontanero ahora? Dígame su nombre y un teléfono.
+<ficha>{"averia":"Inodoro atascado, es el único de la casa","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"Las Gabias","direccion":"","franja":"","inicio":"","orientacion":"No eche sosa y pida la visita; la zona la confirma el fontanero.","fase":"proponiendo"}</ficha>

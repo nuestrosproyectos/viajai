@@ -1,0 +1,2 @@
+No toques nada, y si puedes sin riesgo corta la luz en el cuadro; aunque lo hagas, los paneles con sol siguen dando tensión. Si hay fuego, llama al 112, y después avisa a tu instaladora como urgente. ¿Me dices tu teléfono para llamarte ya?
+<ficha>{"que":"Revisar mi instalación","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"No tocar nada; cortar la luz en el cuadro si es seguro; avisar ya a tu instaladora como urgente.","fase":"entendiendo"}</ficha>

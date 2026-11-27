@@ -1,0 +1,2 @@
+No toques interruptores ni enchufes, no enciendas nada ni fumes. Abre ventanas, cierra la llave del gas si puedes, y sal de casa. Desde fuera llama a Nedgia, 900 750 750, o al 112.
+<ficha>{"averia":"Olor a gas en la cocina desde hace un rato, posible calentador","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"Desde hace un rato","orientacion":"Sal de casa y llama a Nedgia o al 112 desde fuera; aquí no hace falta cita de fontanería.","fase":"orientando"}</ficha>

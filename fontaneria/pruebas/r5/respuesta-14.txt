@@ -1,0 +1,2 @@
+Siento el mal trago. No puedo decir si es legal, pero tiene derecho a presupuesto por escrito antes de empezar y a factura detallada. Si no se lo dieron, pida hojas de reclamaciones, que toda empresa de Andalucía tiene.
+<ficha>{"averia":"Desatascador de urgencia cobró 480 euros por un váter","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"Ayer","orientacion":"Pide presupuesto y factura detallada por escrito; si no te los dieron, hojas de reclamaciones.","fase":"entendiendo"}</ficha>

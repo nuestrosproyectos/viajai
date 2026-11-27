@@ -1,0 +1,3 @@
+Siento lo del cuello. Esa cifra no te la puedo dar: se cuenta por días según la gravedad, más secuelas y gastos, y lo marca el informe médico. Te reservo la consulta gratis y el abogado te lo explica. ¿Por la mañana o por la tarde?
+
+<ficha>{"caso":"Accidente de tráfico; pregunta cuánto le van a dar","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"El abogado calcula la cuantía con el informe médico delante; no firmar nada que le ofrezcan.","fase":"proponiendo"}</ficha>

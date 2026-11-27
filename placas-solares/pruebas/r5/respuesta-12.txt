@@ -1,0 +1,2 @@
+No te preocupes. Si no tiene boletín, el certificado de instalación, ni registro en la Junta, no compensa; eso lo revisa el técnico, y su coste te lo confirma él. Te reservo la visita para revisarla. ¿Qué luces o códigos marca el inversor?
+<ficha>{"que":"Revisar mi instalación","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Ver si la instalación tiene boletín y registro; si no los tiene, no compensa.","fase":"orientando"}</ficha>

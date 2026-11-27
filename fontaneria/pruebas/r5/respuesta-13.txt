@@ -1,0 +1,2 @@
+No eches más, que la sosa quema y puede empeorar el atasco. No desmontes el sifón ni metas la mano. Un desatasco sencillo ronda los 70 a 150 €, y con máquina, desde 150 y puede pasar de 500. ¿Te reservo la visita?
+<ficha>{"averia":"Lavabo atascado, con sosa cáustica sin resultado","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No eches más sosa ni metas la mano en el sifón; pide la visita del fontanero.","fase":"proponiendo"}</ficha>

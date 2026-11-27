@@ -1,0 +1,2 @@
+Con un coche eléctrico, lo que más aprovecha las placas es cargar de día con sol. En Maracena las bonificaciones dependen de su ayuntamiento; lo confirma el técnico. Te reservo el estudio gratuito para verlo con tus facturas. ¿Cuánto pagas de luz al mes?
+<ficha>{"que":"Placas para cargar el coche eléctrico","lugar":"Casa","factura":"","tejado":"","consumo":"coche eléctrico","nombre":"","telefono":"","municipio":"Maracena","franja":"","inicio":"","orientacion":"Cargar de día con sol; el técnico lo estudia en la visita.","fase":"proponiendo"}</ficha>
