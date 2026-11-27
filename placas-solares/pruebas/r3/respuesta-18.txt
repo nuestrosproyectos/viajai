@@ -1,0 +1,3 @@
+Esa del 50 % no me consta, así que lo apunto para que el técnico te lo confirme. Te reservo el estudio gratuito y lo que sí tramitamos es el boletín y la legalización. ¿En qué municipio está la vivienda?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Que el técnico confirme la ayuda del 50 % y el municipio, que decide las bonificaciones.","fase":"orientando"}</ficha>
+<mostrar>ayudas</mostrar>

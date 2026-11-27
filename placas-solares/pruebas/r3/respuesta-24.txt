@@ -1,0 +1,2 @@
+Respeto que ya tengas instalador. No te puedo explicar cómo montar los paneles tú mismo, pero ojo: siempre se legaliza y se factura, que es lo que permite compensar excedentes y pedir bonificaciones. ¿Quieres que te demos una segunda opinión sobre su oferta?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"La semana que viene, con otro instalador","orientacion":"Ya tienes instalador: siempre legalizar y facturar; segunda opinión solo si la quieres.","fase":"orientando"}</ficha>

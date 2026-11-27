@@ -1,0 +1,3 @@
+No puedo darle un ahorro exacto sin ver sus facturas. Depende sobre todo de cuánta luz gasta de día y de cómo se compensan los excedentes. ¿Le reservo el estudio gratuito, por la mañana o por la tarde?
+<ficha>{"que":"Placas solares (4 placas)","lugar":"","factura":"unos 90 € al mes","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Visita técnica gratuita para calcular el ahorro con sus facturas.","fase":"proponiendo"}</ficha>
+<mostrar>orientativos</mostrar>

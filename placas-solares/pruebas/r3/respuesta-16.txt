@@ -1,0 +1,3 @@
+No juzgo ese presupuesto sin verlo. Lo habitual es de mil a mil quinientos euros por kWp. Con batería, para unos cinco kWp, entre siete mil y nueve mil quinientos o más. ¿Te reservo el estudio gratuito, por la mañana o por la tarde?
+<ficha>{"que":"Placas con batería","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Pedir el presupuesto por escrito y compararlo con el estudio gratuito.","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>

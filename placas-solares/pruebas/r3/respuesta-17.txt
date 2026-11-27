@@ -1,0 +1,3 @@
+Con cámaras que gastan de noche, lo que más cuenta es cuánta luz gasta de día. La deducción de la Renta por autoconsumo no vale para negocios, así que no contaría con ella. ¿Te reservo el estudio gratuito, por la mañana o por la tarde?
+<ficha>{"que":"Placas solares para el bar","lugar":"Negocio o nave","factura":"","tejado":"","consumo":"Cámaras frigoríficas (mucha luz)","nombre":"","telefono":"","municipio":"Motril","franja":"","inicio":"","orientacion":"Estudio gratuito con tus facturas para ver si te sale a cuenta.","fase":"orientando"}</ficha>
+<mostrar>ayudas</mostrar>

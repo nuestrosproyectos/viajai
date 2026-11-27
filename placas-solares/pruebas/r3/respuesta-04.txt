@@ -1,0 +1,3 @@
+En el Zaidín, si el edificio no está catalogado, basta una declaración responsable, un trámite sencillo que hace la instaladora. Te reservo el estudio gratuito y el técnico lo confirma allí. ¿Vive en casa o en un bloque con cubierta común?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"Granada, barrio del Zaidín","franja":"","inicio":"","orientacion":"Comprobar si el edificio está catalogado; si no lo está, declaración responsable que tramita la instaladora","fase":"proponiendo"}</ficha>
+<mostrar>permisos</mostrar>

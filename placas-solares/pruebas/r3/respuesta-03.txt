@@ -1,0 +1,3 @@
+En Granada, cada kilovatio de placas produce unos mil cuatrocientos a mil setecientos kilovatios hora al año, la energía que marca la factura, según orientación y sombras. Te reservo el estudio gratuito y con tu factura lo calculamos. ¿Cuánto pagas de luz al mes?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"Granada","franja":"","inicio":"","orientacion":"Calcular la producción con su factura en el estudio gratuito","fase":"proponiendo"}</ficha>
+<mostrar>orientativos</mostrar>

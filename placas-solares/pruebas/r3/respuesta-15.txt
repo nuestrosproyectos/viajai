@@ -1,0 +1,3 @@
+Buenos días. Las garantías de placas, inversor y mano de obra van por escrito en el presupuesto, con marca y años. La de producción la confirma el técnico, lo apunto. ¿Le reservo la visita gratuita por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Pida el presupuesto por escrito con garantías, marca y años.","fase":"orientando"}</ficha>
+<mostrar>garantia</mostrar>

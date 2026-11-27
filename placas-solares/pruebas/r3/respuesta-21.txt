@@ -1,0 +1,3 @@
+Siento el disgusto, y podemos revisar la instalación y que te llamen. El precio de la revisión te lo confirma el técnico. ¿Qué luces o códigos marca el inversor?
+<ficha>{"que":"Revisar mi instalación","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Revisar la instalación que no produce; mirar las luces o códigos del inversor y si firmaste el contrato de compensación.","fase":"entendiendo"}</ficha>
+<mostrar>llamada</mostrar>

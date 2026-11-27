@@ -1,0 +1,3 @@
+Hay una bonificación del cincuenta por ciento del IBI para viviendas con instalación voluntaria; hay que pedirla y tener el IBI domiciliado y al corriente. El plazo lo confirma el técnico. ¿Te reservo el estudio gratuito, por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"Granada capital","franja":"","inicio":"","orientacion":"Pedir la bonificación del IBI con el recibo domiciliado y al corriente, si la casa no es de obra nueva","fase":"proponiendo"}</ficha>
+<mostrar>ayudas</mostrar>

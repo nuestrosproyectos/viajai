@@ -1,0 +1,3 @@
+Los años que duran los confirma el técnico, y el mantenimiento suele ser poco y sencillo. Las garantías de placas, inversor, batería y mano de obra van por escrito en el presupuesto. ¿Te reservo el estudio, por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Pide por escrito la duración, el mantenimiento y las garantías en el presupuesto.","fase":"entendiendo"}</ficha>
+<mostrar>garantia</mostrar>

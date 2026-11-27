@@ -1,0 +1,3 @@
+No puedo garantizarte un plazo por escrito. Lo más habitual es que se pague sola en unos 6 a 10 años, y es una estimación. El presupuesto cerrado trae el ahorro estimado; ¿te reservo el estudio, por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Pide el presupuesto cerrado por escrito con el ahorro estimado, y lo verás en el estudio.","fase":"orientando"}</ficha>
+<mostrar>orientativos</mostrar>

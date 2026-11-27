@@ -1,0 +1,2 @@
+De paellas y ligas no entro, lo mío son las placas solares en Granada. ¿Te interesan para casa, comunidad o negocio?
+<ficha>{"que":"","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"","fase":"entendiendo"}</ficha>

@@ -1,0 +1,3 @@
+Lo primero es mirar tu factura de la luz, porque con ella sale el tamaño de las placas. Te reservo el estudio gratuito con visita técnica, sin compromiso. ¿Cuánto pagas de luz al mes?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"Armilla","franja":"","inicio":"","orientacion":"Mirar la factura de la luz y reservar el estudio gratuito","fase":"proponiendo"}</ficha>
+<mostrar>preparar</mostrar>
