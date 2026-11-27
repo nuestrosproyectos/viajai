@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Gracias, Manuel. Como es un hermano, el impuesto sí se paga, y tiene seis meses desde el fallecimiento. ¿En qué municipio vives, y prefieres el despacho, la videollamada o el teléfono, por la mañana o por la tarde?\n<ficha>{\"situacion\":\"Herencia de tu hermano, con un préstamo, posibles tarjetas y una furgoneta\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"No lo sé\",\"bienes\":\"Una furgoneta\",\"nombre\":\"Manuel\",\"telefono\":\"622 555 444\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"hace un mes\",\"modalidad\":\"\",\"orientacion\":\"Valorar la aceptación a beneficio de inventario, que solo responde hasta donde llega la herencia, frente a aceptar a secas o renunciar.\",\"porDecir\":\"no toques cuentas ni bienes hasta hablar con el abogado, porque sacar dinero puede contar como aceptar · renunciar es ante notario e irrevocable\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Manuel. Como es un hermano, el impuesto sí se paga, y tiene seis meses desde el fallecimiento. ¿En qué municipio vives, y prefieres el despacho, la videollamada o el teléfono, por la mañana o por la tarde?\n<ficha>{\"situacion\":\"Herencia de tu hermano, con un préstamo, posibles tarjetas y una furgoneta\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"No lo sé\",\"bienes\":\"Una furgoneta\",\"nombre\":\"Manuel\",\"telefono\":\"622 555 444\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"hace un mes\",\"modalidad\":\"\",\"orientacion\":\"Valorar la aceptación a beneficio de inventario, que solo responde hasta donde llega la herencia, frente a aceptar a secas o renunciar.\",\"porDecir\":\"no toques cuentas ni bienes hasta hablar con el abogado, porque sacar dinero puede contar como aceptar · renunciar es ante notario e irrevocable\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "En Guadix. Mejor por videollamada y por la tarde"
  }
 ]
