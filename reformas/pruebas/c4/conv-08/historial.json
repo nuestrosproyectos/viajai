@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Unos 30 metros. Mi cuñado y yo ya lo habíamos hablado, ¿tan peligroso es de verdad?"
+ },
+ {
+  "role": "assistant",
+  "content": "Sí, puede serlo: si se rompe o se corta, puede soltar fibras de amianto, que no se deben respirar. Por eso no la rompas ni la barras, y la retira una empresa inscrita, con plan de trabajo aprobado. ¿Te reservo la visita?\n<ficha>{\"obra\":\"quitar el tejado de uralita de la cochera\",\"vivienda\":\"\",\"metros\":\"unos 30 metros\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"este fin de semana\",\"orientacion\":\"No quitar la uralita por cuenta propia: puede tener amianto; la retira una empresa inscrita en el registro oficial, con plan de trabajo aprobado.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Sí, puede serlo: si se rompe o se corta, puede soltar fibras de amianto, que no se deben respirar. Por eso no la rompas ni la barras, y la retira una empresa inscrita, con plan de trabajo aprobado. ¿Te reservo la visita?\n<ficha>{\"obra\":\"quitar el tejado de uralita de la cochera\",\"vivienda\":\"\",\"metros\":\"unos 30 metros\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"este fin de semana\",\"orientacion\":\"No quitar la uralita por cuenta propia: puede tener amianto; la retira una empresa inscrita en el registro oficial, con plan de trabajo aprobado.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]
