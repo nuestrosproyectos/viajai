@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "600 909 303"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Pedro, ya tengo el teléfono. Y tú, comunica el accidente a tu aseguradora en siete días. ¿En qué municipio vives?\n<ficha>{\"caso\":\"Accidente por saltarse un ceda; iba de pasajera su mujer\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Pedro\",\"telefono\":\"600 909 303\",\"municipio\":\"\",\"franja\":\"Por la tarde, por videollamada\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que tu mujer vea un médico hoy; avisa a tu aseguradora en siete días y guarda el parte amistoso y las fotos.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Pedro, ya tengo el teléfono. Y tú, comunica el accidente a tu aseguradora en siete días. ¿En qué municipio vives?\n<ficha>{\"caso\":\"Accidente por saltarse un ceda; iba de pasajera su mujer\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Pedro\",\"telefono\":\"600 909 303\",\"municipio\":\"\",\"franja\":\"Por la tarde, por videollamada\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que tu mujer vea un médico hoy; avisa a tu aseguradora en siete días y guarda el parte amistoso y las fotos.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

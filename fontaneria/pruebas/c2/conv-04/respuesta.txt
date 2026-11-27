@@ -1,2 +1,0 @@
-Gracias, Paco, ya tengo el teléfono. Con cuatro en casa, la capacidad del termo la confirma el fontanero al verlo. ¿En qué municipio y barrio está la vivienda?
-<ficha>{"averia":"cambio de termo eléctrico; viven 4 en casa","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Paco","telefono":"699 101 202","municipio":"","direccion":"","franja":"Cualquier mañana","inicio":"","orientacion":"Pide el presupuesto desglosado por escrito antes de empezar.","fase":"datos"}</ficha>

@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "677 450 990"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Ana, ya tengo el teléfono. ¿En qué municipio y barrio vives?\n<ficha>{\"averia\":\"en el bajo, agua sucia por el plato de ducha cuando tiran de la cisterna de arriba\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Ana\",\"telefono\":\"677 450 990\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Avisa al administrador; el fontanero con cámara hará un informe para decidir quién paga.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Ana, ya tengo el teléfono. ¿En qué municipio y barrio vives?\n<ficha>{\"averia\":\"en el bajo, agua sucia por el plato de ducha cuando tiran de la cisterna de arriba\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Ana\",\"telefono\":\"677 450 990\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Avisa al administrador; el fontanero con cámara hará un informe para decidir quién paga.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

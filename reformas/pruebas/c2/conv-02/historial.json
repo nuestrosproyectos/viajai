@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "678 112 443"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Antonio, lo tengo apuntado. Para preparar bien la visita, ¿qué quieres reformar exactamente?\n<ficha>{\"obra\":\"\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Por la mañana\",\"inicio\":\"\",\"orientacion\":\"Pedir el presupuesto por escrito, por partidas, y no pagar todo por adelantado; la visita de medición es gratis.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Antonio, lo tengo apuntado. Para preparar bien la visita, ¿qué quieres reformar exactamente?\n<ficha>{\"obra\":\"\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Por la mañana\",\"inicio\":\"\",\"orientacion\":\"Pedir el presupuesto por escrito, por partidas, y no pagar todo por adelantado; la visita de medición es gratis.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "699 450 212"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Carmen, anotado. En Maracena, que tiene su propia ordenanza, el técnico le confirma los trámites y el impuesto de obras, porque no son los de Granada capital. Para la visita, ¿en qué calle y número vive su padre?\n<ficha>{\"obra\":\"Cambiar la bañera por plato de ducha, para su padre, que ya no puede entrar en la bañera\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Carmen\",\"telefono\":\"699 450 212\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"Por la mañana, a primera hora\",\"inicio\":\"Cuanto antes\",\"orientacion\":\"Cambiar la bañera por plato de ducha cuanto antes; si va a ras de suelo, el precio sube algo.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Carmen, anotado. En Maracena, que tiene su propia ordenanza, el técnico le confirma los trámites y el impuesto de obras, porque no son los de Granada capital. Para la visita, ¿en qué calle y número vive su padre?\n<ficha>{\"obra\":\"Cambiar la bañera por plato de ducha, para su padre, que ya no puede entrar en la bañera\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Carmen\",\"telefono\":\"699 450 212\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"Por la mañana, a primera hora\",\"inicio\":\"Cuanto antes\",\"orientacion\":\"Cambiar la bañera por plato de ducha cuanto antes; si va a ras de suelo, el precio sube algo.\",\"fase\":\"datos\"}</ficha>"
  }
 ]
