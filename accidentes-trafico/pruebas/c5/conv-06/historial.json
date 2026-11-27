@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Puedes quedarte con el abogado de tu seguro, y eso se respeta. Nosotros te damos una segunda opinión en la consulta gratis, sin compromiso, para que decidas con calma. ¿Te reservo la consulta?\n<ficha>{\"caso\":\"\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"Sí, el seguro le ofrece un abogado\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Puede quedarse con el abogado de su seguro o pedir una segunda opinión en la consulta gratis\",\"fase\":\"orientando\"}</ficha>",
   "original": "Puedes quedarte con el abogado de tu seguro, y eso se respeta. Nosotros te damos una segunda opinión en la consulta gratis, sin compromiso, para que decidas con calma. ¿Te reservo la consulta?\n<ficha>{\"caso\":\"\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"Sí, el seguro le ofrece un abogado\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Puede quedarse con el abogado de su seguro o pedir una segunda opinión en la consulta gratis\",\"fase\":\"orientando\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Ya, pero no me fío mucho de que el abogado del seguro mire por mí. ¿En qué os diferenciáis?"
  }
 ]

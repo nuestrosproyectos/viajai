@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Siento lo de la clavícula. Lo primero es que vayas a urgencias ya, y guarda las fotos de la bici y del coche. Te reservo la consulta gratis con el abogado. ¿Hubo testigos o atestado de la policía?\n<ficha>{\"caso\":\"Iba en bici y un coche te cerró al girar\",\"como\":\"En bici o patinete\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Ir a urgencias ya y guardar fotos de la bici y del coche\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Siento lo de la clavícula. Lo primero es que vayas a urgencias ya, y guarda las fotos de la bici y del coche. Te reservo la consulta gratis con el abogado. ¿Hubo testigos o atestado de la policía?\n<ficha>{\"caso\":\"Iba en bici y un coche te cerró al girar\",\"como\":\"En bici o patinete\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Ir a urgencias ya y guardar fotos de la bici y del coche\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, vino la Policía Local, hay atestado y un testigo. Fui a urgencias en ambulancia. El conductor dice que fue culpa mía, ¿tengo que pagar yo la bici?"
  }
 ]

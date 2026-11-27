@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Siento lo del atropello. Eso no te lo puedo decir yo: el plazo de un año suele contarse desde el alta, con interrupciones, y lo mira el abogado. Te reservo la consulta gratis para mirarlo cuanto antes. ¿Recuerdas cuándo te dieron el alta?\n<ficha>{\"caso\":\"Atropello en un paso de cebra\",\"como\":\"Andando\",\"fecha\":\"hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Mirar cuanto antes el plazo de un año, que suele contarse desde el alta\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Siento lo del atropello. Eso no te lo puedo decir yo: el plazo de un año suele contarse desde el alta, con interrupciones, y lo mira el abogado. Te reservo la consulta gratis para mirarlo cuanto antes. ¿Recuerdas cuándo te dieron el alta?\n<ficha>{\"caso\":\"Atropello en un paso de cebra\",\"como\":\"Andando\",\"fecha\":\"hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Mirar cuanto antes el plazo de un año, que suele contarse desde el alta\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Es que no tengo claro lo del alta, creo que hace unos 7 meses. Y el que me atropelló se fue, no sé quién era. ¿Aun así se puede hacer algo?"
  }
 ]

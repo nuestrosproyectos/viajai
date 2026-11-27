@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Siento lo de tu cuello. Lo primero es que te vea un médico hoy y quede por escrito. Y tienes siete días para dar parte a tu aseguradora. ¿Te reservo la consulta gratis de media hora con el abogado?\n<ficha>{\"caso\":\"Golpe por detrás\",\"como\":\"\",\"fecha\":\"hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico hoy y avisar a tu aseguradora en siete días\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Siento lo de tu cuello. Lo primero es que te vea un médico hoy y quede por escrito. Y tienes siete días para dar parte a tu aseguradora. ¿Te reservo la consulta gratis de media hora con el abogado?\n<ficha>{\"caso\":\"Golpe por detrás\",\"como\":\"\",\"fecha\":\"hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico hoy y avisar a tu aseguradora en siete días\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Aún no he ido, pensé que se me pasaría. Antes de nada, ¿el abogado cuánto cobra? Es que no quiero meterme en gastos"
  }
 ]
