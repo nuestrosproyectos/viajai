@@ -1,0 +1,3 @@
+Entiendo la preocupación; lo primero es la seguridad de su padre. Cambiar la bañera por un plato de ducha suele quedar entre mil y dos mil trescientos euros, y le reservo la visita de medición, gratis, para concretarlo. ¿Es un piso o una casa?
+<ficha>{"obra":"Adaptar el baño de su padre: ya no puede entrar en la bañera","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"Maracena","direccion":"","franja":"","inicio":"","orientacion":"Cambiar la bañera por un plato de ducha es la prioridad por seguridad; suele costar entre mil y dos mil trescientos euros.","porDecir":"el precio sube si el plato va a ras de suelo o con mampara a medida","fase":"proponiendo"}</ficha>
+<mostrar>formulario</mostrar>
