@@ -52,5 +52,9 @@
   "role": "assistant",
   "content": "Perfecto, Nuria. Lo apunto: teléfono seis nueve nueve, dos cero dos, cinco uno cinco; visita en la calle Real de Armilla veintidós, por la tarde. ¿Está todo bien?\n<ficha>{\"obra\":\"reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros\",\"vivienda\":\"\",\"metros\":\"90 metros\",\"antiguedad\":\"años 80\",\"presupuesto\":\"\",\"nombre\":\"Nuria\",\"telefono\":\"699 202 515\",\"municipio\":\"Armilla\",\"direccion\":\"Calle Real de Armilla 22\",\"franja\":\"tarde\",\"inicio\":\"\",\"orientacion\":\"Sin tirar muros, el técnico confirma en Armilla qué trámite hace falta; la electricidad la hace una empresa habilitada con boletín.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Nuria. Lo apunto: teléfono seis nueve nueve, dos cero dos, cinco uno cinco; visita en la calle Real de Armilla veintidós, por la tarde. ¿Está todo bien?\n<ficha>{\"obra\":\"reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros\",\"vivienda\":\"\",\"metros\":\"90 metros\",\"antiguedad\":\"años 80\",\"presupuesto\":\"\",\"nombre\":\"Nuria\",\"telefono\":\"699 202 515\",\"municipio\":\"Armilla\",\"direccion\":\"Calle Real de Armilla 22\",\"franja\":\"tarde\",\"inicio\":\"\",\"orientacion\":\"Sin tirar muros, el técnico confirma en Armilla qué trámite hace falta; la electricidad la hace una empresa habilitada con boletín.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien"
  }
 ]

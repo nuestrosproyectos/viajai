@@ -52,5 +52,9 @@
   "role": "assistant",
   "content": "Perfecto, Lucía. Lo apunto: teléfono seis uno uno, nueve cero ocho, siete siete cuatro; visita en la calle San Antón treinta, en el centro de Granada, cualquier tarde. ¿Está todo bien?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"Piso sin ascensor\",\"metros\":\"\",\"antiguedad\":\"edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"Lucía\",\"telefono\":\"611 908 774\",\"municipio\":\"Granada, centro\",\"direccion\":\"Calle San Antón 30\",\"franja\":\"tarde\",\"inicio\":\"\",\"orientacion\":\"Tirar el tabique no tiene precio fijo sin verlo; el técnico comprueba si es de carga, y en el centro lo más probable es licencia y técnico.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Lucía. Lo apunto: teléfono seis uno uno, nueve cero ocho, siete siete cuatro; visita en la calle San Antón treinta, en el centro de Granada, cualquier tarde. ¿Está todo bien?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"Piso sin ascensor\",\"metros\":\"\",\"antiguedad\":\"edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"Lucía\",\"telefono\":\"611 908 774\",\"municipio\":\"Granada, centro\",\"direccion\":\"Calle San Antón 30\",\"franja\":\"tarde\",\"inicio\":\"\",\"orientacion\":\"Tirar el tabique no tiene precio fijo sin verlo; el técnico comprueba si es de carga, y en el centro lo más probable es licencia y técnico.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo correcto"
  }
 ]
