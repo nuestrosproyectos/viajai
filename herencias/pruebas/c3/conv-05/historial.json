@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Perfecto, Rosa. Te apunto el teléfono seis tres tres, ocho ocho ocho, uno uno uno; municipio Loja, y la consulta por teléfono por la tarde. ¿Está todo bien?\n<ficha>{\"situacion\":\"reparto de la casa del pueblo entre cuatro hermanos; hay testamento a partes iguales y uno no quiere firmar\",\"parentesco\":\"\",\"testamento\":\"Sí\",\"bienes\":\"la casa del pueblo, en Loja\",\"nombre\":\"Rosa\",\"telefono\":\"633 888 111\",\"municipio\":\"Loja\",\"franja\":\"por teléfono, por la tarde\",\"fallecimiento\":\"\",\"modalidad\":\"Por teléfono\",\"orientacion\":\"El impuesto ya está pagado; primero negociar, y si no hay acuerdo, el notario puede nombrar un contador-partidor que reparta aunque uno no firme.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Rosa. Te apunto el teléfono seis tres tres, ocho ocho ocho, uno uno uno; municipio Loja, y la consulta por teléfono por la tarde. ¿Está todo bien?\n<ficha>{\"situacion\":\"reparto de la casa del pueblo entre cuatro hermanos; hay testamento a partes iguales y uno no quiere firmar\",\"parentesco\":\"\",\"testamento\":\"Sí\",\"bienes\":\"la casa del pueblo, en Loja\",\"nombre\":\"Rosa\",\"telefono\":\"633 888 111\",\"municipio\":\"Loja\",\"franja\":\"por teléfono, por la tarde\",\"fallecimiento\":\"\",\"modalidad\":\"Por teléfono\",\"orientacion\":\"El impuesto ya está pagado; primero negociar, y si no hay acuerdo, el notario puede nombrar un contador-partidor que reparta aunque uno no firme.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, está bien. Gracias"
  }
 ]

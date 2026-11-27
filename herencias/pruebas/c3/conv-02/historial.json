@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Perfecto, Álvaro. Te apunto el teléfono seis cuatro cuatro, tres tres tres, siete siete siete; municipio Motril, y la consulta por teléfono por la mañana. Recuerda también que la plusvalía de la casa corre seis meses. ¿Está todo bien?\n<ficha>{\"situacion\":\"herencia de tu tía, que te ha dejado su casa en el testamento\",\"parentesco\":\"Sobrino o sobrina\",\"testamento\":\"Sí\",\"bienes\":\"una casa, que vale unos 90.000 €\",\"nombre\":\"Álvaro\",\"telefono\":\"644 333 777\",\"municipio\":\"Motril\",\"franja\":\"por teléfono, por la mañana\",\"fallecimiento\":\"hace dos meses, en Motril\",\"modalidad\":\"Por teléfono\",\"orientacion\":\"Entre sobrinos sí se paga el impuesto de sucesiones; con una casa de 90.000 € el abogado te dice la cifra exacta con el valor real.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Álvaro. Te apunto el teléfono seis cuatro cuatro, tres tres tres, siete siete siete; municipio Motril, y la consulta por teléfono por la mañana. Recuerda también que la plusvalía de la casa corre seis meses. ¿Está todo bien?\n<ficha>{\"situacion\":\"herencia de tu tía, que te ha dejado su casa en el testamento\",\"parentesco\":\"Sobrino o sobrina\",\"testamento\":\"Sí\",\"bienes\":\"una casa, que vale unos 90.000 €\",\"nombre\":\"Álvaro\",\"telefono\":\"644 333 777\",\"municipio\":\"Motril\",\"franja\":\"por teléfono, por la mañana\",\"fallecimiento\":\"hace dos meses, en Motril\",\"modalidad\":\"Por teléfono\",\"orientacion\":\"Entre sobrinos sí se paga el impuesto de sucesiones; con una casa de 90.000 € el abogado te dice la cifra exacta con el valor real.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, está todo bien"
  }
 ]

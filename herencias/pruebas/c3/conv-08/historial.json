@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Perfecto, Dolores. Le apunto el teléfono nueve cinco ocho, siete cero cero, uno dos tres; municipio Baza, y la consulta por teléfono por la mañana. ¿Está todo bien?\n<ficha>{\"situacion\":\"herencia de su marido, con testamento hecho entre los dos; la cuenta era de los dos y el banco ha bloqueado la parte de él\",\"parentesco\":\"Cónyuge o viudo/a\",\"testamento\":\"Sí\",\"bienes\":\"una cuenta compartida; el banco ha bloqueado la parte de su marido\",\"nombre\":\"Dolores\",\"telefono\":\"958 700 123\",\"municipio\":\"Baza\",\"franja\":\"por teléfono, por la mañana\",\"fallecimiento\":\"hace dos meses\",\"modalidad\":\"Por teléfono\",\"orientacion\":\"Como cónyuge, lo más probable es que pague cero o casi nada de impuesto, aunque hay que presentarlo en seis meses; el banco libera la parte bloqueada al presentar tres papeles.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Dolores. Le apunto el teléfono nueve cinco ocho, siete cero cero, uno dos tres; municipio Baza, y la consulta por teléfono por la mañana. ¿Está todo bien?\n<ficha>{\"situacion\":\"herencia de su marido, con testamento hecho entre los dos; la cuenta era de los dos y el banco ha bloqueado la parte de él\",\"parentesco\":\"Cónyuge o viudo/a\",\"testamento\":\"Sí\",\"bienes\":\"una cuenta compartida; el banco ha bloqueado la parte de su marido\",\"nombre\":\"Dolores\",\"telefono\":\"958 700 123\",\"municipio\":\"Baza\",\"franja\":\"por teléfono, por la mañana\",\"fallecimiento\":\"hace dos meses\",\"modalidad\":\"Por teléfono\",\"orientacion\":\"Como cónyuge, lo más probable es que pague cero o casi nada de impuesto, aunque hay que presentarlo en seis meses; el banco libera la parte bloqueada al presentar tres papeles.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, está todo bien, muchas gracias"
  }
 ]
