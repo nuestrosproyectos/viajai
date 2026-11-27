@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Quiero cambiar las ventanas de casa por unas que aíslen. ¿Me desgrava algo en la renta?"
+ },
+ {
+  "role": "assistant",
+  "content": "Sí, deducción del veinte o del cuarenta por ciento, con certificados de antes y después hechos por un técnico. En tu vivienda, el de después tiene que estar antes del uno de enero de dos mil veintisiete, y te reservo la visita. ¿Cuándo querrías empezar?\n<ficha>{\"obra\":\"cambiar las ventanas por unas que aíslen\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Deducción del 20 % o del 40 % en la renta con certificados energéticos de antes y después; el de después, antes del 1 de enero de 2027.\",\"porDecir\":\"No consta prórroga de ese plazo de 2027; lo confirma el gestor · Si las ventanas cambian la fachada, hace falta acuerdo de la comunidad\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Sí, deducción del veinte o del cuarenta por ciento, con certificados de antes y después hechos por un técnico. En tu vivienda, el de después tiene que estar antes del uno de enero de dos mil veintisiete, y te reservo la visita. ¿Cuándo querrías empezar?\n<ficha>{\"obra\":\"cambiar las ventanas por unas que aíslen\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Deducción del 20 % o del 40 % en la renta con certificados energéticos de antes y después; el de después, antes del 1 de enero de 2027.\",\"porDecir\":\"No consta prórroga de ese plazo de 2027; lo confirma el gestor · Si las ventanas cambian la fachada, hace falta acuerdo de la comunidad\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

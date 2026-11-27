@@ -1,2 +1,0 @@
-La visita de medición es gratis y sin compromiso, unos cuarenta y cinco minutos. El presupuesto llega después por escrito, por partidas, es decir, cada cosa con su precio, y nada se hace sin tu firma. Te puedo reservar la visita. ¿Qué estancia quieres reformar?
-<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Reservar la visita de medición, que es gratis; el presupuesto llega por escrito y por partidas.","porDecir":"","fase":"proponiendo"}</ficha>
