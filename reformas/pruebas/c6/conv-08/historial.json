@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "Sí, todo correcto."
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Antonio. Queda enviada la solicitud: le llamamos para confirmar el día y la hora de la visita, por la tarde, y el presupuesto por escrito llega unos cinco días laborables después. ¿Necesita algo más?\n<ficha>{\"obra\":\"Quitar el tejado de uralita de la cochera y poner otro\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"655 909 341\",\"municipio\":\"Atarfe\",\"direccion\":\"Calle Granada 8\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"No quitar la uralita uno mismo: puede tener amianto, y solo la retira una empresa inscrita.\",\"porDecir\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Antonio. Queda enviada la solicitud: le llamamos para confirmar el día y la hora de la visita, por la tarde, y el presupuesto por escrito llega unos cinco días laborables después. ¿Necesita algo más?\n<ficha>{\"obra\":\"Quitar el tejado de uralita de la cochera y poner otro\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"655 909 341\",\"municipio\":\"Atarfe\",\"direccion\":\"Calle Granada 8\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"No quitar la uralita uno mismo: puede tener amianto, y solo la retira una empresa inscrita.\",\"porDecir\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"obra\":\"Quitar el tejado de uralita de la cochera y poner otro\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"655 909 341\",\"municipio\":\"Atarfe\",\"direccion\":\"Calle Granada 8\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"urgente\":false,\"notas\":\"Tejado de uralita en la cochera. Quería quitarlo uno mismo este fin de semana y preguntó qué poner en su lugar. No sabía lo del amianto; quiere que vayan a verlo antes de tocar nada.\"}</aviso>"
  }
 ]

@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "En Las Gabias, calle Real 22. Por la mañana."
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Antonio. Le confirmo: teléfono seis siete ocho, uno uno dos, cuatro cuatro tres; cocina entera en la calle Real veintidós de Las Gabias, por la mañana. Como es un pueblo, su ayuntamiento tiene sus propios importes de permiso. ¿Está todo bien?\n<ficha>{\"obra\":\"cocina entera\",\"vivienda\":\"\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"Las Gabias\",\"direccion\":\"calle Real 22\",\"franja\":\"Por la mañana\",\"inicio\":\"\",\"orientacion\":\"Una cocina suele quedar entre seis mil y diez mil euros, según los muebles y si se mueven fregadero o campana.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Antonio. Le confirmo: teléfono seis siete ocho, uno uno dos, cuatro cuatro tres; cocina entera en la calle Real veintidós de Las Gabias, por la mañana. Como es un pueblo, su ayuntamiento tiene sus propios importes de permiso. ¿Está todo bien?\n<ficha>{\"obra\":\"cocina entera\",\"vivienda\":\"\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"Las Gabias\",\"direccion\":\"calle Real 22\",\"franja\":\"Por la mañana\",\"inicio\":\"\",\"orientacion\":\"Una cocina suele quedar entre seis mil y diez mil euros, según los muebles y si se mueven fregadero o campana.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

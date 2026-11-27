@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "Javier, 622 410 870"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Javier. ¿En qué municipio, barrio y calle con número está la cocina, y te viene mejor por la mañana o por la tarde?\n<ficha>{\"obra\":\"Cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"Unos 9 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Javier\",\"telefono\":\"622 410 870\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Muchas cocinas completas están entre seis mil y diez mil euros; mover el fregadero lo encarece, y el precio exacto sale de la visita de medición.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Javier. ¿En qué municipio, barrio y calle con número está la cocina, y te viene mejor por la mañana o por la tarde?\n<ficha>{\"obra\":\"Cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"Unos 9 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Javier\",\"telefono\":\"622 410 870\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Muchas cocinas completas están entre seis mil y diez mil euros; mover el fregadero lo encarece, y el precio exacto sale de la visita de medición.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

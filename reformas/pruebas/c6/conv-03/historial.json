@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "Lucía, 611 908 774"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Lucía. ¿Qué número tiene en la calle San Antón, y te viene mejor por la mañana o por la tarde?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"Edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"Lucía\",\"telefono\":\"611 908 774\",\"municipio\":\"Granada\",\"direccion\":\"Calle San Antón, 5º\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Tirar un tabique no tiene precio fijo; el técnico lo ve en la visita y, si es de carga, hace falta proyecto y licencia.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Lucía. ¿Qué número tiene en la calle San Antón, y te viene mejor por la mañana o por la tarde?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"Edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"Lucía\",\"telefono\":\"611 908 774\",\"municipio\":\"Granada\",\"direccion\":\"Calle San Antón, 5º\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Tirar un tabique no tiene precio fijo; el técnico lo ve en la visita y, si es de carga, hace falta proyecto y licencia.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

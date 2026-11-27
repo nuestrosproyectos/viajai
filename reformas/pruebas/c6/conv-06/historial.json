@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "Nuria, 699 202 515"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Nuria. ¿En qué calle y número de Armilla está el piso, y te viene mejor por la mañana o por la tarde?\n<ficha>{\"obra\":\"Reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros\",\"vivienda\":\"\",\"metros\":\"90 metros\",\"antiguedad\":\"Años 80\",\"presupuesto\":\"\",\"nombre\":\"Nuria\",\"telefono\":\"699 202 515\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"La electricidad la hace una empresa habilitada, que emite el boletín; el permiso en Armilla lo aclara el técnico en la visita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Nuria. ¿En qué calle y número de Armilla está el piso, y te viene mejor por la mañana o por la tarde?\n<ficha>{\"obra\":\"Reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros\",\"vivienda\":\"\",\"metros\":\"90 metros\",\"antiguedad\":\"Años 80\",\"presupuesto\":\"\",\"nombre\":\"Nuria\",\"telefono\":\"699 202 515\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"La electricidad la hace una empresa habilitada, que emite el boletín; el permiso en Armilla lo aclara el técnico en la visita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]
