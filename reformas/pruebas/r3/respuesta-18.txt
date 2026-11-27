@@ -1,0 +1,2 @@
+Ahora mismo no me consta ninguna ayuda abierta para reformar un baño, y no quiero darte un dato falso. Eso lo confirma el técnico en la visita gratis; lo apunto para que te lo confirme. ¿Te reservo la visita, por la mañana o por la tarde?
+<ficha>{"obra":"cambiar bañera por plato de ducha","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Ayuda mencionada sin confirmar; el técnico la comprueba en la visita","fase":"proponiendo"}</ficha>

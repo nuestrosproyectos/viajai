@@ -1,0 +1,2 @@
+Primero, no enciendas ni apagues nada ni uses el móvil dentro. Cierra la llave del gas, sal y llama desde fuera a urgencias de la compañía o al 112. La reforma la vemos después. ¿Ya estás fuera de casa?
+<ficha>{"obra":"reforma de cocina","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Salir de la cocina y llamar desde fuera a urgencias de la compañía o al 112 por el olor a gas","fase":"entendiendo"}</ficha>

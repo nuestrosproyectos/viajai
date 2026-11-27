@@ -1,0 +1,2 @@
+No recomendamos marcas concretas: en la visita gratis el técnico explica opciones y materiales, y la mampara la eliges tú. Quitar la bañera y poner plato suele quedar entre unos mil y dos mil trescientos euros. ¿Te reservo la visita, por la mañana o por la tarde?
+<ficha>{"obra":"cambiar bañera por plato de ducha","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Elegir plato y mampara con el técnico en la visita; no se recomiendan marcas","fase":"proponiendo"}</ficha>

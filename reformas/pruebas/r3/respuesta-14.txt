@@ -1,0 +1,3 @@
+Entiendo el miedo a que se repita. Ningún resultado se promete sin mirar la causa, y eso lo ve el técnico en la visita. Lo que sí damos es el presupuesto firmado antes de empezar y la garantía por escrito. ¿Te la reservo por la mañana o por la tarde?
+<ficha>{"obra":"cambiar bañera por plato de ducha","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Revisar en la visita la causa de las filtraciones; pedir presupuesto firmado y garantía por escrito","fase":"proponiendo"}</ficha>
+<mostrar>garantia</mostrar>

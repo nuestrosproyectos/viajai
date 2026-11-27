@@ -1,0 +1,3 @@
+Tiene razón: el juicio de faltas desapareció en 2015. Como le ha llegado una citación del juzgado, que la vea el abogado cuanto antes en la consulta gratis; la parte penal la confirma él. ¿Para qué día es la citación?
+<ficha>{"caso":"Accidente de moto de su hijo, con citación del juzgado","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que el abogado vea la citación del juzgado cuanto antes, sin interpretarla por su cuenta.","fase":"orientando"}</ficha>
+<mostrar>situaciones</mostrar>

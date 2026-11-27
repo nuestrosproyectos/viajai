@@ -1,0 +1,3 @@
+Al céntimo no, eso sale del presupuesto por partidas que llega por escrito tras la visita gratis. Un baño completo en reforma estándar suele quedar entre unos tres mil y seis mil euros con IVA, y con calidades altas, desde siete mil. ¿De qué año es el edificio?
+<ficha>{"obra":"baño completo: quitar bañera, plato de 140, alicatado hasta el techo, mueble con lavabo e inodoro suspendido","vivienda":"","metros":"2,10 x 1,60","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Pedir el presupuesto por partidas tras medir; el precio exacto no se da sin visita","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>

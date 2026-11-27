@@ -1,0 +1,2 @@
+Sin factura no trabajamos: es lo que te protege con la garantía, y el presupuesto va por escrito. El IVA legal ya puede ser del 10 % si se cumplen los requisitos, y eso lo confirma el profesional. ¿Te reservo la visita gratis, por la mañana o por la tarde?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Trabajar con factura y presupuesto por escrito; IVA del 10 % solo si se cumplen los requisitos","fase":"proponiendo"}</ficha>

@@ -1,0 +1,2 @@
+Con la renta no te puedo ayudar, y de política no hablo. Si tienes algo de casa que reformar, te oriento sin problema. ¿Qué estancia quieres cambiar?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"","fase":"entendiendo"}</ficha>

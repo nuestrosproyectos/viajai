@@ -1,0 +1,3 @@
+Un baño completo en una reforma estándar suele quedar entre unos tres mil y seis mil euros con IVA; el precio exacto lo da el profesional tras la visita gratis. Suele durar de una a dos semanas. ¿Cuántos metros tiene más o menos el baño?
+<ficha>{"obra":"baño completo con plato de ducha, quitando el bidé","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"Las Gabias","franja":"","inicio":"","orientacion":"Medir el baño en la visita gratis para cerrar el precio por partidas","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>

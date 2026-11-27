@@ -1,0 +1,3 @@
+En el Albaicín, zona protegida, lo más probable es que haga falta licencia y técnico, aunque no se toquen muros. Lo confirma el técnico en la visita gratis, y la tramitación va incluida en el presupuesto. ¿Es un piso o una casa entera?
+<ficha>{"obra":"reforma de baño y cocina","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"Granada (Albaicín)","franja":"","inicio":"","orientacion":"Licencia y técnico probables por zona protegida; confirmar en la visita si es piso o casa","fase":"orientando"}</ficha>
+<mostrar>permisos</mostrar>
