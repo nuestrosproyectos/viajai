@@ -231,4 +231,11 @@ Gracias, Paco, Maracena queda apuntado, y el cambio cualquier mañana. Ya solo f
 === CLIENTE ===
 Calle Real 9
 
+=== ANDRÉS ===
+Gracias, Paco, calle Real 9 queda anotada. Mientras tanto, si el agua fría sale normal, dilo al fontanero: ayuda a ver si el fallo está en el termo. ¿En qué barrio de Maracena está la vivienda?
+<ficha>{"averia":"cambio de termo eléctrico; viven 4 en casa","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Paco","telefono":"699 101 202","municipio":"Maracena","direccion":"Calle Real 9","franja":"Cualquier mañana","inicio":"","orientacion":"Pide el presupuesto desglosado por escrito antes de empezar.","fase":"datos"}</ficha>
+
+=== CLIENTE ===
+Barrio no sé, es una casa en la calle Real, en Maracena. ¿Eso basta?
+
 === ANDRÉS (tu respuesta) ===

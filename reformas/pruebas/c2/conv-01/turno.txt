@@ -224,4 +224,11 @@ Gracias, Marta. En Granada capital, lo más probable es que un baño sin tocar m
 === CLIENTE ===
 Calle Doctor Olóriz 14
 
+=== ANDRÉS ===
+Muy bien, Marta. Tras la visita, el presupuesto por escrito llega en unos cinco días laborables. Te repito: visita gratis por la tarde, en Doctor Olóriz catorce, La Chana, y tu teléfono es seis cinco cinco, tres dos uno, nueve cero ocho. ¿Está todo bien?
+<ficha>{"obra":"Cambiar bañera por plato de ducha, azulejos y lavabo del baño","vivienda":"Piso","metros":"unos 5 m²","antiguedad":"Piso del 78","presupuesto":"","nombre":"Marta","telefono":"655 321 908","municipio":"Granada capital, La Chana","direccion":"Calle Doctor Olóriz 14","franja":"Por la tarde","inicio":"","orientacion":"Baño completo; conviene revisar tuberías y electricidad en la visita de medición, que es gratis.","fase":"datos"}</ficha>
+
+=== CLIENTE ===
+Sí, todo bien. Gracias
+
 === ANDRÉS (tu respuesta) ===

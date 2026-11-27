@@ -56,5 +56,14 @@
  {
   "role": "user",
   "content": "Calle Real 9"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Paco, calle Real 9 queda anotada. Mientras tanto, si el agua fría sale normal, dilo al fontanero: ayuda a ver si el fallo está en el termo. ¿En qué barrio de Maracena está la vivienda?\n<ficha>{\"averia\":\"cambio de termo eléctrico; viven 4 en casa\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Paco\",\"telefono\":\"699 101 202\",\"municipio\":\"Maracena\",\"direccion\":\"Calle Real 9\",\"franja\":\"Cualquier mañana\",\"inicio\":\"\",\"orientacion\":\"Pide el presupuesto desglosado por escrito antes de empezar.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Paco, calle Real 9 queda anotada. Mientras tanto, si el agua fría sale normal, dilo al fontanero: ayuda a ver si el fallo está en el termo. ¿En qué barrio de Maracena está la vivienda?\n<ficha>{\"averia\":\"cambio de termo eléctrico; viven 4 en casa\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Paco\",\"telefono\":\"699 101 202\",\"municipio\":\"Maracena\",\"direccion\":\"Calle Real 9\",\"franja\":\"Cualquier mañana\",\"inicio\":\"\",\"orientacion\":\"Pide el presupuesto desglosado por escrito antes de empezar.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Barrio no sé, es una casa en la calle Real, en Maracena. ¿Eso basta?"
  }
 ]

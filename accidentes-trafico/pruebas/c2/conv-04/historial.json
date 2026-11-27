@@ -56,5 +56,14 @@
  {
   "role": "user",
   "content": "En el despacho, presencial"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Inés. Te apunto la consulta presencial en el despacho, por la mañana, para Granada capital, Realejo. Te llamamos al seis cinco cinco, siete siete siete, tres tres tres. ¿Está todo bien?\n<ficha>{\"caso\":\"Atropello en un paso de cebra; alta hace siete meses y sin reclamar nada\",\"como\":\"Andando\",\"fecha\":\"Hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Inés\",\"telefono\":\"655 777 333\",\"municipio\":\"Granada capital (Realejo)\",\"franja\":\"Por la mañana, en el despacho\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guarda el informe del alta y las facturas; reclamar por escrito interrumpe el plazo.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Inés. Te apunto la consulta presencial en el despacho, por la mañana, para Granada capital, Realejo. Te llamamos al seis cinco cinco, siete siete siete, tres tres tres. ¿Está todo bien?\n<ficha>{\"caso\":\"Atropello en un paso de cebra; alta hace siete meses y sin reclamar nada\",\"como\":\"Andando\",\"fecha\":\"Hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Inés\",\"telefono\":\"655 777 333\",\"municipio\":\"Granada capital (Realejo)\",\"franja\":\"Por la mañana, en el despacho\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guarda el informe del alta y las facturas; reclamar por escrito interrumpe el plazo.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien"
  }
 ]
