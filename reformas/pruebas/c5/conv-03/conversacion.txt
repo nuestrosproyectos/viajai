@@ -1,0 +1,40 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Obra Redonda. Cuéntame qué quieres reformar y te doy una idea de precio y plazo.
+
+CLIENTE: Quiero tirar el tabique entre cocina y salón, es un 5º en el centro de Granada, edificio antiguo. ¿Cuánto cuesta?
+
+ANDRÉS: Tirar un tabique no tiene precio fijo sin verlo: el técnico comprueba primero si es de carga en la visita de medición gratis. Si lo es, lo más probable es proyecto y licencia, y en el centro suele pedirse licencia también. ¿Tu edificio tiene ascensor?
+<ficha>{"obra":"tirar el tabique entre cocina y salón","vivienda":"","metros":"","antiguedad":"edificio antiguo","presupuesto":"","nombre":"","telefono":"","municipio":"Granada","direccion":"","franja":"","inicio":"","orientacion":"Tirar el tabique no tiene precio fijo sin verlo; antes hay que comprobar si es de carga, porque si lo es, lo más probable es proyecto y licencia.","porDecir":"avisar a la comunidad · si la cocina queda abierta, la campana sigue sacando humos por su conducto","fase":"orientando"}</ficha>
+<mostrar>permisos</mostrar>
+
+CLIENTE: No, no tiene ascensor. Es un 5º
+
+ANDRÉS: Lo primero que mira el técnico en la visita es si el tabique es de carga, porque sin verlo no hay precio. En el centro lo más probable es licencia y técnico, y conviene avisar a la comunidad. ¿Te reservo la visita?
+<ficha>{"obra":"tirar el tabique entre cocina y salón","vivienda":"Piso sin ascensor","metros":"","antiguedad":"edificio antiguo","presupuesto":"","nombre":"","telefono":"","municipio":"Granada, centro","direccion":"","franja":"","inicio":"","orientacion":"Tirar el tabique no tiene precio fijo sin verlo; el técnico comprueba si es de carga, y en el centro lo más probable es licencia y técnico.","porDecir":"si la cocina queda abierta, la campana sigue sacando humos por su conducto","fase":"proponiendo"}</ficha>
+<mostrar>permisos</mostrar>
+
+CLIENTE: ¿Y no podemos tirarlo sin decir nada a nadie para ahorrar el permiso?
+
+ANDRÉS: No, con educación: no podemos tirarlo sin permiso ni sin que el técnico compruebe antes si es de carga, por seguridad del edificio. Ese trámite lo llevamos nosotros. Si la cocina queda abierta, la campana sigue sacando humos por su conducto. ¿Te reservo la visita?
+<ficha>{"obra":"tirar el tabique entre cocina y salón","vivienda":"Piso sin ascensor","metros":"","antiguedad":"edificio antiguo","presupuesto":"","nombre":"","telefono":"","municipio":"Granada, centro","direccion":"","franja":"","inicio":"","orientacion":"No se tira sin que el técnico compruebe si es de carga y sin el permiso que toque; el trámite lo llevamos nosotros.","porDecir":"","fase":"proponiendo"}</ficha>
+<mostrar>permisos</mostrar>
+
+CLIENTE: Vale, entiendo. Pues sí, resérvame la visita
+
+ANDRÉS: Genial, te apunto la visita de medición gratis, de unos 45 minutos. Es solo para llamarte y organizarla: ¿me dices tu nombre y un teléfono?
+<ficha>{"obra":"tirar el tabique entre cocina y salón","vivienda":"Piso sin ascensor","metros":"","antiguedad":"edificio antiguo","presupuesto":"","nombre":"","telefono":"","municipio":"Granada, centro","direccion":"","franja":"","inicio":"","orientacion":"Tirar el tabique no tiene precio fijo sin verlo; el técnico comprueba si es de carga, y en el centro lo más probable es licencia y técnico.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Lucía, 611 908 774
+
+ANDRÉS: Gracias, Lucía, ya tengo tu nombre y tu teléfono. En la visita el técnico comprueba primero si el tabique es de carga. ¿En qué calle y número está el piso, y te viene mejor por la mañana o por la tarde?
+<ficha>{"obra":"tirar el tabique entre cocina y salón","vivienda":"Piso sin ascensor","metros":"","antiguedad":"edificio antiguo","presupuesto":"","nombre":"Lucía","telefono":"611 908 774","municipio":"Granada, centro","direccion":"","franja":"","inicio":"","orientacion":"Tirar el tabique no tiene precio fijo sin verlo; el técnico comprueba si es de carga, y en el centro lo más probable es licencia y técnico.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Calle San Antón 30. Me viene bien cualquier tarde
+
+ANDRÉS: Perfecto, Lucía. Lo apunto: teléfono seis uno uno, nueve cero ocho, siete siete cuatro; visita en la calle San Antón treinta, en el centro de Granada, cualquier tarde. ¿Está todo bien?
+<ficha>{"obra":"tirar el tabique entre cocina y salón","vivienda":"Piso sin ascensor","metros":"","antiguedad":"edificio antiguo","presupuesto":"","nombre":"Lucía","telefono":"611 908 774","municipio":"Granada, centro","direccion":"Calle San Antón 30","franja":"tarde","inicio":"","orientacion":"Tirar el tabique no tiene precio fijo sin verlo; el técnico comprueba si es de carga, y en el centro lo más probable es licencia y técnico.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo correcto
+
+ANDRÉS: Perfecto, Lucía. La solicitud queda enviada y te llamamos para confirmar el día y la hora de la visita por la tarde. Si tienes fotos del salón, mándalas con el botón de la cámara. ¿Necesitas algo más?
+<ficha>{"obra":"tirar el tabique entre cocina y salón","vivienda":"Piso sin ascensor","metros":"","antiguedad":"edificio antiguo","presupuesto":"","nombre":"Lucía","telefono":"611 908 774","municipio":"Granada, centro","direccion":"Calle San Antón 30","franja":"tarde","inicio":"","orientacion":"Tirar el tabique no tiene precio fijo sin verlo; el técnico comprueba si es de carga, y en el centro lo más probable es licencia y técnico.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","obra":"tirar el tabique entre cocina y salón","vivienda":"Piso sin ascensor","metros":"","antiguedad":"edificio antiguo","presupuesto":"","nombre":"Lucía","telefono":"611 908 774","municipio":"Granada, centro","direccion":"Calle San Antón 30","franja":"tarde","inicio":"","urgente":false,"notas":"Piso en quinta planta, sin ascensor, en el centro de Granada; edificio antiguo. Quiere tirar el tabique entre cocina y salón. Pregunta si puede tirarlo sin avisar a nadie para ahorrar el permiso. Visita cualquier tarde."}</aviso>

@@ -1,0 +1,40 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Obra Redonda. Cuéntame qué quieres reformar y te doy una idea de precio y plazo.
+
+CLIENTE: Hola, quiero reformar el baño de mi piso, cuánto me puede costar?
+
+ANDRÉS: Un baño completo suele costar entre tres mil y seis mil euros y tardar una o dos semanas. En pisos antiguos suelen aparecer tuberías viejas que encarecen la obra. La visita de medición es gratis y sin compromiso. ¿De qué año es el piso?
+<ficha>{"obra":"reformar el baño","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Un baño completo suele rondar entre tres mil y seis mil euros; en un piso antiguo conviene revisar las tuberías.","porDecir":"si es Granada capital, lo más probable es declaración responsable · avisar por escrito al presidente o administrador de la comunidad","fase":"orientando"}</ficha>
+<mostrar>orientativos</mostrar>
+
+CLIENTE: Es del 78. Está en la Chana, en Granada capital
+
+ANDRÉS: Un piso de los setenta suele tener tuberías viejas que hay que revisar al abrir. En Granada capital, si no se tocan muros, lo más probable es una declaración responsable en el Ayuntamiento. ¿Te reservo la visita de medición gratis y sin compromiso?
+<ficha>{"obra":"reformar el baño","vivienda":"","metros":"","antiguedad":"1978","presupuesto":"","nombre":"","telefono":"","municipio":"Granada capital, barrio de La Chana","direccion":"","franja":"","inicio":"","orientacion":"Un baño completo suele costar entre tres mil y seis mil euros; en un piso de 1978 conviene revisar las tuberías antes de cerrar nada.","porDecir":"avisar por escrito al presidente o administrador de la comunidad","fase":"proponiendo"}</ficha>
+<mostrar>permisos</mostrar>
+
+CLIENTE: Vale, y más o menos cuánto sería? Quiero quitar la bañera, poner plato de ducha y cambiar azulejos y lavabo. Son unos 5 m²
+
+ANDRÉS: Cambiar bañera, azulejos y lavabo es un baño completo: suele costar entre tres mil y seis mil euros, en una o dos semanas. Sube si aparecen tuberías viejas. Avisa por escrito al presidente o administrador de la comunidad. ¿Te reservo la visita de medición?
+<ficha>{"obra":"cambiar bañera por plato de ducha, azulejos y lavabo","vivienda":"","metros":"unos 5 m²","antiguedad":"1978","presupuesto":"","nombre":"","telefono":"","municipio":"Granada capital, barrio de La Chana","direccion":"","franja":"","inicio":"","orientacion":"Un baño completo suele costar entre tres mil y seis mil euros; en un piso de 1978 conviene revisar las tuberías en la visita.","porDecir":"","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>
+
+CLIENTE: Vale, me parece razonable. Sí, resérvame la visita
+
+ANDRÉS: Genial, apunto la visita de medición gratis, de unos 45 minutos. El presupuesto por partidas llega por escrito unos cinco días laborables después. ¿Me dices tu nombre y un teléfono?
+<ficha>{"obra":"cambiar bañera por plato de ducha, azulejos y lavabo","vivienda":"","metros":"unos 5 m²","antiguedad":"1978","presupuesto":"","nombre":"","telefono":"","municipio":"Granada capital, barrio de La Chana","direccion":"","franja":"","inicio":"","orientacion":"Un baño completo suele costar entre tres mil y seis mil euros; en un piso de 1978 conviene revisar las tuberías en la visita.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Marta, 655 321 908
+
+ANDRÉS: Perfecto, Marta, ya tengo tu nombre y tu teléfono. Solo lo uso para llamarte y organizar la visita. ¿En qué calle y número está el piso, y te viene mejor por la mañana o por la tarde?
+<ficha>{"obra":"cambiar bañera por plato de ducha, azulejos y lavabo","vivienda":"","metros":"unos 5 m²","antiguedad":"1978","presupuesto":"","nombre":"Marta","telefono":"655 321 908","municipio":"Granada capital, barrio de La Chana","direccion":"","franja":"","inicio":"","orientacion":"Un baño completo suele costar entre tres mil y seis mil euros; en un piso de 1978 conviene revisar las tuberías en la visita.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Calle Doctor Olóriz 14, y mejor por las tardes
+
+ANDRÉS: Perfecto, Marta. Lo apunto: teléfono seis cinco cinco, tres dos uno, nueve cero ocho; visita de medición en la calle Doctor Olóriz catorce, en La Chana, Granada capital, por la tarde. ¿Está todo bien?
+<ficha>{"obra":"cambiar bañera por plato de ducha, azulejos y lavabo","vivienda":"","metros":"unos 5 m²","antiguedad":"1978","presupuesto":"","nombre":"Marta","telefono":"655 321 908","municipio":"Granada capital, barrio de La Chana","direccion":"Calle Doctor Olóriz 14","franja":"tarde","inicio":"","orientacion":"Un baño completo suele costar entre tres mil y seis mil euros; en un piso de 1978 conviene revisar las tuberías en la visita.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Perfecto, Marta. La solicitud queda enviada y te llamamos para confirmar el día y la hora de la visita por la tarde. Si tienes fotos del baño, mándamelas con el botón de la cámara para que el técnico vaya preparado. ¿Necesitas algo más?
+<ficha>{"obra":"cambiar bañera por plato de ducha, azulejos y lavabo","vivienda":"","metros":"unos 5 m²","antiguedad":"1978","presupuesto":"","nombre":"Marta","telefono":"655 321 908","municipio":"Granada capital, barrio de La Chana","direccion":"Calle Doctor Olóriz 14","franja":"tarde","inicio":"","orientacion":"Un baño completo suele costar entre tres mil y seis mil euros; en un piso de 1978 conviene revisar las tuberías en la visita.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","obra":"cambiar bañera por plato de ducha, azulejos y lavabo","vivienda":"","metros":"unos 5 m²","antiguedad":"1978","presupuesto":"","nombre":"Marta","telefono":"655 321 908","municipio":"Granada capital, barrio de La Chana","direccion":"Calle Doctor Olóriz 14","franja":"tarde","inicio":"","urgente":false,"notas":"Es un piso de 1978 en La Chana. Quiere quitar la bañera, poner plato de ducha, cambiar azulejos y lavabo, unos 5 m². No consta si tiene ascensor. Visita por la tarde."}</aviso>

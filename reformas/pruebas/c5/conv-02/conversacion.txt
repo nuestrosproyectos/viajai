@@ -1,0 +1,40 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Obra Redonda. Cuéntame qué quieres reformar y te doy una idea de precio y plazo.
+
+CLIENTE: Buenas. Antes de nada, ¿la visita la cobráis? Porque luego siempre hay sorpresas.
+
+ANDRÉS: Tiene sentido preguntarlo. La visita de medición y el presupuesto son gratis, unos cuarenta y cinco minutos y sin compromiso. Si al abrir aparece algo oculto, se enseña, se presupuesta por escrito y no se hace sin tu firma. ¿Qué estancia quieres reformar?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"La visita de medición y el presupuesto son gratis y sin compromiso; si aparece algo oculto, se presupuesta por escrito antes de hacerlo.","porDecir":"","fase":"entendiendo"}</ficha>
+<mostrar>precios</mostrar>
+
+CLIENTE: La cocina entera, unos 10 m². ¿Y el presupuesto es cerrado o luego van sumando extras?
+
+ANDRÉS: Muchas cocinas completas están entre seis mil y diez mil euros, según los muebles y si se mueven fregadero, placa o campana. El precio cerrado sale del presupuesto escrito tras la visita, y lo oculto se presupuesta antes de tocarlo. ¿Te reservo la visita?
+<ficha>{"obra":"cocina entera","vivienda":"","metros":"unos 10 m²","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Una cocina completa suele estar entre seis mil y diez mil euros, según muebles y si se mueven fregadero, placa o campana; el precio cerrado sale del presupuesto escrito tras la visita.","porDecir":"cuánto tiempo estará sin cocina: depende de los muebles a medida, la fontanería y el alicatado, y lo da el técnico en la visita","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>
+
+CLIENTE: Entonces el presupuesto me lo dan por escrito y cerrado, ¿no? ¿Y lo que aparezca al abrir también por escrito antes de hacerlo?
+
+ANDRÉS: El presupuesto llega por escrito y por partidas unos cinco días laborables tras la visita. Lo de al abrir también: te lo enseñamos y no se hace sin tu firma. El tiempo sin cocina depende de los muebles y la fontanería. ¿Te reservo la visita?
+<ficha>{"obra":"cocina entera","vivienda":"","metros":"unos 10 m²","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Pedir la visita para medir; el presupuesto por partidas llega por escrito unos cinco días laborables después, y lo que aparezca al abrir se aprueba antes de hacerse.","porDecir":"","fase":"proponiendo"}</ficha>
+<mostrar>como</mostrar>
+
+CLIENTE: Está bien. Si es como dice, por escrito y gratis, resérveme la visita.
+
+ANDRÉS: Perfecto, le apunto la visita de medición, gratis y de unos 45 minutos, sin compromiso. Solo es para llamarle y organizarla. ¿Me dice su nombre y un teléfono?
+<ficha>{"obra":"cocina entera","vivienda":"","metros":"unos 10 m²","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Pedir la visita para medir; el presupuesto por partidas llega por escrito unos cinco días laborables después, y lo que aparezca al abrir se aprueba antes de hacerse.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Antonio, 678 112 443
+
+ANDRÉS: Gracias, Antonio, ya tengo su nombre y su teléfono. Con los diez metros, el técnico mide la distribución en la visita. ¿En qué municipio y calle está la vivienda, y le viene mejor por la mañana o por la tarde?
+<ficha>{"obra":"cocina entera","vivienda":"","metros":"unos 10 m²","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"678 112 443","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Pedir la visita para medir; el presupuesto por partidas llega por escrito unos cinco días laborables después, y lo que aparezca al abrir se aprueba antes de hacerse.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Las Gabias, calle Real 22. Por la mañana.
+
+ANDRÉS: Perfecto, Antonio. Lo apunto: teléfono seis siete ocho, uno uno dos, cuatro cuatro tres; visita de medición en la calle Real veintidós, en Las Gabias, por la mañana. ¿Está todo bien?
+<ficha>{"obra":"cocina entera","vivienda":"","metros":"unos 10 m²","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"678 112 443","municipio":"Las Gabias","direccion":"Calle Real 22","franja":"mañana","inicio":"","orientacion":"Pedir la visita para medir; el presupuesto por partidas llega por escrito unos cinco días laborables después, y lo que aparezca al abrir se aprueba antes de hacerse.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, está correcto.
+
+ANDRÉS: Perfecto, Antonio. La solicitud queda enviada y le llamamos para confirmar el día y la hora de la visita por la mañana. Si tiene fotos de la cocina, envíelas con el botón de la cámara para que el técnico vaya preparado. ¿Necesita algo más?
+<ficha>{"obra":"cocina entera","vivienda":"","metros":"unos 10 m²","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"678 112 443","municipio":"Las Gabias","direccion":"Calle Real 22","franja":"mañana","inicio":"","orientacion":"Pedir la visita para medir; el presupuesto por partidas llega por escrito unos cinco días laborables después, y lo que aparezca al abrir se aprueba antes de hacerse.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","obra":"cocina entera","vivienda":"","metros":"unos 10 m²","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"678 112 443","municipio":"Las Gabias","direccion":"Calle Real 22","franja":"mañana","inicio":"","urgente":false,"notas":"Cocina entera de unos 10 m². Pregunta si el presupuesto es cerrado y por escrito, y si lo que aparezca al abrir se presupuesta antes de hacerse. No constan antigüedad ni tipo de vivienda. Visita por la mañana."}</aviso>
