@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Perfecto, Carmen. Lo tengo: seiscientos noventa y nueve, cuatrocientos cincuenta, doscientos doce. ¿Le confirmo la visita gratuita a primera hora de la mañana con ese teléfono?\n<ficha>{\"obra\":\"Cambiar la bañera por plato de ducha\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Carmen\",\"telefono\":\"699 450 212\",\"municipio\":\"Maracena\",\"franja\":\"Por la mañana, a primera hora\",\"inicio\":\"\",\"orientacion\":\"Confirmar la visita gratuita a primera hora; cambiar la bañera por plato de ducha es lo prioritario por el riesgo de caída.\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Carmen. Lo tengo: seiscientos noventa y nueve, cuatrocientos cincuenta, doscientos doce. ¿Le confirmo la visita gratuita a primera hora de la mañana con ese teléfono?\n<ficha>{\"obra\":\"Cambiar la bañera por plato de ducha\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Carmen\",\"telefono\":\"699 450 212\",\"municipio\":\"Maracena\",\"franja\":\"Por la mañana, a primera hora\",\"inicio\":\"\",\"orientacion\":\"Confirmar la visita gratuita a primera hora; cambiar la bañera por plato de ducha es lo prioritario por el riesgo de caída.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, confírmemela, por favor. Cuanto antes mejor."
  }
 ]
