@@ -1,0 +1,2 @@
+Vale, la consulta será por videollamada. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la consulta. Y que tu mujer guarde los informes de la muñeca.
+<ficha>{"caso":"Te saltaste un ceda; ibas con tu mujer","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"No lo sé","nombre":"","telefono":"","municipio":"","franja":"por videollamada","consentimientoSalud":"","orientacion":"Tu mujer, como pasajera, puede reclamar; el abogado revisa tu póliza y si tiene defensa jurídica.","fase":"datos"}</ficha>

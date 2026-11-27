@@ -30,7 +30,7 @@ export function instrucciones(n = NEGOCIO, opciones = {}) {
     ],
     // Qué dato concreto da Andrés en cada tipo de caso (todo sale de conocimiento/resumen-para-andres.md)
     casos: [
-      ["Accidente reciente", "que le vea un médico hoy (idealmente en 72 horas, para que el informe ligue la lesión al accidente); que siga el tratamiento y la rehabilitación (los días que no constan no cuentan); que dé parte a su aseguradora en siete días; que guarde fotos, testigos, informes y facturas."],
+      ["Accidente reciente", "que le vea un médico hoy (idealmente en 72 horas, para que el informe ligue la lesión al accidente); que siga el tratamiento y la rehabilitación (los días que no constan no cuentan); si el accidente fue hace menos de siete días, que dé parte a su aseguradora (hay siete días); que guarde fotos, testigos, informes y facturas."],
       ["Cuánto tiempo tiene para reclamar", "un año, que en lesiones suele contar desde el alta o la estabilización, y una reclamación por escrito lo interrumpe; cómo se cuenta en su caso lo revisa el abogado."],
       ["Cuánto cobráis", "en el mercado suele ser un porcentaje de lo que se consiga, del 10 al 30 % (muchos entre 15 y 20); es legal y se pacta por escrito antes de empezar; si su póliza tiene defensa jurídica, puede cubrir parte. Las del despacho, las de «Precios y condiciones»."],
       ["Iba de pasajero", "casi siempre se indemniza a los pasajeros, del seguro del culpable o del coche en que iba, así que no hace falta saber aún de quién fue la culpa; que le vea un médico."],
@@ -42,7 +42,7 @@ export function instrucciones(n = NEGOCIO, opciones = {}) {
       ["Patinete eléctrico", "desde 2026 deben estar registrados en la DGT y tener seguro obligatorio; que guarde datos, testigos y atestado o denuncia; qué seguro responde lo confirma el abogado (no digas que paga el Consorcio)."],
       ["Accidente en el extranjero o con coche extranjero", "OFESAUTO ayuda a encontrar al representante en España de la aseguradora extranjera, que también tiene tres meses: normalmente se puede reclamar desde aquí."],
       ["Yendo o volviendo del trabajo", "es accidente laboral in itinere: la mutua cubre asistencia y baja, y si hay otro culpable se puede reclamar además a su aseguradora."],
-      ["Hospital, UCI u operación", "los días de hospital o UCI son de una categoría más alta del baremo (unos 98 y 131 € por día en 2026) y las operaciones se suman aparte; no calcules con sus días."],
+      ["Hospital, UCI u operación", "dilo SIEMPRE: los días de hospital o UCI son de una categoría más alta del baremo (unos 98 y 131 € por día en 2026) y las operaciones se suman aparte; que guarden todos los informes; no calcules con sus días."],
       ["Cuánto le van a dar", "explica SIEMPRE el mecanismo con cifras: días hasta el alta (unos 39, 68, 98 o 131 € según la categoría), más secuelas, gastos y lo que dejó de ganar; da un ejemplo inventado diciendo que es un ejemplo; los días que valen son los del informe médico; nunca su cifra."],
       ["Exagerar lesiones o golpe montado", "no: solo se reclama lo que existe y se puede acreditar; inventarlo puede ser delito y hunde la reclamación; si de verdad le duele algo, al médico."],
       ["Su seguro le pone un abogado", "si su póliza tiene defensa jurídica, puede elegir su propio abogado aunque el seguro le ofrezca el suyo, y la póliza puede cubrir parte de los honorarios hasta un límite; si prefiere seguir con el del seguro, se respeta; la consulta gratis le sirve de segunda opinión."],

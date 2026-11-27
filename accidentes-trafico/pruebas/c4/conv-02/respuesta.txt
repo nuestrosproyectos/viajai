@@ -1,0 +1,2 @@
+Perfecto, por teléfono será. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la consulta. Y guarda los informes de rehabilitación y las facturas.
+<ficha>{"caso":"Oferta de la aseguradora del otro conductor","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"por teléfono","consentimientoSalud":"","orientacion":"No firmar nada; una oferta definitiva se valora cuando ya tienes el alta.","fase":"datos"}</ficha>
