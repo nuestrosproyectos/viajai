@@ -362,7 +362,9 @@ async def crawl_site(
     home: tuple[str, str] | None = None
     last_error = ""
     errors: list[str] = []
-    attempts = [website] if website.startswith("http://") else [website, "http://" + website.split("://", 1)[1]]
+    # Siempre se prueba primero por HTTPS, aunque Google Maps tenga guardada la web como http://
+    without_scheme = website.split("://", 1)[1] if "://" in website else website
+    attempts = ["https://" + without_scheme, "http://" + without_scheme]
     for attempt_url in attempts:
         try:
             home = await fetch_html(client, attempt_url)
