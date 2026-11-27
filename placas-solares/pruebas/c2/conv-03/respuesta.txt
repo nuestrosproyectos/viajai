@@ -1,2 +1,0 @@
-Gracias, Manolo, lo tengo apuntado para entre semana por la tarde. Para llamarte y organizar el estudio, ¿me dices tu número de teléfono?
-<ficha>{"que":"Placas solares con batería","lugar":"","factura":"","tejado":"","consumo":"De noche; de día trabaja fuera","nombre":"Manolo","telefono":"","municipio":"","direccion":"","franja":"Entre semana por la tarde","inicio":"","orientacion":"Consume sobre todo de noche y está fuera de día: con batería puede compensar; el estudio lo calcula con sus facturas.","fase":"datos"}</ficha>

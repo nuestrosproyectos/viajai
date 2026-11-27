@@ -1,2 +1,0 @@
-Gracias, Raúl. Para llamarte y organizar la consulta por videollamada, ¿me das un teléfono? Y si hubo testigos, apunta su nombre y teléfono; ayudan mucho.
-<ficha>{"caso":"golpe por detrás hace tres días","como":"","fecha":"hace tres días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Raúl","telefono":"","municipio":"","franja":"Por la tarde, por videollamada","consentimientoSalud":"","orientacion":"Ve al médico hoy y no firmes nada de la aseguradora hasta que lo vea el abogado.","fase":"datos"}</ficha>

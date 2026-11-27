@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Carmen"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Carmen, lo anoto: visita a primera hora, en Maracena. Para llamarle y organizar la visita, ¿me dice su número de teléfono?\n<ficha>{\"obra\":\"Cambiar la bañera por plato de ducha, para su padre, que ya no puede entrar en la bañera\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Carmen\",\"telefono\":\"\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"Por la mañana, a primera hora\",\"inicio\":\"Cuanto antes\",\"orientacion\":\"Cambiar la bañera por plato de ducha cuanto antes; si va a ras de suelo, el precio sube algo.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Carmen, lo anoto: visita a primera hora, en Maracena. Para llamarle y organizar la visita, ¿me dice su número de teléfono?\n<ficha>{\"obra\":\"Cambiar la bañera por plato de ducha, para su padre, que ya no puede entrar en la bañera\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Carmen\",\"telefono\":\"\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"Por la mañana, a primera hora\",\"inicio\":\"Cuanto antes\",\"orientacion\":\"Cambiar la bañera por plato de ducha cuanto antes; si va a ras de suelo, el precio sube algo.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

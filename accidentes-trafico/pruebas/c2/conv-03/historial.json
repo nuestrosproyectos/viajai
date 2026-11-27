@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Pedro"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Pedro. Si a tu mujer le duele mucho o no puede mover la mano, que vaya a urgencias ya. ¿Me das un teléfono para organizar la consulta?\n<ficha>{\"caso\":\"Accidente por saltarse un ceda; iba de pasajera su mujer\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Pedro\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Por la tarde, por videollamada\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que tu mujer vea un médico hoy y guarda el parte amistoso y las fotos.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Pedro. Si a tu mujer le duele mucho o no puede mover la mano, que vaya a urgencias ya. ¿Me das un teléfono para organizar la consulta?\n<ficha>{\"caso\":\"Accidente por saltarse un ceda; iba de pasajera su mujer\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Pedro\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Por la tarde, por videollamada\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que tu mujer vea un médico hoy y guarda el parte amistoso y las fotos.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

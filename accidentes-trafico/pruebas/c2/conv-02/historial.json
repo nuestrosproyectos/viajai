@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "633 202 404"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Sonia, lo apunto. Si aún no tienes el alta médica, eso también lo mira el abogado en la consulta. ¿En qué municipio vives?\n<ficha>{\"caso\":\"Accidente de tráfico; la aseguradora del otro ofrece 2.300 € y pide firmar\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"Sonia\",\"telefono\":\"633 202 404\",\"municipio\":\"\",\"franja\":\"Por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmes; si insisten, pide la oferta por escrito con su cálculo.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Sonia, lo apunto. Si aún no tienes el alta médica, eso también lo mira el abogado en la consulta. ¿En qué municipio vives?\n<ficha>{\"caso\":\"Accidente de tráfico; la aseguradora del otro ofrece 2.300 € y pide firmar\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"Sonia\",\"telefono\":\"633 202 404\",\"municipio\":\"\",\"franja\":\"Por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmes; si insisten, pide la oferta por escrito con su cálculo.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Elena"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Elena, lo anoto para la tarde. Para llamarte y organizar el estudio, ¿me dices tu número de teléfono?\n<ficha>{\"que\":\"Placas solares en la azotea del bloque\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"\",\"municipio\":\"Granada (Zaidín)\",\"direccion\":\"\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Hace falta el acuerdo de la junta, porque la azotea es común; el estudio le sirve para llevarlo a la junta.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Elena, lo anoto para la tarde. Para llamarte y organizar el estudio, ¿me dices tu número de teléfono?\n<ficha>{\"que\":\"Placas solares en la azotea del bloque\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"\",\"municipio\":\"Granada (Zaidín)\",\"direccion\":\"\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Hace falta el acuerdo de la junta, porque la azotea es común; el estudio le sirve para llevarlo a la junta.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

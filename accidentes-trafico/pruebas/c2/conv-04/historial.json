@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Inés"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Inés. Si te llega algo de la aseguradora, no firmes nada antes de la consulta. ¿Me dejas un teléfono para llamarte y organizarla?\n<ficha>{\"caso\":\"Atropello en un paso de cebra; alta hace siete meses y sin reclamar nada\",\"como\":\"Andando\",\"fecha\":\"Hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Inés\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guarda el informe del alta y las facturas; reclamar por escrito interrumpe el plazo.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Inés. Si te llega algo de la aseguradora, no firmes nada antes de la consulta. ¿Me dejas un teléfono para llamarte y organizarla?\n<ficha>{\"caso\":\"Atropello en un paso de cebra; alta hace siete meses y sin reclamar nada\",\"como\":\"Andando\",\"fecha\":\"Hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Inés\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guarda el informe del alta y las facturas; reclamar por escrito interrumpe el plazo.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

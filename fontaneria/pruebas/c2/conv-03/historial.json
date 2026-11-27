@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Ana"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Ana. Para llamarte y organizar la visita de la tarde, ¿me das un teléfono? El informe con cámara le servirá al administrador para decidir quién paga.\n<ficha>{\"averia\":\"en el bajo, agua sucia por el plato de ducha cuando tiran de la cisterna de arriba\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Ana\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Avisa al administrador; el fontanero con cámara hará un informe para decidir quién paga.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Ana. Para llamarte y organizar la visita de la tarde, ¿me das un teléfono? El informe con cámara le servirá al administrador para decidir quién paga.\n<ficha>{\"averia\":\"en el bajo, agua sucia por el plato de ducha cuando tiran de la cisterna de arriba\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Ana\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Avisa al administrador; el fontanero con cámara hará un informe para decidir quién paga.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

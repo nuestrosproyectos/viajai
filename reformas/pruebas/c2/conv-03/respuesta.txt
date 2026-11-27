@@ -1,2 +1,0 @@
-Gracias, Lucía, lo tengo apuntado. Para llamarte y organizar la visita, ¿me dices tu número de teléfono?
-<ficha>{"obra":"Tirar el tabique entre cocina y salón para abrir la cocina al salón","vivienda":"Piso","metros":"","antiguedad":"Edificio de 1950","presupuesto":"","nombre":"Lucía","telefono":"","municipio":"Granada (San Antón)","direccion":"","franja":"Por la tarde, cualquier día","inicio":"","orientacion":"Comprobar si el tabique es de carga; si lo es, hacen falta proyecto y licencia, y avisar a la comunidad.","fase":"datos"}</ficha>

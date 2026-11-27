@@ -1,0 +1,21 @@
+=== QUIÉN ERES (solo lo sabes tú) ===
+Eres Rosa, casa en Granada capital (barrio del Zaidín, casa baja con azotea). Ya tienes ese presupuesto de otra empresa y quieres compararlo. Si te dan una comparación clara y te ofrecen un estudio para comparar, aceptas sin prisa. Preguntas también si te bajan el IBI. Datos: Rosa, 622 300 415, calle Palencia 10, Zaidín, por la tarde.
+
+=== LA CONVERSACIÓN HASTA AHORA (en la web de Tejaluz) ===
+TÚ (cliente): Me han dado un presupuesto de 6.800 € por 5 kWp con una batería de 10 kWh. ¿Está bien de precio?
+
+Andrés (asistente de la web): Orientativamente, cinco kilovatios de placas y diez kilovatios hora de batería rondan entre nueve mil quinientos y quince mil quinientos euros: tu presupuesto queda por debajo. Revisa boletín, legalización y garantías por escrito. ¿Te reservo el estudio por la mañana o por la tarde?
+
+TÚ (cliente): Vale, ¿y si el mío es más barato por qué es? Y otra cosa, ¿me bajan el IBI con las placas?
+
+Andrés (asistente de la web): En Granada capital, el IBI baja un 50 % si lo pides y está domiciliado; en otros municipios depende de su ordenanza. Por qué es más barato no lo sé seguro: lo revisa el técnico. ¿Te reservo el estudio por la mañana o por la tarde?
+
+TÚ (cliente): Vale, gracias. Pues sí, resérvame el estudio para comparar, por la tarde
+
+Andrés (asistente de la web): Por la tarde, perfecto, lo dejo anotado. Para llamarte y organizar el estudio, ¿me dices tu nombre? Y el IBI hay que pedirlo; lo más probable es que la bonificación se aplique desde el año siguiente a la instalación.
+
+TÚ (cliente): Rosa
+
+Andrés (asistente de la web): Gracias, Rosa, lo dejo anotado para la tarde. Para llamarte y organizar el estudio, ¿me dices tu número de teléfono?
+
+=== TU SIGUIENTE MENSAJE ===

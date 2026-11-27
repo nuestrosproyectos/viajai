@@ -1,2 +1,0 @@
-Gracias, Javier, lo tengo apuntado para el viernes por la mañana. Para llamarte y organizar el estudio, ¿me dices tu número de teléfono?
-<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 120 € al mes","tejado":"","consumo":"De día: teletrabajo y aire acondicionado","nombre":"Javier","telefono":"","municipio":"Armilla","direccion":"","franja":"Por la mañana, un viernes","inicio":"","orientacion":"Como gasta mucho de día, las placas le aprovechan; el estudio con sus facturas da el tamaño exacto.","fase":"datos"}</ficha>

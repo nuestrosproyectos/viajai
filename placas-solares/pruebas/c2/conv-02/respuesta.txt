@@ -1,2 +1,0 @@
-Gracias, Rosa, lo dejo anotado para la tarde. Para llamarte y organizar el estudio, ¿me dices tu número de teléfono?
-<ficha>{"que":"Placas con batería, para comparar con su presupuesto","lugar":"","factura":"","tejado":"","consumo":"","nombre":"Rosa","telefono":"","municipio":"","direccion":"","franja":"Por la tarde","inicio":"","orientacion":"Comparar el presupuesto de 6.800 € (5 kWp con batería de 10 kWh) con el estudio; revisar que incluya legalización y garantías por escrito.","fase":"datos"}</ficha>
