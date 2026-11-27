@@ -37,6 +37,19 @@ Vuelta a 45 palabras y, en cada sector, 18 tipos de caso con el dato concreto qu
 - Sigue por debajo de 9: el criterio del caso (6-7). Cada caso pide 3-5 cosas y en 45 palabras caben 1-2: el resto se da en el siguiente turno, que estas pruebas (de una sola respuesta) no ven.
 - Fallo a vigilar: en placas, al comparar un presupuesto con batería, usó el rango de «casa con batería» en vez del precio por kWh (cliente 16).
 
+## Conversaciones completas (varios turnos) · 27-11-2026
+Cómo: 16 escenarios (4 por sector, `<web>/pruebas/conversaciones.json`): un cliente simulado con su historia y sus datos (que Andrés no ve) habla por turnos con Andrés (Claude Haiku, con exactamente lo que recibe en la web) hasta pedir la cita o irse; se corrige la conversación entera a ciegas con `fabrica/pruebas/hoja-conversaciones.md`. Órdenes: `node fabrica/pruebas/conversar.mjs preparar|asistente|cliente|estado|cerrar <web> <ronda>` y `node fabrica/pruebas/resumen-conversaciones.mjs <ronda>`.
+
+| Vuelta | Acaban en cita | Datos falsos | Datos bien tomados | No repite / coherente | Empatía | Lo que pedía el caso | Aviso válido | Nota | Respuestas por conversación |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 (antes) | 16/16 | 0 | 6,3 | 3,1 | 7,5 | 2,5 | 6,3 | 6,75 | 5,0 |
+| 2 (después) | 16/16 | 1 | **9,4** | **8,8** | **10** | **5,0** | 6,9 | **7,00** | 7,6 |
+
+Cambios entre vueltas (en la base común): confirmar nombre, teléfono, dirección y hora ANTES de enviar aunque el cliente lo dé todo de golpe; ir dando el resto de datos del caso mientras se toman los datos; no repetir explicaciones; empatía en la primera respuesta; en el aviso solo lo que dijo el cliente; reformas y placas piden calle y número.
+
+**Fallo grave encontrado y arreglado:** en la 2.ª vuelta, 6 de 16 avisos salieron sin la etiqueta de cierre `</aviso>` y la web los habría perdido (el cliente veía «enviada» y no se guardaba nada). La web ahora los lee igual (comprobado: 32 de 32 avisos reales de las pruebas, antes 26) y las instrucciones piden cerrarlo siempre.
+Pendiente: las conversaciones se alargan (7,6 respuestas): conviene pedir nombre y teléfono juntos y la dirección completa de una vez. Dato falso de la vuelta 2: fontanería dijo que una fuga cortada «puede esperar a mañana» (el conocimiento dice «unas horas»); corregido en sus casos.
+
 ## Qué se corrigió entre rondas (en el cerebro común, para todas las webs, salvo lo marcado)
 - R1→R2: dar siempre el rango de precio si lo pide; empatía con miedo, susto o personas mayores; usted en toda la conversación; una sola pregunta; rellenar en la ficha lo que el cliente ya dijo.
 - R2→R3 (2 datos falsos en reformas): no repartir ni reasignar cifras; revisar excepciones (edificios protegidos, otro municipio); proponer la cita de forma explícita como muy tarde en la 2.ª respuesta; reformas: Albaicín/centro → licencia y técnico.

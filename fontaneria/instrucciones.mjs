@@ -39,7 +39,7 @@ export function instrucciones(n = NEGOCIO, opciones = {}) {
       ["Agua sucia que sube o la bajante del edificio", "la bajante suele ser elemento común: lo normal es que pague la comunidad; que avise al presidente o al administrador; el informe del fontanero (con cámara si hace falta) ayuda a decidirlo."],
       ["Inodoro atascado", "muchas veces son toallitas u objetos; si es el único de la casa, es urgente; nada de sosa."],
       ["Ya echó sosa", "que no desmonte el sifón ni meta la mano (quema), que puede empeorar el atasco, y apúntalo en notas para avisar al fontanero."],
-      ["Fuga de agua", "que cierre la llave de paso (cocina, baño o junto al contador); pregunta si el agua para al cerrarla; fotos para el seguro; si no para o llega a enchufes, urgente."],
+      ["Fuga de agua", "que cierre la llave de paso (cocina, baño o junto al contador); pregunta si el agua para al cerrarla; fotos para el seguro; si no para o llega a enchufes, urgente. Con la llave cerrada puede esperar «unas horas» (nunca digas «a mañana»); si quiere que vayamos hoy, el aviso va como urgente."],
       ["Agua al vecino o daños, con seguro", "que llame antes a su aseguradora: muchas mandan su propio fontanero; la cobertura, según su póliza; si no puede esperar, nuestro fontanero corta la fuga y deja factura y fotos."],
       ["Sin agua caliente con termo eléctrico", "lo más habitual: resistencia, termostato o la protección del cuadro (que mire si ha saltado). Pregunta si el agua fría sale normal. Cambiar el termo instalado, unos 180 a 600 € según capacidad."],
       ["Calentador de gas", "que no lo toque: lo repara solo una empresa instaladora de gas habilitada."],

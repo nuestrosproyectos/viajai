@@ -1386,7 +1386,19 @@ async function pensar(onText, signal, imagen) {
 function visible(t) { const i = t.search(/<(ficha|aviso|mostrar)/); return (i >= 0 ? t.slice(0, i) : t).replace(/<\/?[a-z]*$/i, "").trim(); }
 function etiqueta(t, nombre, crudo = false) {
   const m = t.match(new RegExp(`<${nombre}>\\s*([\\s\\S]*?)\\s*</${nombre}>`));
-  if (!m) return null; if (crudo) return m[1].trim(); try { return JSON.parse(m[1]); } catch { return null; }
+  if (m) { if (crudo) return m[1].trim(); try { return JSON.parse(m[1]); } catch { /* sigue abajo */ } }
+  if (crudo) return null;
+  // Tolerante: a veces el modelo olvida la etiqueta de cierre. Se toma el primer objeto JSON completo tras la
+  // etiqueta de apertura (contando llaves), para que una solicitud no se pierda por un «</aviso>» que falta.
+  const i = t.indexOf(`<${nombre}>`); if (i < 0) return null;
+  const ini = t.indexOf("{", i); if (ini < 0) return null;
+  let prof = 0, enTexto = false, escape = false;
+  for (let k = ini; k < t.length; k++) {
+    const c = t[k];
+    if (enTexto) { if (escape) escape = false; else if (c === "\\") escape = true; else if (c === '"') enTexto = false; continue; }
+    if (c === '"') enTexto = true; else if (c === "{") prof++; else if (c === "}" && --prof === 0) { try { return JSON.parse(t.slice(ini, k + 1)); } catch { return null; } }
+  }
+  return null;
 }
 
 async function enviar(texto, { porVoz = false } = {}) {
@@ -1426,7 +1438,7 @@ async function enviar(texto, { porVoz = false } = {}) {
     b.textContent = mostrado || "Perdona, ¿me lo repites?"; textoMini(b.textContent);
     if (!yaSenalado) { const d = etiqueta(respuesta, "mostrar", true); if (d) senalar(d); }
     trocear(true);
-    turnos.push({ role: "assistant", content: respuesta.replace(/<aviso>[\s\S]*?<\/aviso>/, "<aviso>(registrado)</aviso>") });
+    turnos.push({ role: "assistant", content: respuesta.replace(/<aviso>[\s\S]*?(<\/aviso>|$)/, "<aviso>(registrado)</aviso>") });
     const f = etiqueta(respuesta, "ficha"); if (f) pintarFicha(f);
     // el aviso solo vale con los datos obligatorios y un teléfono válido (si el asistente se adelanta, se ignora y sigue la conversación)
     const a = etiqueta(respuesta, "aviso");

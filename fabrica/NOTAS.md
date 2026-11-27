@@ -32,6 +32,11 @@ Una herramienta para crear, para cualquier negocio, una web como Reparo y Herenc
 - Reparo YA está en la plantilla (27-11-2026): `reparacion/web.mjs`, `estilo.css` (piel «claro»), `contenido.js` (preguntas). Sus piezas propias son ahora opcionales de la plantilla y las puede usar cualquier web: `manual` (manual.mjs + conocimiento.mjs con fichas y códigos de error), `mapa` (mapa de la visita en la solicitud), `final.<tipo>.ruta` (dibujo de la furgoneta en la tarjeta final), `obligatoriosTipo` (p. ej. venta pide el aparato), `fichaAlias` y `campoOrientacion` (nombres propios en la <ficha>), destinos con valor (`tituloValor`) y que abren un desplegable (`abrir`), `servidor`/`livekit` (metas de la web publicada). Sus páginas legales siguen siendo propias (sin `legal` en web.mjs). Copia de la página hecha a mano: `reparacion/version-a-mano.html`. Comprobado: pruebas-manual (web y agente iguales), probar-web en 3 equipos, cambio de nombre llega a los 7 sitios, y comparación visual con la anterior (igual).
 - Respuestas escritas de Andrés: 45 palabras (50 en Herencias y Reparo). Juan probó 60 el 27-11-2026: empeoró (7,05 frente a 7,24 y 2 datos falsos), así que se volvió a 45 con instrucciones por tipo de caso (`casos` en cada instrucciones.mjs): nota 7,43 y 0 datos falsos, también con 16 clientes nuevos. Por voz, menos de 25.
 
+## Pruebas de conversaciones completas
+- `fabrica/pruebas/conversar.mjs` + `hoja-conversaciones.md` (ver RESULTADOS-PRUEBAS.md). Vuelta 2: 16/16 en cita, nota 7,00, datos bien tomados 9,4, coherencia 8,8.
+- La web lee el aviso aunque falte `</aviso>` (antes se perdían ~1 de cada 3 en la vuelta 2).
+- Ojo al lanzar agentes Haiku por lotes: alguna vez escriben la respuesta en la carpeta de otra conversación; el encargo dice «de una en una» y conviene comprobarlo.
+
 ## Lo que no se pudo verificar (límites de esta sesión)
 - La red solo deja salir a images.pexels.com: ninguna web oficial se abrió directamente; todo lo legal y los precios salen de resultados del buscador con su URL (marcado «verificar» donde hay dudas). El cupo de búsquedas se agotó en la investigación.
 - OEPM y EUIPO: sin comprobar en las cuatro marcas (hacerlo a mano en el Localizador de marcas).
