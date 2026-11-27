@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Perfecto, Sonia. Te apunto: teléfono seis tres tres, dos cero dos, cuatro cero cuatro, en Motril, para llamarte por la mañana. Y recuerda que cobrar a cuenta no es firmar un finiquito. ¿Está todo bien?\n<ficha>{\"caso\":\"La aseguradora del otro ofrece 2.300 € y le piden firmar ya\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"Sonia\",\"telefono\":\"633 202 404\",\"municipio\":\"Motril\",\"franja\":\"Por teléfono, por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada; cobrar a cuenta no es firmar un finiquito. El abogado revisa la oferta con el informe médico.\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Sonia. Te apunto: teléfono seis tres tres, dos cero dos, cuatro cero cuatro, en Motril, para llamarte por la mañana. Y recuerda que cobrar a cuenta no es firmar un finiquito. ¿Está todo bien?\n<ficha>{\"caso\":\"La aseguradora del otro ofrece 2.300 € y le piden firmar ya\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"Sonia\",\"telefono\":\"633 202 404\",\"municipio\":\"Motril\",\"franja\":\"Por teléfono, por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada; cobrar a cuenta no es firmar un finiquito. El abogado revisa la oferta con el informe médico.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, está bien"
  }
 ]

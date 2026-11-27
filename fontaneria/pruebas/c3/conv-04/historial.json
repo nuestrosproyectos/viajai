@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Perfecto, Paco. Te apunto: teléfono seis nueve nueve, uno cero uno, dos cero dos, en Maracena, calle Real número nueve, para mañana por la mañana. ¿Está todo bien?\n<ficha>{\"averia\":\"Termo eléctrico de 100 litros que pierde agua por abajo; le han presupuestado 900 euros\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Pregunta si se lo pagaría el seguro\",\"nombre\":\"Paco\",\"telefono\":\"699 101 202\",\"municipio\":\"Maracena\",\"direccion\":\"Calle Real 9\",\"franja\":\"Mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"Pedir el presupuesto por escrito antes de empezar; el seguro depende de su póliza.\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Paco. Te apunto: teléfono seis nueve nueve, uno cero uno, dos cero dos, en Maracena, calle Real número nueve, para mañana por la mañana. ¿Está todo bien?\n<ficha>{\"averia\":\"Termo eléctrico de 100 litros que pierde agua por abajo; le han presupuestado 900 euros\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Pregunta si se lo pagaría el seguro\",\"nombre\":\"Paco\",\"telefono\":\"699 101 202\",\"municipio\":\"Maracena\",\"direccion\":\"Calle Real 9\",\"franja\":\"Mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"Pedir el presupuesto por escrito antes de empezar; el seguro depende de su póliza.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien"
  }
 ]

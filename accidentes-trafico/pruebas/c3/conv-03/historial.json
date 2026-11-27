@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Perfecto, Pedro. Te apunto: teléfono seis cero cero, nueve cero nueve, tres cero tres, en Loja, para la videollamada por la tarde, y la consulta es para tu mujer. ¿Está todo bien?\n<ficha>{\"caso\":\"Se saltó un ceda; iba con su mujer como pasajera\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Pedro\",\"telefono\":\"600 909 303\",\"municipio\":\"Loja\",\"franja\":\"Por videollamada, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Tener a mano el informe de urgencias y el parte; la consulta es para su mujer, que como pasajera normalmente puede reclamar.\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Pedro. Te apunto: teléfono seis cero cero, nueve cero nueve, tres cero tres, en Loja, para la videollamada por la tarde, y la consulta es para tu mujer. ¿Está todo bien?\n<ficha>{\"caso\":\"Se saltó un ceda; iba con su mujer como pasajera\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Pedro\",\"telefono\":\"600 909 303\",\"municipio\":\"Loja\",\"franja\":\"Por videollamada, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Tener a mano el informe de urgencias y el parte; la consulta es para su mujer, que como pasajera normalmente puede reclamar.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien"
  }
 ]

@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Gracias, Ana. Te apunto para llamarte y organizar la visita por la tarde. Las tuberías de tu piso hasta el empalme suelen ser de cada vivienda, y el fontanero lo mira. ¿En qué municipio y calle es la vivienda?\n<ficha>{\"averia\":\"Agua sucia sale por el plato de ducha del bajo al tirar de la cisterna de arriba\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"Ana\",\"telefono\":\"677 450 990\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Hacer fotos de los daños para el seguro. Las tuberías de cada piso hasta el empalme suelen ser de cada vivienda; el informe con cámara ayuda a decidir.\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Ana. Te apunto para llamarte y organizar la visita por la tarde. Las tuberías de tu piso hasta el empalme suelen ser de cada vivienda, y el fontanero lo mira. ¿En qué municipio y calle es la vivienda?\n<ficha>{\"averia\":\"Agua sucia sale por el plato de ducha del bajo al tirar de la cisterna de arriba\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"Ana\",\"telefono\":\"677 450 990\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Hacer fotos de los daños para el seguro. Las tuberías de cada piso hasta el empalme suelen ser de cada vivienda; el informe con cámara ayuda a decidir.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Granada capital, en el Zaidín, calle Arabial 12, bajo A"
  }
 ]
