@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Vale, resérvala"
+ },
+ {
+  "role": "assistant",
+  "content": "Te reservo la visita. Si el piso va a ser tu vivienda y tiene más de dos años, el IVA puede ser del 10 %; lo confirma tu gestor. Es solo para llamarte y organizarla: ¿me dices tu nombre y un teléfono?\n<ficha>{\"obra\":\"Reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros\",\"vivienda\":\"\",\"metros\":\"90 metros\",\"antiguedad\":\"Años 80\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"La electricidad la hace una empresa habilitada, que emite el boletín; el permiso en Armilla lo aclara el técnico en la visita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Te reservo la visita. Si el piso va a ser tu vivienda y tiene más de dos años, el IVA puede ser del 10 %; lo confirma tu gestor. Es solo para llamarte y organizarla: ¿me dices tu nombre y un teléfono?\n<ficha>{\"obra\":\"Reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros\",\"vivienda\":\"\",\"metros\":\"90 metros\",\"antiguedad\":\"Años 80\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"La electricidad la hace una empresa habilitada, que emite el boletín; el permiso en Armilla lo aclara el técnico en la visita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

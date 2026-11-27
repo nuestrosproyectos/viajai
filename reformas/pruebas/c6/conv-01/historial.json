@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Marta, 655 321 908"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Marta. ¿En qué municipio, barrio y calle está el piso, y te viene bien por la mañana o por la tarde?\n<ficha>{\"obra\":\"quitar la bañera, poner plato de ducha, cambiar azulejos y lavabo\",\"vivienda\":\"\",\"metros\":\"Unos 5 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Marta\",\"telefono\":\"655 321 908\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Un baño completo suele costar entre tres mil y seis mil euros; el precio exacto sale de la visita de medición.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Marta. ¿En qué municipio, barrio y calle está el piso, y te viene bien por la mañana o por la tarde?\n<ficha>{\"obra\":\"quitar la bañera, poner plato de ducha, cambiar azulejos y lavabo\",\"vivienda\":\"\",\"metros\":\"Unos 5 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Marta\",\"telefono\":\"655 321 908\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Un baño completo suele costar entre tres mil y seis mil euros; el precio exacto sale de la visita de medición.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

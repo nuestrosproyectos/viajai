@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Vale, tiene sentido. Reserva la visita"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, te reservo la visita. Es solo para llamarte y organizarla: ¿me dices tu nombre y un teléfono?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"Edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada\",\"direccion\":\"Calle San Antón, 5º\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Tirar un tabique no tiene precio fijo; el técnico lo ve en la visita y, si es de carga, hace falta proyecto y licencia.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, te reservo la visita. Es solo para llamarte y organizarla: ¿me dices tu nombre y un teléfono?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"Edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada\",\"direccion\":\"Calle San Antón, 5º\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Tirar un tabique no tiene precio fijo; el técnico lo ve en la visita y, si es de carga, hace falta proyecto y licencia.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]
