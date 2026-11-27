@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Mi pareja ha fallecido. No estábamos casados pero llevábamos 15 años juntos. ¿Me corresponde algo?"
+ },
+ {
+  "role": "assistant",
+  "content": "Siento mucho lo de tu pareja. Sin testamento, una pareja sin matrimonio no hereda por ley, y con testamento solo hereda si aparece en él. Te reservo la primera consulta gratis con el abogado. ¿Sabes si dejó testamento?\n<ficha>{\"situacion\":\"Fallecimiento de tu pareja, sin matrimonio, tras quince años juntos\",\"parentesco\":\"Pareja de hecho\",\"testamento\":\"No lo sé\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Sin testamento, una pareja sin matrimonio no hereda por ley; con testamento, solo si aparece en él.\",\"porDecir\":\"El certificado de últimas voluntades, que se pide pasados quince días hábiles, dice si hay testamento y en qué notaría · si la pareja estaba inscrita como pareja de hecho, el impuesto de sucesiones cambia mucho · el impuesto tiene seis meses desde el fallecimiento\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Siento mucho lo de tu pareja. Sin testamento, una pareja sin matrimonio no hereda por ley, y con testamento solo hereda si aparece en él. Te reservo la primera consulta gratis con el abogado. ¿Sabes si dejó testamento?\n<ficha>{\"situacion\":\"Fallecimiento de tu pareja, sin matrimonio, tras quince años juntos\",\"parentesco\":\"Pareja de hecho\",\"testamento\":\"No lo sé\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Sin testamento, una pareja sin matrimonio no hereda por ley; con testamento, solo si aparece en él.\",\"porDecir\":\"El certificado de últimas voluntades, que se pide pasados quince días hábiles, dice si hay testamento y en qué notaría · si la pareja estaba inscrita como pareja de hecho, el impuesto de sucesiones cambia mucho · el impuesto tiene seis meses desde el fallecimiento\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

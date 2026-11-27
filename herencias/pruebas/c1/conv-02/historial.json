@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Mi tía me ha dejado su casa en el testamento. ¿Cuánto voy a tener que pagar?"
+ },
+ {
+  "role": "assistant",
+  "content": "Siento lo de tu tía. Entre tía y sobrino sí se paga impuesto: como ejemplo orientativo, con 60.000 euros serían del orden de 6.500 a 7.400 euros, y el abogado lo confirma con el valor de la casa. ¿Te reservo la primera consulta gratis?\n<ficha>{\"situacion\":\"Casa que te deja tu tía en testamento\",\"parentesco\":\"Sobrino o sobrina\",\"testamento\":\"Sí\",\"bienes\":\"Una casa\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Confirmar el impuesto de sucesiones con el valor de la casa; el abogado lo revisa con los documentos.\",\"porDecir\":\"Si es un piso o casa, la plusvalía municipal: seis meses desde el fallecimiento, y en Granada capital la bonificación se pierde fuera de plazo · el certificado de últimas voluntades dice ante qué notario está el testamento\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Siento lo de tu tía. Entre tía y sobrino sí se paga impuesto: como ejemplo orientativo, con 60.000 euros serían del orden de 6.500 a 7.400 euros, y el abogado lo confirma con el valor de la casa. ¿Te reservo la primera consulta gratis?\n<ficha>{\"situacion\":\"Casa que te deja tu tía en testamento\",\"parentesco\":\"Sobrino o sobrina\",\"testamento\":\"Sí\",\"bienes\":\"Una casa\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Confirmar el impuesto de sucesiones con el valor de la casa; el abogado lo revisa con los documentos.\",\"porDecir\":\"Si es un piso o casa, la plusvalía municipal: seis meses desde el fallecimiento, y en Granada capital la bonificación se pierde fuera de plazo · el certificado de últimas voluntades dice ante qué notario está el testamento\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]
