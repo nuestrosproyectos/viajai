@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "no se donde está la llave de paso!! estoy muy nerviosa"
+ },
+ {
+  "role": "assistant",
+  "content": "Entiendo el susto, no te preocupes. Si no la encuentras, busca la que está junto al contador y ciérrala girándola hasta el tope. Te reservo la visita urgente: ¿me dices tu nombre y un teléfono, solo para llamarte y organizarla?\n<ficha>{\"averia\":\"Fuga de agua bajo el fregadero\",\"cuando\":\"Urgente, ahora\",\"llave\":\"No la encuentra todavía; aún no ha parado el agua\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Buscar la llave de paso junto al contador y cerrarla; apartar lo que se pueda mojar.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>seguridad</mostrar>",
+  "original": "Entiendo el susto, no te preocupes. Si no la encuentras, busca la que está junto al contador y ciérrala girándola hasta el tope. Te reservo la visita urgente: ¿me dices tu nombre y un teléfono, solo para llamarte y organizarla?\n<ficha>{\"averia\":\"Fuga de agua bajo el fregadero\",\"cuando\":\"Urgente, ahora\",\"llave\":\"No la encuentra todavía; aún no ha parado el agua\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Buscar la llave de paso junto al contador y cerrarla; apartar lo que se pueda mojar.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>seguridad</mostrar>"
  }
 ]

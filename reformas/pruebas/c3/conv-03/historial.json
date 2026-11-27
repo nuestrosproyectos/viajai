@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "No tengo cifra para solo ese tabique: depende de si es de carga, y eso lo comprueba el técnico. Si es de carga, lo más probable es proyecto y licencia, y en el centro antiguo también puede pedir licencia. ¿Te reservo la visita gratis?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Antes de tirarlo hay que comprobar si es de carga; el técnico lo mira en la visita gratis.\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "No tengo cifra para solo ese tabique: depende de si es de carga, y eso lo comprueba el técnico. Si es de carga, lo más probable es proyecto y licencia, y en el centro antiguo también puede pedir licencia. ¿Te reservo la visita gratis?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Antes de tirarlo hay que comprobar si es de carga; el técnico lo mira en la visita gratis.\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Y no podemos tirarlo sin decir nada a nadie para ahorrar el permiso?"
  }
 ]

@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Depende de tu consumo, pero una casa típica de unos 5 kWp ronda los 4.500 a 7.500 euros sin batería, y suele pagarse sola en seis a diez años. Es orientativo; con tus facturas lo afinamos. ¿Vives en casa o en un bloque?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Lo que más pesa es cuánto consumes y a qué horas; con tus facturas el estudio dice si te compensa.\",\"fase\":\"orientando\"}</ficha>",
   "original": "Depende de tu consumo, pero una casa típica de unos 5 kWp ronda los 4.500 a 7.500 euros sin batería, y suele pagarse sola en seis a diez años. Es orientativo; con tus facturas lo afinamos. ¿Vives en casa o en un bloque?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Lo que más pesa es cuánto consumes y a qué horas; con tus facturas el estudio dice si te compensa.\",\"fase\":\"orientando\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "En casa, adosada en Armilla"
  }
 ]

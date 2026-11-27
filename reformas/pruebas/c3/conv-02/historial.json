@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Sí, la visita de medición es gratis, unos 45 minutos y sin compromiso. Si aparece algo oculto en la obra, se enseña, se presupuesta por escrito y no se hace sin tu firma. ¿Te reservo la visita por la mañana o por la tarde?\n<ficha>{\"obra\":\"\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Conviene reservar la visita gratis: ahí se mide y se ve lo que hay detrás antes de presupuestar.\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Sí, la visita de medición es gratis, unos 45 minutos y sin compromiso. Si aparece algo oculto en la obra, se enseña, se presupuesta por escrito y no se hace sin tu firma. ¿Te reservo la visita por la mañana o por la tarde?\n<ficha>{\"obra\":\"\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Conviene reservar la visita gratis: ahí se mide y se ve lo que hay detrás antes de presupuestar.\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Ya me han engañado otras veces. ¿El presupuesto es cerrado y me lo dan por escrito?"
  }
 ]

@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Solo el lavabo, la ducha va bien. Ah, pues ya eché un bote de desatascador fuerte antes y sigue igual"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias por contarlo, no pasa nada. Con ese producto no desmontes el sifón ni metas la mano, que puede quemar y empeorar el atasco; lo apunto para el fontanero. Te reservo la visita: ¿te viene mejor mañana por la mañana o por la tarde?\n<ficha>{\"averia\":\"Lavabo del baño atascado, solo ese; ya echó un desatascador fuerte\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No desmontar el sifón ni meter la mano, que quema; el atasco parece solo del lavabo.\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Gracias por contarlo, no pasa nada. Con ese producto no desmontes el sifón ni metas la mano, que puede quemar y empeorar el atasco; lo apunto para el fontanero. Te reservo la visita: ¿te viene mejor mañana por la mañana o por la tarde?\n<ficha>{\"averia\":\"Lavabo del baño atascado, solo ese; ya echó un desatascador fuerte\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No desmontar el sifón ni meter la mano, que quema; el atasco parece solo del lavabo.\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "No, no he firmado nada. Pero me llaman todos los días para que firme. Es poco 2.300 €? Estuve 2 meses de baja y sigo con rehabilitación"
+ },
+ {
+  "role": "assistant",
+  "content": "Entiendo la presión. Sigue con la rehabilitación y no firmes: di que lo verá un abogado antes. Si 2.300 € es poco, eso lo calcula el abogado con tu informe médico y los días de baja. ¿Te reservo la consulta, mañana o tarde?\n<ficha>{\"caso\":\"La aseguradora del otro ofrece 2.300 € y le piden firmar ya\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada; seguir con la rehabilitación; que el abogado revise la oferta con el informe médico.\",\"fase\":\"orientando\"}</ficha>\n<mostrar>oferta</mostrar>",
+  "original": "Entiendo la presión. Sigue con la rehabilitación y no firmes: di que lo verá un abogado antes. Si 2.300 € es poco, eso lo calcula el abogado con tu informe médico y los días de baja. ¿Te reservo la consulta, mañana o tarde?\n<ficha>{\"caso\":\"La aseguradora del otro ofrece 2.300 € y le piden firmar ya\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada; seguir con la rehabilitación; que el abogado revise la oferta con el informe médico.\",\"fase\":\"orientando\"}</ficha>\n<mostrar>oferta</mostrar>"
  }
 ]

@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Y eso quién lo paga? yo o la comunidad? es que me entra en mi casa"
+ },
+ {
+  "role": "assistant",
+  "content": "Entiendo la preocupación. Eso lo decide la comunidad con su administrador, y la bajante suele ser de todos. Llama también a tu seguro, según tu póliza. ¿Te reservo la visita, por la mañana o por la tarde?\n<ficha>{\"averia\":\"Agua sucia sale por el plato de ducha del bajo al tirar de la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Avisar al presidente o al administrador; la comunidad decide quién paga. Llamar a su seguro, según su póliza.\",\"fase\":\"orientando\"}</ficha>",
+  "original": "Entiendo la preocupación. Eso lo decide la comunidad con su administrador, y la bajante suele ser de todos. Llama también a tu seguro, según tu póliza. ¿Te reservo la visita, por la mañana o por la tarde?\n<ficha>{\"averia\":\"Agua sucia sale por el plato de ducha del bajo al tirar de la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Avisar al presidente o al administrador; la comunidad decide quién paga. Llamar a su seguro, según su póliza.\",\"fase\":\"orientando\"}</ficha>"
  }
 ]

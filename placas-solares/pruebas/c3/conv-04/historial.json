@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Primero hace falta el acuerdo de la junta, porque la azotea es común; la mayoría reducida ronda un tercio, y eso lo confirma el administrador. El estudio con tus facturas te sirve para llevarlo a la junta. ¿Te reservo el estudio?\n<ficha>{\"que\":\"Placas solares en la azotea del bloque\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea común\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Como vives en un bloque, primero hace falta el acuerdo de la junta; el estudio te sirve para llevarlo allí.\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Primero hace falta el acuerdo de la junta, porque la azotea es común; la mayoría reducida ronda un tercio, y eso lo confirma el administrador. El estudio con tus facturas te sirve para llevarlo a la junta. ¿Te reservo el estudio?\n<ficha>{\"que\":\"Placas solares en la azotea del bloque\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea común\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Como vives en un bloque, primero hace falta el acuerdo de la junta; el estudio te sirve para llevarlo allí.\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "¿Y si los vecinos no quieren? ¿Puedo ponerlas solo para mí?"
  }
 ]

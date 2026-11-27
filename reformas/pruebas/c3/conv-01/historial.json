@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Un baño completo en una reforma estándar suele quedar entre tres mil y seis mil euros, de una a dos semanas. La visita de medición es gratis y dura unos 45 minutos. ¿Quieres cambiar solo la bañera o el baño entero?\n<ficha>{\"obra\":\"reformar el baño\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Lo más probable es un baño completo de tres mil a seis mil euros; conviene la visita de medición gratis.\",\"fase\":\"orientando\"}</ficha>",
   "original": "Un baño completo en una reforma estándar suele quedar entre tres mil y seis mil euros, de una a dos semanas. La visita de medición es gratis y dura unos 45 minutos. ¿Quieres cambiar solo la bañera o el baño entero?\n<ficha>{\"obra\":\"reformar el baño\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Lo más probable es un baño completo de tres mil a seis mil euros; conviene la visita de medición gratis.\",\"fase\":\"orientando\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Quiero quitar la bañera y poner plato de ducha, y cambiar azulejos y lavabo"
  }
 ]

@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Es eléctrico, de 100 litros, y pierde agua por abajo. Somos 4 en casa. Entonces 900 es mucho no? Y el seguro me lo pagaría?"
+ },
+ {
+  "role": "assistant",
+  "content": "Baja el interruptor general y cierra la llave de paso, sin tocarlo mojado. Sí, 900 queda por encima de la horquilla, aunque el IVA lo mueve. Del seguro, según tu póliza, llama antes a tu aseguradora. ¿Te reservo la visita, mañana o tarde?\n<ficha>{\"averia\":\"Termo eléctrico de 100 litros que pierde agua por abajo; le han presupuestado 900 euros\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Pregunta si se lo pagaría el seguro\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cortar la corriente del termo y cerrar la llave de paso, sin tocarlo mojado. Pedir el desglose del presupuesto; el seguro depende de su póliza.\",\"fase\":\"orientando\"}</ficha>\n<mostrar>precios</mostrar>",
+  "original": "Baja el interruptor general y cierra la llave de paso, sin tocarlo mojado. Sí, 900 queda por encima de la horquilla, aunque el IVA lo mueve. Del seguro, según tu póliza, llama antes a tu aseguradora. ¿Te reservo la visita, mañana o tarde?\n<ficha>{\"averia\":\"Termo eléctrico de 100 litros que pierde agua por abajo; le han presupuestado 900 euros\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Pregunta si se lo pagaría el seguro\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cortar la corriente del termo y cerrar la llave de paso, sin tocarlo mojado. Pedir el desglose del presupuesto; el seguro depende de su póliza.\",\"fase\":\"orientando\"}</ficha>\n<mostrar>precios</mostrar>"
  }
 ]
