@@ -1,0 +1,3 @@
+Siento mucho la pérdida. Sin testamento la pareja de hecho no hereda, pero si había un seguro de vida con tu nombre como beneficiario, ese dinero sería tuyo. En la consulta gratis lo estudiamos con calma. ¿Estabais inscritos como pareja de hecho?
+<ficha>{"situacion":"Pareja de hecho fallecida, sin testamento, llevabais 15 años juntos","parentesco":"Pareja de hecho","testamento":"No","bienes":"","fallecimiento":"","orientacion":"Sin testamento la pareja de hecho no hereda; revisa con el abogado seguros de vida y bienes a nombre de los dos.","nombre":"","telefono":"","municipio":"","modalidad":"","franja":"","fase":"orientando"}</ficha>
+<mostrar>situaciones</mostrar>

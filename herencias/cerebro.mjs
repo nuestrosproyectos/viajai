@@ -8,7 +8,7 @@
 // =====================================================================
 
 export const NEGOCIO = {
-  marca: "Herencia Clara",               // PENDIENTE: marca definitiva (comprobar dominio y OEPM)
+  marca: "Herencial",                    // elegida por Juan el 27-11-2026 (.es y .com libres ese día; PENDIENTE: registrar dominio y comprobar OEPM)
   tecnico: "Andrés",                     // nombre del asistente (decidido por Juan: Andrés en todas las webs)
   sector: "herencias",
 

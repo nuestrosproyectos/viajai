@@ -1,0 +1,3 @@
+Siento la pérdida de tu padre. Si aceptas sin más, respondes también con tu dinero; si es a beneficio de inventario, que limita la deuda a lo que deje la herencia, no. Antes de tocar cuentas, lo vemos en la consulta gratis. ¿Sabes si tu padre hizo testamento?
+<ficha>{"situacion":"Deudas de tu padre, que tenía un bar, con proveedores y Hacienda","parentesco":"Hijo o hija","testamento":"No lo sé","bienes":"Bar y deudas con proveedores y Hacienda","fallecimiento":"","orientacion":"No toques cuentas ni bienes hasta hablar con el abogado; según cómo aceptes, respondes o no con tu dinero.","nombre":"","telefono":"","municipio":"","modalidad":"","franja":"","fase":"orientando"}</ficha>
+<mostrar>situaciones</mostrar>

@@ -1,0 +1,3 @@
+Depende de lo que haya y de si hay acuerdo; en una herencia sencilla suele ser un precio cerrado de unos cientos de euros a algo más de mil, orientativo. Notaría, registro e impuestos van aparte. En la consulta te damos el presupuesto por escrito. ¿Vivía en Andalucía quien falleció?
+<ficha>{"situacion":"Consulta de precio para tramitar una herencia","parentesco":"","testamento":"No lo sé","bienes":"","fallecimiento":"","orientacion":"Pedir en la consulta el presupuesto cerrado por escrito; notaría e impuestos van aparte.","nombre":"","telefono":"","municipio":"","modalidad":"","franja":"","fase":"entendiendo"}</ficha>
+<mostrar>honorarios</mostrar>

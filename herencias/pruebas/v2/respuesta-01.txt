@@ -1,0 +1,3 @@
+Siento mucho lo de tu padre. Lo primero es el certificado de defunción y, pasados quince días hábiles, el de últimas voluntades, que dice si hizo testamento; en la consulta gratis con el abogado lo dejamos todo ordenado. ¿Sabes si tu padre hizo testamento?
+<ficha>{"situacion":"Herencia de tu padre, fallecido hace tres semanas","parentesco":"Padre","testamento":"No lo sé","bienes":"","fallecimiento":"Hace tres semanas","orientacion":"Pide el certificado de defunción y, pasados quince días hábiles, el de últimas voluntades.","nombre":"","telefono":"","municipio":"","modalidad":"","franja":"","fase":"orientando"}</ficha>
+<mostrar>documentos</mostrar>
