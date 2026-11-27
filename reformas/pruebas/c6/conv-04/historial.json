@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Entiendo su preocupación por su padre. Le confirmo, Carmen: teléfono seis nueve nueve, cuatro cinco cero, dos uno dos; visita en la calle Ancha, número ocho, de Maracena, a primera hora de la mañana. ¿Está todo bien?\n<ficha>{\"obra\":\"Cambiar la bañera por plato de ducha, para su padre, que ya no puede entrar\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Carmen\",\"telefono\":\"699 450 212\",\"municipio\":\"Maracena\",\"direccion\":\"Calle Ancha 8\",\"franja\":\"Mañana, a primera hora\",\"inicio\":\"Cuanto antes\",\"orientacion\":\"Cambiar la bañera por un plato de ducha es la prioridad por seguridad; suele costar entre mil y dos mil trescientos euros.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Entiendo su preocupación por su padre. Le confirmo, Carmen: teléfono seis nueve nueve, cuatro cinco cero, dos uno dos; visita en la calle Ancha, número ocho, de Maracena, a primera hora de la mañana. ¿Está todo bien?\n<ficha>{\"obra\":\"Cambiar la bañera por plato de ducha, para su padre, que ya no puede entrar\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Carmen\",\"telefono\":\"699 450 212\",\"municipio\":\"Maracena\",\"direccion\":\"Calle Ancha 8\",\"franja\":\"Mañana, a primera hora\",\"inicio\":\"Cuanto antes\",\"orientacion\":\"Cambiar la bañera por un plato de ducha es la prioridad por seguridad; suele costar entre mil y dos mil trescientos euros.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo correcto, gracias."
  }
 ]

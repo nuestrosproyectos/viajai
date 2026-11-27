@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Gracias, Paco. Te confirmo: teléfono seis tres tres, siete siete ocho, uno dos cero; visita en calle Recogidas treinta y uno, zona Ronda, Granada, por las mañanas. ¿Está todo bien?\n<ficha>{\"obra\":\"Cambiar las ventanas por otras que aíslen\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"1990\",\"presupuesto\":\"\",\"nombre\":\"Paco\",\"telefono\":\"633 778 120\",\"municipio\":\"Granada\",\"direccion\":\"Zona Ronda, calle Recogidas 31\",\"franja\":\"Por las mañanas\",\"inicio\":\"\",\"orientacion\":\"Para el IVA, lo más probable es el 10 % si es para vivir, tiene más de dos años y los materiales no pasan del 40 % sin IVA; si es piso y cambian la fachada, hace falta acuerdo de la comunidad.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Paco. Te confirmo: teléfono seis tres tres, siete siete ocho, uno dos cero; visita en calle Recogidas treinta y uno, zona Ronda, Granada, por las mañanas. ¿Está todo bien?\n<ficha>{\"obra\":\"Cambiar las ventanas por otras que aíslen\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"1990\",\"presupuesto\":\"\",\"nombre\":\"Paco\",\"telefono\":\"633 778 120\",\"municipio\":\"Granada\",\"direccion\":\"Zona Ronda, calle Recogidas 31\",\"franja\":\"Por las mañanas\",\"inicio\":\"\",\"orientacion\":\"Para el IVA, lo más probable es el 10 % si es para vivir, tiene más de dos años y los materiales no pasan del 40 % sin IVA; si es piso y cambian la fachada, hace falta acuerdo de la comunidad.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien"
  }
 ]
