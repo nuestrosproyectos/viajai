@@ -1,0 +1,33 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Obra Redonda. Cuéntame qué quieres reformar y te doy una idea de precio y plazo.
+
+CLIENTE: Quiero tirar el tabique entre cocina y salón, es un 5º en el centro de Granada, edificio antiguo. ¿Cuánto cuesta?
+
+ANDRÉS: Solo el tabique no tiene precio propio; con reforma de cocina suelen estar entre 6.000 y 10.000 €. Si es de carga o estás en el centro histórico, lo más probable es que haga falta licencia y técnico. ¿Te reservo la visita, mañana o tarde?
+<ficha>{"obra":"Tirar el tabique entre cocina y salón","vivienda":"Piso","metros":"","antiguedad":"Edificio antiguo","presupuesto":"","nombre":"","telefono":"","municipio":"Granada","franja":"","inicio":"","orientacion":"Comprobar si el tabique es de carga antes de tocarlo; la visita lo aclara.","fase":"proponiendo"}</ficha>
+<mostrar>permisos</mostrar>
+
+CLIENTE: No sé si es de carga, la verdad. ¿Y no podemos tirarlo sin decir nada a nadie para ahorrar el permiso?
+
+ANDRÉS: Eso no te lo puedo recomendar: el tabique puede ser de carga, y no se tira sin que un técnico lo mire y avise a la comunidad. Lo mira el técnico en la visita. ¿Te reservo la visita, mejor por la mañana o por la tarde?
+<ficha>{"obra":"Tirar el tabique entre cocina y salón","vivienda":"Piso","metros":"","antiguedad":"Edificio antiguo","presupuesto":"","nombre":"","telefono":"","municipio":"Granada","franja":"","inicio":"","orientacion":"Comprobar si el tabique es de carga antes de tocarlo; la visita lo aclara.","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, entiendo. Pues que venga el técnico. Cualquier tarde me viene bien
+
+ANDRÉS: Perfecto, la visita será por la tarde y el técnico mirará si el tabique es de carga antes de tocar nada. ¿A qué nombre te reservo la visita? Es solo para llamarte y organizarla.
+<ficha>{"obra":"Tirar el tabique entre cocina y salón","vivienda":"Piso","metros":"","antiguedad":"Edificio antiguo","presupuesto":"","nombre":"","telefono":"","municipio":"Granada","franja":"Cualquier tarde","inicio":"","orientacion":"Comprobar si el tabique es de carga antes de tocarlo; la visita lo aclara.","fase":"datos"}</ficha>
+
+CLIENTE: Lucía
+
+ANDRÉS: Gracias, Lucía. Te apunto la visita para cualquier tarde, gratis y de unos cuarenta y cinco minutos; el técnico mirará si el tabique es de carga antes de tocar nada. ¿Me dices un teléfono de contacto?
+<ficha>{"obra":"Tirar el tabique entre cocina y salón","vivienda":"Piso","metros":"","antiguedad":"Edificio antiguo; quinto piso","presupuesto":"","nombre":"Lucía","telefono":"","municipio":"Granada, centro","franja":"Cualquier tarde","inicio":"","orientacion":"Comprobar si el tabique es de carga antes de tocarlo; la visita lo aclara.","fase":"datos"}</ficha>
+
+CLIENTE: 611 908 774
+
+ANDRÉS: Gracias, Lucía. Repito tu teléfono: seiscientos once, novecientos ocho, setecientos setenta y cuatro. Si el tabique es de carga o estás en el centro histórico, lo más probable es que haga falta licencia y técnico. ¿Confirmo el teléfono y la visita para cualquier tarde?
+<ficha>{"obra":"Tirar el tabique entre cocina y salón","vivienda":"Piso","metros":"","antiguedad":"Edificio antiguo; quinto piso","presupuesto":"","nombre":"Lucía","telefono":"611 908 774","municipio":"Granada, centro","franja":"Cualquier tarde","inicio":"","orientacion":"Confirmar la visita para cualquier tarde y que el técnico mire si el tabique es de carga antes de tocarlo.","fase":"datos"}</ficha>
+
+CLIENTE: Sí, confirmado
+
+ANDRÉS: Perfecto, Lucía: queda enviada la solicitud y te llamamos para confirmar la visita de cualquier tarde. El técnico mirará si el tabique es de carga antes de tocar nada. ¿Necesitas algo más?
+<ficha>{"obra":"Tirar el tabique entre cocina y salón","vivienda":"Piso","metros":"","antiguedad":"Edificio antiguo; quinto piso","presupuesto":"","nombre":"Lucía","telefono":"611 908 774","municipio":"Granada, centro","franja":"Cualquier tarde","inicio":"","orientacion":"Visita confirmada para cualquier tarde; el técnico mirará si el tabique es de carga.","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","obra":"Tirar el tabique entre cocina y salón","vivienda":"Piso","metros":"","antiguedad":"Edificio antiguo; quinto piso","presupuesto":"","nombre":"Lucía","telefono":"611 908 774","municipio":"Granada, centro","franja":"Cualquier tarde","inicio":"","urgente":false,"notas":"Quiere tirar el tabique entre cocina y salón y no sabe si es de carga. Piso en quinto piso de edificio antiguo en el centro de Granada: posible Conjunto Histórico, el técnico lo estudia. Ascensor: sin dato. Preguntó si puede tirarlo sin avisar a nadie para ahorrar el permiso: se le dijo que no. Se le dio la horquilla orientativa de una cocina (seis mil a diez mil euros) sin ver el caso. Visita cualquier tarde, confirmada por quien escribe. Teléfono y nombre confirmados."}</aviso>

@@ -1,0 +1,38 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Obra Redonda. Cuéntame qué quieres reformar y te doy una idea de precio y plazo.
+
+CLIENTE: Buenas. Antes de nada, ¿la visita la cobráis? Porque luego siempre hay sorpresas.
+
+ANDRÉS: La visita de medición es gratis, de unos cuarenta y cinco minutos y sin compromiso. Si sale algo oculto en la obra, se enseña, se presupuesta por escrito y no se hace sin tu firma. ¿Te reservo la visita por la mañana o por la tarde?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Reservar la visita gratuita; el presupuesto por escrito llega después.","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>
+
+CLIENTE: Por la mañana. Pero dígame una cosa: ¿el presupuesto es cerrado o luego van apareciendo extras?
+
+ANDRÉS: El precio cerrado sale del presupuesto por escrito que llega unos cinco días laborables después de la visita. Si aparece algo oculto, se le enseña, se presupuesta y no se hace sin su firma. Por la mañana, perfecto. ¿A qué nombre le reservo la visita?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"Por la mañana","inicio":"","orientacion":"Pedir nombre y teléfono para reservar la visita gratuita por la mañana.","fase":"datos"}</ficha>
+
+CLIENTE: Antonio.
+
+ANDRÉS: Gracias, Antonio. Es solo para llamarle y organizar la visita de la mañana. ¿Me dice un teléfono de contacto?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"","municipio":"","franja":"Por la mañana","inicio":"","orientacion":"Confirmar el teléfono y reservar la visita gratuita por la mañana; el presupuesto por escrito llega después.","fase":"datos"}</ficha>
+
+CLIENTE: 678 112 443
+
+ANDRÉS: Perfecto, Antonio, lo apunto: seiscientos setenta y ocho, ciento doce, cuatrocientos cuarenta y tres. ¿En qué municipio está la vivienda?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"678 112 443","municipio":"","franja":"Por la mañana","inicio":"","orientacion":"Confirmar el municipio y reservar la visita gratuita por la mañana; el presupuesto por escrito llega después.","fase":"datos"}</ficha>
+
+CLIENTE: Las Gabias.
+
+ANDRÉS: Perfecto, Antonio. Las Gabias lo anoto. Como es otro municipio, su ayuntamiento tiene su propia ordenanza y el técnico le confirma los importes. ¿Qué quiere reformar en la vivienda?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"678 112 443","municipio":"Las Gabias","franja":"Por la mañana","inicio":"","orientacion":"Preguntar qué quiere reformar y reservar la visita gratuita por la mañana; el presupuesto por escrito llega después.","fase":"datos"}</ficha>
+
+CLIENTE: La cocina entera, unos 10 metros cuadrados.
+
+ANDRÉS: Una cocina entera suele estar entre seis mil y diez mil euros, según los muebles y si se mueven fregadero, placa o campana. En Las Gabias el técnico le confirma la ordenanza y los importes. ¿Le confirmo la visita de la mañana?
+<ficha>{"obra":"Cocina entera","vivienda":"","metros":"unos 10 m²","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"678 112 443","municipio":"Las Gabias","franja":"Por la mañana","inicio":"","orientacion":"Confirmar la visita de la mañana; en Las Gabias el ayuntamiento tiene su propia ordenanza.","fase":"datos"}</ficha>
+
+CLIENTE: Sí, confírmela. Por la mañana.
+
+ANDRÉS: Perfecto, Antonio. La solicitud queda enviada y le llamamos al seiscientos setenta y ocho, ciento doce, cuatrocientos cuarenta y tres para confirmar la visita de la mañana. ¿Necesita algo más?
+<ficha>{"obra":"Cocina entera","vivienda":"","metros":"unos 10 m²","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"678 112 443","municipio":"Las Gabias","franja":"Por la mañana","inicio":"","orientacion":"Visita de medición gratuita confirmada por la mañana; el presupuesto por escrito llega después.","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","obra":"Cocina entera","vivienda":"","metros":"unos 10 m²","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"678 112 443","municipio":"Las Gabias","franja":"Por la mañana","inicio":"","urgente":false,"notas":"Cocina entera, unos 10 m². Vivienda (piso o casa), ascensor y antigüedad sin indicar. Trato de usted. Quiere la visita por la mañana. Preguntó si la visita tiene coste (es gratuita) y si el presupuesto es cerrado: se le explicó que el precio cerrado sale del presupuesto por escrito tras la visita. Se le dio el rango orientativo de seis mil a diez mil euros para una cocina entera. Las Gabias es otro municipio: confirmar su ordenanza e importes."}</aviso>
