@@ -1,0 +1,3 @@
+Mejor que no lo toques ni lo abras. No lo reparamos, porque no consta que tengamos habilitación de gas; lo debe revisar una empresa instaladora de gas habilitada. Si huele a gas, sal y llama a Nedgia o al 112. ¿Huele a gas?
+<ficha>{"averia":"Calentador de butano que hace un ruido raro y se apaga","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No abrirlo ni tocarlo; no lo reparamos, lo revisa una empresa instaladora de gas habilitada","fase":"orientando"}</ficha>
+<mostrar>gas</mostrar>

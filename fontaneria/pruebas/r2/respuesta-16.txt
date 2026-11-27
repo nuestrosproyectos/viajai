@@ -1,0 +1,2 @@
+No tengo confirmada esa ayuda, así que no te la doy por segura; compruébala en la Junta o en tu ayuntamiento. Lo apunto para que el fontanero te lo confirme. ¿Te reservo una visita para revisarlas, por la mañana o por la tarde?
+<ficha>{"averia":"Cambio de tuberías viejas de plomo","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Comprueba la ayuda en la Junta o en tu ayuntamiento; el fontanero confirma si podemos tramitarla","fase":"proponiendo"}</ficha>

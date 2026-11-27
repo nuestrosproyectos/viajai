@@ -1,0 +1,3 @@
+Entiendo tus dudas. Un desatasco sencillo suele costar entre setenta y ciento cincuenta euros, orientativo. Tienes derecho a presupuesto por escrito y factura detallada; si es legal o no, lo confirma el fontanero. ¿Te reservo una visita con presupuesto antes de tocar nada?
+<ficha>{"averia":"Desatasco de váter ya hecho por otra empresa","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Pide siempre presupuesto por escrito y factura detallada antes de firmar nada","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>

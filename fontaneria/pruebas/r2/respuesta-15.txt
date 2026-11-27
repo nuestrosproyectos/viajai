@@ -1,0 +1,3 @@
+Sin verlo no doy precio cerrado, pero un atasco serio con máquina suele empezar en unos ciento cincuenta euros, orientativo, y puede pasar de quinientos. El precio lo da el fontanero por escrito. ¿Te reservo la visita por la mañana o por la tarde?
+<ficha>{"averia":"Bajante atascada","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Un atasco serio con máquina suele empezar en unos ciento cincuenta euros; el precio exacto lo da el fontanero por escrito","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>
