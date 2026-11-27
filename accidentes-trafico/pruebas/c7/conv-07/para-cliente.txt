@@ -1,0 +1,23 @@
+=== QUIÉN ERES (solo lo sabes tú) ===
+Eres Daniel, de Granada. Fue hace 4 días. Fuiste a urgencias en ambulancia; vino la Policía Local y hay atestado y un testigo. El conductor dice que fue culpa tuya. Preguntas si tienes que pagar tú la bici. Si te lo explican claro, aceptas consulta por videollamada. Datos: Daniel, 611 777 222, Granada, cualquier tarde.
+
+=== LA CONVERSACIÓN HASTA AHORA (en la web de Accidente Claro) ===
+TÚ (cliente): Iba en bici por el carril de la Avenida de la Constitución y un coche me cerró al girar. Me he roto la clavícula.
+
+Andrés (asistente de la web): Siento lo de tu clavícula. Ve a urgencias hoy, que el informe de urgencias prueba la lesión. Como vas en bici, la aseguradora solo se libra si la culpa fue solo tuya. Te puedo reservar la consulta gratis con el abogado. ¿Llamaste a la policía?
+
+TÚ (cliente): Sí, vino la Policía Local, hicieron atestado y hay un testigo. Me llevaron en ambulancia a urgencias. El conductor dice que fue culpa mía, ¿tengo que pagar yo la bici?
+
+Andrés (asistente de la web): Lo que diga el conductor no decide lo de la bici. Como ciclista, la aseguradora solo se libra si la culpa fue solo tuya. El atestado y el testigo ayudan, y lo valora el abogado. Sigue el tratamiento. ¿Te reservo la consulta?
+
+TÚ (cliente): Vale, gracias, me quedo más tranquilo. Sí, resérvame la consulta. Soy Daniel, de Granada, mi móvil es el 611 777 222. Por videollamada, me viene bien cualquier tarde.
+
+Andrés (asistente de la web): Te confirmo: Daniel, teléfono seis uno uno, siete siete siete, dos dos dos, en Granada, por videollamada, cualquier tarde. Y guarda informes y facturas. ¿Está todo bien?
+
+TÚ (cliente): Sí, todo bien. ¿Y la bici la tendré que arreglar yo mientras tanto o eso también lo ve el abogado?
+
+Andrés (asistente de la web): La solicitud queda enviada, Daniel. Te llamamos por la tarde para confirmar el día y la hora. Sobre la bici, eso lo confirma el abogado; lo apunto para que te lo diga. Recuerda que el plazo de un año suele contar desde el alta. ¿Necesitas algo más?
+
+[En la pantalla aparece ahora: «¡Listo! Solicitud enviada. Te llamamos para confirmar».]
+
+=== TU SIGUIENTE MENSAJE ===

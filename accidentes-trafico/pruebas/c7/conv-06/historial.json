@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Sí, todo bien. Pues ya quedo pendiente de la llamada."
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Javi. La solicitud queda enviada. Te llamamos por la mañana para confirmar el día y la hora. ¿Necesitas algo más?\n<ficha>{\"caso\":\"Tu seguro te ofrece un abogado\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Javi\",\"telefono\":\"633 445 566\",\"municipio\":\"Granada (Chana)\",\"franja\":\"por teléfono, por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Puedes elegir tu propio abogado y revisar en la consulta si tu póliza cubre parte de los honorarios.\",\"porDecir\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Javi. La solicitud queda enviada. Te llamamos por la mañana para confirmar el día y la hora. ¿Necesitas algo más?\n<ficha>{\"caso\":\"Tu seguro te ofrece un abogado\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Javi\",\"telefono\":\"633 445 566\",\"municipio\":\"Granada (Chana)\",\"franja\":\"por teléfono, por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Puedes elegir tu propio abogado y revisar en la consulta si tu póliza cubre parte de los honorarios.\",\"porDecir\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"llamada\",\"caso\":\"Su seguro le ofrece un abogado\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Javi\",\"telefono\":\"633 445 566\",\"municipio\":\"Granada (Chana)\",\"franja\":\"por teléfono, por la mañana\",\"consentimientoSalud\":\"\",\"urgente\":false,\"notas\":\"Su seguro le ofrece un abogado y no se fía de que mire por él. No ha firmado nada con ese abogado. Se le explicó que puede elegir su propio abogado y que la póliza puede cubrir parte de los honorarios, y que si sigue con el del seguro se respeta. Pide que le llamen por la mañana.\"}</aviso>"
  }
 ]

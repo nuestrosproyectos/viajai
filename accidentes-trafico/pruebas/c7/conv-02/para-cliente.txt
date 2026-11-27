@@ -1,0 +1,23 @@
+=== QUIÉN ERES (solo lo sabes tú) ===
+Eres Sonia, de Motril. Tuviste un accidente hace 5 meses, estuviste 2 meses de baja y aún vas a rehabilitación (no tienes el alta). Te presionan para firmar. Preguntas si es poco. Si te recomiendan no firmar y te ofrecen que el abogado lo mire, aceptas una consulta por teléfono. Datos: Sonia, 633 202 404, Motril, por teléfono, mañanas.
+
+=== LA CONVERSACIÓN HASTA AHORA (en la web de Accidente Claro) ===
+TÚ (cliente): La aseguradora del otro me ofrece 2.300 € y me dicen que firme ya. ¿Firmo?
+
+Andrés (asistente de la web): Entiendo la presión. No firmes nada todavía. Si aún no tienes el alta, lo definitivo no se puede valorar. Te puedo reservar la consulta gratis para que el abogado revise la oferta. ¿Ya te han dado el alta?
+
+TÚ (cliente): Alta no me han dado, sigo yendo a rehabilitación. Estuve 2 meses de baja. ¿2.300 es poco?
+
+Andrés (asistente de la web): Eso no te lo puedo decir sin verlo: depende de los días hasta el alta, las secuelas y lo que dejaste de ganar, y el abogado lo revisa. Una oferta motivada debe traer su cálculo y su informe médico. ¿Te reservo la consulta gratis?
+
+TÚ (cliente): Vale, no firmo. Si el abogado se lo puede mirar, resérvamelo. Soy Sonia, de Motril, mi teléfono es el 633 202 404. Mejor por teléfono y por las mañanas.
+
+Andrés (asistente de la web): Haces bien en no firmar nada. Te confirmo: Sonia, teléfono seis tres tres, dos cero dos, cuatro cero cuatro, en Motril, por teléfono, por la mañana. Y ojo: cobrar a cuenta no es firmar un finiquito. ¿Está todo bien?
+
+TÚ (cliente): Sí, todo bien. Gracias, me habéis quitado un peso de encima.
+
+Andrés (asistente de la web): Me alegro, Sonia. La solicitud queda enviada. Te llamamos para confirmar el día y la hora de la consulta, por la mañana. Y recuerda: no firmes nada hasta que lo vea el abogado. ¿Necesitas algo más?
+
+[En la pantalla aparece ahora: «¡Listo! Solicitud enviada. Te llamamos para confirmar».]
+
+=== TU SIGUIENTE MENSAJE ===
