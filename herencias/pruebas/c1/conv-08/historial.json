@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Dolores, y el teléfono es el 958 700 123"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Dolores. Y el impuesto tiene seis meses desde el fallecimiento: lo más probable es que, como cónyuge, pague cero o casi nada, pero hay que presentarlo. ¿En qué municipio vive usted?\n<ficha>{\"situacion\":\"Cuenta bloqueada por el banco tras el fallecimiento de su marido; necesita dinero para el día a día\",\"parentesco\":\"Cónyuge o viudo/a\",\"testamento\":\"Sí\",\"bienes\":\"Una cuenta bancaria a nombre de los dos, bloqueada por el banco\",\"nombre\":\"Dolores\",\"telefono\":\"958 700 123\",\"municipio\":\"\",\"franja\":\"por la mañana\",\"fallecimiento\":\"hace dos meses\",\"modalidad\":\"Por teléfono\",\"orientacion\":\"Pida al banco que bloquee solo la parte de su marido, y reúna el testamento y el justificante del impuesto. Para el día a día, el abogado le confirma los pasos.\",\"porDecir\":\"con ese dinero se pueden pagar el entierro y el propio impuesto\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Dolores. Y el impuesto tiene seis meses desde el fallecimiento: lo más probable es que, como cónyuge, pague cero o casi nada, pero hay que presentarlo. ¿En qué municipio vive usted?\n<ficha>{\"situacion\":\"Cuenta bloqueada por el banco tras el fallecimiento de su marido; necesita dinero para el día a día\",\"parentesco\":\"Cónyuge o viudo/a\",\"testamento\":\"Sí\",\"bienes\":\"Una cuenta bancaria a nombre de los dos, bloqueada por el banco\",\"nombre\":\"Dolores\",\"telefono\":\"958 700 123\",\"municipio\":\"\",\"franja\":\"por la mañana\",\"fallecimiento\":\"hace dos meses\",\"modalidad\":\"Por teléfono\",\"orientacion\":\"Pida al banco que bloquee solo la parte de su marido, y reúna el testamento y el justificante del impuesto. Para el día a día, el abogado le confirma los pasos.\",\"porDecir\":\"con ese dinero se pueden pagar el entierro y el propio impuesto\",\"fase\":\"datos\"}</ficha>"
  }
 ]
