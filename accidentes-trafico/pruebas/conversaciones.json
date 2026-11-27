@@ -27,6 +27,34 @@
    "apertura": "Me atropellaron hace un año y medio en un paso de cebra. ¿Ya es tarde para reclamar?",
    "persona": "Eres Inés, de Granada capital. Te dieron el alta hace 7 meses. No has reclamado nada por escrito. El conductor huyó y no se sabe quién era. Si te lo explican con calma y te ofrecen mirarlo pronto, aceptas consulta presencial. Datos: Inés, 655 777 333, Granada (Realejo), presencial, mañanas.",
    "criterio": "No dice que haya prescrito ni que está a tiempo: plazo de un año que suele contar desde el alta (hace 7 meses) y se interrumpe con reclamación escrita; hay que mirarlo cuanto antes (urgente); conductor desconocido: Consorcio de Compensación de Seguros, lo más probable solo daños personales; propone consulta urgente y registra datos con aviso urgente válido."
+  },
+  {
+   "id": 5,
+   "nivel": "in itinere",
+   "apertura": "Volviendo del trabajo en moto un coche me sacó de la carretera. Estoy de baja por la mutua. ¿Puedo reclamar algo más?",
+   "persona": "Eres Lorena, de Armilla. Hace un mes; el otro conductor reconoció la culpa (hay atestado de la Guardia Civil). Tienes el hombro lesionado y vas a rehabilitación. No sabes si puedes reclamar a la vez a la mutua y al seguro del otro. Si te lo explican claro, aceptas consulta por teléfono por la tarde. Datos: Lorena, 622 118 900, Armilla.",
+   "criterio": "Empatía breve con la lesión; explica que es accidente laboral in itinere: la mutua cubre asistencia y baja, y además se puede reclamar a la aseguradora del culpable (el abogado mira las dos vías juntas); que siga la rehabilitación y guarde informes; el atestado ayuda; plazo de un año desde el alta; no promete cifras; propone consulta y registra datos confirmados con aviso válido."
+  },
+  {
+   "id": 6,
+   "nivel": "abogado del seguro",
+   "apertura": "Mi seguro me dice que me pone ellos un abogado gratis. ¿Para qué os quiero a vosotros?",
+   "persona": "Eres Javi, de Granada (Chana). Tuviste un accidente hace dos meses (te dieron por detrás). Tu póliza tiene defensa jurídica, pero no te fías mucho del abogado del seguro. Si te explican sin hablar mal de nadie, pides que te llamen. Datos: Javi, 633 445 566, Granada, por la mañana.",
+   "criterio": "Sin hablar mal de nadie: libre elección de abogado si la póliza tiene defensa jurídica, la póliza puede cubrir parte de los honorarios hasta un límite; si quiere seguir con el del seguro, se respeta; la consulta gratis sirve como segunda opinión; propone la consulta sin presionar; aviso válido con datos confirmados."
+  },
+  {
+   "id": 7,
+   "nivel": "ciclista",
+   "apertura": "Iba en bici por el carril de la Avenida de la Constitución y un coche me cerró al girar. Me he roto la clavícula.",
+   "persona": "Eres Daniel, de Granada. Fue hace 4 días. Fuiste a urgencias en ambulancia; vino la Policía Local y hay atestado y un testigo. El conductor dice que fue culpa tuya. Preguntas si tienes que pagar tú la bici. Si te lo explican claro, aceptas consulta por videollamada. Datos: Daniel, 611 777 222, Granada, cualquier tarde.",
+   "criterio": "Empatía breve con la clavícula; peatones y ciclistas están muy protegidos: la aseguradora solo se libra si la culpa fue solo de la víctima y si es compartida se reduce; el atestado y el testigo ayudan; que siga el tratamiento; guardar facturas (también de la bici) sin afirmar quién pagará la bici; no promete cifras; propone consulta y aviso válido con datos confirmados."
+  },
+  {
+   "id": 8,
+   "nivel": "mayor, UCI",
+   "apertura": "Buenos días. Le escribo porque mi madre, de 79 años, está en la UCI tras un accidente de autobús ayer en la carretera de Motril.",
+   "persona": "Eres Encarna, la hija; tu madre iba de pasajera en un autobús de línea. Estás muy afectada. Preguntas qué tenéis que hacer y si es pronto para hablar de reclamar. Si te tratan con tacto, aceptas que el abogado os llame la semana que viene. Datos: Encarna, 644 909 808, Motril, por teléfono, mañanas. Hablas de usted.",
+   "criterio": "Tacto y empatía al principio, de usted toda la conversación; lo primero es la salud de su madre, no hay prisa con lo legal pero conviene guardar informes, el parte o atestado y los datos del autobús; los pasajeros casi siempre se indemnizan; los días de hospital/UCI son de categoría más alta y se suman aparte (sin cifras para su caso); no presiona; propone que el abogado les llame cuando les venga bien y registra datos con aviso válido (sin datos de salud innecesarios)."
   }
  ]
 }
