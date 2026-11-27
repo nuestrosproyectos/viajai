@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Gracias, Sonia. Entiendo la presión, pero no tienes que decidir hoy. Si insisten, pide la oferta por escrito con su cálculo. ¿Qué teléfono te llamamos para la consulta?\n<ficha>{\"caso\":\"Accidente de tráfico; la aseguradora del otro ofrece 2.300 € y pide firmar\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"Sonia\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmes; si insisten, pide la oferta por escrito con su cálculo.\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Sonia. Entiendo la presión, pero no tienes que decidir hoy. Si insisten, pide la oferta por escrito con su cálculo. ¿Qué teléfono te llamamos para la consulta?\n<ficha>{\"caso\":\"Accidente de tráfico; la aseguradora del otro ofrece 2.300 € y pide firmar\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"Sonia\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmes; si insisten, pide la oferta por escrito con su cálculo.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "633 202 404"
  }
 ]

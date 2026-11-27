@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Por la tarde, perfecto. Para llamarte y organizar la visita, ¿me dices tu nombre? Y como es un piso, conviene avisar por escrito al presidente o al administrador de la comunidad.\n<ficha>{\"obra\":\"Cambiar bañera por plato de ducha, azulejos y lavabo del baño\",\"vivienda\":\"Piso\",\"metros\":\"unos 5 m²\",\"antiguedad\":\"Piso del 78\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Baño completo; en un piso de 1978 conviene revisar las tuberías en la visita de medición, que es gratis.\",\"fase\":\"datos\"}</ficha>",
   "original": "Por la tarde, perfecto. Para llamarte y organizar la visita, ¿me dices tu nombre? Y como es un piso, conviene avisar por escrito al presidente o al administrador de la comunidad.\n<ficha>{\"obra\":\"Cambiar bañera por plato de ducha, azulejos y lavabo del baño\",\"vivienda\":\"Piso\",\"metros\":\"unos 5 m²\",\"antiguedad\":\"Piso del 78\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Baño completo; en un piso de 1978 conviene revisar las tuberías en la visita de medición, que es gratis.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Marta"
  }
 ]

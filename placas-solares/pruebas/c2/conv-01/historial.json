@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Un viernes por la mañana, lo anoto. Para llamarte y organizar el estudio, ¿me dices tu nombre? Y ten en cuenta que la factura nunca baja a cero: quedan la potencia, el contador y los impuestos.\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"De día: teletrabajo y aire acondicionado\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"Por la mañana, un viernes\",\"inicio\":\"\",\"orientacion\":\"Como gasta mucho de día, las placas le aprovechan; el estudio con sus facturas da el tamaño exacto.\",\"fase\":\"datos\"}</ficha>",
   "original": "Un viernes por la mañana, lo anoto. Para llamarte y organizar el estudio, ¿me dices tu nombre? Y ten en cuenta que la factura nunca baja a cero: quedan la potencia, el contador y los impuestos.\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"De día: teletrabajo y aire acondicionado\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"Por la mañana, un viernes\",\"inicio\":\"\",\"orientacion\":\"Como gasta mucho de día, las placas le aprovechan; el estudio con sus facturas da el tamaño exacto.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Javier"
  }
 ]
