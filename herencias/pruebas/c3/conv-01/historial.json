@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Gracias, Lucía. ¿De qué municipio es y cómo te viene mejor la consulta, en el despacho, por videollamada o por teléfono, por la mañana o por la tarde?\n<ficha>{\"situacion\":\"fallecimiento de tu padre la semana pasada, no sabes por dónde empezar\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"No lo sé\",\"bienes\":\"\",\"nombre\":\"Lucía\",\"telefono\":\"655 111 222\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"la semana pasada\",\"modalidad\":\"\",\"orientacion\":\"Como hijo, lo más probable es que pagues cero o casi nada de impuesto, pero hay que presentarlo en seis meses; después pide el certificado de últimas voluntades para saber si hubo testamento.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Lucía. ¿De qué municipio es y cómo te viene mejor la consulta, en el despacho, por videollamada o por teléfono, por la mañana o por la tarde?\n<ficha>{\"situacion\":\"fallecimiento de tu padre la semana pasada, no sabes por dónde empezar\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"No lo sé\",\"bienes\":\"\",\"nombre\":\"Lucía\",\"telefono\":\"655 111 222\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"la semana pasada\",\"modalidad\":\"\",\"orientacion\":\"Como hijo, lo más probable es que pagues cero o casi nada de impuesto, pero hay que presentarlo en seis meses; después pide el certificado de últimas voluntades para saber si hubo testamento.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "De Granada. Mejor por videollamada, por la tarde"
  }
 ]
