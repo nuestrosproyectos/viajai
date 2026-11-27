@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Que él diga que fue culpa tuya no lo decide todo: un ciclista está muy protegido, y el seguro solo se libra si la culpa fue solo de la víctima. El abogado lo mira con el atestado y el testigo. ¿Te reservo la consulta gratis?\n<ficha>{\"caso\":\"Un coche te cerró al girar mientras ibas en bici\",\"como\":\"En bici o patinete\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"No lo sé\",\"atestado\":\"Atestado de la policía\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico ya y guardes el testigo; el abogado revisa la culpa con el atestado delante.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>situaciones</mostrar>",
   "original": "Que él diga que fue culpa tuya no lo decide todo: un ciclista está muy protegido, y el seguro solo se libra si la culpa fue solo de la víctima. El abogado lo mira con el atestado y el testigo. ¿Te reservo la consulta gratis?\n<ficha>{\"caso\":\"Un coche te cerró al girar mientras ibas en bici\",\"como\":\"En bici o patinete\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"No lo sé\",\"atestado\":\"Atestado de la policía\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico ya y guardes el testigo; el abogado revisa la culpa con el atestado delante.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>situaciones</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, me quedo más tranquilo. Sí, reserva la consulta, por videollamada. Me va bien cualquier tarde."
  }
 ]

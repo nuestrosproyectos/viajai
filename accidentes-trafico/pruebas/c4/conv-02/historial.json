@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "No firmes nada todavía, aunque presionen. Si es poco o no, depende de los días del informe médico y de las secuelas, y eso lo revisa el abogado con tus informes delante. ¿Te reservo la consulta gratis para revisar la oferta?\n<ficha>{\"caso\":\"Oferta de la aseguradora del otro conductor\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada; una oferta definitiva se valora cuando ya tienes el alta.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>oferta</mostrar>",
   "original": "No firmes nada todavía, aunque presionen. Si es poco o no, depende de los días del informe médico y de las secuelas, y eso lo revisa el abogado con tus informes delante. ¿Te reservo la consulta gratis para revisar la oferta?\n<ficha>{\"caso\":\"Oferta de la aseguradora del otro conductor\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada; una oferta definitiva se valora cuando ya tienes el alta.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>oferta</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, pues sí, resérvamela. Mejor por teléfono."
  }
 ]

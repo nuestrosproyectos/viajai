@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Entiendo el miedo: lo primero es que te vea un médico hoy. La primera consulta es gratis; si luego lo lleva, suele cobrar entre el diez y el treinta por ciento de lo que se consiga, pactado por escrito. ¿Te reservo la consulta?\n<ficha>{\"caso\":\"Golpe por detrás\",\"como\":\"\",\"fecha\":\"hace 3 días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico hoy y quede por escrito; guardar parte, fotos e informes.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>honorarios</mostrar>",
   "original": "Entiendo el miedo: lo primero es que te vea un médico hoy. La primera consulta es gratis; si luego lo lleva, suele cobrar entre el diez y el treinta por ciento de lo que se consiga, pactado por escrito. ¿Te reservo la consulta?\n<ficha>{\"caso\":\"Golpe por detrás\",\"como\":\"\",\"fecha\":\"hace 3 días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico hoy y quede por escrito; guardar parte, fotos e informes.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>honorarios</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, si la primera consulta es gratis y no pago nada por adelantado, reservamela."
  }
 ]
