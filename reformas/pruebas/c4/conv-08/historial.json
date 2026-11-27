@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Perfecto, Antonio: visita gratis cualquier tarde en calle Granada 8, Atarfe, y te llamamos al seis cinco cinco, nueve cero nueve, tres cuatro uno. Y hasta la visita, no toques la uralita este fin de semana. ¿Está todo bien?\n<ficha>{\"obra\":\"quitar el tejado de uralita de la cochera\",\"vivienda\":\"\",\"metros\":\"unos 30 metros\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"655 909 341\",\"municipio\":\"Atarfe\",\"direccion\":\"Calle Granada 8\",\"franja\":\"cualquier tarde\",\"inicio\":\"este fin de semana\",\"orientacion\":\"No quitar la uralita por cuenta propia: puede tener amianto; la retira una empresa inscrita en el registro oficial, con plan de trabajo aprobado.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Antonio: visita gratis cualquier tarde en calle Granada 8, Atarfe, y te llamamos al seis cinco cinco, nueve cero nueve, tres cuatro uno. Y hasta la visita, no toques la uralita este fin de semana. ¿Está todo bien?\n<ficha>{\"obra\":\"quitar el tejado de uralita de la cochera\",\"vivienda\":\"\",\"metros\":\"unos 30 metros\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"655 909 341\",\"municipio\":\"Atarfe\",\"direccion\":\"Calle Granada 8\",\"franja\":\"cualquier tarde\",\"inicio\":\"este fin de semana\",\"orientacion\":\"No quitar la uralita por cuenta propia: puede tener amianto; la retira una empresa inscrita en el registro oficial, con plan de trabajo aprobado.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo correcto. Gracias por avisar, no la toco"
  }
 ]

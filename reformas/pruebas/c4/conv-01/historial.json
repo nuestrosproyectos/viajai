@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Perfecto, Marta: visita gratis por la tarde en Doctor Olóriz 14, barrio de la Chana, Granada, y te llamamos al seis cinco cinco, tres dos uno, nueve cero ocho. En pisos antiguos, el imprevisto más habitual son las tuberías viejas. ¿Está todo bien?\n<ficha>{\"obra\":\"cambiar bañera por plato de ducha, cambiar azulejos y lavabo\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Marta\",\"telefono\":\"655 321 908\",\"municipio\":\"Granada\",\"direccion\":\"Barrio de la Chana, calle Doctor Olóriz 14\",\"franja\":\"tarde\",\"inicio\":\"\",\"orientacion\":\"Quitar la bañera y poner plato de ducha: entre unos 1.000 y 2.300 €, lo más habitual; sube si hay que mover el desagüe o si el plato va a ras de suelo.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>\n</content>",
   "original": "Perfecto, Marta: visita gratis por la tarde en Doctor Olóriz 14, barrio de la Chana, Granada, y te llamamos al seis cinco cinco, tres dos uno, nueve cero ocho. En pisos antiguos, el imprevisto más habitual son las tuberías viejas. ¿Está todo bien?\n<ficha>{\"obra\":\"cambiar bañera por plato de ducha, cambiar azulejos y lavabo\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Marta\",\"telefono\":\"655 321 908\",\"municipio\":\"Granada\",\"direccion\":\"Barrio de la Chana, calle Doctor Olóriz 14\",\"franja\":\"tarde\",\"inicio\":\"\",\"orientacion\":\"Quitar la bañera y poner plato de ducha: entre unos 1.000 y 2.300 €, lo más habitual; sube si hay que mover el desagüe o si el plato va a ras de suelo.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>\n</content>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien. Gracias"
  }
 ]

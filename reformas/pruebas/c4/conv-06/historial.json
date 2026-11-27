@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Perfecto, Nuria: visita gratis por la tarde en calle Real de Armilla 22, y te llamamos al seis nueve nueve, dos cero dos, cinco uno cinco. Y no pagues todo por adelantado: pide el presupuesto firmado y por partidas. ¿Está todo bien?\n<ficha>{\"obra\":\"reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros\",\"vivienda\":\"\",\"metros\":\"90 m²\",\"antiguedad\":\"años 80\",\"presupuesto\":\"\",\"nombre\":\"Nuria\",\"telefono\":\"699 202 515\",\"municipio\":\"Armilla\",\"direccion\":\"Calle Real de Armilla 22\",\"franja\":\"tarde\",\"inicio\":\"\",\"orientacion\":\"Si no se tocan muros, lo más probable es declaración responsable; en Armilla lo confirma el técnico. La electricidad la hace una empresa habilitada, con boletín.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Nuria: visita gratis por la tarde en calle Real de Armilla 22, y te llamamos al seis nueve nueve, dos cero dos, cinco uno cinco. Y no pagues todo por adelantado: pide el presupuesto firmado y por partidas. ¿Está todo bien?\n<ficha>{\"obra\":\"reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros\",\"vivienda\":\"\",\"metros\":\"90 m²\",\"antiguedad\":\"años 80\",\"presupuesto\":\"\",\"nombre\":\"Nuria\",\"telefono\":\"699 202 515\",\"municipio\":\"Armilla\",\"direccion\":\"Calle Real de Armilla 22\",\"franja\":\"tarde\",\"inicio\":\"\",\"orientacion\":\"Si no se tocan muros, lo más probable es declaración responsable; en Armilla lo confirma el técnico. La electricidad la hace una empresa habilitada, con boletín.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien. Gracias"
  }
 ]
