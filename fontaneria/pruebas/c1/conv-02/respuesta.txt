@@ -1,3 +1,0 @@
-Perfecto, Luis. Apunto la avenida de los Mondragones 3, en Armilla, y el teléfono 655, 990, 120, para mañana por la mañana. ¿Está bien así?
-<ficha>{"averia":"Lavabo del baño atascado; ya echaste un desatascador fuerte sin resultado","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Luis","telefono":"655 990 120","municipio":"Armilla","direccion":"Avenida de los Mondragones 3","franja":"Mañana por la mañana","inicio":"","orientacion":"Probable sifón del lavabo; no echar más producto ni meter la mano; desatasco sencillo unos 70 a 150 € más IVA, orientativo","fase":"datos"}</ficha>
-<mostrar>contacto</mostrar>
