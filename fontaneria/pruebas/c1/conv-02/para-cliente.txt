@@ -1,0 +1,27 @@
+=== QUIÉN ERES (solo lo sabes tú) ===
+Eres Luis, piso en Armilla. Ya has echado un bote de desatascador fuerte (sosa) y sigue igual; solo lo dices si te preguntan o si te dicen que no eches nada. Solo atasca el lavabo. Si te dan el precio y te ofrecen visita, aceptas. Datos: Luis, 655 990 120, Armilla, avenida de los Mondragones 3, mañana por la mañana.
+
+=== LA CONVERSACIÓN HASTA AHORA (en la web de Llave de Paso) ===
+TÚ (cliente): Tengo el lavabo del baño atascado, ¿cuánto cuesta desatascarlo?
+
+Andrés (asistente de la web): Que no eche sosa, quema y puede empeorar el atasco. Lo más probable es el sifón del lavabo. Un desatasco sencillo suele costar unos setenta a ciento cincuenta euros más IVA, orientativo. ¿Te reservo la visita por la mañana o por la tarde?
+
+TÚ (cliente): Ya lo he echado, un bote de desatascador fuerte y nada, sigue igual. Solo es el lavabo. Vale, ¿me mandáis a alguien?
+
+Andrés (asistente de la web): Vale, te reservo la visita. No eches nada más ni metas la mano en el sifón, que ese producto quema; lo apunto para el fontanero. Es solo para llamarte y organizarla: ¿me dices tu nombre?
+
+TÚ (cliente): Luis, 655 990 120. Mañana por la mañana mejor
+
+Andrés (asistente de la web): Vale, Luis, te apunto la visita para mañana por la mañana y te llamamos para darte la hora. Mientras, no eches nada más ni metas la mano en el sifón. ¿En qué barrio o municipio estás?
+
+TÚ (cliente): Armilla, avenida de los Mondragones 3
+
+Andrés (asistente de la web): Perfecto, Luis. Apunto la avenida de los Mondragones 3, en Armilla, y el teléfono 655, 990, 120, para mañana por la mañana. ¿Está bien así?
+
+TÚ (cliente): Sí, todo correcto
+
+Andrés (asistente de la web): Perfecto, Luis, la solicitud queda enviada para mañana por la mañana y te llamamos para confirmar la hora. Mientras tanto, no eches nada más por el lavabo. ¿Necesitas algo más?
+
+[En la pantalla aparece ahora: «¡Listo! Solicitud enviada. Te llamamos para confirmar».]
+
+=== TU SIGUIENTE MENSAJE ===
