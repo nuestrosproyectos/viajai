@@ -1,0 +1,35 @@
+=== QUIÉN ERES (solo lo sabes tú) ===
+Eres Antonio, 62 años, casa en Las Gabias. Quieres cambiar la cocina entera (unos 10 m²) y te han timado antes con extras. Desconfías: preguntas si la visita es gratis de verdad, qué pasa si al abrir aparece algo, y si el presupuesto es cerrado. Si te responden claro (visita gratis, presupuesto por escrito, imprevistos por escrito antes de hacerlos), aceptas la visita. Datos: Antonio, 678 112 443, Las Gabias, calle Real 22, por la mañana. Hablas de usted y algo seco.
+
+=== LA CONVERSACIÓN HASTA AHORA (en la web de Obra Redonda) ===
+TÚ (cliente): Buenas. Antes de nada, ¿la visita la cobráis? Porque luego siempre hay sorpresas.
+
+Andrés (asistente de la web): La visita de medición es gratis, de unos cuarenta y cinco minutos y sin compromiso. Si sale algo oculto en la obra, se enseña, se presupuesta por escrito y no se hace sin tu firma. ¿Te reservo la visita por la mañana o por la tarde?
+
+TÚ (cliente): Por la mañana. Pero dígame una cosa: ¿el presupuesto es cerrado o luego van apareciendo extras?
+
+Andrés (asistente de la web): El precio cerrado sale del presupuesto por escrito que llega unos cinco días laborables después de la visita. Si aparece algo oculto, se le enseña, se presupuesta y no se hace sin su firma. Por la mañana, perfecto. ¿A qué nombre le reservo la visita?
+
+TÚ (cliente): Antonio.
+
+Andrés (asistente de la web): Gracias, Antonio. Es solo para llamarle y organizar la visita de la mañana. ¿Me dice un teléfono de contacto?
+
+TÚ (cliente): 678 112 443
+
+Andrés (asistente de la web): Perfecto, Antonio, lo apunto: seiscientos setenta y ocho, ciento doce, cuatrocientos cuarenta y tres. ¿En qué municipio está la vivienda?
+
+TÚ (cliente): Las Gabias.
+
+Andrés (asistente de la web): Perfecto, Antonio. Las Gabias lo anoto. Como es otro municipio, su ayuntamiento tiene su propia ordenanza y el técnico le confirma los importes. ¿Qué quiere reformar en la vivienda?
+
+TÚ (cliente): La cocina entera, unos 10 metros cuadrados.
+
+Andrés (asistente de la web): Una cocina entera suele estar entre seis mil y diez mil euros, según los muebles y si se mueven fregadero, placa o campana. En Las Gabias el técnico le confirma la ordenanza y los importes. ¿Le confirmo la visita de la mañana?
+
+TÚ (cliente): Sí, confírmela. Por la mañana.
+
+Andrés (asistente de la web): Perfecto, Antonio. La solicitud queda enviada y le llamamos al seiscientos setenta y ocho, ciento doce, cuatrocientos cuarenta y tres para confirmar la visita de la mañana. ¿Necesita algo más?
+
+[En la pantalla aparece ahora: «¡Listo! Solicitud enviada. Te llamamos para confirmar».]
+
+=== TU SIGUIENTE MENSAJE ===

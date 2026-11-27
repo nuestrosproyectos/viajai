@@ -56,5 +56,10 @@
  {
   "role": "user",
   "content": "Pulianas"
+ },
+ {
+  "role": "assistant",
+  "content": "Pulianas lo anoto; su ayuntamiento tiene su propia ordenanza y el técnico se lo confirma. ¿Confirmo el estudio entre semana por la tarde?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"De noche, bastante; trabaja fuera de día\",\"nombre\":\"Manolo\",\"telefono\":\"633 909 101\",\"municipio\":\"Pulianas\",\"franja\":\"Entre semana por la tarde; no los sábados\",\"inicio\":\"\",\"orientacion\":\"Ver el estudio con tus facturas; el técnico calcula si la batería compensa en tu caso.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Pulianas lo anoto; su ayuntamiento tiene su propia ordenanza y el técnico se lo confirma. ¿Confirmo el estudio entre semana por la tarde?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"De noche, bastante; trabaja fuera de día\",\"nombre\":\"Manolo\",\"telefono\":\"633 909 101\",\"municipio\":\"Pulianas\",\"franja\":\"Entre semana por la tarde; no los sábados\",\"inicio\":\"\",\"orientacion\":\"Ver el estudio con tus facturas; el técnico calcula si la batería compensa en tu caso.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

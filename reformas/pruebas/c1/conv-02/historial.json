@@ -56,5 +56,10 @@
  {
   "role": "user",
   "content": "Sí, confírmela. Por la mañana."
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Antonio. La solicitud queda enviada y le llamamos al seiscientos setenta y ocho, ciento doce, cuatrocientos cuarenta y tres para confirmar la visita de la mañana. ¿Necesita algo más?\n<ficha>{\"obra\":\"Cocina entera\",\"vivienda\":\"\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"Las Gabias\",\"franja\":\"Por la mañana\",\"inicio\":\"\",\"orientacion\":\"Visita de medición gratuita confirmada por la mañana; el presupuesto por escrito llega después.\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Antonio. La solicitud queda enviada y le llamamos al seiscientos setenta y ocho, ciento doce, cuatrocientos cuarenta y tres para confirmar la visita de la mañana. ¿Necesita algo más?\n<ficha>{\"obra\":\"Cocina entera\",\"vivienda\":\"\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"Las Gabias\",\"franja\":\"Por la mañana\",\"inicio\":\"\",\"orientacion\":\"Visita de medición gratuita confirmada por la mañana; el presupuesto por escrito llega después.\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"obra\":\"Cocina entera\",\"vivienda\":\"\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"Las Gabias\",\"franja\":\"Por la mañana\",\"inicio\":\"\",\"urgente\":false,\"notas\":\"Cocina entera, unos 10 m². Vivienda (piso o casa), ascensor y antigüedad sin indicar. Trato de usted. Quiere la visita por la mañana. Preguntó si la visita tiene coste (es gratuita) y si el presupuesto es cerrado: se le explicó que el precio cerrado sale del presupuesto por escrito tras la visita. Se le dio el rango orientativo de seis mil a diez mil euros para una cocina entera. Las Gabias es otro municipio: confirmar su ordenanza e importes.\"}</aviso>"
  }
 ]

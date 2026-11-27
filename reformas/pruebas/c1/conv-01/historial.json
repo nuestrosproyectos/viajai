@@ -56,5 +56,10 @@
  {
   "role": "user",
   "content": "Sí, confírmala"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Marta. La solicitud queda enviada y te llamamos al seiscientos cincuenta y cinco, trescientos veintiuno, novecientos ocho para confirmar la visita de la tarde. ¿Necesitas algo más?\n<ficha>{\"obra\":\"Reforma del baño\",\"vivienda\":\"Piso\",\"metros\":\"unos 5 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Marta\",\"telefono\":\"655 321 908\",\"municipio\":\"Granada capital, La Chana\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Visita de medición gratuita confirmada por la tarde; el presupuesto por escrito llega después.\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Marta. La solicitud queda enviada y te llamamos al seiscientos cincuenta y cinco, trescientos veintiuno, novecientos ocho para confirmar la visita de la tarde. ¿Necesitas algo más?\n<ficha>{\"obra\":\"Reforma del baño\",\"vivienda\":\"Piso\",\"metros\":\"unos 5 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Marta\",\"telefono\":\"655 321 908\",\"municipio\":\"Granada capital, La Chana\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Visita de medición gratuita confirmada por la tarde; el presupuesto por escrito llega después.\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"obra\":\"Reforma del baño\",\"vivienda\":\"Piso\",\"metros\":\"unos 5 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Marta\",\"telefono\":\"655 321 908\",\"municipio\":\"Granada capital, La Chana\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"urgente\":false,\"notas\":\"Baño completo en piso, unos 5 m². Antigüedad del edificio y ascensor no indicados: preguntar en la visita. Quiere la visita por la tarde. No ha enviado fotos. Preguntó el coste de un baño completo; se le dio el rango orientativo de tres mil a seis mil euros.\"}</aviso>"
  }
 ]
