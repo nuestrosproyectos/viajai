@@ -1,0 +1,2 @@
+Siento lo de tu cuello. Lo primero es que te vea un médico hoy y quede escrito; guarda fotos y el parte. Si quieres, te reservo la primera consulta gratis con el abogado. ¿Ya has ido al médico?
+<ficha>{"caso":"Golpe por detrás en un semáforo en la Avenida de Dílar","como":"","fecha":"ayer","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que le vea un médico hoy y guardar fotos, parte y facturas","fase":"orientando"}</ficha>

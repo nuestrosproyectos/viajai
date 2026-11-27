@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "La aseguradora del otro me ofrece 2.300 € y me dicen que firme ya. ¿Firmo?"
+ },
+ {
+  "role": "assistant",
+  "content": "Entiendo la presión. No firmes nada todavía: en la consulta gratis el abogado revisa la oferta con tus informes delante. ¿Ya te han dado el alta médica, el fin de la baja?\n<ficha>{\"caso\":\"Oferta de la aseguradora del otro conductor\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada hasta que lo vea el abogado; una oferta definitiva se valora cuando ya tienes el alta.\",\"fase\":\"orientando\"}</ficha>",
+  "original": "Entiendo la presión. No firmes nada todavía: en la consulta gratis el abogado revisa la oferta con tus informes delante. ¿Ya te han dado el alta médica, el fin de la baja?\n<ficha>{\"caso\":\"Oferta de la aseguradora del otro conductor\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada hasta que lo vea el abogado; una oferta definitiva se valora cuando ya tienes el alta.\",\"fase\":\"orientando\"}</ficha>"
  }
 ]

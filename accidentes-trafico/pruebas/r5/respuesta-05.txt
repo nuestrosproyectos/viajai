@@ -1,0 +1,3 @@
+Siento mucho lo del atropello; lo más probable es que el Consorcio de Compensación de Seguros cubra tus daños personales, aunque no viste la matrícula. Denuncia cuanto antes. Si quieres, te reservo la primera consulta gratis. ¿Estás bien, te has hecho daño?
+<ficha>{"caso":"Atropello en un paso de cebra en el Zaidín; el coche se dio a la fuga","como":"Andando","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Denunciar cuanto antes y que el abogado revise si el Consorcio cubre sus daños","fase":"orientando"}</ficha>
+<mostrar>situaciones</mostrar>

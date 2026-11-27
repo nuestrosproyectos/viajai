@@ -1,0 +1,2 @@
+Entiendo que te moleste pagar por ello. Si no hay indemnización, no hay honorarios, y el porcentaje concreto te lo da el abogado por escrito en la consulta. ¿Te reservo la consulta gratis para revisar tu caso, por la mañana o por la tarde?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Revisar en la consulta gratuita si compensa; si no hay indemnización, no hay honorarios.","fase":"proponiendo"}</ficha>

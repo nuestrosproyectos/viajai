@@ -1,0 +1,3 @@
+Si la enviaste en junio, ya han pasado más de tres meses, y ese es el plazo que tiene para contestar. Si se retrasa sin motivo, hay intereses de demora. Te puedo reservar la consulta gratis. ¿Tienes justificante de cómo la enviaste?
+<ficha>{"caso":"Reclamación enviada a la aseguradora en junio, sin respuesta","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Guardar el justificante del envío; el abogado revisa si la aseguradora se ha retrasado y los intereses","fase":"orientando"}</ficha>
+<mostrar>oferta</mostrar>

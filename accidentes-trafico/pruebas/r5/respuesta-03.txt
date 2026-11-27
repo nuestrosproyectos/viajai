@@ -1,0 +1,3 @@
+Suele ser un porcentaje de lo que se consiga, entre el 10 y el 30 % (orientativo). Si no hay indemnización, no hay honorarios. El porcentaje exacto te lo da el abogado. ¿Te reservo la consulta por la mañana o por la tarde?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Pedir la primera consulta gratis y que el abogado le confirme el porcentaje por escrito","fase":"proponiendo"}</ficha>
+<mostrar>honorarios</mostrar>

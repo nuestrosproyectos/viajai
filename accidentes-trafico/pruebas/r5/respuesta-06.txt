@@ -1,0 +1,3 @@
+Siento lo del latigazo. Si es poco o bien depende de tus días y de tu alta, y eso lo mira el abogado. Mientras tanto, no firmes nada. Te puedo reservar la primera consulta gratis. ¿Has firmado ya algo?
+<ficha>{"caso":"Carta de la aseguradora del otro conductor con una oferta de 1.800 euros","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"No firmar nada hasta que lo vea el abogado; la oferta debe traer su cálculo y su informe médico","fase":"orientando"}</ficha>
+<mostrar>oferta</mostrar>

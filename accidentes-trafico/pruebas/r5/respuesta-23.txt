@@ -1,0 +1,2 @@
+Sobre qué coche comprar no te puedo orientar, pero siento lo del siniestro total. Lo del daño de tu coche lo apunto para que el abogado te lo confirme. ¿Te reservo la consulta gratis, por la mañana o por la tarde?
+<ficha>{"caso":"Coche en siniestro total tras un accidente","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que el abogado confirme si el daño de su coche entra en la reclamación; primera consulta gratuita.","fase":"proponiendo"}</ficha>

@@ -1,0 +1,2 @@
+Nadie honrado puede garantizar un resultado, pero el abogado te dice con franqueza qué posibilidades ve. La primera consulta es gratis y sin compromiso. ¿Te reservo la consulta por la mañana o por la tarde?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Nadie puede garantizar una cantidad; el abogado valora el caso con los informes en la consulta gratuita.","fase":"proponiendo"}</ficha>

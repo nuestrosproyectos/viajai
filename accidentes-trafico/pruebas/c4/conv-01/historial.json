@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Hola, hace 3 días me dieron un golpe por detrás y me duele el cuello. ¿Qué hago?"
+ },
+ {
+  "role": "assistant",
+  "content": "Siento lo de tu cuello. Lo primero es que te vea un médico hoy y quede por escrito; guarda también el parte del accidente y las fotos. En la primera consulta gratis el abogado revisa tu caso. ¿Ya has ido al médico?\n<ficha>{\"caso\":\"Golpe por detrás\",\"como\":\"\",\"fecha\":\"hace 3 días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico hoy y quede por escrito; guardar parte, fotos e informes.\",\"fase\":\"orientando\"}</ficha>",
+  "original": "Siento lo de tu cuello. Lo primero es que te vea un médico hoy y quede por escrito; guarda también el parte del accidente y las fotos. En la primera consulta gratis el abogado revisa tu caso. ¿Ya has ido al médico?\n<ficha>{\"caso\":\"Golpe por detrás\",\"como\":\"\",\"fecha\":\"hace 3 días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico hoy y quede por escrito; guardar parte, fotos e informes.\",\"fase\":\"orientando\"}</ficha>"
  }
 ]

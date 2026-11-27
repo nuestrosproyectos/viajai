@@ -1,0 +1,2 @@
+Esa ayuda de la Junta no la tengo confirmada, así que lo apunto para que el abogado te lo confirme. Lo que sí existe es reclamar a la aseguradora del culpable. ¿Te reservo la consulta gratis con el abogado, por la mañana o por la tarde?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Confirmar con el abogado la ayuda de la Junta de Andalucía; lo que sí existe es reclamar a la aseguradora del culpable.","fase":"proponiendo"}</ficha>

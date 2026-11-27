@@ -1,0 +1,2 @@
+Siento mucho lo de su madre. Lo primero es que los médicos dejen por escrito sus lesiones y el alta, porque de ahí sale el plazo. Le reservo la consulta gratis con el abogado, ¿mejor por la mañana o por la tarde?
+<ficha>{"caso":"Atropello de su madre en Baza","como":"Andando","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que los médicos dejen por escrito las lesiones y el alta, y reclamar a la aseguradora del conductor.","fase":"proponiendo"}</ficha>

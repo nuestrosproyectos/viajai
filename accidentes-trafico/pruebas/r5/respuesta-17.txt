@@ -1,0 +1,2 @@
+Sin los informes no puedo darte una cifra. Se paga por día de lesión, unos sesenta y ocho euros por día moderado, y los días que valen son los del informe médico. ¿Te reservo la consulta gratis con el abogado, mañana o tarde?
+<ficha>{"caso":"Accidente de tráfico","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que el abogado revise los informes médicos y calcule la indemnización con ellos.","fase":"proponiendo"}</ficha>
