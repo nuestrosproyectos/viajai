@@ -67,6 +67,7 @@ Una campaña es un JSON en `campaigns/`. Cambiar de nicho o de país es copiar e
 | `whatsapp_number` | Tu WhatsApp, formato internacional sin `+` ni espacios | `"34600111222"` |
 | `whatsapp_prefill_template` | Mensaje que el lead verá ya escrito. Admite `{business_name}`, `{city_label}`, `{niche_label}` y `{lead_ref}` (obligatoria) | ver ejemplo |
 | `offer_context` *(opcional)* | Qué ofreces, con tus palabras. Es lo que más mejora los correos | «Recibimos avisos… sin cuotas ni permanencia» |
+| `category_filter` *(opcional)* | Solo guarda negocios cuya categoría de Google contenga alguna de estas palabras (sin distinguir acentos). Vacío = todos | `["fontaner", "calefacci"]` |
 | `sender_name` *(opcional)* | Quién firma; por defecto `SENDER_NAME` del `.env` | `"Laura Martín"` |
 | `send_weekdays` *(opcional)* | Días de envío, 1 = lunes | `[1,2,3,4,5]` |
 | `followup_1_days` / `followup_2_days` *(opcional)* | Días tras el primer correo | `3` / `7` |

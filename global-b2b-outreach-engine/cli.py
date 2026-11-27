@@ -91,6 +91,7 @@ def extract(
         ("Ya existían: datos refrescados", stats.refreshed),
         ("Ya existían en estado avanzado: intactos", stats.protected_untouched),
         ("Descartados (cerrados o sin datos)", stats.skipped_invalid),
+        ("Descartados por categoría fuera del nicho", stats.out_of_niche),
     ):
         table.add_row(label, str(value))
     console.print(table)

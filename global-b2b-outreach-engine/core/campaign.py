@@ -4,6 +4,7 @@ from __future__ import annotations
 import json
 import re
 import string
+import unicodedata
 from datetime import datetime, time
 from pathlib import Path
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
@@ -17,6 +18,11 @@ PREFILL_PLACEHOLDERS = {"business_name", "city_label", "niche_label", "lead_ref"
 CAMPAIGNS_DIR = BASE_DIR / "campaigns"
 
 _HHMM = re.compile(r"^([01]\d|2[0-3]):[0-5]\d$")
+
+
+def _plain(text: str) -> str:
+    """Minúsculas y sin acentos, para comparar categorías."""
+    return "".join(c for c in unicodedata.normalize("NFKD", text.lower()) if not unicodedata.combining(c))
 
 
 class CampaignError(Exception):
@@ -44,6 +50,7 @@ class CampaignConfig(BaseModel):
 
     # Opcionales
     offer_context: str = Field(default="", max_length=1200)
+    category_filter: list[str] = Field(default_factory=list, max_length=40)
     sender_name: str = Field(default="", max_length=80)
     send_weekdays: list[int] = Field(default_factory=lambda: [1, 2, 3, 4, 5], min_length=1)
     followup_1_days: int = Field(default=3, ge=1, le=30)
@@ -127,6 +134,13 @@ class CampaignConfig(BaseModel):
     def window_end(self) -> time:
         hour, minute = self.business_hours_end.split(":")
         return time(int(hour), int(minute))
+
+    def category_matches(self, category: str) -> bool:
+        """True si la categoría de Google Maps encaja con el nicho (o si no hay filtro)."""
+        if not self.category_filter:
+            return True
+        normalized = _plain(category)
+        return any(_plain(keyword) in normalized for keyword in self.category_filter if keyword.strip())
 
     def local_now(self, now_utc: datetime) -> datetime:
         return now_utc.astimezone(ZoneInfo(self.timezone))

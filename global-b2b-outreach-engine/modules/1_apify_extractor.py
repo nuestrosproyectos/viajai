@@ -42,6 +42,7 @@ class ExtractStats:
     refreshed: int = 0
     protected_untouched: int = 0
     skipped_invalid: int = 0
+    out_of_niche: int = 0
     runs: list[dict[str, Any]] = field(default_factory=list)
 
 
@@ -179,6 +180,9 @@ def persist_places(
             name = str(item.get("title") or "").strip()
             if not place_id or not name or item.get("permanentlyClosed") or item.get("temporarilyClosed"):
                 stats.skipped_invalid += 1
+                continue
+            if not campaign.category_matches(str(item.get("categoryName") or "")):
+                stats.out_of_niche += 1  # Google mezcla ferreterías, constructoras... con el nicho buscado
                 continue
             country = str(item.get("countryCode") or campaign.country_code).upper()
             website = normalize_website(str(item.get("website") or ""))

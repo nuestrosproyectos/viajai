@@ -361,6 +361,7 @@ async def crawl_site(
 
     home: tuple[str, str] | None = None
     last_error = ""
+    errors: list[str] = []
     attempts = [website] if website.startswith("http://") else [website, "http://" + website.split("://", 1)[1]]
     for attempt_url in attempts:
         try:
@@ -369,8 +370,9 @@ async def crawl_site(
             break
         except httpx.HTTPError as exc:
             last_error = f"{type(exc).__name__}: {exc}"
+            errors.append(f"{attempt_url.split('://', 1)[0]}: {last_error[:140]}")
     if last_error:
-        raise EnrichError(f"no se pudo abrir la home ({last_error[:200]})")
+        raise EnrichError(f"no se pudo abrir la home ({' | '.join(errors)})")
     if home is None:
         return EnrichResult(status=db.NO_CORPORATE_EMAIL, note="la home no existe o no es HTML")
 

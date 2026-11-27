@@ -163,6 +163,12 @@ def test_extraction_dedup_and_protected_states(conn, campaign):
     assert again.inserted == 0 and again.protected_untouched == 1
     assert conn.execute("SELECT COUNT(*) FROM leads").fetchone()[0] == 6
 
+    # Google mezcla negocios de otros sectores: el filtro de categoría los deja fuera.
+    noise = [place("n1", "Ferretería Morales", "https://ferreteriamorales.es", "+34958972069", categoryName="Ferretería"),
+             place("n2", "Calderas Sur", "https://calderassur.es", "+34958972070", categoryName="Empresa de calefacción")]
+    filtered = asyncio.run(extractor.run_extraction(campaign, conn, client=FakeApify(noise)))
+    assert (filtered.inserted, filtered.out_of_niche) == (1, 1) and campaign.category_matches("FONTANERÍA industrial")
+
 
 # ── Enriquecido ─────────────────────────────────────────────────────────────
 
