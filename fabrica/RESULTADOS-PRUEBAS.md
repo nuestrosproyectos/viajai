@@ -11,20 +11,31 @@ Notas de 0 a 10 (proporción de casos que cumplen). «Datos falsos» = número d
 | Reformas | 3 | 24 | 0 | 10 | 10 | 9,1 | 8,6 | 7,5 | 10 | 8,8 | 10 | 5,4 | 7,38 |
 | Reformas | 4 (después) | 24 | **0** | 10 | 10 | 8,3 | **10** | **10** | 9,6 | **10** | 9,6 | 3,3 | 7,21 |
 | Reformas | 5 (60 palabras) | 24 | 0 | 10 | 10 | 9,1 | 10 | 5,0 | 10 | 8,8 (≤60) | 9,2 | 3,8 | 7,17 |
+| Reformas | 6 (45 + casos) | 24 | **0** | 10 | 10 | **10** | 9,1 | 8,0 | 10 | 10 | 9,6 | **6,3** | **7,54** |
 | Placas solares | 1 (antes) | 26 | 0 | 10 | 10 | 7,6 | 8,4 | 5,0 | 10 | 10 | 10 | 6,5 | 7,08 |
 | Placas solares | 2 | 26 | **1** | 9,6 | 9,6 | 8,4 | 7,2 | 6,7 | 10 | 10 | 10 | 4,2 | 6,85 |
 | Placas solares | 3 (después) | 26 | **0** | 10 | 10 | 8,4 | **10** | 5,0 | 10 | 10 | 9,6 | 6,5 | 7,31 |
 | Placas solares | 4 (60 palabras) | 26 | **2** | 9,2 | 9,2 | 8,8 | 8,1 | 10 | 10 | 9,6 (≤60) | 10 | 5,4 | 6,96 |
+| Placas solares | 5 (45 + casos) | 26 | **0** | 10 | 10 | 9,6 | 8,3 | 7,5 | 10 | 10 | 10 | **6,9** | **7,42** |
 | Fontanería | 1 (antes) | 25 | 0 | 10 | 10 | 9,2 | 8,2 | 8,0 | 10 | 10 | 10 | 5,2 | 7,08 |
 | Fontanería | 2 | 25 | 0 | 10 | 10 | 9,6 | 5,9 | 6,7 | 10 | 10 | 10 | 4,8 | 6,84 |
 | Fontanería | 3 (después) | 25 | **0** | 10 | 10 | 9,6 | **9,5** | 5,7 | 10 | 10 | 9,6 | 4,8 | 7,40 |
 | Fontanería | 4 (60 palabras) | 25 | 0 | 10 | 10 | 8,8 | 10 | 6,0 | 10 | 10 (≤60) | 8,0 | 4,0 | 7,28 |
+| Fontanería | 5 (45 + casos) | 25 | **0** | 10 | 10 | 9,6 | 9,5 | 8,0 | 10 | 10 | 10 | **6,0** | **7,44** |
 | Accidentes | 1 (antes) | 26 | 0 | 9,5 | 9,6 | 8,8 | 8,1 | 5,0 | 10 | 9,2 | 10 | 5,0 | 7,00 |
 | Accidentes | 2 (después) | 26 | **0** | 10 | 10 | 8,8 | 8,4 | 8,5 | 10 | 10 | 8,8 | 5,4 | 7,04 |
 | Accidentes | 3 (60 palabras) | 26 | 0 | 10 | 10 | 9,2 | 7,3 | 8,5 | 9,6 | 9,6 (≤60) | 9,6 | 4,2 | 6,77 |
+| Accidentes | 4 (45 + casos) | 26 | **0** | 9,6 | 9,6 | 9,2 | 9,6 | 9,2 | 10 | 10 | 9,6 | **6,2** | **7,31** |
 
 ## Ronda con 60 palabras (pedida por Juan, 27-11-2026)
 Mismos clientes, mismo modelo (Haiku), corrección a ciegas. Las respuestas se alargan (de ~40 a ~51 palabras de media) pero **no mejoran**: nota media de las cuatro webs 7,05 frente a 7,24 con 45 palabras. El «criterio del caso» no sube (3,8-5,4) porque las palabras de más se van en explicar, no en lo que pedía el caso; en placas y accidentes baja la propuesta de cita (8,1 y 7,3) y en placas vuelven **2 datos falsos** (cliente 12: «estudio gratuito» para revisar una instalación ajena, el mismo fallo que se corrigió en la ronda 3; cliente 19: promete que el presupuesto «recoge el ahorro estimado»). Ojo: es una sola pasada por cliente, hay ruido de ±0,2.
+
+## Ronda con 45 palabras + instrucciones por tipo de caso (27-11-2026)
+Vuelta a 45 palabras y, en cada sector, 18 tipos de caso con el dato concreto que hay que dar (todo sacado del conocimiento con fuentes), más reglas firmes en la base: «gratis» solo para lo que dicen las condiciones, no prometer qué lleva el presupuesto, comprobar el verbo de oferta de la cita, ficha sin decisiones ni género.
+- Clientes de siempre (101): nota media **7,43** (antes 7,24 con 45 palabras y 7,05 con 60); **criterio del caso de 5,0 a 6,4** de media; **0 datos falsos**; 42 palabras de media.
+- **16 clientes nuevos** que las instrucciones nunca habían visto (4 por sector, `<web>/pruebas/clientes-nuevos.json`, `preparar.mjs … --nuevos`): nota 7,06, **0 datos falsos**, criterio del caso 5,6. Mejora algo menos que con los de siempre (era de esperar: los casos se escribieron mirando sus fallos), pero no rompe nada.
+- Sigue por debajo de 9: el criterio del caso (6-7). Cada caso pide 3-5 cosas y en 45 palabras caben 1-2: el resto se da en el siguiente turno, que estas pruebas (de una sola respuesta) no ven.
+- Fallo a vigilar: en placas, al comparar un presupuesto con batería, usó el rango de «casa con batería» en vez del precio por kWh (cliente 16).
 
 ## Qué se corrigió entre rondas (en el cerebro común, para todas las webs, salvo lo marcado)
 - R1→R2: dar siempre el rango de precio si lo pide; empatía con miedo, susto o personas mayores; usted en toda la conversación; una sola pregunta; rellenar en la ficha lo que el cliente ya dijo.

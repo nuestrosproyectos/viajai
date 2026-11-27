@@ -30,7 +30,7 @@ Una herramienta para crear, para cualquier negocio, una web como Reparo y Herenc
 - Las páginas legales salen de la plantilla (antes Herencias decía «Reparo» y hablaba de averías: corregido).
 - Precios de la web = los del conocimiento con fuente (si el estudio y el conocimiento difieren, manda el conocimiento).
 - Reparo YA está en la plantilla (27-11-2026): `reparacion/web.mjs`, `estilo.css` (piel «claro»), `contenido.js` (preguntas). Sus piezas propias son ahora opcionales de la plantilla y las puede usar cualquier web: `manual` (manual.mjs + conocimiento.mjs con fichas y códigos de error), `mapa` (mapa de la visita en la solicitud), `final.<tipo>.ruta` (dibujo de la furgoneta en la tarjeta final), `obligatoriosTipo` (p. ej. venta pide el aparato), `fichaAlias` y `campoOrientacion` (nombres propios en la <ficha>), destinos con valor (`tituloValor`) y que abren un desplegable (`abrir`), `servidor`/`livekit` (metas de la web publicada). Sus páginas legales siguen siendo propias (sin `legal` en web.mjs). Copia de la página hecha a mano: `reparacion/version-a-mano.html`. Comprobado: pruebas-manual (web y agente iguales), probar-web en 3 equipos, cambio de nombre llega a los 7 sitios, y comparación visual con la anterior (igual).
-- Respuestas escritas de Andrés: hasta 60 palabras (pedido por Juan el 27-11-2026). Por voz siguen en menos de 25.
+- Respuestas escritas de Andrés: 45 palabras (50 en Herencias y Reparo). Juan probó 60 el 27-11-2026: empeoró (7,05 frente a 7,24 y 2 datos falsos), así que se volvió a 45 con instrucciones por tipo de caso (`casos` en cada instrucciones.mjs): nota 7,43 y 0 datos falsos, también con 16 clientes nuevos. Por voz, menos de 25.
 
 ## Lo que no se pudo verificar (límites de esta sesión)
 - La red solo deja salir a images.pexels.com: ninguna web oficial se abrió directamente; todo lo legal y los precios salen de resultados del buscador con su URL (marcado «verificar» donde hay dudas). El cupo de búsquedas se agotó en la investigación.
@@ -40,7 +40,6 @@ Una herramienta para crear, para cualquier negocio, una web como Reparo y Herenc
 
 ## Pendiente (al cerrar el 27-11-2026)
 - Juan: datos reales de cada negocio (teléfonos, horarios, precios propios, garantías, años), OEPM de las 4 marcas, revisión de cada `revision-profesional.md` por el profesional del sector.
-- Medir con una ronda de pruebas a ciegas el efecto de subir a 60 palabras.
 - Probar una llamada de voz real con el agente común (claves de LiveKit, Deepgram, ElevenLabs y Anthropic).
 - Casilla de consentimiento de datos de salud en la solicitud (accidentes) cuando `legal.datosSalud`.
 - Grabar el audio del aviso del micrófono con la voz de cada web (cuesta créditos de ElevenLabs: pedir OK).
