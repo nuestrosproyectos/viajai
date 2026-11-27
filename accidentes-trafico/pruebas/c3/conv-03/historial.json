@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Perfecto, la consulta por videollamada por la tarde. Ten a mano el informe de urgencias y el parte. ¿Me dices tu nombre y un teléfono, solo para llamarte y organizar la consulta?\n<ficha>{\"caso\":\"Se saltó un ceda; iba con su mujer como pasajera\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Por videollamada, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Tener a mano el informe de urgencias y el parte; la consulta es para su mujer, que como pasajera normalmente puede reclamar.\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, la consulta por videollamada por la tarde. Ten a mano el informe de urgencias y el parte. ¿Me dices tu nombre y un teléfono, solo para llamarte y organizar la consulta?\n<ficha>{\"caso\":\"Se saltó un ceda; iba con su mujer como pasajera\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Por videollamada, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Tener a mano el informe de urgencias y el parte; la consulta es para su mujer, que como pasajera normalmente puede reclamar.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Pedro, 600 909 303"
  }
 ]

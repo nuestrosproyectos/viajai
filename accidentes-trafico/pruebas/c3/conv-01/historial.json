@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Perfecto, la consulta por videollamada por la tarde. Y si el dolor de cuello aumenta o te mareas, ve a urgencias sin esperar. ¿Me dices tu nombre y un teléfono, solo para llamarte y organizar la consulta?\n<ficha>{\"caso\":\"Golpe por detrás hace tres días; le duele el cuello\",\"como\":\"\",\"fecha\":\"Hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Por la tarde, por videollamada\",\"consentimientoSalud\":\"\",\"orientacion\":\"Ir al médico hoy y dejarlo por escrito; la primera consulta con el abogado es gratis.\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, la consulta por videollamada por la tarde. Y si el dolor de cuello aumenta o te mareas, ve a urgencias sin esperar. ¿Me dices tu nombre y un teléfono, solo para llamarte y organizar la consulta?\n<ficha>{\"caso\":\"Golpe por detrás hace tres días; le duele el cuello\",\"como\":\"\",\"fecha\":\"Hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Por la tarde, por videollamada\",\"consentimientoSalud\":\"\",\"orientacion\":\"Ir al médico hoy y dejarlo por escrito; la primera consulta con el abogado es gratis.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Raúl, 644 555 888"
  }
 ]

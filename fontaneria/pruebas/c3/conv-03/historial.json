@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Entiendo el disgusto. Haz fotos de lo mojado para el seguro, y el informe del fontanero con cámara ayuda a decidir de quién es la avería. ¿Te reservo la visita, por la mañana o por la tarde?\n<ficha>{\"averia\":\"Agua sucia sale por el plato de ducha del bajo al tirar de la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Hacer fotos de los daños para el seguro. El informe del fontanero con cámara ayuda a decidir quién paga; la comunidad lo decide con su administrador.\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Entiendo el disgusto. Haz fotos de lo mojado para el seguro, y el informe del fontanero con cámara ayuda a decidir de quién es la avería. ¿Te reservo la visita, por la mañana o por la tarde?\n<ficha>{\"averia\":\"Agua sucia sale por el plato de ducha del bajo al tirar de la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Hacer fotos de los daños para el seguro. El informe del fontanero con cámara ayuda a decidir quién paga; la comunidad lo decide con su administrador.\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, entonces que venga el fontanero a mirarlo y me haga el informe. Mejor por la tarde"
  }
 ]

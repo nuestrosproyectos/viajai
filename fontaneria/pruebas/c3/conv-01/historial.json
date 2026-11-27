@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Me alegra que haya parado. Si hay enchufes o aparatos mojados cerca, no los toques. Te apunto como urgente para hoy: ¿en qué municipio y calle es la vivienda?\n<ficha>{\"averia\":\"Fuga de agua bajo el fregadero\",\"cuando\":\"Urgente, hoy en cuanto podáis\",\"llave\":\"Sí, la ha encontrado debajo del fregadero y ya ha parado el agua\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Pilar\",\"telefono\":\"610 223 344\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Hoy, cuanto antes\",\"inicio\":\"\",\"orientacion\":\"Apartar lo que se pueda mojar y no tocar aparatos mojados cerca de enchufes.\",\"fase\":\"datos\"}</ficha>",
   "original": "Me alegra que haya parado. Si hay enchufes o aparatos mojados cerca, no los toques. Te apunto como urgente para hoy: ¿en qué municipio y calle es la vivienda?\n<ficha>{\"averia\":\"Fuga de agua bajo el fregadero\",\"cuando\":\"Urgente, hoy en cuanto podáis\",\"llave\":\"Sí, la ha encontrado debajo del fregadero y ya ha parado el agua\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Pilar\",\"telefono\":\"610 223 344\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Hoy, cuanto antes\",\"inicio\":\"\",\"orientacion\":\"Apartar lo que se pueda mojar y no tocar aparatos mojados cerca de enchufes.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Granada capital, calle Recogidas 40, 2º B"
  }
 ]
