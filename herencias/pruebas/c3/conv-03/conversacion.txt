@@ -1,0 +1,34 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Herencial. Cuéntame tu caso y te explico qué te toca hacer.
+
+CLIENTE: Mi madre murió hace cinco meses y medio y todavía no hemos hecho nada de la herencia. ¿Vamos tarde?
+
+ANDRÉS: Siento mucho lo de tu madre. Queda poco tiempo: el impuesto de la herencia vence a los seis meses del fallecimiento y ya no se puede ampliar. Te reservo la primera consulta gratis con el abogado. ¿Sabes si tu madre hizo testamento?
+<mostrar>plazo</mostrar>
+<ficha>{"situacion":"herencia de tu madre, fallecida hace cinco meses y medio, sin nada hecho todavía","parentesco":"Hijo o hija","testamento":"","bienes":"","nombre":"","telefono":"","municipio":"","franja":"","fallecimiento":"hace cinco meses y medio","modalidad":"","orientacion":"Queda poco tiempo para presentar el impuesto de la herencia, que vence a los seis meses del fallecimiento y ya no se puede ampliar.","porDecir":"el certificado de últimas voluntades, que dice si hay testamento y en qué notaría · el recargo si se presenta fuera de plazo: un 1 % más un 1 % por cada mes de retraso","fase":"proponiendo"}</ficha>
+
+CLIENTE: Sí, hay testamento. Somos tres hermanos y hay un piso en Granada. Estoy agobiada, no sé ni qué hacer primero
+
+ANDRÉS: Entiendo el agobio. Pide el certificado de últimas voluntades, que dice en qué notaría está el testamento, y ojo: el impuesto vence a los seis meses, sin prórroga. ¿Te reservo la consulta cuanto antes, por la mañana o por la tarde?
+<mostrar>plazo</mostrar>
+<ficha>{"situacion":"herencia de tu madre, fallecida hace cinco meses y medio; hay testamento, sois tres hermanos y hay un piso en Granada","parentesco":"Hijo o hija","testamento":"Sí","bienes":"un piso en Granada","nombre":"","telefono":"","municipio":"","franja":"","fallecimiento":"hace cinco meses y medio","modalidad":"","orientacion":"Hay que presentar el impuesto antes de que venza a los seis meses, sin prórroga; pedir el certificado de últimas voluntades para localizar el testamento.","porDecir":"el recargo si se presenta fuera de plazo: un 1 % más un 1 % por cada mes de retraso · si el piso está en Granada capital, la bonificación de la plusvalía se pierde fuera de plazo","fase":"proponiendo"}</ficha>
+
+CLIENTE: Sí por favor, lo antes posible. Ya no sé ni por dónde empezar
+
+ANDRÉS: No te preocupes, te lo vamos ordenando. Y si el plazo se pasa, hay recargo: un 1 % más un 1 % por cada mes de retraso. Para llamarte y organizar la consulta cuanto antes, ¿me dices tu nombre y un teléfono?
+<ficha>{"situacion":"herencia de tu madre, fallecida hace cinco meses y medio; hay testamento, sois tres hermanos y hay un piso en Granada","parentesco":"Hijo o hija","testamento":"Sí","bienes":"un piso en Granada","nombre":"","telefono":"","municipio":"","franja":"","fallecimiento":"hace cinco meses y medio","modalidad":"","orientacion":"Hay que presentar el impuesto antes de que venza a los seis meses, sin prórroga; pedir el certificado de últimas voluntades para localizar el testamento.","porDecir":"si el piso está en Granada capital, la bonificación de la plusvalía se pierde fuera de plazo","fase":"datos"}</ficha>
+
+CLIENTE: Carmen, 611 222 999
+
+ANDRÉS: Gracias, Carmen. Y si el piso está en Granada capital, la bonificación de la plusvalía se pierde si se presenta fuera de plazo. ¿De qué municipio eres y cómo te viene mejor la consulta, en el despacho, por videollamada o por teléfono?
+<ficha>{"situacion":"herencia de tu madre, fallecida hace cinco meses y medio; hay testamento, sois tres hermanos y hay un piso en Granada","parentesco":"Hijo o hija","testamento":"Sí","bienes":"un piso en Granada","nombre":"Carmen","telefono":"611 222 999","municipio":"","franja":"","fallecimiento":"hace cinco meses y medio","modalidad":"","orientacion":"Hay que presentar el impuesto antes de que venza a los seis meses, sin prórroga; pedir el certificado de últimas voluntades para localizar el testamento.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: De Granada, del Realejo. En el despacho, por la mañana
+
+ANDRÉS: Perfecto, Carmen. Te apunto el teléfono seis uno uno, dos dos dos, nueve nueve nueve; municipio Granada, en el Realejo, y la consulta en el despacho por la mañana. ¿Está todo bien?
+<ficha>{"situacion":"herencia de tu madre, fallecida hace cinco meses y medio; hay testamento, sois tres hermanos y hay un piso en Granada","parentesco":"Hijo o hija","testamento":"Sí","bienes":"un piso en Granada","nombre":"Carmen","telefono":"611 222 999","municipio":"Granada","franja":"en el despacho, por la mañana","fallecimiento":"hace cinco meses y medio","modalidad":"En el despacho","orientacion":"Hay que presentar el impuesto antes de que venza a los seis meses, sin prórroga; pedir el certificado de últimas voluntades para localizar el testamento.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo correcto. Gracias
+
+ANDRÉS: Perfecto, Carmen. Queda enviada la solicitud y te llamamos para confirmar el día y la hora de la consulta en el despacho, por la mañana. ¿Necesitas algo más?
+<ficha>{"situacion":"herencia de tu madre, fallecida hace cinco meses y medio; hay testamento, sois tres hermanos y hay un piso en Granada","parentesco":"Hijo o hija","testamento":"Sí","bienes":"un piso en Granada","nombre":"Carmen","telefono":"611 222 999","municipio":"Granada","franja":"en el despacho, por la mañana","fallecimiento":"hace cinco meses y medio","modalidad":"En el despacho","orientacion":"Hay que presentar el impuesto antes de que venza a los seis meses, sin prórroga; pedir el certificado de últimas voluntades para localizar el testamento.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","situacion":"herencia de tu madre, fallecida hace cinco meses y medio; hay testamento, sois tres hermanos y hay un piso en Granada","parentesco":"Hijo o hija","testamento":"Sí","bienes":"un piso en Granada","nombre":"Carmen","telefono":"611 222 999","municipio":"Granada","franja":"en el despacho, por la mañana","fallecimiento":"hace cinco meses y medio","modalidad":"En el despacho","urgente":true,"notas":"Parentesco: hijo o hija de la fallecida (madre), que falleció hace cinco meses y medio. Hay testamento. Son tres hermanos y hay un piso en Granada. Plazo del impuesto: vence a los seis meses del fallecimiento, sin prórroga, por lo que queda menos de un mes; por eso urgente. Se le orientó: presentar el impuesto antes del vencimiento, pedir el certificado de últimas voluntades para localizar el testamento, y que el recargo por presentar fuera de plazo es de un 1 % más un 1 % por mes de retraso. Es de Granada (Realejo); quiere consulta en el despacho por la mañana. Tiene mucha angustia y no sabe por dónde empezar."}</aviso>

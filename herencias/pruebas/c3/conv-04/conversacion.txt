@@ -1,0 +1,32 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Herencial. Cuéntame tu caso y te explico qué te toca hacer.
+
+CLIENTE: Mi hermano ha muerto y creo que tenía deudas. ¿Si acepto la herencia tengo que pagarlas yo?
+
+ANDRÉS: Siento lo de tu hermano. Si aceptas sin más, sí respondes de las deudas, incluso con tu propio dinero, así que de momento no toques cuentas ni bienes. Te reservo la primera consulta gratis con el abogado. ¿Sabes si tu hermano hizo testamento?
+<ficha>{"situacion":"herencia de tu hermano, que tenía deudas","parentesco":"Hermano o hermana","testamento":"","bienes":"","nombre":"","telefono":"","municipio":"","franja":"","fallecimiento":"","modalidad":"","orientacion":"Si aceptas sin más, también respondes de las deudas con tu propio dinero; de momento, no toques cuentas ni bienes hasta hablar con el abogado.","porDecir":"pedir el certificado de últimas voluntades, que dice si hay testamento · a beneficio de inventario, ante notario, solo respondes de las deudas hasta donde llegue la herencia · renunciar es ante notario y es irrevocable","fase":"proponiendo"}</ficha>
+
+CLIENTE: No sé si hizo testamento. Tenía un préstamo y quizá tarjetas, y una furgoneta. ¿Qué opciones tengo?
+
+ANDRÉS: Lo más seguro suele ser aceptar a beneficio de inventario, ante notario: solo respondes de las deudas hasta lo que valga la herencia. Renunciar es irrevocable. Para saber si hubo testamento, pide el certificado de últimas voluntades. ¿Te reservo la consulta?
+<ficha>{"situacion":"herencia de tu hermano, que tenía deudas (un préstamo, quizá tarjetas) y una furgoneta","parentesco":"Hermano o hermana","testamento":"No lo sé","bienes":"una furgoneta","nombre":"","telefono":"","municipio":"","franja":"","fallecimiento":"","modalidad":"","orientacion":"Lo más seguro suele ser aceptar a beneficio de inventario, ante notario; renunciar es irrevocable; pedir el certificado de últimas voluntades para saber si hubo testamento.","porDecir":"renunciar es ante notario y es irrevocable · la furgoneta, si la heredas, se transfiere en Tráfico en 90 días desde la adjudicación","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, entendido. Sí, resérvame la consulta
+
+ANDRÉS: Perfecto, la reservamos. Si heredas la furgoneta, la transferencia en Tráfico tiene noventa días desde la adjudicación. Para llamarte y organizar la consulta, ¿me dices tu nombre y un teléfono?
+<ficha>{"situacion":"herencia de tu hermano, que tenía deudas (un préstamo, quizá tarjetas) y una furgoneta","parentesco":"Hermano o hermana","testamento":"No lo sé","bienes":"una furgoneta","nombre":"","telefono":"","municipio":"","franja":"","fallecimiento":"","modalidad":"","orientacion":"Lo más seguro suele ser aceptar a beneficio de inventario, ante notario; renunciar es irrevocable; pedir el certificado de últimas voluntades para saber si hubo testamento.","porDecir":"la furgoneta, si la heredas, se transfiere en Tráfico en 90 días desde la adjudicación","fase":"datos"}</ficha>
+
+CLIENTE: Manuel, 622 555 444
+
+ANDRÉS: Gracias, Manuel. Si algún acreedor te reclama ante notario, tienes treinta días naturales para contestar; si callas, se entiende que aceptas. ¿De qué municipio eres y cómo te viene mejor la consulta, en el despacho, por videollamada o por teléfono?
+<ficha>{"situacion":"herencia de tu hermano, que tenía deudas (un préstamo, quizá tarjetas) y una furgoneta","parentesco":"Hermano o hermana","testamento":"No lo sé","bienes":"una furgoneta","nombre":"Manuel","telefono":"622 555 444","municipio":"","franja":"","fallecimiento":"","modalidad":"","orientacion":"Lo más seguro suele ser aceptar a beneficio de inventario, ante notario; renunciar es irrevocable; pedir el certificado de últimas voluntades para saber si hubo testamento.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: De Guadix. Por videollamada, por la tarde
+
+ANDRÉS: Perfecto, Manuel. Te apunto el teléfono seis dos dos, cinco cinco cinco, cuatro cuatro cuatro; municipio Guadix, y la consulta por videollamada por la tarde. ¿Está todo bien?
+<ficha>{"situacion":"herencia de tu hermano, que tenía deudas (un préstamo, quizá tarjetas) y una furgoneta","parentesco":"Hermano o hermana","testamento":"No lo sé","bienes":"una furgoneta","nombre":"Manuel","telefono":"622 555 444","municipio":"Guadix","franja":"por videollamada, por la tarde","fallecimiento":"","modalidad":"Por videollamada","orientacion":"Lo más seguro suele ser aceptar a beneficio de inventario, ante notario; renunciar es irrevocable; pedir el certificado de últimas voluntades para saber si hubo testamento.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Perfecto, Manuel. Queda enviada la solicitud y te llamamos para confirmar el día y la hora de la consulta por videollamada, por la tarde. ¿Necesitas algo más?
+<ficha>{"situacion":"herencia de tu hermano, que tenía deudas (un préstamo, quizá tarjetas) y una furgoneta","parentesco":"Hermano o hermana","testamento":"No lo sé","bienes":"una furgoneta","nombre":"Manuel","telefono":"622 555 444","municipio":"Guadix","franja":"por videollamada, por la tarde","fallecimiento":"","modalidad":"Por videollamada","orientacion":"Lo más seguro suele ser aceptar a beneficio de inventario, ante notario; renunciar es irrevocable; pedir el certificado de últimas voluntades para saber si hubo testamento.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","situacion":"herencia de tu hermano, que tenía deudas (un préstamo, quizá tarjetas) y una furgoneta","parentesco":"Hermano o hermana","testamento":"No lo sé","bienes":"una furgoneta","nombre":"Manuel","telefono":"622 555 444","municipio":"Guadix","franja":"por videollamada, por la tarde","fallecimiento":"","modalidad":"Por videollamada","urgente":false,"notas":"Parentesco: hermano del fallecido. No sabe si hubo testamento. Deudas: un préstamo y quizá tarjetas, sin reclamación conocida. Bienes: una furgoneta. Pregunta por sus opciones: se le orientó que lo más seguro suele ser aceptar a beneficio de inventario ante notario (solo responde de las deudas hasta lo que valga la herencia), que renunciar es irrevocable, y que pida el certificado de últimas voluntades para saber si hubo testamento. Si hereda la furgoneta, la transferencia en Tráfico es en 90 días desde la adjudicación. Fecha del fallecimiento no indicada. Es de Guadix; quiere consulta por videollamada por la tarde."}</aviso>

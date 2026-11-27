@@ -1,0 +1,32 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Herencial. Cuéntame tu caso y te explico qué te toca hacer.
+
+CLIENTE: Mi tía me ha dejado su casa en el testamento. ¿Cuánto voy a tener que pagar?
+
+ANDRÉS: Siento lo de tu tía. Entre sobrinos sí se paga el impuesto: por ejemplo, quien hereda sesenta mil euros pagaría, orientativamente, entre seis mil quinientos y siete mil cuatrocientos. Te reservo la primera consulta gratis con el abogado. ¿Sabes cuándo falleció?
+<ficha>{"situacion":"herencia de tu tía, que te ha dejado su casa en el testamento","parentesco":"Sobrino o sobrina","testamento":"Sí","bienes":"una casa","nombre":"","telefono":"","municipio":"","franja":"","fallecimiento":"","modalidad":"","orientacion":"Entre sobrinos sí se paga el impuesto de sucesiones, y el importe depende del valor de la casa; el abogado lo confirma con los documentos.","porDecir":"pedir la copia autorizada del testamento en la notaría que indique el certificado de últimas voluntades · el plazo del impuesto es de seis meses desde el fallecimiento, con prórroga de otros seis si se pide en los cinco primeros · si hay piso o casa, la plusvalía municipal, que también corre seis meses","fase":"proponiendo"}</ficha>
+
+CLIENTE: Hace dos meses, en Motril. La casa vale unos 90.000 € y yo no tengo mucho ahorrado, la verdad. Me agobia no poder pagarlo
+
+ANDRÉS: Entiendo que te agobie. Con el valor real de la casa, el abogado te dice cuánto sale y en qué plazo. Después pide la copia oficial del testamento en la notaría donde esté. ¿Te reservo la consulta con el abogado?
+<ficha>{"situacion":"herencia de tu tía, que te ha dejado su casa en el testamento","parentesco":"Sobrino o sobrina","testamento":"Sí","bienes":"una casa, que vale unos 90.000 €","nombre":"","telefono":"","municipio":"","franja":"","fallecimiento":"hace dos meses, en Motril","modalidad":"","orientacion":"Entre sobrinos sí se paga el impuesto de sucesiones; el abogado te dice cuánto sale con el valor real de la casa y en qué plazo.","porDecir":"el plazo del impuesto es de seis meses desde el fallecimiento, con prórroga de otros seis si se pide en los cinco primeros · si hay piso o casa, la plusvalía municipal, que también corre seis meses","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, si me lo miráis y me decís más o menos cuánto saldría, sí quiero la consulta
+
+ANDRÉS: Con 90.000 euros no te puedo dar una cifra exacta. Como sobrina, el ejemplo de sesenta mil sale entre seis mil quinientos y siete mil cuatrocientos. El plazo son seis meses desde el fallecimiento, y ya llevas dos. ¿Me dices tu nombre y un teléfono?
+<ficha>{"situacion":"herencia de tu tía, que te ha dejado su casa en el testamento","parentesco":"Sobrino o sobrina","testamento":"Sí","bienes":"una casa, que vale unos 90.000 €","nombre":"","telefono":"","municipio":"","franja":"","fallecimiento":"hace dos meses, en Motril","modalidad":"","orientacion":"Entre sobrinos sí se paga el impuesto de sucesiones; con una casa de 90.000 € el abogado te dice la cifra exacta con el valor real.","porDecir":"la prórroga de otros seis meses, solo si se pide en los cinco primeros · la plusvalía municipal de la casa, que también corre seis meses","fase":"datos"}</ficha>
+
+CLIENTE: Álvaro, 644 333 777
+
+ANDRÉS: Gracias, Álvaro. La prórroga de seis meses solo se pide en los cinco primeros meses, así que aún tienes margen. ¿En qué municipio vives y cómo te viene mejor la consulta, en el despacho, por videollamada o por teléfono?
+<ficha>{"situacion":"herencia de tu tía, que te ha dejado su casa en el testamento","parentesco":"Sobrino o sobrina","testamento":"Sí","bienes":"una casa, que vale unos 90.000 €","nombre":"Álvaro","telefono":"644 333 777","municipio":"","franja":"","fallecimiento":"hace dos meses, en Motril","modalidad":"","orientacion":"Entre sobrinos sí se paga el impuesto de sucesiones; con una casa de 90.000 € el abogado te dice la cifra exacta con el valor real.","porDecir":"la plusvalía municipal de la casa, que también corre seis meses","fase":"datos"}</ficha>
+
+CLIENTE: De Motril. Por teléfono mejor, y por la mañana
+
+ANDRÉS: Perfecto, Álvaro. Te apunto el teléfono seis cuatro cuatro, tres tres tres, siete siete siete; municipio Motril, y la consulta por teléfono por la mañana. Recuerda también que la plusvalía de la casa corre seis meses. ¿Está todo bien?
+<ficha>{"situacion":"herencia de tu tía, que te ha dejado su casa en el testamento","parentesco":"Sobrino o sobrina","testamento":"Sí","bienes":"una casa, que vale unos 90.000 €","nombre":"Álvaro","telefono":"644 333 777","municipio":"Motril","franja":"por teléfono, por la mañana","fallecimiento":"hace dos meses, en Motril","modalidad":"Por teléfono","orientacion":"Entre sobrinos sí se paga el impuesto de sucesiones; con una casa de 90.000 € el abogado te dice la cifra exacta con el valor real.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, está todo bien
+
+ANDRÉS: Perfecto, Álvaro. Queda enviada la solicitud y te llamamos por teléfono por la mañana para confirmar el día y la hora de la consulta. ¿Necesitas algo más?
+<ficha>{"situacion":"herencia de tu tía, que te ha dejado su casa en el testamento","parentesco":"Sobrino o sobrina","testamento":"Sí","bienes":"una casa, que vale unos 90.000 €","nombre":"Álvaro","telefono":"644 333 777","municipio":"Motril","franja":"por teléfono, por la mañana","fallecimiento":"hace dos meses, en Motril","modalidad":"Por teléfono","orientacion":"Entre sobrinos sí se paga el impuesto de sucesiones; con una casa de 90.000 € el abogado te dice la cifra exacta con el valor real.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","situacion":"herencia de tu tía, que te ha dejado su casa en el testamento","parentesco":"Sobrino o sobrina","testamento":"Sí","bienes":"una casa, que vale unos 90.000 €","nombre":"Álvaro","telefono":"644 333 777","municipio":"Motril","franja":"por teléfono, por la mañana","fallecimiento":"hace dos meses, en Motril","modalidad":"Por teléfono","urgente":false,"notas":"Parentesco: sobrino del fallecido (tía), que falleció hace dos meses en Motril. Hay testamento y le deja la casa, que vale unos 90.000 €. No tiene mucho ahorrado y le preocupa no poder pagar el impuesto. Se le orientó: entre sobrinos sí se paga; ejemplo orientativo de 60.000 € entre 6.500 y 7.400 €; plazo de seis meses desde el fallecimiento con prórroga de otros seis si se pide en los cinco primeros; la plusvalía municipal de la casa también corre seis meses. Quiere consulta por teléfono por la mañana."}</aviso>

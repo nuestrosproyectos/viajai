@@ -1,0 +1,32 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Herencial. Cuéntame tu caso y te explico qué te toca hacer.
+
+CLIENTE: Hola, mi padre falleció la semana pasada y no sé por dónde empezar.
+
+ANDRÉS: Siento mucho lo de tu padre. Lo primero es el certificado de defunción, que se pide gratis en el Registro Civil. Te reservo la primera consulta gratis con el abogado, que te dirá qué pasos tocan. ¿Sabes si tu padre hizo testamento?
+<ficha>{"situacion":"fallecimiento de tu padre la semana pasada, no sabes por dónde empezar","parentesco":"Hijo o hija","testamento":"No lo sé","bienes":"","nombre":"","telefono":"","municipio":"","franja":"","fallecimiento":"la semana pasada","modalidad":"","orientacion":"Pedir primero el certificado de defunción, que es gratis en el Registro Civil, y reservar la primera consulta gratis con el abogado.","porDecir":"el certificado de últimas voluntades, pasados quince días hábiles, que dice si hay testamento · el impuesto de sucesiones tiene seis meses desde el fallecimiento","fase":"proponiendo"}</ficha>
+
+CLIENTE: No lo sé la verdad, no sé si hizo testamento. Todo esto me ha pillado de sorpresa. Lo que más me preocupa es si vamos a tener que pagar mucho
+
+ANDRÉS: Entiendo el susto. Como hijo, lo más probable es que pagues cero o casi nada de impuesto de sucesiones, aunque hay que presentarlo en seis meses. Luego pide el certificado de últimas voluntades, que dice si hubo testamento. ¿Te reservo la consulta con el abogado?
+<ficha>{"situacion":"fallecimiento de tu padre la semana pasada, no sabes por dónde empezar","parentesco":"Hijo o hija","testamento":"No lo sé","bienes":"","nombre":"","telefono":"","municipio":"","franja":"","fallecimiento":"la semana pasada","modalidad":"","orientacion":"Como hijo, lo más probable es que pagues cero o casi nada de impuesto, pero hay que presentarlo en seis meses; después pide el certificado de últimas voluntades para saber si hubo testamento.","porDecir":"","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, gracias por explicarlo con calma. Sí, resérvamela
+
+ANDRÉS: Perfecto, la dejamos reservada. Mientras tanto, el certificado de últimas voluntades se puede pedir pasados quince días hábiles desde el fallecimiento. Para llamarte y organizar la consulta, ¿me dices tu nombre y un teléfono?
+<ficha>{"situacion":"fallecimiento de tu padre la semana pasada, no sabes por dónde empezar","parentesco":"Hijo o hija","testamento":"No lo sé","bienes":"","nombre":"","telefono":"","municipio":"","franja":"","fallecimiento":"la semana pasada","modalidad":"","orientacion":"Como hijo, lo más probable es que pagues cero o casi nada de impuesto, pero hay que presentarlo en seis meses; después pide el certificado de últimas voluntades para saber si hubo testamento.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Me llamo Lucía y mi teléfono es el 655 111 222
+
+ANDRÉS: Gracias, Lucía. ¿De qué municipio es y cómo te viene mejor la consulta, en el despacho, por videollamada o por teléfono, por la mañana o por la tarde?
+<ficha>{"situacion":"fallecimiento de tu padre la semana pasada, no sabes por dónde empezar","parentesco":"Hijo o hija","testamento":"No lo sé","bienes":"","nombre":"Lucía","telefono":"655 111 222","municipio":"","franja":"","fallecimiento":"la semana pasada","modalidad":"","orientacion":"Como hijo, lo más probable es que pagues cero o casi nada de impuesto, pero hay que presentarlo en seis meses; después pide el certificado de últimas voluntades para saber si hubo testamento.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: De Granada. Mejor por videollamada, por la tarde
+
+ANDRÉS: Perfecto, Lucía. Te apunto el teléfono seis cinco cinco, uno uno uno, dos dos dos; municipio Granada, y la consulta por videollamada por la tarde. ¿Está todo bien?
+<ficha>{"situacion":"fallecimiento de tu padre la semana pasada, no sabes por dónde empezar","parentesco":"Hijo o hija","testamento":"No lo sé","bienes":"","nombre":"Lucía","telefono":"655 111 222","municipio":"Granada","franja":"videollamada, por la tarde","fallecimiento":"la semana pasada","modalidad":"Por videollamada","orientacion":"Como hijo, lo más probable es que pagues cero o casi nada de impuesto, pero hay que presentarlo en seis meses; después pide el certificado de últimas voluntades para saber si hubo testamento.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien, gracias
+
+ANDRÉS: Perfecto, Lucía. Queda enviada la solicitud y te llamamos para confirmar el día y la hora de la consulta por la tarde. ¿Necesitas algo más?
+<ficha>{"situacion":"fallecimiento de tu padre la semana pasada, no sabes por dónde empezar","parentesco":"Hijo o hija","testamento":"No lo sé","bienes":"","nombre":"Lucía","telefono":"655 111 222","municipio":"Granada","franja":"videollamada, por la tarde","fallecimiento":"la semana pasada","modalidad":"Por videollamada","orientacion":"Como hijo, lo más probable es que pagues cero o casi nada de impuesto, pero hay que presentarlo en seis meses; después pide el certificado de últimas voluntades para saber si hubo testamento.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","situacion":"fallecimiento de tu padre la semana pasada, no sabes por dónde empezar","parentesco":"Hijo o hija","testamento":"No lo sé","bienes":"","nombre":"Lucía","telefono":"655 111 222","municipio":"Granada","franja":"videollamada, por la tarde","fallecimiento":"la semana pasada","modalidad":"Por videollamada","urgente":false,"notas":"Parentesco: hijo o hija del fallecido (padre), que falleció la semana pasada. No sabe si hubo testamento. Le preocupa pagar mucho de impuesto; se le orientó: como hijo, lo más probable es que pague cero o casi nada, hay que presentarlo en seis meses, y pedir el certificado de últimas voluntades pasados quince días hábiles. Quiere videollamada por la tarde."}</aviso>
