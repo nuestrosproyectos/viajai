@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Perfecto, la reservamos. Si heredas la furgoneta, la transferencia en Tráfico tiene noventa días desde la adjudicación. Para llamarte y organizar la consulta, ¿me dices tu nombre y un teléfono?\n<ficha>{\"situacion\":\"herencia de tu hermano, que tenía deudas (un préstamo, quizá tarjetas) y una furgoneta\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"No lo sé\",\"bienes\":\"una furgoneta\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Lo más seguro suele ser aceptar a beneficio de inventario, ante notario; renunciar es irrevocable; pedir el certificado de últimas voluntades para saber si hubo testamento.\",\"porDecir\":\"la furgoneta, si la heredas, se transfiere en Tráfico en 90 días desde la adjudicación\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, la reservamos. Si heredas la furgoneta, la transferencia en Tráfico tiene noventa días desde la adjudicación. Para llamarte y organizar la consulta, ¿me dices tu nombre y un teléfono?\n<ficha>{\"situacion\":\"herencia de tu hermano, que tenía deudas (un préstamo, quizá tarjetas) y una furgoneta\",\"parentesco\":\"Hermano o hermana\",\"testamento\":\"No lo sé\",\"bienes\":\"una furgoneta\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Lo más seguro suele ser aceptar a beneficio de inventario, ante notario; renunciar es irrevocable; pedir el certificado de últimas voluntades para saber si hubo testamento.\",\"porDecir\":\"la furgoneta, si la heredas, se transfiere en Tráfico en 90 días desde la adjudicación\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Manuel, 622 555 444"
  }
 ]

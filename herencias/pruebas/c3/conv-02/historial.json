@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Con 90.000 euros no te puedo dar una cifra exacta. Como sobrina, el ejemplo de sesenta mil sale entre seis mil quinientos y siete mil cuatrocientos. El plazo son seis meses desde el fallecimiento, y ya llevas dos. ¿Me dices tu nombre y un teléfono?\n<ficha>{\"situacion\":\"herencia de tu tía, que te ha dejado su casa en el testamento\",\"parentesco\":\"Sobrino o sobrina\",\"testamento\":\"Sí\",\"bienes\":\"una casa, que vale unos 90.000 €\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"hace dos meses, en Motril\",\"modalidad\":\"\",\"orientacion\":\"Entre sobrinos sí se paga el impuesto de sucesiones; con una casa de 90.000 € el abogado te dice la cifra exacta con el valor real.\",\"porDecir\":\"la prórroga de otros seis meses, solo si se pide en los cinco primeros · la plusvalía municipal de la casa, que también corre seis meses\",\"fase\":\"datos\"}</ficha>",
   "original": "Con 90.000 euros no te puedo dar una cifra exacta. Como sobrina, el ejemplo de sesenta mil sale entre seis mil quinientos y siete mil cuatrocientos. El plazo son seis meses desde el fallecimiento, y ya llevas dos. ¿Me dices tu nombre y un teléfono?\n<ficha>{\"situacion\":\"herencia de tu tía, que te ha dejado su casa en el testamento\",\"parentesco\":\"Sobrino o sobrina\",\"testamento\":\"Sí\",\"bienes\":\"una casa, que vale unos 90.000 €\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"hace dos meses, en Motril\",\"modalidad\":\"\",\"orientacion\":\"Entre sobrinos sí se paga el impuesto de sucesiones; con una casa de 90.000 € el abogado te dice la cifra exacta con el valor real.\",\"porDecir\":\"la prórroga de otros seis meses, solo si se pide en los cinco primeros · la plusvalía municipal de la casa, que también corre seis meses\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Álvaro, 644 333 777"
  }
 ]

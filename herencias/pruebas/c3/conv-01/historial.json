@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Perfecto, la dejamos reservada. Mientras tanto, el certificado de últimas voluntades se puede pedir pasados quince días hábiles desde el fallecimiento. Para llamarte y organizar la consulta, ¿me dices tu nombre y un teléfono?\n<ficha>{\"situacion\":\"fallecimiento de tu padre la semana pasada, no sabes por dónde empezar\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"No lo sé\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"la semana pasada\",\"modalidad\":\"\",\"orientacion\":\"Como hijo, lo más probable es que pagues cero o casi nada de impuesto, pero hay que presentarlo en seis meses; después pide el certificado de últimas voluntades para saber si hubo testamento.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, la dejamos reservada. Mientras tanto, el certificado de últimas voluntades se puede pedir pasados quince días hábiles desde el fallecimiento. Para llamarte y organizar la consulta, ¿me dices tu nombre y un teléfono?\n<ficha>{\"situacion\":\"fallecimiento de tu padre la semana pasada, no sabes por dónde empezar\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"No lo sé\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"la semana pasada\",\"modalidad\":\"\",\"orientacion\":\"Como hijo, lo más probable es que pagues cero o casi nada de impuesto, pero hay que presentarlo en seis meses; después pide el certificado de últimas voluntades para saber si hubo testamento.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Me llamo Lucía y mi teléfono es el 655 111 222"
  }
 ]

@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Con gusto. Dejamos la consulta reservada. El impuesto tiene seis meses desde el fallecimiento, así que conviene no esperar. ¿Nombre y un teléfono, para llamar y organizar la consulta?\n<ficha>{\"situacion\":\"fallecimiento de tu pareja, con quien llevabas quince años; estabais inscritos como pareja de hecho en Andalucía; vivías con él en un piso a su nombre\",\"parentesco\":\"Pareja de hecho\",\"testamento\":\"No lo sé\",\"bienes\":\"un piso a nombre de él\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Inscritos como pareja de hecho, en el impuesto tienes la misma reducción que un cónyuge; pide el certificado de últimas voluntades para saber si hubo testamento.\",\"porDecir\":\"sin testamento, heredan primero los hijos de él\",\"fase\":\"datos\"}</ficha>",
   "original": "Con gusto. Dejamos la consulta reservada. El impuesto tiene seis meses desde el fallecimiento, así que conviene no esperar. ¿Nombre y un teléfono, para llamar y organizar la consulta?\n<ficha>{\"situacion\":\"fallecimiento de tu pareja, con quien llevabas quince años; estabais inscritos como pareja de hecho en Andalucía; vivías con él en un piso a su nombre\",\"parentesco\":\"Pareja de hecho\",\"testamento\":\"No lo sé\",\"bienes\":\"un piso a nombre de él\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Inscritos como pareja de hecho, en el impuesto tienes la misma reducción que un cónyuge; pide el certificado de últimas voluntades para saber si hubo testamento.\",\"porDecir\":\"sin testamento, heredan primero los hijos de él\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Toñi, 699 777 333"
  }
 ]
