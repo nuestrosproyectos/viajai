@@ -1,0 +1,34 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Accidente Claro. Siento lo del accidente. Cuéntame qué pasó y te digo qué conviene hacer ahora.
+
+CLIENTE: Mi seguro me dice que me pone ellos un abogado gratis. ¿Para qué os quiero a vosotros?
+
+ANDRÉS: Eso depende de tu póliza: si tiene defensa jurídica, puedes elegir tu propio abogado aunque el seguro te ofrezca el suyo. Te reservo la consulta gratis, que te sirve de segunda opinión. ¿Sabes si tu póliza tiene defensa jurídica?
+
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Si la póliza tiene defensa jurídica, puede elegir su propio abogado; la consulta gratis le sirve de segunda opinión.","porDecir":"la póliza puede cubrir parte de los honorarios hasta un límite · si prefiere seguir con el abogado del seguro, se respeta","fase":"orientando"}</ficha>
+
+CLIENTE: No lo sé la verdad. Es que no me fío mucho del abogado del seguro. ¿Vosotros qué hacéis distinto?
+
+ANDRÉS: Nosotros trabajamos para ti, con un abogado colegiado en Granada; si no hay indemnización, no hay honorarios, y la primera consulta es gratis y sin compromiso. Si tu póliza tiene defensa jurídica, puede cubrir parte de nuestros honorarios, hasta un límite. ¿Te reservo la consulta?
+<mostrar>honorarios</mostrar>
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Si la póliza tiene defensa jurídica, puede elegir su propio abogado; la consulta gratis le sirve de segunda opinión.","porDecir":"si prefiere seguir con el abogado del seguro, se respeta","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, pues sin compromiso y gratis sí. Que me llamen y lo hablo con el abogado
+
+ANDRÉS: Perfecto, te llamamos para organizar la consulta y hablarlo con el abogado. Y si prefieres seguir con el abogado del seguro, se respeta. ¿Me dices tu nombre y un teléfono?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"por teléfono","consentimientoSalud":"","orientacion":"Si la póliza tiene defensa jurídica, puede elegir su propio abogado; la consulta gratis le sirve de segunda opinión.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Javi, 633 445 566. Por las mañanas mejor
+
+ANDRÉS: Gracias, Javi. Y no firmes nada del seguro sin que lo vea el abogado. Para organizar la consulta, ¿en qué municipio vives?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Javi","telefono":"633 445 566","municipio":"","franja":"por teléfono, por la mañana","consentimientoSalud":"","orientacion":"Si la póliza tiene defensa jurídica, puede elegir su propio abogado; la consulta gratis le sirve de segunda opinión.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Vivo en Granada, en la Chana
+
+ANDRÉS: Javi, repaso para confirmar: teléfono seis tres tres, cuatro cuatro cinco, cinco seis seis; Granada, en La Chana; consulta por teléfono por la mañana. ¿Está todo bien?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Javi","telefono":"633 445 566","municipio":"Granada, La Chana","franja":"por teléfono, por la mañana","consentimientoSalud":"","orientacion":"Si la póliza tiene defensa jurídica, puede elegir su propio abogado; la consulta gratis le sirve de segunda opinión.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Perfecto, Javi. La solicitud queda enviada: te llamamos para confirmar el día y la hora, por teléfono y por la mañana. Y no firmes nada del seguro sin que lo vea el abogado. ¿Necesitas algo más?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"No lo sé","nombre":"Javi","telefono":"633 445 566","municipio":"Granada, La Chana","franja":"por teléfono, por la mañana","consentimientoSalud":"","orientacion":"Si la póliza tiene defensa jurídica, puede elegir su propio abogado; la consulta gratis le sirve de segunda opinión.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"No lo sé","nombre":"Javi","telefono":"633 445 566","municipio":"Granada, La Chana","franja":"por teléfono, por la mañana","consentimientoSalud":"","urgente":false,"notas":"El seguro le ofrece un abogado y no se fía mucho de ese abogado. No sabe si su póliza tiene defensa jurídica. Acepta la consulta gratis por teléfono y pide que le llamen. Prefiere por la mañana. Todavía no ha contado qué pasó en el accidente."}</aviso>

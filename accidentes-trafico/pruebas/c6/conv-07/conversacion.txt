@@ -1,0 +1,33 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Accidente Claro. Siento lo del accidente. Cuéntame qué pasó y te digo qué conviene hacer ahora.
+
+CLIENTE: Iba en bici por el carril de la Avenida de la Constitución y un coche me cerró al girar. Me he roto la clavícula.
+
+ANDRÉS: Siento lo de la clavícula. Lo primero es que quede por escrito en el médico. Los ciclistas están muy protegidos: la aseguradora solo se libra si la culpa fue solo tuya. Te reservo la consulta gratis. ¿Te han atendido ya en urgencias?
+
+<ficha>{"caso":"Un coche le cerró al girar en la Avenida de la Constitución","como":"En bici o patinete","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que quede por escrito en el médico; como ciclista, la aseguradora solo se libra si la culpa fue solo de la víctima.","porDecir":"seguir el tratamiento y la rehabilitación · si fue hace menos de siete días, dar parte a su aseguradora · guardar fotos, testigos, informes y facturas · un año para reclamar, que en lesiones suele contar desde el alta","fase":"orientando"}</ficha>
+
+CLIENTE: Sí, me llevaron en ambulancia a urgencias. Vino la Policía Local, hay atestado y un testigo. Pero el conductor dice que fue culpa mía, ¿tengo que pagar yo la bici?
+
+ANDRÉS: Con atestado y testigo, la aseguradora solo se libra si la culpa fue solo tuya, y si fue compartida se reduce; eso y lo de la bici lo mira el abogado. Sigue el tratamiento y la rehabilitación. ¿Te reservo la consulta gratis?
+<ficha>{"caso":"Un coche le cerró al girar en la Avenida de la Constitución","como":"En bici o patinete","fecha":"","medico":"","culpa":"No lo sé","atestado":"Atestado de la policía","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que quede por escrito en el médico; el atestado y el testigo los mira el abogado, y la culpa que dice el conductor también.","porDecir":"si fue hace menos de siete días, dar parte a su aseguradora · guardar fotos, testigos, informes y facturas · un año para reclamar, que en lesiones suele contar desde el alta","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, gracias por explicármelo. Sí, resérvame la consulta, mejor por videollamada
+
+ANDRÉS: Vale, te reservo la consulta por videollamada. Y si fue hace menos de siete días, da parte a tu aseguradora. Para llamarte y organizarla, ¿me dices tu nombre y un teléfono?
+<ficha>{"caso":"Un coche le cerró al girar en la Avenida de la Constitución","como":"En bici o patinete","fecha":"","medico":"","culpa":"No lo sé","atestado":"Atestado de la policía","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"por videollamada","consentimientoSalud":"","orientacion":"Que quede por escrito en el médico; el atestado y el testigo los mira el abogado, y la culpa que dice el conductor también.","porDecir":"guardar fotos, testigos, informes y facturas · un año para reclamar, que en lesiones suele contar desde el alta","fase":"datos"}</ficha>
+
+CLIENTE: Daniel, 611 777 222. Cualquier tarde me viene bien
+
+ANDRÉS: Gracias, Daniel. Y guarda fotos, testigos, informes y facturas. Para organizar la videollamada, ¿en qué municipio vives?
+<ficha>{"caso":"Un coche le cerró al girar en la Avenida de la Constitución","como":"En bici o patinete","fecha":"","medico":"","culpa":"No lo sé","atestado":"Atestado de la policía","oferta":"","defensa":"","nombre":"Daniel","telefono":"611 777 222","municipio":"","franja":"por videollamada, cualquier tarde","consentimientoSalud":"","orientacion":"Que quede por escrito en el médico; el atestado y el testigo los mira el abogado, y la culpa que dice el conductor también.","porDecir":"un año para reclamar, que en lesiones suele contar desde el alta","fase":"datos"}</ficha>
+
+CLIENTE: En Granada capital
+
+ANDRÉS: Daniel, repaso: teléfono seis uno uno, siete siete siete, dos dos dos; Granada capital; videollamada cualquier tarde. Y recuerda que tienes un año para reclamar, que en lesiones suele contar desde el alta. ¿Está todo bien?
+<ficha>{"caso":"Un coche le cerró al girar en la Avenida de la Constitución","como":"En bici o patinete","fecha":"","medico":"","culpa":"No lo sé","atestado":"Atestado de la policía","oferta":"","defensa":"","nombre":"Daniel","telefono":"611 777 222","municipio":"Granada capital","franja":"por videollamada, cualquier tarde","consentimientoSalud":"","orientacion":"Que quede por escrito en el médico; el atestado y el testigo los mira el abogado, y la culpa que dice el conductor también.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo correcto
+
+ANDRÉS: Perfecto, Daniel. La solicitud queda enviada: te llamamos para confirmar el día y la hora, por videollamada y por la tarde. Y si te ofrecen algo, no firmes nada sin que lo vea el abogado. ¿Necesitas algo más?
+<ficha>{"caso":"Un coche le cerró al girar en la Avenida de la Constitución","como":"En bici o patinete","fecha":"","medico":"","culpa":"No lo sé","atestado":"Atestado de la policía","oferta":"","defensa":"","nombre":"Daniel","telefono":"611 777 222","municipio":"Granada capital","franja":"por videollamada, por la tarde","consentimientoSalud":"","orientacion":"Que quede por escrito en el médico; el atestado y el testigo los mira el abogado, y la culpa que dice el conductor también.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","caso":"Un coche le cerró al girar en la Avenida de la Constitución","como":"En bici o patinete","fecha":"","medico":"","culpa":"No lo sé","atestado":"Atestado de la policía","oferta":"","defensa":"","nombre":"Daniel","telefono":"611 777 222","municipio":"Granada capital","franja":"por videollamada, por la tarde","consentimientoSalud":"","urgente":false,"notas":"Iba en bici por la Avenida de la Constitución y un coche le cerró al girar. Hay atestado de la Policía Local y un testigo. El conductor dice que fue culpa suya. Pregunta si tiene que pagar la bici. Quiere la consulta por videollamada, cualquier tarde."}</aviso>

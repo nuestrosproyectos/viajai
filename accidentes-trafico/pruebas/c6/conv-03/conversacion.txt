@@ -1,0 +1,28 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Accidente Claro. Siento lo del accidente. Cuéntame qué pasó y te digo qué conviene hacer ahora.
+
+CLIENTE: Tuve yo la culpa del accidente, me salté un ceda. Iba con mi mujer y ella se rompió la muñeca.
+
+ANDRÉS: Espero que tu mujer se recupere pronto. Lo primero es que le vea un médico y quede por escrito. Como pasajera, casi siempre se la indemniza, aunque tú tuvieras la culpa. Te reservo la consulta gratis para revisarlo. ¿Ya la ha visto un médico?
+
+<ficha>{"caso":"Se saltó un ceda; iba su mujer de pasajera","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que su mujer vea un médico y quede por escrito; como pasajera casi siempre se la indemniza, y lo revisa el abogado.","porDecir":"si tiene seguro de conductor o de accidentes, sus propias lesiones pueden cubrirse · cómo afecta a su póliza y su defensa si le reclaman, lo ve el abogado","fase":"orientando"}</ficha>
+
+CLIENTE: Sí, la ha visto un médico, tiene la muñeca rota. Pero si la culpa fue mía, ¿ella puede reclamar igual? ¿Eso me perjudica a mí?
+
+ANDRÉS: Ella puede reclamar igual: los pasajeros suelen cobrar del seguro del coche en que iban. Si tienes seguro de conductor o de accidentes, tus lesiones pueden cubrirse. ¿Te reservo la consulta gratis para ver cómo afecta a tu póliza?
+<ficha>{"caso":"Se saltó un ceda; iba su mujer de pasajera","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que su mujer vea un médico y quede por escrito; como pasajera casi siempre se la indemniza, y lo revisa el abogado.","porDecir":"cómo afecta a su póliza y su defensa si le reclaman, lo ve el abogado","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, entonces ella sí puede reclamar y a mí no me perjudica, ¿no? Pues sí, resérvanos la consulta para ella. Mejor por videollamada
+
+ANDRÉS: Como pasajera, ella casi siempre puede reclamar. Si te afecta en tu póliza, eso lo confirma el abogado en la consulta. Te reservo la videollamada para ella. ¿Me dices tu nombre y un teléfono?
+<ficha>{"caso":"Se saltó un ceda; iba su mujer de pasajera","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"por videollamada","consentimientoSalud":"","orientacion":"Que su mujer vea un médico y quede por escrito; como pasajera casi siempre se la indemniza, y lo revisa el abogado.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Pedro, 600 909 303. Por la tarde mejor, y somos de Loja
+
+ANDRÉS: Siento lo de la muñeca. Apunto: Pedro, teléfono seis cero cero, nueve cero nueve, tres cero tres, de Loja, por videollamada por la tarde. Y mira si tu póliza tiene defensa jurídica, que puede cubrir parte de los honorarios. ¿Está todo bien?
+<ficha>{"caso":"Se saltó un ceda; iba su mujer de pasajera","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"Pedro","telefono":"600 909 303","municipio":"Loja","franja":"por videollamada, por la tarde","consentimientoSalud":"","orientacion":"Que su mujer vea un médico y quede por escrito; como pasajera casi siempre se la indemniza, y lo revisa el abogado.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien. Pero entonces, ¿a mí no me perjudica que la culpa fuera mía?
+
+ANDRÉS: Tu seguro obligatorio no paga tus propias lesiones, salvo con seguro de conductor o de accidentes; lo de tu póliza lo ve el abogado. Queda enviada la solicitud y te llamamos para confirmar el día y la hora de la tarde. ¿Necesitas algo más?
+<ficha>{"caso":"Se saltó un ceda; iba su mujer de pasajera","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"Pedro","telefono":"600 909 303","municipio":"Loja","franja":"por videollamada, por la tarde","consentimientoSalud":"","orientacion":"Que su mujer vea un médico y quede por escrito; como pasajera casi siempre se la indemniza, y lo revisa el abogado.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","caso":"Se saltó un ceda; iba su mujer de pasajera","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"Pedro","telefono":"600 909 303","municipio":"Loja","franja":"por videollamada, por la tarde","consentimientoSalud":"","urgente":false,"notas":"Reconoce que tuvo la culpa (se saltó un ceda). Iba su mujer de pasajera y ella tiene la muñeca rota; ya la ha visto un médico. Quiere la consulta para ella, por videollamada por la tarde, desde Loja. Pregunta si la culpa suya le perjudica: se le explicó que el seguro obligatorio no paga sus propias lesiones salvo seguro de conductor o de accidentes, y que el efecto en su póliza lo revisa el abogado. Pregunta si su póliza tiene defensa jurídica: aún sin contestar. No se ha pedido permiso para apuntar datos de salud."}</aviso>

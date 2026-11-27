@@ -1,0 +1,29 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Accidente Claro. Siento lo del accidente. Cuéntame qué pasó y te digo qué conviene hacer ahora.
+
+CLIENTE: La aseguradora del otro me ofrece 2.300 € y me dicen que firme ya. ¿Firmo?
+
+ANDRÉS: No firmes nada todavía: es urgente y lo tiene que ver el abogado antes. Si aún no tienes el alta, lo definitivo no se puede valorar. Te reservo la consulta gratis para revisar esa oferta. ¿Ya te han dado el alta médica?
+
+<ficha>{"caso":"Oferta de la aseguradora del otro conductor","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"No firmar nada hasta que lo vea el abogado; una oferta motivada debe traer su cálculo y su informe médico.","porDecir":"cobrar a cuenta no es firmar un finiquito","fase":"orientando"}</ficha>
+
+CLIENTE: No, el alta no me la han dado, sigo con rehabilitación. ¿Y 2.300 € es poco?
+
+ANDRÉS: Eso lo valora el abogado con tu informe delante, porque depende de los días hasta el alta, las secuelas y los gastos. Cobrar a cuenta no es firmar un finiquito. ¿Te reservo la consulta gratis, por teléfono o en el despacho?
+<mostrar>oferta</mostrar>
+<ficha>{"caso":"Oferta de la aseguradora del otro conductor","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"No firmar nada hasta que lo vea el abogado; una oferta motivada debe traer su cálculo y su informe médico.","porDecir":"","fase":"proponiendo"}</ficha>
+
+CLIENTE: Por teléfono mejor, y por las mañanas. Resérvamela, que no quiero firmar sin que lo mire alguien
+
+ANDRÉS: Haces bien en no firmar nada hasta que lo mire el abogado. Ya te anoto la consulta por teléfono, por la mañana. Para llamarte y organizarla, ¿me dices tu nombre y un teléfono?
+<ficha>{"caso":"Oferta de la aseguradora del otro conductor","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"por teléfono, por la mañana","consentimientoSalud":"","orientacion":"No firmar nada hasta que lo vea el abogado; una oferta motivada debe traer su cálculo y su informe médico.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sonia, 633 202 404. Soy de Motril
+
+ANDRÉS: Perfecto, Sonia. Apunto: teléfono seis tres tres, dos cero dos, cuatro cero cuatro, en Motril, por teléfono y por la mañana. Y ojo, un finiquito firmado puede cerrar la puerta, así que no lo firmes. ¿Está todo bien?
+<ficha>{"caso":"Oferta de la aseguradora del otro conductor","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"Sonia","telefono":"633 202 404","municipio":"Motril","franja":"por teléfono, por la mañana","consentimientoSalud":"","orientacion":"No firmar nada hasta que lo vea el abogado; una oferta motivada debe traer su cálculo y su informe médico.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, está todo bien. Gracias
+
+ANDRÉS: Perfecto, Sonia. Queda enviada la solicitud y te llamamos para confirmar el día y la hora de la mañana. Hasta entonces, no firmes nada. ¿Necesitas algo más?
+<ficha>{"caso":"Oferta de la aseguradora del otro conductor","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"Sonia","telefono":"633 202 404","municipio":"Motril","franja":"por teléfono, por la mañana","consentimientoSalud":"","orientacion":"No firmar nada hasta que lo vea el abogado; una oferta motivada debe traer su cálculo y su informe médico.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","caso":"Oferta de la aseguradora del otro conductor","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"Sonia","telefono":"633 202 404","municipio":"Motril","franja":"por teléfono, por la mañana","consentimientoSalud":"","urgente":true,"notas":"La aseguradora del otro conductor ofrece 2.300 € y pide firmar ya; no ha firmado nada. Sigue con rehabilitación y no tiene el alta. No ha dado permiso para apuntar datos de salud. Quiere la consulta por teléfono, por la mañana. Vive en Motril."}</aviso>
