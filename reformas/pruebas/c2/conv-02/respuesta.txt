@@ -1,0 +1,2 @@
+Si aparece algo oculto, lo más habitual en pisos antiguos son tuberías viejas; se te enseña, se presupuesta por escrito y no se hace sin tu firma. ¿Te reservo la visita por la mañana o por la tarde?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Si aparece algo oculto en la obra, se presupuesta por escrito y no se hace sin tu firma; la visita de medición es gratis.","fase":"proponiendo"}</ficha>

@@ -1,3 +1,0 @@
-No firmes nada todavía: un papel definitivo puede cerrar la puerta a reclamar más. El abogado revisa la oferta con los informes delante, en la primera consulta gratis. ¿Te reservo la consulta por la mañana o por la tarde?
-<ficha>{"caso":"Accidente de tráfico; la aseguradora del otro ofrece 2.300 € y pide firmar","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"No firmes nada hasta que lo revise el abogado.","fase":"proponiendo"}</ficha>
-<mostrar>oferta</mostrar>

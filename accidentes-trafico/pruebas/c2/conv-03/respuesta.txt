@@ -1,2 +1,0 @@
-Lo primero es que tu mujer vea un médico hoy y quede por escrito. Como pasajera, ella normalmente sí puede reclamar aunque la culpa fuera tuya. ¿Te reservo la primera consulta gratis, por la mañana o por la tarde?
-<ficha>{"caso":"Accidente por saltarse un ceda; iba de pasajera su mujer","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Tu mujer, como pasajera, puede reclamar; que vea un médico hoy.","fase":"proponiendo"}</ficha>
