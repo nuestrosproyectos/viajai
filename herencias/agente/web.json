@@ -1,0 +1,96 @@
+{
+  "web": "herencias",
+  "marca": "Herencia Clara",
+  "sector": "herencias",
+  "asistente": {
+    "_leeme": "ÚNICO sitio donde se cambia el asistente de esta web (nombre, voz, tono). Lo leen la web, el agente de voz y las pruebas. Después: node fabrica/crear.mjs asistente herencias (o node fabrica/construir.mjs herencias).",
+    "nombre": "Andrés",
+    "genero": "hombre",
+    "tono": "sereno, cercano y seguro",
+    "voz": {
+      "proveedor": "elevenlabs",
+      "id": "PENDIENTE",
+      "nombre": "Javi - Relaxed and Natural (ES)",
+      "modelo": "eleven_flash_v2_5",
+      "estabilidad": 0.35,
+      "parecido": 0.8,
+      "velocidad": 0.95
+    },
+    "audioMicro": {
+      "archivo": "media/andres-micro.mp3",
+      "voz": "PENDIENTE",
+      "nombre": "Andrés"
+    }
+  },
+  "campos": [
+    {
+      "id": "situacion",
+      "etiqueta": "Tu situación",
+      "pista": ""
+    },
+    {
+      "id": "parentesco",
+      "etiqueta": "Parentesco con quien ha fallecido",
+      "pista": ""
+    },
+    {
+      "id": "testamento",
+      "etiqueta": "¿Hay testamento?",
+      "pista": ""
+    },
+    {
+      "id": "bienes",
+      "etiqueta": "Qué hay en la herencia",
+      "pista": ""
+    },
+    {
+      "id": "nombre",
+      "etiqueta": "Nombre",
+      "pista": ""
+    },
+    {
+      "id": "telefono",
+      "etiqueta": "Teléfono",
+      "pista": ""
+    },
+    {
+      "id": "municipio",
+      "etiqueta": "Municipio",
+      "pista": ""
+    },
+    {
+      "id": "franja",
+      "etiqueta": "Consulta y cuándo",
+      "pista": ""
+    },
+    {
+      "id": "fallecimiento",
+      "pista": ""
+    },
+    {
+      "id": "modalidad",
+      "pista": ""
+    }
+  ],
+  "tipos": [
+    "consulta",
+    "llamada"
+  ],
+  "urgente": "",
+  "destinos": [
+    "precios",
+    "consulta",
+    "honorarios",
+    "como",
+    "impuesto",
+    "sucesiones",
+    "contacto",
+    "llamada",
+    "formulario",
+    "documentos",
+    "zona",
+    "plazo",
+    "situaciones",
+    "situacion"
+  ]
+}

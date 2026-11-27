@@ -7,9 +7,11 @@
 //  Para otra provincia: copiar este archivo y cambiar el bloque PROVINCIA.
 // =====================================================================
 
+import { ASISTENTE } from "./asistente.mjs";   // nombre y voz del asistente: se cambian en asistente.json
+
 export const NEGOCIO = {
   marca: "Herencia Clara",               // PENDIENTE: marca definitiva (comprobar dominio y OEPM)
-  tecnico: "Andrés",                     // nombre del asistente (decidido por Juan: Andrés en todas las webs)
+  tecnico: ASISTENTE.nombre,             // nombre del asistente: se cambia SOLO en asistente.json
   sector: "herencias",
 
   // ---- PROVINCIA ----
