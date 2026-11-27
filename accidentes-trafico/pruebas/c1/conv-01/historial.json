@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Lo primero, que vayas al médico hoy aunque el dolor parezca leve, cuéntale el golpe y que quede escrito. Guarda fotos y testigos. Te reservo la consulta gratis con el abogado. ¿Ya te ha visto un médico?\n<ficha>{\"caso\":\"Golpe por detrás hace tres días\",\"como\":\"\",\"fecha\":\"Hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Ir al médico hoy y que quede escrito; guardar fotos y testigos; primera consulta gratis con el abogado\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>documentos</mostrar>",
   "original": "Lo primero, que vayas al médico hoy aunque el dolor parezca leve, cuéntale el golpe y que quede escrito. Guarda fotos y testigos. Te reservo la consulta gratis con el abogado. ¿Ya te ha visto un médico?\n<ficha>{\"caso\":\"Golpe por detrás hace tres días\",\"como\":\"\",\"fecha\":\"Hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Ir al médico hoy y que quede escrito; guardar fotos y testigos; primera consulta gratis con el abogado\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>documentos</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "No, todavía no he ido, pensaba que se me pasaría. Oye, ¿y cuánto cobra el abogado? Que no quiero meterme en un gasto"
  }
 ]

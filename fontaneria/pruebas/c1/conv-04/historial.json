@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Entiendo que te choque esa cifra. Cambiar un termo eléctrico instalado suele costar unos ciento ochenta a seiscientos euros según capacidad, orientativo. Pide el presupuesto desglosado por escrito antes de aceptar. Te reservo la visita: ¿el termo es eléctrico o de gas?\n<ficha>{\"averia\":\"Cambio de termo; le han presupuestado 900 €\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Pedir el presupuesto desglosado por escrito; un termo eléctrico instalado suele rondar 180 a 600 € según capacidad, orientativo\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>precios</mostrar>",
   "original": "Entiendo que te choque esa cifra. Cambiar un termo eléctrico instalado suele costar unos ciento ochenta a seiscientos euros según capacidad, orientativo. Pide el presupuesto desglosado por escrito antes de aceptar. Te reservo la visita: ¿el termo es eléctrico o de gas?\n<ficha>{\"averia\":\"Cambio de termo; le han presupuestado 900 €\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Pedir el presupuesto desglosado por escrito; un termo eléctrico instalado suele rondar 180 a 600 € según capacidad, orientativo\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>precios</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Es eléctrico, de 100 litros, pierde agua por abajo. Somos 4 en casa. ¿900 € es mucho? ¿Y me lo paga el seguro?"
  }
 ]

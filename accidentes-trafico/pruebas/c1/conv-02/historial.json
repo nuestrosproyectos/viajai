@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "No firmes nada todavía; una oferta así la revisa el abogado con los informes delante, y es urgente. Te reservo la consulta gratis cuanto antes. ¿Lo que te piden firmar es un finiquito o un recibo en pago total?\n<ficha>{\"caso\":\"La aseguradora del otro ofrece 2.300 € y pide firmar ya\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada hasta que lo vea el abogado; es urgente\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>oferta</mostrar>",
   "original": "No firmes nada todavía; una oferta así la revisa el abogado con los informes delante, y es urgente. Te reservo la consulta gratis cuanto antes. ¿Lo que te piden firmar es un finiquito o un recibo en pago total?\n<ficha>{\"caso\":\"La aseguradora del otro ofrece 2.300 € y pide firmar ya\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada hasta que lo vea el abogado; es urgente\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>oferta</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Es un papel que pone recibo en pago total. Hace 5 meses del accidente y sigo con rehabilitación, no me han dado el alta. ¿2.300 es poco?"
  }
 ]

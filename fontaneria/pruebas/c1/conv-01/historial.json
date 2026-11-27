@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Entiendo el susto. Cierra ya la llave de paso de tu casa, suele estar en la cocina, el baño o junto al contador, y aparta lo que se pueda mojar. Te reservo la visita urgente ahora mismo. ¿Ha parado el agua al cerrarla?\n<ficha>{\"averia\":\"Sale agua por debajo del fregadero y no para\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cerrar la llave de paso y apartar lo que se pueda mojar; visita urgente\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>seguridad</mostrar>",
   "original": "Entiendo el susto. Cierra ya la llave de paso de tu casa, suele estar en la cocina, el baño o junto al contador, y aparta lo que se pueda mojar. Te reservo la visita urgente ahora mismo. ¿Ha parado el agua al cerrarla?\n<ficha>{\"averia\":\"Sale agua por debajo del fregadero y no para\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cerrar la llave de paso y apartar lo que se pueda mojar; visita urgente\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>seguridad</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "no se donde esta la llave de paso!! no la encuentro"
  }
 ]

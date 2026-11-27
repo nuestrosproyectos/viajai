@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Eso suele ser la bajante del edificio, que es elemento común, y lo normal es que pague la comunidad. Avisa al presidente o al administrador. ¿Te reservo la visita del fontanero por la mañana o por la tarde?\n<ficha>{\"averia\":\"Agua sucia por el plato de ducha del bajo cuando tiran de la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Probable bajante del edificio, elemento común de la comunidad: avisar al presidente o al administrador\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Eso suele ser la bajante del edificio, que es elemento común, y lo normal es que pague la comunidad. Avisa al presidente o al administrador. ¿Te reservo la visita del fontanero por la mañana o por la tarde?\n<ficha>{\"averia\":\"Agua sucia por el plato de ducha del bajo cuando tiran de la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Probable bajante del edificio, elemento común de la comunidad: avisar al presidente o al administrador\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "¿Y quién paga esto? Yo no tengo culpa de que la bajante esté mal"
  }
 ]

@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Gracias por contarlo. Como pasajera, tu mujer casi siempre puede reclamar, aunque la culpa fuera tuya. Y tu seguro de conductor, si lo tienes, lo revisa el abogado. Te reservo la consulta gratis. ¿Ella ya ha ido al médico?\n<ficha>{\"caso\":\"Se saltó un ceda; iba de pasajera su mujer\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Su mujer, como pasajera, casi siempre puede reclamar; revisar el seguro de conductor con el abogado\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>situaciones</mostrar>",
   "original": "Gracias por contarlo. Como pasajera, tu mujer casi siempre puede reclamar, aunque la culpa fuera tuya. Y tu seguro de conductor, si lo tienes, lo revisa el abogado. Te reservo la consulta gratis. ¿Ella ya ha ido al médico?\n<ficha>{\"caso\":\"Se saltó un ceda; iba de pasajera su mujer\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Su mujer, como pasajera, casi siempre puede reclamar; revisar el seguro de conductor con el abogado\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>situaciones</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, ¿y eso a mí me perjudica en algo? Ella iba de copiloto y yo conducía"
  }
 ]
