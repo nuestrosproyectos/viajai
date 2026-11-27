@@ -1,0 +1,3 @@
+Un piso de noventa metros en calidades medias ronda entre cuarenta y un mil y sesenta y dos mil euros, orientativo, y de tres a cinco meses. En pisos de esa edad suelen aparecer tuberías viejas, por eso se mide antes. ¿Te reservo la visita?
+<ficha>{"obra":"Reforma integral de piso","vivienda":"Piso","metros":"90 m²","antiguedad":"Años 70","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Piso de 90 m² en calidades medias entre unos 41.000 y 62.000 € orientativo y de tres a cinco meses; en pisos de esa edad revisar tuberías e instalación eléctrica.","fase":"proponiendo"}</ficha>
+<mostrar>orientativos</mostrar>

@@ -1,0 +1,3 @@
+Eso no te lo puedo confirmar: el abogado lo mira con las fechas delante. Hay un año para reclamar, que se cuenta desde el alta y se interrumpe al reclamar por escrito. Te reservo la consulta cuanto antes. ¿Me das el día exacto del alta?
+
+<ficha>{"caso":"Accidente de tráfico; no ha reclamado nada todavía","como":"","fecha":"hace catorce meses","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Dar el día exacto del alta para que el abogado revise el plazo; no firmar nada que le manden.","fase":"proponiendo"}</ficha>

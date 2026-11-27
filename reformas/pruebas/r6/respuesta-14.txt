@@ -1,0 +1,3 @@
+Entiendo que después de lo de antes desconfíes. Nadie puede garantizar un resultado absoluto, pero la garantía va por escrito en el contrato, y en la visita el técnico revisa de dónde viene la filtración. ¿Te reservo la visita?
+<ficha>{"obra":"Plato de ducha nuevo, evitando nuevas filtraciones al vecino","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Nadie garantiza un resultado absoluto; la garantía va por escrito en el contrato y la visita revisa el origen de la filtración.","fase":"proponiendo"}</ficha>
+<mostrar>garantia</mostrar>

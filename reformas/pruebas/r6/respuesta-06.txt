@@ -1,0 +1,2 @@
+Puede ser al diez por ciento si es para vivir en ella, tiene más de dos años y los materiales no pasan del cuarenta por ciento del precio; si no, va al veintiuno. Te reservo la visita gratis. ¿Está alquilada?
+<ficha>{"obra":"Reforma: consulta sobre IVA (10 % o 21 %)","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"El IVA del 10 % depende de tres condiciones; la visita y tu gestor lo confirman.","fase":"proponiendo"}</ficha>

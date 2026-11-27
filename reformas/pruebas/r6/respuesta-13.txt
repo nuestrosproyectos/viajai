@@ -1,0 +1,3 @@
+Entiendo que quieras una cifra ya: entre unos mil y dos mil trescientos euros suele quedar cambiar la bañera por plato, orientativo, y sube si hay que mover el desagüe. El precio cerrado sale de la visita, que es gratis. ¿Te reservo la visita?
+<ficha>{"obra":"Cambiar bañera por plato de ducha","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Cambio de bañera por plato, entre unos mil y dos mil trescientos euros orientativo; el precio cerrado sale de la visita, que es gratis.","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>
