@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Tuve yo la culpa del accidente, me salté un ceda. Iba con mi mujer y ella se rompió la muñeca."
+ },
+ {
+  "role": "assistant",
+  "content": "Siento lo de la muñeca de tu mujer. Lo primero es que vea un médico hoy y quede por escrito. Tu mujer, como pasajera, puede reclamar al seguro de tu coche. Te puedo reservar la consulta gratis. ¿Ya ha ido al médico?\n<ficha>{\"caso\":\"Accidente con culpa suya, iba con su mujer\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que tu mujer vea un médico hoy y quede por escrito; ella puede reclamar al seguro de tu coche.\",\"porDecir\":\"el seguro obligatorio no paga las lesiones del conductor culpable salvo que tengas seguro de conductor o de accidentes · el abogado revisa tu póliza y el atestado, y puede defenderte si te reclaman\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Siento lo de la muñeca de tu mujer. Lo primero es que vea un médico hoy y quede por escrito. Tu mujer, como pasajera, puede reclamar al seguro de tu coche. Te puedo reservar la consulta gratis. ¿Ya ha ido al médico?\n<ficha>{\"caso\":\"Accidente con culpa suya, iba con su mujer\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que tu mujer vea un médico hoy y quede por escrito; ella puede reclamar al seguro de tu coche.\",\"porDecir\":\"el seguro obligatorio no paga las lesiones del conductor culpable salvo que tengas seguro de conductor o de accidentes · el abogado revisa tu póliza y el atestado, y puede defenderte si te reclaman\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

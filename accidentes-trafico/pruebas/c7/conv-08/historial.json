@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Buenos días. Le escribo porque mi madre, de 79 años, está en la UCI tras un accidente de autobús ayer en la carretera de Motril."
+ },
+ {
+  "role": "assistant",
+  "content": "Siento mucho lo de su madre. Lo primero, su salud; lo legal espera. Los días de UCI son de una categoría más alta del baremo, y las operaciones se suman aparte. Le puedo reservar la consulta gratis. ¿Sabe si hubo atestado?\n<ficha>{\"caso\":\"Accidente de autobús ayer en la carretera de Motril\",\"como\":\"De pasajero\",\"fecha\":\"ayer\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Lo primero es la salud de su madre; lo legal espera y, en UCI, los días cuentan en una categoría más alta.\",\"porDecir\":\"que guarde todos los informes, el parte o atestado y los datos del autobús\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Siento mucho lo de su madre. Lo primero, su salud; lo legal espera. Los días de UCI son de una categoría más alta del baremo, y las operaciones se suman aparte. Le puedo reservar la consulta gratis. ¿Sabe si hubo atestado?\n<ficha>{\"caso\":\"Accidente de autobús ayer en la carretera de Motril\",\"como\":\"De pasajero\",\"fecha\":\"ayer\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Lo primero es la salud de su madre; lo legal espera y, en UCI, los días cuentan en una categoría más alta.\",\"porDecir\":\"que guarde todos los informes, el parte o atestado y los datos del autobús\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

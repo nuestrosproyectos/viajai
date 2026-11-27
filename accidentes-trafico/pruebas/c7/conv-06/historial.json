@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Mi seguro me dice que me pone ellos un abogado gratis. ¿Para qué os quiero a vosotros?"
+ },
+ {
+  "role": "assistant",
+  "content": "Tienes derecho a elegir tu propio abogado, aunque el seguro te ofrezca el suyo. Si tu póliza tiene defensa jurídica, puede cubrir parte de los honorarios. Te puedo reservar la consulta gratis como segunda opinión. ¿Ya has firmado algo con ese abogado?\n<ficha>{\"caso\":\"Su seguro le ofrece un abogado\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Puedes elegir tu propio abogado y revisar en la consulta si tu póliza cubre parte de los honorarios.\",\"porDecir\":\"si prefieres seguir con el abogado del seguro, se respeta\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Tienes derecho a elegir tu propio abogado, aunque el seguro te ofrezca el suyo. Si tu póliza tiene defensa jurídica, puede cubrir parte de los honorarios. Te puedo reservar la consulta gratis como segunda opinión. ¿Ya has firmado algo con ese abogado?\n<ficha>{\"caso\":\"Su seguro le ofrece un abogado\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Puedes elegir tu propio abogado y revisar en la consulta si tu póliza cubre parte de los honorarios.\",\"porDecir\":\"si prefieres seguir con el abogado del seguro, se respeta\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

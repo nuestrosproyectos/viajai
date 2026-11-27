@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Volviendo del trabajo en moto un coche me sacó de la carretera. Estoy de baja por la mutua. ¿Puedo reclamar algo más?"
+ },
+ {
+  "role": "assistant",
+  "content": "Siento el susto. Sí puedes: la mutua cubre tu baja, y también puedes reclamar al seguro del coche que te sacó de la carretera, a la vez. Te puedo reservar la consulta gratis para revisarlo. ¿Hubo atestado de la policía?\n<ficha>{\"caso\":\"Volviendo del trabajo en moto: un coche le sacó de la carretera\",\"como\":\"En moto\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Del otro\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Puedes reclamar al seguro del otro coche además de la mutua, y el abogado revisa ambas vías.\",\"porDecir\":\"un año para reclamar, que suele contar desde el alta · que sigas la rehabilitación y guardes el atestado o los datos del otro coche\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Siento el susto. Sí puedes: la mutua cubre tu baja, y también puedes reclamar al seguro del coche que te sacó de la carretera, a la vez. Te puedo reservar la consulta gratis para revisarlo. ¿Hubo atestado de la policía?\n<ficha>{\"caso\":\"Volviendo del trabajo en moto: un coche le sacó de la carretera\",\"como\":\"En moto\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Del otro\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Puedes reclamar al seguro del otro coche además de la mutua, y el abogado revisa ambas vías.\",\"porDecir\":\"un año para reclamar, que suele contar desde el alta · que sigas la rehabilitación y guardes el atestado o los datos del otro coche\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]
