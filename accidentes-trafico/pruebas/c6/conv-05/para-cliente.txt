@@ -10,4 +10,8 @@ TÚ (cliente): Sí, vino la Guardia Civil y hay atestado. El otro reconoció que
 
 Andrés (asistente de la web): Sí, son vías compatibles: la mutua cubre tu baja y el seguro del otro responde si tuvo la culpa, y el abogado las mira juntas. Guarda fotos, testigos, informes y facturas. ¿Te reservo la consulta gratis?
 
+TÚ (cliente): Ah vale, entonces se puede las dos cosas. Sí, resérvame la consulta. Mejor por teléfono y por la tarde
+
+Andrés (asistente de la web): Perfecto, te reservo la consulta por teléfono, por la tarde. Para llamarte y organizarla, ¿me dices tu nombre y un teléfono?
+
 === TU SIGUIENTE MENSAJE ===

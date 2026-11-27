@@ -10,4 +10,8 @@ TÚ (cliente): Sí, me llevaron en ambulancia a urgencias. Vino la Policía Loca
 
 Andrés (asistente de la web): Con atestado y testigo, la aseguradora solo se libra si la culpa fue solo tuya, y si fue compartida se reduce; eso y lo de la bici lo mira el abogado. Sigue el tratamiento y la rehabilitación. ¿Te reservo la consulta gratis?
 
+TÚ (cliente): Vale, gracias por explicármelo. Sí, resérvame la consulta, mejor por videollamada
+
+Andrés (asistente de la web): Vale, te reservo la consulta por videollamada. Y si fue hace menos de siete días, da parte a tu aseguradora. Para llamarte y organizarla, ¿me dices tu nombre y un teléfono?
+
 === TU SIGUIENTE MENSAJE ===

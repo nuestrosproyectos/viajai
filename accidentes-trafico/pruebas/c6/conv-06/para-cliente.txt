@@ -10,4 +10,8 @@ TÚ (cliente): No lo sé la verdad. Es que no me fío mucho del abogado del segu
 
 Andrés (asistente de la web): Nosotros trabajamos para ti, con un abogado colegiado en Granada; si no hay indemnización, no hay honorarios, y la primera consulta es gratis y sin compromiso. Si tu póliza tiene defensa jurídica, puede cubrir parte de nuestros honorarios, hasta un límite. ¿Te reservo la consulta?
 
+TÚ (cliente): Vale, pues sin compromiso y gratis sí. Que me llamen y lo hablo con el abogado
+
+Andrés (asistente de la web): Perfecto, te llamamos para organizar la consulta y hablarlo con el abogado. Y si prefieres seguir con el abogado del seguro, se respeta. ¿Me dices tu nombre y un teléfono?
+
 === TU SIGUIENTE MENSAJE ===

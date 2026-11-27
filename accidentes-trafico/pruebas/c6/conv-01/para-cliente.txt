@@ -10,4 +10,8 @@ TÚ (cliente): No, todavía no he ido. Pensé que se me pasaría. ¿Y el abogado
 
 Andrés (asistente de la web): Lo habitual es un porcentaje de lo que se consiga, entre el diez y el treinta por ciento; si no hay indemnización, no hay honorarios. Ve al médico hoy y sigue el tratamiento y la rehabilitación. ¿Te reservo la consulta gratis?
 
+TÚ (cliente): Vale, si es gratis y solo cobráis si hay indemnización, sí, resérvamela. Mañana sin falta voy al médico
+
+Andrés (asistente de la web): Perfecto, te la dejo apuntada. Mañana al médico, muy bien. Y guarda fotos, testigos, informes y facturas. Para llamarte y organizar la consulta, ¿me dices tu nombre y un teléfono?
+
 === TU SIGUIENTE MENSAJE ===

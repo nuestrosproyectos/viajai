@@ -10,4 +10,8 @@ TÚ (cliente): Sí, iba de pasajera. Perdone, estoy muy nerviosa. ¿Qué tenemos
 
 Andrés (asistente de la web): No se preocupe. Lo primero es la salud de su madre; lo legal puede esperar. Como pasajera casi siempre se la indemniza, aunque aún no se sepa de quién fue la culpa. Guarde informes y el parte. ¿Le reservo la consulta gratis?
 
+TÚ (cliente): Gracias por el tacto. Sí, le agradecería que el abogado nos llamara la semana que viene, cuando mi madre esté más estable
+
+Andrés (asistente de la web): Por supuesto, sin prisa; lo organizamos cuando su madre esté más estable. Guarde también los datos del autobús o del otro vehículo. ¿Me dice su nombre y un teléfono para llamarle y organizarlo?
+
 === TU SIGUIENTE MENSAJE ===

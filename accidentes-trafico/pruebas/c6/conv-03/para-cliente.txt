@@ -10,4 +10,8 @@ TÚ (cliente): Sí, la ha visto un médico, tiene la muñeca rota. Pero si la cu
 
 Andrés (asistente de la web): Ella puede reclamar igual: los pasajeros suelen cobrar del seguro del coche en que iban. Si tienes seguro de conductor o de accidentes, tus lesiones pueden cubrirse. ¿Te reservo la consulta gratis para ver cómo afecta a tu póliza?
 
+TÚ (cliente): Vale, entonces ella sí puede reclamar y a mí no me perjudica, ¿no? Pues sí, resérvanos la consulta para ella. Mejor por videollamada
+
+Andrés (asistente de la web): Como pasajera, ella casi siempre puede reclamar. Si te afecta en tu póliza, eso lo confirma el abogado en la consulta. Te reservo la videollamada para ella. ¿Me dices tu nombre y un teléfono?
+
 === TU SIGUIENTE MENSAJE ===
