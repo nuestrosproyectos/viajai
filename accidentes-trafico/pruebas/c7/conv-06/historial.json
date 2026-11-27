@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Te confirmo: Javi, teléfono seis tres tres, cuatro cuatro cinco, cinco seis seis, en Granada, Chana, y te llamamos por la mañana. ¿Está todo bien?\n<ficha>{\"caso\":\"Tu seguro te ofrece un abogado\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Javi\",\"telefono\":\"633 445 566\",\"municipio\":\"Granada (Chana)\",\"franja\":\"por teléfono, por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Puedes elegir tu propio abogado y revisar en la consulta si tu póliza cubre parte de los honorarios.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Te confirmo: Javi, teléfono seis tres tres, cuatro cuatro cinco, cinco seis seis, en Granada, Chana, y te llamamos por la mañana. ¿Está todo bien?\n<ficha>{\"caso\":\"Tu seguro te ofrece un abogado\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Javi\",\"telefono\":\"633 445 566\",\"municipio\":\"Granada (Chana)\",\"franja\":\"por teléfono, por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Puedes elegir tu propio abogado y revisar en la consulta si tu póliza cubre parte de los honorarios.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien. Pues ya quedo pendiente de la llamada."
  }
 ]

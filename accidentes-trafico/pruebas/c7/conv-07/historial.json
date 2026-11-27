@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Te confirmo: Daniel, teléfono seis uno uno, siete siete siete, dos dos dos, en Granada, por videollamada, cualquier tarde. Y guarda informes y facturas. ¿Está todo bien?\n<ficha>{\"caso\":\"Iba en bici y un coche le cerró al girar\",\"como\":\"En bici o patinete\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Del otro\",\"atestado\":\"Atestado de la policía\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Daniel\",\"telefono\":\"611 777 222\",\"municipio\":\"Granada\",\"franja\":\"por videollamada, cualquier tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar el atestado y el informe de urgencias; quién tuvo la culpa lo revisa el abogado.\",\"porDecir\":\"un año para reclamar, que en lesiones suele contar desde el alta\",\"fase\":\"datos\"}</ficha>",
   "original": "Te confirmo: Daniel, teléfono seis uno uno, siete siete siete, dos dos dos, en Granada, por videollamada, cualquier tarde. Y guarda informes y facturas. ¿Está todo bien?\n<ficha>{\"caso\":\"Iba en bici y un coche le cerró al girar\",\"como\":\"En bici o patinete\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Del otro\",\"atestado\":\"Atestado de la policía\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Daniel\",\"telefono\":\"611 777 222\",\"municipio\":\"Granada\",\"franja\":\"por videollamada, cualquier tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar el atestado y el informe de urgencias; quién tuvo la culpa lo revisa el abogado.\",\"porDecir\":\"un año para reclamar, que en lesiones suele contar desde el alta\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien. ¿Y la bici la tendré que arreglar yo mientras tanto o eso también lo ve el abogado?"
  }
 ]

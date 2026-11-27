@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Te confirmo: Lorena, teléfono seis dos dos, uno uno ocho, nueve cero cero, en Armilla, por teléfono por la tarde. Y sigue la rehabilitación: los días que no constan no cuentan. ¿Está todo bien?\n<ficha>{\"caso\":\"Volviendo del trabajo en moto: un coche le sacó de la carretera\",\"como\":\"En moto\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Del otro\",\"atestado\":\"Atestado de la policía\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Lorena\",\"telefono\":\"622 118 900\",\"municipio\":\"Armilla\",\"franja\":\"por teléfono, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Puedes reclamar al seguro del otro coche además de la mutua, y el abogado revisa ambas vías.\",\"porDecir\":\"guardar el atestado y los datos del otro coche\",\"fase\":\"datos\"}</ficha>",
   "original": "Te confirmo: Lorena, teléfono seis dos dos, uno uno ocho, nueve cero cero, en Armilla, por teléfono por la tarde. Y sigue la rehabilitación: los días que no constan no cuentan. ¿Está todo bien?\n<ficha>{\"caso\":\"Volviendo del trabajo en moto: un coche le sacó de la carretera\",\"como\":\"En moto\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Del otro\",\"atestado\":\"Atestado de la policía\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Lorena\",\"telefono\":\"622 118 900\",\"municipio\":\"Armilla\",\"franja\":\"por teléfono, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Puedes reclamar al seguro del otro coche además de la mutua, y el abogado revisa ambas vías.\",\"porDecir\":\"guardar el atestado y los datos del otro coche\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien. ¿Y cuándo me llamarían más o menos? Es que por la mañana estoy en rehabilitación y por la tarde me viene mejor."
  }
 ]

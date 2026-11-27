@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Te confirmo: Pedro, teléfono seis cero cero, nueve cero nueve, tres cero tres, en Loja, por videollamada por la tarde, para tu mujer. Y si te lesionaste, el seguro obligatorio no cubre tus lesiones por culpa tuya, salvo seguro de conductor. ¿Está todo bien?\n<ficha>{\"caso\":\"Accidente con culpa suya, iba con su mujer\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Pedro\",\"telefono\":\"600 909 303\",\"municipio\":\"Loja\",\"franja\":\"por videollamada, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Ella puede reclamar al seguro de tu coche; lo demás lo revisa el abogado.\",\"porDecir\":\"el abogado revisa tu póliza y el atestado, y puede defenderte si te reclaman\",\"fase\":\"datos\"}</ficha>",
   "original": "Te confirmo: Pedro, teléfono seis cero cero, nueve cero nueve, tres cero tres, en Loja, por videollamada por la tarde, para tu mujer. Y si te lesionaste, el seguro obligatorio no cubre tus lesiones por culpa tuya, salvo seguro de conductor. ¿Está todo bien?\n<ficha>{\"caso\":\"Accidente con culpa suya, iba con su mujer\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Pedro\",\"telefono\":\"600 909 303\",\"municipio\":\"Loja\",\"franja\":\"por videollamada, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Ella puede reclamar al seguro de tu coche; lo demás lo revisa el abogado.\",\"porDecir\":\"el abogado revisa tu póliza y el atestado, y puede defenderte si te reclaman\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, está todo bien. Lo de mis lesiones no importa, yo estoy bien. ¿Y ya queda reservada la de mi mujer?"
  }
 ]

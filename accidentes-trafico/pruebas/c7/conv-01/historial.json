@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Exacto: si no hay indemnización, no hay honorarios. Te confirmo: Raúl, teléfono seis cuatro cuatro, cinco cinco cinco, ocho ocho ocho, en el Zaidín de Granada, videollamada por la tarde. Y guarda fotos, testigos, informes y facturas. ¿Está todo bien?\n<ficha>{\"caso\":\"Golpe por detrás\",\"como\":\"\",\"fecha\":\"hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Raúl\",\"telefono\":\"644 555 888\",\"municipio\":\"Zaidín, Granada\",\"franja\":\"por videollamada, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico hoy y avises a tu aseguradora en siete días.\",\"porDecir\":\"tienes un año para reclamar, que en lesiones suele contar desde el alta\",\"fase\":\"datos\"}</ficha>",
   "original": "Exacto: si no hay indemnización, no hay honorarios. Te confirmo: Raúl, teléfono seis cuatro cuatro, cinco cinco cinco, ocho ocho ocho, en el Zaidín de Granada, videollamada por la tarde. Y guarda fotos, testigos, informes y facturas. ¿Está todo bien?\n<ficha>{\"caso\":\"Golpe por detrás\",\"como\":\"\",\"fecha\":\"hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Raúl\",\"telefono\":\"644 555 888\",\"municipio\":\"Zaidín, Granada\",\"franja\":\"por videollamada, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico hoy y avises a tu aseguradora en siete días.\",\"porDecir\":\"tienes un año para reclamar, que en lesiones suele contar desde el alta\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien, gracias. Entonces ya queda reservada, ¿no?"
  }
 ]

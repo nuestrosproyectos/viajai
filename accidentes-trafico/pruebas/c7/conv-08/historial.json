@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Le confirmo: Encarna, teléfono seis cuatro cuatro, nueve cero nueve, ocho cero ocho, en Motril, por teléfono, por la mañana, la semana que viene. ¿Está todo bien?\n<ficha>{\"caso\":\"Accidente de autobús ayer en la carretera de Motril, en el que iba su madre\",\"como\":\"De pasajero\",\"fecha\":\"ayer\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Encarna\",\"telefono\":\"644 909 808\",\"municipio\":\"Motril\",\"franja\":\"por teléfono, por la mañana, la semana que viene\",\"consentimientoSalud\":\"\",\"orientacion\":\"Lo primero es la salud de su madre; lo legal puede esperar.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Le confirmo: Encarna, teléfono seis cuatro cuatro, nueve cero nueve, ocho cero ocho, en Motril, por teléfono, por la mañana, la semana que viene. ¿Está todo bien?\n<ficha>{\"caso\":\"Accidente de autobús ayer en la carretera de Motril, en el que iba su madre\",\"como\":\"De pasajero\",\"fecha\":\"ayer\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Encarna\",\"telefono\":\"644 909 808\",\"municipio\":\"Motril\",\"franja\":\"por teléfono, por la mañana, la semana que viene\",\"consentimientoSalud\":\"\",\"orientacion\":\"Lo primero es la salud de su madre; lo legal puede esperar.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, está todo bien, gracias. ¿Ya queda anotado para que nos llamen la semana que viene?"
  }
 ]
