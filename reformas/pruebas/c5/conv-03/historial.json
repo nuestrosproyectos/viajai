@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "Lucía, 611 908 774"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Lucía, ya tengo tu nombre y tu teléfono. En la visita el técnico comprueba primero si el tabique es de carga. ¿En qué calle y número está el piso, y te viene mejor por la mañana o por la tarde?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"Piso sin ascensor\",\"metros\":\"\",\"antiguedad\":\"edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"Lucía\",\"telefono\":\"611 908 774\",\"municipio\":\"Granada, centro\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Tirar el tabique no tiene precio fijo sin verlo; el técnico comprueba si es de carga, y en el centro lo más probable es licencia y técnico.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Lucía, ya tengo tu nombre y tu teléfono. En la visita el técnico comprueba primero si el tabique es de carga. ¿En qué calle y número está el piso, y te viene mejor por la mañana o por la tarde?\n<ficha>{\"obra\":\"tirar el tabique entre cocina y salón\",\"vivienda\":\"Piso sin ascensor\",\"metros\":\"\",\"antiguedad\":\"edificio antiguo\",\"presupuesto\":\"\",\"nombre\":\"Lucía\",\"telefono\":\"611 908 774\",\"municipio\":\"Granada, centro\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Tirar el tabique no tiene precio fijo sin verlo; el técnico comprueba si es de carga, y en el centro lo más probable es licencia y técnico.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

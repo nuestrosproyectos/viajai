@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "Antonio, 678 112 443"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Antonio, ya tengo su nombre y su teléfono. Con los diez metros, el técnico mide la distribución en la visita. ¿En qué municipio y calle está la vivienda, y le viene mejor por la mañana o por la tarde?\n<ficha>{\"obra\":\"cocina entera\",\"vivienda\":\"\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Pedir la visita para medir; el presupuesto por partidas llega por escrito unos cinco días laborables después, y lo que aparezca al abrir se aprueba antes de hacerse.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Antonio, ya tengo su nombre y su teléfono. Con los diez metros, el técnico mide la distribución en la visita. ¿En qué municipio y calle está la vivienda, y le viene mejor por la mañana o por la tarde?\n<ficha>{\"obra\":\"cocina entera\",\"vivienda\":\"\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Antonio\",\"telefono\":\"678 112 443\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Pedir la visita para medir; el presupuesto por partidas llega por escrito unos cinco días laborables después, y lo que aparezca al abrir se aprueba antes de hacerse.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

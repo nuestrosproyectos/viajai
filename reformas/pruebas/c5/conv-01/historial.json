@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "Marta, 655 321 908"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Marta, ya tengo tu nombre y tu teléfono. Solo lo uso para llamarte y organizar la visita. ¿En qué calle y número está el piso, y te viene mejor por la mañana o por la tarde?\n<ficha>{\"obra\":\"cambiar bañera por plato de ducha, azulejos y lavabo\",\"vivienda\":\"\",\"metros\":\"unos 5 m²\",\"antiguedad\":\"1978\",\"presupuesto\":\"\",\"nombre\":\"Marta\",\"telefono\":\"655 321 908\",\"municipio\":\"Granada capital, barrio de La Chana\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Un baño completo suele costar entre tres mil y seis mil euros; en un piso de 1978 conviene revisar las tuberías en la visita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Marta, ya tengo tu nombre y tu teléfono. Solo lo uso para llamarte y organizar la visita. ¿En qué calle y número está el piso, y te viene mejor por la mañana o por la tarde?\n<ficha>{\"obra\":\"cambiar bañera por plato de ducha, azulejos y lavabo\",\"vivienda\":\"\",\"metros\":\"unos 5 m²\",\"antiguedad\":\"1978\",\"presupuesto\":\"\",\"nombre\":\"Marta\",\"telefono\":\"655 321 908\",\"municipio\":\"Granada capital, barrio de La Chana\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Un baño completo suele costar entre tres mil y seis mil euros; en un piso de 1978 conviene revisar las tuberías en la visita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]
