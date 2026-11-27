@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Ya, pero con batería sí que no pagaría luz, ¿no? Yo gasto sobre todo por la noche, que de día trabajo fuera"
+ },
+ {
+  "role": "assistant",
+  "content": "Con batería aprovechas lo que sobra para la noche, pero la factura no baja a cero: quedan potencia, contador e impuestos. La batería suele costar entre 450 y 800 € por kWh. ¿Te reservo el estudio por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"De noche; de día trabaja fuera\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Consume sobre todo de noche y está fuera de día: con batería puede compensar; el estudio lo calcula con sus facturas.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>precios</mostrar>",
+  "original": "Con batería aprovechas lo que sobra para la noche, pero la factura no baja a cero: quedan potencia, contador e impuestos. La batería suele costar entre 450 y 800 € por kWh. ¿Te reservo el estudio por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"De noche; de día trabaja fuera\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Consume sobre todo de noche y está fuera de día: con batería puede compensar; el estudio lo calcula con sus facturas.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>precios</mostrar>"
  }
 ]

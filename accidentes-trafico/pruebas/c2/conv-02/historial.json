@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Por la mañana mejor. Pero dime, 2.300 € ¿es poco? Me estan presionando para firmar"
+ },
+ {
+  "role": "assistant",
+  "content": "Sin ver tu caso no sé decirte si es poco: depende de tus días de baja, las secuelas y los gastos. Y no firmes con prisas; un papel definitivo cierra la puerta. Te apunto para la consulta por la mañana. ¿Cómo te llamas?\n<ficha>{\"caso\":\"Accidente de tráfico; la aseguradora del otro ofrece 2.300 € y pide firmar\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmes nada hasta que lo revise el abogado.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Sin ver tu caso no sé decirte si es poco: depende de tus días de baja, las secuelas y los gastos. Y no firmes con prisas; un papel definitivo cierra la puerta. Te apunto para la consulta por la mañana. ¿Cómo te llamas?\n<ficha>{\"caso\":\"Accidente de tráfico; la aseguradora del otro ofrece 2.300 € y pide firmar\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmes nada hasta que lo revise el abogado.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

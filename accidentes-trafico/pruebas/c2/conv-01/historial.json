@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "No, todavía no he ido, pensaba que se me pasaría. ¿Y cuánto me cobra el abogado?"
+ },
+ {
+  "role": "assistant",
+  "content": "Entiendo que pensaras que se pasaría, pero ve al médico hoy. Los honorarios suelen ser un porcentaje de lo conseguido, del diez al treinta por ciento, orientativo; la primera consulta es gratis. ¿Te reservo la consulta por la mañana o por la tarde?\n<ficha>{\"caso\":\"golpe por detrás hace tres días\",\"como\":\"\",\"fecha\":\"hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Ve al médico hoy; no esperes a ver si se pasa. Guarda fotos y avisa a tu aseguradora en siete días.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>honorarios</mostrar>",
+  "original": "Entiendo que pensaras que se pasaría, pero ve al médico hoy. Los honorarios suelen ser un porcentaje de lo conseguido, del diez al treinta por ciento, orientativo; la primera consulta es gratis. ¿Te reservo la consulta por la mañana o por la tarde?\n<ficha>{\"caso\":\"golpe por detrás hace tres días\",\"como\":\"\",\"fecha\":\"hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Ve al médico hoy; no esperes a ver si se pasa. Guarda fotos y avisa a tu aseguradora en siete días.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>honorarios</mostrar>"
  }
 ]

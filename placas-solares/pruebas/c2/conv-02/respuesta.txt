@@ -1,3 +1,0 @@
-En Granada capital, el IBI baja un 50 % si lo pides y está domiciliado; en otros municipios depende de su ordenanza. Por qué es más barato no lo sé seguro: lo revisa el técnico. ¿Te reservo el estudio por la mañana o por la tarde?
-<ficha>{"que":"Revisar un presupuesto de placas con batería","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Presupuesto de 6.800 € por 5 kWp con batería de 10 kWh, por debajo del rango orientativo; revisar que incluya legalización y garantías por escrito.","fase":"proponiendo"}</ficha>
-<mostrar>ayudas</mostrar>

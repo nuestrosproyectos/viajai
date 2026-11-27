@@ -1,2 +1,0 @@
-Entiendo el susto. Si no encuentras la llave, busca junto al contador y ciérrala. ¿Te mando al fontanero urgente ahora? Dime tu nombre y un teléfono.
-<ficha>{"averia":"agua por debajo del fregadero, no para","cuando":"","llave":"No la encuentras; sigue saliendo agua","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Busca la llave junto al contador y ciérrala; aparta lo que se pueda mojar.","fase":"proponiendo"}</ficha>

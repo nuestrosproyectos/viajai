@@ -1,2 +1,0 @@
-Entiendo que siga igual. No metas la mano ni desmontes el sifón: un desatascador fuerte quema la piel y puede empeorar el atasco. Lo apunto para el fontanero. ¿Te reservo la visita, mejor por la mañana o por la tarde?
-<ficha>{"averia":"lavabo del baño atascado; sigue igual tras echar desatascador fuerte","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No metas la mano en el sifón y pide el presupuesto por escrito antes de empezar.","fase":"proponiendo"}</ficha>

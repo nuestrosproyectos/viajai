@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "No, solo el plato de ducha del bajo, no sé en los otros pisos. Entonces ¿quién paga esto?"
+ },
+ {
+  "role": "assistant",
+  "content": "Si el fallo está en la bajante, lo normal es que pague la comunidad; si está en tu tramo hasta el empalme, suele ser cosa tuya. Avisa al administrador. ¿Te reservo la visita con cámara, por la mañana o por la tarde?\n<ficha>{\"averia\":\"en el bajo, agua sucia por el plato de ducha cuando tiran de la cisterna de arriba; solo en tu plato de ducha\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Avisa al administrador: si la bajante es del edificio, lo normal es que pague la comunidad.\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Si el fallo está en la bajante, lo normal es que pague la comunidad; si está en tu tramo hasta el empalme, suele ser cosa tuya. Avisa al administrador. ¿Te reservo la visita con cámara, por la mañana o por la tarde?\n<ficha>{\"averia\":\"en el bajo, agua sucia por el plato de ducha cuando tiran de la cisterna de arriba; solo en tu plato de ducha\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Avisa al administrador: si la bajante es del edificio, lo normal es que pague la comunidad.\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]
