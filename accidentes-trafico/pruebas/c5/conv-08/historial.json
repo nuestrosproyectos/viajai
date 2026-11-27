@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Buenos días. Le escribo porque mi madre, de 79 años, está en la UCI tras un accidente de autobús ayer en la carretera de Motril."
+ },
+ {
+  "role": "assistant",
+  "content": "Siento lo de su madre. Guarde todos los informes de la UCI: esos días cuentan en la categoría más alta del baremo, unos ciento treinta y un euros por día en 2026. Le reservo la consulta gratis con el abogado. ¿Iba su madre como pasajera?\n<ficha>{\"caso\":\"Accidente de autobús en la carretera de Motril; escribe en nombre de su madre, de 79 años\",\"como\":\"\",\"fecha\":\"ayer\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar todos los informes del hospital; le reservo la consulta gratis con el abogado\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Siento lo de su madre. Guarde todos los informes de la UCI: esos días cuentan en la categoría más alta del baremo, unos ciento treinta y un euros por día en 2026. Le reservo la consulta gratis con el abogado. ¿Iba su madre como pasajera?\n<ficha>{\"caso\":\"Accidente de autobús en la carretera de Motril; escribe en nombre de su madre, de 79 años\",\"como\":\"\",\"fecha\":\"ayer\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar todos los informes del hospital; le reservo la consulta gratis con el abogado\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

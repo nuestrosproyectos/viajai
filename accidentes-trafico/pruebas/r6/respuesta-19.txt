@@ -1,0 +1,2 @@
+No puedo confirmarte esa ayuda ni cómo pedirla; lo apunto para que el abogado te lo confirme. Lo que sí sé: se reclama a la aseguradora del culpable. Te reservo la primera consulta gratis. ¿Te ha visto ya un médico?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Reclamar a la aseguradora del culpable; la ayuda de la Junta la confirma el abogado. Primera consulta gratis.","fase":"proponiendo"}</ficha>

@@ -1,0 +1,2 @@
+Siento lo del coche, pero elegir modelo no es lo mío. Lo del vehículo lo confirma el abogado y lo apunto para la consulta gratis. ¿Quién tuvo la culpa del accidente?
+<ficha>{"caso":"Accidente; el coche ha quedado en siniestro total","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Lo del vehículo lo confirma el abogado; primera consulta gratis.","fase":"orientando"}</ficha>

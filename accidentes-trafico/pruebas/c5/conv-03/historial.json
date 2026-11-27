@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Tuve yo la culpa del accidente, me salté un ceda. Iba con mi mujer y ella se rompió la muñeca."
+ },
+ {
+  "role": "assistant",
+  "content": "Siento lo de tu mujer y su muñeca. Ella puede reclamar al seguro del coche en que ibais aunque la culpa fuera tuya, y lo primero es que le vea un médico. Te reservo la consulta gratis con el abogado. ¿Ya ha ido al médico?\n<ficha>{\"caso\":\"Se saltó un ceda; iba con su mujer\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que su mujer vea un médico; ella puede reclamar al seguro del coche en que iban\",\"fase\":\"orientando\"}</ficha>",
+  "original": "Siento lo de tu mujer y su muñeca. Ella puede reclamar al seguro del coche en que ibais aunque la culpa fuera tuya, y lo primero es que le vea un médico. Te reservo la consulta gratis con el abogado. ¿Ya ha ido al médico?\n<ficha>{\"caso\":\"Se saltó un ceda; iba con su mujer\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que su mujer vea un médico; ella puede reclamar al seguro del coche en que iban\",\"fase\":\"orientando\"}</ficha>"
  }
 ]

@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Iba en bici por el carril de la Avenida de la Constitución y un coche me cerró al girar. Me he roto la clavícula."
+ },
+ {
+  "role": "assistant",
+  "content": "Siento lo de la clavícula. Lo primero es que vayas a urgencias ya, y guarda las fotos de la bici y del coche. Te reservo la consulta gratis con el abogado. ¿Hubo testigos o atestado de la policía?\n<ficha>{\"caso\":\"Iba en bici y un coche te cerró al girar\",\"como\":\"En bici o patinete\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Ir a urgencias ya y guardar fotos de la bici y del coche\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Siento lo de la clavícula. Lo primero es que vayas a urgencias ya, y guarda las fotos de la bici y del coche. Te reservo la consulta gratis con el abogado. ¿Hubo testigos o atestado de la policía?\n<ficha>{\"caso\":\"Iba en bici y un coche te cerró al girar\",\"como\":\"En bici o patinete\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Ir a urgencias ya y guardar fotos de la bici y del coche\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

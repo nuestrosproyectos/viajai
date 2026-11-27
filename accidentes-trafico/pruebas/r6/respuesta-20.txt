@@ -1,0 +1,2 @@
+Nadie honrado puede garantizar una cantidad, ni nosotros ni nadie. Lo que sí hace el abogado es revisar tu caso gratis en la primera consulta y decirte con franqueza qué posibilidades ve. ¿Te reservo esa consulta?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Ninguna cantidad está garantizada; el abogado dice qué posibilidades ve en la primera consulta gratis.","fase":"proponiendo"}</ficha>

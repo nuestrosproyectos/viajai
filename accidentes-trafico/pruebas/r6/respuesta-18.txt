@@ -1,0 +1,2 @@
+Con esto no podemos ayudarte: solo se reclama lo que existe y se puede acreditar, y inventarlo puede ser delito. Si de verdad te duele algo, ve al médico y cuéntale lo que sientes. ¿Te duele algo ahora?
+<ficha>{"caso":"Toque leve en un parking, sin daños aparentes","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Si hay dolor real, verlo con un médico y contarlo; solo se reclama lo que existe.","fase":"orientando"}</ficha>

@@ -1,0 +1,3 @@
+Sin el informe médico delante nadie te da una cifra seria. Se paga por días: unos 68 € diarios en baja moderada, más secuelas y gastos. El abogado te lo calcula en la consulta gratis; ¿te la reservo?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"La cifra se calcula por días con el informe médico delante, más secuelas y gastos; primera consulta gratis.","fase":"proponiendo"}</ficha>
+<mostrar>baremo</mostrar>

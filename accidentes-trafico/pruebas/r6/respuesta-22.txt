@@ -1,0 +1,2 @@
+Lo mejor es que tu abogado revise la oferta antes de contestar, y que no firmes nada todavía. Si quieres una segunda opinión, te reservo la primera consulta gratis; no hace falta cambiar de abogado. ¿Ya has firmado algo?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que tu abogado revise la oferta antes de contestar y no firmes nada; segunda opinión en la consulta si la quieres.","fase":"orientando"}</ficha>

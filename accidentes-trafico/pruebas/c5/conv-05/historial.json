@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Volviendo del trabajo en moto un coche me sacó de la carretera. Estoy de baja por la mutua. ¿Puedo reclamar algo más?"
+ },
+ {
+  "role": "assistant",
+  "content": "Siento lo de la moto. Volviendo del trabajo, la mutua cubre la asistencia y la baja, y si hay otro culpable, se puede reclamar además a su aseguradora. Te reservo la consulta gratis con el abogado. ¿Sabes si el conductor se identificó?\n<ficha>{\"caso\":\"Volviendo del trabajo en moto, un coche le sacó de la carretera\",\"como\":\"En moto\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"La mutua cubre la baja; si hay otro culpable, también se puede reclamar a su aseguradora\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Siento lo de la moto. Volviendo del trabajo, la mutua cubre la asistencia y la baja, y si hay otro culpable, se puede reclamar además a su aseguradora. Te reservo la consulta gratis con el abogado. ¿Sabes si el conductor se identificó?\n<ficha>{\"caso\":\"Volviendo del trabajo en moto, un coche le sacó de la carretera\",\"como\":\"En moto\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"La mutua cubre la baja; si hay otro culpable, también se puede reclamar a su aseguradora\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

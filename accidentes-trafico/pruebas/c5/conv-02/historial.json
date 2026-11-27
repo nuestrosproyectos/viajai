@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "La aseguradora del otro me ofrece 2.300 € y me dicen que firme ya. ¿Firmo?"
+ },
+ {
+  "role": "assistant",
+  "content": "No firmes nada todavía, porque una firma definitiva cierra la puerta. El abogado revisa la oferta con los informes delante, y eso no se puede esperar. ¿Te reservo la consulta gratis para verlo cuanto antes?\n<ficha>{\"caso\":\"Oferta de la aseguradora contraria, con prisa para firmar\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada hasta que lo revise el abogado\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "No firmes nada todavía, porque una firma definitiva cierra la puerta. El abogado revisa la oferta con los informes delante, y eso no se puede esperar. ¿Te reservo la consulta gratis para verlo cuanto antes?\n<ficha>{\"caso\":\"Oferta de la aseguradora contraria, con prisa para firmar\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada hasta que lo revise el abogado\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

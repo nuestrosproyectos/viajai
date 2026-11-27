@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Me atropellaron hace un año y medio en un paso de cebra. ¿Ya es tarde para reclamar?"
+ },
+ {
+  "role": "assistant",
+  "content": "Siento lo del atropello. Eso no te lo puedo decir yo: el plazo de un año suele contarse desde el alta, con interrupciones, y lo mira el abogado. Te reservo la consulta gratis para mirarlo cuanto antes. ¿Recuerdas cuándo te dieron el alta?\n<ficha>{\"caso\":\"Atropello en un paso de cebra\",\"como\":\"Andando\",\"fecha\":\"hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Mirar cuanto antes el plazo de un año, que suele contarse desde el alta\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Siento lo del atropello. Eso no te lo puedo decir yo: el plazo de un año suele contarse desde el alta, con interrupciones, y lo mira el abogado. Te reservo la consulta gratis para mirarlo cuanto antes. ¿Recuerdas cuándo te dieron el alta?\n<ficha>{\"caso\":\"Atropello en un paso de cebra\",\"como\":\"Andando\",\"fecha\":\"hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Mirar cuanto antes el plazo de un año, que suele contarse desde el alta\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]
