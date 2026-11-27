@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Quiero cambiar las ventanas de casa por unas que aíslen. ¿Me desgrava algo en la renta?"
+ },
+ {
+  "role": "assistant",
+  "content": "Puede que sí: deducciones del 20 o del 40 % en la renta, con certificados energéticos antes y después. El posterior tiene que estar hecho antes del 1 de enero de 2027. En la visita, gratis, miramos las ventanas. ¿Tiene ya el certificado de antes?\n<ficha>{\"obra\":\"Cambiar las ventanas por otras que aíslen\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Revisar pronto el certificado energético: el posterior tiene que estar hecho antes del 1 de enero de 2027 para la deducción.\",\"porDecir\":\"si es un piso y las ventanas cambian el aspecto de la fachada, hace falta el acuerdo de la comunidad · el IVA puede ser del 10 % si la vivienda es suya para vivir y tiene más de dos años; lo confirma el gestor\",\"fase\":\"orientando\"}</ficha>\n<mostrar>plazo</mostrar>",
+  "original": "Puede que sí: deducciones del 20 o del 40 % en la renta, con certificados energéticos antes y después. El posterior tiene que estar hecho antes del 1 de enero de 2027. En la visita, gratis, miramos las ventanas. ¿Tiene ya el certificado de antes?\n<ficha>{\"obra\":\"Cambiar las ventanas por otras que aíslen\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Revisar pronto el certificado energético: el posterior tiene que estar hecho antes del 1 de enero de 2027 para la deducción.\",\"porDecir\":\"si es un piso y las ventanas cambian el aspecto de la fachada, hace falta el acuerdo de la comunidad · el IVA puede ser del 10 % si la vivienda es suya para vivir y tiene más de dos años; lo confirma el gestor\",\"fase\":\"orientando\"}</ficha>\n<mostrar>plazo</mostrar>"
  }
 ]

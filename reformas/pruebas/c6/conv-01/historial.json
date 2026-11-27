@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Hola, quiero reformar el baño de mi piso, cuánto me puede costar?"
+ },
+ {
+  "role": "assistant",
+  "content": "Un baño completo suele quedar entre tres mil y seis mil euros, de una a dos semanas. Si el piso es antiguo, suelen aparecer tuberías viejas al abrir, así que conviene la visita de medición, gratis. ¿Cuántos metros tiene el baño?\n<ficha>{\"obra\":\"reformar el baño\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Un baño completo suele costar entre tres mil y seis mil euros; conviene medirlo antes en la visita gratis.\",\"porDecir\":\"la visita dura unos cuarenta y cinco minutos · el IVA es del 10 % si la vivienda es suya para vivir y tiene más de dos años, lo confirma el gestor\",\"fase\":\"orientando\"}</ficha>\n<mostrar>precios</mostrar>",
+  "original": "Un baño completo suele quedar entre tres mil y seis mil euros, de una a dos semanas. Si el piso es antiguo, suelen aparecer tuberías viejas al abrir, así que conviene la visita de medición, gratis. ¿Cuántos metros tiene el baño?\n<ficha>{\"obra\":\"reformar el baño\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Un baño completo suele costar entre tres mil y seis mil euros; conviene medirlo antes en la visita gratis.\",\"porDecir\":\"la visita dura unos cuarenta y cinco minutos · el IVA es del 10 % si la vivienda es suya para vivir y tiene más de dos años, lo confirma el gestor\",\"fase\":\"orientando\"}</ficha>\n<mostrar>precios</mostrar>"
  }
 ]
