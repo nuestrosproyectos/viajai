@@ -1,0 +1,12 @@
+{"clientes":[
+{"id":1,"turnos":[{"role":"user","content":"Hola, murió mi padre hace tres semanas y no sé ni por dónde empezar"}]},
+{"id":2,"turnos":[{"role":"user","content":"Mi tía ha muerto sin hijos y me ha dejado su piso en Motril en el testamento. Soy su sobrino. ¿Cuánto voy a pagar?"}]},
+{"id":3,"turnos":[{"role":"user","content":"Somos tres hermanos y uno no quiere vender la casa de mis padres. Los otros dos sí queremos vender. ¿Qué podemos hacer?"}]},
+{"id":4,"turnos":[{"role":"user","content":"Mi marido falleció en abril y no hemos hecho nada todavía, ¿pasa algo?"}]},
+{"id":5,"turnos":[{"role":"user","content":"Mi padre tenía un bar y creo que debía dinero a proveedores y a Hacienda. ¿Tengo que pagar yo sus deudas?"}]},
+{"id":6,"turnos":[{"role":"user","content":"Mi pareja ha muerto. No estábamos casados pero llevábamos 15 años juntos. No hay testamento. ¿Me queda algo?"}]},
+{"id":7,"turnos":[{"role":"user","content":"¿Cuánto cobráis por tramitar una herencia?"}]},
+{"id":8,"turnos":[{"role":"user","content":"Ha muerto mi madre, vivía en Granada. Somos dos hijos, hay un piso y unos 40.000 euros en el banco, y hay testamento."},{"role":"assistant","content":"Siento mucho lo de tu madre. Con testamento y siendo hijos, lo más probable es que el impuesto de sucesiones en Andalucía os salga a cero, aunque hay que presentarlo en seis meses. ¿Te reservo una primera consulta gratis con el abogado, por videollamada o en el despacho?"},{"role":"user","content":"Vale, por videollamada. Me llamo Lucía, mi teléfono es 655 123 987 y vivo en Armilla. Mejor por las mañanas."}]},
+{"id":9,"turnos":[{"role":"user","content":"Mi hermano vive en Alemania y es heredero también, ¿tiene que venir a España a firmar?"}]},
+{"id":10,"turnos":[{"role":"user","content":"Ya tengo un abogado llevando la herencia de mi abuelo pero tarda muchísimo y no me coge el teléfono. ¿Me la podéis llevar vosotros?"}]}
+]}

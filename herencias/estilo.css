@@ -16,22 +16,27 @@
    - Esquinas: botones en píldora, tarjetas y fotos a 14 px, campos a 10 px.
    ===================================================================== */
 :root,:root[data-theme="light"]{
-  --fondo:#F4F6F8; --fondo-2:#EBEFF3; --fondo-3:#DEE4EA; --tarjeta:#FFFFFF;
-  --tinta:#14191F; --tinta-2:#45505B; --tinta-3:#626C77;
-  --linea:#D5DCE3; --linea-fuerte:#8B949D;
-  --acento:#1F5FAD; --acento-pulsado:#174C8C; --acento-suave:#E5EEF8;
+  /* «Despacho con luz de mañana»: verde ciprés del Generalife (lo que pulsa la persona) y azul de
+     Sierra Nevada (todo lo que es Andrés), sobre fondos casi blancos y algo fríos. Contrastes AA comprobados. */
+  --fondo:#F6F7F5; --fondo-2:#ECEFEC; --fondo-3:#DFE4E1; --tarjeta:#FFFFFF;
+  --tinta:#1B2321; --tinta-2:#4A5652; --tinta-3:#5E6A66;
+  --linea:#D5DBD8; --linea-fuerte:#8A9591;
+  --acento:#1F4A42; --acento-pulsado:#163832; --acento-suave:#E3ECE8;
   --almagra:var(--acento); --almagra-pulsado:var(--acento-pulsado); --almagra-suave:var(--acento-suave); --sobre-almagra:#FFFFFF;
-  --cobalto:var(--acento); --cobalto-suave:var(--acento-suave); --laton:var(--acento);
+  --cobalto:#2F5D86; --cobalto-suave:#E4ECF4; --laton:#8A5A00;
   --ok:#1D7A4E; --ok-suave:#E2F2EA; --rojo:#C4362A; --sobre-rojo:#FFFFFF;
-  --consola:#15212E; --consola-2:#1D2C3C; --consola-txt:#F2F5F8; --consola-txt-2:#B2BECA; --consola-linea:rgba(242,245,248,.14);
+  --consola:#14221F; --consola-2:#1C2F2B; --consola-txt:#EEF3F1; --consola-txt-2:#AFC0BB; --consola-linea:rgba(238,243,241,.14);
   --titular:var(--texto);
-  --sombra:0 1px 2px rgba(20,25,31,.06),0 12px 30px -18px rgba(20,25,31,.35);
-  --r-tarjeta:14px; --r-campo:10px;
+  --sombra:0 1px 2px rgba(27,35,33,.06),0 12px 30px -18px rgba(27,35,33,.35);
+  --r-tarjeta:12px; --r-campo:10px;
   color-scheme:light;
 }
 html,body{overflow-x:clip}
 body{background:var(--fondo)}
 ::selection{background:var(--acento);color:#fff}
+/* lo que es de Andrés, en azul Sierra */
+.boton-andres{background:var(--cobalto)!important;box-shadow:0 1px 0 #244968!important}
+.boton-andres:active{background:#244968!important}
 
 /* ---------- letras ---------- */
 h1,h2,h3{font-family:var(--texto);font-stretch:normal;font-weight:700;letter-spacing:-.022em;line-height:1.08;text-wrap:balance}
@@ -253,4 +258,9 @@ h1 em,h2 em,.subrayado{font-style:normal;color:var(--acento);background:none}
   .escenario .sol-docs li{color:var(--tinta);font-size:1.05rem}
   .escenario .sol-docs li span{color:var(--tinta-3)}
   .escenario .sol-docs li::before{border-color:var(--acento)}
+}
+/* solicitud de herencias en grande (ordenador): a lo ancho los campos que llevan frases */
+@media (min-width:900px){
+  .escenario .sol-campos .campo:nth-child(3),.escenario .sol-campos .campo:nth-child(6){grid-column:auto}
+  .escenario .sol-campos .campo:nth-child(1),.escenario .sol-campos .campo:nth-child(4),.escenario .sol-campos .campo:nth-child(8){grid-column:1/-1}
 }
