@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Calle Real de Armilla 22. Por las tardes"
+ },
+ {
+  "role": "assistant",
+  "content": "Nuria, te apunto: teléfono seis nueve nueve, dos cero dos, cinco uno cinco; visita en la calle Real de Armilla veintidós, por la tarde. El presupuesto por escrito llega unos cinco días laborables después de la visita. ¿Está todo bien?\n<ficha>{\"obra\":\"Reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros\",\"vivienda\":\"\",\"metros\":\"90 metros\",\"antiguedad\":\"Años 80\",\"presupuesto\":\"\",\"nombre\":\"Nuria\",\"telefono\":\"699 202 515\",\"municipio\":\"Armilla\",\"direccion\":\"Calle Real de Armilla 22\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"La electricidad la hace una empresa habilitada, que emite el boletín; el permiso en Armilla lo aclara el técnico en la visita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Nuria, te apunto: teléfono seis nueve nueve, dos cero dos, cinco uno cinco; visita en la calle Real de Armilla veintidós, por la tarde. El presupuesto por escrito llega unos cinco días laborables después de la visita. ¿Está todo bien?\n<ficha>{\"obra\":\"Reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros\",\"vivienda\":\"\",\"metros\":\"90 metros\",\"antiguedad\":\"Años 80\",\"presupuesto\":\"\",\"nombre\":\"Nuria\",\"telefono\":\"699 202 515\",\"municipio\":\"Armilla\",\"direccion\":\"Calle Real de Armilla 22\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"La electricidad la hace una empresa habilitada, que emite el boletín; el permiso en Armilla lo aclara el técnico en la visita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

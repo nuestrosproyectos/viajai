@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Granada, el Zaidín, calle Arabial 50. Por las mañanas"
+ },
+ {
+  "role": "assistant",
+  "content": "Javier, te apunto: teléfono seis dos dos, cuatro uno cero, ocho siete cero; visita en calle Arabial cincuenta, en el Zaidín, Granada, por la mañana. Y el permiso, si es obra interior, lo tramitamos nosotros. ¿Está todo bien?\n<ficha>{\"obra\":\"Cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"Unos 9 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Javier\",\"telefono\":\"622 410 870\",\"municipio\":\"Granada\",\"direccion\":\"Zaidín, calle Arabial 50\",\"franja\":\"Por la mañana\",\"inicio\":\"\",\"orientacion\":\"Muchas cocinas completas están entre seis mil y diez mil euros; mover el fregadero lo encarece, y el precio exacto sale de la visita de medición.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Javier, te apunto: teléfono seis dos dos, cuatro uno cero, ocho siete cero; visita en calle Arabial cincuenta, en el Zaidín, Granada, por la mañana. Y el permiso, si es obra interior, lo tramitamos nosotros. ¿Está todo bien?\n<ficha>{\"obra\":\"Cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"Unos 9 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Javier\",\"telefono\":\"622 410 870\",\"municipio\":\"Granada\",\"direccion\":\"Zaidín, calle Arabial 50\",\"franja\":\"Por la mañana\",\"inicio\":\"\",\"orientacion\":\"Muchas cocinas completas están entre seis mil y diez mil euros; mover el fregadero lo encarece, y el precio exacto sale de la visita de medición.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]
