@@ -1,0 +1,32 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Obra Redonda. Cuéntame qué quieres reformar y te doy una idea de precio y plazo.
+
+CLIENTE: Hemos comprado un piso de 90 metros en Armilla para reformarlo entero. ¿Qué presupuesto calculo?
+
+ANDRÉS: Para 90 metros, una reforma integral en calidades medias suele salir entre unos cuarenta y un mil y sesenta y dos mil euros, orientativo. Si el piso es antiguo, las tuberías viejas pueden subirlo, y te reservo la visita gratis. ¿De qué año es el piso?
+<ficha>{"obra":"reforma integral del piso","vivienda":"","metros":"90 m²","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"Armilla","direccion":"","franja":"","inicio":"","orientacion":"Reforma integral: unos 41.000 a 62.000 € para 90 m², orientativo; la visita de medición es gratis.","porDecir":"De tres a cinco meses de obra; en pisos antiguos, revisar tuberías e instalación eléctrica con boletín · Armilla tiene su propia ordenanza e importes, distintos de Granada capital, y los confirma el técnico · IVA del 10 % si es para tu vivienda, con más de dos años y materiales que no pasan del 40 % del precio sin IVA; si no está claro, lo confirma el gestor","fase":"proponiendo"}</ficha>
+
+CLIENTE: De los años 80. Queremos cambiar baño, cocina, suelos y la electricidad, sin tirar muros. ¿Hace falta algún permiso del ayuntamiento?
+
+ANDRÉS: En Armilla el ayuntamiento tiene su propia ordenanza, así que lo confirma el técnico. Lo más probable, si no tocáis muros, es una declaración responsable. Y la electricidad la hace una empresa habilitada, con su boletín. ¿Te reservo la visita?
+<ficha>{"obra":"reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros","vivienda":"","metros":"90 m²","antiguedad":"años 80","presupuesto":"","nombre":"","telefono":"","municipio":"Armilla","direccion":"","franja":"","inicio":"","orientacion":"Si no se tocan muros, lo más probable es declaración responsable; en Armilla lo confirma el técnico. La electricidad la hace una empresa habilitada, con boletín.","porDecir":"De tres a cinco meses de obra; en pisos antiguos, revisar tuberías e instalación eléctrica · IVA del 10 % si es para tu vivienda, con más de dos años y materiales que no pasan del 40 % del precio sin IVA; si no está claro, lo confirma el gestor","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, me da algo más de tranquilidad. Sí, resérvame la visita
+
+ANDRÉS: Perfecto, la organizamos. La reforma suele llevar de tres a cinco meses, y en pisos antiguos conviene revisar tuberías e instalación eléctrica. Es solo para llamarte y organizar la visita: ¿me dices tu nombre y un teléfono?
+<ficha>{"obra":"reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros","vivienda":"","metros":"90 m²","antiguedad":"años 80","presupuesto":"","nombre":"","telefono":"","municipio":"Armilla","direccion":"","franja":"","inicio":"","orientacion":"Si no se tocan muros, lo más probable es declaración responsable; en Armilla lo confirma el técnico. La electricidad la hace una empresa habilitada, con boletín.","porDecir":"IVA del 10 % si es para tu vivienda, con más de dos años y materiales que no pasan del 40 % del precio sin IVA; si no está claro, lo confirma el gestor","fase":"datos"}</ficha>
+
+CLIENTE: Nuria, 699 202 515
+
+ANDRÉS: Gracias, Nuria. Si el piso es para vivir y tiene más de dos años, el IVA puede bajar al 10 %, lo confirma el técnico. ¿En qué calle y número está, y te viene mejor mañana o por la tarde?
+<ficha>{"obra":"reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros","vivienda":"","metros":"90 m²","antiguedad":"años 80","presupuesto":"","nombre":"Nuria","telefono":"699 202 515","municipio":"Armilla","direccion":"","franja":"","inicio":"","orientacion":"Si no se tocan muros, lo más probable es declaración responsable; en Armilla lo confirma el técnico. La electricidad la hace una empresa habilitada, con boletín.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Calle Real de Armilla 22. Por las tardes mejor
+
+ANDRÉS: Perfecto, Nuria: visita gratis por la tarde en calle Real de Armilla 22, y te llamamos al seis nueve nueve, dos cero dos, cinco uno cinco. Y no pagues todo por adelantado: pide el presupuesto firmado y por partidas. ¿Está todo bien?
+<ficha>{"obra":"reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros","vivienda":"","metros":"90 m²","antiguedad":"años 80","presupuesto":"","nombre":"Nuria","telefono":"699 202 515","municipio":"Armilla","direccion":"Calle Real de Armilla 22","franja":"tarde","inicio":"","orientacion":"Si no se tocan muros, lo más probable es declaración responsable; en Armilla lo confirma el técnico. La electricidad la hace una empresa habilitada, con boletín.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien. Gracias
+
+ANDRÉS: Genial, Nuria: queda enviada la solicitud. Te llamamos para confirmar el día y la hora de la visita, por la tarde, como dijiste. ¿Necesitas algo más?
+<ficha>{"obra":"reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros","vivienda":"","metros":"90 m²","antiguedad":"años 80","presupuesto":"","nombre":"Nuria","telefono":"699 202 515","municipio":"Armilla","direccion":"Calle Real de Armilla 22","franja":"tarde","inicio":"","orientacion":"Si no se tocan muros, lo más probable es declaración responsable; en Armilla lo confirma el técnico. La electricidad la hace una empresa habilitada, con boletín.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","obra":"reforma integral del piso: baño, cocina, suelos y electricidad, sin tirar muros","vivienda":"","metros":"90 m²","antiguedad":"años 80","presupuesto":"","nombre":"Nuria","telefono":"699 202 515","municipio":"Armilla","direccion":"Calle Real de Armilla 22","franja":"tarde","inicio":"","urgente":false,"notas":"Piso de 90 m² de los años 80, comprado para reformarlo entero: baño, cocina, suelos y electricidad, sin tirar muros. Pregunta si hace falta permiso del ayuntamiento; se le ha dicho que en Armilla lo confirma el técnico. Prefiere visita por las tardes."}</aviso>

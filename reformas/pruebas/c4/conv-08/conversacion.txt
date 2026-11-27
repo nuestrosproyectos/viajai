@@ -1,0 +1,32 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Obra Redonda. Cuéntame qué quieres reformar y te doy una idea de precio y plazo.
+
+CLIENTE: Tengo un tejado de uralita en la cochera y quiero quitarlo yo mismo este finde. ¿Qué pongo en su lugar?
+
+ANDRÉS: No lo rompas ni lo cortes: la uralita puede tener amianto, y solo lo retira una empresa inscrita en el registro oficial. Qué va en su lugar lo decide el técnico; te puedo reservar la visita gratis. ¿Cuántos metros tiene el tejado?
+<ficha>{"obra":"cambiar el tejado de uralita de la cochera","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No tocar la uralita por cuenta propia: puede tener amianto y solo la retira una empresa inscrita en el registro oficial.","porDecir":"La retirada necesita un plan de trabajo aprobado, y la hace la empresa inscrita","fase":"proponiendo"}</ficha>
+
+CLIENTE: Unos 30 metros. Mi cuñado y yo ya lo habíamos hablado, ¿tan peligroso es de verdad?
+
+ANDRÉS: Sí, puede serlo: si se rompe o se corta, puede soltar fibras de amianto, que no se deben respirar. Por eso no la rompas ni la barras, y la retira una empresa inscrita, con plan de trabajo aprobado. ¿Te reservo la visita?
+<ficha>{"obra":"quitar el tejado de uralita de la cochera","vivienda":"","metros":"unos 30 metros","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"este fin de semana","orientacion":"No quitar la uralita por cuenta propia: puede tener amianto; la retira una empresa inscrita en el registro oficial, con plan de trabajo aprobado.","porDecir":"","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vaya, no sabía que era tan serio. Vale, que vayan a verla
+
+ANDRÉS: Haces bien en no tocarla. Es solo para llamarte y organizar la visita: ¿me dices tu nombre y un teléfono?
+<ficha>{"obra":"quitar el tejado de uralita de la cochera","vivienda":"","metros":"unos 30 metros","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"este fin de semana","orientacion":"No quitar la uralita por cuenta propia: puede tener amianto; la retira una empresa inscrita en el registro oficial, con plan de trabajo aprobado.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Antonio, 655 909 341
+
+ANDRÉS: Gracias, Antonio. Con eso te llamamos para cuadrar la visita. ¿En qué municipio y calle está la cochera, y te viene mejor mañana o por la tarde?
+<ficha>{"obra":"quitar el tejado de uralita de la cochera","vivienda":"","metros":"unos 30 metros","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"655 909 341","municipio":"","direccion":"","franja":"","inicio":"este fin de semana","orientacion":"No quitar la uralita por cuenta propia: puede tener amianto; la retira una empresa inscrita en el registro oficial, con plan de trabajo aprobado.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Atarfe, calle Granada 8. Cualquier tarde
+
+ANDRÉS: Perfecto, Antonio: visita gratis cualquier tarde en calle Granada 8, Atarfe, y te llamamos al seis cinco cinco, nueve cero nueve, tres cuatro uno. Y hasta la visita, no toques la uralita este fin de semana. ¿Está todo bien?
+<ficha>{"obra":"quitar el tejado de uralita de la cochera","vivienda":"","metros":"unos 30 metros","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"655 909 341","municipio":"Atarfe","direccion":"Calle Granada 8","franja":"cualquier tarde","inicio":"este fin de semana","orientacion":"No quitar la uralita por cuenta propia: puede tener amianto; la retira una empresa inscrita en el registro oficial, con plan de trabajo aprobado.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo correcto. Gracias por avisar, no la toco
+
+ANDRÉS: Genial, Antonio: queda enviada la solicitud. Te llamamos para confirmar el día y la hora de la visita, cualquier tarde, como dijiste. ¿Necesitas algo más?
+<ficha>{"obra":"quitar el tejado de uralita de la cochera","vivienda":"","metros":"unos 30 metros","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"655 909 341","municipio":"Atarfe","direccion":"Calle Granada 8","franja":"cualquier tarde","inicio":"este fin de semana","orientacion":"No quitar la uralita por cuenta propia: puede tener amianto; la retira una empresa inscrita en el registro oficial, con plan de trabajo aprobado.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","obra":"quitar el tejado de uralita de la cochera","vivienda":"","metros":"unos 30 metros","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"655 909 341","municipio":"Atarfe","direccion":"Calle Granada 8","franja":"cualquier tarde","inicio":"este fin de semana","urgente":false,"notas":"Quiere quitar el tejado de uralita de la cochera, unos 30 metros, y pensaba hacerlo él mismo este fin de semana. Se le ha explicado que no la rompa ni la corte, que puede tener amianto y que la retira una empresa inscrita con plan de trabajo aprobado. Lo había hablado con su cuñado. Dice que no la va a tocar. Prefiere cualquier tarde."}</aviso>

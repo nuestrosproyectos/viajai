@@ -1,0 +1,32 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Obra Redonda. Cuéntame qué quieres reformar y te doy una idea de precio y plazo.
+
+CLIENTE: Quiero cambiar las ventanas de casa por unas que aíslen. ¿Me desgrava algo en la renta?
+
+ANDRÉS: Sí, deducción del veinte o del cuarenta por ciento, con certificados de antes y después hechos por un técnico. En tu vivienda, el de después tiene que estar antes del uno de enero de dos mil veintisiete, y te reservo la visita. ¿Cuándo querrías empezar?
+<ficha>{"obra":"cambiar las ventanas por unas que aíslen","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Deducción del 20 % o del 40 % en la renta con certificados energéticos de antes y después; el de después, antes del 1 de enero de 2027.","porDecir":"No consta prórroga de ese plazo de 2027; lo confirma el gestor · Si las ventanas cambian la fachada, hace falta acuerdo de la comunidad","fase":"proponiendo"}</ficha>
+
+CLIENTE: Cuanto antes mejor. Son 6 ventanas de aluminio viejo. ¿Y me cobran el 21 % de IVA?
+
+ANDRÉS: Entiendo la prisa. El IVA puede ser del diez por ciento si es para vivir en ella, tiene más de dos años y los materiales no pasan del cuarenta por ciento; eso lo confirma tu gestor. ¿Te reservo la visita?
+<ficha>{"obra":"cambiar 6 ventanas de aluminio viejo por unas que aíslen","vivienda":"Casa","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"cuanto antes","orientacion":"Deducción del 20 % o del 40 % en la renta con certificados energéticos de antes y después; el de después, antes del 1 de enero de 2027. El IVA puede ser del 10 % si es para vivir en ella, tiene más de dos años y los materiales no pasan del 40 %; lo confirma el gestor.","porDecir":"No consta prórroga del plazo de 2027; lo confirma el gestor · Si las ventanas cambian la fachada, hace falta acuerdo de la comunidad","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, lo hablo con el gestor. Sí, resérvame la visita
+
+ANDRÉS: Genial, la organizamos. Y ojo con el plazo: no nos consta prórroga, así que el certificado de después va justo; lo confirma tu gestor. Es solo para llamarte y cuadrar la visita: ¿me dices tu nombre y un teléfono?
+<ficha>{"obra":"cambiar 6 ventanas de aluminio viejo por unas que aíslen","vivienda":"Casa","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"cuanto antes","orientacion":"Deducción del 20 % o del 40 % en la renta con certificados energéticos de antes y después; el de después, antes del 1 de enero de 2027. El IVA puede ser del 10 % si es para vivir en ella, tiene más de dos años y los materiales no pasan del 40 %; lo confirma el gestor.","porDecir":"Si las ventanas cambian la fachada, hace falta acuerdo de la comunidad","fase":"datos"}</ficha>
+
+CLIENTE: Paco, 633 778 120
+
+ANDRÉS: Gracias, Paco. Con eso te llamamos para cuadrar la visita. ¿En qué municipio y calle está la casa, y te viene mejor mañana o por la tarde?
+<ficha>{"obra":"cambiar 6 ventanas de aluminio viejo por unas que aíslen","vivienda":"Casa","metros":"","antiguedad":"","presupuesto":"","nombre":"Paco","telefono":"633 778 120","municipio":"","direccion":"","franja":"","inicio":"cuanto antes","orientacion":"Deducción del 20 % o del 40 % en la renta con certificados energéticos de antes y después; el de después, antes del 1 de enero de 2027. El IVA puede ser del 10 % si es para vivir en ella, tiene más de dos años y los materiales no pasan del 40 %; lo confirma el gestor.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Granada, calle Recogidas 31. Por las mañanas
+
+ANDRÉS: Perfecto, Paco: visita gratis por las mañanas en calle Recogidas 31, Granada, y te llamamos al seis tres tres, siete siete ocho, uno dos cero. Y la visita suele hacerse en dos a cuatro días. ¿Está todo bien?
+<ficha>{"obra":"cambiar 6 ventanas de aluminio viejo por unas que aíslen","vivienda":"Casa","metros":"","antiguedad":"","presupuesto":"","nombre":"Paco","telefono":"633 778 120","municipio":"Granada","direccion":"Calle Recogidas 31","franja":"mañanas","inicio":"cuanto antes","orientacion":"Deducción del 20 % o del 40 % en la renta con certificados energéticos de antes y después; el de después, antes del 1 de enero de 2027. El IVA puede ser del 10 % si es para vivir en ella, tiene más de dos años y los materiales no pasan del 40 %; lo confirma el gestor.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien. Gracias
+
+ANDRÉS: Genial, Paco: queda enviada la solicitud. Te llamamos para confirmar el día y la hora de la visita, por las mañanas, como dijiste. ¿Necesitas algo más?
+<ficha>{"obra":"cambiar 6 ventanas de aluminio viejo por unas que aíslen","vivienda":"Casa","metros":"","antiguedad":"","presupuesto":"","nombre":"Paco","telefono":"633 778 120","municipio":"Granada","direccion":"Calle Recogidas 31","franja":"mañanas","inicio":"cuanto antes","orientacion":"Deducción del 20 % o del 40 % en la renta con certificados energéticos de antes y después; el de después, antes del 1 de enero de 2027. El IVA puede ser del 10 % si es para vivir en ella, tiene más de dos años y los materiales no pasan del 40 %; lo confirma el gestor.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","obra":"cambiar 6 ventanas de aluminio viejo por unas que aíslen","vivienda":"Casa","metros":"","antiguedad":"","presupuesto":"","nombre":"Paco","telefono":"633 778 120","municipio":"Granada","direccion":"Calle Recogidas 31","franja":"mañanas","inicio":"cuanto antes","urgente":false,"notas":"Quiere cambiar 6 ventanas de aluminio viejo de su casa por unas que aíslen, cuanto antes. Pregunta por la deducción en la renta: se le ha explicado el 20 o 40 %, los certificados de antes y después, y que el de después tiene que estar antes del 1-1-2027 y no consta prórroga; lo confirma el gestor. Pregunta si le cobran el 21 % de IVA: se le ha explicado el 10 % en sus condiciones, que confirma el gestor. Prefiere visita por las mañanas."}</aviso>

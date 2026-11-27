@@ -1,0 +1,33 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Obra Redonda. Cuéntame qué quieres reformar y te doy una idea de precio y plazo.
+
+CLIENTE: Hola, quiero reformar el baño de mi piso, cuánto me puede costar?
+
+ANDRÉS: Un baño completo en reforma estándar suele quedar entre tres mil y seis mil euros, y tarda de una a dos semanas. Te puedo reservar una visita de medición gratis, sin compromiso, para afinarlo. ¿Quieres cambiar solo la bañera o el baño entero?
+<ficha>{"obra":"reformar el baño","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Baño completo: lo más habitual está entre 3.000 y 6.000 €, de una a dos semanas; la visita de medición es gratis.","porDecir":"Permisos (si es Granada capital): declaración responsable, con impuesto de obras del 4 % y una tasa · Avisar por escrito al presidente o administrador de la comunidad · IVA del 10 % si es para tu vivienda con más de dos años · En pisos antiguos, las tuberías viejas son el imprevisto más habitual","fase":"proponiendo"}</ficha>
+
+CLIENTE: Quiero quitar la bañera y poner plato de ducha, y cambiar azulejos y lavabo
+
+ANDRÉS: El plato de ducha suele quedar entre mil y dos mil trescientos euros, más si hay que mover el desagüe. Azulejos y lavabo los mide el técnico en la visita, gratis. ¿Te reservo la visita?
+<ficha>{"obra":"cambiar bañera por plato de ducha, cambiar azulejos y lavabo","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Quitar la bañera y poner plato de ducha: entre unos 1.000 y 2.300 €, lo más habitual; sube si hay que mover el desagüe o si el plato va a ras de suelo.","porDecir":"Avisar por escrito al presidente o administrador de la comunidad · IVA del 10 % si es para tu vivienda con más de dos años · En pisos antiguos, las tuberías viejas son el imprevisto más habitual","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, me parece razonable. Sí, resérvame la visita
+
+ANDRÉS: Genial, lo organizamos. Es solo para llamarte y cuadrar la visita. Y recuerda avisar por escrito al presidente o administrador de la comunidad, mejor con fecha. ¿Me dices tu nombre y un teléfono?
+<ficha>{"obra":"cambiar bañera por plato de ducha, cambiar azulejos y lavabo","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Quitar la bañera y poner plato de ducha: entre unos 1.000 y 2.300 €, lo más habitual; sube si hay que mover el desagüe o si el plato va a ras de suelo.","porDecir":"IVA del 10 % si es para tu vivienda con más de dos años · En pisos antiguos, las tuberías viejas son el imprevisto más habitual","fase":"datos"}</ficha>
+
+CLIENTE: Marta, 655 321 908
+
+ANDRÉS: Gracias, Marta. Si el piso tiene más de dos años y es para vivir en él, el IVA puede bajar al 10 %, lo confirma el técnico. ¿En qué municipio y barrio está, con calle y número, y te viene mejor mañana o por la tarde?
+<ficha>{"obra":"cambiar bañera por plato de ducha, cambiar azulejos y lavabo","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"Marta","telefono":"655 321 908","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Quitar la bañera y poner plato de ducha: entre unos 1.000 y 2.300 €, lo más habitual; sube si hay que mover el desagüe o si el plato va a ras de suelo.","porDecir":"En pisos antiguos, las tuberías viejas son el imprevisto más habitual","fase":"datos"}</ficha>
+
+CLIENTE: Granada, barrio de la Chana, calle Doctor Olóriz 14. Mejor por las tardes
+
+ANDRÉS: Perfecto, Marta: visita gratis por la tarde en Doctor Olóriz 14, barrio de la Chana, Granada, y te llamamos al seis cinco cinco, tres dos uno, nueve cero ocho. En pisos antiguos, el imprevisto más habitual son las tuberías viejas. ¿Está todo bien?
+<ficha>{"obra":"cambiar bañera por plato de ducha, cambiar azulejos y lavabo","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"Marta","telefono":"655 321 908","municipio":"Granada","direccion":"Barrio de la Chana, calle Doctor Olóriz 14","franja":"tarde","inicio":"","orientacion":"Quitar la bañera y poner plato de ducha: entre unos 1.000 y 2.300 €, lo más habitual; sube si hay que mover el desagüe o si el plato va a ras de suelo.","porDecir":"","fase":"datos"}</ficha>
+</content>
+
+CLIENTE: Sí, todo bien. Gracias
+
+ANDRÉS: Perfecto, Marta: queda enviada la solicitud. Te llamamos para confirmar el día y la hora de la visita, por la tarde, como pediste. ¿Necesitas algo más?
+<ficha>{"obra":"cambiar bañera por plato de ducha, cambiar azulejos y lavabo","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"Marta","telefono":"655 321 908","municipio":"Granada","direccion":"Barrio de la Chana, calle Doctor Olóriz 14","franja":"tarde","inicio":"","orientacion":"Quitar la bañera y poner plato de ducha: entre unos 1.000 y 2.300 €, lo más habitual; sube si hay que mover el desagüe o si el plato va a ras de suelo.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","obra":"cambiar bañera por plato de ducha, cambiar azulejos y lavabo","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"Marta","telefono":"655 321 908","municipio":"Granada","direccion":"Barrio de la Chana, calle Doctor Olóriz 14","franja":"tarde","inicio":"","urgente":false,"notas":"Quiere reformar el baño de su piso: quitar la bañera y poner plato de ducha, y cambiar azulejos y lavabo. Prefiere visita por la tarde. Sin datos todavía de metros, ascensor, antigüedad ni presupuesto."}</aviso>

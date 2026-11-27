@@ -1,0 +1,32 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Obra Redonda. Cuéntame qué quieres reformar y te doy una idea de precio y plazo.
+
+CLIENTE: Buenas. Antes de nada, ¿la visita la cobráis? Porque luego siempre hay sorpresas.
+
+ANDRÉS: La visita de medición es gratis y sin compromiso, unos cuarenta y cinco minutos. El presupuesto llega después por escrito, por partidas, es decir, cada cosa con su precio, y nada se hace sin tu firma. Te puedo reservar la visita. ¿Qué estancia quieres reformar?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Reservar la visita de medición, que es gratis; el presupuesto llega por escrito y por partidas.","porDecir":"","fase":"proponiendo"}</ficha>
+
+CLIENTE: La cocina entera, unos 10 metros. Y si al abrir paredes o suelo sale algo, ¿qué pasa? ¿El presupuesto es cerrado o luego me suben el precio?
+
+ANDRÉS: Una cocina suele quedar entre seis mil y diez mil euros, según los muebles y si se mueven fregadero, placa o campana. Si al abrir sale algo oculto, se enseña, se presupuesta por escrito y no se hace sin tu firma. ¿Te reservo la visita?
+<ficha>{"obra":"reformar la cocina entera","vivienda":"","metros":"unos 10 metros","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Cocina completa: muchas están entre 6.000 y 10.000 €, según muebles y si se mueven fregadero, placa o campana; si sale algo oculto, se presupuesta por escrito y no se hace sin firma.","porDecir":"Permisos en Granada capital: si la obra es interior suele bastar una declaración responsable, con impuesto de obras del 4 % y una tasa · IVA del 10 % si es para tu vivienda con más de dos años","fase":"proponiendo"}</ficha>
+
+CLIENTE: Bien. Entonces, ¿el presupuesto me lo dan por escrito antes de empezar nada? Si es así, resérveme la visita.
+
+ANDRÉS: Sí, el presupuesto llega por escrito y por partidas, unos cinco días laborables tras la visita. Si la obra es en Granada capital, suele bastar una declaración responsable. Es solo para llamarle y organizar la visita: ¿me dice su nombre y un teléfono?
+<ficha>{"obra":"reformar la cocina entera","vivienda":"","metros":"unos 10 metros","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Cocina completa: muchas están entre 6.000 y 10.000 €, según muebles y si se mueven fregadero, placa o campana; si sale algo oculto, se presupuesta por escrito y no se hace sin firma.","porDecir":"IVA del 10 % si es para su vivienda con más de dos años","fase":"datos"}</ficha>
+
+CLIENTE: Antonio, 678 112 443
+
+ANDRÉS: Perfecto, Antonio. Si es para su vivienda y tiene más de dos años, el IVA puede bajar al 10 %, lo confirma el técnico. ¿En qué municipio y barrio está, con calle y número, y le viene mejor mañana o por la tarde?
+<ficha>{"obra":"reformar la cocina entera","vivienda":"","metros":"unos 10 metros","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"678 112 443","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Cocina completa: muchas están entre 6.000 y 10.000 €, según muebles y si se mueven fregadero, placa o campana; si sale algo oculto, se presupuesta por escrito y no se hace sin firma.","porDecir":"Impuesto de obras del 4 % y una tasa municipal si la obra es en Granada capital","fase":"datos"}</ficha>
+
+CLIENTE: Las Gabias, calle Real 22. Por la mañana.
+
+ANDRÉS: Perfecto, Antonio: cocina de unos diez metros en Las Gabias, calle Real 22, por la mañana, y le llamamos al seis siete ocho, uno uno dos, cuatro cuatro tres. Y en Las Gabias, su ayuntamiento tiene ordenanza e importes propios. ¿Está todo bien?
+<ficha>{"obra":"reformar la cocina entera","vivienda":"","metros":"unos 10 metros","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"678 112 443","municipio":"Las Gabias","direccion":"Calle Real 22","franja":"mañana","inicio":"","orientacion":"Cocina completa: muchas están entre 6.000 y 10.000 €, según muebles y si se mueven fregadero, placa o campana; si sale algo oculto, se presupuesta por escrito y no se hace sin firma.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo correcto. Quedo a la espera de su llamada.
+
+ANDRÉS: Perfecto, Antonio: queda enviada la solicitud. Le llamaremos para confirmar el día y la hora de la visita, por la mañana, como pidió. ¿Necesita algo más?
+<ficha>{"obra":"reformar la cocina entera","vivienda":"","metros":"unos 10 metros","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"678 112 443","municipio":"Las Gabias","direccion":"Calle Real 22","franja":"mañana","inicio":"","orientacion":"Cocina completa: muchas están entre 6.000 y 10.000 €, según muebles y si se mueven fregadero, placa o campana; si sale algo oculto, se presupuesta por escrito y no se hace sin firma.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","obra":"reformar la cocina entera","vivienda":"","metros":"unos 10 metros","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"678 112 443","municipio":"Las Gabias","direccion":"Calle Real 22","franja":"mañana","inicio":"","urgente":false,"notas":"Quiere reformar la cocina entera, unos 10 metros. Pregunta si el presupuesto se da por escrito antes de empezar y si puede subir luego; se le ha explicado que es por escrito y por partidas, y que lo oculto se presupuesta aparte y sin su firma no se hace. Prefiere visita por la mañana."}</aviso>

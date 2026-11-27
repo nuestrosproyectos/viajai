@@ -61,5 +61,9 @@
   "role": "assistant",
   "content": "Gracias, Javier. Ya lo tengo casi todo: ¿en qué municipio y barrio está la cocina, con calle y número para la visita, y te viene mejor mañana o tarde? Lo pregunto porque cada ayuntamiento tiene su propia ordenanza y sus importes.\n<ficha>{\"obra\":\"cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"unos 9 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Javier\",\"telefono\":\"622 410 870\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cocina completa: muchas suelen estar entre 6.000 y 10.000 €, según los muebles; mover el fregadero puede subirla. Pide el plazo de inicio y de obra por escrito en el presupuesto.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Javier. Ya lo tengo casi todo: ¿en qué municipio y barrio está la cocina, con calle y número para la visita, y te viene mejor mañana o tarde? Lo pregunto porque cada ayuntamiento tiene su propia ordenanza y sus importes.\n<ficha>{\"obra\":\"cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"unos 9 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Javier\",\"telefono\":\"622 410 870\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cocina completa: muchas suelen estar entre 6.000 y 10.000 €, según los muebles; mover el fregadero puede subirla. Pide el plazo de inicio y de obra por escrito en el presupuesto.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Granada, Zaidín, calle Arabial 50. Por las mañanas"
  }
 ]

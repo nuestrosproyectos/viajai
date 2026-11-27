@@ -1,0 +1,32 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Obra Redonda. Cuéntame qué quieres reformar y te doy una idea de precio y plazo.
+
+CLIENTE: Buenas tardes, le escribo por mi padre, que tiene 86 años y ya no puede entrar en la bañera. Vive solo en Maracena.
+
+ANDRÉS: Entiendo su preocupación, y cambiar la bañera por un plato de ducha es lo que más conviene para evitar caídas. Suele quedar entre mil y dos mil trescientos euros, orientativo, y le puedo reservar una visita de medición gratis. ¿Es piso o casa?
+<ficha>{"obra":"cambiar la bañera de su padre por un plato de ducha","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"Maracena","direccion":"","franja":"","inicio":"","orientacion":"Cambiar la bañera por plato de ducha: entre 1.000 y 2.300 € lo más habitual; la visita de medición es gratis.","porDecir":"Quitar la bañera: sube si el plato va a ras de suelo, si hay que mover el desagüe o si lleva mampara a medida · Maracena tiene su propia ordenanza e importes, distintos de Granada capital, y los confirma el técnico","fase":"proponiendo"}</ficha>
+
+CLIENTE: Es una casa de planta baja. ¿Cuánto tardarían en ir? Me preocupa que se caiga cuanto antes.
+
+ANDRÉS: Entiendo la preocupación. La visita suele hacerse en dos a cuatro días, y en Maracena el ayuntamiento tiene su propia ordenanza, que confirma el técnico. ¿Le reservo la visita?
+<ficha>{"obra":"cambiar la bañera de su padre por un plato de ducha","vivienda":"Casa","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"Maracena","direccion":"","franja":"","inicio":"","orientacion":"Cambiar la bañera por un plato de ducha: entre unos 1.000 y 2.300 € lo más habitual; la visita de medición es gratis y suele hacerse en dos a cuatro días.","porDecir":"Quitar la bañera: sube si el plato va a ras de suelo, si hay que mover el desagüe o si lleva mampara a medida","fase":"proponiendo"}</ficha>
+
+CLIENTE: Sí, resérvela por favor, cuanto antes mejor.
+
+ANDRÉS: Lo entiendo, la organizamos cuanto antes. Y tenga en cuenta que si el plato va a ras de suelo, el precio sube algo. Es solo para llamarle y cuadrar la visita: ¿me dice su nombre y un teléfono?
+<ficha>{"obra":"cambiar la bañera de su padre por un plato de ducha","vivienda":"Casa","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"Maracena","direccion":"","franja":"","inicio":"","orientacion":"Cambiar la bañera por un plato de ducha: entre unos 1.000 y 2.300 € lo más habitual; la visita de medición es gratis y suele hacerse en dos a cuatro días.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Carmen, 699 450 212
+
+ANDRÉS: Entiendo la prisa, Carmen, y lo organizamos cuanto antes. ¿En qué calle y número está la casa, y le viene mejor mañana o por la tarde?
+<ficha>{"obra":"cambiar la bañera de su padre por un plato de ducha","vivienda":"Casa","metros":"","antiguedad":"","presupuesto":"","nombre":"Carmen","telefono":"699 450 212","municipio":"Maracena","direccion":"","franja":"","inicio":"","orientacion":"Cambiar la bañera por un plato de ducha: entre unos 1.000 y 2.300 € lo más habitual; la visita de medición es gratis y suele hacerse en dos a cuatro días.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Calle Ancha 8, Maracena. Mejor a primera hora de la mañana, que es cuando yo estoy allí
+
+ANDRÉS: Perfecto, Carmen: visita gratis a primera hora de la mañana en calle Ancha 8, Maracena, y le llamamos al seis nueve nueve, cuatro cinco cero, dos uno dos. Entiendo que quiera que sea cuanto antes, lo tendremos en cuenta. ¿Está todo bien?
+<ficha>{"obra":"cambiar la bañera de su padre por un plato de ducha","vivienda":"Casa","metros":"","antiguedad":"","presupuesto":"","nombre":"Carmen","telefono":"699 450 212","municipio":"Maracena","direccion":"Calle Ancha 8","franja":"primera hora de la mañana","inicio":"","orientacion":"Cambiar la bañera por un plato de ducha: entre unos 1.000 y 2.300 € lo más habitual; la visita de medición es gratis y suele hacerse en dos a cuatro días.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, está todo correcto. Gracias, quedo pendiente de su llamada.
+
+ANDRÉS: Muy bien, Carmen: queda enviada la solicitud. Le llamaremos para confirmar el día y la hora de la visita, a primera hora de la mañana, como pidió. ¿Necesita algo más?
+<ficha>{"obra":"cambiar la bañera de su padre por un plato de ducha","vivienda":"Casa","metros":"","antiguedad":"","presupuesto":"","nombre":"Carmen","telefono":"699 450 212","municipio":"Maracena","direccion":"Calle Ancha 8","franja":"primera hora de la mañana","inicio":"","orientacion":"Cambiar la bañera por un plato de ducha: entre unos 1.000 y 2.300 € lo más habitual; la visita de medición es gratis y suele hacerse en dos a cuatro días.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","obra":"cambiar la bañera de su padre por un plato de ducha","vivienda":"Casa","metros":"","antiguedad":"","presupuesto":"","nombre":"Carmen","telefono":"699 450 212","municipio":"Maracena","direccion":"Calle Ancha 8","franja":"primera hora de la mañana","inicio":"","urgente":true,"notas":"Escribe por su padre, de 86 años, que vive solo en Maracena. Ya no puede entrar en la bañera y le preocupa que se caiga; quiere la visita cuanto antes. Casa de planta baja. Prefiere primera hora de la mañana, cuando está en la casa."}</aviso>
