@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Hace falta acuerdo de la junta; la mayoría reducida suele ser un tercio, y el administrador la confirma. Por tu cuenta en la azotea común, no; pero existe el autoconsumo compartido entre vecinos. ¿Te reservo el estudio, mejor por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares en la azotea\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea del bloque\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada (Zaidín)\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Llevar el estudio a la junta de vecinos; hace falta acuerdo de la comunidad.\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Hace falta acuerdo de la junta; la mayoría reducida suele ser un tercio, y el administrador la confirma. Por tu cuenta en la azotea común, no; pero existe el autoconsumo compartido entre vecinos. ¿Te reservo el estudio, mejor por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares en la azotea\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"Azotea del bloque\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada (Zaidín)\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Llevar el estudio a la junta de vecinos; hace falta acuerdo de la comunidad.\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Por la tarde. Llevarlo a la junta con el estudio me parece buena idea"
  }
 ]
