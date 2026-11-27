@@ -1,0 +1,2 @@
+Ella sí puede reclamar aunque la culpa fuera tuya, y cómo afecta a tu póliza lo ve el abogado. Lo primero es que hoy vea un médico y quede por escrito. ¿Te reservo la consulta gratis?
+<ficha>{"caso":"Se saltó un ceda; iba con su mujer","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que su mujer vea un médico hoy; ella puede reclamar al seguro del coche en que iban","fase":"proponiendo"}</ficha>

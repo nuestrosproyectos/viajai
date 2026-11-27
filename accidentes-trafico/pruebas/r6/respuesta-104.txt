@@ -1,0 +1,2 @@
+Siento lo del cuello. Exacto no te lo puedo decir: se cuenta por días del informe médico, unos 68 € diarios en baja moderada, más secuelas (lo que queda) y gastos. El abogado lo calcula en la consulta gratis. ¿Te la reservo?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"La cifra se calcula por días del informe médico, más secuelas y gastos; primera consulta gratis.","fase":"proponiendo"}</ficha>
