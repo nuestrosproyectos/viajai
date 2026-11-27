@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "El poder notarial autoriza a alguien a firmar por tu hermano. Dónde lo firma, lo confirma el abogado. Como nieto o nieta, en el impuesto lo más probable es cero o casi nada, aunque hay que presentarlo en seis meses. ¿Te reservo la consulta?\n<ficha>{\"situacion\":\"herencia de tu abuela en Granada, con tu hermano viviendo en Alemania\",\"parentesco\":\"Nieto o nieta\",\"testamento\":\"\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Tu hermano no tiene que venir: necesita un NIE y un poder notarial con apostilla; dónde lo firma lo confirma el abogado.\",\"porDecir\":\"si hay piso, la plusvalía municipal\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "El poder notarial autoriza a alguien a firmar por tu hermano. Dónde lo firma, lo confirma el abogado. Como nieto o nieta, en el impuesto lo más probable es cero o casi nada, aunque hay que presentarlo en seis meses. ¿Te reservo la consulta?\n<ficha>{\"situacion\":\"herencia de tu abuela en Granada, con tu hermano viviendo en Alemania\",\"parentesco\":\"Nieto o nieta\",\"testamento\":\"\",\"bienes\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Tu hermano no tiene que venir: necesita un NIE y un poder notarial con apostilla; dónde lo firma lo confirma el abogado.\",\"porDecir\":\"si hay piso, la plusvalía municipal\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, entonces sí, resérvame la consulta. Mejor por videollamada, cualquier tarde me viene bien. Soy Sergio, 677 444 222."
  }
 ]

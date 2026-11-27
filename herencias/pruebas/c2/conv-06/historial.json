@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Entiendo lo duro que es. Lo del piso lo apunto para que el abogado te lo confirme. Y si estabais inscritos como pareja de hecho, en el impuesto tenéis la misma reducción que un cónyuge. ¿Te reservo la consulta?\n<ficha>{\"situacion\":\"herencia de tu pareja, tras quince años juntos sin casarse\",\"parentesco\":\"Pareja de hecho\",\"testamento\":\"\",\"bienes\":\"piso a nombre de tu pareja\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Ver si hubo testamento y si la pareja estaba inscrita; lo del piso lo confirma el abogado con los papeles.\",\"porDecir\":\"si no hay testamento, la declaración de herederos ante notario\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Entiendo lo duro que es. Lo del piso lo apunto para que el abogado te lo confirme. Y si estabais inscritos como pareja de hecho, en el impuesto tenéis la misma reducción que un cónyuge. ¿Te reservo la consulta?\n<ficha>{\"situacion\":\"herencia de tu pareja, tras quince años juntos sin casarse\",\"parentesco\":\"Pareja de hecho\",\"testamento\":\"\",\"bienes\":\"piso a nombre de tu pareja\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"fallecimiento\":\"\",\"modalidad\":\"\",\"orientacion\":\"Ver si hubo testamento y si la pareja estaba inscrita; lo del piso lo confirma el abogado con los papeles.\",\"porDecir\":\"si no hay testamento, la declaración de herederos ante notario\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, vale, resérvamela. Prefiero ir al despacho, por la mañana. Soy Toñi y mi teléfono es el 699 777 333."
  }
 ]
