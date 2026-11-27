@@ -1,0 +1,33 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Accidente Claro. Siento lo del accidente. Cuéntame qué pasó y te digo qué conviene hacer ahora.
+
+CLIENTE: La aseguradora del otro me ofrece 2.300 € y me dicen que firme ya. ¿Firmo?
+
+ANDRÉS: No firmes nada hasta que lo vea el abogado, porque un papel firmado puede cerrar el caso. Te reservo la primera consulta gratis, y en ella el abogado mira la oferta con los informes delante. ¿Ya has firmado algo?
+<ficha>{"caso":"La aseguradora del otro ofrece 2.300 € y le piden firmar ya","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"No firmar nada hasta que lo revise el abogado con los informes delante.","fase":"orientando"}</ficha>
+
+CLIENTE: No, no he firmado nada. Pero me llaman todos los días para que firme. Es poco 2.300 €? Estuve 2 meses de baja y sigo con rehabilitación
+
+ANDRÉS: Entiendo la presión. Sigue con la rehabilitación y no firmes: di que lo verá un abogado antes. Si 2.300 € es poco, eso lo calcula el abogado con tu informe médico y los días de baja. ¿Te reservo la consulta, mañana o tarde?
+<ficha>{"caso":"La aseguradora del otro ofrece 2.300 € y le piden firmar ya","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"No firmar nada; seguir con la rehabilitación; que el abogado revise la oferta con el informe médico.","fase":"orientando"}</ficha>
+<mostrar>oferta</mostrar>
+
+CLIENTE: Vale, entonces no firmo. Sí, quiero que lo mire el abogado, por teléfono mejor, y por las mañanas
+
+ANDRÉS: Perfecto, lo dejamos por teléfono por la mañana, y el abogado revisará esos dos meses de baja con tu informe. ¿Me dices tu nombre y un teléfono, solo para llamarte y organizar la consulta?
+<ficha>{"caso":"La aseguradora del otro ofrece 2.300 € y le piden firmar ya","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"Por teléfono, por la mañana","consentimientoSalud":"","orientacion":"No firmar nada; el abogado revisa la oferta con el informe médico y los días de baja.","fase":"datos"}</ficha>
+
+CLIENTE: Sonia, 633 202 404
+
+ANDRÉS: Gracias, Sonia, lo apunto para llamarte por la mañana. La aseguradora tiene tres meses para contestar con una oferta motivada. ¿En qué municipio vives?
+<ficha>{"caso":"La aseguradora del otro ofrece 2.300 € y le piden firmar ya","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"Sonia","telefono":"633 202 404","municipio":"","franja":"Por teléfono, por la mañana","consentimientoSalud":"","orientacion":"No firmar nada; el abogado revisa la oferta con el informe médico y los días de baja.","fase":"datos"}</ficha>
+
+CLIENTE: Motril
+
+ANDRÉS: Perfecto, Sonia. Te apunto: teléfono seis tres tres, dos cero dos, cuatro cero cuatro, en Motril, para llamarte por la mañana. Y recuerda que cobrar a cuenta no es firmar un finiquito. ¿Está todo bien?
+<ficha>{"caso":"La aseguradora del otro ofrece 2.300 € y le piden firmar ya","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"Sonia","telefono":"633 202 404","municipio":"Motril","franja":"Por teléfono, por la mañana","consentimientoSalud":"","orientacion":"No firmar nada; cobrar a cuenta no es firmar un finiquito. El abogado revisa la oferta con el informe médico.","fase":"datos"}</ficha>
+
+CLIENTE: Sí, está bien
+
+ANDRÉS: Perfecto, Sonia. Tu solicitud queda enviada y te llamamos por la mañana para confirmar la consulta. ¿Necesitas algo más?
+<ficha>{"caso":"La aseguradora del otro ofrece 2.300 € y le piden firmar ya","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"Sonia","telefono":"633 202 404","municipio":"Motril","franja":"Por teléfono, por la mañana","consentimientoSalud":"","orientacion":"No firmar nada; el abogado revisa la oferta antes de decidir nada.","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","caso":"La aseguradora del otro ofrece 2.300 € y le piden firmar ya","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"Sonia","telefono":"633 202 404","municipio":"Motril","franja":"Por teléfono, por la mañana","consentimientoSalud":"","urgente":true,"notas":"La aseguradora del otro ofrece 2.300 € y le llaman todos los días para que firme ya. No ha firmado nada. Pregunta si 2.300 € es poco. Quiere que lo revise el abogado por teléfono por la mañana."}</aviso>

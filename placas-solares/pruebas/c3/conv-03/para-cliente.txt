@@ -26,4 +26,10 @@ TÚ (cliente): Calle Nueva 3, en Pulianas
 
 Andrés (asistente de la web): Manolo, te confirmo: teléfono seis tres tres, nueve cero nueve, uno cero uno; estudio en Calle Nueva tres, en Pulianas, una tarde entre semana. ¿Está todo bien?
 
+TÚ (cliente): Sí, todo correcto.
+
+Andrés (asistente de la web): Perfecto, Manolo, la solicitud queda enviada y te llamamos para confirmar el estudio. El técnico mirará la orientación, las sombras y el cuadro eléctrico, y con tus facturas calcula cuántas placas te hacen falta. ¿Necesitas algo más?
+
+[En la pantalla aparece ahora: «¡Listo! Solicitud enviada. Te llamamos para confirmar».]
+
 === TU SIGUIENTE MENSAJE ===

@@ -26,4 +26,10 @@ TÚ (cliente): Calle Granada 5, en Armilla
 
 Andrés (asistente de la web): Javier, te confirmo: teléfono seis cuatro cuatro, siete siete ocho, uno dos cero; estudio en Calle Granada cinco, en Armilla, el viernes por la mañana. ¿Está todo bien?
 
+TÚ (cliente): Sí, correcto.
+
+Andrés (asistente de la web): Perfecto, Javier, la solicitud queda enviada y te llamamos para confirmar el estudio del viernes por la mañana. El técnico mirará las sombras del tejado, que restan mucho producción. ¿Necesitas algo más?
+
+[En la pantalla aparece ahora: «¡Listo! Solicitud enviada. Te llamamos para confirmar».]
+
 === TU SIGUIENTE MENSAJE ===

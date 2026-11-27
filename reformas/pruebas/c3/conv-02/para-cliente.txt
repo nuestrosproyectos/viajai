@@ -26,4 +26,10 @@ TÚ (cliente): Sí, está todo bien. Quedo a la espera de su llamada.
 
 Andrés (asistente de la web): Perfecto, Antonio. Antes de enviar la solicitud me falta saber qué quiere reformar: ¿el baño, la cocina o el piso entero?
 
+TÚ (cliente): La cocina entera, unos 10 metros.
+
+Andrés (asistente de la web): Perfecto, Antonio, la solicitud queda enviada y te llamamos para confirmar. Una cocina completa suele estar entre seis mil y diez mil euros, según los muebles y si se mueven fregadero o campana. ¿Necesitas algo más?
+
+[En la pantalla aparece ahora: «¡Listo! Solicitud enviada. Te llamamos para confirmar».]
+
 === TU SIGUIENTE MENSAJE ===

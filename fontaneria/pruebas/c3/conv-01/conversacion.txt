@@ -1,0 +1,28 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Llave de Paso. Si te está saliendo agua, cierra primero la llave de paso. Cuéntame qué te pasa y te mando al fontanero.
+
+CLIENTE: Socorro, sale agua por debajo del fregadero y no para!!
+
+ANDRÉS: Cierra ya la llave de paso de tu casa, suele estar en la cocina, el baño o junto al contador, y aparta lo que se pueda mojar. Te apunto la visita urgente del fontanero. ¿Ha parado el agua al cerrarla?
+<ficha>{"averia":"Fuga de agua bajo el fregadero","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Cerrar la llave de paso de la vivienda y apartar lo que se pueda mojar.","fase":"proponiendo"}</ficha>
+
+CLIENTE: no se donde está la llave de paso!! estoy muy nerviosa
+
+ANDRÉS: Entiendo el susto, no te preocupes. Si no la encuentras, busca la que está junto al contador y ciérrala girándola hasta el tope. Te reservo la visita urgente: ¿me dices tu nombre y un teléfono, solo para llamarte y organizarla?
+<ficha>{"averia":"Fuga de agua bajo el fregadero","cuando":"Urgente, ahora","llave":"No la encuentra todavía; aún no ha parado el agua","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Buscar la llave de paso junto al contador y cerrarla; apartar lo que se pueda mojar.","fase":"proponiendo"}</ficha>
+<mostrar>seguridad</mostrar>
+
+CLIENTE: Pilar, 610 223 344. Ya la he encontrado, estaba debajo del fregadero, y el agua ha parado. Pero hay todo mojado, ¿puede venir alguien hoy?
+
+ANDRÉS: Me alegra que haya parado. Si hay enchufes o aparatos mojados cerca, no los toques. Te apunto como urgente para hoy: ¿en qué municipio y calle es la vivienda?
+<ficha>{"averia":"Fuga de agua bajo el fregadero","cuando":"Urgente, hoy en cuanto podáis","llave":"Sí, la ha encontrado debajo del fregadero y ya ha parado el agua","vivienda":"","seguro":"","nombre":"Pilar","telefono":"610 223 344","municipio":"","direccion":"","franja":"Hoy, cuanto antes","inicio":"","orientacion":"Apartar lo que se pueda mojar y no tocar aparatos mojados cerca de enchufes.","fase":"datos"}</ficha>
+
+CLIENTE: Granada capital, calle Recogidas 40, 2º B
+
+ANDRÉS: Perfecto, Pilar. Mientras llega, haz fotos para el seguro. Lo apunto así: teléfono seis uno cero, dos dos tres, tres cuatro cuatro, en Granada capital, calle Recogidas cuarenta, segundo B, visita urgente para hoy. ¿Está todo bien?
+<ficha>{"averia":"Fuga de agua bajo el fregadero","cuando":"Urgente, hoy en cuanto podáis","llave":"Sí, ya ha parado el agua","vivienda":"","seguro":"","nombre":"Pilar","telefono":"610 223 344","municipio":"Granada capital","direccion":"Calle Recogidas 40, 2º B","franja":"Hoy, cuanto antes","inicio":"","orientacion":"Haz fotos para el seguro y llama antes a tu aseguradora; no toques aparatos mojados.","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien. ¿Y vendrá hoy entonces?
+
+ANDRÉS: Perfecto, Pilar. Tu solicitud queda enviada como urgente para hoy y te llamamos al 610 223 344 para darte la hora de llegada. ¿Necesitas algo más?
+<ficha>{"averia":"Fuga de agua bajo el fregadero","cuando":"Urgente, hoy en cuanto podáis","llave":"Sí, ya ha parado el agua","vivienda":"","seguro":"","nombre":"Pilar","telefono":"610 223 344","municipio":"Granada capital","direccion":"Calle Recogidas 40, 2º B","franja":"Hoy, cuanto antes","inicio":"","orientacion":"Haz fotos para el seguro y llama antes a tu aseguradora si la tienes; no toques aparatos mojados.","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","averia":"Fuga de agua bajo el fregadero","cuando":"Urgente, hoy en cuanto podáis","llave":"Sí, ya ha parado el agua","vivienda":"","seguro":"","nombre":"Pilar","telefono":"610 223 344","municipio":"Granada capital","direccion":"Calle Recogidas 40, 2º B","franja":"Hoy, cuanto antes","inicio":"","urgente":true,"notas":"Sale agua por debajo del fregadero. Encontró la llave de paso debajo del fregadero y ha parado el agua. Hay todo mojado. Quiere que vaya alguien hoy."}</aviso>

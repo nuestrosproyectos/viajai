@@ -1,0 +1,32 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Accidente Claro. Siento lo del accidente. Cuéntame qué pasó y te digo qué conviene hacer ahora.
+
+CLIENTE: Tuve yo la culpa del accidente, me salté un ceda. Iba con mi mujer y ella se rompió la muñeca.
+
+ANDRÉS: Gracias por contarlo. Como pasajera, tu mujer normalmente sí puede reclamar, y te reservo la primera consulta gratis para verlo con los informes delante. ¿Ya le ha visto un médico?
+<ficha>{"caso":"Se saltó un ceda; iba con su mujer como pasajera","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que su mujer vea un médico hoy y quede por escrito; como pasajera, ella normalmente puede reclamar.","fase":"orientando"}</ficha>
+
+CLIENTE: Sí, la vio el médico en urgencias y le pusieron escayola. Pero si ella reclama aunque la culpa fuera mía, a mí me perjudica en algo?
+
+ANDRÉS: Tu mujer sí puede reclamar aunque la culpa fuera tuya. Tus lesiones no las paga el seguro obligatorio, salvo con seguro de conductor o de accidentes. Si te afecta en algo, lo mira el abogado con tu póliza y el atestado. ¿Te reservo la consulta, mañana o tarde?
+<ficha>{"caso":"Se saltó un ceda; iba con su mujer como pasajera","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que su mujer quede por escrito con el médico; como pasajera ella normalmente puede reclamar. Si tiene seguro de conductor, que lo diga al abogado.","fase":"orientando"}</ficha>
+
+CLIENTE: Vale, entiendo. Pues sí, quiero la consulta para ella, por videollamada y por la tarde
+
+ANDRÉS: Perfecto, la consulta por videollamada por la tarde. Ten a mano el informe de urgencias y el parte. ¿Me dices tu nombre y un teléfono, solo para llamarte y organizar la consulta?
+<ficha>{"caso":"Se saltó un ceda; iba con su mujer como pasajera","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"Por videollamada, por la tarde","consentimientoSalud":"","orientacion":"Tener a mano el informe de urgencias y el parte; la consulta es para su mujer, que como pasajera normalmente puede reclamar.","fase":"datos"}</ficha>
+
+CLIENTE: Pedro, 600 909 303
+
+ANDRÉS: Gracias, Pedro, lo apunto para la videollamada por la tarde. Y recuerda avisar a tu aseguradora en siete días. ¿En qué municipio vive tu mujer?
+<ficha>{"caso":"Se saltó un ceda; iba con su mujer como pasajera","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"Pedro","telefono":"600 909 303","municipio":"","franja":"Por videollamada, por la tarde","consentimientoSalud":"","orientacion":"Tener a mano el informe de urgencias y el parte; la consulta es para su mujer, que como pasajera normalmente puede reclamar.","fase":"datos"}</ficha>
+
+CLIENTE: En Loja, vivimos los dos juntos
+
+ANDRÉS: Perfecto, Pedro. Te apunto: teléfono seis cero cero, nueve cero nueve, tres cero tres, en Loja, para la videollamada por la tarde, y la consulta es para tu mujer. ¿Está todo bien?
+<ficha>{"caso":"Se saltó un ceda; iba con su mujer como pasajera","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"Pedro","telefono":"600 909 303","municipio":"Loja","franja":"Por videollamada, por la tarde","consentimientoSalud":"","orientacion":"Tener a mano el informe de urgencias y el parte; la consulta es para su mujer, que como pasajera normalmente puede reclamar.","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Perfecto, Pedro. Tu solicitud queda enviada y te llamamos para confirmar la videollamada de la tarde para tu mujer. ¿Necesitas algo más?
+<ficha>{"caso":"Se saltó un ceda; iba con su mujer como pasajera","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"Pedro","telefono":"600 909 303","municipio":"Loja","franja":"Por videollamada, por la tarde","consentimientoSalud":"","orientacion":"Tener a mano el informe de urgencias y el parte; la consulta es para su mujer, que como pasajera normalmente puede reclamar.","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","caso":"Se saltó un ceda; iba con su mujer como pasajera","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"Pedro","telefono":"600 909 303","municipio":"Loja","franja":"Por videollamada, por la tarde","consentimientoSalud":"","urgente":false,"notas":"Reconoce que tuvo la culpa: se saltó un ceda. Iba con su mujer, que va como pasajera y quiere reclamar. La consulta es para ella, por videollamada por la tarde. Pregunta si la culpa suya le perjudica en algo si ella reclama. Vive en Loja con su mujer."}</aviso>

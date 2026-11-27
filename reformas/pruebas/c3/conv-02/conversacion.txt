@@ -1,0 +1,37 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Obra Redonda. Cuéntame qué quieres reformar y te doy una idea de precio y plazo.
+
+CLIENTE: Buenas. Antes de nada, ¿la visita la cobráis? Porque luego siempre hay sorpresas.
+
+ANDRÉS: Sí, la visita de medición es gratis, unos 45 minutos y sin compromiso. Si aparece algo oculto en la obra, se enseña, se presupuesta por escrito y no se hace sin tu firma. ¿Te reservo la visita por la mañana o por la tarde?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Conviene reservar la visita gratis: ahí se mide y se ve lo que hay detrás antes de presupuestar.","fase":"proponiendo"}</ficha>
+
+CLIENTE: Ya me han engañado otras veces. ¿El presupuesto es cerrado y me lo dan por escrito?
+
+ANDRÉS: Entiendo la desconfianza tras otras experiencias. El presupuesto llega por escrito, por partidas, unos cinco días laborables después de la visita, y ese es el precio cerrado. Te aconsejo no pagar todo por adelantado. ¿Te reservo la visita, por la mañana o por la tarde?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"El presupuesto va por partidas y por escrito unos cinco días laborables tras la visita; no conviene pagar todo por adelantado.","fase":"proponiendo"}</ficha>
+
+CLIENTE: Está bien. Por la mañana.
+
+ANDRÉS: Perfecto, te apunto la visita por la mañana. El presupuesto incluye escombros, limpieza final y la garantía por escrito en el contrato. ¿Me dices tu nombre y un teléfono, solo para llamarte y organizar la visita?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"por la mañana","inicio":"","orientacion":"La visita es gratis y el presupuesto llega por escrito, por partidas, unos cinco días laborables después.","fase":"datos"}</ficha>
+
+CLIENTE: Antonio, 678 112 443. Las Gabias.
+
+ANDRÉS: Gracias, Antonio. Las Gabias tiene su propia ordenanza y sus importes, así que los permisos los confirma el técnico con el ayuntamiento. ¿En qué calle y número es la visita, y qué día te viene bien por la mañana?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"678 112 443","municipio":"Las Gabias","direccion":"","franja":"por la mañana","inicio":"","orientacion":"La visita es gratis y dura unos 45 minutos; Las Gabias tiene su propia ordenanza, así que los permisos los confirma el técnico con su ayuntamiento.","fase":"datos"}</ficha>
+
+CLIENTE: Calle Real 22. Cualquier día de la semana que viene por la mañana. Y confirmo: visita gratis y lo de los imprevistos por escrito antes de hacerlos, ¿no?
+
+ANDRÉS: La visita es gratis, y lo oculto se presupuesta por escrito y no se hace sin tu firma. Antonio, teléfono seis siete ocho, uno uno dos, cuatro cuatro tres; visita en Calle Real veintidós, Las Gabias, la semana que viene por la mañana. ¿Está todo bien?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"678 112 443","municipio":"Las Gabias","direccion":"Calle Real 22","franja":"la semana que viene por la mañana","inicio":"","orientacion":"La visita es gratis; lo que aparezca oculto se presupuesta por escrito y no se hace sin tu firma.","fase":"datos"}</ficha>
+
+CLIENTE: Sí, está todo bien. Quedo a la espera de su llamada.
+
+ANDRÉS: Perfecto, Antonio. Antes de enviar la solicitud me falta saber qué quiere reformar: ¿el baño, la cocina o el piso entero?
+<ficha>{"obra":"","vivienda":"","metros":"","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"678 112 443","municipio":"Las Gabias","direccion":"Calle Real 22","franja":"la semana que viene por la mañana","inicio":"","orientacion":"La visita es gratis; lo que aparezca oculto se presupuesta por escrito y no se hace sin su firma.","fase":"datos"}</ficha>
+
+CLIENTE: La cocina entera, unos 10 metros.
+
+ANDRÉS: Perfecto, Antonio, la solicitud queda enviada y te llamamos para confirmar. Una cocina completa suele estar entre seis mil y diez mil euros, según los muebles y si se mueven fregadero o campana. ¿Necesitas algo más?
+<ficha>{"obra":"Cocina entera","vivienda":"","metros":"unos 10 m²","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"678 112 443","municipio":"Las Gabias","direccion":"Calle Real 22","franja":"la semana que viene por la mañana","inicio":"","orientacion":"La visita es gratis; lo que aparezca oculto se presupuesta por escrito y no se hace sin tu firma.","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","obra":"Cocina entera","vivienda":"","metros":"unos 10 m²","antiguedad":"","presupuesto":"","nombre":"Antonio","telefono":"678 112 443","municipio":"Las Gabias","direccion":"Calle Real 22","franja":"la semana que viene por la mañana","inicio":"","urgente":false,"notas":"Quiere cocina entera, unos 10 metros. Pide visita de medición y que le llamemos para confirmarla. Confirmó nombre, teléfono, dirección y día. Pregunta: visita gratis y lo oculto por escrito antes de hacerlo (se le ha dicho que no se hace sin su firma). Vivienda, ascensor y antigüedad sin confirmar."}</aviso>

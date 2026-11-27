@@ -1,0 +1,37 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Tejaluz. Dime más o menos cuánto pagas de luz al mes y te digo cuántas placas te harían falta y lo que costarían.
+
+CLIENTE: Quiero placas pero solo si me garantizáis por escrito que no vuelvo a pagar luz.
+
+ANDRÉS: Eso no te lo puedo garantizar: la factura nunca baja a cero, quedan la potencia, el contador y lo que gastas de noche. Por escrito irán las garantías de los equipos y la mano de obra, y el ahorro estimado. ¿Te reservo el estudio?
+<ficha>{"que":"Placas solares, pero con garantía por escrito de no pagar luz","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No se puede garantizar factura cero; lo que sí se ve en el estudio es tu caso y qué va por escrito en el presupuesto.","fase":"orientando"}</ficha>
+
+CLIENTE: Ya, pero yo quiero que me lo garanticéis. Si no, no me interesa mucho
+
+ANDRÉS: Entiendo que quieras seguridad, pero no puedo garantizar factura cero: siempre quedan la potencia, el contador y lo de la noche. Por escrito irán el presupuesto, las garantías y el ahorro estimado. ¿Te reservo el estudio, por la mañana o por la tarde?
+<ficha>{"que":"Placas solares, con garantía por escrito de no pagar luz","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No se puede garantizar factura cero; por escrito van el presupuesto, las garantías de equipos y mano de obra, y el ahorro estimado.","fase":"proponiendo"}</ficha>
+
+CLIENTE: ¿Y con batería sí? ¿Con batería no pagaría nada?
+
+ANDRÉS: Con batería tampoco baja a cero: cubre lo que gastas de noche y cuesta entre 450 y 800 euros por kWh, así que en muchas casas alarga la amortización. Te reservo el estudio gratis, ¿por la mañana o por la tarde?
+<ficha>{"que":"Placas solares, y pregunta por batería","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Con batería la factura tampoco baja a cero; lo que decide es lo que gastas de noche, y el estudio lo mira con tus facturas.","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, está claro. Pues que vaya el técnico a hacer el estudio. Por la tarde, entre semana
+
+ANDRÉS: Perfecto, te lo apunto para una tarde entre semana. Si mandas una foto de la factura con el botón de la cámara, el técnico llega preparado. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar el estudio.
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"por la tarde, entre semana","inicio":"","orientacion":"Lo que decide es lo que gastas de noche; el estudio con tus facturas calcula cuánto te compensa, sin garantizar factura cero.","fase":"datos"}</ficha>
+
+CLIENTE: Manolo, 633 909 101
+
+ANDRÉS: Gracias, Manolo. Las garantías de equipos y mano de obra irán por escrito en el presupuesto. ¿En qué calle y número está la casa, y en qué municipio?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"Manolo","telefono":"633 909 101","municipio":"","direccion":"","franja":"por la tarde, entre semana","inicio":"","orientacion":"Las garantías de equipos y mano de obra van por escrito en el presupuesto; el estudio con tus facturas calcula cuánto te compensa.","fase":"datos"}</ficha>
+
+CLIENTE: Calle Nueva 3, en Pulianas
+
+ANDRÉS: Manolo, te confirmo: teléfono seis tres tres, nueve cero nueve, uno cero uno; estudio en Calle Nueva tres, en Pulianas, una tarde entre semana. ¿Está todo bien?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"Manolo","telefono":"633 909 101","municipio":"Pulianas","direccion":"Calle Nueva 3","franja":"por la tarde, entre semana","inicio":"","orientacion":"Lo que decide es lo que gastas de noche; el estudio con tus facturas calcula cuánto te compensa, sin garantizar factura cero.","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo correcto.
+
+ANDRÉS: Perfecto, Manolo, la solicitud queda enviada y te llamamos para confirmar el estudio. El técnico mirará la orientación, las sombras y el cuadro eléctrico, y con tus facturas calcula cuántas placas te hacen falta. ¿Necesitas algo más?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"Manolo","telefono":"633 909 101","municipio":"Pulianas","direccion":"Calle Nueva 3","franja":"por la tarde, entre semana","inicio":"","orientacion":"La solicitud queda enviada; te llamamos para confirmar el estudio gratis una tarde entre semana.","fase":"registrado"}</ficha>
+<aviso>{"tipo":"estudio","que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"Manolo","telefono":"633 909 101","municipio":"Pulianas","direccion":"Calle Nueva 3","franja":"por la tarde, entre semana","inicio":"","urgente":false,"notas":"Quiere el estudio con visita técnica una tarde entre semana y que le llamemos para confirmarlo. Al principio pidió garantía por escrito de que no pagaría luz; se le explicó que la factura no baja a cero (potencia, contador y consumo de noche) y que por escrito irán las garantías de equipos y mano de obra y el ahorro estimado. Preguntó si con batería no pagaría nada; se le respondió que tampoco baja a cero. Se le pidió foto de la factura; no consta que la haya enviado. Lugar, factura, tejado y consumo sin datos."}</aviso>

@@ -1,0 +1,32 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Llave de Paso. Si te está saliendo agua, cierra primero la llave de paso. Cuéntame qué te pasa y te mando al fontanero.
+
+CLIENTE: Tengo el lavabo del baño atascado, ¿cuánto cuesta desatascarlo?
+
+ANDRÉS: Lo más probable es el sifón, el tubo curvo de debajo del lavabo, y un desatasco sencillo suele costar setenta a ciento cincuenta euros más IVA. No eches sosa, que quema, y te reservo la visita. ¿Atascan también la ducha o el lavavajillas?
+<ficha>{"averia":"Lavabo del baño atascado","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No echar sosa; lo más probable es el sifón del lavabo. Un desatasco sencillo suele costar unos 70 a 150 euros más IVA, orientativo.","fase":"orientando"}</ficha>
+
+CLIENTE: Solo el lavabo, la ducha va bien. Ah, pues ya eché un bote de desatascador fuerte antes y sigue igual
+
+ANDRÉS: Gracias por contarlo, no pasa nada. Con ese producto no desmontes el sifón ni metas la mano, que puede quemar y empeorar el atasco; lo apunto para el fontanero. Te reservo la visita: ¿te viene mejor mañana por la mañana o por la tarde?
+<ficha>{"averia":"Lavabo del baño atascado, solo ese; ya echó un desatascador fuerte","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No desmontar el sifón ni meter la mano, que quema; el atasco parece solo del lavabo.","fase":"proponiendo"}</ficha>
+
+CLIENTE: Mañana por la mañana mejor
+
+ANDRÉS: Perfecto, lo dejamos para mañana por la mañana. Y no eches más producto, que el fontanero lo revisa. ¿Me dices tu nombre y un teléfono, solo para llamarte y organizar la visita?
+<ficha>{"averia":"Lavabo del baño atascado, solo ese; ya echó un desatascador fuerte","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"Mañana por la mañana","inicio":"","orientacion":"No echar más productos; el fontanero revisará el sifón del lavabo. Un desatasco sencillo suele costar unos 70 a 150 euros más IVA, orientativo.","fase":"datos"}</ficha>
+
+CLIENTE: Luis, 655 990 120
+
+ANDRÉS: Perfecto, Luis, lo apunto para mañana por la mañana. ¿En qué municipio y en qué calle es la vivienda?
+<ficha>{"averia":"Lavabo del baño atascado, solo ese; ya echó un desatascador fuerte","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Luis","telefono":"655 990 120","municipio":"","direccion":"","franja":"Mañana por la mañana","inicio":"","orientacion":"No echar más productos; el fontanero revisará el sifón del lavabo. Un desatasco sencillo suele costar unos 70 a 150 euros más IVA, orientativo.","fase":"datos"}</ficha>
+
+CLIENTE: Armilla, avenida de los Mondragones 3
+
+ANDRÉS: Perfecto, Luis. Te apunto: teléfono seis cinco cinco, nueve nueve cero, uno dos cero, en Armilla, avenida de los Mondragones tres, para mañana por la mañana. Si el atasco vuelve en otros desagües, avísanos, porque entonces está más abajo. ¿Está todo bien?
+<ficha>{"averia":"Lavabo del baño atascado, solo ese; ya echó un desatascador fuerte","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Luis","telefono":"655 990 120","municipio":"Armilla","direccion":"Avenida de los Mondragones 3","franja":"Mañana por la mañana","inicio":"","orientacion":"No echar más productos. Si el atasco vuelve en otros desagües, el problema está más abajo.","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo correcto
+
+ANDRÉS: Perfecto, Luis. Tu solicitud queda enviada y te llamamos para confirmar la hora de mañana por la mañana. Hasta entonces, no uses más producto. ¿Necesitas algo más?
+<ficha>{"averia":"Lavabo del baño atascado, solo ese; ya echó un desatascador fuerte","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Luis","telefono":"655 990 120","municipio":"Armilla","direccion":"Avenida de los Mondragones 3","franja":"Mañana por la mañana","inicio":"","orientacion":"No echar más productos; el fontanero revisará el sifón del lavabo. Un desatasco sencillo suele costar unos 70 a 150 euros más IVA, orientativo.","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","averia":"Lavabo del baño atascado, solo ese; ya echó un desatascador fuerte","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Luis","telefono":"655 990 120","municipio":"Armilla","direccion":"Avenida de los Mondragones 3","franja":"Mañana por la mañana","inicio":"","urgente":false,"notas":"Atasco solo en el lavabo del baño; la ducha va bien. Ya echó un bote de desatascador fuerte y sigue igual. No desmontar el sifón ni meter la mano. Visita programada para mañana por la mañana."}</aviso>

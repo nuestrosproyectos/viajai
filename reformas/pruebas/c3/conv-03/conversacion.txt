@@ -1,0 +1,32 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Obra Redonda. Cuéntame qué quieres reformar y te doy una idea de precio y plazo.
+
+CLIENTE: Quiero tirar el tabique entre cocina y salón, es un 5º en el centro de Granada, edificio antiguo. ¿Cuánto cuesta?
+
+ANDRÉS: No tengo cifra para solo ese tabique: depende de si es de carga, y eso lo comprueba el técnico. Si es de carga, lo más probable es proyecto y licencia, y en el centro antiguo también puede pedir licencia. ¿Te reservo la visita gratis?
+<ficha>{"obra":"tirar el tabique entre cocina y salón","vivienda":"","metros":"","antiguedad":"edificio antiguo","presupuesto":"","nombre":"","telefono":"","municipio":"Granada","direccion":"","franja":"","inicio":"","orientacion":"Antes de tirarlo hay que comprobar si es de carga; el técnico lo mira en la visita gratis.","fase":"proponiendo"}</ficha>
+
+CLIENTE: Y no podemos tirarlo sin decir nada a nadie para ahorrar el permiso?
+
+ANDRÉS: Mejor no: si es de carga, hacen falta proyecto y licencia, y en el centro histórico suele pedirse licencia. Además tienes que avisar al presidente o al administrador, por escrito. ¿Te reservo la visita, por la mañana o por la tarde?
+<ficha>{"obra":"tirar el tabique entre cocina y salón","vivienda":"","metros":"","antiguedad":"edificio antiguo","presupuesto":"","nombre":"","telefono":"","municipio":"Granada","direccion":"","franja":"","inicio":"","orientacion":"No se tira sin que el técnico compruebe si es de carga; hay que avisar a la comunidad por escrito y lo más probable es que pida licencia.","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, entonces mejor con visita. Por la tarde.
+
+ANDRÉS: Perfecto, te apunto la visita por la tarde. Si la cocina queda abierta, la campana tiene que seguir sacando los humos por su conducto. ¿Me dices tu nombre y un teléfono, solo para llamarte y organizar la visita?
+<ficha>{"obra":"tirar el tabique entre cocina y salón","vivienda":"Piso","metros":"","antiguedad":"edificio antiguo","presupuesto":"","nombre":"","telefono":"","municipio":"Granada, centro","direccion":"","franja":"por la tarde","inicio":"","orientacion":"Si el tabique es de carga hacen falta proyecto y licencia; el técnico lo comprueba en la visita.","fase":"datos"}</ficha>
+
+CLIENTE: Lucía, 611 908 774
+
+ANDRÉS: Gracias, Lucía. Si puedes, mándame fotos del tabique con el botón de la cámara: así el técnico llega preparado. ¿En qué calle y número está el piso, y qué día te viene bien por la tarde?
+<ficha>{"obra":"tirar el tabique entre cocina y salón","vivienda":"Piso","metros":"","antiguedad":"edificio antiguo","presupuesto":"","nombre":"Lucía","telefono":"611 908 774","municipio":"Granada, centro","direccion":"","franja":"por la tarde","inicio":"","orientacion":"Si el tabique es de carga hacen falta proyecto y licencia; el técnico lo comprueba en la visita y hay que avisar a la comunidad por escrito.","fase":"datos"}</ficha>
+
+CLIENTE: San Antón 30. Cualquier tarde me va bien, luego miro lo de las fotos
+
+ANDRÉS: Lucía, teléfono seis uno uno, nueve cero ocho, siete siete cuatro; visita en San Antón treinta, Granada centro, cualquier tarde. Si puedes, mándame fotos del tabique, así el técnico llega preparado. ¿Está todo bien?
+<ficha>{"obra":"tirar el tabique entre cocina y salón","vivienda":"Piso","metros":"","antiguedad":"edificio antiguo","presupuesto":"","nombre":"Lucía","telefono":"611 908 774","municipio":"Granada, centro","direccion":"San Antón 30","franja":"cualquier tarde","inicio":"","orientacion":"Si el tabique es de carga hacen falta proyecto y licencia; el técnico lo comprueba en la visita y hay que avisar a la comunidad por escrito.","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien. Gracias
+
+ANDRÉS: Perfecto, Lucía, tu solicitud queda enviada: te llamamos para confirmar la visita de la tarde en San Antón 30. ¿Necesitas algo más?
+<ficha>{"obra":"tirar el tabique entre cocina y salón","vivienda":"Piso","metros":"","antiguedad":"edificio antiguo","presupuesto":"","nombre":"Lucía","telefono":"611 908 774","municipio":"Granada, centro","direccion":"San Antón 30","franja":"cualquier tarde","inicio":"","orientacion":"Si el tabique es de carga hacen falta proyecto y licencia; el técnico lo comprueba en la visita y hay que avisar a la comunidad por escrito.","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","obra":"tirar el tabique entre cocina y salón","vivienda":"Piso","metros":"","antiguedad":"edificio antiguo","presupuesto":"","nombre":"Lucía","telefono":"611 908 774","municipio":"Granada, centro","direccion":"San Antón 30","franja":"cualquier tarde","inicio":"","urgente":false,"notas":"Quiere tirar el tabique entre cocina y salón. Edificio antiguo en el centro de Granada, quinto piso; no ha dicho si hay ascensor. Visita cualquier tarde. Pendiente de enviar fotos del tabique, dice que lo mirará luego. Teléfono y datos confirmados tras repetirlos."}</aviso>

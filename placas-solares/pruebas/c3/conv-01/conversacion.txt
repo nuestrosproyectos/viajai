@@ -1,0 +1,37 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Tejaluz. Dime más o menos cuánto pagas de luz al mes y te digo cuántas placas te harían falta y lo que costarían.
+
+CLIENTE: Hola, me estoy planteando poner placas, pago unos 120 € de luz al mes. ¿Me compensa?
+
+ANDRÉS: Depende de tu consumo, pero una casa típica de unos 5 kWp ronda los 4.500 a 7.500 euros sin batería, y suele pagarse sola en seis a diez años. Es orientativo; con tus facturas lo afinamos. ¿Vives en casa o en un bloque?
+<ficha>{"que":"Placas solares","lugar":"","factura":"unos 120 € al mes","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Lo que más pesa es cuánto consumes y a qué horas; con tus facturas el estudio dice si te compensa.","fase":"orientando"}</ficha>
+
+CLIENTE: En casa, adosada en Armilla
+
+ANDRÉS: Gracias, eso ayuda. La factura nunca baja a cero, porque quedan la potencia, el contador y los impuestos, y en Armilla las bonificaciones las confirma el técnico. Te reservo el estudio gratis; ¿gastas más de día o de noche?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 120 € al mes","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"Armilla","direccion":"","franja":"","inicio":"","orientacion":"Lo que más pesa es a qué horas gastas; con tus facturas el estudio gratis calcula si te compensa.","fase":"proponiendo"}</ficha>
+
+CLIENTE: De día sobre todo, teletrabajo y tengo aire
+
+ANDRÉS: Gastando sobre todo de día, las placas se aprovechan mucho más, y eso suele acortar la amortización. Te reservo el estudio gratis, ¿te viene mejor por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 120 € al mes","tejado":"","consumo":"sobre todo de día, con teletrabajo y aire acondicionado","nombre":"","telefono":"","municipio":"Armilla","direccion":"","franja":"","inicio":"","orientacion":"Gastas sobre todo de día, así que las placas se aprovechan mucho; el estudio gratis con tus facturas confirma cuánto te compensa.","fase":"proponiendo"}</ficha>
+
+CLIENTE: Por la mañana mejor, el viernes si puede ser
+
+ANDRÉS: Perfecto, lo apunto para el viernes por la mañana. Y la deducción de la Renta de 2026 va muy justa de plazo; un asesor fiscal lo confirma. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar el estudio.
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 120 € al mes","tejado":"","consumo":"sobre todo de día, con teletrabajo y aire acondicionado","nombre":"","telefono":"","municipio":"Armilla","direccion":"","franja":"por la mañana, el viernes si puede ser","inicio":"","orientacion":"Gastas sobre todo de día, así que las placas se aprovechan mucho; el estudio gratis con tus facturas confirma cuánto te compensa.","fase":"datos"}</ficha>
+
+CLIENTE: Javier, 644 778 120
+
+ANDRÉS: Perfecto, Javier, lo apunto para el viernes por la mañana. Si puedes, manda una foto de la factura con el botón de la cámara: así el técnico ve cuántos kilovatios hora gastas al año. ¿En qué calle y número está la casa?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 120 € al mes","tejado":"","consumo":"sobre todo de día, con teletrabajo y aire acondicionado","nombre":"Javier","telefono":"644 778 120","municipio":"Armilla","direccion":"","franja":"por la mañana, el viernes si puede ser","inicio":"","orientacion":"Gastas sobre todo de día, así que las placas se aprovechan mucho; con la factura, el estudio gratis confirma cuánto te compensa.","fase":"datos"}</ficha>
+
+CLIENTE: Calle Granada 5, en Armilla
+
+ANDRÉS: Javier, te confirmo: teléfono seis cuatro cuatro, siete siete ocho, uno dos cero; estudio en Calle Granada cinco, en Armilla, el viernes por la mañana. ¿Está todo bien?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 120 € al mes","tejado":"","consumo":"sobre todo de día, con teletrabajo y aire acondicionado","nombre":"Javier","telefono":"644 778 120","municipio":"Armilla","direccion":"Calle Granada 5","franja":"por la mañana, el viernes si puede ser","inicio":"","orientacion":"Gastas sobre todo de día, así que las placas se aprovechan mucho; el estudio gratis, con tus facturas, confirma cuánto te compensa.","fase":"datos"}</ficha>
+
+CLIENTE: Sí, correcto.
+
+ANDRÉS: Perfecto, Javier, la solicitud queda enviada y te llamamos para confirmar el estudio del viernes por la mañana. El técnico mirará las sombras del tejado, que restan mucho producción. ¿Necesitas algo más?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 120 € al mes","tejado":"","consumo":"sobre todo de día, con teletrabajo y aire acondicionado","nombre":"Javier","telefono":"644 778 120","municipio":"Armilla","direccion":"Calle Granada 5","franja":"por la mañana, el viernes si puede ser","inicio":"","orientacion":"La solicitud queda enviada; te llamamos para confirmar el estudio gratis del viernes por la mañana.","fase":"registrado"}</ficha>
+<aviso>{"tipo":"estudio","que":"Placas solares","lugar":"Casa","factura":"unos 120 € al mes","tejado":"","consumo":"sobre todo de día, con teletrabajo y aire acondicionado","nombre":"Javier","telefono":"644 778 120","municipio":"Armilla","direccion":"Calle Granada 5","franja":"por la mañana, el viernes si puede ser","inicio":"","urgente":false,"notas":"Quiere el estudio con visita técnica el viernes por la mañana y que le llamemos para confirmarlo. Casa adosada en Armilla. Paga unos 120 € al mes de luz y gasta sobre todo de día (teletrabajo y aire acondicionado). Pregunta si le compensa. Se le pidió foto de la factura para ver los kWh al año; no consta que la haya enviado. Tejado, orientación y sombras sin datos."}</aviso>

@@ -1,0 +1,33 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Accidente Claro. Siento lo del accidente. Cuéntame qué pasó y te digo qué conviene hacer ahora.
+
+CLIENTE: Hola, hace 3 días me dieron un golpe por detrás y me duele el cuello. ¿Qué hago?
+
+ANDRÉS: Lo primero es que te vea un médico hoy y que quede escrito, porque ese informe une la lesión al accidente. Guarda fotos, testigos y facturas, y te reservo la primera consulta gratis con el abogado. ¿Ya te ha visto algún médico?
+<ficha>{"caso":"Golpe por detrás hace tres días","como":"","fecha":"Hace tres días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que le vea un médico hoy y que quede por escrito; guardar fotos, testigos y facturas, y dar parte a su aseguradora en siete días.","fase":"orientando"}</ficha>
+
+CLIENTE: No, todavía no he ido, pensaba que se me pasaría solo. Y el abogado cuánto cuesta? Es que no sé si me lo puedo permitir
+
+ANDRÉS: Es normal preguntarlo: la primera consulta es gratis, y sin indemnización no hay honorarios. En muchos despachos es entre el 15 y el 20 % de lo que se consiga, pactado por escrito. Hoy, al médico. ¿Te reservo la consulta por teléfono o presencial?
+<ficha>{"caso":"Golpe por detrás hace tres días","como":"","fecha":"Hace tres días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Ir al médico hoy y dejarlo por escrito; la primera consulta con el abogado es gratis.","fase":"orientando"}</ficha>
+<mostrar>honorarios</mostrar>
+
+CLIENTE: Vale, gracias. Por videollamada mejor, y por la tarde
+
+ANDRÉS: Perfecto, la consulta por videollamada por la tarde. Y si el dolor de cuello aumenta o te mareas, ve a urgencias sin esperar. ¿Me dices tu nombre y un teléfono, solo para llamarte y organizar la consulta?
+<ficha>{"caso":"Golpe por detrás hace tres días; le duele el cuello","como":"","fecha":"Hace tres días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"Por la tarde, por videollamada","consentimientoSalud":"","orientacion":"Ir al médico hoy y dejarlo por escrito; la primera consulta con el abogado es gratis.","fase":"datos"}</ficha>
+
+CLIENTE: Raúl, 644 555 888
+
+ANDRÉS: Gracias, Raúl, lo apunto para la videollamada por la tarde. Y recuerda dar parte a tu aseguradora en siete días. ¿En qué municipio vives?
+<ficha>{"caso":"Golpe por detrás hace tres días","como":"","fecha":"Hace tres días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Raúl","telefono":"644 555 888","municipio":"","franja":"Por la tarde, por videollamada","consentimientoSalud":"","orientacion":"Ir al médico hoy y dejarlo por escrito; la primera consulta con el abogado es gratis.","fase":"datos"}</ficha>
+
+CLIENTE: En Granada, en el Zaidín
+
+ANDRÉS: Perfecto, Raúl. Te apunto: teléfono seis cuatro cuatro, cinco cinco cinco, ocho ocho ocho, en el Zaidín, Granada, para videollamada por la tarde. Y al médico, cuéntale que fue un golpe por detrás. ¿Está todo bien?
+<ficha>{"caso":"Golpe por detrás hace tres días; le duele el cuello","como":"","fecha":"Hace tres días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Raúl","telefono":"644 555 888","municipio":"Granada (Zaidín)","franja":"Por la tarde, por videollamada","consentimientoSalud":"","orientacion":"Ir al médico hoy y dejarlo por escrito, contando que fue un golpe por detrás; la primera consulta con el abogado es gratis.","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Perfecto, Raúl. Tu solicitud queda enviada y te llamamos para confirmar la videollamada de la tarde. Mientras, ve al médico hoy sin esperar. ¿Necesitas algo más?
+<ficha>{"caso":"Golpe por detrás hace tres días","como":"","fecha":"Hace tres días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Raúl","telefono":"644 555 888","municipio":"Granada (Zaidín)","franja":"Por la tarde, por videollamada","consentimientoSalud":"","orientacion":"Ir al médico hoy y dejarlo por escrito; la primera consulta con el abogado es gratis.","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","caso":"Golpe por detrás hace tres días","como":"","fecha":"Hace tres días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Raúl","telefono":"644 555 888","municipio":"Granada","franja":"Por la tarde, por videollamada","consentimientoSalud":"","urgente":false,"notas":"Golpe por detrás hace tres días. Quiere la primera consulta por videollamada por la tarde. Preguntó cuánto cobra el abogado y si se lo puede permitir. Vive en el Zaidín, Granada."}</aviso>

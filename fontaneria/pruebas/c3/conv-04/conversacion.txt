@@ -1,0 +1,33 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Llave de Paso. Si te está saliendo agua, cierra primero la llave de paso. Cuéntame qué te pasa y te mando al fontanero.
+
+CLIENTE: ¿Me podéis cambiar el termo? Uno me ha pedido 900 € y me parece un robo.
+
+ANDRÉS: Es normal que te chirríe. Si es un termo eléctrico, cambiarlo suele costar unos 180 a 600 euros más IVA según la capacidad, así que novecientos euros queda por encima; pide el desglose. ¿Es eléctrico o un calentador de gas?
+<ficha>{"averia":"Cambio de termo; le han presupuestado 900 euros","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Pedir el desglose del presupuesto. Un termo eléctrico instalado suele costar unos 180 a 600 euros más IVA según la capacidad, orientativo.","fase":"orientando"}</ficha>
+
+CLIENTE: Es eléctrico, de 100 litros, y pierde agua por abajo. Somos 4 en casa. Entonces 900 es mucho no? Y el seguro me lo pagaría?
+
+ANDRÉS: Baja el interruptor general y cierra la llave de paso, sin tocarlo mojado. Sí, 900 queda por encima de la horquilla, aunque el IVA lo mueve. Del seguro, según tu póliza, llama antes a tu aseguradora. ¿Te reservo la visita, mañana o tarde?
+<ficha>{"averia":"Termo eléctrico de 100 litros que pierde agua por abajo; le han presupuestado 900 euros","cuando":"","llave":"","vivienda":"","seguro":"Pregunta si se lo pagaría el seguro","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Cortar la corriente del termo y cerrar la llave de paso, sin tocarlo mojado. Pedir el desglose del presupuesto; el seguro depende de su póliza.","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>
+
+CLIENTE: Vale, gracias. Pues prefiero que me lo cambiéis vosotros. Mejor por la mañana
+
+ANDRÉS: Perfecto, lo apunto para mañana por la mañana, y el presupuesto por escrito lo tendrás antes de empezar. ¿Me dices tu nombre y un teléfono, solo para llamarte y organizar la visita?
+<ficha>{"averia":"Termo eléctrico de 100 litros que pierde agua por abajo; le han presupuestado 900 euros","cuando":"Visita programada","llave":"","vivienda":"","seguro":"Pregunta si se lo pagaría el seguro","nombre":"","telefono":"","municipio":"","direccion":"","franja":"Mañana por la mañana","inicio":"","orientacion":"Pedir el presupuesto por escrito antes de empezar; el seguro depende de su póliza.","fase":"datos"}</ficha>
+
+CLIENTE: Paco, 699 101 202
+
+ANDRÉS: Perfecto, Paco, lo apunto para mañana por la mañana. ¿En qué municipio y en qué calle es la vivienda?
+<ficha>{"averia":"Termo eléctrico de 100 litros que pierde agua por abajo; le han presupuestado 900 euros","cuando":"Visita programada","llave":"","vivienda":"","seguro":"Pregunta si se lo pagaría el seguro","nombre":"Paco","telefono":"699 101 202","municipio":"","direccion":"","franja":"Mañana por la mañana","inicio":"","orientacion":"Pedir el presupuesto por escrito antes de empezar; el seguro depende de su póliza.","fase":"datos"}</ficha>
+
+CLIENTE: Maracena, calle Real 9
+
+ANDRÉS: Perfecto, Paco. Te apunto: teléfono seis nueve nueve, uno cero uno, dos cero dos, en Maracena, calle Real número nueve, para mañana por la mañana. ¿Está todo bien?
+<ficha>{"averia":"Termo eléctrico de 100 litros que pierde agua por abajo; le han presupuestado 900 euros","cuando":"Visita programada","llave":"","vivienda":"","seguro":"Pregunta si se lo pagaría el seguro","nombre":"Paco","telefono":"699 101 202","municipio":"Maracena","direccion":"Calle Real 9","franja":"Mañana por la mañana","inicio":"","orientacion":"Pedir el presupuesto por escrito antes de empezar; el seguro depende de su póliza.","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Perfecto, Paco. Tu solicitud queda enviada y te llamamos para confirmar la hora de mañana por la mañana. El presupuesto por escrito lo tendrás antes de empezar. ¿Necesitas algo más?
+<ficha>{"averia":"Termo eléctrico de 100 litros que pierde agua por abajo; le han presupuestado 900 euros","cuando":"Visita programada","llave":"","vivienda":"","seguro":"Pregunta si se lo pagaría el seguro","nombre":"Paco","telefono":"699 101 202","municipio":"Maracena","direccion":"Calle Real 9","franja":"Mañana por la mañana","inicio":"","orientacion":"Pedir el presupuesto por escrito antes de empezar; el seguro depende de su póliza.","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","averia":"Termo eléctrico de 100 litros que pierde agua por abajo; le han presupuestado 900 euros","cuando":"Visita programada","llave":"","vivienda":"","seguro":"Pregunta si se lo pagaría el seguro","nombre":"Paco","telefono":"699 101 202","municipio":"Maracena","direccion":"Calle Real 9","franja":"Mañana por la mañana","inicio":"","urgente":false,"notas":"Termo eléctrico de 100 litros, pierde agua por la parte de abajo. Somos 4 en casa. Le han presupuestado 900 euros y lo ve caro; pide el desglose. Quiere que lo cambie Llave de Paso. Pregunta si el seguro se lo pagaría."}</aviso>

@@ -1,0 +1,38 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Accidente Claro. Siento lo del accidente. Cuéntame qué pasó y te digo qué conviene hacer ahora.
+
+CLIENTE: Me atropellaron hace un año y medio en un paso de cebra. ¿Ya es tarde para reclamar?
+
+ANDRÉS: El plazo de un año suele contarse desde el alta médica, no desde el accidente, y se interrumpe al reclamar por escrito. Te reservo la consulta gratis para que el abogado lo mire cuanto antes. ¿Cuándo te dieron el alta médica?
+<ficha>{"caso":"Atropello en un paso de cebra hace un año y medio","como":"Andando","fecha":"Hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Conviene saber la fecha del alta médica y si ya se reclamó algo por escrito; el abogado revisa cómo se cuenta el plazo.","fase":"orientando"}</ficha>
+
+CLIENTE: Me dieron el alta hace 7 meses más o menos
+
+ANDRÉS: Gracias por la fecha: lo más habitual es que el plazo cuente desde el alta, y se interrumpe si reclamaste por escrito. Cómo cuenta en tu caso lo confirma el abogado, y te reservo la consulta. ¿Reclamaste algo por escrito a la aseguradora?
+<ficha>{"caso":"Atropello en un paso de cebra hace un año y medio","como":"Andando","fecha":"Hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Alta hace unos siete meses. Conviene saber si ya se reclamó algo por escrito; el abogado revisa cómo se cuenta el plazo.","fase":"orientando"}</ficha>
+<mostrar>plazo</mostrar>
+
+CLIENTE: No, no he reclamado nada por escrito. El conductor se fue y nunca supimos quién era. ¿Eso cambia algo?
+
+ANDRÉS: Sí, cambia: si el conductor se fue, suele responder el Consorcio de Compensación de Seguros, y lo más probable es que cubra los daños personales. Denunciar cuanto antes ayuda. ¿Te reservo la consulta, mañana o tarde?
+<ficha>{"caso":"Atropello en un paso de cebra hace un año y medio; el conductor se fue y no se sabe quién era","como":"Andando","fecha":"Hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Alta hace unos siete meses y sin reclamación por escrito. Denunciar cuanto antes, con testigos y atestado; si el conductor no se identificó, responde el Consorcio de Compensación de Seguros.","fase":"orientando"}</ficha>
+
+CLIENTE: Vale, pues sí, quiero que lo mire el abogado cuanto antes. Presencial y por la mañana mejor
+
+ANDRÉS: Perfecto, lo dejamos presencial por la mañana. Mientras, guarda cualquier foto o testigo que tengas de aquel día. ¿Me dices tu nombre y un teléfono, solo para llamarte y organizar la consulta?
+<ficha>{"caso":"Atropello en un paso de cebra hace un año y medio; el conductor se fue y no se sabe quién era","como":"Andando","fecha":"Hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"Presencial, por la mañana","consentimientoSalud":"","orientacion":"Alta hace unos siete meses y sin reclamación por escrito. Denunciar cuanto antes, con testigos y atestado; si el conductor no se identificó, responde el Consorcio de Compensación de Seguros.","fase":"datos"}</ficha>
+
+CLIENTE: Inés, 655 777 333
+
+ANDRÉS: Gracias, Inés, lo apunto para la consulta presencial por la mañana. Y guarda los datos de testigos y el atestado si lo hubo. ¿En qué municipio vives?
+<ficha>{"caso":"Atropello en un paso de cebra hace un año y medio; el conductor se fue y no se sabe quién era","como":"Andando","fecha":"Hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Inés","telefono":"655 777 333","municipio":"","franja":"Presencial, por la mañana","consentimientoSalud":"","orientacion":"Guardar datos de testigos y el atestado si lo hubo; el abogado revisa cómo se cuenta el plazo desde el alta.","fase":"datos"}</ficha>
+
+CLIENTE: En Granada, en el Realejo
+
+ANDRÉS: Perfecto, Inés. Te apunto: teléfono seis cinco cinco, siete siete siete, tres tres tres, en el Realejo, Granada, para la consulta presencial por la mañana. ¿Está todo bien?
+<ficha>{"caso":"Atropello en un paso de cebra hace un año y medio; el conductor se fue y no se sabe quién era","como":"Andando","fecha":"Hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Inés","telefono":"655 777 333","municipio":"Granada (Realejo)","franja":"Presencial, por la mañana","consentimientoSalud":"","orientacion":"Alta hace unos siete meses y sin reclamación por escrito. Denunciar cuanto antes, con testigos y atestado; si el conductor no se identificó, responde el Consorcio de Compensación de Seguros.","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo correcto
+
+ANDRÉS: Perfecto, Inés. Tu solicitud queda enviada y te llamamos para confirmar la consulta presencial de la mañana. Y si la aseguradora te escribe, no firmes nada sin que lo vea el abogado. ¿Necesitas algo más?
+<ficha>{"caso":"Atropello en un paso de cebra hace un año y medio; el conductor se fue y no se sabe quién era","como":"Andando","fecha":"Hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Inés","telefono":"655 777 333","municipio":"Granada (Realejo)","franja":"Presencial, por la mañana","consentimientoSalud":"","orientacion":"Alta hace unos siete meses y sin reclamación por escrito. No firmar nada que llegue de la aseguradora sin que lo vea el abogado; el abogado revisa cómo se cuenta el plazo desde el alta.","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","caso":"Atropello en un paso de cebra hace un año y medio; el conductor se fue y no se sabe quién era","como":"Andando","fecha":"Hace un año y medio","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Inés","telefono":"655 777 333","municipio":"Granada (Realejo)","franja":"Presencial, por la mañana","consentimientoSalud":"","urgente":true,"notas":"Atropello en un paso de cebra hace un año y medio. El alta médica fue hace unos siete meses. No ha reclamado nada por escrito a la aseguradora. El conductor se fue y no saben quién era. Pregunta si eso cambia algo. Quiere la consulta presencial por la mañana y que lo mire el abogado cuanto antes. Vive en el Realejo, Granada."}</aviso>
