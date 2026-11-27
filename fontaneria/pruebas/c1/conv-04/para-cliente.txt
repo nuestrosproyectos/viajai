@@ -1,0 +1,19 @@
+=== QUIÉN ERES (solo lo sabes tú) ===
+Eres Paco, casa en Maracena, termo eléctrico de 100 litros que pierde agua por abajo, sois 4 en casa. Preguntas si 900 € es mucho y si el seguro te lo paga. Si te contestan con honestidad, pides que te lo cambien ellos. Datos: Paco, 699 101 202, Maracena, calle Real 9, cualquier mañana.
+
+=== LA CONVERSACIÓN HASTA AHORA (en la web de Llave de Paso) ===
+TÚ (cliente): ¿Me podéis cambiar el termo? Uno me ha pedido 900 € y me parece un robo.
+
+Andrés (asistente de la web): Entiendo que te choque esa cifra. Cambiar un termo eléctrico instalado suele costar unos ciento ochenta a seiscientos euros según capacidad, orientativo. Pide el presupuesto desglosado por escrito antes de aceptar. Te reservo la visita: ¿el termo es eléctrico o de gas?
+
+TÚ (cliente): Es eléctrico, de 100 litros, pierde agua por abajo. Somos 4 en casa. ¿900 € es mucho? ¿Y me lo paga el seguro?
+
+Andrés (asistente de la web): Cierra la llave de paso para que no pierda agua. Lo habitual para un termo eléctrico instalado es de 180 a 600 euros, orientativo; 900 queda por encima. Según tu póliza: llama antes a tu aseguradora. ¿Te reservo la visita por la mañana o por la tarde?
+
+TÚ (cliente): Pues entonces me lo cambiáis vosotros, que 900 es demasiado. Paco, 699 101 202, en Maracena. Cualquier mañana me va bien
+
+Andrés (asistente de la web): Perfecto, Paco, la solicitud queda enviada para cualquier mañana. Te llamamos al 699 101 202 para confirmar la hora, y antes de empezar tendrás el presupuesto por escrito. ¿Necesitas algo más?
+
+[En la pantalla aparece ahora: «¡Listo! Solicitud enviada. Te llamamos para confirmar».]
+
+=== TU SIGUIENTE MENSAJE ===

@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Luis, 655 990 120. Mañana por la mañana mejor"
+ },
+ {
+  "role": "assistant",
+  "content": "Vale, Luis, te apunto la visita para mañana por la mañana y te llamamos para darte la hora. Mientras, no eches nada más ni metas la mano en el sifón. ¿En qué barrio o municipio estás?\n<ficha>{\"averia\":\"Lavabo del baño atascado; ya echó un desatascador fuerte sin resultado\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Luis\",\"telefono\":\"655 990 120\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"Probable sifón del lavabo; no echar más producto ni meter la mano; desatasco sencillo unos 70 a 150 € más IVA, orientativo\",\"fase\":\"datos\"}</ficha>",
+  "original": "Vale, Luis, te apunto la visita para mañana por la mañana y te llamamos para darte la hora. Mientras, no eches nada más ni metas la mano en el sifón. ¿En qué barrio o municipio estás?\n<ficha>{\"averia\":\"Lavabo del baño atascado; ya echó un desatascador fuerte sin resultado\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Luis\",\"telefono\":\"655 990 120\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"Probable sifón del lavabo; no echar más producto ni meter la mano; desatasco sencillo unos 70 a 150 € más IVA, orientativo\",\"fase\":\"datos\"}</ficha>"
  }
 ]
