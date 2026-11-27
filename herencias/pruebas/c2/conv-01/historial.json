@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Perfecto, Lucía. Te apunto la consulta gratis por videollamada por la tarde, para Granada capital, y el abogado confirma con los papeles cuánto pagarías. Tu teléfono es seis cinco cinco, uno uno uno, dos dos dos. ¿Está todo bien?\n<ficha>{\"situacion\":\"herencia de tu padre, que falleció la semana pasada\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"No lo sé\",\"bienes\":\"\",\"nombre\":\"Lucía\",\"telefono\":\"655 111 222\",\"municipio\":\"Granada capital\",\"franja\":\"videollamada, por la tarde\",\"fallecimiento\":\"la semana pasada\",\"modalidad\":\"Por videollamada\",\"orientacion\":\"Presentar el impuesto de sucesiones en seis meses aunque salga cero; lo más probable es que pagues cero o casi nada por la reducción y la bonificación para hijos.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Lucía. Te apunto la consulta gratis por videollamada por la tarde, para Granada capital, y el abogado confirma con los papeles cuánto pagarías. Tu teléfono es seis cinco cinco, uno uno uno, dos dos dos. ¿Está todo bien?\n<ficha>{\"situacion\":\"herencia de tu padre, que falleció la semana pasada\",\"parentesco\":\"Hijo o hija\",\"testamento\":\"No lo sé\",\"bienes\":\"\",\"nombre\":\"Lucía\",\"telefono\":\"655 111 222\",\"municipio\":\"Granada capital\",\"franja\":\"videollamada, por la tarde\",\"fallecimiento\":\"la semana pasada\",\"modalidad\":\"Por videollamada\",\"orientacion\":\"Presentar el impuesto de sucesiones en seis meses aunque salga cero; lo más probable es que pagues cero o casi nada por la reducción y la bonificación para hijos.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien."
  }
 ]

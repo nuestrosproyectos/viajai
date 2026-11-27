@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Perfecto, Álvaro. Repito tus datos: teléfono seis cuatro cuatro, tres tres tres, siete siete siete, vives en Motril y la consulta gratis es por teléfono, por la mañana. ¿Está todo bien?\n<ficha>{\"situacion\":\"casa heredada de tu tía, con testamento\",\"parentesco\":\"Sobrino o sobrina\",\"testamento\":\"Sí\",\"bienes\":\"una casa, de unos 90.000 €\",\"nombre\":\"Álvaro\",\"telefono\":\"644 333 777\",\"municipio\":\"Motril\",\"franja\":\"por la mañana\",\"fallecimiento\":\"\",\"modalidad\":\"Por teléfono\",\"orientacion\":\"Como sobrino o sobrina pagas impuesto de sucesiones; el importe concreto lo confirma el abogado con el valor catastral de la casa.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Álvaro. Repito tus datos: teléfono seis cuatro cuatro, tres tres tres, siete siete siete, vives en Motril y la consulta gratis es por teléfono, por la mañana. ¿Está todo bien?\n<ficha>{\"situacion\":\"casa heredada de tu tía, con testamento\",\"parentesco\":\"Sobrino o sobrina\",\"testamento\":\"Sí\",\"bienes\":\"una casa, de unos 90.000 €\",\"nombre\":\"Álvaro\",\"telefono\":\"644 333 777\",\"municipio\":\"Motril\",\"franja\":\"por la mañana\",\"fallecimiento\":\"\",\"modalidad\":\"Por teléfono\",\"orientacion\":\"Como sobrino o sobrina pagas impuesto de sucesiones; el importe concreto lo confirma el abogado con el valor catastral de la casa.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, está todo bien."
  }
 ]
