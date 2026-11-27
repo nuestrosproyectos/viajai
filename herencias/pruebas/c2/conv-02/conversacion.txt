@@ -1,0 +1,32 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Herencial. Cuéntame tu caso y te explico qué te toca hacer.
+
+CLIENTE: Mi tía me ha dejado su casa en el testamento. ¿Cuánto voy a tener que pagar?
+
+ANDRÉS: Siento lo de tu tía. Como sobrino o sobrina sí pagas impuesto, con diez mil euros de reducción. Un sobrino que hereda sesenta mil euros pagaría entre seis mil quinientos y siete mil cuatrocientos, orientativo. ¿Te reservo la consulta gratis con el abogado?
+<ficha>{"situacion":"casa heredada de tu tía, con testamento","parentesco":"Sobrino o sobrina","testamento":"Sí","bienes":"una casa","nombre":"","telefono":"","municipio":"","franja":"","fallecimiento":"","modalidad":"","orientacion":"Como sobrino o sobrina pagas impuesto de sucesiones, con diez mil euros de reducción, y lo confirma el abogado con los documentos.","porDecir":"el plazo del impuesto son seis meses desde el fallecimiento, prorrogables otros seis si se pide en los cinco primeros · si la casa está en Granada capital, la plusvalía municipal, sin bonificación para sobrinos · escritura y Registro, que van aparte","fase":"proponiendo"}</ficha>
+
+CLIENTE: Uf, es que son unos 90.000 € la casa y no tengo mucho ahorrado. ¿Cuánto saldría más o menos?
+
+ANDRÉS: Entiendo el susto. Un sobrino que hereda sesenta mil euros pagaría entre seis mil quinientos y siete mil cuatrocientos, orientativo; con noventa mil sería más, y el abogado lo confirma con el valor catastral. El plazo del impuesto son seis meses. ¿Te reservo la consulta?
+<ficha>{"situacion":"casa heredada de tu tía, con testamento","parentesco":"Sobrino o sobrina","testamento":"Sí","bienes":"una casa, de unos 90.000 €","nombre":"","telefono":"","municipio":"","franja":"","fallecimiento":"","modalidad":"","orientacion":"Como sobrino o sobrina pagas impuesto de sucesiones; el importe concreto lo confirma el abogado con el valor catastral de la casa.","porDecir":"si la casa está en Granada capital, la plusvalía municipal, sin bonificación para sobrinos · escritura y Registro, que van aparte","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, más o menos me hago a la idea. Sí, mejor que lo estudie el abogado. Resérvamela, por teléfono si puede ser.
+
+ANDRÉS: Perfecto, te reservo la consulta por teléfono. Si la casa está en Granada capital, puede tocar la plusvalía municipal, que para sobrinos no tiene bonificación. Es solo para llamarte y organizarlo: ¿me dices tu nombre y un teléfono?
+<ficha>{"situacion":"casa heredada de tu tía, con testamento","parentesco":"Sobrino o sobrina","testamento":"Sí","bienes":"una casa, de unos 90.000 €","nombre":"","telefono":"","municipio":"","franja":"","fallecimiento":"","modalidad":"Por teléfono","orientacion":"Como sobrino o sobrina pagas impuesto de sucesiones; el importe concreto lo confirma el abogado con el valor catastral de la casa.","porDecir":"escritura y Registro, que van aparte","fase":"datos"}</ficha>
+
+CLIENTE: Álvaro, 644 333 777.
+
+ANDRÉS: Gracias, Álvaro. La escritura y el Registro van aparte: son gastos de notaría y de registro, que te diremos desde el principio. ¿En qué municipio vives, y te viene mejor por la mañana o por la tarde?
+<ficha>{"situacion":"casa heredada de tu tía, con testamento","parentesco":"Sobrino o sobrina","testamento":"Sí","bienes":"una casa, de unos 90.000 €","nombre":"Álvaro","telefono":"644 333 777","municipio":"","franja":"","fallecimiento":"","modalidad":"Por teléfono","orientacion":"Como sobrino o sobrina pagas impuesto de sucesiones; el importe concreto lo confirma el abogado con el valor catastral de la casa.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: En Motril. Por la mañana mejor, por teléfono.
+
+ANDRÉS: Perfecto, Álvaro. Repito tus datos: teléfono seis cuatro cuatro, tres tres tres, siete siete siete, vives en Motril y la consulta gratis es por teléfono, por la mañana. ¿Está todo bien?
+<ficha>{"situacion":"casa heredada de tu tía, con testamento","parentesco":"Sobrino o sobrina","testamento":"Sí","bienes":"una casa, de unos 90.000 €","nombre":"Álvaro","telefono":"644 333 777","municipio":"Motril","franja":"por la mañana","fallecimiento":"","modalidad":"Por teléfono","orientacion":"Como sobrino o sobrina pagas impuesto de sucesiones; el importe concreto lo confirma el abogado con el valor catastral de la casa.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, está todo bien.
+
+ANDRÉS: Perfecto, Álvaro. Tu solicitud queda enviada: te llamamos para confirmar el día y la hora de tu consulta gratis por teléfono, por la mañana. ¿Necesitas algo más?
+<ficha>{"situacion":"casa heredada de tu tía, con testamento","parentesco":"Sobrino o sobrina","testamento":"Sí","bienes":"una casa, de unos 90.000 €","nombre":"Álvaro","telefono":"644 333 777","municipio":"Motril","franja":"por teléfono, por la mañana","fallecimiento":"","modalidad":"Por teléfono","orientacion":"Como sobrino pagas impuesto de sucesiones, con diez mil euros de reducción; el importe concreto lo confirma el abogado con el valor catastral de la casa.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","situacion":"casa heredada de tu tía, con testamento","parentesco":"Sobrino o sobrina","testamento":"Sí","bienes":"una casa, de unos 90.000 €","nombre":"Álvaro","telefono":"644 333 777","municipio":"Motril","franja":"por teléfono, por la mañana","fallecimiento":"","modalidad":"Por teléfono","urgente":false,"notas":"Sobrino de la persona fallecida; su tía le deja la casa en el testamento. La casa vale unos 90.000 € y no tiene mucho ahorrado. Preguntó cuánto saldría de impuestos: se le dijo que como sobrino paga, con diez mil euros de reducción, y que un sobrino que hereda 60.000 € pagaría entre 6.500 y 7.400 € (orientativo); que el plazo del impuesto son seis meses desde el fallecimiento; y que la escritura y el Registro van aparte. Vive en Motril. Pidió la consulta por teléfono por la mañana. No ha dicho la fecha del fallecimiento."}</aviso>

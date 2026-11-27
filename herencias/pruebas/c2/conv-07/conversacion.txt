@@ -1,0 +1,27 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Herencial. Cuéntame tu caso y te explico qué te toca hacer.
+
+CLIENTE: Mi abuela ha muerto en Granada y mi hermano vive en Alemania. ¿Tiene que venir para firmar la herencia?
+
+ANDRÉS: Siento lo de tu abuela. Tu hermano no tiene que venir: le hace falta un NIE, el número de identificación de extranjero, y un poder notarial con apostilla, o sello oficial. Te reservo la consulta gratis con el abogado, ¿te viene bien?
+<ficha>{"situacion":"herencia de tu abuela en Granada, con tu hermano viviendo en Alemania","parentesco":"Nieto o nieta","testamento":"","bienes":"","nombre":"","telefono":"","municipio":"","franja":"","fallecimiento":"","modalidad":"","orientacion":"Tu hermano no tiene que venir: necesita un NIE y un poder notarial con apostilla.","porDecir":"en el impuesto, como nieto, lo más probable es que pagues cero o casi nada, pero hay que presentarlo en seis meses aunque salga cero · si hay piso, la plusvalía municipal","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, pero ¿cómo funciona lo del poder? ¿Dónde lo tiene que hacer mi hermano, en Alemania?
+
+ANDRÉS: El poder notarial autoriza a alguien a firmar por tu hermano. Dónde lo firma, lo confirma el abogado. Como nieto o nieta, en el impuesto lo más probable es cero o casi nada, aunque hay que presentarlo en seis meses. ¿Te reservo la consulta?
+<ficha>{"situacion":"herencia de tu abuela en Granada, con tu hermano viviendo en Alemania","parentesco":"Nieto o nieta","testamento":"","bienes":"","nombre":"","telefono":"","municipio":"","franja":"","fallecimiento":"","modalidad":"","orientacion":"Tu hermano no tiene que venir: necesita un NIE y un poder notarial con apostilla; dónde lo firma lo confirma el abogado.","porDecir":"si hay piso, la plusvalía municipal","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, entonces sí, resérvame la consulta. Mejor por videollamada, cualquier tarde me viene bien. Soy Sergio, 677 444 222.
+
+ANDRÉS: Perfecto, Sergio, te reservo la consulta por videollamada por la tarde. Si hubo piso, puede tocar la plusvalía municipal. ¿En qué municipio vives?
+<ficha>{"situacion":"herencia de tu abuela en Granada, con tu hermano viviendo en Alemania","parentesco":"Nieto o nieta","testamento":"","bienes":"","nombre":"Sergio","telefono":"677 444 222","municipio":"","franja":"por videollamada, cualquier tarde","fallecimiento":"","modalidad":"Por videollamada","orientacion":"Tu hermano no tiene que venir: necesita un NIE y un poder notarial con apostilla; dónde lo firma lo confirma el abogado.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: En Granada, en el Albaicín. La casa de mi abuela también está en el Albaicín.
+
+ANDRÉS: Te lo repito, Sergio: teléfono seis siete siete, cuatro cuatro cuatro, dos dos dos; en Granada, y consulta por videollamada por la tarde. Y la plusvalía, el impuesto del ayuntamiento por la casa de tu abuela, tiene seis meses de plazo. ¿Está todo bien?
+<ficha>{"situacion":"herencia de tu abuela en Granada, con tu hermano viviendo en Alemania","parentesco":"Nieto o nieta","testamento":"","bienes":"una casa en el Albaicín","nombre":"Sergio","telefono":"677 444 222","municipio":"Granada, Albaicín","franja":"por videollamada, por la tarde","fallecimiento":"","modalidad":"Por videollamada","orientacion":"Tu hermano no tiene que venir: necesita un NIE y un poder notarial con apostilla; dónde lo firma lo confirma el abogado.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien.
+
+ANDRÉS: No te preocupes, Sergio: queda enviada tu solicitud. Te llamamos para confirmar el día y la hora de la consulta por videollamada, por la tarde. ¿Necesitas algo más?
+<ficha>{"situacion":"herencia de tu abuela en Granada, con tu hermano viviendo en Alemania","parentesco":"Nieto o nieta","testamento":"","bienes":"una casa en el Albaicín","nombre":"Sergio","telefono":"677 444 222","municipio":"Granada, Albaicín","franja":"por videollamada, por la tarde","fallecimiento":"","modalidad":"Por videollamada","orientacion":"Tu hermano no tiene que venir: necesita un NIE y un poder notarial con apostilla; dónde lo firma lo confirma el abogado.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","situacion":"herencia de la abuela de quien escribe en Granada, con el hermano viviendo en Alemania","parentesco":"Nieto o nieta","testamento":"","bienes":"una casa en el Albaicín","nombre":"Sergio","telefono":"677 444 222","municipio":"Granada, Albaicín","franja":"por la tarde","fallecimiento":"","modalidad":"Por videollamada","urgente":false,"notas":"Abuela fallecida en Granada. Quien escribe es nieto y su hermano vive en Alemania; pregunta si el hermano tiene que venir a firmar. Se le ha explicado que no hace falta que venga, que necesita un NIE y un poder notarial con apostilla, y que dónde lo firma lo confirma el abogado. Casa de la abuela en el Albaicín (Granada). Como nieto, en el impuesto lo más probable es pagar cero o casi nada, pero hay que presentarlo en seis meses aunque salga cero. Testamento y fecha del fallecimiento no indicados. Pide consulta por videollamada por la tarde."}</aviso>

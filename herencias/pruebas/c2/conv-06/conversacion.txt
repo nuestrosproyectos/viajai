@@ -1,0 +1,27 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Herencial. Cuéntame tu caso y te explico qué te toca hacer.
+
+CLIENTE: Mi pareja ha fallecido. No estábamos casados pero llevábamos 15 años juntos. ¿Me corresponde algo?
+
+ANDRÉS: Siento mucho lo de tu pareja. Por ley, sin testamento la pareja de hecho no hereda; con testamento sí puede recibir la parte libre. Te reservo la consulta gratis con el abogado. ¿Sabes si dejó testamento?
+<ficha>{"situacion":"herencia de tu pareja, tras quince años juntos sin casarse","parentesco":"Pareja de hecho","testamento":"","bienes":"","nombre":"","telefono":"","municipio":"","franja":"","fallecimiento":"","modalidad":"","orientacion":"Sin testamento la pareja de hecho no hereda; con testamento sí puede recibir la parte libre, y lo confirma el abogado con los documentos.","porDecir":"si estabais inscritos como pareja de hecho, en el impuesto tenéis la misma reducción que un cónyuge · si no hay testamento, la declaración de herederos ante notario · si hay piso, la plusvalía municipal","fase":"proponiendo"}</ficha>
+
+CLIENTE: No lo sé, no hemos mirado nada. Estoy muy afectada. Vivimos en un piso que está a su nombre, ¿me tendré que ir de allí?
+
+ANDRÉS: Entiendo lo duro que es. Lo del piso lo apunto para que el abogado te lo confirme. Y si estabais inscritos como pareja de hecho, en el impuesto tenéis la misma reducción que un cónyuge. ¿Te reservo la consulta?
+<ficha>{"situacion":"herencia de tu pareja, tras quince años juntos sin casarse","parentesco":"Pareja de hecho","testamento":"","bienes":"piso a nombre de tu pareja","nombre":"","telefono":"","municipio":"","franja":"","fallecimiento":"","modalidad":"","orientacion":"Ver si hubo testamento y si la pareja estaba inscrita; lo del piso lo confirma el abogado con los papeles.","porDecir":"si no hay testamento, la declaración de herederos ante notario","fase":"proponiendo"}</ficha>
+
+CLIENTE: Sí, vale, resérvamela. Prefiero ir al despacho, por la mañana. Soy Toñi y mi teléfono es el 699 777 333.
+
+ANDRÉS: Perfecto, Toñi, te reservo la consulta en el despacho por la mañana. Y si no hubo testamento, hará falta la declaración de herederos, el documento notarial que dice quién hereda. ¿En qué municipio vives?
+<ficha>{"situacion":"herencia de tu pareja, tras quince años juntos sin casarse","parentesco":"Pareja de hecho","testamento":"No lo sé","bienes":"piso a nombre de tu pareja","nombre":"Toñi","telefono":"699 777 333","municipio":"","franja":"en el despacho, por la mañana","fallecimiento":"","modalidad":"En el despacho","orientacion":"Ver si hubo testamento y si la pareja estaba inscrita; lo del piso lo confirma el abogado con los papeles.","porDecir":"si hay piso, la plusvalía municipal","fase":"datos"}</ficha>
+
+CLIENTE: En Armilla.
+
+ANDRÉS: Te lo repito, Toñi: teléfono seis nueve nueve, siete siete siete, tres tres tres; en Armilla, en el despacho por la mañana. Y si hay piso, la plusvalía, el impuesto del ayuntamiento, lo ve el abogado. ¿Está todo bien?
+<ficha>{"situacion":"herencia de tu pareja, tras quince años juntos sin casarse","parentesco":"Pareja de hecho","testamento":"No lo sé","bienes":"piso a nombre de tu pareja","nombre":"Toñi","telefono":"699 777 333","municipio":"Armilla","franja":"en el despacho, por la mañana","fallecimiento":"","modalidad":"En el despacho","orientacion":"Ver si hubo testamento y si la pareja estaba inscrita; lo del piso lo confirma el abogado con los papeles.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, está bien, gracias.
+
+ANDRÉS: No te preocupes, Toñi: queda enviada tu solicitud. Te llamamos para confirmar el día y la hora de la consulta en el despacho, por la mañana. ¿Necesitas algo más?
+<ficha>{"situacion":"herencia de tu pareja, tras quince años juntos sin casarse","parentesco":"Pareja de hecho","testamento":"No lo sé","bienes":"piso a nombre de tu pareja","nombre":"Toñi","telefono":"699 777 333","municipio":"Armilla","franja":"por la mañana","fallecimiento":"","modalidad":"En el despacho","orientacion":"Ver si hubo testamento y si la pareja estaba inscrita; lo del piso lo confirma el abogado con los papeles.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","situacion":"herencia de la pareja de quien escribe, tras quince años juntos sin casarse","parentesco":"Pareja de hecho","testamento":"No lo sé","bienes":"piso a nombre de la pareja fallecida","nombre":"Toñi","telefono":"699 777 333","municipio":"Armilla","franja":"por la mañana","fallecimiento":"","modalidad":"En el despacho","urgente":false,"notas":"Pareja fallecida tras quince años de convivencia, sin casarse. No saben si hubo testamento y no indica si estaban inscritos como pareja de hecho. Vive en un piso que está a nombre de la pareja fallecida y pregunta si tendrá que irse: se ha apuntado para que el abogado lo confirme. Se le ha explicado que sin testamento la pareja de hecho no hereda, que con testamento puede recibir la parte libre, y que si estaban inscritos la reducción en el impuesto es la del cónyuge. Pide consulta en el despacho por la mañana."}</aviso>

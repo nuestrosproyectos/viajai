@@ -1,0 +1,27 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Herencial. Cuéntame tu caso y te explico qué te toca hacer.
+
+CLIENTE: Mi hermano ha muerto y creo que tenía deudas. ¿Si acepto la herencia tengo que pagarlas yo?
+
+ANDRÉS: Siento lo de tu hermano. Aceptando a secas, sí respondes de las deudas, incluso con tu dinero. Por eso, no toques cuentas ni bienes hasta verlo con el abogado. Te reservo la consulta gratis, ¿por la mañana o por la tarde?
+<ficha>{"situacion":"herencia de tu hermano, con deudas","parentesco":"Hermano o hermana","testamento":"","bienes":"","nombre":"","telefono":"","municipio":"","franja":"","fallecimiento":"","modalidad":"","orientacion":"No aceptar a secas ni tocar cuentas o bienes hasta verlo con el abogado, porque aceptar a secas incluye las deudas.","porDecir":"a beneficio de inventario, ante notario, solo respondes hasta donde llegue la herencia · renunciar es ante notario e irrevocable · si hay hipoteca, revisar si hay seguro de amortización","fase":"proponiendo"}</ficha>
+
+CLIENTE: Mejor por la tarde. Pero antes, ¿qué opciones tengo? Mi hermano tenía un préstamo y quizá tarjetas, y una furgoneta. ¿Hay alguna forma de no responder de las deudas?
+
+ANDRÉS: Hay dos vías: aceptar a beneficio de inventario, ante notario, que solo te obliga hasta donde llegue la herencia; o renunciar, que es irrevocable. Ojo, si tienes cosas suyas el plazo es de treinta días. ¿Me dices tu nombre y un teléfono para reservarte la consulta?
+<ficha>{"situacion":"herencia de tu hermano, con deudas","parentesco":"Hermano o hermana","testamento":"","bienes":"una furgoneta","nombre":"","telefono":"","municipio":"","franja":"por la tarde","fallecimiento":"","modalidad":"","orientacion":"Ante las deudas, elegir entre aceptar a beneficio de inventario o renunciar, con el abogado; mientras tanto, no tocar cuentas ni bienes.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Vale. Soy Manuel, mi teléfono es el 622 555 444. Y la consulta por videollamada, por la tarde.
+
+ANDRÉS: Perfecto, Manuel, te reservo la consulta por videollamada por la tarde. Si la furgoneta te toca, la transferencia en Tráfico tiene 90 días desde que se adjudique, orientativo. ¿En qué municipio vives?
+<ficha>{"situacion":"herencia de tu hermano, con deudas","parentesco":"Hermano o hermana","testamento":"","bienes":"una furgoneta","nombre":"Manuel","telefono":"622 555 444","municipio":"","franja":"videollamada, por la tarde","fallecimiento":"","modalidad":"Por videollamada","orientacion":"No aceptar a secas ni tocar cuentas o bienes hasta verlo con el abogado, porque aceptar a secas incluye las deudas.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: En Guadix.
+
+ANDRÉS: Te lo repito, Manuel: teléfono seis dos dos, cinco cinco cinco, cuatro cuatro cuatro; en Guadix, y la consulta por videollamada por la tarde. ¿Está todo bien?
+<ficha>{"situacion":"herencia de tu hermano, con deudas","parentesco":"Hermano o hermana","testamento":"","bienes":"una furgoneta","nombre":"Manuel","telefono":"622 555 444","municipio":"Guadix","franja":"videollamada, por la tarde","fallecimiento":"","modalidad":"Por videollamada","orientacion":"No aceptar a secas ni tocar cuentas o bienes hasta verlo con el abogado, porque aceptar a secas incluye las deudas.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo correcto, gracias.
+
+ANDRÉS: No te preocupes, Manuel: queda enviada tu solicitud. Te llamamos para confirmar el día y la hora de la consulta por videollamada, por la tarde. ¿Necesitas algo más?
+<ficha>{"situacion":"herencia de tu hermano, con deudas","parentesco":"Hermano o hermana","testamento":"","bienes":"una furgoneta","nombre":"Manuel","telefono":"622 555 444","municipio":"Guadix","franja":"videollamada, por la tarde","fallecimiento":"","modalidad":"Por videollamada","orientacion":"No aceptar a secas ni tocar cuentas o bienes hasta verlo con el abogado, porque aceptar a secas incluye las deudas.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","situacion":"herencia de un hermano fallecido, con posibles deudas","parentesco":"Hermano o hermana","testamento":"","bienes":"una furgoneta","nombre":"Manuel","telefono":"622 555 444","municipio":"Guadix","franja":"por la tarde","fallecimiento":"","modalidad":"Por videollamada","urgente":false,"notas":"Hermano fallecido que, según quien escribe, tenía un préstamo y quizá tarjetas, además de una furgoneta. Pregunta si puede evitar responder de las deudas. Se le ha explicado la aceptación a beneficio de inventario (ante notario, solo responde hasta donde llegue la herencia) y la renuncia (ante notario, irrevocable), y que no toque cuentas ni bienes hasta hablar con el abogado. Plazo de treinta días si tiene bienes de la herencia en su poder. Fecha del fallecimiento y testamento no indicados. Pide consulta por videollamada por la tarde."}</aviso>

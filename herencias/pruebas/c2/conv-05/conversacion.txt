@@ -1,0 +1,27 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Herencial. Cuéntame tu caso y te explico qué te toca hacer.
+
+CLIENTE: Somos cuatro hermanos y uno no quiere firmar el reparto de la casa del pueblo. ¿Qué podemos hacer?
+
+ANDRÉS: Primero, intentad negociar con él. Si los que queréis repartir sumáis al menos la mitad, el notario puede nombrar un contador-partidor, quien hace el reparto sin su firma. Te reservo la consulta gratis con el abogado, ¿por la mañana o por la tarde?
+<ficha>{"situacion":"reparto de la casa del pueblo entre cuatro hermanos, uno no quiere firmar","parentesco":"Hermano o hermana","testamento":"","bienes":"casa del pueblo","nombre":"","telefono":"","municipio":"","franja":"","fallecimiento":"","modalidad":"","orientacion":"Negociar con el hermano que no firma; si los demás suman al menos la mitad, el notario puede nombrar un contador-partidor que haga el reparto sin su firma.","porDecir":"si no se llega a un acuerdo, división judicial, de uno a tres años · si ya sois copropietarios, uno puede compensar a los demás, vender la casa o, en el peor caso, subasta","fase":"proponiendo"}</ficha>
+
+CLIENTE: Hemos intentado hablar con él y nada. Estoy cansada ya del tema. ¿Qué salidas hay si no quiere firmar?
+
+ANDRÉS: Entiendo el cansancio. Si no hay acuerdo, queda la división judicial, de uno a tres años. Y si ya sois copropietarios, uno puede compensar a los demás, vender la casa o, en el peor caso, subastarla. ¿Te reservo la consulta para verlo?
+<ficha>{"situacion":"reparto de la casa del pueblo entre cuatro hermanos, uno no quiere firmar","parentesco":"Hermano o hermana","testamento":"","bienes":"casa del pueblo","nombre":"","telefono":"","municipio":"","franja":"","fallecimiento":"","modalidad":"","orientacion":"Negociar con el hermano que no firma; si no hay acuerdo, división judicial, o, si ya sois copropietarios, que uno compense a los demás o se venda la casa. El abogado busca primero el acuerdo.","porDecir":"","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, pues sí, resérvame la consulta. Mejor por teléfono y por la tarde. Soy Rosa, 633 888 111.
+
+ANDRÉS: Perfecto, Rosa, te reservo la consulta por teléfono por la tarde. Solo lo uso para llamarte y organizarla: ¿en qué municipio vives?
+<ficha>{"situacion":"reparto de la casa del pueblo entre cuatro hermanos, uno no quiere firmar","parentesco":"Hermano o hermana","testamento":"","bienes":"casa del pueblo","nombre":"Rosa","telefono":"633 888 111","municipio":"","franja":"por teléfono, por la tarde","fallecimiento":"","modalidad":"Por teléfono","orientacion":"Negociar con el hermano que no firma; si no hay acuerdo, división judicial, o, si ya sois copropietarios, que uno compense a los demás o se venda la casa. El abogado busca primero el acuerdo.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: En Loja.
+
+ANDRÉS: Te lo repito, Rosa: teléfono seis tres tres, ocho ocho ocho, uno uno uno; vives en Loja, y la consulta sería por teléfono por la tarde. ¿Está todo bien?
+<ficha>{"situacion":"reparto de la casa del pueblo entre cuatro hermanos, uno no quiere firmar","parentesco":"Hermano o hermana","testamento":"","bienes":"casa del pueblo","nombre":"Rosa","telefono":"633 888 111","municipio":"Loja","franja":"por teléfono, por la tarde","fallecimiento":"","modalidad":"Por teléfono","orientacion":"Negociar con el hermano que no firma; si no hay acuerdo, división judicial, o, si ya sois copropietarios, que uno compense a los demás o se venda la casa. El abogado busca primero el acuerdo.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien.
+
+ANDRÉS: No te preocupes, Rosa: queda enviada tu solicitud. Te llamamos para confirmar el día y la hora de la consulta por teléfono, por la tarde. ¿Necesitas algo más?
+<ficha>{"situacion":"reparto de la casa del pueblo entre cuatro hermanos, uno no quiere firmar","parentesco":"Hermano o hermana","testamento":"","bienes":"casa del pueblo","nombre":"Rosa","telefono":"633 888 111","municipio":"Loja","franja":"por teléfono, por la tarde","fallecimiento":"","modalidad":"Por teléfono","orientacion":"Negociar con el hermano que no firma; si no hay acuerdo, división judicial, o, si ya sois copropietarios, que uno compense a los demás o se venda la casa. El abogado busca primero el acuerdo.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","situacion":"reparto de la casa del pueblo entre cuatro hermanos, uno no quiere firmar","parentesco":"Hermano o hermana","testamento":"","bienes":"casa del pueblo","nombre":"Rosa","telefono":"633 888 111","municipio":"Loja","franja":"por la tarde","fallecimiento":"","modalidad":"Por teléfono","urgente":false,"notas":"Son cuatro hermanos. Quieren repartir la casa del pueblo, pero uno de ellos no quiere firmar el reparto. Ya han intentado hablar con él sin resultado. Quien escribe lleva ya tiempo con el tema y pregunta por las salidas. Se le ha explicado la negociación, el contador-partidor (si los que quieren repartir suman al menos la mitad), la división judicial (de uno a tres años) y, si ya son copropietarios, la compensación, la venta o la subasta. Fecha del fallecimiento y testamento no indicados. No ha mencionado ningún plazo. Pide consulta por teléfono por la tarde."}</aviso>
