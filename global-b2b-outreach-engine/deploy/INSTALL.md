@@ -6,6 +6,17 @@ y un subdominio apuntando a la IP del servidor, por ejemplo `panel.tudominio.com
 
 Todo lo que va entre `<…>` lo sustituyes por tu dato.
 
+## 0. Mirar antes de tocar
+
+Desde tu ordenador, con el código descargado, ejecuta el diagnóstico (solo lee, no cambia nada):
+
+```bash
+ssh <usuario>@<ip-del-servidor> 'bash -s' < deploy/diagnostico.sh
+```
+
+Comprueba que hay al menos 2 GB libres en disco y que nada ocupa ya los puertos 80 y 443. Si otro programa
+(por ejemplo un contenedor Docker con Nginx o Traefik) usa esos puertos, no instales Caddy: añade el panel a ese proxy.
+
 ## 1. Preparar el servidor
 
 ```bash

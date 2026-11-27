@@ -53,7 +53,14 @@ Léelo entero antes de tocar nada. Háblale a Juan siempre en español de Españ
 
 ## Pendiente, por orden
 
-1. Ver el VPS de Hostinger (sistema, qué hay funcionando, plan y fecha de renovación) y decidir entre quedárselo o pasar a OVH (VPS-1: unos 3,81 € al mes sin IVA según comparativas; confirmar en la web oficial).
+1. ~~Ver el VPS de Hostinger~~ HECHO (27-11-2026, sesión en la nube, vía API oficial de Hostinger):
+   - KVM 1 (1 núcleo, 4 GB RAM, 50 GB), Ubuntu 24.04 con Docker, IP 69.62.120.115, hostname srv1991531.hstgr.cloud, encendido.
+   - Pagado (155,88 €/año). **Renovación automática QUITADA a petición de Juan: caduca el 18-09-2027.** En agosto de 2027 decidir: renovar a mano u OVH.
+   - Uso última semana: CPU <1 % (pico 5 %), RAM ~650 MB de 4 GB. El gestor Docker de Hostinger está vacío. Hay una clave SSH «licitaciones-vps» (PC de Juan): probablemente lo usó para lo de licitaciones.
+   - Sin verificar: qué corre dentro y el disco (la métrica marca 49 GB de 50; puede estar casi lleno). **Antes de instalar, ejecutar `deploy/diagnostico.sh`** (solo lee).
+   - Decisión de Juan: quedarse con Hostinger e instalar **desde su PC por SSH** (opción 1). No contratar OVH ahora.
+   - Visto de paso: paga dos alojamientos web de 203,88 €/año (Business, mayo; Unlimited, 21-11-2026). Se le avisó; no se ha tocado.
+   - El token de la API de Hostinger quedó guardado en el entorno en la nube `viajai` (secreto de red para developers.hostinger.com).
 2. Instalar siguiendo `deploy/INSTALL.md` (con OK de Juan antes de desplegar).
 3. Reunir lo que falta: clave de Apify, clave de Anthropic, datos legales (razón social, CIF, domicilio, URL de privacidad), dominio de envío con SPF/DKIM/DMARC y dos buzones, subdominio para el panel.
 4. Redactar los correos reales de los leads con email y enseñárselos a Juan **antes** de enviar ninguno.
