@@ -1,0 +1,3 @@
+Puedes quedarte con el abogado de tu seguro si te da confianza, y no hace falta cambiar. Si quieres una segunda opinión, te puedo reservar la primera consulta gratis con el abogado. ¿Tu póliza incluye defensa jurídica?
+<ficha>{"caso":"","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Puede seguir con el abogado de su seguro si le da confianza; la consulta gratis sirve de segunda opinión","fase":"orientando"}</ficha>
+<mostrar>situaciones</mostrar>

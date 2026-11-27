@@ -1,0 +1,3 @@
+Siento el golpe por detrás. La mutua cubre la asistencia y la baja, pero puedes reclamar a la aseguradora del otro coche si tuvo la culpa; el abogado mira las dos vías juntas. Te puedo reservar la primera consulta gratis. ¿Hubo parte amistoso o atestado?
+<ficha>{"caso":"Accidente volviendo del trabajo en moto por la circunvalación; un coche le dio por detrás","como":"En moto","fecha":"","medico":"","culpa":"Del otro","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"La mutua cubre asistencia y baja; el abogado revisa si también se reclama al seguro del otro coche","fase":"orientando"}</ficha>
+<mostrar>situaciones</mostrar>

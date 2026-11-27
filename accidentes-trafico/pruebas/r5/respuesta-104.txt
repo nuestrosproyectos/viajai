@@ -1,0 +1,2 @@
+Siento el dolor de cuello. No puedo darte una cifra: se paga por día de lesión, unos sesenta y ocho euros por día moderado, más secuelas y gastos; los días que valen son los del informe médico. ¿Te reservo la consulta gratis, mañana o tarde?
+<ficha>{"caso":"Accidente de tráfico","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"El abogado calcula la indemnización con el informe médico; la primera consulta es gratuita.","fase":"proponiendo"}</ficha>
