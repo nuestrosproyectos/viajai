@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Con el alta de hace unos siete meses, el plazo de un año suele contarse desde ahí, y eso lo confirma el abogado. Si el conductor se fue, lo más probable es que responda el Consorcio de Compensación de Seguros. ¿Te reservo la consulta gratis?\n<ficha>{\"caso\":\"Atropello en un paso de cebra; el conductor se fue y no se sabe quién era\",\"como\":\"Andando\",\"fecha\":\"hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Mirar cuanto antes el plazo de un año, que suele contarse desde el alta; si el conductor se fue, responde el Consorcio\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Con el alta de hace unos siete meses, el plazo de un año suele contarse desde ahí, y eso lo confirma el abogado. Si el conductor se fue, lo más probable es que responda el Consorcio de Compensación de Seguros. ¿Te reservo la consulta gratis?\n<ficha>{\"caso\":\"Atropello en un paso de cebra; el conductor se fue y no se sabe quién era\",\"como\":\"Andando\",\"fecha\":\"hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Mirar cuanto antes el plazo de un año, que suele contarse desde el alta; si el conductor se fue, responde el Consorcio\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Ah, vale, qué alivio, pensaba que ya lo había perdido todo. Sí, resérvamela por favor, y cuanto antes mejor. Prefiero ir en persona, por las mañanas."
  }
 ]

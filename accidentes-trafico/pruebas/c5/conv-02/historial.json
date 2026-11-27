@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Entiendo, cinco meses no son fáciles. Sin el alta no se puede saber si es poca: faltan días y posibles secuelas, y sigue la rehabilitación, porque los días que no constan no cuentan. ¿Te reservo la consulta gratis?\n<ficha>{\"caso\":\"Oferta de la aseguradora contraria, con prisa para firmar\",\"como\":\"\",\"fecha\":\"hace cinco meses\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada hasta que lo revise el abogado; sin el alta no se puede valorar lo definitivo\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>oferta</mostrar>",
   "original": "Entiendo, cinco meses no son fáciles. Sin el alta no se puede saber si es poca: faltan días y posibles secuelas, y sigue la rehabilitación, porque los días que no constan no cuentan. ¿Te reservo la consulta gratis?\n<ficha>{\"caso\":\"Oferta de la aseguradora contraria, con prisa para firmar\",\"como\":\"\",\"fecha\":\"hace cinco meses\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada hasta que lo revise el abogado; sin el alta no se puede valorar lo definitivo\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>oferta</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, no firmo entonces. Sí, que lo mire el abogado. ¿Puede ser por teléfono?"
  }
 ]

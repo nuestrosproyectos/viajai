@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "No se preocupe, para empezar a verlo no es pronto. Como pasajera, casi siempre se la indemniza, del seguro del culpable o del coche en que iba, sin hacer falta saber aún de quién fue la culpa. ¿Le reservo la consulta gratis?\n<ficha>{\"caso\":\"Accidente de autobús en la carretera de Motril; escribe en nombre de su madre, de 79 años\",\"como\":\"De pasajero\",\"fecha\":\"ayer\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar todos los informes del hospital; como pasajera, casi siempre se la indemniza\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "No se preocupe, para empezar a verlo no es pronto. Como pasajera, casi siempre se la indemniza, del seguro del culpable o del coche en que iba, sin hacer falta saber aún de quién fue la culpa. ¿Le reservo la consulta gratis?\n<ficha>{\"caso\":\"Accidente de autobús en la carretera de Motril; escribe en nombre de su madre, de 79 años\",\"como\":\"De pasajero\",\"fecha\":\"ayer\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar todos los informes del hospital; como pasajera, casi siempre se la indemniza\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Gracias por su paciencia. Sí, resérvela, pero la semana que viene, ahora mismo no puedo pensar en otra cosa que en mi madre. Que el abogado me llame por teléfono por la mañana. Soy Encarna, 644 909 808."
  }
 ]

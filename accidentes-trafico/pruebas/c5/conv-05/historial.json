@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "La mutua cubre la baja y, si hay otro culpable, se puede reclamar además a su aseguradora. El atestado de la Guardia Civil ayuda mucho, y cómo encajan las dos vías lo confirma el abogado. ¿Te reservo la consulta gratis?\n<ficha>{\"caso\":\"Volviendo del trabajo en moto, un coche le sacó de la carretera\",\"como\":\"En moto\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"Atestado de la policía\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"La mutua cubre la baja; si hay otro culpable, también se puede reclamar a su aseguradora\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "La mutua cubre la baja y, si hay otro culpable, se puede reclamar además a su aseguradora. El atestado de la Guardia Civil ayuda mucho, y cómo encajan las dos vías lo confirma el abogado. ¿Te reservo la consulta gratis?\n<ficha>{\"caso\":\"Volviendo del trabajo en moto, un coche le sacó de la carretera\",\"como\":\"En moto\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"Atestado de la policía\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"La mutua cubre la baja; si hay otro culpable, también se puede reclamar a su aseguradora\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Ah vale, o sea que se puede las dos cosas, lo de cómo encajan ya lo ve el abogado. Pues sí, resérvamela, por teléfono y por la tarde mejor."
  }
 ]

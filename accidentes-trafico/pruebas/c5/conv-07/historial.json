@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Tener atestado y testigo ayuda mucho. Que el conductor lo diga no basta: la aseguradora solo se libra si la culpa fue solo de la víctima. Lo de la bici lo confirma el abogado. ¿Te reservo la consulta gratis?\n<ficha>{\"caso\":\"Iba en bici y un coche te cerró al girar\",\"como\":\"En bici o patinete\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"No lo sé\",\"atestado\":\"Atestado de la policía\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar fotos, el atestado y los datos del testigo; que el conductor lo diga no basta para pagar tú\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Tener atestado y testigo ayuda mucho. Que el conductor lo diga no basta: la aseguradora solo se libra si la culpa fue solo de la víctima. Lo de la bici lo confirma el abogado. ¿Te reservo la consulta gratis?\n<ficha>{\"caso\":\"Iba en bici y un coche te cerró al girar\",\"como\":\"En bici o patinete\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"No lo sé\",\"atestado\":\"Atestado de la policía\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Guardar fotos, el atestado y los datos del testigo; que el conductor lo diga no basta para pagar tú\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, me quedo más tranquilo. Sí, resérvamela, por videollamada. Me va bien cualquier tarde."
  }
 ]

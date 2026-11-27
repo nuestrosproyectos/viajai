@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "No te preocupes: la consulta es gratis y, si no hay indemnización, no hay honorarios. Lo habitual es un porcentaje de lo que se consiga, entre el diez y el treinta por ciento; el porcentaje exacto te lo da el abogado. ¿Te reservo la consulta?\n<ficha>{\"caso\":\"Golpe por detrás\",\"como\":\"\",\"fecha\":\"hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico hoy y avisar a tu aseguradora en siete días\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>honorarios</mostrar>",
   "original": "No te preocupes: la consulta es gratis y, si no hay indemnización, no hay honorarios. Lo habitual es un porcentaje de lo que se consiga, entre el diez y el treinta por ciento; el porcentaje exacto te lo da el abogado. ¿Te reservo la consulta?\n<ficha>{\"caso\":\"Golpe por detrás\",\"como\":\"\",\"fecha\":\"hace tres días\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"Que te vea un médico hoy y avisar a tu aseguradora en siete días\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>honorarios</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, entonces si no cobro nada no pago nada, ¿no? Pues sí, resérvamela."
  }
 ]
