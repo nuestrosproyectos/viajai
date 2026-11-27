@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Hace bien, mejor que la vean antes. Y no la barra: los restos también pueden tener amianto. ¿Me dice su nombre y un teléfono? Es solo para llamarle y organizar la visita.\n<ficha>{\"obra\":\"Quitar el tejado de uralita de la cochera y poner otro\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No quitar la uralita uno mismo: puede tener amianto, y solo la retira una empresa inscrita.\",\"porDecir\":\"la retirada necesita un plan de trabajo aprobado\",\"fase\":\"datos\"}</ficha>",
   "original": "Hace bien, mejor que la vean antes. Y no la barra: los restos también pueden tener amianto. ¿Me dice su nombre y un teléfono? Es solo para llamarle y organizar la visita.\n<ficha>{\"obra\":\"Quitar el tejado de uralita de la cochera y poner otro\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No quitar la uralita uno mismo: puede tener amianto, y solo la retira una empresa inscrita.\",\"porDecir\":\"la retirada necesita un plan de trabajo aprobado\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Antonio, 655 909 341"
  }
 ]

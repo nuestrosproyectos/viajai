@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Hace bien en darse prisa. La visita suele ser en dos a cuatro días, y si el plato va a ras de suelo, el precio sube algo; eso lo vemos midiendo. ¿Le reservo la visita?\n<ficha>{\"obra\":\"Cambiar la bañera por plato de ducha, para su padre, que ya no puede entrar\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"Cuanto antes\",\"orientacion\":\"Cambiar la bañera por un plato de ducha es la prioridad por seguridad; suele costar entre mil y dos mil trescientos euros.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Hace bien en darse prisa. La visita suele ser en dos a cuatro días, y si el plato va a ras de suelo, el precio sube algo; eso lo vemos midiendo. ¿Le reservo la visita?\n<ficha>{\"obra\":\"Cambiar la bañera por plato de ducha, para su padre, que ya no puede entrar\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"Cuanto antes\",\"orientacion\":\"Cambiar la bañera por un plato de ducha es la prioridad por seguridad; suele costar entre mil y dos mil trescientos euros.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, por favor, resérvemela cuanto antes. Si puede ser a primera hora de la mañana, que es cuando yo estoy con él."
  }
 ]
