@@ -1,0 +1,2 @@
+No eches más sosa, quema la piel; no metas la mano ni desmontes el sifón. Un desatasco sencillo suele costar unos setenta a ciento cincuenta euros, orientativo. Dile al fontanero que ya la echaste. ¿Te reservo la visita por la mañana o por la tarde?
+<ficha>{"averia":"Lavabo atascado; ya has echado medio bote de sosa cáustica","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No eches más sosa ni metas la mano; dile al fontanero que ya la has echado.","fase":"proponiendo"}</ficha>
