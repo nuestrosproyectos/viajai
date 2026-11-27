@@ -1,0 +1,2 @@
+Perfecto, te apunto a la consulta gratis con el abogado. Mientras tanto, ve al médico hoy y guarda fotos y datos de testigos. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la consulta.
+<ficha>{"caso":"Golpe por detrás","como":"","fecha":"hace tres días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que te vea un médico hoy y avisar a tu aseguradora en siete días","fase":"datos"}</ficha>
