@@ -1,0 +1,22 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Accidente Claro. Siento lo del accidente. Cuéntame qué pasó y te digo qué conviene hacer ahora.
+
+CLIENTE: Buenos días. Le escribo porque mi madre, de 79 años, está en la UCI tras un accidente de autobús ayer en la carretera de Motril.
+
+ANDRÉS: Siento mucho lo de su madre. Lo primero, su salud; lo legal espera. Los días de UCI son de una categoría más alta del baremo, y las operaciones se suman aparte. Le puedo reservar la consulta gratis. ¿Sabe si hubo atestado?
+<ficha>{"caso":"Accidente de autobús ayer en la carretera de Motril","como":"De pasajero","fecha":"ayer","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Lo primero es la salud de su madre; lo legal espera y, en UCI, los días cuentan en una categoría más alta.","porDecir":"que guarde todos los informes, el parte o atestado y los datos del autobús","fase":"proponiendo"}</ficha>
+
+CLIENTE: Sí, creo que vino la Guardia Civil, pero no sé más. Estamos muy nerviosos, ¿qué tenemos que hacer? ¿No es pronto para hablar de reclamar?
+
+ANDRÉS: Entiendo los nervios. Lo primero es la salud de su madre. No es pronto para informarse, sin prisa: guarde todos los informes, el atestado y los datos del autobús. ¿Le reservo la consulta gratis?
+<ficha>{"caso":"Accidente de autobús ayer en la carretera de Motril","como":"De pasajero","fecha":"ayer","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Lo primero es la salud de su madre; lo legal puede esperar.","porDecir":"","fase":"proponiendo"}</ficha>
+
+CLIENTE: Gracias por su paciencia. Guardaremos todo. Si el abogado pudiera llamarnos la semana que viene, se lo agradecería. Soy Encarna, de Motril, mi teléfono es el 644 909 808. Mejor por teléfono y por las mañanas.
+
+ANDRÉS: Le confirmo: Encarna, teléfono seis cuatro cuatro, nueve cero nueve, ocho cero ocho, en Motril, por teléfono, por la mañana, la semana que viene. ¿Está todo bien?
+<ficha>{"caso":"Accidente de autobús ayer en la carretera de Motril, en el que iba su madre","como":"De pasajero","fecha":"ayer","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Encarna","telefono":"644 909 808","municipio":"Motril","franja":"por teléfono, por la mañana, la semana que viene","consentimientoSalud":"","orientacion":"Lo primero es la salud de su madre; lo legal puede esperar.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, está todo bien, gracias. ¿Ya queda anotado para que nos llamen la semana que viene?
+
+ANDRÉS: La solicitud queda enviada, Encarna. Le llamamos la semana que viene, por la mañana, para confirmar el día y la hora. Espero que su madre se recupere pronto. ¿Necesita algo más?
+<ficha>{"caso":"Accidente de autobús ayer en la carretera de Motril, en el que iba su madre","como":"De pasajero","fecha":"ayer","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Encarna","telefono":"644 909 808","municipio":"Motril","franja":"por teléfono, por la mañana, la semana que viene","consentimientoSalud":"","orientacion":"Lo primero es la salud de su madre; lo legal puede esperar.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"llamada","caso":"Accidente de autobús ayer en la carretera de Motril, en el que iba su madre","como":"De pasajero","fecha":"ayer","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Encarna","telefono":"644 909 808","municipio":"Motril","franja":"por teléfono, por la mañana, la semana que viene","consentimientoSalud":"","urgente":false,"notas":"Accidente de autobús ayer en la carretera de Motril, en el que iba como pasajera su madre, de 79 años. Cree que vino la Guardia Civil, pero no sabe más del atestado. Se le indicó que guarde informes, el atestado o parte y los datos del autobús. Pide que le llame el abogado la semana que viene, por teléfono, por la mañana. No se han apuntado datos de salud."}</aviso>

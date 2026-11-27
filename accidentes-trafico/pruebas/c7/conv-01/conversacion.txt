@@ -1,0 +1,22 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Accidente Claro. Siento lo del accidente. Cuéntame qué pasó y te digo qué conviene hacer ahora.
+
+CLIENTE: Hola, hace 3 días me dieron un golpe por detrás y me duele el cuello. ¿Qué hago?
+
+ANDRÉS: Siento lo de tu cuello. Lo primero, que te vea un médico hoy y quede por escrito. Como el golpe fue hace menos de siete días, avisa a tu aseguradora. Te puedo reservar la primera consulta, gratis, con el abogado. ¿Ya has ido al médico?
+<ficha>{"caso":"Golpe por detrás","como":"","fecha":"hace tres días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que te vea un médico hoy y avises a tu aseguradora en siete días.","porDecir":"que sigas el tratamiento y la rehabilitación, que los días que no constan no cuentan · guardar fotos, testigos, informes y facturas · tienes un año para reclamar, que en lesiones suele contar desde el alta","fase":"proponiendo"}</ficha>
+
+CLIENTE: No, todavía no, pensaba que se me pasaría solo. Y lo del abogado, ¿cuánto me va a costar?
+
+ANDRÉS: La consulta es gratis, sin compromiso. Si encarga el caso, suele ser entre el diez y el treinta por ciento de lo que se consiga, y el abogado lo concreta. Lo primero que te vea un médico hoy y sigue el tratamiento. ¿Te reservo la consulta?
+<ficha>{"caso":"Golpe por detrás","como":"","fecha":"hace tres días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que te vea un médico hoy y avises a tu aseguradora en siete días.","porDecir":"guardar fotos, testigos, informes y facturas · tienes un año para reclamar, que en lesiones suele contar desde el alta","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, entonces si no me gusta no pago nada por la consulta, ¿no? Pues sí, resérvamela. Soy Raúl, del Zaidín en Granada, mi móvil es el 644 555 888. Mejor por videollamada y por la tarde.
+
+ANDRÉS: Exacto: si no hay indemnización, no hay honorarios. Te confirmo: Raúl, teléfono seis cuatro cuatro, cinco cinco cinco, ocho ocho ocho, en el Zaidín de Granada, videollamada por la tarde. Y guarda fotos, testigos, informes y facturas. ¿Está todo bien?
+<ficha>{"caso":"Golpe por detrás","como":"","fecha":"hace tres días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Raúl","telefono":"644 555 888","municipio":"Zaidín, Granada","franja":"por videollamada, por la tarde","consentimientoSalud":"","orientacion":"Que te vea un médico hoy y avises a tu aseguradora en siete días.","porDecir":"tienes un año para reclamar, que en lesiones suele contar desde el alta","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien, gracias. Entonces ya queda reservada, ¿no?
+
+ANDRÉS: Perfecto, Raúl, la solicitud queda enviada. Te llamamos para confirmar el día y la hora de la videollamada por la tarde. Y recuerda: tienes un año para reclamar, que en lesiones suele contar desde el alta. ¿Necesitas algo más?
+<ficha>{"caso":"Golpe por detrás","como":"","fecha":"hace tres días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Raúl","telefono":"644 555 888","municipio":"Zaidín, Granada","franja":"por videollamada, por la tarde","consentimientoSalud":"","orientacion":"Que te vea un médico hoy y avises a tu aseguradora en siete días.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","caso":"Golpe por detrás","como":"","fecha":"hace tres días","medico":"","culpa":"","atestado":"","oferta":"","defensa":"","nombre":"Raúl","telefono":"644 555 888","municipio":"Zaidín, Granada","franja":"por videollamada, por la tarde","consentimientoSalud":"","urgente":false,"notas":"Golpe por detrás hace tres días. Aún no ha ido al médico; pensaba que se le pasaría solo. Pregunta por el coste de la consulta: se le explicó que es gratuita y que los honorarios son un porcentaje de lo conseguido, sin pago si no hay indemnización. Quiere videollamada por la tarde."}</aviso>

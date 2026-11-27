@@ -1,0 +1,22 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Accidente Claro. Siento lo del accidente. Cuéntame qué pasó y te digo qué conviene hacer ahora.
+
+CLIENTE: Tuve yo la culpa del accidente, me salté un ceda. Iba con mi mujer y ella se rompió la muñeca.
+
+ANDRÉS: Siento lo de la muñeca de tu mujer. Lo primero es que vea un médico hoy y quede por escrito. Tu mujer, como pasajera, puede reclamar al seguro de tu coche. Te puedo reservar la consulta gratis. ¿Ya ha ido al médico?
+<ficha>{"caso":"Accidente con culpa suya, iba con su mujer","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Que tu mujer vea un médico hoy y quede por escrito; ella puede reclamar al seguro de tu coche.","porDecir":"el seguro obligatorio no paga las lesiones del conductor culpable salvo que tengas seguro de conductor o de accidentes · el abogado revisa tu póliza y el atestado, y puede defenderte si te reclaman","fase":"proponiendo"}</ficha>
+
+CLIENTE: Sí, la llevé a urgencias. Pero si la culpa fue mía, ¿ella puede reclamar igualmente? ¿Eso me perjudica a mí?
+
+ANDRÉS: Me alegra que la llevaras a urgencias. Sí, ella puede reclamar: a los pasajeros casi siempre se les indemniza, del seguro del coche en que iban, el tuyo. Cómo afecta a tu póliza lo revisa el abogado con el atestado. ¿Te reservo la consulta?
+<ficha>{"caso":"Accidente con culpa suya, iba con su mujer","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"Ella puede reclamar al seguro de tu coche; lo demás lo revisa el abogado.","porDecir":"el seguro obligatorio no paga las lesiones del conductor culpable salvo que tengas seguro de conductor o de accidentes · el abogado revisa tu póliza y el atestado, y puede defenderte si te reclaman","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, me quedo más tranquilo. Sí, reserva la consulta para ella. Escribo yo, Pedro, de Loja, mi teléfono es el 600 909 303. Mejor por videollamada y por la tarde.
+
+ANDRÉS: Te confirmo: Pedro, teléfono seis cero cero, nueve cero nueve, tres cero tres, en Loja, por videollamada por la tarde, para tu mujer. Y si te lesionaste, el seguro obligatorio no cubre tus lesiones por culpa tuya, salvo seguro de conductor. ¿Está todo bien?
+<ficha>{"caso":"Accidente con culpa suya, iba con su mujer","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"Pedro","telefono":"600 909 303","municipio":"Loja","franja":"por videollamada, por la tarde","consentimientoSalud":"","orientacion":"Ella puede reclamar al seguro de tu coche; lo demás lo revisa el abogado.","porDecir":"el abogado revisa tu póliza y el atestado, y puede defenderte si te reclaman","fase":"datos"}</ficha>
+
+CLIENTE: Sí, está todo bien. Lo de mis lesiones no importa, yo estoy bien. ¿Y ya queda reservada la de mi mujer?
+
+ANDRÉS: Perfecto, la solicitud para tu mujer queda enviada. Te llamamos para confirmar el día y la hora, por la tarde, por videollamada. Y recuerda que el abogado revisa tu póliza y el atestado, y puede defenderte si te reclaman. ¿Necesitas algo más?
+<ficha>{"caso":"Accidente con culpa suya, iba con su mujer","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"Pedro","telefono":"600 909 303","municipio":"Loja","franja":"por videollamada, por la tarde","consentimientoSalud":"","orientacion":"Ella puede reclamar al seguro de tu coche; lo demás lo revisa el abogado.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","caso":"Accidente con culpa suya, iba con su mujer","como":"Conduciendo un coche","fecha":"","medico":"","culpa":"Mía","atestado":"","oferta":"","defensa":"","nombre":"Pedro","telefono":"600 909 303","municipio":"Loja","franja":"por videollamada, por la tarde","consentimientoSalud":"","urgente":false,"notas":"Consulta solicitada para su mujer, que iba de pasajera. Reconoce que se saltó un ceda. Pregunta si ella puede reclamar y si le perjudica a él: se le explicó que los pasajeros suelen reclamar al seguro del coche en que iban, y que el abogado revisa la póliza y el atestado. Él dice que está bien. No se han apuntado datos de salud. Quiere videollamada por la tarde."}</aviso>

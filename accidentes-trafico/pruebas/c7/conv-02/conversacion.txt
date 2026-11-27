@@ -1,0 +1,22 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Accidente Claro. Siento lo del accidente. Cuéntame qué pasó y te digo qué conviene hacer ahora.
+
+CLIENTE: La aseguradora del otro me ofrece 2.300 € y me dicen que firme ya. ¿Firmo?
+
+ANDRÉS: Entiendo la presión. No firmes nada todavía. Si aún no tienes el alta, lo definitivo no se puede valorar. Te puedo reservar la consulta gratis para que el abogado revise la oferta. ¿Ya te han dado el alta?
+<ficha>{"caso":"La aseguradora del otro ofrece una cantidad y pide firmar ya","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"No firmes nada hasta que lo revise el abogado con tus informes.","porDecir":"una oferta motivada debe traer su cálculo y su informe médico · cobrar a cuenta no es firmar un finiquito","fase":"proponiendo"}</ficha>
+
+CLIENTE: Alta no me han dado, sigo yendo a rehabilitación. Estuve 2 meses de baja. ¿2.300 es poco?
+
+ANDRÉS: Eso no te lo puedo decir sin verlo: depende de los días hasta el alta, las secuelas y lo que dejaste de ganar, y el abogado lo revisa. Una oferta motivada debe traer su cálculo y su informe médico. ¿Te reservo la consulta gratis?
+<ficha>{"caso":"La aseguradora del otro ofrece una cantidad y pide firmar ya","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"","telefono":"","municipio":"","franja":"","consentimientoSalud":"","orientacion":"No firmes nada hasta que lo revise el abogado con tus informes.","porDecir":"cobrar a cuenta no es firmar un finiquito","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, no firmo. Si el abogado se lo puede mirar, resérvamelo. Soy Sonia, de Motril, mi teléfono es el 633 202 404. Mejor por teléfono y por las mañanas.
+
+ANDRÉS: Haces bien en no firmar nada. Te confirmo: Sonia, teléfono seis tres tres, dos cero dos, cuatro cero cuatro, en Motril, por teléfono, por la mañana. Y ojo: cobrar a cuenta no es firmar un finiquito. ¿Está todo bien?
+<ficha>{"caso":"La aseguradora del otro ofrece una cantidad y pide firmar ya","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"Sonia","telefono":"633 202 404","municipio":"Motril","franja":"por teléfono, por la mañana","consentimientoSalud":"","orientacion":"No firmes nada hasta que lo revise el abogado con tus informes.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien. Gracias, me habéis quitado un peso de encima.
+
+ANDRÉS: Me alegro, Sonia. La solicitud queda enviada. Te llamamos para confirmar el día y la hora de la consulta, por la mañana. Y recuerda: no firmes nada hasta que lo vea el abogado. ¿Necesitas algo más?
+<ficha>{"caso":"La aseguradora del otro ofrece una cantidad y pide firmar ya","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"Sonia","telefono":"633 202 404","municipio":"Motril","franja":"por teléfono, por la mañana","consentimientoSalud":"","orientacion":"No firmes nada hasta que lo revise el abogado con tus informes.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"consulta","caso":"La aseguradora del otro ofrece una cantidad y pide firmar ya","como":"","fecha":"","medico":"","culpa":"","atestado":"","oferta":"Sí, sin firmar","defensa":"","nombre":"Sonia","telefono":"633 202 404","municipio":"Motril","franja":"por teléfono, por la mañana","consentimientoSalud":"","urgente":false,"notas":"La aseguradora del otro ofrece 2.300 € y pide firmar ya. No ha firmado nada. Pregunta si la cantidad es poco; se le explicó que depende de los días hasta el alta, las secuelas y lo que dejó de ganar, y que lo revisa el abogado. Quiere que el abogado revise la oferta. Prefiere consulta por teléfono por la mañana."}</aviso>
