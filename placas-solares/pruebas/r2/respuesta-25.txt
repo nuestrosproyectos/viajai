@@ -1,0 +1,3 @@
+Las cifras del IBI que conozco son de Granada capital; en Las Gabias depende de su ordenanza, que el técnico comprueba. Con el teléfono seiscientos veintidós, cuatrocientos cincuenta y seis, setecientos ochenta y nueve, te llamamos por las mañanas para organizar el estudio. ¿Es correcto?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 110 €","tejado":"adosado con tejado propio, mirando al sur","consumo":"de tarde, con aire acondicionado","nombre":"Paco Ruiz","telefono":"622 456 789","municipio":"Las Gabias","franja":"mañanas","inicio":"","orientacion":"Visita gratuita para calcular el tamaño y el ahorro con tus facturas","fase":"datos"}</ficha>
+<mostrar>ayudas</mostrar>

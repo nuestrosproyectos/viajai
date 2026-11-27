@@ -1,0 +1,3 @@
+Entiendo que quieras seguridad antes de firmar, pero eso no te lo puedo garantizar. Suele pagarse en unos seis a diez años: es una estimación, no una garantía. ¿Te reservo el estudio gratuito con tus facturas, por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Estudio gratuito para calcular el plazo con tus facturas","fase":"proponiendo"}</ficha>
+<mostrar>orientativos</mostrar>

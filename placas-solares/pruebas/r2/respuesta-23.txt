@@ -1,0 +1,3 @@
+Sin luz de la compañía es otra instalación, aislada y con baterías, y eso lo estudia el técnico. Te reservo la visita gratuita, ¿cuánta luz gastas más o menos al día?
+<ficha>{"que":"Placas solares sin luz de la compañía","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Instalación aislada con baterías; lo estudia el técnico en la visita","fase":"datos"}</ficha>
+<mostrar>situaciones</mostrar>

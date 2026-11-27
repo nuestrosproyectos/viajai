@@ -1,0 +1,3 @@
+Marcas y modelos no los doy: van por escrito en el presupuesto, con sus garantías. El precio exacto sale tras la visita; orientativamente cada kilovatio va de mil a mil quinientos euros. ¿Te reservo el estudio gratuito, por la mañana o por la tarde?
+<ficha>{"que":"Placas solares, 10 paneles de 450 W","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Presupuesto cerrado por escrito tras la visita, con marca y garantías","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>

@@ -1,0 +1,3 @@
+El mantenimiento es poco y sencillo, y las garantías vienen por escrito en el presupuesto, con marca y años. La duración exacta no la sé con seguridad; el técnico lo confirma. ¿Te reservo el estudio gratuito, por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Confirmar la duración y las garantías por escrito en el presupuesto","fase":"proponiendo"}</ficha>
+<mostrar>garantia</mostrar>

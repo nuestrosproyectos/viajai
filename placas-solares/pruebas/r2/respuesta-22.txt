@@ -1,0 +1,2 @@
+De paellas y ligas no sé nada; yo me ocupo de placas. ¿Te interesan para casa o para negocio?
+<ficha>{"que":"","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"","fase":"entendiendo"}</ficha>

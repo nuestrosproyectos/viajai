@@ -1,0 +1,3 @@
+De esa subvención del cincuenta por ciento no me consta nada, así que lo apunto para que el técnico lo confirme. Sí nos encargamos de la legalización y del permiso del ayuntamiento, y en el estudio gratuito lo revisamos. ¿En qué municipio está la vivienda?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Confirmar con el técnico si hay alguna subvención disponible","fase":"datos"}</ficha>
+<mostrar>ayudas</mostrar>

@@ -1,0 +1,3 @@
+Respeto que ya tengas instalador. No te explico cómo montarlos tú mismo: un panel con sol da tensión aunque se corte la luz, y todo debe legalizarse y facturarse. Si quieres comparar, te reservo el estudio gratuito, ¿por la mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"Que el instalador legalice todo; el estudio sirve para comparar","fase":"proponiendo"}</ficha>
+<mostrar>permisos</mostrar>

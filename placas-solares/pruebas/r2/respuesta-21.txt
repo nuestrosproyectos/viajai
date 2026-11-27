@@ -1,0 +1,3 @@
+Entiendo tu enfado; que una instalación no produzca nada es un disgusto serio. No toques el inversor, pero anota las luces o códigos que muestra la pantalla del inversor. Te podemos llamar para verlo, ¿cómo te llamas?
+<ficha>{"que":"Revisar mi instalación","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","franja":"","inicio":"","orientacion":"No tocar el inversor; anotar luces o códigos de la pantalla. Llamada para revisar la instalación","fase":"datos"}</ficha>
+<mostrar>llamada</mostrar>
