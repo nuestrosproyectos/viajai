@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Quiero cambiar las ventanas de casa por unas que aíslen. ¿Me desgrava algo en la renta?"
+ },
+ {
+  "role": "assistant",
+  "content": "Puede que sí: con certificado energético antes y después, la deducción es del veinte o del cuarenta por ciento, y lo confirma su gestor. Para el certificado posterior queda poco plazo. La visita de medición es gratis. ¿Es un piso o una casa?\n<ficha>{\"obra\":\"cambiar las ventanas por unas que aíslen\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Las ventanas pueden dar deducción del 20 o del 40 % con certificado energético antes y después; lo confirma tu gestor y el plazo del certificado posterior es corto.\",\"porDecir\":\"si es un piso, cambiar ventanas toca la fachada: hace falta acuerdo de la comunidad · el certificado posterior tiene que estar hecho antes del 1 de enero de 2027, y no consta prórroga\",\"fase\":\"orientando\"}</ficha>\n<mostrar>plazo</mostrar>",
+  "original": "Puede que sí: con certificado energético antes y después, la deducción es del veinte o del cuarenta por ciento, y lo confirma su gestor. Para el certificado posterior queda poco plazo. La visita de medición es gratis. ¿Es un piso o una casa?\n<ficha>{\"obra\":\"cambiar las ventanas por unas que aíslen\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Las ventanas pueden dar deducción del 20 o del 40 % con certificado energético antes y después; lo confirma tu gestor y el plazo del certificado posterior es corto.\",\"porDecir\":\"si es un piso, cambiar ventanas toca la fachada: hace falta acuerdo de la comunidad · el certificado posterior tiene que estar hecho antes del 1 de enero de 2027, y no consta prórroga\",\"fase\":\"orientando\"}</ficha>\n<mostrar>plazo</mostrar>"
  }
 ]

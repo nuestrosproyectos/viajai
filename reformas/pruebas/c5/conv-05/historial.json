@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Quiero cambiar la cocina entera y mover el fregadero debajo de la ventana. ¿Cuánto sale más o menos?"
+ },
+ {
+  "role": "assistant",
+  "content": "Una cocina completa suele quedar entre seis mil y diez mil euros, según los muebles. Mover el fregadero la encarece, porque hay que llevar agua y desagüe hasta la ventana. La visita de medición es gratis. ¿Cuántos metros tiene más o menos la cocina?\n<ficha>{\"obra\":\"cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Una cocina completa suele quedar entre seis mil y diez mil euros, y mover el fregadero la encarece.\",\"porDecir\":\"cuánto tiempo estará sin cocina, que depende de los muebles a medida, la fontanería y el alicatado; lo da el técnico en la visita · según cómo quede la distribución, el técnico confirma si basta declaración responsable o hace falta licencia\",\"fase\":\"orientando\"}</ficha>\n<mostrar>precios</mostrar>",
+  "original": "Una cocina completa suele quedar entre seis mil y diez mil euros, según los muebles. Mover el fregadero la encarece, porque hay que llevar agua y desagüe hasta la ventana. La visita de medición es gratis. ¿Cuántos metros tiene más o menos la cocina?\n<ficha>{\"obra\":\"cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Una cocina completa suele quedar entre seis mil y diez mil euros, y mover el fregadero la encarece.\",\"porDecir\":\"cuánto tiempo estará sin cocina, que depende de los muebles a medida, la fontanería y el alicatado; lo da el técnico en la visita · según cómo quede la distribución, el técnico confirma si basta declaración responsable o hace falta licencia\",\"fase\":\"orientando\"}</ficha>\n<mostrar>precios</mostrar>"
  }
 ]

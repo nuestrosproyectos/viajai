@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Buenas. Antes de nada, ¿la visita la cobráis? Porque luego siempre hay sorpresas."
+ },
+ {
+  "role": "assistant",
+  "content": "Tiene sentido preguntarlo. La visita de medición y el presupuesto son gratis, unos cuarenta y cinco minutos y sin compromiso. Si al abrir aparece algo oculto, se enseña, se presupuesta por escrito y no se hace sin tu firma. ¿Qué estancia quieres reformar?\n<ficha>{\"obra\":\"\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"La visita de medición y el presupuesto son gratis y sin compromiso; si aparece algo oculto, se presupuesta por escrito antes de hacerlo.\",\"porDecir\":\"\",\"fase\":\"entendiendo\"}</ficha>\n<mostrar>precios</mostrar>",
+  "original": "Tiene sentido preguntarlo. La visita de medición y el presupuesto son gratis, unos cuarenta y cinco minutos y sin compromiso. Si al abrir aparece algo oculto, se enseña, se presupuesta por escrito y no se hace sin tu firma. ¿Qué estancia quieres reformar?\n<ficha>{\"obra\":\"\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"La visita de medición y el presupuesto son gratis y sin compromiso; si aparece algo oculto, se presupuesta por escrito antes de hacerlo.\",\"porDecir\":\"\",\"fase\":\"entendiendo\"}</ficha>\n<mostrar>precios</mostrar>"
  }
 ]

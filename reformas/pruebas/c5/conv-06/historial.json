@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Hemos comprado un piso de 90 metros en Armilla para reformarlo entero. ¿Qué presupuesto calculo?"
+ },
+ {
+  "role": "assistant",
+  "content": "Para noventa metros, una reforma integral en calidades medias suele salir entre cuarenta y un mil y sesenta y dos mil euros. En pisos antiguos suelen cambiarse tuberías y cables, que encarecen. La visita de medición es gratis. ¿De qué año es el piso?\n<ficha>{\"obra\":\"reforma integral del piso\",\"vivienda\":\"\",\"metros\":\"90 metros\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Para 90 metros, una reforma integral en calidades medias suele salir entre 41.000 y 62.000 euros, según la antigüedad del piso y sus instalaciones.\",\"porDecir\":\"suele llevar de tres a cinco meses · en Armilla el ayuntamiento tiene su propia ordenanza e importes · IVA del 10 % si es para su vivienda, con más de dos años y los materiales no pasan del 40 %; lo confirma su gestor\",\"fase\":\"orientando\"}</ficha>\n<mostrar>precios</mostrar>",
+  "original": "Para noventa metros, una reforma integral en calidades medias suele salir entre cuarenta y un mil y sesenta y dos mil euros. En pisos antiguos suelen cambiarse tuberías y cables, que encarecen. La visita de medición es gratis. ¿De qué año es el piso?\n<ficha>{\"obra\":\"reforma integral del piso\",\"vivienda\":\"\",\"metros\":\"90 metros\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Para 90 metros, una reforma integral en calidades medias suele salir entre 41.000 y 62.000 euros, según la antigüedad del piso y sus instalaciones.\",\"porDecir\":\"suele llevar de tres a cinco meses · en Armilla el ayuntamiento tiene su propia ordenanza e importes · IVA del 10 % si es para su vivienda, con más de dos años y los materiales no pasan del 40 %; lo confirma su gestor\",\"fase\":\"orientando\"}</ficha>\n<mostrar>precios</mostrar>"
  }
 ]
