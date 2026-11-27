@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "No firmes nada todavía: un papel definitivo puede cerrar la puerta a reclamar más. El abogado revisa la oferta con los informes delante, en la primera consulta gratis. ¿Te reservo la consulta por la mañana o por la tarde?\n<ficha>{\"caso\":\"Accidente de tráfico; la aseguradora del otro ofrece 2.300 € y pide firmar\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmes nada hasta que lo revise el abogado.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>oferta</mostrar>",
   "original": "No firmes nada todavía: un papel definitivo puede cerrar la puerta a reclamar más. El abogado revisa la oferta con los informes delante, en la primera consulta gratis. ¿Te reservo la consulta por la mañana o por la tarde?\n<ficha>{\"caso\":\"Accidente de tráfico; la aseguradora del otro ofrece 2.300 € y pide firmar\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmes nada hasta que lo revise el abogado.\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>oferta</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Por la mañana mejor. Pero dime, 2.300 € ¿es poco? Me estan presionando para firmar"
  }
 ]
