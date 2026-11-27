@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Es del 78. Está en la Chana, en Granada capital"
+ },
+ {
+  "role": "assistant",
+  "content": "Un piso de los setenta suele tener tuberías viejas que hay que revisar al abrir. En Granada capital, si no se tocan muros, lo más probable es una declaración responsable en el Ayuntamiento. ¿Te reservo la visita de medición gratis y sin compromiso?\n<ficha>{\"obra\":\"reformar el baño\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"1978\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada capital, barrio de La Chana\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Un baño completo suele costar entre tres mil y seis mil euros; en un piso de 1978 conviene revisar las tuberías antes de cerrar nada.\",\"porDecir\":\"avisar por escrito al presidente o administrador de la comunidad\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>permisos</mostrar>",
+  "original": "Un piso de los setenta suele tener tuberías viejas que hay que revisar al abrir. En Granada capital, si no se tocan muros, lo más probable es una declaración responsable en el Ayuntamiento. ¿Te reservo la visita de medición gratis y sin compromiso?\n<ficha>{\"obra\":\"reformar el baño\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"1978\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada capital, barrio de La Chana\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Un baño completo suele costar entre tres mil y seis mil euros; en un piso de 1978 conviene revisar las tuberías antes de cerrar nada.\",\"porDecir\":\"avisar por escrito al presidente o administrador de la comunidad\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>permisos</mostrar>"
  }
 ]

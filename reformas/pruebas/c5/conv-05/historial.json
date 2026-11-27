@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Unos 9 m². Y cuánto tiempo me quedaría sin cocina?"
+ },
+ {
+  "role": "assistant",
+  "content": "Ese plazo no lo tengo fijo: depende de los muebles a medida, de la fontanería y del alicatado, y el técnico lo da en la visita y por escrito en el presupuesto. ¿Te reservo la visita?\n<ficha>{\"obra\":\"cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"unos 9 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Una cocina completa suele quedar entre seis mil y diez mil euros, y mover el fregadero la encarece; el plazo sin cocina lo da el técnico en la visita.\",\"porDecir\":\"según cómo quede la distribución, el técnico confirma si basta declaración responsable o hace falta licencia\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>plazo</mostrar>",
+  "original": "Ese plazo no lo tengo fijo: depende de los muebles a medida, de la fontanería y del alicatado, y el técnico lo da en la visita y por escrito en el presupuesto. ¿Te reservo la visita?\n<ficha>{\"obra\":\"cambiar la cocina entera y mover el fregadero debajo de la ventana\",\"vivienda\":\"\",\"metros\":\"unos 9 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Una cocina completa suele quedar entre seis mil y diez mil euros, y mover el fregadero la encarece; el plazo sin cocina lo da el técnico en la visita.\",\"porDecir\":\"según cómo quede la distribución, el técnico confirma si basta declaración responsable o hace falta licencia\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>plazo</mostrar>"
  }
 ]

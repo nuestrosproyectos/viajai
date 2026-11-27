@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Es una casa de planta baja. ¿Cuánto tardarían en venir? Es que me preocupa que se caiga"
+ },
+ {
+  "role": "assistant",
+  "content": "La visita suele ser en dos a cuatro días, y el precio sube si hay que mover el desagüe o si el plato va a ras de suelo. ¿Le reservo la visita para que el técnico la vea cuanto antes?\n<ficha>{\"obra\":\"cambiar la bañera por un plato de ducha (su padre ya no puede entrar)\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Para su padre lo prioritario es cambiar la bañera por un plato de ducha, que suele quedar entre mil y dos mil trescientos euros; la visita suele ser en dos a cuatro días.\",\"porDecir\":\"en Maracena el ayuntamiento tiene su propia ordenanza e importes\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>plazo</mostrar>",
+  "original": "La visita suele ser en dos a cuatro días, y el precio sube si hay que mover el desagüe o si el plato va a ras de suelo. ¿Le reservo la visita para que el técnico la vea cuanto antes?\n<ficha>{\"obra\":\"cambiar la bañera por un plato de ducha (su padre ya no puede entrar)\",\"vivienda\":\"Casa\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Para su padre lo prioritario es cambiar la bañera por un plato de ducha, que suele quedar entre mil y dos mil trescientos euros; la visita suele ser en dos a cuatro días.\",\"porDecir\":\"en Maracena el ayuntamiento tiene su propia ordenanza e importes\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>plazo</mostrar>"
  }
 ]

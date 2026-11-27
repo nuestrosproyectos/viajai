@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "La cocina entera, unos 10 m². ¿Y el presupuesto es cerrado o luego van sumando extras?"
+ },
+ {
+  "role": "assistant",
+  "content": "Muchas cocinas completas están entre seis mil y diez mil euros, según los muebles y si se mueven fregadero, placa o campana. El precio cerrado sale del presupuesto escrito tras la visita, y lo oculto se presupuesta antes de tocarlo. ¿Te reservo la visita?\n<ficha>{\"obra\":\"cocina entera\",\"vivienda\":\"\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Una cocina completa suele estar entre seis mil y diez mil euros, según muebles y si se mueven fregadero, placa o campana; el precio cerrado sale del presupuesto escrito tras la visita.\",\"porDecir\":\"cuánto tiempo estará sin cocina: depende de los muebles a medida, la fontanería y el alicatado, y lo da el técnico en la visita\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>precios</mostrar>",
+  "original": "Muchas cocinas completas están entre seis mil y diez mil euros, según los muebles y si se mueven fregadero, placa o campana. El precio cerrado sale del presupuesto escrito tras la visita, y lo oculto se presupuesta antes de tocarlo. ¿Te reservo la visita?\n<ficha>{\"obra\":\"cocina entera\",\"vivienda\":\"\",\"metros\":\"unos 10 m²\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Una cocina completa suele estar entre seis mil y diez mil euros, según muebles y si se mueven fregadero, placa o campana; el precio cerrado sale del presupuesto escrito tras la visita.\",\"porDecir\":\"cuánto tiempo estará sin cocina: depende de los muebles a medida, la fontanería y el alicatado, y lo da el técnico en la visita\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>precios</mostrar>"
  }
 ]
