@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Vale, pues sí, quiero que lo mire el abogado cuanto antes. Presencial y por la mañana mejor"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, lo dejamos presencial por la mañana. Mientras, guarda cualquier foto o testigo que tengas de aquel día. ¿Me dices tu nombre y un teléfono, solo para llamarte y organizar la consulta?\n<ficha>{\"caso\":\"Atropello en un paso de cebra hace un año y medio; el conductor se fue y no se sabe quién era\",\"como\":\"Andando\",\"fecha\":\"Hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Presencial, por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Alta hace unos siete meses y sin reclamación por escrito. Denunciar cuanto antes, con testigos y atestado; si el conductor no se identificó, responde el Consorcio de Compensación de Seguros.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, lo dejamos presencial por la mañana. Mientras, guarda cualquier foto o testigo que tengas de aquel día. ¿Me dices tu nombre y un teléfono, solo para llamarte y organizar la consulta?\n<ficha>{\"caso\":\"Atropello en un paso de cebra hace un año y medio; el conductor se fue y no se sabe quién era\",\"como\":\"Andando\",\"fecha\":\"Hace un año y medio\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"franja\":\"Presencial, por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"Alta hace unos siete meses y sin reclamación por escrito. Denunciar cuanto antes, con testigos y atestado; si el conductor no se identificó, responde el Consorcio de Compensación de Seguros.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

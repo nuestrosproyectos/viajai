@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Sonia, 633 202 404"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Sonia, lo apunto para llamarte por la mañana. La aseguradora tiene tres meses para contestar con una oferta motivada. ¿En qué municipio vives?\n<ficha>{\"caso\":\"La aseguradora del otro ofrece 2.300 € y le piden firmar ya\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"Sonia\",\"telefono\":\"633 202 404\",\"municipio\":\"\",\"franja\":\"Por teléfono, por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada; el abogado revisa la oferta con el informe médico y los días de baja.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Sonia, lo apunto para llamarte por la mañana. La aseguradora tiene tres meses para contestar con una oferta motivada. ¿En qué municipio vives?\n<ficha>{\"caso\":\"La aseguradora del otro ofrece 2.300 € y le piden firmar ya\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"Sonia\",\"telefono\":\"633 202 404\",\"municipio\":\"\",\"franja\":\"Por teléfono, por la mañana\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmar nada; el abogado revisa la oferta con el informe médico y los días de baja.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

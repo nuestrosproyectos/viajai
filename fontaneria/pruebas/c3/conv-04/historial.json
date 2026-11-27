@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Paco, 699 101 202"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Paco, lo apunto para mañana por la mañana. ¿En qué municipio y en qué calle es la vivienda?\n<ficha>{\"averia\":\"Termo eléctrico de 100 litros que pierde agua por abajo; le han presupuestado 900 euros\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Pregunta si se lo pagaría el seguro\",\"nombre\":\"Paco\",\"telefono\":\"699 101 202\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"Pedir el presupuesto por escrito antes de empezar; el seguro depende de su póliza.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Paco, lo apunto para mañana por la mañana. ¿En qué municipio y en qué calle es la vivienda?\n<ficha>{\"averia\":\"Termo eléctrico de 100 litros que pierde agua por abajo; le han presupuestado 900 euros\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Pregunta si se lo pagaría el seguro\",\"nombre\":\"Paco\",\"telefono\":\"699 101 202\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"Pedir el presupuesto por escrito antes de empezar; el seguro depende de su póliza.\",\"fase\":\"datos\"}</ficha>"
  }
 ]

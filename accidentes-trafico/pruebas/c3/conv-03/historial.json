@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Pedro, 600 909 303"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Pedro, lo apunto para la videollamada por la tarde. Y recuerda avisar a tu aseguradora en siete días. ¿En qué municipio vive tu mujer?\n<ficha>{\"caso\":\"Se saltó un ceda; iba con su mujer como pasajera\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Pedro\",\"telefono\":\"600 909 303\",\"municipio\":\"\",\"franja\":\"Por videollamada, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Tener a mano el informe de urgencias y el parte; la consulta es para su mujer, que como pasajera normalmente puede reclamar.\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Pedro, lo apunto para la videollamada por la tarde. Y recuerda avisar a tu aseguradora en siete días. ¿En qué municipio vive tu mujer?\n<ficha>{\"caso\":\"Se saltó un ceda; iba con su mujer como pasajera\",\"como\":\"Conduciendo un coche\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"Mía\",\"atestado\":\"\",\"oferta\":\"\",\"defensa\":\"\",\"nombre\":\"Pedro\",\"telefono\":\"600 909 303\",\"municipio\":\"\",\"franja\":\"Por videollamada, por la tarde\",\"consentimientoSalud\":\"\",\"orientacion\":\"Tener a mano el informe de urgencias y el parte; la consulta es para su mujer, que como pasajera normalmente puede reclamar.\",\"fase\":\"datos\"}</ficha>"
  }
 ]
