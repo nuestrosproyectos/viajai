@@ -52,5 +52,9 @@
   "role": "assistant",
   "content": "Javier, te confirmo: estudio por la mañana, un viernes, en la calle Granada 5 de Armilla, y te llamamos al seis cuatro cuatro, siete siete ocho, uno dos cero. ¿Está todo bien?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"De día: teletrabajo y aire acondicionado\",\"nombre\":\"Javier\",\"telefono\":\"644 778 120\",\"municipio\":\"Armilla\",\"direccion\":\"Calle Granada 5\",\"franja\":\"Por la mañana, un viernes\",\"inicio\":\"\",\"orientacion\":\"Como gasta mucho de día, las placas le aprovechan; el estudio con sus facturas da el tamaño exacto.\",\"fase\":\"datos\"}</ficha>",
   "original": "Javier, te confirmo: estudio por la mañana, un viernes, en la calle Granada 5 de Armilla, y te llamamos al seis cuatro cuatro, siete siete ocho, uno dos cero. ¿Está todo bien?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"De día: teletrabajo y aire acondicionado\",\"nombre\":\"Javier\",\"telefono\":\"644 778 120\",\"municipio\":\"Armilla\",\"direccion\":\"Calle Granada 5\",\"franja\":\"Por la mañana, un viernes\",\"inicio\":\"\",\"orientacion\":\"Como gasta mucho de día, las placas le aprovechan; el estudio con sus facturas da el tamaño exacto.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien"
  }
 ]

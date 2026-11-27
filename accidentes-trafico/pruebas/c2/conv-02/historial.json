@@ -52,5 +52,9 @@
   "role": "assistant",
   "content": "Perfecto, Sonia. Te llamamos por teléfono por la mañana, al seis tres tres, dos cero dos, cuatro cero cuatro, para la consulta de Motril. ¿Está todo bien?\n<ficha>{\"caso\":\"Accidente de tráfico; la aseguradora del otro ofrece 2.300 € y pide firmar\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"Sonia\",\"telefono\":\"633 202 404\",\"municipio\":\"Motril\",\"franja\":\"Por la mañana, por teléfono\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmes; si insisten, pide la oferta por escrito con su cálculo.\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Sonia. Te llamamos por teléfono por la mañana, al seis tres tres, dos cero dos, cuatro cero cuatro, para la consulta de Motril. ¿Está todo bien?\n<ficha>{\"caso\":\"Accidente de tráfico; la aseguradora del otro ofrece 2.300 € y pide firmar\",\"como\":\"\",\"fecha\":\"\",\"medico\":\"\",\"culpa\":\"\",\"atestado\":\"\",\"oferta\":\"Sí, sin firmar\",\"defensa\":\"\",\"nombre\":\"Sonia\",\"telefono\":\"633 202 404\",\"municipio\":\"Motril\",\"franja\":\"Por la mañana, por teléfono\",\"consentimientoSalud\":\"\",\"orientacion\":\"No firmes; si insisten, pide la oferta por escrito con su cálculo.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien"
  }
 ]

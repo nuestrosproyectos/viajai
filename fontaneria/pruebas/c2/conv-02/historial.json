@@ -52,5 +52,9 @@
   "role": "assistant",
   "content": "Gracias, Luis, Armilla queda apuntado. Antes de empezar, el fontanero te dará el presupuesto por escrito. ¿Me dices la calle y el número?\n<ficha>{\"averia\":\"lavabo del baño atascado; sigue igual tras echar desatascador fuerte\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Luis\",\"telefono\":\"655 990 120\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"Mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"No metas la mano en el sifón y pide el presupuesto por escrito antes de empezar.\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Luis, Armilla queda apuntado. Antes de empezar, el fontanero te dará el presupuesto por escrito. ¿Me dices la calle y el número?\n<ficha>{\"averia\":\"lavabo del baño atascado; sigue igual tras echar desatascador fuerte\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Luis\",\"telefono\":\"655 990 120\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"Mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"No metas la mano en el sifón y pide el presupuesto por escrito antes de empezar.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Avenida de los Mondragones 3"
  }
 ]

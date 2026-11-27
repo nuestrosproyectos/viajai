@@ -52,5 +52,9 @@
   "role": "assistant",
   "content": "Carmen, le confirmo: visita de medición por la mañana, a primera hora, en la calle Ancha 8 de Maracena, y le llamamos al seis nueve nueve, cuatro cinco cero, dos uno dos. ¿Está todo bien?\n<ficha>{\"obra\":\"Cambiar la bañera por plato de ducha, para su padre, que ya no puede entrar en la bañera\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Carmen\",\"telefono\":\"699 450 212\",\"municipio\":\"Maracena\",\"direccion\":\"Calle Ancha 8\",\"franja\":\"Por la mañana, a primera hora\",\"inicio\":\"Cuanto antes\",\"orientacion\":\"Cambiar la bañera por plato de ducha cuanto antes; si va a ras de suelo, el precio sube algo. La visita de medición es gratis.\",\"fase\":\"datos\"}</ficha>",
   "original": "Carmen, le confirmo: visita de medición por la mañana, a primera hora, en la calle Ancha 8 de Maracena, y le llamamos al seis nueve nueve, cuatro cinco cero, dos uno dos. ¿Está todo bien?\n<ficha>{\"obra\":\"Cambiar la bañera por plato de ducha, para su padre, que ya no puede entrar en la bañera\",\"vivienda\":\"\",\"metros\":\"\",\"antiguedad\":\"\",\"presupuesto\":\"\",\"nombre\":\"Carmen\",\"telefono\":\"699 450 212\",\"municipio\":\"Maracena\",\"direccion\":\"Calle Ancha 8\",\"franja\":\"Por la mañana, a primera hora\",\"inicio\":\"Cuanto antes\",\"orientacion\":\"Cambiar la bañera por plato de ducha cuanto antes; si va a ras de suelo, el precio sube algo. La visita de medición es gratis.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo correcto. Gracias."
  }
 ]

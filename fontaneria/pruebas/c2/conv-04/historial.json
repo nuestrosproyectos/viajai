@@ -52,5 +52,9 @@
   "role": "assistant",
   "content": "Gracias, Paco, Maracena queda apuntado, y el cambio cualquier mañana. Ya solo falta la calle y el número. ¿Me los dices?\n<ficha>{\"averia\":\"cambio de termo eléctrico; viven 4 en casa\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Paco\",\"telefono\":\"699 101 202\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"Cualquier mañana\",\"inicio\":\"\",\"orientacion\":\"Pide el presupuesto desglosado por escrito antes de empezar.\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Paco, Maracena queda apuntado, y el cambio cualquier mañana. Ya solo falta la calle y el número. ¿Me los dices?\n<ficha>{\"averia\":\"cambio de termo eléctrico; viven 4 en casa\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Paco\",\"telefono\":\"699 101 202\",\"municipio\":\"Maracena\",\"direccion\":\"\",\"franja\":\"Cualquier mañana\",\"inicio\":\"\",\"orientacion\":\"Pide el presupuesto desglosado por escrito antes de empezar.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Calle Real 9"
  }
 ]

@@ -52,5 +52,9 @@
   "role": "assistant",
   "content": "Rosa, en Granada capital el impuesto de obras tiene una bonificación del noventa y cinco por ciento si la instalación es de autoconsumo y voluntaria. Para reservarte el estudio de la tarde, ¿en qué calle y número está la vivienda?\n<ficha>{\"que\":\"Placas con batería, para comparar con su presupuesto\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"Rosa\",\"telefono\":\"622 300 415\",\"municipio\":\"Granada capital, Zaidín\",\"direccion\":\"\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Comparar el presupuesto de 6.800 € (5 kWp con batería de 10 kWh) con el estudio; revisar que incluya legalización y garantías por escrito.\",\"fase\":\"datos\"}</ficha>",
   "original": "Rosa, en Granada capital el impuesto de obras tiene una bonificación del noventa y cinco por ciento si la instalación es de autoconsumo y voluntaria. Para reservarte el estudio de la tarde, ¿en qué calle y número está la vivienda?\n<ficha>{\"que\":\"Placas con batería, para comparar con su presupuesto\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"Rosa\",\"telefono\":\"622 300 415\",\"municipio\":\"Granada capital, Zaidín\",\"direccion\":\"\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Comparar el presupuesto de 6.800 € (5 kWp con batería de 10 kWh) con el estudio; revisar que incluya legalización y garantías por escrito.\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Calle Palencia 10"
  }
 ]
