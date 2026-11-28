@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "En Granada capital, en el Zaidín. Es una casa baja con azotea"
+ },
+ {
+  "role": "assistant",
+  "content": "Con azotea, el técnico mira en la visita si hay sombras y hacia dónde da, que cambia mucho el resultado. La batería compensa sobre todo si gastas mucho de noche. ¿Te reservo el estudio gratis en tu azotea?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"Azotea, casa baja\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada capital, Zaidín\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Compara el presupuesto con uno cerrado por escrito, con legalización, marcas y garantías; el estudio gratuito sirve para eso.\",\"porDecir\":\"pregunta cuánto gastas de noche\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Con azotea, el técnico mira en la visita si hay sombras y hacia dónde da, que cambia mucho el resultado. La batería compensa sobre todo si gastas mucho de noche. ¿Te reservo el estudio gratis en tu azotea?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"Azotea, casa baja\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada capital, Zaidín\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Compara el presupuesto con uno cerrado por escrito, con legalización, marcas y garantías; el estudio gratuito sirve para eso.\",\"porDecir\":\"pregunta cuánto gastas de noche\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "La marca no la sé, tendría que mirarlo. Que lo vea el técnico en la visita. Soy Rafa, 622 987 654, calle Real 30 de Armilla, por las tardes"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Rafa. Estudio en calle Real 30, Armilla, por las tardes, y te llamamos al seis dos dos, nueve ocho siete, seis cinco cuatro. Y recuerda que la factura no baja a cero: quedan la potencia, el contador y los impuestos. ¿Está todo bien?\n<ficha>{\"que\":\"Añadir batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"de noche, por el aire acondicionado\",\"nombre\":\"Rafa\",\"telefono\":\"622 987 654\",\"municipio\":\"Armilla\",\"direccion\":\"calle Real 30\",\"franja\":\"por las tardes\",\"inicio\":\"\",\"orientacion\":\"Con placas ya instaladas, la batería compensa si el consumo de noche es alto; la compatibilidad con tu inversor la confirma el técnico en el estudio.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Rafa. Estudio en calle Real 30, Armilla, por las tardes, y te llamamos al seis dos dos, nueve ocho siete, seis cinco cuatro. Y recuerda que la factura no baja a cero: quedan la potencia, el contador y los impuestos. ¿Está todo bien?\n<ficha>{\"que\":\"Añadir batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"de noche, por el aire acondicionado\",\"nombre\":\"Rafa\",\"telefono\":\"622 987 654\",\"municipio\":\"Armilla\",\"direccion\":\"calle Real 30\",\"franja\":\"por las tardes\",\"inicio\":\"\",\"orientacion\":\"Con placas ya instaladas, la batería compensa si el consumo de noche es alto; la compatibilidad con tu inversor la confirma el técnico en el estudio.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

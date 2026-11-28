@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, lo del asesor lo miro. Pero antes de la visita, ¿me puedes dar números orientativos? Cuánto costaría más o menos y en cuántos años se paga con 450 € al mes"
+ },
+ {
+  "role": "assistant",
+  "content": "Suele costar de mil a mil quinientos euros por kilovatio instalado, y el tamaño lo marcan tus facturas. Con consumo de día, lo más probable es pagarlas en seis a diez años, antes si aprovechas casi todo. ¿Te reservo el estudio gratis?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Negocio o nave\",\"factura\":\"450 € al mes\",\"tejado\":\"\",\"consumo\":\"de día\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Atarfe\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con consumo sobre todo de día las placas aprovechan bien; el estudio gratuito con tus facturas lo calcula. Lo fiscal lo confirma tu asesor.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Suele costar de mil a mil quinientos euros por kilovatio instalado, y el tamaño lo marcan tus facturas. Con consumo de día, lo más probable es pagarlas en seis a diez años, antes si aprovechas casi todo. ¿Te reservo el estudio gratis?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Negocio o nave\",\"factura\":\"450 € al mes\",\"tejado\":\"\",\"consumo\":\"de día\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Atarfe\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con consumo sobre todo de día las placas aprovechan bien; el estudio gratuito con tus facturas lo calcula. Lo fiscal lo confirma tu asesor.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

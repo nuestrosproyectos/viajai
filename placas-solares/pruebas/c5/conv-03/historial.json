@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, entiendo que cero no puede ser. Pues que venga el técnico a hacer el estudio. Soy Manolo, 633 909 101, calle Nueva 3 en Pulianas. Entre semana por la tarde, sábados no"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Manolo. Calle Nueva 3, Pulianas, entre semana por la tarde, y te llamamos al seis tres tres, nueve cero nueve, uno cero uno. Con batería la amortización suele alargarse, así que el estudio mira cuánta batería te compensa. ¿Está todo bien?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"de noche\",\"nombre\":\"Manolo\",\"telefono\":\"633 909 101\",\"municipio\":\"Pulianas\",\"direccion\":\"calle Nueva 3\",\"franja\":\"entre semana por la tarde, no sábados\",\"inicio\":\"\",\"orientacion\":\"Con batería se aprovecha la luz de noche, pero la factura no baja a cero; el estudio con tus facturas calcula cuánta batería compensa.\",\"porDecir\":\"tamaño y precio: una casa típica de unos cinco kilovatios, de cuatro mil quinientos a siete mil quinientos euros sin batería\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Manolo. Calle Nueva 3, Pulianas, entre semana por la tarde, y te llamamos al seis tres tres, nueve cero nueve, uno cero uno. Con batería la amortización suele alargarse, así que el estudio mira cuánta batería te compensa. ¿Está todo bien?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"de noche\",\"nombre\":\"Manolo\",\"telefono\":\"633 909 101\",\"municipio\":\"Pulianas\",\"direccion\":\"calle Nueva 3\",\"franja\":\"entre semana por la tarde, no sábados\",\"inicio\":\"\",\"orientacion\":\"Con batería se aprovecha la luz de noche, pero la factura no baja a cero; el estudio con tus facturas calcula cuánta batería compensa.\",\"porDecir\":\"tamaño y precio: una casa típica de unos cinco kilovatios, de cuatro mil quinientos a siete mil quinientos euros sin batería\",\"fase\":\"datos\"}</ficha>"
  }
 ]
