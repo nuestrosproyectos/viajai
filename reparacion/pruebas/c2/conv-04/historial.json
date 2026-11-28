@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "633 777 888"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Paco. Anoto el 633 777 888, solo para llamarte y organizar la visita de esta tarde. ¿Me dices la calle y el número en La Chana?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar, suena a rodamientos\",\"codigo\":\"\",\"diagnostico\":\"rodamientos desgastados\",\"nombre\":\"Paco\",\"telefono\":\"633 777 888\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Paco. Anoto el 633 777 888, solo para llamarte y organizar la visita de esta tarde. ¿Me dices la calle y el número en La Chana?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar, suena a rodamientos\",\"codigo\":\"\",\"diagnostico\":\"rodamientos desgastados\",\"nombre\":\"Paco\",\"telefono\":\"633 777 888\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>"
  }
 ]

@@ -1,0 +1,21 @@
+=== QUIÉN ERES (solo lo sabes tú) ===
+Eres Lucía, de Maracena. Horno Teka de 8 años. Si te dan una idea del arreglo, aceptas. Datos: Lucía, 644 555 666, calle Ancha 3 de Maracena, cualquier mañana.
+
+=== LA CONVERSACIÓN HASTA AHORA (en la web de Reparo) ===
+TÚ (cliente): El horno Teka no calienta, pero la luz sí se enciende.
+
+Andrés (asistente de la web): Con la luz y el ventilador funcionando pero sin calor, lo más probable es el termostato de seguridad o alguna resistencia. El técnico las mide una a una y sale de dudas en un momento. Antes de reservarte la visita, ¿el horno tiene más de tres años, o lo compraste hace menos?
+
+TÚ (cliente): Tiene 8 años. ¿Más o menos qué arreglo sería y cuánto puede costar?
+
+Andrés (asistente de la web): Lo más probable es una resistencia o el termostato de seguridad. Una resistencia suele quedar entre 80 y 140 €, orientativo; el precio exacto lo da el técnico antes de tocar nada. La visita son 60,50 € y se descuentan si reparamos. ¿Mañana por la mañana o por la tarde?
+
+TÚ (cliente): Vale, me hago una idea. Mañana por la mañana me va bien. Soy Lucía, de Maracena.
+
+Andrés (asistente de la web): Perfecto, Lucía. Maracena entra en nuestra zona, así que te reservo el hueco de mañana por la mañana. Dame un teléfono por si se corta; es solo para llamarte y organizar la visita.
+
+TÚ (cliente): 644 555 666
+
+Andrés (asistente de la web): Perfecto, Lucía. Anoto el 644 555 666, solo para llamarte y organizar la visita de mañana por la mañana. ¿Me dices la calle y el número de tu casa en Maracena?
+
+=== TU SIGUIENTE MENSAJE ===

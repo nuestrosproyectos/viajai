@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Mi teléfono es el 958 590 123, es el fijo de casa, hijo. Yo no tengo móvil."
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Encarnación. Anoto el fijo 958 590 123, solo para llamarle y organizar la visita de mañana por la mañana. ¿Me dice la calle y el número de su casa en La Zubia?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no enciende un fuego de la vitrocerámica; los otros fuegos funcionan\",\"codigo\":\"\",\"diagnostico\":\"control táctil de ese fuego o placa de control\",\"nombre\":\"Encarnación\",\"telefono\":\"958 590 123\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Encarnación. Anoto el fijo 958 590 123, solo para llamarle y organizar la visita de mañana por la mañana. ¿Me dice la calle y el número de su casa en La Zubia?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no enciende un fuego de la vitrocerámica; los otros fuegos funcionan\",\"codigo\":\"\",\"diagnostico\":\"control táctil de ese fuego o placa de control\",\"nombre\":\"Encarnación\",\"telefono\":\"958 590 123\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
  }
 ]

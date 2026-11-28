@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "644 555 666"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Lucía. Anoto el 644 555 666, solo para llamarte y organizar la visita de mañana por la mañana. ¿Me dices la calle y el número de tu casa en Maracena?\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz y el ventilador sí funcionan\",\"codigo\":\"\",\"diagnostico\":\"resistencia o termostato de seguridad\",\"nombre\":\"Lucía\",\"telefono\":\"644 555 666\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Lucía. Anoto el 644 555 666, solo para llamarte y organizar la visita de mañana por la mañana. ¿Me dices la calle y el número de tu casa en Maracena?\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz y el ventilador sí funcionan\",\"codigo\":\"\",\"diagnostico\":\"resistencia o termostato de seguridad\",\"nombre\":\"Lucía\",\"telefono\":\"644 555 666\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
  }
 ]
