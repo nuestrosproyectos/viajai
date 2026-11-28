@@ -52,5 +52,9 @@
   "role": "assistant",
   "content": "Perfecto, Encarnación. Apunto el 958 590 123 y la visita en calle Real 20, en La Zubia, por la mañana. ¿Está todo bien?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"un fuego no calienta, los demás sí\",\"codigo\":\"\",\"diagnostico\":\"resistencia del fuego o su limitador (lo más probable)\",\"nombre\":\"Encarnación\",\"telefono\":\"958 590 123 (fijo)\",\"direccion\":\"Calle Real 20, La Zubia\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Encarnación. Apunto el 958 590 123 y la visita en calle Real 20, en La Zubia, por la mañana. ¿Está todo bien?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"un fuego no calienta, los demás sí\",\"codigo\":\"\",\"diagnostico\":\"resistencia del fuego o su limitador (lo más probable)\",\"nombre\":\"Encarnación\",\"telefono\":\"958 590 123 (fijo)\",\"direccion\":\"Calle Real 20, La Zubia\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, hijo, todo está bien. Muchas gracias"
  }
 ]
