@@ -1,0 +1,22 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Tejaluz. Dime más o menos cuánto pagas de luz al mes y te digo cuántas placas te harían falta y lo que costarían.
+
+CLIENTE: Tengo una casa en el Albaicín con tejado de teja. ¿Puedo poner placas?
+
+ANDRÉS: En el Albaicín el trámite es más exigente y puede haber límites. Lo estudia el técnico en la visita, así que te conviene el estudio gratis. ¿Te reservo el estudio para verlo en tu tejado?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"","tejado":"teja","consumo":"","nombre":"","telefono":"","municipio":"Albaicín","direccion":"","franja":"","inicio":"","orientacion":"Antes de nada, el técnico confirma qué límites hay en el Albaicín; el estudio gratuito lo mira en la visita.","porDecir":"el permiso del ayuntamiento suele ser una declaración responsable cuando el edificio no está protegido · tamaño y precio: una casa típica de unos cinco kilovatios, de cuatro mil quinientos a siete mil quinientos euros sin batería","fase":"proponiendo"}</ficha>
+
+CLIENTE: Es que me han dicho que en el Albaicín no se puede. ¿Qué trámite hace falta exactamente?
+
+ANDRÉS: No te digo que no se pueda: en el Albaicín el trámite es más exigente y puede haber límites. Si el edificio no está protegido suele bastar una declaración responsable; el técnico lo comprueba y te confirma el papel exacto. ¿Te reservo el estudio?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"","tejado":"teja","consumo":"","nombre":"","telefono":"","municipio":"Albaicín (Granada)","direccion":"","franja":"","inicio":"","orientacion":"En el Albaicín el trámite es más exigente y puede haber límites; el técnico confirma el papel exacto en la visita gratuita.","porDecir":"tamaño y precio: una casa típica de unos cinco kilovatios, de cuatro mil quinientos a siete mil quinientos euros sin batería","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, entonces que venga el técnico a verlo. Soy Elena, 611 456 789, calle Pagés 12. Mejor por las mañanas
+
+ANDRÉS: Perfecto, Elena. Estudio en calle Pagés 12, Albaicín, por las mañanas, y te llamamos al seis uno uno, cuatro cinco seis, siete ocho nueve. Una casa típica de unos cinco kilovatios cuesta de cuatro mil quinientos a siete mil quinientos sin batería. ¿Está todo bien?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"","tejado":"teja","consumo":"","nombre":"Elena","telefono":"611 456 789","municipio":"Granada capital, Albaicín","direccion":"calle Pagés 12","franja":"por las mañanas","inicio":"","orientacion":"En el Albaicín el trámite es más exigente y puede haber límites; el técnico confirma el papel exacto en la visita gratuita.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Perfecto, Elena. Queda enviada la solicitud para calle Pagés 12, Albaicín, por las mañanas; te llamamos para confirmar el día y la hora. ¿Necesitas algo más?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"","tejado":"teja","consumo":"","nombre":"Elena","telefono":"611 456 789","municipio":"Granada capital, Albaicín","direccion":"calle Pagés 12","franja":"por las mañanas","inicio":"","orientacion":"En el Albaicín el trámite es más exigente y puede haber límites; el técnico confirma el papel exacto en la visita gratuita.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"estudio","que":"Placas solares","lugar":"Casa","factura":"","tejado":"teja","consumo":"","nombre":"Elena","telefono":"611 456 789","municipio":"Granada capital, Albaicín","direccion":"calle Pagés 12","franja":"por las mañanas","inicio":"","urgente":false,"notas":"Quiere placas solares en una casa en el Albaicín, con tejado de teja. Le han dicho que en el Albaicín no se puede; se le explicó que el trámite es más exigente y puede haber límites, y que el técnico confirma el papel exacto (declaración responsable si el edificio no está protegido). Quiere que el técnico vaya a ver el tejado. Franja: por las mañanas."}</aviso>

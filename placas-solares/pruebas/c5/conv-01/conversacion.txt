@@ -1,0 +1,22 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Tejaluz. Dime más o menos cuánto pagas de luz al mes y te digo cuántas placas te harían falta y lo que costarían.
+
+CLIENTE: Hola, me estoy planteando poner placas, pago unos 120 € de luz al mes. ¿Me compensa?
+
+ANDRÉS: Con 120 € al mes, suele pagarse sola en seis a diez años, antes si gastas mucho de día. Te reservo el estudio gratis, con visita al tejado. ¿Irían las placas en casa, en un bloque o en un negocio?
+<ficha>{"que":"Placas solares","lugar":"","factura":"unos 120 € al mes","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Lo que te conviene es el estudio gratuito con visita técnica; con tus facturas lo dejamos calculado.","porDecir":"la factura nunca baja a cero: quedan la potencia, el contador y los impuestos · tamaño y precio: una casa típica de unos cinco kilovatios cuesta de cuatro mil quinientos a siete mil quinientos euros sin batería","fase":"orientando"}</ficha>
+
+CLIENTE: En casa, una adosada en Armilla
+
+ANDRÉS: En Armilla las bonificaciones dependen de su ordenanza, y eso lo confirma el técnico. Recuerda que la factura no baja a cero: quedan la potencia, el contador y los impuestos. ¿Te reservo el estudio gratis, con visita al tejado?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 120 € al mes","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"Armilla","direccion":"","franja":"","inicio":"","orientacion":"Lo que te conviene es el estudio gratuito con visita técnica; en Armilla la bonificación depende de su ordenanza.","porDecir":"tamaño y precio: una casa típica de unos cinco kilovatios cuesta de cuatro mil quinientos a siete mil quinientos euros sin batería","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, sí, resérvamelo. Soy Javier, 644 778 120, calle Granada 5 en Armilla. Mejor el viernes por la mañana
+
+ANDRÉS: Perfecto, Javier. Estudio en calle Granada 5, Armilla, el viernes por la mañana; te llamamos al seis cuatro cuatro, siete siete ocho, uno dos cero. Una casa típica de cinco kilovatios cuesta de cuatro mil quinientos a siete mil quinientos sin batería. ¿Todo bien?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 120 € al mes","tejado":"","consumo":"","nombre":"Javier","telefono":"644 778 120","municipio":"Armilla","direccion":"calle Granada 5","franja":"viernes por la mañana","inicio":"","orientacion":"Te conviene el estudio gratuito con visita técnica; con tus facturas lo dejamos calculado.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Perfecto, Javier. Queda enviada la solicitud del estudio en calle Granada 5, Armilla, para el viernes por la mañana; te llamamos para confirmar el día y la hora. ¿Necesitas algo más?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 120 € al mes","tejado":"","consumo":"","nombre":"Javier","telefono":"644 778 120","municipio":"Armilla","direccion":"calle Granada 5","franja":"viernes por la mañana","inicio":"","orientacion":"Te conviene el estudio gratuito con visita técnica; con tus facturas lo dejamos calculado.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"estudio","que":"Placas solares","lugar":"Casa","factura":"unos 120 € al mes","tejado":"","consumo":"","nombre":"Javier","telefono":"644 778 120","municipio":"Armilla","direccion":"calle Granada 5","franja":"viernes por la mañana","inicio":"","urgente":false,"notas":"Quiere el estudio con visita técnica. Casa (adosada en Armilla). Paga unos 120 € al mes de luz y pregunta si le compensa. Franja: viernes por la mañana."}</aviso>

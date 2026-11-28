@@ -1,0 +1,22 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Tejaluz. Dime más o menos cuánto pagas de luz al mes y te digo cuántas placas te harían falta y lo que costarían.
+
+CLIENTE: Vivo en un bloque en el Zaidín y quiero placas en la azotea. ¿Cómo lo hago?
+
+ANDRÉS: Lo primero es el acuerdo de la junta, porque la azotea es común. Para renovables de uso común suele bastar un tercio, orientativo; por tu cuenta no puedes poner placas. ¿Te reservo el estudio gratis para llevarlo a la junta?
+<ficha>{"que":"Placas solares en la azotea","lugar":"Comunidad de vecinos","factura":"","tejado":"azotea comunitaria","consumo":"","nombre":"","telefono":"","municipio":"El Zaidín","direccion":"","franja":"","inicio":"","orientacion":"Lo primero es el acuerdo de la junta; el estudio gratuito sirve para llevarlo a la junta.","porDecir":"el permiso del ayuntamiento suele ser una declaración responsable que gestiona la instaladora · el técnico comprueba si el edificio tiene alguna protección, que cambia el trámite · existe el autoconsumo compartido entre vecinos o edificios cercanos","fase":"proponiendo"}</ficha>
+
+CLIENTE: Ah vale, un tercio. ¿Y si los vecinos no quieren, no hay forma de ponerlas solo para mi piso? Aun así el estudio para llevarlo a la junta me vendría bien
+
+ANDRÉS: Sin acuerdo de la junta no se puede poner nada en la azotea común, ni solo para tu piso. Con el estudio tendrás los números para la junta. ¿Me dices tu nombre y un teléfono, solo para organizarlo?
+<ficha>{"que":"Placas solares en la azotea","lugar":"Comunidad de vecinos","factura":"","tejado":"azotea comunitaria","consumo":"","nombre":"","telefono":"","municipio":"El Zaidín (Granada)","direccion":"","franja":"","inicio":"","orientacion":"Sin acuerdo de la junta no hay instalación en la azotea común; el estudio gratuito sirve para llevarlo a la junta.","porDecir":"el permiso del ayuntamiento suele ser una declaración responsable que gestiona la instaladora · el técnico comprueba si el edificio tiene alguna protección, que cambia el trámite · existe el autoconsumo compartido entre vecinos o edificios cercanos","fase":"datos"}</ficha>
+
+CLIENTE: Elena, 688 120 777. Estoy en calle Arabial 50, en el Zaidín. Mejor por la tarde
+
+ANDRÉS: Perfecto, Elena. Estudio en calle Arabial 50, Zaidín, por la tarde, y te llamamos al seis ocho ocho, uno dos cero, siete siete siete. Si el edificio no está protegido, el permiso suele ser una declaración responsable que gestiona la instaladora. ¿Está todo bien?
+<ficha>{"que":"Placas solares en la azotea","lugar":"Comunidad de vecinos","factura":"","tejado":"azotea comunitaria","consumo":"","nombre":"Elena","telefono":"688 120 777","municipio":"El Zaidín (Granada)","direccion":"calle Arabial 50","franja":"por la tarde","inicio":"","orientacion":"Sin acuerdo de la junta no hay instalación en la azotea común; el estudio gratuito sirve para llevarlo a la junta.","porDecir":"el técnico comprueba si el edificio tiene alguna protección, que cambia el trámite · existe el autoconsumo compartido entre vecinos o edificios cercanos","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Perfecto, Elena. Queda enviada la solicitud para calle Arabial 50, Zaidín, por la tarde; te llamamos para confirmar el día y la hora. Y el técnico mirará si el edificio tiene alguna protección, que cambia el trámite. ¿Necesitas algo más?
+<ficha>{"que":"Placas solares en la azotea","lugar":"Comunidad de vecinos","factura":"","tejado":"azotea comunitaria","consumo":"","nombre":"Elena","telefono":"688 120 777","municipio":"El Zaidín (Granada)","direccion":"calle Arabial 50","franja":"por la tarde","inicio":"","orientacion":"Sin acuerdo de la junta no hay instalación en la azotea común; el estudio gratuito sirve para llevarlo a la junta.","porDecir":"existe el autoconsumo compartido entre vecinos o edificios cercanos","fase":"registrado"}</ficha>
+<aviso>{"tipo":"estudio","que":"Placas solares en la azotea","lugar":"Comunidad de vecinos","factura":"","tejado":"azotea comunitaria","consumo":"","nombre":"Elena","telefono":"688 120 777","municipio":"El Zaidín (Granada)","direccion":"calle Arabial 50","franja":"por la tarde","inicio":"","urgente":false,"notas":"Quiere placas solares en la azotea de su bloque, en el Zaidín (comunidad de vecinos). Preguntó si podría poner placas solo para su piso; se le dijo que sin acuerdo de la junta no. Quiere el estudio con visita técnica para llevarlo a la junta. Franja: por la tarde."}</aviso>

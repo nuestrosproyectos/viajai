@@ -1,0 +1,27 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Tejaluz. Dime más o menos cuánto pagas de luz al mes y te digo cuántas placas te harían falta y lo que costarían.
+
+CLIENTE: Me han dado un presupuesto de 6.800 € por 5 kWp con una batería de 10 kWh. ¿Está bien de precio?
+
+ANDRÉS: Pieza a pieza, orientativamente, placas y batería suman entre nueve mil quinientos y quince mil quinientos euros, y 6.800 queda por debajo. Revisa que incluya legalización, marcas y garantías por escrito. ¿Te reservo el estudio gratis para compararlo con uno cerrado?
+<ficha>{"que":"Placas con batería","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Compara con un presupuesto cerrado por escrito, con legalización, marcas y garantías; el estudio gratuito sirve para eso.","porDecir":"la batería compensa sobre todo si gastas mucho de noche, y en muchas casas alarga la amortización · pregunta cuánto gastas de noche","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, me parece bien compararlo sin prisa. Y una cosa, ¿también me bajan el IBI con las placas?
+
+ANDRÉS: Depende del ayuntamiento: en Granada capital hay un 50 % de IBI para viviendas que no son de obra nueva, pero hay que pedirlo. ¿En qué municipio está la casa? Así te reservo el estudio y lo miramos.
+<ficha>{"que":"Placas con batería","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Compara con un presupuesto cerrado por escrito, con legalización, marcas y garantías; el IBI depende del municipio y lo confirma el técnico.","porDecir":"la batería compensa sobre todo si gastas mucho de noche, y en muchas casas alarga la amortización · pregunta cuánto gastas de noche","fase":"datos"}</ficha>
+
+CLIENTE: En Granada capital, en el Zaidín. Es una casa baja con azotea
+
+ANDRÉS: Con azotea, el técnico mira en la visita si hay sombras y hacia dónde da, que cambia mucho el resultado. La batería compensa sobre todo si gastas mucho de noche. ¿Te reservo el estudio gratis en tu azotea?
+<ficha>{"que":"Placas con batería","lugar":"Casa","factura":"","tejado":"Azotea, casa baja","consumo":"","nombre":"","telefono":"","municipio":"Granada capital, Zaidín","direccion":"","franja":"","inicio":"","orientacion":"Compara el presupuesto con uno cerrado por escrito, con legalización, marcas y garantías; el estudio gratuito sirve para eso.","porDecir":"pregunta cuánto gastas de noche","fase":"proponiendo"}</ficha>
+
+CLIENTE: Sí, resérvamelo. Soy Rosa, 622 300 415, calle Palencia 10 en el Zaidín. Mejor por la tarde
+
+ANDRÉS: Perfecto, Rosa. Te apunto el estudio gratis en calle Palencia 10, Zaidín, por la tarde, y tu teléfono es seis dos dos, tres cero cero, cuatro uno cinco. Para la batería, el técnico mirará cuánto gastas de noche. ¿Está todo bien?
+<ficha>{"que":"Placas con batería","lugar":"Casa","factura":"","tejado":"Azotea, casa baja","consumo":"","nombre":"Rosa","telefono":"622 300 415","municipio":"Granada capital, Zaidín","direccion":"Calle Palencia 10, Zaidín","franja":"Por la tarde","inicio":"","orientacion":"Compara el presupuesto con uno cerrado por escrito, con legalización, marcas y garantías; el estudio gratuito sirve para eso.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Perfecto, Rosa. Queda enviada la solicitud del estudio gratis en calle Palencia 10, Zaidín, para por la tarde; te llamamos para confirmar el día y la hora. ¿Necesitas algo más?
+<ficha>{"que":"Placas con batería","lugar":"Casa","factura":"","tejado":"Azotea, casa baja","consumo":"","nombre":"Rosa","telefono":"622 300 415","municipio":"Granada capital, Zaidín","direccion":"Calle Palencia 10, Zaidín","franja":"Por la tarde","inicio":"","orientacion":"Compara el presupuesto con uno cerrado por escrito, con legalización, marcas y garantías; el estudio gratuito sirve para eso.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"estudio","que":"Placas con batería","lugar":"Casa","factura":"","tejado":"Azotea, casa baja","consumo":"","nombre":"Rosa","telefono":"622 300 415","municipio":"Granada capital, Zaidín","direccion":"Calle Palencia 10, Zaidín","franja":"Por la tarde","inicio":"","urgente":false,"notas":"Quiere el estudio gratis con visita técnica. Casa baja con azotea en el Zaidín (Granada capital). Tiene un presupuesto de otra empresa de 6.800 € por 5 kWp con batería de 10 kWh y quiere compararlo con uno cerrado por escrito. Pregunta si le bajan el IBI con las placas. No ha dicho cuánto gasta de noche ni su factura mensual. Franja: por la tarde."}</aviso>

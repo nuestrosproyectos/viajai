@@ -1,0 +1,27 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Tejaluz. Dime más o menos cuánto pagas de luz al mes y te digo cuántas placas te harían falta y lo que costarían.
+
+CLIENTE: Tengo un bar en Atarfe y pago 450 € de luz al mes. ¿Merecen la pena las placas para un negocio?
+
+ANDRÉS: En un negocio, si gastas mucho de día, suele compensar. Atarfe tiene su propia ordenanza. Te reservo el estudio gratis, con tus facturas. ¿Tu consumo es sobre todo de día o de noche?
+<ficha>{"que":"Placas solares","lugar":"Negocio o nave","factura":"450 € al mes","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"Atarfe","direccion":"","franja":"","inicio":"","orientacion":"En un bar suele compensar si gasta mucho de día; el estudio gratuito con tus facturas lo calcula.","porDecir":"la deducción de autoconsumo de la Renta no vale para un negocio; lo fiscal lo ve su asesor","fase":"proponiendo"}</ficha>
+
+CLIENTE: Sobre todo de día, abrimos de 8 a 24 h con cocina. ¿Y desgrava algo al ser negocio?
+
+ANDRÉS: Con tanto consumo de día, las placas aprovechan bien. Lo que sí te digo: la deducción de autoconsumo de la Renta no vale para un negocio; eso lo confirma tu asesor fiscal. ¿Te reservo el estudio gratis, con tus facturas?
+<ficha>{"que":"Placas solares","lugar":"Negocio o nave","factura":"450 € al mes","tejado":"","consumo":"de día","nombre":"","telefono":"","municipio":"Atarfe","direccion":"","franja":"","inicio":"","orientacion":"Con consumo sobre todo de día las placas aprovechan bien; el estudio gratuito con tus facturas lo calcula. Lo fiscal lo confirma tu asesor.","porDecir":"","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, lo del asesor lo miro. Pero antes de la visita, ¿me puedes dar números orientativos? Cuánto costaría más o menos y en cuántos años se paga con 450 € al mes
+
+ANDRÉS: Suele costar de mil a mil quinientos euros por kilovatio instalado, y el tamaño lo marcan tus facturas. Con consumo de día, lo más probable es pagarlas en seis a diez años, antes si aprovechas casi todo. ¿Te reservo el estudio gratis?
+<ficha>{"que":"Placas solares","lugar":"Negocio o nave","factura":"450 € al mes","tejado":"","consumo":"de día","nombre":"","telefono":"","municipio":"Atarfe","direccion":"","franja":"","inicio":"","orientacion":"Con consumo sobre todo de día las placas aprovechan bien; el estudio gratuito con tus facturas lo calcula. Lo fiscal lo confirma tu asesor.","porDecir":"","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, con esos números me vale, que venga a verlo. Soy Pepe, 633 111 444, avenida de la Diputación 7 de Atarfe. Mejor por la tarde
+
+ANDRÉS: Perfecto, Pepe. Te apunto el estudio gratis en avenida de la Diputación 7, en Atarfe, por la tarde, y tu teléfono es seis tres tres, uno uno uno, cuatro cuatro cuatro. ¿Está todo bien?
+<ficha>{"que":"Placas solares","lugar":"Negocio o nave","factura":"450 € al mes","tejado":"","consumo":"de día","nombre":"Pepe","telefono":"633 111 444","municipio":"Atarfe","direccion":"Avenida de la Diputación 7, Atarfe","franja":"Por la tarde","inicio":"","orientacion":"Con consumo sobre todo de día las placas aprovechan bien; el estudio gratuito con tus facturas lo calcula. Lo fiscal lo confirma tu asesor.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Perfecto, Pepe. Queda enviada la solicitud del estudio gratis en avenida de la Diputación 7, Atarfe, por la tarde; te llamamos para confirmar el día y la hora. ¿Necesitas algo más?
+<ficha>{"que":"Placas solares","lugar":"Negocio o nave","factura":"450 € al mes","tejado":"","consumo":"de día","nombre":"Pepe","telefono":"633 111 444","municipio":"Atarfe","direccion":"Avenida de la Diputación 7, Atarfe","franja":"Por la tarde","inicio":"","orientacion":"Con consumo sobre todo de día las placas aprovechan bien; el estudio gratuito con tus facturas lo calcula. Lo fiscal lo confirma tu asesor.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"estudio","que":"Placas solares","lugar":"Negocio o nave","factura":"450 € al mes","tejado":"","consumo":"de día","nombre":"Pepe","telefono":"633 111 444","municipio":"Atarfe","direccion":"Avenida de la Diputación 7, Atarfe","franja":"Por la tarde","inicio":"","urgente":false,"notas":"Tiene un bar en Atarfe con cocina, abierto de 8 a 24 h. Paga unos 450 € al mes de luz y su consumo es sobre todo de día. Preguntó si desgrava al ser negocio: se le dijo que la deducción de autoconsumo de la Renta no vale para un negocio y que lo confirma su asesor fiscal. Pidió números orientativos antes de la visita y los aceptó. Quiere el estudio gratis con visita técnica. Franja: por la tarde."}</aviso>

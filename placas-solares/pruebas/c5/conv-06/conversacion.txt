@@ -1,0 +1,22 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Tejaluz. Dime más o menos cuánto pagas de luz al mes y te digo cuántas placas te harían falta y lo que costarían.
+
+CLIENTE: Ya tengo placas desde hace 3 años. ¿Me compensa añadir una batería? Por la noche gasto bastante.
+
+ANDRÉS: Con placas ya puestas, la batería compensa sobre todo si gastas mucho de noche, y en muchas casas alarga la amortización. Suele costar entre 450 y 800 € por kilovatio-hora de capacidad. Te reservo el estudio para calcularlo con tus facturas. ¿Cuánto gastas de noche?
+<ficha>{"que":"Añadir batería","lugar":"","factura":"","tejado":"","consumo":"de noche","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Con placas ya instaladas, la batería compensa si el consumo de noche es alto; el técnico lo calcula con tus facturas.","porDecir":"la batería se legaliza igual que las placas, con boletín y registro en la Junta, y la hace una empresa habilitada","fase":"proponiendo"}</ficha>
+
+CLIENTE: Pues bastante por el aire acondicionado, no sé exactamente cuánto. Mi duda es si la batería es compatible con mi inversor, que lo puso otra empresa
+
+ANDRÉS: Eso no te lo puedo confirmar: depende del inversor y lo revisa el técnico. La batería se legaliza igual que las placas, con boletín y registro en la Junta. ¿Sabes qué marca de inversor tienes? Te reservo el estudio para mirarlo.
+<ficha>{"que":"Añadir batería","lugar":"","factura":"","tejado":"","consumo":"de noche, por el aire acondicionado","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Con placas ya instaladas, la batería compensa si el consumo de noche es alto; la compatibilidad con tu inversor la confirma el técnico en el estudio.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: La marca no la sé, tendría que mirarlo. Que lo vea el técnico en la visita. Soy Rafa, 622 987 654, calle Real 30 de Armilla, por las tardes
+
+ANDRÉS: Perfecto, Rafa. Estudio en calle Real 30, Armilla, por las tardes, y te llamamos al seis dos dos, nueve ocho siete, seis cinco cuatro. Y recuerda que la factura no baja a cero: quedan la potencia, el contador y los impuestos. ¿Está todo bien?
+<ficha>{"que":"Añadir batería","lugar":"","factura":"","tejado":"","consumo":"de noche, por el aire acondicionado","nombre":"Rafa","telefono":"622 987 654","municipio":"Armilla","direccion":"calle Real 30","franja":"por las tardes","inicio":"","orientacion":"Con placas ya instaladas, la batería compensa si el consumo de noche es alto; la compatibilidad con tu inversor la confirma el técnico en el estudio.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Perfecto, Rafa. Queda enviada la solicitud para calle Real 30, Armilla, por las tardes; te llamamos para confirmar el día y la hora. ¿Necesitas algo más?
+<ficha>{"que":"Añadir batería","lugar":"","factura":"","tejado":"","consumo":"de noche, por el aire acondicionado","nombre":"Rafa","telefono":"622 987 654","municipio":"Armilla","direccion":"calle Real 30","franja":"por las tardes","inicio":"","orientacion":"Con placas ya instaladas, la batería compensa si el consumo de noche es alto; la compatibilidad con tu inversor la confirma el técnico en el estudio.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"estudio","que":"Añadir batería","lugar":"","factura":"","tejado":"","consumo":"de noche, por el aire acondicionado","nombre":"Rafa","telefono":"622 987 654","municipio":"Armilla","direccion":"calle Real 30","franja":"por las tardes","inicio":"","urgente":false,"notas":"Ya tiene placas desde hace 3 años, instaladas por otra empresa. Quiere añadir batería: gasta bastante de noche por el aire acondicionado (no sabe cuánto). Duda si la batería es compatible con su inversor; no sabe la marca del inversor y quiere que lo mire el técnico en la visita. Franja: por las tardes."}</aviso>
