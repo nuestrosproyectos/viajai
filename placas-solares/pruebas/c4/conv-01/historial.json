@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Más de día, teletrabajo y tengo el aire puesto casi todo el día"
+ },
+ {
+  "role": "assistant",
+  "content": "El aire y el teletrabajo gastan de día, justo cuando las placas producen, y eso te favorece. Cada kilovatio sale de mil a mil quinientos euros. Te reservo el estudio gratis con visita. ¿Sería en tu casa, en un bloque o en un negocio?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"de día: teletrabajo y aire acondicionado casi todo el día\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con tanto consumo de día, las placas aprovechan mucho; el estudio con tus facturas afina el tamaño.\",\"porDecir\":\"la factura nunca baja a cero: quedan la potencia, el contador, los impuestos y lo de la noche · la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal\",\"fase\":\"orientando\"}</ficha>",
+  "original": "El aire y el teletrabajo gastan de día, justo cuando las placas producen, y eso te favorece. Cada kilovatio sale de mil a mil quinientos euros. Te reservo el estudio gratis con visita. ¿Sería en tu casa, en un bloque o en un negocio?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"de día: teletrabajo y aire acondicionado casi todo el día\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con tanto consumo de día, las placas aprovechan mucho; el estudio con tus facturas afina el tamaño.\",\"porDecir\":\"la factura nunca baja a cero: quedan la potencia, el contador, los impuestos y lo de la noche · la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal\",\"fase\":\"orientando\"}</ficha>"
  }
 ]

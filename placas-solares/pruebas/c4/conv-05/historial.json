@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Ni idea si está catalogado. Me dijeron que en el Albaicín no se puede poner nada, ¿es verdad?"
+ },
+ {
+  "role": "assistant",
+  "content": "No está prohibido sin más: en el Albaicín no sirve el trámite sencillo, y el técnico mira en la visita si el edificio está catalogado. Luego van el presupuesto y la instalación, con la legalización que hace la instaladora. ¿Te reservo el estudio gratis?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"teja\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"El Albaicín\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"En el Albaicín el trámite es más exigente; antes de nada, el técnico comprueba si el edificio está catalogado.\",\"porDecir\":\"la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal\",\"fase\":\"orientando\"}</ficha>\n<mostrar>zona</mostrar>",
+  "original": "No está prohibido sin más: en el Albaicín no sirve el trámite sencillo, y el técnico mira en la visita si el edificio está catalogado. Luego van el presupuesto y la instalación, con la legalización que hace la instaladora. ¿Te reservo el estudio gratis?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"teja\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"El Albaicín\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"En el Albaicín el trámite es más exigente; antes de nada, el técnico comprueba si el edificio está catalogado.\",\"porDecir\":\"la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal\",\"fase\":\"orientando\"}</ficha>\n<mostrar>zona</mostrar>"
  }
 ]

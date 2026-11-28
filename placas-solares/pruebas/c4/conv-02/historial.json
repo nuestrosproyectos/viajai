@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Sí, lo tengo en PDF. ¿Y con las placas me bajan el IBI? Quiero comparar bien antes de decidir"
+ },
+ {
+  "role": "assistant",
+  "content": "En Granada capital, si no es obra nueva, hay un 50 % de bonificación del IBI (el impuesto de la casa) que hay que pedir; fuera, depende del ayuntamiento. La inversión se paga en seis a diez años. Te reservo el estudio. ¿En qué municipio?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Compara el presupuesto con el estudio y pide que incluya boletín, legalización y garantías por escrito; la bonificación del IBI depende del municipio.\",\"porDecir\":\"la factura nunca baja a cero: quedan la potencia, el contador, los impuestos y lo de la noche · la batería compensa sobre todo si gastas mucho de noche · la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal\",\"fase\":\"orientando\"}</ficha>\n<mostrar>ayudas</mostrar>",
+  "original": "En Granada capital, si no es obra nueva, hay un 50 % de bonificación del IBI (el impuesto de la casa) que hay que pedir; fuera, depende del ayuntamiento. La inversión se paga en seis a diez años. Te reservo el estudio. ¿En qué municipio?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Compara el presupuesto con el estudio y pide que incluya boletín, legalización y garantías por escrito; la bonificación del IBI depende del municipio.\",\"porDecir\":\"la factura nunca baja a cero: quedan la potencia, el contador, los impuestos y lo de la noche · la batería compensa sobre todo si gastas mucho de noche · la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal\",\"fase\":\"orientando\"}</ficha>\n<mostrar>ayudas</mostrar>"
  }
 ]
