@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Gracias, Elena. Y ojo con la deducción de la Renta de 2026: va muy justa y la confirma un asesor fiscal. ¿En qué calle y número sería la visita, y te viene mejor por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"azotea\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"688 120 777\",\"municipio\":\"El Zaidín\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"La azotea es común: lleva el estudio a la junta, porque hace falta acuerdo de los vecinos.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Elena. Y ojo con la deducción de la Renta de 2026: va muy justa y la confirma un asesor fiscal. ¿En qué calle y número sería la visita, y te viene mejor por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"azotea\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"688 120 777\",\"municipio\":\"El Zaidín\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"La azotea es común: lleva el estudio a la junta, porque hace falta acuerdo de los vecinos.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Calle Arabial 50, por la tarde mejor"
  }
 ]

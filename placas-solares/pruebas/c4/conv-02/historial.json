@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Gracias, Rosa. La batería compensa sobre todo si gastas mucho de noche, algo que el estudio mira en tus facturas. ¿En qué calle y número sería la visita, y te viene mejor por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"Rosa\",\"telefono\":\"622 300 415\",\"municipio\":\"Granada capital (Zaidín)\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Compara tu presupuesto de 6.800 € con el estudio gratuito, revisando que incluya boletín, legalización y garantías por escrito.\",\"porDecir\":\"la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Rosa. La batería compensa sobre todo si gastas mucho de noche, algo que el estudio mira en tus facturas. ¿En qué calle y número sería la visita, y te viene mejor por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"Rosa\",\"telefono\":\"622 300 415\",\"municipio\":\"Granada capital (Zaidín)\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Compara tu presupuesto de 6.800 € con el estudio gratuito, revisando que incluya boletín, legalización y garantías por escrito.\",\"porDecir\":\"la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Calle Palencia 10, y mejor por la tarde"
  }
 ]
