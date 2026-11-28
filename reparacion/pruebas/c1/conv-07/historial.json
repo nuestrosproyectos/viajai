@@ -61,5 +61,9 @@
   "role": "assistant",
   "content": "Perfecto, reservamos la visita. Lo lamento, con cinco años merece la pena que lo revise el técnico. Dime tu nombre, que es solo para llamarte y organizarla.\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"\",\"diagnostico\":\"Filtro o bomba de desagüe obstruidos (lo más probable)\",\"nombre\":\"\",\"telefono\":\"688 444 222\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, reservamos la visita. Lo lamento, con cinco años merece la pena que lo revise el técnico. Dime tu nombre, que es solo para llamarte y organizarla.\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"\",\"diagnostico\":\"Filtro o bomba de desagüe obstruidos (lo más probable)\",\"nombre\":\"\",\"telefono\":\"688 444 222\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Elena"
  }
 ]

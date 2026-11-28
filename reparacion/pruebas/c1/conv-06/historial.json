@@ -61,5 +61,9 @@
   "role": "assistant",
   "content": "Perfecto, Manolo. Te lo apunto para la mañana: calle Santa Escolástica 4, Granada, y el teléfono 611 999 000. ¿Están bien?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca los platos\",\"codigo\":\"\",\"diagnostico\":\"Falta de abrillantador o fallo del dosificador o del secado (lo más probable)\",\"nombre\":\"Manolo\",\"telefono\":\"611 999 000\",\"direccion\":\"Calle Santa Escolástica 4, Granada\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Manolo. Te lo apunto para la mañana: calle Santa Escolástica 4, Granada, y el teléfono 611 999 000. ¿Están bien?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca los platos\",\"codigo\":\"\",\"diagnostico\":\"Falta de abrillantador o fallo del dosificador o del secado (lo más probable)\",\"nombre\":\"Manolo\",\"telefono\":\"611 999 000\",\"direccion\":\"Calle Santa Escolástica 4, Granada\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, están bien"
  }
 ]
