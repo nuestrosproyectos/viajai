@@ -29,5 +29,14 @@
  {
   "role": "user",
   "content": "Sí, resérvamelo. Soy Rosa, 622 300 415, calle Palencia 10 en el Zaidín. Mejor por la tarde"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Rosa. Te apunto el estudio gratis en calle Palencia 10, Zaidín, por la tarde, y tu teléfono es seis dos dos, tres cero cero, cuatro uno cinco. Para la batería, el técnico mirará cuánto gastas de noche. ¿Está todo bien?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"Azotea, casa baja\",\"consumo\":\"\",\"nombre\":\"Rosa\",\"telefono\":\"622 300 415\",\"municipio\":\"Granada capital, Zaidín\",\"direccion\":\"Calle Palencia 10, Zaidín\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Compara el presupuesto con uno cerrado por escrito, con legalización, marcas y garantías; el estudio gratuito sirve para eso.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Rosa. Te apunto el estudio gratis en calle Palencia 10, Zaidín, por la tarde, y tu teléfono es seis dos dos, tres cero cero, cuatro uno cinco. Para la batería, el técnico mirará cuánto gastas de noche. ¿Está todo bien?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"Azotea, casa baja\",\"consumo\":\"\",\"nombre\":\"Rosa\",\"telefono\":\"622 300 415\",\"municipio\":\"Granada capital, Zaidín\",\"direccion\":\"Calle Palencia 10, Zaidín\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Compara el presupuesto con uno cerrado por escrito, con legalización, marcas y garantías; el estudio gratuito sirve para eso.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien"
  }
 ]

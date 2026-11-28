@@ -198,4 +198,11 @@ Suele costar de mil a mil quinientos euros por kilovatio instalado, y el tamaño
 === CLIENTE ===
 Vale, con esos números me vale, que venga a verlo. Soy Pepe, 633 111 444, avenida de la Diputación 7 de Atarfe. Mejor por la tarde
 
+=== ANDRÉS ===
+Perfecto, Pepe. Te apunto el estudio gratis en avenida de la Diputación 7, en Atarfe, por la tarde, y tu teléfono es seis tres tres, uno uno uno, cuatro cuatro cuatro. ¿Está todo bien?
+<ficha>{"que":"Placas solares","lugar":"Negocio o nave","factura":"450 € al mes","tejado":"","consumo":"de día","nombre":"Pepe","telefono":"633 111 444","municipio":"Atarfe","direccion":"Avenida de la Diputación 7, Atarfe","franja":"Por la tarde","inicio":"","orientacion":"Con consumo sobre todo de día las placas aprovechan bien; el estudio gratuito con tus facturas lo calcula. Lo fiscal lo confirma tu asesor.","porDecir":"","fase":"datos"}</ficha>
+
+=== CLIENTE ===
+Sí, todo bien
+
 === ANDRÉS (tu respuesta) ===

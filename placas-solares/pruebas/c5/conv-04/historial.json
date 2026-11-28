@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Perfecto, Elena. Estudio en calle Arabial 50, Zaidín, por la tarde, y te llamamos al seis ocho ocho, uno dos cero, siete siete siete. Si el edificio no está protegido, el permiso suele ser una declaración responsable que gestiona la instaladora. ¿Está todo bien?\n<ficha>{\"que\":\"Placas solares en la azotea\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"azotea comunitaria\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"688 120 777\",\"municipio\":\"El Zaidín (Granada)\",\"direccion\":\"calle Arabial 50\",\"franja\":\"por la tarde\",\"inicio\":\"\",\"orientacion\":\"Sin acuerdo de la junta no hay instalación en la azotea común; el estudio gratuito sirve para llevarlo a la junta.\",\"porDecir\":\"el técnico comprueba si el edificio tiene alguna protección, que cambia el trámite · existe el autoconsumo compartido entre vecinos o edificios cercanos\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Elena. Estudio en calle Arabial 50, Zaidín, por la tarde, y te llamamos al seis ocho ocho, uno dos cero, siete siete siete. Si el edificio no está protegido, el permiso suele ser una declaración responsable que gestiona la instaladora. ¿Está todo bien?\n<ficha>{\"que\":\"Placas solares en la azotea\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"azotea comunitaria\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"688 120 777\",\"municipio\":\"El Zaidín (Granada)\",\"direccion\":\"calle Arabial 50\",\"franja\":\"por la tarde\",\"inicio\":\"\",\"orientacion\":\"Sin acuerdo de la junta no hay instalación en la azotea común; el estudio gratuito sirve para llevarlo a la junta.\",\"porDecir\":\"el técnico comprueba si el edificio tiene alguna protección, que cambia el trámite · existe el autoconsumo compartido entre vecinos o edificios cercanos\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien"
  }
 ]

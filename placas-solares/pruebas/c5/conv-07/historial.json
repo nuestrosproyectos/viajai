@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Perfecto, Manoli. Calle Ancha 5, Maracena, cuanto antes y por la mañana, y te llamamos al seis cinco cinco, dos dos dos, tres tres tres. Avisamos a la instaladora como urgente; mientras, no toques nada. ¿Está todo bien?\n<ficha>{\"que\":\"Revisar mi instalación\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"Manoli\",\"telefono\":\"655 222 333\",\"municipio\":\"Maracena\",\"direccion\":\"calle Ancha 5\",\"franja\":\"cuanto antes, por la mañana\",\"inicio\":\"cuanto antes\",\"orientacion\":\"Es urgente: que no toque nada, corte la luz en el cuadro si puede y que la instaladora lo revise ya. La empresa que las puso no responde; se lo apuntamos al técnico.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Manoli. Calle Ancha 5, Maracena, cuanto antes y por la mañana, y te llamamos al seis cinco cinco, dos dos dos, tres tres tres. Avisamos a la instaladora como urgente; mientras, no toques nada. ¿Está todo bien?\n<ficha>{\"que\":\"Revisar mi instalación\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"Manoli\",\"telefono\":\"655 222 333\",\"municipio\":\"Maracena\",\"direccion\":\"calle Ancha 5\",\"franja\":\"cuanto antes, por la mañana\",\"inicio\":\"cuanto antes\",\"orientacion\":\"Es urgente: que no toque nada, corte la luz en el cuadro si puede y que la instaladora lo revise ya. La empresa que las puso no responde; se lo apuntamos al técnico.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien"
  }
 ]

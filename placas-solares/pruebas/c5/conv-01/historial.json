@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Perfecto, Javier. Estudio en calle Granada 5, Armilla, el viernes por la mañana; te llamamos al seis cuatro cuatro, siete siete ocho, uno dos cero. Una casa típica de cinco kilovatios cuesta de cuatro mil quinientos a siete mil quinientos sin batería. ¿Todo bien?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"Javier\",\"telefono\":\"644 778 120\",\"municipio\":\"Armilla\",\"direccion\":\"calle Granada 5\",\"franja\":\"viernes por la mañana\",\"inicio\":\"\",\"orientacion\":\"Te conviene el estudio gratuito con visita técnica; con tus facturas lo dejamos calculado.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Javier. Estudio en calle Granada 5, Armilla, el viernes por la mañana; te llamamos al seis cuatro cuatro, siete siete ocho, uno dos cero. Una casa típica de cinco kilovatios cuesta de cuatro mil quinientos a siete mil quinientos sin batería. ¿Todo bien?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"Javier\",\"telefono\":\"644 778 120\",\"municipio\":\"Armilla\",\"direccion\":\"calle Granada 5\",\"franja\":\"viernes por la mañana\",\"inicio\":\"\",\"orientacion\":\"Te conviene el estudio gratuito con visita técnica; con tus facturas lo dejamos calculado.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien"
  }
 ]

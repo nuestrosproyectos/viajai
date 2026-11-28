@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Perfecto, Elena. Estudio en calle Pagés 12, Albaicín, por las mañanas, y te llamamos al seis uno uno, cuatro cinco seis, siete ocho nueve. Una casa típica de unos cinco kilovatios cuesta de cuatro mil quinientos a siete mil quinientos sin batería. ¿Está todo bien?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"teja\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"611 456 789\",\"municipio\":\"Granada capital, Albaicín\",\"direccion\":\"calle Pagés 12\",\"franja\":\"por las mañanas\",\"inicio\":\"\",\"orientacion\":\"En el Albaicín el trámite es más exigente y puede haber límites; el técnico confirma el papel exacto en la visita gratuita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Elena. Estudio en calle Pagés 12, Albaicín, por las mañanas, y te llamamos al seis uno uno, cuatro cinco seis, siete ocho nueve. Una casa típica de unos cinco kilovatios cuesta de cuatro mil quinientos a siete mil quinientos sin batería. ¿Está todo bien?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"teja\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"611 456 789\",\"municipio\":\"Granada capital, Albaicín\",\"direccion\":\"calle Pagés 12\",\"franja\":\"por las mañanas\",\"inicio\":\"\",\"orientacion\":\"En el Albaicín el trámite es más exigente y puede haber límites; el técnico confirma el papel exacto en la visita gratuita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien"
  }
 ]
