@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Ya, pero yo quiero algo más firme. Mi luz es casi toda de noche. ¿Con batería sí podríais garantizar que no pago?"
+ },
+ {
+  "role": "assistant",
+  "content": "Con batería tampoco hay cero: quedan la potencia, el contador y los impuestos. Como gastas sobre todo de noche, la batería te aprovecha, aunque cuesta entre cuatrocientos cincuenta y ochocientos euros por kilovatio hora. ¿Te reservo el estudio gratis para ver cuánta te compensa?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"de noche\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con batería se aprovecha la luz de noche, pero la factura no baja a cero; el estudio con tus facturas calcula cuánta batería compensa.\",\"porDecir\":\"lo más probable es que se pague sola en seis a diez años, antes si gastas mucho de día · tamaño y precio: una casa típica de unos cinco kilovatios, de cuatro mil quinientos a siete mil quinientos euros sin batería\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Con batería tampoco hay cero: quedan la potencia, el contador y los impuestos. Como gastas sobre todo de noche, la batería te aprovecha, aunque cuesta entre cuatrocientos cincuenta y ochocientos euros por kilovatio hora. ¿Te reservo el estudio gratis para ver cuánta te compensa?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"de noche\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con batería se aprovecha la luz de noche, pero la factura no baja a cero; el estudio con tus facturas calcula cuánta batería compensa.\",\"porDecir\":\"lo más probable es que se pague sola en seis a diez años, antes si gastas mucho de día · tamaño y precio: una casa típica de unos cinco kilovatios, de cuatro mil quinientos a siete mil quinientos euros sin batería\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

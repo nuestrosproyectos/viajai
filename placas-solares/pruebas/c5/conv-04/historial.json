@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Ah vale, un tercio. ¿Y si los vecinos no quieren, no hay forma de ponerlas solo para mi piso? Aun así el estudio para llevarlo a la junta me vendría bien"
+ },
+ {
+  "role": "assistant",
+  "content": "Sin acuerdo de la junta no se puede poner nada en la azotea común, ni solo para tu piso. Con el estudio tendrás los números para la junta. ¿Me dices tu nombre y un teléfono, solo para organizarlo?\n<ficha>{\"que\":\"Placas solares en la azotea\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"azotea comunitaria\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"El Zaidín (Granada)\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Sin acuerdo de la junta no hay instalación en la azotea común; el estudio gratuito sirve para llevarlo a la junta.\",\"porDecir\":\"el permiso del ayuntamiento suele ser una declaración responsable que gestiona la instaladora · el técnico comprueba si el edificio tiene alguna protección, que cambia el trámite · existe el autoconsumo compartido entre vecinos o edificios cercanos\",\"fase\":\"datos\"}</ficha>",
+  "original": "Sin acuerdo de la junta no se puede poner nada en la azotea común, ni solo para tu piso. Con el estudio tendrás los números para la junta. ¿Me dices tu nombre y un teléfono, solo para organizarlo?\n<ficha>{\"que\":\"Placas solares en la azotea\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"azotea comunitaria\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"El Zaidín (Granada)\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Sin acuerdo de la junta no hay instalación en la azotea común; el estudio gratuito sirve para llevarlo a la junta.\",\"porDecir\":\"el permiso del ayuntamiento suele ser una declaración responsable que gestiona la instaladora · el técnico comprueba si el edificio tiene alguna protección, que cambia el trámite · existe el autoconsumo compartido entre vecinos o edificios cercanos\",\"fase\":\"datos\"}</ficha>"
  }
 ]

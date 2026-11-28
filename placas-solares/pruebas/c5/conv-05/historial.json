@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Es que me han dicho que en el Albaicín no se puede. ¿Qué trámite hace falta exactamente?"
+ },
+ {
+  "role": "assistant",
+  "content": "No te digo que no se pueda: en el Albaicín el trámite es más exigente y puede haber límites. Si el edificio no está protegido suele bastar una declaración responsable; el técnico lo comprueba y te confirma el papel exacto. ¿Te reservo el estudio?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"teja\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Albaicín (Granada)\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"En el Albaicín el trámite es más exigente y puede haber límites; el técnico confirma el papel exacto en la visita gratuita.\",\"porDecir\":\"tamaño y precio: una casa típica de unos cinco kilovatios, de cuatro mil quinientos a siete mil quinientos euros sin batería\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "No te digo que no se pueda: en el Albaicín el trámite es más exigente y puede haber límites. Si el edificio no está protegido suele bastar una declaración responsable; el técnico lo comprueba y te confirma el papel exacto. ¿Te reservo el estudio?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"teja\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Albaicín (Granada)\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"En el Albaicín el trámite es más exigente y puede haber límites; el técnico confirma el papel exacto en la visita gratuita.\",\"porDecir\":\"tamaño y precio: una casa típica de unos cinco kilovatios, de cuatro mil quinientos a siete mil quinientos euros sin batería\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

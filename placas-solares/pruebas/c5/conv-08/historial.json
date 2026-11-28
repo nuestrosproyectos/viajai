@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Sobre todo de día, abrimos de 8 a 24 h con cocina. ¿Y desgrava algo al ser negocio?"
+ },
+ {
+  "role": "assistant",
+  "content": "Con tanto consumo de día, las placas aprovechan bien. Lo que sí te digo: la deducción de autoconsumo de la Renta no vale para un negocio; eso lo confirma tu asesor fiscal. ¿Te reservo el estudio gratis, con tus facturas?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Negocio o nave\",\"factura\":\"450 € al mes\",\"tejado\":\"\",\"consumo\":\"de día\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Atarfe\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con consumo sobre todo de día las placas aprovechan bien; el estudio gratuito con tus facturas lo calcula. Lo fiscal lo confirma tu asesor.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Con tanto consumo de día, las placas aprovechan bien. Lo que sí te digo: la deducción de autoconsumo de la Renta no vale para un negocio; eso lo confirma tu asesor fiscal. ¿Te reservo el estudio gratis, con tus facturas?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Negocio o nave\",\"factura\":\"450 € al mes\",\"tejado\":\"\",\"consumo\":\"de día\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Atarfe\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con consumo sobre todo de día las placas aprovechan bien; el estudio gratuito con tus facturas lo calcula. Lo fiscal lo confirma tu asesor.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]
