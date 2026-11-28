@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "¿60 euros solo por venir a mirarla? Eso es un robo."
+ },
+ {
+  "role": "assistant",
+  "content": "Entiendo que parezca mucho. Son 60,50 €, y se descuentan de la reparación si la hacemos con nosotros; además el técnico te da el presupuesto cerrado antes de tocar nada. ¿Qué aparato es y de qué marca?\n<ficha>{\"aparato\":\"\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>\n<mostrar>precios</mostrar>",
+  "original": "Entiendo que parezca mucho. Son 60,50 €, y se descuentan de la reparación si la hacemos con nosotros; además el técnico te da el presupuesto cerrado antes de tocar nada. ¿Qué aparato es y de qué marca?\n<ficha>{\"aparato\":\"\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>\n<mostrar>precios</mostrar>"
  }
 ]

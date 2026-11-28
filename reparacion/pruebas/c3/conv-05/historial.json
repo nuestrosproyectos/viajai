@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "¡Me sale agua por debajo de la lavadora y está el suelo encharcado!"
+ },
+ {
+  "role": "assistant",
+  "content": "Tranquilo, primero la seguridad: corta la luz desde el diferencial y cierra el grifo de la lavadora. Con el suelo seco, desenchufa la lavadora. ¿Ya has cortado la luz?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo, suelo encharcado\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>",
+  "original": "Tranquilo, primero la seguridad: corta la luz desde el diferencial y cierra el grifo de la lavadora. Con el suelo seco, desenchufa la lavadora. ¿Ya has cortado la luz?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo, suelo encharcado\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>"
  }
 ]

@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Buenos días. La vitrocerámica no me enciende un fuego. Tengo 80 años y vivo en La Zubia."
+ },
+ {
+  "role": "assistant",
+  "content": "Buenos días, sí llegamos a La Zubia. Para decirle qué le pasa al fuego, ¿de qué marca es la placa? Cada marca usa sus propios códigos y piezas.\n<ficha>{\"aparato\":\"placa\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"un fuego no calienta, los demás sí\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>\n<mostrar>zona</mostrar>",
+  "original": "Buenos días, sí llegamos a La Zubia. Para decirle qué le pasa al fuego, ¿de qué marca es la placa? Cada marca usa sus propios códigos y piezas.\n<ficha>{\"aparato\":\"placa\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"un fuego no calienta, los demás sí\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>\n<mostrar>zona</mostrar>"
  }
 ]
