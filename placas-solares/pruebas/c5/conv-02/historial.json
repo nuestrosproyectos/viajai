@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Pieza a pieza, orientativamente, placas y batería suman entre nueve mil quinientos y quince mil quinientos euros, y 6.800 queda por debajo. Revisa que incluya legalización, marcas y garantías por escrito. ¿Te reservo el estudio gratis para compararlo con uno cerrado?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Compara con un presupuesto cerrado por escrito, con legalización, marcas y garantías; el estudio gratuito sirve para eso.\",\"porDecir\":\"la batería compensa sobre todo si gastas mucho de noche, y en muchas casas alarga la amortización · pregunta cuánto gastas de noche\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Pieza a pieza, orientativamente, placas y batería suman entre nueve mil quinientos y quince mil quinientos euros, y 6.800 queda por debajo. Revisa que incluya legalización, marcas y garantías por escrito. ¿Te reservo el estudio gratis para compararlo con uno cerrado?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Compara con un presupuesto cerrado por escrito, con legalización, marcas y garantías; el estudio gratuito sirve para eso.\",\"porDecir\":\"la batería compensa sobre todo si gastas mucho de noche, y en muchas casas alarga la amortización · pregunta cuánto gastas de noche\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, me parece bien compararlo sin prisa. Y una cosa, ¿también me bajan el IBI con las placas?"
  }
 ]

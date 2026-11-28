@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "En un negocio, si gastas mucho de día, suele compensar. Atarfe tiene su propia ordenanza. Te reservo el estudio gratis, con tus facturas. ¿Tu consumo es sobre todo de día o de noche?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Negocio o nave\",\"factura\":\"450 € al mes\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Atarfe\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"En un bar suele compensar si gasta mucho de día; el estudio gratuito con tus facturas lo calcula.\",\"porDecir\":\"la deducción de autoconsumo de la Renta no vale para un negocio; lo fiscal lo ve su asesor\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "En un negocio, si gastas mucho de día, suele compensar. Atarfe tiene su propia ordenanza. Te reservo el estudio gratis, con tus facturas. ¿Tu consumo es sobre todo de día o de noche?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Negocio o nave\",\"factura\":\"450 € al mes\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Atarfe\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"En un bar suele compensar si gasta mucho de día; el estudio gratuito con tus facturas lo calcula.\",\"porDecir\":\"la deducción de autoconsumo de la Renta no vale para un negocio; lo fiscal lo ve su asesor\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sobre todo de día, abrimos de 8 a 24 h con cocina. ¿Y desgrava algo al ser negocio?"
  }
 ]
