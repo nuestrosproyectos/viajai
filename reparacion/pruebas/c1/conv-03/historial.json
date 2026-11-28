@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "El horno Teka no calienta, pero la luz sí se enciende."
+ },
+ {
+  "role": "assistant",
+  "content": "Con la luz encendida y sin calor, lo más probable es el termostato de seguridad o un fusible térmico, y el técnico irá con esa pieza. ¿Tu horno tiene ya más de tres años, o lo compraste hace menos?\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz sí se enciende\",\"codigo\":\"\",\"diagnostico\":\"Termostato de seguridad o fusible térmico (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>\n<mostrar>aparato:horno</mostrar>",
+  "original": "Con la luz encendida y sin calor, lo más probable es el termostato de seguridad o un fusible térmico, y el técnico irá con esa pieza. ¿Tu horno tiene ya más de tres años, o lo compraste hace menos?\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz sí se enciende\",\"codigo\":\"\",\"diagnostico\":\"Termostato de seguridad o fusible térmico (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>\n<mostrar>aparato:horno</mostrar>"
  }
 ]
