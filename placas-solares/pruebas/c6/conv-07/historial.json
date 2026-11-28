@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Entiendo el susto. Lo primero, no toques nada ni subas al tejado, que con sol los paneles siguen dando tensión; si hay humo o fuego, sal y llama al 112. ¿Me dices tu nombre y un teléfono para avisar urgente a nuestro técnico?\n<ficha>{\"que\":\"Revisar mi instalación\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Urgente: olor a quemado y pitido raro en el inversor. No toques nada ni subas al tejado; si hay humo o fuego, 112. Avisamos con urgencia en cuanto me des nombre y teléfono.\",\"porDecir\":\"marca del inversor: qué luces o códigos muestra y si firmaste el contrato de compensación; si no se legalizó, no compensa\",\"fase\":\"datos\"}</ficha>",
   "original": "Entiendo el susto. Lo primero, no toques nada ni subas al tejado, que con sol los paneles siguen dando tensión; si hay humo o fuego, sal y llama al 112. ¿Me dices tu nombre y un teléfono para avisar urgente a nuestro técnico?\n<ficha>{\"que\":\"Revisar mi instalación\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Urgente: olor a quemado y pitido raro en el inversor. No toques nada ni subas al tejado; si hay humo o fuego, 112. Avisamos con urgencia en cuanto me des nombre y teléfono.\",\"porDecir\":\"marca del inversor: qué luces o códigos muestra y si firmaste el contrato de compensación; si no se legalizó, no compensa\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Manoli, 655 222 333. Por favor que vengan cuanto antes, estoy muy asustada"
  }
 ]

@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Con esa factura, una casa normal suele necesitar unos cinco kilovatios, de cuatro mil quinientos a siete mil quinientos euros sin batería. Te reservo el estudio gratuito, una visita de una hora. ¿Es casa, piso en bloque o negocio?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Tamaño orientativo de unos cinco kWp; el estudio gratuito con tus facturas lo cierra.\",\"porDecir\":\"ahorro: lo más probable, de seis a diez años; la factura nunca baja a cero (potencia, contador, impuestos y lo de la noche)\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>orientativos</mostrar>",
   "original": "Con esa factura, una casa normal suele necesitar unos cinco kilovatios, de cuatro mil quinientos a siete mil quinientos euros sin batería. Te reservo el estudio gratuito, una visita de una hora. ¿Es casa, piso en bloque o negocio?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Tamaño orientativo de unos cinco kWp; el estudio gratuito con tus facturas lo cierra.\",\"porDecir\":\"ahorro: lo más probable, de seis a diez años; la factura nunca baja a cero (potencia, contador, impuestos y lo de la noche)\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>orientativos</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Casa, un adosado en Armilla. El tejado es a dos aguas y una cara mira al sur"
  }
 ]

@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "En el Albaicín, que es zona de casco histórico protegido, no vale la declaración responsable, el trámite es más exigente y puede haber límites para las placas. El técnico lo estudia en la visita gratuita, que te reservo. ¿Cuánto pagas de luz al mes?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"teja\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Albaicín, Granada\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"En el Albaicín, Conjunto Histórico: la declaración responsable no vale y puede haber límites; lo estudia el técnico en la visita.\",\"porDecir\":\"precio: de 1.000 a 1.500 € por kWp, unos 4.500 a 7.500 € sin batería para una casa de unos cinco kWp · ahorro: lo más probable, de seis a diez años; la factura nunca baja a cero\",\"fase\":\"orientando\"}</ficha>\n<mostrar>permisos</mostrar>",
   "original": "En el Albaicín, que es zona de casco histórico protegido, no vale la declaración responsable, el trámite es más exigente y puede haber límites para las placas. El técnico lo estudia en la visita gratuita, que te reservo. ¿Cuánto pagas de luz al mes?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"teja\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Albaicín, Granada\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"En el Albaicín, Conjunto Histórico: la declaración responsable no vale y puede haber límites; lo estudia el técnico en la visita.\",\"porDecir\":\"precio: de 1.000 a 1.500 € por kWp, unos 4.500 a 7.500 € sin batería para una casa de unos cinco kWp · ahorro: lo más probable, de seis a diez años; la factura nunca baja a cero\",\"fase\":\"orientando\"}</ficha>\n<mostrar>permisos</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Unos 90 € al mes. Me habían dicho que en el Albaicín directamente no se puede, ¿es así?"
  }
 ]
