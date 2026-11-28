@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Lo anoto para el informe de la comunidad. Si hace falta máquina para la bajante, puede pasar de 500 euros, orientativo. Solo es para llamarte y organizar la visita: ¿me dices tu nombre y un teléfono?\n<ficha>{\"averia\":\"agua sucia por el plato de ducha cuando tiran de la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Avisa al presidente o al administrador, que la bajante suele ser de la comunidad.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Lo anoto para el informe de la comunidad. Si hace falta máquina para la bajante, puede pasar de 500 euros, orientativo. Solo es para llamarte y organizar la visita: ¿me dices tu nombre y un teléfono?\n<ficha>{\"averia\":\"agua sucia por el plato de ducha cuando tiran de la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Avisa al presidente o al administrador, que la bajante suele ser de la comunidad.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Ana, 677 450 990"
  }
 ]

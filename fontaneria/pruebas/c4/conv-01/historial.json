@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Bien hecho, con la llave cerrada puede esperar unas horas. Como tienes seguro de hogar, llama antes a tu aseguradora: muchas mandan su propio fontanero, según tu póliza. ¿Te reservo la visita para hoy o para mañana por la mañana?\n<ficha>{\"averia\":\"fuga de agua bajo el fregadero\",\"cuando\":\"Hoy, en cuanto podáis\",\"llave\":\"Sí, ya no sale\",\"vivienda\":\"\",\"seguro\":\"Sí, tiene seguro de hogar\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"hoy\",\"inicio\":\"\",\"orientacion\":\"Con la llave cerrada, haz fotos para el seguro y llama a tu aseguradora antes de la visita.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Bien hecho, con la llave cerrada puede esperar unas horas. Como tienes seguro de hogar, llama antes a tu aseguradora: muchas mandan su propio fontanero, según tu póliza. ¿Te reservo la visita para hoy o para mañana por la mañana?\n<ficha>{\"averia\":\"fuga de agua bajo el fregadero\",\"cuando\":\"Hoy, en cuanto podáis\",\"llave\":\"Sí, ya no sale\",\"vivienda\":\"\",\"seguro\":\"Sí, tiene seguro de hogar\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"hoy\",\"inicio\":\"\",\"orientacion\":\"Con la llave cerrada, haz fotos para el seguro y llama a tu aseguradora antes de la visita.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "para hoy si puede ser, cuanto antes. soy Pilar, 610 223 344, Recogidas 40, 2º B en Granada"
  }
 ]
