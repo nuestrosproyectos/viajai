@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Gracias, Lucía, apunto el 644 555 666. Dime la calle con el número y el municipio, para que el técnico vaya por la mañana a tu casa.\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz sí se enciende\",\"codigo\":\"\",\"diagnostico\":\"termostato de seguridad o resistencia (lo más probable)\",\"nombre\":\"Lucía\",\"telefono\":\"644 555 666\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Lucía, apunto el 644 555 666. Dime la calle con el número y el municipio, para que el técnico vaya por la mañana a tu casa.\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz sí se enciende\",\"codigo\":\"\",\"diagnostico\":\"termostato de seguridad o resistencia (lo más probable)\",\"nombre\":\"Lucía\",\"telefono\":\"644 555 666\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Calle Ancha 3, Maracena"
  }
 ]

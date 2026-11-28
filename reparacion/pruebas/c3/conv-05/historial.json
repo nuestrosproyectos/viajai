@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Gracias, Rosa, apunto el 699 222 111. Dime la calle con el número y el municipio, para que el técnico vaya por la tarde a tu casa cuanto antes.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo, suelo encharcado (ya no sale agua, suelo secado)\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"Rosa\",\"telefono\":\"699 222 111\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Rosa, apunto el 699 222 111. Dime la calle con el número y el municipio, para que el técnico vaya por la tarde a tu casa cuanto antes.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo, suelo encharcado (ya no sale agua, suelo secado)\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"Rosa\",\"telefono\":\"699 222 111\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Calle Granada 15, Albolote"
  }
 ]

@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Gracias, Manolo, apunto el 611 999 000. Dime la calle con el número y el municipio, para que el técnico vaya por la mañana a tu casa.\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca, la vajilla sale mojada\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"Manolo\",\"telefono\":\"611 999 000\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Manolo, apunto el 611 999 000. Dime la calle con el número y el municipio, para que el técnico vaya por la mañana a tu casa.\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca, la vajilla sale mojada\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"Manolo\",\"telefono\":\"611 999 000\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Calle Santa Escolástica 4, Granada"
  }
 ]

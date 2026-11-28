@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Gracias, Paco, apunto el 633 777 888. Dime la calle con el número y el municipio, para que el técnico vaya por la tarde a tu casa.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar\",\"codigo\":\"\",\"diagnostico\":\"rodamientos desgastados (a confirmar en la visita)\",\"nombre\":\"Paco\",\"telefono\":\"633 777 888\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Paco, apunto el 633 777 888. Dime la calle con el número y el municipio, para que el técnico vaya por la tarde a tu casa.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar\",\"codigo\":\"\",\"diagnostico\":\"rodamientos desgastados (a confirmar en la visita)\",\"nombre\":\"Paco\",\"telefono\":\"633 777 888\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Calle Arabial 40, Granada"
  }
 ]
