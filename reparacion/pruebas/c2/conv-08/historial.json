@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Muchas gracias, Encarnación. Le reservo el hueco de mañana por la mañana. Deme un teléfono por si se corta; es solo para llamarle y organizar la visita.\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no enciende un fuego de la vitrocerámica; los otros fuegos funcionan\",\"codigo\":\"\",\"diagnostico\":\"control táctil de ese fuego o placa de control\",\"nombre\":\"Encarnación\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
   "original": "Muchas gracias, Encarnación. Le reservo el hueco de mañana por la mañana. Deme un teléfono por si se corta; es solo para llamarle y organizar la visita.\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no enciende un fuego de la vitrocerámica; los otros fuegos funcionan\",\"codigo\":\"\",\"diagnostico\":\"control táctil de ese fuego o placa de control\",\"nombre\":\"Encarnación\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Mi teléfono es el 958 590 123, es el fijo de casa, hijo. Yo no tengo móvil."
  }
 ]

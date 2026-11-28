@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Perfecto, Lucía. Maracena entra en nuestra zona, así que te reservo el hueco de mañana por la mañana. Dame un teléfono por si se corta; es solo para llamarte y organizar la visita.\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz y el ventilador sí funcionan\",\"codigo\":\"\",\"diagnostico\":\"resistencia o termostato de seguridad\",\"nombre\":\"Lucía\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Lucía. Maracena entra en nuestra zona, así que te reservo el hueco de mañana por la mañana. Dame un teléfono por si se corta; es solo para llamarte y organizar la visita.\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz y el ventilador sí funcionan\",\"codigo\":\"\",\"diagnostico\":\"resistencia o termostato de seguridad\",\"nombre\":\"Lucía\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "644 555 666"
  }
 ]

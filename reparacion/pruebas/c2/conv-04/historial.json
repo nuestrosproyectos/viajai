@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Perfecto, Paco. Te reservo el hueco de esta tarde. Dame un teléfono por si se corta; es solo para llamarte y organizar la visita.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar, suena a rodamientos\",\"codigo\":\"\",\"diagnostico\":\"rodamientos desgastados\",\"nombre\":\"Paco\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Paco. Te reservo el hueco de esta tarde. Dame un teléfono por si se corta; es solo para llamarte y organizar la visita.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar, suena a rodamientos\",\"codigo\":\"\",\"diagnostico\":\"rodamientos desgastados\",\"nombre\":\"Paco\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "633 777 888"
  }
 ]

@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Perfecto, Manolo. Antes de reservarte el hueco de mañana por la mañana, dime: ¿el lavavajillas tiene ya más de tres años, o lo compraste hace menos?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca los platos, la vajilla sale mojada\",\"codigo\":\"\",\"diagnostico\":\"dosificador de abrillantador o resistencia/ventilador de secado\",\"nombre\":\"Manolo\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Manolo. Antes de reservarte el hueco de mañana por la mañana, dime: ¿el lavavajillas tiene ya más de tres años, o lo compraste hace menos?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca los platos, la vajilla sale mojada\",\"codigo\":\"\",\"diagnostico\":\"dosificador de abrillantador o resistencia/ventilador de secado\",\"nombre\":\"Manolo\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Más de tres, sí. Ya tiene unos años"
  }
 ]
