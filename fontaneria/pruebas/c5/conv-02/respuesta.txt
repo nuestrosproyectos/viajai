@@ -1,3 +1,0 @@
-Un desatasco sencillo de lavabo suele costar entre setenta y ciento cincuenta euros, más unos veinte a cuarenta de salida y el IVA, orientativo. Mientras, no eches sosa, que quema y puede empeorarlo. ¿Te reservo la visita del fontanero?
-<ficha>{"averia":"lavabo del baño atascado","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No eches sosa y pide la visita del fontanero para el desatasco.","porDecir":"lo más probable es el sifón o el tramo cercano · si también atascan otros desagües, el problema está más abajo","fase":"orientando"}</ficha>
-<mostrar>precios</mostrar>

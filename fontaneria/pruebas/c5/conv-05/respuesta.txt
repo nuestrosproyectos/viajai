@@ -1,3 +1,0 @@
-Entiendo la prisa. Que no tire más de la cisterna, que puede desbordarse, y nada de sosa ni de meter la mano. Por ser el único váter, es urgente: ¿te mando al fontanero ahora? Dime tu nombre y un teléfono.
-<ficha>{"averia":"váter atascado, es el único de la casa","cuando":"Hoy, en cuanto podáis","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No tire más de la cisterna ni eche sosa; al ser el único váter, es urgente.","porDecir":"muchas veces son toallitas u objetos · un desatasco sencillo cuesta unos 70 a 150 euros, más unos 20 a 40 de salida y el IVA, orientativo","fase":"orientando"}</ficha>
-<mostrar>seguridad</mostrar>

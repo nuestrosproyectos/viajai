@@ -1,3 +1,0 @@
-Entiendo el fastidio. Mire si ha saltado la protección del cuadro, suele ser lo más habitual. Arreglarlo no tiene precio cerrado: la salida y la hora suelen rondar los veinte a cuarenta euros cada una, más la pieza, orientativo. ¿Quiere que le reserve la visita?
-<ficha>{"averia":"sin agua caliente, termo eléctrico","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Mirar si ha saltado la protección del cuadro; el fontanero valora si compensa reparar o cambiar el termo.","porDecir":"si el termo tiene muchos años, el fontanero le dirá si compensa más cambiarlo, desde unos 180 a 600 euros según capacidad, orientativo","fase":"orientando"}</ficha>
-<mostrar>precios</mostrar>

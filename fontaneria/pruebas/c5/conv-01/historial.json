@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Socorro, sale agua por debajo del fregadero y no para!!"
+ },
+ {
+  "role": "assistant",
+  "content": "Entiendo el susto. Cierra la llave de paso de la cocina, del baño o la que está junto al contador, y aparta lo que se pueda mojar. Si no para, esto no puede esperar: te mando al fontanero urgente ahora. ¿Ha parado el agua?\n<ficha>{\"averia\":\"fuga bajo el fregadero, sale agua y no para\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cerrar la llave de paso y, si el agua no para, necesita un fontanero urgente.\",\"porDecir\":\"fotos para el seguro · con la llave cerrada puede esperar unas horas\",\"fase\":\"orientando\"}</ficha>\n<mostrar>seguridad</mostrar>",
+  "original": "Entiendo el susto. Cierra la llave de paso de la cocina, del baño o la que está junto al contador, y aparta lo que se pueda mojar. Si no para, esto no puede esperar: te mando al fontanero urgente ahora. ¿Ha parado el agua?\n<ficha>{\"averia\":\"fuga bajo el fregadero, sale agua y no para\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cerrar la llave de paso y, si el agua no para, necesita un fontanero urgente.\",\"porDecir\":\"fotos para el seguro · con la llave cerrada puede esperar unas horas\",\"fase\":\"orientando\"}</ficha>\n<mostrar>seguridad</mostrar>"
  }
 ]

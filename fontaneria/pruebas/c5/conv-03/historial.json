@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "En el bajo nos sale agua sucia por el plato de ducha cuando los de arriba tiran de la cisterna"
+ },
+ {
+  "role": "assistant",
+  "content": "Eso suele ser la bajante, la tubería común del edificio, así que lo normal es que lo pague la comunidad: avisa al presidente o al administrador. Mientras, que arriba no tiren de la cisterna. ¿Te reservo la visita del fontanero para revisarla?\n<ficha>{\"averia\":\"agua sucia sale por el plato de ducha al tirar la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Avisar al presidente o al administrador; la bajante suele ser de la comunidad.\",\"porDecir\":\"el informe del fontanero, con cámara si hace falta, ayuda a decidir quién paga · un atasco serio de bajante cuesta desde unos 150 euros y puede pasar de 500, orientativo\",\"fase\":\"orientando\"}</ficha>",
+  "original": "Eso suele ser la bajante, la tubería común del edificio, así que lo normal es que lo pague la comunidad: avisa al presidente o al administrador. Mientras, que arriba no tiren de la cisterna. ¿Te reservo la visita del fontanero para revisarla?\n<ficha>{\"averia\":\"agua sucia sale por el plato de ducha al tirar la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Avisar al presidente o al administrador; la bajante suele ser de la comunidad.\",\"porDecir\":\"el informe del fontanero, con cámara si hace falta, ayuda a decidir quién paga · un atasco serio de bajante cuesta desde unos 150 euros y puede pasar de 500, orientativo\",\"fase\":\"orientando\"}</ficha>"
  }
 ]
