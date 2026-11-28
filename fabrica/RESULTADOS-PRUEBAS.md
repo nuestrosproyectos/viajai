@@ -106,17 +106,18 @@ c5: mejora el criterio (8,8) y las fichas (10), pero baja la coherencia (3,8): r
 c6: 7,75; coherencia vuelve a 7,5 y todo lo demás en 10 salvo el criterio (8,8). Lo que queda es variación entre rondas (6 a 9 por conversación) y algún cambio de tú a usted. Reformas se da por ajustada; pendiente de Juan: confirmar que el presupuesto es gratis y que incluye licencia, escombros y limpieza.
 
 ## Placas solares, vueltas de una en una (8 conversaciones: 4 antiguas + Albaicín, batería, inversor que huele a quemado, bar)
-| | c5 |
-|---|---|
-| Acaban en cita | 8/8 |
-| Datos falsos | 2 |
-| Criterio / completa | 3,8 / 6,3 |
-| Datos, aviso, fichas | 8,8 / 8,8 / 8,8 |
-| Coherente | 8,8 |
-| Nota media | **6,88** (cita en 4,3 respuestas) |
+| | c5 | c6 |
+|---|---|---|
+| Acaban en cita | 8/8 | 8/8 |
+| Datos falsos | 2 | **0** |
+| Criterio / completa | 3,8 / 6,3 | 5,0 / **10** |
+| Datos, aviso, fichas | 8,8 / 8,8 / 8,8 | **10** / 8,8 / 8,8 |
+| Coherente | 8,8 | **10** |
+| Nota media | 6,88 | **7,75** |
 
 (c4 se paró: el cliente simulado cruzó conversaciones y salió un fallo de la web — un aviso urgente sin datos se daba por registrado —, ya arreglado en todas las webs: si falta un dato, Andrés lo sabe y lo reenvía.)
 Fallos c5: en el Albaicín dijo que «suele bastar una declaración responsable» (falso: en el Conjunto Histórico no); se contradecía con el ahorro por escrito (las condiciones dicen que el presupuesto lo lleva, el caso decía que no: unificado, PENDIENTE de confirmar); se dejaba el IBI domiciliado, el 95 % del ICIO y el autoconsumo compartido; «Placas con batería» en la ficha sin decidirlo; «avisamos a la instaladora» a quien tenía otra. Cambios c5→c6: casos de Albaicín, IBI, comunidad, inversor y ahorro afinados; pista «qué quiere» solo si lo ha decidido.
+c6: 7,75, sin datos falsos, coherencia 10. Queda: se deja un punto concreto en 4 de 8 (consumo de día, que la batería alarga la amortización, ejemplo de kWh, cortar en el cuadro); «¿mañana o por la tarde?» suena a día; llama «ahorro» a la amortización; «lugar: Casa» sin decirlo. Ajustado tras c6 (sin volver a probar). Placas se da por ajustada como reformas.
 
 ## Qué se corrigió entre rondas (en el cerebro común, para todas las webs, salvo lo marcado)
 - R1→R2: dar siempre el rango de precio si lo pide; empatía con miedo, susto o personas mayores; usted en toda la conversación; una sola pregunta; rellenar en la ficha lo que el cliente ya dijo.
