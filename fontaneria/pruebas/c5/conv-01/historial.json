@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Me alegra que ya haya parado, Pilar: con la llave cerrada puede esperar unas horas, y como quieres que vaya hoy, te apunto la visita urgente. ¿En qué municipio estás, y en qué calle y número?\n<ficha>{\"averia\":\"fuga bajo el fregadero\",\"cuando\":\"Hoy, en cuanto puedas\",\"llave\":\"Sí, ya no sale\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Pilar\",\"telefono\":\"610 223 344\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"hoy\",\"inicio\":\"\",\"orientacion\":\"Con la llave cerrada y el agua parada puedes esperar unas horas; como quieres que vaya hoy, el aviso va como urgente.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Me alegra que ya haya parado, Pilar: con la llave cerrada puede esperar unas horas, y como quieres que vaya hoy, te apunto la visita urgente. ¿En qué municipio estás, y en qué calle y número?\n<ficha>{\"averia\":\"fuga bajo el fregadero\",\"cuando\":\"Hoy, en cuanto puedas\",\"llave\":\"Sí, ya no sale\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Pilar\",\"telefono\":\"610 223 344\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"hoy\",\"inicio\":\"\",\"orientacion\":\"Con la llave cerrada y el agua parada puedes esperar unas horas; como quieres que vaya hoy, el aviso va como urgente.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Granada capital, calle Recogidas 40, 2º B"
  }
 ]

@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Gracias, Antonia, ya tengo su nombre y su teléfono fijo. No se preocupe por el cuadro: el fontanero lo revisa en la visita. ¿En qué municipio y calle vive, y con qué número?\n<ficha>{\"averia\":\"sin agua caliente, termo eléctrico de 80 litros, unos 12 años\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Antonia\",\"telefono\":\"958 123 456 (fijo)\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"Mire si ha saltado la protección del cuadro; el fontanero valora si compensa reparar o cambiar el termo.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Antonia, ya tengo su nombre y su teléfono fijo. No se preocupe por el cuadro: el fontanero lo revisa en la visita. ¿En qué municipio y calle vive, y con qué número?\n<ficha>{\"averia\":\"sin agua caliente, termo eléctrico de 80 litros, unos 12 años\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Antonia\",\"telefono\":\"958 123 456 (fijo)\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"Mire si ha saltado la protección del cuadro; el fontanero valora si compensa reparar o cambiar el termo.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Vivo en Granada, en el Realejo, calle Santa Escolástica número 9"
  }
 ]

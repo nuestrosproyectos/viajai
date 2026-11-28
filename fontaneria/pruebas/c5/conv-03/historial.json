@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Te reservo la visita y apunto lo del informe para que el fontanero te lo confirme. Si es un atasco serio de bajante, cuesta desde ciento cincuenta euros, orientativo. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la visita.\n<ficha>{\"averia\":\"agua sucia sale por el plato de ducha al tirar la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Avisar al presidente o al administrador; la bajante suele ser de la comunidad, y el informe del fontanero ayuda a decidir quién paga.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Te reservo la visita y apunto lo del informe para que el fontanero te lo confirme. Si es un atasco serio de bajante, cuesta desde ciento cincuenta euros, orientativo. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la visita.\n<ficha>{\"averia\":\"agua sucia sale por el plato de ducha al tirar la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Avisar al presidente o al administrador; la bajante suele ser de la comunidad, y el informe del fontanero ayuda a decidir quién paga.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Ana, 677 450 990"
  }
 ]

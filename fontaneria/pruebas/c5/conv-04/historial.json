@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Te reservo la visita para cambiarlo, y el fontanero te dará el presupuesto por escrito antes de empezar. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la visita.\n<ficha>{\"averia\":\"termo eléctrico de 100 litros que pierde agua por abajo\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Preguntas si lo paga el seguro del hogar, según tu póliza\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Pide el presupuesto desglosado por escrito antes de aceptar; un termo eléctrico instalado suele costar entre 180 y 600 euros, orientativo, según capacidad.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Te reservo la visita para cambiarlo, y el fontanero te dará el presupuesto por escrito antes de empezar. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la visita.\n<ficha>{\"averia\":\"termo eléctrico de 100 litros que pierde agua por abajo\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Preguntas si lo paga el seguro del hogar, según tu póliza\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Pide el presupuesto desglosado por escrito antes de aceptar; un termo eléctrico instalado suele costar entre 180 y 600 euros, orientativo, según capacidad.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Paco, 699 101 202"
  }
 ]

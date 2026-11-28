@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Perfecto, te reservo la visita por si acaso. Y si no puede esperar, nuestro fontanero corta la fuga y deja factura y fotos para el seguro. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la visita.\n<ficha>{\"averia\":\"agua que cae al techo del baño del vecino de abajo\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Tiene seguro de hogar y lo llama ahora\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"mañana por la mañana, si el seguro no manda a nadie\",\"inicio\":\"\",\"orientacion\":\"Llamar ya a tu aseguradora, que la cobertura depende de tu póliza; si no ves agua en tu baño, lo más probable es una fuga oculta.\",\"porDecir\":\"no conviene dar nada por pagado\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, te reservo la visita por si acaso. Y si no puede esperar, nuestro fontanero corta la fuga y deja factura y fotos para el seguro. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la visita.\n<ficha>{\"averia\":\"agua que cae al techo del baño del vecino de abajo\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Tiene seguro de hogar y lo llama ahora\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"mañana por la mañana, si el seguro no manda a nadie\",\"inicio\":\"\",\"orientacion\":\"Llamar ya a tu aseguradora, que la cobertura depende de tu póliza; si no ves agua en tu baño, lo más probable es una fuga oculta.\",\"porDecir\":\"no conviene dar nada por pagado\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Andrés, 622 345 678"
  }
 ]
