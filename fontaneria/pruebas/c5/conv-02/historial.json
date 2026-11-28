@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Luis, te repito: teléfono seis cinco cinco, nueve nueve cero, uno dos cero. Visita para el lavabo en avenida de los Mondragones tres, Armilla, mañana por la mañana. Apunto que echaste sosa para que el fontanero vaya avisado. ¿Está todo bien, y en qué barrio de Armilla estás?\n<ficha>{\"averia\":\"lavabo del baño atascado\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Luis\",\"telefono\":\"655 990 120\",\"municipio\":\"Armilla\",\"direccion\":\"Avenida de los Mondragones 3\",\"franja\":\"mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"No uses más sosa y no metas la mano: lo más probable es el sifón o el tramo cercano.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Luis, te repito: teléfono seis cinco cinco, nueve nueve cero, uno dos cero. Visita para el lavabo en avenida de los Mondragones tres, Armilla, mañana por la mañana. Apunto que echaste sosa para que el fontanero vaya avisado. ¿Está todo bien, y en qué barrio de Armilla estás?\n<ficha>{\"averia\":\"lavabo del baño atascado\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Luis\",\"telefono\":\"655 990 120\",\"municipio\":\"Armilla\",\"direccion\":\"Avenida de los Mondragones 3\",\"franja\":\"mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"No uses más sosa y no metas la mano: lo más probable es el sifón o el tramo cercano.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien. Barrio no sé decirte, es la avenida de los Mondragones, en Armilla."
  }
 ]

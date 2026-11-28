@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Repito, Antonia: teléfono fijo nueve cinco ocho, uno dos tres, cuatro cinco seis. Visita por la mañana, en calle Santa Escolástica, número nueve, El Realejo, Granada. Si ve agua cerca de algún enchufe, no toque nada mojado. ¿Está todo bien?\n<ficha>{\"averia\":\"sin agua caliente, termo eléctrico de 80 litros, unos 12 años\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Antonia\",\"telefono\":\"958 123 456 (fijo)\",\"municipio\":\"Granada (El Realejo)\",\"direccion\":\"Calle Santa Escolástica 9\",\"franja\":\"Mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"Mire si ha saltado la protección del cuadro; el fontanero valora si compensa reparar o cambiar el termo.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Repito, Antonia: teléfono fijo nueve cinco ocho, uno dos tres, cuatro cinco seis. Visita por la mañana, en calle Santa Escolástica, número nueve, El Realejo, Granada. Si ve agua cerca de algún enchufe, no toque nada mojado. ¿Está todo bien?\n<ficha>{\"averia\":\"sin agua caliente, termo eléctrico de 80 litros, unos 12 años\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Antonia\",\"telefono\":\"958 123 456 (fijo)\",\"municipio\":\"Granada (El Realejo)\",\"direccion\":\"Calle Santa Escolástica 9\",\"franja\":\"Mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"Mire si ha saltado la protección del cuadro; el fontanero valora si compensa reparar o cambiar el termo.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, hijo, todo está bien. Mañana por la mañana, entonces. Muchas gracias por la paciencia."
  }
 ]
