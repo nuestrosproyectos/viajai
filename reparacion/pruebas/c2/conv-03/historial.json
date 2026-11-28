@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "El horno Teka no calienta, pero la luz sí se enciende."
+ },
+ {
+  "role": "assistant",
+  "content": "Con la luz y el ventilador funcionando pero sin calor, lo más probable es el termostato de seguridad o alguna resistencia. El técnico las mide una a una y sale de dudas en un momento. Antes de reservarte la visita, ¿el horno tiene más de tres años, o lo compraste hace menos?\n<mostrar>aparato:horno</mostrar>\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz y el ventilador sí funcionan\",\"codigo\":\"\",\"diagnostico\":\"termostato de seguridad o resistencias\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>",
+  "original": "Con la luz y el ventilador funcionando pero sin calor, lo más probable es el termostato de seguridad o alguna resistencia. El técnico las mide una a una y sale de dudas en un momento. Antes de reservarte la visita, ¿el horno tiene más de tres años, o lo compraste hace menos?\n<mostrar>aparato:horno</mostrar>\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz y el ventilador sí funcionan\",\"codigo\":\"\",\"diagnostico\":\"termostato de seguridad o resistencias\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>"
  }
 ]

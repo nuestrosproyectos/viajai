@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Mi frigorífico Samsung combi enfría arriba pero el congelador no congela bien."
+ },
+ {
+  "role": "assistant",
+  "content": "Eso suele venir del ventilador del congelador o del sistema de desescarche, que es lo que hace pasar el frío de un lado a otro. El técnico lo mide y va directo con la pieza. Antes de reservarte la visita, ¿el frigorífico tiene más de tres años, o lo compraste hace menos?\n<mostrar>aparato:frigorifico</mostrar>\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"combi\",\"sintoma\":\"enfría bien la parte de arriba pero el congelador no congela bien\",\"codigo\":\"\",\"diagnostico\":\"ventilador del congelador o desescarche\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>",
+  "original": "Eso suele venir del ventilador del congelador o del sistema de desescarche, que es lo que hace pasar el frío de un lado a otro. El técnico lo mide y va directo con la pieza. Antes de reservarte la visita, ¿el frigorífico tiene más de tres años, o lo compraste hace menos?\n<mostrar>aparato:frigorifico</mostrar>\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"combi\",\"sintoma\":\"enfría bien la parte de arriba pero el congelador no congela bien\",\"codigo\":\"\",\"diagnostico\":\"ventilador del congelador o desescarche\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>"
  }
 ]

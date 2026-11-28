@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Buenos días. La vitrocerámica no me enciende un fuego. Tengo 80 años y vivo en La Zubia."
+ },
+ {
+  "role": "assistant",
+  "content": "Buenos días. Para decirle qué le pasa, ¿de qué marca es la vitrocerámica, y más o menos cuántos años tiene? Cada marca tiene sus propios fallos, y con esos datos el técnico va preparado.\n<ficha>{\"aparato\":\"placa\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"no enciende un fuego de la vitrocerámica\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>",
+  "original": "Buenos días. Para decirle qué le pasa, ¿de qué marca es la vitrocerámica, y más o menos cuántos años tiene? Cada marca tiene sus propios fallos, y con esos datos el técnico va preparado.\n<ficha>{\"aparato\":\"placa\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"no enciende un fuego de la vitrocerámica\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>"
  }
 ]

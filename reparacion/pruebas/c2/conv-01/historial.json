@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Hola, mi lavadora Balay me marca E18 y no desagua. ¿Qué le pasa?"
+ },
+ {
+  "role": "assistant",
+  "content": "Con ese E18 y el agua que no sale, lo más probable es que el filtro de la bomba esté atascado o que la bomba de desagüe esté dañada. El técnico lo mide y va directo a esa pieza. Antes de reservarte la visita, ¿la lavadora tiene más de tres años, o la compraste hace menos?\n<mostrar>codigo:E18</mostrar>\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua, queda agua en el tambor\",\"codigo\":\"E18\",\"diagnostico\":\"filtro de la bomba atascado o bomba de desagüe dañada\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>",
+  "original": "Con ese E18 y el agua que no sale, lo más probable es que el filtro de la bomba esté atascado o que la bomba de desagüe esté dañada. El técnico lo mide y va directo a esa pieza. Antes de reservarte la visita, ¿la lavadora tiene más de tres años, o la compraste hace menos?\n<mostrar>codigo:E18</mostrar>\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua, queda agua en el tambor\",\"codigo\":\"E18\",\"diagnostico\":\"filtro de la bomba atascado o bomba de desagüe dañada\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>"
  }
 ]
