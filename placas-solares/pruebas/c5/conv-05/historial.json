@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Tengo una casa en el Albaicín con tejado de teja. ¿Puedo poner placas?"
+ },
+ {
+  "role": "assistant",
+  "content": "En el Albaicín el trámite es más exigente y puede haber límites. Lo estudia el técnico en la visita, así que te conviene el estudio gratis. ¿Te reservo el estudio para verlo en tu tejado?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"teja\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Albaicín\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Antes de nada, el técnico confirma qué límites hay en el Albaicín; el estudio gratuito lo mira en la visita.\",\"porDecir\":\"el permiso del ayuntamiento suele ser una declaración responsable cuando el edificio no está protegido · tamaño y precio: una casa típica de unos cinco kilovatios, de cuatro mil quinientos a siete mil quinientos euros sin batería\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "En el Albaicín el trámite es más exigente y puede haber límites. Lo estudia el técnico en la visita, así que te conviene el estudio gratis. ¿Te reservo el estudio para verlo en tu tejado?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"teja\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Albaicín\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Antes de nada, el técnico confirma qué límites hay en el Albaicín; el estudio gratuito lo mira en la visita.\",\"porDecir\":\"el permiso del ayuntamiento suele ser una declaración responsable cuando el edificio no está protegido · tamaño y precio: una casa típica de unos cinco kilovatios, de cuatro mil quinientos a siete mil quinientos euros sin batería\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

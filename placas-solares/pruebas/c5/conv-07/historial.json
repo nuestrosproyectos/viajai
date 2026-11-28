@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "El inversor de mis placas hace un pitido raro y huele un poco a quemado. ¿Qué hago?"
+ },
+ {
+  "role": "assistant",
+  "content": "Entiendo el susto. No toques nada. Si puedes hacerlo sin riesgo, corta la luz en el cuadro; si hay fuego, llama al 112. ¿Me dices tu nombre y un teléfono para avisar a la instaladora ya?\n<ficha>{\"que\":\"Revisar mi instalación\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Es urgente: que no toque nada, corte la luz en el cuadro si puede y que la instaladora lo revise ya.\",\"porDecir\":\"aunque corte la luz, los paneles con sol siguen dando tensión, así que no subir al tejado ni limpiar con agua a presión · después, aviso urgente a la instaladora\",\"fase\":\"datos\"}</ficha>",
+  "original": "Entiendo el susto. No toques nada. Si puedes hacerlo sin riesgo, corta la luz en el cuadro; si hay fuego, llama al 112. ¿Me dices tu nombre y un teléfono para avisar a la instaladora ya?\n<ficha>{\"que\":\"Revisar mi instalación\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Es urgente: que no toque nada, corte la luz en el cuadro si puede y que la instaladora lo revise ya.\",\"porDecir\":\"aunque corte la luz, los paneles con sol siguen dando tensión, así que no subir al tejado ni limpiar con agua a presión · después, aviso urgente a la instaladora\",\"fase\":\"datos\"}</ficha>"
  }
 ]

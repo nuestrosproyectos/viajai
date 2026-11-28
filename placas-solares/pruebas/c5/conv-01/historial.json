@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Hola, me estoy planteando poner placas, pago unos 120 € de luz al mes. ¿Me compensa?"
+ },
+ {
+  "role": "assistant",
+  "content": "Con 120 € al mes, suele pagarse sola en seis a diez años, antes si gastas mucho de día. Te reservo el estudio gratis, con visita al tejado. ¿Irían las placas en casa, en un bloque o en un negocio?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Lo que te conviene es el estudio gratuito con visita técnica; con tus facturas lo dejamos calculado.\",\"porDecir\":\"la factura nunca baja a cero: quedan la potencia, el contador y los impuestos · tamaño y precio: una casa típica de unos cinco kilovatios cuesta de cuatro mil quinientos a siete mil quinientos euros sin batería\",\"fase\":\"orientando\"}</ficha>",
+  "original": "Con 120 € al mes, suele pagarse sola en seis a diez años, antes si gastas mucho de día. Te reservo el estudio gratis, con visita al tejado. ¿Irían las placas en casa, en un bloque o en un negocio?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Lo que te conviene es el estudio gratuito con visita técnica; con tus facturas lo dejamos calculado.\",\"porDecir\":\"la factura nunca baja a cero: quedan la potencia, el contador y los impuestos · tamaño y precio: una casa típica de unos cinco kilovatios cuesta de cuatro mil quinientos a siete mil quinientos euros sin batería\",\"fase\":\"orientando\"}</ficha>"
  }
 ]

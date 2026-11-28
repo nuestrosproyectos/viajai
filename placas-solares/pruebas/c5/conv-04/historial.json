@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Vivo en un bloque en el Zaidín y quiero placas en la azotea. ¿Cómo lo hago?"
+ },
+ {
+  "role": "assistant",
+  "content": "Lo primero es el acuerdo de la junta, porque la azotea es común. Para renovables de uso común suele bastar un tercio, orientativo; por tu cuenta no puedes poner placas. ¿Te reservo el estudio gratis para llevarlo a la junta?\n<ficha>{\"que\":\"Placas solares en la azotea\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"azotea comunitaria\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"El Zaidín\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Lo primero es el acuerdo de la junta; el estudio gratuito sirve para llevarlo a la junta.\",\"porDecir\":\"el permiso del ayuntamiento suele ser una declaración responsable que gestiona la instaladora · el técnico comprueba si el edificio tiene alguna protección, que cambia el trámite · existe el autoconsumo compartido entre vecinos o edificios cercanos\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Lo primero es el acuerdo de la junta, porque la azotea es común. Para renovables de uso común suele bastar un tercio, orientativo; por tu cuenta no puedes poner placas. ¿Te reservo el estudio gratis para llevarlo a la junta?\n<ficha>{\"que\":\"Placas solares en la azotea\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"azotea comunitaria\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"El Zaidín\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Lo primero es el acuerdo de la junta; el estudio gratuito sirve para llevarlo a la junta.\",\"porDecir\":\"el permiso del ayuntamiento suele ser una declaración responsable que gestiona la instaladora · el técnico comprueba si el edificio tiene alguna protección, que cambia el trámite · existe el autoconsumo compartido entre vecinos o edificios cercanos\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]
