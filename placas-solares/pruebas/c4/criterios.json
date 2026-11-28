@@ -1,0 +1,50 @@
+[
+ {
+  "id": 1,
+  "nivel": "normal",
+  "persona": "Eres Javier, casa adosada en Armilla, tejado a dos aguas con una cara al sur, sin sombras. Teletrabajas, gastas bastante de día y tienes aire acondicionado. No tienes coche eléctrico. Si te dan un rango razonable y te ofrecen el estudio, aceptas. Datos: Javier, 644 778 120, Armilla, calle Granada 5, mejor viernes por la mañana. Corto, como por WhatsApp.",
+  "criterio": "Pregunta lo que más cambia (consumo de día, tejado, orientación); da tamaño y precio orientativos (casa típica ~5 kWp, 4.500-7.500 € sin batería; 1.000-1.500 €/kWp) y amortización orientativa (6-10 años, antes si gasta de día) sin prometer factura cero ni ahorro exacto; no aplica las bonificaciones de Granada capital a Armilla (su ordenanza); propone el estudio con verbo de oferta; registra datos confirmados con aviso válido."
+ },
+ {
+  "id": 2,
+  "nivel": "comparador",
+  "persona": "Eres Rosa, casa en Granada capital (barrio del Zaidín, casa baja con azotea). Ya tienes ese presupuesto de otra empresa y quieres compararlo. Si te dan una comparación clara y te ofrecen un estudio para comparar, aceptas sin prisa. Preguntas también si te bajan el IBI. Datos: Rosa, 622 300 415, calle Palencia 10, Zaidín, por la tarde.",
+  "criterio": "Compara bien pieza a pieza: 5 kWp ≈ 5.000-7.500 € y 10 kWh de batería ≈ 4.500-8.000 €, así que 6.800 € queda muy por debajo de lo habitual y conviene revisar qué incluye (legalización/boletín, marcas, garantías por escrito), sin hablar mal de la otra empresa; IBI en Granada capital: 50 % (vivienda no obra nueva, recibo domiciliado, hay que pedirla) y 95 % del ICIO; propone el estudio para comparar; aviso válido con datos confirmados."
+ },
+ {
+  "id": 3,
+  "nivel": "trampa",
+  "persona": "Eres Manolo, casa en Pulianas, pagas unos 80 €/mes, gastas sobre todo por la noche (trabajas fuera de día). Insistes una vez más en la garantía de factura cero. Luego preguntas si con batería sí. Si te lo explican con honestidad, aceptas que vaya el técnico a hacer el estudio. Datos: Manolo, 633 909 101, Pulianas, calle Nueva 3, sábados no; entre semana por la tarde.",
+  "criterio": "No promete factura cero ni garantiza ahorro por escrito; explica qué queda siempre (potencia, contador, impuestos, consumo de noche); como gasta de noche, explica con honestidad que la batería (450-800 €/kWh) encarece y en muchas casas alarga la amortización; no promete qué incluirá el presupuesto; propone el estudio sin presionar; aviso válido si acepta."
+ },
+ {
+  "id": 4,
+  "nivel": "comunidad",
+  "persona": "Eres Elena, piso en un bloque de 12 vecinos en el Zaidín (Granada capital). No sabes si los vecinos querrán. Preguntas qué mayoría hace falta y si puedes ponerlas solo para ti. Si te proponen el estudio para llevarlo a la junta, te parece buena idea. Datos: Elena, 688 120 777, calle Arabial 50, Zaidín, por la tarde.",
+  "criterio": "Explica que la cubierta es común y hace falta acuerdo de la junta, con mayoría reducida (un tercio, orientativo, lo confirma el administrador); que no puede ponerlas solo para ella sin acuerdo; menciona el autoconsumo compartido; el estudio sirve para presentarlo en la junta; propone el estudio con verbo de oferta y registra datos con aviso válido."
+ },
+ {
+  "id": 5,
+  "nivel": "Albaicín",
+  "persona": "Eres Elena, de Granada capital, casa en el Albaicín (calle Pagés 12). Pagas unos 90 € al mes. Te han dicho que en el Albaicín no se puede. Si te explican el trámite con honestidad, aceptas la visita. Datos: Elena, 611 456 789, calle Pagés 12, por las mañanas.",
+  "criterio": "Es Conjunto Histórico: el trámite es más exigente (licencia, posible informe de patrimonio) y no se promete que se pueda; lo estudia el técnico; da el precio orientativo si lo pide; propone la visita, toma datos con calle y número, confirma y aviso válido."
+ },
+ {
+  "id": 6,
+  "nivel": "batería",
+  "persona": "Eres Rafa, de Armilla, casa con 4 kWp instalados hace 3 años por otra empresa. Gastas mucho por la noche (aire acondicionado). Te preocupa que no sea compatible con tu inversor. Si te explican, aceptas la visita. Datos: Rafa, 622 987 654, calle Real 30 de Armilla, por las tardes.",
+  "criterio": "Batería entre 450 y 800 € por kWh (pide los kWh o da un ejemplo multiplicando); compensa si gasta mucho de noche; la compatibilidad con su inversor la mira el técnico (no la promete); propone la visita, toma datos, confirma y aviso válido."
+ },
+ {
+  "id": 7,
+  "nivel": "inversor",
+  "persona": "Eres Manoli, de Maracena, casa con placas desde hace 2 años (otra empresa que ya no contesta). Estás asustada. Si te dicen qué hacer primero y te ofrecen ir, aceptas que vayan cuanto antes. Datos: Manoli, 655 222 333, calle Ancha 5 de Maracena, cuanto antes, por la mañana.",
+  "criterio": "Primero la seguridad en una frase: no tocar, cortar el interruptor del inversor solo si puede sin riesgo, y si hay humo o fuego, 112; aviso urgente; sin diagnosticar a distancia; propone visita lo antes posible, toma datos, confirma y aviso urgente válido."
+ },
+ {
+  "id": 8,
+  "nivel": "negocio",
+  "persona": "Eres Pepe, de Atarfe, bar con cocina abierto de 8 a 24 h; local de una planta con azotea propia. Quieres saber si desgrava. Si te dan números orientativos, aceptas la visita. Datos: Pepe, 633 111 444, avenida de la Diputación 7 de Atarfe, por la tarde.",
+  "criterio": "Si gasta mucho de día suele compensar; precio orientativo por kWp (1.000-1.500 €) sin inventar el tamaño exacto; la deducción del IRPF de autoconsumo es para viviendas: en un negocio, lo fiscal lo confirma su gestor; propone visita, toma datos, confirma y aviso válido."
+ }
+]

@@ -27,6 +27,34 @@
    "apertura": "Vivo en un bloque en el Zaidín y quiero placas en la azotea. ¿Cómo lo hago?",
    "persona": "Eres Elena, piso en un bloque de 12 vecinos en el Zaidín (Granada capital). No sabes si los vecinos querrán. Preguntas qué mayoría hace falta y si puedes ponerlas solo para ti. Si te proponen el estudio para llevarlo a la junta, te parece buena idea. Datos: Elena, 688 120 777, calle Arabial 50, Zaidín, por la tarde.",
    "criterio": "Explica que la cubierta es común y hace falta acuerdo de la junta, con mayoría reducida (un tercio, orientativo, lo confirma el administrador); que no puede ponerlas solo para ella sin acuerdo; menciona el autoconsumo compartido; el estudio sirve para presentarlo en la junta; propone el estudio con verbo de oferta y registra datos con aviso válido."
+  },
+  {
+   "id": 5,
+   "nivel": "Albaicín",
+   "apertura": "Tengo una casa en el Albaicín con tejado de teja. ¿Puedo poner placas?",
+   "persona": "Eres Elena, de Granada capital, casa en el Albaicín (calle Pagés 12). Pagas unos 90 € al mes. Te han dicho que en el Albaicín no se puede. Si te explican el trámite con honestidad, aceptas la visita. Datos: Elena, 611 456 789, calle Pagés 12, por las mañanas.",
+   "criterio": "Es Conjunto Histórico: el trámite es más exigente (licencia, posible informe de patrimonio) y no se promete que se pueda; lo estudia el técnico; da el precio orientativo si lo pide; propone la visita, toma datos con calle y número, confirma y aviso válido."
+  },
+  {
+   "id": 6,
+   "nivel": "batería",
+   "apertura": "Ya tengo placas desde hace 3 años. ¿Me compensa añadir una batería? Por la noche gasto bastante.",
+   "persona": "Eres Rafa, de Armilla, casa con 4 kWp instalados hace 3 años por otra empresa. Gastas mucho por la noche (aire acondicionado). Te preocupa que no sea compatible con tu inversor. Si te explican, aceptas la visita. Datos: Rafa, 622 987 654, calle Real 30 de Armilla, por las tardes.",
+   "criterio": "Batería entre 450 y 800 € por kWh (pide los kWh o da un ejemplo multiplicando); compensa si gasta mucho de noche; la compatibilidad con su inversor la mira el técnico (no la promete); propone la visita, toma datos, confirma y aviso válido."
+  },
+  {
+   "id": 7,
+   "nivel": "inversor",
+   "apertura": "El inversor de mis placas hace un pitido raro y huele un poco a quemado. ¿Qué hago?",
+   "persona": "Eres Manoli, de Maracena, casa con placas desde hace 2 años (otra empresa que ya no contesta). Estás asustada. Si te dicen qué hacer primero y te ofrecen ir, aceptas que vayan cuanto antes. Datos: Manoli, 655 222 333, calle Ancha 5 de Maracena, cuanto antes, por la mañana.",
+   "criterio": "Primero la seguridad en una frase: no tocar, cortar el interruptor del inversor solo si puede sin riesgo, y si hay humo o fuego, 112; aviso urgente; sin diagnosticar a distancia; propone visita lo antes posible, toma datos, confirma y aviso urgente válido."
+  },
+  {
+   "id": 8,
+   "nivel": "negocio",
+   "apertura": "Tengo un bar en Atarfe y pago 450 € de luz al mes. ¿Merecen la pena las placas para un negocio?",
+   "persona": "Eres Pepe, de Atarfe, bar con cocina abierto de 8 a 24 h; local de una planta con azotea propia. Quieres saber si desgrava. Si te dan números orientativos, aceptas la visita. Datos: Pepe, 633 111 444, avenida de la Diputación 7 de Atarfe, por la tarde.",
+   "criterio": "Si gasta mucho de día suele compensar; precio orientativo por kWp (1.000-1.500 €) sin inventar el tamaño exacto; la deducción del IRPF de autoconsumo es para viviendas: en un negocio, lo fiscal lo confirma su gestor; propone visita, toma datos, confirma y aviso válido."
   }
  ]
 }
