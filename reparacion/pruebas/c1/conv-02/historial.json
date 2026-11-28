@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Tiene 5 años. Detrás del congelador se ve escarcha"
+ },
+ {
+  "role": "assistant",
+  "content": "Con escarcha detrás del congelador, lo más probable es el desescarche: el hielo tapa el paso del aire. A los cinco años esa pieza compensa, y el técnico va con ella. La visita son 60,50 €, descontables si reparamos. ¿Mañana por la mañana o por la tarde?\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"\",\"sintoma\":\"enfría arriba pero el congelador no congela bien; escarcha detrás del congelador\",\"codigo\":\"\",\"diagnostico\":\"Fallo del desescarche, hielo tapando el paso de aire (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>precios</mostrar>",
+  "original": "Con escarcha detrás del congelador, lo más probable es el desescarche: el hielo tapa el paso del aire. A los cinco años esa pieza compensa, y el técnico va con ella. La visita son 60,50 €, descontables si reparamos. ¿Mañana por la mañana o por la tarde?\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"\",\"sintoma\":\"enfría arriba pero el congelador no congela bien; escarcha detrás del congelador\",\"codigo\":\"\",\"diagnostico\":\"Fallo del desescarche, hielo tapando el paso de aire (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>precios</mostrar>"
  }
 ]

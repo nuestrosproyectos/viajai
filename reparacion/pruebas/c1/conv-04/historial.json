@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Es una Fagor"
+ },
+ {
+  "role": "assistant",
+  "content": "Lo más probable son los rodamientos. El técnico irá directo con esa pieza y te dará presupuesto cerrado para decidir si compensa. ¿El ruido es un rugido que sube con las vueltas, o son golpes?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar\",\"codigo\":\"\",\"diagnostico\":\"Rodamientos desgastados (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>\n<mostrar>aparato:lavadora</mostrar>",
+  "original": "Lo más probable son los rodamientos. El técnico irá directo con esa pieza y te dará presupuesto cerrado para decidir si compensa. ¿El ruido es un rugido que sube con las vueltas, o son golpes?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar\",\"codigo\":\"\",\"diagnostico\":\"Rodamientos desgastados (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>\n<mostrar>aparato:lavadora</mostrar>"
  }
 ]

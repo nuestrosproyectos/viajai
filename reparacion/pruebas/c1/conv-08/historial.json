@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Es una Balay, hijo. Tiene ya sus diez años. Los otros fuegos funcionan bien, solo es uno el que no calienta."
+ },
+ {
+  "role": "assistant",
+  "content": "Lo más probable es que esa zona falle por su resistencia o su control, y con la visita el técnico irá con esa pieza. ¿Sale algún código o letra en ese fuego?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"un fuego no calienta, el resto sí funcionan\",\"codigo\":\"\",\"diagnostico\":\"Resistencia o control de esa zona (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>\n<mostrar>aparato:placa</mostrar>",
+  "original": "Lo más probable es que esa zona falle por su resistencia o su control, y con la visita el técnico irá con esa pieza. ¿Sale algún código o letra en ese fuego?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"un fuego no calienta, el resto sí funcionan\",\"codigo\":\"\",\"diagnostico\":\"Resistencia o control de esa zona (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>\n<mostrar>aparato:placa</mostrar>"
  }
 ]

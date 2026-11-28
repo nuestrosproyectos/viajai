@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Más de tres, tiene 8 años"
+ },
+ {
+  "role": "assistant",
+  "content": "Con luz y sin calor, lo más probable es el termostato de seguridad o el fusible térmico; el técnico irá con esa pieza. Con ocho años compensa: esas piezas son baratas. La visita son 60,50 €, descontables si reparamos. ¿Mañana por la mañana o por la tarde?\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz sí se enciende\",\"codigo\":\"\",\"diagnostico\":\"Termostato de seguridad o fusible térmico (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>precios</mostrar>",
+  "original": "Con luz y sin calor, lo más probable es el termostato de seguridad o el fusible térmico; el técnico irá con esa pieza. Con ocho años compensa: esas piezas son baratas. La visita son 60,50 €, descontables si reparamos. ¿Mañana por la mañana o por la tarde?\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz sí se enciende\",\"codigo\":\"\",\"diagnostico\":\"Termostato de seguridad o fusible térmico (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>precios</mostrar>"
  }
 ]
