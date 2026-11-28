@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Huele mucho a gas en la cocina desde hace un rato. ¿Podéis venir?"
+ },
+ {
+  "role": "assistant",
+  "content": "Abre ventanas, cierra la llave del gas si puedes sin arriesgarte, y sal de casa sin tocar interruptores ni enchufes ni encender nada. Desde fuera, llama a Nedgia al 900 750 750 o al 112. ¿Ya estás fuera de casa?\n<ficha>{\"averia\":\"olor a gas en la cocina desde hace un rato\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Sal de casa y llama desde fuera a Nedgia (900 750 750) o al 112.\",\"porDecir\":\"\",\"fase\":\"orientando\"}</ficha>",
+  "original": "Abre ventanas, cierra la llave del gas si puedes sin arriesgarte, y sal de casa sin tocar interruptores ni enchufes ni encender nada. Desde fuera, llama a Nedgia al 900 750 750 o al 112. ¿Ya estás fuera de casa?\n<ficha>{\"averia\":\"olor a gas en la cocina desde hace un rato\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Sal de casa y llama desde fuera a Nedgia (900 750 750) o al 112.\",\"porDecir\":\"\",\"fase\":\"orientando\"}</ficha>"
  }
 ]

@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Me ha subido el vecino de abajo diciendo que le cae agua en el techo del baño. Tengo seguro de hogar. ¿Qué hago?"
+ },
+ {
+  "role": "assistant",
+  "content": "Cierra ya la llave de paso de tu casa y llama a tu aseguradora, que muchas mandan su propio fontanero. Si no puede esperar, te apunto a nuestro fontanero, que corta la fuga y deja factura y fotos. ¿Para el agua al cerrarla?\n<ficha>{\"averia\":\"agua que cae al techo del baño del vecino de abajo\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Sí, tienes seguro de hogar\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cierra la llave de paso y llama antes a tu aseguradora; muchas mandan su propio fontanero.\",\"porDecir\":\"la cobertura depende de tu póliza · haz fotos para el seguro\",\"fase\":\"orientando\"}</ficha>",
+  "original": "Cierra ya la llave de paso de tu casa y llama a tu aseguradora, que muchas mandan su propio fontanero. Si no puede esperar, te apunto a nuestro fontanero, que corta la fuga y deja factura y fotos. ¿Para el agua al cerrarla?\n<ficha>{\"averia\":\"agua que cae al techo del baño del vecino de abajo\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Sí, tienes seguro de hogar\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Cierra la llave de paso y llama antes a tu aseguradora; muchas mandan su propio fontanero.\",\"porDecir\":\"la cobertura depende de tu póliza · haz fotos para el seguro\",\"fase\":\"orientando\"}</ficha>"
  }
 ]
