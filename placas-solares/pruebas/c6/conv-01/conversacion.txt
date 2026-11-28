@@ -1,0 +1,33 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Tejaluz. Dime más o menos cuánto pagas de luz al mes y te digo cuántas placas te harían falta y lo que costarían.
+
+CLIENTE: Hola, me estoy planteando poner placas, pago unos 120 € de luz al mes. ¿Me compensa?
+
+ANDRÉS: Con esa factura, una casa normal suele necesitar unos cinco kilovatios, de cuatro mil quinientos a siete mil quinientos euros sin batería. Te reservo el estudio gratuito, una visita de una hora. ¿Es casa, piso en bloque o negocio?
+<ficha>{"que":"Placas solares","lugar":"","factura":"unos 120 € al mes","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Tamaño orientativo de unos cinco kWp; el estudio gratuito con tus facturas lo cierra.","porDecir":"ahorro: lo más probable, de seis a diez años; la factura nunca baja a cero (potencia, contador, impuestos y lo de la noche)","fase":"proponiendo"}</ficha>
+<mostrar>orientativos</mostrar>
+
+CLIENTE: Casa, un adosado en Armilla. El tejado es a dos aguas y una cara mira al sur
+
+ANDRÉS: Un tejado a dos aguas con cara al sur va muy bien. Lo más probable es que se pague en seis a diez años, pero la factura nunca baja a cero: siempre quedan potencia y contador. ¿Te reservo el estudio gratuito de una hora?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 120 € al mes","tejado":"a dos aguas, una cara al sur","consumo":"","nombre":"","telefono":"","municipio":"Armilla","direccion":"","franja":"","inicio":"","orientacion":"Casa de unos cinco kWp en tejado a dos aguas con una cara al sur; el estudio gratuito con tus facturas lo cierra.","porDecir":"","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, sí, resérvamelo
+
+ANDRÉS: Perfecto, te reservo el estudio gratuito de una hora en Armilla. Solo es para llamarte y organizar la visita: ¿me dices tu nombre y un teléfono?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 120 € al mes","tejado":"a dos aguas, una cara al sur","consumo":"","nombre":"","telefono":"","municipio":"Armilla","direccion":"","franja":"","inicio":"","orientacion":"Casa de unos cinco kWp en tejado a dos aguas con una cara al sur; el estudio gratuito con tus facturas lo cierra.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Javier, 644 778 120
+
+ANDRÉS: Gracias, Javier. ¿En qué calle y número de Armilla sería la visita, y te viene mejor mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 120 € al mes","tejado":"a dos aguas, una cara al sur","consumo":"","nombre":"Javier","telefono":"644 778 120","municipio":"Armilla","direccion":"","franja":"","inicio":"","orientacion":"Casa de unos cinco kWp en tejado a dos aguas con una cara al sur; el estudio gratuito con tus facturas lo cierra.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Calle Granada 5. Mejor el viernes por la mañana
+
+ANDRÉS: Vale, Javier. Te apunto en Armilla, calle Granada cinco, el viernes por la mañana, y te llamamos al seis cuatro cuatro, siete siete ocho, uno dos cero. ¿Está todo bien?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 120 € al mes","tejado":"a dos aguas, una cara al sur","consumo":"","nombre":"Javier","telefono":"644 778 120","municipio":"Armilla","direccion":"Calle Granada 5","franja":"Viernes por la mañana","inicio":"","orientacion":"Casa de unos cinco kWp en tejado a dos aguas con una cara al sur; el estudio gratuito con tus facturas lo cierra.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo correcto
+
+ANDRÉS: Perfecto, Javier. La solicitud queda enviada: te llamamos para confirmar la visita por la mañana, en calle Granada cinco de Armilla. En Armilla las bonificaciones dependen de su ordenanza; el técnico lo mira contigo. ¿Necesitas algo más?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 120 € al mes","tejado":"a dos aguas, una cara al sur","consumo":"","nombre":"Javier","telefono":"644 778 120","municipio":"Armilla","direccion":"Calle Granada 5","franja":"Viernes por la mañana","inicio":"","orientacion":"Casa de unos cinco kWp en tejado a dos aguas con una cara al sur; el estudio gratuito con tus facturas lo cierra.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"estudio","que":"Placas solares","lugar":"Casa","factura":"unos 120 € al mes","tejado":"a dos aguas, una cara al sur","consumo":"","nombre":"Javier","telefono":"644 778 120","municipio":"Armilla","direccion":"Calle Granada 5","franja":"Viernes por la mañana","inicio":"","urgente":false,"notas":"Quiere el estudio gratuito con visita técnica. Casa (adosado) en Armilla, tejado a dos aguas con una cara al sur. Paga unos 120 € al mes de luz; no ha dado consumo en kWh ni horas de consumo. Pregunta si le compensa. Ha confirmado todos sus datos."}</aviso>

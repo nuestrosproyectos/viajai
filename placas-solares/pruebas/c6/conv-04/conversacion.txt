@@ -1,0 +1,32 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Tejaluz. Dime más o menos cuánto pagas de luz al mes y te digo cuántas placas te harían falta y lo que costarían.
+
+CLIENTE: Vivo en un bloque en el Zaidín y quiero placas en la azotea. ¿Cómo lo hago?
+
+ANDRÉS: En un bloque la azotea es común, así que hace falta el acuerdo de la junta, con una mayoría reducida, de un tercio, orientativamente. Te reservo el estudio gratuito, que te sirve para llevarlo a la junta. ¿Cuánto pagas de luz al mes?
+<ficha>{"que":"Placas solares","lugar":"Comunidad de vecinos","factura":"","tejado":"azotea común","consumo":"","nombre":"","telefono":"","municipio":"Zaidín, Granada","direccion":"","franja":"","inicio":"","orientacion":"Sin el acuerdo de la junta no hay instalación en la azotea; el estudio gratuito le sirve para llevarlo a la junta.","porDecir":"precio: de 1.000 a 1.500 € por kWp, unos 4.500 a 7.500 € sin batería para una casa de unos cinco kWp · ahorro: lo más probable, de seis a diez años · permiso: en suelo urbano no protegido, declaración responsable que gestiona la instaladora, salvo que el edificio sea protegido · autoconsumo compartido: la azotea común puede dar luz a varios pisos","fase":"orientando"}</ficha>
+
+CLIENTE: No tengo la factura a mano ahora. Y si los vecinos no quieren, ¿puedo ponerlas solo para mí?
+
+ANDRÉS: Sin el acuerdo de la junta no puedes poner placas en la azotea común, tampoco solo para ti. Por kilovatio instalado suele salir entre mil y mil quinientos euros. ¿Te reservo el estudio aunque no tengas la factura ahora?
+<ficha>{"que":"Placas solares","lugar":"Comunidad de vecinos","factura":"","tejado":"azotea común","consumo":"","nombre":"","telefono":"","municipio":"Zaidín, Granada","direccion":"","franja":"","inicio":"","orientacion":"Sin el acuerdo de la junta no hay instalación en la azotea común, tampoco solo para ti; el estudio gratuito le sirve para llevarlo a la junta.","porDecir":"ahorro: lo más probable, de seis a diez años · permiso: en suelo urbano no protegido, declaración responsable que gestiona la instaladora, salvo que el edificio sea protegido · autoconsumo compartido: la azotea común puede dar luz a varios pisos","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, sí, resérvalo, así lo llevo a la junta. ¿Y qué mayoría hace falta exactamente?
+
+ANDRÉS: Te lo reservo. La mayoría exacta y quién paga lo confirman el técnico o el administrador. Lo más probable es que se pague en seis a diez años. Solo es para llamarte: ¿me dices tu nombre y un teléfono?
+<ficha>{"que":"Placas solares","lugar":"Comunidad de vecinos","factura":"","tejado":"azotea común","consumo":"","nombre":"","telefono":"","municipio":"Zaidín, Granada","direccion":"","franja":"","inicio":"","orientacion":"Sin el acuerdo de la junta no hay instalación en la azotea común; el estudio gratuito le sirve para llevarlo a la junta.","porDecir":"permiso: en suelo urbano no protegido, declaración responsable que gestiona la instaladora, salvo que el edificio sea protegido · autoconsumo compartido: la azotea común puede dar luz a varios pisos","fase":"datos"}</ficha>
+
+CLIENTE: Elena, 688 120 777
+
+ANDRÉS: Gracias, Elena. En un bloque el permiso suele ser una declaración responsable que gestiona la instaladora, salvo que el edificio esté protegido. ¿En qué calle y número del Zaidín sería la visita, y te viene mejor mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"Comunidad de vecinos","factura":"","tejado":"azotea común","consumo":"","nombre":"Elena","telefono":"688 120 777","municipio":"Zaidín, Granada","direccion":"","franja":"","inicio":"","orientacion":"Sin el acuerdo de la junta no hay instalación en la azotea común; el estudio gratuito le sirve para llevarlo a la junta.","porDecir":"autoconsumo compartido: la azotea común puede dar luz a varios pisos","fase":"datos"}</ficha>
+
+CLIENTE: Calle Arabial 50. Mejor por la tarde
+
+ANDRÉS: Te apunto, Elena: calle Arabial cincuenta, Zaidín, Granada, por la tarde, y te llamamos al seis ocho ocho, uno dos cero, siete siete siete. Con el autoconsumo compartido, la azotea común puede dar luz a varios pisos. ¿Está todo bien?
+<ficha>{"que":"Placas solares","lugar":"Comunidad de vecinos","factura":"","tejado":"azotea común","consumo":"","nombre":"Elena","telefono":"688 120 777","municipio":"Zaidín, Granada","direccion":"calle Arabial 50","franja":"por la tarde","inicio":"","orientacion":"Sin el acuerdo de la junta no hay instalación en la azotea común; el estudio gratuito le sirve para llevarlo a la junta.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Perfecto, Elena. La solicitud queda enviada: te llamamos para confirmar el día y la hora de la visita, por la tarde, en calle Arabial cincuenta. ¿Necesitas algo más?
+<ficha>{"que":"Placas solares","lugar":"Comunidad de vecinos","factura":"","tejado":"azotea común","consumo":"","nombre":"Elena","telefono":"688 120 777","municipio":"Zaidín, Granada","direccion":"calle Arabial 50","franja":"por la tarde","inicio":"","orientacion":"Sin el acuerdo de la junta no hay instalación en la azotea común; el estudio gratuito le sirve para llevarlo a la junta.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"estudio","que":"Placas solares","lugar":"Comunidad de vecinos","factura":"","tejado":"azotea común","consumo":"","nombre":"Elena","telefono":"688 120 777","municipio":"Zaidín, Granada","direccion":"calle Arabial 50","franja":"por la tarde","inicio":"","urgente":false,"notas":"Quiere el estudio gratuito con visita técnica para llevarlo a la junta de la comunidad. Vive en un bloque en el Zaidín (Granada) y quiere placas en la azotea común. No tiene la factura a mano ahora. Pregunta si puede poner placas solo para su vivienda si los vecinos no quieren, y qué mayoría hace falta. Ha confirmado todos sus datos."}</aviso>

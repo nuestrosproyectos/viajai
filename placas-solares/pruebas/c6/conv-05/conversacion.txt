@@ -1,0 +1,34 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Tejaluz. Dime más o menos cuánto pagas de luz al mes y te digo cuántas placas te harían falta y lo que costarían.
+
+CLIENTE: Tengo una casa en el Albaicín con tejado de teja. ¿Puedo poner placas?
+
+ANDRÉS: En el Albaicín, que es zona de casco histórico protegido, no vale la declaración responsable, el trámite es más exigente y puede haber límites para las placas. El técnico lo estudia en la visita gratuita, que te reservo. ¿Cuánto pagas de luz al mes?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"","tejado":"teja","consumo":"","nombre":"","telefono":"","municipio":"Albaicín, Granada","direccion":"","franja":"","inicio":"","orientacion":"En el Albaicín, Conjunto Histórico: la declaración responsable no vale y puede haber límites; lo estudia el técnico en la visita.","porDecir":"precio: de 1.000 a 1.500 € por kWp, unos 4.500 a 7.500 € sin batería para una casa de unos cinco kWp · ahorro: lo más probable, de seis a diez años; la factura nunca baja a cero","fase":"orientando"}</ficha>
+<mostrar>permisos</mostrar>
+
+CLIENTE: Unos 90 € al mes. Me habían dicho que en el Albaicín directamente no se puede, ¿es así?
+
+ANDRÉS: Aquí no vale la declaración responsable, así que no te puedo prometer que se pueda: el técnico lo estudia en la visita. Una casa de cinco kilovatios sin batería ronda los cuatro mil quinientos a siete mil quinientos euros. ¿Te reservo la visita gratuita?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 90 € al mes","tejado":"teja","consumo":"","nombre":"","telefono":"","municipio":"Albaicín, Granada","direccion":"","franja":"","inicio":"","orientacion":"En el Albaicín, Conjunto Histórico: la declaración responsable no vale y puede haber límites; lo estudia el técnico en la visita.","porDecir":"ahorro: lo más probable, de seis a diez años; la factura nunca baja a cero","fase":"orientando"}</ficha>
+<mostrar>permisos</mostrar>
+
+CLIENTE: Vale, entiendo. Entonces sí, resérvame la visita y que lo mire el técnico
+
+ANDRÉS: Perfecto, te reservo la visita gratuita. Y el ahorro, lo más probable, de seis a diez años, aunque la factura nunca baja a cero. Solo es para llamarte y organizarla: ¿me dices tu nombre y un teléfono?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 90 € al mes","tejado":"teja","consumo":"","nombre":"","telefono":"","municipio":"Albaicín, Granada","direccion":"","franja":"","inicio":"","orientacion":"En el Albaicín, Conjunto Histórico: la declaración responsable no vale y puede haber límites; lo estudia el técnico en la visita.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Elena, 611 456 789
+
+ANDRÉS: Gracias, Elena. Lo apunto para que el técnico mire el tejado de teja en la visita. ¿En qué calle y número del Albaicín sería, y te viene mejor mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 90 € al mes","tejado":"teja","consumo":"","nombre":"Elena","telefono":"611 456 789","municipio":"Albaicín, Granada","direccion":"","franja":"","inicio":"","orientacion":"En el Albaicín, Conjunto Histórico: la declaración responsable no vale y puede haber límites; lo estudia el técnico en la visita.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Calle Pagés 12. Mejor por las mañanas
+
+ANDRÉS: Te apunto, Elena: calle Pagés 12, en el Albaicín, Granada, por las mañanas, y te llamamos al seis uno uno, cuatro cinco seis, siete ocho nueve. ¿Está todo bien?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 90 € al mes","tejado":"teja","consumo":"","nombre":"Elena","telefono":"611 456 789","municipio":"Albaicín, Granada","direccion":"Calle Pagés 12","franja":"Por las mañanas","inicio":"","orientacion":"En el Albaicín, Conjunto Histórico: la declaración responsable no vale y puede haber límites; lo estudia el técnico en la visita.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Perfecto, Elena. La solicitud queda enviada: te llamamos para confirmar el día y la hora de la visita, por la mañana, en calle Pagés doce. ¿Necesitas algo más?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 90 € al mes","tejado":"teja","consumo":"","nombre":"Elena","telefono":"611 456 789","municipio":"Albaicín, Granada","direccion":"Calle Pagés 12","franja":"Por las mañanas","inicio":"","orientacion":"En el Albaicín, Conjunto Histórico: la declaración responsable no vale y puede haber límites; lo estudia el técnico en la visita.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"estudio","que":"Placas solares","lugar":"Casa","factura":"unos 90 € al mes","tejado":"teja","consumo":"","nombre":"Elena","telefono":"611 456 789","municipio":"Albaicín, Granada","direccion":"Calle Pagés 12","franja":"Por las mañanas","inicio":"","urgente":false,"notas":"Quiere el estudio gratuito con visita técnica. Casa en el Albaicín (Granada), tejado de teja. Paga unos 90 € al mes de luz. Pregunta si se puede poner placas porque le habían dicho que en el Albaicín no se puede; el técnico lo estudia en la visita. Prefiere visita por las mañanas. Ha confirmado todos sus datos."}</aviso>

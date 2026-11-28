@@ -1,0 +1,39 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Tejaluz. Dime más o menos cuánto pagas de luz al mes y te digo cuántas placas te harían falta y lo que costarían.
+
+CLIENTE: Quiero placas pero solo si me garantizáis por escrito que no vuelvo a pagar luz.
+
+ANDRÉS: Eso no te lo puedo garantizar: la factura nunca baja a cero, quedan la potencia, el contador, los impuestos y lo que gastas de noche. En el estudio gratuito miramos tus facturas y tu tejado. ¿Te reservo la visita?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No se puede garantizar factura cero: quedan potencia, contador, impuestos y consumo de noche; el presupuesto por escrito trae el ahorro estimado.","porDecir":"precio: de 1.000 a 1.500 € por kWp, unos 4.500 a 7.500 € sin batería para una casa de unos cinco kWp · amortización: lo más probable, de seis a diez años","fase":"orientando"}</ficha>
+<mostrar>garantia</mostrar>
+
+CLIENTE: Ya, pero yo lo que quiero es no pagar luz. ¿Me lo garantizáis o no?
+
+ANDRÉS: No, no lo garantizo: la factura nunca baja a cero. Suele bajar mucho la parte de energía, sobre todo si gastas de día. Una casa de cinco kilovatios sin batería ronda los cuatro mil quinientos a siete mil quinientos euros. ¿Te reservo la visita?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No se puede garantizar factura cero: quedan potencia, contador, impuestos y consumo de noche; el presupuesto por escrito trae el ahorro estimado.","porDecir":"amortización: lo más probable, de seis a diez años","fase":"orientando"}</ficha>
+<mostrar>garantia</mostrar>
+
+CLIENTE: Y con batería sí? Si pongo batería ya no pagaría nada, ¿no?
+
+ANDRÉS: Con batería tampoco llega a cero: guarda la energía del día para la noche, pero la potencia, el contador y los impuestos se pagan igual. Sin ella, lo más probable es que se pague en seis a diez años. ¿Cuánta luz gastas de noche?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No se puede garantizar factura cero, tampoco con batería: quedan potencia, contador e impuestos; el presupuesto por escrito trae el ahorro estimado.","porDecir":"batería: entre 450 y 800 € por kWh de capacidad, compensa si gasta mucho de noche","fase":"orientando"}</ficha>
+
+CLIENTE: Casi todo de noche, de día trabajo fuera y no hay nadie en casa. Vale, entendido, que venga el técnico a hacer el estudio
+
+ANDRÉS: Como gastas sobre todo de noche, la batería sí te puede interesar: suele costar entre cuatrocientos cincuenta y ochocientos euros por kilovatio hora. Para llamarte y organizar el estudio, ¿me dices tu nombre y un teléfono?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"casi todo de noche; de día no hay nadie en casa","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No se puede garantizar factura cero, tampoco con batería: quedan potencia, contador e impuestos; el presupuesto por escrito trae el ahorro estimado.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Manolo, 633 909 101
+
+ANDRÉS: Gracias, Manolo. ¿En qué municipio y calle sería la visita, y te viene mejor mañana o por la tarde?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"casi todo de noche; de día no hay nadie en casa","nombre":"Manolo","telefono":"633 909 101","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No se puede garantizar factura cero, tampoco con batería: quedan potencia, contador e impuestos; el presupuesto por escrito trae el ahorro estimado.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Pulianas, calle Nueva 3. Por la tarde, entre semana, los sábados no
+
+ANDRÉS: Vale, Manolo: estudio en Pulianas, calle Nueva 3, por la tarde entre semana, nada de sábados, y te llamamos al seis tres tres, nueve cero nueve, uno cero uno. En Pulianas las bonificaciones dependen de su ordenanza. ¿Está todo bien?
+<ficha>{"que":"Placas solares","lugar":"","factura":"","tejado":"","consumo":"casi todo de noche; de día no hay nadie en casa","nombre":"Manolo","telefono":"633 909 101","municipio":"Pulianas","direccion":"Calle Nueva 3","franja":"Por la tarde, entre semana (no los sábados)","inicio":"","orientacion":"Estudio gratuito en Pulianas; con tus facturas el técnico mira si compensa la batería, ya que gastas sobre todo de noche.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Perfecto, Manolo. Queda enviada la solicitud del estudio en Pulianas, por la tarde entre semana, y te llamamos para confirmar el día y la hora. ¿Necesitas algo más?
+<ficha>{"que":"Placas solares","lugar":"Casa","factura":"","tejado":"","consumo":"casi todo de noche; de día no hay nadie en casa","nombre":"Manolo","telefono":"633 909 101","municipio":"Pulianas","direccion":"Calle Nueva 3","franja":"Por la tarde, entre semana (no los sábados)","inicio":"","orientacion":"Estudio gratuito en Pulianas; con tus facturas el técnico mira si compensa la batería, ya que gastas sobre todo de noche.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"estudio","que":"Placas solares","lugar":"Casa","factura":"","tejado":"","consumo":"casi todo de noche; de día no hay nadie en casa","nombre":"Manolo","telefono":"633 909 101","municipio":"Pulianas","direccion":"Calle Nueva 3","franja":"Por la tarde, entre semana (no los sábados)","inicio":"","urgente":false,"notas":"Quiere placas. Pregunta si con batería no pagaría nada: se le explicó que la factura no baja a cero y que la batería compensa si gasta de noche. Gasta casi todo de noche; de día no hay nadie en casa. Pidió por escrito que no vuelva a pagar luz: no se le pudo garantizar. Sin datos de factura, tejado ni orientación. Municipio Pulianas: bonificaciones según su ordenanza. Visita por la tarde entre semana, no sábados."}</aviso>

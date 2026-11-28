@@ -1,0 +1,27 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Tejaluz. Dime más o menos cuánto pagas de luz al mes y te digo cuántas placas te harían falta y lo que costarían.
+
+CLIENTE: Me han dado un presupuesto de 6.800 € por 5 kWp con una batería de 10 kWh. ¿Está bien de precio?
+
+ANDRÉS: Orientativamente, cinco kilovatios de placas y diez de batería salen de unos nueve mil quinientos a quince mil quinientos euros. Tu presupuesto queda por debajo de ese rango: revisa que incluya legalización, marcas y garantías por escrito. ¿Te reservo el estudio gratuito para compararlo?
+<ficha>{"que":"Placas con batería","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Presupuesto de 6.800 € por 5 kWp con batería de 10 kWh, por debajo del rango orientativo; conviene revisar legalización, marcas y garantías por escrito.","porDecir":"ahorro: lo más probable, de seis a diez años; la factura nunca baja a cero · batería: de 450 a 800 € por kWh, compensa si gasta mucho de noche","fase":"proponiendo"}</ficha>
+
+CLIENTE: vale, sí, me interesa el estudio para comparar. Y una pregunta, ¿con placas me bajan el IBI?
+
+ANDRÉS: En Granada capital el IBI baja un 50 % si lo pides; en otro municipio depende de su ordenanza. Suele amortizarse en seis a diez años, y la factura nunca baja a cero. Para llamarte y organizarlo, ¿me dices tu nombre y un teléfono?
+<ficha>{"que":"Placas con batería","lugar":"","factura":"","tejado":"","consumo":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Presupuesto de 6.800 € por 5 kWp con batería de 10 kWh, por debajo del rango orientativo; conviene revisar legalización, marcas y garantías por escrito.","porDecir":"batería: de 450 a 800 € por kWh, compensa si gasta mucho de noche","fase":"datos"}</ficha>
+
+CLIENTE: Rosa, 622 300 415
+
+ANDRÉS: Gracias, Rosa. Y ojo con la batería: encarece el presupuesto y solo compensa si gasta mucho de noche. Para la visita, ¿en qué municipio y calle sería, y te viene mejor mañana o por la tarde?
+<ficha>{"que":"Placas con batería","lugar":"","factura":"","tejado":"","consumo":"","nombre":"Rosa","telefono":"622 300 415","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Presupuesto de 6.800 € por 5 kWp con batería de 10 kWh, por debajo del rango orientativo; conviene revisar legalización, marcas y garantías por escrito.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Granada, en el Zaidín, calle Palencia 10. Mejor por la tarde
+
+ANDRÉS: Perfecto, Rosa. Lo apunto así: teléfono seis dos dos, tres cero cero, cuatro uno cinco; la visita en la calle Palencia 10, en el Zaidín, Granada, por la tarde. ¿Está todo bien?
+<ficha>{"que":"Placas con batería","lugar":"","factura":"","tejado":"","consumo":"","nombre":"Rosa","telefono":"622 300 415","municipio":"Granada","direccion":"calle Palencia 10, Zaidín","franja":"por la tarde","inicio":"","orientacion":"Presupuesto de 6.800 € por 5 kWp con batería de 10 kWh, por debajo del rango orientativo; conviene revisar legalización, marcas y garantías por escrito.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Perfecto, Rosa. Ya queda enviada la solicitud: te llamamos para confirmar el día y la hora de la visita por la tarde. ¿Necesitas algo más?
+<ficha>{"que":"Placas con batería","lugar":"","factura":"","tejado":"","consumo":"","nombre":"Rosa","telefono":"622 300 415","municipio":"Granada","direccion":"calle Palencia 10, Zaidín","franja":"por la tarde","inicio":"","orientacion":"Presupuesto de 6.800 € por 5 kWp con batería de 10 kWh, por debajo del rango orientativo; conviene revisar legalización, marcas y garantías por escrito.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"estudio","que":"Placas con batería","lugar":"","factura":"","tejado":"","consumo":"","nombre":"Rosa","telefono":"622 300 415","municipio":"Granada","direccion":"calle Palencia 10, Zaidín","franja":"por la tarde","inicio":"","urgente":false,"notas":"Tiene un presupuesto de otra empresa de 6.800 € por 5 kWp con batería de 10 kWh y quiere el estudio para compararlo. Pregunta si con placas le bajan el IBI; se le dijo que en Granada capital es un 50 % si lo pide. Visita en calle Palencia 10, Zaidín, por la tarde."}</aviso>

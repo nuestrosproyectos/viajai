@@ -1,0 +1,32 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Tejaluz. Dime más o menos cuánto pagas de luz al mes y te digo cuántas placas te harían falta y lo que costarían.
+
+CLIENTE: Ya tengo placas desde hace 3 años. ¿Me compensa añadir una batería? Por la noche gasto bastante.
+
+ANDRÉS: Con las placas ya puestas, la batería compensa sobre todo si gastas mucho de noche, y en muchas casas alarga la amortización. Cuesta entre cuatrocientos cincuenta y ochocientos euros por kilovatio hora, así que depende de tu caso. ¿Cuánto gastas de noche al mes?
+<ficha>{"que":"Añadir batería","lugar":"","factura":"","tejado":"","consumo":"de noche","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Con placas ya instaladas, la batería compensa sobre todo si gasta mucho de noche; cuesta entre 450 y 800 € por kWh y depende de su caso.","porDecir":"ya tiene instalador: no suba al tejado ni toque nada, con sol hay tensión; la instaladora habilitada es la que legaliza y responde","fase":"orientando"}</ficha>
+
+CLIENTE: No sé exactamente cuánto es de noche, pero con el aire puesto se nota bastante. Lo que me preocupa es que mi inversor sea compatible con una batería, ¿eso se puede mirar?
+
+ANDRÉS: No te puedo confirmar la compatibilidad: eso lo confirma el técnico en el estudio. Mientras, no toques el inversor ni subas al tejado, que con sol hay tensión. Te reservo el estudio, ¿sabes qué marca es tu inversor?
+<ficha>{"que":"Añadir batería","lugar":"","factura":"","tejado":"","consumo":"de noche","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Ya tiene placas instaladas: la compatibilidad del inversor con una batería la confirma el técnico en el estudio; mientras, no tocar el inversor ni subir al tejado.","porDecir":"la instaladora habilitada es la que legaliza y responde","fase":"orientando"}</ficha>
+
+CLIENTE: Pues no sé la marca, tendría que mirarlo. Vale, resérvame el estudio y que lo vea el técnico
+
+ANDRÉS: Perfecto, te reservo el estudio. Y ojo: quien legaliza y responde es tu instaladora habilitada. Solo es para llamarte: ¿me dices tu nombre y un teléfono?
+<ficha>{"que":"Añadir batería","lugar":"","factura":"","tejado":"","consumo":"de noche","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Ya tiene placas instaladas: la compatibilidad del inversor con una batería la confirma el técnico en el estudio; mientras, no tocar el inversor ni subir al tejado.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Rafa, 622 987 654
+
+ANDRÉS: Gracias, Rafa. ¿En qué municipio, calle y número sería la visita, y te viene mejor mañana o por la tarde?
+<ficha>{"que":"Añadir batería","lugar":"","factura":"","tejado":"","consumo":"de noche","nombre":"Rafa","telefono":"622 987 654","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Ya tiene placas instaladas: la compatibilidad del inversor con una batería la confirma el técnico en el estudio; mientras, no tocar el inversor ni subir al tejado.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Armilla, calle Real 30. Mejor por las tardes
+
+ANDRÉS: Te apunto, Rafa: calle Real treinta, en Armilla, por la tarde, y te llamamos al seis dos dos, nueve ocho siete, seis cinco cuatro. ¿Está todo bien?
+<ficha>{"que":"Añadir batería","lugar":"","factura":"","tejado":"","consumo":"de noche","nombre":"Rafa","telefono":"622 987 654","municipio":"Armilla","direccion":"Calle Real 30","franja":"Por las tardes","inicio":"","orientacion":"Ya tiene placas instaladas: la compatibilidad del inversor con una batería la confirma el técnico en el estudio; mientras, no tocar el inversor ni subir al tejado.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Perfecto, Rafa. La solicitud queda enviada: te llamamos para confirmar el día y la hora de la visita, por la tarde, en calle Real treinta de Armilla. ¿Necesitas algo más?
+<ficha>{"que":"Añadir batería","lugar":"","factura":"","tejado":"","consumo":"de noche","nombre":"Rafa","telefono":"622 987 654","municipio":"Armilla","direccion":"Calle Real 30","franja":"Por las tardes","inicio":"","orientacion":"Ya tiene placas instaladas: la compatibilidad del inversor con una batería la confirma el técnico en el estudio; mientras, no tocar el inversor ni subir al tejado.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"estudio","que":"Añadir batería","lugar":"","factura":"","tejado":"","consumo":"de noche","nombre":"Rafa","telefono":"622 987 654","municipio":"Armilla","direccion":"Calle Real 30","franja":"Por las tardes","inicio":"","urgente":false,"notas":"Quiere el estudio gratuito con visita técnica. Ya tiene placas instaladas desde hace tres años y quiere añadir batería. Por la noche gasta bastante; con el aire acondicionado puesto se nota. Pregunta si su inversor es compatible con una batería; no sabe la marca del inversor, lo tendrá que mirar. La visita sería en Armilla, calle Real 30, por la tarde. Ha confirmado todos sus datos."}</aviso>
