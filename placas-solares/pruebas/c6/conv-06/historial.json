@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Ya tengo placas desde hace 3 años. ¿Me compensa añadir una batería? Por la noche gasto bastante."
+ },
+ {
+  "role": "assistant",
+  "content": "Con las placas ya puestas, la batería compensa sobre todo si gastas mucho de noche, y en muchas casas alarga la amortización. Cuesta entre cuatrocientos cincuenta y ochocientos euros por kilovatio hora, así que depende de tu caso. ¿Cuánto gastas de noche al mes?\n<ficha>{\"que\":\"Añadir batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"de noche\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con placas ya instaladas, la batería compensa sobre todo si gasta mucho de noche; cuesta entre 450 y 800 € por kWh y depende de su caso.\",\"porDecir\":\"ya tiene instalador: no suba al tejado ni toque nada, con sol hay tensión; la instaladora habilitada es la que legaliza y responde\",\"fase\":\"orientando\"}</ficha>",
+  "original": "Con las placas ya puestas, la batería compensa sobre todo si gastas mucho de noche, y en muchas casas alarga la amortización. Cuesta entre cuatrocientos cincuenta y ochocientos euros por kilovatio hora, así que depende de tu caso. ¿Cuánto gastas de noche al mes?\n<ficha>{\"que\":\"Añadir batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"de noche\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con placas ya instaladas, la batería compensa sobre todo si gasta mucho de noche; cuesta entre 450 y 800 € por kWh y depende de su caso.\",\"porDecir\":\"ya tiene instalador: no suba al tejado ni toque nada, con sol hay tensión; la instaladora habilitada es la que legaliza y responde\",\"fase\":\"orientando\"}</ficha>"
  }
 ]

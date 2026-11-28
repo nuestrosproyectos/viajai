@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Quiero placas pero solo si me garantizáis por escrito que no vuelvo a pagar luz."
+ },
+ {
+  "role": "assistant",
+  "content": "Eso no te lo puedo garantizar: la factura nunca baja a cero, quedan la potencia, el contador, los impuestos y lo que gastas de noche. En el estudio gratuito miramos tus facturas y tu tejado. ¿Te reservo la visita?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No se puede garantizar factura cero: quedan potencia, contador, impuestos y consumo de noche; el presupuesto por escrito trae el ahorro estimado.\",\"porDecir\":\"precio: de 1.000 a 1.500 € por kWp, unos 4.500 a 7.500 € sin batería para una casa de unos cinco kWp · amortización: lo más probable, de seis a diez años\",\"fase\":\"orientando\"}</ficha>\n<mostrar>garantia</mostrar>",
+  "original": "Eso no te lo puedo garantizar: la factura nunca baja a cero, quedan la potencia, el contador, los impuestos y lo que gastas de noche. En el estudio gratuito miramos tus facturas y tu tejado. ¿Te reservo la visita?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No se puede garantizar factura cero: quedan potencia, contador, impuestos y consumo de noche; el presupuesto por escrito trae el ahorro estimado.\",\"porDecir\":\"precio: de 1.000 a 1.500 € por kWp, unos 4.500 a 7.500 € sin batería para una casa de unos cinco kWp · amortización: lo más probable, de seis a diez años\",\"fase\":\"orientando\"}</ficha>\n<mostrar>garantia</mostrar>"
  }
 ]
