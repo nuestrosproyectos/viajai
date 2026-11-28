@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "vale, llamo al 112 ahora. mi cocina es de butano, por si cambia algo. y vosotros ni siquiera podéis venir a mirarlo?"
+ },
+ {
+  "role": "assistant",
+  "content": "Entiendo el susto, has hecho bien en salir. Con el gas no podemos ir: no tenemos habilitación de gas, y lo repara o instala solo una empresa instaladora de gas habilitada. Ahora llama al 112 y sigue sus indicaciones.\n<ficha>{\"averia\":\"olor a gas en la cocina desde hace un rato\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Quédate fuera de casa y llama al 112 o a Nedgia (900 750 750); para la instalación de gas, una empresa instaladora de gas habilitada.\",\"porDecir\":\"\",\"fase\":\"orientando\"}</ficha>",
+  "original": "Entiendo el susto, has hecho bien en salir. Con el gas no podemos ir: no tenemos habilitación de gas, y lo repara o instala solo una empresa instaladora de gas habilitada. Ahora llama al 112 y sigue sus indicaciones.\n<ficha>{\"averia\":\"olor a gas en la cocina desde hace un rato\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Quédate fuera de casa y llama al 112 o a Nedgia (900 750 750); para la instalación de gas, una empresa instaladora de gas habilitada.\",\"porDecir\":\"\",\"fase\":\"orientando\"}</ficha>"
  }
 ]

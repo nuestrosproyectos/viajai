@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "vale, llamo ahora al seguro. y si hoy no mandan a nadie, sí que me apuntas con vuestro fontanero? mejor mañana por la mañana"
+ },
+ {
+  "role": "assistant",
+  "content": "Bien, llama ya al seguro. Si la fuga está en las tuberías de tu piso, suelen ser tuyas; si es la bajante, de la comunidad. Solo es para llamarte y organizar la visita: ¿me dices tu nombre y un teléfono?\n<ficha>{\"averia\":\"posible fuga que cae al techo del baño del vecino de abajo\",\"cuando\":\"Visita programada\",\"llave\":\"Aún no la has cerrado\",\"vivienda\":\"Piso\",\"seguro\":\"Sí, tienes seguro de hogar\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"mañana por la mañana, si hoy no pueden\",\"inicio\":\"\",\"orientacion\":\"Mira si hay goteo bajo el lavabo o en la cisterna, haz fotos y llama a tu aseguradora antes de arreglar nada.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Bien, llama ya al seguro. Si la fuga está en las tuberías de tu piso, suelen ser tuyas; si es la bajante, de la comunidad. Solo es para llamarte y organizar la visita: ¿me dices tu nombre y un teléfono?\n<ficha>{\"averia\":\"posible fuga que cae al techo del baño del vecino de abajo\",\"cuando\":\"Visita programada\",\"llave\":\"Aún no la has cerrado\",\"vivienda\":\"Piso\",\"seguro\":\"Sí, tienes seguro de hogar\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"mañana por la mañana, si hoy no pueden\",\"inicio\":\"\",\"orientacion\":\"Mira si hay goteo bajo el lavabo o en la cisterna, haz fotos y llama a tu aseguradora antes de arreglar nada.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

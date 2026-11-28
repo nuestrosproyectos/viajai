@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "vale, gracias por ser claro. entonces mejor que me lo cambiéis vosotros, reservadme la visita"
+ },
+ {
+  "role": "assistant",
+  "content": "Hecho, los termos eléctricos sí los cambiamos, con presupuesto por escrito antes de empezar. Solo es para llamarte y organizar la visita: ¿me dices tu nombre y un teléfono?\n<ficha>{\"averia\":\"cambio de termo, con un presupuesto de 900 euros de otra empresa\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Quieres saber si lo cubriría tu seguro\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Pide el desglose por escrito y llama antes a tu aseguradora, que según tu póliza puede cubrirlo.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Hecho, los termos eléctricos sí los cambiamos, con presupuesto por escrito antes de empezar. Solo es para llamarte y organizar la visita: ¿me dices tu nombre y un teléfono?\n<ficha>{\"averia\":\"cambio de termo, con un presupuesto de 900 euros de otra empresa\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Quieres saber si lo cubriría tu seguro\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Pide el desglose por escrito y llama antes a tu aseguradora, que según tu póliza puede cubrirlo.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

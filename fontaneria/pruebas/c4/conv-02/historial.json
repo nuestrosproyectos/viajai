@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Luis, 655 990 120"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Luis. Si el sifón no basta y hay que usar máquina, puede pasar de 500 euros, orientativo. ¿En qué municipio y barrio está, y qué día y franja te viene bien?\n<ficha>{\"averia\":\"lavabo del baño atascado, ya has echado desatascador fuerte\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Luis\",\"telefono\":\"655 990 120\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No metas la mano en el sifón ni lo desmontes, que quema; lo más probable es que el atasco esté en el sifón o en el tramo cercano.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Luis. Si el sifón no basta y hay que usar máquina, puede pasar de 500 euros, orientativo. ¿En qué municipio y barrio está, y qué día y franja te viene bien?\n<ficha>{\"averia\":\"lavabo del baño atascado, ya has echado desatascador fuerte\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Luis\",\"telefono\":\"655 990 120\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No metas la mano en el sifón ni lo desmontes, que quema; lo más probable es que el atasco esté en el sifón o en el tramo cercano.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]
