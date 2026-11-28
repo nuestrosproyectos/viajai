@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Andrés, te repito: teléfono seis dos dos, tres cuatro cinco, seis siete ocho. Visita para mañana por la mañana en calle Real catorce, Armilla, solo si el seguro no manda a nadie. Si sabes el barrio, dímelo y lo apunto. ¿Está todo bien?\n<ficha>{\"averia\":\"agua que cae al techo del baño del vecino de abajo\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Tiene seguro de hogar y lo llama ahora\",\"nombre\":\"Andrés\",\"telefono\":\"622 345 678\",\"municipio\":\"Armilla\",\"direccion\":\"Calle Real 14\",\"franja\":\"mañana por la mañana, si el seguro no manda a nadie\",\"inicio\":\"\",\"orientacion\":\"Llama ya a tu aseguradora; la cobertura depende de tu póliza, y si no ves agua en tu baño, lo más probable es una fuga oculta.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Andrés, te repito: teléfono seis dos dos, tres cuatro cinco, seis siete ocho. Visita para mañana por la mañana en calle Real catorce, Armilla, solo si el seguro no manda a nadie. Si sabes el barrio, dímelo y lo apunto. ¿Está todo bien?\n<ficha>{\"averia\":\"agua que cae al techo del baño del vecino de abajo\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Tiene seguro de hogar y lo llama ahora\",\"nombre\":\"Andrés\",\"telefono\":\"622 345 678\",\"municipio\":\"Armilla\",\"direccion\":\"Calle Real 14\",\"franja\":\"mañana por la mañana, si el seguro no manda a nadie\",\"inicio\":\"\",\"orientacion\":\"Llama ya a tu aseguradora; la cobertura depende de tu póliza, y si no ves agua en tu baño, lo más probable es una fuga oculta.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo correcto. El barrio no sé decirte, es calle Real 14."
  }
 ]

@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Ana, te repito: teléfono seis siete siete, cuatro cinco cero, nueve nueve cero. Visita por la tarde en calle Arabial doce, bajo A, Zaidín, Granada capital, y apunto que quieres el informe para la comunidad. ¿Está todo bien?\n<ficha>{\"averia\":\"agua sucia sale por el plato de ducha al tirar la cisterna de arriba\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"Ana\",\"telefono\":\"677 450 990\",\"municipio\":\"Granada capital\",\"direccion\":\"Calle Arabial 12, bajo A, barrio Zaidín\",\"franja\":\"por la tarde\",\"inicio\":\"\",\"orientacion\":\"Avisar al presidente o al administrador; el informe del fontanero, con cámara si hace falta, ayuda a decidir quién paga.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Ana, te repito: teléfono seis siete siete, cuatro cinco cero, nueve nueve cero. Visita por la tarde en calle Arabial doce, bajo A, Zaidín, Granada capital, y apunto que quieres el informe para la comunidad. ¿Está todo bien?\n<ficha>{\"averia\":\"agua sucia sale por el plato de ducha al tirar la cisterna de arriba\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"Ana\",\"telefono\":\"677 450 990\",\"municipio\":\"Granada capital\",\"direccion\":\"Calle Arabial 12, bajo A, barrio Zaidín\",\"franja\":\"por la tarde\",\"inicio\":\"\",\"orientacion\":\"Avisar al presidente o al administrador; el informe del fontanero, con cámara si hace falta, ayuda a decidir quién paga.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo correcto"
  }
 ]
