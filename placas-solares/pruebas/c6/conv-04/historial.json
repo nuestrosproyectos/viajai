@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Sí, todo bien"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Elena. La solicitud queda enviada: te llamamos para confirmar el día y la hora de la visita, por la tarde, en calle Arabial cincuenta. ¿Necesitas algo más?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"azotea común\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"688 120 777\",\"municipio\":\"Zaidín, Granada\",\"direccion\":\"calle Arabial 50\",\"franja\":\"por la tarde\",\"inicio\":\"\",\"orientacion\":\"Sin el acuerdo de la junta no hay instalación en la azotea común; el estudio gratuito le sirve para llevarlo a la junta.\",\"porDecir\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Elena. La solicitud queda enviada: te llamamos para confirmar el día y la hora de la visita, por la tarde, en calle Arabial cincuenta. ¿Necesitas algo más?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"azotea común\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"688 120 777\",\"municipio\":\"Zaidín, Granada\",\"direccion\":\"calle Arabial 50\",\"franja\":\"por la tarde\",\"inicio\":\"\",\"orientacion\":\"Sin el acuerdo de la junta no hay instalación en la azotea común; el estudio gratuito le sirve para llevarlo a la junta.\",\"porDecir\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"estudio\",\"que\":\"Placas solares\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"azotea común\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"688 120 777\",\"municipio\":\"Zaidín, Granada\",\"direccion\":\"calle Arabial 50\",\"franja\":\"por la tarde\",\"inicio\":\"\",\"urgente\":false,\"notas\":\"Quiere el estudio gratuito con visita técnica para llevarlo a la junta de la comunidad. Vive en un bloque en el Zaidín (Granada) y quiere placas en la azotea común. No tiene la factura a mano ahora. Pregunta si puede poner placas solo para su vivienda si los vecinos no quieren, y qué mayoría hace falta. Ha confirmado todos sus datos.\"}</aviso>"
  }
 ]

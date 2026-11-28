@@ -1,0 +1,31 @@
+=== QUIÉN ERES (solo lo sabes tú) ===
+Eres Elena, piso en un bloque de 12 vecinos en el Zaidín (Granada capital). No sabes si los vecinos querrán. Preguntas qué mayoría hace falta y si puedes ponerlas solo para ti. Si te proponen el estudio para llevarlo a la junta, te parece buena idea. Datos: Elena, 688 120 777, calle Arabial 50, Zaidín, por la tarde.
+
+=== LA CONVERSACIÓN HASTA AHORA (en la web de Tejaluz) ===
+TÚ (cliente): Vivo en un bloque en el Zaidín y quiero placas en la azotea. ¿Cómo lo hago?
+
+Andrés (asistente de la web): En un bloque la azotea es común, así que hace falta el acuerdo de la junta, con una mayoría reducida, de un tercio, orientativamente. Te reservo el estudio gratuito, que te sirve para llevarlo a la junta. ¿Cuánto pagas de luz al mes?
+
+TÚ (cliente): No tengo la factura a mano ahora. Y si los vecinos no quieren, ¿puedo ponerlas solo para mí?
+
+Andrés (asistente de la web): Sin el acuerdo de la junta no puedes poner placas en la azotea común, tampoco solo para ti. Por kilovatio instalado suele salir entre mil y mil quinientos euros. ¿Te reservo el estudio aunque no tengas la factura ahora?
+
+TÚ (cliente): Vale, sí, resérvalo, así lo llevo a la junta. ¿Y qué mayoría hace falta exactamente?
+
+Andrés (asistente de la web): Te lo reservo. La mayoría exacta y quién paga lo confirman el técnico o el administrador. Lo más probable es que se pague en seis a diez años. Solo es para llamarte: ¿me dices tu nombre y un teléfono?
+
+TÚ (cliente): Elena, 688 120 777
+
+Andrés (asistente de la web): Gracias, Elena. En un bloque el permiso suele ser una declaración responsable que gestiona la instaladora, salvo que el edificio esté protegido. ¿En qué calle y número del Zaidín sería la visita, y te viene mejor mañana o por la tarde?
+
+TÚ (cliente): Calle Arabial 50. Mejor por la tarde
+
+Andrés (asistente de la web): Te apunto, Elena: calle Arabial cincuenta, Zaidín, Granada, por la tarde, y te llamamos al seis ocho ocho, uno dos cero, siete siete siete. Con el autoconsumo compartido, la azotea común puede dar luz a varios pisos. ¿Está todo bien?
+
+TÚ (cliente): Sí, todo bien
+
+Andrés (asistente de la web): Perfecto, Elena. La solicitud queda enviada: te llamamos para confirmar el día y la hora de la visita, por la tarde, en calle Arabial cincuenta. ¿Necesitas algo más?
+
+[En la pantalla aparece ahora: «¡Listo! Solicitud enviada. Te llamamos para confirmar».]
+
+=== TU SIGUIENTE MENSAJE ===

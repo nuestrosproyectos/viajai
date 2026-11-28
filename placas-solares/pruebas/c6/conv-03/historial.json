@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Pulianas, calle Nueva 3. Por la tarde, entre semana, los sábados no"
+ },
+ {
+  "role": "assistant",
+  "content": "Vale, Manolo: estudio en Pulianas, calle Nueva 3, por la tarde entre semana, nada de sábados, y te llamamos al seis tres tres, nueve cero nueve, uno cero uno. En Pulianas las bonificaciones dependen de su ordenanza. ¿Está todo bien?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"casi todo de noche; de día no hay nadie en casa\",\"nombre\":\"Manolo\",\"telefono\":\"633 909 101\",\"municipio\":\"Pulianas\",\"direccion\":\"Calle Nueva 3\",\"franja\":\"Por la tarde, entre semana (no los sábados)\",\"inicio\":\"\",\"orientacion\":\"Estudio gratuito en Pulianas; con tus facturas el técnico mira si compensa la batería, ya que gastas sobre todo de noche.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Vale, Manolo: estudio en Pulianas, calle Nueva 3, por la tarde entre semana, nada de sábados, y te llamamos al seis tres tres, nueve cero nueve, uno cero uno. En Pulianas las bonificaciones dependen de su ordenanza. ¿Está todo bien?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"casi todo de noche; de día no hay nadie en casa\",\"nombre\":\"Manolo\",\"telefono\":\"633 909 101\",\"municipio\":\"Pulianas\",\"direccion\":\"Calle Nueva 3\",\"franja\":\"Por la tarde, entre semana (no los sábados)\",\"inicio\":\"\",\"orientacion\":\"Estudio gratuito en Pulianas; con tus facturas el técnico mira si compensa la batería, ya que gastas sobre todo de noche.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]
