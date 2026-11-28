@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "De día, abrimos de 8 a 24 y la cocina no para. ¿Esto desgrava algo? ¿Más o menos cuánto saldría?"
+ },
+ {
+  "role": "assistant",
+  "content": "Con consumo de día, el bar aprovecha bien las placas. La deducción de autoconsumo de la Renta no vale para un negocio, y cada kilovatio instalado sale, orientativamente, de mil a mil quinientos euros. ¿Te reservo el estudio gratis?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Negocio o nave\",\"factura\":\"450 € al mes\",\"tejado\":\"\",\"consumo\":\"de día: abren de 8 a 24 y la cocina no para\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Atarfe\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con consumo de día, el bar aprovecha bien las placas; el estudio con tus facturas afina el tamaño.\",\"porDecir\":\"lo fiscal lo lleva tu asesor\",\"fase\":\"orientando\"}</ficha>",
+  "original": "Con consumo de día, el bar aprovecha bien las placas. La deducción de autoconsumo de la Renta no vale para un negocio, y cada kilovatio instalado sale, orientativamente, de mil a mil quinientos euros. ¿Te reservo el estudio gratis?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Negocio o nave\",\"factura\":\"450 € al mes\",\"tejado\":\"\",\"consumo\":\"de día: abren de 8 a 24 y la cocina no para\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Atarfe\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con consumo de día, el bar aprovecha bien las placas; el estudio con tus facturas afina el tamaño.\",\"porDecir\":\"lo fiscal lo lleva tu asesor\",\"fase\":\"orientando\"}</ficha>"
  }
 ]

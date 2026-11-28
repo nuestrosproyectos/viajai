@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Manoli, 655 222 333. Por favor que vengan cuanto antes, estoy muy asustada"
+ },
+ {
+  "role": "assistant",
+  "content": "Entiendo el susto, Manoli. Te reservo la visita; la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal. ¿En qué municipio y calle estás, y te viene mejor mañana o tarde?\n<ficha>{\"que\":\"Añadir batería\",\"lugar\":\"\",\"factura\":\"unos 100 € al mes\",\"tejado\":\"\",\"consumo\":\"casi todo de noche, con el aire acondicionado\",\"nombre\":\"Manoli\",\"telefono\":\"655 222 333\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con 4 kWp ya instalados, la batería compensa sobre todo de noche; el técnico comprueba con tu inversor si es compatible y con tus facturas lo mide.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Entiendo el susto, Manoli. Te reservo la visita; la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal. ¿En qué municipio y calle estás, y te viene mejor mañana o tarde?\n<ficha>{\"que\":\"Añadir batería\",\"lugar\":\"\",\"factura\":\"unos 100 € al mes\",\"tejado\":\"\",\"consumo\":\"casi todo de noche, con el aire acondicionado\",\"nombre\":\"Manoli\",\"telefono\":\"655 222 333\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con 4 kWp ya instalados, la batería compensa sobre todo de noche; el técnico comprueba con tu inversor si es compatible y con tus facturas lo mide.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

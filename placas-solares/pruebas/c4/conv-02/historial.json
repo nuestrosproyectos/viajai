@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Granada capital, en el Zaidín. Si me lo comparáis con el estudio sin prisa, me parece bien"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, te reservo el estudio gratuito y lo comparamos con tu presupuesto. La factura nunca baja a cero: quedan la potencia, el contador, los impuestos y lo de la noche. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar el estudio.\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada capital (Zaidín)\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Compara el presupuesto con el estudio sin prisa y revisa que incluya boletín, legalización y garantías por escrito.\",\"porDecir\":\"la batería compensa sobre todo si gastas mucho de noche · la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, te reservo el estudio gratuito y lo comparamos con tu presupuesto. La factura nunca baja a cero: quedan la potencia, el contador, los impuestos y lo de la noche. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar el estudio.\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada capital (Zaidín)\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Compara el presupuesto con el estudio sin prisa y revisa que incluya boletín, legalización y garantías por escrito.\",\"porDecir\":\"la batería compensa sobre todo si gastas mucho de noche · la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal\",\"fase\":\"datos\"}</ficha>"
  }
 ]

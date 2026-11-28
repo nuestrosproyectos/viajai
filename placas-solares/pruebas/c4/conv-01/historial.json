@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "En mi casa, es un adosado en Armilla"
+ },
+ {
+  "role": "assistant",
+  "content": "Un adosado en Armilla encaja bien con ese consumo. La factura nunca baja a cero: quedan la potencia, el contador, los impuestos y lo de la noche. ¿Te reservo el estudio gratis con visita?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"de día: teletrabajo y aire acondicionado casi todo el día\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con consumo de día las placas aprovechan mucho; el estudio con tus facturas afina el tamaño y mira el tejado del adosado.\",\"porDecir\":\"la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal · en Armilla las bonificaciones dependen de su ordenanza municipal, que el técnico comprueba\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Un adosado en Armilla encaja bien con ese consumo. La factura nunca baja a cero: quedan la potencia, el contador, los impuestos y lo de la noche. ¿Te reservo el estudio gratis con visita?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"de día: teletrabajo y aire acondicionado casi todo el día\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con consumo de día las placas aprovechan mucho; el estudio con tus facturas afina el tamaño y mira el tejado del adosado.\",\"porDecir\":\"la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal · en Armilla las bonificaciones dependen de su ordenanza municipal, que el técnico comprueba\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

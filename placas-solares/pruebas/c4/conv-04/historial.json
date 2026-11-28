@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, entendido. Pues sí, reserva el estudio y lo llevo a la junta"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, te reservo el estudio para llevarlo a la junta. Y existe el autoconsumo compartido, por si la junta lo prefiere. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar el estudio.\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"azotea\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"El Zaidín\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"La azotea es común: lleva el estudio a la junta, porque hace falta acuerdo de los vecinos.\",\"porDecir\":\"la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, te reservo el estudio para llevarlo a la junta. Y existe el autoconsumo compartido, por si la junta lo prefiere. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar el estudio.\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"azotea\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"El Zaidín\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"La azotea es común: lleva el estudio a la junta, porque hace falta acuerdo de los vecinos.\",\"porDecir\":\"la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal\",\"fase\":\"datos\"}</ficha>"
  }
 ]
