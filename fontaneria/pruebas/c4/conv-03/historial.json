@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Ana, para confirmar: tu nombre, teléfono seis siete siete, cuatro cinco cero, nueve nueve cero; visita por la tarde en calle Arabial doce, bajo A, Zaidín, Granada. ¿Está todo bien?\n<ficha>{\"averia\":\"agua sucia por el plato de ducha cuando tiran de la cisterna de arriba\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"Ana\",\"telefono\":\"677 450 990\",\"municipio\":\"Granada\",\"direccion\":\"Calle Arabial 12, bajo A, barrio del Zaidín\",\"franja\":\"por la tarde\",\"inicio\":\"\",\"orientacion\":\"Avisa al presidente o al administrador, que la bajante suele ser de la comunidad.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Ana, para confirmar: tu nombre, teléfono seis siete siete, cuatro cinco cero, nueve nueve cero; visita por la tarde en calle Arabial doce, bajo A, Zaidín, Granada. ¿Está todo bien?\n<ficha>{\"averia\":\"agua sucia por el plato de ducha cuando tiran de la cisterna de arriba\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"Ana\",\"telefono\":\"677 450 990\",\"municipio\":\"Granada\",\"direccion\":\"Calle Arabial 12, bajo A, barrio del Zaidín\",\"franja\":\"por la tarde\",\"inicio\":\"\",\"orientacion\":\"Avisa al presidente o al administrador, que la bajante suele ser de la comunidad.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "sí, todo correcto"
  }
 ]

@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Andrés, para confirmar: teléfono seis dos dos, tres cuatro cinco, seis siete ocho; visita programada mañana por la mañana en calle Real catorce, Armilla. ¿Está todo bien?\n<ficha>{\"averia\":\"posible fuga que cae al techo del baño del vecino de abajo\",\"cuando\":\"Visita programada\",\"llave\":\"Aún no la has cerrado\",\"vivienda\":\"Piso\",\"seguro\":\"Sí, tienes seguro de hogar\",\"nombre\":\"Andrés\",\"telefono\":\"622 345 678\",\"municipio\":\"Armilla\",\"direccion\":\"Calle Real 14\",\"franja\":\"mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"Mira si hay goteo bajo el lavabo o en la cisterna, haz fotos y llama a tu aseguradora antes de arreglar nada.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Andrés, para confirmar: teléfono seis dos dos, tres cuatro cinco, seis siete ocho; visita programada mañana por la mañana en calle Real catorce, Armilla. ¿Está todo bien?\n<ficha>{\"averia\":\"posible fuga que cae al techo del baño del vecino de abajo\",\"cuando\":\"Visita programada\",\"llave\":\"Aún no la has cerrado\",\"vivienda\":\"Piso\",\"seguro\":\"Sí, tienes seguro de hogar\",\"nombre\":\"Andrés\",\"telefono\":\"622 345 678\",\"municipio\":\"Armilla\",\"direccion\":\"Calle Real 14\",\"franja\":\"mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"Mira si hay goteo bajo el lavabo o en la cisterna, haz fotos y llama a tu aseguradora antes de arreglar nada.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "sí, todo bien"
  }
 ]

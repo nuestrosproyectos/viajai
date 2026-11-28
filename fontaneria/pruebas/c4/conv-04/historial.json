@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Paco, para confirmar: teléfono seis nueve nueve, uno cero uno, dos cero dos; visita programada, cualquier mañana, en calle Real 9, Maracena. ¿Está todo bien?\n<ficha>{\"averia\":\"cambio de termo, con un presupuesto de 900 euros de otra empresa\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Quieres saber si lo cubriría tu seguro\",\"nombre\":\"Paco\",\"telefono\":\"699 101 202\",\"municipio\":\"Maracena\",\"direccion\":\"Calle Real 9\",\"franja\":\"cualquier mañana\",\"inicio\":\"\",\"orientacion\":\"Pide el desglose por escrito y llama antes a tu aseguradora, que según tu póliza puede cubrirlo.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Paco, para confirmar: teléfono seis nueve nueve, uno cero uno, dos cero dos; visita programada, cualquier mañana, en calle Real 9, Maracena. ¿Está todo bien?\n<ficha>{\"averia\":\"cambio de termo, con un presupuesto de 900 euros de otra empresa\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Quieres saber si lo cubriría tu seguro\",\"nombre\":\"Paco\",\"telefono\":\"699 101 202\",\"municipio\":\"Maracena\",\"direccion\":\"Calle Real 9\",\"franja\":\"cualquier mañana\",\"inicio\":\"\",\"orientacion\":\"Pide el desglose por escrito y llama antes a tu aseguradora, que según tu póliza puede cubrirlo.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "sí, correcto"
  }
 ]
