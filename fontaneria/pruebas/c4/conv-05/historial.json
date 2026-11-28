@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Perfecto, Laura, tomo nota: seis cinco cinco, cuatro tres dos, uno cero nueve. Solo es para llamarte y organizar la visita: ¿en qué municipio y calle estáis, y ahora mismo o qué franja te viene bien?\n<ficha>{\"averia\":\"váter atascado, el único de la casa\",\"cuando\":\"Hoy, en cuanto podáis\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Laura\",\"telefono\":\"655 432 109\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No eches sosa ni metas la mano; muchas veces son toallitas u objetos.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Laura, tomo nota: seis cinco cinco, cuatro tres dos, uno cero nueve. Solo es para llamarte y organizar la visita: ¿en qué municipio y calle estáis, y ahora mismo o qué franja te viene bien?\n<ficha>{\"averia\":\"váter atascado, el único de la casa\",\"cuando\":\"Hoy, en cuanto podáis\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Laura\",\"telefono\":\"655 432 109\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No eches sosa ni metas la mano; muchas veces son toallitas u objetos.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Granada, calle Primavera 20, 2º B (Zaidín). Hoy por la tarde si puede ser"
  }
 ]

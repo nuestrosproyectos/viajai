@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Primero mira si hay goteo bajo el lavabo o en la cisterna; si ves agua, cierra la llave de paso. Haz fotos para el seguro y llama a tu aseguradora: la cobertura depende de tu póliza. ¿Te apunto al fontanero para revisarlo?\n<ficha>{\"averia\":\"posible fuga que cae al techo del baño del vecino de abajo\",\"cuando\":\"\",\"llave\":\"Aún no la has cerrado\",\"vivienda\":\"\",\"seguro\":\"Sí, tienes seguro de hogar\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Mira si hay goteo bajo el lavabo o en la cisterna, haz fotos y llama a tu aseguradora antes de arreglar nada.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Primero mira si hay goteo bajo el lavabo o en la cisterna; si ves agua, cierra la llave de paso. Haz fotos para el seguro y llama a tu aseguradora: la cobertura depende de tu póliza. ¿Te apunto al fontanero para revisarlo?\n<ficha>{\"averia\":\"posible fuga que cae al techo del baño del vecino de abajo\",\"cuando\":\"\",\"llave\":\"Aún no la has cerrado\",\"vivienda\":\"\",\"seguro\":\"Sí, tienes seguro de hogar\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Mira si hay goteo bajo el lavabo o en la cisterna, haz fotos y llama a tu aseguradora antes de arreglar nada.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "vale, llamo ahora al seguro. y si hoy no mandan a nadie, sí que me apuntas con vuestro fontanero? mejor mañana por la mañana"
  }
 ]

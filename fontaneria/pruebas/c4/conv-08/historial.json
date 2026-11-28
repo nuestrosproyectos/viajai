@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Lo siento. Lo más habitual es la resistencia, el termostato o el interruptor de la luz del cuadro, así que mire si ha saltado. Le apunto la visita: ¿le mando al fontanero mañana por la mañana o por la tarde?\n<ficha>{\"averia\":\"sin agua caliente con termo eléctrico de 80 litros y unos 12 años\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Lo más habitual es la resistencia, el termostato o el interruptor de la luz del cuadro; mire si ha saltado.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Lo siento. Lo más habitual es la resistencia, el termostato o el interruptor de la luz del cuadro, así que mire si ha saltado. Le apunto la visita: ¿le mando al fontanero mañana por la mañana o por la tarde?\n<ficha>{\"averia\":\"sin agua caliente con termo eléctrico de 80 litros y unos 12 años\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Lo más habitual es la resistencia, el termostato o el interruptor de la luz del cuadro; mire si ha saltado.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Mañana por la mañana, hijo, muchas gracias por la paciencia. Soy Antonia, mi teléfono es el 958 123 456, y vivo en la calle Santa Escolástica 9, en Granada."
  }
 ]

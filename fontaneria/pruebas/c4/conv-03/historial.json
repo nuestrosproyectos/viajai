@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Entiendo tu duda. Si es la bajante, lo normal es que pague la comunidad, aunque lo decide la comunidad con su administrador; si está en la tubería de tu piso hasta el empalme, suele ser del propietario. ¿Te reservo la visita para verlo?\n<ficha>{\"averia\":\"agua sucia por el plato de ducha cuando tiran de la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Si es la bajante, lo normal es que pague la comunidad; avisa al presidente o al administrador.\",\"porDecir\":\"un atasco en la bajante puede necesitar máquina y subir de precio\",\"fase\":\"orientando\"}</ficha>",
   "original": "Entiendo tu duda. Si es la bajante, lo normal es que pague la comunidad, aunque lo decide la comunidad con su administrador; si está en la tubería de tu piso hasta el empalme, suele ser del propietario. ¿Te reservo la visita para verlo?\n<ficha>{\"averia\":\"agua sucia por el plato de ducha cuando tiran de la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Si es la bajante, lo normal es que pague la comunidad; avisa al presidente o al administrador.\",\"porDecir\":\"un atasco en la bajante puede necesitar máquina y subir de precio\",\"fase\":\"orientando\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "vale, entiendo. pues sí, que venga el fontanero a mirarlo y haga un informe para pasárselo a la comunidad"
  }
 ]
