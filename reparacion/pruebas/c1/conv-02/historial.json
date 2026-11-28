@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Con comida dentro, intentamos ir el mismo día por la tarde si hay hueco en la ruta; el equipo lo confirma por teléfono. Dime tu nombre, que es solo para llamarte y organizar la visita.\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"\",\"sintoma\":\"enfría arriba pero el congelador no congela bien; escarcha detrás del congelador\",\"codigo\":\"\",\"diagnostico\":\"Fallo del desescarche, hielo tapando el paso de aire (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>",
   "original": "Con comida dentro, intentamos ir el mismo día por la tarde si hay hueco en la ruta; el equipo lo confirma por teléfono. Dime tu nombre, que es solo para llamarte y organizar la visita.\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"\",\"sintoma\":\"enfría arriba pero el congelador no congela bien; escarcha detrás del congelador\",\"codigo\":\"\",\"diagnostico\":\"Fallo del desescarche, hielo tapando el paso de aire (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Javier"
  }
 ]

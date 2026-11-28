@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Con catorce años, si son los rodamientos casi nunca compensa, así que te conviene que el técnico lo mire y te dé un presupuesto cerrado para decidir. Le reservo la visita, 60,50 € que se descuentan si reparamos. ¿Te viene mejor mañana por la mañana o por la tarde?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar, rugido que sube con las vueltas\",\"codigo\":\"\",\"diagnostico\":\"Rodamientos desgastados (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>precios</mostrar>",
   "original": "Con catorce años, si son los rodamientos casi nunca compensa, así que te conviene que el técnico lo mire y te dé un presupuesto cerrado para decidir. Le reservo la visita, 60,50 € que se descuentan si reparamos. ¿Te viene mejor mañana por la mañana o por la tarde?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar, rugido que sube con las vueltas\",\"codigo\":\"\",\"diagnostico\":\"Rodamientos desgastados (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>precios</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, entonces mejor que lo mire alguien. Por la tarde mejor."
  }
 ]

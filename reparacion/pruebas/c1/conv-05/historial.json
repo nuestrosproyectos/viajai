@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Gracias, Rosa. Dame un teléfono por si se corta la llamada, que es solo para avisarte de la hora y organizar la visita.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo de la lavadora, suelo encharcado\",\"codigo\":\"\",\"diagnostico\":\"Fuga de agua (urgente)\",\"nombre\":\"Rosa\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Rosa. Dame un teléfono por si se corta la llamada, que es solo para avisarte de la hora y organizar la visita.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo de la lavadora, suelo encharcado\",\"codigo\":\"\",\"diagnostico\":\"Fuga de agua (urgente)\",\"nombre\":\"Rosa\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "699 222 111"
  }
 ]

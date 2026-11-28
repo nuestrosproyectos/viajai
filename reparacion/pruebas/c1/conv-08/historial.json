@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Con diez años, si solo falla un fuego, suele compensar, porque esa pieza es barata y el técnico te da presupuesto cerrado para decidir. Le reservo la visita, 60,50 €, que se descuentan si reparamos. ¿Te viene mejor mañana por la mañana o por la tarde?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"un fuego no se pone rojo, el resto sí funcionan\",\"codigo\":\"\",\"diagnostico\":\"Resistencia radiante o su limitador del fuego (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>precios</mostrar>",
   "original": "Con diez años, si solo falla un fuego, suele compensar, porque esa pieza es barata y el técnico te da presupuesto cerrado para decidir. Le reservo la visita, 60,50 €, que se descuentan si reparamos. ¿Te viene mejor mañana por la mañana o por la tarde?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"un fuego no se pone rojo, el resto sí funcionan\",\"codigo\":\"\",\"diagnostico\":\"Resistencia radiante o su limitador del fuego (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>precios</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Muy bien, hijo, pues por la mañana mejor, si es tan amable."
  }
 ]
