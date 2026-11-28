@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Por la mañana mejor"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, te lo dejo anotado para por la mañana. Solo necesito un nombre y un teléfono, para llamarte y organizar la visita. ¿Me los dices?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"E18\",\"diagnostico\":\"bomba de desagüe atascada o bloqueada (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, te lo dejo anotado para por la mañana. Solo necesito un nombre y un teléfono, para llamarte y organizar la visita. ¿Me los dices?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"E18\",\"diagnostico\":\"bomba de desagüe atascada o bloqueada (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
  }
 ]

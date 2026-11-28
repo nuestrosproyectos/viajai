@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Tiene unos 7 años. Bueno, si se descuenta de la reparación y el presupuesto me lo dan antes de tocar nada, vale. Mejor por la mañana"
+ },
+ {
+  "role": "assistant",
+  "content": "Vale, lo dejo anotado para por la mañana. Solo necesito un nombre y un teléfono, para llamarte y organizar la visita. ¿Me los dices?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca, la vajilla sale mojada\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
+  "original": "Vale, lo dejo anotado para por la mañana. Solo necesito un nombre y un teléfono, para llamarte y organizar la visita. ¿Me los dices?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca, la vajilla sale mojada\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
  }
 ]

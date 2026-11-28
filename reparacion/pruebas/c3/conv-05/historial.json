@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Ya no sale agua, he secado el suelo con fregona. Estoy más tranquila. ¿Pueden venir hoy por la tarde?"
+ },
+ {
+  "role": "assistant",
+  "content": "Me alegro de que ya esté seguro. Te reservo la visita por la tarde: si hay hueco en la ruta puede ser el mismo día, y el equipo te llama para confirmarlo. ¿Me dices un nombre y un teléfono?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo, suelo encharcado (ya no sale agua, suelo secado)\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>",
+  "original": "Me alegro de que ya esté seguro. Te reservo la visita por la tarde: si hay hueco en la ruta puede ser el mismo día, y el equipo te llama para confirmarlo. ¿Me dices un nombre y un teléfono?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo, suelo encharcado (ya no sale agua, suelo secado)\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>"
  }
 ]

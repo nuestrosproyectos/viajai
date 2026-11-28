@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, se agradece que seas claro. Por la tarde"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias a ti, lo dejo anotado para por la tarde. Solo necesito un nombre y un teléfono, para llamarte y organizar la visita. ¿Me los dices?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar\",\"codigo\":\"\",\"diagnostico\":\"rodamientos desgastados (a confirmar en la visita)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias a ti, lo dejo anotado para por la tarde. Solo necesito un nombre y un teléfono, para llamarte y organizar la visita. ¿Me los dices?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar\",\"codigo\":\"\",\"diagnostico\":\"rodamientos desgastados (a confirmar en la visita)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>"
  }
 ]

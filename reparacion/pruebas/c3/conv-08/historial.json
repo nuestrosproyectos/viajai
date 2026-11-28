@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Sí, hijo, tiene unos 10 años. Y perdone tanta pregunta, que no entiendo mucho de esto."
+ },
+ {
+  "role": "assistant",
+  "content": "No se preocupe, no hace falta saber de esto. Si es esa pieza, con diez años suele compensar, y el técnico viene preparado para ella. La visita son 60,50 €, que se descuentan si reparamos. ¿Le viene mejor por la mañana o por la tarde?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"un fuego no calienta, los demás sí\",\"codigo\":\"\",\"diagnostico\":\"resistencia del fuego o su limitador (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "No se preocupe, no hace falta saber de esto. Si es esa pieza, con diez años suele compensar, y el técnico viene preparado para ella. La visita son 60,50 €, que se descuentan si reparamos. ¿Le viene mejor por la mañana o por la tarde?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"un fuego no calienta, los demás sí\",\"codigo\":\"\",\"diagnostico\":\"resistencia del fuego o su limitador (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]
