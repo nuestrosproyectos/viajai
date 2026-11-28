@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Calle Ancha 3, Maracena"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Lucía. Te leo los datos: teléfono 644 555 666, calle Ancha 3, en Maracena. ¿Está todo bien?\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz sí se enciende\",\"codigo\":\"\",\"diagnostico\":\"Termostato de seguridad o fusible térmico (lo más probable)\",\"nombre\":\"Lucía\",\"telefono\":\"644 555 666\",\"direccion\":\"Calle Ancha 3\",\"franja\":\"mañana\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Lucía. Te leo los datos: teléfono 644 555 666, calle Ancha 3, en Maracena. ¿Está todo bien?\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz sí se enciende\",\"codigo\":\"\",\"diagnostico\":\"Termostato de seguridad o fusible térmico (lo más probable)\",\"nombre\":\"Lucía\",\"telefono\":\"644 555 666\",\"direccion\":\"Calle Ancha 3\",\"franja\":\"mañana\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"nombre\":\"Lucía\",\"telefono\":\"644 555 666\",\"direccion\":\"Calle Ancha 3\",\"municipio\":\"Maracena\",\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"averia\":\"No calienta, la luz sí se enciende\",\"codigo\":\"\",\"franja\":\"mañana\",\"urgente\":false,\"notas\":\"Diagnóstico probable: termostato de seguridad o fusible térmico. Pieza a llevar: termostato de seguridad o fusible térmico. Horno de 8 años, fuera de garantía legal.\"}</aviso>"
  }
 ]

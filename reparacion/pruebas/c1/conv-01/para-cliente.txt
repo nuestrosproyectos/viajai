@@ -1,0 +1,31 @@
+=== QUIÉN ERES (solo lo sabes tú) ===
+Eres Carmen, de Granada capital (Zaidín). Lavadora Balay de 6 años. Si te explican qué puede ser y lo que cuesta la visita, aceptas. Datos: Carmen, 655 123 456, calle Primavera 12, 3º A, Granada, por la mañana.
+
+=== LA CONVERSACIÓN HASTA AHORA (en la web de Reparo) ===
+TÚ (cliente): Hola, mi lavadora Balay me marca E18 y no desagua. ¿Qué le pasa?
+
+Andrés (asistente de la web): Con el código E18 en una Balay, lo más probable es que el filtro o la bomba de desagüe estén atascados; el técnico va directo a por esa pieza. ¿Tu lavadora tiene ya más de tres años, o la compraste hace menos?
+
+TÚ (cliente): Tiene 6 años
+
+Andrés (asistente de la web): Con seis años, la bomba de desagüe es una pieza barata y normalmente compensa repararla. Le reservo al técnico una visita de 60,50 €, que se descuentan si reparamos, y va directo con la bomba. ¿Te viene mejor mañana por la mañana o por la tarde?
+
+TÚ (cliente): Vale, por la mañana mejor
+
+Andrés (asistente de la web): Perfecto, por la mañana le reservo el hueco al técnico. Dime tu nombre, que es solo para llamarte y organizar la visita.
+
+TÚ (cliente): Carmen
+
+Andrés (asistente de la web): Gracias, Carmen. Dame un teléfono por si se corta y te reservo el hueco de la mañana.
+
+TÚ (cliente): 655 123 456
+
+Andrés (asistente de la web): Perfecto, Carmen, apunto el teléfono: 655 123 456. ¿Cuál es la dirección y el municipio donde está la lavadora?
+
+TÚ (cliente): Calle Primavera 12, 3º A, Granada (en el Zaidín)
+
+Andrés (asistente de la web): Perfecto, Carmen. Te leo los datos: teléfono 655 123 456, calle Primavera 12, 3º A, en el Zaidín, Granada. ¿Está todo bien?
+
+[En la pantalla aparece ahora: «¡Listo! Solicitud enviada. Te llamamos para confirmar».]
+
+=== TU SIGUIENTE MENSAJE ===

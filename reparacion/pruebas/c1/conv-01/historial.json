@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Calle Primavera 12, 3º A, Granada (en el Zaidín)"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Carmen. Te leo los datos: teléfono 655 123 456, calle Primavera 12, 3º A, en el Zaidín, Granada. ¿Está todo bien?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"E18\",\"diagnostico\":\"Bomba o filtro de desagüe obstruidos (lo más probable)\",\"nombre\":\"Carmen\",\"telefono\":\"655 123 456\",\"direccion\":\"Calle Primavera 12, 3º A\",\"franja\":\"mañana\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Carmen. Te leo los datos: teléfono 655 123 456, calle Primavera 12, 3º A, en el Zaidín, Granada. ¿Está todo bien?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"E18\",\"diagnostico\":\"Bomba o filtro de desagüe obstruidos (lo más probable)\",\"nombre\":\"Carmen\",\"telefono\":\"655 123 456\",\"direccion\":\"Calle Primavera 12, 3º A\",\"franja\":\"mañana\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"nombre\":\"Carmen\",\"telefono\":\"655 123 456\",\"direccion\":\"Calle Primavera 12, 3º A\",\"municipio\":\"Granada (Zaidín)\",\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"averia\":\"No desagua, código E18\",\"codigo\":\"E18\",\"franja\":\"mañana\",\"urgente\":false,\"notas\":\"Diagnóstico probable: filtro o bomba de desagüe obstruidos; pieza a llevar: bomba de desagüe. Lavadora de 6 años, fuera de garantía legal.\"}</aviso>"
  }
 ]

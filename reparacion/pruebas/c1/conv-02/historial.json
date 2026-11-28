@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Calle Real 7, Armilla"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Javier. Te leo los datos: teléfono 622 333 444, calle Real 7, en Armilla. ¿Está todo bien?\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"\",\"sintoma\":\"enfría arriba pero el congelador no congela bien; escarcha detrás del congelador\",\"codigo\":\"\",\"diagnostico\":\"Fallo del desescarche, hielo tapando el paso de aire (lo más probable)\",\"nombre\":\"Javier\",\"telefono\":\"622 333 444\",\"direccion\":\"Calle Real 7\",\"franja\":\"tarde\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Javier. Te leo los datos: teléfono 622 333 444, calle Real 7, en Armilla. ¿Está todo bien?\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"\",\"sintoma\":\"enfría arriba pero el congelador no congela bien; escarcha detrás del congelador\",\"codigo\":\"\",\"diagnostico\":\"Fallo del desescarche, hielo tapando el paso de aire (lo más probable)\",\"nombre\":\"Javier\",\"telefono\":\"622 333 444\",\"direccion\":\"Calle Real 7\",\"franja\":\"tarde\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"nombre\":\"Javier\",\"telefono\":\"622 333 444\",\"direccion\":\"Calle Real 7\",\"municipio\":\"Armilla\",\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"\",\"averia\":\"Congelador no congela bien, escarcha detrás del congelador\",\"codigo\":\"\",\"franja\":\"tarde\",\"urgente\":true,\"notas\":\"Diagnóstico probable: fallo del desescarche (resistencia, sonda o bimetal). Hay comida dentro. Frigorífico de 5 años, fuera de garantía legal.\"}</aviso>"
  }
 ]
