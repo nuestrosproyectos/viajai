@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Anotado para por la mañana, y el día te lo confirma el equipo por teléfono. Solo necesito un nombre y un teléfono, para llamarte y organizar la visita. ¿Me los dices?\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz sí se enciende\",\"codigo\":\"\",\"diagnostico\":\"termostato de seguridad o resistencia (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
   "original": "Anotado para por la mañana, y el día te lo confirma el equipo por teléfono. Solo necesito un nombre y un teléfono, para llamarte y organizar la visita. ¿Me los dices?\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz sí se enciende\",\"codigo\":\"\",\"diagnostico\":\"termostato de seguridad o resistencia (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Lucía, 644 555 666"
  }
 ]

@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Vale, lo dejo anotado para por la mañana. Solo necesito un nombre y un teléfono, para llamarte y organizar la visita. ¿Me los dices?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca, la vajilla sale mojada\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
   "original": "Vale, lo dejo anotado para por la mañana. Solo necesito un nombre y un teléfono, para llamarte y organizar la visita. ¿Me los dices?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca, la vajilla sale mojada\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Manolo, 611 999 000"
  }
 ]

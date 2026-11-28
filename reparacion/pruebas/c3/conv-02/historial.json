@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Entiendo el agobio, lo dejo anotado como urgente para por la tarde. Solo necesito un nombre y un teléfono, para llamarte y organizar la visita cuanto antes. ¿Me los dices?\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"\",\"sintoma\":\"enfría arriba pero el congelador no congela bien, escarcha en el fondo\",\"codigo\":\"\",\"diagnostico\":\"fallo de desescarche o del ventilador (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>",
   "original": "Entiendo el agobio, lo dejo anotado como urgente para por la tarde. Solo necesito un nombre y un teléfono, para llamarte y organizar la visita cuanto antes. ¿Me los dices?\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"\",\"sintoma\":\"enfría arriba pero el congelador no congela bien, escarcha en el fondo\",\"codigo\":\"\",\"diagnostico\":\"fallo de desescarche o del ventilador (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Javier, 622 333 444"
  }
 ]

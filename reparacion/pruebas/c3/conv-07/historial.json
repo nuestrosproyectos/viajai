@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "El filtro está en el fondo de la máquina, y el manual del fabricante explica paso a paso cómo sacarlo y limpiarlo. Si tras hacerlo sigue sin desaguar, dímelo y te reservo la visita. ¿Te viene mejor por la mañana o por la tarde?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"\",\"diagnostico\":\"filtro del fondo obstruido (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "El filtro está en el fondo de la máquina, y el manual del fabricante explica paso a paso cómo sacarlo y limpiarlo. Si tras hacerlo sigue sin desaguar, dímelo y te reservo la visita. ¿Te viene mejor por la mañana o por la tarde?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"\",\"diagnostico\":\"filtro del fondo obstruido (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Ya lo he mirado y limpiado el filtro y sigue sin desaguar. Vale, resérvame la visita. Por la tarde"
  }
 ]
