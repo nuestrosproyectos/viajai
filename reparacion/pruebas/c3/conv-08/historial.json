@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Pues por la mañana mejor, hijo, si no es molestia. Gracias por tener paciencia conmigo."
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias a usted por su paciencia, no es ninguna molestia. Lo dejo anotado para por la mañana. Solo necesito su nombre y un teléfono, para llamarle y organizar la visita. ¿Me los dice?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"un fuego no calienta, los demás sí\",\"codigo\":\"\",\"diagnostico\":\"resistencia del fuego o su limitador (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias a usted por su paciencia, no es ninguna molestia. Lo dejo anotado para por la mañana. Solo necesito su nombre y un teléfono, para llamarle y organizar la visita. ¿Me los dice?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"un fuego no calienta, los demás sí\",\"codigo\":\"\",\"diagnostico\":\"resistencia del fuego o su limitador (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
  }
 ]

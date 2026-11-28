@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Carmen, 655 123 456"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Carmen, apunto tu teléfono 655 123 456. Ahora dime la calle y el número, y el municipio, para que el técnico llegue por la mañana a tu casa.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"E18\",\"diagnostico\":\"bomba de desagüe atascada o bloqueada (lo más probable)\",\"nombre\":\"Carmen\",\"telefono\":\"655 123 456\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Carmen, apunto tu teléfono 655 123 456. Ahora dime la calle y el número, y el municipio, para que el técnico llegue por la mañana a tu casa.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"E18\",\"diagnostico\":\"bomba de desagüe atascada o bloqueada (lo más probable)\",\"nombre\":\"Carmen\",\"telefono\":\"655 123 456\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
  }
 ]
