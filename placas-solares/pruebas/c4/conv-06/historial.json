@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Pues bastante, por el aire acondicionado sobre todo. Lo que me preocupa es si una batería sería compatible con mi inversor, que lo instaló otra empresa."
+ },
+ {
+  "role": "assistant",
+  "content": "Eso depende del modelo del inversor que puso la otra empresa, y lo comprueba el técnico en el estudio gratuito. Además, la factura nunca baja a cero: quedan la potencia, el contador y lo de la noche. ¿Te reservo el estudio?\n<ficha>{\"que\":\"Añadir batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"de noche, sobre todo aire acondicionado\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con placas ya instaladas, la batería compensa si gastas mucho de noche; el técnico comprueba el inversor y lo mira con tus facturas.\",\"porDecir\":\"la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal\",\"fase\":\"orientando\"}</ficha>",
+  "original": "Eso depende del modelo del inversor que puso la otra empresa, y lo comprueba el técnico en el estudio gratuito. Además, la factura nunca baja a cero: quedan la potencia, el contador y lo de la noche. ¿Te reservo el estudio?\n<ficha>{\"que\":\"Añadir batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"de noche, sobre todo aire acondicionado\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con placas ya instaladas, la batería compensa si gastas mucho de noche; el técnico comprueba el inversor y lo mira con tus facturas.\",\"porDecir\":\"la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal\",\"fase\":\"orientando\"}</ficha>"
  }
 ]

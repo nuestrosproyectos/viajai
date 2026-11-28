@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Manoli, 655 222 333. Ya he cortado la luz. ¿Pueden venir cuanto antes? Estoy muy asustada"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Manoli, has hecho bien en cortarla. Aunque la luz esté cortada, los paneles con sol siguen dando tensión, así que no toques nada. Lo dejo marcado como urgente. ¿En qué calle y municipio está la casa?\n<ficha>{\"que\":\"Revisar mi instalación\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"Manoli\",\"telefono\":\"655 222 333\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Que no toque nada ni suba al tejado; aunque la luz esté cortada, los paneles con sol siguen dando tensión. Aviso urgente a la instaladora.\",\"porDecir\":\"pregunta qué marca el inversor y si firmó el contrato de compensación\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Manoli, has hecho bien en cortarla. Aunque la luz esté cortada, los paneles con sol siguen dando tensión, así que no toques nada. Lo dejo marcado como urgente. ¿En qué calle y municipio está la casa?\n<ficha>{\"que\":\"Revisar mi instalación\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"Manoli\",\"telefono\":\"655 222 333\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Que no toque nada ni suba al tejado; aunque la luz esté cortada, los paneles con sol siguen dando tensión. Aviso urgente a la instaladora.\",\"porDecir\":\"pregunta qué marca el inversor y si firmó el contrato de compensación\",\"fase\":\"datos\"}</ficha>"
  }
 ]
