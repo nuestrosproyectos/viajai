@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Con catorce años, si son los rodamientos normalmente no compensa; el técnico lo confirma y te da un presupuesto cerrado para decidir con el precio delante. La visita son 60,50 €, y se descuentan si reparamos. ¿Te viene mejor mañana por la mañana o por la tarde?\n<mostrar>precios</mostrar>\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar, suena a rodamientos\",\"codigo\":\"\",\"diagnostico\":\"rodamientos desgastados\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Con catorce años, si son los rodamientos normalmente no compensa; el técnico lo confirma y te da un presupuesto cerrado para decidir con el precio delante. La visita son 60,50 €, y se descuentan si reparamos. ¿Te viene mejor mañana por la mañana o por la tarde?\n<mostrar>precios</mostrar>\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar, suena a rodamientos\",\"codigo\":\"\",\"diagnostico\":\"rodamientos desgastados\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, me gusta que me lo digas claro. Pues reservo la visita, mejor por la tarde. Soy Paco, de La Chana."
  }
 ]

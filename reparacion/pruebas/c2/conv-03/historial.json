@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Lo más probable es una resistencia o el termostato de seguridad. Una resistencia suele quedar entre 80 y 140 €, orientativo; el precio exacto lo da el técnico antes de tocar nada. La visita son 60,50 € y se descuentan si reparamos. ¿Mañana por la mañana o por la tarde?\n<mostrar>precios</mostrar>\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz y el ventilador sí funcionan\",\"codigo\":\"\",\"diagnostico\":\"resistencia o termostato de seguridad\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Lo más probable es una resistencia o el termostato de seguridad. Una resistencia suele quedar entre 80 y 140 €, orientativo; el precio exacto lo da el técnico antes de tocar nada. La visita son 60,50 € y se descuentan si reparamos. ¿Mañana por la mañana o por la tarde?\n<mostrar>precios</mostrar>\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz y el ventilador sí funcionan\",\"codigo\":\"\",\"diagnostico\":\"resistencia o termostato de seguridad\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, me hago una idea. Mañana por la mañana me va bien. Soy Lucía, de Maracena."
  }
 ]

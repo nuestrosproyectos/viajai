@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Sí, seguro: los 60,50 € incluyen el desplazamiento, el diagnóstico del técnico y el presupuesto cerrado, y si reparamos con nosotros se descuentan de la factura. Si no aceptas el presupuesto, solo pagas la visita. ¿Te viene mejor mañana por la mañana o por la tarde?\n<mostrar>precios</mostrar>\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca los platos, la vajilla sale mojada\",\"codigo\":\"\",\"diagnostico\":\"dosificador de abrillantador o resistencia/ventilador de secado\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Sí, seguro: los 60,50 € incluyen el desplazamiento, el diagnóstico del técnico y el presupuesto cerrado, y si reparamos con nosotros se descuentan de la factura. Si no aceptas el presupuesto, solo pagas la visita. ¿Te viene mejor mañana por la mañana o por la tarde?\n<mostrar>precios</mostrar>\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca los platos, la vajilla sale mojada\",\"codigo\":\"\",\"diagnostico\":\"dosificador de abrillantador o resistencia/ventilador de secado\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Bueno, vale, si se descuenta... Mañana por la mañana. Manolo, del Realejo."
  }
 ]

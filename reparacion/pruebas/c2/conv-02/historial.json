@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "No te preocupes, tiene arreglo. Mientras, abre la puerta lo menos posible. Lo más probable es el ventilador o el desescarche, y el técnico va con esa pieza. La visita son 60,50 €, y si reparamos se descuentan. ¿Te viene mejor mañana por la mañana o por la tarde?\n<mostrar>precios</mostrar>\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"combi\",\"sintoma\":\"enfría bien la parte de arriba pero el congelador no congela bien; escarcha detrás del congelador\",\"codigo\":\"\",\"diagnostico\":\"ventilador del congelador o desescarche\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "No te preocupes, tiene arreglo. Mientras, abre la puerta lo menos posible. Lo más probable es el ventilador o el desescarche, y el técnico va con esa pieza. La visita son 60,50 €, y si reparamos se descuentan. ¿Te viene mejor mañana por la mañana o por la tarde?\n<mostrar>precios</mostrar>\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"combi\",\"sintoma\":\"enfría bien la parte de arriba pero el congelador no congela bien; escarcha detrás del congelador\",\"codigo\":\"\",\"diagnostico\":\"ventilador del congelador o desescarche\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, por la tarde mejor. ¿Y la comida del congelador se puede estropear hasta que vengan?"
  }
 ]

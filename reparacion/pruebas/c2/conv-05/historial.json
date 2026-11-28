@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Tranquila, lo resolvemos. Intentamos ir hoy mismo si hay hueco en la ruta, y el equipo te confirma la hora por teléfono. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la visita.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo de la lavadora y el suelo está encharcado\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Tranquila, lo resolvemos. Intentamos ir hoy mismo si hay hueco en la ruta, y el equipo te confirma la hora por teléfono. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la visita.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo de la lavadora y el suelo está encharcado\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Rosa, 699 222 111."
  }
 ]
