@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "Calle Real 7, Armilla"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Javier. Te llamamos al 622, 333, 444 y el técnico irá a Calle Real 7, en Armilla, por la tarde. ¿Está todo bien?\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"\",\"sintoma\":\"enfría arriba pero el congelador no congela bien, escarcha en el fondo\",\"codigo\":\"\",\"diagnostico\":\"fallo de desescarche o del ventilador (lo más probable)\",\"nombre\":\"Javier\",\"telefono\":\"622 333 444\",\"direccion\":\"Calle Real 7, Armilla\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Javier. Te llamamos al 622, 333, 444 y el técnico irá a Calle Real 7, en Armilla, por la tarde. ¿Está todo bien?\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"\",\"sintoma\":\"enfría arriba pero el congelador no congela bien, escarcha en el fondo\",\"codigo\":\"\",\"diagnostico\":\"fallo de desescarche o del ventilador (lo más probable)\",\"nombre\":\"Javier\",\"telefono\":\"622 333 444\",\"direccion\":\"Calle Real 7, Armilla\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>"
  }
 ]

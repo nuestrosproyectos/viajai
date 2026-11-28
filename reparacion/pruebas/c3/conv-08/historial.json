@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "Encarnación, hijo. Mi teléfono es un fijo, el 958 590 123. No tengo móvil, ¿le sirve?"
+ },
+ {
+  "role": "assistant",
+  "content": "Sí, le sirve, Encarnación. Apunto el 958, 590, 123. ¿Me dice la calle y el número de su casa, en La Zubia?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"un fuego no calienta, los demás sí\",\"codigo\":\"\",\"diagnostico\":\"resistencia del fuego o su limitador (lo más probable)\",\"nombre\":\"Encarnación\",\"telefono\":\"958 590 123 (fijo)\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
+  "original": "Sí, le sirve, Encarnación. Apunto el 958, 590, 123. ¿Me dice la calle y el número de su casa, en La Zubia?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"un fuego no calienta, los demás sí\",\"codigo\":\"\",\"diagnostico\":\"resistencia del fuego o su limitador (lo más probable)\",\"nombre\":\"Encarnación\",\"telefono\":\"958 590 123 (fijo)\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
  }
 ]

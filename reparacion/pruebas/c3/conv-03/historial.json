@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "Calle Ancha 3, Maracena"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Lucía. Te llamamos al 644, 555, 666 y el técnico irá a Calle Ancha 3, en Maracena, por la mañana. ¿Está todo bien?\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz sí se enciende\",\"codigo\":\"\",\"diagnostico\":\"termostato de seguridad o resistencia (lo más probable)\",\"nombre\":\"Lucía\",\"telefono\":\"644 555 666\",\"direccion\":\"Calle Ancha 3, Maracena\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Lucía. Te llamamos al 644, 555, 666 y el técnico irá a Calle Ancha 3, en Maracena, por la mañana. ¿Está todo bien?\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz sí se enciende\",\"codigo\":\"\",\"diagnostico\":\"termostato de seguridad o resistencia (lo más probable)\",\"nombre\":\"Lucía\",\"telefono\":\"644 555 666\",\"direccion\":\"Calle Ancha 3, Maracena\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
  }
 ]

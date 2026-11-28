@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "Elena, 688 444 222"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Elena, apunto el 688, 444, 222. Dime la calle con el número y el municipio, para que el técnico vaya por la tarde a tu casa.\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua, filtro limpiado sin resultado\",\"codigo\":\"\",\"diagnostico\":\"bomba de desagüe bloqueada o averiada (lo más probable)\",\"nombre\":\"Elena\",\"telefono\":\"688 444 222\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Elena, apunto el 688, 444, 222. Dime la calle con el número y el municipio, para que el técnico vaya por la tarde a tu casa.\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua, filtro limpiado sin resultado\",\"codigo\":\"\",\"diagnostico\":\"bomba de desagüe bloqueada o averiada (lo más probable)\",\"nombre\":\"Elena\",\"telefono\":\"688 444 222\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>"
  }
 ]

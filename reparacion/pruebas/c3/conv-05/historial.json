@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "Calle Granada 15, Albolote"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Rosa. Te llamamos al 699, 222, 111 y el técnico irá a Calle Granada 15, en Albolote, por la tarde, lo antes posible. ¿Está todo bien?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo, suelo encharcado (ya no sale agua, suelo secado)\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"Rosa\",\"telefono\":\"699 222 111\",\"direccion\":\"Calle Granada 15, Albolote\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Rosa. Te llamamos al 699, 222, 111 y el técnico irá a Calle Granada 15, en Albolote, por la tarde, lo antes posible. ¿Está todo bien?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo, suelo encharcado (ya no sale agua, suelo secado)\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"Rosa\",\"telefono\":\"699 222 111\",\"direccion\":\"Calle Granada 15, Albolote\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>"
  }
 ]
