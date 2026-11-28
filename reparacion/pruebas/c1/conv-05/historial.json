@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "699 222 111"
+ },
+ {
+  "role": "assistant",
+  "content": "Apunto el 699 222 111, Rosa. ¿En qué calle y número estás?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo de la lavadora, suelo encharcado\",\"codigo\":\"\",\"diagnostico\":\"Fuga de agua (urgente)\",\"nombre\":\"Rosa\",\"telefono\":\"699 222 111\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Apunto el 699 222 111, Rosa. ¿En qué calle y número estás?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo de la lavadora, suelo encharcado\",\"codigo\":\"\",\"diagnostico\":\"Fuga de agua (urgente)\",\"nombre\":\"Rosa\",\"telefono\":\"699 222 111\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Muy bien, hijo, pues por la mañana mejor, si es tan amable."
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, lo dejo reservado para la mañana. Dime tu nombre, que es solo para llamarte y organizar la visita.\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"un fuego no se pone rojo, el resto sí funcionan\",\"codigo\":\"\",\"diagnostico\":\"Resistencia radiante o su limitador del fuego (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, lo dejo reservado para la mañana. Dime tu nombre, que es solo para llamarte y organizar la visita.\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"un fuego no se pone rojo, el resto sí funcionan\",\"codigo\":\"\",\"diagnostico\":\"Resistencia radiante o su limitador del fuego (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
  }
 ]

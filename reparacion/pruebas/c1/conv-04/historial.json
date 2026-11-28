@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Vale, entonces mejor que lo mire alguien. Por la tarde mejor."
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, le reservo la visita para la tarde. Dime tu nombre, que es solo para llamarte y organizarla.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar, rugido que sube con las vueltas\",\"codigo\":\"\",\"diagnostico\":\"Rodamientos desgastados (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, le reservo la visita para la tarde. Dime tu nombre, que es solo para llamarte y organizarla.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar, rugido que sube con las vueltas\",\"codigo\":\"\",\"diagnostico\":\"Rodamientos desgastados (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>"
  }
 ]
