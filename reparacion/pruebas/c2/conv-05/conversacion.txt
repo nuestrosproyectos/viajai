@@ -1,0 +1,27 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Reparo. ¿Qué aparato se te ha averiado?
+
+CLIENTE: ¡Me sale agua por debajo de la lavadora y está el suelo encharcado!
+
+ANDRÉS: Respira, tiene arreglo. Primero corta la luz desde el diferencial del cuadro y cierra el grifo de la lavadora, sin tocar nada mojado. ¿Ya estás a salvo, con el agua lejos de cualquier enchufe?
+<ficha>{"aparato":"lavadora","marca":"","modelo":"","sintoma":"sale agua por debajo de la lavadora y el suelo está encharcado","codigo":"","diagnostico":"","nombre":"","telefono":"","direccion":"","franja":"","fase":"entendiendo"}</ficha>
+
+CLIENTE: Sí, ya corté la luz y cerré el grifo. Estoy más tranquila. ¿Pueden venir hoy?
+
+ANDRÉS: Tranquila, lo resolvemos. Intentamos ir hoy mismo si hay hueco en la ruta, y el equipo te confirma la hora por teléfono. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la visita.
+<ficha>{"aparato":"lavadora","marca":"","modelo":"","sintoma":"sale agua por debajo de la lavadora y el suelo está encharcado","codigo":"","diagnostico":"","nombre":"","telefono":"","direccion":"","franja":"","fase":"datos"}</ficha>
+
+CLIENTE: Rosa, 699 222 111.
+
+ANDRÉS: Gracias, Rosa. Anoto el 699 222 111. Para organizar la visita, dime la calle y el número, el municipio y si te viene mejor por la mañana o por la tarde.
+<ficha>{"aparato":"lavadora","marca":"","modelo":"","sintoma":"sale agua por debajo de la lavadora y el suelo está encharcado","codigo":"","diagnostico":"fuga por junta de la puerta, manguera de desagüe o bomba","nombre":"Rosa","telefono":"699 222 111","direccion":"","franja":"","fase":"datos"}</ficha>
+
+CLIENTE: calle Granada 15, Albolote. Hoy por la tarde
+
+ANDRÉS: Rosa, anoto el 699 222 111, calle Granada 15, Albolote, por la tarde. Hoy es sábado y por la tarde el equipo ya no atiende, así que te llamaremos el lunes. Mientras, no uses la lavadora. ¿Está todo bien?
+<ficha>{"aparato":"lavadora","marca":"","modelo":"","sintoma":"sale agua por debajo de la lavadora y el suelo está encharcado","codigo":"","diagnostico":"fuga por junta de la puerta, manguera de desagüe o bomba","nombre":"Rosa","telefono":"699 222 111","direccion":"calle Granada 15, Albolote","franja":"tarde","fase":"datos"}</ficha>
+
+CLIENTE: Los datos están bien, pero ¿hasta el lunes? ¿No puede venir nadie hoy aunque sea tarde? Es que me da miedo dejarlo así
+
+ANDRÉS: Entiendo el agobio, Rosa. Tu solicitud queda enviada como urgente. El equipo no sale los sábados por la tarde, así que te llamamos el lunes. Mientras, mantén la luz cortada, la lavadora sin usar y el agua lejos de los enchufes. ¿Necesitas algo más?
+<ficha>{"aparato":"lavadora","marca":"","modelo":"","sintoma":"sale agua por debajo de la lavadora y el suelo está encharcado","codigo":"","diagnostico":"fuga por junta de la puerta, manguera de desagüe o bomba","nombre":"Rosa","telefono":"699 222 111","direccion":"calle Granada 15, Albolote","franja":"tarde","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","nombre":"Rosa","telefono":"699 222 111","direccion":"calle Granada 15","municipio":"Albolote","aparato":"lavadora","marca":"","modelo":"","averia":"sale agua por debajo de la lavadora, suelo encharcado","codigo":"","franja":"tarde","urgente":true,"notas":"Pide visita hoy por la tarde, sábado, fuera de horario; se le dijo que le llamamos el lunes. Corriente cortada en el diferencial y grifo cerrado. Diagnóstico probable: junta de la puerta, manguera de desagüe o bomba. Llevar esas piezas."}</aviso>

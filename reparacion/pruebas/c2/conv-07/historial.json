@@ -56,5 +56,10 @@
  {
   "role": "user",
   "content": "Sí, todo bien, gracias."
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Elena. Tu solicitud queda enviada para la tarde, y el equipo te llamará al 688 444 222 para confirmar la hora exacta. ¿Necesitas algo más?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua; el filtro del fondo ya está limpio y sigue sin desaguar\",\"codigo\":\"\",\"diagnostico\":\"filtro del fondo obstruido o bomba de desagüe\",\"nombre\":\"Elena\",\"telefono\":\"688 444 222\",\"direccion\":\"calle Sol 9, Huétor Vega\",\"franja\":\"tarde\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Elena. Tu solicitud queda enviada para la tarde, y el equipo te llamará al 688 444 222 para confirmar la hora exacta. ¿Necesitas algo más?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua; el filtro del fondo ya está limpio y sigue sin desaguar\",\"codigo\":\"\",\"diagnostico\":\"filtro del fondo obstruido o bomba de desagüe\",\"nombre\":\"Elena\",\"telefono\":\"688 444 222\",\"direccion\":\"calle Sol 9, Huétor Vega\",\"franja\":\"tarde\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"nombre\":\"Elena\",\"telefono\":\"688 444 222\",\"direccion\":\"calle Sol 9, Huétor Vega\",\"municipio\":\"Huétor Vega\",\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"averia\":\"no desagua; el filtro del fondo ya está limpio y sigue sin desaguar\",\"codigo\":\"\",\"franja\":\"tarde\",\"urgente\":false,\"notas\":\"Diagnostico probable: bomba de desagüe o tramo de desagüe obstruido (filtro del fondo ya limpiado por el cliente). Llevar bomba de desagüe. Aparato con mas de tres anos, fuera de garantia legal. Municipio dentro de zona.\"}"
  }
 ]

@@ -1,0 +1,33 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Reparo. ¿Qué aparato se te ha averiado?
+
+CLIENTE: Mi lavadora tiene 14 años y hace un ruido fuerte al centrifugar. ¿Compensa arreglarla?
+
+ANDRÉS: Con catorce años, depende de la pieza: las averías caras normalmente no compensan en un aparato así, y el técnico te da un presupuesto cerrado antes de tocar nada. Para decirte qué le pasa, ¿de qué marca es la lavadora? Cada marca tiene sus propios fallos.
+<ficha>{"aparato":"lavadora","marca":"","modelo":"","sintoma":"ruido fuerte al centrifugar","codigo":"","diagnostico":"","nombre":"","telefono":"","direccion":"","franja":"","fase":"entendiendo"}</ficha>
+
+CLIENTE: Es una Fagor. Suena como a rodamientos. ¿Tú qué harías, arreglarla o comprar otra?
+
+ANDRÉS: Con catorce años, si son los rodamientos normalmente no compensa; el técnico lo confirma y te da un presupuesto cerrado para decidir con el precio delante. La visita son 60,50 €, y se descuentan si reparamos. ¿Te viene mejor mañana por la mañana o por la tarde?
+<mostrar>precios</mostrar>
+<ficha>{"aparato":"lavadora","marca":"Fagor","modelo":"","sintoma":"ruido fuerte al centrifugar, suena a rodamientos","codigo":"","diagnostico":"rodamientos desgastados","nombre":"","telefono":"","direccion":"","franja":"","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, me gusta que me lo digas claro. Pues reservo la visita, mejor por la tarde. Soy Paco, de La Chana.
+
+ANDRÉS: Perfecto, Paco. Te reservo el hueco de esta tarde. Dame un teléfono por si se corta; es solo para llamarte y organizar la visita.
+<ficha>{"aparato":"lavadora","marca":"Fagor","modelo":"","sintoma":"ruido fuerte al centrifugar, suena a rodamientos","codigo":"","diagnostico":"rodamientos desgastados","nombre":"Paco","telefono":"","direccion":"","franja":"tarde","fase":"datos"}</ficha>
+
+CLIENTE: 633 777 888
+
+ANDRÉS: Perfecto, Paco. Anoto el 633 777 888, solo para llamarte y organizar la visita de esta tarde. ¿Me dices la calle y el número en La Chana?
+<ficha>{"aparato":"lavadora","marca":"Fagor","modelo":"","sintoma":"ruido fuerte al centrifugar, suena a rodamientos","codigo":"","diagnostico":"rodamientos desgastados","nombre":"Paco","telefono":"633 777 888","direccion":"","franja":"tarde","fase":"datos"}</ficha>
+
+CLIENTE: calle Arabial 40
+
+ANDRÉS: Perfecto, Paco. Te anoto calle Arabial 40, en La Chana, Granada, para la tarde, y tu teléfono, 633 777 888. ¿Está todo bien?
+<ficha>{"aparato":"lavadora","marca":"Fagor","modelo":"","sintoma":"ruido fuerte al centrifugar, suena a rodamientos","codigo":"","diagnostico":"rodamientos desgastados","nombre":"Paco","telefono":"633 777 888","direccion":"calle Arabial 40, La Chana, Granada","franja":"tarde","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Perfecto, Paco. Queda enviada la solicitud de visita para esta tarde en calle Arabial 40, La Chana, y te llamaremos para confirmar la hora exacta. ¿Necesitas algo más?
+<ficha>{"aparato":"lavadora","marca":"Fagor","modelo":"","sintoma":"ruido fuerte al centrifugar, suena a rodamientos","codigo":"","diagnostico":"rodamientos desgastados","nombre":"Paco","telefono":"633 777 888","direccion":"calle Arabial 40, La Chana, Granada","franja":"tarde","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","nombre":"Paco","telefono":"633 777 888","direccion":"calle Arabial 40, La Chana, Granada","municipio":"Granada","aparato":"lavadora","marca":"Fagor","modelo":"","averia":"ruido fuerte al centrifugar, suena a rodamientos","codigo":"","franja":"tarde","urgente":false,"notas":"Lavadora de 14 años, fuera de garantía legal. Diagnóstico probable: rodamientos de cuba. Con más de diez años no suele compensar; el técnico da presupuesto cerrado antes de tocar nada. Llevar juego de rodamientos para valorar."}</aviso>

@@ -1,0 +1,39 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Reparo. ¿Qué aparato se te ha averiado?
+
+CLIENTE: ¿60 euros solo por venir a mirarla? Eso es un robo.
+
+ANDRÉS: Entiendo que suene caro. Esos 60,50 € cubren el desplazamiento y un presupuesto cerrado antes de tocar nada, y si reparamos, se descuentan de la factura. ¿Qué aparato es, y de qué marca?
+<mostrar>precios</mostrar>
+<ficha>{"aparato":"","marca":"","modelo":"","sintoma":"","codigo":"","diagnostico":"","nombre":"","telefono":"","direccion":"","franja":"","fase":"entendiendo"}</ficha>
+
+CLIENTE: Un lavavajillas Bosch, no seca los platos. Y eso de que se descuenta, ¿seguro? ¿Qué incluye exactamente?
+
+ANDRÉS: Sí, seguro: los 60,50 € incluyen el desplazamiento, el diagnóstico del técnico y el presupuesto cerrado, y si reparamos con nosotros se descuentan de la factura. Si no aceptas el presupuesto, solo pagas la visita. ¿Te viene mejor mañana por la mañana o por la tarde?
+<mostrar>precios</mostrar>
+<ficha>{"aparato":"lavavajillas","marca":"Bosch","modelo":"","sintoma":"no seca los platos, la vajilla sale mojada","codigo":"","diagnostico":"dosificador de abrillantador o resistencia/ventilador de secado","nombre":"","telefono":"","direccion":"","franja":"","fase":"proponiendo"}</ficha>
+
+CLIENTE: Bueno, vale, si se descuenta... Mañana por la mañana. Manolo, del Realejo.
+
+ANDRÉS: Perfecto, Manolo. Antes de reservarte el hueco de mañana por la mañana, dime: ¿el lavavajillas tiene ya más de tres años, o lo compraste hace menos?
+<ficha>{"aparato":"lavavajillas","marca":"Bosch","modelo":"","sintoma":"no seca los platos, la vajilla sale mojada","codigo":"","diagnostico":"dosificador de abrillantador o resistencia/ventilador de secado","nombre":"Manolo","telefono":"","direccion":"","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: Más de tres, sí. Ya tiene unos años
+
+ANDRÉS: Perfecto, Manolo. Te reservo el hueco de mañana por la mañana. Dame un teléfono; es solo para llamarte y organizar la visita.
+<ficha>{"aparato":"lavavajillas","marca":"Bosch","modelo":"","sintoma":"no seca los platos, la vajilla sale mojada","codigo":"","diagnostico":"dosificador de abrillantador o resistencia/ventilador de secado","nombre":"Manolo","telefono":"","direccion":"","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: 611 999 000
+
+ANDRÉS: Perfecto, Manolo, te reservo mañana por la mañana. El técnico comprobará también si tu modelo está afectado por un aviso del fabricante por un componente electrónico. ¿Me dices la calle y el número?
+<ficha>{"aparato":"lavavajillas","marca":"Bosch","modelo":"","sintoma":"no seca los platos, la vajilla sale mojada","codigo":"","diagnostico":"dosificador de abrillantador o resistencia/ventilador de secado","nombre":"Manolo","telefono":"611 999 000","direccion":"","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: calle Santa Escolástica 4
+
+ANDRÉS: Perfecto, Manolo. Repito: teléfono 611 999 000, calle Santa Escolástica 4 en el Realejo, Granada, y visita mañana por la mañana. Si notas calor raro o olor a quemado, no lo uses hasta que venga el técnico. ¿Está todo bien?
+<ficha>{"aparato":"lavavajillas","marca":"Bosch","modelo":"","sintoma":"no seca los platos, la vajilla sale mojada","codigo":"","diagnostico":"dosificador de abrillantador o resistencia/ventilador de secado","nombre":"Manolo","telefono":"611 999 000","direccion":"calle Santa Escolástica 4, Realejo, Granada","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien. A ver si viene y lo arregla, que 60 euros ya me parecen bastantes.
+
+ANDRÉS: Perfecto, Manolo. Tu solicitud queda enviada para mañana por la mañana, y el equipo te llamará al 611 999 000 para confirmar la hora exacta. ¿Necesitas algo más?
+<ficha>{"aparato":"lavavajillas","marca":"Bosch","modelo":"","sintoma":"no seca los platos, la vajilla sale mojada","codigo":"","diagnostico":"dosificador de abrillantador o resistencia/ventilador de secado","nombre":"Manolo","telefono":"611 999 000","direccion":"calle Santa Escolástica 4, Realejo, Granada","franja":"mañana","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","nombre":"Manolo","telefono":"611 999 000","direccion":"calle Santa Escolástica 4, Realejo, Granada","municipio":"Granada","aparato":"lavavajillas","marca":"Bosch","modelo":"","averia":"no seca los platos, la vajilla sale mojada","codigo":"","franja":"mañana","urgente":false,"notas":"Diagnostico probable: dosificador de abrillantador o resistencia/ventilador de secado. Llevar ambas piezas si es posible. Aparato con mas de tres anos, fuera de garantia legal. Cliente informado de visita de 60,50 EUR descontable y presupuesto cerrado antes de reparar."}</aviso>

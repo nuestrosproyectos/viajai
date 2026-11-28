@@ -1,0 +1,34 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Reparo. ¿Qué aparato se te ha averiado?
+
+CLIENTE: Hola, mi lavadora Balay me marca E18 y no desagua. ¿Qué le pasa?
+
+ANDRÉS: Con ese E18 y el agua que no sale, lo más probable es que el filtro de la bomba esté atascado o que la bomba de desagüe esté dañada. El técnico lo mide y va directo a esa pieza. Antes de reservarte la visita, ¿la lavadora tiene más de tres años, o la compraste hace menos?
+<mostrar>codigo:E18</mostrar>
+<ficha>{"aparato":"lavadora","marca":"Balay","modelo":"","sintoma":"no desagua, queda agua en el tambor","codigo":"E18","diagnostico":"filtro de la bomba atascado o bomba de desagüe dañada","nombre":"","telefono":"","direccion":"","franja":"","fase":"orientando"}</ficha>
+
+CLIENTE: Tiene 6 años. ¿Y cuánto me costaría la visita?
+
+ANDRÉS: La visita cuesta 60,50 €: cubre el desplazamiento del técnico y el presupuesto cerrado, y si reparamos con nosotros, esos 60,50 € se descuentan de la factura. ¿Te viene mejor mañana por la mañana o por la tarde?
+<mostrar>precios</mostrar>
+<ficha>{"aparato":"lavadora","marca":"Balay","modelo":"","sintoma":"no desagua, queda agua en el tambor","codigo":"E18","diagnostico":"filtro de la bomba atascado o bomba de desagüe dañada","nombre":"","telefono":"","direccion":"","franja":"","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, me parece bien. Por la mañana mejor. Soy Carmen, del Zaidín en Granada.
+
+ANDRÉS: Perfecto, Carmen. Te reservo el hueco de mañana por la mañana. Dame un teléfono por si se corta; es solo para llamarte y organizar la visita.
+<ficha>{"aparato":"lavadora","marca":"Balay","modelo":"","sintoma":"no desagua, queda agua en el tambor","codigo":"E18","diagnostico":"filtro de la bomba atascado o bomba de desagüe dañada","nombre":"Carmen","telefono":"","direccion":"","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: el 655 123 456
+
+ANDRÉS: Perfecto, Carmen. Anoto el teléfono 655 123 456 para llamarte y organizar la visita de mañana por la mañana. ¿Me dices la calle con el número?
+<ficha>{"aparato":"lavadora","marca":"Balay","modelo":"","sintoma":"no desagua, queda agua en el tambor","codigo":"E18","diagnostico":"filtro de la bomba atascado o bomba de desagüe dañada","nombre":"Carmen","telefono":"655 123 456","direccion":"","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: calle Primavera 12, 3º A
+
+ANDRÉS: Perfecto. Anoto calle Primavera 12, tercero A, en el Zaidín, Granada, para la mañana, y tu teléfono, 655 123 456. ¿Está todo bien?
+<ficha>{"aparato":"lavadora","marca":"Balay","modelo":"","sintoma":"no desagua, queda agua en el tambor","codigo":"E18","diagnostico":"filtro de la bomba atascado o bomba de desagüe dañada","nombre":"Carmen","telefono":"655 123 456","direccion":"calle Primavera 12, 3º A, Zaidín, Granada","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Perfecto, Carmen. Tu solicitud queda enviada para mañana por la mañana, en calle Primavera 12, tercero A, en el Zaidín, y te llamaremos para confirmar la hora exacta. ¿Necesitas algo más?
+<ficha>{"aparato":"lavadora","marca":"Balay","modelo":"","sintoma":"no desagua, queda agua en el tambor","codigo":"E18","diagnostico":"filtro de la bomba atascado o bomba de desagüe dañada","nombre":"Carmen","telefono":"655 123 456","direccion":"calle Primavera 12, 3º A, Zaidín, Granada","franja":"mañana","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","nombre":"Carmen","telefono":"655 123 456","direccion":"calle Primavera 12, 3º A","municipio":"Granada","aparato":"lavadora","marca":"Balay","modelo":"","averia":"no desagua, queda agua en el tambor","codigo":"E18","franja":"mañana","urgente":false,"notas":"Diagnóstico probable: filtro de la bomba atascado o bomba de desagüe dañada. Llevar bomba de desagüe y filtro. Aparato de 6 años, fuera de garantía legal. Cliente confirmó datos."}</aviso>

@@ -56,5 +56,10 @@
  {
   "role": "user",
   "content": "Sí, todo bien. A ver si viene y lo arregla, que 60 euros ya me parecen bastantes."
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Manolo. Tu solicitud queda enviada para mañana por la mañana, y el equipo te llamará al 611 999 000 para confirmar la hora exacta. ¿Necesitas algo más?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca los platos, la vajilla sale mojada\",\"codigo\":\"\",\"diagnostico\":\"dosificador de abrillantador o resistencia/ventilador de secado\",\"nombre\":\"Manolo\",\"telefono\":\"611 999 000\",\"direccion\":\"calle Santa Escolástica 4, Realejo, Granada\",\"franja\":\"mañana\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Manolo. Tu solicitud queda enviada para mañana por la mañana, y el equipo te llamará al 611 999 000 para confirmar la hora exacta. ¿Necesitas algo más?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca los platos, la vajilla sale mojada\",\"codigo\":\"\",\"diagnostico\":\"dosificador de abrillantador o resistencia/ventilador de secado\",\"nombre\":\"Manolo\",\"telefono\":\"611 999 000\",\"direccion\":\"calle Santa Escolástica 4, Realejo, Granada\",\"franja\":\"mañana\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"nombre\":\"Manolo\",\"telefono\":\"611 999 000\",\"direccion\":\"calle Santa Escolástica 4, Realejo, Granada\",\"municipio\":\"Granada\",\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"averia\":\"no seca los platos, la vajilla sale mojada\",\"codigo\":\"\",\"franja\":\"mañana\",\"urgente\":false,\"notas\":\"Diagnostico probable: dosificador de abrillantador o resistencia/ventilador de secado. Llevar ambas piezas si es posible. Aparato con mas de tres anos, fuera de garantia legal. Cliente informado de visita de 60,50 EUR descontable y presupuesto cerrado antes de reparar.\"}</aviso>"
  }
 ]

@@ -1,0 +1,33 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Reparo. ¿Qué aparato se te ha averiado?
+
+CLIENTE: Buenos días. La vitrocerámica no me enciende un fuego. Tengo 80 años y vivo en La Zubia.
+
+ANDRÉS: Buenos días. Para decirle qué le pasa, ¿de qué marca es la vitrocerámica, y más o menos cuántos años tiene? Cada marca tiene sus propios fallos, y con esos datos el técnico va preparado.
+<ficha>{"aparato":"placa","marca":"","modelo":"","sintoma":"no enciende un fuego de la vitrocerámica","codigo":"","diagnostico":"","nombre":"","telefono":"","direccion":"","franja":"","fase":"entendiendo"}</ficha>
+
+CLIENTE: Es una Balay y tendrá unos 10 años, hijo. Los otros fuegos van bien, solo falla uno.
+
+ANDRÉS: Lo más probable es el control de ese fuego; el técnico lo revisa con la pieza delante. Con diez años, le dará un presupuesto cerrado para decidir si compensa. La visita son 60,50 €, y se descuentan si reparamos. ¿Le viene mejor mañana por la mañana o por la tarde?
+<mostrar>precios</mostrar>
+<ficha>{"aparato":"placa","marca":"Balay","modelo":"","sintoma":"no enciende un fuego de la vitrocerámica; los otros fuegos funcionan","codigo":"","diagnostico":"control táctil de ese fuego o placa de control","nombre":"","telefono":"","direccion":"","franja":"","fase":"proponiendo"}</ficha>
+
+CLIENTE: Ay, qué amable, hijo. Pues sí, venga usted mañana por la mañana, mejor. Yo soy Encarnación.
+
+ANDRÉS: Muchas gracias, Encarnación. Le reservo el hueco de mañana por la mañana. Deme un teléfono por si se corta; es solo para llamarle y organizar la visita.
+<ficha>{"aparato":"placa","marca":"Balay","modelo":"","sintoma":"no enciende un fuego de la vitrocerámica; los otros fuegos funcionan","codigo":"","diagnostico":"control táctil de ese fuego o placa de control","nombre":"Encarnación","telefono":"","direccion":"","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: Mi teléfono es el 958 590 123, es el fijo de casa, hijo. Yo no tengo móvil.
+
+ANDRÉS: Perfecto, Encarnación. Anoto el fijo 958 590 123, solo para llamarle y organizar la visita de mañana por la mañana. ¿Me dice la calle y el número de su casa en La Zubia?
+<ficha>{"aparato":"placa","marca":"Balay","modelo":"","sintoma":"no enciende un fuego de la vitrocerámica; los otros fuegos funcionan","codigo":"","diagnostico":"control táctil de ese fuego o placa de control","nombre":"Encarnación","telefono":"958 590 123","direccion":"","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: Calle Real, número 20, hijo.
+
+ANDRÉS: Perfecto, Encarnación. Le anoto calle Real 20, en La Zubia, para mañana por la mañana, y su teléfono fijo, 958 590 123. ¿Está todo bien?
+<ficha>{"aparato":"placa","marca":"Balay","modelo":"","sintoma":"no enciende un fuego de la vitrocerámica; los otros fuegos funcionan","codigo":"","diagnostico":"control táctil de ese fuego o placa de control","nombre":"Encarnación","telefono":"958 590 123","direccion":"calle Real 20, La Zubia","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: Sí, hijo, todo está bien. Muchas gracias por su paciencia.
+
+ANDRÉS: Perfecto, Encarnación. Su solicitud queda enviada para mañana por la mañana, en calle Real 20 de La Zubia, y le llamaremos al fijo para confirmar la hora exacta. ¿Necesita algo más?
+<ficha>{"aparato":"placa","marca":"Balay","modelo":"","sintoma":"no enciende un fuego de la vitrocerámica; los otros fuegos funcionan","codigo":"","diagnostico":"control táctil de ese fuego o placa de control","nombre":"Encarnación","telefono":"958 590 123","direccion":"calle Real 20, La Zubia","franja":"mañana","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","nombre":"Encarnación","telefono":"958 590 123","direccion":"calle Real 20","municipio":"La Zubia","aparato":"placa","marca":"Balay","modelo":"","averia":"no enciende un fuego de la vitrocerámica; los otros fuegos funcionan","codigo":"","franja":"mañana","urgente":false,"notas":"Diagnóstico probable: control de ese fuego o placa de control. Aparato de unos 10 años, fuera de garantía legal. Clienta de 80 años: tratar de usted. Teléfono fijo, no tiene móvil. Cliente confirmó datos."}</aviso>

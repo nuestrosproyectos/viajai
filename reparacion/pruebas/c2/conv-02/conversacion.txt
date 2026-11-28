@@ -1,0 +1,34 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Reparo. ¿Qué aparato se te ha averiado?
+
+CLIENTE: Mi frigorífico Samsung combi enfría arriba pero el congelador no congela bien.
+
+ANDRÉS: Eso suele venir del ventilador del congelador o del sistema de desescarche, que es lo que hace pasar el frío de un lado a otro. El técnico lo mide y va directo con la pieza. Antes de reservarte la visita, ¿el frigorífico tiene más de tres años, o lo compraste hace menos?
+<mostrar>aparato:frigorifico</mostrar>
+<ficha>{"aparato":"frigorifico","marca":"Samsung","modelo":"combi","sintoma":"enfría bien la parte de arriba pero el congelador no congela bien","codigo":"","diagnostico":"ventilador del congelador o desescarche","nombre":"","telefono":"","direccion":"","franja":"","fase":"orientando"}</ficha>
+
+CLIENTE: Tiene 5 años. Y detrás del congelador veo mucha escarcha, me preocupa la comida que tengo dentro.
+
+ANDRÉS: No te preocupes, tiene arreglo. Mientras, abre la puerta lo menos posible. Lo más probable es el ventilador o el desescarche, y el técnico va con esa pieza. La visita son 60,50 €, y si reparamos se descuentan. ¿Te viene mejor mañana por la mañana o por la tarde?
+<mostrar>precios</mostrar>
+<ficha>{"aparato":"frigorifico","marca":"Samsung","modelo":"combi","sintoma":"enfría bien la parte de arriba pero el congelador no congela bien; escarcha detrás del congelador","codigo":"","diagnostico":"ventilador del congelador o desescarche","nombre":"","telefono":"","direccion":"","franja":"","fase":"proponiendo"}</ficha>
+
+CLIENTE: Vale, por la tarde mejor. ¿Y la comida del congelador se puede estropear hasta que vengan?
+
+ANDRÉS: Lo que hay en el congelador puede estropearse si no vuelve a congelar, así que mantén la puerta cerrada y abre lo menos posible. Como hay comida en riesgo, te reservo el hueco de esta tarde. ¿Me dices tu nombre y un teléfono?
+<ficha>{"aparato":"frigorifico","marca":"Samsung","modelo":"combi","sintoma":"enfría bien la parte de arriba pero el congelador no congela bien; escarcha detrás del congelador; comida en riesgo","codigo":"","diagnostico":"ventilador del congelador o desescarche","nombre":"","telefono":"","direccion":"","franja":"tarde","fase":"datos"}</ficha>
+
+CLIENTE: Javier, 622 333 444
+
+ANDRÉS: Perfecto, Javier. Anoto el 622 333 444, es solo para llamarte y organizar la visita de esta tarde. ¿Me dices la calle, el número y el municipio?
+<ficha>{"aparato":"frigorifico","marca":"Samsung","modelo":"combi","sintoma":"enfría bien la parte de arriba pero el congelador no congela bien; escarcha detrás del congelador; comida en riesgo","codigo":"","diagnostico":"ventilador del congelador o desescarche","nombre":"Javier","telefono":"622 333 444","direccion":"","franja":"tarde","fase":"datos"}</ficha>
+
+CLIENTE: calle Real 7, Armilla
+
+ANDRÉS: Perfecto, Javier. Te anoto calle Real 7, en Armilla, para la tarde, y tu teléfono, 622 333 444. ¿Está todo bien?
+<ficha>{"aparato":"frigorifico","marca":"Samsung","modelo":"combi","sintoma":"enfría bien la parte de arriba pero el congelador no congela bien; escarcha detrás del congelador; comida en riesgo","codigo":"","diagnostico":"ventilador del congelador o desescarche","nombre":"Javier","telefono":"622 333 444","direccion":"calle Real 7, Armilla","franja":"tarde","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien. Ojalá puedan venir cuanto antes por la comida
+
+ANDRÉS: Entiendo la prisa por la comida, Javier. Tu solicitud queda enviada como urgente, para esta tarde en calle Real 7, en Armilla, y te llamaremos para confirmar la hora exacta. ¿Necesitas algo más?
+<ficha>{"aparato":"frigorifico","marca":"Samsung","modelo":"combi","sintoma":"enfría bien la parte de arriba pero el congelador no congela bien; escarcha detrás del congelador; comida en riesgo","codigo":"","diagnostico":"ventilador del congelador o desescarche","nombre":"Javier","telefono":"622 333 444","direccion":"calle Real 7, Armilla","franja":"tarde","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","nombre":"Javier","telefono":"622 333 444","direccion":"calle Real 7, Armilla","municipio":"Armilla","aparato":"frigorifico","marca":"Samsung","modelo":"combi","averia":"congelador no congela bien; escarcha detrás del congelador","codigo":"","franja":"tarde","urgente":true,"notas":"Diagnóstico probable: ventilador del congelador o sistema de desescarche. Llevar ventilador y sonda o resistencia de desescarche. Aparato de 5 años, fuera de garantía legal. Comida en riesgo: prioridad. Cliente confirmó datos."}</aviso>
