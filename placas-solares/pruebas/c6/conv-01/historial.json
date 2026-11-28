@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Gracias, Javier. ¿En qué calle y número de Armilla sería la visita, y te viene mejor mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"a dos aguas, una cara al sur\",\"consumo\":\"\",\"nombre\":\"Javier\",\"telefono\":\"644 778 120\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Casa de unos cinco kWp en tejado a dos aguas con una cara al sur; el estudio gratuito con tus facturas lo cierra.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Javier. ¿En qué calle y número de Armilla sería la visita, y te viene mejor mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"a dos aguas, una cara al sur\",\"consumo\":\"\",\"nombre\":\"Javier\",\"telefono\":\"644 778 120\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Casa de unos cinco kWp en tejado a dos aguas con una cara al sur; el estudio gratuito con tus facturas lo cierra.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Calle Granada 5. Mejor el viernes por la mañana"
  }
 ]
