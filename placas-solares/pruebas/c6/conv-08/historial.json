@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Pepe, 633 111 444"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Pepe. ¿En qué calle y número de Atarfe está el bar, y te viene mejor mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Negocio o nave\",\"factura\":\"unos 450 € al mes\",\"tejado\":\"\",\"consumo\":\"de día\",\"nombre\":\"Pepe\",\"telefono\":\"633 111 444\",\"municipio\":\"Atarfe\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Bar que gasta sobre todo de día: las placas suelen aprovecharse bien; la deducción de la Renta no vale para un negocio.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Pepe. ¿En qué calle y número de Atarfe está el bar, y te viene mejor mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Negocio o nave\",\"factura\":\"unos 450 € al mes\",\"tejado\":\"\",\"consumo\":\"de día\",\"nombre\":\"Pepe\",\"telefono\":\"633 111 444\",\"municipio\":\"Atarfe\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Bar que gasta sobre todo de día: las placas suelen aprovecharse bien; la deducción de la Renta no vale para un negocio.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Elena, 688 120 777"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Elena. En un bloque el permiso suele ser una declaración responsable que gestiona la instaladora, salvo que el edificio esté protegido. ¿En qué calle y número del Zaidín sería la visita, y te viene mejor mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"azotea común\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"688 120 777\",\"municipio\":\"Zaidín, Granada\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Sin el acuerdo de la junta no hay instalación en la azotea común; el estudio gratuito le sirve para llevarlo a la junta.\",\"porDecir\":\"autoconsumo compartido: la azotea común puede dar luz a varios pisos\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Elena. En un bloque el permiso suele ser una declaración responsable que gestiona la instaladora, salvo que el edificio esté protegido. ¿En qué calle y número del Zaidín sería la visita, y te viene mejor mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"azotea común\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"688 120 777\",\"municipio\":\"Zaidín, Granada\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Sin el acuerdo de la junta no hay instalación en la azotea común; el estudio gratuito le sirve para llevarlo a la junta.\",\"porDecir\":\"autoconsumo compartido: la azotea común puede dar luz a varios pisos\",\"fase\":\"datos\"}</ficha>"
  }
 ]

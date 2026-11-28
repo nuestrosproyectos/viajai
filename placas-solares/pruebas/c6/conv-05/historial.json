@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Elena, 611 456 789"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Elena. Lo apunto para que el técnico mire el tejado de teja en la visita. ¿En qué calle y número del Albaicín sería, y te viene mejor mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 90 € al mes\",\"tejado\":\"teja\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"611 456 789\",\"municipio\":\"Albaicín, Granada\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"En el Albaicín, Conjunto Histórico: la declaración responsable no vale y puede haber límites; lo estudia el técnico en la visita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Elena. Lo apunto para que el técnico mire el tejado de teja en la visita. ¿En qué calle y número del Albaicín sería, y te viene mejor mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 90 € al mes\",\"tejado\":\"teja\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"611 456 789\",\"municipio\":\"Albaicín, Granada\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"En el Albaicín, Conjunto Histórico: la declaración responsable no vale y puede haber límites; lo estudia el técnico en la visita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]
