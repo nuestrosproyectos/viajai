@@ -1440,14 +1440,18 @@ async function enviar(texto, { porVoz = false } = {}) {
     b.textContent = mostrado || "Perdona, ¿me lo repites?"; textoMini(b.textContent);
     if (!yaSenalado) { const d = etiqueta(respuesta, "mostrar", true); if (d) senalar(d); }
     trocear(true);
-    turnos.push({ role: "assistant", content: respuesta.replace(/<aviso>[\s\S]*?(<\/aviso>|$)/, "<aviso>(registrado)</aviso>") });
     const f = etiqueta(respuesta, "ficha"); if (f) pintarFicha(f);
     // el aviso solo vale con los datos obligatorios y un teléfono válido (si el asistente se adelanta, se ignora y sigue la conversación)
     const a = etiqueta(respuesta, "aviso");
+    let nota = "(registrado)";
     if (a && !avisoHecho) {
       const d = { ...datosFormulario(), ...Object.fromEntries(Object.entries(a).filter(([, v]) => v)) };
-      if (obligatorios(a.tipo || W.tipoPrincipal).every(([c]) => d[c]) && telefonoValido(d.telefono)) { CAMPOS_FORM.forEach(c => a[c] && !datosFormulario()[c] && ponerCampo(c, String(a[c]))); registrarAviso({ ...a, ...d, origen: "técnico virtual" }); }
+      const faltan = obligatorios(a.tipo || W.tipoPrincipal).filter(([c]) => !d[c]).map(([, t]) => t);
+      if (!faltan.length && telefonoValido(d.telefono)) { CAMPOS_FORM.forEach(c => a[c] && !datosFormulario()[c] && ponerCampo(c, String(a[c]))); registrarAviso({ ...a, ...d, origen: "técnico virtual" }); }
+      // si no se registra, el asistente lo sabe en el siguiente turno y vuelve a enviarlo cuando tenga los datos
+      else nota = `(NO registrado: faltan ${faltan.length ? faltan.join(", ") : "un teléfono válido"}; envíalo otra vez cuando los tengas y el cliente los confirme)`;
     }
+    turnos.push({ role: "assistant", content: respuesta.replace(/<aviso>[\s\S]*?(<\/aviso>|$)/, `<aviso>${nota}</aviso>`) });
     ofrecerCita(b);
     if (conv.dataset.estado === "pensando") estado("reposo");
   } catch (e) {

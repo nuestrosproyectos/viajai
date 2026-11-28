@@ -1,0 +1,1 @@
+Ronda interrumpida: dos conversaciones cruzadas por el cliente simulado y el fallo del aviso sin datos (arreglado). Se repite limpia en c5.

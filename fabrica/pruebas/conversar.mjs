@@ -22,6 +22,7 @@ const MAX_TURNOS = 9;   // respuestas del asistente como mucho
 const [orden, web, ronda] = process.argv.slice(2);
 const dir = join(RAIZ, web, "pruebas", ronda);
 const { NEGOCIO, saludo } = await import(pathToFileURL(join(RAIZ, web, "cerebro.mjs")).href + "?v=" + Date.now());
+const W = (await import(pathToFileURL(join(RAIZ, web, "web.mjs")).href + "?v=" + Date.now())).default(NEGOCIO);
 const { instrucciones } = await import(pathToFileURL(join(RAIZ, web, "instrucciones.mjs")).href + "?v=" + Date.now());
 const escenarios = JSON.parse(readFileSync(join(RAIZ, web, "pruebas", "conversaciones.json"), "utf8")).conversaciones;
 const NOMBRE = NEGOCIO.tecnico.toUpperCase();
@@ -57,13 +58,22 @@ if (orden === "asistente") {
     if (!existsSync(r)) continue;
     const t = readFileSync(r, "utf8").trim();
     const h = leerH(e);
-    // como en la web: el aviso ya enviado queda marcado y no se repite
-    h.push({ role: "assistant", content: t.replace(/<aviso>[\s\S]*?<\/aviso>/, "<aviso>(registrado)</aviso>"), original: t });
+    // como en la web: el aviso solo vale con los datos obligatorios y un teléfono válido; si no, el asistente lo sabe
+    const yaHabia = h.some(x => x.role === "assistant" && /<aviso>\(registrado\)/.test(x.content));
+    let nota = "(registrado)", valido = false;
+    const ma = t.match(/<aviso>\s*([\s\S]*?)\s*(<\/aviso>|$)/);
+    if (ma && !yaHabia) {
+      let a = {}; try { a = JSON.parse(ma[1].slice(0, ma[1].lastIndexOf("}") + 1)); } catch { }
+      const faltan = W.obligatorios.filter(([c]) => !a[c]).map(([, n]) => n);
+      valido = !faltan.length && /^(\+?34)?[6789]\d{8}$/.test(String(a.telefono || "").replace(/[^\d+]/g, ""));
+      if (!valido) nota = `(NO registrado: faltan ${faltan.length ? faltan.join(", ") : "un teléfono válido"}; envíalo otra vez cuando los tengas y el cliente los confirme)`;
+    }
+    h.push({ role: "assistant", content: t.replace(/<aviso>[\s\S]*?(<\/aviso>|$)/, `<aviso>${nota}</aviso>`), original: t });
     guardarH(e, h); rmSync(r); rmSync(join(c, "turno.txt"), { force: true }); n++;
     const respuestas = h.filter(x => x.role === "assistant").length;
     if (respuestas >= MAX_TURNOS) { writeFileSync(join(c, "fin.txt"), "máximo de turnos"); continue; }
     const charla = h.map(x => `${x.role === "user" ? "TÚ (cliente)" : NEGOCIO.tecnico + " (asistente de la web)"}: ${x.role === "user" ? x.content : visible(x.content)}`).join("\n\n");
-    const aviso = /<aviso>/.test(t) ? `\n\n[En la pantalla aparece ahora: «¡Listo! Solicitud enviada. Te llamamos para confirmar».]` : "";
+    const aviso = ma && valido ? `\n\n[En la pantalla aparece ahora: «¡Listo! Solicitud enviada. Te llamamos para confirmar».]` : "";
     writeFileSync(join(c, "para-cliente.txt"), `=== QUIÉN ERES (solo lo sabes tú) ===\n${e.persona}\n\n=== LA CONVERSACIÓN HASTA AHORA (en la web de ${NEGOCIO.marca}) ===\n${charla}${aviso}\n\n=== TU SIGUIENTE MENSAJE ===\n`);
   }
   console.log(`${n} respuestas del asistente recogidas`);
