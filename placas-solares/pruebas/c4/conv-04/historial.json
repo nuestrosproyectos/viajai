@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Te dije un tercio, orientativo; el administrador confirma la cifra exacta. Tú solo no puedes, la azotea es común. Y en suelo urbano no protegido el permiso es una declaración responsable que gestiona la instaladora. ¿Te reservo el estudio para llevarlo a la junta?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"azotea\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"El Zaidín\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"La azotea es común: hace falta acuerdo de la junta, y el estudio le sirve para llevarlo allí.\",\"porDecir\":\"existe el autoconsumo compartido entre vecinos · la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal\",\"fase\":\"orientando\"}</ficha>\n<mostrar>preparar</mostrar>",
   "original": "Te dije un tercio, orientativo; el administrador confirma la cifra exacta. Tú solo no puedes, la azotea es común. Y en suelo urbano no protegido el permiso es una declaración responsable que gestiona la instaladora. ¿Te reservo el estudio para llevarlo a la junta?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"azotea\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"El Zaidín\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"La azotea es común: hace falta acuerdo de la junta, y el estudio le sirve para llevarlo allí.\",\"porDecir\":\"existe el autoconsumo compartido entre vecinos · la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal\",\"fase\":\"orientando\"}</ficha>\n<mostrar>preparar</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, entendido. Pues sí, reserva el estudio y lo llevo a la junta"
  }
 ]

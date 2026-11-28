@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Para lo fiscal, tu asesor; la deducción de la Renta no vale para un negocio. Cada kilovatio sale de mil a mil quinientos euros, según el tamaño. Aunque cortes la luz, los paneles con sol siguen dando tensión. ¿Me dices tu nombre y un teléfono?\n<ficha>{\"que\":\"Revisar mi instalación\",\"lugar\":\"Negocio o nave\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"de día, abren de 8 a 24\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Que no toque nada hasta que la instaladora revise el inversor; con gasto de día, la instalación aprovecha bien la producción.\",\"porDecir\":\"pregunta qué marca el inversor y si firmó el contrato de compensación\",\"fase\":\"datos\"}</ficha>",
   "original": "Para lo fiscal, tu asesor; la deducción de la Renta no vale para un negocio. Cada kilovatio sale de mil a mil quinientos euros, según el tamaño. Aunque cortes la luz, los paneles con sol siguen dando tensión. ¿Me dices tu nombre y un teléfono?\n<ficha>{\"que\":\"Revisar mi instalación\",\"lugar\":\"Negocio o nave\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"de día, abren de 8 a 24\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Que no toque nada hasta que la instaladora revise el inversor; con gasto de día, la instalación aprovecha bien la producción.\",\"porDecir\":\"pregunta qué marca el inversor y si firmó el contrato de compensación\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, vale, reserva el estudio entonces"
  }
 ]

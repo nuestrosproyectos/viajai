@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Eso lo confirma el técnico con el modelo de tu inversor, y no lo doy por seguro. Aunque la batería te cubra la noche, la factura nunca baja a cero: quedan la potencia, el contador y los impuestos. ¿Te reservo el estudio gratis para mirarlo?\n<ficha>{\"que\":\"Añadir batería\",\"lugar\":\"\",\"factura\":\"unos 100 € al mes\",\"tejado\":\"\",\"consumo\":\"casi todo de noche, con el aire acondicionado\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con 4 kWp ya instalados, la batería compensa sobre todo por la noche; la compatibilidad con tu inversor la confirma el técnico en el estudio con tus facturas.\",\"porDecir\":\"la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal\",\"fase\":\"orientando\"}</ficha>",
   "original": "Eso lo confirma el técnico con el modelo de tu inversor, y no lo doy por seguro. Aunque la batería te cubra la noche, la factura nunca baja a cero: quedan la potencia, el contador y los impuestos. ¿Te reservo el estudio gratis para mirarlo?\n<ficha>{\"que\":\"Añadir batería\",\"lugar\":\"\",\"factura\":\"unos 100 € al mes\",\"tejado\":\"\",\"consumo\":\"casi todo de noche, con el aire acondicionado\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con 4 kWp ya instalados, la batería compensa sobre todo por la noche; la compatibilidad con tu inversor la confirma el técnico en el estudio con tus facturas.\",\"porDecir\":\"la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal\",\"fase\":\"orientando\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Manoli, 655 222 333. Por favor que vengan cuanto antes, estoy muy asustada"
  }
 ]

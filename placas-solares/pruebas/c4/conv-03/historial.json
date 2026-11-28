@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Por escrito no puedo prometerte cero; el presupuesto trae el ahorro estimado. Con gasto de noche suele pagarse en seis a diez años, algo más tarde. Te reservo el estudio gratis. ¿La instalación sería en casa, en un bloque o en un negocio?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"de noche: trabaja fuera de casa de día\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con consumo sobre todo de noche, las placas solas aprovechan menos y la batería cobra más peso; el estudio con tus facturas lo mide.\",\"porDecir\":\"la batería compensa sobre todo si gastas mucho de noche · la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal\",\"fase\":\"orientando\"}</ficha>\n<mostrar>orientativos</mostrar>",
   "original": "Por escrito no puedo prometerte cero; el presupuesto trae el ahorro estimado. Con gasto de noche suele pagarse en seis a diez años, algo más tarde. Te reservo el estudio gratis. ¿La instalación sería en casa, en un bloque o en un negocio?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"de noche: trabaja fuera de casa de día\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con consumo sobre todo de noche, las placas solas aprovechan menos y la batería cobra más peso; el estudio con tus facturas lo mide.\",\"porDecir\":\"la batería compensa sobre todo si gastas mucho de noche · la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal\",\"fase\":\"orientando\"}</ficha>\n<mostrar>orientativos</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Es una casa en Pulianas. Y con batería sí me garantizáis que no pago luz?"
  }
 ]
