@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Quiero placas pero solo si me garantizáis por escrito que no vuelvo a pagar luz."
+ },
+ {
+  "role": "assistant",
+  "content": "Cero no es posible: siempre quedan la potencia, el contador, los impuestos y lo que gastas de noche. Lo que sí hacemos es un estudio gratuito con visita técnica, y el presupuesto por escrito te dice el ahorro estimado. ¿Cuánto gastas de noche?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Ninguna instalación deja la factura a cero: quedan la potencia, el contador, los impuestos y lo de la noche; el estudio con tus facturas dice cuánto baja.\",\"porDecir\":\"lo más probable, la amortización va de seis a diez años, antes si gastas mucho de día · la batería compensa sobre todo si gastas mucho de noche · la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal\",\"fase\":\"orientando\"}</ficha>\n<mostrar>garantia</mostrar>",
+  "original": "Cero no es posible: siempre quedan la potencia, el contador, los impuestos y lo que gastas de noche. Lo que sí hacemos es un estudio gratuito con visita técnica, y el presupuesto por escrito te dice el ahorro estimado. ¿Cuánto gastas de noche?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Ninguna instalación deja la factura a cero: quedan la potencia, el contador, los impuestos y lo de la noche; el estudio con tus facturas dice cuánto baja.\",\"porDecir\":\"lo más probable, la amortización va de seis a diez años, antes si gastas mucho de día · la batería compensa sobre todo si gastas mucho de noche · la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal\",\"fase\":\"orientando\"}</ficha>\n<mostrar>garantia</mostrar>"
  }
 ]

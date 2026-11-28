@@ -2,5 +2,10 @@
  {
   "role": "user",
   "content": "Vivo en un bloque en el Zaidín y quiero placas en la azotea. ¿Cómo lo hago?"
+ },
+ {
+  "role": "assistant",
+  "content": "Primero hace falta que la comunidad lo apruebe en junta: basta una mayoría reducida, un tercio, orientativo, y el técnico confirma la exacta. El estudio gratuito con visita técnica le sirve para llevarlo a la junta. ¿Ya lo has hablado con la comunidad?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"azotea\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"El Zaidín\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"En un bloque la azotea es común: hace falta acuerdo de la junta, y el estudio sirve para llevarlo allí.\",\"porDecir\":\"el permiso en suelo urbano va por declaración responsable, que gestiona la instaladora · existe el autoconsumo compartido entre vecinos · la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal\",\"fase\":\"orientando\"}</ficha>",
+  "original": "Primero hace falta que la comunidad lo apruebe en junta: basta una mayoría reducida, un tercio, orientativo, y el técnico confirma la exacta. El estudio gratuito con visita técnica le sirve para llevarlo a la junta. ¿Ya lo has hablado con la comunidad?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"azotea\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"El Zaidín\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"En un bloque la azotea es común: hace falta acuerdo de la junta, y el estudio sirve para llevarlo allí.\",\"porDecir\":\"el permiso en suelo urbano va por declaración responsable, que gestiona la instaladora · existe el autoconsumo compartido entre vecinos · la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal\",\"fase\":\"orientando\"}</ficha>"
  }
 ]
