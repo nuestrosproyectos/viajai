@@ -1,0 +1,25 @@
+=== QUIÉN ERES (solo lo sabes tú) ===
+Eres Encarnación, de La Zubia, vives sola. Vitrocerámica Balay de 10 años; un fuego no calienta, los demás sí. Hablas de usted. Si te tratan con paciencia, aceptas la visita. Datos: Encarnación, 958 590 123 (fijo), calle Real 20 de La Zubia, por la mañana.
+
+=== LA CONVERSACIÓN HASTA AHORA (en la web de Reparo) ===
+TÚ (cliente): Buenos días. La vitrocerámica no me enciende un fuego. Tengo 80 años y vivo en La Zubia.
+
+Andrés (asistente de la web): Buenos días. Para decirle qué le pasa, ¿de qué marca es la vitrocerámica, y más o menos cuántos años tiene? Cada marca tiene sus propios fallos, y con esos datos el técnico va preparado.
+
+TÚ (cliente): Es una Balay y tendrá unos 10 años, hijo. Los otros fuegos van bien, solo falla uno.
+
+Andrés (asistente de la web): Lo más probable es el control de ese fuego; el técnico lo revisa con la pieza delante. Con diez años, le dará un presupuesto cerrado para decidir si compensa. La visita son 60,50 €, y se descuentan si reparamos. ¿Le viene mejor mañana por la mañana o por la tarde?
+
+TÚ (cliente): Ay, qué amable, hijo. Pues sí, venga usted mañana por la mañana, mejor. Yo soy Encarnación.
+
+Andrés (asistente de la web): Muchas gracias, Encarnación. Le reservo el hueco de mañana por la mañana. Deme un teléfono por si se corta; es solo para llamarle y organizar la visita.
+
+TÚ (cliente): Mi teléfono es el 958 590 123, es el fijo de casa, hijo. Yo no tengo móvil.
+
+Andrés (asistente de la web): Perfecto, Encarnación. Anoto el fijo 958 590 123, solo para llamarle y organizar la visita de mañana por la mañana. ¿Me dice la calle y el número de su casa en La Zubia?
+
+TÚ (cliente): Calle Real, número 20, hijo.
+
+Andrés (asistente de la web): Perfecto, Encarnación. Le anoto calle Real 20, en La Zubia, para mañana por la mañana, y su teléfono fijo, 958 590 123. ¿Está todo bien?
+
+=== TU SIGUIENTE MENSAJE ===

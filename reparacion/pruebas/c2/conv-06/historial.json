@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "611 999 000"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Manolo, te reservo mañana por la mañana. El técnico comprobará también si tu modelo está afectado por un aviso del fabricante por un componente electrónico. ¿Me dices la calle y el número?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca los platos, la vajilla sale mojada\",\"codigo\":\"\",\"diagnostico\":\"dosificador de abrillantador o resistencia/ventilador de secado\",\"nombre\":\"Manolo\",\"telefono\":\"611 999 000\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Manolo, te reservo mañana por la mañana. El técnico comprobará también si tu modelo está afectado por un aviso del fabricante por un componente electrónico. ¿Me dices la calle y el número?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca los platos, la vajilla sale mojada\",\"codigo\":\"\",\"diagnostico\":\"dosificador de abrillantador o resistencia/ventilador de secado\",\"nombre\":\"Manolo\",\"telefono\":\"611 999 000\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
  }
 ]

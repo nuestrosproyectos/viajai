@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "calle Primavera 12, 3º A"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto. Anoto calle Primavera 12, tercero A, en el Zaidín, Granada, para la mañana, y tu teléfono, 655 123 456. ¿Está todo bien?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua, queda agua en el tambor\",\"codigo\":\"E18\",\"diagnostico\":\"filtro de la bomba atascado o bomba de desagüe dañada\",\"nombre\":\"Carmen\",\"telefono\":\"655 123 456\",\"direccion\":\"calle Primavera 12, 3º A, Zaidín, Granada\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto. Anoto calle Primavera 12, tercero A, en el Zaidín, Granada, para la mañana, y tu teléfono, 655 123 456. ¿Está todo bien?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua, queda agua en el tambor\",\"codigo\":\"E18\",\"diagnostico\":\"filtro de la bomba atascado o bomba de desagüe dañada\",\"nombre\":\"Carmen\",\"telefono\":\"655 123 456\",\"direccion\":\"calle Primavera 12, 3º A, Zaidín, Granada\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
  }
 ]

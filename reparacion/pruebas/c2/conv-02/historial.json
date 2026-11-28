@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "calle Real 7, Armilla"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Javier. Te anoto calle Real 7, en Armilla, para la tarde, y tu teléfono, 622 333 444. ¿Está todo bien?\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"combi\",\"sintoma\":\"enfría bien la parte de arriba pero el congelador no congela bien; escarcha detrás del congelador; comida en riesgo\",\"codigo\":\"\",\"diagnostico\":\"ventilador del congelador o desescarche\",\"nombre\":\"Javier\",\"telefono\":\"622 333 444\",\"direccion\":\"calle Real 7, Armilla\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Javier. Te anoto calle Real 7, en Armilla, para la tarde, y tu teléfono, 622 333 444. ¿Está todo bien?\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"combi\",\"sintoma\":\"enfría bien la parte de arriba pero el congelador no congela bien; escarcha detrás del congelador; comida en riesgo\",\"codigo\":\"\",\"diagnostico\":\"ventilador del congelador o desescarche\",\"nombre\":\"Javier\",\"telefono\":\"622 333 444\",\"direccion\":\"calle Real 7, Armilla\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>"
  }
 ]
