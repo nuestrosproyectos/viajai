@@ -52,5 +52,9 @@
   "role": "assistant",
   "content": "Gracias, Manolo. Antes de reservarte el hueco, ¿el lavavajillas tiene ya más de tres años, o lo compraste hace menos?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca los platos\",\"codigo\":\"\",\"diagnostico\":\"Falta de abrillantador o fallo del dosificador o del secado (lo más probable)\",\"nombre\":\"Manolo\",\"telefono\":\"611 999 000\",\"direccion\":\"Calle Santa Escolástica 4, Granada\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Manolo. Antes de reservarte el hueco, ¿el lavavajillas tiene ya más de tres años, o lo compraste hace menos?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca los platos\",\"codigo\":\"\",\"diagnostico\":\"Falta de abrillantador o fallo del dosificador o del secado (lo más probable)\",\"nombre\":\"Manolo\",\"telefono\":\"611 999 000\",\"direccion\":\"Calle Santa Escolástica 4, Granada\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Más de tres, unos 4 años"
  }
 ]

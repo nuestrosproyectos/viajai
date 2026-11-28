@@ -52,5 +52,9 @@
   "role": "assistant",
   "content": "Perfecto, apunto el teléfono: 688 444 222. Antes de reservarte la visita, ¿el lavavajillas tiene ya más de tres años, o lo compraste hace menos?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"\",\"diagnostico\":\"Filtro o bomba de desagüe obstruidos (lo más probable)\",\"nombre\":\"\",\"telefono\":\"688 444 222\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, apunto el teléfono: 688 444 222. Antes de reservarte la visita, ¿el lavavajillas tiene ya más de tres años, o lo compraste hace menos?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"\",\"diagnostico\":\"Filtro o bomba de desagüe obstruidos (lo más probable)\",\"nombre\":\"\",\"telefono\":\"688 444 222\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Tiene unos 5 años"
  }
 ]

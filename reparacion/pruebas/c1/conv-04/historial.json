@@ -52,5 +52,9 @@
   "role": "assistant",
   "content": "Perfecto, Paco, apunto el teléfono: 633 777 888. ¿En qué dirección y municipio está la lavadora?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar, rugido que sube con las vueltas\",\"codigo\":\"\",\"diagnostico\":\"Rodamientos desgastados (lo más probable)\",\"nombre\":\"Paco\",\"telefono\":\"633 777 888\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Paco, apunto el teléfono: 633 777 888. ¿En qué dirección y municipio está la lavadora?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar, rugido que sube con las vueltas\",\"codigo\":\"\",\"diagnostico\":\"Rodamientos desgastados (lo más probable)\",\"nombre\":\"Paco\",\"telefono\":\"633 777 888\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Calle Arabial 40, Granada"
  }
 ]

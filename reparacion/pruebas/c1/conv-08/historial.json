@@ -52,5 +52,9 @@
   "role": "assistant",
   "content": "Perfecto, Encarnación, apunto el fijo: 958 590 123. ¿En qué calle y número de La Zubia está la placa?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"un fuego no se pone rojo, el resto sí funcionan\",\"codigo\":\"\",\"diagnostico\":\"Resistencia radiante o su limitador del fuego (lo más probable)\",\"nombre\":\"Encarnación\",\"telefono\":\"958 590 123\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Encarnación, apunto el fijo: 958 590 123. ¿En qué calle y número de La Zubia está la placa?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"un fuego no se pone rojo, el resto sí funcionan\",\"codigo\":\"\",\"diagnostico\":\"Resistencia radiante o su limitador del fuego (lo más probable)\",\"nombre\":\"Encarnación\",\"telefono\":\"958 590 123\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Calle Real número 20, hijo, en La Zubia"
  }
 ]
