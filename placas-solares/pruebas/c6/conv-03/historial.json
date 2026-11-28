@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Con batería tampoco llega a cero: guarda la energía del día para la noche, pero la potencia, el contador y los impuestos se pagan igual. Sin ella, lo más probable es que se pague en seis a diez años. ¿Cuánta luz gastas de noche?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No se puede garantizar factura cero, tampoco con batería: quedan potencia, contador e impuestos; el presupuesto por escrito trae el ahorro estimado.\",\"porDecir\":\"batería: entre 450 y 800 € por kWh de capacidad, compensa si gasta mucho de noche\",\"fase\":\"orientando\"}</ficha>",
   "original": "Con batería tampoco llega a cero: guarda la energía del día para la noche, pero la potencia, el contador y los impuestos se pagan igual. Sin ella, lo más probable es que se pague en seis a diez años. ¿Cuánta luz gastas de noche?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No se puede garantizar factura cero, tampoco con batería: quedan potencia, contador e impuestos; el presupuesto por escrito trae el ahorro estimado.\",\"porDecir\":\"batería: entre 450 y 800 € por kWh de capacidad, compensa si gasta mucho de noche\",\"fase\":\"orientando\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Casi todo de noche, de día trabajo fuera y no hay nadie en casa. Vale, entendido, que venga el técnico a hacer el estudio"
  }
 ]

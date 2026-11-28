@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "No te preocupes, lo llevamos como urgente. Te repito: Manoli, seis cinco cinco, dos dos dos, tres tres tres; Maracena, calle Ancha 5, por la mañana. Y si se ve desde lejos, apunta la marca del inversor. ¿Está todo bien?\n<ficha>{\"que\":\"Revisar mi instalación\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"Manoli\",\"telefono\":\"655 222 333\",\"municipio\":\"Maracena\",\"direccion\":\"calle Ancha 5\",\"franja\":\"Por la mañana\",\"inicio\":\"\",\"orientacion\":\"Urgente: olor a quemado y pitido raro en el inversor. No tocar nada ni subir al tejado; si hay humo o fuego, 112. Aviso urgente pendiente de confirmar los datos.\",\"porDecir\":\"si firmaste el contrato de compensación; si no se legalizó, no compensa\",\"fase\":\"datos\"}</ficha>",
   "original": "No te preocupes, lo llevamos como urgente. Te repito: Manoli, seis cinco cinco, dos dos dos, tres tres tres; Maracena, calle Ancha 5, por la mañana. Y si se ve desde lejos, apunta la marca del inversor. ¿Está todo bien?\n<ficha>{\"que\":\"Revisar mi instalación\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"Manoli\",\"telefono\":\"655 222 333\",\"municipio\":\"Maracena\",\"direccion\":\"calle Ancha 5\",\"franja\":\"Por la mañana\",\"inicio\":\"\",\"orientacion\":\"Urgente: olor a quemado y pitido raro en el inversor. No tocar nada ni subir al tejado; si hay humo o fuego, 112. Aviso urgente pendiente de confirmar los datos.\",\"porDecir\":\"si firmaste el contrato de compensación; si no se legalizó, no compensa\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, está todo bien. Por favor que vengan cuanto antes"
  }
 ]

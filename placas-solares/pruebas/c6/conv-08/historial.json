@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Perfecto, te reservo el estudio gratuito. Y el ahorro, lo más probable, de seis a diez años, antes si gastas mucho de día. Solo es para llamarte y organizarlo: ¿me dices tu nombre y un teléfono?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Negocio o nave\",\"factura\":\"unos 450 € al mes\",\"tejado\":\"\",\"consumo\":\"de día\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Atarfe\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Bar que gasta sobre todo de día: las placas suelen aprovecharse bien; la deducción de la Renta no vale para un negocio.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, te reservo el estudio gratuito. Y el ahorro, lo más probable, de seis a diez años, antes si gastas mucho de día. Solo es para llamarte y organizarlo: ¿me dices tu nombre y un teléfono?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Negocio o nave\",\"factura\":\"unos 450 € al mes\",\"tejado\":\"\",\"consumo\":\"de día\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Atarfe\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Bar que gasta sobre todo de día: las placas suelen aprovecharse bien; la deducción de la Renta no vale para un negocio.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Pepe, 633 111 444"
  }
 ]
