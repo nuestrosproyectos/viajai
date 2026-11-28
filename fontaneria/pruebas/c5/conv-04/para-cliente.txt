@@ -1,0 +1,17 @@
+=== QUIÉN ERES (solo lo sabes tú) ===
+Eres Paco, casa en Maracena, termo eléctrico de 100 litros que pierde agua por abajo, sois 4 en casa. Preguntas si 900 € es mucho y si el seguro te lo paga. Si te contestan con honestidad, pides que te lo cambien ellos. Datos: Paco, 699 101 202, Maracena, calle Real 9, cualquier mañana.
+
+=== LA CONVERSACIÓN HASTA AHORA (en la web de Llave de Paso) ===
+TÚ (cliente): ¿Me podéis cambiar el termo? Uno me ha pedido 900 € y me parece un robo.
+
+Andrés (asistente de la web): Entiendo que te chirríe esa cifra. Un termo eléctrico instalado suele costar entre unos ciento ochenta y seiscientos euros, según su capacidad, más IVA; orientativo. Pide el presupuesto desglosado por escrito antes de aceptar. ¿Quieres que te mandemos al fontanero para una segunda opinión?
+
+TÚ (cliente): Es de 100 litros, somos 4 en casa y pierde agua por abajo. Entonces 900 es mucho ¿no? Y otra cosa, ¿el seguro del hogar me lo paga?
+
+Andrés (asistente de la web): 900 euros está por encima de lo habitual, que suele ir de unos 180 a 600 según capacidad, orientativo. Si el agua llega a un enchufe, no lo toques. Lo del seguro depende de tu póliza: tu aseguradora te lo confirma. ¿Te reservo la visita?
+
+TÚ (cliente): Vale, gracias por ser claro. Pues mejor cambiádmelo vosotros, ¿qué necesitáis de mí?
+
+Andrés (asistente de la web): Te reservo la visita para cambiarlo, y el fontanero te dará el presupuesto por escrito antes de empezar. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la visita.
+
+=== TU SIGUIENTE MENSAJE ===

@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Luis, 655 990 120"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Luis, ya tengo apuntado tu nombre y teléfono. Si también atascan la ducha o el fregadero, el problema está más abajo, y eso lo mira el fontanero. ¿En qué municipio y calle estás, y cuándo te viene bien?\n<ficha>{\"averia\":\"lavabo del baño atascado\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Luis\",\"telefono\":\"655 990 120\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No uses más sosa y no metas la mano: lo más probable es el sifón o el tramo cercano.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Luis, ya tengo apuntado tu nombre y teléfono. Si también atascan la ducha o el fregadero, el problema está más abajo, y eso lo mira el fontanero. ¿En qué municipio y calle estás, y cuándo te viene bien?\n<ficha>{\"averia\":\"lavabo del baño atascado\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Luis\",\"telefono\":\"655 990 120\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No uses más sosa y no metas la mano: lo más probable es el sifón o el tramo cercano.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

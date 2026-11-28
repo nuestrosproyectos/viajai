@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Granada, el Zaidín. Calle Primavera 20, 2º B"
+ },
+ {
+  "role": "assistant",
+  "content": "Vale, Laura, lo repito: teléfono seis cinco cinco, cuatro tres dos, uno cero nueve; en Granada, el Zaidín, Calle Primavera, número veinte, segundo B; y lo quieres hoy mismo, urgente. ¿Está todo bien?\n<ficha>{\"averia\":\"váter atascado con toallitas, es el único de la casa\",\"cuando\":\"Hoy, en cuanto puedas\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Laura\",\"telefono\":\"655 432 109\",\"municipio\":\"Granada (El Zaidín)\",\"direccion\":\"Calle Primavera 20, 2º B\",\"franja\":\"Hoy mismo, si puede ser\",\"inicio\":\"\",\"orientacion\":\"No tire más de la cisterna ni eche sosa; al ser el único váter, es urgente.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Vale, Laura, lo repito: teléfono seis cinco cinco, cuatro tres dos, uno cero nueve; en Granada, el Zaidín, Calle Primavera, número veinte, segundo B; y lo quieres hoy mismo, urgente. ¿Está todo bien?\n<ficha>{\"averia\":\"váter atascado con toallitas, es el único de la casa\",\"cuando\":\"Hoy, en cuanto puedas\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Laura\",\"telefono\":\"655 432 109\",\"municipio\":\"Granada (El Zaidín)\",\"direccion\":\"Calle Primavera 20, 2º B\",\"franja\":\"Hoy mismo, si puede ser\",\"inicio\":\"\",\"orientacion\":\"No tire más de la cisterna ni eche sosa; al ser el único váter, es urgente.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]
