@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "calle Santa Escolástica 4"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Manolo. Repito: teléfono 611 999 000, calle Santa Escolástica 4 en el Realejo, Granada, y visita mañana por la mañana. Si notas calor raro o olor a quemado, no lo uses hasta que venga el técnico. ¿Está todo bien?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca los platos, la vajilla sale mojada\",\"codigo\":\"\",\"diagnostico\":\"dosificador de abrillantador o resistencia/ventilador de secado\",\"nombre\":\"Manolo\",\"telefono\":\"611 999 000\",\"direccion\":\"calle Santa Escolástica 4, Realejo, Granada\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Manolo. Repito: teléfono 611 999 000, calle Santa Escolástica 4 en el Realejo, Granada, y visita mañana por la mañana. Si notas calor raro o olor a quemado, no lo uses hasta que venga el técnico. ¿Está todo bien?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca los platos, la vajilla sale mojada\",\"codigo\":\"\",\"diagnostico\":\"dosificador de abrillantador o resistencia/ventilador de secado\",\"nombre\":\"Manolo\",\"telefono\":\"611 999 000\",\"direccion\":\"calle Santa Escolástica 4, Realejo, Granada\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
  }
 ]

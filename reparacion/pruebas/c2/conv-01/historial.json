@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Sí, todo bien"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Carmen. Tu solicitud queda enviada para mañana por la mañana, en calle Primavera 12, tercero A, en el Zaidín, y te llamaremos para confirmar la hora exacta. ¿Necesitas algo más?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua, queda agua en el tambor\",\"codigo\":\"E18\",\"diagnostico\":\"filtro de la bomba atascado o bomba de desagüe dañada\",\"nombre\":\"Carmen\",\"telefono\":\"655 123 456\",\"direccion\":\"calle Primavera 12, 3º A, Zaidín, Granada\",\"franja\":\"mañana\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Carmen. Tu solicitud queda enviada para mañana por la mañana, en calle Primavera 12, tercero A, en el Zaidín, y te llamaremos para confirmar la hora exacta. ¿Necesitas algo más?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua, queda agua en el tambor\",\"codigo\":\"E18\",\"diagnostico\":\"filtro de la bomba atascado o bomba de desagüe dañada\",\"nombre\":\"Carmen\",\"telefono\":\"655 123 456\",\"direccion\":\"calle Primavera 12, 3º A, Zaidín, Granada\",\"franja\":\"mañana\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"nombre\":\"Carmen\",\"telefono\":\"655 123 456\",\"direccion\":\"calle Primavera 12, 3º A\",\"municipio\":\"Granada\",\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"averia\":\"no desagua, queda agua en el tambor\",\"codigo\":\"E18\",\"franja\":\"mañana\",\"urgente\":false,\"notas\":\"Diagnóstico probable: filtro de la bomba atascado o bomba de desagüe dañada. Llevar bomba de desagüe y filtro. Aparato de 6 años, fuera de garantía legal. Cliente confirmó datos.\"}</aviso>"
  }
 ]

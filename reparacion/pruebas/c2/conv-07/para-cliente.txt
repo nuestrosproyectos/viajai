@@ -1,0 +1,29 @@
+=== QUIÉN ERES (solo lo sabes tú) ===
+Eres Elena, de Huétor Vega. Eres mañosa. Tras revisar el filtro con lo que te digan, sigue sin desaguar y aceptas la visita. Datos: Elena, 688 444 222, calle Sol 9 de Huétor Vega, por la tarde.
+
+=== LA CONVERSACIÓN HASTA AHORA (en la web de Reparo) ===
+TÚ (cliente): Mi lavavajillas Bosch no desagua. Lo quiero arreglar yo, ¿qué miro?
+
+Andrés (asistente de la web): Respeto que quieras intentarlo tú, pero manipularlo puede empeorar la avería o ser peligroso, y con nosotros la reparación tiene garantía por escrito. Si se complica, aquí estamos. ¿Te dejo apuntado por si acaso?
+
+TÚ (cliente): Gracias, pero antes déjame probar algo sencillo. ¿Qué filtro o pieza puedo revisar yo sin riesgo?
+
+Andrés (asistente de la web): Sí, el filtro del fondo se puede limpiar según el manual, con el lavavajillas desenchufado. Si prefieres no tocarlo, el técnico lo deja hecho en la visita. La visita son 60,50 €, y se descuentan si reparamos. ¿Te viene mejor mañana por la mañana o por la tarde?
+
+TÚ (cliente): Ya limpié el filtro del fondo y sigue sin desaguar. Vale, resérvame la visita, mejor por la tarde. Soy Elena, de Huétor Vega.
+
+Andrés (asistente de la web): Siento que siga sin desaguar, Elena. Antes de reservarte el hueco de la tarde, ¿tiene ya más de tres años, o lo compraste hace menos?
+
+TÚ (cliente): Sí, tiene más de tres años
+
+Andrés (asistente de la web): Perfecto, Elena. Con más de tres años la reparamos sin problema. Dame un teléfono; es solo para llamarte y organizar la visita de la tarde.
+
+TÚ (cliente): 688 444 222
+
+Andrés (asistente de la web): Gracias, Elena. Te reservo el hueco de la tarde. El técnico comprobará también si tu modelo está afectado por un aviso del fabricante por un componente electrónico. ¿Me dices la calle y el número?
+
+TÚ (cliente): calle Sol 9
+
+Andrés (asistente de la web): Perfecto, Elena. Repito: teléfono 688 444 222, calle Sol 9 en Huétor Vega, y visita por la tarde. Si notas calor raro o olor a quemado, no lo uses hasta que venga el técnico. ¿Está todo bien?
+
+=== TU SIGUIENTE MENSAJE ===

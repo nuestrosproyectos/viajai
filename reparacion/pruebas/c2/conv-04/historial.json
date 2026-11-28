@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Sí, todo bien"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Paco. Queda enviada la solicitud de visita para esta tarde en calle Arabial 40, La Chana, y te llamaremos para confirmar la hora exacta. ¿Necesitas algo más?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar, suena a rodamientos\",\"codigo\":\"\",\"diagnostico\":\"rodamientos desgastados\",\"nombre\":\"Paco\",\"telefono\":\"633 777 888\",\"direccion\":\"calle Arabial 40, La Chana, Granada\",\"franja\":\"tarde\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Paco. Queda enviada la solicitud de visita para esta tarde en calle Arabial 40, La Chana, y te llamaremos para confirmar la hora exacta. ¿Necesitas algo más?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar, suena a rodamientos\",\"codigo\":\"\",\"diagnostico\":\"rodamientos desgastados\",\"nombre\":\"Paco\",\"telefono\":\"633 777 888\",\"direccion\":\"calle Arabial 40, La Chana, Granada\",\"franja\":\"tarde\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"nombre\":\"Paco\",\"telefono\":\"633 777 888\",\"direccion\":\"calle Arabial 40, La Chana, Granada\",\"municipio\":\"Granada\",\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"averia\":\"ruido fuerte al centrifugar, suena a rodamientos\",\"codigo\":\"\",\"franja\":\"tarde\",\"urgente\":false,\"notas\":\"Lavadora de 14 años, fuera de garantía legal. Diagnóstico probable: rodamientos de cuba. Con más de diez años no suele compensar; el técnico da presupuesto cerrado antes de tocar nada. Llevar juego de rodamientos para valorar.\"}</aviso>"
  }
 ]

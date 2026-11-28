@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Sí, todo bien. Ojalá puedan venir cuanto antes por la comida"
+ },
+ {
+  "role": "assistant",
+  "content": "Entiendo la prisa por la comida, Javier. Tu solicitud queda enviada como urgente, para esta tarde en calle Real 7, en Armilla, y te llamaremos para confirmar la hora exacta. ¿Necesitas algo más?\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"combi\",\"sintoma\":\"enfría bien la parte de arriba pero el congelador no congela bien; escarcha detrás del congelador; comida en riesgo\",\"codigo\":\"\",\"diagnostico\":\"ventilador del congelador o desescarche\",\"nombre\":\"Javier\",\"telefono\":\"622 333 444\",\"direccion\":\"calle Real 7, Armilla\",\"franja\":\"tarde\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Entiendo la prisa por la comida, Javier. Tu solicitud queda enviada como urgente, para esta tarde en calle Real 7, en Armilla, y te llamaremos para confirmar la hora exacta. ¿Necesitas algo más?\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"combi\",\"sintoma\":\"enfría bien la parte de arriba pero el congelador no congela bien; escarcha detrás del congelador; comida en riesgo\",\"codigo\":\"\",\"diagnostico\":\"ventilador del congelador o desescarche\",\"nombre\":\"Javier\",\"telefono\":\"622 333 444\",\"direccion\":\"calle Real 7, Armilla\",\"franja\":\"tarde\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"nombre\":\"Javier\",\"telefono\":\"622 333 444\",\"direccion\":\"calle Real 7, Armilla\",\"municipio\":\"Armilla\",\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"combi\",\"averia\":\"congelador no congela bien; escarcha detrás del congelador\",\"codigo\":\"\",\"franja\":\"tarde\",\"urgente\":true,\"notas\":\"Diagnóstico probable: ventilador del congelador o sistema de desescarche. Llevar ventilador y sonda o resistencia de desescarche. Aparato de 5 años, fuera de garantía legal. Comida en riesgo: prioridad. Cliente confirmó datos.\"}</aviso>"
  }
 ]

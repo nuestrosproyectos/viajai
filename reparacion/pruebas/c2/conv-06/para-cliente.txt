@@ -1,0 +1,29 @@
+=== QUIÉN ERES (solo lo sabes tú) ===
+Eres Manolo, de Granada (Realejo). Tu lavavajillas Bosch no seca. Estás molesto con el precio. Si te explican que se descuenta y qué incluye, aceptas a regañadientes. Datos: Manolo, 611 999 000, calle Santa Escolástica 4, Granada, por la mañana.
+
+=== LA CONVERSACIÓN HASTA AHORA (en la web de Reparo) ===
+TÚ (cliente): ¿60 euros solo por venir a mirarla? Eso es un robo.
+
+Andrés (asistente de la web): Entiendo que suene caro. Esos 60,50 € cubren el desplazamiento y un presupuesto cerrado antes de tocar nada, y si reparamos, se descuentan de la factura. ¿Qué aparato es, y de qué marca?
+
+TÚ (cliente): Un lavavajillas Bosch, no seca los platos. Y eso de que se descuenta, ¿seguro? ¿Qué incluye exactamente?
+
+Andrés (asistente de la web): Sí, seguro: los 60,50 € incluyen el desplazamiento, el diagnóstico del técnico y el presupuesto cerrado, y si reparamos con nosotros se descuentan de la factura. Si no aceptas el presupuesto, solo pagas la visita. ¿Te viene mejor mañana por la mañana o por la tarde?
+
+TÚ (cliente): Bueno, vale, si se descuenta... Mañana por la mañana. Manolo, del Realejo.
+
+Andrés (asistente de la web): Perfecto, Manolo. Antes de reservarte el hueco de mañana por la mañana, dime: ¿el lavavajillas tiene ya más de tres años, o lo compraste hace menos?
+
+TÚ (cliente): Más de tres, sí. Ya tiene unos años
+
+Andrés (asistente de la web): Perfecto, Manolo. Te reservo el hueco de mañana por la mañana. Dame un teléfono; es solo para llamarte y organizar la visita.
+
+TÚ (cliente): 611 999 000
+
+Andrés (asistente de la web): Perfecto, Manolo, te reservo mañana por la mañana. El técnico comprobará también si tu modelo está afectado por un aviso del fabricante por un componente electrónico. ¿Me dices la calle y el número?
+
+TÚ (cliente): calle Santa Escolástica 4
+
+Andrés (asistente de la web): Perfecto, Manolo. Repito: teléfono 611 999 000, calle Santa Escolástica 4 en el Realejo, Granada, y visita mañana por la mañana. Si notas calor raro o olor a quemado, no lo uses hasta que venga el técnico. ¿Está todo bien?
+
+=== TU SIGUIENTE MENSAJE ===

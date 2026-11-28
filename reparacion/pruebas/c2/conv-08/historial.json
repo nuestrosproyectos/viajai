@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Sí, hijo, todo está bien. Muchas gracias por su paciencia."
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Encarnación. Su solicitud queda enviada para mañana por la mañana, en calle Real 20 de La Zubia, y le llamaremos al fijo para confirmar la hora exacta. ¿Necesita algo más?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no enciende un fuego de la vitrocerámica; los otros fuegos funcionan\",\"codigo\":\"\",\"diagnostico\":\"control táctil de ese fuego o placa de control\",\"nombre\":\"Encarnación\",\"telefono\":\"958 590 123\",\"direccion\":\"calle Real 20, La Zubia\",\"franja\":\"mañana\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Encarnación. Su solicitud queda enviada para mañana por la mañana, en calle Real 20 de La Zubia, y le llamaremos al fijo para confirmar la hora exacta. ¿Necesita algo más?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no enciende un fuego de la vitrocerámica; los otros fuegos funcionan\",\"codigo\":\"\",\"diagnostico\":\"control táctil de ese fuego o placa de control\",\"nombre\":\"Encarnación\",\"telefono\":\"958 590 123\",\"direccion\":\"calle Real 20, La Zubia\",\"franja\":\"mañana\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"nombre\":\"Encarnación\",\"telefono\":\"958 590 123\",\"direccion\":\"calle Real 20\",\"municipio\":\"La Zubia\",\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"averia\":\"no enciende un fuego de la vitrocerámica; los otros fuegos funcionan\",\"codigo\":\"\",\"franja\":\"mañana\",\"urgente\":false,\"notas\":\"Diagnóstico probable: control de ese fuego o placa de control. Aparato de unos 10 años, fuera de garantía legal. Clienta de 80 años: tratar de usted. Teléfono fijo, no tiene móvil. Cliente confirmó datos.\"}</aviso>"
  }
 ]
