@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "El filtro se puede limpiar según el manual de la Bosch, pero no te voy a guiar por ahí: prefiero que lo veas con el técnico delante. Si lo prefieres, él te lo deja hecho en la visita. ¿Te viene mejor mañana por la mañana o por la tarde?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"\",\"diagnostico\":\"Filtro o bomba de desagüe obstruidos (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "El filtro se puede limpiar según el manual de la Bosch, pero no te voy a guiar por ahí: prefiero que lo veas con el técnico delante. Si lo prefieres, él te lo deja hecho en la visita. ¿Te viene mejor mañana por la mañana o por la tarde?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"\",\"diagnostico\":\"Filtro o bomba de desagüe obstruidos (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Pero solo es sacar el filtro del fondo y enjuagarlo, no es desmontar nada. ¿Me dices al menos dónde está? Si luego sigue sin desaguar, os llamo"
  }
 ]

@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Entiendo que te moleste. Pero se descuenta si reparamos, y el técnico te da el presupuesto cerrado antes de tocar nada, así decides con el precio delante. Lo más probable es que falte abrillantador o que el dosificador esté fallando, y el técnico irá preparado. ¿Te viene mejor mañana por la mañana o por la tarde?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca los platos\",\"codigo\":\"\",\"diagnostico\":\"Falta de abrillantador o fallo del dosificador o del secado (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>aparato:lavavajillas</mostrar>",
   "original": "Entiendo que te moleste. Pero se descuenta si reparamos, y el técnico te da el presupuesto cerrado antes de tocar nada, así decides con el precio delante. Lo más probable es que falte abrillantador o que el dosificador esté fallando, y el técnico irá preparado. ¿Te viene mejor mañana por la mañana o por la tarde?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca los platos\",\"codigo\":\"\",\"diagnostico\":\"Falta de abrillantador o fallo del dosificador o del secado (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>aparato:lavavajillas</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Bueno, si se descuenta de la reparación... vale. Por la mañana"
  }
 ]

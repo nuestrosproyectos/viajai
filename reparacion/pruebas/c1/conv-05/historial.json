@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Sí, intentamos ir hoy mismo si hay hueco en la ruta, y el equipo te llama para confirmarlo. No vuelvas a poner en marcha la lavadora hasta que la vea el técnico. Para reservarlo, ¿me dices tu nombre?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo de la lavadora, suelo encharcado\",\"codigo\":\"\",\"diagnostico\":\"Fuga de agua (urgente)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Sí, intentamos ir hoy mismo si hay hueco en la ruta, y el equipo te llama para confirmarlo. No vuelvas a poner en marcha la lavadora hasta que la vea el técnico. Para reservarlo, ¿me dices tu nombre?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo de la lavadora, suelo encharcado\",\"codigo\":\"\",\"diagnostico\":\"Fuga de agua (urgente)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Me llamo Rosa"
  }
 ]

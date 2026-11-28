@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Con seis años, la bomba de desagüe es una pieza barata y normalmente compensa repararla. Le reservo al técnico una visita de 60,50 €, que se descuentan si reparamos, y va directo con la bomba. ¿Te viene mejor mañana por la mañana o por la tarde?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"E18\",\"diagnostico\":\"Bomba o filtro de desagüe obstruidos (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>precios</mostrar>",
   "original": "Con seis años, la bomba de desagüe es una pieza barata y normalmente compensa repararla. Le reservo al técnico una visita de 60,50 €, que se descuentan si reparamos, y va directo con la bomba. ¿Te viene mejor mañana por la mañana o por la tarde?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"E18\",\"diagnostico\":\"Bomba o filtro de desagüe obstruidos (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>\n<mostrar>precios</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, por la mañana mejor"
  }
 ]
