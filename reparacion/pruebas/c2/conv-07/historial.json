@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Ya limpié el filtro del fondo y sigue sin desaguar. Vale, resérvame la visita, mejor por la tarde. Soy Elena, de Huétor Vega."
+ },
+ {
+  "role": "assistant",
+  "content": "Siento que siga sin desaguar, Elena. Antes de reservarte el hueco de la tarde, ¿tiene ya más de tres años, o lo compraste hace menos?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua; el filtro del fondo ya está limpio y sigue sin desaguar\",\"codigo\":\"\",\"diagnostico\":\"filtro del fondo obstruido o bomba de desagüe\",\"nombre\":\"Elena\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>",
+  "original": "Siento que siga sin desaguar, Elena. Antes de reservarte el hueco de la tarde, ¿tiene ya más de tres años, o lo compraste hace menos?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua; el filtro del fondo ya está limpio y sigue sin desaguar\",\"codigo\":\"\",\"diagnostico\":\"filtro del fondo obstruido o bomba de desagüe\",\"nombre\":\"Elena\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>"
  }
 ]

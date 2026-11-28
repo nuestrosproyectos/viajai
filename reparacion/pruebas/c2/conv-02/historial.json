@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, por la tarde mejor. ¿Y la comida del congelador se puede estropear hasta que vengan?"
+ },
+ {
+  "role": "assistant",
+  "content": "Lo que hay en el congelador puede estropearse si no vuelve a congelar, así que mantén la puerta cerrada y abre lo menos posible. Como hay comida en riesgo, te reservo el hueco de esta tarde. ¿Me dices tu nombre y un teléfono?\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"combi\",\"sintoma\":\"enfría bien la parte de arriba pero el congelador no congela bien; escarcha detrás del congelador; comida en riesgo\",\"codigo\":\"\",\"diagnostico\":\"ventilador del congelador o desescarche\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>",
+  "original": "Lo que hay en el congelador puede estropearse si no vuelve a congelar, así que mantén la puerta cerrada y abre lo menos posible. Como hay comida en riesgo, te reservo el hueco de esta tarde. ¿Me dices tu nombre y un teléfono?\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"combi\",\"sintoma\":\"enfría bien la parte de arriba pero el congelador no congela bien; escarcha detrás del congelador; comida en riesgo\",\"codigo\":\"\",\"diagnostico\":\"ventilador del congelador o desescarche\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>"
  }
 ]

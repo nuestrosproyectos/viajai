@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, me parece bien. Por la mañana mejor. Soy Carmen, del Zaidín en Granada."
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Carmen. Te reservo el hueco de mañana por la mañana. Dame un teléfono por si se corta; es solo para llamarte y organizar la visita.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua, queda agua en el tambor\",\"codigo\":\"E18\",\"diagnostico\":\"filtro de la bomba atascado o bomba de desagüe dañada\",\"nombre\":\"Carmen\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Carmen. Te reservo el hueco de mañana por la mañana. Dame un teléfono por si se corta; es solo para llamarte y organizar la visita.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua, queda agua en el tambor\",\"codigo\":\"E18\",\"diagnostico\":\"filtro de la bomba atascado o bomba de desagüe dañada\",\"nombre\":\"Carmen\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
  }
 ]

@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Rosa, 699 222 111."
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Rosa. Anoto el 699 222 111. Para organizar la visita, dime la calle y el número, el municipio y si te viene mejor por la mañana o por la tarde.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo de la lavadora y el suelo está encharcado\",\"codigo\":\"\",\"diagnostico\":\"fuga por junta de la puerta, manguera de desagüe o bomba\",\"nombre\":\"Rosa\",\"telefono\":\"699 222 111\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Rosa. Anoto el 699 222 111. Para organizar la visita, dime la calle y el número, el municipio y si te viene mejor por la mañana o por la tarde.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo de la lavadora y el suelo está encharcado\",\"codigo\":\"\",\"diagnostico\":\"fuga por junta de la puerta, manguera de desagüe o bomba\",\"nombre\":\"Rosa\",\"telefono\":\"699 222 111\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]
