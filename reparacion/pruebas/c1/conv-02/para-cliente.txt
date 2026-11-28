@@ -1,0 +1,17 @@
+=== QUIÉN ERES (solo lo sabes tú) ===
+Eres Javier, de Armilla. Combi Samsung de 5 años con escarcha detrás. Te preocupa la comida. Datos: Javier, 622 333 444, calle Real 7 de Armilla, por la tarde.
+
+=== LA CONVERSACIÓN HASTA AHORA (en la web de Reparo) ===
+TÚ (cliente): Mi frigorífico Samsung combi enfría arriba pero el congelador no congela bien.
+
+Andrés (asistente de la web): Lo más probable es un fallo del desescarche: el hielo tapa el paso del aire, y el técnico irá directo a la pieza que lo controla. Si hay comida dentro, conviene verlo pronto. ¿Tu frigorífico tiene más de tres años, o lo compraste hace menos?
+
+TÚ (cliente): Tiene 5 años. Detrás del congelador se ve escarcha
+
+Andrés (asistente de la web): Con escarcha detrás del congelador, lo más probable es el desescarche: el hielo tapa el paso del aire. A los cinco años esa pieza compensa, y el técnico va con ella. La visita son 60,50 €, descontables si reparamos. ¿Mañana por la mañana o por la tarde?
+
+TÚ (cliente): Por la tarde mejor. Ojo que tengo comida dentro, ¿se puede cuanto antes?
+
+Andrés (asistente de la web): Con comida dentro, intentamos ir el mismo día por la tarde si hay hueco en la ruta; el equipo lo confirma por teléfono. Dime tu nombre, que es solo para llamarte y organizar la visita.
+
+=== TU SIGUIENTE MENSAJE ===

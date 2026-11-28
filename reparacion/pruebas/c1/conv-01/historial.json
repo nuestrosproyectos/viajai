@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, por la mañana mejor"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, por la mañana le reservo el hueco al técnico. Dime tu nombre, que es solo para llamarte y organizar la visita.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"E18\",\"diagnostico\":\"Bomba o filtro de desagüe obstruidos (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, por la mañana le reservo el hueco al técnico. Dime tu nombre, que es solo para llamarte y organizar la visita.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"E18\",\"diagnostico\":\"Bomba o filtro de desagüe obstruidos (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
  }
 ]

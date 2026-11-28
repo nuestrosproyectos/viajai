@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, mañana por la mañana me va bien"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, le reservo el hueco para mañana por la mañana. Dime tu nombre, que es solo para llamarte y organizar la visita.\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz sí se enciende\",\"codigo\":\"\",\"diagnostico\":\"Termostato de seguridad o fusible térmico (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, le reservo el hueco para mañana por la mañana. Dime tu nombre, que es solo para llamarte y organizar la visita.\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz sí se enciende\",\"codigo\":\"\",\"diagnostico\":\"Termostato de seguridad o fusible térmico (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
  }
 ]
