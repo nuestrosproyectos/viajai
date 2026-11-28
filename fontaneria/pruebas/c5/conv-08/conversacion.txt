@@ -1,0 +1,28 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Llave de Paso. Si te está saliendo agua, cierra primero la llave de paso. Cuéntame qué te pasa y te mando al fontanero.
+
+CLIENTE: Buenos días. Me he quedado sin agua caliente. Tengo un termo eléctrico y 78 años. ¿Cuánto me costaría arreglarlo?
+
+ANDRÉS: Entiendo el fastidio. Mire si ha saltado la protección del cuadro, suele ser lo más habitual. Arreglarlo no tiene precio cerrado: la salida y la hora suelen rondar los veinte a cuarenta euros cada una, más la pieza, orientativo. ¿Quiere que le reserve la visita?
+<ficha>{"averia":"sin agua caliente, termo eléctrico","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Mirar si ha saltado la protección del cuadro; el fontanero valora si compensa reparar o cambiar el termo.","porDecir":"si el termo tiene muchos años, el fontanero le dirá si compensa más cambiarlo, desde unos 180 a 600 euros según capacidad, orientativo","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>
+
+CLIENTE: Muchas gracias, hijo. No sé yo mirar el cuadro, la verdad. El termo tiene unos 12 años y es de 80 litros. Sí, mejor que venga el fontanero, si puede ser mañana por la mañana.
+
+ANDRÉS: Perfecto, le reservo la visita por la mañana, como pide. Para un termo de unos doce años, el fontanero le dirá si compensa cambiarlo, y el cambio va de unos 180 a 600 euros según capacidad, orientativo. ¿Me dice su nombre y un teléfono?
+<ficha>{"averia":"sin agua caliente, termo eléctrico","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"Mañana por la mañana","inicio":"","orientacion":"Mire si ha saltado la protección del cuadro; el fontanero valora si compensa reparar o cambiar el termo.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Me llamo Antonia. Mi teléfono es el 958 123 456, es fijo, no tengo móvil
+
+ANDRÉS: Gracias, Antonia, ya tengo su nombre y su teléfono fijo. No se preocupe por el cuadro: el fontanero lo revisa en la visita. ¿En qué municipio y calle vive, y con qué número?
+<ficha>{"averia":"sin agua caliente, termo eléctrico de 80 litros, unos 12 años","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Antonia","telefono":"958 123 456 (fijo)","municipio":"","direccion":"","franja":"Mañana por la mañana","inicio":"","orientacion":"Mire si ha saltado la protección del cuadro; el fontanero valora si compensa reparar o cambiar el termo.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Vivo en Granada, en el Realejo, calle Santa Escolástica número 9
+
+ANDRÉS: Repito, Antonia: teléfono fijo nueve cinco ocho, uno dos tres, cuatro cinco seis. Visita por la mañana, en calle Santa Escolástica, número nueve, El Realejo, Granada. Si ve agua cerca de algún enchufe, no toque nada mojado. ¿Está todo bien?
+<ficha>{"averia":"sin agua caliente, termo eléctrico de 80 litros, unos 12 años","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Antonia","telefono":"958 123 456 (fijo)","municipio":"Granada (El Realejo)","direccion":"Calle Santa Escolástica 9","franja":"Mañana por la mañana","inicio":"","orientacion":"Mire si ha saltado la protección del cuadro; el fontanero valora si compensa reparar o cambiar el termo.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, hijo, todo está bien. Mañana por la mañana, entonces. Muchas gracias por la paciencia.
+
+ANDRÉS: Antonia, su solicitud queda enviada para la visita de mañana por la mañana. Le llamamos para confirmar la hora, y apunto que no sabe revisar el cuadro. ¿Necesita algo más?
+<ficha>{"averia":"sin agua caliente, termo eléctrico de 80 litros","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Antonia","telefono":"958 123 456 (fijo)","municipio":"Granada","direccion":"Calle Santa Escolástica 9, El Realejo","franja":"Mañana por la mañana","inicio":"","orientacion":"Mire si ha saltado la protección del cuadro; el fontanero valora si compensa reparar o cambiar el termo.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","averia":"sin agua caliente con termo eléctrico","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Antonia","telefono":"958 123 456","municipio":"Granada","direccion":"Calle Santa Escolástica 9, El Realejo","franja":"Mañana por la mañana","inicio":"","urgente":false,"notas":"Se ha quedado sin agua caliente. Termo eléctrico de 80 litros, unos 12 años. Quien escribe tiene 78 años y no sabe revisar el cuadro eléctrico. Teléfono fijo, no tiene móvil. Pregunta cuánto costaría arreglarlo. Quiere la visita mañana por la mañana."}</aviso>

@@ -1,0 +1,12 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Llave de Paso. Si te está saliendo agua, cierra primero la llave de paso. Cuéntame qué te pasa y te mando al fontanero.
+
+CLIENTE: Huele mucho a gas en la cocina desde hace un rato. ¿Podéis venir?
+
+ANDRÉS: Sal ya de casa, sin tocar interruptores ni enchufes, sin encender nada, y cierra la llave del gas si puedes. Desde fuera llama a Nedgia, 900 750 750, o al 112. Es una emergencia de gas, no de fontanería, así que no esperes.
+<ficha>{"averia":"olor a gas en la cocina desde hace un rato","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Salir de casa sin encender nada y llamar a Nedgia o al 112 desde fuera.","porDecir":"","fase":"orientando"}</ficha>
+<mostrar>gas</mostrar>
+
+CLIENTE: Ya he salido y he abierto las ventanas antes de irme. Estoy llamando ahora. Luego, ¿puede venir el fontanero a revisarme la instalación?
+
+ANDRÉS: Muy bien, has hecho lo correcto. Quédate fuera de casa. Para revisar la instalación de gas hace falta una empresa instaladora de gas habilitada, y no consta que nosotros tengamos esa habilitación.
+<ficha>{"averia":"olor a gas en la cocina desde hace un rato","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Salir de casa sin encender nada y llamar a Nedgia o al 112 desde fuera; para la instalación de gas hace falta una empresa instaladora de gas habilitada.","porDecir":"","fase":"orientando"}</ficha>

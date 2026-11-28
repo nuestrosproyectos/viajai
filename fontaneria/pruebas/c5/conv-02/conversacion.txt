@@ -1,0 +1,28 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Llave de Paso. Si te está saliendo agua, cierra primero la llave de paso. Cuéntame qué te pasa y te mando al fontanero.
+
+CLIENTE: Tengo el lavabo del baño atascado, ¿cuánto cuesta desatascarlo?
+
+ANDRÉS: Un desatasco sencillo de lavabo suele costar entre setenta y ciento cincuenta euros, más unos veinte a cuarenta de salida y el IVA, orientativo. Mientras, no eches sosa, que quema y puede empeorarlo. ¿Te reservo la visita del fontanero?
+<ficha>{"averia":"lavabo del baño atascado","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No eches sosa y pide la visita del fontanero para el desatasco.","porDecir":"lo más probable es el sifón o el tramo cercano · si también atascan otros desagües, el problema está más abajo","fase":"orientando"}</ficha>
+<mostrar>precios</mostrar>
+
+CLIENTE: Uy, pues ya eché un bote de desatascador fuerte de esos de sosa y sigue igual. ¿Eso es un problema? Vale, resérvame la visita
+
+ANDRÉS: Sí, la sosa puede quemarte y empeorar el atasco, así que no metas la mano. Lo más probable es el sifón o el tramo cercano. Te reservo la visita: ¿me dices tu nombre y un teléfono? Es solo para llamarte y organizar la visita.
+<ficha>{"averia":"lavabo del baño atascado","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No uses más sosa y no metas la mano: lo más probable es el sifón o el tramo cercano.","porDecir":"si también atascan otros desagües, el problema está más abajo","fase":"datos"}</ficha>
+
+CLIENTE: Luis, 655 990 120
+
+ANDRÉS: Perfecto, Luis, ya tengo apuntado tu nombre y teléfono. Si también atascan la ducha o el fregadero, el problema está más abajo, y eso lo mira el fontanero. ¿En qué municipio y calle estás, y cuándo te viene bien?
+<ficha>{"averia":"lavabo del baño atascado","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"Luis","telefono":"655 990 120","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No uses más sosa y no metas la mano: lo más probable es el sifón o el tramo cercano.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Armilla, avenida de los Mondragones 3. Mañana por la mañana si puede ser
+
+ANDRÉS: Luis, te repito: teléfono seis cinco cinco, nueve nueve cero, uno dos cero. Visita para el lavabo en avenida de los Mondragones tres, Armilla, mañana por la mañana. Apunto que echaste sosa para que el fontanero vaya avisado. ¿Está todo bien, y en qué barrio de Armilla estás?
+<ficha>{"averia":"lavabo del baño atascado","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Luis","telefono":"655 990 120","municipio":"Armilla","direccion":"Avenida de los Mondragones 3","franja":"mañana por la mañana","inicio":"","orientacion":"No uses más sosa y no metas la mano: lo más probable es el sifón o el tramo cercano.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien. Barrio no sé decirte, es la avenida de los Mondragones, en Armilla.
+
+ANDRÉS: Luis, tu solicitud queda enviada para mañana por la mañana en avenida de los Mondragones tres, Armilla. Te llamamos para confirmar la hora. ¿Necesitas algo más?
+<ficha>{"averia":"lavabo del baño atascado","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Luis","telefono":"655 990 120","municipio":"Armilla","direccion":"Avenida de los Mondragones 3","franja":"mañana por la mañana","inicio":"","orientacion":"No uses más sosa y no metas la mano: el fontanero revisará el sifón o el tramo cercano.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","averia":"lavabo del baño atascado","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Luis","telefono":"655 990 120","municipio":"Armilla","direccion":"Avenida de los Mondragones 3","franja":"mañana por la mañana","inicio":"","urgente":false,"notas":"Lavabo del baño atascado. Ha echado un desatascador fuerte de sosa y sigue igual. No consta si atascan otros desagües. Quiere la visita mañana por la mañana."}</aviso>
