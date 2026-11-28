@@ -1,0 +1,34 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Reparo. ¿Qué aparato se te ha averiado?
+
+CLIENTE: Mi frigorífico Samsung combi enfría arriba pero el congelador no congela bien.
+
+ANDRÉS: Lo más probable es un fallo del desescarche: el hielo tapa el paso del aire, y el técnico irá directo a la pieza que lo controla. Si hay comida dentro, conviene verlo pronto. ¿Tu frigorífico tiene más de tres años, o lo compraste hace menos?
+<ficha>{"aparato":"frigorifico","marca":"Samsung","modelo":"","sintoma":"enfría arriba pero el congelador no congela bien","codigo":"","diagnostico":"Fallo del desescarche, hielo tapando el paso de aire (lo más probable)","nombre":"","telefono":"","direccion":"","franja":"","fase":"orientando"}</ficha>
+<mostrar>aparato:frigorifico</mostrar>
+
+CLIENTE: Tiene 5 años. Detrás del congelador se ve escarcha
+
+ANDRÉS: Con escarcha detrás del congelador, lo más probable es el desescarche: el hielo tapa el paso del aire. A los cinco años esa pieza compensa, y el técnico va con ella. La visita son 60,50 €, descontables si reparamos. ¿Mañana por la mañana o por la tarde?
+<ficha>{"aparato":"frigorifico","marca":"Samsung","modelo":"","sintoma":"enfría arriba pero el congelador no congela bien; escarcha detrás del congelador","codigo":"","diagnostico":"Fallo del desescarche, hielo tapando el paso de aire (lo más probable)","nombre":"","telefono":"","direccion":"","franja":"","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>
+
+CLIENTE: Por la tarde mejor. Ojo que tengo comida dentro, ¿se puede cuanto antes?
+
+ANDRÉS: Con comida dentro, intentamos ir el mismo día por la tarde si hay hueco en la ruta; el equipo lo confirma por teléfono. Dime tu nombre, que es solo para llamarte y organizar la visita.
+<ficha>{"aparato":"frigorifico","marca":"Samsung","modelo":"","sintoma":"enfría arriba pero el congelador no congela bien; escarcha detrás del congelador","codigo":"","diagnostico":"Fallo del desescarche, hielo tapando el paso de aire (lo más probable)","nombre":"","telefono":"","direccion":"","franja":"tarde","fase":"datos"}</ficha>
+
+CLIENTE: Javier
+
+ANDRÉS: Gracias, Javier. Dame un teléfono por si se corta y te reservo el hueco de la tarde.
+<ficha>{"aparato":"frigorifico","marca":"Samsung","modelo":"","sintoma":"enfría arriba pero el congelador no congela bien; escarcha detrás del congelador","codigo":"","diagnostico":"Fallo del desescarche, hielo tapando el paso de aire (lo más probable)","nombre":"Javier","telefono":"","direccion":"","franja":"tarde","fase":"datos"}</ficha>
+
+CLIENTE: 622 333 444
+
+ANDRÉS: Perfecto, Javier, apunto el teléfono: 622 333 444. ¿En qué dirección y municipio está el frigorífico?
+<ficha>{"aparato":"frigorifico","marca":"Samsung","modelo":"","sintoma":"enfría arriba pero el congelador no congela bien; escarcha detrás del congelador","codigo":"","diagnostico":"Fallo del desescarche, hielo tapando el paso de aire (lo más probable)","nombre":"Javier","telefono":"622 333 444","direccion":"","franja":"tarde","fase":"datos"}</ficha>
+
+CLIENTE: Calle Real 7, Armilla
+
+ANDRÉS: Perfecto, Javier. Te leo los datos: teléfono 622 333 444, calle Real 7, en Armilla. ¿Está todo bien?
+<ficha>{"aparato":"frigorifico","marca":"Samsung","modelo":"","sintoma":"enfría arriba pero el congelador no congela bien; escarcha detrás del congelador","codigo":"","diagnostico":"Fallo del desescarche, hielo tapando el paso de aire (lo más probable)","nombre":"Javier","telefono":"622 333 444","direccion":"Calle Real 7","franja":"tarde","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","nombre":"Javier","telefono":"622 333 444","direccion":"Calle Real 7","municipio":"Armilla","aparato":"frigorifico","marca":"Samsung","modelo":"","averia":"Congelador no congela bien, escarcha detrás del congelador","codigo":"","franja":"tarde","urgente":true,"notas":"Diagnóstico probable: fallo del desescarche (resistencia, sonda o bimetal). Hay comida dentro. Frigorífico de 5 años, fuera de garantía legal."}</aviso>

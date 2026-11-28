@@ -1,0 +1,45 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Reparo. ¿Qué aparato se te ha averiado?
+
+CLIENTE: Buenos días. La vitrocerámica no me enciende un fuego. Tengo 80 años y vivo en La Zubia.
+
+ANDRÉS: Buenos días. La Zubia está en nuestra zona. Cada marca tiene sus propios códigos y averías típicas, así que, ¿de qué marca es la vitrocerámica?
+<ficha>{"aparato":"placa","marca":"","modelo":"","sintoma":"un fuego no enciende","codigo":"","diagnostico":"Fallo de un fuego, pendiente de marca","nombre":"","telefono":"","direccion":"","franja":"","fase":"entendiendo"}</ficha>
+<mostrar>zona</mostrar>
+
+CLIENTE: Es una Balay, hijo. Tiene ya sus diez años. Los otros fuegos funcionan bien, solo es uno el que no calienta.
+
+ANDRÉS: Lo más probable es que esa zona falle por su resistencia o su control, y con la visita el técnico irá con esa pieza. ¿Sale algún código o letra en ese fuego?
+<ficha>{"aparato":"placa","marca":"Balay","modelo":"","sintoma":"un fuego no calienta, el resto sí funcionan","codigo":"","diagnostico":"Resistencia o control de esa zona (lo más probable)","nombre":"","telefono":"","direccion":"","franja":"","fase":"orientando"}</ficha>
+<mostrar>aparato:placa</mostrar>
+
+CLIENTE: No, hijo, no sale ninguna letra ni número, simplemente ese fuego no se pone rojo. ¿Y eso se puede arreglar o es mejor comprar otra?
+
+ANDRÉS: Con diez años, si solo falla un fuego, suele compensar, porque esa pieza es barata y el técnico te da presupuesto cerrado para decidir. Le reservo la visita, 60,50 €, que se descuentan si reparamos. ¿Te viene mejor mañana por la mañana o por la tarde?
+<ficha>{"aparato":"placa","marca":"Balay","modelo":"","sintoma":"un fuego no se pone rojo, el resto sí funcionan","codigo":"","diagnostico":"Resistencia radiante o su limitador del fuego (lo más probable)","nombre":"","telefono":"","direccion":"","franja":"","fase":"proponiendo"}</ficha>
+<mostrar>precios</mostrar>
+
+CLIENTE: Muy bien, hijo, pues por la mañana mejor, si es tan amable.
+
+ANDRÉS: Perfecto, lo dejo reservado para la mañana. Dime tu nombre, que es solo para llamarte y organizar la visita.
+<ficha>{"aparato":"placa","marca":"Balay","modelo":"","sintoma":"un fuego no se pone rojo, el resto sí funcionan","codigo":"","diagnostico":"Resistencia radiante o su limitador del fuego (lo más probable)","nombre":"","telefono":"","direccion":"","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: Encarnación, hijo
+
+ANDRÉS: Gracias, Encarnación. Dame un teléfono por si se corta la llamada, y te reservo el hueco de la mañana.
+<ficha>{"aparato":"placa","marca":"Balay","modelo":"","sintoma":"un fuego no se pone rojo, el resto sí funcionan","codigo":"","diagnostico":"Resistencia radiante o su limitador del fuego (lo más probable)","nombre":"Encarnación","telefono":"","direccion":"","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: Mi teléfono es un fijo, hijo: 958 590 123
+
+ANDRÉS: Perfecto, Encarnación, apunto el fijo: 958 590 123. ¿En qué calle y número de La Zubia está la placa?
+<ficha>{"aparato":"placa","marca":"Balay","modelo":"","sintoma":"un fuego no se pone rojo, el resto sí funcionan","codigo":"","diagnostico":"Resistencia radiante o su limitador del fuego (lo más probable)","nombre":"Encarnación","telefono":"958 590 123","direccion":"","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: Calle Real número 20, hijo, en La Zubia
+
+ANDRÉS: Perfecto, Encarnación. Te apunto para la mañana en calle Real 20, La Zubia, y el fijo 958 590 123. ¿Está bien?
+<ficha>{"aparato":"placa","marca":"Balay","modelo":"","sintoma":"un fuego no se pone rojo, el resto sí funcionan","codigo":"","diagnostico":"Resistencia radiante o su limitador del fuego (lo más probable)","nombre":"Encarnación","telefono":"958 590 123","direccion":"Calle Real 20, La Zubia","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: Sí, hijo, está todo bien. Muchas gracias por su paciencia.
+
+ANDRÉS: De nada, Encarnación. Queda enviada la solicitud para la mañana, y el equipo le llamará al 958 590 123 para confirmar la hora exacta. ¿Necesita algo más?
+<ficha>{"aparato":"placa","marca":"Balay","modelo":"","sintoma":"un fuego no se pone rojo, el resto sí funcionan","codigo":"","diagnostico":"Resistencia radiante o su limitador del fuego (lo más probable)","nombre":"Encarnación","telefono":"958 590 123","direccion":"Calle Real 20, La Zubia","franja":"mañana","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","nombre":"Encarnación","telefono":"958 590 123","direccion":"Calle Real 20, La Zubia","municipio":"La Zubia","aparato":"placa","marca":"Balay","modelo":"","averia":"Un fuego no se pone rojo, el resto de fuegos funcionan","codigo":"","franja":"mañana","urgente":false,"notas":"Vitrocerámica Balay de unos 10 años, fuera de garantía legal. Diagnóstico probable: resistencia radiante del fuego o su limitador; llevar esa pieza. Cliente mayor: trato de usted y llamada al fijo."}</aviso>

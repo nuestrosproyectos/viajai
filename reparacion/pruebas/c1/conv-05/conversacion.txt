@@ -1,0 +1,27 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Reparo. ¿Qué aparato se te ha averiado?
+
+CLIENTE: ¡Me sale agua por debajo de la lavadora y está el suelo encharcado!
+
+ANDRÉS: Lo primero es la seguridad: si la lavadora está enchufada, corta la luz desde el diferencial antes de tocar nada, y cierra el grifo de la lavadora. ¿Ya tienes el agua lejos de los enchufes?
+<ficha>{"aparato":"lavadora","marca":"","modelo":"","sintoma":"sale agua por debajo de la lavadora, suelo encharcado","codigo":"","diagnostico":"Fuga de agua (urgente)","nombre":"","telefono":"","direccion":"","franja":"","fase":"entendiendo"}</ficha>
+
+CLIENTE: Sí, ya corté la luz y cerré el agua. Ahora estoy más tranquila. ¿Podéis venir hoy?
+
+ANDRÉS: Sí, intentamos ir hoy mismo si hay hueco en la ruta, y el equipo te llama para confirmarlo. No vuelvas a poner en marcha la lavadora hasta que la vea el técnico. Para reservarlo, ¿me dices tu nombre?
+<ficha>{"aparato":"lavadora","marca":"","modelo":"","sintoma":"sale agua por debajo de la lavadora, suelo encharcado","codigo":"","diagnostico":"Fuga de agua (urgente)","nombre":"","telefono":"","direccion":"","franja":"","fase":"datos"}</ficha>
+
+CLIENTE: Me llamo Rosa
+
+ANDRÉS: Gracias, Rosa. Dame un teléfono por si se corta la llamada, que es solo para avisarte de la hora y organizar la visita.
+<ficha>{"aparato":"lavadora","marca":"","modelo":"","sintoma":"sale agua por debajo de la lavadora, suelo encharcado","codigo":"","diagnostico":"Fuga de agua (urgente)","nombre":"Rosa","telefono":"","direccion":"","franja":"","fase":"datos"}</ficha>
+
+CLIENTE: 699 222 111
+
+ANDRÉS: Apunto el 699 222 111, Rosa. ¿En qué calle y número estás?
+<ficha>{"aparato":"lavadora","marca":"","modelo":"","sintoma":"sale agua por debajo de la lavadora, suelo encharcado","codigo":"","diagnostico":"Fuga de agua (urgente)","nombre":"Rosa","telefono":"699 222 111","direccion":"","franja":"","fase":"datos"}</ficha>
+
+CLIENTE: Calle Granada 15, en Albolote
+
+ANDRÉS: Gracias, Rosa, ya lo tengo. Te leo los datos: teléfono 699 222 111 y la dirección, calle Granada 15, en Albolote. ¿Están bien? Lo dejo marcado como urgente.
+<ficha>{"aparato":"lavadora","marca":"","modelo":"","sintoma":"sale agua por debajo de la lavadora, suelo encharcado","codigo":"","diagnostico":"Fuga de agua (urgente): posible goma de la puerta, manguitos o bomba, por confirmar","nombre":"Rosa","telefono":"699 222 111","direccion":"Calle Granada 15, Albolote","franja":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","nombre":"Rosa","telefono":"699 222 111","direccion":"Calle Granada 15","municipio":"Albolote","aparato":"lavadora","marca":"","modelo":"","averia":"Sale agua por debajo de la lavadora y el suelo está encharcado","codigo":"","franja":"","urgente":true,"notas":"Urgente: agua en el suelo. La cliente ya ha cortado la luz y el agua. Posible goma de la puerta, manguitos o bomba, por confirmar. Intentar hoy si hay hueco en la ruta; si no, siguiente día laborable."}</aviso>
