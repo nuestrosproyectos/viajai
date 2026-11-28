@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Sí, todo bien"
+ },
+ {
+  "role": "assistant",
+  "content": "Laura, queda enviada la solicitud: te llamamos para confirmar la hora. Con toallitas en el váter, muchas veces es eso lo que lo tapa; el fontanero lo revisa al llegar. ¿Necesitas algo más?\n<ficha>{\"averia\":\"váter atascado con toallitas, es el único de la casa\",\"cuando\":\"Hoy, en cuanto podáis\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"Laura\",\"telefono\":\"655 432 109\",\"municipio\":\"Granada capital (El Zaidín)\",\"direccion\":\"Calle Primavera 20, 2º B\",\"franja\":\"Hoy mismo, si puede ser\",\"inicio\":\"\",\"orientacion\":\"No tire más de la cisterna ni eche sosa; al ser el único váter, es urgente.\",\"porDecir\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Laura, queda enviada la solicitud: te llamamos para confirmar la hora. Con toallitas en el váter, muchas veces es eso lo que lo tapa; el fontanero lo revisa al llegar. ¿Necesitas algo más?\n<ficha>{\"averia\":\"váter atascado con toallitas, es el único de la casa\",\"cuando\":\"Hoy, en cuanto podáis\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"Laura\",\"telefono\":\"655 432 109\",\"municipio\":\"Granada capital (El Zaidín)\",\"direccion\":\"Calle Primavera 20, 2º B\",\"franja\":\"Hoy mismo, si puede ser\",\"inicio\":\"\",\"orientacion\":\"No tire más de la cisterna ni eche sosa; al ser el único váter, es urgente.\",\"porDecir\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"averia\":\"váter atascado, es el único de la casa\",\"cuando\":\"Hoy, en cuanto podáis\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"Laura\",\"telefono\":\"655 432 109\",\"municipio\":\"Granada capital (El Zaidín)\",\"direccion\":\"Calle Primavera 20, 2º B\",\"franja\":\"Hoy mismo, si puede ser\",\"inicio\":\"\",\"urgente\":true,\"notas\":\"Váter atascado, es el único de la casa. Cree que hay toallitas. Quiere que vaya hoy mismo.\"}</aviso>"
  }
 ]

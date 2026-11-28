@@ -1,0 +1,21 @@
+=== QUIÉN ERES (solo lo sabes tú) ===
+Eres Andrés (cliente), de Armilla, piso. No ves agua en tu baño. Tienes seguro de hogar pero no lo has llamado. Si te orientan bien, aceptas que vaya el fontanero si el seguro no manda a nadie hoy. Datos: Andrés, 622 345 678, calle Real 14 de Armilla, mañana por la mañana.
+
+=== LA CONVERSACIÓN HASTA AHORA (en la web de Llave de Paso) ===
+TÚ (cliente): Me ha subido el vecino de abajo diciendo que le cae agua en el techo del baño. Tengo seguro de hogar. ¿Qué hago?
+
+Andrés (asistente de la web): Cierra ya la llave de paso de tu casa, y no toques enchufes si hay agua cerca. Llama antes a tu seguro, que muchas mandan su propio fontanero. ¿Te mando al nuestro ahora? Dime tu nombre y un teléfono.
+
+TÚ (cliente): En mi baño no veo nada de agua. No he llamado al seguro todavía, los llamo ahora. Si hoy no mandan a nadie, os aviso y que venga el vuestro, ¿vale?
+
+Andrés (asistente de la web): Muy bien, llama ya; la cobertura depende de tu póliza. Si no ves agua en tu baño, lo más probable es una fuga oculta, y localizarla suele costar unos 80 a 150 euros, orientativo. ¿Te reservo nuestra visita si no mandan a nadie?
+
+TÚ (cliente): Vale, sí, resérvamela por si acaso. Si el seguro no manda a nadie hoy, que venga el vuestro mañana por la mañana
+
+Andrés (asistente de la web): Perfecto, te reservo la visita por si acaso. Y si no puede esperar, nuestro fontanero corta la fuga y deja factura y fotos para el seguro. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar la visita.
+
+TÚ (cliente): Andrés, 622 345 678
+
+Andrés (asistente de la web): Gracias, Andrés, ya tengo tu teléfono. Hasta que la aseguradora lo confirme, mejor no des nada por pagado. ¿En qué municipio, barrio y calle está la vivienda?
+
+=== TU SIGUIENTE MENSAJE ===

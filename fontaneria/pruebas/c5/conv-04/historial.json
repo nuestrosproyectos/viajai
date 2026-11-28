@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Paco, 699 101 202"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Paco, ya tengo tu teléfono. Mientras llega el fontanero, si el termo pierde mucho, cierra la llave de paso. ¿En qué municipio, barrio y calle está, y te viene bien por la mañana o por la tarde?\n<ficha>{\"averia\":\"termo eléctrico de 100 litros que pierde agua por abajo\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Preguntas si lo paga el seguro del hogar, según tu póliza\",\"nombre\":\"Paco\",\"telefono\":\"699 101 202\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Pide el presupuesto desglosado por escrito antes de aceptar; un termo eléctrico instalado suele costar entre 180 y 600 euros, orientativo, según capacidad.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Paco, ya tengo tu teléfono. Mientras llega el fontanero, si el termo pierde mucho, cierra la llave de paso. ¿En qué municipio, barrio y calle está, y te viene bien por la mañana o por la tarde?\n<ficha>{\"averia\":\"termo eléctrico de 100 litros que pierde agua por abajo\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Preguntas si lo paga el seguro del hogar, según tu póliza\",\"nombre\":\"Paco\",\"telefono\":\"699 101 202\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Pide el presupuesto desglosado por escrito antes de aceptar; un termo eléctrico instalado suele costar entre 180 y 600 euros, orientativo, según capacidad.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Ana, 677 450 990"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Ana, ya tengo tu teléfono. ¿En qué municipio, barrio y calle está la vivienda, y te viene bien por la mañana o por la tarde?\n<ficha>{\"averia\":\"agua sucia sale por el plato de ducha al tirar la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"Ana\",\"telefono\":\"677 450 990\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Avisar al presidente o al administrador; la bajante suele ser de la comunidad, y el informe del fontanero ayuda a decidir quién paga.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Ana, ya tengo tu teléfono. ¿En qué municipio, barrio y calle está la vivienda, y te viene bien por la mañana o por la tarde?\n<ficha>{\"averia\":\"agua sucia sale por el plato de ducha al tirar la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"Ana\",\"telefono\":\"677 450 990\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Avisar al presidente o al administrador; la bajante suele ser de la comunidad, y el informe del fontanero ayuda a decidir quién paga.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

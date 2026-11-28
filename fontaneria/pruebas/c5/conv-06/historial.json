@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Andrés, 622 345 678"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Andrés, ya tengo tu teléfono. Hasta que la aseguradora lo confirme, mejor no des nada por pagado. ¿En qué municipio, barrio y calle está la vivienda?\n<ficha>{\"averia\":\"agua que cae al techo del baño del vecino de abajo\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Tiene seguro de hogar y lo llama ahora\",\"nombre\":\"Andrés\",\"telefono\":\"622 345 678\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"mañana por la mañana, si el seguro no manda a nadie\",\"inicio\":\"\",\"orientacion\":\"Llamar ya a tu aseguradora, que la cobertura depende de tu póliza; si no ves agua en tu baño, lo más probable es una fuga oculta.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Andrés, ya tengo tu teléfono. Hasta que la aseguradora lo confirme, mejor no des nada por pagado. ¿En qué municipio, barrio y calle está la vivienda?\n<ficha>{\"averia\":\"agua que cae al techo del baño del vecino de abajo\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Tiene seguro de hogar y lo llama ahora\",\"nombre\":\"Andrés\",\"telefono\":\"622 345 678\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"mañana por la mañana, si el seguro no manda a nadie\",\"inicio\":\"\",\"orientacion\":\"Llamar ya a tu aseguradora, que la cobertura depende de tu póliza; si no ves agua en tu baño, lo más probable es una fuga oculta.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

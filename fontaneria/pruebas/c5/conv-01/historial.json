@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Granada capital, calle Recogidas 40, 2º B"
+ },
+ {
+  "role": "assistant",
+  "content": "Te lo repito, Pilar: teléfono seis uno cero, dos dos tres, tres cuatro cuatro. Visita urgente hoy en calle Recogidas cuarenta, segundo B, Granada capital. Si tienes seguro de hogar, avisa a tu aseguradora cuando puedas. ¿Está todo bien, y en qué barrio estás?\n<ficha>{\"averia\":\"fuga bajo el fregadero, sale agua y no para\",\"cuando\":\"Hoy, en cuanto puedas\",\"llave\":\"Sí, ya no sale\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"Pilar\",\"telefono\":\"610 223 344\",\"municipio\":\"Granada capital\",\"direccion\":\"Calle Recogidas 40, 2º B\",\"franja\":\"hoy\",\"inicio\":\"\",\"orientacion\":\"Guarda fotos del agua para el seguro y confirma tus datos para que el fontanero venga hoy.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Te lo repito, Pilar: teléfono seis uno cero, dos dos tres, tres cuatro cuatro. Visita urgente hoy en calle Recogidas cuarenta, segundo B, Granada capital. Si tienes seguro de hogar, avisa a tu aseguradora cuando puedas. ¿Está todo bien, y en qué barrio estás?\n<ficha>{\"averia\":\"fuga bajo el fregadero, sale agua y no para\",\"cuando\":\"Hoy, en cuanto puedas\",\"llave\":\"Sí, ya no sale\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"Pilar\",\"telefono\":\"610 223 344\",\"municipio\":\"Granada capital\",\"direccion\":\"Calle Recogidas 40, 2º B\",\"franja\":\"hoy\",\"inicio\":\"\",\"orientacion\":\"Guarda fotos del agua para el seguro y confirma tus datos para que el fontanero venga hoy.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]
