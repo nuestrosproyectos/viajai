@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "sí, todo bien"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Laura, tu solicitud queda enviada. Te llamamos para confirmar la hora de la visita de esta tarde, y mientras no eches más productos. ¿Necesitas algo más?\n<ficha>{\"averia\":\"váter atascado, el único de la casa; probablemente toallitas\",\"cuando\":\"Hoy, en cuanto podáis\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"Laura\",\"telefono\":\"655 432 109\",\"municipio\":\"Granada\",\"direccion\":\"Calle Primavera 20, 2º B (Zaidín)\",\"franja\":\"hoy por la tarde\",\"inicio\":\"\",\"orientacion\":\"No eches sosa ni metas la mano; muchas veces son toallitas u objetos.\",\"porDecir\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Laura, tu solicitud queda enviada. Te llamamos para confirmar la hora de la visita de esta tarde, y mientras no eches más productos. ¿Necesitas algo más?\n<ficha>{\"averia\":\"váter atascado, el único de la casa; probablemente toallitas\",\"cuando\":\"Hoy, en cuanto podáis\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"Laura\",\"telefono\":\"655 432 109\",\"municipio\":\"Granada\",\"direccion\":\"Calle Primavera 20, 2º B (Zaidín)\",\"franja\":\"hoy por la tarde\",\"inicio\":\"\",\"orientacion\":\"No eches sosa ni metas la mano; muchas veces son toallitas u objetos.\",\"porDecir\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"averia\":\"váter atascado, el único de la casa; probablemente toallitas\",\"cuando\":\"Hoy, en cuanto podáis\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"Laura\",\"telefono\":\"655 432 109\",\"municipio\":\"Granada\",\"direccion\":\"Calle Primavera 20, 2º B (Zaidín)\",\"franja\":\"hoy por la tarde\",\"inicio\":\"\",\"urgente\":true,\"notas\":\"Váter atascado, es el único de la casa. Dice que hay toallitas, creo. Ya probó con el desatascador y no funcionó. Pide visita hoy por la tarde.\"}</aviso>"
  }
 ]

@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Paco, 699 101 202"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Paco. ¿En qué municipio y barrio estáis, y quieres que vayamos ya o te viene bien otro día y franja?\n<ficha>{\"averia\":\"cambio de termo, con un presupuesto de 900 euros de otra empresa\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Quieres saber si lo cubriría tu seguro\",\"nombre\":\"Paco\",\"telefono\":\"699 101 202\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Pide el desglose por escrito y llama antes a tu aseguradora, que según tu póliza puede cubrirlo.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Paco. ¿En qué municipio y barrio estáis, y quieres que vayamos ya o te viene bien otro día y franja?\n<ficha>{\"averia\":\"cambio de termo, con un presupuesto de 900 euros de otra empresa\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Quieres saber si lo cubriría tu seguro\",\"nombre\":\"Paco\",\"telefono\":\"699 101 202\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Pide el desglose por escrito y llama antes a tu aseguradora, que según tu póliza puede cubrirlo.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

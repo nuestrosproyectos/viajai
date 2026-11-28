@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Sí, hijo, todo está bien. Muchas gracias."
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Antonia, su solicitud queda enviada. Le llamaremos para confirmar el día y la hora de la visita de mañana por la mañana. ¿Necesita algo más?\n<ficha>{\"averia\":\"sin agua caliente con termo eléctrico de 80 litros y unos 12 años\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Antonia\",\"telefono\":\"958 123 456\",\"municipio\":\"Granada\",\"direccion\":\"Calle Santa Escolástica 9\",\"franja\":\"mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"Lo más habitual es la resistencia, el termostato o el interruptor de la luz del cuadro; mire si ha saltado.\",\"porDecir\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Antonia, su solicitud queda enviada. Le llamaremos para confirmar el día y la hora de la visita de mañana por la mañana. ¿Necesita algo más?\n<ficha>{\"averia\":\"sin agua caliente con termo eléctrico de 80 litros y unos 12 años\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Antonia\",\"telefono\":\"958 123 456\",\"municipio\":\"Granada\",\"direccion\":\"Calle Santa Escolástica 9\",\"franja\":\"mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"Lo más habitual es la resistencia, el termostato o el interruptor de la luz del cuadro; mire si ha saltado.\",\"porDecir\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"averia\":\"sin agua caliente con termo eléctrico de 80 litros y unos 12 años\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Antonia\",\"telefono\":\"958 123 456\",\"municipio\":\"Granada\",\"direccion\":\"Calle Santa Escolástica 9\",\"franja\":\"mañana por la mañana\",\"inicio\":\"\",\"urgente\":false,\"notas\":\"Se ha quedado sin agua caliente. Termo eléctrico de 80 litros, unos 12 años. Vive sola y tiene 78 años. Pregunta cuánto costaría arreglarlo. Pide visita mañana por la mañana.\"}</aviso>"
  }
 ]

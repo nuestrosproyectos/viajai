@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "para hoy si puede ser, cuanto antes. soy Pilar, 610 223 344, Recogidas 40, 2º B en Granada"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Pilar. Te confirmo: visita urgente hoy, en Recogidas 40, 2º B, Granada, y te llamamos al seis uno cero, dos dos tres, tres cuatro cuatro para darte la hora. ¿Está todo bien?\n<ficha>{\"averia\":\"fuga de agua bajo el fregadero\",\"cuando\":\"Hoy, en cuanto podáis\",\"llave\":\"Sí, ya no sale\",\"vivienda\":\"\",\"seguro\":\"Sí, tiene seguro de hogar\",\"nombre\":\"Pilar\",\"telefono\":\"610 223 344\",\"municipio\":\"Granada\",\"direccion\":\"Recogidas 40, 2º B\",\"franja\":\"hoy\",\"inicio\":\"\",\"orientacion\":\"Haz fotos para el seguro y llama a tu aseguradora antes de la visita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Pilar. Te confirmo: visita urgente hoy, en Recogidas 40, 2º B, Granada, y te llamamos al seis uno cero, dos dos tres, tres cuatro cuatro para darte la hora. ¿Está todo bien?\n<ficha>{\"averia\":\"fuga de agua bajo el fregadero\",\"cuando\":\"Hoy, en cuanto podáis\",\"llave\":\"Sí, ya no sale\",\"vivienda\":\"\",\"seguro\":\"Sí, tiene seguro de hogar\",\"nombre\":\"Pilar\",\"telefono\":\"610 223 344\",\"municipio\":\"Granada\",\"direccion\":\"Recogidas 40, 2º B\",\"franja\":\"hoy\",\"inicio\":\"\",\"orientacion\":\"Haz fotos para el seguro y llama a tu aseguradora antes de la visita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

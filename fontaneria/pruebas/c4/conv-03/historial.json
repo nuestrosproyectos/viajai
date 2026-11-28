@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Ana, 677 450 990"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Ana. ¿En qué municipio y barrio estáis, y qué día y franja te viene bien para la visita?\n<ficha>{\"averia\":\"agua sucia por el plato de ducha cuando tiran de la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"Ana\",\"telefono\":\"677 450 990\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Avisa al presidente o al administrador, que la bajante suele ser de la comunidad.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Ana. ¿En qué municipio y barrio estáis, y qué día y franja te viene bien para la visita?\n<ficha>{\"averia\":\"agua sucia por el plato de ducha cuando tiran de la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"Ana\",\"telefono\":\"677 450 990\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Avisa al presidente o al administrador, que la bajante suele ser de la comunidad.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]
