@@ -119,6 +119,18 @@ c6: 7,75; coherencia vuelve a 7,5 y todo lo demás en 10 salvo el criterio (8,8)
 Fallos c5: en el Albaicín dijo que «suele bastar una declaración responsable» (falso: en el Conjunto Histórico no); se contradecía con el ahorro por escrito (las condiciones dicen que el presupuesto lo lleva, el caso decía que no: unificado, PENDIENTE de confirmar); se dejaba el IBI domiciliado, el 95 % del ICIO y el autoconsumo compartido; «Placas con batería» en la ficha sin decidirlo; «avisamos a la instaladora» a quien tenía otra. Cambios c5→c6: casos de Albaicín, IBI, comunidad, inversor y ahorro afinados; pista «qué quiere» solo si lo ha decidido.
 c6: 7,75, sin datos falsos, coherencia 10. Queda: se deja un punto concreto en 4 de 8 (consumo de día, que la batería alarga la amortización, ejemplo de kWh, cortar en el cuadro); «¿mañana o por la tarde?» suena a día; llama «ahorro» a la amortización; «lugar: Casa» sin decirlo. Ajustado tras c6 (sin volver a probar). Placas se da por ajustada como reformas.
 
+## Fontanería, vueltas de una en una (8 conversaciones: 4 antiguas + váter único, agua al vecino con seguro, olor a gas, persona mayor sin agua caliente)
+| | c4 |
+|---|---|
+| Acaban en cita | 7/7 (la del gas, sin cita, como debe) |
+| Datos falsos | 0 |
+| Criterio / completa | 5,0 / 7,5 |
+| Datos, aviso, fichas | 8,6 / 10 / 10 |
+| Coherente | 7,5 |
+| Nota media | **7,00** |
+
+Fallos c4: en el váter único no dio precio ni dijo que no tire más de la cisterna; al termo de 12 años le dio el precio de uno nuevo cuando preguntaba por arreglarlo; no habló de fuga oculta con el agua al vecino; no mencionó la salida; repitió explicaciones; «te llamamos para confirmar el día» con el día ya fijado; «él» en las notas. Cambios c4→c5: casos de váter, lavabo, vecino y termo con sus precios del conocimiento; cierre «confirmar la hora» si el día ya está; notas sin género (base común).
+
 ## Qué se corrigió entre rondas (en el cerebro común, para todas las webs, salvo lo marcado)
 - R1→R2: dar siempre el rango de precio si lo pide; empatía con miedo, susto o personas mayores; usted en toda la conversación; una sola pregunta; rellenar en la ficha lo que el cliente ya dijo.
 - R2→R3 (2 datos falsos en reformas): no repartir ni reasignar cifras; revisar excepciones (edificios protegidos, otro municipio); proponer la cita de forma explícita como muy tarde en la 2.ª respuesta; reformas: Albaicín/centro → licencia y técnico.
