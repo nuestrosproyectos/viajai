@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Gracias, Andrés. ¿En qué municipio y calle estáis, y te vale mañana por la mañana o prefieres que vengamos hoy?\n<ficha>{\"averia\":\"posible fuga que cae al techo del baño del vecino de abajo\",\"cuando\":\"Visita programada\",\"llave\":\"Aún no la has cerrado\",\"vivienda\":\"Piso\",\"seguro\":\"Sí, tienes seguro de hogar\",\"nombre\":\"Andrés\",\"telefono\":\"622 345 678\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"mañana por la mañana, si hoy no pueden\",\"inicio\":\"\",\"orientacion\":\"Mira si hay goteo bajo el lavabo o en la cisterna, haz fotos y llama a tu aseguradora antes de arreglar nada.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Andrés. ¿En qué municipio y calle estáis, y te vale mañana por la mañana o prefieres que vengamos hoy?\n<ficha>{\"averia\":\"posible fuga que cae al techo del baño del vecino de abajo\",\"cuando\":\"Visita programada\",\"llave\":\"Aún no la has cerrado\",\"vivienda\":\"Piso\",\"seguro\":\"Sí, tienes seguro de hogar\",\"nombre\":\"Andrés\",\"telefono\":\"622 345 678\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"mañana por la mañana, si hoy no pueden\",\"inicio\":\"\",\"orientacion\":\"Mira si hay goteo bajo el lavabo o en la cisterna, haz fotos y llama a tu aseguradora antes de arreglar nada.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "en Armilla, calle Real 14. mañana por la mañana me vale"
  }
 ]
