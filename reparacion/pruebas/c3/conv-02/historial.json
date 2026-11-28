@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Sí, todo bien. ¿Podrán venir hoy o mañana?"
+ },
+ {
+  "role": "assistant",
+  "content": "Tu solicitud queda enviada, Javier. No puedo darte un día concreto: el equipo te llama para confirmarlo y, al ser urgente, lo intentaremos cuanto antes. ¿Necesitas algo más?\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"\",\"sintoma\":\"enfría arriba pero el congelador no congela bien, escarcha en el fondo\",\"codigo\":\"\",\"diagnostico\":\"fallo de desescarche o del ventilador (lo más probable)\",\"nombre\":\"Javier\",\"telefono\":\"622 333 444\",\"direccion\":\"Calle Real 7, Armilla\",\"franja\":\"tarde\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Tu solicitud queda enviada, Javier. No puedo darte un día concreto: el equipo te llama para confirmarlo y, al ser urgente, lo intentaremos cuanto antes. ¿Necesitas algo más?\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"\",\"sintoma\":\"enfría arriba pero el congelador no congela bien, escarcha en el fondo\",\"codigo\":\"\",\"diagnostico\":\"fallo de desescarche o del ventilador (lo más probable)\",\"nombre\":\"Javier\",\"telefono\":\"622 333 444\",\"direccion\":\"Calle Real 7, Armilla\",\"franja\":\"tarde\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"nombre\":\"Javier\",\"telefono\":\"622 333 444\",\"direccion\":\"Calle Real 7\",\"municipio\":\"Armilla\",\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"\",\"averia\":\"enfría arriba pero el congelador no congela bien, escarcha en la parte de atrás\",\"codigo\":\"\",\"franja\":\"tarde\",\"urgente\":true,\"notas\":\"Combi de 5 años, fuera de garantía legal. Diagnóstico probable: fallo de desescarche o del ventilador. Hay comida en riesgo, por eso urgente. Cliente pregunta si puede ser hoy o mañana: no prometido, lo confirma el equipo por teléfono. Llevar sonda o resistencia de desescarche y ventilador según diagnóstico.\"}</aviso>"
  }
 ]

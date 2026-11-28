@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Sí, todo bien"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Carmen. Tu solicitud queda enviada y te llamaremos para confirmar la hora exacta de la mañana. ¿Necesitas algo más?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"E18\",\"diagnostico\":\"bomba de desagüe atascada o bloqueada (lo más probable)\",\"nombre\":\"Carmen\",\"telefono\":\"655 123 456\",\"direccion\":\"Calle Primavera 12, 3º A, Granada (Zaidín)\",\"franja\":\"mañana\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Carmen. Tu solicitud queda enviada y te llamaremos para confirmar la hora exacta de la mañana. ¿Necesitas algo más?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"E18\",\"diagnostico\":\"bomba de desagüe atascada o bloqueada (lo más probable)\",\"nombre\":\"Carmen\",\"telefono\":\"655 123 456\",\"direccion\":\"Calle Primavera 12, 3º A, Granada (Zaidín)\",\"franja\":\"mañana\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"nombre\":\"Carmen\",\"telefono\":\"655 123 456\",\"direccion\":\"Calle Primavera 12, 3º A\",\"municipio\":\"Granada\",\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"averia\":\"no desagua, código E18\",\"codigo\":\"E18\",\"franja\":\"mañana\",\"urgente\":false,\"notas\":\"Lavadora Balay de 6 años, fuera de garantía legal. Zaidín. Diagnóstico probable: bomba de desagüe atascada. Llevar bomba de desagüe.\"}</aviso>"
  }
 ]

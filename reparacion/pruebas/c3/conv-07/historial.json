@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Calle Sol 9, Huétor Vega"
+ },
+ {
+  "role": "assistant",
+  "content": "Elena, apunto el 688 444 222 en Calle Sol 9, en Huétor Vega, por la tarde. ¿Está todo bien?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua, filtro limpiado sin resultado\",\"codigo\":\"\",\"diagnostico\":\"bomba de desagüe bloqueada o averiada (lo más probable)\",\"nombre\":\"Elena\",\"telefono\":\"688 444 222\",\"direccion\":\"Calle Sol 9, Huétor Vega\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>",
+  "original": "Elena, apunto el 688 444 222 en Calle Sol 9, en Huétor Vega, por la tarde. ¿Está todo bien?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua, filtro limpiado sin resultado\",\"codigo\":\"\",\"diagnostico\":\"bomba de desagüe bloqueada o averiada (lo más probable)\",\"nombre\":\"Elena\",\"telefono\":\"688 444 222\",\"direccion\":\"Calle Sol 9, Huétor Vega\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>"
  }
 ]

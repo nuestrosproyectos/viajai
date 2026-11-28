@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Sí, está bien. Que no se les olvide descontarlo"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Manolo. Tu solicitud queda enviada y te llamaremos para confirmar la hora de la mañana. La visita se descuenta si reparamos. ¿Necesitas algo más?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca, la vajilla sale mojada\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"Manolo\",\"telefono\":\"611 999 000\",\"direccion\":\"Calle Santa Escolástica 4, Granada\",\"franja\":\"mañana\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Manolo. Tu solicitud queda enviada y te llamaremos para confirmar la hora de la mañana. La visita se descuenta si reparamos. ¿Necesitas algo más?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca, la vajilla sale mojada\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"Manolo\",\"telefono\":\"611 999 000\",\"direccion\":\"Calle Santa Escolástica 4, Granada\",\"franja\":\"mañana\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"nombre\":\"Manolo\",\"telefono\":\"611 999 000\",\"direccion\":\"Calle Santa Escolástica 4\",\"municipio\":\"Granada\",\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"averia\":\"no seca, la vajilla sale mojada\",\"codigo\":\"\",\"franja\":\"mañana\",\"urgente\":false,\"notas\":\"Lavavajillas Bosch de 7 años, fuera de garantía legal. Posibles causas por síntoma: resistencia, abrillantador o ventilador; el técnico lo confirma. Cliente desconfía del precio de la visita y pide que se descuente de la reparación y que el presupuesto sea cerrado antes de tocar nada.\"}</aviso>"
  }
 ]

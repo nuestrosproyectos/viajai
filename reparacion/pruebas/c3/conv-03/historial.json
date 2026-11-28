@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Sí, perfecto"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Lucía. Tu solicitud queda enviada y te llamaremos para confirmar la hora de la mañana. ¿Necesitas algo más?\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz sí se enciende\",\"codigo\":\"\",\"diagnostico\":\"termostato de seguridad o resistencia (lo más probable)\",\"nombre\":\"Lucía\",\"telefono\":\"644 555 666\",\"direccion\":\"Calle Ancha 3, Maracena\",\"franja\":\"mañana\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Lucía. Tu solicitud queda enviada y te llamaremos para confirmar la hora de la mañana. ¿Necesitas algo más?\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz sí se enciende\",\"codigo\":\"\",\"diagnostico\":\"termostato de seguridad o resistencia (lo más probable)\",\"nombre\":\"Lucía\",\"telefono\":\"644 555 666\",\"direccion\":\"Calle Ancha 3, Maracena\",\"franja\":\"mañana\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"nombre\":\"Lucía\",\"telefono\":\"644 555 666\",\"direccion\":\"Calle Ancha 3\",\"municipio\":\"Maracena\",\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"averia\":\"no calienta, la luz sí se enciende\",\"codigo\":\"\",\"franja\":\"mañana\",\"urgente\":false,\"notas\":\"Horno Teka de 8 años, fuera de garantía legal. Diagnóstico probable: termostato de seguridad o resistencia. Llevar termostato y resistencia. Cliente indica que cualquier día le va bien; el día lo confirma el equipo por teléfono.\"}</aviso>"
  }
 ]

@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Sí, todo bien. Gracias"
+ },
+ {
+  "role": "assistant",
+  "content": "De nada, Rosa. Tu solicitud queda enviada y te llamaremos para confirmar la hora de la tarde, lo antes posible. ¿Necesitas algo más?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo, suelo encharcado (ya no sale agua, suelo secado)\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"Rosa\",\"telefono\":\"699 222 111\",\"direccion\":\"Calle Granada 15, Albolote\",\"franja\":\"tarde\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "De nada, Rosa. Tu solicitud queda enviada y te llamaremos para confirmar la hora de la tarde, lo antes posible. ¿Necesitas algo más?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo, suelo encharcado (ya no sale agua, suelo secado)\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"Rosa\",\"telefono\":\"699 222 111\",\"direccion\":\"Calle Granada 15, Albolote\",\"franja\":\"tarde\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"nombre\":\"Rosa\",\"telefono\":\"699 222 111\",\"direccion\":\"Calle Granada 15\",\"municipio\":\"Albolote\",\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"averia\":\"sale agua por debajo, suelo encharcado (ya no sale agua, suelo secado)\",\"codigo\":\"\",\"franja\":\"tarde\",\"urgente\":true,\"notas\":\"Agua por debajo de la lavadora. La cliente ha cortado la luz, cerrado el grifo y desenchufado la lavadora; ya no sale agua. Marca y modelo pendientes de confirmar. Cliente pide cuanto antes. No se ha dado diagnóstico.\"}</aviso>"
  }
 ]

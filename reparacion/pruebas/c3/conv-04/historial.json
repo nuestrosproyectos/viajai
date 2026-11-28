@@ -47,5 +47,10 @@
  {
   "role": "user",
   "content": "Sí, está todo bien"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Paco. Tu solicitud queda enviada y te llamaremos para confirmar la hora de la tarde. ¿Necesitas algo más?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar\",\"codigo\":\"\",\"diagnostico\":\"rodamientos desgastados (a confirmar en la visita)\",\"nombre\":\"Paco\",\"telefono\":\"633 777 888\",\"direccion\":\"Calle Arabial 40, Granada\",\"franja\":\"tarde\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Paco. Tu solicitud queda enviada y te llamaremos para confirmar la hora de la tarde. ¿Necesitas algo más?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar\",\"codigo\":\"\",\"diagnostico\":\"rodamientos desgastados (a confirmar en la visita)\",\"nombre\":\"Paco\",\"telefono\":\"633 777 888\",\"direccion\":\"Calle Arabial 40, Granada\",\"franja\":\"tarde\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"nombre\":\"Paco\",\"telefono\":\"633 777 888\",\"direccion\":\"Calle Arabial 40\",\"municipio\":\"Granada\",\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"averia\":\"ruido fuerte al centrifugar\",\"codigo\":\"\",\"franja\":\"tarde\",\"urgente\":false,\"notas\":\"Lavadora Fagor de 14 años, fuera de garantía legal. Diagnóstico probable: rodamientos. En lavadoras de más de diez años con cuba sellada casi nunca compensa; el técnico da presupuesto cerrado para que decida. Cliente pregunta si compensa.\"}</aviso>"
  }
 ]
