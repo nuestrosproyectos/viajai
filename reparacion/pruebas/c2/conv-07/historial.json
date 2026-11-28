@@ -52,5 +52,9 @@
   "role": "assistant",
   "content": "Perfecto, Elena. Repito: teléfono 688 444 222, calle Sol 9 en Huétor Vega, y visita por la tarde. Si notas calor raro o olor a quemado, no lo uses hasta que venga el técnico. ¿Está todo bien?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua; el filtro del fondo ya está limpio y sigue sin desaguar\",\"codigo\":\"\",\"diagnostico\":\"filtro del fondo obstruido o bomba de desagüe\",\"nombre\":\"Elena\",\"telefono\":\"688 444 222\",\"direccion\":\"calle Sol 9, Huétor Vega\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Elena. Repito: teléfono 688 444 222, calle Sol 9 en Huétor Vega, y visita por la tarde. Si notas calor raro o olor a quemado, no lo uses hasta que venga el técnico. ¿Está todo bien?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua; el filtro del fondo ya está limpio y sigue sin desaguar\",\"codigo\":\"\",\"diagnostico\":\"filtro del fondo obstruido o bomba de desagüe\",\"nombre\":\"Elena\",\"telefono\":\"688 444 222\",\"direccion\":\"calle Sol 9, Huétor Vega\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien, gracias."
  }
 ]
