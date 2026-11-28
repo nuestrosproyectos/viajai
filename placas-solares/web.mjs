@@ -58,7 +58,7 @@ export default function web(N) {
         tarifa: "Estudio y visita técnica", detalle: may(N.estudio.detalle) + ".",
         descuento: "Decides con el presupuesto por escrito delante",
         lista: [
-          "<b>Presupuesto cerrado por escrito:</b> cuántas placas, dónde van, cuánto cuesta y el ahorro estimado con tus facturas.",
+          "<b>Presupuesto cerrado por escrito:</b> cuántas placas, dónde van, cuánto cuesta y el ahorro estimado con tus facturas.",   // PENDIENTE: confirmar con la empresa que el presupuesto lleva el ahorro estimado
           "<b>Sin promesas de factura cero:</b> te enseñamos lo que seguirás pagando (potencia, contador, impuestos y la luz de la noche).",
           "<b>Los trámites los hacemos nosotros:</b> boletín, legalización ante la Junta y declaración responsable del ayuntamiento.",
           `<b>${may(N.garantia)}.</b>`
