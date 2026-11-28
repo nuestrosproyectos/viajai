@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Ya, pero yo lo que quiero es no pagar luz. ¿Me lo garantizáis o no?"
+ },
+ {
+  "role": "assistant",
+  "content": "No, no lo garantizo: la factura nunca baja a cero. Suele bajar mucho la parte de energía, sobre todo si gastas de día. Una casa de cinco kilovatios sin batería ronda los cuatro mil quinientos a siete mil quinientos euros. ¿Te reservo la visita?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No se puede garantizar factura cero: quedan potencia, contador, impuestos y consumo de noche; el presupuesto por escrito trae el ahorro estimado.\",\"porDecir\":\"amortización: lo más probable, de seis a diez años\",\"fase\":\"orientando\"}</ficha>\n<mostrar>garantia</mostrar>",
+  "original": "No, no lo garantizo: la factura nunca baja a cero. Suele bajar mucho la parte de energía, sobre todo si gastas de día. Una casa de cinco kilovatios sin batería ronda los cuatro mil quinientos a siete mil quinientos euros. ¿Te reservo la visita?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No se puede garantizar factura cero: quedan potencia, contador, impuestos y consumo de noche; el presupuesto por escrito trae el ahorro estimado.\",\"porDecir\":\"amortización: lo más probable, de seis a diez años\",\"fase\":\"orientando\"}</ficha>\n<mostrar>garantia</mostrar>"
  }
 ]

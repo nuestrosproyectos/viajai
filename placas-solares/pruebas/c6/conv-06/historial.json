@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "No sé exactamente cuánto es de noche, pero con el aire puesto se nota bastante. Lo que me preocupa es que mi inversor sea compatible con una batería, ¿eso se puede mirar?"
+ },
+ {
+  "role": "assistant",
+  "content": "No te puedo confirmar la compatibilidad: eso lo confirma el técnico en el estudio. Mientras, no toques el inversor ni subas al tejado, que con sol hay tensión. Te reservo el estudio, ¿sabes qué marca es tu inversor?\n<ficha>{\"que\":\"Añadir batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"de noche\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Ya tiene placas instaladas: la compatibilidad del inversor con una batería la confirma el técnico en el estudio; mientras, no tocar el inversor ni subir al tejado.\",\"porDecir\":\"la instaladora habilitada es la que legaliza y responde\",\"fase\":\"orientando\"}</ficha>",
+  "original": "No te puedo confirmar la compatibilidad: eso lo confirma el técnico en el estudio. Mientras, no toques el inversor ni subas al tejado, que con sol hay tensión. Te reservo el estudio, ¿sabes qué marca es tu inversor?\n<ficha>{\"que\":\"Añadir batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"de noche\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Ya tiene placas instaladas: la compatibilidad del inversor con una batería la confirma el técnico en el estudio; mientras, no tocar el inversor ni subir al tejado.\",\"porDecir\":\"la instaladora habilitada es la que legaliza y responde\",\"fase\":\"orientando\"}</ficha>"
  }
 ]

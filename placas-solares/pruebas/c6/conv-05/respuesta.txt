@@ -1,3 +1,0 @@
-Aquí no vale la declaración responsable, así que no te puedo prometer que se pueda: el técnico lo estudia en la visita. Una casa de cinco kilovatios sin batería ronda los cuatro mil quinientos a siete mil quinientos euros. ¿Te reservo la visita gratuita?
-<ficha>{"que":"Placas solares","lugar":"Casa","factura":"unos 90 € al mes","tejado":"teja","consumo":"","nombre":"","telefono":"","municipio":"Albaicín, Granada","direccion":"","franja":"","inicio":"","orientacion":"En el Albaicín, Conjunto Histórico: la declaración responsable no vale y puede haber límites; lo estudia el técnico en la visita.","porDecir":"ahorro: lo más probable, de seis a diez años; la factura nunca baja a cero","fase":"orientando"}</ficha>
-<mostrar>permisos</mostrar>

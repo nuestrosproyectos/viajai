@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "vale, sí, me interesa el estudio para comparar. Y una pregunta, ¿con placas me bajan el IBI?"
+ },
+ {
+  "role": "assistant",
+  "content": "En Granada capital el IBI baja un 50 % si lo pides; en otro municipio depende de su ordenanza. Suele amortizarse en seis a diez años, y la factura nunca baja a cero. Para llamarte y organizarlo, ¿me dices tu nombre y un teléfono?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Presupuesto de 6.800 € por 5 kWp con batería de 10 kWh, por debajo del rango orientativo; conviene revisar legalización, marcas y garantías por escrito.\",\"porDecir\":\"batería: de 450 a 800 € por kWh, compensa si gasta mucho de noche\",\"fase\":\"datos\"}</ficha>",
+  "original": "En Granada capital el IBI baja un 50 % si lo pides; en otro municipio depende de su ordenanza. Suele amortizarse en seis a diez años, y la factura nunca baja a cero. Para llamarte y organizarlo, ¿me dices tu nombre y un teléfono?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Presupuesto de 6.800 € por 5 kWp con batería de 10 kWh, por debajo del rango orientativo; conviene revisar legalización, marcas y garantías por escrito.\",\"porDecir\":\"batería: de 450 a 800 € por kWh, compensa si gasta mucho de noche\",\"fase\":\"datos\"}</ficha>"
  }
 ]

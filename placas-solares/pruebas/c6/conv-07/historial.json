@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Manoli, 655 222 333. Por favor que vengan cuanto antes, estoy muy asustada"
+ },
+ {
+  "role": "assistant",
+  "content": "No te preocupes, esto va como urgente. Te confirmo: Manoli, seis cinco cinco, dos dos dos, tres tres tres. Sin tocarlo, mira si el inversor muestra alguna luz o código. ¿En qué municipio y dirección está la instalación?\n<ficha>{\"que\":\"Revisar mi instalación\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"Manoli\",\"telefono\":\"655 222 333\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Urgente: olor a quemado y pitido raro en el inversor. No toques nada ni subas al tejado; si hay humo o fuego, 112. Avisamos con urgencia en cuanto me des municipio y dirección.\",\"porDecir\":\"marca del inversor; si firmaste el contrato de compensación; si no se legalizó, no compensa\",\"fase\":\"datos\"}</ficha>",
+  "original": "No te preocupes, esto va como urgente. Te confirmo: Manoli, seis cinco cinco, dos dos dos, tres tres tres. Sin tocarlo, mira si el inversor muestra alguna luz o código. ¿En qué municipio y dirección está la instalación?\n<ficha>{\"que\":\"Revisar mi instalación\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"Manoli\",\"telefono\":\"655 222 333\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Urgente: olor a quemado y pitido raro en el inversor. No toques nada ni subas al tejado; si hay humo o fuego, 112. Avisamos con urgencia en cuanto me des municipio y dirección.\",\"porDecir\":\"marca del inversor; si firmaste el contrato de compensación; si no se legalizó, no compensa\",\"fase\":\"datos\"}</ficha>"
  }
 ]

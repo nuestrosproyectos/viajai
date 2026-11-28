@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Más de día, abrimos de 8 a 24 h y la cocina va todo el día. ¿Y esto desgrava algo para el negocio?"
+ },
+ {
+  "role": "assistant",
+  "content": "Para un negocio, la deducción de autoconsumo de la Renta no vale; lo fiscal lo ve su asesor. Como gastas sobre todo de día, las placas suelen aprovecharse bien y el precio orientativo es de mil a mil quinientos euros por kilovatio. ¿Te reservo el estudio?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Negocio o nave\",\"factura\":\"unos 450 € al mes\",\"tejado\":\"\",\"consumo\":\"de día\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Atarfe\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Bar que gasta sobre todo de día: las placas suelen aprovecharse bien; la deducción de la Renta no vale para un negocio.\",\"porDecir\":\"ahorro: lo más probable, de seis a diez años, antes si gasta mucho de día\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Para un negocio, la deducción de autoconsumo de la Renta no vale; lo fiscal lo ve su asesor. Como gastas sobre todo de día, las placas suelen aprovecharse bien y el precio orientativo es de mil a mil quinientos euros por kilovatio. ¿Te reservo el estudio?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Negocio o nave\",\"factura\":\"unos 450 € al mes\",\"tejado\":\"\",\"consumo\":\"de día\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Atarfe\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Bar que gasta sobre todo de día: las placas suelen aprovecharse bien; la deducción de la Renta no vale para un negocio.\",\"porDecir\":\"ahorro: lo más probable, de seis a diez años, antes si gasta mucho de día\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

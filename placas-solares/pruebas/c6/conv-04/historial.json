@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "No tengo la factura a mano ahora. Y si los vecinos no quieren, ¿puedo ponerlas solo para mí?"
+ },
+ {
+  "role": "assistant",
+  "content": "Sin el acuerdo de la junta no puedes poner placas en la azotea común, tampoco solo para ti. Por kilovatio instalado suele salir entre mil y mil quinientos euros. ¿Te reservo el estudio aunque no tengas la factura ahora?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"azotea común\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Zaidín, Granada\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Sin el acuerdo de la junta no hay instalación en la azotea común, tampoco solo para ti; el estudio gratuito le sirve para llevarlo a la junta.\",\"porDecir\":\"ahorro: lo más probable, de seis a diez años · permiso: en suelo urbano no protegido, declaración responsable que gestiona la instaladora, salvo que el edificio sea protegido · autoconsumo compartido: la azotea común puede dar luz a varios pisos\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Sin el acuerdo de la junta no puedes poner placas en la azotea común, tampoco solo para ti. Por kilovatio instalado suele salir entre mil y mil quinientos euros. ¿Te reservo el estudio aunque no tengas la factura ahora?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"azotea común\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Zaidín, Granada\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Sin el acuerdo de la junta no hay instalación en la azotea común, tampoco solo para ti; el estudio gratuito le sirve para llevarlo a la junta.\",\"porDecir\":\"ahorro: lo más probable, de seis a diez años · permiso: en suelo urbano no protegido, declaración responsable que gestiona la instaladora, salvo que el edificio sea protegido · autoconsumo compartido: la azotea común puede dar luz a varios pisos\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]
