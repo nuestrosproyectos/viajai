@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "Avenida de la Diputación 7. Mejor por la tarde"
+ },
+ {
+  "role": "assistant",
+  "content": "Te apunto, Pepe: avenida de la Diputación siete, en Atarfe, por la tarde, y te llamamos al seis tres tres, uno uno uno, cuatro cuatro cuatro. ¿Está todo bien?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Negocio o nave\",\"factura\":\"unos 450 € al mes\",\"tejado\":\"\",\"consumo\":\"de día\",\"nombre\":\"Pepe\",\"telefono\":\"633 111 444\",\"municipio\":\"Atarfe\",\"direccion\":\"Avenida de la Diputación 7\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Bar que gasta sobre todo de día: las placas suelen aprovecharse bien; la deducción de la Renta no vale para un negocio.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Te apunto, Pepe: avenida de la Diputación siete, en Atarfe, por la tarde, y te llamamos al seis tres tres, uno uno uno, cuatro cuatro cuatro. ¿Está todo bien?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Negocio o nave\",\"factura\":\"unos 450 € al mes\",\"tejado\":\"\",\"consumo\":\"de día\",\"nombre\":\"Pepe\",\"telefono\":\"633 111 444\",\"municipio\":\"Atarfe\",\"direccion\":\"Avenida de la Diputación 7\",\"franja\":\"Por la tarde\",\"inicio\":\"\",\"orientacion\":\"Bar que gasta sobre todo de día: las placas suelen aprovecharse bien; la deducción de la Renta no vale para un negocio.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

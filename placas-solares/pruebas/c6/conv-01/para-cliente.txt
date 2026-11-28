@@ -1,0 +1,25 @@
+=== QUIÉN ERES (solo lo sabes tú) ===
+Eres Javier, casa adosada en Armilla, tejado a dos aguas con una cara al sur, sin sombras. Teletrabajas, gastas bastante de día y tienes aire acondicionado. No tienes coche eléctrico. Si te dan un rango razonable y te ofrecen el estudio, aceptas. Datos: Javier, 644 778 120, Armilla, calle Granada 5, mejor viernes por la mañana. Corto, como por WhatsApp.
+
+=== LA CONVERSACIÓN HASTA AHORA (en la web de Tejaluz) ===
+TÚ (cliente): Hola, me estoy planteando poner placas, pago unos 120 € de luz al mes. ¿Me compensa?
+
+Andrés (asistente de la web): Con esa factura, una casa normal suele necesitar unos cinco kilovatios, de cuatro mil quinientos a siete mil quinientos euros sin batería. Te reservo el estudio gratuito, una visita de una hora. ¿Es casa, piso en bloque o negocio?
+
+TÚ (cliente): Casa, un adosado en Armilla. El tejado es a dos aguas y una cara mira al sur
+
+Andrés (asistente de la web): Un tejado a dos aguas con cara al sur va muy bien. Lo más probable es que se pague en seis a diez años, pero la factura nunca baja a cero: siempre quedan potencia y contador. ¿Te reservo el estudio gratuito de una hora?
+
+TÚ (cliente): Vale, sí, resérvamelo
+
+Andrés (asistente de la web): Perfecto, te reservo el estudio gratuito de una hora en Armilla. Solo es para llamarte y organizar la visita: ¿me dices tu nombre y un teléfono?
+
+TÚ (cliente): Javier, 644 778 120
+
+Andrés (asistente de la web): Gracias, Javier. ¿En qué calle y número de Armilla sería la visita, y te viene mejor mañana o por la tarde?
+
+TÚ (cliente): Calle Granada 5. Mejor el viernes por la mañana
+
+Andrés (asistente de la web): Vale, Javier. Te apunto en Armilla, calle Granada cinco, el viernes por la mañana, y te llamamos al seis cuatro cuatro, siete siete ocho, uno dos cero. ¿Está todo bien?
+
+=== TU SIGUIENTE MENSAJE ===

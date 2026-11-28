@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "Calle Pagés 12. Mejor por las mañanas"
+ },
+ {
+  "role": "assistant",
+  "content": "Te apunto, Elena: calle Pagés 12, en el Albaicín, Granada, por las mañanas, y te llamamos al seis uno uno, cuatro cinco seis, siete ocho nueve. ¿Está todo bien?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 90 € al mes\",\"tejado\":\"teja\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"611 456 789\",\"municipio\":\"Albaicín, Granada\",\"direccion\":\"Calle Pagés 12\",\"franja\":\"Por las mañanas\",\"inicio\":\"\",\"orientacion\":\"En el Albaicín, Conjunto Histórico: la declaración responsable no vale y puede haber límites; lo estudia el técnico en la visita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Te apunto, Elena: calle Pagés 12, en el Albaicín, Granada, por las mañanas, y te llamamos al seis uno uno, cuatro cinco seis, siete ocho nueve. ¿Está todo bien?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 90 € al mes\",\"tejado\":\"teja\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"611 456 789\",\"municipio\":\"Albaicín, Granada\",\"direccion\":\"Calle Pagés 12\",\"franja\":\"Por las mañanas\",\"inicio\":\"\",\"orientacion\":\"En el Albaicín, Conjunto Histórico: la declaración responsable no vale y puede haber límites; lo estudia el técnico en la visita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]
