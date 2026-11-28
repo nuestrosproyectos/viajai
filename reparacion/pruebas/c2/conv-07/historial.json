@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Gracias, Elena. Te reservo el hueco de la tarde. El técnico comprobará también si tu modelo está afectado por un aviso del fabricante por un componente electrónico. ¿Me dices la calle y el número?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua; el filtro del fondo ya está limpio y sigue sin desaguar\",\"codigo\":\"\",\"diagnostico\":\"filtro del fondo obstruido o bomba de desagüe\",\"nombre\":\"Elena\",\"telefono\":\"688 444 222\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Elena. Te reservo el hueco de la tarde. El técnico comprobará también si tu modelo está afectado por un aviso del fabricante por un componente electrónico. ¿Me dices la calle y el número?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua; el filtro del fondo ya está limpio y sigue sin desaguar\",\"codigo\":\"\",\"diagnostico\":\"filtro del fondo obstruido o bomba de desagüe\",\"nombre\":\"Elena\",\"telefono\":\"688 444 222\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "calle Sol 9"
  }
 ]

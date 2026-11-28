@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Perfecto, Paco. Te anoto calle Arabial 40, en La Chana, Granada, para la tarde, y tu teléfono, 633 777 888. ¿Está todo bien?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar, suena a rodamientos\",\"codigo\":\"\",\"diagnostico\":\"rodamientos desgastados\",\"nombre\":\"Paco\",\"telefono\":\"633 777 888\",\"direccion\":\"calle Arabial 40, La Chana, Granada\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Paco. Te anoto calle Arabial 40, en La Chana, Granada, para la tarde, y tu teléfono, 633 777 888. ¿Está todo bien?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar, suena a rodamientos\",\"codigo\":\"\",\"diagnostico\":\"rodamientos desgastados\",\"nombre\":\"Paco\",\"telefono\":\"633 777 888\",\"direccion\":\"calle Arabial 40, La Chana, Granada\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien"
  }
 ]
