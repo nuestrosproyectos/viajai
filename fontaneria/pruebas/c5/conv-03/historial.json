@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Pero entonces ¿quién paga la visita del fontanero, yo o la comunidad? Y si es de la comunidad, ¿qué les enseño para que se hagan cargo?"
+ },
+ {
+  "role": "assistant",
+  "content": "Quién paga la reparación lo decide la comunidad con su administrador; la visita y su precio te los confirma el fontanero antes de ir. Lo que más ayuda es el informe del fontanero, con cámara si hace falta. ¿Te reservo la visita?\n<ficha>{\"averia\":\"agua sucia sale por el plato de ducha al tirar la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Avisar al presidente o al administrador; la bajante suele ser de la comunidad.\",\"porDecir\":\"un atasco serio de bajante cuesta desde unos 150 € y puede pasar de 500, orientativo\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Quién paga la reparación lo decide la comunidad con su administrador; la visita y su precio te los confirma el fontanero antes de ir. Lo que más ayuda es el informe del fontanero, con cámara si hace falta. ¿Te reservo la visita?\n<ficha>{\"averia\":\"agua sucia sale por el plato de ducha al tirar la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Avisar al presidente o al administrador; la bajante suele ser de la comunidad.\",\"porDecir\":\"un atasco serio de bajante cuesta desde unos 150 € y puede pasar de 500, orientativo\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

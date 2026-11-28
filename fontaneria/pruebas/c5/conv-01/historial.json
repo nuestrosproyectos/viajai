@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "No sé dónde está la llave de paso!! Sigue saliendo agua"
+ },
+ {
+  "role": "assistant",
+  "content": "No te preocupes, si no encuentras la llave de paso, cierra la que está junto al contador. Haz fotos del agua para el seguro. Te mando al fontanero urgente ahora: ¿me dices tu nombre y un teléfono? Es solo para llamarte y organizar la visita.\n<ficha>{\"averia\":\"fuga bajo el fregadero, sale agua y no para\",\"cuando\":\"Urgente, ahora\",\"llave\":\"No la encuentra y sigue saliendo agua\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Si no encuentra la llave de paso, cierra la que está junto al contador; si el agua no para, te hace falta un fontanero urgente.\",\"porDecir\":\"con la llave cerrada puede esperar unas horas\",\"fase\":\"datos\"}</ficha>",
+  "original": "No te preocupes, si no encuentras la llave de paso, cierra la que está junto al contador. Haz fotos del agua para el seguro. Te mando al fontanero urgente ahora: ¿me dices tu nombre y un teléfono? Es solo para llamarte y organizar la visita.\n<ficha>{\"averia\":\"fuga bajo el fregadero, sale agua y no para\",\"cuando\":\"Urgente, ahora\",\"llave\":\"No la encuentra y sigue saliendo agua\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Si no encuentra la llave de paso, cierra la que está junto al contador; si el agua no para, te hace falta un fontanero urgente.\",\"porDecir\":\"con la llave cerrada puede esperar unas horas\",\"fase\":\"datos\"}</ficha>"
  }
 ]

@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Es de 100 litros, somos 4 en casa y pierde agua por abajo. Entonces 900 es mucho ¿no? Y otra cosa, ¿el seguro del hogar me lo paga?"
+ },
+ {
+  "role": "assistant",
+  "content": "900 euros está por encima de lo habitual, que suele ir de unos 180 a 600 según capacidad, orientativo. Si el agua llega a un enchufe, no lo toques. Lo del seguro depende de tu póliza: tu aseguradora te lo confirma. ¿Te reservo la visita?\n<ficha>{\"averia\":\"termo eléctrico de 100 litros que pierde agua por abajo; otro profesional le ha pedido 900 euros\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Pregunta si lo paga el seguro del hogar\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Pedir el presupuesto desglosado por escrito; el cambio suele costar entre 180 y 600 euros, orientativo, según capacidad. El seguro depende de su póliza.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "900 euros está por encima de lo habitual, que suele ir de unos 180 a 600 según capacidad, orientativo. Si el agua llega a un enchufe, no lo toques. Lo del seguro depende de tu póliza: tu aseguradora te lo confirma. ¿Te reservo la visita?\n<ficha>{\"averia\":\"termo eléctrico de 100 litros que pierde agua por abajo; otro profesional le ha pedido 900 euros\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Pregunta si lo paga el seguro del hogar\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Pedir el presupuesto desglosado por escrito; el cambio suele costar entre 180 y 600 euros, orientativo, según capacidad. El seguro depende de su póliza.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

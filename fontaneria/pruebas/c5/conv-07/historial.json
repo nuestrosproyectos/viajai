@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Ya he salido y he abierto las ventanas antes de irme. Estoy llamando ahora. Luego, ¿puede venir el fontanero a revisarme la instalación?"
+ },
+ {
+  "role": "assistant",
+  "content": "Muy bien, has hecho lo correcto. Quédate fuera de casa. Para revisar la instalación de gas hace falta una empresa instaladora de gas habilitada, y no consta que nosotros tengamos esa habilitación.\n<ficha>{\"averia\":\"olor a gas en la cocina desde hace un rato\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Salir de casa sin encender nada y llamar a Nedgia o al 112 desde fuera; para la instalación de gas hace falta una empresa instaladora de gas habilitada.\",\"porDecir\":\"\",\"fase\":\"orientando\"}</ficha>",
+  "original": "Muy bien, has hecho lo correcto. Quédate fuera de casa. Para revisar la instalación de gas hace falta una empresa instaladora de gas habilitada, y no consta que nosotros tengamos esa habilitación.\n<ficha>{\"averia\":\"olor a gas en la cocina desde hace un rato\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Salir de casa sin encender nada y llamar a Nedgia o al 112 desde fuera; para la instalación de gas hace falta una empresa instaladora de gas habilitada.\",\"porDecir\":\"\",\"fase\":\"orientando\"}</ficha>"
  }
 ]
