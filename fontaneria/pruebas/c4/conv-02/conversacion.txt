@@ -1,0 +1,27 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Llave de Paso. Si te está saliendo agua, cierra primero la llave de paso. Cuéntame qué te pasa y te mando al fontanero.
+
+CLIENTE: Tengo el lavabo del baño atascado, ¿cuánto cuesta desatascarlo?
+
+ANDRÉS: Un desatasco de lavabo suele costar entre setenta y ciento cincuenta euros más IVA; si atascan también otros desagües, el problema está más abajo y sube. No eches sosa, que quema y empeora el atasco. ¿Te reservo la visita?
+<ficha>{"averia":"lavabo del baño atascado","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No eches sosa; un desatasco de lavabo suele costar entre setenta y ciento cincuenta euros más IVA.","porDecir":"lo más probable es el sifón o el tramo cercano · si el atasco es serio con máquina, puede pasar de 500 euros","fase":"orientando"}</ficha>
+
+CLIENTE: uy, pues ya eché un bote de desatascador fuerte y sigue igual. vale, resérvame la visita
+
+ANDRÉS: Hecho, te reservo la visita. Lo más probable es que esté en el sifón; como has echado desatascador, no metas la mano ni lo desmontes, que quema. Solo es para llamarte y organizar la visita: ¿me dices tu nombre y un teléfono?
+<ficha>{"averia":"lavabo del baño atascado, ya has echado desatascador fuerte","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No metas la mano en el sifón ni lo desmontes, que quema; lo más probable es que el atasco esté en el sifón o en el tramo cercano.","porDecir":"si el atasco es serio con máquina, puede pasar de 500 euros","fase":"datos"}</ficha>
+
+CLIENTE: Luis, 655 990 120
+
+ANDRÉS: Gracias, Luis. Si el sifón no basta y hay que usar máquina, puede pasar de 500 euros, orientativo. ¿En qué municipio y barrio está, y qué día y franja te viene bien?
+<ficha>{"averia":"lavabo del baño atascado, ya has echado desatascador fuerte","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"Luis","telefono":"655 990 120","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No metas la mano en el sifón ni lo desmontes, que quema; lo más probable es que el atasco esté en el sifón o en el tramo cercano.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: en Armilla, avenida de los Mondragones 3. mañana por la mañana me viene bien
+
+ANDRÉS: Perfecto, Luis. Te confirmo: visita para mañana por la mañana en avenida de los Mondragones 3, Armilla, y te llamamos al seis cinco cinco, nueve nueve cero, uno dos cero para darte la hora. ¿Está todo bien?
+<ficha>{"averia":"lavabo del baño atascado, ya has echado desatascador fuerte","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Luis","telefono":"655 990 120","municipio":"Armilla","direccion":"Avenida de los Mondragones 3","franja":"mañana por la mañana","inicio":"","orientacion":"No metas la mano en el sifón ni lo desmontes, que quema; lo más probable es que el atasco esté en el sifón o en el tramo cercano.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: sí, todo correcto
+
+ANDRÉS: Perfecto, Luis, la solicitud queda enviada para mañana por la mañana. Te llamamos para confirmar el día y la hora. ¿Necesitas algo más?
+<ficha>{"averia":"lavabo del baño atascado, ya has echado desatascador fuerte","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Luis","telefono":"655 990 120","municipio":"Armilla","direccion":"Avenida de los Mondragones 3","franja":"mañana por la mañana","inicio":"","orientacion":"No metas la mano en el sifón ni lo desmontes, que quema; lo más probable es que el atasco esté en el sifón o en el tramo cercano.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","averia":"lavabo del baño atascado, ya ha echado desatascador fuerte","cuando":"Visita programada","llave":"","vivienda":"","seguro":"","nombre":"Luis","telefono":"655 990 120","municipio":"Armilla","direccion":"Avenida de los Mondragones 3","franja":"mañana por la mañana","inicio":"","urgente":false,"notas":"Lavabo del baño atascado. Ya ha echado desatascador fuerte y sigue igual. Pide visita programada para mañana por la mañana."}</aviso>

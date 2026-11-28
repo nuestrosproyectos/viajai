@@ -1,0 +1,16 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Llave de Paso. Si te está saliendo agua, cierra primero la llave de paso. Cuéntame qué te pasa y te mando al fontanero.
+
+CLIENTE: Huele mucho a gas en la cocina desde hace un rato. ¿Podéis venir?
+
+ANDRÉS: Abre ventanas, cierra la llave del gas si puedes sin arriesgarte, y sal de casa sin tocar interruptores ni enchufes ni encender nada. Desde fuera, llama a Nedgia al 900 750 750 o al 112. ¿Ya estás fuera de casa?
+<ficha>{"averia":"olor a gas en la cocina desde hace un rato","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Sal de casa y llama desde fuera a Nedgia (900 750 750) o al 112.","porDecir":"","fase":"orientando"}</ficha>
+
+CLIENTE: sí, ya he abierto las ventanas y estoy fuera de casa. ¿el fontanero puede venir a revisar la instalación luego?
+
+ANDRÉS: Me alegra que ya estés fuera. Quédate ahí y llama a Nedgia al 900 750 750, o al 112 si hace falta. Para la instalación de gas, no tenemos habilitación: la revisa una empresa instaladora de gas habilitada.
+<ficha>{"averia":"olor a gas en la cocina desde hace un rato","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Quédate fuera y llama a Nedgia (900 750 750) o al 112.","porDecir":"","fase":"orientando"}</ficha>
+
+CLIENTE: vale, llamo al 112 ahora. mi cocina es de butano, por si cambia algo. y vosotros ni siquiera podéis venir a mirarlo?
+
+ANDRÉS: Entiendo el susto, has hecho bien en salir. Con el gas no podemos ir: no tenemos habilitación de gas, y lo repara o instala solo una empresa instaladora de gas habilitada. Ahora llama al 112 y sigue sus indicaciones.
+<ficha>{"averia":"olor a gas en la cocina desde hace un rato","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Quédate fuera de casa y llama al 112 o a Nedgia (900 750 750); para la instalación de gas, una empresa instaladora de gas habilitada.","porDecir":"","fase":"orientando"}</ficha>

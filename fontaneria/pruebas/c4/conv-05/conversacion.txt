@@ -1,0 +1,22 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Llave de Paso. Si te está saliendo agua, cierra primero la llave de paso. Cuéntame qué te pasa y te mando al fontanero.
+
+CLIENTE: Se me ha atascado el váter y es el único que tenemos en casa. Hay toallitas, creo. ¿Venís hoy?
+
+ANDRÉS: Es urgente, al ser el único váter de casa. No eches sosa ni metas la mano: quema y empeora el atasco. Muchas veces son toallitas, y te damos hora al recibir el aviso. ¿Te mando al fontanero ahora? Dime tu nombre y un teléfono.
+<ficha>{"averia":"váter atascado, el único de la casa; probablemente toallitas","cuando":"Hoy, en cuanto podáis","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No eches sosa ni metas la mano; muchas veces son toallitas u objetos.","porDecir":"","fase":"proponiendo"}</ficha>
+
+CLIENTE: sí por favor, soy Laura, 655 432 109. ya probé con el desatascador y nada
+
+ANDRÉS: Perfecto, Laura, tomo nota: seis cinco cinco, cuatro tres dos, uno cero nueve. Solo es para llamarte y organizar la visita: ¿en qué municipio y calle estáis, y ahora mismo o qué franja te viene bien?
+<ficha>{"averia":"váter atascado, el único de la casa","cuando":"Hoy, en cuanto podáis","llave":"","vivienda":"","seguro":"","nombre":"Laura","telefono":"655 432 109","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"No eches sosa ni metas la mano; muchas veces son toallitas u objetos.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Granada, calle Primavera 20, 2º B (Zaidín). Hoy por la tarde si puede ser
+
+ANDRÉS: Perfecto, Laura. Te confirmo: teléfono seis cinco cinco, cuatro tres dos, uno cero nueve; calle Primavera 20, 2º B, en el Zaidín, Granada; visita urgente hoy por la tarde. ¿Está todo bien?
+<ficha>{"averia":"váter atascado, el único de la casa","cuando":"Hoy, en cuanto podáis","llave":"","vivienda":"Piso","seguro":"","nombre":"Laura","telefono":"655 432 109","municipio":"Granada","direccion":"Calle Primavera 20, 2º B (Zaidín)","franja":"hoy por la tarde","inicio":"","orientacion":"No eches sosa ni metas la mano; muchas veces son toallitas u objetos.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: sí, todo bien
+
+ANDRÉS: Perfecto, Laura, tu solicitud queda enviada. Te llamamos para confirmar la hora de la visita de esta tarde, y mientras no eches más productos. ¿Necesitas algo más?
+<ficha>{"averia":"váter atascado, el único de la casa; probablemente toallitas","cuando":"Hoy, en cuanto podáis","llave":"","vivienda":"Piso","seguro":"","nombre":"Laura","telefono":"655 432 109","municipio":"Granada","direccion":"Calle Primavera 20, 2º B (Zaidín)","franja":"hoy por la tarde","inicio":"","orientacion":"No eches sosa ni metas la mano; muchas veces son toallitas u objetos.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","averia":"váter atascado, el único de la casa; probablemente toallitas","cuando":"Hoy, en cuanto podáis","llave":"","vivienda":"Piso","seguro":"","nombre":"Laura","telefono":"655 432 109","municipio":"Granada","direccion":"Calle Primavera 20, 2º B (Zaidín)","franja":"hoy por la tarde","inicio":"","urgente":true,"notas":"Váter atascado, es el único de la casa. Dice que hay toallitas, creo. Ya probó con el desatascador y no funcionó. Pide visita hoy por la tarde."}</aviso>

@@ -1,0 +1,32 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Llave de Paso. Si te está saliendo agua, cierra primero la llave de paso. Cuéntame qué te pasa y te mando al fontanero.
+
+CLIENTE: Me ha subido el vecino de abajo diciendo que le cae agua en el techo del baño. Tengo seguro de hogar. ¿Qué hago?
+
+ANDRÉS: Cierra ya la llave de paso de tu casa y llama a tu aseguradora, que muchas mandan su propio fontanero. Si no puede esperar, te apunto a nuestro fontanero, que corta la fuga y deja factura y fotos. ¿Para el agua al cerrarla?
+<ficha>{"averia":"agua que cae al techo del baño del vecino de abajo","cuando":"","llave":"","vivienda":"","seguro":"Sí, tienes seguro de hogar","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Cierra la llave de paso y llama antes a tu aseguradora; muchas mandan su propio fontanero.","porDecir":"la cobertura depende de tu póliza · haz fotos para el seguro","fase":"orientando"}</ficha>
+
+CLIENTE: en mi baño no veo nada de agua. aún no he cerrado nada ni llamado al seguro, ¿qué hago primero?
+
+ANDRÉS: Primero mira si hay goteo bajo el lavabo o en la cisterna; si ves agua, cierra la llave de paso. Haz fotos para el seguro y llama a tu aseguradora: la cobertura depende de tu póliza. ¿Te apunto al fontanero para revisarlo?
+<ficha>{"averia":"posible fuga que cae al techo del baño del vecino de abajo","cuando":"","llave":"Aún no la has cerrado","vivienda":"","seguro":"Sí, tienes seguro de hogar","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Mira si hay goteo bajo el lavabo o en la cisterna, haz fotos y llama a tu aseguradora antes de arreglar nada.","porDecir":"","fase":"proponiendo"}</ficha>
+
+CLIENTE: vale, llamo ahora al seguro. y si hoy no mandan a nadie, sí que me apuntas con vuestro fontanero? mejor mañana por la mañana
+
+ANDRÉS: Bien, llama ya al seguro. Si la fuga está en las tuberías de tu piso, suelen ser tuyas; si es la bajante, de la comunidad. Solo es para llamarte y organizar la visita: ¿me dices tu nombre y un teléfono?
+<ficha>{"averia":"posible fuga que cae al techo del baño del vecino de abajo","cuando":"Visita programada","llave":"Aún no la has cerrado","vivienda":"Piso","seguro":"Sí, tienes seguro de hogar","nombre":"","telefono":"","municipio":"","direccion":"","franja":"mañana por la mañana, si hoy no pueden","inicio":"","orientacion":"Mira si hay goteo bajo el lavabo o en la cisterna, haz fotos y llama a tu aseguradora antes de arreglar nada.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: Andrés, 622 345 678
+
+ANDRÉS: Gracias, Andrés. ¿En qué municipio y calle estáis, y te vale mañana por la mañana o prefieres que vengamos hoy?
+<ficha>{"averia":"posible fuga que cae al techo del baño del vecino de abajo","cuando":"Visita programada","llave":"Aún no la has cerrado","vivienda":"Piso","seguro":"Sí, tienes seguro de hogar","nombre":"Andrés","telefono":"622 345 678","municipio":"","direccion":"","franja":"mañana por la mañana, si hoy no pueden","inicio":"","orientacion":"Mira si hay goteo bajo el lavabo o en la cisterna, haz fotos y llama a tu aseguradora antes de arreglar nada.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: en Armilla, calle Real 14. mañana por la mañana me vale
+
+ANDRÉS: Andrés, para confirmar: teléfono seis dos dos, tres cuatro cinco, seis siete ocho; visita programada mañana por la mañana en calle Real catorce, Armilla. ¿Está todo bien?
+<ficha>{"averia":"posible fuga que cae al techo del baño del vecino de abajo","cuando":"Visita programada","llave":"Aún no la has cerrado","vivienda":"Piso","seguro":"Sí, tienes seguro de hogar","nombre":"Andrés","telefono":"622 345 678","municipio":"Armilla","direccion":"Calle Real 14","franja":"mañana por la mañana","inicio":"","orientacion":"Mira si hay goteo bajo el lavabo o en la cisterna, haz fotos y llama a tu aseguradora antes de arreglar nada.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: sí, todo bien
+
+ANDRÉS: Perfecto, Andrés. Tu solicitud queda enviada: te llamamos para confirmar la hora de la visita por la mañana. Mientras tanto, si notas agua en tu baño, cierra la llave de paso. ¿Necesitas algo más?
+<ficha>{"averia":"posible fuga que cae al techo del baño del vecino de abajo","cuando":"Visita programada","llave":"Aún no la has cerrado","vivienda":"Piso","seguro":"Sí, tienes seguro de hogar","nombre":"Andrés","telefono":"622 345 678","municipio":"Armilla","direccion":"Calle Real 14","franja":"mañana por la mañana","inicio":"","orientacion":"Si notas agua, cierra la llave de paso; y llama antes a tu aseguradora, que muchas mandan su propio fontanero.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","averia":"posible fuga que cae al techo del baño del vecino de abajo","cuando":"Visita programada","llave":"Aún no la has cerrado","vivienda":"Piso","seguro":"Sí, tienes seguro de hogar","nombre":"Andrés","telefono":"622 345 678","municipio":"Armilla","direccion":"Calle Real 14","franja":"mañana por la mañana","inicio":"","urgente":true,"notas":"Dice que el vecino de abajo le ha avisado de que le cae agua en el techo del baño. Él no ve agua en su baño. Aún no ha cerrado la llave de paso ni ha llamado al seguro; dice que lo hace ahora. Tiene seguro de hogar. Prefiere mañana por la mañana, si hoy no pueden."}</aviso>

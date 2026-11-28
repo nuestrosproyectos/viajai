@@ -1,0 +1,27 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Llave de Paso. Si te está saliendo agua, cierra primero la llave de paso. Cuéntame qué te pasa y te mando al fontanero.
+
+CLIENTE: Socorro, sale agua por debajo del fregadero y no para!!
+
+ANDRÉS: Cierra ya la llave de paso, suele estar en la cocina, el baño o junto al contador, y aparta lo que se pueda mojar. Si no para, esto no puede esperar: te apunto al fontanero urgente. ¿Ha parado el agua al cerrarla?
+<ficha>{"averia":"fuga de agua bajo el fregadero","cuando":"","llave":"","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Cierra ya la llave de paso y aparta lo que se pueda mojar.","porDecir":"haz fotos para el seguro · si tienes seguro de hogar, llama antes a tu aseguradora, que muchas mandan su propio fontanero","fase":"orientando"}</ficha>
+
+CLIENTE: no sé dónde está la llave de paso!! ayuda
+
+ANDRÉS: No te preocupes: suele estar en la cocina, el baño o junto al contador; si no la encuentras, prueba la del contador. Cuando la cierres, haz fotos para tu seguro, y te reservo al fontanero urgente. ¿Ha parado el agua?
+<ficha>{"averia":"fuga de agua bajo el fregadero, no para","cuando":"","llave":"Aún no la has encontrado ni cerrado","vivienda":"","seguro":"","nombre":"","telefono":"","municipio":"","direccion":"","franja":"","inicio":"","orientacion":"Cierra la llave de paso (cocina, baño o junto al contador) y aparta lo que se pueda mojar.","porDecir":"si tienes seguro de hogar, llama antes a tu aseguradora, que muchas mandan su propio fontanero","fase":"orientando"}</ficha>
+
+CLIENTE: ya la he encontrado, estaba debajo del fregadero! la he cerrado y ha parado el agua. puede venir alguien hoy? tengo seguro de hogar
+
+ANDRÉS: Bien hecho, con la llave cerrada puede esperar unas horas. Como tienes seguro de hogar, llama antes a tu aseguradora: muchas mandan su propio fontanero, según tu póliza. ¿Te reservo la visita para hoy o para mañana por la mañana?
+<ficha>{"averia":"fuga de agua bajo el fregadero","cuando":"Hoy, en cuanto podáis","llave":"Sí, ya no sale","vivienda":"","seguro":"Sí, tiene seguro de hogar","nombre":"","telefono":"","municipio":"","direccion":"","franja":"hoy","inicio":"","orientacion":"Con la llave cerrada, haz fotos para el seguro y llama a tu aseguradora antes de la visita.","porDecir":"","fase":"proponiendo"}</ficha>
+
+CLIENTE: para hoy si puede ser, cuanto antes. soy Pilar, 610 223 344, Recogidas 40, 2º B en Granada
+
+ANDRÉS: Perfecto, Pilar. Te confirmo: visita urgente hoy, en Recogidas 40, 2º B, Granada, y te llamamos al seis uno cero, dos dos tres, tres cuatro cuatro para darte la hora. ¿Está todo bien?
+<ficha>{"averia":"fuga de agua bajo el fregadero","cuando":"Hoy, en cuanto podáis","llave":"Sí, ya no sale","vivienda":"","seguro":"Sí, tiene seguro de hogar","nombre":"Pilar","telefono":"610 223 344","municipio":"Granada","direccion":"Recogidas 40, 2º B","franja":"hoy","inicio":"","orientacion":"Haz fotos para el seguro y llama a tu aseguradora antes de la visita.","porDecir":"","fase":"datos"}</ficha>
+
+CLIENTE: sí, todo bien. gracias!! cuanto antes por favor
+
+ANDRÉS: Perfecto, Pilar, la solicitud de visita urgente queda enviada. Te llamamos para confirmar el día y la hora. Si vuelve a salir agua, avísanos enseguida. ¿Necesitas algo más?
+<ficha>{"averia":"fuga de agua bajo el fregadero","cuando":"Hoy, en cuanto podáis","llave":"Sí, ya no sale","vivienda":"","seguro":"Sí, tiene seguro de hogar","nombre":"Pilar","telefono":"610 223 344","municipio":"Granada","direccion":"Recogidas 40, 2º B","franja":"hoy, cuanto antes","inicio":"","orientacion":"Mientras llega el fontanero, mantén cerrada la llave de paso y haz fotos para el seguro.","porDecir":"","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","averia":"fuga de agua bajo el fregadero","cuando":"Hoy, en cuanto podáis","llave":"Sí, ya no sale","vivienda":"","seguro":"Sí, tiene seguro de hogar","nombre":"Pilar","telefono":"610 223 344","municipio":"Granada","direccion":"Recogidas 40, 2º B","franja":"hoy, cuanto antes","inicio":"","urgente":true,"notas":"Fuga de agua bajo el fregadero. Ha cerrado la llave de paso y ha parado el agua. Tiene seguro de hogar. Pide la visita hoy, cuanto antes."}</aviso>
