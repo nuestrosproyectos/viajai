@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Es una Balay y tendrá unos 10 años, hijo. Los otros fuegos van bien, solo falla uno."
+ },
+ {
+  "role": "assistant",
+  "content": "Lo más probable es el control de ese fuego; el técnico lo revisa con la pieza delante. Con diez años, le dará un presupuesto cerrado para decidir si compensa. La visita son 60,50 €, y se descuentan si reparamos. ¿Le viene mejor mañana por la mañana o por la tarde?\n<mostrar>precios</mostrar>\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no enciende un fuego de la vitrocerámica; los otros fuegos funcionan\",\"codigo\":\"\",\"diagnostico\":\"control táctil de ese fuego o placa de control\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Lo más probable es el control de ese fuego; el técnico lo revisa con la pieza delante. Con diez años, le dará un presupuesto cerrado para decidir si compensa. La visita son 60,50 €, y se descuentan si reparamos. ¿Le viene mejor mañana por la mañana o por la tarde?\n<mostrar>precios</mostrar>\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no enciende un fuego de la vitrocerámica; los otros fuegos funcionan\",\"codigo\":\"\",\"diagnostico\":\"control táctil de ese fuego o placa de control\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

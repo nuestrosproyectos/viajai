@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Gracias, pero antes déjame probar algo sencillo. ¿Qué filtro o pieza puedo revisar yo sin riesgo?"
+ },
+ {
+  "role": "assistant",
+  "content": "Sí, el filtro del fondo se puede limpiar según el manual, con el lavavajillas desenchufado. Si prefieres no tocarlo, el técnico lo deja hecho en la visita. La visita son 60,50 €, y se descuentan si reparamos. ¿Te viene mejor mañana por la mañana o por la tarde?\n<mostrar>precios</mostrar>\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"\",\"diagnostico\":\"filtro del fondo obstruido o bomba de desagüe\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Sí, el filtro del fondo se puede limpiar según el manual, con el lavavajillas desenchufado. Si prefieres no tocarlo, el técnico lo deja hecho en la visita. La visita son 60,50 €, y se descuentan si reparamos. ¿Te viene mejor mañana por la mañana o por la tarde?\n<mostrar>precios</mostrar>\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"\",\"diagnostico\":\"filtro del fondo obstruido o bomba de desagüe\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

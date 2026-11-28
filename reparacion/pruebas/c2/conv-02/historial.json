@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Tiene 5 años. Y detrás del congelador veo mucha escarcha, me preocupa la comida que tengo dentro."
+ },
+ {
+  "role": "assistant",
+  "content": "No te preocupes, tiene arreglo. Mientras, abre la puerta lo menos posible. Lo más probable es el ventilador o el desescarche, y el técnico va con esa pieza. La visita son 60,50 €, y si reparamos se descuentan. ¿Te viene mejor mañana por la mañana o por la tarde?\n<mostrar>precios</mostrar>\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"combi\",\"sintoma\":\"enfría bien la parte de arriba pero el congelador no congela bien; escarcha detrás del congelador\",\"codigo\":\"\",\"diagnostico\":\"ventilador del congelador o desescarche\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "No te preocupes, tiene arreglo. Mientras, abre la puerta lo menos posible. Lo más probable es el ventilador o el desescarche, y el técnico va con esa pieza. La visita son 60,50 €, y si reparamos se descuentan. ¿Te viene mejor mañana por la mañana o por la tarde?\n<mostrar>precios</mostrar>\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"combi\",\"sintoma\":\"enfría bien la parte de arriba pero el congelador no congela bien; escarcha detrás del congelador\",\"codigo\":\"\",\"diagnostico\":\"ventilador del congelador o desescarche\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]
