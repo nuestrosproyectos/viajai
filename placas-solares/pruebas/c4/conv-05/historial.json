@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Perfecto, te reservo la visita gratis. Y ojo: la deducción de la Renta de 2026 va muy justa, y la confirma un asesor fiscal. Es solo para llamarte y organizar el estudio: ¿me dices tu nombre y un teléfono?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"teja\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada capital (Albaicín)\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Te reservo la visita: el técnico mira antes de nada si el edificio está catalogado, porque en el Albaicín el trámite es más exigente.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, te reservo la visita gratis. Y ojo: la deducción de la Renta de 2026 va muy justa, y la confirma un asesor fiscal. Es solo para llamarte y organizar el estudio: ¿me dices tu nombre y un teléfono?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"teja\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Granada capital (Albaicín)\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Te reservo la visita: el técnico mira antes de nada si el edificio está catalogado, porque en el Albaicín el trámite es más exigente.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Elena, 611 456 789"
  }
 ]

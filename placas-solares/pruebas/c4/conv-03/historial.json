@@ -25,5 +25,9 @@
   "role": "assistant",
   "content": "Con batería tampoco puedo prometerte cero: siempre quedan la potencia y el contador. La batería cuesta entre 450 y 800 € por kWh de capacidad y, con gasto de noche, en muchas casas alarga la amortización, así que lo medimos en el estudio. ¿Te reservo el estudio gratis?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"de noche: trabaja fuera de casa de día\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Pulianas\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con gasto sobre todo de noche, la batería cobra más peso; el estudio con tus facturas lo mide.\",\"porDecir\":\"la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal · en Pulianas las bonificaciones dependen de su ordenanza municipal, que el técnico comprueba\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Con batería tampoco puedo prometerte cero: siempre quedan la potencia y el contador. La batería cuesta entre 450 y 800 € por kWh de capacidad y, con gasto de noche, en muchas casas alarga la amortización, así que lo medimos en el estudio. ¿Te reservo el estudio gratis?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"de noche: trabaja fuera de casa de día\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Pulianas\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con gasto sobre todo de noche, la batería cobra más peso; el estudio con tus facturas lo mide.\",\"porDecir\":\"la deducción de la Renta de 2026 va muy justa y la confirma un asesor fiscal · en Pulianas las bonificaciones dependen de su ordenanza municipal, que el técnico comprueba\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, al menos me lo explicáis claro. Pues sí, que venga el técnico a hacer el estudio"
  }
 ]
