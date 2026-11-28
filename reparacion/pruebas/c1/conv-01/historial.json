@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Gracias, Carmen. Dame un teléfono por si se corta y te reservo el hueco de la mañana.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"E18\",\"diagnostico\":\"Bomba o filtro de desagüe obstruidos (lo más probable)\",\"nombre\":\"Carmen\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Carmen. Dame un teléfono por si se corta y te reservo el hueco de la mañana.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"E18\",\"diagnostico\":\"Bomba o filtro de desagüe obstruidos (lo más probable)\",\"nombre\":\"Carmen\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "655 123 456"
  }
 ]
