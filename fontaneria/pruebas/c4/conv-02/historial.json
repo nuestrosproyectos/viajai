@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "sí, todo correcto"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Luis, la solicitud queda enviada para mañana por la mañana. Te llamamos para confirmar el día y la hora. ¿Necesitas algo más?\n<ficha>{\"averia\":\"lavabo del baño atascado, ya has echado desatascador fuerte\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Luis\",\"telefono\":\"655 990 120\",\"municipio\":\"Armilla\",\"direccion\":\"Avenida de los Mondragones 3\",\"franja\":\"mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"No metas la mano en el sifón ni lo desmontes, que quema; lo más probable es que el atasco esté en el sifón o en el tramo cercano.\",\"porDecir\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Luis, la solicitud queda enviada para mañana por la mañana. Te llamamos para confirmar el día y la hora. ¿Necesitas algo más?\n<ficha>{\"averia\":\"lavabo del baño atascado, ya has echado desatascador fuerte\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Luis\",\"telefono\":\"655 990 120\",\"municipio\":\"Armilla\",\"direccion\":\"Avenida de los Mondragones 3\",\"franja\":\"mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"No metas la mano en el sifón ni lo desmontes, que quema; lo más probable es que el atasco esté en el sifón o en el tramo cercano.\",\"porDecir\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"averia\":\"lavabo del baño atascado, ya ha echado desatascador fuerte\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Luis\",\"telefono\":\"655 990 120\",\"municipio\":\"Armilla\",\"direccion\":\"Avenida de los Mondragones 3\",\"franja\":\"mañana por la mañana\",\"inicio\":\"\",\"urgente\":false,\"notas\":\"Lavabo del baño atascado. Ya ha echado desatascador fuerte y sigue igual. Pide visita programada para mañana por la mañana.\"}</aviso>"
  }
 ]

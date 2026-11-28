@@ -1,0 +1,25 @@
+=== QUIÉN ERES (solo lo sabes tú) ===
+Eres Ana, vives en el bajo de un bloque en Granada capital (Zaidín). Le pasa a tu piso cuando usan agua los de arriba. Preguntas quién paga esto. Si te explican lo de la comunidad y te ofrecen que el fontanero lo mire y haga un informe, aceptas. Datos: Ana, 677 450 990, calle Arabial 12, bajo A, por la tarde.
+
+=== LA CONVERSACIÓN HASTA AHORA (en la web de Llave de Paso) ===
+TÚ (cliente): En el bajo nos sale agua sucia por el plato de ducha cuando los de arriba tiran de la cisterna
+
+Andrés (asistente de la web): La bajante del edificio suele ser de la comunidad, así que avisa al presidente o al administrador, y no eches sosa. El informe del fontanero, con cámara que mira dentro de la tubería si hace falta, ayuda a decidirlo. ¿Te reservo la visita para verlo?
+
+TÚ (cliente): y quién paga esto? yo o la comunidad? porque yo no he roto nada
+
+Andrés (asistente de la web): Entiendo tu duda. Si es la bajante, lo normal es que pague la comunidad, aunque lo decide la comunidad con su administrador; si está en la tubería de tu piso hasta el empalme, suele ser del propietario. ¿Te reservo la visita para verlo?
+
+TÚ (cliente): vale, entiendo. pues sí, que venga el fontanero a mirarlo y haga un informe para pasárselo a la comunidad
+
+Andrés (asistente de la web): Lo anoto para el informe de la comunidad. Si hace falta máquina para la bajante, puede pasar de 500 euros, orientativo. Solo es para llamarte y organizar la visita: ¿me dices tu nombre y un teléfono?
+
+TÚ (cliente): Ana, 677 450 990
+
+Andrés (asistente de la web): Gracias, Ana. ¿En qué municipio y barrio estáis, y qué día y franja te viene bien para la visita?
+
+TÚ (cliente): en Granada, barrio del Zaidín, calle Arabial 12, bajo A. por la tarde me viene mejor
+
+Andrés (asistente de la web): Ana, para confirmar: tu nombre, teléfono seis siete siete, cuatro cinco cero, nueve nueve cero; visita por la tarde en calle Arabial doce, bajo A, Zaidín, Granada. ¿Está todo bien?
+
+=== TU SIGUIENTE MENSAJE ===

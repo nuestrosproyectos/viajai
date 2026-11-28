@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "sí, todo bien. gracias!! cuanto antes por favor"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Pilar, la solicitud de visita urgente queda enviada. Te llamamos para confirmar el día y la hora. Si vuelve a salir agua, avísanos enseguida. ¿Necesitas algo más?\n<ficha>{\"averia\":\"fuga de agua bajo el fregadero\",\"cuando\":\"Hoy, en cuanto podáis\",\"llave\":\"Sí, ya no sale\",\"vivienda\":\"\",\"seguro\":\"Sí, tiene seguro de hogar\",\"nombre\":\"Pilar\",\"telefono\":\"610 223 344\",\"municipio\":\"Granada\",\"direccion\":\"Recogidas 40, 2º B\",\"franja\":\"hoy, cuanto antes\",\"inicio\":\"\",\"orientacion\":\"Mientras llega el fontanero, mantén cerrada la llave de paso y haz fotos para el seguro.\",\"porDecir\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Pilar, la solicitud de visita urgente queda enviada. Te llamamos para confirmar el día y la hora. Si vuelve a salir agua, avísanos enseguida. ¿Necesitas algo más?\n<ficha>{\"averia\":\"fuga de agua bajo el fregadero\",\"cuando\":\"Hoy, en cuanto podáis\",\"llave\":\"Sí, ya no sale\",\"vivienda\":\"\",\"seguro\":\"Sí, tiene seguro de hogar\",\"nombre\":\"Pilar\",\"telefono\":\"610 223 344\",\"municipio\":\"Granada\",\"direccion\":\"Recogidas 40, 2º B\",\"franja\":\"hoy, cuanto antes\",\"inicio\":\"\",\"orientacion\":\"Mientras llega el fontanero, mantén cerrada la llave de paso y haz fotos para el seguro.\",\"porDecir\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"averia\":\"fuga de agua bajo el fregadero\",\"cuando\":\"Hoy, en cuanto podáis\",\"llave\":\"Sí, ya no sale\",\"vivienda\":\"\",\"seguro\":\"Sí, tiene seguro de hogar\",\"nombre\":\"Pilar\",\"telefono\":\"610 223 344\",\"municipio\":\"Granada\",\"direccion\":\"Recogidas 40, 2º B\",\"franja\":\"hoy, cuanto antes\",\"inicio\":\"\",\"urgente\":true,\"notas\":\"Fuga de agua bajo el fregadero. Ha cerrado la llave de paso y ha parado el agua. Tiene seguro de hogar. Pide la visita hoy, cuanto antes.\"}</aviso>"
  }
 ]
