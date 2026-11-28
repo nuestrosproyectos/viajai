@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Lo más probable es un fallo del desescarche o del ventilador, y el técnico lo confirma en la visita con la pieza delante. Abre la puerta lo menos posible. ¿Tiene ya más de tres años, o lo compraste hace menos?\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"\",\"sintoma\":\"enfría arriba pero el congelador no congela bien\",\"codigo\":\"\",\"diagnostico\":\"fallo de desescarche o del ventilador (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>",
   "original": "Lo más probable es un fallo del desescarche o del ventilador, y el técnico lo confirma en la visita con la pieza delante. Abre la puerta lo menos posible. ¿Tiene ya más de tres años, o lo compraste hace menos?\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"\",\"sintoma\":\"enfría arriba pero el congelador no congela bien\",\"codigo\":\"\",\"diagnostico\":\"fallo de desescarche o del ventilador (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Tiene 5 años. Y tiene escarcha en la parte de atrás, ¿es grave? Me da miedo perder la comida"
  }
 ]

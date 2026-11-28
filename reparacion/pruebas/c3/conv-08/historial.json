@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Buenos días, sí llegamos a La Zubia. Para decirle qué le pasa al fuego, ¿de qué marca es la placa? Cada marca usa sus propios códigos y piezas.\n<ficha>{\"aparato\":\"placa\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"un fuego no calienta, los demás sí\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>\n<mostrar>zona</mostrar>",
   "original": "Buenos días, sí llegamos a La Zubia. Para decirle qué le pasa al fuego, ¿de qué marca es la placa? Cada marca usa sus propios códigos y piezas.\n<ficha>{\"aparato\":\"placa\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"un fuego no calienta, los demás sí\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>\n<mostrar>zona</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Es una Balay, hijo. Perdone, no sé si la he mirado bien, pero me parece que dice Balay."
  }
 ]

@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Con un E18 en Balay, lo más probable es que la bomba de desagüe esté atascada, y el técnico lo confirma en la visita con la pieza delante. ¿Hace ya más de tres años que la compró, o es más reciente?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"E18\",\"diagnostico\":\"bomba de desagüe atascada o bloqueada (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>\n<mostrar>codigo:E18</mostrar>",
   "original": "Con un E18 en Balay, lo más probable es que la bomba de desagüe esté atascada, y el técnico lo confirma en la visita con la pieza delante. ¿Hace ya más de tres años que la compró, o es más reciente?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"E18\",\"diagnostico\":\"bomba de desagüe atascada o bloqueada (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>\n<mostrar>codigo:E18</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Hace 6 años, más de tres seguro"
  }
 ]

@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Con catorce años depende de la pieza: si son rodamientos de cuba sellada, casi nunca compensa, y el técnico te da un presupuesto cerrado para decidir. Para decirte qué le pasa, ¿de qué marca es? Cada marca usa sus propios códigos.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>",
   "original": "Con catorce años depende de la pieza: si son rodamientos de cuba sellada, casi nunca compensa, y el técnico te da un presupuesto cerrado para decidir. Para decirte qué le pasa, ¿de qué marca es? Cada marca usa sus propios códigos.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Es una Fagor"
  }
 ]

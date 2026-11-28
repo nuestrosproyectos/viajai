@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Tú decides. Según el manual se puede revisar el filtro del fondo, pero si prefieres, el técnico lo deja hecho en la visita con garantía por escrito. ¿Tiene ya más de tres años, o lo compraste hace menos?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>",
   "original": "Tú decides. Según el manual se puede revisar el filtro del fondo, pero si prefieres, el técnico lo deja hecho en la visita con garantía por escrito. ¿Tiene ya más de tres años, o lo compraste hace menos?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Más de tres años, sí. Dime cómo reviso el filtro, que lo miro yo primero"
  }
 ]
