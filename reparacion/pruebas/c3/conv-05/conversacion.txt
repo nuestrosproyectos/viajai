@@ -1,0 +1,32 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Reparo. ¿Qué aparato se te ha averiado?
+
+CLIENTE: ¡Me sale agua por debajo de la lavadora y está el suelo encharcado!
+
+ANDRÉS: Tranquilo, primero la seguridad: corta la luz desde el diferencial y cierra el grifo de la lavadora. Con el suelo seco, desenchufa la lavadora. ¿Ya has cortado la luz?
+<ficha>{"aparato":"lavadora","marca":"","modelo":"","sintoma":"sale agua por debajo, suelo encharcado","codigo":"","diagnostico":"","nombre":"","telefono":"","direccion":"","franja":"","fase":"entendiendo"}</ficha>
+
+CLIENTE: Sí, ya he cortado la luz y cerrado el grifo. ¿Pueden venir hoy? Estoy muy agobiada
+
+ANDRÉS: Tranquila, tiene arreglo, y lo has hecho bien. No vuelvas a enchufarla hasta que la vea el técnico. ¿Ya no sale agua y el suelo está seco?
+<ficha>{"aparato":"lavadora","marca":"","modelo":"","sintoma":"sale agua por debajo, suelo encharcado","codigo":"","diagnostico":"","nombre":"","telefono":"","direccion":"","franja":"","fase":"entendiendo"}</ficha>
+
+CLIENTE: Ya no sale agua, he secado el suelo con fregona. Estoy más tranquila. ¿Pueden venir hoy por la tarde?
+
+ANDRÉS: Me alegro de que ya esté seguro. Te reservo la visita por la tarde: si hay hueco en la ruta puede ser el mismo día, y el equipo te llama para confirmarlo. ¿Me dices un nombre y un teléfono?
+<ficha>{"aparato":"lavadora","marca":"","modelo":"","sintoma":"sale agua por debajo, suelo encharcado (ya no sale agua, suelo secado)","codigo":"","diagnostico":"","nombre":"","telefono":"","direccion":"","franja":"tarde","fase":"datos"}</ficha>
+
+CLIENTE: Rosa, 699 222 111
+
+ANDRÉS: Gracias, Rosa, apunto el 699 222 111. Dime la calle con el número y el municipio, para que el técnico vaya por la tarde a tu casa cuanto antes.
+<ficha>{"aparato":"lavadora","marca":"","modelo":"","sintoma":"sale agua por debajo, suelo encharcado (ya no sale agua, suelo secado)","codigo":"","diagnostico":"","nombre":"Rosa","telefono":"699 222 111","direccion":"","franja":"tarde","fase":"datos"}</ficha>
+
+CLIENTE: Calle Granada 15, Albolote
+
+ANDRÉS: Perfecto, Rosa. Te llamamos al 699, 222, 111 y el técnico irá a Calle Granada 15, en Albolote, por la tarde, lo antes posible. ¿Está todo bien?
+<ficha>{"aparato":"lavadora","marca":"","modelo":"","sintoma":"sale agua por debajo, suelo encharcado (ya no sale agua, suelo secado)","codigo":"","diagnostico":"","nombre":"Rosa","telefono":"699 222 111","direccion":"Calle Granada 15, Albolote","franja":"tarde","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien. Gracias
+
+ANDRÉS: De nada, Rosa. Tu solicitud queda enviada y te llamaremos para confirmar la hora de la tarde, lo antes posible. ¿Necesitas algo más?
+<ficha>{"aparato":"lavadora","marca":"","modelo":"","sintoma":"sale agua por debajo, suelo encharcado (ya no sale agua, suelo secado)","codigo":"","diagnostico":"","nombre":"Rosa","telefono":"699 222 111","direccion":"Calle Granada 15, Albolote","franja":"tarde","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","nombre":"Rosa","telefono":"699 222 111","direccion":"Calle Granada 15","municipio":"Albolote","aparato":"lavadora","marca":"","modelo":"","averia":"sale agua por debajo, suelo encharcado (ya no sale agua, suelo secado)","codigo":"","franja":"tarde","urgente":true,"notas":"Agua por debajo de la lavadora. La cliente ha cortado la luz, cerrado el grifo y desenchufado la lavadora; ya no sale agua. Marca y modelo pendientes de confirmar. Cliente pide cuanto antes. No se ha dado diagnóstico."}</aviso>

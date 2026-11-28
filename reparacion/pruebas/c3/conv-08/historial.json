@@ -56,5 +56,10 @@
  {
   "role": "user",
   "content": "Sí, hijo, todo está bien. Muchas gracias"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Encarnación. Su solicitud queda enviada y le llamaremos para confirmar la hora exacta de la visita por la mañana. ¿Necesita algo más?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"un fuego no calienta, los demás sí\",\"codigo\":\"\",\"diagnostico\":\"resistencia del fuego o su limitador (lo más probable)\",\"nombre\":\"Encarnación\",\"telefono\":\"958 590 123 (fijo)\",\"direccion\":\"Calle Real 20, La Zubia\",\"franja\":\"mañana\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Encarnación. Su solicitud queda enviada y le llamaremos para confirmar la hora exacta de la visita por la mañana. ¿Necesita algo más?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"un fuego no calienta, los demás sí\",\"codigo\":\"\",\"diagnostico\":\"resistencia del fuego o su limitador (lo más probable)\",\"nombre\":\"Encarnación\",\"telefono\":\"958 590 123 (fijo)\",\"direccion\":\"Calle Real 20, La Zubia\",\"franja\":\"mañana\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"nombre\":\"Encarnación\",\"telefono\":\"958 590 123 (fijo)\",\"direccion\":\"Calle Real 20\",\"municipio\":\"La Zubia\",\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"averia\":\"un fuego no calienta, los demás sí\",\"codigo\":\"\",\"franja\":\"mañana\",\"urgente\":false,\"notas\":\"Diagnóstico probable: resistencia del fuego o su limitador. Placa de unos 10 años, fuera de garantía legal. La clienta tiene teléfono fijo, no móvil. Clienta de 80 años: tratar de usted. Se le ha indicado que no use ese fuego si huele a quemado.\"}</aviso>"
  }
 ]

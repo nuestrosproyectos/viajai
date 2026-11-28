@@ -1,0 +1,38 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Reparo. ¿Qué aparato se te ha averiado?
+
+CLIENTE: Buenos días. La vitrocerámica no me enciende un fuego. Tengo 80 años y vivo en La Zubia.
+
+ANDRÉS: Buenos días, sí llegamos a La Zubia. Para decirle qué le pasa al fuego, ¿de qué marca es la placa? Cada marca usa sus propios códigos y piezas.
+<ficha>{"aparato":"placa","marca":"","modelo":"","sintoma":"un fuego no calienta, los demás sí","codigo":"","diagnostico":"","nombre":"","telefono":"","direccion":"","franja":"","fase":"entendiendo"}</ficha>
+<mostrar>zona</mostrar>
+
+CLIENTE: Es una Balay, hijo. Perdone, no sé si la he mirado bien, pero me parece que dice Balay.
+
+ANDRÉS: Con Balay, lo más probable es la resistencia de ese fuego o su limitador; el técnico lo confirma en la visita. No use ese fuego si huele a quemado. ¿Tiene ya más de tres años la placa, o la compró hace menos?
+<ficha>{"aparato":"placa","marca":"Balay","modelo":"","sintoma":"un fuego no calienta, los demás sí","codigo":"","diagnostico":"resistencia del fuego o su limitador (lo más probable)","nombre":"","telefono":"","direccion":"","franja":"","fase":"orientando"}</ficha>
+
+CLIENTE: Sí, hijo, tiene unos 10 años. Y perdone tanta pregunta, que no entiendo mucho de esto.
+
+ANDRÉS: No se preocupe, no hace falta saber de esto. Si es esa pieza, con diez años suele compensar, y el técnico viene preparado para ella. La visita son 60,50 €, que se descuentan si reparamos. ¿Le viene mejor por la mañana o por la tarde?
+<ficha>{"aparato":"placa","marca":"Balay","modelo":"","sintoma":"un fuego no calienta, los demás sí","codigo":"","diagnostico":"resistencia del fuego o su limitador (lo más probable)","nombre":"","telefono":"","direccion":"","franja":"","fase":"proponiendo"}</ficha>
+
+CLIENTE: Pues por la mañana mejor, hijo, si no es molestia. Gracias por tener paciencia conmigo.
+
+ANDRÉS: Gracias a usted por su paciencia, no es ninguna molestia. Lo dejo anotado para por la mañana. Solo necesito su nombre y un teléfono, para llamarle y organizar la visita. ¿Me los dice?
+<ficha>{"aparato":"placa","marca":"Balay","modelo":"","sintoma":"un fuego no calienta, los demás sí","codigo":"","diagnostico":"resistencia del fuego o su limitador (lo más probable)","nombre":"","telefono":"","direccion":"","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: Encarnación, hijo. Mi teléfono es un fijo, el 958 590 123. No tengo móvil, ¿le sirve?
+
+ANDRÉS: Sí, le sirve, Encarnación. Apunto el 958, 590, 123. ¿Me dice la calle y el número de su casa, en La Zubia?
+<ficha>{"aparato":"placa","marca":"Balay","modelo":"","sintoma":"un fuego no calienta, los demás sí","codigo":"","diagnostico":"resistencia del fuego o su limitador (lo más probable)","nombre":"Encarnación","telefono":"958 590 123 (fijo)","direccion":"","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: Sí, hijo, es calle Real número 20, en La Zubia.
+
+ANDRÉS: Perfecto, Encarnación. Apunto el 958 590 123 y la visita en calle Real 20, en La Zubia, por la mañana. ¿Está todo bien?
+<ficha>{"aparato":"placa","marca":"Balay","modelo":"","sintoma":"un fuego no calienta, los demás sí","codigo":"","diagnostico":"resistencia del fuego o su limitador (lo más probable)","nombre":"Encarnación","telefono":"958 590 123 (fijo)","direccion":"Calle Real 20, La Zubia","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: Sí, hijo, todo está bien. Muchas gracias
+
+ANDRÉS: Perfecto, Encarnación. Su solicitud queda enviada y le llamaremos para confirmar la hora exacta de la visita por la mañana. ¿Necesita algo más?
+<ficha>{"aparato":"placa","marca":"Balay","modelo":"","sintoma":"un fuego no calienta, los demás sí","codigo":"","diagnostico":"resistencia del fuego o su limitador (lo más probable)","nombre":"Encarnación","telefono":"958 590 123 (fijo)","direccion":"Calle Real 20, La Zubia","franja":"mañana","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","nombre":"Encarnación","telefono":"958 590 123 (fijo)","direccion":"Calle Real 20","municipio":"La Zubia","aparato":"placa","marca":"Balay","modelo":"","averia":"un fuego no calienta, los demás sí","codigo":"","franja":"mañana","urgente":false,"notas":"Diagnóstico probable: resistencia del fuego o su limitador. Placa de unos 10 años, fuera de garantía legal. La clienta tiene teléfono fijo, no móvil. Clienta de 80 años: tratar de usted. Se le ha indicado que no use ese fuego si huele a quemado."}</aviso>

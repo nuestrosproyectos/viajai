@@ -1,0 +1,32 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Reparo. ¿Qué aparato se te ha averiado?
+
+CLIENTE: El horno Teka no calienta, pero la luz sí se enciende.
+
+ANDRÉS: Con luz y ventilador pero sin calor, lo más probable es el termostato de seguridad o una resistencia, y el técnico lo comprueba en la visita. ¿Tiene ya más de tres años, o lo compraste hace menos?
+<ficha>{"aparato":"horno","marca":"Teka","modelo":"","sintoma":"no calienta, la luz sí se enciende","codigo":"","diagnostico":"termostato de seguridad o resistencia (lo más probable)","nombre":"","telefono":"","direccion":"","franja":"","fase":"orientando"}</ficha>
+
+CLIENTE: Tiene 8 años
+
+ANDRÉS: Con ocho años compensa si es el termostato o una resistencia, piezas baratas. Te reservo una visita con presupuesto cerrado antes de tocar nada. Son 60,50 €, que se descuentan si reparamos. ¿Te viene mejor por la mañana o por la tarde?
+<ficha>{"aparato":"horno","marca":"Teka","modelo":"","sintoma":"no calienta, la luz sí se enciende","codigo":"","diagnostico":"termostato de seguridad o resistencia (lo más probable)","nombre":"","telefono":"","direccion":"","franja":"","fase":"proponiendo"}</ficha>
+
+CLIENTE: Por la mañana, cualquier día me va bien
+
+ANDRÉS: Anotado para por la mañana, y el día te lo confirma el equipo por teléfono. Solo necesito un nombre y un teléfono, para llamarte y organizar la visita. ¿Me los dices?
+<ficha>{"aparato":"horno","marca":"Teka","modelo":"","sintoma":"no calienta, la luz sí se enciende","codigo":"","diagnostico":"termostato de seguridad o resistencia (lo más probable)","nombre":"","telefono":"","direccion":"","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: Lucía, 644 555 666
+
+ANDRÉS: Gracias, Lucía, apunto el 644 555 666. Dime la calle con el número y el municipio, para que el técnico vaya por la mañana a tu casa.
+<ficha>{"aparato":"horno","marca":"Teka","modelo":"","sintoma":"no calienta, la luz sí se enciende","codigo":"","diagnostico":"termostato de seguridad o resistencia (lo más probable)","nombre":"Lucía","telefono":"644 555 666","direccion":"","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: Calle Ancha 3, Maracena
+
+ANDRÉS: Perfecto, Lucía. Te llamamos al 644, 555, 666 y el técnico irá a Calle Ancha 3, en Maracena, por la mañana. ¿Está todo bien?
+<ficha>{"aparato":"horno","marca":"Teka","modelo":"","sintoma":"no calienta, la luz sí se enciende","codigo":"","diagnostico":"termostato de seguridad o resistencia (lo más probable)","nombre":"Lucía","telefono":"644 555 666","direccion":"Calle Ancha 3, Maracena","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: Sí, perfecto
+
+ANDRÉS: Perfecto, Lucía. Tu solicitud queda enviada y te llamaremos para confirmar la hora de la mañana. ¿Necesitas algo más?
+<ficha>{"aparato":"horno","marca":"Teka","modelo":"","sintoma":"no calienta, la luz sí se enciende","codigo":"","diagnostico":"termostato de seguridad o resistencia (lo más probable)","nombre":"Lucía","telefono":"644 555 666","direccion":"Calle Ancha 3, Maracena","franja":"mañana","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","nombre":"Lucía","telefono":"644 555 666","direccion":"Calle Ancha 3","municipio":"Maracena","aparato":"horno","marca":"Teka","modelo":"","averia":"no calienta, la luz sí se enciende","codigo":"","franja":"mañana","urgente":false,"notas":"Horno Teka de 8 años, fuera de garantía legal. Diagnóstico probable: termostato de seguridad o resistencia. Llevar termostato y resistencia. Cliente indica que cualquier día le va bien; el día lo confirma el equipo por teléfono."}</aviso>

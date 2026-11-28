@@ -1,0 +1,32 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Reparo. ¿Qué aparato se te ha averiado?
+
+CLIENTE: Mi frigorífico Samsung combi enfría arriba pero el congelador no congela bien.
+
+ANDRÉS: Lo más probable es un fallo del desescarche o del ventilador, y el técnico lo confirma en la visita con la pieza delante. Abre la puerta lo menos posible. ¿Tiene ya más de tres años, o lo compraste hace menos?
+<ficha>{"aparato":"frigorifico","marca":"Samsung","modelo":"","sintoma":"enfría arriba pero el congelador no congela bien","codigo":"","diagnostico":"fallo de desescarche o del ventilador (lo más probable)","nombre":"","telefono":"","direccion":"","franja":"","fase":"orientando"}</ficha>
+
+CLIENTE: Tiene 5 años. Y tiene escarcha en la parte de atrás, ¿es grave? Me da miedo perder la comida
+
+ANDRÉS: Tiene arreglo, no te preocupes. Mientras, abre la puerta lo menos posible para que la comida aguante. Te reservo una visita de 60,50 €, que se descuenta si reparamos. ¿Te viene mejor por la mañana o por la tarde?
+<ficha>{"aparato":"frigorifico","marca":"Samsung","modelo":"","sintoma":"enfría arriba pero el congelador no congela bien, escarcha en el fondo","codigo":"","diagnostico":"fallo de desescarche o del ventilador (lo más probable)","nombre":"","telefono":"","direccion":"","franja":"","fase":"proponiendo"}</ficha>
+
+CLIENTE: Por la tarde, y cuanto antes mejor que me preocupa la comida
+
+ANDRÉS: Entiendo el agobio, lo dejo anotado como urgente para por la tarde. Solo necesito un nombre y un teléfono, para llamarte y organizar la visita cuanto antes. ¿Me los dices?
+<ficha>{"aparato":"frigorifico","marca":"Samsung","modelo":"","sintoma":"enfría arriba pero el congelador no congela bien, escarcha en el fondo","codigo":"","diagnostico":"fallo de desescarche o del ventilador (lo más probable)","nombre":"","telefono":"","direccion":"","franja":"tarde","fase":"datos"}</ficha>
+
+CLIENTE: Javier, 622 333 444
+
+ANDRÉS: Gracias, Javier, apunto el 622 333 444. Dime la calle con el número y el municipio, para que el técnico vaya por la tarde a tu casa.
+<ficha>{"aparato":"frigorifico","marca":"Samsung","modelo":"","sintoma":"enfría arriba pero el congelador no congela bien, escarcha en el fondo","codigo":"","diagnostico":"fallo de desescarche o del ventilador (lo más probable)","nombre":"Javier","telefono":"622 333 444","direccion":"","franja":"tarde","fase":"datos"}</ficha>
+
+CLIENTE: Calle Real 7, Armilla
+
+ANDRÉS: Perfecto, Javier. Te llamamos al 622, 333, 444 y el técnico irá a Calle Real 7, en Armilla, por la tarde. ¿Está todo bien?
+<ficha>{"aparato":"frigorifico","marca":"Samsung","modelo":"","sintoma":"enfría arriba pero el congelador no congela bien, escarcha en el fondo","codigo":"","diagnostico":"fallo de desescarche o del ventilador (lo más probable)","nombre":"Javier","telefono":"622 333 444","direccion":"Calle Real 7, Armilla","franja":"tarde","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien. ¿Podrán venir hoy o mañana?
+
+ANDRÉS: Tu solicitud queda enviada, Javier. No puedo darte un día concreto: el equipo te llama para confirmarlo y, al ser urgente, lo intentaremos cuanto antes. ¿Necesitas algo más?
+<ficha>{"aparato":"frigorifico","marca":"Samsung","modelo":"","sintoma":"enfría arriba pero el congelador no congela bien, escarcha en el fondo","codigo":"","diagnostico":"fallo de desescarche o del ventilador (lo más probable)","nombre":"Javier","telefono":"622 333 444","direccion":"Calle Real 7, Armilla","franja":"tarde","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","nombre":"Javier","telefono":"622 333 444","direccion":"Calle Real 7","municipio":"Armilla","aparato":"frigorifico","marca":"Samsung","modelo":"","averia":"enfría arriba pero el congelador no congela bien, escarcha en la parte de atrás","codigo":"","franja":"tarde","urgente":true,"notas":"Combi de 5 años, fuera de garantía legal. Diagnóstico probable: fallo de desescarche o del ventilador. Hay comida en riesgo, por eso urgente. Cliente pregunta si puede ser hoy o mañana: no prometido, lo confirma el equipo por teléfono. Llevar sonda o resistencia de desescarche y ventilador según diagnóstico."}</aviso>

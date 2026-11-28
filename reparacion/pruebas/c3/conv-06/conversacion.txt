@@ -1,0 +1,33 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Reparo. ¿Qué aparato se te ha averiado?
+
+CLIENTE: ¿60 euros solo por venir a mirarla? Eso es un robo.
+
+ANDRÉS: Entiendo que parezca mucho. Son 60,50 €, y se descuentan de la reparación si la hacemos con nosotros; además el técnico te da el presupuesto cerrado antes de tocar nada. ¿Qué aparato es y de qué marca?
+<ficha>{"aparato":"","marca":"","modelo":"","sintoma":"","codigo":"","diagnostico":"","nombre":"","telefono":"","direccion":"","franja":"","fase":"entendiendo"}</ficha>
+<mostrar>precios</mostrar>
+
+CLIENTE: Un lavavajillas Bosch, que no seca los platos. Y sigo pensando que es mucho por venir a mirar
+
+ANDRÉS: Entiendo el reparo. Si lo reparamos, la visita se descuenta de la factura. ¿Tiene ya más de tres años, o lo compraste hace menos?
+<ficha>{"aparato":"lavavajillas","marca":"Bosch","modelo":"","sintoma":"no seca, la vajilla sale mojada","codigo":"","diagnostico":"","nombre":"","telefono":"","direccion":"","franja":"","fase":"entendiendo"}</ficha>
+
+CLIENTE: Tiene unos 7 años. Bueno, si se descuenta de la reparación y el presupuesto me lo dan antes de tocar nada, vale. Mejor por la mañana
+
+ANDRÉS: Vale, lo dejo anotado para por la mañana. Solo necesito un nombre y un teléfono, para llamarte y organizar la visita. ¿Me los dices?
+<ficha>{"aparato":"lavavajillas","marca":"Bosch","modelo":"","sintoma":"no seca, la vajilla sale mojada","codigo":"","diagnostico":"","nombre":"","telefono":"","direccion":"","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: Manolo, 611 999 000
+
+ANDRÉS: Gracias, Manolo, apunto el 611 999 000. Dime la calle con el número y el municipio, para que el técnico vaya por la mañana a tu casa.
+<ficha>{"aparato":"lavavajillas","marca":"Bosch","modelo":"","sintoma":"no seca, la vajilla sale mojada","codigo":"","diagnostico":"","nombre":"Manolo","telefono":"611 999 000","direccion":"","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: Calle Santa Escolástica 4, Granada
+
+ANDRÉS: Perfecto, Manolo. Te llamamos al 611, 999, 000 y el técnico irá a Calle Santa Escolástica 4, en Granada, por la mañana. ¿Está todo bien?
+<ficha>{"aparato":"lavavajillas","marca":"Bosch","modelo":"","sintoma":"no seca, la vajilla sale mojada","codigo":"","diagnostico":"","nombre":"Manolo","telefono":"611 999 000","direccion":"Calle Santa Escolástica 4, Granada","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: Sí, está bien. Que no se les olvide descontarlo
+
+ANDRÉS: Perfecto, Manolo. Tu solicitud queda enviada y te llamaremos para confirmar la hora de la mañana. La visita se descuenta si reparamos. ¿Necesitas algo más?
+<ficha>{"aparato":"lavavajillas","marca":"Bosch","modelo":"","sintoma":"no seca, la vajilla sale mojada","codigo":"","diagnostico":"","nombre":"Manolo","telefono":"611 999 000","direccion":"Calle Santa Escolástica 4, Granada","franja":"mañana","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","nombre":"Manolo","telefono":"611 999 000","direccion":"Calle Santa Escolástica 4","municipio":"Granada","aparato":"lavavajillas","marca":"Bosch","modelo":"","averia":"no seca, la vajilla sale mojada","codigo":"","franja":"mañana","urgente":false,"notas":"Lavavajillas Bosch de 7 años, fuera de garantía legal. Posibles causas por síntoma: resistencia, abrillantador o ventilador; el técnico lo confirma. Cliente desconfía del precio de la visita y pide que se descuente de la reparación y que el presupuesto sea cerrado antes de tocar nada."}</aviso>

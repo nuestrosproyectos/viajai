@@ -1,0 +1,33 @@
+ANDRÉS: Hola, soy Andrés, el asistente de Reparo. ¿Qué aparato se te ha averiado?
+
+CLIENTE: Hola, mi lavadora Balay me marca E18 y no desagua. ¿Qué le pasa?
+
+ANDRÉS: Con un E18 en Balay, lo más probable es que la bomba de desagüe esté atascada, y el técnico lo confirma en la visita con la pieza delante. ¿Hace ya más de tres años que la compró, o es más reciente?
+<ficha>{"aparato":"lavadora","marca":"Balay","modelo":"","sintoma":"no desagua","codigo":"E18","diagnostico":"bomba de desagüe atascada o bloqueada (lo más probable)","nombre":"","telefono":"","direccion":"","franja":"","fase":"orientando"}</ficha>
+<mostrar>codigo:E18</mostrar>
+
+CLIENTE: Hace 6 años, más de tres seguro
+
+ANDRÉS: Con seis años compensa repararla si es la bomba, pieza barata. Te reservo una visita: el técnico irá con la bomba de desagüe. La visita son 60,50 €, que se descuentan si reparamos. ¿Te viene mejor por la mañana o por la tarde?
+<ficha>{"aparato":"lavadora","marca":"Balay","modelo":"","sintoma":"no desagua","codigo":"E18","diagnostico":"bomba de desagüe atascada o bloqueada (lo más probable)","nombre":"","telefono":"","direccion":"","franja":"","fase":"proponiendo"}</ficha>
+
+CLIENTE: Por la mañana mejor
+
+ANDRÉS: Perfecto, te lo dejo anotado para por la mañana. Solo necesito un nombre y un teléfono, para llamarte y organizar la visita. ¿Me los dices?
+<ficha>{"aparato":"lavadora","marca":"Balay","modelo":"","sintoma":"no desagua","codigo":"E18","diagnostico":"bomba de desagüe atascada o bloqueada (lo más probable)","nombre":"","telefono":"","direccion":"","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: Carmen, 655 123 456
+
+ANDRÉS: Perfecto, Carmen, apunto tu teléfono 655 123 456. Ahora dime la calle y el número, y el municipio, para que el técnico llegue por la mañana a tu casa.
+<ficha>{"aparato":"lavadora","marca":"Balay","modelo":"","sintoma":"no desagua","codigo":"E18","diagnostico":"bomba de desagüe atascada o bloqueada (lo más probable)","nombre":"Carmen","telefono":"655 123 456","direccion":"","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: Calle Primavera 12, 3º A, Granada (en el Zaidín)
+
+ANDRÉS: Perfecto, Carmen. Te llamamos al 655, 123, 456 y el técnico irá a Calle Primavera 12, 3º A, en Granada, por la mañana. ¿Está todo bien?
+<ficha>{"aparato":"lavadora","marca":"Balay","modelo":"","sintoma":"no desagua","codigo":"E18","diagnostico":"bomba de desagüe atascada o bloqueada (lo más probable)","nombre":"Carmen","telefono":"655 123 456","direccion":"Calle Primavera 12, 3º A, Granada (Zaidín)","franja":"mañana","fase":"datos"}</ficha>
+
+CLIENTE: Sí, todo bien
+
+ANDRÉS: Perfecto, Carmen. Tu solicitud queda enviada y te llamaremos para confirmar la hora exacta de la mañana. ¿Necesitas algo más?
+<ficha>{"aparato":"lavadora","marca":"Balay","modelo":"","sintoma":"no desagua","codigo":"E18","diagnostico":"bomba de desagüe atascada o bloqueada (lo más probable)","nombre":"Carmen","telefono":"655 123 456","direccion":"Calle Primavera 12, 3º A, Granada (Zaidín)","franja":"mañana","fase":"registrado"}</ficha>
+<aviso>{"tipo":"visita","nombre":"Carmen","telefono":"655 123 456","direccion":"Calle Primavera 12, 3º A","municipio":"Granada","aparato":"lavadora","marca":"Balay","modelo":"","averia":"no desagua, código E18","codigo":"E18","franja":"mañana","urgente":false,"notas":"Lavadora Balay de 6 años, fuera de garantía legal. Zaidín. Diagnóstico probable: bomba de desagüe atascada. Llevar bomba de desagüe."}</aviso>
