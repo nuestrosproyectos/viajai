@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Vale, al menos me lo explicáis claro. Pues sí, que venga el técnico a hacer el estudio"
+ },
+ {
+  "role": "assistant",
+  "content": "Genial, te reservo el estudio gratis con visita técnica. Antes, ojo con la deducción de la Renta de 2026: va muy justa y la confirma un asesor fiscal. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar el estudio.\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"de noche: trabaja fuera de casa de día\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Pulianas\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Reservar el estudio gratis con visita técnica para medir el consumo de noche y el tejado de la casa.\",\"porDecir\":\"en Pulianas las bonificaciones dependen de su ordenanza municipal, que el técnico comprueba\",\"fase\":\"datos\"}</ficha>",
+  "original": "Genial, te reservo el estudio gratis con visita técnica. Antes, ojo con la deducción de la Renta de 2026: va muy justa y la confirma un asesor fiscal. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar el estudio.\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"de noche: trabaja fuera de casa de día\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Pulianas\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Reservar el estudio gratis con visita técnica para medir el consumo de noche y el tejado de la casa.\",\"porDecir\":\"en Pulianas las bonificaciones dependen de su ordenanza municipal, que el técnico comprueba\",\"fase\":\"datos\"}</ficha>"
  }
 ]

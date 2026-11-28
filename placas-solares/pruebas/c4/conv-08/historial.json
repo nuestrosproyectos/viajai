@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, pues sí, resérvame el estudio"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, te reservo el estudio gratis con visita. Y lo fiscal del bar mejor consultarlo con tu asesor. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar el estudio.\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Negocio o nave\",\"factura\":\"450 € al mes\",\"tejado\":\"\",\"consumo\":\"de día: abren de 8 a 24 y la cocina no para\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Atarfe\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Reservar el estudio gratis con visita para medir con tus facturas el consumo de día del bar.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, te reservo el estudio gratis con visita. Y lo fiscal del bar mejor consultarlo con tu asesor. ¿Me dices tu nombre y un teléfono? Es solo para llamarte y organizar el estudio.\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Negocio o nave\",\"factura\":\"450 € al mes\",\"tejado\":\"\",\"consumo\":\"de día: abren de 8 a 24 y la cocina no para\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Atarfe\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Reservar el estudio gratis con visita para medir con tus facturas el consumo de día del bar.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

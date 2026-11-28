@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Elena, 611 456 789"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Elena. Con eso ya casi está. ¿En qué calle y número sería la visita, y te viene mejor por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"teja\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"611 456 789\",\"municipio\":\"Granada capital (Albaicín)\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Visita gratuita en el Albaicín: el técnico mira antes de nada si el edificio está catalogado, porque el trámite es más exigente.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Elena. Con eso ya casi está. ¿En qué calle y número sería la visita, y te viene mejor por la mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"teja\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"611 456 789\",\"municipio\":\"Granada capital (Albaicín)\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Visita gratuita en el Albaicín: el técnico mira antes de nada si el edificio está catalogado, porque el trámite es más exigente.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]
