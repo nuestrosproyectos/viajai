@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Gracias, Manolo. ¿En qué municipio y calle sería la visita, y te viene mejor mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"casi todo de noche; de día no hay nadie en casa\",\"nombre\":\"Manolo\",\"telefono\":\"633 909 101\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No se puede garantizar factura cero, tampoco con batería: quedan potencia, contador e impuestos; el presupuesto por escrito trae el ahorro estimado.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Gracias, Manolo. ¿En qué municipio y calle sería la visita, y te viene mejor mañana o por la tarde?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"casi todo de noche; de día no hay nadie en casa\",\"nombre\":\"Manolo\",\"telefono\":\"633 909 101\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No se puede garantizar factura cero, tampoco con batería: quedan potencia, contador e impuestos; el presupuesto por escrito trae el ahorro estimado.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Pulianas, calle Nueva 3. Por la tarde, entre semana, los sábados no"
  }
 ]
