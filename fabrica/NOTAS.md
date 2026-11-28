@@ -56,3 +56,4 @@ Una herramienta para crear, para cualquier negocio, una web como Reparo y Herenc
 - Ajustes de la base común en estas vueltas (llegan a todas las webs): porDecir, municipio siempre y repetido al confirmar, nunca decir cuándo será la cita, no repetir la misma frase si vuelve a preguntar, campos con opciones vacíos hasta que lo diga, usted desde la primera respuesta si es mayor o formal, la franja se pide con los datos (no al ofrecer la cita), sumar los datos de todos los tipos de caso que encajan.
 - Siguiente: el resto de sectores de uno en uno (reformas, placas, fontanería, Reparo).
 - 28-11-2026 Juan confirma: presupuesto de reformas gratis; incluye declaración responsable, escombros y limpieza final (licencia con técnico, detallada aparte).
+- 28-11-2026 Juan confirma: en placas, el presupuesto lleva el ahorro estimado, tras la visita y si el cliente sigue interesado.
