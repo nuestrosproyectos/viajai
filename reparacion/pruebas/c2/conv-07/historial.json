@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Respeto que quieras intentarlo tú, pero manipularlo puede empeorar la avería o ser peligroso, y con nosotros la reparación tiene garantía por escrito. Si se complica, aquí estamos. ¿Te dejo apuntado por si acaso?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"\",\"diagnostico\":\"filtro obstruido o bomba de desagüe\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>",
   "original": "Respeto que quieras intentarlo tú, pero manipularlo puede empeorar la avería o ser peligroso, y con nosotros la reparación tiene garantía por escrito. Si se complica, aquí estamos. ¿Te dejo apuntado por si acaso?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"\",\"diagnostico\":\"filtro obstruido o bomba de desagüe\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Gracias, pero antes déjame probar algo sencillo. ¿Qué filtro o pieza puedo revisar yo sin riesgo?"
  }
 ]

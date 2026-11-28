@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Respira, tiene arreglo. Primero corta la luz desde el diferencial del cuadro y cierra el grifo de la lavadora, sin tocar nada mojado. ¿Ya estás a salvo, con el agua lejos de cualquier enchufe?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo de la lavadora y el suelo está encharcado\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>",
   "original": "Respira, tiene arreglo. Primero corta la luz desde el diferencial del cuadro y cierra el grifo de la lavadora, sin tocar nada mojado. ¿Ya estás a salvo, con el agua lejos de cualquier enchufe?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo de la lavadora y el suelo está encharcado\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, ya corté la luz y cerré el grifo. Estoy más tranquila. ¿Pueden venir hoy?"
  }
 ]

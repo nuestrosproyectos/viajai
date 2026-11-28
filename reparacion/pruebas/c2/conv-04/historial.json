@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Con catorce años, depende de la pieza: las averías caras normalmente no compensan en un aparato así, y el técnico te da un presupuesto cerrado antes de tocar nada. Para decirte qué le pasa, ¿de qué marca es la lavadora? Cada marca tiene sus propios fallos.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>",
   "original": "Con catorce años, depende de la pieza: las averías caras normalmente no compensan en un aparato así, y el técnico te da un presupuesto cerrado antes de tocar nada. Para decirte qué le pasa, ¿de qué marca es la lavadora? Cada marca tiene sus propios fallos.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Es una Fagor. Suena como a rodamientos. ¿Tú qué harías, arreglarla o comprar otra?"
  }
 ]

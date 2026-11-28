@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Entiendo que suene caro. Esos 60,50 € cubren el desplazamiento y un presupuesto cerrado antes de tocar nada, y si reparamos, se descuentan de la factura. ¿Qué aparato es, y de qué marca?\n<mostrar>precios</mostrar>\n<ficha>{\"aparato\":\"\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>",
   "original": "Entiendo que suene caro. Esos 60,50 € cubren el desplazamiento y un presupuesto cerrado antes de tocar nada, y si reparamos, se descuentan de la factura. ¿Qué aparato es, y de qué marca?\n<mostrar>precios</mostrar>\n<ficha>{\"aparato\":\"\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Un lavavajillas Bosch, no seca los platos. Y eso de que se descuenta, ¿seguro? ¿Qué incluye exactamente?"
  }
 ]
