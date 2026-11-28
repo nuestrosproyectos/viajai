@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Entiendo que se quede sin agua caliente. Cambiar un termo eléctrico suele costar entre ciento ochenta y seiscientos euros, según su capacidad, y antes de empezar tendrá el presupuesto por escrito. Le apunto la visita. ¿Cuántas personas viven en casa?\n<ficha>{\"averia\":\"sin agua caliente con termo eléctrico\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Un termo eléctrico suele costar entre ciento ochenta y seiscientos euros según capacidad; el presupuesto va por escrito antes de empezar.\",\"porDecir\":\"lo más habitual es la resistencia, el termostato o la protección del cuadro; mire si ha saltado\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Entiendo que se quede sin agua caliente. Cambiar un termo eléctrico suele costar entre ciento ochenta y seiscientos euros, según su capacidad, y antes de empezar tendrá el presupuesto por escrito. Le apunto la visita. ¿Cuántas personas viven en casa?\n<ficha>{\"averia\":\"sin agua caliente con termo eléctrico\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Un termo eléctrico suele costar entre ciento ochenta y seiscientos euros según capacidad; el presupuesto va por escrito antes de empezar.\",\"porDecir\":\"lo más habitual es la resistencia, el termostato o la protección del cuadro; mire si ha saltado\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Vivo sola, hijo. El termo tiene ya unos 12 años y es de 80 litros."
  }
 ]

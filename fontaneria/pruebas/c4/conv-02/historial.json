@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Un desatasco de lavabo suele costar entre setenta y ciento cincuenta euros más IVA; si atascan también otros desagües, el problema está más abajo y sube. No eches sosa, que quema y empeora el atasco. ¿Te reservo la visita?\n<ficha>{\"averia\":\"lavabo del baño atascado\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No eches sosa; un desatasco de lavabo suele costar entre setenta y ciento cincuenta euros más IVA.\",\"porDecir\":\"lo más probable es el sifón o el tramo cercano · si el atasco es serio con máquina, puede pasar de 500 euros\",\"fase\":\"orientando\"}</ficha>",
   "original": "Un desatasco de lavabo suele costar entre setenta y ciento cincuenta euros más IVA; si atascan también otros desagües, el problema está más abajo y sube. No eches sosa, que quema y empeora el atasco. ¿Te reservo la visita?\n<ficha>{\"averia\":\"lavabo del baño atascado\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No eches sosa; un desatasco de lavabo suele costar entre setenta y ciento cincuenta euros más IVA.\",\"porDecir\":\"lo más probable es el sifón o el tramo cercano · si el atasco es serio con máquina, puede pasar de 500 euros\",\"fase\":\"orientando\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "uy, pues ya eché un bote de desatascador fuerte y sigue igual. vale, resérvame la visita"
  }
 ]

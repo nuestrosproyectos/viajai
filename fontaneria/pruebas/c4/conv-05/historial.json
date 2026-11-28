@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Es urgente, al ser el único váter de casa. No eches sosa ni metas la mano: quema y empeora el atasco. Muchas veces son toallitas, y te damos hora al recibir el aviso. ¿Te mando al fontanero ahora? Dime tu nombre y un teléfono.\n<ficha>{\"averia\":\"váter atascado, el único de la casa; probablemente toallitas\",\"cuando\":\"Hoy, en cuanto podáis\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No eches sosa ni metas la mano; muchas veces son toallitas u objetos.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Es urgente, al ser el único váter de casa. No eches sosa ni metas la mano: quema y empeora el atasco. Muchas veces son toallitas, y te damos hora al recibir el aviso. ¿Te mando al fontanero ahora? Dime tu nombre y un teléfono.\n<ficha>{\"averia\":\"váter atascado, el único de la casa; probablemente toallitas\",\"cuando\":\"Hoy, en cuanto podáis\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No eches sosa ni metas la mano; muchas veces son toallitas u objetos.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "sí por favor, soy Laura, 655 432 109. ya probé con el desatascador y nada"
  }
 ]

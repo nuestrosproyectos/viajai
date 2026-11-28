@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "La bajante del edificio suele ser de la comunidad, así que avisa al presidente o al administrador, y no eches sosa. El informe del fontanero, con cámara que mira dentro de la tubería si hace falta, ayuda a decidirlo. ¿Te reservo la visita para verlo?\n<ficha>{\"averia\":\"agua sucia por el plato de ducha al tirar la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Avisa al presidente o al administrador, que la bajante suele ser de la comunidad.\",\"porDecir\":\"quien decide quién paga es la comunidad con su administrador · un atasco en la bajante puede necesitar máquina y subir de precio\",\"fase\":\"orientando\"}</ficha>",
   "original": "La bajante del edificio suele ser de la comunidad, así que avisa al presidente o al administrador, y no eches sosa. El informe del fontanero, con cámara que mira dentro de la tubería si hace falta, ayuda a decidirlo. ¿Te reservo la visita para verlo?\n<ficha>{\"averia\":\"agua sucia por el plato de ducha al tirar la cisterna de arriba\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Avisa al presidente o al administrador, que la bajante suele ser de la comunidad.\",\"porDecir\":\"quien decide quién paga es la comunidad con su administrador · un atasco en la bajante puede necesitar máquina y subir de precio\",\"fase\":\"orientando\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "y quién paga esto? yo o la comunidad? porque yo no he roto nada"
  }
 ]
