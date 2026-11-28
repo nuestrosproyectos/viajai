@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Sí, todo bien"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Elena. Queda enviada la solicitud para calle Pagés 12, Albaicín, por las mañanas; te llamamos para confirmar el día y la hora. ¿Necesitas algo más?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"teja\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"611 456 789\",\"municipio\":\"Granada capital, Albaicín\",\"direccion\":\"calle Pagés 12\",\"franja\":\"por las mañanas\",\"inicio\":\"\",\"orientacion\":\"En el Albaicín el trámite es más exigente y puede haber límites; el técnico confirma el papel exacto en la visita gratuita.\",\"porDecir\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Elena. Queda enviada la solicitud para calle Pagés 12, Albaicín, por las mañanas; te llamamos para confirmar el día y la hora. ¿Necesitas algo más?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"teja\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"611 456 789\",\"municipio\":\"Granada capital, Albaicín\",\"direccion\":\"calle Pagés 12\",\"franja\":\"por las mañanas\",\"inicio\":\"\",\"orientacion\":\"En el Albaicín el trámite es más exigente y puede haber límites; el técnico confirma el papel exacto en la visita gratuita.\",\"porDecir\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"estudio\",\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"\",\"tejado\":\"teja\",\"consumo\":\"\",\"nombre\":\"Elena\",\"telefono\":\"611 456 789\",\"municipio\":\"Granada capital, Albaicín\",\"direccion\":\"calle Pagés 12\",\"franja\":\"por las mañanas\",\"inicio\":\"\",\"urgente\":false,\"notas\":\"Quiere placas solares en una casa en el Albaicín, con tejado de teja. Le han dicho que en el Albaicín no se puede; se le explicó que el trámite es más exigente y puede haber límites, y que el técnico confirma el papel exacto (declaración responsable si el edificio no está protegido). Quiere que el técnico vaya a ver el tejado. Franja: por las mañanas.\"}</aviso>"
  }
 ]

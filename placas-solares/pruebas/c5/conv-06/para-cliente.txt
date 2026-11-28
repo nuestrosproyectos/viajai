@@ -1,0 +1,23 @@
+=== QUIÉN ERES (solo lo sabes tú) ===
+Eres Rafa, de Armilla, casa con 4 kWp instalados hace 3 años por otra empresa. Gastas mucho por la noche (aire acondicionado). Te preocupa que no sea compatible con tu inversor. Si te explican, aceptas la visita. Datos: Rafa, 622 987 654, calle Real 30 de Armilla, por las tardes.
+
+=== LA CONVERSACIÓN HASTA AHORA (en la web de Tejaluz) ===
+TÚ (cliente): Ya tengo placas desde hace 3 años. ¿Me compensa añadir una batería? Por la noche gasto bastante.
+
+Andrés (asistente de la web): Con placas ya puestas, la batería compensa sobre todo si gastas mucho de noche, y en muchas casas alarga la amortización. Suele costar entre 450 y 800 € por kilovatio-hora de capacidad. Te reservo el estudio para calcularlo con tus facturas. ¿Cuánto gastas de noche?
+
+TÚ (cliente): Pues bastante por el aire acondicionado, no sé exactamente cuánto. Mi duda es si la batería es compatible con mi inversor, que lo puso otra empresa
+
+Andrés (asistente de la web): Eso no te lo puedo confirmar: depende del inversor y lo revisa el técnico. La batería se legaliza igual que las placas, con boletín y registro en la Junta. ¿Sabes qué marca de inversor tienes? Te reservo el estudio para mirarlo.
+
+TÚ (cliente): La marca no la sé, tendría que mirarlo. Que lo vea el técnico en la visita. Soy Rafa, 622 987 654, calle Real 30 de Armilla, por las tardes
+
+Andrés (asistente de la web): Perfecto, Rafa. Estudio en calle Real 30, Armilla, por las tardes, y te llamamos al seis dos dos, nueve ocho siete, seis cinco cuatro. Y recuerda que la factura no baja a cero: quedan la potencia, el contador y los impuestos. ¿Está todo bien?
+
+TÚ (cliente): Sí, todo bien
+
+Andrés (asistente de la web): Perfecto, Rafa. Queda enviada la solicitud para calle Real 30, Armilla, por las tardes; te llamamos para confirmar el día y la hora. ¿Necesitas algo más?
+
+[En la pantalla aparece ahora: «¡Listo! Solicitud enviada. Te llamamos para confirmar».]
+
+=== TU SIGUIENTE MENSAJE ===

@@ -29,5 +29,10 @@
  {
   "role": "user",
   "content": "Sí, todo bien"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Rafa. Queda enviada la solicitud para calle Real 30, Armilla, por las tardes; te llamamos para confirmar el día y la hora. ¿Necesitas algo más?\n<ficha>{\"que\":\"Añadir batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"de noche, por el aire acondicionado\",\"nombre\":\"Rafa\",\"telefono\":\"622 987 654\",\"municipio\":\"Armilla\",\"direccion\":\"calle Real 30\",\"franja\":\"por las tardes\",\"inicio\":\"\",\"orientacion\":\"Con placas ya instaladas, la batería compensa si el consumo de noche es alto; la compatibilidad con tu inversor la confirma el técnico en el estudio.\",\"porDecir\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Rafa. Queda enviada la solicitud para calle Real 30, Armilla, por las tardes; te llamamos para confirmar el día y la hora. ¿Necesitas algo más?\n<ficha>{\"que\":\"Añadir batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"de noche, por el aire acondicionado\",\"nombre\":\"Rafa\",\"telefono\":\"622 987 654\",\"municipio\":\"Armilla\",\"direccion\":\"calle Real 30\",\"franja\":\"por las tardes\",\"inicio\":\"\",\"orientacion\":\"Con placas ya instaladas, la batería compensa si el consumo de noche es alto; la compatibilidad con tu inversor la confirma el técnico en el estudio.\",\"porDecir\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"estudio\",\"que\":\"Añadir batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"de noche, por el aire acondicionado\",\"nombre\":\"Rafa\",\"telefono\":\"622 987 654\",\"municipio\":\"Armilla\",\"direccion\":\"calle Real 30\",\"franja\":\"por las tardes\",\"inicio\":\"\",\"urgente\":false,\"notas\":\"Ya tiene placas desde hace 3 años, instaladas por otra empresa. Quiere añadir batería: gasta bastante de noche por el aire acondicionado (no sabe cuánto). Duda si la batería es compatible con su inversor; no sabe la marca del inversor y quiere que lo mire el técnico en la visita. Franja: por las tardes.\"}</aviso>"
  }
 ]
