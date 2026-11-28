@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Entiendo que te chirríe esa cifra. Un termo eléctrico instalado suele costar entre unos ciento ochenta y seiscientos euros, según su capacidad, más IVA; orientativo. Pide el presupuesto desglosado por escrito antes de aceptar. ¿Quieres que te mandemos al fontanero para una segunda opinión?\n<ficha>{\"averia\":\"cambiar el termo eléctrico; otro profesional le ha pedido 900 euros\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Pedir el presupuesto desglosado por escrito; el cambio suele rondar entre 180 y 600 euros, orientativo.\",\"porDecir\":\"lo que más cambia el precio es la capacidad, y el fontanero preguntará cuántas personas viven en casa\",\"fase\":\"orientando\"}</ficha>\n<mostrar>precios</mostrar>",
   "original": "Entiendo que te chirríe esa cifra. Un termo eléctrico instalado suele costar entre unos ciento ochenta y seiscientos euros, según su capacidad, más IVA; orientativo. Pide el presupuesto desglosado por escrito antes de aceptar. ¿Quieres que te mandemos al fontanero para una segunda opinión?\n<ficha>{\"averia\":\"cambiar el termo eléctrico; otro profesional le ha pedido 900 euros\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Pedir el presupuesto desglosado por escrito; el cambio suele rondar entre 180 y 600 euros, orientativo.\",\"porDecir\":\"lo que más cambia el precio es la capacidad, y el fontanero preguntará cuántas personas viven en casa\",\"fase\":\"orientando\"}</ficha>\n<mostrar>precios</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Es de 100 litros, somos 4 en casa y pierde agua por abajo. Entonces 900 es mucho ¿no? Y otra cosa, ¿el seguro del hogar me lo paga?"
  }
 ]

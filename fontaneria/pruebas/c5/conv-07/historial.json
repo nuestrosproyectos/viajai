@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Sal ya de casa, sin tocar interruptores ni enchufes, sin encender nada, y cierra la llave del gas si puedes. Desde fuera llama a Nedgia, 900 750 750, o al 112. Es una emergencia de gas, no de fontanería, así que no esperes.\n<ficha>{\"averia\":\"olor a gas en la cocina desde hace un rato\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Salir de casa sin encender nada y llamar a Nedgia o al 112 desde fuera.\",\"porDecir\":\"\",\"fase\":\"orientando\"}</ficha>\n<mostrar>gas</mostrar>",
   "original": "Sal ya de casa, sin tocar interruptores ni enchufes, sin encender nada, y cierra la llave del gas si puedes. Desde fuera llama a Nedgia, 900 750 750, o al 112. Es una emergencia de gas, no de fontanería, así que no esperes.\n<ficha>{\"averia\":\"olor a gas en la cocina desde hace un rato\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Salir de casa sin encender nada y llamar a Nedgia o al 112 desde fuera.\",\"porDecir\":\"\",\"fase\":\"orientando\"}</ficha>\n<mostrar>gas</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Ya he salido y he abierto las ventanas antes de irme. Estoy llamando ahora. Luego, ¿puede venir el fontanero a revisarme la instalación?"
  }
 ]

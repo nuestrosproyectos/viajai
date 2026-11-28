@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Un desatasco sencillo de lavabo suele costar entre setenta y ciento cincuenta euros, más unos veinte a cuarenta de salida y el IVA, orientativo. Mientras, no eches sosa, que quema y puede empeorarlo. ¿Te reservo la visita del fontanero?\n<ficha>{\"averia\":\"lavabo del baño atascado\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No eches sosa y pide la visita del fontanero para el desatasco.\",\"porDecir\":\"lo más probable es el sifón o el tramo cercano · si también atascan otros desagües, el problema está más abajo\",\"fase\":\"orientando\"}</ficha>\n<mostrar>precios</mostrar>",
   "original": "Un desatasco sencillo de lavabo suele costar entre setenta y ciento cincuenta euros, más unos veinte a cuarenta de salida y el IVA, orientativo. Mientras, no eches sosa, que quema y puede empeorarlo. ¿Te reservo la visita del fontanero?\n<ficha>{\"averia\":\"lavabo del baño atascado\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No eches sosa y pide la visita del fontanero para el desatasco.\",\"porDecir\":\"lo más probable es el sifón o el tramo cercano · si también atascan otros desagües, el problema está más abajo\",\"fase\":\"orientando\"}</ficha>\n<mostrar>precios</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Uy, pues ya eché un bote de desatascador fuerte de esos de sosa y sigue igual. ¿Eso es un problema? Vale, resérvame la visita"
  }
 ]
