@@ -56,5 +56,10 @@
  {
   "role": "user",
   "content": "Calle Real número 20, hijo, en La Zubia"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Encarnación. Te apunto para la mañana en calle Real 20, La Zubia, y el fijo 958 590 123. ¿Está bien?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"un fuego no se pone rojo, el resto sí funcionan\",\"codigo\":\"\",\"diagnostico\":\"Resistencia radiante o su limitador del fuego (lo más probable)\",\"nombre\":\"Encarnación\",\"telefono\":\"958 590 123\",\"direccion\":\"Calle Real 20, La Zubia\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Encarnación. Te apunto para la mañana en calle Real 20, La Zubia, y el fijo 958 590 123. ¿Está bien?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"un fuego no se pone rojo, el resto sí funcionan\",\"codigo\":\"\",\"diagnostico\":\"Resistencia radiante o su limitador del fuego (lo más probable)\",\"nombre\":\"Encarnación\",\"telefono\":\"958 590 123\",\"direccion\":\"Calle Real 20, La Zubia\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
  }
 ]

@@ -56,5 +56,10 @@
  {
   "role": "user",
   "content": "Calle Arabial 40, Granada"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Paco. Lo apunto para la tarde: calle Arabial 40, Granada, y el teléfono 633 777 888. ¿Está bien?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar, rugido que sube con las vueltas\",\"codigo\":\"\",\"diagnostico\":\"Rodamientos desgastados (lo más probable)\",\"nombre\":\"Paco\",\"telefono\":\"633 777 888\",\"direccion\":\"Calle Arabial 40, Granada\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Paco. Lo apunto para la tarde: calle Arabial 40, Granada, y el teléfono 633 777 888. ¿Está bien?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Fagor\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar, rugido que sube con las vueltas\",\"codigo\":\"\",\"diagnostico\":\"Rodamientos desgastados (lo más probable)\",\"nombre\":\"Paco\",\"telefono\":\"633 777 888\",\"direccion\":\"Calle Arabial 40, Granada\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>"
  }
 ]

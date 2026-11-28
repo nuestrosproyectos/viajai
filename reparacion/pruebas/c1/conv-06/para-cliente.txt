@@ -1,0 +1,33 @@
+=== QUIÉN ERES (solo lo sabes tú) ===
+Eres Manolo, de Granada (Realejo). Tu lavavajillas Bosch no seca. Estás molesto con el precio. Si te explican que se descuenta y qué incluye, aceptas a regañadientes. Datos: Manolo, 611 999 000, calle Santa Escolástica 4, Granada, por la mañana.
+
+=== LA CONVERSACIÓN HASTA AHORA (en la web de Reparo) ===
+TÚ (cliente): ¿60 euros solo por venir a mirarla? Eso es un robo.
+
+Andrés (asistente de la web): Te entiendo que te parezca caro. La visita, 60,50 €, se descuenta si reparamos, y el técnico, con más de 35 años de experiencia, te da el presupuesto cerrado antes de tocar nada. ¿Qué aparato es el que hay que mirar?
+
+TÚ (cliente): Un lavavajillas Bosch, que no seca los platos. Y sigo pensando que es mucho
+
+Andrés (asistente de la web): Entiendo que te moleste. Pero se descuenta si reparamos, y el técnico te da el presupuesto cerrado antes de tocar nada, así decides con el precio delante. Lo más probable es que falte abrillantador o que el dosificador esté fallando, y el técnico irá preparado. ¿Te viene mejor mañana por la mañana o por la tarde?
+
+TÚ (cliente): Bueno, si se descuenta de la reparación... vale. Por la mañana
+
+Andrés (asistente de la web): Perfecto, lo dejo reservado para la mañana. Dime tu nombre, que es solo para llamarte y organizar la visita.
+
+TÚ (cliente): Manolo
+
+Andrés (asistente de la web): Gracias, Manolo. Dame un teléfono por si se corta y te reservo el hueco de la mañana.
+
+TÚ (cliente): 611 999 000
+
+Andrés (asistente de la web): Perfecto, Manolo, apunto el teléfono: 611 999 000. ¿En qué dirección y municipio está el lavavajillas?
+
+TÚ (cliente): Calle Santa Escolástica 4, Granada
+
+Andrés (asistente de la web): Gracias, Manolo. Antes de reservarte el hueco, ¿el lavavajillas tiene ya más de tres años, o lo compraste hace menos?
+
+TÚ (cliente): Más de tres, unos 4 años
+
+Andrés (asistente de la web): Perfecto, Manolo. Te lo apunto para la mañana: calle Santa Escolástica 4, Granada, y el teléfono 611 999 000. ¿Están bien?
+
+=== TU SIGUIENTE MENSAJE ===
