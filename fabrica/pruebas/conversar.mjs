@@ -32,8 +32,17 @@ const guardarH = (e, h) => writeFileSync(join(carpeta(e), "historial.json"), JSO
 // lo que se dice en voz alta (sin etiquetas), como lo ve y lo oye el cliente
 const visible = t => { const i = t.search(/<(ficha|aviso|mostrar)/); return (i >= 0 ? t.slice(0, i) : t).trim(); };
 
+// como en la web: si la web tiene manual técnico, el último mensaje del cliente lleva las fichas que tocan
+let MANUAL = null;
+if (W.manual) {
+  const [mm, cc] = await Promise.all([import(pathToFileURL(join(RAIZ, web, "manual.mjs")).href), import(pathToFileURL(join(RAIZ, web, "conocimiento.mjs")).href)]);
+  MANUAL = { buscar: mm.buscar, datos: mm.preparar(cc.default) };
+}
+
 function escribirTurno(e, h) {
-  const m = [{ role: "assistant", content: saludo(NEGOCIO) }, ...h.map(({ role, content }) => ({ role, content }))];
+  let hh = h.map(({ role, content }) => ({ role, content }));
+  if (MANUAL) { const consulta = MANUAL.buscar(MANUAL.datos, hh.slice(-30)).texto; if (consulta) hh = [...hh.slice(0, -1), { ...hh.at(-1), content: hh.at(-1).content + "\n\n" + consulta }]; }
+  const m = [{ role: "assistant", content: saludo(NEGOCIO) }, ...hh];
   writeFileSync(join(carpeta(e), "turno.txt"), `=== INSTRUCCIONES (sistema) ===\n${instrucciones(NEGOCIO)}\n\n` +
     m.map(x => `=== ${x.role === "user" ? "CLIENTE" : NOMBRE} ===\n${x.content}`).join("\n\n") + `\n\n=== ${NOMBRE} (tu respuesta) ===\n`);
 }
