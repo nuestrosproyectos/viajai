@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "en mi baño no veo nada de agua. aún no he cerrado nada ni llamado al seguro, ¿qué hago primero?"
+ },
+ {
+  "role": "assistant",
+  "content": "Primero mira si hay goteo bajo el lavabo o en la cisterna; si ves agua, cierra la llave de paso. Haz fotos para el seguro y llama a tu aseguradora: la cobertura depende de tu póliza. ¿Te apunto al fontanero para revisarlo?\n<ficha>{\"averia\":\"posible fuga que cae al techo del baño del vecino de abajo\",\"cuando\":\"\",\"llave\":\"Aún no la has cerrado\",\"vivienda\":\"\",\"seguro\":\"Sí, tienes seguro de hogar\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Mira si hay goteo bajo el lavabo o en la cisterna, haz fotos y llama a tu aseguradora antes de arreglar nada.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Primero mira si hay goteo bajo el lavabo o en la cisterna; si ves agua, cierra la llave de paso. Haz fotos para el seguro y llama a tu aseguradora: la cobertura depende de tu póliza. ¿Te apunto al fontanero para revisarlo?\n<ficha>{\"averia\":\"posible fuga que cae al techo del baño del vecino de abajo\",\"cuando\":\"\",\"llave\":\"Aún no la has cerrado\",\"vivienda\":\"\",\"seguro\":\"Sí, tienes seguro de hogar\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Mira si hay goteo bajo el lavabo o en la cisterna, haz fotos y llama a tu aseguradora antes de arreglar nada.\",\"porDecir\":\"\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

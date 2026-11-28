@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "sí, ya he abierto las ventanas y estoy fuera de casa. ¿el fontanero puede venir a revisar la instalación luego?"
+ },
+ {
+  "role": "assistant",
+  "content": "Me alegra que ya estés fuera. Quédate ahí y llama a Nedgia al 900 750 750, o al 112 si hace falta. Para la instalación de gas, no tenemos habilitación: la revisa una empresa instaladora de gas habilitada.\n<ficha>{\"averia\":\"olor a gas en la cocina desde hace un rato\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Quédate fuera y llama a Nedgia (900 750 750) o al 112.\",\"porDecir\":\"\",\"fase\":\"orientando\"}</ficha>",
+  "original": "Me alegra que ya estés fuera. Quédate ahí y llama a Nedgia al 900 750 750, o al 112 si hace falta. Para la instalación de gas, no tenemos habilitación: la revisa una empresa instaladora de gas habilitada.\n<ficha>{\"averia\":\"olor a gas en la cocina desde hace un rato\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Quédate fuera y llama a Nedgia (900 750 750) o al 112.\",\"porDecir\":\"\",\"fase\":\"orientando\"}</ficha>"
  }
 ]
