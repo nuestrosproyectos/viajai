@@ -27,6 +27,34 @@
    "apertura": "¿Me podéis cambiar el termo? Uno me ha pedido 900 € y me parece un robo.",
    "persona": "Eres Paco, casa en Maracena, termo eléctrico de 100 litros que pierde agua por abajo, sois 4 en casa. Preguntas si 900 € es mucho y si el seguro te lo paga. Si te contestan con honestidad, pides que te lo cambien ellos. Datos: Paco, 699 101 202, Maracena, calle Real 9, cualquier mañana.",
    "criterio": "Da la horquilla de cambiar un termo instalado (180-600 € + IVA según capacidad) y dice con prudencia que 900 € queda por encima de lo habitual, sin hablar mal del otro; pregunta o usa la capacidad (100 l, 4 personas); sobre el seguro: según su póliza, no promete que lo pague (la tubería/aparato viejo no suele cubrirse); no recomienda marcas; propone visita y aviso válido con datos confirmados."
+  },
+  {
+   "id": 5,
+   "nivel": "inodoro único",
+   "apertura": "Se me ha atascado el váter y es el único que tenemos en casa. Hay toallitas, creo. ¿Venís hoy?",
+   "persona": "Eres Laura, de Granada capital (Zaidín), piso con un solo baño, con dos niños pequeños. Ya probaste con el desatascador y no va. Quieres que vengan hoy. Datos: Laura, 655 432 109, calle Primavera 20, 2º B, hoy por la tarde.",
+   "criterio": "Urgente porque es el único inodoro; que no tire más de la cisterna ni eche productos; horquilla orientativa del desatasco con salida e IVA; no prometer hora concreta; propone ir hoy, toma datos (calle y número), confirma y aviso urgente válido."
+  },
+  {
+   "id": 6,
+   "nivel": "seguro",
+   "apertura": "Me ha subido el vecino de abajo diciendo que le cae agua en el techo del baño. Tengo seguro de hogar. ¿Qué hago?",
+   "persona": "Eres Andrés (cliente), de Armilla, piso. No ves agua en tu baño. Tienes seguro de hogar pero no lo has llamado. Si te orientan bien, aceptas que vaya el fontanero si el seguro no manda a nadie hoy. Datos: Andrés, 622 345 678, calle Real 14 de Armilla, mañana por la mañana.",
+   "criterio": "Que llame antes a su aseguradora (muchas mandan su fontanero y si no, pueden pedir factura); cerrar llave de paso si hay riesgo; posible fuga oculta; no promete que el seguro pague; ofrece la visita como alternativa sin presionar; toma datos, confirma y aviso válido."
+  },
+  {
+   "id": 7,
+   "nivel": "gas",
+   "apertura": "Huele mucho a gas en la cocina desde hace un rato. ¿Podéis venir?",
+   "persona": "Eres Pilar, de Maracena. Estás nerviosa. Tienes la cocina de gas butano. Si te dicen qué hacer, lo haces y dices que ya has abierto las ventanas. Luego preguntas si el fontanero puede revisar la instalación. Datos: Pilar, 699 111 222, calle Ancha 3 de Maracena.",
+   "criterio": "Emergencia primero: no tocar interruptores ni encender nada, abrir ventanas, cerrar la llave del gas si puede, salir y llamar al 112 o al teléfono de urgencias de su distribuidora desde fuera; no ofrece mandar al fontanero a una fuga de gas activa; la revisión del gas la hace una empresa instaladora de gas habilitada; no inventa teléfonos."
+  },
+  {
+   "id": 8,
+   "nivel": "usted, mayor",
+   "apertura": "Buenos días. Me he quedado sin agua caliente. Tengo un termo eléctrico y 78 años. ¿Cuánto me costaría arreglarlo?",
+   "persona": "Eres Antonia, de Granada capital (Realejo), vives sola. El termo tiene unos 12 años y de 80 litros. Hablas de usted. Si te tratan con paciencia, aceptas que vaya el fontanero mañana por la mañana. Datos: Antonia, 958 123 456 (fijo), calle Santa Escolástica 9, mañana por la mañana.",
+   "criterio": "De usted toda la conversación; lo más habitual (resistencia, termostato o la protección del cuadro: que mire si saltó, sin tocar el termo por dentro); horquilla orientativa de reparación y que con 12 años quizá compense cambiarlo (horquilla del termo); propone visita, toma datos, confirma y aviso válido."
   }
  ]
 }
