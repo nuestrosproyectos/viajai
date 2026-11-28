@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Muy bien, llama ya; la cobertura depende de tu póliza. Si no ves agua en tu baño, lo más probable es una fuga oculta, y localizarla suele costar unos 80 a 150 euros, orientativo. ¿Te reservo nuestra visita si no mandan a nadie?\n<ficha>{\"averia\":\"agua que cae al techo del baño del vecino de abajo\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Tiene seguro de hogar\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Llamar ya a su aseguradora, que la cobertura depende de su póliza; si no ve agua en su baño, lo más probable es una fuga oculta.\",\"porDecir\":\"si no puede esperar, nuestro fontanero corta la fuga y deja factura y fotos\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "Muy bien, llama ya; la cobertura depende de tu póliza. Si no ves agua en tu baño, lo más probable es una fuga oculta, y localizarla suele costar unos 80 a 150 euros, orientativo. ¿Te reservo nuestra visita si no mandan a nadie?\n<ficha>{\"averia\":\"agua que cae al techo del baño del vecino de abajo\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Tiene seguro de hogar\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Llamar ya a su aseguradora, que la cobertura depende de su póliza; si no ve agua en su baño, lo más probable es una fuga oculta.\",\"porDecir\":\"si no puede esperar, nuestro fontanero corta la fuga y deja factura y fotos\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, sí, resérvamela por si acaso. Si el seguro no manda a nadie hoy, que venga el vuestro mañana por la mañana"
  }
 ]

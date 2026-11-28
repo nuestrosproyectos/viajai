@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Sí, la sosa puede quemarte y empeorar el atasco, así que no metas la mano. Lo más probable es el sifón o el tramo cercano. Te reservo la visita: ¿me dices tu nombre y un teléfono? Es solo para llamarte y organizar la visita.\n<ficha>{\"averia\":\"lavabo del baño atascado\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No uses más sosa y no metas la mano: lo más probable es el sifón o el tramo cercano.\",\"porDecir\":\"si también atascan otros desagües, el problema está más abajo\",\"fase\":\"datos\"}</ficha>",
   "original": "Sí, la sosa puede quemarte y empeorar el atasco, así que no metas la mano. Lo más probable es el sifón o el tramo cercano. Te reservo la visita: ¿me dices tu nombre y un teléfono? Es solo para llamarte y organizar la visita.\n<ficha>{\"averia\":\"lavabo del baño atascado\",\"cuando\":\"\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"No uses más sosa y no metas la mano: lo más probable es el sifón o el tramo cercano.\",\"porDecir\":\"si también atascan otros desagües, el problema está más abajo\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Luis, 655 990 120"
  }
 ]

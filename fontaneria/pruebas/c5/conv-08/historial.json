@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Perfecto, le reservo la visita por la mañana, como pide. Para un termo de unos doce años, el fontanero le dirá si compensa cambiarlo, y el cambio va de unos 180 a 600 euros según capacidad, orientativo. ¿Me dice su nombre y un teléfono?\n<ficha>{\"averia\":\"sin agua caliente, termo eléctrico\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"Mire si ha saltado la protección del cuadro; el fontanero valora si compensa reparar o cambiar el termo.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, le reservo la visita por la mañana, como pide. Para un termo de unos doce años, el fontanero le dirá si compensa cambiarlo, y el cambio va de unos 180 a 600 euros según capacidad, orientativo. ¿Me dice su nombre y un teléfono?\n<ficha>{\"averia\":\"sin agua caliente, termo eléctrico\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"Mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"Mire si ha saltado la protección del cuadro; el fontanero valora si compensa reparar o cambiar el termo.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Me llamo Antonia. Mi teléfono es el 958 123 456, es fijo, no tengo móvil"
  }
 ]
