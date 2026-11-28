@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Rosa, anoto el 699 222 111, calle Granada 15, Albolote, por la tarde. Hoy es sábado y por la tarde el equipo ya no atiende, así que te llamaremos el lunes. Mientras, no uses la lavadora. ¿Está todo bien?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo de la lavadora y el suelo está encharcado\",\"codigo\":\"\",\"diagnostico\":\"fuga por junta de la puerta, manguera de desagüe o bomba\",\"nombre\":\"Rosa\",\"telefono\":\"699 222 111\",\"direccion\":\"calle Granada 15, Albolote\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>",
   "original": "Rosa, anoto el 699 222 111, calle Granada 15, Albolote, por la tarde. Hoy es sábado y por la tarde el equipo ya no atiende, así que te llamaremos el lunes. Mientras, no uses la lavadora. ¿Está todo bien?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo de la lavadora y el suelo está encharcado\",\"codigo\":\"\",\"diagnostico\":\"fuga por junta de la puerta, manguera de desagüe o bomba\",\"nombre\":\"Rosa\",\"telefono\":\"699 222 111\",\"direccion\":\"calle Granada 15, Albolote\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Los datos están bien, pero ¿hasta el lunes? ¿No puede venir nadie hoy aunque sea tarde? Es que me da miedo dejarlo así"
  }
 ]

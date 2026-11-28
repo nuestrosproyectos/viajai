@@ -34,5 +34,9 @@
   "role": "assistant",
   "content": "Perfecto, Elena. Con más de tres años la reparamos sin problema. Dame un teléfono; es solo para llamarte y organizar la visita de la tarde.\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua; el filtro del fondo ya está limpio y sigue sin desaguar\",\"codigo\":\"\",\"diagnostico\":\"filtro del fondo obstruido o bomba de desagüe\",\"nombre\":\"Elena\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Elena. Con más de tres años la reparamos sin problema. Dame un teléfono; es solo para llamarte y organizar la visita de la tarde.\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua; el filtro del fondo ya está limpio y sigue sin desaguar\",\"codigo\":\"\",\"diagnostico\":\"filtro del fondo obstruido o bomba de desagüe\",\"nombre\":\"Elena\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "688 444 222"
  }
 ]
