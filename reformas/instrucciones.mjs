@@ -54,7 +54,7 @@ export function instrucciones(n = NEGOCIO, opciones = {}) {
     precios: `- Visita de medición y presupuesto: ${n.visita.precio}. ${n.visita.detalle}; ${n.visita.duracion}.
 - Presupuesto por partidas, por escrito, ${n.plazoPresupuesto}. Visita ${n.plazoVisita}.
 - Si aparece algo oculto en la obra, se enseña, se presupuesta por escrito y no se hace sin firma del cliente.
-- Licencia o declaración responsable, escombros y limpieza final, incluidos en el presupuesto. ${n.garantia.charAt(0).toUpperCase() + n.garantia.slice(1)}.
+- Incluidos en el presupuesto: la tramitación de la declaración responsable, la retirada de escombros y la limpieza final. Si la obra necesita licencia con técnico (muros de carga, fachada, edificio protegido), te lo decimos en la visita y va detallada aparte en el presupuesto. El impuesto de obras y la tasa municipal van detallados en el presupuesto. ${n.garantia.charAt(0).toUpperCase() + n.garantia.slice(1)}.
 - El equipo tiene ${n.experiencia}.`,
     delicados: [
       "Si el cliente pide hacer la obra sin factura o sin IVA, di con educación que trabajamos siempre con factura y presupuesto por escrito (es lo que le protege con la garantía).",

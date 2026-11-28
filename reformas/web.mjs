@@ -7,7 +7,7 @@
 import { lista } from "./cerebro.mjs";
 const may = t => t.charAt(0).toUpperCase() + t.slice(1);
 
-// PENDIENTE: confirmar que el presupuesto incluye licencia o declaración responsable, escombros y limpieza final (Andrés lo dice así)
+// Confirmado por Juan (28-11-2026): presupuesto gratis; incluye declaración responsable, escombros y limpieza final.
 export default function web(N) {
   const gratis = /gratis/i.test(N.visita.precio);
   return {
@@ -60,7 +60,7 @@ export default function web(N) {
         lista: [
           "<b>Presupuesto por partidas</b>, con medidas y materiales.",
           "<b>Si aparece algo oculto</b> (una tubería rota), te lo enseñamos y no se hace nada sin tu firma.",
-          "<b>Licencia o declaración responsable,</b> escombros y limpieza final incluidos en el presupuesto.",
+          "<b>Declaración responsable,</b> retirada de escombros y limpieza final incluidas en el presupuesto.",
           `<b>${may(N.garantia)}.</b>`
         ]
       },
