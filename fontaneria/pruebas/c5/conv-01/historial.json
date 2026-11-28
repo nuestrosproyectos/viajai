@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "Sí, todo correcto. Estoy en el centro, por Recogidas. ¿Cuánto tardáis en venir?"
+ },
+ {
+  "role": "assistant",
+  "content": "Pilar, tu solicitud queda enviada para visita urgente hoy. No te puedo decir cuánto tardamos: al recibir el aviso te llamamos para confirmar la hora. ¿Necesitas algo más?\n<ficha>{\"averia\":\"fuga bajo el fregadero, ya cortada\",\"cuando\":\"Hoy, en cuanto puedas\",\"llave\":\"Sí, ya no sale\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"Pilar\",\"telefono\":\"610 223 344\",\"municipio\":\"Granada capital\",\"direccion\":\"Calle Recogidas 40, 2º B\",\"franja\":\"hoy\",\"inicio\":\"\",\"orientacion\":\"Con el agua parada, guarda las fotos para el seguro y espera nuestra llamada para la hora de la visita.\",\"porDecir\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Pilar, tu solicitud queda enviada para visita urgente hoy. No te puedo decir cuánto tardamos: al recibir el aviso te llamamos para confirmar la hora. ¿Necesitas algo más?\n<ficha>{\"averia\":\"fuga bajo el fregadero, ya cortada\",\"cuando\":\"Hoy, en cuanto puedas\",\"llave\":\"Sí, ya no sale\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"Pilar\",\"telefono\":\"610 223 344\",\"municipio\":\"Granada capital\",\"direccion\":\"Calle Recogidas 40, 2º B\",\"franja\":\"hoy\",\"inicio\":\"\",\"orientacion\":\"Con el agua parada, guarda las fotos para el seguro y espera nuestra llamada para la hora de la visita.\",\"porDecir\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"averia\":\"fuga bajo el fregadero\",\"cuando\":\"Hoy, en cuanto puedas\",\"llave\":\"Sí, ya no sale\",\"vivienda\":\"Piso\",\"seguro\":\"\",\"nombre\":\"Pilar\",\"telefono\":\"610 223 344\",\"municipio\":\"Granada capital\",\"direccion\":\"Calle Recogidas 40, 2º B\",\"franja\":\"hoy\",\"inicio\":\"\",\"urgente\":true,\"notas\":\"Fuga bajo el fregadero, sale agua y no para. Encontró una llave debajo del fregadero, la cerró y ya ha parado el agua. Quiere que vaya hoy. Está en el centro, por Recogidas. Pregunta cuánto tardan en venir.\"}</aviso>"
  }
 ]

@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "Maracena, calle Real 9. Por la mañana, cualquier día me viene bien"
+ },
+ {
+  "role": "assistant",
+  "content": "Paco, te repito: teléfono seis nueve nueve, uno cero uno, dos cero dos. Visita por la mañana, cualquier día, en calle Real nueve, Maracena, para cambiar el termo. ¿Está todo bien?\n<ficha>{\"averia\":\"termo de 100 litros que pierde agua por abajo\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Preguntas si lo paga el seguro del hogar, según tu póliza\",\"nombre\":\"Paco\",\"telefono\":\"699 101 202\",\"municipio\":\"Maracena\",\"direccion\":\"Calle Real 9\",\"franja\":\"por la mañana, cualquier día\",\"inicio\":\"\",\"orientacion\":\"Pide el presupuesto desglosado por escrito antes de aceptar; un termo eléctrico instalado suele costar entre 180 y 600 euros, orientativo, según capacidad.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Paco, te repito: teléfono seis nueve nueve, uno cero uno, dos cero dos. Visita por la mañana, cualquier día, en calle Real nueve, Maracena, para cambiar el termo. ¿Está todo bien?\n<ficha>{\"averia\":\"termo de 100 litros que pierde agua por abajo\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"Preguntas si lo paga el seguro del hogar, según tu póliza\",\"nombre\":\"Paco\",\"telefono\":\"699 101 202\",\"municipio\":\"Maracena\",\"direccion\":\"Calle Real 9\",\"franja\":\"por la mañana, cualquier día\",\"inicio\":\"\",\"orientacion\":\"Pide el presupuesto desglosado por escrito antes de aceptar; un termo eléctrico instalado suele costar entre 180 y 600 euros, orientativo, según capacidad.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

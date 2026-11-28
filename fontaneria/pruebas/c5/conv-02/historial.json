@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "Sí, todo bien. Barrio no sé decirte, es la avenida de los Mondragones, en Armilla."
+ },
+ {
+  "role": "assistant",
+  "content": "Luis, tu solicitud queda enviada para mañana por la mañana en avenida de los Mondragones tres, Armilla. Te llamamos para confirmar la hora. ¿Necesitas algo más?\n<ficha>{\"averia\":\"lavabo del baño atascado\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Luis\",\"telefono\":\"655 990 120\",\"municipio\":\"Armilla\",\"direccion\":\"Avenida de los Mondragones 3\",\"franja\":\"mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"No uses más sosa y no metas la mano: el fontanero revisará el sifón o el tramo cercano.\",\"porDecir\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Luis, tu solicitud queda enviada para mañana por la mañana en avenida de los Mondragones tres, Armilla. Te llamamos para confirmar la hora. ¿Necesitas algo más?\n<ficha>{\"averia\":\"lavabo del baño atascado\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Luis\",\"telefono\":\"655 990 120\",\"municipio\":\"Armilla\",\"direccion\":\"Avenida de los Mondragones 3\",\"franja\":\"mañana por la mañana\",\"inicio\":\"\",\"orientacion\":\"No uses más sosa y no metas la mano: el fontanero revisará el sifón o el tramo cercano.\",\"porDecir\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"averia\":\"lavabo del baño atascado\",\"cuando\":\"Visita programada\",\"llave\":\"\",\"vivienda\":\"\",\"seguro\":\"\",\"nombre\":\"Luis\",\"telefono\":\"655 990 120\",\"municipio\":\"Armilla\",\"direccion\":\"Avenida de los Mondragones 3\",\"franja\":\"mañana por la mañana\",\"inicio\":\"\",\"urgente\":false,\"notas\":\"Lavabo del baño atascado. Ha echado un desatascador fuerte de sosa y sigue igual. No consta si atascan otros desagües. Quiere la visita mañana por la mañana.\"}</aviso>"
  }
 ]

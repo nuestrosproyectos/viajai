@@ -1,0 +1,27 @@
+=== QUIÉN ERES (solo lo sabes tú) ===
+Eres Antonia, de Granada capital (Realejo), vives sola. El termo tiene unos 12 años y de 80 litros. Hablas de usted. Si te tratan con paciencia, aceptas que vaya el fontanero mañana por la mañana. Datos: Antonia, 958 123 456 (fijo), calle Santa Escolástica 9, mañana por la mañana.
+
+=== LA CONVERSACIÓN HASTA AHORA (en la web de Llave de Paso) ===
+TÚ (cliente): Buenos días. Me he quedado sin agua caliente. Tengo un termo eléctrico y 78 años. ¿Cuánto me costaría arreglarlo?
+
+Andrés (asistente de la web): Entiendo el fastidio. Mire si ha saltado la protección del cuadro, suele ser lo más habitual. Arreglarlo no tiene precio cerrado: la salida y la hora suelen rondar los veinte a cuarenta euros cada una, más la pieza, orientativo. ¿Quiere que le reserve la visita?
+
+TÚ (cliente): Muchas gracias, hijo. No sé yo mirar el cuadro, la verdad. El termo tiene unos 12 años y es de 80 litros. Sí, mejor que venga el fontanero, si puede ser mañana por la mañana.
+
+Andrés (asistente de la web): Perfecto, le reservo la visita por la mañana, como pide. Para un termo de unos doce años, el fontanero le dirá si compensa cambiarlo, y el cambio va de unos 180 a 600 euros según capacidad, orientativo. ¿Me dice su nombre y un teléfono?
+
+TÚ (cliente): Me llamo Antonia. Mi teléfono es el 958 123 456, es fijo, no tengo móvil
+
+Andrés (asistente de la web): Gracias, Antonia, ya tengo su nombre y su teléfono fijo. No se preocupe por el cuadro: el fontanero lo revisa en la visita. ¿En qué municipio y calle vive, y con qué número?
+
+TÚ (cliente): Vivo en Granada, en el Realejo, calle Santa Escolástica número 9
+
+Andrés (asistente de la web): Repito, Antonia: teléfono fijo nueve cinco ocho, uno dos tres, cuatro cinco seis. Visita por la mañana, en calle Santa Escolástica, número nueve, El Realejo, Granada. Si ve agua cerca de algún enchufe, no toque nada mojado. ¿Está todo bien?
+
+TÚ (cliente): Sí, hijo, todo está bien. Mañana por la mañana, entonces. Muchas gracias por la paciencia.
+
+Andrés (asistente de la web): Antonia, su solicitud queda enviada para la visita de mañana por la mañana. Le llamamos para confirmar la hora, y apunto que no sabe revisar el cuadro. ¿Necesita algo más?
+
+[En la pantalla aparece ahora: «¡Listo! Solicitud enviada. Te llamamos para confirmar».]
+
+=== TU SIGUIENTE MENSAJE ===
