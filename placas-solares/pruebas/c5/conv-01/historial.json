@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "En Armilla las bonificaciones dependen de su ordenanza, y eso lo confirma el técnico. Recuerda que la factura no baja a cero: quedan la potencia, el contador y los impuestos. ¿Te reservo el estudio gratis, con visita al tejado?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Lo que te conviene es el estudio gratuito con visita técnica; en Armilla la bonificación depende de su ordenanza.\",\"porDecir\":\"tamaño y precio: una casa típica de unos cinco kilovatios cuesta de cuatro mil quinientos a siete mil quinientos euros sin batería\",\"fase\":\"proponiendo\"}</ficha>",
   "original": "En Armilla las bonificaciones dependen de su ordenanza, y eso lo confirma el técnico. Recuerda que la factura no baja a cero: quedan la potencia, el contador y los impuestos. ¿Te reservo el estudio gratis, con visita al tejado?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Lo que te conviene es el estudio gratuito con visita técnica; en Armilla la bonificación depende de su ordenanza.\",\"porDecir\":\"tamaño y precio: una casa típica de unos cinco kilovatios cuesta de cuatro mil quinientos a siete mil quinientos euros sin batería\",\"fase\":\"proponiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Vale, sí, resérvamelo. Soy Javier, 644 778 120, calle Granada 5 en Armilla. Mejor el viernes por la mañana"
  }
 ]

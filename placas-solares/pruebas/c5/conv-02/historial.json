@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Depende del ayuntamiento: en Granada capital hay un 50 % de IBI para viviendas que no son de obra nueva, pero hay que pedirlo. ¿En qué municipio está la casa? Así te reservo el estudio y lo miramos.\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Compara con un presupuesto cerrado por escrito, con legalización, marcas y garantías; el IBI depende del municipio y lo confirma el técnico.\",\"porDecir\":\"la batería compensa sobre todo si gastas mucho de noche, y en muchas casas alarga la amortización · pregunta cuánto gastas de noche\",\"fase\":\"datos\"}</ficha>",
   "original": "Depende del ayuntamiento: en Granada capital hay un 50 % de IBI para viviendas que no son de obra nueva, pero hay que pedirlo. ¿En qué municipio está la casa? Así te reservo el estudio y lo miramos.\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Compara con un presupuesto cerrado por escrito, con legalización, marcas y garantías; el IBI depende del municipio y lo confirma el técnico.\",\"porDecir\":\"la batería compensa sobre todo si gastas mucho de noche, y en muchas casas alarga la amortización · pregunta cuánto gastas de noche\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "En Granada capital, en el Zaidín. Es una casa baja con azotea"
  }
 ]

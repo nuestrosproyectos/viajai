@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Eso no te lo puedo confirmar: depende del inversor y lo revisa el técnico. La batería se legaliza igual que las placas, con boletín y registro en la Junta. ¿Sabes qué marca de inversor tienes? Te reservo el estudio para mirarlo.\n<ficha>{\"que\":\"Añadir batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"de noche, por el aire acondicionado\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con placas ya instaladas, la batería compensa si el consumo de noche es alto; la compatibilidad con tu inversor la confirma el técnico en el estudio.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
   "original": "Eso no te lo puedo confirmar: depende del inversor y lo revisa el técnico. La batería se legaliza igual que las placas, con boletín y registro en la Junta. ¿Sabes qué marca de inversor tienes? Te reservo el estudio para mirarlo.\n<ficha>{\"que\":\"Añadir batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"de noche, por el aire acondicionado\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Con placas ya instaladas, la batería compensa si el consumo de noche es alto; la compatibilidad con tu inversor la confirma el técnico en el estudio.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "La marca no la sé, tendría que mirarlo. Que lo vea el técnico en la visita. Soy Rafa, 622 987 654, calle Real 30 de Armilla, por las tardes"
  }
 ]
