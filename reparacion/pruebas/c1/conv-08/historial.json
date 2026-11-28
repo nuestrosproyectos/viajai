@@ -65,5 +65,10 @@
  {
   "role": "user",
   "content": "Sí, hijo, está todo bien. Muchas gracias por su paciencia."
+ },
+ {
+  "role": "assistant",
+  "content": "De nada, Encarnación. Queda enviada la solicitud para la mañana, y el equipo le llamará al 958 590 123 para confirmar la hora exacta. ¿Necesita algo más?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"un fuego no se pone rojo, el resto sí funcionan\",\"codigo\":\"\",\"diagnostico\":\"Resistencia radiante o su limitador del fuego (lo más probable)\",\"nombre\":\"Encarnación\",\"telefono\":\"958 590 123\",\"direccion\":\"Calle Real 20, La Zubia\",\"franja\":\"mañana\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "De nada, Encarnación. Queda enviada la solicitud para la mañana, y el equipo le llamará al 958 590 123 para confirmar la hora exacta. ¿Necesita algo más?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"un fuego no se pone rojo, el resto sí funcionan\",\"codigo\":\"\",\"diagnostico\":\"Resistencia radiante o su limitador del fuego (lo más probable)\",\"nombre\":\"Encarnación\",\"telefono\":\"958 590 123\",\"direccion\":\"Calle Real 20, La Zubia\",\"franja\":\"mañana\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"nombre\":\"Encarnación\",\"telefono\":\"958 590 123\",\"direccion\":\"Calle Real 20, La Zubia\",\"municipio\":\"La Zubia\",\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"averia\":\"Un fuego no se pone rojo, el resto de fuegos funcionan\",\"codigo\":\"\",\"franja\":\"mañana\",\"urgente\":false,\"notas\":\"Vitrocerámica Balay de unos 10 años, fuera de garantía legal. Diagnóstico probable: resistencia radiante del fuego o su limitador; llevar esa pieza. Cliente mayor: trato de usted y llamada al fijo.\"}</aviso>"
  }
 ]

@@ -65,5 +65,10 @@
  {
   "role": "user",
   "content": "Elena"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Elena. ¿En qué dirección y municipio está el lavavajillas?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"\",\"diagnostico\":\"Filtro o bomba de desagüe obstruidos (lo más probable)\",\"nombre\":\"Elena\",\"telefono\":\"688 444 222\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Elena. ¿En qué dirección y municipio está el lavavajillas?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"\",\"diagnostico\":\"Filtro o bomba de desagüe obstruidos (lo más probable)\",\"nombre\":\"Elena\",\"telefono\":\"688 444 222\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

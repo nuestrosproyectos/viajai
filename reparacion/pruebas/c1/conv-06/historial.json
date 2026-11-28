@@ -65,5 +65,10 @@
  {
   "role": "user",
   "content": "Sí, están bien"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Manolo. Queda enviada la solicitud para la mañana, y el equipo te llamará al 611 999 000 para confirmar la hora exacta. ¿Necesitas algo más?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca los platos\",\"codigo\":\"\",\"diagnostico\":\"Falta de abrillantador o fallo del dosificador o del secado (lo más probable)\",\"nombre\":\"Manolo\",\"telefono\":\"611 999 000\",\"direccion\":\"Calle Santa Escolástica 4, Granada\",\"franja\":\"mañana\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Perfecto, Manolo. Queda enviada la solicitud para la mañana, y el equipo te llamará al 611 999 000 para confirmar la hora exacta. ¿Necesitas algo más?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca los platos\",\"codigo\":\"\",\"diagnostico\":\"Falta de abrillantador o fallo del dosificador o del secado (lo más probable)\",\"nombre\":\"Manolo\",\"telefono\":\"611 999 000\",\"direccion\":\"Calle Santa Escolástica 4, Granada\",\"franja\":\"mañana\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"nombre\":\"Manolo\",\"telefono\":\"611 999 000\",\"direccion\":\"Calle Santa Escolástica 4, Granada\",\"municipio\":\"Granada\",\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"averia\":\"No seca los platos\",\"codigo\":\"\",\"franja\":\"mañana\",\"urgente\":false,\"notas\":\"Lavavajillas Bosch de unos 4 años, fuera de garantía legal (más de tres años). Diagnóstico probable: falta de abrillantador o fallo del dosificador. Cliente pregunta por el precio de la visita: se descuenta si repara. Confirmar modelo si lo tiene a mano.\"}</aviso>"
  }
 ]
