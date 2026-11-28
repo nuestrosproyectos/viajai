@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Depende de la pieza: a catorce años, si son los rodamientos de cuba sellada no suele compensar, y el técnico te da presupuesto cerrado para decidir. Para decirte qué le pasa, ¿de qué marca es?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar\",\"codigo\":\"\",\"diagnostico\":\"Ruido al centrifugar, pendiente de marca (posibles rodamientos)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>",
   "original": "Depende de la pieza: a catorce años, si son los rodamientos de cuba sellada no suele compensar, y el técnico te da presupuesto cerrado para decidir. Para decirte qué le pasa, ¿de qué marca es?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"ruido fuerte al centrifugar\",\"codigo\":\"\",\"diagnostico\":\"Ruido al centrifugar, pendiente de marca (posibles rodamientos)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Es una Fagor"
  }
 ]

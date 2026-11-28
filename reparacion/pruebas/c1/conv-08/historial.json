@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Buenos días. La Zubia está en nuestra zona. Cada marca tiene sus propios códigos y averías típicas, así que, ¿de qué marca es la vitrocerámica?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"un fuego no enciende\",\"codigo\":\"\",\"diagnostico\":\"Fallo de un fuego, pendiente de marca\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>\n<mostrar>zona</mostrar>",
   "original": "Buenos días. La Zubia está en nuestra zona. Cada marca tiene sus propios códigos y averías típicas, así que, ¿de qué marca es la vitrocerámica?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"un fuego no enciende\",\"codigo\":\"\",\"diagnostico\":\"Fallo de un fuego, pendiente de marca\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>\n<mostrar>zona</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Es una Balay, hijo. Tiene ya sus diez años. Los otros fuegos funcionan bien, solo es uno el que no calienta."
  }
 ]

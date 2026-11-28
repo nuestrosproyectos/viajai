@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Lo más probable es un fallo del desescarche: el hielo tapa el paso del aire, y el técnico irá directo a la pieza que lo controla. Si hay comida dentro, conviene verlo pronto. ¿Tu frigorífico tiene más de tres años, o lo compraste hace menos?\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"\",\"sintoma\":\"enfría arriba pero el congelador no congela bien\",\"codigo\":\"\",\"diagnostico\":\"Fallo del desescarche, hielo tapando el paso de aire (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>\n<mostrar>aparato:frigorifico</mostrar>",
   "original": "Lo más probable es un fallo del desescarche: el hielo tapa el paso del aire, y el técnico irá directo a la pieza que lo controla. Si hay comida dentro, conviene verlo pronto. ¿Tu frigorífico tiene más de tres años, o lo compraste hace menos?\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"\",\"sintoma\":\"enfría arriba pero el congelador no congela bien\",\"codigo\":\"\",\"diagnostico\":\"Fallo del desescarche, hielo tapando el paso de aire (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>\n<mostrar>aparato:frigorifico</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Tiene 5 años. Detrás del congelador se ve escarcha"
  }
 ]

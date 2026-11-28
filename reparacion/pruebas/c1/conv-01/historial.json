@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Con el código E18 en una Balay, lo más probable es que el filtro o la bomba de desagüe estén atascados; el técnico va directo a por esa pieza. ¿Tu lavadora tiene ya más de tres años, o la compraste hace menos?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"E18\",\"diagnostico\":\"Filtro o bomba de desagüe obstruidos (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>\n<mostrar>codigo:E18</mostrar>",
   "original": "Con el código E18 en una Balay, lo más probable es que el filtro o la bomba de desagüe estén atascados; el técnico va directo a por esa pieza. ¿Tu lavadora tiene ya más de tres años, o la compraste hace menos?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"E18\",\"diagnostico\":\"Filtro o bomba de desagüe obstruidos (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>\n<mostrar>codigo:E18</mostrar>"
+ },
+ {
+  "role": "user",
+  "content": "Tiene 6 años"
  }
 ]

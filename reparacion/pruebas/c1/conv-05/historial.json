@@ -7,5 +7,9 @@
   "role": "assistant",
   "content": "Lo primero es la seguridad: si la lavadora está enchufada, corta la luz desde el diferencial antes de tocar nada, y cierra el grifo de la lavadora. ¿Ya tienes el agua lejos de los enchufes?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo de la lavadora, suelo encharcado\",\"codigo\":\"\",\"diagnostico\":\"Fuga de agua (urgente)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>",
   "original": "Lo primero es la seguridad: si la lavadora está enchufada, corta la luz desde el diferencial antes de tocar nada, y cierra el grifo de la lavadora. ¿Ya tienes el agua lejos de los enchufes?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo de la lavadora, suelo encharcado\",\"codigo\":\"\",\"diagnostico\":\"Fuga de agua (urgente)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, ya corté la luz y cerré el agua. Ahora estoy más tranquila. ¿Podéis venir hoy?"
  }
 ]
