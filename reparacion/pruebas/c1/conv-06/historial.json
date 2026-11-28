@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "611 999 000"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Manolo, apunto el teléfono: 611 999 000. ¿En qué dirección y municipio está el lavavajillas?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca los platos\",\"codigo\":\"\",\"diagnostico\":\"Falta de abrillantador o fallo del dosificador o del secado (lo más probable)\",\"nombre\":\"Manolo\",\"telefono\":\"611 999 000\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Manolo, apunto el teléfono: 611 999 000. ¿En qué dirección y municipio está el lavavajillas?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca los platos\",\"codigo\":\"\",\"diagnostico\":\"Falta de abrillantador o fallo del dosificador o del secado (lo más probable)\",\"nombre\":\"Manolo\",\"telefono\":\"611 999 000\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
  }
 ]

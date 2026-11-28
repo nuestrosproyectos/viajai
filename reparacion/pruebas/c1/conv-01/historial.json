@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "655 123 456"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Carmen, apunto el teléfono: 655 123 456. ¿Cuál es la dirección y el municipio donde está la lavadora?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"E18\",\"diagnostico\":\"Bomba o filtro de desagüe obstruidos (lo más probable)\",\"nombre\":\"Carmen\",\"telefono\":\"655 123 456\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Carmen, apunto el teléfono: 655 123 456. ¿Cuál es la dirección y el municipio donde está la lavadora?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"E18\",\"diagnostico\":\"Bomba o filtro de desagüe obstruidos (lo más probable)\",\"nombre\":\"Carmen\",\"telefono\":\"655 123 456\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
  }
 ]

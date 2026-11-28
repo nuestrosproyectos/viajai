@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "622 333 444"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, Javier, apunto el teléfono: 622 333 444. ¿En qué dirección y municipio está el frigorífico?\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"\",\"sintoma\":\"enfría arriba pero el congelador no congela bien; escarcha detrás del congelador\",\"codigo\":\"\",\"diagnostico\":\"Fallo del desescarche, hielo tapando el paso de aire (lo más probable)\",\"nombre\":\"Javier\",\"telefono\":\"622 333 444\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, Javier, apunto el teléfono: 622 333 444. ¿En qué dirección y municipio está el frigorífico?\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"\",\"sintoma\":\"enfría arriba pero el congelador no congela bien; escarcha detrás del congelador\",\"codigo\":\"\",\"diagnostico\":\"Fallo del desescarche, hielo tapando el paso de aire (lo más probable)\",\"nombre\":\"Javier\",\"telefono\":\"622 333 444\",\"direccion\":\"\",\"franja\":\"tarde\",\"fase\":\"datos\"}</ficha>"
  }
 ]

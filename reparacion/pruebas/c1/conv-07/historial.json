@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "Vale, lo busco yo en el manual. Si sigue sin desaguar, os escribo y reservo la visita"
+ },
+ {
+  "role": "assistant",
+  "content": "Vale. El filtro viene explicado en el manual de tu Bosch, así que puedes mirarlo con calma. Si sigue sin desaguar, dame un teléfono y te dejo reservada la visita por si acaso.\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"\",\"diagnostico\":\"Filtro o bomba de desagüe obstruidos (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Vale. El filtro viene explicado en el manual de tu Bosch, así que puedes mirarlo con calma. Si sigue sin desaguar, dame un teléfono y te dejo reservada la visita por si acaso.\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"\",\"diagnostico\":\"Filtro o bomba de desagüe obstruidos (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

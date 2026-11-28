@@ -38,5 +38,10 @@
  {
   "role": "user",
   "content": "Calle Granada 15, en Albolote"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Rosa, ya lo tengo. Te leo los datos: teléfono 699 222 111 y la dirección, calle Granada 15, en Albolote. ¿Están bien? Lo dejo marcado como urgente.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo de la lavadora, suelo encharcado\",\"codigo\":\"\",\"diagnostico\":\"Fuga de agua (urgente): posible goma de la puerta, manguitos o bomba, por confirmar\",\"nombre\":\"Rosa\",\"telefono\":\"699 222 111\",\"direccion\":\"Calle Granada 15, Albolote\",\"franja\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>(registrado)</aviso>",
+  "original": "Gracias, Rosa, ya lo tengo. Te leo los datos: teléfono 699 222 111 y la dirección, calle Granada 15, en Albolote. ¿Están bien? Lo dejo marcado como urgente.\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo de la lavadora, suelo encharcado\",\"codigo\":\"\",\"diagnostico\":\"Fuga de agua (urgente): posible goma de la puerta, manguitos o bomba, por confirmar\",\"nombre\":\"Rosa\",\"telefono\":\"699 222 111\",\"direccion\":\"Calle Granada 15, Albolote\",\"franja\":\"\",\"fase\":\"registrado\"}</ficha>\n<aviso>{\"tipo\":\"visita\",\"nombre\":\"Rosa\",\"telefono\":\"699 222 111\",\"direccion\":\"Calle Granada 15\",\"municipio\":\"Albolote\",\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"averia\":\"Sale agua por debajo de la lavadora y el suelo está encharcado\",\"codigo\":\"\",\"franja\":\"\",\"urgente\":true,\"notas\":\"Urgente: agua en el suelo. La cliente ya ha cortado la luz y el agua. Posible goma de la puerta, manguitos o bomba, por confirmar. Intentar hoy si hay hueco en la ruta; si no, siguiente día laborable.\"}</aviso>"
  }
 ]
