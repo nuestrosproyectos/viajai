@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, entiendo. Entonces sí, resérvame la visita y que lo mire el técnico"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, te reservo la visita gratuita. Y el ahorro, lo más probable, de seis a diez años, aunque la factura nunca baja a cero. Solo es para llamarte y organizarla: ¿me dices tu nombre y un teléfono?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 90 € al mes\",\"tejado\":\"teja\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Albaicín, Granada\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"En el Albaicín, Conjunto Histórico: la declaración responsable no vale y puede haber límites; lo estudia el técnico en la visita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, te reservo la visita gratuita. Y el ahorro, lo más probable, de seis a diez años, aunque la factura nunca baja a cero. Solo es para llamarte y organizarla: ¿me dices tu nombre y un teléfono?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 90 € al mes\",\"tejado\":\"teja\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Albaicín, Granada\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"En el Albaicín, Conjunto Histórico: la declaración responsable no vale y puede haber límites; lo estudia el técnico en la visita.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

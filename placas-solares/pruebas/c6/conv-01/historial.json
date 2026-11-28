@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, sí, resérvamelo"
+ },
+ {
+  "role": "assistant",
+  "content": "Perfecto, te reservo el estudio gratuito de una hora en Armilla. Solo es para llamarte y organizar la visita: ¿me dices tu nombre y un teléfono?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"a dos aguas, una cara al sur\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Casa de unos cinco kWp en tejado a dos aguas con una cara al sur; el estudio gratuito con tus facturas lo cierra.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Perfecto, te reservo el estudio gratuito de una hora en Armilla. Solo es para llamarte y organizar la visita: ¿me dices tu nombre y un teléfono?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Casa\",\"factura\":\"unos 120 € al mes\",\"tejado\":\"a dos aguas, una cara al sur\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Armilla\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Casa de unos cinco kWp en tejado a dos aguas con una cara al sur; el estudio gratuito con tus facturas lo cierra.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]

@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Vale, sí, resérvalo, así lo llevo a la junta. ¿Y qué mayoría hace falta exactamente?"
+ },
+ {
+  "role": "assistant",
+  "content": "Te lo reservo. La mayoría exacta y quién paga lo confirman el técnico o el administrador. Lo más probable es que se pague en seis a diez años. Solo es para llamarte: ¿me dices tu nombre y un teléfono?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"azotea común\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Zaidín, Granada\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Sin el acuerdo de la junta no hay instalación en la azotea común; el estudio gratuito le sirve para llevarlo a la junta.\",\"porDecir\":\"permiso: en suelo urbano no protegido, declaración responsable que gestiona la instaladora, salvo que el edificio sea protegido · autoconsumo compartido: la azotea común puede dar luz a varios pisos\",\"fase\":\"datos\"}</ficha>",
+  "original": "Te lo reservo. La mayoría exacta y quién paga lo confirman el técnico o el administrador. Lo más probable es que se pague en seis a diez años. Solo es para llamarte: ¿me dices tu nombre y un teléfono?\n<ficha>{\"que\":\"Placas solares\",\"lugar\":\"Comunidad de vecinos\",\"factura\":\"\",\"tejado\":\"azotea común\",\"consumo\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"municipio\":\"Zaidín, Granada\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Sin el acuerdo de la junta no hay instalación en la azotea común; el estudio gratuito le sirve para llevarlo a la junta.\",\"porDecir\":\"permiso: en suelo urbano no protegido, declaración responsable que gestiona la instaladora, salvo que el edificio sea protegido · autoconsumo compartido: la azotea común puede dar luz a varios pisos\",\"fase\":\"datos\"}</ficha>"
  }
 ]

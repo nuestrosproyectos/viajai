@@ -20,5 +20,10 @@
  {
   "role": "user",
   "content": "Rosa, 622 300 415"
+ },
+ {
+  "role": "assistant",
+  "content": "Gracias, Rosa. Y ojo con la batería: encarece el presupuesto y solo compensa si gasta mucho de noche. Para la visita, ¿en qué municipio y calle sería, y te viene mejor mañana o por la tarde?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"Rosa\",\"telefono\":\"622 300 415\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Presupuesto de 6.800 € por 5 kWp con batería de 10 kWh, por debajo del rango orientativo; conviene revisar legalización, marcas y garantías por escrito.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>",
+  "original": "Gracias, Rosa. Y ojo con la batería: encarece el presupuesto y solo compensa si gasta mucho de noche. Para la visita, ¿en qué municipio y calle sería, y te viene mejor mañana o por la tarde?\n<ficha>{\"que\":\"Placas con batería\",\"lugar\":\"\",\"factura\":\"\",\"tejado\":\"\",\"consumo\":\"\",\"nombre\":\"Rosa\",\"telefono\":\"622 300 415\",\"municipio\":\"\",\"direccion\":\"\",\"franja\":\"\",\"inicio\":\"\",\"orientacion\":\"Presupuesto de 6.800 € por 5 kWp con batería de 10 kWh, por debajo del rango orientativo; conviene revisar legalización, marcas y garantías por escrito.\",\"porDecir\":\"\",\"fase\":\"datos\"}</ficha>"
  }
 ]
