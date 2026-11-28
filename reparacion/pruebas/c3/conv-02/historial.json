@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Tiene 5 años. Y tiene escarcha en la parte de atrás, ¿es grave? Me da miedo perder la comida"
+ },
+ {
+  "role": "assistant",
+  "content": "Tiene arreglo, no te preocupes. Mientras, abre la puerta lo menos posible para que la comida aguante. Te reservo una visita de 60,50 €, que se descuenta si reparamos. ¿Te viene mejor por la mañana o por la tarde?\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"\",\"sintoma\":\"enfría arriba pero el congelador no congela bien, escarcha en el fondo\",\"codigo\":\"\",\"diagnostico\":\"fallo de desescarche o del ventilador (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Tiene arreglo, no te preocupes. Mientras, abre la puerta lo menos posible para que la comida aguante. Te reservo una visita de 60,50 €, que se descuenta si reparamos. ¿Te viene mejor por la mañana o por la tarde?\n<ficha>{\"aparato\":\"frigorifico\",\"marca\":\"Samsung\",\"modelo\":\"\",\"sintoma\":\"enfría arriba pero el congelador no congela bien, escarcha en el fondo\",\"codigo\":\"\",\"diagnostico\":\"fallo de desescarche o del ventilador (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

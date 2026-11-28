@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Sí, ya he cortado la luz y cerrado el grifo. ¿Pueden venir hoy? Estoy muy agobiada"
+ },
+ {
+  "role": "assistant",
+  "content": "Tranquila, tiene arreglo, y lo has hecho bien. No vuelvas a enchufarla hasta que la vea el técnico. ¿Ya no sale agua y el suelo está seco?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo, suelo encharcado\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>",
+  "original": "Tranquila, tiene arreglo, y lo has hecho bien. No vuelvas a enchufarla hasta que la vea el técnico. ¿Ya no sale agua y el suelo está seco?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"\",\"modelo\":\"\",\"sintoma\":\"sale agua por debajo, suelo encharcado\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>"
  }
 ]

@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Es una Balay, hijo. Perdone, no sé si la he mirado bien, pero me parece que dice Balay."
+ },
+ {
+  "role": "assistant",
+  "content": "Con Balay, lo más probable es la resistencia de ese fuego o su limitador; el técnico lo confirma en la visita. No use ese fuego si huele a quemado. ¿Tiene ya más de tres años la placa, o la compró hace menos?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"un fuego no calienta, los demás sí\",\"codigo\":\"\",\"diagnostico\":\"resistencia del fuego o su limitador (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>",
+  "original": "Con Balay, lo más probable es la resistencia de ese fuego o su limitador; el técnico lo confirma en la visita. No use ese fuego si huele a quemado. ¿Tiene ya más de tres años la placa, o la compró hace menos?\n<ficha>{\"aparato\":\"placa\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"un fuego no calienta, los demás sí\",\"codigo\":\"\",\"diagnostico\":\"resistencia del fuego o su limitador (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"orientando\"}</ficha>"
  }
 ]

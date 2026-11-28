@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Un lavavajillas Bosch, que no seca los platos. Y sigo pensando que es mucho por venir a mirar"
+ },
+ {
+  "role": "assistant",
+  "content": "Entiendo el reparo. Si lo reparamos, la visita se descuenta de la factura. ¿Tiene ya más de tres años, o lo compraste hace menos?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca, la vajilla sale mojada\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>",
+  "original": "Entiendo el reparo. Si lo reparamos, la visita se descuenta de la factura. ¿Tiene ya más de tres años, o lo compraste hace menos?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca, la vajilla sale mojada\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>"
  }
 ]

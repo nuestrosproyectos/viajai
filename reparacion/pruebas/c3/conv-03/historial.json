@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Tiene 8 años"
+ },
+ {
+  "role": "assistant",
+  "content": "Con ocho años compensa si es el termostato o una resistencia, piezas baratas. Te reservo una visita con presupuesto cerrado antes de tocar nada. Son 60,50 €, que se descuentan si reparamos. ¿Te viene mejor por la mañana o por la tarde?\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz sí se enciende\",\"codigo\":\"\",\"diagnostico\":\"termostato de seguridad o resistencia (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Con ocho años compensa si es el termostato o una resistencia, piezas baratas. Te reservo una visita con presupuesto cerrado antes de tocar nada. Son 60,50 €, que se descuentan si reparamos. ¿Te viene mejor por la mañana o por la tarde?\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz sí se enciende\",\"codigo\":\"\",\"diagnostico\":\"termostato de seguridad o resistencia (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]

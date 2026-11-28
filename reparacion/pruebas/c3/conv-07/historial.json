@@ -11,5 +11,10 @@
  {
   "role": "user",
   "content": "Más de tres años, sí. Dime cómo reviso el filtro, que lo miro yo primero"
+ },
+ {
+  "role": "assistant",
+  "content": "Ese filtro se puede revisar según el fabricante, pero mejor que lo deje hecho el técnico, con presupuesto cerrado antes de tocar nada. ¿Te viene mejor por la mañana o por la tarde?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"\",\"diagnostico\":\"filtro del fondo obstruido (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>",
+  "original": "Ese filtro se puede revisar según el fabricante, pero mejor que lo deje hecho el técnico, con presupuesto cerrado antes de tocar nada. ¿Te viene mejor por la mañana o por la tarde?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"\",\"diagnostico\":\"filtro del fondo obstruido (lo más probable)\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"proponiendo\"}</ficha>"
  }
 ]
