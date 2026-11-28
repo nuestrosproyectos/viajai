@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Perfecto, Lucía, apunto el teléfono: 644 555 666. ¿En qué dirección y municipio está el horno?\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz sí se enciende\",\"codigo\":\"\",\"diagnostico\":\"Termostato de seguridad o fusible térmico (lo más probable)\",\"nombre\":\"Lucía\",\"telefono\":\"644 555 666\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Lucía, apunto el teléfono: 644 555 666. ¿En qué dirección y municipio está el horno?\n<ficha>{\"aparato\":\"horno\",\"marca\":\"Teka\",\"modelo\":\"\",\"sintoma\":\"no calienta, la luz sí se enciende\",\"codigo\":\"\",\"diagnostico\":\"Termostato de seguridad o fusible térmico (lo más probable)\",\"nombre\":\"Lucía\",\"telefono\":\"644 555 666\",\"direccion\":\"\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Calle Ancha 3, Maracena"
  }
 ]
