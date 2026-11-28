@@ -120,16 +120,17 @@ Fallos c5: en el Albaicín dijo que «suele bastar una declaración responsable�
 c6: 7,75, sin datos falsos, coherencia 10. Queda: se deja un punto concreto en 4 de 8 (consumo de día, que la batería alarga la amortización, ejemplo de kWh, cortar en el cuadro); «¿mañana o por la tarde?» suena a día; llama «ahorro» a la amortización; «lugar: Casa» sin decirlo. Ajustado tras c6 (sin volver a probar). Placas se da por ajustada como reformas.
 
 ## Fontanería, vueltas de una en una (8 conversaciones: 4 antiguas + váter único, agua al vecino con seguro, olor a gas, persona mayor sin agua caliente)
-| | c4 |
-|---|---|
-| Acaban en cita | 7/7 (la del gas, sin cita, como debe) |
-| Datos falsos | 0 |
-| Criterio / completa | 5,0 / 7,5 |
-| Datos, aviso, fichas | 8,6 / 10 / 10 |
-| Coherente | 7,5 |
-| Nota media | **7,00** |
+| | c4 | c5 |
+|---|---|---|
+| Acaban en cita | 7/7 (la del gas, sin cita, como debe) | 7/7 |
+| Datos falsos | 0 | 0 |
+| Criterio / completa | 5,0 / 7,5 | **7,5 / 10** |
+| Datos, aviso, fichas | 8,6 / 10 / 10 | 5,7 / 8,6 / 10 |
+| Coherente | 7,5 | **8,8** |
+| Nota media | 7,00 | **7,50** |
 
 Fallos c4: en el váter único no dio precio ni dijo que no tire más de la cisterna; al termo de 12 años le dio el precio de uno nuevo cuando preguntaba por arreglarlo; no habló de fuga oculta con el agua al vecino; no mencionó la salida; repitió explicaciones; «te llamamos para confirmar el día» con el día ya fijado; «él» en las notas. Cambios c4→c5: casos de váter, lavabo, vecino y termo con sus precios del conocimiento; cierre «confirmar la hora» si el día ya está; notas sin género (base común).
+c5: 7,50; mejoran el criterio (7,5) y la coherencia (8,8). Baja «datos» porque pedía el barrio aparte (tercera pregunta): quitado, basta municipio, calle y número. Fontanería se da por ajustada.
 
 ## Qué se corrigió entre rondas (en el cerebro común, para todas las webs, salvo lo marcado)
 - R1→R2: dar siempre el rango de precio si lo pide; empatía con miedo, susto o personas mayores; usted en toda la conversación; una sola pregunta; rellenar en la ficha lo que el cliente ya dijo.
