@@ -16,5 +16,9 @@
   "role": "assistant",
   "content": "Entiendo el reparo. Si lo reparamos, la visita se descuenta de la factura. ¿Tiene ya más de tres años, o lo compraste hace menos?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca, la vajilla sale mojada\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>",
   "original": "Entiendo el reparo. Si lo reparamos, la visita se descuenta de la factura. ¿Tiene ya más de tres años, o lo compraste hace menos?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca, la vajilla sale mojada\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"\",\"telefono\":\"\",\"direccion\":\"\",\"franja\":\"\",\"fase\":\"entendiendo\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Tiene unos 7 años. Bueno, si se descuenta de la reparación y el presupuesto me lo dan antes de tocar nada, vale. Mejor por la mañana"
  }
 ]
