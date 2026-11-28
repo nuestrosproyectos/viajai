@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Perfecto, Manolo. Te llamamos al 611, 999, 000 y el técnico irá a Calle Santa Escolástica 4, en Granada, por la mañana. ¿Está todo bien?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca, la vajilla sale mojada\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"Manolo\",\"telefono\":\"611 999 000\",\"direccion\":\"Calle Santa Escolástica 4, Granada\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Manolo. Te llamamos al 611, 999, 000 y el técnico irá a Calle Santa Escolástica 4, en Granada, por la mañana. ¿Está todo bien?\n<ficha>{\"aparato\":\"lavavajillas\",\"marca\":\"Bosch\",\"modelo\":\"\",\"sintoma\":\"no seca, la vajilla sale mojada\",\"codigo\":\"\",\"diagnostico\":\"\",\"nombre\":\"Manolo\",\"telefono\":\"611 999 000\",\"direccion\":\"Calle Santa Escolástica 4, Granada\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, está bien. Que no se les olvide descontarlo"
  }
 ]

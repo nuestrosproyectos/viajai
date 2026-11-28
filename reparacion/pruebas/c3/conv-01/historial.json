@@ -43,5 +43,9 @@
   "role": "assistant",
   "content": "Perfecto, Carmen. Te llamamos al 655, 123, 456 y el técnico irá a Calle Primavera 12, 3º A, en Granada, por la mañana. ¿Está todo bien?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"E18\",\"diagnostico\":\"bomba de desagüe atascada o bloqueada (lo más probable)\",\"nombre\":\"Carmen\",\"telefono\":\"655 123 456\",\"direccion\":\"Calle Primavera 12, 3º A, Granada (Zaidín)\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>",
   "original": "Perfecto, Carmen. Te llamamos al 655, 123, 456 y el técnico irá a Calle Primavera 12, 3º A, en Granada, por la mañana. ¿Está todo bien?\n<ficha>{\"aparato\":\"lavadora\",\"marca\":\"Balay\",\"modelo\":\"\",\"sintoma\":\"no desagua\",\"codigo\":\"E18\",\"diagnostico\":\"bomba de desagüe atascada o bloqueada (lo más probable)\",\"nombre\":\"Carmen\",\"telefono\":\"655 123 456\",\"direccion\":\"Calle Primavera 12, 3º A, Granada (Zaidín)\",\"franja\":\"mañana\",\"fase\":\"datos\"}</ficha>"
+ },
+ {
+  "role": "user",
+  "content": "Sí, todo bien"
  }
 ]
